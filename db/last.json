@@ -1,5 +1,419 @@
 [
     {
+        "Modified": "2022-11-17T16:45:00",
+        "Published": "2022-11-10T18:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-269",
+        "id": "CVE-2022-39395",
+        "impact": {},
+        "last-modified": "2022-11-17T16:45:00",
+        "references": [
+            "https://go-vela.github.io/docs/installation/server/reference/#vela_repo_allowlist",
+            "https://github.com/go-vela/worker/releases/tag/v0.16.0",
+            "https://github.com/go-vela/server/commit/05558ee99d70f7d6f83bed7c8f78ac0b35fa26f4",
+            "https://docs.docker.com/engine/security/#docker-daemon-attack-surface",
+            "https://github.com/go-vela/ui/releases/tag/v0.17.0",
+            "https://github.com/go-vela/server/security/advisories/GHSA-5m7g-pj8w-7593",
+            "https://go-vela.github.io/docs/installation/worker/reference/#vela_runtime_privileged_images",
+            "https://github.com/go-vela/ui/security/advisories/GHSA-xf39-98m2-889v",
+            "https://github.com/go-vela/worker/security/advisories/GHSA-2w78-ffv6-p46w",
+            "https://github.com/go-vela/server/releases/tag/v0.16.0"
+        ],
+        "summary": "Vela is a Pipeline Automation (CI/CD) framework built on Linux container technology written in Golang. In Vela Server and Vela Worker prior to version 0.16.0 and Vela UI prior to version 0.17.0, some default configurations for Vela allow exploitation and container breakouts. Users should upgrade to Server 0.16.0, Worker 0.16.0, and UI 0.17.0 to fix the issue. After upgrading, Vela administrators will need to explicitly change the default settings to configure Vela as desired. Some of the fixes will interrupt existing workflows and will require Vela administrators to modify default settings. However, not applying the patch (or workarounds) will continue existing risk exposure. Some workarounds are available. Vela administrators can adjust the worker's `VELA_RUNTIME_PRIVILEGED_IMAGES` setting to be explicitly empty, leverage the `VELA_REPO_ALLOWLIST` setting on the server component to restrict access to a list of repositories that are allowed to be enabled, and/or audit enabled repositories and disable pull_requests if they are not needed."
+    },
+    {
+        "Modified": "2022-11-17T16:16:00",
+        "Published": "2022-11-12T05:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-787",
+        "id": "CVE-2022-45188",
+        "impact": {},
+        "last-modified": "2022-11-17T16:16:00",
+        "references": [
+            "https://rushbnt.github.io/bug%20analysis/netatalk-0day/",
+            "https://sourceforge.net/projects/netatalk/files/netatalk/",
+            "https://netatalk.sourceforge.io/3.1/ReleaseNotes3.1.13.html",
+            "https://netatalk.sourceforge.io/3.1/ReleaseNotes3.1.14.html"
+        ],
+        "summary": "Netatalk through 3.1.13 has an afp_getappl heap-based buffer overflow resulting in code execution via a crafted .appl file. This provides remote root access on some platforms such as FreeBSD (used for TrueNAS)."
+    },
+    {
+        "Modified": "2022-11-17T16:01:00",
+        "Published": "2022-11-10T20:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-212",
+        "id": "CVE-2022-39393",
+        "impact": {},
+        "last-modified": "2022-11-17T16:01:00",
+        "references": [
+            "https://github.com/bytecodealliance/wasmtime/commit/2614f2e9d2d36805ead8a8da0fa0c6e0d9e428a0",
+            "https://github.com/bytecodealliance/wasmtime/security/advisories/GHSA-wh6w-3828-g9qf"
+        ],
+        "summary": "Wasmtime is a standalone runtime for WebAssembly. Prior to version 2.0.2, there is a bug in Wasmtime's implementation of its pooling instance allocator where when a linear memory is reused for another instance the initial heap snapshot of the prior instance can be visible, erroneously to the next instance. This bug has been patched and users should upgrade to Wasmtime 2.0.2. Other mitigations include disabling the pooling allocator and disabling the `memory-init-cow`."
+    },
+    {
+        "Modified": "2022-11-17T15:45:00",
+        "Published": "2022-11-11T16:15:00",
+        "access": {},
+        "assigner": "secure@intel.com",
+        "cvss": null,
+        "cwe": "NVD-CWE-Other",
+        "id": "CVE-2022-26024",
+        "impact": {},
+        "last-modified": "2022-11-17T15:45:00",
+        "references": [
+            "https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00689.html"
+        ],
+        "summary": "Improper access control in the Intel(R) NUC HDMI Firmware Update Tool for NUC7i3DN, NUC7i5DN and NUC7i7DN before version 1.78.2.0.7 may allow an authenticated user to potentially enable escalation of privilege via local access."
+    },
+    {
+        "Modified": "2022-11-17T15:45:00",
+        "Published": "2022-11-11T16:15:00",
+        "access": {},
+        "assigner": "secure@intel.com",
+        "cvss": null,
+        "cwe": "CWE-287",
+        "id": "CVE-2022-21794",
+        "impact": {},
+        "last-modified": "2022-11-17T15:45:00",
+        "references": [
+            "https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00752.html"
+        ],
+        "summary": "Improper authentication in BIOS firmware for some Intel(R) NUC Boards, Intel(R) NUC Business, Intel(R) NUC Enthusiast, Intel(R) NUC Kits before version HN0067 may allow a privileged user to potentially enable escalation of privilege via local access."
+    },
+    {
+        "Modified": "2022-11-17T15:45:00",
+        "Published": "2022-05-24T14:15:00",
+        "access": {
+            "authentication": "SINGLE",
+            "complexity": "MEDIUM",
+            "vector": "NETWORK"
+        },
+        "assigner": "cve@mitre.org",
+        "cvss": 3.5,
+        "cvss-time": "2022-11-17T15:45:00",
+        "cvss-vector": "AV:N/AC:M/Au:S/C:N/I:P/A:N",
+        "cwe": "CWE-79",
+        "id": "CVE-2022-30464",
+        "impact": {
+            "availability": "NONE",
+            "confidentiality": "NONE",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-11-17T15:45:00",
+        "references": [
+            "https://github.com/mikeccltt/chatbot/blob/main/chatbot-app-suggestion-phpoop/xss.md"
+        ],
+        "summary": "ChatBot App with Suggestion in PHP/OOP v1.0 is vulnerable to Cross Site Scripting (XSS) via /simple_chat_bot/classes/Master.php?f=save_response."
+    },
+    {
+        "Modified": "2022-11-17T15:45:00",
+        "Published": "2022-05-24T14:15:00",
+        "access": {
+            "authentication": "SINGLE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "cve@mitre.org",
+        "cvss": 6.5,
+        "cvss-time": "2022-11-17T15:45:00",
+        "cvss-vector": "AV:N/AC:L/Au:S/C:P/I:P/A:P",
+        "cwe": "CWE-89",
+        "id": "CVE-2022-30459",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "PARTIAL",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-11-17T15:45:00",
+        "references": [
+            "https://github.com/mikeccltt/chatbot/blob/main/chatbot-app-suggestion-phpoop/sql.md"
+        ],
+        "summary": "ChatBot App with Suggestion in PHP/OOP v1.0 is vulnerable to SQL Injection via /simple_chat_bot/classes/Master.php?f=delete_response, id."
+    },
+    {
+        "Modified": "2022-11-17T15:44:00",
+        "Published": "2022-11-11T16:15:00",
+        "access": {},
+        "assigner": "secure@intel.com",
+        "cvss": null,
+        "cwe": "CWE-20",
+        "id": "CVE-2021-26251",
+        "impact": {},
+        "last-modified": "2022-11-17T15:44:00",
+        "references": [
+            "https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00642.html"
+        ],
+        "summary": "Improper input validation in the Intel(R) Distribution of OpenVINO(TM) Toolkit may allow an authenticated user to potentially enable denial of service via network access."
+    },
+    {
+        "Modified": "2022-11-17T15:42:00",
+        "Published": "2022-11-11T16:15:00",
+        "access": {},
+        "assigner": "secure@intel.com",
+        "cvss": null,
+        "cwe": "CWE-287",
+        "id": "CVE-2022-29893",
+        "impact": {},
+        "last-modified": "2022-11-17T15:42:00",
+        "references": [
+            "https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00610.html"
+        ],
+        "summary": "Improper authentication in firmware for Intel(R) AMT before versions 11.8.93, 11.22.93, 11.12.93, 12.0.92, 14.1.67, 15.0.42, 16.1.25 may allow an authenticated user to potentially enable escalation of privilege via network access."
+    },
+    {
+        "Modified": "2022-11-17T15:37:00",
+        "Published": "2022-11-11T16:15:00",
+        "access": {},
+        "assigner": "secure@intel.com",
+        "cvss": null,
+        "cwe": "CWE-401",
+        "id": "CVE-2022-29515",
+        "impact": {},
+        "last-modified": "2022-11-17T15:37:00",
+        "references": [
+            "https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00610.html"
+        ],
+        "summary": "Missing release of memory after effective lifetime in firmware for Intel(R) SPS before versions SPS_E3_06.00.03.035.0 may allow a privileged user to potentially enable denial of service via local access."
+    },
+    {
+        "Modified": "2022-11-17T15:30:00",
+        "Published": "2022-11-11T16:15:00",
+        "access": {},
+        "assigner": "secure@intel.com",
+        "cvss": null,
+        "cwe": "CWE-287",
+        "id": "CVE-2022-26508",
+        "impact": {},
+        "last-modified": "2022-11-17T15:30:00",
+        "references": [
+            "https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00710.html"
+        ],
+        "summary": "Improper authentication in the Intel(R) SDP Tool before version 3.0.0 may allow an unauthenticated user to potentially enable information disclosure via network access."
+    },
+    {
+        "Modified": "2022-11-17T15:30:00",
+        "Published": "2022-11-11T16:15:00",
+        "access": {},
+        "assigner": "secure@intel.com",
+        "cvss": null,
+        "cwe": "CWE-119",
+        "id": "CVE-2022-29486",
+        "impact": {},
+        "last-modified": "2022-11-17T15:30:00",
+        "references": [
+            "https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00695.html"
+        ],
+        "summary": "Improper buffer restrictions in the Hyperscan library maintained by Intel(R) all versions downloaded before 04/29/2022 may allow an unauthenticated user to potentially enable escalation of privilege via network access."
+    },
+    {
+        "Modified": "2022-11-17T15:30:00",
+        "Published": "2022-11-11T16:15:00",
+        "access": {},
+        "assigner": "secure@intel.com",
+        "cvss": null,
+        "cwe": "CWE-119",
+        "id": "CVE-2022-26124",
+        "impact": {},
+        "last-modified": "2022-11-17T15:30:00",
+        "references": [
+            "https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00752.html"
+        ],
+        "summary": "Improper buffer restrictions in BIOS firmware for some Intel(R) NUC Boards, Intel(R) NUC 8 Boards, Intel(R) NUC 8 Rugged Boards and Intel(R) NUC 8 Rugged Kits before version CHAPLCEL.0059 may allow a privileged user to potentially enable escalation of privilege via local access."
+    },
+    {
+        "Modified": "2022-11-17T15:25:00",
+        "Published": "2022-10-11T19:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "NVD-CWE-Other",
+        "id": "CVE-2022-37599",
+        "impact": {},
+        "last-modified": "2022-11-17T15:25:00",
+        "references": [
+            "https://github.com/webpack/loader-utils/blob/d9f4e23cf411d8556f8bac2d3bf05a6e0103b568/lib/interpolateName.js#L38",
+            "https://github.com/webpack/loader-utils/issues/211",
+            "https://github.com/webpack/loader-utils/blob/d9f4e23cf411d8556f8bac2d3bf05a6e0103b568/lib/interpolateName.js#L83"
+        ],
+        "summary": "A Regular expression denial of service (ReDoS) flaw was found in Function interpolateName in interpolateName.js in webpack loader-utils 2.0.0 via the resourcePath variable in interpolateName.js."
+    },
+    {
+        "Modified": "2022-11-17T15:16:00",
+        "Published": "2022-11-11T16:15:00",
+        "access": {},
+        "assigner": "secure@intel.com",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2022-30297",
+        "impact": {},
+        "last-modified": "2022-11-17T15:16:00",
+        "references": [
+            "https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00716.html"
+        ],
+        "summary": "Cross-site scripting in the Intel(R) EMA software before version 1.8.0 may allow a privileged user to potentially enable escalation of privilege via local access."
+    },
+    {
+        "Modified": "2022-11-17T15:16:00",
+        "Published": "2022-11-09T21:15:00",
+        "access": {},
+        "assigner": "psirt@huawei.com",
+        "cvss": null,
+        "cwe": "NVD-CWE-Other",
+        "id": "CVE-2022-44560",
+        "impact": {},
+        "last-modified": "2022-11-17T15:16:00",
+        "references": [
+            "https://consumer.huawei.com/en/support/bulletin/2022/11/",
+            "https://device.harmonyos.com/en/docs/security/update/security-bulletins-phones-202211-0000001441016433"
+        ],
+        "summary": "The launcher module has an Intent redirection vulnerability. Successful exploitation of this vulnerability may cause launcher module data to be modified."
+    },
+    {
+        "Modified": "2022-11-17T15:15:00",
+        "Published": "2022-05-16T04:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "cve@mitre.org",
+        "cvss": 5.0,
+        "cvss-time": "2022-11-17T15:15:00",
+        "cvss-vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N",
+        "cwe": "CWE-116",
+        "id": "CVE-2022-30781",
+        "impact": {
+            "availability": "NONE",
+            "confidentiality": "NONE",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-11-17T15:15:00",
+        "references": [
+            "https://blog.gitea.io/2022/05/gitea-1.16.7-is-released/",
+            "https://github.com/go-gitea/gitea/pull/19487",
+            "https://github.com/go-gitea/gitea/pull/19490",
+            "http://packetstormsecurity.com/files/168400/Gitea-1.16.6-Remote-Code-Execution.html",
+            "http://packetstormsecurity.com/files/169928/Gitea-Git-Fetch-Remote-Code-Execution.html"
+        ],
+        "summary": "Gitea before 1.16.7 does not escape git fetch remote."
+    },
+    {
+        "Modified": "2022-11-17T15:11:00",
+        "Published": "2022-11-11T16:15:00",
+        "access": {},
+        "assigner": "secure@intel.com",
+        "cvss": null,
+        "cwe": "CWE-20",
+        "id": "CVE-2022-30542",
+        "impact": {},
+        "last-modified": "2022-11-17T15:11:00",
+        "references": [
+            "https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00708.html"
+        ],
+        "summary": "Improper input validation in the firmware for some Intel(R) Server Board S2600WF, Intel(R) Server System R1000WF and Intel(R) Server System R2000WF families before version R02.01.0014 may allow a privileged user to potentially enable an escalation of privilege via local access."
+    },
+    {
+        "Modified": "2022-11-17T15:07:00",
+        "Published": "2022-11-11T16:15:00",
+        "access": {},
+        "assigner": "secure@intel.com",
+        "cvss": null,
+        "cwe": "CWE-427",
+        "id": "CVE-2022-30548",
+        "impact": {},
+        "last-modified": "2022-11-17T15:07:00",
+        "references": [
+            "https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00673.html"
+        ],
+        "summary": "Uncontrolled search path element in the Intel(R) Glorp software may allow an authenticated user to potentially enable escalation of privilege via local access."
+    },
+    {
+        "Modified": "2022-11-17T15:06:00",
+        "Published": "2022-11-15T11:15:00",
+        "access": {},
+        "assigner": "info@cert.vde.com",
+        "cvss": null,
+        "cwe": "CWE-119",
+        "id": "CVE-2022-3461",
+        "impact": {},
+        "last-modified": "2022-11-17T15:06:00",
+        "references": [
+            "https://cert.vde.com/en/advisories/VDE-2022-048/"
+        ],
+        "summary": "In PHOENIX CONTACT Automationworx Software Suite up to version 1.89 manipulated PC Worx or Config+ files could lead to a heap buffer overflow and a read access violation. Availability, integrity, or confidentiality of an application programming workstation might be compromised by attacks using these vulnerabilities."
+    },
+    {
+        "Modified": "2022-11-17T15:02:00",
+        "Published": "2022-11-11T16:15:00",
+        "access": {},
+        "assigner": "secure@intel.com",
+        "cvss": null,
+        "cwe": "CWE-400",
+        "id": "CVE-2022-30691",
+        "impact": {},
+        "last-modified": "2022-11-17T15:02:00",
+        "references": [
+            "https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00740.html"
+        ],
+        "summary": "Uncontrolled resource consumption in the Intel(R) Support Android application before version 22.02.28 may allow an authenticated user to potentially enable denial of service via local access."
+    },
+    {
+        "Modified": "2022-11-17T15:01:00",
+        "Published": "2022-11-11T16:15:00",
+        "access": {},
+        "assigner": "secure@intel.com",
+        "cvss": null,
+        "cwe": "NVD-CWE-Other",
+        "id": "CVE-2022-33942",
+        "impact": {},
+        "last-modified": "2022-11-17T15:01:00",
+        "references": [
+            "https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00713.html"
+        ],
+        "summary": "Protection mechanism failure in the Intel(R) DCM software before version 5.0 may allow an unauthenticated user to potentially enable escalation of privilege via adjacent access."
+    },
+    {
+        "Modified": "2022-11-17T15:00:00",
+        "Published": "2022-11-15T01:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-89",
+        "id": "CVE-2022-42121",
+        "impact": {},
+        "last-modified": "2022-11-17T15:00:00",
+        "references": [
+            "http://liferay.com",
+            "https://issues.liferay.com/browse/LPE-17414",
+            "https://portal.liferay.dev/learn/security/known-vulnerabilities/-/asset_publisher/HbL5mxmVrnXW/content/cve-2022-42121"
+        ],
+        "summary": "A SQL injection vulnerability in the Layout module in Liferay Portal 7.1.3 through 7.4.3.4, and Liferay DXP 7.1 before fix pack 27, 7.2 before fix pack 17, 7.3 before service pack 3, and 7.4 GA allows remote authenticated attackers to execute arbitrary SQL commands via a crafted payload injected into a page template's 'Name' field."
+    },
+    {
+        "Modified": "2022-11-17T15:00:00",
+        "Published": "2022-11-15T01:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-89",
+        "id": "CVE-2022-42122",
+        "impact": {},
+        "last-modified": "2022-11-17T15:00:00",
+        "references": [
+            "http://liferay.com",
+            "https://issues.liferay.com/browse/LPE-17520",
+            "https://portal.liferay.dev/learn/security/known-vulnerabilities/-/asset_publisher/HbL5mxmVrnXW/content/cve-2022-42122"
+        ],
+        "summary": "A SQL injection vulnerability in the Friendly Url module in Liferay Portal 7.3.7, and Liferay DXP 7.3 fix pack 2 through update 4 allows attackers to execute arbitrary SQL commands via a crafted payload injected into the `title` field of a friendly URL."
+    },
+    {
         "Modified": "2022-11-17T14:58:00",
         "Published": "2022-11-16T08:15:00",
         "access": {},
@@ -1463,421 +1877,5 @@
             "https://mahara.org/interaction/forum/topic.php?id=9094"
         ],
         "summary": "Mahara before 20.10.5, 21.04.4, 21.10.2, and 22.04.0 is vulnerable to Cross Site Request Forgery (CSRF) because randomly generated tokens are too easily guessable."
-    },
-    {
-        "Modified": "2022-11-17T05:01:00",
-        "Published": "2022-11-15T21:15:00",
-        "access": {},
-        "assigner": "info@cert.vde.com",
-        "cvss": null,
-        "cwe": "CWE-22",
-        "id": "CVE-2020-12508",
-        "impact": {},
-        "last-modified": "2022-11-17T05:01:00",
-        "references": [
-            "https://www.s-can.at/en/the-new-monitool-v4-2-security-first/"
-        ],
-        "summary": "In s::can moni::tools in versions below 4.2 an unauthenticated attacker could get any file from the device by path traversal in the image-relocator module."
-    },
-    {
-        "Modified": "2022-11-17T05:00:00",
-        "Published": "2022-11-16T01:15:00",
-        "access": {},
-        "assigner": "security@huntr.dev",
-        "cvss": null,
-        "cwe": "CWE-307",
-        "id": "CVE-2022-2166",
-        "impact": {},
-        "last-modified": "2022-11-17T05:00:00",
-        "references": [
-            "https://huntr.dev/bounties/2f96f990-01c2-44ea-ae47-58bdb3aa455b",
-            "https://github.com/mastodon/mastodon/commit/21fd25a269cca742af431f0d13299e139f267346"
-        ],
-        "summary": "Improper Restriction of Excessive Authentication Attempts in GitHub repository mastodon/mastodon prior to 4.0.0."
-    },
-    {
-        "Modified": "2022-11-17T05:00:00",
-        "Published": "2022-11-15T21:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-434",
-        "id": "CVE-2022-43265",
-        "impact": {},
-        "last-modified": "2022-11-17T05:00:00",
-        "references": [
-            "https://www.sourcecodester.com/php/15688/canteen-management-system-project-source-code-php.html",
-            "https://10degres.net/cves/cve-2022-43265/"
-        ],
-        "summary": "An arbitrary file upload vulnerability in the component /pages/save_user.php of Canteen Management System v1.0 allows attackers to execute arbitrary code via a crafted PHP file."
-    },
-    {
-        "Modified": "2022-11-17T04:59:00",
-        "Published": "2022-11-15T21:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-89",
-        "id": "CVE-2022-43279",
-        "impact": {},
-        "last-modified": "2022-11-17T04:59:00",
-        "references": [
-            "https://brick-pamphlet-d24.notion.site/LimeSurvey-V5-4-4-background-update-php-SQL-injection-50e8fd6eba4644bb941b2c8d6fb7979a"
-        ],
-        "summary": "LimeSurvey v5.4.4 was discovered to contain a SQL injection vulnerability via the component /application/views/themeOptions/update.php."
-    },
-    {
-        "Modified": "2022-11-17T04:59:00",
-        "Published": "2022-11-15T01:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-863",
-        "id": "CVE-2022-42978",
-        "impact": {},
-        "last-modified": "2022-11-17T04:59:00",
-        "references": [
-            "https://gist.github.com/CveCt0r/34251664a511f1045ce6a5492e94eec1"
-        ],
-        "summary": "In the Netic User Export add-on before 1.3.5 for Atlassian Confluence, authorization is mishandled. An unauthenticated attacker could access files on the remote system."
-    },
-    {
-        "Modified": "2022-11-17T04:59:00",
-        "Published": "2022-11-15T00:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-352",
-        "id": "CVE-2022-35613",
-        "impact": {},
-        "last-modified": "2022-11-17T04:59:00",
-        "references": [
-            "https://securityblog101.blogspot.com/2022/10/cve-id-cve-2022-35613.html"
-        ],
-        "summary": "Konker v2.3.9 was to discovered to contain a Cross-Site Request Forgery (CSRF)."
-    },
-    {
-        "Modified": "2022-11-17T04:59:00",
-        "Published": "2022-11-14T23:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-77",
-        "id": "CVE-2022-43695",
-        "impact": {},
-        "last-modified": "2022-11-17T04:59:00",
-        "references": [
-            "https://github.com/concretecms/concretecms/releases/8.5.10",
-            "https://documentation.concretecms.org/developers/introduction/version-history/913-release-notes",
-            "https://documentation.concretecms.org/developers/introduction/version-history/8510-release-notes",
-            "https://www.concretecms.org/about/project-news/security/concrete-cms-security-advisory-2022-10-31",
-            "https://github.com/concretecms/concretecms/releases/9.1.3"
-        ],
-        "summary": "Concrete CMS (formerly concrete5) below 8.5.10 and between 9.0.0 and 9.1.2 is vulnerable to Stored Cross-Site Scripting (XSS) in dashboard/system/express/entities/associations because Concrete CMS allows association with an entity name that doesn\u2019t exist or, if it does exist, contains XSS since it was not properly sanitized. Remediate by updating to Concrete CMS 9.1.3+ or 8.5.10+."
-    },
-    {
-        "Modified": "2022-11-17T04:58:00",
-        "Published": "2022-11-15T11:15:00",
-        "access": {},
-        "assigner": "info@cert.vde.com",
-        "cvss": null,
-        "cwe": "CWE-770",
-        "id": "CVE-2022-3480",
-        "impact": {},
-        "last-modified": "2022-11-17T04:58:00",
-        "references": [
-            "https://cert.vde.com/en/advisories/VDE-2022-051/"
-        ],
-        "summary": "A remote, unauthenticated attacker could cause a denial-of-service of PHOENIX CONTACT FL MGUARD and TC MGUARD devices below version 8.9.0 by sending a larger number of unauthenticated HTTPS connections originating from different source IP\u2019s. Configuring firewall limits for incoming connections cannot prevent the issue."
-    },
-    {
-        "Modified": "2022-11-17T04:58:00",
-        "Published": "2022-11-14T23:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-43688",
-        "impact": {},
-        "last-modified": "2022-11-17T04:58:00",
-        "references": [
-            "https://github.com/concretecms/concretecms/releases/8.5.10",
-            "https://documentation.concretecms.org/developers/introduction/version-history/913-release-notes",
-            "https://documentation.concretecms.org/developers/introduction/version-history/8510-release-notes",
-            "https://www.concretecms.org/about/project-news/security/concrete-cms-security-advisory-2022-10-31",
-            "https://github.com/concretecms/concretecms/releases/9.1.3"
-        ],
-        "summary": "Concrete CMS (formerly concrete5) below 8.5.10 and between 9.0.0 and 9.1.2 is vulnerable to Stored Cross-Site Scripting (XSS) in icons since the Microsoft application tile color is not sanitized. Remediate by updating to Concrete CMS 9.1.3+ or 8.5.10+."
-    },
-    {
-        "Modified": "2022-11-17T04:57:00",
-        "Published": "2022-11-14T23:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-611",
-        "id": "CVE-2022-43689",
-        "impact": {},
-        "last-modified": "2022-11-17T04:57:00",
-        "references": [
-            "https://github.com/concretecms/concretecms/releases/8.5.10",
-            "https://documentation.concretecms.org/developers/introduction/version-history/913-release-notes",
-            "https://documentation.concretecms.org/developers/introduction/version-history/8510-release-notes",
-            "https://www.concretecms.org/about/project-news/security/concrete-cms-security-advisory-2022-10-31",
-            "https://github.com/concretecms/concretecms/releases/9.1.3"
-        ],
-        "summary": "Concrete CMS (formerly concrete5) below 8.5.10 and between 9.0.0 and 9.1.2 is vulnerable to XXE based DNS requests leading to IP disclosure."
-    },
-    {
-        "Modified": "2022-11-17T04:54:00",
-        "Published": "2022-11-15T13:15:00",
-        "access": {},
-        "assigner": "security@apache.org",
-        "cvss": null,
-        "cwe": "NVD-CWE-noinfo",
-        "id": "CVE-2022-40308",
-        "impact": {},
-        "last-modified": "2022-11-17T04:54:00",
-        "references": [
-            "https://lists.apache.org/thread/x01pnn0jjsw512cscxsbxzrjmz64n4cc",
-            "http://www.openwall.com/lists/oss-security/2022/11/15/2"
-        ],
-        "summary": "If anonymous read enabled, it's possible to read the database file directly without logging in."
-    },
-    {
-        "Modified": "2022-11-17T04:54:00",
-        "Published": "2022-11-15T13:15:00",
-        "access": {},
-        "assigner": "security@apache.org",
-        "cvss": null,
-        "cwe": "NVD-CWE-noinfo",
-        "id": "CVE-2022-40309",
-        "impact": {},
-        "last-modified": "2022-11-17T04:54:00",
-        "references": [
-            "https://lists.apache.org/thread/1odl4p85r96n27k577jk6ftrp19xfc27",
-            "http://www.openwall.com/lists/oss-security/2022/11/15/3"
-        ],
-        "summary": "Users with write permissions to a repository can delete arbitrary directories."
-    },
-    {
-        "Modified": "2022-11-17T04:53:00",
-        "Published": "2022-11-15T00:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-89",
-        "id": "CVE-2022-40405",
-        "impact": {},
-        "last-modified": "2022-11-17T04:53:00",
-        "references": [
-            "https://github.com/nhiephon/Research"
-        ],
-        "summary": "WoWonder Social Network Platform v4.1.2 was discovered to contain a SQL injection vulnerability via the offset parameter at requests.php?f=load-my-blogs."
-    },
-    {
-        "Modified": "2022-11-17T04:52:00",
-        "Published": "2022-11-15T01:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-200",
-        "id": "CVE-2022-42977",
-        "impact": {},
-        "last-modified": "2022-11-17T04:52:00",
-        "references": [
-            "https://gist.github.com/CveCt0r/34251664a511f1045ce6a5492e94eec1"
-        ],
-        "summary": "The Netic User Export add-on before 1.3.5 for Atlassian Confluence has the functionality to generate a list of users in the application, and export it. During export, the HTTP request has a fileName parameter that accepts any file on the system (e.g., an SSH private key) to be downloaded."
-    },
-    {
-        "Modified": "2022-11-17T04:51:00",
-        "Published": "2022-11-15T00:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-89",
-        "id": "CVE-2022-42984",
-        "impact": {},
-        "last-modified": "2022-11-17T04:51:00",
-        "references": [
-            "https://github.com/nhiephon/Research",
-            "https://www.wowonder.com/"
-        ],
-        "summary": "WoWonder Social Network Platform 4.1.4 was discovered to contain a SQL injection vulnerability via the offset parameter at requests.php?f=search&s=recipients."
-    },
-    {
-        "Modified": "2022-11-17T04:15:00",
-        "Published": "2022-08-24T12:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-400",
-        "id": "CVE-2022-27812",
-        "impact": {},
-        "last-modified": "2022-11-17T04:15:00",
-        "references": [
-            "https://advisories.stormshield.eu/2022-009/"
-        ],
-        "summary": "Flooding SNS firewall versions 3.7.0 to 3.7.29, 3.11.0 to 3.11.17, 4.2.0 to 4.2.10, and 4.3.0 to 4.3.6 with specific forged traffic, can lead to SNS DoS."
-    },
-    {
-        "Modified": "2022-11-17T03:15:00",
-        "Published": "2022-11-01T13:15:00",
-        "access": {},
-        "assigner": "security@xen.org",
-        "cvss": null,
-        "cwe": "CWE-763",
-        "id": "CVE-2022-42309",
-        "impact": {},
-        "last-modified": "2022-11-17T03:15:00",
-        "references": [
-            "https://xenbits.xenproject.org/xsa/advisory-414.txt",
-            "http://xenbits.xen.org/xsa/advisory-414.html",
-            "http://www.openwall.com/lists/oss-security/2022/11/01/4",
-            "https://www.debian.org/security/2022/dsa-5272",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/ZLI2NPNEH7CNJO3VZGQNOI4M4EWLNKPZ/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/YZVXG7OOOXCX6VIPEMLFDPIPUTFAYWPE/"
-        ],
-        "summary": "Xenstore: Guests can crash xenstored Due to a bug in the fix of XSA-115 a malicious guest can cause xenstored to use a wrong pointer during node creation in an error path, resulting in a crash of xenstored or a memory corruption in xenstored causing further damage. Entering the error path can be controlled by the guest e.g. by exceeding the quota value of maximum nodes per domain."
-    },
-    {
-        "Modified": "2022-11-17T03:15:00",
-        "Published": "2022-11-01T13:15:00",
-        "access": {},
-        "assigner": "security@xen.org",
-        "cvss": null,
-        "cwe": "CWE-459",
-        "id": "CVE-2022-42310",
-        "impact": {},
-        "last-modified": "2022-11-17T03:15:00",
-        "references": [
-            "https://xenbits.xenproject.org/xsa/advisory-415.txt",
-            "http://xenbits.xen.org/xsa/advisory-415.html",
-            "http://www.openwall.com/lists/oss-security/2022/11/01/5",
-            "https://www.debian.org/security/2022/dsa-5272",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/ZLI2NPNEH7CNJO3VZGQNOI4M4EWLNKPZ/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/YZVXG7OOOXCX6VIPEMLFDPIPUTFAYWPE/"
-        ],
-        "summary": "Xenstore: Guests can create orphaned Xenstore nodes By creating multiple nodes inside a transaction resulting in an error, a malicious guest can create orphaned nodes in the Xenstore data base, as the cleanup after the error will not remove all nodes already created. When the transaction is committed after this situation, nodes without a valid parent can be made permanent in the data base."
-    },
-    {
-        "Modified": "2022-11-17T03:15:00",
-        "Published": "2022-11-01T13:15:00",
-        "access": {},
-        "assigner": "security@xen.org",
-        "cvss": null,
-        "cwe": "CWE-770",
-        "id": "CVE-2022-42317",
-        "impact": {},
-        "last-modified": "2022-11-17T03:15:00",
-        "references": [
-            "https://xenbits.xenproject.org/xsa/advisory-326.txt",
-            "http://xenbits.xen.org/xsa/advisory-326.html",
-            "https://www.debian.org/security/2022/dsa-5272",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/ZLI2NPNEH7CNJO3VZGQNOI4M4EWLNKPZ/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/YZVXG7OOOXCX6VIPEMLFDPIPUTFAYWPE/"
-        ],
-        "summary": "Xenstore: guests can let run xenstored out of memory T[his CNA information record relates to multiple CVEs; the text explains which aspects/vulnerabilities correspond to which CVE.] Malicious guests can cause xenstored to allocate vast amounts of memory, eventually resulting in a Denial of Service (DoS) of xenstored. There are multiple ways how guests can cause large memory allocations in xenstored: - - by issuing new requests to xenstored without reading the responses, causing the responses to be buffered in memory - - by causing large number of watch events to be generated via setting up multiple xenstore watches and then e.g. deleting many xenstore nodes below the watched path - - by creating as many nodes as allowed with the maximum allowed size and path length in as many transactions as possible - - by accessing many nodes inside a transaction"
-    },
-    {
-        "Modified": "2022-11-17T03:15:00",
-        "Published": "2022-11-01T13:15:00",
-        "access": {},
-        "assigner": "security@xen.org",
-        "cvss": null,
-        "cwe": "CWE-401",
-        "id": "CVE-2022-42319",
-        "impact": {},
-        "last-modified": "2022-11-17T03:15:00",
-        "references": [
-            "https://xenbits.xenproject.org/xsa/advisory-416.txt",
-            "http://xenbits.xen.org/xsa/advisory-416.html",
-            "http://www.openwall.com/lists/oss-security/2022/11/01/6",
-            "https://www.debian.org/security/2022/dsa-5272",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/ZLI2NPNEH7CNJO3VZGQNOI4M4EWLNKPZ/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/YZVXG7OOOXCX6VIPEMLFDPIPUTFAYWPE/"
-        ],
-        "summary": "Xenstore: Guests can cause Xenstore to not free temporary memory When working on a request of a guest, xenstored might need to allocate quite large amounts of memory temporarily. This memory is freed only after the request has been finished completely. A request is regarded to be finished only after the guest has read the response message of the request from the ring page. Thus a guest not reading the response can cause xenstored to not free the temporary memory. This can result in memory shortages causing Denial of Service (DoS) of xenstored."
-    },
-    {
-        "Modified": "2022-11-17T03:15:00",
-        "Published": "2022-11-01T13:15:00",
-        "access": {},
-        "assigner": "security@xen.org",
-        "cvss": null,
-        "cwe": "CWE-459",
-        "id": "CVE-2022-42320",
-        "impact": {},
-        "last-modified": "2022-11-17T03:15:00",
-        "references": [
-            "https://xenbits.xenproject.org/xsa/advisory-417.txt",
-            "http://xenbits.xen.org/xsa/advisory-417.html",
-            "http://www.openwall.com/lists/oss-security/2022/11/01/7",
-            "https://www.debian.org/security/2022/dsa-5272",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/ZLI2NPNEH7CNJO3VZGQNOI4M4EWLNKPZ/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/YZVXG7OOOXCX6VIPEMLFDPIPUTFAYWPE/"
-        ],
-        "summary": "Xenstore: Guests can get access to Xenstore nodes of deleted domains Access rights of Xenstore nodes are per domid. When a domain is gone, there might be Xenstore nodes left with access rights containing the domid of the removed domain. This is normally no problem, as those access right entries will be corrected when such a node is written later. There is a small time window when a new domain is created, where the access rights of a past domain with the same domid as the new one will be regarded to be still valid, leading to the new domain being able to get access to a node which was meant to be accessible by the removed domain. For this to happen another domain needs to write the node before the newly created domain is being introduced to Xenstore by dom0."
-    },
-    {
-        "Modified": "2022-11-17T03:15:00",
-        "Published": "2022-11-01T13:15:00",
-        "access": {},
-        "assigner": "security@xen.org",
-        "cvss": null,
-        "cwe": "CWE-674",
-        "id": "CVE-2022-42321",
-        "impact": {},
-        "last-modified": "2022-11-17T03:15:00",
-        "references": [
-            "https://xenbits.xenproject.org/xsa/advisory-418.txt",
-            "http://xenbits.xen.org/xsa/advisory-418.html",
-            "http://www.openwall.com/lists/oss-security/2022/11/01/8",
-            "https://www.debian.org/security/2022/dsa-5272",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/ZLI2NPNEH7CNJO3VZGQNOI4M4EWLNKPZ/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/YZVXG7OOOXCX6VIPEMLFDPIPUTFAYWPE/"
-        ],
-        "summary": "Xenstore: Guests can crash xenstored via exhausting the stack Xenstored is using recursion for some Xenstore operations (e.g. for deleting a sub-tree of Xenstore nodes). With sufficiently deep nesting levels this can result in stack exhaustion on xenstored, leading to a crash of xenstored."
-    },
-    {
-        "Modified": "2022-11-17T03:15:00",
-        "Published": "2022-11-01T13:15:00",
-        "access": {},
-        "assigner": "security@xen.org",
-        "cvss": null,
-        "cwe": "CWE-401",
-        "id": "CVE-2022-42322",
-        "impact": {},
-        "last-modified": "2022-11-17T03:15:00",
-        "references": [
-            "https://xenbits.xenproject.org/xsa/advisory-419.txt",
-            "http://xenbits.xen.org/xsa/advisory-419.html",
-            "http://www.openwall.com/lists/oss-security/2022/11/01/9",
-            "https://www.debian.org/security/2022/dsa-5272",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/ZLI2NPNEH7CNJO3VZGQNOI4M4EWLNKPZ/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/YZVXG7OOOXCX6VIPEMLFDPIPUTFAYWPE/"
-        ],
-        "summary": "Xenstore: Cooperating guests can create arbitrary numbers of nodes T[his CNA information record relates to multiple CVEs; the text explains which aspects/vulnerabilities correspond to which CVE.] Since the fix of XSA-322 any Xenstore node owned by a removed domain will be modified to be owned by Dom0. This will allow two malicious guests working together to create an arbitrary number of Xenstore nodes. This is possible by domain A letting domain B write into domain A's local Xenstore tree. Domain B can then create many nodes and reboot. The nodes created by domain B will now be owned by Dom0. By repeating this process over and over again an arbitrary number of nodes can be created, as Dom0's number of nodes isn't limited by Xenstore quota."
-    },
-    {
-        "Modified": "2022-11-17T03:15:00",
-        "Published": "2022-11-01T13:15:00",
-        "access": {},
-        "assigner": "security@xen.org",
-        "cvss": null,
-        "cwe": "CWE-401",
-        "id": "CVE-2022-42323",
-        "impact": {},
-        "last-modified": "2022-11-17T03:15:00",
-        "references": [
-            "https://xenbits.xenproject.org/xsa/advisory-419.txt",
-            "http://xenbits.xen.org/xsa/advisory-419.html",
-            "http://www.openwall.com/lists/oss-security/2022/11/01/9",
-            "https://www.debian.org/security/2022/dsa-5272",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/ZLI2NPNEH7CNJO3VZGQNOI4M4EWLNKPZ/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/YZVXG7OOOXCX6VIPEMLFDPIPUTFAYWPE/"
-        ],
-        "summary": "Xenstore: Cooperating guests can create arbitrary numbers of nodes T[his CNA information record relates to multiple CVEs; the text explains which aspects/vulnerabilities correspond to which CVE.] Since the fix of XSA-322 any Xenstore node owned by a removed domain will be modified to be owned by Dom0. This will allow two malicious guests working together to create an arbitrary number of Xenstore nodes. This is possible by domain A letting domain B write into domain A's local Xenstore tree. Domain B can then create many nodes and reboot. The nodes created by domain B will now be owned by Dom0. By repeating this process over and over again an arbitrary number of nodes can be created, as Dom0's number of nodes isn't limited by Xenstore quota."
     }
 ]
