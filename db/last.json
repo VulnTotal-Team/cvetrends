@@ -1,5 +1,23 @@
 [
     {
+        "Modified": "2022-11-17T12:15:00",
+        "Published": "2022-10-13T03:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "NVD-CWE-noinfo",
+        "id": "CVE-2022-42902",
+        "impact": {},
+        "last-modified": "2022-11-17T12:15:00",
+        "references": [
+            "https://git.lavasoftware.org/lava/lava/-/commit/e66b74cd6c175ff8826b8f3431740963be228b52?merge_request_iid=1834",
+            "https://git.lavasoftware.org/lava/lava/-/merge_requests/1834",
+            "https://www.debian.org/security/2022/dsa-5260",
+            "https://lists.debian.org/debian-lts-announce/2022/11/msg00019.html"
+        ],
+        "summary": "In Linaro Automated Validation Architecture (LAVA) before 2022.10, there is dynamic code execution in lava_server/lavatable.py. Due to improper input sanitization, an anonymous user can force the lava-server-gunicorn service to execute user-provided code on the server."
+    },
+    {
         "Modified": "2022-11-17T08:15:00",
         "Published": "2022-11-17T08:15:00",
         "access": {},
@@ -1863,20 +1881,5 @@
             "https://github.com/FreeRDP/FreeRDP/security/advisories/GHSA-5w4j-mrrh-jjrm"
         ],
         "summary": "FreeRDP is a free remote desktop protocol library and clients. In affected versions there is an out of bound read in ZGFX decoder component of FreeRDP. A malicious server can trick a FreeRDP based client to read out of bound data and try to decode it likely resulting in a crash. This issue has been addressed in the 2.9.0 release. Users are advised to upgrade."
-    },
-    {
-        "Modified": "2022-11-16T21:52:00",
-        "Published": "2022-11-16T20:15:00",
-        "access": {},
-        "assigner": "security-advisories@github.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-39320",
-        "impact": {},
-        "last-modified": "2022-11-16T21:52:00",
-        "references": [
-            "https://github.com/FreeRDP/FreeRDP/security/advisories/GHSA-qfq2-82qr-7f4j"
-        ],
-        "summary": "FreeRDP is a free remote desktop protocol library and clients. Affected versions of FreeRDP may attempt integer addition on too narrow types leads to allocation of a buffer too small holding the data written. A malicious server can trick a FreeRDP based client to read out of bound data and send it back to the server. This issue has been addressed in version 2.9.0 and all users are advised to upgrade. Users unable to upgrade should not use the `/usb` redirection switch."
     }
 ]
