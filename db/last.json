@@ -1,1407 +1,775 @@
 [
     {
-        "Modified": "2022-11-17T16:45:00",
-        "Published": "2022-11-10T18:15:00",
-        "access": {},
-        "assigner": "security-advisories@github.com",
-        "cvss": null,
-        "cwe": "CWE-269",
-        "id": "CVE-2022-39395",
-        "impact": {},
-        "last-modified": "2022-11-17T16:45:00",
-        "references": [
-            "https://go-vela.github.io/docs/installation/server/reference/#vela_repo_allowlist",
-            "https://github.com/go-vela/worker/releases/tag/v0.16.0",
-            "https://github.com/go-vela/server/commit/05558ee99d70f7d6f83bed7c8f78ac0b35fa26f4",
-            "https://docs.docker.com/engine/security/#docker-daemon-attack-surface",
-            "https://github.com/go-vela/ui/releases/tag/v0.17.0",
-            "https://github.com/go-vela/server/security/advisories/GHSA-5m7g-pj8w-7593",
-            "https://go-vela.github.io/docs/installation/worker/reference/#vela_runtime_privileged_images",
-            "https://github.com/go-vela/ui/security/advisories/GHSA-xf39-98m2-889v",
-            "https://github.com/go-vela/worker/security/advisories/GHSA-2w78-ffv6-p46w",
-            "https://github.com/go-vela/server/releases/tag/v0.16.0"
-        ],
-        "summary": "Vela is a Pipeline Automation (CI/CD) framework built on Linux container technology written in Golang. In Vela Server and Vela Worker prior to version 0.16.0 and Vela UI prior to version 0.17.0, some default configurations for Vela allow exploitation and container breakouts. Users should upgrade to Server 0.16.0, Worker 0.16.0, and UI 0.17.0 to fix the issue. After upgrading, Vela administrators will need to explicitly change the default settings to configure Vela as desired. Some of the fixes will interrupt existing workflows and will require Vela administrators to modify default settings. However, not applying the patch (or workarounds) will continue existing risk exposure. Some workarounds are available. Vela administrators can adjust the worker's `VELA_RUNTIME_PRIVILEGED_IMAGES` setting to be explicitly empty, leverage the `VELA_REPO_ALLOWLIST` setting on the server component to restrict access to a list of repositories that are allowed to be enabled, and/or audit enabled repositories and disable pull_requests if they are not needed."
-    },
-    {
-        "Modified": "2022-11-17T16:16:00",
-        "Published": "2022-11-12T05:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-787",
-        "id": "CVE-2022-45188",
-        "impact": {},
-        "last-modified": "2022-11-17T16:16:00",
-        "references": [
-            "https://rushbnt.github.io/bug%20analysis/netatalk-0day/",
-            "https://sourceforge.net/projects/netatalk/files/netatalk/",
-            "https://netatalk.sourceforge.io/3.1/ReleaseNotes3.1.13.html",
-            "https://netatalk.sourceforge.io/3.1/ReleaseNotes3.1.14.html"
-        ],
-        "summary": "Netatalk through 3.1.13 has an afp_getappl heap-based buffer overflow resulting in code execution via a crafted .appl file. This provides remote root access on some platforms such as FreeBSD (used for TrueNAS)."
-    },
-    {
-        "Modified": "2022-11-17T16:01:00",
-        "Published": "2022-11-10T20:15:00",
-        "access": {},
-        "assigner": "security-advisories@github.com",
-        "cvss": null,
-        "cwe": "CWE-212",
-        "id": "CVE-2022-39393",
-        "impact": {},
-        "last-modified": "2022-11-17T16:01:00",
-        "references": [
-            "https://github.com/bytecodealliance/wasmtime/commit/2614f2e9d2d36805ead8a8da0fa0c6e0d9e428a0",
-            "https://github.com/bytecodealliance/wasmtime/security/advisories/GHSA-wh6w-3828-g9qf"
-        ],
-        "summary": "Wasmtime is a standalone runtime for WebAssembly. Prior to version 2.0.2, there is a bug in Wasmtime's implementation of its pooling instance allocator where when a linear memory is reused for another instance the initial heap snapshot of the prior instance can be visible, erroneously to the next instance. This bug has been patched and users should upgrade to Wasmtime 2.0.2. Other mitigations include disabling the pooling allocator and disabling the `memory-init-cow`."
-    },
-    {
-        "Modified": "2022-11-17T15:45:00",
-        "Published": "2022-11-11T16:15:00",
-        "access": {},
-        "assigner": "secure@intel.com",
-        "cvss": null,
-        "cwe": "NVD-CWE-Other",
-        "id": "CVE-2022-26024",
-        "impact": {},
-        "last-modified": "2022-11-17T15:45:00",
-        "references": [
-            "https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00689.html"
-        ],
-        "summary": "Improper access control in the Intel(R) NUC HDMI Firmware Update Tool for NUC7i3DN, NUC7i5DN and NUC7i7DN before version 1.78.2.0.7 may allow an authenticated user to potentially enable escalation of privilege via local access."
-    },
-    {
-        "Modified": "2022-11-17T15:45:00",
-        "Published": "2022-11-11T16:15:00",
-        "access": {},
-        "assigner": "secure@intel.com",
-        "cvss": null,
-        "cwe": "CWE-287",
-        "id": "CVE-2022-21794",
-        "impact": {},
-        "last-modified": "2022-11-17T15:45:00",
-        "references": [
-            "https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00752.html"
-        ],
-        "summary": "Improper authentication in BIOS firmware for some Intel(R) NUC Boards, Intel(R) NUC Business, Intel(R) NUC Enthusiast, Intel(R) NUC Kits before version HN0067 may allow a privileged user to potentially enable escalation of privilege via local access."
-    },
-    {
-        "Modified": "2022-11-17T15:45:00",
-        "Published": "2022-05-24T14:15:00",
-        "access": {
-            "authentication": "SINGLE",
-            "complexity": "MEDIUM",
-            "vector": "NETWORK"
-        },
-        "assigner": "cve@mitre.org",
-        "cvss": 3.5,
-        "cvss-time": "2022-11-17T15:45:00",
-        "cvss-vector": "AV:N/AC:M/Au:S/C:N/I:P/A:N",
-        "cwe": "CWE-79",
-        "id": "CVE-2022-30464",
-        "impact": {
-            "availability": "NONE",
-            "confidentiality": "NONE",
-            "integrity": "PARTIAL"
-        },
-        "last-modified": "2022-11-17T15:45:00",
-        "references": [
-            "https://github.com/mikeccltt/chatbot/blob/main/chatbot-app-suggestion-phpoop/xss.md"
-        ],
-        "summary": "ChatBot App with Suggestion in PHP/OOP v1.0 is vulnerable to Cross Site Scripting (XSS) via /simple_chat_bot/classes/Master.php?f=save_response."
-    },
-    {
-        "Modified": "2022-11-17T15:45:00",
-        "Published": "2022-05-24T14:15:00",
-        "access": {
-            "authentication": "SINGLE",
-            "complexity": "LOW",
-            "vector": "NETWORK"
-        },
-        "assigner": "cve@mitre.org",
-        "cvss": 6.5,
-        "cvss-time": "2022-11-17T15:45:00",
-        "cvss-vector": "AV:N/AC:L/Au:S/C:P/I:P/A:P",
-        "cwe": "CWE-89",
-        "id": "CVE-2022-30459",
-        "impact": {
-            "availability": "PARTIAL",
-            "confidentiality": "PARTIAL",
-            "integrity": "PARTIAL"
-        },
-        "last-modified": "2022-11-17T15:45:00",
-        "references": [
-            "https://github.com/mikeccltt/chatbot/blob/main/chatbot-app-suggestion-phpoop/sql.md"
-        ],
-        "summary": "ChatBot App with Suggestion in PHP/OOP v1.0 is vulnerable to SQL Injection via /simple_chat_bot/classes/Master.php?f=delete_response, id."
-    },
-    {
-        "Modified": "2022-11-17T15:44:00",
-        "Published": "2022-11-11T16:15:00",
-        "access": {},
-        "assigner": "secure@intel.com",
-        "cvss": null,
-        "cwe": "CWE-20",
-        "id": "CVE-2021-26251",
-        "impact": {},
-        "last-modified": "2022-11-17T15:44:00",
-        "references": [
-            "https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00642.html"
-        ],
-        "summary": "Improper input validation in the Intel(R) Distribution of OpenVINO(TM) Toolkit may allow an authenticated user to potentially enable denial of service via network access."
-    },
-    {
-        "Modified": "2022-11-17T15:42:00",
-        "Published": "2022-11-11T16:15:00",
-        "access": {},
-        "assigner": "secure@intel.com",
-        "cvss": null,
-        "cwe": "CWE-287",
-        "id": "CVE-2022-29893",
-        "impact": {},
-        "last-modified": "2022-11-17T15:42:00",
-        "references": [
-            "https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00610.html"
-        ],
-        "summary": "Improper authentication in firmware for Intel(R) AMT before versions 11.8.93, 11.22.93, 11.12.93, 12.0.92, 14.1.67, 15.0.42, 16.1.25 may allow an authenticated user to potentially enable escalation of privilege via network access."
-    },
-    {
-        "Modified": "2022-11-17T15:37:00",
-        "Published": "2022-11-11T16:15:00",
-        "access": {},
-        "assigner": "secure@intel.com",
-        "cvss": null,
-        "cwe": "CWE-401",
-        "id": "CVE-2022-29515",
-        "impact": {},
-        "last-modified": "2022-11-17T15:37:00",
-        "references": [
-            "https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00610.html"
-        ],
-        "summary": "Missing release of memory after effective lifetime in firmware for Intel(R) SPS before versions SPS_E3_06.00.03.035.0 may allow a privileged user to potentially enable denial of service via local access."
-    },
-    {
-        "Modified": "2022-11-17T15:30:00",
-        "Published": "2022-11-11T16:15:00",
-        "access": {},
-        "assigner": "secure@intel.com",
-        "cvss": null,
-        "cwe": "CWE-287",
-        "id": "CVE-2022-26508",
-        "impact": {},
-        "last-modified": "2022-11-17T15:30:00",
-        "references": [
-            "https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00710.html"
-        ],
-        "summary": "Improper authentication in the Intel(R) SDP Tool before version 3.0.0 may allow an unauthenticated user to potentially enable information disclosure via network access."
-    },
-    {
-        "Modified": "2022-11-17T15:30:00",
-        "Published": "2022-11-11T16:15:00",
-        "access": {},
-        "assigner": "secure@intel.com",
-        "cvss": null,
-        "cwe": "CWE-119",
-        "id": "CVE-2022-29486",
-        "impact": {},
-        "last-modified": "2022-11-17T15:30:00",
-        "references": [
-            "https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00695.html"
-        ],
-        "summary": "Improper buffer restrictions in the Hyperscan library maintained by Intel(R) all versions downloaded before 04/29/2022 may allow an unauthenticated user to potentially enable escalation of privilege via network access."
-    },
-    {
-        "Modified": "2022-11-17T15:30:00",
-        "Published": "2022-11-11T16:15:00",
-        "access": {},
-        "assigner": "secure@intel.com",
-        "cvss": null,
-        "cwe": "CWE-119",
-        "id": "CVE-2022-26124",
-        "impact": {},
-        "last-modified": "2022-11-17T15:30:00",
-        "references": [
-            "https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00752.html"
-        ],
-        "summary": "Improper buffer restrictions in BIOS firmware for some Intel(R) NUC Boards, Intel(R) NUC 8 Boards, Intel(R) NUC 8 Rugged Boards and Intel(R) NUC 8 Rugged Kits before version CHAPLCEL.0059 may allow a privileged user to potentially enable escalation of privilege via local access."
-    },
-    {
-        "Modified": "2022-11-17T15:25:00",
-        "Published": "2022-10-11T19:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "NVD-CWE-Other",
-        "id": "CVE-2022-37599",
-        "impact": {},
-        "last-modified": "2022-11-17T15:25:00",
-        "references": [
-            "https://github.com/webpack/loader-utils/blob/d9f4e23cf411d8556f8bac2d3bf05a6e0103b568/lib/interpolateName.js#L38",
-            "https://github.com/webpack/loader-utils/issues/211",
-            "https://github.com/webpack/loader-utils/blob/d9f4e23cf411d8556f8bac2d3bf05a6e0103b568/lib/interpolateName.js#L83"
-        ],
-        "summary": "A Regular expression denial of service (ReDoS) flaw was found in Function interpolateName in interpolateName.js in webpack loader-utils 2.0.0 via the resourcePath variable in interpolateName.js."
-    },
-    {
-        "Modified": "2022-11-17T15:16:00",
-        "Published": "2022-11-11T16:15:00",
-        "access": {},
-        "assigner": "secure@intel.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-30297",
-        "impact": {},
-        "last-modified": "2022-11-17T15:16:00",
-        "references": [
-            "https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00716.html"
-        ],
-        "summary": "Cross-site scripting in the Intel(R) EMA software before version 1.8.0 may allow a privileged user to potentially enable escalation of privilege via local access."
-    },
-    {
-        "Modified": "2022-11-17T15:16:00",
-        "Published": "2022-11-09T21:15:00",
-        "access": {},
-        "assigner": "psirt@huawei.com",
-        "cvss": null,
-        "cwe": "NVD-CWE-Other",
-        "id": "CVE-2022-44560",
-        "impact": {},
-        "last-modified": "2022-11-17T15:16:00",
-        "references": [
-            "https://consumer.huawei.com/en/support/bulletin/2022/11/",
-            "https://device.harmonyos.com/en/docs/security/update/security-bulletins-phones-202211-0000001441016433"
-        ],
-        "summary": "The launcher module has an Intent redirection vulnerability. Successful exploitation of this vulnerability may cause launcher module data to be modified."
-    },
-    {
-        "Modified": "2022-11-17T15:15:00",
-        "Published": "2022-05-16T04:15:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "LOW",
-            "vector": "NETWORK"
-        },
-        "assigner": "cve@mitre.org",
-        "cvss": 5.0,
-        "cvss-time": "2022-11-17T15:15:00",
-        "cvss-vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N",
-        "cwe": "CWE-116",
-        "id": "CVE-2022-30781",
-        "impact": {
-            "availability": "NONE",
-            "confidentiality": "NONE",
-            "integrity": "PARTIAL"
-        },
-        "last-modified": "2022-11-17T15:15:00",
-        "references": [
-            "https://blog.gitea.io/2022/05/gitea-1.16.7-is-released/",
-            "https://github.com/go-gitea/gitea/pull/19487",
-            "https://github.com/go-gitea/gitea/pull/19490",
-            "http://packetstormsecurity.com/files/168400/Gitea-1.16.6-Remote-Code-Execution.html",
-            "http://packetstormsecurity.com/files/169928/Gitea-Git-Fetch-Remote-Code-Execution.html"
-        ],
-        "summary": "Gitea before 1.16.7 does not escape git fetch remote."
-    },
-    {
-        "Modified": "2022-11-17T15:11:00",
-        "Published": "2022-11-11T16:15:00",
-        "access": {},
-        "assigner": "secure@intel.com",
-        "cvss": null,
-        "cwe": "CWE-20",
-        "id": "CVE-2022-30542",
-        "impact": {},
-        "last-modified": "2022-11-17T15:11:00",
-        "references": [
-            "https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00708.html"
-        ],
-        "summary": "Improper input validation in the firmware for some Intel(R) Server Board S2600WF, Intel(R) Server System R1000WF and Intel(R) Server System R2000WF families before version R02.01.0014 may allow a privileged user to potentially enable an escalation of privilege via local access."
-    },
-    {
-        "Modified": "2022-11-17T15:07:00",
-        "Published": "2022-11-11T16:15:00",
-        "access": {},
-        "assigner": "secure@intel.com",
-        "cvss": null,
-        "cwe": "CWE-427",
-        "id": "CVE-2022-30548",
-        "impact": {},
-        "last-modified": "2022-11-17T15:07:00",
-        "references": [
-            "https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00673.html"
-        ],
-        "summary": "Uncontrolled search path element in the Intel(R) Glorp software may allow an authenticated user to potentially enable escalation of privilege via local access."
-    },
-    {
-        "Modified": "2022-11-17T15:06:00",
-        "Published": "2022-11-15T11:15:00",
-        "access": {},
-        "assigner": "info@cert.vde.com",
-        "cvss": null,
-        "cwe": "CWE-119",
-        "id": "CVE-2022-3461",
-        "impact": {},
-        "last-modified": "2022-11-17T15:06:00",
-        "references": [
-            "https://cert.vde.com/en/advisories/VDE-2022-048/"
-        ],
-        "summary": "In PHOENIX CONTACT Automationworx Software Suite up to version 1.89 manipulated PC Worx or Config+ files could lead to a heap buffer overflow and a read access violation. Availability, integrity, or confidentiality of an application programming workstation might be compromised by attacks using these vulnerabilities."
-    },
-    {
-        "Modified": "2022-11-17T15:02:00",
-        "Published": "2022-11-11T16:15:00",
-        "access": {},
-        "assigner": "secure@intel.com",
-        "cvss": null,
-        "cwe": "CWE-400",
-        "id": "CVE-2022-30691",
-        "impact": {},
-        "last-modified": "2022-11-17T15:02:00",
-        "references": [
-            "https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00740.html"
-        ],
-        "summary": "Uncontrolled resource consumption in the Intel(R) Support Android application before version 22.02.28 may allow an authenticated user to potentially enable denial of service via local access."
-    },
-    {
-        "Modified": "2022-11-17T15:01:00",
-        "Published": "2022-11-11T16:15:00",
-        "access": {},
-        "assigner": "secure@intel.com",
-        "cvss": null,
-        "cwe": "NVD-CWE-Other",
-        "id": "CVE-2022-33942",
-        "impact": {},
-        "last-modified": "2022-11-17T15:01:00",
-        "references": [
-            "https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00713.html"
-        ],
-        "summary": "Protection mechanism failure in the Intel(R) DCM software before version 5.0 may allow an unauthenticated user to potentially enable escalation of privilege via adjacent access."
-    },
-    {
-        "Modified": "2022-11-17T15:00:00",
-        "Published": "2022-11-15T01:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-89",
-        "id": "CVE-2022-42121",
-        "impact": {},
-        "last-modified": "2022-11-17T15:00:00",
-        "references": [
-            "http://liferay.com",
-            "https://issues.liferay.com/browse/LPE-17414",
-            "https://portal.liferay.dev/learn/security/known-vulnerabilities/-/asset_publisher/HbL5mxmVrnXW/content/cve-2022-42121"
-        ],
-        "summary": "A SQL injection vulnerability in the Layout module in Liferay Portal 7.1.3 through 7.4.3.4, and Liferay DXP 7.1 before fix pack 27, 7.2 before fix pack 17, 7.3 before service pack 3, and 7.4 GA allows remote authenticated attackers to execute arbitrary SQL commands via a crafted payload injected into a page template's 'Name' field."
-    },
-    {
-        "Modified": "2022-11-17T15:00:00",
-        "Published": "2022-11-15T01:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-89",
-        "id": "CVE-2022-42122",
-        "impact": {},
-        "last-modified": "2022-11-17T15:00:00",
-        "references": [
-            "http://liferay.com",
-            "https://issues.liferay.com/browse/LPE-17520",
-            "https://portal.liferay.dev/learn/security/known-vulnerabilities/-/asset_publisher/HbL5mxmVrnXW/content/cve-2022-42122"
-        ],
-        "summary": "A SQL injection vulnerability in the Friendly Url module in Liferay Portal 7.3.7, and Liferay DXP 7.3 fix pack 2 through update 4 allows attackers to execute arbitrary SQL commands via a crafted payload injected into the `title` field of a friendly URL."
-    },
-    {
-        "Modified": "2022-11-17T14:58:00",
-        "Published": "2022-11-16T08:15:00",
+        "Modified": "2022-11-17T18:36:00",
+        "Published": "2022-11-13T08:15:00",
         "access": {},
         "assigner": "cna@vuldb.com",
         "cvss": null,
-        "cwe": "CWE-89",
-        "id": "CVE-2022-4012",
+        "cwe": "CWE-377",
+        "id": "CVE-2022-3969",
         "impact": {},
-        "last-modified": "2022-11-17T14:58:00",
+        "last-modified": "2022-11-17T18:36:00",
         "references": [
-            "https://vuldb.com/?id.213786",
-            "https://github.com/golamsarwar08/hms/issues/1"
+            "https://github.com/openkm/document-management-system/releases/tag/v6.3.12",
+            "https://github.com/openkm/document-management-system/commit/c069e4d73ab8864345c25119d8459495f45453e1",
+            "https://vuldb.com/?id.213548",
+            "https://github.com/openkm/document-management-system/pull/332"
         ],
-        "summary": "A vulnerability classified as critical has been found in Hospital Management Center. Affected is an unknown function of the file patient-info.php. The manipulation of the argument pt_id leads to sql injection. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used. VDB-213786 is the identifier assigned to this vulnerability."
+        "summary": "A vulnerability was found in OpenKM up to 6.3.11 and classified as problematic. Affected by this issue is the function getFileExtension of the file src/main/java/com/openkm/util/FileUtils.java. The manipulation leads to insecure temporary file. Upgrading to version 6.3.12 is able to address this issue. The name of the patch is c069e4d73ab8864345c25119d8459495f45453e1. It is recommended to upgrade the affected component. The identifier of this vulnerability is VDB-213548."
     },
     {
-        "Modified": "2022-11-17T14:56:00",
-        "Published": "2022-11-16T08:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-352",
-        "id": "CVE-2022-4013",
-        "impact": {},
-        "last-modified": "2022-11-17T14:56:00",
-        "references": [
-            "https://github.com/golamsarwar08/hms/issues/2",
-            "https://vuldb.com/?id.213787"
-        ],
-        "summary": "A vulnerability classified as problematic was found in Hospital Management Center. Affected by this vulnerability is an unknown functionality of the file appointment.php. The manipulation leads to cross-site request forgery. The attack can be launched remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-213787."
-    },
-    {
-        "Modified": "2022-11-17T14:54:00",
-        "Published": "2022-11-15T01:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-42111",
-        "impact": {},
-        "last-modified": "2022-11-17T14:54:00",
-        "references": [
-            "https://issues.liferay.com/browse/LPE-17379",
-            "https://portal.liferay.dev/learn/security/known-vulnerabilities/-/asset_publisher/HbL5mxmVrnXW/content/cve-2022-42111"
-        ],
-        "summary": "A Cross-site scripting (XSS) vulnerability in the Sharing module's user notification in Liferay Portal 7.2.1 through 7.4.2, and Liferay DXP 7.2 before fix pack 19, and 7.3 before update 4 allows remote attackers to inject arbitrary web script or HTML by sharing an asset with a crafted payload."
-    },
-    {
-        "Modified": "2022-11-17T14:53:00",
-        "Published": "2022-11-11T16:15:00",
-        "access": {},
-        "assigner": "secure@intel.com",
-        "cvss": null,
-        "cwe": "CWE-20",
-        "id": "CVE-2022-26006",
-        "impact": {},
-        "last-modified": "2022-11-17T14:53:00",
-        "references": [
-            "https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00688.html"
-        ],
-        "summary": "Improper input validation in the BIOS firmware for some Intel(R) Processors may allow a privileged user to potentially enable escalation of privilege via local access."
-    },
-    {
-        "Modified": "2022-11-17T14:50:00",
-        "Published": "2022-11-15T01:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-89",
-        "id": "CVE-2022-42120",
-        "impact": {},
-        "last-modified": "2022-11-17T14:50:00",
-        "references": [
-            "http://liferay.com",
-            "https://issues.liferay.com/browse/LPE-17513",
-            "https://portal.liferay.dev/learn/security/known-vulnerabilities/-/asset_publisher/HbL5mxmVrnXW/content/cve-2022-42120"
-        ],
-        "summary": "A SQL injection vulnerability in the Fragment module in Liferay Portal 7.3.3 through 7.4.3.16, and Liferay DXP 7.3 before update 4, and 7.4 before update 17 allows attackers to execute arbitrary SQL commands via a PortletPreferences' `namespace` attribute."
-    },
-    {
-        "Modified": "2022-11-17T14:49:00",
-        "Published": "2022-11-14T21:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-434",
-        "id": "CVE-2022-43146",
-        "impact": {},
-        "last-modified": "2022-11-17T14:49:00",
-        "references": [
-            "https://www.sourcecodester.com/php/15688/canteen-management-system-project-source-code-php.html",
-            "https://medium.com/@syedmudassiruddinalvi/cve-2022-43146-rce-via-arbitrary-file-upload-28dfa77c5de7"
-        ],
-        "summary": "An arbitrary file upload vulnerability in the image upload function of Canteen Management System v1.0 allows attackers to execute arbitrary code via a crafted PHP file."
-    },
-    {
-        "Modified": "2022-11-17T14:48:00",
-        "Published": "2022-11-15T01:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-42119",
-        "impact": {},
-        "last-modified": "2022-11-17T14:48:00",
-        "references": [
-            "https://portal.liferay.dev/learn/security/known-vulnerabilities/-/asset_publisher/HbL5mxmVrnXW/content/cve-2022-42119",
-            "http://liferay.com",
-            "https://issues.liferay.com/browse/LPE-17632"
-        ],
-        "summary": "Certain Liferay products are vulnerable to Cross Site Scripting (XSS) via the Commerce module. This affects Liferay Portal 7.3.5 through 7.4.2 and Liferay DXP 7.3 before update 8."
-    },
-    {
-        "Modified": "2022-11-17T14:43:00",
-        "Published": "2022-11-11T16:15:00",
-        "access": {},
-        "assigner": "secure@intel.com",
-        "cvss": null,
-        "cwe": "CWE-276",
-        "id": "CVE-2022-36367",
-        "impact": {},
-        "last-modified": "2022-11-17T14:43:00",
-        "references": [
-            "https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00740.html"
-        ],
-        "summary": "Incorrect default permissions in the Intel(R) Support Android application before version v22.02.28 may allow a privileged user to potentially enable information disclosure via local access."
-    },
-    {
-        "Modified": "2022-11-17T14:42:00",
-        "Published": "2022-11-15T01:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-42118",
-        "impact": {},
-        "last-modified": "2022-11-17T14:42:00",
-        "references": [
-            "https://issues.liferay.com/browse/LPE-17342",
-            "http://liferay.com",
-            "https://portal.liferay.dev/learn/security/known-vulnerabilities/-/asset_publisher/HbL5mxmVrnXW/content/cve-2022-42118"
-        ],
-        "summary": "A Cross-site scripting (XSS) vulnerability in the Portal Search module in Liferay Portal 7.1.0 through 7.4.2, and Liferay DXP 7.1 before fix pack 27, 7.2 before fix pack 15, and 7.3 before service pack 3 allows remote attackers to inject arbitrary web script or HTML via the `tag` parameter."
-    },
-    {
-        "Modified": "2022-11-17T14:42:00",
-        "Published": "2022-11-11T18:15:00",
-        "access": {},
-        "assigner": "psirt@us.ibm.com",
-        "cvss": null,
-        "cwe": "CWE-287",
-        "id": "CVE-2022-34331",
-        "impact": {},
-        "last-modified": "2022-11-17T14:42:00",
-        "references": [
-            "https://www.ibm.com/support/pages/node/6833632",
-            "https://exchange.xforce.ibmcloud.com/vulnerabilities/229695"
-        ],
-        "summary": "After performing a sequence of Power FW950, FW1010 maintenance operations a SRIOV network adapter can be improperly configured leading to desired VEPA configuration being disabled. IBM X-Force ID: 229695."
-    },
-    {
-        "Modified": "2022-11-17T14:37:00",
-        "Published": "2022-11-15T00:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-42110",
-        "impact": {},
-        "last-modified": "2022-11-17T14:37:00",
-        "references": [
-            "https://issues.liferay.com/browse/LPE-17403",
-            "https://portal.liferay.dev/learn/security/known-vulnerabilities/-/asset_publisher/HbL5mxmVrnXW/content/cve-2022-42110"
-        ],
-        "summary": "A Cross-site scripting (XSS) vulnerability in the Announcements module in Liferay Portal 7.1.0 through 7.4.2, and Liferay DXP 7.1 before fix pack 27, 7.2 before fix pack 17, and 7.3 before service pack 3 allows remote attackers to inject arbitrary web script or HTML."
-    },
-    {
-        "Modified": "2022-11-17T14:35:00",
-        "Published": "2022-11-09T22:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-287",
-        "id": "CVE-2022-44244",
-        "impact": {},
-        "last-modified": "2022-11-17T14:35:00",
-        "references": [
-            "https://gist.github.com/cai-niao98/58c97899695488bd73a73d56adf44c4c",
-            "https://github.com/cai-niao98/lin-cms/"
-        ],
-        "summary": "An authentication bypass in Lin-CMS v0.2.1 allows attackers to escalate privileges to Super Administrator."
-    },
-    {
-        "Modified": "2022-11-17T14:30:00",
-        "Published": "2022-11-11T16:15:00",
-        "access": {},
-        "assigner": "secure@intel.com",
-        "cvss": null,
-        "cwe": "CWE-20",
-        "id": "CVE-2022-29466",
-        "impact": {},
-        "last-modified": "2022-11-17T14:30:00",
-        "references": [
-            "https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00610.html"
-        ],
-        "summary": "Improper input validation in firmware for Intel(R) SPS before version SPS_E3_04.01.04.700.0 may allow an authenticated user to potentially enable denial of service via local access."
-    },
-    {
-        "Modified": "2022-11-17T14:22:00",
-        "Published": "2022-11-11T16:15:00",
-        "access": {},
-        "assigner": "secure@intel.com",
-        "cvss": null,
-        "cwe": "CWE-787",
-        "id": "CVE-2022-28667",
-        "impact": {},
-        "last-modified": "2022-11-17T14:22:00",
-        "references": [
-            "https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00687.html"
-        ],
-        "summary": "Out-of-bounds write for some Intel(R) PROSet/Wireless WiFi software before version 22.140 may allow an unauthenticated user to potentially enable denial of service via adjacent access."
-    },
-    {
-        "Modified": "2022-11-17T14:19:00",
-        "Published": "2022-11-14T23:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-384",
-        "id": "CVE-2022-43687",
-        "impact": {},
-        "last-modified": "2022-11-17T14:19:00",
-        "references": [
-            "https://github.com/concretecms/concretecms/releases/8.5.10",
-            "https://documentation.concretecms.org/developers/introduction/version-history/913-release-notes",
-            "https://documentation.concretecms.org/developers/introduction/version-history/8510-release-notes",
-            "https://www.concretecms.org/about/project-news/security/concrete-cms-security-advisory-2022-10-31",
-            "https://github.com/concretecms/concretecms/releases/9.1.3"
-        ],
-        "summary": "Concrete CMS (formerly concrete5) below 8.5.10 and between 9.0.0 and 9.1.2 does not issue a new session ID upon successful OAuth authentication. Remediate by updating to Concrete CMS 9.1.3+ or 8.5.10+."
-    },
-    {
-        "Modified": "2022-11-17T14:19:00",
-        "Published": "2022-11-11T16:15:00",
-        "access": {},
-        "assigner": "secure@intel.com",
-        "cvss": null,
-        "cwe": "CWE-427",
-        "id": "CVE-2022-27638",
-        "impact": {},
-        "last-modified": "2022-11-17T14:19:00",
-        "references": [
-            "https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00715.html"
-        ],
-        "summary": "Uncontrolled search path element in the Intel(R) Advanced Link Analyzer Pro before version 22.2 and Standard edition software before version 22.1.1 STD may allow an authenticated user to potentially enable escalation of privilege via local access."
-    },
-    {
-        "Modified": "2022-11-17T14:15:00",
-        "Published": "2022-11-14T23:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-319",
-        "id": "CVE-2022-43691",
-        "impact": {},
-        "last-modified": "2022-11-17T14:15:00",
-        "references": [
-            "https://github.com/concretecms/concretecms/releases/8.5.10",
-            "https://documentation.concretecms.org/developers/introduction/version-history/913-release-notes",
-            "https://documentation.concretecms.org/developers/introduction/version-history/8510-release-notes",
-            "https://www.concretecms.org/about/project-news/security/concrete-cms-security-advisory-2022-10-31",
-            "https://github.com/concretecms/concretecms/releases/9.1.3"
-        ],
-        "summary": "Concrete CMS (formerly concrete5) below 8.5.10 and between 9.0.0 and 9.1.2 inadvertently disclose server-side sensitive information (secrets in environment variables and server information) when Debug Mode is left on in production."
-    },
-    {
-        "Modified": "2022-11-17T14:15:00",
-        "Published": "2022-10-26T20:15:00",
-        "access": {},
-        "assigner": "security-advisories@github.com",
-        "cvss": null,
-        "cwe": "CWE-269",
-        "id": "CVE-2022-39286",
-        "impact": {},
-        "last-modified": "2022-11-17T14:15:00",
-        "references": [
-            "https://github.com/jupyter/jupyter_core/commit/1118c8ce01800cb689d51f655f5ccef19516e283",
-            "https://github.com/jupyter/jupyter_core/security/advisories/GHSA-m678-f26j-3hrp",
-            "https://lists.debian.org/debian-lts-announce/2022/11/msg00022.html"
-        ],
-        "summary": "Jupyter Core is a package for the core common functionality of Jupyter projects. Jupyter Core prior to version 4.11.2 contains an arbitrary code execution vulnerability in `jupyter_core` that stems from `jupyter_core` executing untrusted files in CWD. This vulnerability allows one user to run code as another. Version 4.11.2 contains a patch for this issue. There are no known workarounds."
-    },
-    {
-        "Modified": "2022-11-17T14:15:00",
-        "Published": "2022-08-30T07:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-476",
-        "id": "CVE-2021-46837",
-        "impact": {},
-        "last-modified": "2022-11-17T14:15:00",
-        "references": [
-            "https://downloads.asterisk.org/pub/security/AST-2021-006.html",
-            "https://lists.debian.org/debian-lts-announce/2022/11/msg00021.html"
-        ],
-        "summary": "res_pjsip_t38 in Sangoma Asterisk 16.x before 16.16.2, 17.x before 17.9.3, and 18.x before 18.2.2, and Certified Asterisk before 16.8-cert7, allows an attacker to trigger a crash by sending an m=image line and zero port in a response to a T.38 re-invite initiated by Asterisk. This is a re-occurrence of the CVE-2019-15297 symptoms but not for exactly the same reason. The crash occurs because there is an append operation relative to the active topology, but this should instead be a replace operation."
-    },
-    {
-        "Modified": "2022-11-17T14:15:00",
-        "Published": "2022-04-25T16:16:00",
+        "Modified": "2022-11-17T18:36:00",
+        "Published": "2017-02-15T06:59:00",
         "access": {
             "authentication": "NONE",
             "complexity": "MEDIUM",
             "vector": "NETWORK"
         },
-        "assigner": "security-advisories@github.com",
-        "cvss": 4.3,
-        "cvss-time": "2022-11-17T14:15:00",
-        "cvss-vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P",
-        "cwe": "CWE-835",
-        "id": "CVE-2022-24792",
-        "impact": {
-            "availability": "PARTIAL",
-            "confidentiality": "NONE",
-            "integrity": "NONE"
-        },
-        "last-modified": "2022-11-17T14:15:00",
-        "references": [
-            "https://github.com/pjsip/pjproject/commit/947bc1ee6d05be10204b918df75a503415fd3213",
-            "https://github.com/pjsip/pjproject/security/advisories/GHSA-rwgw-vwxg-q799",
-            "https://lists.debian.org/debian-lts-announce/2022/05/msg00047.html",
-            "https://security.gentoo.org/glsa/202210-37",
-            "https://lists.debian.org/debian-lts-announce/2022/11/msg00021.html"
-        ],
-        "summary": "PJSIP is a free and open source multimedia communication library written in C. A denial-of-service vulnerability affects applications on a 32-bit systems that use PJSIP versions 2.12 and prior to play/read invalid WAV files. The vulnerability occurs when reading WAV file data chunks with length greater than 31-bit integers. The vulnerability does not affect 64-bit apps and should not affect apps that only plays trusted WAV files. A patch is available on the `master` branch of the `pjsip/project` GitHub repository. As a workaround, apps can reject a WAV file received from an unknown source or validate the file first."
-    },
-    {
-        "Modified": "2022-11-17T14:15:00",
-        "Published": "2022-04-15T05:15:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "LOW",
-            "vector": "NETWORK"
-        },
-        "assigner": "cve@mitre.org",
-        "cvss": 5.0,
-        "cvss-time": "2022-11-17T14:15:00",
-        "cvss-vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
-        "cwe": "CWE-400",
-        "id": "CVE-2022-26498",
-        "impact": {
-            "availability": "PARTIAL",
-            "confidentiality": "NONE",
-            "integrity": "NONE"
-        },
-        "last-modified": "2022-11-17T14:15:00",
-        "references": [
-            "https://downloads.asterisk.org/pub/security/",
-            "https://downloads.asterisk.org/pub/security/AST-2022-001.html",
-            "http://packetstormsecurity.com/files/166744/Asterisk-Project-Security-Advisory-AST-2022-001.html",
-            "https://lists.debian.org/debian-lts-announce/2022/11/msg00021.html"
-        ],
-        "summary": "An issue was discovered in Asterisk through 19.x. When using STIR/SHAKEN, it is possible to download files that are not certificates. These files could be much larger than what one would expect to download, leading to Resource Exhaustion. This is fixed in 16.25.2, 18.11.2, and 19.3.2."
-    },
-    {
-        "Modified": "2022-11-17T14:15:00",
-        "Published": "2022-04-15T05:15:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "LOW",
-            "vector": "NETWORK"
-        },
-        "assigner": "cve@mitre.org",
-        "cvss": 6.4,
-        "cvss-time": "2022-11-17T14:15:00",
-        "cvss-vector": "AV:N/AC:L/Au:N/C:P/I:P/A:N",
-        "cwe": "CWE-918",
-        "id": "CVE-2022-26499",
-        "impact": {
-            "availability": "NONE",
-            "confidentiality": "PARTIAL",
-            "integrity": "PARTIAL"
-        },
-        "last-modified": "2022-11-17T14:15:00",
-        "references": [
-            "https://downloads.asterisk.org/pub/security/",
-            "https://downloads.asterisk.org/pub/security/AST-2022-002.html",
-            "http://packetstormsecurity.com/files/166745/Asterisk-Project-Security-Advisory-AST-2022-002.html",
-            "https://lists.debian.org/debian-lts-announce/2022/11/msg00021.html"
-        ],
-        "summary": "An SSRF issue was discovered in Asterisk through 19.x. When using STIR/SHAKEN, it's possible to send arbitrary requests (such as GET) to interfaces such as localhost by using the Identity header. This is fixed in 16.25.2, 18.11.2, and 19.3.2."
-    },
-    {
-        "Modified": "2022-11-17T14:15:00",
-        "Published": "2022-04-15T05:15:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "LOW",
-            "vector": "NETWORK"
-        },
-        "assigner": "cve@mitre.org",
-        "cvss": 7.5,
-        "cvss-time": "2022-11-17T14:15:00",
-        "cvss-vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
-        "cwe": "CWE-89",
-        "id": "CVE-2022-26651",
-        "impact": {
-            "availability": "PARTIAL",
-            "confidentiality": "PARTIAL",
-            "integrity": "PARTIAL"
-        },
-        "last-modified": "2022-11-17T14:15:00",
-        "references": [
-            "https://downloads.asterisk.org/pub/security/",
-            "https://downloads.asterisk.org/pub/security/AST-2022-003.html",
-            "http://packetstormsecurity.com/files/166746/Asterisk-Project-Security-Advisory-AST-2022-003.html",
-            "https://lists.debian.org/debian-lts-announce/2022/11/msg00021.html"
-        ],
-        "summary": "An issue was discovered in Asterisk through 19.x and Certified Asterisk through 16.8-cert13. The func_odbc module provides possibly inadequate escaping functionality for backslash characters in SQL queries, resulting in user-provided data creating a broken SQL query or possibly a SQL injection. This is fixed in 16.25.2, 18.11.2, and 19.3.2, and 16.8-cert14."
-    },
-    {
-        "Modified": "2022-11-17T14:15:00",
-        "Published": "2022-04-06T14:15:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "LOW",
-            "vector": "NETWORK"
-        },
-        "assigner": "security-advisories@github.com",
-        "cvss": 7.5,
-        "cvss-time": "2022-11-17T14:15:00",
-        "cvss-vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
-        "cwe": "CWE-787",
-        "id": "CVE-2022-24786",
-        "impact": {
-            "availability": "PARTIAL",
-            "confidentiality": "PARTIAL",
-            "integrity": "PARTIAL"
-        },
-        "last-modified": "2022-11-17T14:15:00",
-        "references": [
-            "https://github.com/pjsip/pjproject/security/advisories/GHSA-vhxv-phmx-g52q",
-            "https://github.com/pjsip/pjproject/commit/11559e49e65bdf00922ad5ae28913ec6a198d508",
-            "https://security.gentoo.org/glsa/202210-37",
-            "https://lists.debian.org/debian-lts-announce/2022/11/msg00021.html"
-        ],
-        "summary": "PJSIP is a free and open source multimedia communication library written in C. PJSIP versions 2.12 and prior do not parse incoming RTCP feedback RPSI (Reference Picture Selection Indication) packet, but any app that directly uses pjmedia_rtcp_fb_parse_rpsi() will be affected. A patch is available in the `master` branch of the `pjsip/pjproject` GitHub repository. There are currently no known workarounds."
-    },
-    {
-        "Modified": "2022-11-17T14:15:00",
-        "Published": "2022-04-06T14:15:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "MEDIUM",
-            "vector": "NETWORK"
-        },
-        "assigner": "security-advisories@github.com",
-        "cvss": 4.3,
-        "cvss-time": "2022-11-17T14:15:00",
-        "cvss-vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P",
-        "cwe": "CWE-120",
-        "id": "CVE-2022-24793",
-        "impact": {
-            "availability": "PARTIAL",
-            "confidentiality": "NONE",
-            "integrity": "NONE"
-        },
-        "last-modified": "2022-11-17T14:15:00",
-        "references": [
-            "https://github.com/pjsip/pjproject/commit/9fae8f43accef8ea65d4a8ae9cdf297c46cfe29a",
-            "https://github.com/pjsip/pjproject/security/advisories/GHSA-p6g5-v97c-w5q4",
-            "https://lists.debian.org/debian-lts-announce/2022/05/msg00047.html",
-            "https://security.gentoo.org/glsa/202210-37",
-            "https://lists.debian.org/debian-lts-announce/2022/11/msg00021.html"
-        ],
-        "summary": "PJSIP is a free and open source multimedia communication library written in C. A buffer overflow vulnerability in versions 2.12 and prior affects applications that uses PJSIP DNS resolution. It doesn't affect PJSIP users who utilize an external resolver. A patch is available in the `master` branch of the `pjsip/pjproject` GitHub repository. A workaround is to disable DNS resolution in PJSIP config (by setting `nameserver_count` to zero) or use an external resolver instead."
-    },
-    {
-        "Modified": "2022-11-17T14:15:00",
-        "Published": "2022-03-22T17:15:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "LOW",
-            "vector": "NETWORK"
-        },
-        "assigner": "security-advisories@github.com",
-        "cvss": 5.0,
-        "cvss-time": "2022-11-17T14:15:00",
-        "cvss-vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
-        "cwe": "CWE-121",
-        "id": "CVE-2022-24764",
-        "impact": {
-            "availability": "PARTIAL",
-            "confidentiality": "NONE",
-            "integrity": "NONE"
-        },
-        "last-modified": "2022-11-17T14:15:00",
-        "references": [
-            "https://github.com/pjsip/pjproject/commit/560a1346f87aabe126509bb24930106dea292b00",
-            "https://github.com/pjsip/pjproject/security/advisories/GHSA-f5qg-pqcg-765m",
-            "https://lists.debian.org/debian-lts-announce/2022/03/msg00035.html",
-            "https://security.gentoo.org/glsa/202210-37",
-            "https://lists.debian.org/debian-lts-announce/2022/11/msg00021.html"
-        ],
-        "summary": "PJSIP is a free and open source multimedia communication library written in C. Versions 2.12 and prior contain a stack buffer overflow vulnerability that affects PJSUA2 users or users that call the API `pjmedia_sdp_print(), pjmedia_sdp_media_print()`. Applications that do not use PJSUA2 and do not directly call `pjmedia_sdp_print()` or `pjmedia_sdp_media_print()` should not be affected. A patch is available on the `master` branch of the `pjsip/pjproject` GitHub repository. There are currently no known workarounds."
-    },
-    {
-        "Modified": "2022-11-17T14:15:00",
-        "Published": "2022-03-30T21:15:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "LOW",
-            "vector": "NETWORK"
-        },
-        "assigner": "security-advisories@github.com",
-        "cvss": 5.0,
-        "cvss-time": "2022-11-17T14:15:00",
-        "cvss-vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
-        "cwe": "CWE-835",
-        "id": "CVE-2022-24763",
-        "impact": {
-            "availability": "PARTIAL",
-            "confidentiality": "NONE",
-            "integrity": "NONE"
-        },
-        "last-modified": "2022-11-17T14:15:00",
-        "references": [
-            "https://github.com/pjsip/pjproject/security/advisories/GHSA-5x45-qp78-g4p4",
-            "https://github.com/pjsip/pjproject/commit/856f87c2e97a27b256482dbe0d748b1194355a21",
-            "https://lists.debian.org/debian-lts-announce/2022/05/msg00047.html",
-            "https://security.gentoo.org/glsa/202210-37",
-            "https://lists.debian.org/debian-lts-announce/2022/11/msg00021.html"
-        ],
-        "summary": "PJSIP is a free and open source multimedia communication library written in the C language. Versions 2.12 and prior contain a denial-of-service vulnerability that affects PJSIP users that consume PJSIP's XML parsing in their apps. Users are advised to update. There are no known workarounds."
-    },
-    {
-        "Modified": "2022-11-17T14:15:00",
-        "Published": "2022-02-22T20:15:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "LOW",
-            "vector": "NETWORK"
-        },
-        "assigner": "security-advisories@github.com",
-        "cvss": 7.5,
-        "cvss-time": "2022-11-17T14:15:00",
-        "cvss-vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
-        "cwe": "CWE-416",
-        "id": "CVE-2022-23608",
-        "impact": {
-            "availability": "PARTIAL",
-            "confidentiality": "PARTIAL",
-            "integrity": "PARTIAL"
-        },
-        "last-modified": "2022-11-17T14:15:00",
-        "references": [
-            "https://github.com/pjsip/pjproject/security/advisories/GHSA-ffff-m5fm-qm62",
-            "https://github.com/pjsip/pjproject/commit/db3235953baa56d2fb0e276ca510fefca751643f",
-            "http://seclists.org/fulldisclosure/2022/Mar/1",
-            "http://packetstormsecurity.com/files/166226/Asterisk-Project-Security-Advisory-AST-2022-005.html",
-            "https://lists.debian.org/debian-lts-announce/2022/03/msg00035.html",
-            "https://lists.debian.org/debian-lts-announce/2022/03/msg00040.html",
-            "https://security.gentoo.org/glsa/202210-37",
-            "https://lists.debian.org/debian-lts-announce/2022/11/msg00021.html"
-        ],
-        "summary": "PJSIP is a free and open source multimedia communication library written in C language implementing standard based protocols such as SIP, SDP, RTP, STUN, TURN, and ICE. In versions up to and including 2.11.1 when in a dialog set (or forking) scenario, a hash key shared by multiple UAC dialogs can potentially be prematurely freed when one of the dialogs is destroyed . The issue may cause a dialog set to be registered in the hash table multiple times (with different hash keys) leading to undefined behavior such as dialog list collision which eventually leading to endless loop. A patch is available in commit db3235953baa56d2fb0e276ca510fefca751643f which will be included in the next release. There are no known workarounds for this issue."
-    },
-    {
-        "Modified": "2022-11-17T14:15:00",
-        "Published": "2022-02-16T21:15:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "LOW",
-            "vector": "NETWORK"
-        },
-        "assigner": "security@jfrog.com",
-        "cvss": 7.5,
-        "cvss-time": "2022-11-17T14:15:00",
-        "cvss-vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
-        "cwe": "CWE-787",
-        "id": "CVE-2021-43299",
-        "impact": {
-            "availability": "PARTIAL",
-            "confidentiality": "PARTIAL",
-            "integrity": "PARTIAL"
-        },
-        "last-modified": "2022-11-17T14:15:00",
-        "references": [
-            "https://github.com/pjsip/pjproject/security/advisories/GHSA-qcvw-h34v-c7r9",
-            "https://lists.debian.org/debian-lts-announce/2022/03/msg00035.html",
-            "https://lists.debian.org/debian-lts-announce/2022/11/msg00021.html"
-        ],
-        "summary": "Stack overflow in PJSUA API when calling pjsua_player_create. An attacker-controlled 'filename' argument may cause a buffer overflow since it is copied to a fixed-size stack buffer without any size validation."
-    },
-    {
-        "Modified": "2022-11-17T14:15:00",
-        "Published": "2022-02-16T21:15:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "LOW",
-            "vector": "NETWORK"
-        },
-        "assigner": "security@jfrog.com",
-        "cvss": 7.5,
-        "cvss-time": "2022-11-17T14:15:00",
-        "cvss-vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
-        "cwe": "CWE-787",
-        "id": "CVE-2021-43300",
-        "impact": {
-            "availability": "PARTIAL",
-            "confidentiality": "PARTIAL",
-            "integrity": "PARTIAL"
-        },
-        "last-modified": "2022-11-17T14:15:00",
-        "references": [
-            "https://github.com/pjsip/pjproject/security/advisories/GHSA-qcvw-h34v-c7r9",
-            "https://lists.debian.org/debian-lts-announce/2022/03/msg00035.html",
-            "https://lists.debian.org/debian-lts-announce/2022/11/msg00021.html"
-        ],
-        "summary": "Stack overflow in PJSUA API when calling pjsua_recorder_create. An attacker-controlled 'filename' argument may cause a buffer overflow since it is copied to a fixed-size stack buffer without any size validation."
-    },
-    {
-        "Modified": "2022-11-17T14:15:00",
-        "Published": "2022-02-16T21:15:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "LOW",
-            "vector": "NETWORK"
-        },
-        "assigner": "security@jfrog.com",
-        "cvss": 7.5,
-        "cvss-time": "2022-11-17T14:15:00",
-        "cvss-vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
-        "cwe": "CWE-787",
-        "id": "CVE-2021-43301",
-        "impact": {
-            "availability": "PARTIAL",
-            "confidentiality": "PARTIAL",
-            "integrity": "PARTIAL"
-        },
-        "last-modified": "2022-11-17T14:15:00",
-        "references": [
-            "https://github.com/pjsip/pjproject/security/advisories/GHSA-qcvw-h34v-c7r9",
-            "https://lists.debian.org/debian-lts-announce/2022/03/msg00035.html",
-            "https://lists.debian.org/debian-lts-announce/2022/11/msg00021.html"
-        ],
-        "summary": "Stack overflow in PJSUA API when calling pjsua_playlist_create. An attacker-controlled 'file_names' argument may cause a buffer overflow since it is copied to a fixed-size stack buffer without any size validation."
-    },
-    {
-        "Modified": "2022-11-17T14:15:00",
-        "Published": "2022-02-16T21:15:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "LOW",
-            "vector": "NETWORK"
-        },
-        "assigner": "security@jfrog.com",
-        "cvss": 6.4,
-        "cvss-time": "2022-11-17T14:15:00",
-        "cvss-vector": "AV:N/AC:L/Au:N/C:P/I:N/A:P",
-        "cwe": "CWE-125",
-        "id": "CVE-2021-43302",
-        "impact": {
-            "availability": "PARTIAL",
-            "confidentiality": "PARTIAL",
-            "integrity": "NONE"
-        },
-        "last-modified": "2022-11-17T14:15:00",
-        "references": [
-            "https://github.com/pjsip/pjproject/security/advisories/GHSA-qcvw-h34v-c7r9",
-            "https://lists.debian.org/debian-lts-announce/2022/03/msg00035.html",
-            "https://lists.debian.org/debian-lts-announce/2022/11/msg00021.html"
-        ],
-        "summary": "Read out-of-bounds in PJSUA API when calling pjsua_recorder_create. An attacker-controlled 'filename' argument may cause an out-of-bounds read when the filename is shorter than 4 characters."
-    },
-    {
-        "Modified": "2022-11-17T14:15:00",
-        "Published": "2022-02-16T21:15:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "LOW",
-            "vector": "NETWORK"
-        },
-        "assigner": "security@jfrog.com",
-        "cvss": 7.5,
-        "cvss-time": "2022-11-17T14:15:00",
-        "cvss-vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
-        "cwe": "CWE-120",
-        "id": "CVE-2021-43303",
-        "impact": {
-            "availability": "PARTIAL",
-            "confidentiality": "PARTIAL",
-            "integrity": "PARTIAL"
-        },
-        "last-modified": "2022-11-17T14:15:00",
-        "references": [
-            "https://github.com/pjsip/pjproject/security/advisories/GHSA-qcvw-h34v-c7r9",
-            "https://lists.debian.org/debian-lts-announce/2022/03/msg00035.html",
-            "https://lists.debian.org/debian-lts-announce/2022/11/msg00021.html"
-        ],
-        "summary": "Buffer overflow in PJSUA API when calling pjsua_call_dump. An attacker-controlled 'buffer' argument may cause a buffer overflow, since supplying an output buffer smaller than 128 characters may overflow the output buffer, regardless of the 'maxlen' argument supplied"
-    },
-    {
-        "Modified": "2022-11-17T14:15:00",
-        "Published": "2022-01-27T00:15:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "LOW",
-            "vector": "NETWORK"
-        },
-        "assigner": "security-advisories@github.com",
-        "cvss": 6.4,
-        "cvss-time": "2022-11-17T14:15:00",
-        "cvss-vector": "AV:N/AC:L/Au:N/C:P/I:N/A:P",
-        "cwe": "CWE-125",
-        "id": "CVE-2022-21722",
-        "impact": {
-            "availability": "PARTIAL",
-            "confidentiality": "PARTIAL",
-            "integrity": "NONE"
-        },
-        "last-modified": "2022-11-17T14:15:00",
-        "references": [
-            "https://github.com/pjsip/pjproject/security/advisories/GHSA-m66q-q64c-hv36",
-            "https://github.com/pjsip/pjproject/commit/22af44e68a0c7d190ac1e25075e1382f77e9397a",
-            "https://lists.debian.org/debian-lts-announce/2022/03/msg00035.html",
-            "https://security.gentoo.org/glsa/202210-37",
-            "https://lists.debian.org/debian-lts-announce/2022/11/msg00021.html"
-        ],
-        "summary": "PJSIP is a free and open source multimedia communication library written in C language implementing standard based protocols such as SIP, SDP, RTP, STUN, TURN, and ICE. In version 2.11.1 and prior, there are various cases where it is possible that certain incoming RTP/RTCP packets can potentially cause out-of-bound read access. This issue affects all users that use PJMEDIA and accept incoming RTP/RTCP. A patch is available as a commit in the `master` branch. There are no known workarounds."
-    },
-    {
-        "Modified": "2022-11-17T14:15:00",
-        "Published": "2022-01-27T00:15:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "LOW",
-            "vector": "NETWORK"
-        },
-        "assigner": "security-advisories@github.com",
-        "cvss": 6.4,
-        "cvss-time": "2022-11-17T14:15:00",
-        "cvss-vector": "AV:N/AC:L/Au:N/C:P/I:N/A:P",
-        "cwe": "CWE-125",
-        "id": "CVE-2022-21723",
-        "impact": {
-            "availability": "PARTIAL",
-            "confidentiality": "PARTIAL",
-            "integrity": "NONE"
-        },
-        "last-modified": "2022-11-17T14:15:00",
-        "references": [
-            "https://github.com/pjsip/pjproject/security/advisories/GHSA-7fw8-54cv-r7pm",
-            "https://github.com/pjsip/pjproject/commit/077b465c33f0aec05a49cd2ca456f9a1b112e896",
-            "http://seclists.org/fulldisclosure/2022/Mar/2",
-            "http://packetstormsecurity.com/files/166227/Asterisk-Project-Security-Advisory-AST-2022-006.html",
-            "https://lists.debian.org/debian-lts-announce/2022/03/msg00035.html",
-            "https://security.gentoo.org/glsa/202210-37",
-            "https://lists.debian.org/debian-lts-announce/2022/11/msg00021.html"
-        ],
-        "summary": "PJSIP is a free and open source multimedia communication library written in C language implementing standard based protocols such as SIP, SDP, RTP, STUN, TURN, and ICE. In versions 2.11.1 and prior, parsing an incoming SIP message that contains a malformed multipart can potentially cause out-of-bound read access. This issue affects all PJSIP users that accept SIP multipart. The patch is available as commit in the `master` branch. There are no known workarounds."
-    },
-    {
-        "Modified": "2022-11-17T14:15:00",
-        "Published": "2021-12-27T18:15:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "LOW",
-            "vector": "NETWORK"
-        },
-        "assigner": "security-advisories@github.com",
-        "cvss": 6.4,
-        "cvss-time": "2022-11-17T14:15:00",
-        "cvss-vector": "AV:N/AC:L/Au:N/C:P/I:N/A:P",
-        "cwe": "CWE-125",
-        "id": "CVE-2021-43845",
-        "impact": {
-            "availability": "PARTIAL",
-            "confidentiality": "PARTIAL",
-            "integrity": "NONE"
-        },
-        "last-modified": "2022-11-17T14:15:00",
-        "references": [
-            "https://github.com/pjsip/pjproject/commit/f74c1fc22b760d2a24369aa72c74c4a9ab985859",
-            "https://github.com/pjsip/pjproject/security/advisories/GHSA-r374-qrwv-86hh",
-            "https://github.com/pjsip/pjproject/pull/2924",
-            "https://lists.debian.org/debian-lts-announce/2022/03/msg00035.html",
-            "https://security.gentoo.org/glsa/202210-37",
-            "https://lists.debian.org/debian-lts-announce/2022/11/msg00021.html"
-        ],
-        "summary": "PJSIP is a free and open source multimedia communication library. In version 2.11.1 and prior, if incoming RTCP XR message contain block, the data field is not checked against the received packet size, potentially resulting in an out-of-bound read access. This affects all users that use PJMEDIA and RTCP XR. A malicious actor can send a RTCP XR message with an invalid packet size."
-    },
-    {
-        "Modified": "2022-11-17T14:15:00",
-        "Published": "2021-12-22T18:15:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "MEDIUM",
-            "vector": "NETWORK"
-        },
-        "assigner": "security-advisories@github.com",
+        "assigner": "psirt@adobe.com",
         "cvss": 9.3,
-        "cvss-time": "2022-11-17T14:15:00",
+        "cvss-time": "2022-11-17T18:36:00",
         "cvss-vector": "AV:N/AC:M/Au:N/C:C/I:C/A:C",
-        "cwe": "CWE-191",
-        "id": "CVE-2021-37706",
+        "cwe": "CWE-416",
+        "id": "CVE-2017-2985",
         "impact": {
             "availability": "COMPLETE",
             "confidentiality": "COMPLETE",
             "integrity": "COMPLETE"
         },
-        "last-modified": "2022-11-17T14:15:00",
+        "last-modified": "2022-11-17T18:36:00",
         "references": [
-            "https://github.com/pjsip/pjproject/security/advisories/GHSA-2qpg-f6wf-w984",
-            "https://github.com/pjsip/pjproject/commit/15663e3f37091069b8c98a7fce680dc04bc8e865",
-            "http://seclists.org/fulldisclosure/2022/Mar/0",
-            "http://packetstormsecurity.com/files/166225/Asterisk-Project-Security-Advisory-AST-2022-004.html",
-            "https://lists.debian.org/debian-lts-announce/2022/03/msg00035.html",
-            "https://security.gentoo.org/glsa/202210-37",
-            "https://lists.debian.org/debian-lts-announce/2022/11/msg00021.html"
+            "https://helpx.adobe.com/security/products/flash-player/apsb17-04.html",
+            "http://www.securityfocus.com/bid/96199",
+            "https://security.gentoo.org/glsa/201702-20",
+            "http://www.securitytracker.com/id/1037815",
+            "https://www.exploit-db.com/exploits/41422/",
+            "http://rhn.redhat.com/errata/RHSA-2017-0275.html"
         ],
-        "summary": "PJSIP is a free and open source multimedia communication library written in C language implementing standard based protocols such as SIP, SDP, RTP, STUN, TURN, and ICE. In affected versions if the incoming STUN message contains an ERROR-CODE attribute, the header length is not checked before performing a subtraction operation, potentially resulting in an integer underflow scenario. This issue affects all users that use STUN. A malicious actor located within the victim\u2019s network may forge and send a specially crafted UDP (STUN) message that could remotely execute arbitrary code on the victim\u2019s machine. Users are advised to upgrade as soon as possible. There are no known workarounds."
+        "summary": "Adobe Flash Player versions 24.0.0.194 and earlier have an exploitable use after free vulnerability in the ActionScript 3 BitmapData class. Successful exploitation could lead to arbitrary code execution."
     },
     {
-        "Modified": "2022-11-17T14:15:00",
-        "Published": "2021-12-22T18:15:00",
+        "Modified": "2022-11-17T18:36:00",
+        "Published": "2017-02-15T06:59:00",
         "access": {
             "authentication": "NONE",
+            "complexity": "MEDIUM",
+            "vector": "NETWORK"
+        },
+        "assigner": "psirt@adobe.com",
+        "cvss": 9.3,
+        "cvss-time": "2022-11-17T18:36:00",
+        "cvss-vector": "AV:N/AC:M/Au:N/C:C/I:C/A:C",
+        "cwe": "CWE-787",
+        "id": "CVE-2017-2986",
+        "impact": {
+            "availability": "COMPLETE",
+            "confidentiality": "COMPLETE",
+            "integrity": "COMPLETE"
+        },
+        "last-modified": "2022-11-17T18:36:00",
+        "references": [
+            "https://helpx.adobe.com/security/products/flash-player/apsb17-04.html",
+            "http://www.securityfocus.com/bid/96193",
+            "https://security.gentoo.org/glsa/201702-20",
+            "http://www.securitytracker.com/id/1037815",
+            "https://www.exploit-db.com/exploits/41423/",
+            "http://rhn.redhat.com/errata/RHSA-2017-0275.html"
+        ],
+        "summary": "Adobe Flash Player versions 24.0.0.194 and earlier have an exploitable heap overflow vulnerability in the Flash Video (FLV) codec. Successful exploitation could lead to arbitrary code execution."
+    },
+    {
+        "Modified": "2022-11-17T18:33:00",
+        "Published": "2017-02-15T06:59:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "MEDIUM",
+            "vector": "NETWORK"
+        },
+        "assigner": "psirt@adobe.com",
+        "cvss": 9.3,
+        "cvss-time": "2022-11-17T18:33:00",
+        "cvss-vector": "AV:N/AC:M/Au:N/C:C/I:C/A:C",
+        "cwe": "CWE-787",
+        "id": "CVE-2017-2984",
+        "impact": {
+            "availability": "COMPLETE",
+            "confidentiality": "COMPLETE",
+            "integrity": "COMPLETE"
+        },
+        "last-modified": "2022-11-17T18:33:00",
+        "references": [
+            "https://helpx.adobe.com/security/products/flash-player/apsb17-04.html",
+            "http://www.securityfocus.com/bid/96193",
+            "https://security.gentoo.org/glsa/201702-20",
+            "http://www.securitytracker.com/id/1037815",
+            "http://rhn.redhat.com/errata/RHSA-2017-0275.html"
+        ],
+        "summary": "Adobe Flash Player versions 24.0.0.194 and earlier have an exploitable heap overflow vulnerability in the h264 decoder routine. Successful exploitation could lead to arbitrary code execution."
+    },
+    {
+        "Modified": "2022-11-17T18:32:00",
+        "Published": "2017-02-15T06:59:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "MEDIUM",
+            "vector": "NETWORK"
+        },
+        "assigner": "psirt@adobe.com",
+        "cvss": 9.3,
+        "cvss-time": "2022-11-17T18:32:00",
+        "cvss-vector": "AV:N/AC:M/Au:N/C:C/I:C/A:C",
+        "cwe": "CWE-416",
+        "id": "CVE-2017-2982",
+        "impact": {
+            "availability": "COMPLETE",
+            "confidentiality": "COMPLETE",
+            "integrity": "COMPLETE"
+        },
+        "last-modified": "2022-11-17T18:32:00",
+        "references": [
+            "https://helpx.adobe.com/security/products/flash-player/apsb17-04.html",
+            "http://www.securityfocus.com/bid/96199",
+            "https://security.gentoo.org/glsa/201702-20",
+            "http://www.securitytracker.com/id/1037815",
+            "http://rhn.redhat.com/errata/RHSA-2017-0275.html"
+        ],
+        "summary": "Adobe Flash Player versions 24.0.0.194 and earlier have an exploitable use after free vulnerability in a routine related to player shutdown. Successful exploitation could lead to arbitrary code execution."
+    },
+    {
+        "Modified": "2022-11-17T18:30:00",
+        "Published": "2017-02-15T06:59:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "MEDIUM",
+            "vector": "NETWORK"
+        },
+        "assigner": "psirt@adobe.com",
+        "cvss": 9.3,
+        "cvss-time": "2022-11-17T18:30:00",
+        "cvss-vector": "AV:N/AC:M/Au:N/C:C/I:C/A:C",
+        "cwe": "CWE-787",
+        "id": "CVE-2017-2996",
+        "impact": {
+            "availability": "COMPLETE",
+            "confidentiality": "COMPLETE",
+            "integrity": "COMPLETE"
+        },
+        "last-modified": "2022-11-17T18:30:00",
+        "references": [
+            "https://helpx.adobe.com/security/products/flash-player/apsb17-04.html",
+            "http://www.securityfocus.com/bid/96190",
+            "https://security.gentoo.org/glsa/201702-20",
+            "http://www.securitytracker.com/id/1037815",
+            "http://rhn.redhat.com/errata/RHSA-2017-0275.html"
+        ],
+        "summary": "Adobe Flash Player versions 24.0.0.194 and earlier have an exploitable memory corruption vulnerability in Primetime SDK. Successful exploitation could lead to arbitrary code execution."
+    },
+    {
+        "Modified": "2022-11-17T18:25:00",
+        "Published": "2022-11-13T08:15:00",
+        "access": {},
+        "assigner": "cna@vuldb.com",
+        "cvss": null,
+        "cwe": "CWE-190",
+        "id": "CVE-2022-3970",
+        "impact": {},
+        "last-modified": "2022-11-17T18:25:00",
+        "references": [
+            "https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=53137",
+            "https://gitlab.com/libtiff/libtiff/-/commit/227500897dfb07fb7d27f7aa570050e62617e3be",
+            "https://vuldb.com/?id.213549",
+            "https://oss-fuzz.com/download?testcase_id=5738253143900160"
+        ],
+        "summary": "A vulnerability was found in LibTIFF. It has been classified as critical. This affects the function TIFFReadRGBATileExt of the file libtiff/tif_getimage.c. The manipulation leads to integer overflow. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. The name of the patch is 227500897dfb07fb7d27f7aa570050e62617e3be. It is recommended to apply a patch to fix this issue. The identifier VDB-213549 was assigned to this vulnerability."
+    },
+    {
+        "Modified": "2022-11-17T18:15:00",
+        "Published": "2022-11-17T18:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-22",
+        "id": "CVE-2022-41920",
+        "impact": {},
+        "last-modified": "2022-11-17T18:15:00",
+        "references": [
+            "https://github.com/duke-git/lancet/issues/62",
+            "https://github.com/duke-git/lancet/commit/f869a0a67098e92d24ddd913e188b32404fa72c9",
+            "https://github.com/duke-git/lancet/commit/f133b32faa05eb93e66175d01827afa4b7094572",
+            "https://github.com/duke-git/lancet/security/advisories/GHSA-pp3f-xrw5-q5j4"
+        ],
+        "summary": "Lancet is a general utility library for the go programming language. Affected versions are subject to a ZipSlip issue when using the fileutil package to unzip files. This issue has been addressed and a fix will be included in versions 2.1.10 and 1.3.4. Users are advised to upgrade. There are no known workarounds for this issue."
+    },
+    {
+        "Modified": "2022-11-17T18:15:00",
+        "Published": "2022-11-17T18:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-44402",
+        "impact": {},
+        "last-modified": "2022-11-17T18:15:00",
+        "references": [
+            "https://github.com/acvxd/bug_report/blob/main/vendors/oretnom23/automotive-shop-management-system/SQLi-2.md"
+        ],
+        "summary": "Automotive Shop Management System v1.0 is vulnerable to SQL Injection via /asms/classes/Master.php?f=delete_transaction."
+    },
+    {
+        "Modified": "2022-11-17T18:15:00",
+        "Published": "2022-11-17T18:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-44403",
+        "impact": {},
+        "last-modified": "2022-11-17T18:15:00",
+        "references": [
+            "https://github.com/acvxd/bug_report/blob/main/vendors/oretnom23/automotive-shop-management-system/SQLi-1.md"
+        ],
+        "summary": "Automotive Shop Management System v1.0 is vulnerable to SQL Injection via /asms/admin/?page=user/manage_user&id=."
+    },
+    {
+        "Modified": "2022-11-17T18:12:00",
+        "Published": "2022-11-13T10:15:00",
+        "access": {},
+        "assigner": "cna@vuldb.com",
+        "cvss": null,
+        "cwe": "CWE-707",
+        "id": "CVE-2022-3971",
+        "impact": {},
+        "last-modified": "2022-11-17T18:12:00",
+        "references": [
+            "https://vuldb.com/?id.213550",
+            "https://github.com/matrix-org/matrix-appservice-irc/pull/1619",
+            "https://github.com/matrix-org/matrix-appservice-irc/commit/179313a37f06b298150edba3e2b0e5a73c1415e7",
+            "https://github.com/matrix-org/matrix-appservice-irc/releases/tag/0.36.0"
+        ],
+        "summary": "A vulnerability was found in matrix-appservice-irc up to 0.35.1. It has been declared as critical. This vulnerability affects unknown code of the file src/datastore/postgres/PgDataStore.ts. The manipulation of the argument roomIds leads to sql injection. Upgrading to version 0.36.0 is able to address this issue. The name of the patch is 179313a37f06b298150edba3e2b0e5a73c1415e7. It is recommended to upgrade the affected component. VDB-213550 is the identifier assigned to this vulnerability."
+    },
+    {
+        "Modified": "2022-11-17T17:56:00",
+        "Published": "2017-02-15T06:59:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "MEDIUM",
+            "vector": "NETWORK"
+        },
+        "assigner": "psirt@adobe.com",
+        "cvss": 9.3,
+        "cvss-time": "2022-11-17T17:56:00",
+        "cvss-vector": "AV:N/AC:M/Au:N/C:C/I:C/A:C",
+        "cwe": "CWE-416",
+        "id": "CVE-2017-2994",
+        "impact": {
+            "availability": "COMPLETE",
+            "confidentiality": "COMPLETE",
+            "integrity": "COMPLETE"
+        },
+        "last-modified": "2022-11-17T17:56:00",
+        "references": [
+            "https://helpx.adobe.com/security/products/flash-player/apsb17-04.html",
+            "http://www.securityfocus.com/bid/96199",
+            "https://security.gentoo.org/glsa/201702-20",
+            "http://www.securitytracker.com/id/1037815",
+            "http://rhn.redhat.com/errata/RHSA-2017-0526.html"
+        ],
+        "summary": "Adobe Flash Player versions 24.0.0.194 and earlier have an exploitable use after free vulnerability in Primetime SDK event dispatch. Successful exploitation could lead to arbitrary code execution."
+    },
+    {
+        "Modified": "2022-11-17T17:54:00",
+        "Published": "2017-02-15T06:59:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "MEDIUM",
+            "vector": "NETWORK"
+        },
+        "assigner": "psirt@adobe.com",
+        "cvss": 9.3,
+        "cvss-time": "2022-11-17T17:54:00",
+        "cvss-vector": "AV:N/AC:M/Au:N/C:C/I:C/A:C",
+        "cwe": "CWE-416",
+        "id": "CVE-2017-2993",
+        "impact": {
+            "availability": "COMPLETE",
+            "confidentiality": "COMPLETE",
+            "integrity": "COMPLETE"
+        },
+        "last-modified": "2022-11-17T17:54:00",
+        "references": [
+            "https://helpx.adobe.com/security/products/flash-player/apsb17-04.html",
+            "http://www.securityfocus.com/bid/96199",
+            "https://security.gentoo.org/glsa/201702-20",
+            "http://www.securitytracker.com/id/1037815",
+            "http://rhn.redhat.com/errata/RHSA-2017-0275.html"
+        ],
+        "summary": "Adobe Flash Player versions 24.0.0.194 and earlier have an exploitable use after free vulnerability related to event handlers. Successful exploitation could lead to arbitrary code execution."
+    },
+    {
+        "Modified": "2022-11-17T17:53:00",
+        "Published": "2017-02-15T06:59:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "MEDIUM",
+            "vector": "NETWORK"
+        },
+        "assigner": "psirt@adobe.com",
+        "cvss": 9.3,
+        "cvss-time": "2022-11-17T17:53:00",
+        "cvss-vector": "AV:N/AC:M/Au:N/C:C/I:C/A:C",
+        "cwe": "CWE-843",
+        "id": "CVE-2017-2995",
+        "impact": {
+            "availability": "COMPLETE",
+            "confidentiality": "COMPLETE",
+            "integrity": "COMPLETE"
+        },
+        "last-modified": "2022-11-17T17:53:00",
+        "references": [
+            "https://helpx.adobe.com/security/products/flash-player/apsb17-04.html",
+            "http://www.securityfocus.com/bid/96191",
+            "https://security.gentoo.org/glsa/201702-20",
+            "http://www.securitytracker.com/id/1037815",
+            "http://rhn.redhat.com/errata/RHSA-2017-0275.html"
+        ],
+        "summary": "Adobe Flash Player versions 24.0.0.194 and earlier have an exploitable type confusion vulnerability related to the MessageChannel class. Successful exploitation could lead to arbitrary code execution."
+    },
+    {
+        "Modified": "2022-11-17T17:51:00",
+        "Published": "2017-02-15T06:59:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "MEDIUM",
+            "vector": "NETWORK"
+        },
+        "assigner": "psirt@adobe.com",
+        "cvss": 9.3,
+        "cvss-time": "2022-11-17T17:51:00",
+        "cvss-vector": "AV:N/AC:M/Au:N/C:C/I:C/A:C",
+        "cwe": "CWE-787",
+        "id": "CVE-2017-2992",
+        "impact": {
+            "availability": "COMPLETE",
+            "confidentiality": "COMPLETE",
+            "integrity": "COMPLETE"
+        },
+        "last-modified": "2022-11-17T17:51:00",
+        "references": [
+            "https://helpx.adobe.com/security/products/flash-player/apsb17-04.html",
+            "http://www.securityfocus.com/bid/96193",
+            "https://security.gentoo.org/glsa/201702-20",
+            "http://www.securitytracker.com/id/1037815",
+            "https://www.exploit-db.com/exploits/41420/",
+            "http://rhn.redhat.com/errata/RHSA-2017-0275.html"
+        ],
+        "summary": "Adobe Flash Player versions 24.0.0.194 and earlier have an exploitable heap overflow vulnerability when parsing an MP4 header. Successful exploitation could lead to arbitrary code execution."
+    },
+    {
+        "Modified": "2022-11-17T17:47:00",
+        "Published": "2017-01-11T04:59:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "MEDIUM",
+            "vector": "NETWORK"
+        },
+        "assigner": "psirt@adobe.com",
+        "cvss": 9.3,
+        "cvss-time": "2022-11-17T17:47:00",
+        "cvss-vector": "AV:N/AC:M/Au:N/C:C/I:C/A:C",
+        "cwe": "CWE-787",
+        "id": "CVE-2017-2930",
+        "impact": {
+            "availability": "COMPLETE",
+            "confidentiality": "COMPLETE",
+            "integrity": "COMPLETE"
+        },
+        "last-modified": "2022-11-17T17:47:00",
+        "references": [
+            "https://helpx.adobe.com/security/products/flash-player/apsb17-02.html",
+            "http://www.securityfocus.com/bid/95350",
+            "http://www.securitytracker.com/id/1037570",
+            "https://www.exploit-db.com/exploits/41012/",
+            "https://www.exploit-db.com/exploits/41008/",
+            "https://cosig.gouv.qc.ca/en/cosig-2017-01-en/",
+            "http://packetstormsecurity.com/files/140463/Adobe-Flash-24.0.0.186-Code-Execution.html",
+            "https://security.gentoo.org/glsa/201702-20",
+            "http://rhn.redhat.com/errata/RHSA-2017-0057.html"
+        ],
+        "summary": "Adobe Flash Player versions 24.0.0.186 and earlier have an exploitable memory corruption vulnerability due to a concurrency error when manipulating a display list. Successful exploitation could lead to arbitrary code execution."
+    },
+    {
+        "Modified": "2022-11-17T17:47:00",
+        "Published": "2017-01-11T04:59:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "MEDIUM",
+            "vector": "NETWORK"
+        },
+        "assigner": "psirt@adobe.com",
+        "cvss": 4.3,
+        "cvss-time": "2022-11-17T17:47:00",
+        "cvss-vector": "AV:N/AC:M/Au:N/C:P/I:N/A:N",
+        "cwe": "NVD-CWE-noinfo",
+        "id": "CVE-2017-2938",
+        "impact": {
+            "availability": "NONE",
+            "confidentiality": "PARTIAL",
+            "integrity": "NONE"
+        },
+        "last-modified": "2022-11-17T17:47:00",
+        "references": [
+            "https://helpx.adobe.com/security/products/flash-player/apsb17-02.html",
+            "http://www.securityfocus.com/bid/95341",
+            "http://www.securitytracker.com/id/1037570",
+            "https://security.gentoo.org/glsa/201702-20",
+            "http://rhn.redhat.com/errata/RHSA-2017-0057.html"
+        ],
+        "summary": "Adobe Flash Player versions 24.0.0.186 and earlier have a security bypass vulnerability related to handling TCP connections."
+    },
+    {
+        "Modified": "2022-11-17T17:47:00",
+        "Published": "2017-01-11T04:59:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "MEDIUM",
+            "vector": "NETWORK"
+        },
+        "assigner": "psirt@adobe.com",
+        "cvss": 9.3,
+        "cvss-time": "2022-11-17T17:47:00",
+        "cvss-vector": "AV:N/AC:M/Au:N/C:C/I:C/A:C",
+        "cwe": "CWE-787",
+        "id": "CVE-2017-2931",
+        "impact": {
+            "availability": "COMPLETE",
+            "confidentiality": "COMPLETE",
+            "integrity": "COMPLETE"
+        },
+        "last-modified": "2022-11-17T17:47:00",
+        "references": [
+            "https://helpx.adobe.com/security/products/flash-player/apsb17-02.html",
+            "http://www.securityfocus.com/bid/95350",
+            "http://www.securitytracker.com/id/1037570",
+            "https://security.gentoo.org/glsa/201702-20",
+            "https://www.exploit-db.com/exploits/41608/",
+            "http://rhn.redhat.com/errata/RHSA-2017-0057.html"
+        ],
+        "summary": "Adobe Flash Player versions 24.0.0.186 and earlier have an exploitable memory corruption vulnerability related to the parsing of SWF metadata. Successful exploitation could lead to arbitrary code execution."
+    },
+    {
+        "Modified": "2022-11-17T17:46:00",
+        "Published": "2017-01-11T04:59:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "MEDIUM",
+            "vector": "NETWORK"
+        },
+        "assigner": "psirt@adobe.com",
+        "cvss": 9.3,
+        "cvss-time": "2022-11-17T17:46:00",
+        "cvss-vector": "AV:N/AC:M/Au:N/C:C/I:C/A:C",
+        "cwe": "CWE-787",
+        "id": "CVE-2017-2928",
+        "impact": {
+            "availability": "COMPLETE",
+            "confidentiality": "COMPLETE",
+            "integrity": "COMPLETE"
+        },
+        "last-modified": "2022-11-17T17:46:00",
+        "references": [
+            "https://helpx.adobe.com/security/products/flash-player/apsb17-02.html",
+            "http://www.securityfocus.com/bid/95350",
+            "http://www.securitytracker.com/id/1037570",
+            "https://security.gentoo.org/glsa/201702-20",
+            "http://rhn.redhat.com/errata/RHSA-2017-0057.html"
+        ],
+        "summary": "Adobe Flash Player versions 24.0.0.186 and earlier have an exploitable memory corruption vulnerability related to setting visual mode effects. Successful exploitation could lead to arbitrary code execution."
+    },
+    {
+        "Modified": "2022-11-17T17:45:00",
+        "Published": "2022-03-02T16:15:00",
+        "access": {
+            "authentication": "SINGLE",
             "complexity": "LOW",
             "vector": "NETWORK"
         },
-        "assigner": "security-advisories@github.com",
-        "cvss": 7.5,
-        "cvss-time": "2022-11-17T14:15:00",
-        "cvss-vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
-        "cwe": "CWE-125",
-        "id": "CVE-2021-43804",
+        "assigner": "security@huntr.dev",
+        "cvss": 6.5,
+        "cvss-time": "2022-11-17T17:45:00",
+        "cvss-vector": "AV:N/AC:L/Au:S/C:P/I:P/A:P",
+        "cwe": "CWE-94",
+        "id": "CVE-2022-0819",
         "impact": {
             "availability": "PARTIAL",
             "confidentiality": "PARTIAL",
             "integrity": "PARTIAL"
         },
-        "last-modified": "2022-11-17T14:15:00",
+        "last-modified": "2022-11-17T17:45:00",
         "references": [
-            "https://github.com/pjsip/pjproject/security/advisories/GHSA-3qx3-cg72-wrh9",
-            "https://github.com/pjsip/pjproject/commit/8b621f192cae14456ee0b0ade52ce6c6f258af1e",
-            "https://lists.debian.org/debian-lts-announce/2022/03/msg00035.html",
-            "https://security.gentoo.org/glsa/202210-37",
-            "https://lists.debian.org/debian-lts-announce/2022/11/msg00021.html"
+            "https://github.com/dolibarr/dolibarr/commit/2a48dd349e7de0d4a38e448b0d2ecbe25e968075",
+            "https://huntr.dev/bounties/b03d4415-d4f9-48c8-9ae2-d3aa248027b5"
         ],
-        "summary": "PJSIP is a free and open source multimedia communication library written in C language implementing standard based protocols such as SIP, SDP, RTP, STUN, TURN, and ICE. In affected versions if the incoming RTCP BYE message contains a reason's length, this declared length is not checked against the actual received packet size, potentially resulting in an out-of-bound read access. This issue affects all users that use PJMEDIA and RTCP. A malicious actor can send a RTCP BYE message with an invalid reason length. Users are advised to upgrade as soon as possible. There are no known workarounds."
+        "summary": "Code Injection in GitHub repository dolibarr/dolibarr prior to 15.0.1."
     },
     {
-        "Modified": "2022-11-17T14:14:00",
-        "Published": "2022-10-12T20:15:00",
+        "Modified": "2022-11-17T17:44:00",
+        "Published": "2022-01-31T11:15:00",
+        "access": {
+            "authentication": "SINGLE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "security@huntr.dev",
+        "cvss": 4.0,
+        "cvss-time": "2022-11-17T17:44:00",
+        "cvss-vector": "AV:N/AC:L/Au:S/C:N/I:P/A:N",
+        "cwe": "CWE-840",
+        "id": "CVE-2022-0414",
+        "impact": {
+            "availability": "NONE",
+            "confidentiality": "NONE",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-11-17T17:44:00",
+        "references": [
+            "https://github.com/dolibarr/dolibarr/commit/37fb02ee760cfff18c795ba468da1ba1c53f4684",
+            "https://huntr.dev/bounties/76f3b405-9f5d-44b1-8434-b52b56ee395f"
+        ],
+        "summary": "Business Logic Errors in Packagist dolibarr/dolibarr prior to 16.0."
+    },
+    {
+        "Modified": "2022-11-17T17:42:00",
+        "Published": "2022-11-17T17:15:00",
+        "access": {},
+        "assigner": "psirt@us.ibm.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-38390",
+        "impact": {},
+        "last-modified": "2022-11-17T17:42:00",
+        "references": [
+            "https://www.ibm.com/support/pages/node/6839847",
+            "https://exchange.xforce.ibmcloud.com/vulnerabilities/233978"
+        ],
+        "summary": "Multiple IBM Business Automation Workflow versions are vulnerable to cross-site scripting. This vulnerability allows users to embed arbitrary JavaScript code in the Web UI thus altering the intended functionality potentially leading to credentials disclosure within a trusted session. IBM X-Force ID: 233978."
+    },
+    {
+        "Modified": "2022-11-17T17:42:00",
+        "Published": "2022-11-17T17:15:00",
+        "access": {},
+        "assigner": "productcert@siemens.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-42732",
+        "impact": {},
+        "last-modified": "2022-11-17T17:42:00",
+        "references": [
+            "https://www.siemens-healthineers.com/en-us/support-documentation/cybersecurity/shsa-741697"
+        ],
+        "summary": "A vulnerability has been identified in syngo Dynamics (All versions < VA40G HF01). syngo Dynamics application server hosts a web service using an operation with improper read access control that could allow files to be retrieved from any folder accessible to the account assigned to the website\u2019s application pool."
+    },
+    {
+        "Modified": "2022-11-17T17:42:00",
+        "Published": "2022-11-17T17:15:00",
+        "access": {},
+        "assigner": "productcert@siemens.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-42733",
+        "impact": {},
+        "last-modified": "2022-11-17T17:42:00",
+        "references": [
+            "https://www.siemens-healthineers.com/en-us/support-documentation/cybersecurity/shsa-741697"
+        ],
+        "summary": "A vulnerability has been identified in syngo Dynamics (All versions < VA40G HF01). syngo Dynamics application server hosts a web service using an operation with improper read access control that could allow files to be retrieved from any folder accessible to the account assigned to the website\u2019s application pool."
+    },
+    {
+        "Modified": "2022-11-17T17:42:00",
+        "Published": "2022-11-17T17:15:00",
+        "access": {},
+        "assigner": "productcert@siemens.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-42734",
+        "impact": {},
+        "last-modified": "2022-11-17T17:42:00",
+        "references": [
+            "https://www.siemens-healthineers.com/en-us/support-documentation/cybersecurity/shsa-741697"
+        ],
+        "summary": "A vulnerability has been identified in syngo Dynamics (All versions < VA40G HF01). syngo Dynamics application server hosts a web service using an operation with improper write access control that could allow to write data in any folder accessible to the account assigned to the website\u2019s application pool."
+    },
+    {
+        "Modified": "2022-11-17T17:42:00",
+        "Published": "2022-11-17T17:15:00",
+        "access": {},
+        "assigner": "productcert@siemens.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-42891",
+        "impact": {},
+        "last-modified": "2022-11-17T17:42:00",
+        "references": [
+            "https://www.siemens-healthineers.com/en-us/support-documentation/cybersecurity/shsa-741697"
+        ],
+        "summary": "A vulnerability has been identified in syngo Dynamics (All versions < VA40G HF01). syngo Dynamics application server hosts a web service using an operation with improper write access control that could allow to write data in any folder accessible to the account assigned to the website\u2019s application pool."
+    },
+    {
+        "Modified": "2022-11-17T17:42:00",
+        "Published": "2022-11-17T17:15:00",
+        "access": {},
+        "assigner": "psirt@us.ibm.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-40751",
+        "impact": {},
+        "last-modified": "2022-11-17T17:42:00",
+        "references": [
+            "https://www.ibm.com/support/pages/node/6831907",
+            "https://exchange.xforce.ibmcloud.com/vulnerabilities/236601"
+        ],
+        "summary": "IBM UrbanCode Deploy (UCD) 6.2.7.0 through 6.2.7.17, 7.0.0.0 through 7.0.5.12, 7.1.0.0 through 7.1.2.8, and 7.2.0.0 through 7.2.3.1 could allow a user with administrative privileges including \"Manage Security\" permissions may be able to recover a credential previously saved for performing authenticated LDAP searches. IBM X-Force ID: 236601."
+    },
+    {
+        "Modified": "2022-11-17T17:42:00",
+        "Published": "2022-11-17T17:15:00",
+        "access": {},
+        "assigner": "productcert@siemens.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-42892",
+        "impact": {},
+        "last-modified": "2022-11-17T17:42:00",
+        "references": [
+            "https://www.siemens-healthineers.com/en-us/support-documentation/cybersecurity/shsa-741697"
+        ],
+        "summary": "A vulnerability has been identified in syngo Dynamics (All versions < VA40G HF01). syngo Dynamics application server hosts a web service using an operation with improper write access control that could allow directory listing in any folder accessible to the account assigned to the website\u2019s application pool."
+    },
+    {
+        "Modified": "2022-11-17T17:42:00",
+        "Published": "2022-11-17T17:15:00",
+        "access": {},
+        "assigner": "productcert@siemens.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-42893",
+        "impact": {},
+        "last-modified": "2022-11-17T17:42:00",
+        "references": [
+            "https://www.siemens-healthineers.com/en-us/support-documentation/cybersecurity/shsa-741697"
+        ],
+        "summary": "A vulnerability has been identified in syngo Dynamics (All versions < VA40G HF01). syngo Dynamics application server hosts a web service using an operation with improper write access control that could allow to write data in any folder accessible to the account assigned to the website\u2019s application pool."
+    },
+    {
+        "Modified": "2022-11-17T17:42:00",
+        "Published": "2022-11-17T17:15:00",
+        "access": {},
+        "assigner": "productcert@siemens.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-42894",
+        "impact": {},
+        "last-modified": "2022-11-17T17:42:00",
+        "references": [
+            "https://www.siemens-healthineers.com/en-us/support-documentation/cybersecurity/shsa-741697"
+        ],
+        "summary": "A vulnerability has been identified in syngo Dynamics (All versions < VA40G HF01). An unauthenticated Server-Side Request Forgery (SSRF) vulnerability was identified in one of the web services exposed on the syngo Dynamics application that could allow for the leaking of NTLM credentials as well as local service enumeration."
+    },
+    {
+        "Modified": "2022-11-17T17:42:00",
+        "Published": "2022-11-17T17:15:00",
         "access": {},
         "assigner": "cve@mitre.org",
         "cvss": null,
-        "cwe": "CWE-1321",
-        "id": "CVE-2022-37601",
+        "cwe": "Unknown",
+        "id": "CVE-2022-43138",
         "impact": {},
-        "last-modified": "2022-11-17T14:14:00",
+        "last-modified": "2022-11-17T17:42:00",
         "references": [
-            "https://github.com/webpack/loader-utils/blob/d9f4e23cf411d8556f8bac2d3bf05a6e0103b568/lib/parseQuery.js#L11",
-            "https://github.com/webpack/loader-utils/blob/d9f4e23cf411d8556f8bac2d3bf05a6e0103b568/lib/parseQuery.js#L47",
-            "https://github.com/webpack/loader-utils/issues/212"
+            "https://www.exploit-db.com/exploits/50248"
         ],
-        "summary": "Prototype pollution vulnerability in function parseQuery in parseQuery.js in webpack loader-utils 2.0.0 via the name variable in parseQuery.js."
+        "summary": "Dolibarr Open Source ERP & CRM for Business before v14.0.1 allows attackers to escalate privileges via a crafted API."
     },
     {
-        "Modified": "2022-11-17T14:13:00",
-        "Published": "2022-10-14T16:15:00",
+        "Modified": "2022-11-17T17:42:00",
+        "Published": "2022-11-17T17:15:00",
         "access": {},
         "assigner": "cve@mitre.org",
         "cvss": null,
-        "cwe": "NVD-CWE-Other",
-        "id": "CVE-2022-37603",
+        "cwe": "Unknown",
+        "id": "CVE-2022-43140",
         "impact": {},
-        "last-modified": "2022-11-17T14:13:00",
+        "last-modified": "2022-11-17T17:42:00",
         "references": [
-            "https://github.com/webpack/loader-utils/blob/d9f4e23cf411d8556f8bac2d3bf05a6e0103b568/lib/interpolateName.js#L38",
-            "https://github.com/webpack/loader-utils/blob/d9f4e23cf411d8556f8bac2d3bf05a6e0103b568/lib/interpolateName.js#L107",
-            "https://github.com/webpack/loader-utils/issues/213"
+            "https://github.com/kekingcn/kkFileView/issues/392"
         ],
-        "summary": "A Regular expression denial of service (ReDoS) flaw was found in Function interpolateName in interpolateName.js in webpack loader-utils 2.0.0 via the url variable in interpolateName.js."
+        "summary": "kkFileView v4.1.0 was discovered to contain a Server-Side Request Forgery (SSRF) via the component cn.keking.web.controller.OnlinePreviewController#getCorsFile. This vulnerability allows attackers to force the application to make arbitrary requests via injection of crafted URLs into the url parameter."
     },
     {
-        "Modified": "2022-11-17T13:53:00",
-        "Published": "2022-11-11T16:15:00",
-        "access": {},
-        "assigner": "secure@intel.com",
-        "cvss": null,
-        "cwe": "NVD-CWE-Other",
-        "id": "CVE-2021-33164",
-        "impact": {},
-        "last-modified": "2022-11-17T13:53:00",
-        "references": [
-            "https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00752.html"
-        ],
-        "summary": "Improper access control in BIOS firmware for some Intel(R) NUCs before version INWHL357.0046 may allow a privileged user to potentially enable escalation of privilege via local access."
-    },
-    {
-        "Modified": "2022-11-17T13:44:00",
-        "Published": "2022-11-11T16:15:00",
-        "access": {},
-        "assigner": "secure@intel.com",
-        "cvss": null,
-        "cwe": "NVD-CWE-Other",
-        "id": "CVE-2022-27499",
-        "impact": {},
-        "last-modified": "2022-11-17T13:44:00",
-        "references": [
-            "https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00691.html"
-        ],
-        "summary": "Premature release of resource during expected lifetime in the Intel(R) SGX SDK software may allow a privileged user to potentially enable information disclosure via local access."
-    },
-    {
-        "Modified": "2022-11-17T13:21:00",
-        "Published": "2022-11-11T16:15:00",
-        "access": {},
-        "assigner": "secure@intel.com",
-        "cvss": null,
-        "cwe": "CWE-287",
-        "id": "CVE-2022-26845",
-        "impact": {},
-        "last-modified": "2022-11-17T13:21:00",
-        "references": [
-            "https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00610.html"
-        ],
-        "summary": "Improper authentication in firmware for Intel(R) AMT before versions 11.8.93, 11.22.93, 11.12.93, 12.0.92, 14.1.67, 15.0.42, 16.1.25 may allow an unauthenticated user to potentially enable escalation of privilege via network access."
-    },
-    {
-        "Modified": "2022-11-17T13:15:00",
-        "Published": "2022-09-26T05:15:00",
-        "access": {},
-        "assigner": "report@snyk.io",
-        "cvss": null,
-        "cwe": "NVD-CWE-noinfo",
-        "id": "CVE-2022-21797",
-        "impact": {},
-        "last-modified": "2022-11-17T13:15:00",
-        "references": [
-            "https://github.com/joblib/joblib/commit/b90f10efeb670a2cc877fb88ebb3f2019189e059",
-            "https://github.com/joblib/joblib/issues/1128",
-            "https://github.com/joblib/joblib/pull/1321",
-            "https://security.snyk.io/vuln/SNYK-PYTHON-JOBLIB-3027033",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/BVOMMW37OXZWU2EV5ONAAS462IQEHZOF/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/MJ5XTJS6OKJRRVXWFN5J67K3BYPEOBDF/",
-            "https://lists.debian.org/debian-lts-announce/2022/11/msg00020.html"
-        ],
-        "summary": "The package joblib from 0 and before 1.2.0 are vulnerable to Arbitrary Code Execution via the pre_dispatch flag in Parallel() class due to the eval() statement."
-    },
-    {
-        "Modified": "2022-11-17T13:08:00",
-        "Published": "2022-11-11T16:15:00",
-        "access": {},
-        "assigner": "secure@intel.com",
-        "cvss": null,
-        "cwe": "CWE-476",
-        "id": "CVE-2022-27497",
-        "impact": {},
-        "last-modified": "2022-11-17T13:08:00",
-        "references": [
-            "https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00610.html"
-        ],
-        "summary": "Null pointer dereference in firmware for Intel(R) AMT before version 11.8.93, 11.22.93, 11.12.93, 12.0.92, 14.1.67, 15.0.42, 16.1.25 may allow an unauthenticated user to potentially enable denial of service via network access."
-    },
-    {
-        "Modified": "2022-11-17T12:15:00",
-        "Published": "2022-10-13T03:15:00",
+        "Modified": "2022-11-17T17:42:00",
+        "Published": "2022-11-17T17:15:00",
         "access": {},
         "assigner": "cve@mitre.org",
         "cvss": null,
-        "cwe": "NVD-CWE-noinfo",
-        "id": "CVE-2022-42902",
+        "cwe": "Unknown",
+        "id": "CVE-2022-44384",
         "impact": {},
-        "last-modified": "2022-11-17T12:15:00",
+        "last-modified": "2022-11-17T17:42:00",
         "references": [
-            "https://git.lavasoftware.org/lava/lava/-/commit/e66b74cd6c175ff8826b8f3431740963be228b52?merge_request_iid=1834",
-            "https://git.lavasoftware.org/lava/lava/-/merge_requests/1834",
-            "https://www.debian.org/security/2022/dsa-5260",
-            "https://lists.debian.org/debian-lts-announce/2022/11/msg00019.html"
+            "https://www.exploit-db.com/exploits/49783"
         ],
-        "summary": "In Linaro Automated Validation Architecture (LAVA) before 2022.10, there is dynamic code execution in lava_server/lavatable.py. Due to improper input sanitization, an anonymous user can force the lava-server-gunicorn service to execute user-provided code on the server."
+        "summary": "An arbitrary file upload vulnerability in rconfig v3.9.6 allows attackers to execute arbitrary code via a crafted PHP file."
     },
     {
-        "Modified": "2022-11-17T08:15:00",
+        "Modified": "2022-11-17T17:42:00",
+        "Published": "2022-11-17T17:15:00",
+        "access": {},
+        "assigner": "cna@vuldb.com",
+        "cvss": null,
+        "cwe": "CWE-707",
+        "id": "CVE-2022-4051",
+        "impact": {},
+        "last-modified": "2022-11-17T17:42:00",
+        "references": [
+            "https://github.com/itzmehedi/Hostel-searching-project-using-PHP-Mysql/issues/1",
+            "https://vuldb.com/?id.213844"
+        ],
+        "summary": "A vulnerability has been found in Hostel Searching Project and classified as critical. This vulnerability affects unknown code of the file view-property.php. The manipulation of the argument property_id leads to sql injection. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used. The identifier of this vulnerability is VDB-213844."
+    },
+    {
+        "Modified": "2022-11-17T17:42:00",
+        "Published": "2022-11-17T17:15:00",
+        "access": {},
+        "assigner": "cna@vuldb.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-4052",
+        "impact": {},
+        "last-modified": "2022-11-17T17:42:00",
+        "references": [
+            "https://vuldb.com/?id.213845",
+            "https://github.com/rickxy/Student-Attendance-Management-System/issues/2"
+        ],
+        "summary": "A vulnerability was found in Student Attendance Management System and classified as critical. This issue affects some unknown processing of the file /Admin/createClass.php. The manipulation of the argument Id leads to sql injection. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. The identifier VDB-213845 was assigned to this vulnerability."
+    },
+    {
+        "Modified": "2022-11-17T17:42:00",
+        "Published": "2022-11-17T17:15:00",
+        "access": {},
+        "assigner": "cna@vuldb.com",
+        "cvss": null,
+        "cwe": "CWE-707",
+        "id": "CVE-2022-4053",
+        "impact": {},
+        "last-modified": "2022-11-17T17:42:00",
+        "references": [
+            "https://github.com/rickxy/Student-Attendance-Management-System/issues/3",
+            "https://vuldb.com/?id.213846"
+        ],
+        "summary": "A vulnerability was found in Student Attendance Management System. It has been classified as problematic. Affected is an unknown function of the file createClass.php. The manipulation of the argument className leads to cross site scripting. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used. VDB-213846 is the identifier assigned to this vulnerability."
+    },
+    {
+        "Modified": "2022-11-17T17:42:00",
         "Published": "2022-11-17T08:15:00",
         "access": {},
         "assigner": "cve@mitre.org",
@@ -1409,452 +777,1277 @@
         "cwe": "Unknown",
         "id": "CVE-2022-45461",
         "impact": {},
-        "last-modified": "2022-11-17T08:15:00",
+        "last-modified": "2022-11-17T17:42:00",
         "references": [
             "https://www.veritas.com/content/support/en_US/security/VTS22-015"
         ],
         "summary": "The Java Admin Console in Veritas NetBackup through 10.1 and related Veritas products on Linux and UNIX allows authenticated non-root users (that have been explicitly added to the auth.conf file) to execute arbitrary commands as root."
     },
     {
-        "Modified": "2022-11-17T05:34:00",
-        "Published": "2022-11-17T04:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-40881",
-        "impact": {},
-        "last-modified": "2022-11-17T05:34:00",
+        "Modified": "2022-11-17T17:42:00",
+        "Published": "2022-02-25T09:15:00",
+        "access": {
+            "authentication": "SINGLE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "security@huntr.dev",
+        "cvss": 4.0,
+        "cvss-time": "2022-11-17T17:42:00",
+        "cvss-vector": "AV:N/AC:L/Au:S/C:N/I:P/A:N",
+        "cwe": "NVD-CWE-Other",
+        "id": "CVE-2022-0746",
+        "impact": {
+            "availability": "NONE",
+            "confidentiality": "NONE",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-11-17T17:42:00",
         "references": [
-            "https://github.com/Timorlover/SolarView_Compact_6.0_rce_via_network_test.php"
+            "https://huntr.dev/bounties/b812ea22-0c02-46fe-b89f-04519dfb1ebd",
+            "https://github.com/dolibarr/dolibarr/commit/4973019630d51ad76b7c1a4141ec7a33053a7d21"
         ],
-        "summary": "SolarView Compact 6.00 was discovered to contain a command injection vulnerability via network_test.php"
+        "summary": "Business Logic Errors in GitHub repository dolibarr/dolibarr prior to 16.0."
     },
     {
-        "Modified": "2022-11-17T05:34:00",
-        "Published": "2022-11-17T04:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-42187",
-        "impact": {},
-        "last-modified": "2022-11-17T05:34:00",
-        "references": [
-            "https://github.com/zhblue/hustoj/issues/866"
-        ],
-        "summary": "Hustoj 22.09.22 has a XSS Vulnerability in /admin/problem_judge.php."
-    },
-    {
-        "Modified": "2022-11-17T05:34:00",
-        "Published": "2022-11-17T04:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-42245",
-        "impact": {},
-        "last-modified": "2022-11-17T05:34:00",
-        "references": [
-            "https://gitee.com/isoftforce/dreamer_cms/issues/I5U408"
-        ],
-        "summary": "Dreamer CMS 4.0.01 is vulnerable to SQL Injection."
-    },
-    {
-        "Modified": "2022-11-17T05:34:00",
-        "Published": "2022-11-17T04:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-42246",
-        "impact": {},
-        "last-modified": "2022-11-17T05:34:00",
-        "references": [
-            "https://github.com/farliy-hacker/Doufoxcms/issues/1"
-        ],
-        "summary": "Doufox 0.0.4 contains a CSRF vulnerability that can add system administrator account."
-    },
-    {
-        "Modified": "2022-11-17T05:34:00",
-        "Published": "2022-11-17T05:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-36432",
-        "impact": {},
-        "last-modified": "2022-11-17T05:34:00",
-        "references": [
-            "https://github.com/afine-com/CVE-2022-36432"
-        ],
-        "summary": "The Preview functionality in the Amasty Blog Pro 2.10.3 plugin for Magento 2 uses eval unsafely. This allows attackers to perform Cross-site Scripting attacks on admin panel users by manipulating the generated preview application response."
-    },
-    {
-        "Modified": "2022-11-17T05:34:00",
-        "Published": "2022-11-17T05:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-39834",
-        "impact": {},
-        "last-modified": "2022-11-17T05:34:00",
-        "references": [
-            "https://support.keyfactor.com/s/detail/a6x1Q000000CwCoQAK"
-        ],
-        "summary": "A stored XSS vulnerability was discovered in adminweb/ra/viewendentity.jsp in PrimeKey EJBCA through 7.9.0.2. A low-privilege user can store JavaScript in order to exploit a higher-privilege user."
-    },
-    {
-        "Modified": "2022-11-17T05:34:00",
-        "Published": "2022-11-17T05:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-42954",
-        "impact": {},
-        "last-modified": "2022-11-17T05:34:00",
-        "references": [
-            "https://support.keyfactor.com/s/detail/a6x1Q000000CwCjQAK"
-        ],
-        "summary": "Keyfactor EJBCA before 7.10.0 allows XSS."
-    },
-    {
-        "Modified": "2022-11-17T05:34:00",
-        "Published": "2022-11-17T05:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-42982",
-        "impact": {},
-        "last-modified": "2022-11-17T05:34:00",
-        "references": [
-            "https://igs.bkg.bund.de/ntrip/bkgcaster",
-            "https://cve.mahi.be/bkg_ntrip_udp/"
-        ],
-        "summary": "BKG Professional NtripCaster 2.0.39 allows querying information over the UDP protocol without authentication. The NTRIP sourcetable is typically quite long (tens of kBs) and can be requested with a packet of only 30 bytes. This presents a vector that can be used for UDP amplification attacks. Normally, only authenticated streaming data will be provided over UDP and not the sourcetable."
-    },
-    {
-        "Modified": "2022-11-17T05:34:00",
-        "Published": "2022-11-17T05:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-42985",
-        "impact": {},
-        "last-modified": "2022-11-17T05:34:00",
-        "references": [
-            "https://github.com/InternationalScratchWiki/mediawiki-scratch-login/blob/4d2c1229b558b9cd685961274f20b621d114f4db/ScratchLogin.common.php#L104",
-            "https://github.com/InternationalScratchWiki/mediawiki-scratch-login/pull/22"
-        ],
-        "summary": "The ScratchLogin extension through 1.1 for MediaWiki does not escape verification failure messages, which allows users with administrator privileges to perform cross-site scripting (XSS)."
-    },
-    {
-        "Modified": "2022-11-17T05:34:00",
-        "Published": "2022-11-16T23:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-44006",
-        "impact": {},
-        "last-modified": "2022-11-17T05:34:00",
-        "references": [
-            "https://www.syss.de/pentest-blog/vielfaeltige-schwachstellen-in-backclick-professional-syss-2022-026-bis-037",
-            "https://www.syss.de/fileadmin/dokumente/Publikationen/Advisories/SYSS-2022-031.txt"
-        ],
-        "summary": "An issue was discovered in BACKCLICK Professional 5.9.63. Due to improper validation or sanitization of upload filenames, an externally reachable, unauthenticated update function permits writing files outside the intended target location. Achieving remote code execution is possible, e.g., by uploading an executable file."
-    },
-    {
-        "Modified": "2022-11-17T05:34:00",
-        "Published": "2022-11-17T00:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-42960",
-        "impact": {},
-        "last-modified": "2022-11-17T05:34:00",
-        "references": [
-            "https://www.imperva.com/blog/vulnerability-discovered-in-equalweb-accessibility-widget/"
-        ],
-        "summary": "EqualWeb Accessibility Widget 2.0.0, 2.0.1, 2.0.2, 2.0.3, 2.0.4, 2.1.10, 3.0.0, 3.0.1, 3.0.2, 4.0.0, and 4.0.1 allows DOM XSS due to improper validation of message events to accessibility.js."
-    },
-    {
-        "Modified": "2022-11-17T05:34:00",
-        "Published": "2022-11-17T00:15:00",
-        "access": {},
-        "assigner": "security@atlassian.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-43781",
-        "impact": {},
-        "last-modified": "2022-11-17T05:34:00",
-        "references": [
-            "https://confluence.atlassian.com/x/Y4hXRg",
-            "https://jira.atlassian.com/browse/BSERV-13522"
-        ],
-        "summary": "There is a command injection vulnerability using environment variables in Bitbucket Server and Data Center. An attacker with permission to control their username can exploit this issue to execute arbitrary code on the system. This vulnerability can be unauthenticated if the Bitbucket Server and Data Center instance has enabled \u201cAllow public signup\u201d."
-    },
-    {
-        "Modified": "2022-11-17T05:34:00",
-        "Published": "2022-11-17T00:15:00",
-        "access": {},
-        "assigner": "security@atlassian.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-43782",
-        "impact": {},
-        "last-modified": "2022-11-17T05:34:00",
-        "references": [
-            "https://jira.atlassian.com/browse/CWD-5888"
-        ],
-        "summary": "Affected versions of Atlassian Crowd allow an attacker to authenticate as the crowd application via security misconfiguration and subsequent ability to call privileged endpoints in Crowd's REST API under the {{usermanagement}} path. This vulnerability can only be exploited by IPs specified under the crowd application allowlist in the Remote Addresses configuration, which is {{none}} by default. The affected versions are all versions 3.x.x, versions 4.x.x before version 4.4.4, and versions 5.x.x before 5.0.3"
-    },
-    {
-        "Modified": "2022-11-17T05:34:00",
-        "Published": "2022-11-16T23:15:00",
-        "access": {},
-        "assigner": "psirt@us.ibm.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-40752",
-        "impact": {},
-        "last-modified": "2022-11-17T05:34:00",
-        "references": [
-            "https://www.ibm.com/support/pages/node/6833566",
-            "https://exchange.xforce.ibmcloud.com/vulnerabilities/236687"
-        ],
-        "summary": "IBM InfoSphere DataStage 11.7 is vulnerable to a command injection vulnerability due to improper neutralization of special elements. IBM X-Force ID: 236687."
-    },
-    {
-        "Modified": "2022-11-17T05:34:00",
-        "Published": "2022-11-16T23:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-44000",
-        "impact": {},
-        "last-modified": "2022-11-17T05:34:00",
-        "references": [
-            "https://www.syss.de/fileadmin/dokumente/Publikationen/Advisories/SYSS-2022-032.txt",
-            "https://www.syss.de/pentest-blog/vielfaeltige-schwachstellen-in-backclick-professional-syss-2022-026-bis-037"
-        ],
-        "summary": "An issue was discovered in BACKCLICK Professional 5.9.63. Due to an exposed internal communications interface, it is possible to execute arbitrary system commands on the server."
-    },
-    {
-        "Modified": "2022-11-17T05:34:00",
-        "Published": "2022-11-16T23:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-44002",
-        "impact": {},
-        "last-modified": "2022-11-17T05:34:00",
-        "references": [
-            "https://www.syss.de/pentest-blog/vielfaeltige-schwachstellen-in-backclick-professional-syss-2022-026-bis-037"
-        ],
-        "summary": "An issue was discovered in BACKCLICK Professional 5.9.63. Due to insufficient output encoding of user-supplied data, the web application is vulnerable to cross-site scripting (XSS) at various locations."
-    },
-    {
-        "Modified": "2022-11-17T05:34:00",
-        "Published": "2022-11-16T23:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-44003",
-        "impact": {},
-        "last-modified": "2022-11-17T05:34:00",
-        "references": [
-            "https://www.syss.de/fileadmin/dokumente/Publikationen/Advisories/SYSS-2022-029.txt",
-            "https://www.syss.de/pentest-blog/vielfaeltige-schwachstellen-in-backclick-professional-syss-2022-026-bis-037"
-        ],
-        "summary": "An issue was discovered in BACKCLICK Professional 5.9.63. Due to insufficient escaping of user-supplied input, the application is vulnerable to SQL injection at various locations."
-    },
-    {
-        "Modified": "2022-11-17T05:34:00",
-        "Published": "2022-11-16T23:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-44004",
-        "impact": {},
-        "last-modified": "2022-11-17T05:34:00",
-        "references": [
-            "https://www.syss.de/fileadmin/dokumente/Publikationen/Advisories/SYSS-2022-030.txt",
-            "https://www.syss.de/pentest-blog/vielfaeltige-schwachstellen-in-backclick-professional-syss-2022-026-bis-037"
-        ],
-        "summary": "An issue was discovered in BACKCLICK Professional 5.9.63. Due to insecure design or lack of authentication, unauthenticated attackers can complete the password-reset process for any account and set a new password."
-    },
-    {
-        "Modified": "2022-11-17T05:34:00",
-        "Published": "2022-11-16T23:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-44005",
-        "impact": {},
-        "last-modified": "2022-11-17T05:34:00",
-        "references": [
-            "https://www.syss.de/pentest-blog/vielfaeltige-schwachstellen-in-backclick-professional-syss-2022-026-bis-037",
-            "https://www.syss.de/fileadmin/dokumente/Publikationen/Advisories/SYSS-2022-026.txt"
-        ],
-        "summary": "An issue was discovered in BACKCLICK Professional 5.9.63. Due to the use of consecutive IDs in verification links, the newsletter sign-up functionality is vulnerable to the enumeration of subscribers' e-mail addresses. Furthermore, it is possible to subscribe and verify other persons' e-mail addresses to newsletters without their consent."
-    },
-    {
-        "Modified": "2022-11-17T05:34:00",
-        "Published": "2022-11-17T00:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2021-38819",
-        "impact": {},
-        "last-modified": "2022-11-17T05:34:00",
-        "references": [
-            "https://github.com/m4sk0ff/CVE-2021-38819/blob/main/CVE-2021-38819.md"
-        ],
-        "summary": "A SQL injection vulnerability exits on the Simple Image Gallery System 1.0 application through \"id\" parameter on the album page."
-    },
-    {
-        "Modified": "2022-11-17T05:34:00",
-        "Published": "2022-11-16T22:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-43999",
-        "impact": {},
-        "last-modified": "2022-11-17T05:34:00",
-        "references": [
-            "https://www.syss.de/fileadmin/dokumente/Publikationen/Advisories/SYSS-2022-034.txt",
-            "https://www.syss.de/pentest-blog/vielfaeltige-schwachstellen-in-backclick-professional-syss-2022-026-bis-037"
-        ],
-        "summary": "An issue was discovered in BACKCLICK Professional 5.9.63. Due to exposed CORBA management services, arbitrary system commands can be executed on the server."
-    },
-    {
-        "Modified": "2022-11-17T05:34:00",
-        "Published": "2022-11-16T22:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-44007",
-        "impact": {},
-        "last-modified": "2022-11-17T05:34:00",
-        "references": [
-            "https://www.syss.de/pentest-blog/vielfaeltige-schwachstellen-in-backclick-professional-syss-2022-026-bis-037",
-            "https://www.syss.de/fileadmin/dokumente/Publikationen/Advisories/SYSS-2022-036.txt"
-        ],
-        "summary": "An issue was discovered in BACKCLICK Professional 5.9.63. Due to an unsafe implementation of session tracking, it is possible for an attacker to trick users into opening an authenticated user session for a session identifier known to the attacker, aka Session Fixation."
-    },
-    {
-        "Modified": "2022-11-17T05:34:00",
-        "Published": "2022-11-16T22:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-44008",
-        "impact": {},
-        "last-modified": "2022-11-17T05:34:00",
-        "references": [
-            "https://www.syss.de/fileadmin/dokumente/Publikationen/Advisories/SYSS-2022-037.txt"
-        ],
-        "summary": "An issue was discovered in BACKCLICK Professional 5.9.63. Due to improper validation, arbitrary local files can be retrieved by accessing the back-end Tomcat server directly."
-    },
-    {
-        "Modified": "2022-11-17T05:30:00",
-        "Published": "2022-11-15T14:15:00",
-        "access": {},
-        "assigner": "security@wordfence.com",
-        "cvss": null,
-        "cwe": "CWE-352",
-        "id": "CVE-2022-3240",
-        "impact": {},
-        "last-modified": "2022-11-17T05:30:00",
-        "references": [
-            "https://plugins.trac.wordpress.org/browser/follow-me/trunk/follow-me.php#L261",
-            "https://www.wordfence.com/vulnerability-advisories-continued/#CVE-2022-3240"
-        ],
-        "summary": "The \"Follow Me Plugin\" plugin for WordPress is vulnerable to Cross-Site Request Forgery in versions up to, and including, 3.1.1. This is due to missing nonce validation on the FollowMeIgniteSocialMedia_options_page() function. This makes it possible for unauthenticated attackers to modify the plugin's settings and inject malicious JavaScript via a forged request granted they can trick a site administrator into performing an action such as clicking on a link."
-    },
-    {
-        "Modified": "2022-11-17T05:21:00",
-        "Published": "2022-11-15T22:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-384",
-        "id": "CVE-2022-30769",
-        "impact": {},
-        "last-modified": "2022-11-17T05:21:00",
-        "references": [
-            "https://github.com/ZoneMinder/zoneminder/releases",
-            "https://medium.com/@dk50u1/session-fixation-in-zoneminder-up-to-v1-36-12-3c850b1fbbf3"
-        ],
-        "summary": "Session fixation exists in ZoneMinder through 1.36.12 as an attacker can poison a session cookie to the next logged-in user."
-    },
-    {
-        "Modified": "2022-11-17T05:21:00",
-        "Published": "2022-11-15T21:15:00",
-        "access": {},
-        "assigner": "info@cert.vde.com",
-        "cvss": null,
+        "Modified": "2022-11-17T17:41:00",
+        "Published": "2022-01-14T18:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "security@huntr.dev",
+        "cvss": 7.5,
+        "cvss-time": "2022-11-17T17:41:00",
+        "cvss-vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
         "cwe": "CWE-89",
-        "id": "CVE-2020-12507",
-        "impact": {},
-        "last-modified": "2022-11-17T05:21:00",
+        "id": "CVE-2022-0224",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "PARTIAL",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-11-17T17:41:00",
         "references": [
-            "https://www.s-can.at/en/the-new-monitool-v4-2-security-first/"
+            "https://github.com/dolibarr/dolibarr/commit/b9b45fb50618aa8053961f50bc8604b188d0ea79",
+            "https://huntr.dev/bounties/f1d1ce3e-ca92-4c7b-b1b8-934e28eaa486"
         ],
-        "summary": "In s::can moni::tools before version 4.2 an authenticated attacker could get full access to the database through SQL injection. This may result in loss of confidentiality, loss of integrity and DoS."
+        "summary": "dolibarr is vulnerable to Improper Neutralization of Special Elements used in an SQL Command"
     },
     {
-        "Modified": "2022-11-17T05:20:00",
-        "Published": "2022-11-14T23:15:00",
+        "Modified": "2022-11-17T17:40:00",
+        "Published": "2022-06-13T09:15:00",
+        "access": {
+            "authentication": "SINGLE",
+            "complexity": "MEDIUM",
+            "vector": "NETWORK"
+        },
+        "assigner": "security@huntr.dev",
+        "cvss": 3.5,
+        "cvss-time": "2022-11-17T17:40:00",
+        "cvss-vector": "AV:N/AC:M/Au:S/C:N/I:P/A:N",
+        "cwe": "CWE-79",
+        "id": "CVE-2022-2060",
+        "impact": {
+            "availability": "NONE",
+            "confidentiality": "NONE",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-11-17T17:40:00",
+        "references": [
+            "https://github.com/dolibarr/dolibarr/commit/2b5b9957c3010a5db9d1988c2efe5b209b16b47f",
+            "https://huntr.dev/bounties/2acfc8fe-247c-4f88-aeaa-042b6b8690a0"
+        ],
+        "summary": "Cross-site Scripting (XSS) - Stored in GitHub repository dolibarr/dolibarr prior to 16.0."
+    },
+    {
+        "Modified": "2022-11-17T17:39:00",
+        "Published": "2022-02-23T19:15:00",
+        "access": {
+            "authentication": "SINGLE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "security@huntr.dev",
+        "cvss": 4.0,
+        "cvss-time": "2022-11-17T17:39:00",
+        "cvss-vector": "AV:N/AC:L/Au:S/C:P/I:N/A:N",
+        "cwe": "CWE-639",
+        "id": "CVE-2022-0731",
+        "impact": {
+            "availability": "NONE",
+            "confidentiality": "PARTIAL",
+            "integrity": "NONE"
+        },
+        "last-modified": "2022-11-17T17:39:00",
+        "references": [
+            "https://github.com/dolibarr/dolibarr/commit/209ab708d4b65fbd88ba4340d60b7822cb72651a",
+            "https://huntr.dev/bounties/e242ab4e-fc70-4b2c-a42d-5b3ee4895de8"
+        ],
+        "summary": "Improper Access Control (IDOR) in GitHub repository dolibarr/dolibarr prior to 16.0."
+    },
+    {
+        "Modified": "2022-11-17T17:38:00",
+        "Published": "2022-01-10T18:15:00",
+        "access": {
+            "authentication": "SINGLE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "security@huntr.dev",
+        "cvss": 4.0,
+        "cvss-time": "2022-11-17T17:38:00",
+        "cvss-vector": "AV:N/AC:L/Au:S/C:N/I:P/A:N",
+        "cwe": "CWE-20",
+        "id": "CVE-2022-0174",
+        "impact": {
+            "availability": "NONE",
+            "confidentiality": "NONE",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-11-17T17:38:00",
+        "references": [
+            "https://github.com/dolibarr/dolibarr/commit/d892160f4f130385a3ce520f66cb8cf2eb8c5c32",
+            "https://huntr.dev/bounties/ed3ed4ce-3968-433c-a350-351c8f8b60db"
+        ],
+        "summary": "dolibarr is vulnerable to Business Logic Errors"
+    },
+    {
+        "Modified": "2022-11-17T17:31:00",
+        "Published": "2022-11-12T22:15:00",
+        "access": {},
+        "assigner": "cna@vuldb.com",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2022-3963",
+        "impact": {},
+        "last-modified": "2022-11-17T17:31:00",
+        "references": [
+            "https://vuldb.com/?id.213540",
+            "https://github.com/gnuboard/gnuboard5/commit/ba062ca5b62809106d5a2f7df942ffcb44ecb5a9"
+        ],
+        "summary": "A vulnerability was found in gnuboard5. It has been classified as problematic. Affected is an unknown function of the file bbs/faq.php of the component FAQ Key ID Handler. The manipulation of the argument fm_id leads to cross site scripting. It is possible to launch the attack remotely. Upgrading to version 5.5.8.2.1 is able to address this issue. The name of the patch is ba062ca5b62809106d5a2f7df942ffcb44ecb5a9. It is recommended to upgrade the affected component. The identifier of this vulnerability is VDB-213540."
+    },
+    {
+        "Modified": "2022-11-17T17:22:00",
+        "Published": "2022-11-12T20:15:00",
         "access": {},
         "assigner": "cve@mitre.org",
         "cvss": null,
+        "cwe": "CWE-400",
+        "id": "CVE-2022-45196",
+        "impact": {},
+        "last-modified": "2022-11-17T17:22:00",
+        "references": [
+            "https://github.com/hyperledger/fabric/pull/2934",
+            "https://github.com/SmartBFT-Go/fabric/issues/286"
+        ],
+        "summary": "Hyperledger Fabric 2.3 allows attackers to cause a denial of service (orderer crash) by repeatedly sending a crafted channel tx with the same Channel name. NOTE: the official Fabric with Raft prevents exploitation via a locking mechanism and a check for names that already exist."
+    },
+    {
+        "Modified": "2022-11-17T17:21:00",
+        "Published": "2022-06-08T17:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "MEDIUM",
+            "vector": "NETWORK"
+        },
+        "assigner": "cve@mitre.org",
+        "cvss": 4.3,
+        "cvss-time": "2022-11-17T17:21:00",
+        "cvss-vector": "AV:N/AC:M/Au:N/C:N/I:P/A:N",
+        "cwe": "CWE-79",
+        "id": "CVE-2022-30875",
+        "impact": {
+            "availability": "NONE",
+            "confidentiality": "NONE",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-11-17T17:21:00",
+        "references": [
+            "https://github.com/mustgundogdu/Research/edit/main/Dolibar_12.0.5-ReflectedXSS/README.md",
+            "https://github.com/mustgundogdu/Research/edit/main/Dolibar_12.0.5-ReflectedXSS,"
+        ],
+        "summary": "Dolibarr 12.0.5 is vulnerable to Cross Site Scripting (XSS) via Sql Error Page."
+    },
+    {
+        "Modified": "2022-11-17T17:21:00",
+        "Published": "2022-01-02T00:15:00",
+        "access": {
+            "authentication": "SINGLE",
+            "complexity": "MEDIUM",
+            "vector": "NETWORK"
+        },
+        "assigner": "cve@mitre.org",
+        "cvss": 3.5,
+        "cvss-time": "2022-11-17T17:21:00",
+        "cvss-vector": "AV:N/AC:M/Au:S/C:N/I:P/A:N",
+        "cwe": "CWE-79",
+        "id": "CVE-2022-22293",
+        "impact": {
+            "availability": "NONE",
+            "confidentiality": "NONE",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-11-17T17:21:00",
+        "references": [
+            "https://github.com/mustgundogdu/Research/blob/main/Dolibar_7.0.2-StoredXSS/README.md",
+            "https://github.com/Dolibarr/dolibarr/issues/20237"
+        ],
+        "summary": "admin/limits.php in Dolibarr 7.0.2 allows HTML injection, as demonstrated by the MAIN_MAX_DECIMALS_TOT parameter."
+    },
+    {
+        "Modified": "2022-11-17T17:21:00",
+        "Published": "2021-11-10T23:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "MEDIUM",
+            "vector": "NETWORK"
+        },
+        "assigner": "cve@mitre.org",
+        "cvss": 4.3,
+        "cvss-time": "2022-11-17T17:21:00",
+        "cvss-vector": "AV:N/AC:M/Au:N/C:N/I:P/A:N",
+        "cwe": "CWE-79",
+        "id": "CVE-2021-33618",
+        "impact": {
+            "availability": "NONE",
+            "confidentiality": "NONE",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-11-17T17:21:00",
+        "references": [
+            "https://trovent.github.io/security-advisories/TRSA-2105-02/TRSA-2105-02.txt",
+            "https://github.com/Dolibarr/dolibarr/releases",
+            "https://trovent.io/security-advisory-2105-02",
+            "http://seclists.org/fulldisclosure/2021/Nov/38"
+        ],
+        "summary": "Dolibarr ERP and CRM 13.0.2 allows XSS via object details, as demonstrated by > and < characters in the onpointermove attribute of a BODY element to the user-management feature."
+    },
+    {
+        "Modified": "2022-11-17T17:21:00",
+        "Published": "2021-11-10T23:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "cve@mitre.org",
+        "cvss": 7.5,
+        "cvss-time": "2022-11-17T17:21:00",
+        "cvss-vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+        "cwe": "CWE-94",
+        "id": "CVE-2021-33816",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "PARTIAL",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-11-17T17:21:00",
+        "references": [
+            "https://trovent.io/security-advisory-2106-01",
+            "https://trovent.github.io/security-advisories/TRSA-2106-01/TRSA-2106-01.txt",
+            "http://seclists.org/fulldisclosure/2021/Nov/39"
+        ],
+        "summary": "The website builder module in Dolibarr 13.0.2 allows remote PHP code execution because of an incomplete protection mechanism in which system, exec, and shell_exec are blocked but backticks are not blocked."
+    },
+    {
+        "Modified": "2022-11-17T17:21:00",
+        "Published": "2021-08-17T15:15:00",
+        "access": {
+            "authentication": "SINGLE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "vulnerabilitylab@mend.io",
+        "cvss": 6.5,
+        "cvss-time": "2022-11-17T17:21:00",
+        "cvss-vector": "AV:N/AC:L/Au:S/C:P/I:P/A:P",
+        "cwe": "NVD-CWE-Other",
+        "id": "CVE-2021-25956",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "PARTIAL",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-11-17T17:21:00",
+        "references": [
+            "https://www.whitesourcesoftware.com/vulnerability-database/CVE-2021-25956",
+            "https://github.com/Dolibarr/dolibarr/commit/c4cba43bade736ab89e31013a6ccee59a6e077ee"
+        ],
+        "summary": "In \u201cDolibarr\u201d application, v3.3.beta1_20121221 to v13.0.2 have \u201cModify\u201d access for admin level users to change other user\u2019s details but fails to validate already existing \u201cLogin\u201d name, while renaming the user \u201cLogin\u201d. This leads to complete account takeover of the victim user. This happens since the password gets overwritten for the victim user having a similar login name."
+    },
+    {
+        "Modified": "2022-11-17T17:21:00",
+        "Published": "2020-12-23T15:15:00",
+        "access": {
+            "authentication": "SINGLE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "cve@mitre.org",
+        "cvss": 9.0,
+        "cvss-time": "2022-11-17T17:21:00",
+        "cvss-vector": "AV:N/AC:L/Au:S/C:C/I:C/A:C",
+        "cwe": "CWE-88",
+        "id": "CVE-2020-35136",
+        "impact": {
+            "availability": "COMPLETE",
+            "confidentiality": "COMPLETE",
+            "integrity": "COMPLETE"
+        },
+        "last-modified": "2022-11-17T17:21:00",
+        "references": [
+            "https://github.com/Dolibarr/dolibarr/releases",
+            "http://bilishim.com/2020/12/18/zero-hunting-2.html",
+            "https://sourceforge.net/projects/dolibarr/",
+            "https://github.com/Dolibarr/dolibarr/commit/4fcd3fe49332baab0e424225ad10b76b47ebcbac"
+        ],
+        "summary": "Dolibarr 12.0.3 is vulnerable to authenticated Remote Code Execution. An attacker who has the access the admin dashboard can manipulate the backup function by inserting a payload into the filename for the zipfilename_template parameter to admin/tools/dolibarr_export.php."
+    },
+    {
+        "Modified": "2022-11-17T17:21:00",
+        "Published": "2020-01-26T23:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "MEDIUM",
+            "vector": "NETWORK"
+        },
+        "assigner": "cve@mitre.org",
+        "cvss": 4.3,
+        "cvss-time": "2022-11-17T17:21:00",
+        "cvss-vector": "AV:N/AC:M/Au:N/C:N/I:P/A:N",
+        "cwe": "CWE-79",
+        "id": "CVE-2020-7994",
+        "impact": {
+            "availability": "NONE",
+            "confidentiality": "NONE",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-11-17T17:21:00",
+        "references": [
+            "https://tufangungor.github.io/0days",
+            "https://github.com/tufangungor/tufangungor.github.io/blob/master/0days.md"
+        ],
+        "summary": "Multiple cross-site scripting (XSS) vulnerabilities in Dolibarr 10.0.6 allow remote attackers to inject arbitrary web script or HTML via the (1) label[libelle] parameter to the /htdocs/admin/dict.php?id=3 page; the (2) name[constname] parameter to the /htdocs/admin/const.php?mainmenu=home page; the (3) note[note] parameter to the /htdocs/admin/dict.php?id=10 page; the (4) zip[MAIN_INFO_SOCIETE_ZIP] or email[mail] parameter to the /htdocs/admin/company.php page; the (5) url[defaulturl], field[defaultkey], or value[defaultvalue] parameter to the /htdocs/admin/defaultvalues.php page; the (6) key[transkey] or key[transvalue] parameter to the /htdocs/admin/translation.php page; or the (7) [main_motd] or [main_home] parameter to the /htdocs/admin/ihm.php page."
+    },
+    {
+        "Modified": "2022-11-17T17:21:00",
+        "Published": "2019-10-15T12:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "MEDIUM",
+            "vector": "NETWORK"
+        },
+        "assigner": "cve@mitre.org",
+        "cvss": 4.3,
+        "cvss-time": "2022-11-17T17:21:00",
+        "cvss-vector": "AV:N/AC:M/Au:N/C:N/I:P/A:N",
+        "cwe": "CWE-79",
+        "id": "CVE-2019-17223",
+        "impact": {
+            "availability": "NONE",
+            "confidentiality": "NONE",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-11-17T17:21:00",
+        "references": [
+            "https://medium.com/@k43p/cve-2019-17223-stored-html-injection-dolibarr-crm-erp-ad1e064d0ca5",
+            "https://www.dolibarr.org/forum/dolibarr-changelogs"
+        ],
+        "summary": "There is HTML Injection in the Note field in Dolibarr ERP/CRM 10.0.2 via user/note.php."
+    },
+    {
+        "Modified": "2022-11-17T17:21:00",
+        "Published": "2017-05-10T14:29:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "LOCAL"
+        },
+        "assigner": "cve@mitre.org",
+        "cvss": 4.6,
+        "cvss-time": "2022-11-17T17:21:00",
+        "cvss-vector": "AV:L/AC:L/Au:N/C:P/I:P/A:P",
         "cwe": "CWE-287",
-        "id": "CVE-2022-43690",
-        "impact": {},
-        "last-modified": "2022-11-17T05:20:00",
+        "id": "CVE-2017-8879",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "PARTIAL",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-11-17T17:21:00",
         "references": [
-            "https://github.com/concretecms/concretecms/releases/8.5.10",
-            "https://documentation.concretecms.org/developers/introduction/version-history/913-release-notes",
-            "https://documentation.concretecms.org/developers/introduction/version-history/8510-release-notes",
-            "https://www.concretecms.org/about/project-news/security/concrete-cms-security-advisory-2022-10-31",
-            "https://github.com/concretecms/concretecms/releases/9.1.3"
+            "https://www.foxmole.com/advisories/foxmole-2017-02-23.txt"
         ],
-        "summary": "Concrete CMS (formerly concrete5) below 8.5.10 and between 9.0.0 and 9.1.2 did not use strict comparison for the legacy_salt so that limited authentication bypass could occur if using this functionality. Remediate by updating to Concrete CMS 9.1.3+ or 8.5.10+."
+        "summary": "Dolibarr ERP/CRM 4.0.4 allows password changes without supplying the current password, which makes it easier for physically proximate attackers to obtain access via an unattended workstation."
     },
     {
-        "Modified": "2022-11-17T05:18:00",
-        "Published": "2022-11-14T21:15:00",
-        "access": {},
+        "Modified": "2022-11-17T17:21:00",
+        "Published": "2019-10-16T18:15:00",
+        "access": {
+            "authentication": "SINGLE",
+            "complexity": "MEDIUM",
+            "vector": "NETWORK"
+        },
         "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-787",
-        "id": "CVE-2022-43295",
-        "impact": {},
-        "last-modified": "2022-11-17T05:18:00",
+        "cvss": 3.5,
+        "cvss-time": "2022-11-17T17:21:00",
+        "cvss-vector": "AV:N/AC:M/Au:S/C:N/I:P/A:N",
+        "cwe": "CWE-79",
+        "id": "CVE-2019-17577",
+        "impact": {
+            "availability": "NONE",
+            "confidentiality": "NONE",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-11-17T17:21:00",
         "references": [
-            "https://forum.xpdfreader.com/viewtopic.php?t=42360"
+            "https://mycvee.blogspot.com/p/cve-2019-17576.html"
         ],
-        "summary": "XPDF v4.04 was discovered to contain a stack overflow via the function FileStream::copy() at xpdf/Stream.cc:795."
+        "summary": "An issue was discovered in Dolibarr 10.0.2. It has XSS via the \"outgoing email setup\" feature in the admin/mails.php?action=edit URI via the \"Email used for error returns emails (fields 'Errors-To' in emails sent)\" field."
     },
     {
-        "Modified": "2022-11-17T05:15:00",
-        "Published": "2022-04-28T16:15:00",
+        "Modified": "2022-11-17T17:21:00",
+        "Published": "2019-01-03T19:29:00",
+        "access": {
+            "authentication": "SINGLE",
+            "complexity": "MEDIUM",
+            "vector": "NETWORK"
+        },
+        "assigner": "cve@mitre.org",
+        "cvss": 3.5,
+        "cvss-time": "2022-11-17T17:21:00",
+        "cvss-vector": "AV:N/AC:M/Au:S/C:N/I:P/A:N",
+        "cwe": "CWE-79",
+        "id": "CVE-2018-19992",
+        "impact": {
+            "availability": "NONE",
+            "confidentiality": "NONE",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-11-17T17:21:00",
+        "references": [
+            "https://github.com/Dolibarr/dolibarr/commit/0f06e39d23636bd1e4039ac61a743c79725c798b"
+        ],
+        "summary": "A stored cross-site scripting (XSS) vulnerability in Dolibarr 8.0.2 allows remote authenticated users to inject arbitrary web script or HTML via the \"address\" (POST) or \"town\" (POST) parameter to adherents/type.php."
+    },
+    {
+        "Modified": "2022-11-17T17:21:00",
+        "Published": "2019-11-26T15:15:00",
+        "access": {
+            "authentication": "SINGLE",
+            "complexity": "MEDIUM",
+            "vector": "NETWORK"
+        },
+        "assigner": "cve@mitre.org",
+        "cvss": 3.5,
+        "cvss-time": "2022-11-17T17:21:00",
+        "cvss-vector": "AV:N/AC:M/Au:S/C:N/I:P/A:N",
+        "cwe": "CWE-79",
+        "id": "CVE-2019-19206",
+        "impact": {
+            "availability": "NONE",
+            "confidentiality": "NONE",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-11-17T17:21:00",
+        "references": [
+            "https://medium.com/@k43p/cve-2019-19206-stored-xss-due-to-javascript-execution-in-an-svg-file-ee1d038fba76",
+            "https://www.dolibarr.org/forum/dolibarr-changelogs"
+        ],
+        "summary": "Dolibarr CRM/ERP 10.0.3 allows viewimage.php?file= Stored XSS due to JavaScript execution in an SVG image for a profile picture."
+    },
+    {
+        "Modified": "2022-11-17T17:21:00",
+        "Published": "2019-10-16T18:15:00",
+        "access": {
+            "authentication": "SINGLE",
+            "complexity": "MEDIUM",
+            "vector": "NETWORK"
+        },
+        "assigner": "cve@mitre.org",
+        "cvss": 3.5,
+        "cvss-time": "2022-11-17T17:21:00",
+        "cvss-vector": "AV:N/AC:M/Au:S/C:N/I:P/A:N",
+        "cwe": "CWE-79",
+        "id": "CVE-2019-17576",
+        "impact": {
+            "availability": "NONE",
+            "confidentiality": "NONE",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-11-17T17:21:00",
+        "references": [
+            "https://mycvee.blogspot.com/p/blog-page.html"
+        ],
+        "summary": "An issue was discovered in Dolibarr 10.0.2. It has XSS via the \"outgoing email setup\" feature in the /admin/mails.php?action=edit URI via the \"Send all emails to (instead of real recipients, for test purposes)\" field."
+    },
+    {
+        "Modified": "2022-11-17T17:21:00",
+        "Published": "2017-05-10T14:29:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "MEDIUM",
+            "vector": "NETWORK"
+        },
+        "assigner": "cve@mitre.org",
+        "cvss": 4.3,
+        "cvss-time": "2022-11-17T17:21:00",
+        "cvss-vector": "AV:N/AC:M/Au:N/C:N/I:P/A:N",
+        "cwe": "CWE-79",
+        "id": "CVE-2017-7887",
+        "impact": {
+            "availability": "NONE",
+            "confidentiality": "NONE",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-11-17T17:21:00",
+        "references": [
+            "https://www.foxmole.com/advisories/foxmole-2017-02-23.txt"
+        ],
+        "summary": "Dolibarr ERP/CRM 4.0.4 has XSS in doli/societe/list.php via the sall parameter."
+    },
+    {
+        "Modified": "2022-11-17T17:21:00",
+        "Published": "2019-10-16T18:15:00",
+        "access": {
+            "authentication": "SINGLE",
+            "complexity": "MEDIUM",
+            "vector": "NETWORK"
+        },
+        "assigner": "cve@mitre.org",
+        "cvss": 3.5,
+        "cvss-time": "2022-11-17T17:21:00",
+        "cvss-vector": "AV:N/AC:M/Au:S/C:N/I:P/A:N",
+        "cwe": "CWE-79",
+        "id": "CVE-2019-17578",
+        "impact": {
+            "availability": "NONE",
+            "confidentiality": "NONE",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-11-17T17:21:00",
+        "references": [
+            "https://mycvee.blogspot.com/p/cve-2019-17578.html"
+        ],
+        "summary": "An issue was discovered in Dolibarr 10.0.2. It has XSS via the \"outgoing email setup\" feature in the admin/mails.php?action=edit URI via the \"Sender email for automatic emails (default value in php.ini: Undefined)\" field."
+    },
+    {
+        "Modified": "2022-11-17T17:21:00",
+        "Published": "2019-01-03T19:29:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "MEDIUM",
+            "vector": "NETWORK"
+        },
+        "assigner": "cve@mitre.org",
+        "cvss": 4.3,
+        "cvss-time": "2022-11-17T17:21:00",
+        "cvss-vector": "AV:N/AC:M/Au:N/C:N/I:P/A:N",
+        "cwe": "CWE-79",
+        "id": "CVE-2018-19993",
+        "impact": {
+            "availability": "NONE",
+            "confidentiality": "NONE",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-11-17T17:21:00",
+        "references": [
+            "https://github.com/Dolibarr/dolibarr/commit/fc3fcc5455d9a610b85723e89e8be43a41ad1378"
+        ],
+        "summary": "A reflected cross-site scripting (XSS) vulnerability in Dolibarr 8.0.2 allows remote attackers to inject arbitrary web script or HTML via the transphrase parameter to public/notice.php."
+    },
+    {
+        "Modified": "2022-11-17T17:21:00",
+        "Published": "2017-05-10T14:29:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "cve@mitre.org",
+        "cvss": 7.5,
+        "cvss-time": "2022-11-17T17:21:00",
+        "cvss-vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+        "cwe": "CWE-89",
+        "id": "CVE-2017-7886",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "PARTIAL",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-11-17T17:21:00",
+        "references": [
+            "https://www.foxmole.com/advisories/foxmole-2017-02-23.txt"
+        ],
+        "summary": "Dolibarr ERP/CRM 4.0.4 has SQL Injection in doli/theme/eldy/style.css.php via the lang parameter."
+    },
+    {
+        "Modified": "2022-11-17T17:21:00",
+        "Published": "2020-01-26T23:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "cve@mitre.org",
+        "cvss": 10.0,
+        "cvss-time": "2022-11-17T17:21:00",
+        "cvss-vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C",
+        "cwe": "CWE-307",
+        "id": "CVE-2020-7995",
+        "impact": {
+            "availability": "COMPLETE",
+            "confidentiality": "COMPLETE",
+            "integrity": "COMPLETE"
+        },
+        "last-modified": "2022-11-17T17:21:00",
+        "references": [
+            "https://tufangungor.github.io/exploit/2020/01/18/dolibarr-10.0.6-brute-force.html",
+            "https://github.com/tufangungor/tufangungor.github.io/blob/master/_posts/2020-01-19-dolibarr-10.0.6-brute-force.md",
+            "http://packetstormsecurity.com/files/163541/Dolibarr-ERP-CRM-10.0.6-Login-Brute-Forcer.html"
+        ],
+        "summary": "The htdocs/index.php?mainmenu=home login page in Dolibarr 10.0.6 allows an unlimited rate of failed authentication attempts."
+    },
+    {
+        "Modified": "2022-11-17T17:21:00",
+        "Published": "2020-02-16T22:15:00",
+        "access": {
+            "authentication": "SINGLE",
+            "complexity": "MEDIUM",
+            "vector": "NETWORK"
+        },
+        "assigner": "cve@mitre.org",
+        "cvss": 3.5,
+        "cvss-time": "2022-11-17T17:21:00",
+        "cvss-vector": "AV:N/AC:M/Au:S/C:N/I:P/A:N",
+        "cwe": "CWE-79",
+        "id": "CVE-2020-9016",
+        "impact": {
+            "availability": "NONE",
+            "confidentiality": "NONE",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-11-17T17:21:00",
+        "references": [
+            "https://code610.blogspot.com/2020/02/this-time-i-tried-to-check-one-of.html"
+        ],
+        "summary": "Dolibarr 11.0 allows XSS via the joinfiles, topic, or code parameter, or the HTTP Referer header."
+    },
+    {
+        "Modified": "2022-11-17T17:21:00",
+        "Published": "2017-05-10T14:29:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "cve@mitre.org",
+        "cvss": 5.0,
+        "cvss-time": "2022-11-17T17:21:00",
+        "cvss-vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N",
+        "cwe": "CWE-326",
+        "id": "CVE-2017-7888",
+        "impact": {
+            "availability": "NONE",
+            "confidentiality": "PARTIAL",
+            "integrity": "NONE"
+        },
+        "last-modified": "2022-11-17T17:21:00",
+        "references": [
+            "https://www.foxmole.com/advisories/foxmole-2017-02-23.txt"
+        ],
+        "summary": "Dolibarr ERP/CRM 4.0.4 stores passwords with the MD5 algorithm, which makes brute-force attacks easier."
+    },
+    {
+        "Modified": "2022-11-17T17:21:00",
+        "Published": "2019-01-03T19:29:00",
+        "access": {
+            "authentication": "SINGLE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "cve@mitre.org",
+        "cvss": 6.5,
+        "cvss-time": "2022-11-17T17:21:00",
+        "cvss-vector": "AV:N/AC:L/Au:S/C:P/I:P/A:P",
+        "cwe": "CWE-89",
+        "id": "CVE-2018-19994",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "PARTIAL",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-11-17T17:21:00",
+        "references": [
+            "https://github.com/Dolibarr/dolibarr/commit/850b939ffd2c7a4443649331b923d5e0da2d6446"
+        ],
+        "summary": "An error-based SQL injection vulnerability in product/card.php in Dolibarr version 8.0.2 allows remote authenticated users to execute arbitrary SQL commands via the desiredstock parameter."
+    },
+    {
+        "Modified": "2022-11-17T17:21:00",
+        "Published": "2020-01-26T23:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "MEDIUM",
+            "vector": "NETWORK"
+        },
+        "assigner": "cve@mitre.org",
+        "cvss": 4.3,
+        "cvss-time": "2022-11-17T17:21:00",
+        "cvss-vector": "AV:N/AC:M/Au:N/C:N/I:P/A:N",
+        "cwe": "CWE-79",
+        "id": "CVE-2020-7996",
+        "impact": {
+            "availability": "NONE",
+            "confidentiality": "NONE",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-11-17T17:21:00",
+        "references": [
+            "https://github.com/tufangungor/tufangungor.github.io/blob/master/_posts/2020-01-19-dolibarr-10.0.6-xss-in-http-header.md",
+            "https://tufangungor.github.io/exploit/2020/01/18/dolibarr-10.0.6-xss-in-http-header.html"
+        ],
+        "summary": "htdocs/user/passwordforgotten.php in Dolibarr 10.0.6 allows XSS via the Referer HTTP header."
+    },
+    {
+        "Modified": "2022-11-17T17:21:00",
+        "Published": "2019-01-03T19:29:00",
+        "access": {
+            "authentication": "SINGLE",
+            "complexity": "MEDIUM",
+            "vector": "NETWORK"
+        },
+        "assigner": "cve@mitre.org",
+        "cvss": 3.5,
+        "cvss-time": "2022-11-17T17:21:00",
+        "cvss-vector": "AV:N/AC:M/Au:S/C:N/I:P/A:N",
+        "cwe": "CWE-79",
+        "id": "CVE-2018-19995",
+        "impact": {
+            "availability": "NONE",
+            "confidentiality": "NONE",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-11-17T17:21:00",
+        "references": [
+            "https://github.com/Dolibarr/dolibarr/commit/bacd5110fbdc81a35030fdc322775fa15ea85924",
+            "https://github.com/Dolibarr/dolibarr/commit/4b8be6ed64763327018ac1c076f81ddffa87855e"
+        ],
+        "summary": "A stored cross-site scripting (XSS) vulnerability in Dolibarr 8.0.2 allows remote authenticated users to inject arbitrary web script or HTML via the \"address\" (POST) or \"town\" (POST) parameter to user/card.php."
+    },
+    {
+        "Modified": "2022-11-17T17:21:00",
+        "Published": "2019-01-03T19:29:00",
+        "access": {
+            "authentication": "SINGLE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "cve@mitre.org",
+        "cvss": 6.5,
+        "cvss-time": "2022-11-17T17:21:00",
+        "cvss-vector": "AV:N/AC:L/Au:S/C:P/I:P/A:P",
+        "cwe": "CWE-89",
+        "id": "CVE-2018-19998",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "PARTIAL",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-11-17T17:21:00",
+        "references": [
+            "https://github.com/Dolibarr/dolibarr/commit/bacd5110fbdc81a35030fdc322775fa15ea85924",
+            "https://github.com/Dolibarr/dolibarr/commit/2b088a73c121a52e006c0d76ea4da7ffeb7b4f4a"
+        ],
+        "summary": "SQL injection vulnerability in user/card.php in Dolibarr version 8.0.2 allows remote authenticated users to execute arbitrary SQL commands via the employee parameter."
+    },
+    {
+        "Modified": "2022-11-17T17:21:00",
+        "Published": "2019-09-27T20:15:00",
+        "access": {
+            "authentication": "SINGLE",
+            "complexity": "MEDIUM",
+            "vector": "NETWORK"
+        },
+        "assigner": "cve@mitre.org",
+        "cvss": 3.5,
+        "cvss-time": "2022-11-17T17:21:00",
+        "cvss-vector": "AV:N/AC:M/Au:S/C:N/I:P/A:N",
+        "cwe": "CWE-79",
+        "id": "CVE-2019-16688",
+        "impact": {
+            "availability": "NONE",
+            "confidentiality": "NONE",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-11-17T17:21:00",
+        "references": [
+            "http://verneet.com/cve-2019-16688"
+        ],
+        "summary": "Dolibarr 9.0.5 has stored XSS in an Email Template section to mails_templates.php. A user with no privileges can inject script to attack the admin. (This stored XSS can affect all types of user privilege from Admin to users with no permissions.)"
+    },
+    {
+        "Modified": "2022-11-17T17:21:00",
+        "Published": "2019-09-27T20:15:00",
+        "access": {
+            "authentication": "SINGLE",
+            "complexity": "MEDIUM",
+            "vector": "NETWORK"
+        },
+        "assigner": "cve@mitre.org",
+        "cvss": 3.5,
+        "cvss-time": "2022-11-17T17:21:00",
+        "cvss-vector": "AV:N/AC:M/Au:S/C:N/I:P/A:N",
+        "cwe": "CWE-79",
+        "id": "CVE-2019-16685",
+        "impact": {
+            "availability": "NONE",
+            "confidentiality": "NONE",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-11-17T17:21:00",
+        "references": [
+            "http://verneet.com/cve-2019-16685/"
+        ],
+        "summary": "Dolibarr 9.0.5 has stored XSS vulnerability via a User Group Description section to card.php. A user with the \"Create/modify other users, groups and permissions\" privilege can inject script and can also achieve privilege escalation."
+    },
+    {
+        "Modified": "2022-11-17T17:21:00",
+        "Published": "2017-12-27T17:08:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "cve@mitre.org",
+        "cvss": 5.0,
+        "cvss-time": "2022-11-17T17:21:00",
+        "cvss-vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N",
+        "cwe": "CWE-200",
+        "id": "CVE-2017-17898",
+        "impact": {
+            "availability": "NONE",
+            "confidentiality": "PARTIAL",
+            "integrity": "NONE"
+        },
+        "last-modified": "2022-11-17T17:21:00",
+        "references": [
+            "https://github.com/Dolibarr/dolibarr/commit/6a62e139604dbbd5729e57df2433b37a5950c35c",
+            "https://github.com/Dolibarr/dolibarr/commit/4a5988accbb770b74105baacd5a034689272128c"
+        ],
+        "summary": "Dolibarr ERP/CRM version 6.0.4 does not block direct requests to *.tpl.php files, which allows remote attackers to obtain sensitive information."
+    },
+    {
+        "Modified": "2022-11-17T17:21:00",
+        "Published": "2019-09-27T20:15:00",
+        "access": {
+            "authentication": "SINGLE",
+            "complexity": "MEDIUM",
+            "vector": "NETWORK"
+        },
+        "assigner": "cve@mitre.org",
+        "cvss": 3.5,
+        "cvss-time": "2022-11-17T17:21:00",
+        "cvss-vector": "AV:N/AC:M/Au:S/C:N/I:P/A:N",
+        "cwe": "CWE-79",
+        "id": "CVE-2019-16686",
+        "impact": {
+            "availability": "NONE",
+            "confidentiality": "NONE",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-11-17T17:21:00",
+        "references": [
+            "http://verneet.com/cve-2019-16686"
+        ],
+        "summary": "Dolibarr 9.0.5 has stored XSS in a User Note section to note.php. A user with no privileges can inject script to attack the admin."
+    },
+    {
+        "Modified": "2022-11-17T17:21:00",
+        "Published": "2020-06-19T17:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "MEDIUM",
+            "vector": "NETWORK"
+        },
+        "assigner": "cve@mitre.org",
+        "cvss": 4.3,
+        "cvss-time": "2022-11-17T17:21:00",
+        "cvss-vector": "AV:N/AC:M/Au:N/C:N/I:P/A:N",
+        "cwe": "CWE-79",
+        "id": "CVE-2020-14475",
+        "impact": {
+            "availability": "NONE",
+            "confidentiality": "NONE",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-11-17T17:21:00",
+        "references": [
+            "https://github.com/Dolibarr/dolibarr/commit/22ca5e067189bffe8066df26df923a386f044c08"
+        ],
+        "summary": "A reflected cross-site scripting (XSS) vulnerability in Dolibarr 11.0.3 allows remote attackers to inject arbitrary web script or HTML into public/notice.php (related to transphrase and transkey)."
+    },
+    {
+        "Modified": "2022-11-17T17:21:00",
+        "Published": "2019-09-27T20:15:00",
+        "access": {
+            "authentication": "SINGLE",
+            "complexity": "MEDIUM",
+            "vector": "NETWORK"
+        },
+        "assigner": "cve@mitre.org",
+        "cvss": 3.5,
+        "cvss-time": "2022-11-17T17:21:00",
+        "cvss-vector": "AV:N/AC:M/Au:S/C:N/I:P/A:N",
+        "cwe": "CWE-79",
+        "id": "CVE-2019-16687",
+        "impact": {
+            "availability": "NONE",
+            "confidentiality": "NONE",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-11-17T17:21:00",
+        "references": [
+            "http://verneet.com/cve-2019-16687"
+        ],
+        "summary": "Dolibarr 9.0.5 has stored XSS in a User Profile in a Signature section to card.php. A user with the \"Create/modify other users, groups and permissions\" privilege can inject script and can also achieve privilege escalation."
+    },
+    {
+        "Modified": "2022-11-17T17:21:00",
+        "Published": "2020-05-20T15:15:00",
+        "access": {
+            "authentication": "SINGLE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "cve@mitre.org",
+        "cvss": 5.5,
+        "cvss-time": "2022-11-17T17:21:00",
+        "cvss-vector": "AV:N/AC:L/Au:S/C:P/I:P/A:N",
+        "cwe": "CWE-276",
+        "id": "CVE-2020-13240",
+        "impact": {
+            "availability": "NONE",
+            "confidentiality": "PARTIAL",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-11-17T17:21:00",
+        "references": [
+            "https://www.dubget.com/stored-xss-via-file-upload.html"
+        ],
+        "summary": "The DMS/ECM module in Dolibarr 11.0.4 allows users with the 'Setup documents directories' permission to rename uploaded files to have insecure file extensions. This bypasses the .noexe protection mechanism against XSS."
+    },
+    {
+        "Modified": "2022-11-17T17:21:00",
+        "Published": "2018-07-08T16:29:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "cve@mitre.org",
+        "cvss": 7.5,
+        "cvss-time": "2022-11-17T17:21:00",
+        "cvss-vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+        "cwe": "CWE-89",
+        "id": "CVE-2018-13447",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "PARTIAL",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-11-17T17:21:00",
+        "references": [
+            "https://github.com/Dolibarr/dolibarr/commit/36402c22eef49d60edd73a2f312f8e28fe0bd1cb"
+        ],
+        "summary": "SQL injection vulnerability in product/card.php in Dolibarr ERP/CRM version 7.0.3 allows remote attackers to execute arbitrary SQL commands via the statut parameter."
+    },
+    {
+        "Modified": "2022-11-17T17:21:00",
+        "Published": "2020-05-20T15:15:00",
+        "access": {
+            "authentication": "SINGLE",
+            "complexity": "MEDIUM",
+            "vector": "NETWORK"
+        },
+        "assigner": "cve@mitre.org",
+        "cvss": 3.5,
+        "cvss-time": "2022-11-17T17:21:00",
+        "cvss-vector": "AV:N/AC:M/Au:S/C:N/I:P/A:N",
+        "cwe": "CWE-79",
+        "id": "CVE-2020-13239",
+        "impact": {
+            "availability": "NONE",
+            "confidentiality": "NONE",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-11-17T17:21:00",
+        "references": [
+            "https://www.dubget.com/stored-xss-via-file-upload.html"
+        ],
+        "summary": "The DMS/ECM module in Dolibarr 11.0.4 renders user-uploaded .html files in the browser when the attachment parameter is removed from the direct download link. This causes XSS."
+    },
+    {
+        "Modified": "2022-11-17T17:21:00",
+        "Published": "2019-09-16T13:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "MEDIUM",
+            "vector": "NETWORK"
+        },
+        "assigner": "cve@mitre.org",
+        "cvss": 4.3,
+        "cvss-time": "2022-11-17T17:21:00",
+        "cvss-vector": "AV:N/AC:M/Au:N/C:N/I:P/A:N",
+        "cwe": "CWE-79",
+        "id": "CVE-2019-16197",
+        "impact": {
+            "availability": "NONE",
+            "confidentiality": "NONE",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-11-17T17:21:00",
+        "references": [
+            "http://packetstormsecurity.com/files/154481/Dolibarr-ERP-CRM-10.0.1-Cross-Site-Scripting.html"
+        ],
+        "summary": "In htdocs/societe/card.php in Dolibarr 10.0.1, the value of the User-Agent HTTP header is copied into the HTML document as plain text between tags, leading to XSS."
+    },
+    {
+        "Modified": "2022-11-17T17:21:00",
+        "Published": "2020-08-31T16:15:00",
+        "access": {
+            "authentication": "SINGLE",
+            "complexity": "MEDIUM",
+            "vector": "NETWORK"
+        },
+        "assigner": "cve@mitre.org",
+        "cvss": 3.5,
+        "cvss-time": "2022-11-17T17:21:00",
+        "cvss-vector": "AV:N/AC:M/Au:S/C:N/I:P/A:N",
+        "cwe": "CWE-79",
+        "id": "CVE-2020-13828",
+        "impact": {
+            "availability": "NONE",
+            "confidentiality": "NONE",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-11-17T17:21:00",
+        "references": [
+            "https://www.wizlynxgroup.com/security-research-advisories/vuln/WLX-2020-002"
+        ],
+        "summary": "Dolibarr 11.0.4 is affected by multiple stored Cross-Site Scripting (XSS) vulnerabilities that could allow remote authenticated attackers to inject arbitrary web script or HTML via ticket/card.php?action=create with the subject, message, or address parameter; adherents/card.php with the societe or address parameter; product/card.php with the label or customcode parameter; or societe/card.php with the alias or barcode parameter."
+    },
+    {
+        "Modified": "2022-11-17T17:21:00",
+        "Published": "2017-12-27T17:08:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "cve@mitre.org",
+        "cvss": 7.5,
+        "cvss-time": "2022-11-17T17:21:00",
+        "cvss-vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+        "cwe": "CWE-89",
+        "id": "CVE-2017-17897",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "PARTIAL",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-11-17T17:21:00",
+        "references": [
+            "https://github.com/Dolibarr/dolibarr/commit/4a5988accbb770b74105baacd5a034689272128c"
+        ],
+        "summary": "SQL injection vulnerability in comm/multiprix.php in Dolibarr ERP/CRM version 6.0.4 allows remote attackers to execute arbitrary SQL commands via the id parameter."
+    },
+    {
+        "Modified": "2022-11-17T17:21:00",
+        "Published": "2017-12-27T17:08:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "cve@mitre.org",
+        "cvss": 7.5,
+        "cvss-time": "2022-11-17T17:21:00",
+        "cvss-vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+        "cwe": "CWE-89",
+        "id": "CVE-2017-17900",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "PARTIAL",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-11-17T17:21:00",
+        "references": [
+            "https://github.com/Dolibarr/dolibarr/commit/4a5988accbb770b74105baacd5a034689272128c"
+        ],
+        "summary": "SQL injection vulnerability in fourn/index.php in Dolibarr ERP/CRM version 6.0.4 allows remote attackers to execute arbitrary SQL commands via the socid parameter."
+    },
+    {
+        "Modified": "2022-11-17T17:21:00",
+        "Published": "2017-12-27T17:08:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "cve@mitre.org",
+        "cvss": 7.5,
+        "cvss-time": "2022-11-17T17:21:00",
+        "cvss-vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+        "cwe": "CWE-89",
+        "id": "CVE-2017-17899",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "PARTIAL",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-11-17T17:21:00",
+        "references": [
+            "https://github.com/Dolibarr/dolibarr/commit/4a5988accbb770b74105baacd5a034689272128c"
+        ],
+        "summary": "SQL injection vulnerability in adherents/subscription/info.php in Dolibarr ERP/CRM version 6.0.4 allows remote attackers to execute arbitrary SQL commands via the rowid parameter."
+    },
+    {
+        "Modified": "2022-11-17T17:21:00",
+        "Published": "2019-08-14T23:15:00",
+        "access": {
+            "authentication": "SINGLE",
+            "complexity": "MEDIUM",
+            "vector": "NETWORK"
+        },
+        "assigner": "cve@mitre.org",
+        "cvss": 6.0,
+        "cvss-time": "2022-11-17T17:21:00",
+        "cvss-vector": "AV:N/AC:M/Au:S/C:P/I:P/A:P",
+        "cwe": "CWE-352",
+        "id": "CVE-2019-15062",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "PARTIAL",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-11-17T17:21:00",
+        "references": [
+            "https://github.com/Dolibarr/dolibarr/issues/11671",
+            "https://gauravnarwani.com/publications/CVE-2019-15062/"
+        ],
+        "summary": "An issue was discovered in Dolibarr 11.0.0-alpha. A user can store an IFRAME element (containing a user/card.php CSRF request) in his Linked Files settings page. When visited by the admin, this could completely take over the admin account. (The protection mechanism for CSRF is to check the Referer header; however, because the attack is from one of the application's own settings pages, this mechanism is bypassed.)"
+    },
+    {
+        "Modified": "2022-11-17T17:21:00",
+        "Published": "2017-12-29T18:29:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "MEDIUM",
+            "vector": "NETWORK"
+        },
+        "assigner": "cve@mitre.org",
+        "cvss": 4.3,
+        "cvss-time": "2022-11-17T17:21:00",
+        "cvss-vector": "AV:N/AC:M/Au:N/C:N/I:P/A:N",
+        "cwe": "CWE-79",
+        "id": "CVE-2017-17971",
+        "impact": {
+            "availability": "NONE",
+            "confidentiality": "NONE",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-11-17T17:21:00",
+        "references": [
+            "https://github.com/Dolibarr/dolibarr/issues/8000"
+        ],
+        "summary": "The test_sql_and_script_inject function in htdocs/main.inc.php in Dolibarr ERP/CRM 6.0.4 blocks some event attributes but neither onclick nor onscroll, which allows XSS."
+    },
+    {
+        "Modified": "2022-11-17T17:21:00",
+        "Published": "2020-04-16T19:15:00",
+        "access": {
+            "authentication": "SINGLE",
+            "complexity": "MEDIUM",
+            "vector": "NETWORK"
+        },
+        "assigner": "cve@mitre.org",
+        "cvss": 3.5,
+        "cvss-time": "2022-11-17T17:21:00",
+        "cvss-vector": "AV:N/AC:M/Au:S/C:N/I:P/A:N",
+        "cwe": "CWE-79",
+        "id": "CVE-2020-11823",
+        "impact": {
+            "availability": "NONE",
+            "confidentiality": "NONE",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-11-17T17:21:00",
+        "references": [
+            "https://fatihhcelik.blogspot.com/2020/04/dolibarr-stored-xss.html"
+        ],
+        "summary": "In Dolibarr 10.0.6, if USER_LOGIN_FAILED is active, there is a stored XSS vulnerability on the admin tools --> audit page. This may lead to stealing of the admin account."
+    },
+    {
+        "Modified": "2022-11-17T17:21:00",
+        "Published": "2011-11-28T11:55:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "MEDIUM",
+            "vector": "NETWORK"
+        },
+        "assigner": "secalert@redhat.com",
+        "cvss": 4.3,
+        "cvss-time": "2022-11-17T17:21:00",
+        "cvss-vector": "AV:N/AC:M/Au:N/C:N/I:P/A:N",
+        "cwe": "CWE-79",
+        "id": "CVE-2011-4329",
+        "impact": {
+            "availability": "NONE",
+            "confidentiality": "NONE",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-11-17T17:21:00",
+        "references": [
+            "http://archives.neohapsis.com/archives/bugtraq/2011-11/0052.html",
+            "https://github.com/Dolibarr/dolibarr/commit/762f98ab4137749d0993612b4e3544a4207e78a1",
+            "https://doliforge.org/tracker/?func=detail&aid=232&group_id=144",
+            "http://archives.neohapsis.com/archives/bugtraq/2011-11/0138.html",
+            "http://www.securityfocus.com/bid/50617"
+        ],
+        "summary": "Multiple cross-site scripting (XSS) vulnerabilities in Dolibarr 3.1.0 allow remote attackers to inject arbitrary web script or HTML via (1) the username parameter in a setup action to admin/company.php, or the PATH_INFO to (2) admin/security_other.php, (3) admin/events.php, or (4) admin/user.php."
+    },
+    {
+        "Modified": "2022-11-17T17:21:00",
+        "Published": "2014-07-11T14:55:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "MEDIUM",
+            "vector": "NETWORK"
+        },
+        "assigner": "cve@mitre.org",
+        "cvss": 4.3,
+        "cvss-time": "2022-11-17T17:21:00",
+        "cvss-vector": "AV:N/AC:M/Au:N/C:N/I:P/A:N",
+        "cwe": "CWE-79",
+        "id": "CVE-2014-3991",
+        "impact": {
+            "availability": "NONE",
+            "confidentiality": "NONE",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-11-17T17:21:00",
+        "references": [
+            "http://packetstormsecurity.com/files/127389/Dolibarr-CMS-3.5.3-SQL-Injection-Cross-Site-Scripting.html"
+        ],
+        "summary": "Multiple cross-site scripting (XSS) vulnerabilities in Dolibarr ERP/CRM 3.5.3 allow remote attackers to inject arbitrary web script or HTML via the (1) dol_use_jmobile, (2) dol_optimize_smallscreen, (3) dol_no_mouse_hover, (4) dol_hide_topmenu, (5) dol_hide_leftmenu, (6) mainmenu, or (7) leftmenu parameter to index.php; the (8) dol_use_jmobile, (9) dol_optimize_smallscreen, (10) dol_no_mouse_hover, (11) dol_hide_topmenu, or (12) dol_hide_leftmenu parameter to user/index.php; the (13) dol_use_jmobile, (14) dol_optimize_smallscreen, (15) dol_no_mouse_hover, (16) dol_hide_topmenu, or (17) dol_hide_leftmenu parameter to user/logout.php; the (18) email, (19) firstname, (20) job, (21) lastname, or (22) login parameter in an update action in a \"User Card\" to user/fiche.php; or the (23) modulepart or (24) file parameter to viewimage.php."
+    },
+    {
+        "Modified": "2022-11-17T17:21:00",
+        "Published": "2020-04-16T19:15:00",
         "access": {
             "authentication": "NONE",
             "complexity": "MEDIUM",
@@ -1862,20 +2055,349 @@
         },
         "assigner": "cve@mitre.org",
         "cvss": 6.8,
-        "cvss-time": "2022-11-17T05:15:00",
+        "cvss-time": "2022-11-17T17:21:00",
         "cvss-vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
         "cwe": "CWE-352",
-        "id": "CVE-2022-28892",
+        "id": "CVE-2020-11825",
         "impact": {
             "availability": "PARTIAL",
             "confidentiality": "PARTIAL",
             "integrity": "PARTIAL"
         },
-        "last-modified": "2022-11-17T05:15:00",
+        "last-modified": "2022-11-17T17:21:00",
         "references": [
-            "https://bugs.launchpad.net/mahara/+bug/1930171",
-            "https://mahara.org/interaction/forum/topic.php?id=9094"
+            "https://fatihhcelik.blogspot.com/2020/04/dolibarr-csrf.html"
         ],
-        "summary": "Mahara before 20.10.5, 21.04.4, 21.10.2, and 22.04.0 is vulnerable to Cross Site Request Forgery (CSRF) because randomly generated tokens are too easily guessable."
+        "summary": "In Dolibarr 10.0.6, forms are protected with a CSRF token against CSRF attacks. The problem is any CSRF token in any user's session can be used in another user's session. CSRF tokens should not be valid in this situation."
+    },
+    {
+        "Modified": "2022-11-17T17:21:00",
+        "Published": "2011-12-14T00:55:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "MEDIUM",
+            "vector": "NETWORK"
+        },
+        "assigner": "cve@mitre.org",
+        "cvss": 4.3,
+        "cvss-time": "2022-11-17T17:21:00",
+        "cvss-vector": "AV:N/AC:M/Au:N/C:N/I:P/A:N",
+        "cwe": "CWE-79",
+        "id": "CVE-2011-4814",
+        "impact": {
+            "availability": "NONE",
+            "confidentiality": "NONE",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-11-17T17:21:00",
+        "references": [
+            "http://www.osvdb.org/77339",
+            "https://github.com/Dolibarr/dolibarr/commit/d08d28c0cda1f762a47cc205d4363de03df16675",
+            "https://www.htbridge.ch/advisory/multiple_vulnerabilities_in_dolibarr.html",
+            "https://github.com/Dolibarr/dolibarr/commit/c539155d6ac2f5b6ea75b87a16f298c0090e535a",
+            "https://github.com/Dolibarr/dolibarr/commit/63820ab37537fdff842539425b2bf2881f0d8e91",
+            "http://www.securityfocus.com/bid/50777",
+            "https://github.com/Dolibarr/dolibarr/commit/762f98ab4137749d0993612b4e3544a4207e78a1",
+            "http://www.securityfocus.com/archive/1/520619/100/0/threaded"
+        ],
+        "summary": "Multiple cross-site scripting (XSS) vulnerabilities in Dolibarr 3.1.0 RC and probably earlier allow remote attackers to inject arbitrary web script or HTML via the PATH_INFO to (1) index.php, (2) admin/boxes.php, (3) comm/clients.php, (4) commande/index.php; and the optioncss parameter to (5) admin/ihm.php and (6) user/home.php."
+    },
+    {
+        "Modified": "2022-11-17T17:21:00",
+        "Published": "2011-12-14T00:55:00",
+        "access": {
+            "authentication": "SINGLE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "cve@mitre.org",
+        "cvss": 6.5,
+        "cvss-time": "2022-11-17T17:21:00",
+        "cvss-vector": "AV:N/AC:L/Au:S/C:P/I:P/A:P",
+        "cwe": "CWE-89",
+        "id": "CVE-2011-4802",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "PARTIAL",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-11-17T17:21:00",
+        "references": [
+            "http://osvdb.org/77341",
+            "http://osvdb.org/77346",
+            "https://www.htbridge.ch/advisory/multiple_vulnerabilities_in_dolibarr.html",
+            "https://github.com/Dolibarr/dolibarr/commit/c539155d6ac2f5b6ea75b87a16f298c0090e535a",
+            "https://github.com/Dolibarr/dolibarr/commit/d08d28c0cda1f762a47cc205d4363de03df16675",
+            "http://www.securityfocus.com/bid/50777",
+            "https://github.com/Dolibarr/dolibarr/commit/63820ab37537fdff842539425b2bf2881f0d8e91",
+            "http://osvdb.org/77343",
+            "http://osvdb.org/77347",
+            "http://osvdb.org/77340",
+            "https://github.com/Dolibarr/dolibarr/commit/762f98ab4137749d0993612b4e3544a4207e78a1",
+            "http://osvdb.org/77342",
+            "http://osvdb.org/77344",
+            "http://osvdb.org/77345",
+            "http://www.securityfocus.com/archive/1/520619/100/0/threaded"
+        ],
+        "summary": "Multiple SQL injection vulnerabilities in Dolibarr 3.1.0 RC and probably earlier allow remote authenticated users to execute arbitrary SQL commands via the (1) sortfield, (2) sortorder, and (3) sall parameters to user/index.php and (b) user/group/index.php; the id parameter to (4) info.php, (5) perms.php, (6) param_ihm.php, (7) note.php, and (8) fiche.php in user/; and (9) rowid parameter to admin/boxes.php."
+    },
+    {
+        "Modified": "2022-11-17T17:21:00",
+        "Published": "2014-07-11T14:55:00",
+        "access": {
+            "authentication": "SINGLE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "cve@mitre.org",
+        "cvss": 6.5,
+        "cvss-time": "2022-11-17T17:21:00",
+        "cvss-vector": "AV:N/AC:L/Au:S/C:P/I:P/A:P",
+        "cwe": "CWE-89",
+        "id": "CVE-2014-3992",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "PARTIAL",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-11-17T17:21:00",
+        "references": [
+            "http://packetstormsecurity.com/files/127389/Dolibarr-CMS-3.5.3-SQL-Injection-Cross-Site-Scripting.html"
+        ],
+        "summary": "Multiple SQL injection vulnerabilities in Dolibarr ERP/CRM 3.5.3 allow remote authenticated users to execute arbitrary SQL commands via the (1) entity parameter in an update action to user/fiche.php or (2) sortorder parameter to user/group/index.php."
+    },
+    {
+        "Modified": "2022-11-17T17:21:00",
+        "Published": "2019-11-20T21:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "MEDIUM",
+            "vector": "NETWORK"
+        },
+        "assigner": "secalert@redhat.com",
+        "cvss": 4.3,
+        "cvss-time": "2022-11-17T17:21:00",
+        "cvss-vector": "AV:N/AC:M/Au:N/C:N/I:P/A:N",
+        "cwe": "CWE-79",
+        "id": "CVE-2013-2092",
+        "impact": {
+            "availability": "NONE",
+            "confidentiality": "NONE",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-11-17T17:21:00",
+        "references": [
+            "http://www.openwall.com/lists/oss-security/2013/05/14/3",
+            "https://github.com/Dolibarr/dolibarr/commit/8a90598b23e1b2689848187941f7a96b04907005",
+            "https://security-tracker.debian.org/tracker/CVE-2013-2092"
+        ],
+        "summary": "Cross-site Scripting (XSS) in Dolibarr ERP/CRM 3.3.1 allows remote attackers to inject arbitrary web script or HTML in functions.lib.php."
+    },
+    {
+        "Modified": "2022-11-17T17:21:00",
+        "Published": "2019-11-20T20:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "secalert@redhat.com",
+        "cvss": 7.5,
+        "cvss-time": "2022-11-17T17:21:00",
+        "cvss-vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+        "cwe": "CWE-89",
+        "id": "CVE-2013-2091",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "PARTIAL",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-11-17T17:21:00",
+        "references": [
+            "http://www.openwall.com/lists/oss-security/2013/05/14/3",
+            "https://github.com/Dolibarr/dolibarr/commit/9427e32e2ed54c1a2bc519a88c057207836df489",
+            "https://exchange.xforce.ibmcloud.com/vulnerabilities/84248",
+            "https://security-tracker.debian.org/tracker/CVE-2013-2091"
+        ],
+        "summary": "SQL injection vulnerability in Dolibarr ERP/CRM 3.3.1 allows remote attackers to execute arbitrary SQL commands via the 'pays' parameter in fiche.php."
+    },
+    {
+        "Modified": "2022-11-17T17:21:00",
+        "Published": "2019-07-18T13:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "MEDIUM",
+            "vector": "NETWORK"
+        },
+        "assigner": "cve-assign@distributedweaknessfiling.org",
+        "cvss": 6.8,
+        "cvss-time": "2022-11-17T17:21:00",
+        "cvss-vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
+        "cwe": "CWE-352",
+        "id": "CVE-2019-1010054",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "PARTIAL",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-11-17T17:21:00",
+        "references": [
+            "https://github.com/lucasgcilento/CVE/blob/master/Dolibarr_CSRF"
+        ],
+        "summary": "Dolibarr 7.0.0 is affected by: Cross Site Request Forgery (CSRF). The impact is: allow malitious html to change user password, disable users and disable password encryptation. The component is: Function User password change, user disable and password encryptation. The attack vector is: admin access malitious urls."
+    },
+    {
+        "Modified": "2022-11-17T17:21:00",
+        "Published": "2012-02-21T13:31:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "cve@mitre.org",
+        "cvss": 7.5,
+        "cvss-time": "2022-11-17T17:21:00",
+        "cvss-vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+        "cwe": "CWE-22",
+        "id": "CVE-2012-1226",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "PARTIAL",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-11-17T17:21:00",
+        "references": [
+            "http://www.securityfocus.com/archive/1/521583",
+            "http://www.vulnerability-lab.com/get_content.php?id=428",
+            "http://www.exploit-db.com/exploits/18480",
+            "http://archives.neohapsis.com/archives/bugtraq/2012-02/0168.html",
+            "https://github.com/Dolibarr/dolibarr/commit/8f9b9987ffb42cfbe907fe31ded3001bfc1b3417",
+            "https://github.com/Dolibarr/dolibarr/commit/5381986e50dd6055f2b3b63281eaacffa0449da2",
+            "https://exchange.xforce.ibmcloud.com/vulnerabilities/73136"
+        ],
+        "summary": "Multiple directory traversal vulnerabilities in Dolibarr CMS 3.2.0 Alpha allow remote attackers to read arbitrary files and possibly execute arbitrary code via a .. (dot dot) in the (1) file parameter to document.php or (2) backtopage parameter in a create action to comm/action/fiche.php."
+    },
+    {
+        "Modified": "2022-11-17T17:21:00",
+        "Published": "2012-02-21T13:31:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "cve@mitre.org",
+        "cvss": 7.5,
+        "cvss-time": "2022-11-17T17:21:00",
+        "cvss-vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+        "cwe": "CWE-89",
+        "id": "CVE-2012-1225",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "PARTIAL",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-11-17T17:21:00",
+        "references": [
+            "http://secunia.com/advisories/47969",
+            "http://archives.neohapsis.com/archives/bugtraq/2012-02/0056.html",
+            "http://osvdb.org/79011",
+            "http://www.securityfocus.com/bid/51956"
+        ],
+        "summary": "Multiple SQL injection vulnerabilities in Dolibarr CMS 3.2.0 Alpha and earlier allow remote authenticated users to execute arbitrary SQL commands via the (1) memberslist parameter (aka Member List) in list.php or (2) rowid parameter to adherents/fiche.php."
+    },
+    {
+        "Modified": "2022-11-17T17:21:00",
+        "Published": "2019-07-15T03:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "MEDIUM",
+            "vector": "NETWORK"
+        },
+        "assigner": "cve-assign@distributedweaknessfiling.org",
+        "cvss": 4.3,
+        "cvss-time": "2022-11-17T17:21:00",
+        "cvss-vector": "AV:N/AC:M/Au:N/C:N/I:P/A:N",
+        "cwe": "CWE-79",
+        "id": "CVE-2019-1010016",
+        "impact": {
+            "availability": "NONE",
+            "confidentiality": "NONE",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-11-17T17:21:00",
+        "references": [
+            "https://github.com/Dolibarr/dolibarr/issues/7962"
+        ],
+        "summary": "Dolibarr 6.0.4 is affected by: Cross Site Scripting (XSS). The impact is: Cookie stealing. The component is: htdocs/product/stats/card.php. The attack vector is: Victim must click a specially crafted link sent by the attacker."
+    },
+    {
+        "Modified": "2022-11-17T17:21:00",
+        "Published": "2019-11-20T21:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "secalert@redhat.com",
+        "cvss": 10.0,
+        "cvss-time": "2022-11-17T17:21:00",
+        "cvss-vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C",
+        "cwe": "CWE-20",
+        "id": "CVE-2013-2093",
+        "impact": {
+            "availability": "COMPLETE",
+            "confidentiality": "COMPLETE",
+            "integrity": "COMPLETE"
+        },
+        "last-modified": "2022-11-17T17:21:00",
+        "references": [
+            "https://security-tracker.debian.org/tracker/CVE-2013-2093",
+            "https://github.com/Dolibarr/dolibarr/commit/526a80dd202bbca396687a502d52c27e06e97fff",
+            "http://www.openwall.com/lists/oss-security/2013/05/14/3",
+            "https://exchange.xforce.ibmcloud.com/vulnerabilities/84249"
+        ],
+        "summary": "Dolibarr ERP/CRM 3.3.1 does not properly validate user input in viewimage.php and barcode.lib.php which allows remote attackers to execute arbitrary commands."
+    },
+    {
+        "Modified": "2022-11-17T17:21:00",
+        "Published": "2018-02-09T23:29:00",
+        "access": {
+            "authentication": "SINGLE",
+            "complexity": "MEDIUM",
+            "vector": "NETWORK"
+        },
+        "assigner": "cve@mitre.org",
+        "cvss": 3.5,
+        "cvss-time": "2022-11-17T17:21:00",
+        "cvss-vector": "AV:N/AC:M/Au:S/C:N/I:P/A:N",
+        "cwe": "CWE-79",
+        "id": "CVE-2017-1000509",
+        "impact": {
+            "availability": "NONE",
+            "confidentiality": "NONE",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-11-17T17:21:00",
+        "references": [
+            "https://github.com/Dolibarr/dolibarr/issues/7727"
+        ],
+        "summary": "Dolibarr version 6.0.2 contains a Cross Site Scripting (XSS) vulnerability in Product details that can result in execution of javascript code."
+    },
+    {
+        "Modified": "2022-11-17T17:18:00",
+        "Published": "2022-11-13T08:15:00",
+        "access": {},
+        "assigner": "cna@vuldb.com",
+        "cvss": null,
+        "cwe": "CWE-21",
+        "id": "CVE-2022-3966",
+        "impact": {},
+        "last-modified": "2022-11-17T17:18:00",
+        "references": [
+            "https://github.com/ultimatemember/ultimatemember/releases/tag/2.5.1",
+            "https://vuldb.com/?id.213545",
+            "https://github.com/ultimatemember/ultimatemember/commit/e1bc94c1100f02a129721ba4be5fbc44c3d78ec4"
+        ],
+        "summary": "A vulnerability, which was classified as critical, has been found in Ultimate Member Plugin up to 2.5.0. This issue affects the function load_template of the file includes/core/class-shortcodes.php of the component Template Handler. The manipulation of the argument tpl leads to pathname traversal. The attack may be initiated remotely. Upgrading to version 2.5.1 is able to address this issue. The name of the patch is e1bc94c1100f02a129721ba4be5fbc44c3d78ec4. It is recommended to upgrade the affected component. The identifier VDB-213545 was assigned to this vulnerability."
     }
 ]
