@@ -1,5 +1,98 @@
 [
     {
+        "Modified": "2022-11-18T14:33:00",
+        "Published": "2022-10-21T16:15:00",
+        "access": {},
+        "assigner": "cve@gitlab.com",
+        "cvss": null,
+        "cwe": "CWE-787",
+        "id": "CVE-2022-3570",
+        "impact": {},
+        "last-modified": "2022-11-18T14:33:00",
+        "references": [
+            "https://gitlab.com/libtiff/libtiff/-/issues/386",
+            "https://gitlab.com/libtiff/libtiff/-/commit/bd94a9b383d8755a27b5a1bc27660b8ad10b094c",
+            "https://gitlab.com/libtiff/libtiff/-/issues/381",
+            "https://gitlab.com/gitlab-org/cves/-/blob/master/2022/CVE-2022-3570.json"
+        ],
+        "summary": "Multiple heap buffer overflows in tiffcrop.c utility in libtiff library Version 4.4.0 allows attacker to trigger unsafe or out of bounds memory access via crafted TIFF image file which could result into application crash, potential information disclosure or any other context-dependent impact"
+    },
+    {
+        "Modified": "2022-11-18T14:23:00",
+        "Published": "2022-06-27T12:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "MEDIUM",
+            "vector": "NETWORK"
+        },
+        "assigner": "security@huntr.dev",
+        "cvss": 6.8,
+        "cvss-time": "2022-11-18T14:23:00",
+        "cvss-vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
+        "cwe": "CWE-122",
+        "id": "CVE-2022-2207",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "PARTIAL",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-11-18T14:23:00",
+        "references": [
+            "https://huntr.dev/bounties/05bc6051-4dc3-483b-ae56-cf23346b97b9",
+            "https://github.com/vim/vim/commit/0971c7a4e537ea120a6bb2195960be8d0815e97b",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/GFD2A4YLBR7OIRHTL7CK6YNMEIQ264CN/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/U743FMJGFQ35GBPCQ6OWMVZEJPDFVEWM/",
+            "https://security.gentoo.org/glsa/202208-32"
+        ],
+        "summary": "Heap-based Buffer Overflow in GitHub repository vim/vim prior to 8.2."
+    },
+    {
+        "Modified": "2022-11-18T14:05:00",
+        "Published": "2022-11-11T04:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-125",
+        "id": "CVE-2022-41873",
+        "impact": {},
+        "last-modified": "2022-11-18T14:05:00",
+        "references": [
+            "https://github.com/contiki-ng/contiki-ng/security/advisories/GHSA-m5cj-fw8m-ffgf",
+            "https://github.com/contiki-ng/contiki-ng/pull/2081"
+        ],
+        "summary": "Contiki-NG is an open-source, cross-platform operating system for Next-Generation IoT devices. Versions prior to 4.9 are vulnerable to an Out-of-bounds read. While processing the L2CAP protocol, the Bluetooth Low Energy stack of Contiki-NG needs to map an incoming channel ID to its metadata structure. While looking up the corresponding channel structure in get_channel_for_cid (in os/net/mac/ble/ble-l2cap.c), a bounds check is performed on the incoming channel ID, which is meant to ensure that the channel ID does not exceed the maximum number of supported channels.However, an integer truncation issue leads to only the lowest byte of the channel ID to be checked, which leads to an incomplete out-of-bounds check. A crafted channel ID leads to out-of-bounds memory to be read and written with attacker-controlled data. The vulnerability has been patched in the \"develop\" branch of Contiki-NG, and will be included in release 4.9. As a workaround, Users can apply the patch in Contiki-NG pull request 2081 on GitHub."
+    },
+    {
+        "Modified": "2022-11-18T13:15:00",
+        "Published": "2021-03-17T15:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "ADJACENT_NETWORK"
+        },
+        "assigner": "cve@mitre.org",
+        "cvss": 8.3,
+        "cvss-time": "2022-11-18T13:15:00",
+        "cvss-vector": "AV:A/AC:L/Au:N/C:C/I:C/A:C",
+        "cwe": "CWE-787",
+        "id": "CVE-2021-28660",
+        "impact": {
+            "availability": "COMPLETE",
+            "confidentiality": "COMPLETE",
+            "integrity": "COMPLETE"
+        },
+        "last-modified": "2022-11-18T13:15:00",
+        "references": [
+            "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=74b6b20df8cfe90ada777d621b54c32e69e27cd7",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/TJPVQZPY3DHPV5I3IVNMSMO6D3PKZISX/",
+            "https://lists.debian.org/debian-lts-announce/2021/03/msg00035.html",
+            "https://security.netapp.com/advisory/ntap-20210507-0008/",
+            "https://lists.debian.org/debian-lts-announce/2021/06/msg00020.html",
+            "http://www.openwall.com/lists/oss-security/2022/11/18/1"
+        ],
+        "summary": "rtw_wx_set_scan in drivers/staging/rtl8188eu/os_dep/ioctl_linux.c in the Linux kernel through 5.11.6 allows writing beyond the end of the ->ssid[] array. NOTE: from the perspective of kernel.org releases, CVE IDs are not normally used for drivers/staging/* (unfinished work); however, system integrators may have situations in which a drivers/staging issue is relevant to their own customer base."
+    },
+    {
         "Modified": "2022-11-18T12:15:00",
         "Published": "2022-11-01T09:15:00",
         "access": {},
@@ -1472,65 +1565,5 @@
             "https://gitee.com/isoftforce/dreamer_cms/issues/I5U408"
         ],
         "summary": "Dreamer CMS 4.0.01 is vulnerable to SQL Injection."
-    },
-    {
-        "Modified": "2022-11-17T23:26:00",
-        "Published": "2022-11-17T00:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-89",
-        "id": "CVE-2021-38819",
-        "impact": {},
-        "last-modified": "2022-11-17T23:26:00",
-        "references": [
-            "https://github.com/m4sk0ff/CVE-2021-38819/blob/main/CVE-2021-38819.md"
-        ],
-        "summary": "A SQL injection vulnerability exits on the Simple Image Gallery System 1.0 application through \"id\" parameter on the album page."
-    },
-    {
-        "Modified": "2022-11-17T23:25:00",
-        "Published": "2022-11-15T21:15:00",
-        "access": {},
-        "assigner": "psirt@cisco.com",
-        "cvss": null,
-        "cwe": "CWE-400",
-        "id": "CVE-2022-20854",
-        "impact": {},
-        "last-modified": "2022-11-17T23:25:00",
-        "references": [
-            "https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-fmc-dos-OwEunWJN"
-        ],
-        "summary": "A vulnerability in the processing of SSH connections of Cisco Firepower Management Center (FMC) and Cisco Firepower Threat Defense (FTD) Software could allow an unauthenticated, remote attacker to cause a denial of service (DoS) condition on an affected device. This vulnerability is due to improper error handling when an SSH session fails to be established. An attacker could exploit this vulnerability by sending a high rate of crafted SSH connections to the instance. A successful exploit could allow the attacker to cause resource exhaustion, resulting in a reboot on the affected device."
-    },
-    {
-        "Modified": "2022-11-17T23:24:00",
-        "Published": "2022-11-17T04:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-77",
-        "id": "CVE-2022-42187",
-        "impact": {},
-        "last-modified": "2022-11-17T23:24:00",
-        "references": [
-            "https://github.com/zhblue/hustoj/issues/866"
-        ],
-        "summary": "Hustoj 22.09.22 has a XSS Vulnerability in /admin/problem_judge.php."
-    },
-    {
-        "Modified": "2022-11-17T23:23:00",
-        "Published": "2022-11-15T20:15:00",
-        "access": {},
-        "assigner": "cve-coordination@palantir.com",
-        "cvss": null,
-        "cwe": "CWE-532",
-        "id": "CVE-2022-27895",
-        "impact": {},
-        "last-modified": "2022-11-17T23:23:00",
-        "references": [
-            "https://github.com/palantir/security-bulletins/blob/main/PLTRSEC-2022-06.md"
-        ],
-        "summary": "Information Exposure Through Log Files vulnerability discovered in Foundry when logs were captured using an underlying library known as Build2. This issue was present in versions earlier than 1.785.0. Upgrade to Build2 version 1.785.0 or greater."
     }
 ]
