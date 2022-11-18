@@ -1,5 +1,20 @@
 [
     {
+        "Modified": "2022-11-18T12:15:00",
+        "Published": "2022-11-01T09:15:00",
+        "access": {},
+        "assigner": "security@apache.org",
+        "cvss": null,
+        "cwe": "CWE-20",
+        "id": "CVE-2022-42252",
+        "impact": {},
+        "last-modified": "2022-11-18T12:15:00",
+        "references": [
+            "https://lists.apache.org/thread/zzcxzvqfdqn515zfs3dxb7n8gty589sq"
+        ],
+        "summary": "If Apache Tomcat 8.5.0 to 8.5.82, 9.0.0-M1 to 9.0.67, 10.0.0-M1 to 10.0.26 or 10.1.0-M1 to 10.1.0 was configured to ignore invalid HTTP headers via setting rejectIllegalHeader to false (the default for 8.5.x only), Tomcat did not reject a request containing an invalid Content-Length header making a request smuggling attack possible if Tomcat was located behind a reverse proxy that also failed to reject the request with the invalid header."
+    },
+    {
         "Modified": "2022-11-18T09:15:00",
         "Published": "2022-11-18T09:15:00",
         "access": {},
@@ -1517,20 +1532,5 @@
             "https://github.com/palantir/security-bulletins/blob/main/PLTRSEC-2022-06.md"
         ],
         "summary": "Information Exposure Through Log Files vulnerability discovered in Foundry when logs were captured using an underlying library known as Build2. This issue was present in versions earlier than 1.785.0. Upgrade to Build2 version 1.785.0 or greater."
-    },
-    {
-        "Modified": "2022-11-17T23:22:00",
-        "Published": "2022-11-15T20:15:00",
-        "access": {},
-        "assigner": "jenkinsci-cert@googlegroups.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-45387",
-        "impact": {},
-        "last-modified": "2022-11-17T23:22:00",
-        "references": [
-            "https://www.jenkins.io/security/advisory/2022-11-15/#SECURITY-2802"
-        ],
-        "summary": "Jenkins BART Plugin 1.0.3 and earlier does not escape the parsed content of build logs before rendering it on the Jenkins UI, resulting in a stored cross-site scripting (XSS) vulnerability."
     }
 ]
