@@ -1,5 +1,71 @@
 [
     {
+        "Modified": "2022-11-19T04:15:00",
+        "Published": "2022-11-18T23:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2021-33621",
+        "impact": {},
+        "last-modified": "2022-11-19T04:15:00",
+        "references": [],
+        "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was withdrawn by its CNA. Further investigation showed that it was not a security issue. Notes: none."
+    },
+    {
+        "Modified": "2022-11-19T03:15:00",
+        "Published": "2022-11-07T00:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "NVD-CWE-noinfo",
+        "id": "CVE-2022-42919",
+        "impact": {},
+        "last-modified": "2022-11-19T03:15:00",
+        "references": [
+            "https://github.com/python/cpython/issues/97514",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/VCRKBB5Y5EWTJUNC7LK665WO64DDXSTN/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/PI5DYIED6U26BGX5IRZWNCP6TY4M2ZGZ/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/FKGCQPIVHEAIJ77R3RSNSQWYBUDVWDKU/"
+        ],
+        "summary": "Python 3.9.x and 3.10.x through 3.10.8 on Linux allows local privilege escalation in a non-default configuration. The Python multiprocessing library, when used with the forkserver start method on Linux, allows pickles to be deserialized from any user in the same machine local network namespace, which in many system configurations means any user on the same machine. Pickles can execute arbitrary code. Thus, this allows for local user privilege escalation to the user that any forkserver process is running as. Setting multiprocessing.util.abstract_sockets_supported to False is a workaround. The forkserver start method for multiprocessing is not the default start method. This issue is Linux specific because only Linux supports abstract namespace sockets. CPython before 3.9 does not make use of Linux abstract namespace sockets by default. Support for users manually specifying an abstract namespace socket was added as a bugfix in 3.7.8 and 3.8.4, but users would need to make specific uncommon API calls in order to do that in CPython before 3.9."
+    },
+    {
+        "Modified": "2022-11-19T01:15:00",
+        "Published": "2022-11-19T01:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2022-41938",
+        "impact": {},
+        "last-modified": "2022-11-19T01:15:00",
+        "references": [
+            "https://github.com/flarum/framework/security/advisories/GHSA-7x4w-j98p-854x",
+            "https://github.com/flarum/framework/commit/690de9ce0ffe7ac4d45b73e303f44340c3433138",
+            "https://discuss.flarum.org/d/27558"
+        ],
+        "summary": "Flarum is an open source discussion platform. Flarum's page title system allowed for page titles to be converted into HTML DOM nodes when pages were rendered. The change was made after `v1.5` and was not noticed. This allowed an attacker to inject malicious HTML markup using a discussion title input, either by creating a new discussion or renaming one. The XSS attack occurs after a visitor opens the relevant discussion page. All communities running Flarum from `v1.5.0` to `v1.6.1` are impacted. The vulnerability has been fixed and published as flarum/core `v1.6.2`. All communities running Flarum from `v1.5.0` to `v1.6.1` have to upgrade as soon as possible to v1.6.2. There are no known workarounds for this issue."
+    },
+    {
+        "Modified": "2022-11-19T01:15:00",
+        "Published": "2022-11-19T01:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-200",
+        "id": "CVE-2022-41939",
+        "impact": {},
+        "last-modified": "2022-11-19T01:15:00",
+        "references": [
+            "https://github.com/knative/func/blob/5ca77d38744d3481cc0b795f607c5859b19588fc/buildpacks/builder.go#L37-L41",
+            "https://github.com/knative/func/releases/tag/knative-v1.8.1",
+            "https://github.com/knative/func/pull/1442",
+            "https://github.com/knative/func/security/advisories/GHSA-5336-2g3f-9g3m"
+        ],
+        "summary": "knative.dev/func is is a client library and CLI enabling the development and deployment of Kubernetes functions. Developers using a malicious or compromised third-party buildpack could expose their registry credentials or local docker socket to a malicious `lifecycle` container. This issues has been patched in PR #1442, and is part of release 1.8.1. This issue only affects users who are using function buildpacks from third-parties; pinning the builder image to a specific content-hash with a valid `lifecycle` image will also mitigate the attack."
+    },
+    {
         "Modified": "2022-11-19T00:15:00",
         "Published": "2022-11-19T00:15:00",
         "access": {},
@@ -651,21 +717,6 @@
             "https://wordpress.org/plugins/watchtowerhq/#developers"
         ],
         "summary": "Unauth. Arbitrary File Deletion vulnerability in WatchTowerHQ plugin <= 3.6.15 on WordPress."
-    },
-    {
-        "Modified": "2022-11-18T23:15:00",
-        "Published": "2022-11-18T23:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2021-33621",
-        "impact": {},
-        "last-modified": "2022-11-18T23:15:00",
-        "references": [
-            "https://hackerone.com/reports/1204695"
-        ],
-        "summary": "cgi.rb in Ruby through 2.6.x, through 3.0x, and through 3.1.x allows HTTP header injection. If a CGI application using the CGI library inserts untrusted input into the HTTP response header, an attacker can exploit it to insert a newline character to split a header, and inject malicious content to deceive clients."
     },
     {
         "Modified": "2022-11-18T23:15:00",
@@ -1564,73 +1615,5 @@
             "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/SSDL7COIFCZQMUBNAASNMKMX7W5JUHRD/"
         ],
         "summary": "An issue was discovered in TrouSerS through 0.3.14. If the tcsd daemon is started with root privileges, the creation of the system.data file is prone to symlink attacks. The tss user can be used to create or corrupt existing files, which could possibly lead to a DoS attack."
-    },
-    {
-        "Modified": "2022-11-18T21:17:00",
-        "Published": "2020-08-19T15:15:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "LOW",
-            "vector": "LOCAL"
-        },
-        "assigner": "secalert@redhat.com",
-        "cvss": 7.2,
-        "cvss-time": "2022-11-18T21:17:00",
-        "cvss-vector": "AV:L/AC:L/Au:N/C:C/I:C/A:C",
-        "cwe": "CWE-476",
-        "id": "CVE-2020-14356",
-        "impact": {
-            "availability": "COMPLETE",
-            "confidentiality": "COMPLETE",
-            "integrity": "COMPLETE"
-        },
-        "last-modified": "2022-11-18T21:17:00",
-        "references": [
-            "https://lore.kernel.org/netdev/CAM_iQpUKQJrj8wE+Qa8NGR3P0L+5Uz=qo-O5+k_P60HzTde6aw%40mail.gmail.com/t/",
-            "https://bugzilla.redhat.com/show_bug.cgi?id=1868453",
-            "https://bugzilla.kernel.org/show_bug.cgi?id=208003",
-            "http://lists.opensuse.org/opensuse-security-announce/2020-08/msg00047.html",
-            "http://lists.opensuse.org/opensuse-security-announce/2020-09/msg00007.html",
-            "https://security.netapp.com/advisory/ntap-20200904-0002/",
-            "https://usn.ubuntu.com/4484-1/",
-            "https://usn.ubuntu.com/4483-1/",
-            "https://usn.ubuntu.com/4526-1/",
-            "https://lists.debian.org/debian-lts-announce/2020/09/msg00025.html",
-            "https://lists.debian.org/debian-lts-announce/2020/10/msg00034.html",
-            "https://lists.debian.org/debian-lts-announce/2020/10/msg00032.html"
-        ],
-        "summary": "A flaw null pointer dereference in the Linux kernel cgroupv2 subsystem in versions before 5.7.10 was found in the way when reboot the system. A local user could use this flaw to crash the system or escalate their privileges on the system."
-    },
-    {
-        "Modified": "2022-11-18T21:15:00",
-        "Published": "2022-11-16T21:15:00",
-        "access": {},
-        "assigner": "security-advisories@github.com",
-        "cvss": null,
-        "cwe": "CWE-369",
-        "id": "CVE-2022-39318",
-        "impact": {},
-        "last-modified": "2022-11-18T21:15:00",
-        "references": [
-            "https://github.com/FreeRDP/FreeRDP/security/advisories/GHSA-387j-8j96-7q35",
-            "https://github.com/FreeRDP/FreeRDP/commit/80adde17ddc4b596ed1dae0922a0c54ab3d4b8ea"
-        ],
-        "summary": "FreeRDP is a free remote desktop protocol library and clients. Affected versions of FreeRDP are missing input validation in `urbdrc` channel. A malicious server can trick a FreeRDP based client to crash with division by zero. This issue has been addressed in version 2.9.0. All users are advised to upgrade. Users unable to upgrade should not use the `/usb` redirection switch."
-    },
-    {
-        "Modified": "2022-11-18T21:13:00",
-        "Published": "2022-11-16T20:15:00",
-        "access": {},
-        "assigner": "security-advisories@github.com",
-        "cvss": null,
-        "cwe": "CWE-22",
-        "id": "CVE-2022-39347",
-        "impact": {},
-        "last-modified": "2022-11-18T21:13:00",
-        "references": [
-            "https://github.com/FreeRDP/FreeRDP/security/advisories/GHSA-c5xq-8v35-pffg",
-            "https://github.com/FreeRDP/FreeRDP/commit/027424c2c6c0991cb9c22f9511478229c9b17e5d"
-        ],
-        "summary": "FreeRDP is a free remote desktop protocol library and clients. Affected versions of FreeRDP are missing path canonicalization and base path check for `drive` channel. A malicious server can trick a FreeRDP based client to read files outside the shared directory. This issue has been addressed in version 2.9.0 and all users are advised to upgrade. Users unable to upgrade should not use the `/drive`, `/drives` or `+home-drive` redirection switch."
     }
 ]
