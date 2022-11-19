@@ -1,5 +1,21 @@
 [
     {
+        "Modified": "2022-11-19T07:15:00",
+        "Published": "2022-10-21T18:15:00",
+        "access": {},
+        "assigner": "cna@vuldb.com",
+        "cvss": null,
+        "cwe": "CWE-404",
+        "id": "CVE-2022-3647",
+        "impact": {},
+        "last-modified": "2022-11-19T07:15:00",
+        "references": [
+            "https://github.com/redis/redis/commit/0bf90d944313919eb8e63d3588bf63a367f020a3",
+            "https://vuldb.com/?id.211962"
+        ],
+        "summary": "** DISPUTED ** A vulnerability, which was classified as problematic, was found in Redis. Affected is the function sigsegvHandler of the file debug.c of the component Crash Report. The manipulation leads to denial of service. The real existence of this vulnerability is still doubted at the moment. The name of the patch is 0bf90d944313919eb8e63d3588bf63a367f020a3. It is recommended to apply a patch to fix this issue. VDB-211962 is the identifier assigned to this vulnerability. NOTE: The vendor claims that this is not a DoS because it applies to the crash logging mechanism which is triggered after a crash has occurred."
+    },
+    {
         "Modified": "2022-11-19T04:15:00",
         "Published": "2022-11-18T23:15:00",
         "access": {},
@@ -1586,34 +1602,5 @@
             "https://github.com/NagVis/nagvis/commit/7574fd8a2903282c2e0d1feef5c4876763db21d5"
         ],
         "summary": "A vulnerability was found in NagVis up to 1.9.33 and classified as problematic. This issue affects the function checkAuthCookie of the file share/server/core/classes/CoreLogonMultisite.php. The manipulation of the argument hash leads to incorrect type conversion. The attack may be initiated remotely. Upgrading to version 1.9.34 is able to address this issue. The name of the patch is 7574fd8a2903282c2e0d1feef5c4876763db21d5. It is recommended to upgrade the affected component. The identifier VDB-213557 was assigned to this vulnerability."
-    },
-    {
-        "Modified": "2022-11-18T21:19:00",
-        "Published": "2020-08-13T17:15:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "LOW",
-            "vector": "LOCAL"
-        },
-        "assigner": "cve@mitre.org",
-        "cvss": 4.9,
-        "cvss-time": "2022-11-18T21:19:00",
-        "cvss-vector": "AV:L/AC:L/Au:N/C:N/I:N/A:C",
-        "cwe": "CWE-59",
-        "id": "CVE-2020-24332",
-        "impact": {
-            "availability": "COMPLETE",
-            "confidentiality": "NONE",
-            "integrity": "NONE"
-        },
-        "last-modified": "2022-11-18T21:19:00",
-        "references": [
-            "https://bugzilla.suse.com/show_bug.cgi?id=1164472",
-            "https://sourceforge.net/p/trousers/mailman/message/37015817/",
-            "https://seclists.org/oss-sec/2020/q2/att-135/tcsd_fixes.patch",
-            "http://www.openwall.com/lists/oss-security/2020/08/14/1",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/SSDL7COIFCZQMUBNAASNMKMX7W5JUHRD/"
-        ],
-        "summary": "An issue was discovered in TrouSerS through 0.3.14. If the tcsd daemon is started with root privileges, the creation of the system.data file is prone to symlink attacks. The tss user can be used to create or corrupt existing files, which could possibly lead to a DoS attack."
     }
 ]
