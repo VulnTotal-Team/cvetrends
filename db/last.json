@@ -1,5 +1,57 @@
 [
     {
+        "Modified": "2022-11-19T19:15:00",
+        "Published": "2022-11-19T19:15:00",
+        "access": {},
+        "assigner": "cna@vuldb.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-4064",
+        "impact": {},
+        "last-modified": "2022-11-19T19:15:00",
+        "references": [
+            "https://github.com/petergoldstein/dalli/commit/48d594dae55934476fec61789e7a7c3700e0f50d",
+            "https://github.com/petergoldstein/dalli/issues/932",
+            "https://github.com/petergoldstein/dalli/pull/933",
+            "https://vuldb.com/?id.214026"
+        ],
+        "summary": "A vulnerability was found in Dalli. It has been classified as problematic. Affected is the function self.meta_set of the file lib/dalli/protocol/meta/request_formatter.rb of the component Meta Protocol Handler. The manipulation leads to injection. The exploit has been disclosed to the public and may be used. The name of the patch is 48d594dae55934476fec61789e7a7c3700e0f50d. It is recommended to apply a patch to fix this issue. VDB-214026 is the identifier assigned to this vulnerability."
+    },
+    {
+        "Modified": "2022-11-19T19:15:00",
+        "Published": "2022-11-19T19:15:00",
+        "access": {},
+        "assigner": "cna@vuldb.com",
+        "cvss": null,
+        "cwe": "CWE-22",
+        "id": "CVE-2022-4065",
+        "impact": {},
+        "last-modified": "2022-11-19T19:15:00",
+        "references": [
+            "https://github.com/cbeust/testng/commit/9150736cd2c123a6a3b60e6193630859f9f0422b",
+            "https://github.com/cbeust/testng/pull/2806",
+            "https://vuldb.com/?id.214027"
+        ],
+        "summary": "A vulnerability was found in cbeust testng. It has been declared as critical. Affected by this vulnerability is the function testngXmlExistsInJar of the file testng-core/src/main/java/org/testng/JarFileUtils.java of the component XML File Parser. The manipulation leads to path traversal. The attack can be launched remotely. The name of the patch is 9150736cd2c123a6a3b60e6193630859f9f0422b. It is recommended to apply a patch to fix this issue. The associated identifier of this vulnerability is VDB-214027."
+    },
+    {
+        "Modified": "2022-11-19T19:15:00",
+        "Published": "2022-11-19T19:15:00",
+        "access": {},
+        "assigner": "cna@vuldb.com",
+        "cvss": null,
+        "cwe": "CWE-770",
+        "id": "CVE-2022-4066",
+        "impact": {},
+        "last-modified": "2022-11-19T19:15:00",
+        "references": [
+            "https://github.com/davidmoreno/onion/commit/de8ea938342b36c28024fd8393ebc27b8442a161",
+            "https://github.com/davidmoreno/onion/pull/308",
+            "https://vuldb.com/?id.214028"
+        ],
+        "summary": "A vulnerability was found in davidmoreno onion. It has been rated as problematic. Affected by this issue is the function onion_response_flush of the file src/onion/response.c of the component Log Handler. The manipulation leads to allocation of resources. The name of the patch is de8ea938342b36c28024fd8393ebc27b8442a161. It is recommended to apply a patch to fix this issue. The identifier of this vulnerability is VDB-214028."
+    },
+    {
         "Modified": "2022-11-19T07:15:00",
         "Published": "2022-10-21T18:15:00",
         "access": {},
@@ -1551,56 +1603,5 @@
             "https://www.jenkins.io/security/advisory/2022-11-15/#SECURITY-2910%20(2)"
         ],
         "summary": "Jenkins NS-ND Integration Performance Publisher Plugin 4.8.0.146 and earlier unconditionally disables SSL/TLS certificate and hostname validation for several features."
-    },
-    {
-        "Modified": "2022-11-18T21:28:00",
-        "Published": "2022-11-14T23:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-400",
-        "id": "CVE-2022-40735",
-        "impact": {},
-        "last-modified": "2022-11-18T21:28:00",
-        "references": [
-            "https://github.com/mozilla/ssl-config-generator/issues/162",
-            "https://link.springer.com/content/pdf/10.1007/3-540-68339-9_29.pdf",
-            "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-57pt1r5.pdf",
-            "https://www.researchgate.net/profile/Anton-Stiglic-2/publication/2401745_Security_Issues_in_the_Diffie-Hellman_Key_Agreement_Protocol/links/546c144f0cf20dedafd53e7e/Security-Issues-in-the-Diffie-Hellman-Key-Agreement-Protocol.pdf",
-            "https://gist.github.com/c0r0n3r/9455ddcab985c50fd1912eabf26e058b"
-        ],
-        "summary": "Using long exponents in the Diffie-Hellman Key Agreement Protocol allows remote attackers (from the client side) to trigger unnecessarily expensive server-side DHE modular-exponentiation calculations. An attacker may cause asymmetric resource consumption with any common client application which uses a DHE implementation that applies short exponents. The attack may be more disruptive in cases where a client sends arbitrary numbers that are actually not DH public keys (aka the D(HE)ater attack) or can require a server to select its largest supported key size. The basic attack scenario is that the client must claim that it can only communicate with DHE, and the server must be configured to allow DHE. This can affect TLS, SSH, and IKE."
-    },
-    {
-        "Modified": "2022-11-18T21:22:00",
-        "Published": "2022-11-16T23:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-44002",
-        "impact": {},
-        "last-modified": "2022-11-18T21:22:00",
-        "references": [
-            "https://www.syss.de/pentest-blog/vielfaeltige-schwachstellen-in-backclick-professional-syss-2022-026-bis-037"
-        ],
-        "summary": "An issue was discovered in BACKCLICK Professional 5.9.63. Due to insufficient output encoding of user-supplied data, the web application is vulnerable to cross-site scripting (XSS) at various locations."
-    },
-    {
-        "Modified": "2022-11-18T21:19:00",
-        "Published": "2022-11-13T23:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-704",
-        "id": "CVE-2022-3979",
-        "impact": {},
-        "last-modified": "2022-11-18T21:19:00",
-        "references": [
-            "https://github.com/NagVis/nagvis/releases/tag/nagvis-1.9.34",
-            "https://vuldb.com/?id.213557",
-            "https://github.com/NagVis/nagvis/commit/7574fd8a2903282c2e0d1feef5c4876763db21d5"
-        ],
-        "summary": "A vulnerability was found in NagVis up to 1.9.33 and classified as problematic. This issue affects the function checkAuthCookie of the file share/server/core/classes/CoreLogonMultisite.php. The manipulation of the argument hash leads to incorrect type conversion. The attack may be initiated remotely. Upgrading to version 1.9.34 is able to address this issue. The name of the patch is 7574fd8a2903282c2e0d1feef5c4876763db21d5. It is recommended to upgrade the affected component. The identifier VDB-213557 was assigned to this vulnerability."
     }
 ]
