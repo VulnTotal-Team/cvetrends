@@ -1,5 +1,103 @@
 [
     {
+        "Modified": "2022-11-21T10:15:00",
+        "Published": "2022-11-21T10:15:00",
+        "access": {},
+        "assigner": "info@cert.vde.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-3589",
+        "impact": {},
+        "last-modified": "2022-11-21T10:15:00",
+        "references": [
+            "https://cert.vde.com/de/advisories/VDE-2022-052/"
+        ],
+        "summary": "An API Endpoint used by Miele's \"AppWash\" MobileApp in all versions was vulnerable to an authorization bypass. A low privileged, remote attacker would have been able to gain read and partial write access to other users data by modifying a small part of a HTTP request sent to the API. Reading or changing the password of another user was not possible, thus no impact to Availability."
+    },
+    {
+        "Modified": "2022-11-21T10:15:00",
+        "Published": "2022-11-21T10:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-45146",
+        "impact": {},
+        "last-modified": "2022-11-21T10:15:00",
+        "references": [
+            "https://www.bouncycastle.org/latest_releases.html",
+            "https://github.com/bcgit/bc-java/wiki/CVE-2022-45146"
+        ],
+        "summary": "An issue was discovered in the FIPS Java API of Bouncy Castle BC-FJA before 1.0.2.4. Changes to the JVM garbage collector in Java 13 and later trigger an issue in the BC-FJA FIPS modules where it is possible for temporary keys used by the module to be zeroed out while still in use by the module, resulting in errors or potential information loss. NOTE: FIPS compliant users are unaffected because the FIPS certification is only for Java 7, 8, and 11."
+    },
+    {
+        "Modified": "2022-11-21T10:15:00",
+        "Published": "2022-08-10T06:15:00",
+        "access": {},
+        "assigner": "security@apache.org",
+        "cvss": null,
+        "cwe": "CWE-20",
+        "id": "CVE-2022-25763",
+        "impact": {},
+        "last-modified": "2022-11-21T10:15:00",
+        "references": [
+            "https://lists.apache.org/thread/rc64lwbdgrkv674koc3zl1sljr9vwg21",
+            "https://www.debian.org/security/2022/dsa-5206",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/ZCSBQBYPOZSWS5LCOAQ6LJLRLXFIAW5A/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/CJ67IWD5PRJUOIYIDJRUG3UMS2UF4X4J/"
+        ],
+        "summary": "Improper Input Validation vulnerability in HTTP/2 request validation of Apache Traffic Server allows an attacker to create smuggle or cache poison attacks. This issue affects Apache Traffic Server 8.0.0 to 9.1.2."
+    },
+    {
+        "Modified": "2022-11-21T10:15:00",
+        "Published": "2022-08-10T06:15:00",
+        "access": {},
+        "assigner": "security@apache.org",
+        "cvss": null,
+        "cwe": "CWE-20",
+        "id": "CVE-2022-31779",
+        "impact": {},
+        "last-modified": "2022-11-21T10:15:00",
+        "references": [
+            "https://lists.apache.org/thread/rc64lwbdgrkv674koc3zl1sljr9vwg21",
+            "https://www.debian.org/security/2022/dsa-5206",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/ZCSBQBYPOZSWS5LCOAQ6LJLRLXFIAW5A/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/CJ67IWD5PRJUOIYIDJRUG3UMS2UF4X4J/"
+        ],
+        "summary": "Improper Input Validation vulnerability in HTTP/2 header parsing of Apache Traffic Server allows an attacker to smuggle requests. This issue affects Apache Traffic Server 8.0.0 to 9.1.2."
+    },
+    {
+        "Modified": "2022-11-21T08:15:00",
+        "Published": "2022-11-10T12:15:00",
+        "access": {},
+        "assigner": "info@cert.vde.com",
+        "cvss": null,
+        "cwe": "CWE-330",
+        "id": "CVE-2022-42787",
+        "impact": {},
+        "last-modified": "2022-11-21T08:15:00",
+        "references": [
+            "https://cert.vde.com/de/advisories/VDE-2022-043"
+        ],
+        "summary": "Multiple W&T products of the Comserver Series use a small number space for allocating sessions ids. After login of an user an unathenticated remote attacker can brute force the users session id and get access to the his account on the the device."
+    },
+    {
+        "Modified": "2022-11-21T07:15:00",
+        "Published": "2022-11-21T07:15:00",
+        "access": {},
+        "assigner": "cna@vuldb.com",
+        "cvss": null,
+        "cwe": "CWE-203",
+        "id": "CVE-2022-4087",
+        "impact": {},
+        "last-modified": "2022-11-21T07:15:00",
+        "references": [
+            "https://vuldb.com/?id.214054",
+            "https://github.com/ipxe/ipxe/commit/186306d6199096b7a7c4b4574d4be8cdb8426729"
+        ],
+        "summary": "A vulnerability was found in iPXE. It has been declared as problematic. This vulnerability affects the function tls_new_ciphertext of the file src/net/tls.c of the component TLS. The manipulation of the argument pad_len leads to information exposure through discrepancy. The name of the patch is 186306d6199096b7a7c4b4574d4be8cdb8426729. It is recommended to apply a patch to fix this issue. VDB-214054 is the identifier assigned to this vulnerability."
+    },
+    {
         "Modified": "2022-11-21T05:15:00",
         "Published": "2022-11-21T05:15:00",
         "access": {},
@@ -1453,95 +1551,5 @@
             "https://maradns.samiam.org/security.html#CVE-2022-30256"
         ],
         "summary": "An issue was discovered in MaraDNS Deadwood through 3.5.0021 that allows variant V1 of unintended domain name resolution. A revoked domain name can still be resolvable for a long time, including expired domains and taken-down malicious domains. The effects of an exploit would be widespread and highly impactful, because the exploitation conforms to de facto DNS specifications and operational practices, and overcomes current mitigation patches for \"Ghost\" domain names."
-    },
-    {
-        "Modified": "2022-11-20T02:44:00",
-        "Published": "2022-11-19T00:15:00",
-        "access": {},
-        "assigner": "psirt@nvidia.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-31606",
-        "impact": {},
-        "last-modified": "2022-11-20T02:44:00",
-        "references": [
-            "https://nvidia.custhelp.com/app/answers/detail/a_id/5383"
-        ],
-        "summary": "NVIDIA GPU Display Driver for Windows contains a vulnerability in the kernel mode layer (nvlddmkm.sys) handler for DxgkDdiEscape, where a failure to properly validate data might allow an attacker with basic user capabilities to cause an out-of-bounds access in kernel mode, which could lead to denial of service, information disclosure, escalation of privileges, or data tampering."
-    },
-    {
-        "Modified": "2022-11-20T02:44:00",
-        "Published": "2022-11-19T00:15:00",
-        "access": {},
-        "assigner": "psirt@nvidia.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-31607",
-        "impact": {},
-        "last-modified": "2022-11-20T02:44:00",
-        "references": [
-            "https://nvidia.custhelp.com/app/answers/detail/a_id/5383"
-        ],
-        "summary": "NVIDIA GPU Display Driver for Linux contains a vulnerability in the kernel mode layer (nvidia.ko), where a local user with basic capabilities can cause improper input validation, which may lead to denial of service, escalation of privileges, data tampering, and limited information disclosure."
-    },
-    {
-        "Modified": "2022-11-20T02:44:00",
-        "Published": "2022-11-19T00:15:00",
-        "access": {},
-        "assigner": "psirt@nvidia.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-31608",
-        "impact": {},
-        "last-modified": "2022-11-20T02:44:00",
-        "references": [
-            "https://nvidia.custhelp.com/app/answers/detail/a_id/5383"
-        ],
-        "summary": "NVIDIA GPU Display Driver for Linux contains a vulnerability in an optional D-Bus configuration file, where a local user with basic capabilities can impact protected D-Bus endpoints, which may lead to code execution, denial of service, escalation of privileges, information disclosure, and data tampering."
-    },
-    {
-        "Modified": "2022-11-20T02:44:00",
-        "Published": "2022-11-19T00:15:00",
-        "access": {},
-        "assigner": "psirt@nvidia.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-31612",
-        "impact": {},
-        "last-modified": "2022-11-20T02:44:00",
-        "references": [
-            "https://nvidia.custhelp.com/app/answers/detail/a_id/5383"
-        ],
-        "summary": "NVIDIA GPU Display Driver for Windows contains a vulnerability in the kernel mode layer (nvlddmkm.sys) handler for DxgkDdiEscape, where a local user with basic capabilities can cause an out-of-bounds read, which may lead to a system crash or a leak of internal kernel information."
-    },
-    {
-        "Modified": "2022-11-20T02:44:00",
-        "Published": "2022-11-19T00:15:00",
-        "access": {},
-        "assigner": "psirt@nvidia.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-31613",
-        "impact": {},
-        "last-modified": "2022-11-20T02:44:00",
-        "references": [
-            "https://nvidia.custhelp.com/app/answers/detail/a_id/5383"
-        ],
-        "summary": "NVIDIA GPU Display Driver for Windows contains a vulnerability in the kernel mode layer, where any local user can cause a null-pointer dereference, which may lead to a kernel panic."
-    },
-    {
-        "Modified": "2022-11-20T02:44:00",
-        "Published": "2022-11-19T00:15:00",
-        "access": {},
-        "assigner": "psirt@nvidia.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-31615",
-        "impact": {},
-        "last-modified": "2022-11-20T02:44:00",
-        "references": [
-            "https://nvidia.custhelp.com/app/answers/detail/a_id/5383"
-        ],
-        "summary": "NVIDIA GPU Display Driver for Linux contains a vulnerability in the kernel mode layer, where a local user with basic capabilities can cause a null-pointer dereference, which may lead to denial of service."
     }
 ]
