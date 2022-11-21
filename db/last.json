@@ -1,108 +1,426 @@
 [
     {
-        "Modified": "2022-11-20T14:15:00",
+        "Modified": "2022-11-21T05:15:00",
+        "Published": "2022-11-21T05:15:00",
+        "access": {},
+        "assigner": "security@huntr.dev",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-4093",
+        "impact": {},
+        "last-modified": "2022-11-21T05:15:00",
+        "references": [
+            "https://github.com/dolibarr/dolibarr/commit/7c1eac9774bd1fed0b7b4594159f2ac2d12a4011",
+            "https://huntr.dev/bounties/677ca8ee-ffbc-4b39-b294-2ce81bd56788"
+        ],
+        "summary": "SQL injection attacks can result in unauthorized access to sensitive data, such as passwords, credit card details, or personal user information. Many high-profile data breaches in recent years have been the result of SQL injection attacks, leading to reputational damage and regulatory fines. In some cases, an attacker can obtain a persistent backdoor into an organization's systems, leading to a long-term compromise that can go unnoticed for an extended period. This affect 16.0.1 and 16.0.2 only. 16.0.0 or lower, and 16.0.3 or higher are not affected"
+    },
+    {
+        "Modified": "2022-11-21T03:15:00",
+        "Published": "2022-09-28T20:15:00",
+        "access": {},
+        "assigner": "secalert@redhat.com",
+        "cvss": null,
+        "cwe": "CWE-119",
+        "id": "CVE-2022-1270",
+        "impact": {},
+        "last-modified": "2022-11-21T03:15:00",
+        "references": [
+            "https://sourceforge.net/p/graphicsmagick/bugs/664/",
+            "https://security.gentoo.org/glsa/202209-19",
+            "https://lists.debian.org/debian-lts-announce/2022/11/msg00028.html"
+        ],
+        "summary": "In GraphicsMagick, a heap buffer overflow was found when parsing MIFF."
+    },
+    {
+        "Modified": "2022-11-21T03:15:00",
+        "Published": "2022-07-20T20:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2022-31160",
+        "impact": {},
+        "last-modified": "2022-11-21T03:15:00",
+        "references": [
+            "https://github.com/jquery/jquery-ui/security/advisories/GHSA-h6gj-6jjq-h8g9",
+            "https://github.com/jquery/jquery-ui/commit/8cc5bae1caa1fcf96bf5862c5646c787020ba3f9",
+            "https://blog.jqueryui.com/2022/07/jquery-ui-1-13-2-released/",
+            "https://www.drupal.org/sa-contrib-2022-052",
+            "https://security.netapp.com/advisory/ntap-20220909-0007/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/J5LGNTICB5BRFAG3DHVVELS6H3CZSQMO/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6XBR3G3JR5ZIOJDO4224M3INXDS2VFDD/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/QB2FJQXCNHO32VGVOC6DY6IPGVE4VDU6/"
+        ],
+        "summary": "jQuery UI is a curated set of user interface interactions, effects, widgets, and themes built on top of jQuery. Versions prior to 1.13.2 are potentially vulnerable to cross-site scripting. Initializing a checkboxradio widget on an input enclosed within a label makes that parent label contents considered as the input label. Calling `.checkboxradio( \"refresh\" )` on such a widget and the initial HTML contained encoded HTML entities will make them erroneously get decoded. This can lead to potentially executing JavaScript code. The bug has been patched in jQuery UI 1.13.2. To remediate the issue, someone who can change the initial HTML can wrap all the non-input contents of the `label` in a `span`."
+    },
+    {
+        "Modified": "2022-11-21T01:57:00",
+        "Published": "2022-11-17T21:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-918",
+        "id": "CVE-2022-43183",
+        "impact": {},
+        "last-modified": "2022-11-21T01:57:00",
+        "references": [
+            "https://github.com/xuxueli/xxl-job/issues/3002"
+        ],
+        "summary": "XXL-Job before v2.3.1 contains a Server-Side Request Forgery (SSRF) via the component /admin/controller/JobLogController.java."
+    },
+    {
+        "Modified": "2022-11-21T01:54:00",
+        "Published": "2022-11-18T18:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-89",
+        "id": "CVE-2022-44378",
+        "impact": {},
+        "last-modified": "2022-11-21T01:54:00",
+        "references": [
+            "https://github.com/suikirakira/bug_report/blob/main/vendors/oretnom23/automotive-shop-management-system/SQLi-1.md"
+        ],
+        "summary": "Automotive Shop Management System v1.0 is vulnerable to SQL via /asms/classes/Master.php?f=delete_mechanic."
+    },
+    {
+        "Modified": "2022-11-21T01:46:00",
+        "Published": "2022-11-18T19:15:00",
+        "access": {},
+        "assigner": "audit@patchstack.com",
+        "cvss": null,
+        "cwe": "CWE-352",
+        "id": "CVE-2022-38075",
+        "impact": {},
+        "last-modified": "2022-11-21T01:46:00",
+        "references": [
+            "https://patchstack.com/database/vulnerability/mantenimiento-web/wordpress-mantenimiento-web-plugin-0-13-cross-site-request-forgery-csrf-vulnerability-leading-to-stored-cross-site-scripting-xss?_s_id=cve"
+        ],
+        "summary": "Cross-Site Request Forgery (CSRF) vulnerability leading to Stored Cross-Site Scripting (XSS) in Mantenimiento web plugin <= 0.13 on WordPress."
+    },
+    {
+        "Modified": "2022-11-21T01:45:00",
+        "Published": "2022-11-18T19:15:00",
+        "access": {},
+        "assigner": "audit@patchstack.com",
+        "cvss": null,
+        "cwe": "CWE-352",
+        "id": "CVE-2022-40686",
+        "impact": {},
+        "last-modified": "2022-11-21T01:45:00",
+        "references": [
+            "https://patchstack.com/database/vulnerability/creative-mail-by-constant-contact/wordpress-creative-mail-plugin-1-5-4-cross-site-request-forgery-csrf-vulnerability?_s_id=cve"
+        ],
+        "summary": "Cross-Site Request Forgery (CSRF) vulnerability in Creative Mail plugin <= 1.5.4 on WordPress."
+    },
+    {
+        "Modified": "2022-11-21T01:45:00",
+        "Published": "2022-11-18T19:15:00",
+        "access": {},
+        "assigner": "audit@patchstack.com",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2022-43463",
+        "impact": {},
+        "last-modified": "2022-11-21T01:45:00",
+        "references": [
+            "https://patchstack.com/database/vulnerability/yikes-inc-easy-custom-woocommerce-product-tabs/wordpress-custom-product-tabs-for-woocommerce-plugin-1-7-9-auth-stored-cross-site-scripting-xss-vulnerability?_s_id=cve"
+        ],
+        "summary": "Auth. (admin+) Stored Cross-Site Scripting (XSS) vulnerability in Custom Product Tabs for WooCommerce plugin <= 1.7.9 on WordPress."
+    },
+    {
+        "Modified": "2022-11-21T01:40:00",
+        "Published": "2022-11-18T18:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-89",
+        "id": "CVE-2022-44379",
+        "impact": {},
+        "last-modified": "2022-11-21T01:40:00",
+        "references": [
+            "https://github.com/suikirakira/bug_report/blob/main/vendors/oretnom23/automotive-shop-management-system/SQLi-2.md"
+        ],
+        "summary": "Automotive Shop Management System v1.0 is vulnerable to SQL Injection via /asms/classes/Master.php?f=delete_service."
+    },
+    {
+        "Modified": "2022-11-21T01:29:00",
+        "Published": "2022-11-18T23:15:00",
+        "access": {},
+        "assigner": "audit@patchstack.com",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2022-40698",
+        "impact": {},
+        "last-modified": "2022-11-21T01:29:00",
+        "references": [
+            "https://patchstack.com/database/vulnerability/quiz-master-next/wordpress-quiz-and-survey-master-plugin-7-3-10-cross-site-scripting-xss-vulnerability?_s_id=cve"
+        ],
+        "summary": "Auth. (subscriber+) Cross-Site Scripting (XSS) vulnerability in Quiz And Survey Master plugin <= 7.3.10 on WordPress."
+    },
+    {
+        "Modified": "2022-11-21T01:29:00",
+        "Published": "2022-11-19T00:15:00",
+        "access": {},
+        "assigner": "audit@patchstack.com",
+        "cvss": null,
+        "cwe": "CWE-918",
+        "id": "CVE-2022-41609",
+        "impact": {},
+        "last-modified": "2022-11-21T01:29:00",
+        "references": [
+            "https://patchstack.com/database/vulnerability/bp-better-messages/wordpress-better-messages-plugin-1-9-10-68-server-side-request-forgery-ssrf-vulnerability?_s_id=cve",
+            "https://wordpress.org/plugins/bp-better-messages/#developers"
+        ],
+        "summary": "Auth. (subscriber+) Server-Side Request Forgery (SSRF) vulnerability in Better Messages plugin 1.9.10.68 on WordPress."
+    },
+    {
+        "Modified": "2022-11-21T01:28:00",
+        "Published": "2022-11-18T23:15:00",
+        "access": {},
+        "assigner": "audit@patchstack.com",
+        "cvss": null,
+        "cwe": "CWE-352",
+        "id": "CVE-2022-40695",
+        "impact": {},
+        "last-modified": "2022-11-21T01:28:00",
+        "references": [
+            "https://wordpress.org/plugins/seo-redirection/#developers",
+            "https://patchstack.com/database/vulnerability/seo-redirection/wordpress-seo-redirection-plugin-plugin-8-9-multiple-cross-site-scripting-csrf-vulnerabilities?_s_id=cve"
+        ],
+        "summary": "Multiple Cross-Site Scripting (CSRF) vulnerabilities in SEO Redirection Plugin plugin <= 8.9 on WordPress."
+    },
+    {
+        "Modified": "2022-11-21T01:28:00",
+        "Published": "2022-11-18T19:15:00",
+        "access": {},
+        "assigner": "audit@patchstack.com",
+        "cvss": null,
+        "cwe": "CWE-352",
+        "id": "CVE-2022-40687",
+        "impact": {},
+        "last-modified": "2022-11-21T01:28:00",
+        "references": [
+            "https://patchstack.com/database/vulnerability/creative-mail-by-constant-contact/wordpress-creative-mail-easier-wordpress-woocommerce-email-marketing-plugin-1-5-4-cross-site-request-forgery-csrf-vulnerability?_s_id=cve"
+        ],
+        "summary": "Cross-Site Request Forgery (CSRF) vulnerability in Creative Mail plugin <= 1.5.4 on WordPress."
+    },
+    {
+        "Modified": "2022-11-21T01:28:00",
+        "Published": "2022-11-18T19:15:00",
+        "access": {},
+        "assigner": "audit@patchstack.com",
+        "cvss": null,
+        "cwe": "CWE-352",
+        "id": "CVE-2022-41805",
+        "impact": {},
+        "last-modified": "2022-11-21T01:28:00",
+        "references": [
+            "https://patchstack.com/database/vulnerability/woocommerce-jetpack/wordpress-booster-for-woocommerce-plugin-5-6-6-cross-site-request-forgery-csrf-vulnerability?_s_id=cve"
+        ],
+        "summary": "Cross-Site Request Forgery (CSRF) vulnerability in Booster for WooCommerce plugin <= 5.6.6 on WordPress."
+    },
+    {
+        "Modified": "2022-11-21T01:17:00",
+        "Published": "2022-11-18T23:15:00",
+        "access": {},
+        "assigner": "audit@patchstack.com",
+        "cvss": null,
+        "cwe": "CWE-362",
+        "id": "CVE-2022-40130",
+        "impact": {},
+        "last-modified": "2022-11-21T01:17:00",
+        "references": [
+            "https://patchstack.com/database/vulnerability/wp-polls/wordpress-wp-polls-plugin-2-76-0-race-condition-vulnerability?_s_id=cve",
+            "https://wordpress.org/plugins/wp-polls/#developers"
+        ],
+        "summary": "Auth. (subscriber+) Race Condition vulnerability in WP-Polls plugin <= 2.76.0 on WordPress."
+    },
+    {
+        "Modified": "2022-11-20T16:15:00",
+        "Published": "2022-11-20T13:15:00",
+        "access": {},
+        "assigner": "cna@vuldb.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-4071",
+        "impact": {},
+        "last-modified": "2022-11-20T16:15:00",
+        "references": [],
+        "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was withdrawn by its CNA. Further investigation showed that it was not a security issue. Notes: none."
+    },
+    {
+        "Modified": "2022-11-20T16:15:00",
+        "Published": "2022-11-20T13:15:00",
+        "access": {},
+        "assigner": "cna@vuldb.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-4073",
+        "impact": {},
+        "last-modified": "2022-11-20T16:15:00",
+        "references": [],
+        "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was withdrawn by its CNA. Further investigation showed that it was not a security issue. Notes: none."
+    },
+    {
+        "Modified": "2022-11-20T16:15:00",
+        "Published": "2022-11-20T13:15:00",
+        "access": {},
+        "assigner": "cna@vuldb.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-4074",
+        "impact": {},
+        "last-modified": "2022-11-20T16:15:00",
+        "references": [],
+        "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was withdrawn by its CNA. Further investigation showed that it was not a security issue. Notes: none."
+    },
+    {
+        "Modified": "2022-11-20T16:15:00",
+        "Published": "2022-11-20T13:15:00",
+        "access": {},
+        "assigner": "cna@vuldb.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-4075",
+        "impact": {},
+        "last-modified": "2022-11-20T16:15:00",
+        "references": [],
+        "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was withdrawn by its CNA. Further investigation showed that it was not a security issue. Notes: none."
+    },
+    {
+        "Modified": "2022-11-20T16:15:00",
+        "Published": "2022-11-20T13:15:00",
+        "access": {},
+        "assigner": "cna@vuldb.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-4076",
+        "impact": {},
+        "last-modified": "2022-11-20T16:15:00",
+        "references": [],
+        "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was withdrawn by its CNA. Further investigation showed that it was not a security issue. Notes: none."
+    },
+    {
+        "Modified": "2022-11-20T16:15:00",
+        "Published": "2022-11-20T13:15:00",
+        "access": {},
+        "assigner": "cna@vuldb.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-4077",
+        "impact": {},
+        "last-modified": "2022-11-20T16:15:00",
+        "references": [],
+        "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was withdrawn by its CNA. Further investigation showed that it was not a security issue. Notes: none."
+    },
+    {
+        "Modified": "2022-11-20T16:15:00",
+        "Published": "2022-11-20T13:15:00",
+        "access": {},
+        "assigner": "cna@vuldb.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-4078",
+        "impact": {},
+        "last-modified": "2022-11-20T16:15:00",
+        "references": [],
+        "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was withdrawn by its CNA. Further investigation showed that it was not a security issue. Notes: none."
+    },
+    {
+        "Modified": "2022-11-20T16:15:00",
+        "Published": "2022-11-20T13:15:00",
+        "access": {},
+        "assigner": "cna@vuldb.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-4079",
+        "impact": {},
+        "last-modified": "2022-11-20T16:15:00",
+        "references": [],
+        "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was withdrawn by its CNA. Further investigation showed that it was not a security issue. Notes: none."
+    },
+    {
+        "Modified": "2022-11-20T16:15:00",
         "Published": "2022-11-20T14:15:00",
         "access": {},
         "assigner": "cna@vuldb.com",
         "cvss": null,
-        "cwe": "CWE-117",
+        "cwe": "Unknown",
         "id": "CVE-2022-4080",
         "impact": {},
-        "last-modified": "2022-11-20T14:15:00",
-        "references": [
-            "https://vuldb.com/?id.214047",
-            "https://drive.google.com/file/d/1DWskeXDQmNmlhKUSs5DP53FcpU4It3OR/view",
-            "https://drive.google.com/file/d/1vzQO3JDV6JMGWOnvXtoWrkhd25IhRXen/view"
-        ],
-        "summary": "A vulnerability classified as problematic has been found in Opal Login History Plugin. This affects an unknown part of the component HTTP Header Handler. The manipulation of the argument X-Forwarded-For leads to improper output neutralization for logs. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-214047."
+        "last-modified": "2022-11-20T16:15:00",
+        "references": [],
+        "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was withdrawn by its CNA. Further investigation showed that it was not a security issue. Notes: none."
     },
     {
-        "Modified": "2022-11-20T14:15:00",
+        "Modified": "2022-11-20T16:15:00",
         "Published": "2022-11-20T14:15:00",
         "access": {},
         "assigner": "cna@vuldb.com",
         "cvss": null,
-        "cwe": "CWE-117",
+        "cwe": "Unknown",
         "id": "CVE-2022-4081",
         "impact": {},
-        "last-modified": "2022-11-20T14:15:00",
-        "references": [
-            "https://drive.google.com/file/d/17eSQTTNkeBljWrtZM9LJpNpy3ZpBAmmb/view",
-            "https://drive.google.com/file/d/1C46ucCVhUE4K2OgD08r_QROsV8ReNE_n/view",
-            "https://vuldb.com/?id.214048"
-        ],
-        "summary": "A vulnerability classified as problematic was found in getseofix Show Visitor IP Address Widget and Shortcode Plugin. This vulnerability affects unknown code of the component HTTP Header Handler. The manipulation of the argument X-Forwarded-For leads to improper output neutralization for logs. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used. The identifier of this vulnerability is VDB-214048."
+        "last-modified": "2022-11-20T16:15:00",
+        "references": [],
+        "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was withdrawn by its CNA. Further investigation showed that it was not a security issue. Notes: none."
     },
     {
-        "Modified": "2022-11-20T14:15:00",
+        "Modified": "2022-11-20T16:15:00",
         "Published": "2022-11-20T14:15:00",
         "access": {},
         "assigner": "cna@vuldb.com",
         "cvss": null,
-        "cwe": "CWE-117",
+        "cwe": "Unknown",
         "id": "CVE-2022-4082",
         "impact": {},
-        "last-modified": "2022-11-20T14:15:00",
-        "references": [
-            "https://drive.google.com/file/d/1jkcE2F41MAMM8rqDThYCKqHwFVKJueog/view",
-            "https://drive.google.com/file/d/1H5bsgKU3k3l_s21KoF-t3qGa-7lTwWRo/view",
-            "https://vuldb.com/?id.214049"
-        ],
-        "summary": "A vulnerability, which was classified as problematic, has been found in Solwin Infotech User Activity Log Plugin. This issue affects some unknown processing of the component HTTP Header Handler. The manipulation of the argument X-Forwarded-For leads to improper output neutralization for logs. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. The identifier VDB-214049 was assigned to this vulnerability."
+        "last-modified": "2022-11-20T16:15:00",
+        "references": [],
+        "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was withdrawn by its CNA. Further investigation showed that it was not a security issue. Notes: none."
     },
     {
-        "Modified": "2022-11-20T14:15:00",
+        "Modified": "2022-11-20T16:15:00",
         "Published": "2022-11-20T14:15:00",
         "access": {},
         "assigner": "cna@vuldb.com",
         "cvss": null,
-        "cwe": "CWE-117",
+        "cwe": "Unknown",
         "id": "CVE-2022-4083",
         "impact": {},
-        "last-modified": "2022-11-20T14:15:00",
-        "references": [
-            "https://drive.google.com/file/d/1y7d64iD40Y7qBkRaxoVj5-EjpofHWyXJ/view",
-            "https://vuldb.com/?id.214050",
-            "https://drive.google.com/file/d/1p1eq09fY5Sc4wXq1dULmV34o2kDU6dDZ/view"
-        ],
-        "summary": "A vulnerability, which was classified as problematic, was found in MyTechTalky User Location and IP Plugin. Affected is an unknown function of the component HTTP Header Handler. The manipulation of the argument X-Forwarded-For leads to improper output neutralization for logs. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used. VDB-214050 is the identifier assigned to this vulnerability."
+        "last-modified": "2022-11-20T16:15:00",
+        "references": [],
+        "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was withdrawn by its CNA. Further investigation showed that it was not a security issue. Notes: none."
     },
     {
-        "Modified": "2022-11-20T14:15:00",
+        "Modified": "2022-11-20T16:15:00",
         "Published": "2022-11-20T14:15:00",
         "access": {},
         "assigner": "cna@vuldb.com",
         "cvss": null,
-        "cwe": "CWE-117",
+        "cwe": "Unknown",
         "id": "CVE-2022-4084",
         "impact": {},
-        "last-modified": "2022-11-20T14:15:00",
-        "references": [
-            "https://vuldb.com/?id.214051",
-            "https://drive.google.com/file/d/1sKLa5XFlrJHb0AWU12KWjkNkoW-jYvT1/view",
-            "https://drive.google.com/file/d/1XZ_Md7dRinUV2tNQzrK5YL-8hhlgYyuS/view"
-        ],
-        "summary": "A vulnerability has been found in Activity Log Plugin and classified as problematic. Affected by this vulnerability is an unknown functionality of the component HTTP Header Handler. The manipulation of the argument X-Forwarded-For leads to improper output neutralization for logs. The attack can be launched remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-214051."
+        "last-modified": "2022-11-20T16:15:00",
+        "references": [],
+        "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was withdrawn by its CNA. Further investigation showed that it was not a security issue. Notes: none."
     },
     {
-        "Modified": "2022-11-20T14:15:00",
+        "Modified": "2022-11-20T16:15:00",
         "Published": "2022-11-20T14:15:00",
         "access": {},
         "assigner": "cna@vuldb.com",
         "cvss": null,
-        "cwe": "CWE-117",
+        "cwe": "Unknown",
         "id": "CVE-2022-4085",
         "impact": {},
-        "last-modified": "2022-11-20T14:15:00",
-        "references": [
-            "https://vuldb.com/?id.214052",
-            "https://drive.google.com/file/d/1RjLsviH1XtOaibSJW5vvkcPkWNZQKwJD/view",
-            "https://drive.google.com/file/d/1UygbWV9YFuIalwr1CgK1oBp3pIdFc1br/view"
-        ],
-        "summary": "A vulnerability was found in Top Infosoft Visitor Details Plugin and classified as problematic. Affected by this issue is some unknown functionality of the component HTTP Header Handler. The manipulation of the argument X-Forwarded-For leads to improper output neutralization for logs. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. The identifier of this vulnerability is VDB-214052."
+        "last-modified": "2022-11-20T16:15:00",
+        "references": [],
+        "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was withdrawn by its CNA. Further investigation showed that it was not a security issue. Notes: none."
     },
     {
-        "Modified": "2022-11-20T14:15:00",
+        "Modified": "2022-11-20T16:15:00",
         "Published": "2022-11-20T14:15:00",
         "access": {},
         "assigner": "cna@vuldb.com",
@@ -110,165 +428,22 @@
         "cwe": "Unknown",
         "id": "CVE-2022-4086",
         "impact": {},
-        "last-modified": "2022-11-20T14:15:00",
-        "references": [
-            "https://vuldb.com/?id.214053",
-            "https://drive.google.com/file/d/1TJFquD27pHQ44YR20sKgd8WhyKwpEv92/view",
-            "https://drive.google.com/file/d/1F1u3Cozv6XVaw4AY61H1C_Xr5EpwX7p-/view"
-        ],
-        "summary": "A vulnerability was found in WP White Security WP Activity Log Plugin. It has been classified as problematic. This affects an unknown part of the component HTTP Header Handler. The manipulation of the argument X-Forwarded-For leads to improper output neutralization for logs. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. The identifier VDB-214053 was assigned to this vulnerability."
+        "last-modified": "2022-11-20T16:15:00",
+        "references": [],
+        "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was withdrawn by its CNA. Further investigation showed that it was not a security issue. Notes: none."
     },
     {
-        "Modified": "2022-11-20T14:02:00",
+        "Modified": "2022-11-20T16:15:00",
         "Published": "2022-11-20T13:15:00",
         "access": {},
         "assigner": "cna@vuldb.com",
         "cvss": null,
-        "cwe": "CWE-117",
-        "id": "CVE-2022-4071",
-        "impact": {},
-        "last-modified": "2022-11-20T14:02:00",
-        "references": [
-            "https://drive.google.com/file/d/1n0pJq14XBzsjig719sxft5QzwaGFZ17y/view",
-            "https://drive.google.com/file/d/1C-6oB-TE70_mMkzZVun8fHZEL5qeCjsp/view",
-            "https://vuldb.com/?id.214038"
-        ],
-        "summary": "A vulnerability classified as problematic has been found in RSJoomla RSFirewall Plugin. Affected is an unknown function of the component HTTP Header Handler. The manipulation of the argument X-Forwarded-For leads to improper output neutralization for logs. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used. VDB-214038 is the identifier assigned to this vulnerability."
-    },
-    {
-        "Modified": "2022-11-20T14:02:00",
-        "Published": "2022-11-20T13:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-117",
-        "id": "CVE-2022-4073",
-        "impact": {},
-        "last-modified": "2022-11-20T14:02:00",
-        "references": [
-            "https://drive.google.com/file/d/1Y2MacA6ddEsRdQlEU2azRT-H0ujdK2nI/view",
-            "https://vuldb.com/?id.214040",
-            "https://drive.google.com/file/d/1A413k105i2iwkiGklYR2zSDI4eedIxoU/view"
-        ],
-        "summary": "A vulnerability, which was classified as problematic, has been found in Aleksandr R alx ip statistic Plugin. Affected by this issue is some unknown functionality of the component HTTP Header Handler. The manipulation of the argument X-Forwarded-For leads to improper output neutralization for logs. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. The identifier of this vulnerability is VDB-214040."
-    },
-    {
-        "Modified": "2022-11-20T14:02:00",
-        "Published": "2022-11-20T13:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-117",
-        "id": "CVE-2022-4074",
-        "impact": {},
-        "last-modified": "2022-11-20T14:02:00",
-        "references": [
-            "https://vuldb.com/?id.214041",
-            "https://drive.google.com/file/d/18poUUtNBO46EIIc26lyRv3486fpedQfY/view"
-        ],
-        "summary": "A vulnerability, which was classified as problematic, was found in Show IP Address Plugin. This affects an unknown part of the component HTTP Header Handler. The manipulation of the argument X-Forwarded-For leads to improper output neutralization for logs. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. The identifier VDB-214041 was assigned to this vulnerability."
-    },
-    {
-        "Modified": "2022-11-20T14:02:00",
-        "Published": "2022-11-20T13:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-117",
-        "id": "CVE-2022-4075",
-        "impact": {},
-        "last-modified": "2022-11-20T14:02:00",
-        "references": [
-            "https://vuldb.com/?id.214042",
-            "https://drive.google.com/file/d/1CnQYR9qgG8uPVaRCUEkE9rUmmq0tU-Ol/view",
-            "https://drive.google.com/file/d/12oiuThHeXM5U92XRapjAZqniFs-RARq1/view"
-        ],
-        "summary": "A vulnerability has been found in Banhammer Plugin and classified as problematic. This vulnerability affects unknown code of the component HTTP Header Handler. The manipulation of the argument X-Forwarded-For leads to improper output neutralization for logs. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used. VDB-214042 is the identifier assigned to this vulnerability."
-    },
-    {
-        "Modified": "2022-11-20T14:02:00",
-        "Published": "2022-11-20T13:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-117",
-        "id": "CVE-2022-4076",
-        "impact": {},
-        "last-modified": "2022-11-20T14:02:00",
-        "references": [
-            "https://drive.google.com/file/d/1Wj_AM204M-Uee3Z5-kIgg7j90dodWC-F/view",
-            "https://drive.google.com/file/d/1Ah8TiV0Aoy-XHbWdFoIrYM-HbKTDl3iK/view",
-            "https://vuldb.com/?id.214043"
-        ],
-        "summary": "A vulnerability was found in codeboxr CBX User Online & Last Login Plugin and classified as problematic. This issue affects some unknown processing of the component HTTP Header Handler. The manipulation of the argument X-Forwarded-For leads to improper output neutralization for logs. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-214043."
-    },
-    {
-        "Modified": "2022-11-20T14:02:00",
-        "Published": "2022-11-20T13:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-117",
-        "id": "CVE-2022-4077",
-        "impact": {},
-        "last-modified": "2022-11-20T14:02:00",
-        "references": [
-            "https://drive.google.com/file/d/1pqxoFeuLBtYeknit_1r0afFD8QE9uLx8/view",
-            "https://vuldb.com/?id.214044",
-            "https://drive.google.com/file/d/1iXfYmYMdB0gPbSjZscSdF8zLlA6PZZJA/view"
-        ],
-        "summary": "A vulnerability was found in Yellow Tree Geolocation IP Detection Plugin. It has been classified as problematic. Affected is an unknown function of the component HTTP Header Handler. The manipulation of the argument X-Forwarded-For leads to improper output neutralization for logs. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used. The identifier of this vulnerability is VDB-214044."
-    },
-    {
-        "Modified": "2022-11-20T14:02:00",
-        "Published": "2022-11-20T13:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-117",
-        "id": "CVE-2022-4078",
-        "impact": {},
-        "last-modified": "2022-11-20T14:02:00",
-        "references": [
-            "https://vuldb.com/?id.214045",
-            "https://drive.google.com/file/d/1FvdS1PY4JdrBE-S1kW7HTQB0lrZUhaCy/view",
-            "https://drive.google.com/file/d/1cD71UrNAV8Bka7HZkOPgQI6VpbogWvt_/view"
-        ],
-        "summary": "A vulnerability was found in IP Location Block Plugin. It has been declared as problematic. Affected by this vulnerability is an unknown functionality of the component HTTP Header Handler. The manipulation of the argument X-Forwarded-For leads to improper output neutralization for logs. The attack can be launched remotely. The exploit has been disclosed to the public and may be used. The identifier VDB-214045 was assigned to this vulnerability."
-    },
-    {
-        "Modified": "2022-11-20T14:02:00",
-        "Published": "2022-11-20T13:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-117",
-        "id": "CVE-2022-4079",
-        "impact": {},
-        "last-modified": "2022-11-20T14:02:00",
-        "references": [
-            "https://drive.google.com/file/d/1-7nWavjT6hWOjSJ_C3QMwdlHkRbUu2f7/view",
-            "https://drive.google.com/file/d/1tsMw98LzCKZgtnjBYvup-kPTkR0322DS/view",
-            "https://vuldb.com/?id.214046"
-        ],
-        "summary": "A vulnerability was found in Show Visitor IP Plugin. It has been rated as problematic. Affected by this issue is some unknown functionality of the component HTTP Header Handler. The manipulation of the argument X-Forwarded-For leads to improper output neutralization for logs. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. VDB-214046 is the identifier assigned to this vulnerability."
-    },
-    {
-        "Modified": "2022-11-20T14:02:00",
-        "Published": "2022-11-20T13:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-117",
+        "cwe": "Unknown",
         "id": "CVE-2022-4072",
         "impact": {},
-        "last-modified": "2022-11-20T14:02:00",
-        "references": [
-            "https://drive.google.com/file/d/17-JTtb0mz1RYB3HE-8oqSW3PESviYagm/view",
-            "https://drive.google.com/file/d/1_2BMo-V11H4B5LgfmxQFJJxHNqFE_LQh/view",
-            "https://vuldb.com/?id.214039"
-        ],
-        "summary": "A vulnerability classified as problematic was found in Iridium Intelligence bad_ip WP Plugin. Affected by this vulnerability is an unknown functionality of the component HTTP Header Handler. The manipulation of the argument X-Forwarded-For leads to improper output neutralization for logs. The attack can be launched remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-214039."
+        "last-modified": "2022-11-20T16:15:00",
+        "references": [],
+        "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was withdrawn by its CNA. Further investigation showed that it was not a security issue. Notes: none."
     },
     {
         "Modified": "2022-11-20T14:02:00",
@@ -765,21 +940,6 @@
         "assigner": "audit@patchstack.com",
         "cvss": null,
         "cwe": "Unknown",
-        "id": "CVE-2022-40698",
-        "impact": {},
-        "last-modified": "2022-11-20T02:44:00",
-        "references": [
-            "https://patchstack.com/database/vulnerability/quiz-master-next/wordpress-quiz-and-survey-master-plugin-7-3-10-cross-site-scripting-xss-vulnerability?_s_id=cve"
-        ],
-        "summary": "Auth. (subscriber+) Cross-Site Scripting (XSS) vulnerability in Quiz And Survey Master plugin <= 7.3.10 on WordPress."
-    },
-    {
-        "Modified": "2022-11-20T02:44:00",
-        "Published": "2022-11-18T23:15:00",
-        "access": {},
-        "assigner": "audit@patchstack.com",
-        "cvss": null,
-        "cwe": "Unknown",
         "id": "CVE-2022-41839",
         "impact": {},
         "last-modified": "2022-11-20T02:44:00",
@@ -818,22 +978,6 @@
             "https://github.com/free5gc/free5gc/issues/198"
         ],
         "summary": "In Free5gc v3.0.5, the AMF breaks due to malformed NAS messages."
-    },
-    {
-        "Modified": "2022-11-20T02:44:00",
-        "Published": "2022-11-18T23:15:00",
-        "access": {},
-        "assigner": "audit@patchstack.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-40130",
-        "impact": {},
-        "last-modified": "2022-11-20T02:44:00",
-        "references": [
-            "https://patchstack.com/database/vulnerability/wp-polls/wordpress-wp-polls-plugin-2-76-0-race-condition-vulnerability?_s_id=cve",
-            "https://wordpress.org/plugins/wp-polls/#developers"
-        ],
-        "summary": "Auth. (subscriber+) Race Condition vulnerability in WP-Polls plugin <= 2.76.0 on WordPress."
     },
     {
         "Modified": "2022-11-20T02:44:00",
@@ -990,22 +1134,6 @@
             "https://blog.installbuilder.com/2022/11/installbuilder-22100-released.html"
         ],
         "summary": "InstallBuilder Qt installers built with versions previous to 22.10 try to load DLLs from the installer binary parent directory when displaying popups. This may allow an attacker to plant a malicious DLL in the installer parent directory to allow executing code with the privileges of the installer (when the popup triggers the loading of the library). Exploiting these type of vulnerabilities generally require that an attacker has access to a vulnerable machine to plant the malicious DLL."
-    },
-    {
-        "Modified": "2022-11-20T02:44:00",
-        "Published": "2022-11-18T23:15:00",
-        "access": {},
-        "assigner": "audit@patchstack.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-40695",
-        "impact": {},
-        "last-modified": "2022-11-20T02:44:00",
-        "references": [
-            "https://wordpress.org/plugins/seo-redirection/#developers",
-            "https://patchstack.com/database/vulnerability/seo-redirection/wordpress-seo-redirection-plugin-plugin-8-9-multiple-cross-site-scripting-csrf-vulnerabilities?_s_id=cve"
-        ],
-        "summary": "Multiple Cross-Site Scripting (CSRF) vulnerabilities in SEO Redirection Plugin plugin <= 8.9 on WordPress."
     },
     {
         "Modified": "2022-11-20T02:44:00",
@@ -1415,197 +1543,5 @@
             "https://nvidia.custhelp.com/app/answers/detail/a_id/5383"
         ],
         "summary": "NVIDIA GPU Display Driver for Linux contains a vulnerability in the kernel mode layer, where a local user with basic capabilities can cause a null-pointer dereference, which may lead to denial of service."
-    },
-    {
-        "Modified": "2022-11-20T02:44:00",
-        "Published": "2022-11-19T00:15:00",
-        "access": {},
-        "assigner": "psirt@nvidia.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-31616",
-        "impact": {},
-        "last-modified": "2022-11-20T02:44:00",
-        "references": [
-            "https://nvidia.custhelp.com/app/answers/detail/a_id/5383"
-        ],
-        "summary": "NVIDIA GPU Display Driver for Windows contains a vulnerability in the kernel mode layer (nvlddmkm.sys) handler for DxgkDdiEscape, where a local user with basic capabilities can cause an out-of-bounds read, which may lead to denial of service, or information disclosure."
-    },
-    {
-        "Modified": "2022-11-20T02:44:00",
-        "Published": "2022-11-19T00:15:00",
-        "access": {},
-        "assigner": "psirt@nvidia.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-31617",
-        "impact": {},
-        "last-modified": "2022-11-20T02:44:00",
-        "references": [
-            "https://nvidia.custhelp.com/app/answers/detail/a_id/5383"
-        ],
-        "summary": "NVIDIA GPU Display Driver for Windows contains a vulnerability in the kernel mode layer (nvlddmkm.sys), where a local user with basic capabilities can cause an out-of-bounds read, which may lead to code execution, denial of service, escalation of privileges, information disclosure, or data tampering."
-    },
-    {
-        "Modified": "2022-11-20T02:44:00",
-        "Published": "2022-11-19T00:15:00",
-        "access": {},
-        "assigner": "psirt@nvidia.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-34665",
-        "impact": {},
-        "last-modified": "2022-11-20T02:44:00",
-        "references": [
-            "https://nvidia.custhelp.com/app/answers/detail/a_id/5383"
-        ],
-        "summary": "NVIDIA GPU Display Driver for Windows and Linux contains a vulnerability in the kernel mode layer, where a local user with basic capabilities can cause a null-pointer dereference, which may lead to denial of service."
-    },
-    {
-        "Modified": "2022-11-20T02:44:00",
-        "Published": "2022-11-19T00:15:00",
-        "access": {},
-        "assigner": "psirt@nvidia.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-34667",
-        "impact": {},
-        "last-modified": "2022-11-20T02:44:00",
-        "references": [
-            "https://nvidia.custhelp.com/app/answers/detail/a_id/5373"
-        ],
-        "summary": "NVIDIA CUDA Toolkit SDK contains a stack-based buffer overflow vulnerability in cuobjdump, where an unprivileged remote attacker could exploit this buffer overflow condition by persuading a local user to download a specially crafted corrupted file and execute cuobjdump against it locally, which may lead to a limited denial of service and some loss of data integrity for the local user."
-    },
-    {
-        "Modified": "2022-11-20T02:44:00",
-        "Published": "2022-11-19T00:15:00",
-        "access": {},
-        "assigner": "audit@patchstack.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-41155",
-        "impact": {},
-        "last-modified": "2022-11-20T02:44:00",
-        "references": [
-            "https://wordpress.org/plugins/iq-block-country/#developers",
-            "https://patchstack.com/database/vulnerability/iq-block-country/wordpress-iq-block-country-plugin-1-2-18-block-bypass-vulnerability?_s_id=cve"
-        ],
-        "summary": "Block BYPASS vulnerability in iQ Block Country plugin <= 1.2.18 on WordPress."
-    },
-    {
-        "Modified": "2022-11-20T02:44:00",
-        "Published": "2022-11-19T00:15:00",
-        "access": {},
-        "assigner": "audit@patchstack.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-41609",
-        "impact": {},
-        "last-modified": "2022-11-20T02:44:00",
-        "references": [
-            "https://patchstack.com/database/vulnerability/bp-better-messages/wordpress-better-messages-plugin-1-9-10-68-server-side-request-forgery-ssrf-vulnerability?_s_id=cve",
-            "https://wordpress.org/plugins/bp-better-messages/#developers"
-        ],
-        "summary": "Auth. (subscriber+) Server-Side Request Forgery (SSRF) vulnerability in Better Messages plugin 1.9.10.68 on WordPress."
-    },
-    {
-        "Modified": "2022-11-20T02:44:00",
-        "Published": "2022-11-19T00:15:00",
-        "access": {},
-        "assigner": "secalert@redhat.com",
-        "cvss": null,
-        "cwe": "CWE-146",
-        "id": "CVE-2022-4055",
-        "impact": {},
-        "last-modified": "2022-11-20T02:44:00",
-        "references": [
-            "https://gitlab.freedesktop.org/xdg/xdg-utils/-/issues/205#note_1494267"
-        ],
-        "summary": "When xdg-mail is configured to use thunderbird for mailto URLs, improper parsing of the URL can lead to additional headers being passed to thunderbird that should not be included per RFC 2368. An attacker can use this method to create a mailto URL that looks safe to users, but will actually attach files when clicked."
-    },
-    {
-        "Modified": "2022-11-20T02:44:00",
-        "Published": "2022-11-18T22:15:00",
-        "access": {},
-        "assigner": "security-advisories@github.com",
-        "cvss": null,
-        "cwe": "CWE-131",
-        "id": "CVE-2022-41885",
-        "impact": {},
-        "last-modified": "2022-11-20T02:44:00",
-        "references": [
-            "https://github.com/tensorflow/tensorflow/commit/d66e1d568275e6a2947de97dca7a102a211e01ce",
-            "https://github.com/tensorflow/tensorflow/security/advisories/GHSA-762h-vpvw-3rcx",
-            "https://github.com/tensorflow/tensorflow/blob/master/tensorflow/core/kernels/conv_ops_fused_image_transform.cc"
-        ],
-        "summary": "TensorFlow is an open source platform for machine learning. When `tf.raw_ops.FusedResizeAndPadConv2D` is given a large tensor shape, it overflows. We have patched the issue in GitHub commit d66e1d568275e6a2947de97dca7a102a211e01ce. The fix will be included in TensorFlow 2.11. We will also cherrypick this commit on TensorFlow 2.10.1, 2.9.3, and TensorFlow 2.8.4, as these are also affected and still in supported range."
-    },
-    {
-        "Modified": "2022-11-20T02:44:00",
-        "Published": "2022-11-18T22:15:00",
-        "access": {},
-        "assigner": "security-advisories@github.com",
-        "cvss": null,
-        "cwe": "CWE-20",
-        "id": "CVE-2022-41888",
-        "impact": {},
-        "last-modified": "2022-11-20T02:44:00",
-        "references": [
-            "https://github.com/tensorflow/tensorflow/commit/cf35502463a88ca7185a99daa7031df60b3c1c98",
-            "https://github.com/tensorflow/tensorflow/blob/master/tensorflow/core/kernels/image/generate_box_proposals_op.cu.cc",
-            "https://github.com/tensorflow/tensorflow/security/advisories/GHSA-6x99-gv2v-q76v"
-        ],
-        "summary": "TensorFlow is an open source platform for machine learning. When running on GPU, `tf.image.generate_bounding_box_proposals` receives a `scores` input that must be of rank 4 but is not checked. We have patched the issue in GitHub commit cf35502463a88ca7185a99daa7031df60b3c1c98. The fix will be included in TensorFlow 2.11. We will also cherrypick this commit on TensorFlow 2.10.1, 2.9.3, and TensorFlow 2.8.4, as these are also affected and still in supported range."
-    },
-    {
-        "Modified": "2022-11-20T02:44:00",
-        "Published": "2022-11-18T22:15:00",
-        "access": {},
-        "assigner": "security-advisories@github.com",
-        "cvss": null,
-        "cwe": "CWE-704",
-        "id": "CVE-2022-41890",
-        "impact": {},
-        "last-modified": "2022-11-20T02:44:00",
-        "references": [
-            "https://github.com/tensorflow/tensorflow/blob/master/tensorflow/core/util/bcast.h",
-            "https://github.com/tensorflow/tensorflow/commit/8310bf8dd188ff780e7fc53245058215a05bdbe5",
-            "https://github.com/tensorflow/tensorflow/security/advisories/GHSA-h246-cgh4-7475"
-        ],
-        "summary": "TensorFlow is an open source platform for machine learning. If `BCast::ToShape` is given input larger than an `int32`, it will crash, despite being supposed to handle up to an `int64`. An example can be seen in `tf.experimental.numpy.outer` by passing in large input to the input `b`. We have patched the issue in GitHub commit 8310bf8dd188ff780e7fc53245058215a05bdbe5. The fix will be included in TensorFlow 2.11. We will also cherrypick this commit on TensorFlow 2.10.1, 2.9.3, and TensorFlow 2.8.4, as these are also affected and still in supported range."
-    },
-    {
-        "Modified": "2022-11-20T02:44:00",
-        "Published": "2022-11-18T22:15:00",
-        "access": {},
-        "assigner": "security-advisories@github.com",
-        "cvss": null,
-        "cwe": "CWE-20",
-        "id": "CVE-2022-41891",
-        "impact": {},
-        "last-modified": "2022-11-20T02:44:00",
-        "references": [
-            "https://github.com/tensorflow/tensorflow/commit/fc33f3dc4c14051a83eec6535b608abe1d355fde",
-            "https://github.com/tensorflow/tensorflow/blob/master/tensorflow/core/kernels/list_kernels.h",
-            "https://github.com/tensorflow/tensorflow/security/advisories/GHSA-66vq-54fq-6jvv"
-        ],
-        "summary": "TensorFlow is an open source platform for machine learning. If `tf.raw_ops.TensorListConcat` is given `element_shape=[]`, it results segmentation fault which can be used to trigger a denial of service attack. We have patched the issue in GitHub commit fc33f3dc4c14051a83eec6535b608abe1d355fde. The fix will be included in TensorFlow 2.11. We will also cherrypick this commit on TensorFlow 2.10.1, 2.9.3, and TensorFlow 2.8.4, as these are also affected and still in supported range."
-    },
-    {
-        "Modified": "2022-11-20T02:44:00",
-        "Published": "2022-11-18T22:15:00",
-        "access": {},
-        "assigner": "security-advisories@github.com",
-        "cvss": null,
-        "cwe": "CWE-120",
-        "id": "CVE-2022-41894",
-        "impact": {},
-        "last-modified": "2022-11-20T02:44:00",
-        "references": [
-            "https://github.com/tensorflow/tensorflow/commit/72c0bdcb25305b0b36842d746cc61d72658d2941",
-            "https://github.com/tensorflow/tensorflow/blob/091e63f0ea33def7ecad661a5ac01dcafbafa90b/tensorflow/lite/kernels/internal/reference/conv3d_transpose.h#L121",
-            "https://github.com/tensorflow/tensorflow/security/advisories/GHSA-h6q3-vv32-2cq5"
-        ],
-        "summary": "TensorFlow is an open source platform for machine learning. The reference kernel of the `CONV_3D_TRANSPOSE` TensorFlow Lite operator wrongly increments the data_ptr when adding the bias to the result. Instead of `data_ptr += num_channels;` it should be `data_ptr += output_num_channels;` as if the number of input channels is different than the number of output channels, the wrong result will be returned and a buffer overflow will occur if num_channels > output_num_channels. An attacker can craft a model with a specific number of input channels. It is then possible to write specific values through the bias of the layer outside the bounds of the buffer. This attack only works if the reference kernel resolver is used in the interpreter. We have patched the issue in GitHub commit 72c0bdcb25305b0b36842d746cc61d72658d2941. The fix will be included in TensorFlow 2.11. We will also cherrypick this commit on TensorFlow 2.10.1, 2.9.3, and TensorFlow 2.8.4, as these are also affected and still in supported range."
     }
 ]
