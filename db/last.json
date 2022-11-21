@@ -1,5 +1,309 @@
 [
     {
+        "Modified": "2022-11-21T12:48:00",
+        "Published": "2022-11-20T05:15:00",
+        "access": {},
+        "assigner": "security@huntr.dev",
+        "cvss": null,
+        "cwe": "CWE-502",
+        "id": "CVE-2022-3525",
+        "impact": {},
+        "last-modified": "2022-11-21T12:48:00",
+        "references": [
+            "https://huntr.dev/bounties/ed048e8d-87af-440a-a91f-be1e65a40330",
+            "https://github.com/librenms/librenms/commit/ae3925b09ad3c5d0f7a9d5a26ae2f2f778834948"
+        ],
+        "summary": "Deserialization of Untrusted Data in GitHub repository librenms/librenms prior to 22.10.0."
+    },
+    {
+        "Modified": "2022-11-21T12:42:00",
+        "Published": "2022-11-20T05:15:00",
+        "access": {},
+        "assigner": "security@huntr.dev",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2022-3516",
+        "impact": {},
+        "last-modified": "2022-11-21T12:42:00",
+        "references": [
+            "https://huntr.dev/bounties/734bb5eb-715c-4b64-bd33-280300a63748",
+            "https://github.com/librenms/librenms/commit/8e85698aa3aa4884c2f3d6c987542477eb64f07c"
+        ],
+        "summary": "Cross-site Scripting (XSS) - Stored in GitHub repository librenms/librenms prior to 22.10.0."
+    },
+    {
+        "Modified": "2022-11-21T11:15:00",
+        "Published": "2022-11-21T11:15:00",
+        "access": {},
+        "assigner": "contact@wpscan.com",
+        "cvss": null,
+        "cwe": "CWE-287",
+        "id": "CVE-2021-24649",
+        "impact": {},
+        "last-modified": "2022-11-21T11:15:00",
+        "references": [
+            "https://wpscan.com/vulnerability/9486744e-ab24-44e4-b06e-9e0b4be132e2"
+        ],
+        "summary": "The WP User Frontend WordPress plugin before 3.5.29 uses a user supplied argument called urhidden in its registration form, which contains the role for the account to be created with, encrypted via wpuf_encryption(). This could allow an attacker having access to the AUTH_KEY and AUTH_SALT constant (via an arbitrary file access issue for example, or if the blog is using the default keys) to create an account with any role they want, such as admin"
+    },
+    {
+        "Modified": "2022-11-21T11:15:00",
+        "Published": "2022-11-21T11:15:00",
+        "access": {},
+        "assigner": "contact@wpscan.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-0421",
+        "impact": {},
+        "last-modified": "2022-11-21T11:15:00",
+        "references": [
+            "https://wpscan.com/vulnerability/145e8d3c-cd6f-4827-86e5-ea2d395a80b9"
+        ],
+        "summary": "The Five Star Restaurant Reservations WordPress plugin before 2.4.12 does not have authorisation when changing whether a payment was successful or failed, allowing unauthenticated users to change the payment status of arbitrary bookings. Furthermore, due to the lack of sanitisation and escaping, attackers could perform Cross-Site Scripting attacks against a logged in admin viewing the failed payments"
+    },
+    {
+        "Modified": "2022-11-21T11:15:00",
+        "Published": "2022-11-21T11:15:00",
+        "access": {},
+        "assigner": "contact@wpscan.com",
+        "cvss": null,
+        "cwe": "CWE-352",
+        "id": "CVE-2022-1578",
+        "impact": {},
+        "last-modified": "2022-11-21T11:15:00",
+        "references": [
+            "https://wpscan.com/vulnerability/c280da92-4ac2-43ea-93a2-6c583b79b98b"
+        ],
+        "summary": "The My wpdb WordPress plugin before 2.5 is missing CSRF check when running SQL queries, which could allow attacker to make a logged in admin run arbitrary SQL query via a CSRF attack"
+    },
+    {
+        "Modified": "2022-11-21T11:15:00",
+        "Published": "2022-11-21T11:15:00",
+        "access": {},
+        "assigner": "contact@wpscan.com",
+        "cvss": null,
+        "cwe": "CWE-639",
+        "id": "CVE-2022-1579",
+        "impact": {},
+        "last-modified": "2022-11-21T11:15:00",
+        "references": [
+            "https://wpscan.com/vulnerability/6f3d40fa-458b-44f0-9407-763e80b29668"
+        ],
+        "summary": "The function check_is_login_page() uses headers for the IP check, which can be easily spoofed."
+    },
+    {
+        "Modified": "2022-11-21T11:15:00",
+        "Published": "2022-11-21T11:15:00",
+        "access": {},
+        "assigner": "contact@wpscan.com",
+        "cvss": null,
+        "cwe": "CWE-639",
+        "id": "CVE-2022-1581",
+        "impact": {},
+        "last-modified": "2022-11-21T11:15:00",
+        "references": [
+            "https://www.hightechdad.com/2009/12/21/warning-wp-polls-wordpress-poll-plugin-can-be-exploited/",
+            "https://wpscan.com/vulnerability/c1896ab9-9585-40e2-abbf-ef5153b3c6b2"
+        ],
+        "summary": "The WP-Polls WordPress plugin before 2.76.0 prioritizes getting a visitor's IP from certain HTTP headers over PHP's REMOTE_ADDR, which makes it possible to bypass IP-based limitations to vote in certain situations."
+    },
+    {
+        "Modified": "2022-11-21T11:15:00",
+        "Published": "2022-11-21T11:15:00",
+        "access": {},
+        "assigner": "contact@wpscan.com",
+        "cvss": null,
+        "cwe": "CWE-352",
+        "id": "CVE-2022-3336",
+        "impact": {},
+        "last-modified": "2022-11-21T11:15:00",
+        "references": [
+            "https://wpscan.com/vulnerability/57bc6633-1aeb-4c20-a2a5-9b3fa10ba95d"
+        ],
+        "summary": "The Event Monster WordPress plugin before 1.2.0 does not have CSRF check when deleting visitors, which could allow attackers to make logged in admin delete arbitrary visitors via a CSRF attack"
+    },
+    {
+        "Modified": "2022-11-21T11:15:00",
+        "Published": "2022-11-21T11:15:00",
+        "access": {},
+        "assigner": "contact@wpscan.com",
+        "cvss": null,
+        "cwe": "CWE-1236",
+        "id": "CVE-2022-3600",
+        "impact": {},
+        "last-modified": "2022-11-21T11:15:00",
+        "references": [
+            "https://wpscan.com/vulnerability/16e2d970-19d0-42d1-8fb1-e7cb14ace1d0"
+        ],
+        "summary": "The Easy Digital Downloads WordPress plugin before 3.1.0.2 does not validate data when its output in a CSV file, which could lead to CSV injection."
+    },
+    {
+        "Modified": "2022-11-21T11:15:00",
+        "Published": "2022-11-21T11:15:00",
+        "access": {},
+        "assigner": "contact@wpscan.com",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2022-3618",
+        "impact": {},
+        "last-modified": "2022-11-21T11:15:00",
+        "references": [
+            "https://wpscan.com/vulnerability/2011dc7b-8e8c-4190-ab34-de288e14685b"
+        ],
+        "summary": "The Spacer WordPress plugin before 3.0.7 does not sanitize and escapes some of its settings, which could allow high-privilege users such as admin to perform Stored Cross-Site Scripting attacks even when the unfiltered_html capability is disallowed (for example, in multisite setup)."
+    },
+    {
+        "Modified": "2022-11-21T11:15:00",
+        "Published": "2022-11-21T11:15:00",
+        "access": {},
+        "assigner": "contact@wpscan.com",
+        "cvss": null,
+        "cwe": "CWE-1236",
+        "id": "CVE-2022-3634",
+        "impact": {},
+        "last-modified": "2022-11-21T11:15:00",
+        "references": [
+            "https://wpscan.com/vulnerability/b5eeefb0-fb5e-4ca6-a6f0-67f4be4a2b10"
+        ],
+        "summary": "The Contact Form 7 Database Addon WordPress plugin before 1.2.6.5 does not validate data when output it back in a CSV file, which could lead to CSV injection"
+    },
+    {
+        "Modified": "2022-11-21T11:15:00",
+        "Published": "2022-11-21T11:15:00",
+        "access": {},
+        "assigner": "contact@wpscan.com",
+        "cvss": null,
+        "cwe": "CWE-352",
+        "id": "CVE-2022-3688",
+        "impact": {},
+        "last-modified": "2022-11-21T11:15:00",
+        "references": [
+            "https://wpscan.com/vulnerability/03b2c6e6-b86e-4143-a84a-7a99060c4848"
+        ],
+        "summary": "The WPQA Builder WordPress plugin before 5.9 does not have CSRF check when following and unfollowing users, which could allow attackers to make logged in users perform such actions via CSRF attacks"
+    },
+    {
+        "Modified": "2022-11-21T11:15:00",
+        "Published": "2022-11-21T11:15:00",
+        "access": {},
+        "assigner": "contact@wpscan.com",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2022-3690",
+        "impact": {},
+        "last-modified": "2022-11-21T11:15:00",
+        "references": [
+            "https://wpscan.com/vulnerability/725f6ae4-7ec5-4d7c-9533-c9b61b59cc2b"
+        ],
+        "summary": "The Popup Maker WordPress plugin before 1.16.11 does not sanitise and escape some of its Popup options, which could allow high privilege users such as admin to perform Stored Cross-Site Scripting attacks even when the unfiltered_html capability is disallowed (for example in multisite setup)"
+    },
+    {
+        "Modified": "2022-11-21T11:15:00",
+        "Published": "2022-11-21T11:15:00",
+        "access": {},
+        "assigner": "contact@wpscan.com",
+        "cvss": null,
+        "cwe": "CWE-200",
+        "id": "CVE-2022-3691",
+        "impact": {},
+        "last-modified": "2022-11-21T11:15:00",
+        "references": [
+            "https://wpscan.com/vulnerability/4248a0af-1b7e-4e29-8129-3f40c1d0c560"
+        ],
+        "summary": "The DeepL Pro API translation plugin WordPress plugin before 1.7.5 discloses sensitive information in its log files (which are publicly accessible), including DeepL API key."
+    },
+    {
+        "Modified": "2022-11-21T11:15:00",
+        "Published": "2022-11-21T11:15:00",
+        "access": {},
+        "assigner": "contact@wpscan.com",
+        "cvss": null,
+        "cwe": "CWE-89",
+        "id": "CVE-2022-3720",
+        "impact": {},
+        "last-modified": "2022-11-21T11:15:00",
+        "references": [
+            "https://wpscan.com/vulnerability/0139a23c-4896-4aef-ab56-dcf7f07f01e5"
+        ],
+        "summary": "The Event Monster WordPress plugin before 1.2.0 does not validate and escape some parameters before using them in SQL statements, which could lead to SQL Injection exploitable by high privilege users"
+    },
+    {
+        "Modified": "2022-11-21T11:15:00",
+        "Published": "2022-11-21T11:15:00",
+        "access": {},
+        "assigner": "contact@wpscan.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-3750",
+        "impact": {},
+        "last-modified": "2022-11-21T11:15:00",
+        "references": [
+            "https://wpscan.com/vulnerability/5019db80-0356-497d-b488-a26a5de78676"
+        ],
+        "summary": "The has a CSRF vulnerability that allows the deletion of a post without using a nonce or prompting for confirmation."
+    },
+    {
+        "Modified": "2022-11-21T11:15:00",
+        "Published": "2022-11-21T11:15:00",
+        "access": {},
+        "assigner": "contact@wpscan.com",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2022-3753",
+        "impact": {},
+        "last-modified": "2022-11-21T11:15:00",
+        "references": [
+            "https://wpscan.com/vulnerability/8e88a5b9-6f1d-40de-99fc-8e1e66646c2b"
+        ],
+        "summary": "The Evaluate WordPress plugin through 1.0 does not sanitize and escapes some of its settings, which could allow high-privilege users such as admin to perform Stored Cross-Site Scripting attacks even when the unfiltered_html capability is disallowed (for example, in multisite setup)."
+    },
+    {
+        "Modified": "2022-11-21T11:15:00",
+        "Published": "2022-11-21T11:15:00",
+        "access": {},
+        "assigner": "contact@wpscan.com",
+        "cvss": null,
+        "cwe": "CWE-22",
+        "id": "CVE-2022-3762",
+        "impact": {},
+        "last-modified": "2022-11-21T11:15:00",
+        "references": [
+            "https://wpscan.com/vulnerability/96ef4bb8-a054-48ae-b29c-b3060acd01ac"
+        ],
+        "summary": "The Booster for WooCommerce WordPress plugin before 5.6.7, Booster Plus for WooCommerce WordPress plugin before 5.6.5, Booster Elite for WooCommerce WordPress plugin before 1.1.7 do not validate files to download in some of its modules, which could allow ShopManager and Admin to download arbitrary files from the server even when they are not supposed to be able to (for example in multisite)"
+    },
+    {
+        "Modified": "2022-11-21T11:15:00",
+        "Published": "2022-11-21T11:15:00",
+        "access": {},
+        "assigner": "contact@wpscan.com",
+        "cvss": null,
+        "cwe": "CWE-352",
+        "id": "CVE-2022-3763",
+        "impact": {},
+        "last-modified": "2022-11-21T11:15:00",
+        "references": [
+            "https://wpscan.com/vulnerability/7ab15530-8321-487d-97a5-1469b51fcc3f"
+        ],
+        "summary": "The Booster for WooCommerce WordPress plugin before 5.6.7, Booster Plus for WooCommerce WordPress plugin before 5.6.5, Booster Elite for WooCommerce WordPress plugin before 1.1.7 do not have CSRF check in place when deleting files uploaded at the checkout, allowing attackers to make a logged in shop manager or admin delete them via a CSRF attack"
+    },
+    {
+        "Modified": "2022-11-21T11:15:00",
+        "Published": "2022-11-01T16:15:00",
+        "access": {},
+        "assigner": "security@apache.org",
+        "cvss": null,
+        "cwe": "CWE-74",
+        "id": "CVE-2022-31777",
+        "impact": {},
+        "last-modified": "2022-11-21T11:15:00",
+        "references": [
+            "https://lists.apache.org/thread/60mgbswq2lsmrxykfxpqq13ztkm2ht6q",
+            "http://www.openwall.com/lists/oss-security/2022/11/01/14"
+        ],
+        "summary": "A stored cross-site scripting (XSS) vulnerability in Apache Spark 3.2.1 and earlier, and 3.3.0, allows remote attackers to execute arbitrary JavaScript in the web browser of a user, by including a malicious payload into the logs which would be returned in logs rendered in the UI."
+    },
+    {
         "Modified": "2022-11-21T10:15:00",
         "Published": "2022-11-21T10:15:00",
         "access": {},
@@ -646,38 +950,6 @@
         "assigner": "security@huntr.dev",
         "cvss": null,
         "cwe": "Unknown",
-        "id": "CVE-2022-3516",
-        "impact": {},
-        "last-modified": "2022-11-20T07:58:00",
-        "references": [
-            "https://huntr.dev/bounties/734bb5eb-715c-4b64-bd33-280300a63748",
-            "https://github.com/librenms/librenms/commit/8e85698aa3aa4884c2f3d6c987542477eb64f07c"
-        ],
-        "summary": "Cross-site Scripting (XSS) - Stored in GitHub repository librenms/librenms prior to 22.10.0."
-    },
-    {
-        "Modified": "2022-11-20T07:58:00",
-        "Published": "2022-11-20T05:15:00",
-        "access": {},
-        "assigner": "security@huntr.dev",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-3525",
-        "impact": {},
-        "last-modified": "2022-11-20T07:58:00",
-        "references": [
-            "https://huntr.dev/bounties/ed048e8d-87af-440a-a91f-be1e65a40330",
-            "https://github.com/librenms/librenms/commit/ae3925b09ad3c5d0f7a9d5a26ae2f2f778834948"
-        ],
-        "summary": "Deserialization of Untrusted Data in GitHub repository librenms/librenms prior to 22.10.0."
-    },
-    {
-        "Modified": "2022-11-20T07:58:00",
-        "Published": "2022-11-20T05:15:00",
-        "access": {},
-        "assigner": "security@huntr.dev",
-        "cvss": null,
-        "cwe": "Unknown",
         "id": "CVE-2022-3561",
         "impact": {},
         "last-modified": "2022-11-20T07:58:00",
@@ -1264,292 +1536,5 @@
             "https://wordpress.org/plugins/agile-store-locator/"
         ],
         "summary": "Cross-Site Scripting (XSS) via Cross-Site Request Forgery (CSRF) vulnerability in Store Locator plugin <= 1.4.5 on WordPress."
-    },
-    {
-        "Modified": "2022-11-20T02:44:00",
-        "Published": "2022-11-18T23:15:00",
-        "access": {},
-        "assigner": "audit@patchstack.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-41634",
-        "impact": {},
-        "last-modified": "2022-11-20T02:44:00",
-        "references": [
-            "https://wordpress.org/plugins/media-library-plus/#developers",
-            "https://patchstack.com/database/vulnerability/media-library-plus/wordpress-media-library-folders-plugin-7-1-1-cross-site-request-forgery-csrf-vulnerability?_s_id=cve"
-        ],
-        "summary": "Cross-Site Request Forgery (CSRF) vulnerability in Media Library Folders plugin <= 7.1.1 on WordPress."
-    },
-    {
-        "Modified": "2022-11-20T02:44:00",
-        "Published": "2022-11-18T23:15:00",
-        "access": {},
-        "assigner": "audit@patchstack.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-41655",
-        "impact": {},
-        "last-modified": "2022-11-20T02:44:00",
-        "references": [
-            "https://patchstack.com/database/vulnerability/phone-orders-for-woocommerce/wordpress-phone-orders-for-woocommerce-plugin-3-7-1-auth-sensitive-data-exposure-vulnerability?_s_id=cve",
-            "https://wordpress.org/plugins/phone-orders-for-woocommerce/#developers"
-        ],
-        "summary": "Auth. (subscriber+) Sensitive Data Exposure vulnerability in Phone Orders for WooCommerce plugin <= 3.7.1 on WordPress."
-    },
-    {
-        "Modified": "2022-11-20T02:44:00",
-        "Published": "2022-11-18T23:15:00",
-        "access": {},
-        "assigner": "audit@patchstack.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-41685",
-        "impact": {},
-        "last-modified": "2022-11-20T02:44:00",
-        "references": [
-            "https://patchstack.com/database/vulnerability/integration-for-szamlazzhu-woocommerce/wordpress-integration-for-szamlazz-hu-woocommerce-plugin-5-6-3-2-multiple-cross-site-request-forgery-csrf-vulnerabilities?_s_id=cve",
-            "https://wordpress.org/plugins/hungarian-pickup-points-for-woocommerce/#developers",
-            "https://patchstack.com/database/vulnerability/hungarian-pickup-points-for-woocommerce/wordpress-csomagpontok-es-szallitasi-cimkek-woocommerce-hez-plugin-1-9-0-2-multiple-cross-site-request-forgery-csrf-vulnerabilities?_s_id=cve",
-            "https://wordpress.org/plugins/integration-for-szamlazzhu-woocommerce/#developers"
-        ],
-        "summary": "Multiple Cross-Site Request Forgery (CSRF) vulnerabilities in Viszt P\u00e9ter's Integration for Szamlazz.hu & WooCommerce plugin <= 5.6.3.2 and Csomagpontok \u00e9s sz\u00e1ll\u00edt\u00e1si c\u00edmk\u00e9k WooCommerce-hez plugin <= 1.9.0.2 on WordPress."
-    },
-    {
-        "Modified": "2022-11-20T02:44:00",
-        "Published": "2022-11-18T23:15:00",
-        "access": {},
-        "assigner": "audit@patchstack.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-42459",
-        "impact": {},
-        "last-modified": "2022-11-20T02:44:00",
-        "references": [
-            "https://patchstack.com/database/vulnerability/image-hover-effects-ultimate/wordpress-image-hover-effects-ultimate-plugin-9-7-1-auth-wordpress-options-change-vulnerability?_s_id=cve",
-            "https://wordpress.org/plugins/image-hover-effects-ultimate/"
-        ],
-        "summary": "Auth. WordPress Options Change vulnerability in Image Hover Effects Ultimate plugin <= 9.7.1 on WordPress."
-    },
-    {
-        "Modified": "2022-11-20T02:44:00",
-        "Published": "2022-11-18T23:15:00",
-        "access": {},
-        "assigner": "security@elastic.co",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2021-22141",
-        "impact": {},
-        "last-modified": "2022-11-20T02:44:00",
-        "references": [
-            "https://www.elastic.co/community/security/",
-            "https://discuss.elastic.co/t/elastic-stack-7-13-0-and-6-8-16-security-update/273964"
-        ],
-        "summary": "An open redirect flaw was found in Kibana versions before 7.13.0 and 6.8.16. If a logged in user visits a maliciously crafted URL, it could result in Kibana redirecting the user to an arbitrary website."
-    },
-    {
-        "Modified": "2022-11-20T02:44:00",
-        "Published": "2022-11-18T23:15:00",
-        "access": {},
-        "assigner": "audit@patchstack.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-42497",
-        "impact": {},
-        "last-modified": "2022-11-20T02:44:00",
-        "references": [
-            "https://patchstack.com/database/vulnerability/api2cart-bridge-connector/wordpress-api2cart-bridge-connector-plugin-1-1-0-arbitrary-code-execution-vulnerability?_s_id=cve",
-            "https://wordpress.org/plugins/api2cart-bridge-connector/#developers"
-        ],
-        "summary": "Arbitrary Code Execution vulnerability in Api2Cart Bridge Connector plugin <= 1.1.0 on WordPress."
-    },
-    {
-        "Modified": "2022-11-20T02:44:00",
-        "Published": "2022-11-18T23:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2021-31739",
-        "impact": {},
-        "last-modified": "2022-11-20T02:44:00",
-        "references": [
-            "https://www.pentagrid.ch/en/blog/multiple-vulnerabilities-in-seppmail/"
-        ],
-        "summary": "The SEPPmail solution is vulnerable to a Cross-Site Scripting vulnerability (XSS), because user input is not correctly encoded in HTML attributes when returned by the server.SEPPmail 11.1.10 allows XSS via a recipient address."
-    },
-    {
-        "Modified": "2022-11-20T02:44:00",
-        "Published": "2022-11-18T23:15:00",
-        "access": {},
-        "assigner": "audit@patchstack.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-42883",
-        "impact": {},
-        "last-modified": "2022-11-20T02:44:00",
-        "references": [
-            "https://patchstack.com/database/vulnerability/quiz-master-next/wordpress-quiz-and-survey-master-plugin-7-3-10-sensitive-information-disclosure-vulnerability?_s_id=cve"
-        ],
-        "summary": "Sensitive Information Disclosure vulnerability discovered by Quiz And Survey Master plugin <= 7.3.10 on WordPress."
-    },
-    {
-        "Modified": "2022-11-20T02:44:00",
-        "Published": "2022-11-18T23:15:00",
-        "access": {},
-        "assigner": "audit@patchstack.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-44584",
-        "impact": {},
-        "last-modified": "2022-11-20T02:44:00",
-        "references": [
-            "https://patchstack.com/database/vulnerability/watchtowerhq/wordpress-watchtowerhq-plugin-3-6-15-unauth-arbitrary-file-deletion-vulnerability?_s_id=cve",
-            "https://wordpress.org/plugins/watchtowerhq/#developers"
-        ],
-        "summary": "Unauth. Arbitrary File Deletion vulnerability in WatchTowerHQ plugin <= 3.6.15 on WordPress."
-    },
-    {
-        "Modified": "2022-11-20T02:44:00",
-        "Published": "2022-11-18T23:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-34827",
-        "impact": {},
-        "last-modified": "2022-11-20T02:44:00",
-        "references": [
-            "https://github.com/mandiant/Vulnerability-Disclosures/blob/master/2022/MNDT-2022-0040/MNDT-2022-0040.md",
-            "https://github.com/mandiant/Vulnerability-Disclosures"
-        ],
-        "summary": "Carel Boss Mini 1.5.0 has Improper Access Control."
-    },
-    {
-        "Modified": "2022-11-20T02:44:00",
-        "Published": "2022-11-18T23:15:00",
-        "access": {},
-        "assigner": "audit@patchstack.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-40216",
-        "impact": {},
-        "last-modified": "2022-11-20T02:44:00",
-        "references": [
-            "https://wordpress.org/plugins/bp-better-messages/#developers",
-            "https://patchstack.com/database/vulnerability/bp-better-messages/wordpress-better-messages-plugin-1-9-10-69-messaging-block-bypass-vulnerability?_s_id=cve"
-        ],
-        "summary": "Auth. (subscriber+) Messaging Block Bypass vulnerability in Better Messages plugin <= 1.9.10.69 on WordPress."
-    },
-    {
-        "Modified": "2022-11-20T02:44:00",
-        "Published": "2022-11-18T23:15:00",
-        "access": {},
-        "assigner": "audit@patchstack.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-41135",
-        "impact": {},
-        "last-modified": "2022-11-20T02:44:00",
-        "references": [
-            "https://patchstack.com/database/vulnerability/modula-best-grid-gallery/wordpress-modula-plugin-2-6-9-unauth-plugin-settings-change-vulnerability?_s_id=cve"
-        ],
-        "summary": "Unauth. Plugin Settings Change vulnerability in Modula plugin <= 2.6.9 on WordPress."
-    },
-    {
-        "Modified": "2022-11-20T02:44:00",
-        "Published": "2022-11-18T23:15:00",
-        "access": {},
-        "assigner": "audit@patchstack.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-41618",
-        "impact": {},
-        "last-modified": "2022-11-20T02:44:00",
-        "references": [
-            "https://wordpress.org/plugins/media-library-assistant/#developers",
-            "https://patchstack.com/database/vulnerability/media-library-assistant/wordpress-media-library-assistant-plugin-3-00-unauthenticated-error-log-disclosure-vulnerability?_s_id=cve"
-        ],
-        "summary": "Unauthenticated Error Log Disclosure vulnerability in Media Library Assistant plugin <= 3.00 on WordPress."
-    },
-    {
-        "Modified": "2022-11-20T02:44:00",
-        "Published": "2022-11-18T23:15:00",
-        "access": {},
-        "assigner": "audit@patchstack.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-44634",
-        "impact": {},
-        "last-modified": "2022-11-20T02:44:00",
-        "references": [
-            "https://wordpress.org/plugins/import-shopify-to-woocommerce/#developers",
-            "https://patchstack.com/database/vulnerability/import-shopify-to-woocommerce/wordpress-s2w-import-shopify-to-woocommerce-plugin-1-1-12-auth-local-file-inclusion-lfi-vulnerability?_s_id=cve"
-        ],
-        "summary": "Auth. (admin+) Arbitrary File Read vulnerability in S2W \u2013 Import Shopify to WooCommerce plugin <= 1.1.12 on WordPress."
-    },
-    {
-        "Modified": "2022-11-20T02:44:00",
-        "Published": "2022-11-18T23:15:00",
-        "access": {},
-        "assigner": "audit@patchstack.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-45082",
-        "impact": {},
-        "last-modified": "2022-11-20T02:44:00",
-        "references": [
-            "https://wordpress.org/plugins/accordions-or-faqs/#developers",
-            "https://patchstack.com/database/vulnerability/accordions-or-faqs/wordpress-accordions-plugin-2-0-3-multiple-auth-stored-cross-site-scripting-xss-vulnerabilities?_s_id=cve"
-        ],
-        "summary": "Multiple Auth. (admin+) Stored Cross-Site Scripting (XSS) vulnerabilities in Accordions plugin <= 2.0.3 on WordPress via &addons-style-name and &accordions_or_faqs_license_key."
-    },
-    {
-        "Modified": "2022-11-20T02:44:00",
-        "Published": "2022-11-18T23:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-45132",
-        "impact": {},
-        "last-modified": "2022-11-20T02:44:00",
-        "references": [
-            "https://lists.lavasoftware.org/archives/list/lava-announce@lists.lavasoftware.org/thread/WHXGQMIZAPW3GCQEXYHC32N2ZAAAIYCY/",
-            "https://podalirius.net/en/articles/python-vulnerabilities-code-execution-in-jinja-templates/"
-        ],
-        "summary": "In Linaro Automated Validation Architecture (LAVA) before 2022.11.1, remote code execution can be achieved through user-submitted Jinja2 template. The REST API endpoint for validating device configuration files in lava-server loads input as a Jinja2 template in a way that can be used to trigger remote code execution in the LAVA server."
-    },
-    {
-        "Modified": "2022-11-20T02:44:00",
-        "Published": "2022-11-18T23:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-45163",
-        "impact": {},
-        "last-modified": "2022-11-20T02:44:00",
-        "references": [
-            "https://nxp.com",
-            "https://research.nccgroup.com/category/technical-advisory/"
-        ],
-        "summary": "An information-disclosure vulnerability exists on select NXP devices when configured in Serial Download Protocol (SDP) mode: i.MX RT 1010, i.MX RT 1015, i.MX RT 1020, i.MX RT 1050, i.MX RT 1060, i.MX 6 Family, i.MX 7Dual/Solo, i.MX 7ULP, i.MX 8M Quad, i.MX 8M Mini, and Vybrid. In a device security-enabled configuration, memory contents could potentially leak to physically proximate attackers via the respective SDP port in cold and warm boot attacks. (The recommended mitigation is to completely disable the SDP mode by programming a one-time programmable eFUSE. Customers can contact NXP for additional information.)"
-    },
-    {
-        "Modified": "2022-11-20T02:44:00",
-        "Published": "2022-11-19T00:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-30256",
-        "impact": {},
-        "last-modified": "2022-11-20T02:44:00",
-        "references": [
-            "https://maradns.samiam.org/",
-            "https://maradns.samiam.org/security.html#CVE-2022-30256"
-        ],
-        "summary": "An issue was discovered in MaraDNS Deadwood through 3.5.0021 that allows variant V1 of unintended domain name resolution. A revoked domain name can still be resolvable for a long time, including expired domains and taken-down malicious domains. The effects of an exploit would be widespread and highly impactful, because the exploitation conforms to de facto DNS specifications and operational practices, and overcomes current mitigation patches for \"Ghost\" domain names."
     }
 ]
