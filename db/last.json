@@ -1,5 +1,123 @@
 [
     {
+        "Modified": "2022-11-21T22:15:00",
+        "Published": "2022-11-21T22:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-30257",
+        "impact": {},
+        "last-modified": "2022-11-21T22:15:00",
+        "references": [
+            "https://github.com/TechnitiumSoftware/DnsServer/blob/master/CHANGELOG.md#version-81"
+        ],
+        "summary": "An issue was discovered in Technitium DNS Server through 8.0.2 that allows variant V1 of unintended domain name resolution. A revoked domain name can still be resolvable for a long time, including expired domains and taken-down malicious domains. The effects of an exploit would be widespread and highly impactful, because the exploitation conforms to de facto DNS specifications and operational practices, and overcomes current mitigation patches for \"Ghost\" domain names."
+    },
+    {
+        "Modified": "2022-11-21T22:15:00",
+        "Published": "2022-11-21T22:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-30258",
+        "impact": {},
+        "last-modified": "2022-11-21T22:15:00",
+        "references": [
+            "https://github.com/TechnitiumSoftware/DnsServer/blob/master/CHANGELOG.md#version-81"
+        ],
+        "summary": "An issue was discovered in Technitium DNS Server through 8.0.2 that allows variant V2 of unintended domain name resolution. A revoked domain name can still be resolvable for a long time, including expired domains and taken-down malicious domains. The effects of an exploit would be widespread and highly impactful, because the exploitation conforms to de facto DNS specifications and operational practices, and overcomes current mitigation patches for \"Ghost\" domain names."
+    },
+    {
+        "Modified": "2022-11-21T22:15:00",
+        "Published": "2022-11-14T23:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-400",
+        "id": "CVE-2022-40735",
+        "impact": {},
+        "last-modified": "2022-11-21T22:15:00",
+        "references": [
+            "https://github.com/mozilla/ssl-config-generator/issues/162",
+            "https://link.springer.com/content/pdf/10.1007/3-540-68339-9_29.pdf",
+            "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-57pt1r5.pdf",
+            "https://www.researchgate.net/profile/Anton-Stiglic-2/publication/2401745_Security_Issues_in_the_Diffie-Hellman_Key_Agreement_Protocol/links/546c144f0cf20dedafd53e7e/Security-Issues-in-the-Diffie-Hellman-Key-Agreement-Protocol.pdf",
+            "https://gist.github.com/c0r0n3r/9455ddcab985c50fd1912eabf26e058b",
+            "https://www.rfc-editor.org/rfc/rfc4419",
+            "https://www.rfc-editor.org/rfc/rfc7919#section-5.2",
+            "https://www.rfc-editor.org/rfc/rfc3526",
+            "https://raw.githubusercontent.com/CVEProject/cvelist/9d7fbbcabd3f44cfedc9e8807757d31ece85a2c6/2022/40xxx/CVE-2022-40735.json",
+            "https://www.rfc-editor.org/rfc/rfc5114#section-4"
+        ],
+        "summary": "The Diffie-Hellman Key Agreement Protocol allows use of long exponents that arguably make certain calculations unnecessarily expensive, because the 1996 van Oorschot and Wiener paper found that \"(appropriately) short exponents\" can be used when there are adequate subgroup constraints, and these short exponents can lead to less expensive calculations than for long exponents. This issue is different from CVE-2002-20001 because it is based on an observation about exponent size, rather than an observation about numbers that are not public keys. The specific situations in which calculation expense would constitute a server-side vulnerability depend on the protocol (e.g., TLS, SSH, or IKE) and the DHE implementation details. In general, there might be an availability concern because of server-side resource consumption from DHE modular-exponentiation calculations. Finally, it is possible for an attacker to exploit this vulnerability and CVE-2002-20001 together."
+    },
+    {
+        "Modified": "2022-11-21T22:15:00",
+        "Published": "2022-09-11T12:15:00",
+        "access": {},
+        "assigner": "security@apache.org",
+        "cvss": null,
+        "cwe": "CWE-611",
+        "id": "CVE-2022-39135",
+        "impact": {},
+        "last-modified": "2022-11-21T22:15:00",
+        "references": [
+            "https://lists.apache.org/thread/ohdnhlgm6jvt3srw8l7spkm2d5vwm082",
+            "http://www.openwall.com/lists/oss-security/2022/11/21/3"
+        ],
+        "summary": "In Apache Calcite prior to version 1.32.0 the SQL operators EXISTS_NODE, EXTRACT_XML, XML_TRANSFORM and EXTRACT_VALUE do not restrict XML External Entity references in their configuration, which makes them vulnerable to a potential XML External Entity (XXE) attack. Therefore any client exposing these operators, typically by using Oracle dialect (the first three) or MySQL dialect (the last one), is affected by this vulnerability (the extent of it will depend on the user under which the application is running). From Apache Calcite 1.32.0 onwards, Document Type Declarations and XML External Entity resolution are disabled on the impacted operators."
+    },
+    {
+        "Modified": "2022-11-21T21:15:00",
+        "Published": "2022-11-21T21:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2020-23582",
+        "impact": {},
+        "last-modified": "2022-11-21T21:15:00",
+        "references": [
+            "https://github.com/huzaifahussain98/CVE-2020-23582"
+        ],
+        "summary": "A vulnerability in the \"/admin/wlmultipleap.asp\" of optilink OP-XT71000N version: V2.2 could allow an unauthenticated, remote attacker to conduct a cross-site request forgery (CSRF) attack to create Multiple WLAN BSSID."
+    },
+    {
+        "Modified": "2022-11-21T21:15:00",
+        "Published": "2022-11-21T21:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-42096",
+        "impact": {},
+        "last-modified": "2022-11-21T21:15:00",
+        "references": [
+            "https://github.com/bypazs/CVE-2022-42096",
+            "https://grimthereaperteam.medium.com/cve-2022-42096-backdrop-xss-at-posts-437c305036e2",
+            "https://backdropcms.org",
+            "https://github.com/backdrop/backdrop/releases/tag/1.23.0"
+        ],
+        "summary": "Backdrop CMS version 1.23.0 was discovered to contain a stored cross-site scripting (XSS) vulnerability via Post content."
+    },
+    {
+        "Modified": "2022-11-21T21:15:00",
+        "Published": "2022-11-21T21:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-43143",
+        "impact": {},
+        "last-modified": "2022-11-21T21:15:00",
+        "references": [
+            "https://github.com/beekeeper-studio/beekeeper-studio/issues/1393"
+        ],
+        "summary": "A cross-site scripting (XSS) vulnerability in Beekeeper Studio v3.6.6 allows attackers to execute arbitrary web scripts or HTML via a crafted payload injected into the error modal container."
+    },
+    {
         "Modified": "2022-11-21T20:36:00",
         "Published": "2020-08-06T22:15:00",
         "access": {
@@ -1867,113 +1985,5 @@
             "https://github.com/RobinWang825/IoT_vuln/tree/main/Tenda/AC18/addWifiMacFilter"
         ],
         "summary": "Tenda AC18 V15.03.05.19 is vulnerable to Buffer Overflow via function addWifiMacFilter."
-    },
-    {
-        "Modified": "2022-11-21T18:44:00",
-        "Published": "2022-11-21T18:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-44183",
-        "impact": {},
-        "last-modified": "2022-11-21T18:44:00",
-        "references": [
-            "https://github.com/RobinWang825/IoT_vuln/tree/main/Tenda/AC18/formSetWifiGuestBasic"
-        ],
-        "summary": "Tenda AC18 V15.03.05.19 is vulnerable to Buffer Overflow via function formSetWifiGuestBasic."
-    },
-    {
-        "Modified": "2022-11-21T18:44:00",
-        "Published": "2022-11-21T18:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-44830",
-        "impact": {},
-        "last-modified": "2022-11-21T18:44:00",
-        "references": [
-            "https://github.com/RashidKhanPathan/CVE-2022-44830"
-        ],
-        "summary": "Sourcecodester Event Registration App v1.0 was discovered to contain multiple CSV injection vulnerabilities via the First Name, Contact and Remarks fields. These vulnerabilities allow attackers to execute arbitrary code via a crafted excel file."
-    },
-    {
-        "Modified": "2022-11-21T18:29:00",
-        "Published": "2022-11-21T18:15:00",
-        "access": {},
-        "assigner": "psirt@us.ibm.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-40746",
-        "impact": {},
-        "last-modified": "2022-11-21T18:29:00",
-        "references": [
-            "https://exchange.xforce.ibmcloud.com/vulnerabilities/236581",
-            "https://www.ibm.com/support/pages/node/6840359"
-        ],
-        "summary": "IBM i Access Family 1.1.2 through 1.1.4 and 1.1.4.3 through 1.1.9.0 could allow a local authenticated attacker to execute arbitrary code on the system, caused by DLL search order hijacking vulnerability. By placing a specially crafted file in a compromised folder, an attacker could exploit this vulnerability to execute arbitrary code on the system. IBM X-Force ID: 236581."
-    },
-    {
-        "Modified": "2022-11-21T18:29:00",
-        "Published": "2022-11-21T17:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-35897",
-        "impact": {},
-        "last-modified": "2022-11-21T18:29:00",
-        "references": [
-            "https://www.insyde.com/security-pledge",
-            "https://www.insyde.com/security-pledge/SA-2022041"
-        ],
-        "summary": "An stack buffer overflow vulnerability leads to arbitrary code execution issue was discovered in Insyde InsydeH2O with kernel 5.0 through 5.5. If the attacker modifies specific UEFI variables, it can cause a stack overflow, leading to arbitrary code execution. The specific variables are normally locked (read-only) at the OS level and therefore an attack would require direct SPI modification. If an attacker can change the values of at least two variables out of three (SecureBootEnforce, SecureBoot, RestoreBootSettings), it is possible to execute arbitrary code."
-    },
-    {
-        "Modified": "2022-11-21T18:29:00",
-        "Published": "2022-11-21T17:15:00",
-        "access": {},
-        "assigner": "security@microfocus.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-38755",
-        "impact": {},
-        "last-modified": "2022-11-21T18:29:00",
-        "references": [
-            "https://portal.microfocus.com/s/article/KM000011886?language=en_US"
-        ],
-        "summary": "A vulnerability has been identified in Micro Focus Filr in versions prior to 4.3.1.1. The vulnerability could be exploited to allow a remote unauthenticated attacker to enumerate valid users of the system. Remote unauthenticated user enumeration. This issue affects: Micro Focus Filr versions prior to 4.3.1.1."
-    },
-    {
-        "Modified": "2022-11-21T18:29:00",
-        "Published": "2022-11-21T17:15:00",
-        "access": {},
-        "assigner": "product.security@lge.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-45422",
-        "impact": {},
-        "last-modified": "2022-11-21T18:29:00",
-        "references": [
-            "https://lgsecurity.lge.com/bulletins/pc"
-        ],
-        "summary": "When LG SmartShare is installed, local privilege escalation is possible through DLL Hijacking attack. The LG ID is LVE-HOT-220005."
-    },
-    {
-        "Modified": "2022-11-21T18:29:00",
-        "Published": "2022-11-21T18:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-43117",
-        "impact": {},
-        "last-modified": "2022-11-21T18:29:00",
-        "references": [
-            "https://github.com/RashidKhanPathan/CVE-2022-43117",
-            "https://drive.google.com/file/d/1ZmAuKMVzUpL8pt5KXQJk8IyPECoVP9xw/view?usp=sharing"
-        ],
-        "summary": "Sourcecodester Password Storage Application in PHP/OOP and MySQL 1.0 was discovered to contain multiple cross-site scripting (XSS) vulnerabilities via the Name, Username, Description and Site Feature parameters."
     }
 ]
