@@ -1,5 +1,241 @@
 [
     {
+        "Modified": "2022-11-22T18:30:00",
+        "Published": "2022-10-26T20:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2022-39348",
+        "impact": {},
+        "last-modified": "2022-11-22T18:30:00",
+        "references": [
+            "https://github.com/twisted/twisted/commit/f2f5e81c03f14e253e85fe457e646130780db40b",
+            "https://github.com/twisted/twisted/security/advisories/GHSA-vg46-2rrj-3647",
+            "https://github.com/twisted/twisted/commit/f49041bb67792506d85aeda9cf6157e92f8048f4"
+        ],
+        "summary": "Twisted is an event-based framework for internet applications. Started with version 0.9.4, when the host header does not match a configured host `twisted.web.vhost.NameVirtualHost` will return a `NoResource` resource which renders the Host header unescaped into the 404 response allowing HTML and script injection. In practice this should be very difficult to exploit as being able to modify the Host header of a normal HTTP request implies that one is already in a privileged position. This issue was fixed in version 22.10.0rc1. There are no known workarounds."
+    },
+    {
+        "Modified": "2022-11-22T18:18:00",
+        "Published": "2022-11-08T20:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-131",
+        "id": "CVE-2022-39377",
+        "impact": {},
+        "last-modified": "2022-11-22T18:18:00",
+        "references": [
+            "https://github.com/sysstat/sysstat/security/advisories/GHSA-q8r6-g56f-9w7x",
+            "https://lists.debian.org/debian-lts-announce/2022/11/msg00014.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/PHUVUDIVDJZ7AVXD3XX3NBXXXKPOKN3N/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/7X6WKTODOUDV6M3HZMASYNZP6EM4N7W4/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6F26ALXWYHT4LN2AHPZM34OQEXTJE3JZ/",
+            "https://security.gentoo.org/glsa/202211-07"
+        ],
+        "summary": "sysstat is a set of system performance tools for the Linux operating system. On 32 bit systems, in versions 9.1.16 and newer but prior to 12.7.1, allocate_structures contains a size_t overflow in sa_common.c. The allocate_structures function insufficiently checks bounds before arithmetic multiplication, allowing for an overflow in the size allocated for the buffer representing system activities. This issue may lead to Remote Code Execution (RCE). This issue has been patched in version 12.7.1."
+    },
+    {
+        "Modified": "2022-11-22T18:17:00",
+        "Published": "2022-11-17T23:15:00",
+        "access": {},
+        "assigner": "cna@cyber.gov.il",
+        "cvss": null,
+        "cwe": "NVD-CWE-noinfo",
+        "id": "CVE-2022-36784",
+        "impact": {},
+        "last-modified": "2022-11-22T18:17:00",
+        "references": [
+            "https://www.gov.il/en/Departments/faq/cve_advisories"
+        ],
+        "summary": "Elsight \u2013 Elsight Halo Remote Code Execution (RCE) Elsight Halo web panel allows us to perform connection validation. through the POST request : /api/v1/nics/wifi/wlan0/ping we can abuse DESTINATION parameter and leverage it to remote code execution."
+    },
+    {
+        "Modified": "2022-11-22T18:15:00",
+        "Published": "2022-11-22T18:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-250",
+        "id": "CVE-2022-41950",
+        "impact": {},
+        "last-modified": "2022-11-22T18:15:00",
+        "references": [
+            "https://github.com/4ra1n/super-xray/security/advisories/GHSA-2g28-xrw6-fq5f",
+            "https://github.com/4ra1n/super-xray/releases/tag/0.3-beta"
+        ],
+        "summary": "super-xray is the GUI alternative for vulnerability scanning tool xray. In 0.2-beta, a privilege escalation vulnerability was discovered. This caused inaccurate default xray permissions. Note: this vulnerability only affects Linux and Mac OS systems. Users should upgrade to super-xray 0.3-beta."
+    },
+    {
+        "Modified": "2022-11-22T18:15:00",
+        "Published": "2022-11-22T18:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-43212",
+        "impact": {},
+        "last-modified": "2022-11-22T18:15:00",
+        "references": [
+            "https://www.sourcecodester.com/php/14831/billing-system-project-php-source-code-free-download.html",
+            "https://github.com/Qrayyy/CVE/blob/main/Billing%20System%20Project%20v1.0/CVE-2022-43212(sql%20in%20fetchOrderData.php).md"
+        ],
+        "summary": "Billing System Project v1.0 was discovered to contain a SQL injection vulnerability via the orderId parameter at fetchOrderData.php."
+    },
+    {
+        "Modified": "2022-11-22T18:06:00",
+        "Published": "2022-11-17T22:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-863",
+        "id": "CVE-2022-42903",
+        "impact": {},
+        "last-modified": "2022-11-22T18:06:00",
+        "references": [
+            "https://www.manageengine.com/products/support-center/cve-2022-42903.html"
+        ],
+        "summary": "Zoho ManageEngine SupportCenter Plus through 11024 allows low-privileged users to view the organization users list."
+    },
+    {
+        "Modified": "2022-11-22T18:06:00",
+        "Published": "2022-11-17T22:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-434",
+        "id": "CVE-2022-43192",
+        "impact": {},
+        "last-modified": "2022-11-22T18:06:00",
+        "references": [
+            "https://github.com/linchuzhu/Dedecms-v5.7.101-RCE"
+        ],
+        "summary": "An arbitrary file upload vulnerability in the component /dede/file_manage_control.php of Dedecms v5.7.101 allows attackers to execute arbitrary code via a crafted PHP file. This vulnerability is related to an incomplete fix for CVE-2022-40886."
+    },
+    {
+        "Modified": "2022-11-22T18:00:00",
+        "Published": "2022-11-17T22:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-732",
+        "id": "CVE-2022-44725",
+        "impact": {},
+        "last-modified": "2022-11-22T18:00:00",
+        "references": [
+            "https://opcfoundation.org/developer-tools/samples-and-tools-unified-architecture/local-discovery-server-lds/",
+            "https://files.opcfoundation.org/SecurityBulletins/OPC%20Foundation%20Security%20Bulletin%20CVE-2022-44725.pdf"
+        ],
+        "summary": "OPC Foundation Local Discovery Server (LDS) through 1.04.403.478 uses a hard-coded file path to a configuration file. This allows a normal user to create a malicious file that is loaded by LDS (running as a high-privilege user)."
+    },
+    {
+        "Modified": "2022-11-22T17:16:00",
+        "Published": "2022-11-14T23:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "NVD-CWE-noinfo",
+        "id": "CVE-2022-40903",
+        "impact": {},
+        "last-modified": "2022-11-22T17:16:00",
+        "references": [
+            "https://www.aiphone.net/",
+            "https://jvn.jp/en/jp/JVN75437943/index.html"
+        ],
+        "summary": "Aiphone GT-DMB-N 3-in-1 Video Entrance Station with NFC Reader 1.0.3 does not mitigate against repeated failed access attempts, which allows an attacker to gain administrative privileges."
+    },
+    {
+        "Modified": "2022-11-22T17:15:00",
+        "Published": "2022-11-22T17:15:00",
+        "access": {},
+        "assigner": "psirt@zte.com.cn",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-39066",
+        "impact": {},
+        "last-modified": "2022-11-22T17:15:00",
+        "references": [
+            "https://support.zte.com.cn/support/news/LoopholeInfoDetail.aspx?newsId=1027744"
+        ],
+        "summary": "There is a SQL injection vulnerability in ZTE MF286R. Due to insufficient validation of the input parameters of the phonebook interface, an authenticated attacker could use the vulnerability to execute arbitrary SQL injection."
+    },
+    {
+        "Modified": "2022-11-22T17:15:00",
+        "Published": "2022-11-22T17:15:00",
+        "access": {},
+        "assigner": "psirt@zte.com.cn",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-39067",
+        "impact": {},
+        "last-modified": "2022-11-22T17:15:00",
+        "references": [
+            "https://support.zte.com.cn/support/news/LoopholeInfoDetail.aspx?newsId=1027784"
+        ],
+        "summary": "There is a buffer overflow vulnerability in ZTE MF286R. Due to lack of input validation on parameters of the wifi interface, an authenticated attacker could use the vulnerability to perform a denial of service attack."
+    },
+    {
+        "Modified": "2022-11-22T17:15:00",
+        "Published": "2022-11-22T17:15:00",
+        "access": {},
+        "assigner": "psirt@zte.com.cn",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-39070",
+        "impact": {},
+        "last-modified": "2022-11-22T17:15:00",
+        "references": [
+            "https://support.zte.com.cn/support/news/LoopholeInfoDetail.aspx?newsId=1027824"
+        ],
+        "summary": "There is an access control vulnerability in some ZTE PON OLT products. Due to improper access control settings, remote attackers could use the vulnerability to log in to the device and execute any operation."
+    },
+    {
+        "Modified": "2022-11-22T17:12:00",
+        "Published": "2022-11-17T23:15:00",
+        "access": {},
+        "assigner": "security@zoom.us",
+        "cvss": null,
+        "cwe": "CWE-362",
+        "id": "CVE-2022-28768",
+        "impact": {},
+        "last-modified": "2022-11-22T17:12:00",
+        "references": [
+            "https://explore.zoom.us/en/trust/security/security-bulletin/"
+        ],
+        "summary": "The Zoom Client for Meetings Installer for macOS (Standard and for IT Admin) before version 5.12.6 contains a local privilege escalation vulnerability. A local low-privileged user could exploit this vulnerability during the install process to escalate their privileges to root."
+    },
+    {
+        "Modified": "2022-11-22T17:09:00",
+        "Published": "2022-11-17T23:15:00",
+        "access": {},
+        "assigner": "cna@cyber.gov.il",
+        "cvss": null,
+        "cwe": "CWE-863",
+        "id": "CVE-2022-36785",
+        "impact": {},
+        "last-modified": "2022-11-22T17:09:00",
+        "references": [
+            "https://www.gov.il/en/Departments/faq/cve_advisories"
+        ],
+        "summary": "D-Link \u2013 G integrated Access Device4 Information Disclosure & Authorization Bypass. *Information Disclosure \u2013 file contains a URL with private IP at line 15 \"login.asp\" A. The window.location.href = http://192.168.1.1/setupWizard.asp\" http://192.168.1.1/setupWizard.asp\" ; \"admin\" \u2013 contains default username value \"login.asp\" B. While accessing the web interface, the login form at *Authorization Bypass \u2013 URL by \"setupWizard.asp' while it blocks direct access to \u2013 the web interface does not properly validate user identity variables values located at the client side, it is available to access it without a \"login_glag\" and \"login_status\" checking browser and to read the admin user credentials for the web interface."
+    },
+    {
+        "Modified": "2022-11-22T17:09:00",
+        "Published": "2022-11-17T23:15:00",
+        "access": {},
+        "assigner": "cna@cyber.gov.il",
+        "cvss": null,
+        "cwe": "CWE-77",
+        "id": "CVE-2022-36786",
+        "impact": {},
+        "last-modified": "2022-11-22T17:09:00",
+        "references": [
+            "https://www.gov.il/en/Departments/faq/cve_advisories"
+        ],
+        "summary": "DLINK - DSL-224 Post-auth PCE. DLINK router has an interface where you can configure NTP servers (Network Time Protocol) via jsonrpc API. It is possible to inject a command through this interface that will run with ROOT permissions on the router."
+    },
+    {
         "Modified": "2022-11-22T16:49:00",
         "Published": "2022-11-17T22:15:00",
         "access": {},
@@ -1362,263 +1598,5 @@
             "https://members.backbox.org/maggioli-appalti-contratti-multiple-vulnerabilities/"
         ],
         "summary": "An issue was discovered in Appalti & Contratti 9.12.2. The target web applications are subject to multiple SQL Injection vulnerabilities, some of which executable even by unauthenticated users, as demonstrated by the GetListaEnti.do cfamm parameter."
-    },
-    {
-        "Modified": "2022-11-22T13:44:00",
-        "Published": "2022-11-21T23:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-44786",
-        "impact": {},
-        "last-modified": "2022-11-22T13:44:00",
-        "references": [
-            "https://members.backbox.org/maggioli-appalti-contratti-multiple-vulnerabilities/"
-        ],
-        "summary": "An issue was discovered in Appalti & Contratti 9.12.2. The target web applications allow Local File Inclusion in any page relying on the href parameter to specify the JSP page to be rendered. This affects ApriPagina.do POST and GET requests to each application."
-    },
-    {
-        "Modified": "2022-11-22T13:44:00",
-        "Published": "2022-11-21T23:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-44787",
-        "impact": {},
-        "last-modified": "2022-11-22T13:44:00",
-        "references": [
-            "https://members.backbox.org/maggioli-appalti-contratti-multiple-vulnerabilities/"
-        ],
-        "summary": "An issue was discovered in Appalti & Contratti 9.12.2. The web applications are vulnerable to a Reflected Cross-Site Scripting issue. The idPagina parameter is reflected inside the server response without any HTML encoding, resulting in XSS when the victim moves the mouse pointer inside the page. As an example, the onmouseenter attribute is not sanitized."
-    },
-    {
-        "Modified": "2022-11-22T13:44:00",
-        "Published": "2022-11-21T23:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-44788",
-        "impact": {},
-        "last-modified": "2022-11-22T13:44:00",
-        "references": [
-            "https://members.backbox.org/maggioli-appalti-contratti-multiple-vulnerabilities/"
-        ],
-        "summary": "An issue was discovered in Appalti & Contratti 9.12.2. It allows Session Fixation. When a user logs in providing a JSESSIONID cookie that is issued by the server at the first visit, the cookie value is not updated after a successful login."
-    },
-    {
-        "Modified": "2022-11-22T13:44:00",
-        "Published": "2022-11-21T21:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2020-23582",
-        "impact": {},
-        "last-modified": "2022-11-22T13:44:00",
-        "references": [
-            "https://github.com/huzaifahussain98/CVE-2020-23582"
-        ],
-        "summary": "A vulnerability in the \"/admin/wlmultipleap.asp\" of optilink OP-XT71000N version: V2.2 could allow an unauthenticated, remote attacker to conduct a cross-site request forgery (CSRF) attack to create Multiple WLAN BSSID."
-    },
-    {
-        "Modified": "2022-11-22T13:44:00",
-        "Published": "2022-11-21T21:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-42096",
-        "impact": {},
-        "last-modified": "2022-11-22T13:44:00",
-        "references": [
-            "https://github.com/bypazs/CVE-2022-42096",
-            "https://grimthereaperteam.medium.com/cve-2022-42096-backdrop-xss-at-posts-437c305036e2",
-            "https://backdropcms.org",
-            "https://github.com/backdrop/backdrop/releases/tag/1.23.0"
-        ],
-        "summary": "Backdrop CMS version 1.23.0 was discovered to contain a stored cross-site scripting (XSS) vulnerability via Post content."
-    },
-    {
-        "Modified": "2022-11-22T13:44:00",
-        "Published": "2022-11-21T22:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-30257",
-        "impact": {},
-        "last-modified": "2022-11-22T13:44:00",
-        "references": [
-            "https://github.com/TechnitiumSoftware/DnsServer/blob/master/CHANGELOG.md#version-81"
-        ],
-        "summary": "An issue was discovered in Technitium DNS Server through 8.0.2 that allows variant V1 of unintended domain name resolution. A revoked domain name can still be resolvable for a long time, including expired domains and taken-down malicious domains. The effects of an exploit would be widespread and highly impactful, because the exploitation conforms to de facto DNS specifications and operational practices, and overcomes current mitigation patches for \"Ghost\" domain names."
-    },
-    {
-        "Modified": "2022-11-22T13:44:00",
-        "Published": "2022-11-21T22:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-30258",
-        "impact": {},
-        "last-modified": "2022-11-22T13:44:00",
-        "references": [
-            "https://github.com/TechnitiumSoftware/DnsServer/blob/master/CHANGELOG.md#version-81"
-        ],
-        "summary": "An issue was discovered in Technitium DNS Server through 8.0.2 that allows variant V2 of unintended domain name resolution. A revoked domain name can still be resolvable for a long time, including expired domains and taken-down malicious domains. The effects of an exploit would be widespread and highly impactful, because the exploitation conforms to de facto DNS specifications and operational practices, and overcomes current mitigation patches for \"Ghost\" domain names."
-    },
-    {
-        "Modified": "2022-11-22T13:44:00",
-        "Published": "2022-11-21T20:15:00",
-        "access": {},
-        "assigner": "security@huntr.dev",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-4105",
-        "impact": {},
-        "last-modified": "2022-11-22T13:44:00",
-        "references": [
-            "https://huntr.dev/bounties/386417e9-0cd5-4d80-8137-b0fd5c30b8f8",
-            "https://github.com/kiwitcms/kiwi/commit/a2b169ffdef1d7c1755bade8138578423b35011b"
-        ],
-        "summary": "A stored XSS in a kiwi Test Plan can run malicious javascript which could be chained with an HTML injection to perform a UI redressing attack (clickjacking) and an HTML injection which disables the use of the history page."
-    },
-    {
-        "Modified": "2022-11-22T13:44:00",
-        "Published": "2022-11-15T17:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-787",
-        "id": "CVE-2022-43071",
-        "impact": {},
-        "last-modified": "2022-11-22T13:44:00",
-        "references": [
-            "https://forum.xpdfreader.com/viewtopic.php?f=3&t=42349&p=43959#p43959"
-        ],
-        "summary": "A stack overflow in the Catalog::readPageLabelTree2(Object*) function of XPDF v4.04 allows attackers to cause a Denial of Service (DoS) via a crafted PDF file."
-    },
-    {
-        "Modified": "2022-11-22T13:35:00",
-        "Published": "2022-11-15T17:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-707",
-        "id": "CVE-2022-3998",
-        "impact": {},
-        "last-modified": "2022-11-22T13:35:00",
-        "references": [
-            "https://github.com/MonikaBrzica/scm/issues/1",
-            "https://vuldb.com/?id.213699"
-        ],
-        "summary": "A vulnerability, which was classified as critical, was found in MonikaBrzica scm. This affects an unknown part of the file uredi_korisnika.php. The manipulation of the argument id leads to sql injection. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-213699."
-    },
-    {
-        "Modified": "2022-11-22T13:29:00",
-        "Published": "2022-11-15T17:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-707",
-        "id": "CVE-2022-3997",
-        "impact": {},
-        "last-modified": "2022-11-22T13:29:00",
-        "references": [
-            "https://github.com/MonikaBrzica/scm/issues/2",
-            "https://vuldb.com/?id.213698"
-        ],
-        "summary": "A vulnerability, which was classified as critical, has been found in MonikaBrzica scm. Affected by this issue is some unknown functionality of the file upis_u_bazu.php. The manipulation of the argument email/lozinka/ime/id leads to sql injection. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. VDB-213698 is the identifier assigned to this vulnerability."
-    },
-    {
-        "Modified": "2022-11-22T13:15:00",
-        "Published": "2022-11-17T23:15:00",
-        "access": {},
-        "assigner": "audit@patchstack.com",
-        "cvss": null,
-        "cwe": "CWE-1236",
-        "id": "CVE-2022-44577",
-        "impact": {},
-        "last-modified": "2022-11-22T13:15:00",
-        "references": [],
-        "summary": "This CVE ID has been rejected or withdrawn by its CVE Numbering Authority."
-    },
-    {
-        "Modified": "2022-11-22T11:15:00",
-        "Published": "2018-08-13T16:29:00",
-        "access": {
-            "authentication": "SINGLE",
-            "complexity": "MEDIUM",
-            "vector": "NETWORK"
-        },
-        "assigner": "security@apache.org",
-        "cvss": 4.9,
-        "cvss-time": "2022-11-22T11:15:00",
-        "cvss-vector": "AV:N/AC:M/Au:S/C:P/I:P/A:N",
-        "cwe": "CWE-287",
-        "id": "CVE-2018-11770",
-        "impact": {
-            "availability": "NONE",
-            "confidentiality": "PARTIAL",
-            "integrity": "PARTIAL"
-        },
-        "last-modified": "2022-11-22T11:15:00",
-        "references": [
-            "https://spark.apache.org/security.html#CVE-2018-11770",
-            "http://www.securityfocus.com/bid/105097",
-            "https://lists.apache.org/thread.html/bd8e51314041451a2acd720e9223fc1c15a263ccacb396a75b1fc485%40%3Cdev.spark.apache.org%3E"
-        ],
-        "summary": "From version 1.3.0 onward, Apache Spark's standalone master exposes a REST API for job submission, in addition to the submission mechanism used by spark-submit. In standalone, the config property 'spark.authenticate.secret' establishes a shared secret for authenticating requests to submit jobs via spark-submit. However, the REST API does not use this or any other authentication mechanism, and this is not adequately documented. In this case, a user would be able to run a driver program without authenticating, but not launch executors, using the REST API. This REST API is also used by Mesos, when set up to run in cluster mode (i.e., when also running MesosClusterDispatcher), for job submission. Future versions of Spark will improve documentation on these points, and prohibit setting 'spark.authenticate.secret' when running the REST APIs, to make this clear. Future versions will also disable the REST API by default in the standalone master by changing the default value of 'spark.master.rest.enabled' to 'false'."
-    },
-    {
-        "Modified": "2022-11-22T11:15:00",
-        "Published": "2018-10-24T18:29:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "LOW",
-            "vector": "NETWORK"
-        },
-        "assigner": "security@apache.org",
-        "cvss": 5.0,
-        "cvss-time": "2022-11-22T11:15:00",
-        "cvss-vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N",
-        "cwe": "CWE-20",
-        "id": "CVE-2018-11804",
-        "impact": {
-            "availability": "NONE",
-            "confidentiality": "PARTIAL",
-            "integrity": "NONE"
-        },
-        "last-modified": "2022-11-22T11:15:00",
-        "references": [
-            "https://spark.apache.org/security.html#CVE-2018-11804",
-            "http://www.securityfocus.com/bid/105756",
-            "https://lists.apache.org/thread.html/2b11aa4201e36f2ec8f728e722fe33758410f07784379cbefd0bda9d%40%3Cdev.spark.apache.org%3E"
-        ],
-        "summary": "Spark's Apache Maven-based build includes a convenience script, 'build/mvn', that downloads and runs a zinc server to speed up compilation. It has been included in release branches since 1.3.x, up to and including master. This server will accept connections from external hosts by default. A specially-crafted request to the zinc server could cause it to reveal information in files readable to the developer account running the build. Note that this issue does not affect end users of Spark, only developers building Spark from source code."
-    },
-    {
-        "Modified": "2022-11-22T06:15:00",
-        "Published": "2022-11-14T07:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "NVD-CWE-Other",
-        "id": "CVE-2022-45198",
-        "impact": {},
-        "last-modified": "2022-11-22T06:15:00",
-        "references": [
-            "https://bugs.gentoo.org/855683",
-            "https://github.com/python-pillow/Pillow/commit/11918eac0628ec8ac0812670d9838361ead2d6a4",
-            "https://github.com/python-pillow/Pillow/pull/6402",
-            "https://github.com/python-pillow/Pillow/releases/tag/9.2.0",
-            "https://cwe.mitre.org/data/definitions/409.html",
-            "https://security.gentoo.org/glsa/202211-10"
-        ],
-        "summary": "Pillow before 9.2.0 performs Improper Handling of Highly Compressed GIF Data (Data Amplification)."
     }
 ]
