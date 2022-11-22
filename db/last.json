@@ -1,5 +1,368 @@
 [
     {
+        "Modified": "2022-11-22T16:49:00",
+        "Published": "2022-11-17T22:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-20",
+        "id": "CVE-2022-39389",
+        "impact": {},
+        "last-modified": "2022-11-22T16:49:00",
+        "references": [
+            "https://github.com/lightningnetwork/lnd/issues/7096",
+            "https://github.com/lightningnetwork/lnd/pull/7098",
+            "https://github.com/lightningnetwork/lnd/security/advisories/GHSA-hc82-w9v8-83pr",
+            "https://github.com/lightningnetwork/lnd/releases/tag/v0.15.4-beta"
+        ],
+        "summary": "Lightning Network Daemon (lnd) is an implementation of a lightning bitcoin overlay network node. All lnd nodes before version `v0.15.4` are vulnerable to a block parsing bug that can cause a node to enter a degraded state once encountered. In this degraded state, nodes can continue to make payments and forward HTLCs, and close out channels. Opening channels is prohibited, and also on chain transaction events will be undetected. This can cause loss of funds if a CSV expiry is researched during a breach attempt or a CLTV delta expires forgetting the funds in the HTLC. A patch is available in `lnd` version 0.15.4. Users are advised to upgrade. Users unable to upgrade may use the `lncli updatechanpolicy` RPC call to increase their CLTV value to a very high amount or increase their fee policies. This will prevent nodes from routing through your node, meaning that no pending HTLCs can be present."
+    },
+    {
+        "Modified": "2022-11-22T16:15:00",
+        "Published": "2022-11-22T16:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-400",
+        "id": "CVE-2022-41952",
+        "impact": {},
+        "last-modified": "2022-11-22T16:15:00",
+        "references": [
+            "https://github.com/matrix-org/synapse/security/advisories/GHSA-4822-jvwx-w47h",
+            "https://github.com/matrix-org/synapse/pull/11936",
+            "https://github.com/matrix-org/synapse/releases/tag/v1.53.0",
+            "https://github.com/matrix-org/synapse/releases/tag/v1.52.0",
+            "https://github.com/matrix-org/synapse/pull/11784"
+        ],
+        "summary": "Synapse before 1.52.0 with URL preview functionality enabled will attempt to generate URL previews for media stream URLs without properly limiting connection time. Connections will only be terminated after `max_spider_size` (default: 10M) bytes have been downloaded, which can in some cases lead to long-lived connections towards the streaming media server (for instance, Icecast). This can cause excessive traffic and connections toward such servers if their stream URL is, for example, posted to a large room with many Synapse instances with URL preview enabled. Version 1.52.0 implements a timeout mechanism which will terminate URL preview connections after 30 seconds. Since generating URL previews for media streams is not supported and always fails, 1.53.0 additionally implements an allow list for content types for which Synapse will even attempt to generate a URL preview. Upgrade to 1.53.0 to fully resolve the issue. As a workaround, turn off URL preview functionality by setting `url_preview_enabled: false` in the Synapse configuration file."
+    },
+    {
+        "Modified": "2022-11-22T16:15:00",
+        "Published": "2022-11-22T16:15:00",
+        "access": {},
+        "assigner": "audit@patchstack.com",
+        "cvss": null,
+        "cwe": "CWE-352",
+        "id": "CVE-2022-44737",
+        "impact": {},
+        "last-modified": "2022-11-22T16:15:00",
+        "references": [
+            "https://patchstack.com/database/vulnerability/all-in-one-wp-security-and-firewall/wordpress-all-in-one-wp-security-plugin-5-1-0-multiple-cross-site-request-forgery-csrf-vulnerabilities?_s_id=cve"
+        ],
+        "summary": "Multiple Cross-Site Request Forgery vulnerabilities in All-In-One Security (AIOS) \u2013 Security and Firewall (WordPress plugin) <= 5.1.0 on WordPress."
+    },
+    {
+        "Modified": "2022-11-22T16:15:00",
+        "Published": "2022-09-13T14:15:00",
+        "access": {},
+        "assigner": "audit@patchstack.com",
+        "cvss": null,
+        "cwe": "CWE-352",
+        "id": "CVE-2022-38139",
+        "impact": {},
+        "last-modified": "2022-11-22T16:15:00",
+        "references": [
+            "https://patchstack.com/database/vulnerability/integracao-rd-station/wordpress-rd-station-plugin-5-1-3-multiple-cross-site-request-forgery-csrf-vulnerabilities?_s_id=cve"
+        ],
+        "summary": "Multiple Cross-Site Request Forgery (CSRF) vulnerabilities in RD Station plugin <= 5.2.0 at WordPress."
+    },
+    {
+        "Modified": "2022-11-22T16:14:00",
+        "Published": "2022-11-17T23:15:00",
+        "access": {},
+        "assigner": "security@zoom.us",
+        "cvss": null,
+        "cwe": "CWE-427",
+        "id": "CVE-2022-28766",
+        "impact": {},
+        "last-modified": "2022-11-22T16:14:00",
+        "references": [
+            "https://explore.zoom.us/en/trust/security/security-bulletin/"
+        ],
+        "summary": "Windows 32-bit versions of the Zoom Client for Meetings before 5.12.6 and Zoom Rooms for Conference Room before version 5.12.6 are susceptible to a DLL injection vulnerability. A local low-privileged user could exploit this vulnerability to run arbitrary code in the context of the Zoom client."
+    },
+    {
+        "Modified": "2022-11-22T16:13:00",
+        "Published": "2022-11-18T21:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "NVD-CWE-noinfo",
+        "id": "CVE-2022-42904",
+        "impact": {},
+        "last-modified": "2022-11-22T16:13:00",
+        "references": [
+            "https://www.manageengine.com/products/ad-manager/admanager-kb/cve-2022-42904.html"
+        ],
+        "summary": "Zoho ManageEngine ADManager Plus through 7151 allows authenticated admin users to execute the commands in proxy settings."
+    },
+    {
+        "Modified": "2022-11-22T16:08:00",
+        "Published": "2022-11-17T23:15:00",
+        "access": {},
+        "assigner": "security@android.com",
+        "cvss": null,
+        "cwe": "CWE-20",
+        "id": "CVE-2022-20459",
+        "impact": {},
+        "last-modified": "2022-11-22T16:08:00",
+        "references": [
+            "https://source.android.com/security/bulletin/pixel/2022-11-01"
+        ],
+        "summary": "In (TBD) of (TBD), there is a possible way to redirect code execution due to improper input validation. This could lead to local escalation of privilege with System execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android kernelAndroid ID: A-239556260References: N/A"
+    },
+    {
+        "Modified": "2022-11-22T16:08:00",
+        "Published": "2022-11-17T23:15:00",
+        "access": {},
+        "assigner": "security@android.com",
+        "cvss": null,
+        "cwe": "CWE-787",
+        "id": "CVE-2022-20460",
+        "impact": {},
+        "last-modified": "2022-11-22T16:08:00",
+        "references": [
+            "https://source.android.com/security/bulletin/pixel/2022-11-01"
+        ],
+        "summary": "In (TBD) mprot_unmap? of (TBD), there is a possible way to corrupt the memory mapping due to improper input validation. This could lead to local escalation of privilege with System execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android kernelAndroid ID: A-239557547References: N/A"
+    },
+    {
+        "Modified": "2022-11-22T16:07:00",
+        "Published": "2022-11-17T23:15:00",
+        "access": {},
+        "assigner": "security@android.com",
+        "cvss": null,
+        "cwe": "CWE-787",
+        "id": "CVE-2022-20427",
+        "impact": {},
+        "last-modified": "2022-11-22T16:07:00",
+        "references": [
+            "https://source.android.com/security/bulletin/pixel/2022-11-01"
+        ],
+        "summary": "In (TBD) of (TBD), there is a possible way to corrupt memory due to improper input validation. This could lead to local escalation of privilege with System execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android kernelAndroid ID: A-239555070References: N/A"
+    },
+    {
+        "Modified": "2022-11-22T16:07:00",
+        "Published": "2022-11-17T23:15:00",
+        "access": {},
+        "assigner": "security@android.com",
+        "cvss": null,
+        "cwe": "CWE-787",
+        "id": "CVE-2022-20428",
+        "impact": {},
+        "last-modified": "2022-11-22T16:07:00",
+        "references": [
+            "https://source.android.com/security/bulletin/pixel/2022-11-01"
+        ],
+        "summary": "In (TBD) of (TBD), there is a possible out of bounds write due to a missing bounds check. This could lead to local escalation of privilege with System execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android kernelAndroid ID: A-239555411References: N/A"
+    },
+    {
+        "Modified": "2022-11-22T15:57:00",
+        "Published": "2022-11-21T21:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2022-43143",
+        "impact": {},
+        "last-modified": "2022-11-22T15:57:00",
+        "references": [
+            "https://github.com/beekeeper-studio/beekeeper-studio/issues/1393"
+        ],
+        "summary": "A cross-site scripting (XSS) vulnerability in Beekeeper Studio v3.6.6 allows attackers to execute arbitrary web scripts or HTML via a crafted payload injected into the error modal container."
+    },
+    {
+        "Modified": "2022-11-22T15:32:00",
+        "Published": "2022-11-22T15:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-44184",
+        "impact": {},
+        "last-modified": "2022-11-22T15:32:00",
+        "references": [
+            "https://www.netgear.com/about/security/",
+            "https://github.com/RobinWang825/IoT_vuln/tree/main/Netgear/R7000P/1"
+        ],
+        "summary": "Netgear R7000P V1.3.0.8 is vulnerable to Buffer Overflow in /usr/sbin/httpd via parameter wan_dns1_sec."
+    },
+    {
+        "Modified": "2022-11-22T15:32:00",
+        "Published": "2022-11-22T15:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-44201",
+        "impact": {},
+        "last-modified": "2022-11-22T15:32:00",
+        "references": [
+            "https://www.dlink.com/en/security-bulletin/",
+            "https://github.com/RobinWang825/IoT_vuln/blob/main/D-Link/DIR-823G/1/readme.md"
+        ],
+        "summary": "D-Link DIR823G 1.02B05 is vulnerable to Commad Injection."
+    },
+    {
+        "Modified": "2022-11-22T15:32:00",
+        "Published": "2022-11-22T15:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-44202",
+        "impact": {},
+        "last-modified": "2022-11-22T15:32:00",
+        "references": [
+            "https://www.dlink.com/en/security-bulletin/",
+            "https://github.com/RobinWang825/IoT_vuln/blob/main/D-Link/DIR-878/1/readme.md"
+        ],
+        "summary": "D-Link DIR878 1.02B04 and 1.02B05 are vulnerable to Buffer Overflow."
+    },
+    {
+        "Modified": "2022-11-22T15:32:00",
+        "Published": "2022-11-22T15:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-44801",
+        "impact": {},
+        "last-modified": "2022-11-22T15:32:00",
+        "references": [
+            "https://www.dlink.com/en/security-bulletin/",
+            "https://github.com/RobinWang825/IoT_vuln/tree/main/D-Link/DIR-878/3"
+        ],
+        "summary": "D-Link DIR-878 1.02B05 is vulnerable to Incorrect Access Control."
+    },
+    {
+        "Modified": "2022-11-22T15:32:00",
+        "Published": "2022-11-22T15:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-44804",
+        "impact": {},
+        "last-modified": "2022-11-22T15:32:00",
+        "references": [
+            "https://www.dlink.com/en/security-bulletin/",
+            "https://github.com/RobinWang825/IoT_vuln/tree/main/D-Link/DIR-882/2"
+        ],
+        "summary": "D-Link DIR-882 1.10B02 and1.20B06 is vulnerable to Buffer Overflow via the websRedirect function."
+    },
+    {
+        "Modified": "2022-11-22T15:32:00",
+        "Published": "2022-11-22T15:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-44806",
+        "impact": {},
+        "last-modified": "2022-11-22T15:32:00",
+        "references": [
+            "https://www.dlink.com/en/security-bulletin/",
+            "https://github.com/RobinWang825/IoT_vuln/tree/main/D-Link/DIR-882/4"
+        ],
+        "summary": "D-Link DIR-882 1.10B02 and 1.20B06 is vulnerable to Buffer Overflow."
+    },
+    {
+        "Modified": "2022-11-22T15:32:00",
+        "Published": "2022-11-22T15:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-44807",
+        "impact": {},
+        "last-modified": "2022-11-22T15:32:00",
+        "references": [
+            "https://www.dlink.com/en/security-bulletin/",
+            "https://github.com/RobinWang825/IoT_vuln/tree/main/D-Link/DIR-882/5"
+        ],
+        "summary": "D-Link DIR-882 1.10B02 and 1.20B06 is vulnerable to Buffer Overflow via webGetVarString."
+    },
+    {
+        "Modified": "2022-11-22T15:32:00",
+        "Published": "2022-11-22T15:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-44808",
+        "impact": {},
+        "last-modified": "2022-11-22T15:32:00",
+        "references": [
+            "https://www.dlink.com/en/security-bulletin/",
+            "https://github.com/RobinWang825/IoT_vuln/tree/main/D-Link/DIR-823G/2"
+        ],
+        "summary": "A command injection vulnerability has been found on D-Link DIR-823G devices with firmware version 1.02B03 that allows an attacker to execute arbitrary operating system commands through well-designed /HNAP1 requests. Before the HNAP API function can process the request, the system function executes an untrusted command that triggers the vulnerability."
+    },
+    {
+        "Modified": "2022-11-22T15:15:00",
+        "Published": "2022-11-18T23:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2021-33621",
+        "impact": {},
+        "last-modified": "2022-11-22T15:15:00",
+        "references": [
+            "https://www.ruby-lang.org/en/news/2022/11/22/http-response-splitting-in-cgi-cve-2021-33621/"
+        ],
+        "summary": "The cgi gem before 0.1.0.2, 0.2.x before 0.2.2, and 0.3.x before 0.3.5 for Ruby allows HTTP response splitting. This is relevant to applications that use untrusted user input either to generate an HTTP response or to create a CGI::Cookie object."
+    },
+    {
+        "Modified": "2022-11-22T15:12:00",
+        "Published": "2022-11-22T00:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-89",
+        "id": "CVE-2022-43709",
+        "impact": {},
+        "last-modified": "2022-11-22T15:12:00",
+        "references": [
+            "https://github.com/mybb/mybb/security/advisories/GHSA-ggp5-454p-867v",
+            "https://mybb.com"
+        ],
+        "summary": "MyBB 1.8.31 has a SQL injection vulnerability in the Admin CP's Users module allows remote authenticated users to modify the query string via direct user input or stored search filter settings."
+    },
+    {
+        "Modified": "2022-11-22T15:10:00",
+        "Published": "2022-11-22T00:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2022-43708",
+        "impact": {},
+        "last-modified": "2022-11-22T15:10:00",
+        "references": [
+            "https://mybb.com",
+            "https://github.com/mybb/mybb/security/advisories/GHSA-p9m7-9qv4-x93w"
+        ],
+        "summary": "MyBB 1.8.31 has a (issue 2 of 2) cross-site scripting (XSS) vulnerabilities in the post Attachments interface allow attackers to inject HTML by persuading the user to upload a file with specially crafted name"
+    },
+    {
+        "Modified": "2022-11-22T15:09:00",
+        "Published": "2022-11-22T00:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2022-43707",
+        "impact": {},
+        "last-modified": "2022-11-22T15:09:00",
+        "references": [
+            "https://mybb.com",
+            "https://github.com/mybb/mybb/security/advisories/GHSA-6vpw-m83q-27px"
+        ],
+        "summary": "MyBB 1.8.31 has a Cross-site scripting (XSS) vulnerability in the visual MyCode editor (SCEditor) allows remote attackers to inject HTML via user input or stored data"
+    },
+    {
         "Modified": "2022-11-22T14:56:00",
         "Published": "2022-11-17T22:15:00",
         "access": {},
@@ -1047,54 +1410,6 @@
     },
     {
         "Modified": "2022-11-22T13:44:00",
-        "Published": "2022-11-22T00:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-43707",
-        "impact": {},
-        "last-modified": "2022-11-22T13:44:00",
-        "references": [
-            "https://mybb.com",
-            "https://github.com/mybb/mybb/security/advisories/GHSA-6vpw-m83q-27px"
-        ],
-        "summary": "MyBB 1.8.31 has a Cross-site scripting (XSS) vulnerability in the visual MyCode editor (SCEditor) allows remote attackers to inject HTML via user input or stored data"
-    },
-    {
-        "Modified": "2022-11-22T13:44:00",
-        "Published": "2022-11-22T00:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-43708",
-        "impact": {},
-        "last-modified": "2022-11-22T13:44:00",
-        "references": [
-            "https://mybb.com",
-            "https://github.com/mybb/mybb/security/advisories/GHSA-p9m7-9qv4-x93w"
-        ],
-        "summary": "MyBB 1.8.31 has a (issue 2 of 2) cross-site scripting (XSS) vulnerabilities in the post Attachments interface allow attackers to inject HTML by persuading the user to upload a file with specially crafted name"
-    },
-    {
-        "Modified": "2022-11-22T13:44:00",
-        "Published": "2022-11-22T00:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-43709",
-        "impact": {},
-        "last-modified": "2022-11-22T13:44:00",
-        "references": [
-            "https://github.com/mybb/mybb/security/advisories/GHSA-ggp5-454p-867v",
-            "https://mybb.com"
-        ],
-        "summary": "MyBB 1.8.31 has a SQL injection vulnerability in the Admin CP's Users module allows remote authenticated users to modify the query string via direct user input or stored search filter settings."
-    },
-    {
-        "Modified": "2022-11-22T13:44:00",
         "Published": "2022-11-21T21:15:00",
         "access": {},
         "assigner": "cve@mitre.org",
@@ -1125,21 +1440,6 @@
             "https://github.com/backdrop/backdrop/releases/tag/1.23.0"
         ],
         "summary": "Backdrop CMS version 1.23.0 was discovered to contain a stored cross-site scripting (XSS) vulnerability via Post content."
-    },
-    {
-        "Modified": "2022-11-22T13:44:00",
-        "Published": "2022-11-21T21:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-43143",
-        "impact": {},
-        "last-modified": "2022-11-22T13:44:00",
-        "references": [
-            "https://github.com/beekeeper-studio/beekeeper-studio/issues/1393"
-        ],
-        "summary": "A cross-site scripting (XSS) vulnerability in Beekeeper Studio v3.6.6 allows attackers to execute arbitrary web scripts or HTML via a crafted payload injected into the error modal container."
     },
     {
         "Modified": "2022-11-22T13:44:00",
@@ -1320,473 +1620,5 @@
             "https://security.gentoo.org/glsa/202211-10"
         ],
         "summary": "Pillow before 9.2.0 performs Improper Handling of Highly Compressed GIF Data (Data Amplification)."
-    },
-    {
-        "Modified": "2022-11-22T06:15:00",
-        "Published": "2022-11-14T07:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-400",
-        "id": "CVE-2022-45199",
-        "impact": {},
-        "last-modified": "2022-11-22T06:15:00",
-        "references": [
-            "https://github.com/python-pillow/Pillow/pull/6700",
-            "https://bugs.gentoo.org/878769",
-            "https://github.com/python-pillow/Pillow/releases/tag/9.3.0",
-            "https://github.com/python-pillow/Pillow/commit/2444cddab2f83f28687c7c20871574acbb6dbcf3",
-            "https://security.gentoo.org/glsa/202211-10"
-        ],
-        "summary": "Pillow before 9.3.0 allows denial of service via SAMPLESPERPIXEL."
-    },
-    {
-        "Modified": "2022-11-22T06:15:00",
-        "Published": "2022-11-10T16:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-77",
-        "id": "CVE-2022-45063",
-        "impact": {},
-        "last-modified": "2022-11-22T06:15:00",
-        "references": [
-            "https://invisible-island.net/xterm/xterm.log.html",
-            "https://www.openwall.com/lists/oss-security/2022/11/10/1",
-            "https://news.ycombinator.com/item?id=33546415",
-            "http://www.openwall.com/lists/oss-security/2022/11/10/1",
-            "http://www.openwall.com/lists/oss-security/2022/11/10/5",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/IVD3I2ZFXGOY6BA2FNS7WPFMPFBDHFWC/",
-            "https://security.gentoo.org/glsa/202211-09"
-        ],
-        "summary": "xterm before 375 allows code execution via font ops, e.g., because an OSC 50 response may have Ctrl-g and therefore lead to command execution within the vi line-editing mode of Zsh. NOTE: font ops are not allowed in the xterm default configurations of some Linux distributions."
-    },
-    {
-        "Modified": "2022-11-22T06:15:00",
-        "Published": "2022-11-08T20:15:00",
-        "access": {},
-        "assigner": "security-advisories@github.com",
-        "cvss": null,
-        "cwe": "CWE-131",
-        "id": "CVE-2022-39377",
-        "impact": {},
-        "last-modified": "2022-11-22T06:15:00",
-        "references": [
-            "https://github.com/sysstat/sysstat/security/advisories/GHSA-q8r6-g56f-9w7x",
-            "https://lists.debian.org/debian-lts-announce/2022/11/msg00014.html",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/PHUVUDIVDJZ7AVXD3XX3NBXXXKPOKN3N/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/7X6WKTODOUDV6M3HZMASYNZP6EM4N7W4/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6F26ALXWYHT4LN2AHPZM34OQEXTJE3JZ/",
-            "https://security.gentoo.org/glsa/202211-07"
-        ],
-        "summary": "sysstat is a set of system performance tools for the Linux operating system. On 32 bit systems, in versions 9.1.16 and newer but prior to 12.7.1, allocate_structures contains a size_t overflow in sa_common.c. The allocate_structures function insufficiently checks bounds before arithmetic multiplication, allowing for an overflow in the size allocated for the buffer representing system activities. This issue may lead to Remote Code Execution (RCE). This issue has been patched in version 12.7.1."
-    },
-    {
-        "Modified": "2022-11-22T06:15:00",
-        "Published": "2022-11-02T14:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-125",
-        "id": "CVE-2022-43995",
-        "impact": {},
-        "last-modified": "2022-11-22T06:15:00",
-        "references": [
-            "https://github.com/sudo-project/sudo/commit/bd209b9f16fcd1270c13db27ae3329c677d48050",
-            "https://www.sudo.ws/security/advisories/",
-            "https://news.ycombinator.com/item?id=33465707",
-            "https://bugzilla.redhat.com/show_bug.cgi?id=2139911",
-            "https://security.gentoo.org/glsa/202211-08"
-        ],
-        "summary": "Sudo 1.8.0 through 1.9.12, with the crypt() password backend, contains a plugins/sudoers/auth/passwd.c array-out-of-bounds error that can result in a heap-based buffer over-read. This can be triggered by arbitrary local users with access to Sudo by entering a password of seven characters or fewer. The impact could vary depending on the system libraries, compiler, and processor architecture."
-    },
-    {
-        "Modified": "2022-11-22T06:15:00",
-        "Published": "2022-09-28T23:15:00",
-        "access": {},
-        "assigner": "security@php.net",
-        "cvss": null,
-        "cwe": "CWE-674",
-        "id": "CVE-2022-31628",
-        "impact": {},
-        "last-modified": "2022-11-22T06:15:00",
-        "references": [
-            "https://bugs.php.net/bug.php?id=81726",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/XNIEABBH5XCXLFWWZYIDE457SPEDZTXV/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/VI3E6A3ZTH2RP7OMLJHSVFIEQBIFM6RF/",
-            "https://www.debian.org/security/2022/dsa-5277",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/2L5SUVYGAKSWODUQPZFBUB3AL6E6CSEV/",
-            "https://security.gentoo.org/glsa/202211-03"
-        ],
-        "summary": "In PHP versions before 7.4.31, 8.0.24 and 8.1.11, the phar uncompressor code would recursively uncompress \"quines\" gzip files, resulting in an infinite loop."
-    },
-    {
-        "Modified": "2022-11-22T06:15:00",
-        "Published": "2022-09-28T23:15:00",
-        "access": {},
-        "assigner": "security@php.net",
-        "cvss": null,
-        "cwe": "NVD-CWE-noinfo",
-        "id": "CVE-2022-31629",
-        "impact": {},
-        "last-modified": "2022-11-22T06:15:00",
-        "references": [
-            "https://bugs.php.net/bug.php?id=81727",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/XNIEABBH5XCXLFWWZYIDE457SPEDZTXV/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/VI3E6A3ZTH2RP7OMLJHSVFIEQBIFM6RF/",
-            "https://www.debian.org/security/2022/dsa-5277",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/2L5SUVYGAKSWODUQPZFBUB3AL6E6CSEV/",
-            "https://security.gentoo.org/glsa/202211-03"
-        ],
-        "summary": "In PHP versions before 7.4.31, 8.0.24 and 8.1.11, the vulnerability enables network and same-site attackers to set a standard insecure cookie in the victim's browser which is treated as a `__Host-` or `__Secure-` cookie by PHP applications."
-    },
-    {
-        "Modified": "2022-11-22T06:15:00",
-        "Published": "2022-09-14T11:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-416",
-        "id": "CVE-2022-40674",
-        "impact": {},
-        "last-modified": "2022-11-22T06:15:00",
-        "references": [
-            "https://github.com/libexpat/libexpat/pull/629",
-            "https://github.com/libexpat/libexpat/pull/640",
-            "https://www.debian.org/security/2022/dsa-5236",
-            "https://lists.debian.org/debian-lts-announce/2022/09/msg00029.html",
-            "https://security.gentoo.org/glsa/202209-24",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/WE2ZKEPGFCZ7R6DRVH3K6RBJPT42ZBEG/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/J2IGJNHFV53PYST7VQV3T4NHVYAMXA36/",
-            "https://security.netapp.com/advisory/ntap-20221028-0008/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/GSVZN3IJ6OCPSJL7AEX3ZHSHAHFOGESK/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/XCGBVQQ47URGJAZWHCISHDWF6QBTV2LE/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/LQB6FJAM5YQ35SF5B2MN25Y2FX56EOEZ/",
-            "https://security.gentoo.org/glsa/202211-06"
-        ],
-        "summary": "libexpat before 2.4.9 has a use-after-free in the doContent function in xmlparse.c."
-    },
-    {
-        "Modified": "2022-11-22T06:15:00",
-        "Published": "2022-08-31T16:15:00",
-        "access": {},
-        "assigner": "secalert@redhat.com",
-        "cvss": null,
-        "cwe": "CWE-459",
-        "id": "CVE-2022-1552",
-        "impact": {},
-        "last-modified": "2022-11-22T06:15:00",
-        "references": [
-            "https://www.postgresql.org/about/news/postgresql-143-137-1211-1116-and-1021-released-2449/",
-            "https://access.redhat.com/security/cve/CVE-2022-1552",
-            "https://bugzilla.redhat.com/show_bug.cgi?id=2081126",
-            "https://www.postgresql.org/support/security/CVE-2022-1552/",
-            "https://security.netapp.com/advisory/ntap-20221104-0005/",
-            "https://security.gentoo.org/glsa/202211-04"
-        ],
-        "summary": "A flaw was found in PostgreSQL. There is an issue with incomplete efforts to operate safely when a privileged user is maintaining another user's objects. The Autovacuum, REINDEX, CREATE INDEX, REFRESH MATERIALIZED VIEW, CLUSTER, and pg_amcheck commands activated relevant protections too late or not at all during the process. This flaw allows an attacker with permission to create non-temporary objects in at least one schema to execute arbitrary SQL functions under a superuser identity."
-    },
-    {
-        "Modified": "2022-11-22T06:15:00",
-        "Published": "2022-08-18T19:15:00",
-        "access": {},
-        "assigner": "secalert@redhat.com",
-        "cvss": null,
-        "cwe": "CWE-915",
-        "id": "CVE-2022-2625",
-        "impact": {},
-        "last-modified": "2022-11-22T06:15:00",
-        "references": [
-            "https://bugzilla.redhat.com/show_bug.cgi?id=2113825",
-            "https://www.postgresql.org/about/news/postgresql-145-138-1212-1117-1022-and-15-beta-3-released-2496/",
-            "https://security.gentoo.org/glsa/202211-04"
-        ],
-        "summary": "A vulnerability was found in PostgreSQL. This attack requires permission to create non-temporary objects in at least one schema, the ability to lure or wait for an administrator to create or update an affected extension in that schema, and the ability to lure or wait for a victim to use the object targeted in CREATE OR REPLACE or CREATE IF NOT EXISTS. Given all three prerequisites, this flaw allows an attacker to run arbitrary code as the victim role, which may be a superuser."
-    },
-    {
-        "Modified": "2022-11-22T06:15:00",
-        "Published": "2022-06-16T18:15:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "MEDIUM",
-            "vector": "NETWORK"
-        },
-        "assigner": "secalert@redhat.com",
-        "cvss": 4.3,
-        "cvss-time": "2022-11-22T06:15:00",
-        "cvss-vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P",
-        "cwe": "CWE-476",
-        "id": "CVE-2022-2085",
-        "impact": {
-            "availability": "PARTIAL",
-            "confidentiality": "NONE",
-            "integrity": "NONE"
-        },
-        "last-modified": "2022-11-22T06:15:00",
-        "references": [
-            "https://bugs.ghostscript.com/show_bug.cgi?id=704945",
-            "http://git.ghostscript.com/?p=ghostpdl.git;h=ae1061d948d88667bdf51d47d918c4684d0f67df",
-            "https://bugzilla.redhat.com/show_bug.cgi?id=2095261",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/ERSZX5LKDWAHZWJYBMP2E2UHOPUCDEGV/",
-            "https://security.gentoo.org/glsa/202211-11"
-        ],
-        "summary": "A NULL pointer dereference vulnerability was found in Ghostscript, which occurs when it tries to render a large number of bits in memory. When allocating a buffer device, it relies on an init_device_procs defined for the device that uses it as a prototype that depends upon the number of bits per pixel. For bpp > 64, mem_x_device is used and does not have an init_device_procs defined. This flaw allows an attacker to parse a large number of bits (more than 64 bits per pixel), which triggers a NULL pointer dereference flaw, causing an application to crash."
-    },
-    {
-        "Modified": "2022-11-22T06:15:00",
-        "Published": "2022-03-28T02:15:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "LOW",
-            "vector": "NETWORK"
-        },
-        "assigner": "cve@mitre.org",
-        "cvss": 6.4,
-        "cvss-time": "2022-11-22T06:15:00",
-        "cvss-vector": "AV:N/AC:L/Au:N/C:N/I:P/A:P",
-        "cwe": "NVD-CWE-noinfo",
-        "id": "CVE-2022-24303",
-        "impact": {
-            "availability": "PARTIAL",
-            "confidentiality": "NONE",
-            "integrity": "PARTIAL"
-        },
-        "last-modified": "2022-11-22T06:15:00",
-        "references": [
-            "https://pillow.readthedocs.io/en/stable/releasenotes/9.0.1.html#security",
-            "https://github.com/python-pillow/Pillow/pull/3450",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/W4ZUXPKEX72O3E5IHBPVY5ZCPMJ4GHHV/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/XR6UP2XONXOVXI4446VY72R63YRO2YTP/",
-            "https://security.gentoo.org/glsa/202211-10"
-        ],
-        "summary": "Pillow before 9.0.1 allows attackers to delete files because spaces in temporary pathnames are mishandled."
-    },
-    {
-        "Modified": "2022-11-22T06:15:00",
-        "Published": "2022-03-04T16:15:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "HIGH",
-            "vector": "NETWORK"
-        },
-        "assigner": "secalert@redhat.com",
-        "cvss": 5.1,
-        "cvss-time": "2022-11-22T06:15:00",
-        "cvss-vector": "AV:N/AC:H/Au:N/C:P/I:P/A:P",
-        "cwe": "CWE-89",
-        "id": "CVE-2021-23214",
-        "impact": {
-            "availability": "PARTIAL",
-            "confidentiality": "PARTIAL",
-            "integrity": "PARTIAL"
-        },
-        "last-modified": "2022-11-22T06:15:00",
-        "references": [
-            "https://git.postgresql.org/gitweb/?p=postgresql.git;a=commit;h=28e24125541545483093819efae9bca603441951",
-            "https://www.postgresql.org/support/security/CVE-2021-23214/",
-            "https://github.com/postgres/postgres/commit/28e24125541545483093819efae9bca603441951",
-            "https://bugzilla.redhat.com/show_bug.cgi?id=2022666",
-            "https://security.gentoo.org/glsa/202211-04"
-        ],
-        "summary": "When the server is configured to use trust authentication with a clientcert requirement or to use cert authentication, a man-in-the-middle attacker can inject arbitrary SQL queries when a connection is first established, despite the use of SSL certificate verification and encryption."
-    },
-    {
-        "Modified": "2022-11-22T06:15:00",
-        "Published": "2022-03-02T23:15:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "MEDIUM",
-            "vector": "NETWORK"
-        },
-        "assigner": "secalert@redhat.com",
-        "cvss": 4.3,
-        "cvss-time": "2022-11-22T06:15:00",
-        "cvss-vector": "AV:N/AC:M/Au:N/C:P/I:N/A:N",
-        "cwe": "CWE-522",
-        "id": "CVE-2021-23222",
-        "impact": {
-            "availability": "NONE",
-            "confidentiality": "PARTIAL",
-            "integrity": "NONE"
-        },
-        "last-modified": "2022-11-22T06:15:00",
-        "references": [
-            "https://github.com/postgres/postgres/commit/160c0258802d10b0600d7671b1bbea55d8e17d45",
-            "https://git.postgresql.org/gitweb/?p=postgresql.git;a=commitdiff;h=d83cdfdca9d918bbbd6bb209139b94c954da7228",
-            "https://www.postgresql.org/support/security/CVE-2021-23222/",
-            "https://bugzilla.redhat.com/show_bug.cgi?id=2022675",
-            "https://security.gentoo.org/glsa/202211-04"
-        ],
-        "summary": "A man-in-the-middle attacker can inject false responses to the client's first few queries, despite the use of SSL certificate verification and encryption."
-    },
-    {
-        "Modified": "2022-11-22T06:15:00",
-        "Published": "2022-03-02T23:15:00",
-        "access": {
-            "authentication": "SINGLE",
-            "complexity": "LOW",
-            "vector": "NETWORK"
-        },
-        "assigner": "secalert@redhat.com",
-        "cvss": 4.0,
-        "cvss-time": "2022-11-22T06:15:00",
-        "cvss-vector": "AV:N/AC:L/Au:S/C:P/I:N/A:N",
-        "cwe": "CWE-200",
-        "id": "CVE-2021-3677",
-        "impact": {
-            "availability": "NONE",
-            "confidentiality": "PARTIAL",
-            "integrity": "NONE"
-        },
-        "last-modified": "2022-11-22T06:15:00",
-        "references": [
-            "https://bugzilla.redhat.com/show_bug.cgi?id=2001857",
-            "https://www.postgresql.org/support/security/CVE-2021-3677/",
-            "https://security.netapp.com/advisory/ntap-20220407-0008/",
-            "https://security.gentoo.org/glsa/202211-04"
-        ],
-        "summary": "A flaw was found in postgresql. A purpose-crafted query can read arbitrary bytes of server memory. In the default configuration, any authenticated database user can complete this attack at will. The attack does not require the ability to create objects. If server settings include max_worker_processes=0, the known versions of this attack are infeasible. However, undiscovered variants of the attack may be independent of that setting."
-    },
-    {
-        "Modified": "2022-11-22T06:15:00",
-        "Published": "2022-02-16T19:15:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "MEDIUM",
-            "vector": "NETWORK"
-        },
-        "assigner": "secalert@redhat.com",
-        "cvss": 9.3,
-        "cvss-time": "2022-11-22T06:15:00",
-        "cvss-vector": "AV:N/AC:M/Au:N/C:C/I:C/A:C",
-        "cwe": "CWE-20",
-        "id": "CVE-2021-3781",
-        "impact": {
-            "availability": "COMPLETE",
-            "confidentiality": "COMPLETE",
-            "integrity": "COMPLETE"
-        },
-        "last-modified": "2022-11-22T06:15:00",
-        "references": [
-            "https://bugzilla.redhat.com/show_bug.cgi?id=2002271",
-            "https://ghostscript.com/CVE-2021-3781.html",
-            "https://security.gentoo.org/glsa/202211-11"
-        ],
-        "summary": "A trivial sandbox (enabled with the `-dSAFER` option) escape flaw was found in the ghostscript interpreter by injecting a specially crafted pipe command. This flaw allows a specially crafted document to execute arbitrary commands on the system in the context of the ghostscript interpreter. The highest threat from this vulnerability is to confidentiality, integrity, as well as system availability."
-    },
-    {
-        "Modified": "2022-11-22T06:15:00",
-        "Published": "2022-01-10T14:12:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "LOW",
-            "vector": "NETWORK"
-        },
-        "assigner": "cve@mitre.org",
-        "cvss": 6.4,
-        "cvss-time": "2022-11-22T06:15:00",
-        "cvss-vector": "AV:N/AC:L/Au:N/C:N/I:P/A:P",
-        "cwe": "CWE-665",
-        "id": "CVE-2022-22815",
-        "impact": {
-            "availability": "PARTIAL",
-            "confidentiality": "NONE",
-            "integrity": "PARTIAL"
-        },
-        "last-modified": "2022-11-22T06:15:00",
-        "references": [
-            "https://github.com/python-pillow/Pillow/blob/c5d9223a8b5e9295d15b5a9b1ef1dae44c8499f3/src/path.c#L331",
-            "https://pillow.readthedocs.io/en/stable/releasenotes/9.0.0.html#fixed-imagepath-path-array-handling",
-            "https://lists.debian.org/debian-lts-announce/2022/01/msg00018.html",
-            "https://www.debian.org/security/2022/dsa-5053",
-            "https://security.gentoo.org/glsa/202211-10"
-        ],
-        "summary": "path_getbbox in path.c in Pillow before 9.0.0 improperly initializes ImagePath.Path."
-    },
-    {
-        "Modified": "2022-11-22T06:15:00",
-        "Published": "2022-01-10T14:12:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "LOW",
-            "vector": "NETWORK"
-        },
-        "assigner": "cve@mitre.org",
-        "cvss": 6.4,
-        "cvss-time": "2022-11-22T06:15:00",
-        "cvss-vector": "AV:N/AC:L/Au:N/C:N/I:P/A:P",
-        "cwe": "CWE-125",
-        "id": "CVE-2022-22816",
-        "impact": {
-            "availability": "PARTIAL",
-            "confidentiality": "NONE",
-            "integrity": "PARTIAL"
-        },
-        "last-modified": "2022-11-22T06:15:00",
-        "references": [
-            "https://github.com/python-pillow/Pillow/blob/c5d9223a8b5e9295d15b5a9b1ef1dae44c8499f3/src/path.c#L331",
-            "https://pillow.readthedocs.io/en/stable/releasenotes/9.0.0.html#fixed-imagepath-path-array-handling",
-            "https://lists.debian.org/debian-lts-announce/2022/01/msg00018.html",
-            "https://www.debian.org/security/2022/dsa-5053",
-            "https://security.gentoo.org/glsa/202211-10"
-        ],
-        "summary": "path_getbbox in path.c in Pillow before 9.0.0 has a buffer over-read during initialization of ImagePath.Path."
-    },
-    {
-        "Modified": "2022-11-22T06:15:00",
-        "Published": "2022-01-10T14:12:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "LOW",
-            "vector": "NETWORK"
-        },
-        "assigner": "cve@mitre.org",
-        "cvss": 7.5,
-        "cvss-time": "2022-11-22T06:15:00",
-        "cvss-vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
-        "cwe": "NVD-CWE-noinfo",
-        "id": "CVE-2022-22817",
-        "impact": {
-            "availability": "PARTIAL",
-            "confidentiality": "PARTIAL",
-            "integrity": "PARTIAL"
-        },
-        "last-modified": "2022-11-22T06:15:00",
-        "references": [
-            "https://pillow.readthedocs.io/en/stable/releasenotes/9.0.0.html#restrict-builtins-available-to-imagemath-eval",
-            "https://lists.debian.org/debian-lts-announce/2022/01/msg00018.html",
-            "https://www.debian.org/security/2022/dsa-5053",
-            "https://pillow.readthedocs.io/en/stable/releasenotes/9.0.1.html#security",
-            "https://security.gentoo.org/glsa/202211-10"
-        ],
-        "summary": "PIL.ImageMath.eval in Pillow before 9.0.0 allows evaluation of arbitrary expressions, such as ones that use the Python exec method. A lambda expression could also be used,"
-    },
-    {
-        "Modified": "2022-11-22T06:15:00",
-        "Published": "2021-10-11T17:15:00",
-        "access": {
-            "authentication": "SINGLE",
-            "complexity": "LOW",
-            "vector": "NETWORK"
-        },
-        "assigner": "secalert@redhat.com",
-        "cvss": 4.0,
-        "cvss-time": "2022-11-22T06:15:00",
-        "cvss-vector": "AV:N/AC:L/Au:S/C:P/I:N/A:N",
-        "cwe": "NVD-CWE-noinfo",
-        "id": "CVE-2021-32028",
-        "impact": {
-            "availability": "NONE",
-            "confidentiality": "PARTIAL",
-            "integrity": "NONE"
-        },
-        "last-modified": "2022-11-22T06:15:00",
-        "references": [
-            "https://bugzilla.redhat.com/show_bug.cgi?id=1956877",
-            "https://www.postgresql.org/support/security/CVE-2021-32028",
-            "https://security.netapp.com/advisory/ntap-20211112-0003/",
-            "https://security.gentoo.org/glsa/202211-04"
-        ],
-        "summary": "A flaw was found in postgresql. Using an INSERT ... ON CONFLICT ... DO UPDATE command on a purpose-crafted table, an authenticated database user could read arbitrary bytes of server memory. The highest threat from this vulnerability is to data confidentiality."
     }
 ]
