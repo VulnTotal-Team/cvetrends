@@ -1,5 +1,464 @@
 [
     {
+        "Modified": "2022-11-22T05:15:00",
+        "Published": "2022-11-22T05:15:00",
+        "access": {},
+        "assigner": "security-alert@hpe.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-37931",
+        "impact": {},
+        "last-modified": "2022-11-22T05:15:00",
+        "references": [
+            "https://support.hpe.com/hpesc/public/docDisplay?docLocale=en_US&docId=hpesbns04388en_us"
+        ],
+        "summary": "A vulnerability in NetBatch-Plus software allows unauthorized access to the application. HPE has provided a workaround and fix. Please refer to HPE Security Bulletin HPESBNS04388 for details."
+    },
+    {
+        "Modified": "2022-11-22T04:15:00",
+        "Published": "2022-11-22T03:15:00",
+        "access": {},
+        "assigner": "security@huntr.dev",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-4111",
+        "impact": {},
+        "last-modified": "2022-11-22T04:15:00",
+        "references": [
+            "https://github.com/tooljet/tooljet/commit/01cd3f0464747973ec329e9fb1ea12743d3235cc",
+            "https://huntr.dev/bounties/5596d072-66d2-4361-8cac-101c9c781c3d"
+        ],
+        "summary": "What happens if a bot net starts uploading 100MB files from 100 machines at the same time. This would mean that our network pipes are clogged handling 10GB of data while slowing down our real customers..... the answer the site will down and come not available"
+    },
+    {
+        "Modified": "2022-11-22T03:15:00",
+        "Published": "2022-11-07T00:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "NVD-CWE-noinfo",
+        "id": "CVE-2022-42919",
+        "impact": {},
+        "last-modified": "2022-11-22T03:15:00",
+        "references": [
+            "https://github.com/python/cpython/issues/97514",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/VCRKBB5Y5EWTJUNC7LK665WO64DDXSTN/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/PI5DYIED6U26BGX5IRZWNCP6TY4M2ZGZ/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/FKGCQPIVHEAIJ77R3RSNSQWYBUDVWDKU/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/P2LHWWEI5OBQ6RELULMVU6KMDYG4WZXH/"
+        ],
+        "summary": "Python 3.9.x and 3.10.x through 3.10.8 on Linux allows local privilege escalation in a non-default configuration. The Python multiprocessing library, when used with the forkserver start method on Linux, allows pickles to be deserialized from any user in the same machine local network namespace, which in many system configurations means any user on the same machine. Pickles can execute arbitrary code. Thus, this allows for local user privilege escalation to the user that any forkserver process is running as. Setting multiprocessing.util.abstract_sockets_supported to False is a workaround. The forkserver start method for multiprocessing is not the default start method. This issue is Linux specific because only Linux supports abstract namespace sockets. CPython before 3.9 does not make use of Linux abstract namespace sockets by default. Support for users manually specifying an abstract namespace socket was added as a bugfix in 3.7.8 and 3.8.4, but users would need to make specific uncommon API calls in order to do that in CPython before 3.9."
+    },
+    {
+        "Modified": "2022-11-22T02:15:00",
+        "Published": "2022-11-22T02:15:00",
+        "access": {},
+        "assigner": "security@zyxel.com.tw",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-40602",
+        "impact": {},
+        "last-modified": "2022-11-22T02:15:00",
+        "references": [
+            "https://www.zyxel.com/global/en/support/security-advisories/zyxel-security-advisory-for-pre-configured-password-vulnerability-of-lte3301-m209"
+        ],
+        "summary": "A flaw in the Zyxel LTE3301-M209 firmware verisons prior to V1.00(ABLG.6)C0 could allow a remote attacker to access the device using an improper pre-configured password if the remote administration feature has been enabled by an authenticated administrator."
+    },
+    {
+        "Modified": "2022-11-22T02:15:00",
+        "Published": "2022-11-22T02:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-35407",
+        "impact": {},
+        "last-modified": "2022-11-22T02:15:00",
+        "references": [
+            "https://www.insyde.com/security-pledge",
+            "https://www.insyde.com/security-pledge/SA-2022040"
+        ],
+        "summary": "An issue was discovered in Insyde InsydeH2O with kernel 5.0 through 5.5. A stack buffer overflow leads to arbitrary code execution in the SetupUtility driver on Intel platforms. An attacker can change the values of certain UEFI variables. If the size of the second variable exceeds the size of the first, then the buffer will be overwritten. This issue affects the SetupUtility driver of InsydeH2O."
+    },
+    {
+        "Modified": "2022-11-22T02:15:00",
+        "Published": "2022-11-22T02:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-36227",
+        "impact": {},
+        "last-modified": "2022-11-22T02:15:00",
+        "references": [
+            "https://github.com/libarchive/libarchive/issues/1754"
+        ],
+        "summary": "In libarchive 3.6.1, the software does not check for an error after calling calloc function that can return with a NULL pointer if the function fails, which leads to a resultant NULL pointer dereference or, in some cases, even arbitrary code execution."
+    },
+    {
+        "Modified": "2022-11-22T02:15:00",
+        "Published": "2022-11-06T23:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-120",
+        "id": "CVE-2022-40284",
+        "impact": {},
+        "last-modified": "2022-11-22T02:15:00",
+        "references": [
+            "http://www.openwall.com/lists/oss-security/2022/10/31/2",
+            "https://github.com/tuxera/ntfs-3g/releases",
+            "https://lists.debian.org/debian-lts-announce/2022/11/msg00029.html"
+        ],
+        "summary": "A buffer overflow was discovered in NTFS-3G before 2022.10.3. Crafted metadata in an NTFS image can cause code execution. A local attacker can exploit this if the ntfs-3g binary is setuid root. A physically proximate attacker can exploit this if NTFS-3G software is configured to execute upon attachment of an external storage device."
+    },
+    {
+        "Modified": "2022-11-22T01:15:00",
+        "Published": "2022-11-22T01:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-30529",
+        "impact": {},
+        "last-modified": "2022-11-22T01:15:00",
+        "references": [
+            "https://github.com/killmonday/isic.lk-RCE",
+            "https://github.com/asith-eranga/isic"
+        ],
+        "summary": "File upload vulnerability in asith-eranga ISIC tour booking through version published on Feb 13th 2018, allows attackers to upload arbitrary files via /system/application/libs/js/tinymce/plugins/filemanager/dialog.php and /system/application/libs/js/tinymce/plugins/filemanager/upload.php."
+    },
+    {
+        "Modified": "2022-11-22T01:15:00",
+        "Published": "2022-11-22T01:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-40765",
+        "impact": {},
+        "last-modified": "2022-11-22T01:15:00",
+        "references": [
+            "https://www.mitel.com/support/security-advisories",
+            "https://www.mitel.com/support/security-advisories/mitel-product-security-advisory-22-0007"
+        ],
+        "summary": "A vulnerability in the Edge Gateway component of Mitel MiVoice Connect through 19.3 (22.22.6100.0) could allow an authenticated attacker with internal network access to conduct a command-injection attack, due to insufficient restriction of URL parameters."
+    },
+    {
+        "Modified": "2022-11-22T01:15:00",
+        "Published": "2022-11-22T01:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-43215",
+        "impact": {},
+        "last-modified": "2022-11-22T01:15:00",
+        "references": [
+            "https://github.com/Qrayyy/CVE/blob/main/Billing%20System%20Project%20v1.0/CVE-2022-43215(sql%20in%20getOrderReport.php).md",
+            "https://www.sourcecodester.com/php/14831/billing-system-project-php-source-code-free-download.html"
+        ],
+        "summary": "Billing System Project v1.0 was discovered to contain a SQL injection vulnerability via the endDate parameter at getOrderReport.php."
+    },
+    {
+        "Modified": "2022-11-22T01:15:00",
+        "Published": "2022-11-22T01:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-36179",
+        "impact": {},
+        "last-modified": "2022-11-22T01:15:00",
+        "references": [
+            "http://fusiondirectory.com",
+            "https://yoroi.company/research/cve-advisory-full-disclosure-multiple-vulnerabilities/"
+        ],
+        "summary": "Fusiondirectory 1.3 suffers from Improper Session Handling."
+    },
+    {
+        "Modified": "2022-11-22T01:15:00",
+        "Published": "2022-11-22T01:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-36180",
+        "impact": {},
+        "last-modified": "2022-11-22T01:15:00",
+        "references": [
+            "http://fusiondirectory.com",
+            "https://yoroi.company/research/cve-advisory-full-disclosure-multiple-vulnerabilities/"
+        ],
+        "summary": "Fusiondirectory 1.3 is vulnerable to Cross Site Scripting (XSS) via /fusiondirectory/index.php?message=[injection], /fusiondirectory/index.php?message=invalidparameter&plug={Injection], /fusiondirectory/index.php?signout=1&message=[injection]&plug=106."
+    },
+    {
+        "Modified": "2022-11-22T01:15:00",
+        "Published": "2022-11-22T01:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-40842",
+        "impact": {},
+        "last-modified": "2022-11-22T01:15:00",
+        "references": [
+            "https://github.com/daaaalllii/cve-s/blob/main/CVE-2022-40842/poc.txt",
+            "http://ndkadvancedcustomizationfields.com"
+        ],
+        "summary": "ndk design NdkAdvancedCustomizationFields 3.5.0 is vulnerable to Server-side request forgery (SSRF) via rotateimg.php."
+    },
+    {
+        "Modified": "2022-11-22T01:15:00",
+        "Published": "2022-11-22T01:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-41223",
+        "impact": {},
+        "last-modified": "2022-11-22T01:15:00",
+        "references": [
+            "https://www.mitel.com/support/security-advisories/mitel-product-security-advisory-22-0008",
+            "https://www.mitel.com/support/security-advisories"
+        ],
+        "summary": "The Director database component of MiVoice Connect through 19.3 (22.22.6100.0) could allow an authenticated attacker to conduct a code-injection attack via crafted data due to insufficient restrictions on the database data type."
+    },
+    {
+        "Modified": "2022-11-22T01:15:00",
+        "Published": "2022-11-22T01:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-41326",
+        "impact": {},
+        "last-modified": "2022-11-22T01:15:00",
+        "references": [
+            "https://www.mitel.com/support/security-advisories/mitel-product-security-advisory-22-0009",
+            "https://www.mitel.com/support/security-advisories"
+        ],
+        "summary": "The web conferencing component of Mitel MiCollab through 9.6.0.13 could allow an unauthenticated attacker to upload arbitrary scripts due to improper authorization controls. A successful exploit could allow remote code execution within the context of the application."
+    },
+    {
+        "Modified": "2022-11-22T01:15:00",
+        "Published": "2022-11-22T01:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-359",
+        "id": "CVE-2022-41936",
+        "impact": {},
+        "last-modified": "2022-11-22T01:15:00",
+        "references": [
+            "https://github.com/xwiki/xwiki-platform/security/advisories/GHSA-p88w-fhxw-xvcc",
+            "https://jira.xwiki.org/browse/XWIKI-19997",
+            "https://github.com/xwiki/xwiki-platform/commit/38dc1aa1a4435f24d58f5b8e4566cbcb0971f8ff"
+        ],
+        "summary": "XWiki Platform is a generic wiki platform offering runtime services for applications built on top of it. The `modifications` rest endpoint does not filter out entries according to the user's rights. Therefore, information hidden from unauthorized users are exposed though the `modifications` rest endpoint (comments and page names etc). Users should upgrade to XWiki 14.6+, 14.4.3+, or 13.10.8+. Older versions have not been patched. There are no known workarounds."
+    },
+    {
+        "Modified": "2022-11-22T01:15:00",
+        "Published": "2022-11-22T01:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-862",
+        "id": "CVE-2022-41937",
+        "impact": {},
+        "last-modified": "2022-11-22T01:15:00",
+        "references": [
+            "https://jira.xwiki.org/browse/XWIKI-19758",
+            "https://github.com/xwiki/xwiki-platform/commit/fb49b4f289ee28e45cfada8e97e320cd3ed27113",
+            "https://github.com/xwiki/xwiki-platform/security/advisories/GHSA-q6jp-gcww-8v2j"
+        ],
+        "summary": "XWiki Platform is a generic wiki platform offering runtime services for applications built on top of it. The application allows anyone with view access to modify any page of the wiki by importing a crafted XAR package. The problem has been patched in XWiki 14.6RC1, 14.6 and 13.10.8. As a workaround, setting the right of the page Filter.WebHome and making sure only the main wiki administrators can view the application installed on main wiki or edit the page and apply the changed described in commit fb49b4f."
+    },
+    {
+        "Modified": "2022-11-22T01:15:00",
+        "Published": "2022-11-22T01:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-248",
+        "id": "CVE-2022-41940",
+        "impact": {},
+        "last-modified": "2022-11-22T01:15:00",
+        "references": [
+            "https://github.com/socketio/engine.io/commit/83c4071af871fc188298d7d591e95670bf9f9085",
+            "https://github.com/socketio/engine.io/commit/425e833ab13373edf1dd5a0706f07100db14e3c6",
+            "https://github.com/socketio/engine.io/security/advisories/GHSA-r7qp-cfhv-p84w"
+        ],
+        "summary": "Engine.IO is the implementation of transport-based cross-browser/cross-device bi-directional communication layer for Socket.IO. A specially crafted HTTP request can trigger an uncaught exception on the Engine.IO server, thus killing the Node.js process. This impacts all the users of the engine.io package, including those who uses depending packages like socket.io. There is no known workaround except upgrading to a safe version. There are patches for this issue released in versions 3.6.1 and 6.2.1."
+    },
+    {
+        "Modified": "2022-11-22T01:15:00",
+        "Published": "2022-11-22T01:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-43214",
+        "impact": {},
+        "last-modified": "2022-11-22T01:15:00",
+        "references": [
+            "https://github.com/Qrayyy/CVE/blob/main/Billing%20System%20Project%20v1.0/CVE-2022-43214(sql%20in%20printOrder.php).md",
+            "https://www.sourcecodester.com/php/14831/billing-system-project-php-source-code-free-download.html"
+        ],
+        "summary": "Billing System Project v1.0 was discovered to contain a SQL injection vulnerability via the orderId parameter at printOrder.php."
+    },
+    {
+        "Modified": "2022-11-22T01:15:00",
+        "Published": "2022-11-22T01:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-43685",
+        "impact": {},
+        "last-modified": "2022-11-22T01:15:00",
+        "references": [
+            "https://ckan.org/",
+            "https://ckan.org/blog/get-latest-patch-releases-your-ckan-site-october-2022"
+        ],
+        "summary": "CKAN through 2.9.6 account takeovers by unauthenticated users when an existing user id is sent via an HTTP POST request. This allows a user to take over an existing account including superuser accounts."
+    },
+    {
+        "Modified": "2022-11-22T01:15:00",
+        "Published": "2022-11-08T20:15:00",
+        "access": {},
+        "assigner": "Mitsubishielectric.Psirt@yd.MitsubishiElectric.co.jp",
+        "cvss": null,
+        "cwe": "CWE-319",
+        "id": "CVE-2022-33321",
+        "impact": {},
+        "last-modified": "2022-11-22T01:15:00",
+        "references": [
+            "https://jvn.jp/vu/JVNVU96767562/index.html",
+            "https://www.mitsubishielectric.com/en/psirt/vulnerability/pdf/2022-010_en.pdf",
+            "https://www.mitsubishielectric.co.jp/psirt/vulnerability/pdf/2022-010.pdf"
+        ],
+        "summary": "Cleartext Transmission of Sensitive Information vulnerability due to the use of Basic Authentication for HTTP connections in Mitsubishi Electric consumer electronics products (PHOTOVOLTAIC COLOR MONITOR ECO-GUIDE, HEMS adapter, Wi-Fi Interface, Air Conditioning, Induction hob, Mitsubishi Electric HEMS Energy Measurement Unit, Refrigerator, Remote control with Wi-Fi Interface, BATHROOM THERMO VENTILATOR, Rice cooker, Mitsubishi Electric HEMS control adapter, Energy Recovery Ventilator, Smart Switch, Ventilating Fan, Range hood fan, Energy Measurement Unit and Air Purifier) allows a remote unauthenticated attacker to disclose information in the products or cause a denial of service (DoS) condition as a result by sniffing credential information (username and password). The wide range of models/versions of Mitsubishi Electric consumer electronics products are affected by this vulnerability. As for the affected product models/versions, see the Mitsubishi Electric's advisory which is listed in [References] section."
+    },
+    {
+        "Modified": "2022-11-22T01:15:00",
+        "Published": "2022-11-08T20:15:00",
+        "access": {},
+        "assigner": "Mitsubishielectric.Psirt@yd.MitsubishiElectric.co.jp",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2022-33322",
+        "impact": {},
+        "last-modified": "2022-11-22T01:15:00",
+        "references": [
+            "https://jvn.jp/vu/JVNVU96767562/index.html",
+            "https://www.mitsubishielectric.com/en/psirt/vulnerability/pdf/2022-011_en.pdf",
+            "https://www.mitsubishielectric.co.jp/psirt/vulnerability/pdf/2022-011.pdf"
+        ],
+        "summary": "Cross-site scripting vulnerability in Mitsubishi Electric consumer electronics products (Air Conditioning, Wi-Fi Interface, Refrigerator, HEMS adapter, Remote control with Wi-Fi Interface, BATHROOM THERMO VENTILATOR, Rice cooker, Mitsubishi Electric HEMS control adapter, Energy Recovery Ventilator, Smart Switch and Air Purifier) allows a remote unauthenticated attacker to execute an malicious script on a user's browser to disclose information, etc. The wide range of models/versions of Mitsubishi Electric consumer electronics products are affected by this vulnerability. As for the affected product models/versions, see the Mitsubishi Electric's advisory which is listed in [References] section."
+    },
+    {
+        "Modified": "2022-11-22T01:15:00",
+        "Published": "2018-05-31T20:29:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "cve-assignments@hackerone.com",
+        "cvss": 7.5,
+        "cvss-time": "2022-11-22T01:15:00",
+        "cvss-vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+        "cwe": "CWE-94",
+        "id": "CVE-2016-10541",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "PARTIAL",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-11-22T01:15:00",
+        "references": [
+            "https://nodesecurity.io/advisories/117",
+            "https://github.com/advisories/GHSA-qg8p-v9q4-gh34"
+        ],
+        "summary": "The npm module \"shell-quote\" 1.6.0 and earlier cannot correctly escape \">\" and \"<\" operator used for redirection in shell. Applications that depend on shell-quote may also be vulnerable. A malicious user could perform code injection."
+    },
+    {
+        "Modified": "2022-11-22T01:09:00",
+        "Published": "2022-11-21T16:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-787",
+        "id": "CVE-2022-44163",
+        "impact": {},
+        "last-modified": "2022-11-22T01:09:00",
+        "references": [
+            "https://drive.google.com/file/d/1jmwNxVKc-HfsiuDNApgX_exbYtCalSSK/view?usp=sharing"
+        ],
+        "summary": "Tenda AC21 V16.03.08.15 is vulnerable to Buffer Overflow via function formSetMacFilterCfg."
+    },
+    {
+        "Modified": "2022-11-22T01:08:00",
+        "Published": "2022-11-21T16:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-787",
+        "id": "CVE-2022-44158",
+        "impact": {},
+        "last-modified": "2022-11-22T01:08:00",
+        "references": [
+            "https://drive.google.com/file/d/11PSsUpLmLCl0-eO565TLbVavzfP5aWdG/view?usp=sharing"
+        ],
+        "summary": "Tenda AC21 V16.03.08.15 is vulnerable to Buffer Overflow via function via set_device_name."
+    },
+    {
+        "Modified": "2022-11-22T01:07:00",
+        "Published": "2022-11-21T16:15:00",
+        "access": {},
+        "assigner": "talos-cna@cisco.com",
+        "cvss": null,
+        "cwe": "CWE-416",
+        "id": "CVE-2022-40129",
+        "impact": {},
+        "last-modified": "2022-11-22T01:07:00",
+        "references": [
+            "https://talosintelligence.com/vulnerability_reports/TALOS-2022-1614"
+        ],
+        "summary": "A use-after-free vulnerability exists in the JavaScript engine of Foxit Software's PDF Reader, version 12.0.1.12430. A specially-crafted PDF document can trigger the reuse of previously freed memory via misusing Optional Content Group API, which can lead to arbitrary code execution. An attacker needs to trick the user into opening the malicious file to trigger this vulnerability. Exploitation is also possible if a user visits a specially-crafted, malicious site if the browser plugin extension is enabled."
+    },
+    {
+        "Modified": "2022-11-22T01:07:00",
+        "Published": "2022-11-21T16:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2022-40470",
+        "impact": {},
+        "last-modified": "2022-11-22T01:07:00",
+        "references": [
+            "https://drive.google.com/file/d/1UDuez2CTscdWXYzyXLi3x8CMs9IWLL11/view?usp=sharing"
+        ],
+        "summary": "Phpgurukul Blood Donor Management System 1.0 allows Cross Site Scripting via Add Blood Group Name Feature."
+    },
+    {
+        "Modified": "2022-11-22T01:07:00",
+        "Published": "2022-11-21T16:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-787",
+        "id": "CVE-2022-44156",
+        "impact": {},
+        "last-modified": "2022-11-22T01:07:00",
+        "references": [
+            "https://drive.google.com/file/d/1dbMwByl40uqMiSv_DOEW8pFjRhGX-j97/view?usp=sharing"
+        ],
+        "summary": "Tenda AC15 V15.03.05.19 is vulnerable to Buffer Overflow via function formSetIpMacBind."
+    },
+    {
         "Modified": "2022-11-22T00:49:00",
         "Published": "2022-11-21T16:15:00",
         "access": {},
@@ -1269,570 +1728,5 @@
             "https://lists.debian.org/debian-lts-announce/2022/11/msg00001.html"
         ],
         "summary": "A use-after-free flaw was found in fs/ext4/namei.c:dx_insert_block() in the Linux kernel\u2019s filesystem sub-component. This flaw allows a local attacker with a user privilege to cause a denial of service."
-    },
-    {
-        "Modified": "2022-11-21T19:45:00",
-        "Published": "2022-11-17T22:15:00",
-        "access": {},
-        "assigner": "audit@patchstack.com",
-        "cvss": null,
-        "cwe": "CWE-732",
-        "id": "CVE-2022-38461",
-        "impact": {},
-        "last-modified": "2022-11-21T19:45:00",
-        "references": [
-            "https://patchstack.com/database/vulnerability/sitepress-multilingual-cms/wordpress-wpml-multilingual-cms-plugin-4-5-10-broken-access-control-vulnerability?_s_id=cve"
-        ],
-        "summary": "Broken Access Control vulnerability in WPML Multilingual CMS premium plugin <= 4.5.10 on WordPress allows users with a subscriber or higher user role to change plugin settings (selected language for legacy widgets, the default behavior for media content)."
-    },
-    {
-        "Modified": "2022-11-21T19:45:00",
-        "Published": "2022-09-05T07:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-190",
-        "id": "CVE-2022-39842",
-        "impact": {},
-        "last-modified": "2022-11-21T19:45:00",
-        "references": [
-            "https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.19",
-            "https://github.com/torvalds/linux/commit/a09d2d00af53b43c6f11e6ab3cb58443c2cac8a7",
-            "https://lists.debian.org/debian-lts-announce/2022/10/msg00000.html",
-            "https://www.debian.org/security/2022/dsa-5257",
-            "https://lists.debian.org/debian-lts-announce/2022/11/msg00001.html"
-        ],
-        "summary": "An issue was discovered in the Linux kernel before 5.19. In pxa3xx_gcu_write in drivers/video/fbdev/pxa3xx-gcu.c, the count parameter has a type conflict of size_t versus int, causing an integer overflow and bypassing the size check. After that, because it is used as the third argument to copy_from_user(), a heap overflow may occur."
-    },
-    {
-        "Modified": "2022-11-21T19:45:00",
-        "Published": "2022-09-02T05:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-362",
-        "id": "CVE-2022-39188",
-        "impact": {},
-        "last-modified": "2022-11-21T19:45:00",
-        "references": [
-            "https://github.com/torvalds/linux/commit/b67fbebd4cf980aecbcc750e1462128bffe8ae15",
-            "https://lore.kernel.org/stable/CAG48ez3SEqOPcPCYGHVZv4iqEApujD5VtM3Re-tCKLDEFdEdbg@mail.gmail.com/",
-            "https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.19",
-            "https://git.kernel.org/cgit/linux/kernel/git/torvalds/linux.git/commit/?id=b67fbebd4cf980aecbcc750e1462128bffe8ae15",
-            "https://bugs.chromium.org/p/project-zero/issues/detail?id=2329",
-            "https://lists.debian.org/debian-lts-announce/2022/10/msg00000.html",
-            "https://www.debian.org/security/2022/dsa-5257",
-            "https://lists.debian.org/debian-lts-announce/2022/11/msg00001.html"
-        ],
-        "summary": "An issue was discovered in include/asm-generic/tlb.h in the Linux kernel before 5.19. Because of a race condition (unmap_mapping_range versus munmap), a device driver can free a page while it still has stale TLB entries. This only occurs in situations with VM_PFNMAP VMAs."
-    },
-    {
-        "Modified": "2022-11-21T19:45:00",
-        "Published": "2022-09-02T05:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-400",
-        "id": "CVE-2022-39190",
-        "impact": {},
-        "last-modified": "2022-11-21T19:45:00",
-        "references": [
-            "https://github.com/torvalds/linux/commit/e02f0d3970404bfea385b6edb86f2d936db0ea2b",
-            "https://twitter.com/pr0Ln",
-            "https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.19.6",
-            "https://lore.kernel.org/all/20220824220330.64283-12-pablo@netfilter.org/",
-            "https://lists.debian.org/debian-lts-announce/2022/11/msg00001.html"
-        ],
-        "summary": "An issue was discovered in net/netfilter/nf_tables_api.c in the Linux kernel before 5.19.6. A denial of service can occur upon binding to an already bound chain."
-    },
-    {
-        "Modified": "2022-11-21T19:45:00",
-        "Published": "2022-09-01T18:15:00",
-        "access": {},
-        "assigner": "secalert@redhat.com",
-        "cvss": null,
-        "cwe": "CWE-369",
-        "id": "CVE-2022-3061",
-        "impact": {},
-        "last-modified": "2022-11-21T19:45:00",
-        "references": [
-            "https://git.kernel.org/pub/scm/linux/kernel/git/deller/linux-fbdev.git/commit/?id=15cf0b82271b1823fb02ab8c377badba614d95d5",
-            "https://www.debian.org/security/2022/dsa-5257",
-            "https://lists.debian.org/debian-lts-announce/2022/11/msg00001.html"
-        ],
-        "summary": "Found Linux Kernel flaw in the i740 driver. The Userspace program could pass any values to the driver through ioctl() interface. The driver doesn't check the value of 'pixclock', so it may cause a divide by zero error."
-    },
-    {
-        "Modified": "2022-11-21T19:45:00",
-        "Published": "2022-08-31T16:15:00",
-        "access": {},
-        "assigner": "secalert@redhat.com",
-        "cvss": null,
-        "cwe": "CWE-476",
-        "id": "CVE-2022-2153",
-        "impact": {},
-        "last-modified": "2022-11-21T19:45:00",
-        "references": [
-            "https://github.com/torvalds/linux/commit/00b5f37189d24ac3ed46cb7f11742094778c46ce",
-            "https://github.com/torvalds/linux/commit/b1e34d325397a33d97d845e312d7cf2a8b646b44",
-            "https://bugzilla.redhat.com/show_bug.cgi?id=2069736",
-            "https://www.openwall.com/lists/oss-security/2022/06/22/1",
-            "https://github.com/torvalds/linux/commit/7ec37d1cbe17d8189d9562178d8b29167fe1c31a",
-            "https://lists.debian.org/debian-lts-announce/2022/10/msg00000.html",
-            "https://lists.debian.org/debian-lts-announce/2022/11/msg00001.html"
-        ],
-        "summary": "A flaw was found in the Linux kernel\u2019s KVM when attempting to set a SynIC IRQ. This issue makes it possible for a misbehaving VMM to write to SYNIC/STIMER MSRs, causing a NULL pointer dereference. This flaw allows an unprivileged local attacker on the host to issue specific ioctl calls, causing a kernel oops condition that results in a denial of service."
-    },
-    {
-        "Modified": "2022-11-21T19:45:00",
-        "Published": "2022-08-31T16:15:00",
-        "access": {},
-        "assigner": "secalert@redhat.com",
-        "cvss": null,
-        "cwe": "CWE-667",
-        "id": "CVE-2022-3028",
-        "impact": {},
-        "last-modified": "2022-11-21T19:45:00",
-        "references": [
-            "https://github.com/torvalds/linux/commit/ba953a9d89a00c078b85f4b190bc1dde66fe16b5",
-            "https://lore.kernel.org/all/YtoWqEkKzvimzWS5@gondor.apana.org.au/T/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/F3MYP7WX4PNE6RCITVXA43CECBZT4CL6/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/JKVA75UHKVOHNOEPCLUHTFGWCOOUBDM3/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/PEQYVCNYUWB4CJ2YRAYNF2GGFQ7SUYC4/",
-            "https://lists.debian.org/debian-lts-announce/2022/10/msg00000.html",
-            "https://lists.debian.org/debian-lts-announce/2022/11/msg00001.html"
-        ],
-        "summary": "A race condition was found in the Linux kernel's IP framework for transforming packets (XFRM subsystem) when multiple calls to xfrm_probe_algs occurred simultaneously. This flaw could allow a local attacker to potentially trigger an out-of-bounds write or leak kernel heap memory by performing an out-of-bounds read and copying it into a socket."
-    },
-    {
-        "Modified": "2022-11-21T19:45:00",
-        "Published": "2022-01-26T17:15:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "LOW",
-            "vector": "NETWORK"
-        },
-        "assigner": "cve@mitre.org",
-        "cvss": 7.5,
-        "cvss-time": "2022-11-21T19:45:00",
-        "cvss-vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
-        "cwe": "CWE-434",
-        "id": "CVE-2021-46386",
-        "impact": {
-            "availability": "PARTIAL",
-            "confidentiality": "PARTIAL",
-            "integrity": "PARTIAL"
-        },
-        "last-modified": "2022-11-21T19:45:00",
-        "references": [
-            "https://gitee.com/mingSoft/MCMS/issues/I4R0GW"
-        ],
-        "summary": "File upload vulnerability in mingSoft MCMS through 5.2.5, allows remote attackers to execute arbitrary code via a crafted jspx webshell to net.mingsoft.basic.action.web.FileAction#upload."
-    },
-    {
-        "Modified": "2022-11-21T19:44:00",
-        "Published": "2022-11-17T22:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "NVD-CWE-noinfo",
-        "id": "CVE-2021-31608",
-        "impact": {},
-        "last-modified": "2022-11-21T19:44:00",
-        "references": [
-            "https://www.proofpoint.com/us/security/security-advisories/pfpt-sa-2021-0011"
-        ],
-        "summary": "Proofpoint Enterprise Protection before 18.8.0 allows a Bypass of a Security Control."
-    },
-    {
-        "Modified": "2022-11-21T19:44:00",
-        "Published": "2022-09-16T14:15:00",
-        "access": {},
-        "assigner": "security@google.com",
-        "cvss": null,
-        "cwe": "CWE-416",
-        "id": "CVE-2022-3176",
-        "impact": {},
-        "last-modified": "2022-11-21T19:44:00",
-        "references": [
-            "https://kernel.dance/#fc78b2fc21f10c4c9c4d5d659a685710ffa63659",
-            "https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git/commit?h=linux-5.4.y&id=fc78b2fc21f10c4c9c4d5d659a685710ffa63659",
-            "https://www.debian.org/security/2022/dsa-5257",
-            "https://lists.debian.org/debian-lts-announce/2022/11/msg00001.html"
-        ],
-        "summary": "There exists a use-after-free in io_uring in the Linux kernel. Signalfd_poll() and binder_poll() use a waitqueue whose lifetime is the current task. It will send a POLLFREE notification to all waiters before the queue is freed. Unfortunately, the io_uring poll doesn't handle POLLFREE. This allows a use-after-free to occur if a signalfd or binder fd is polled with io_uring poll, and the waitqueue gets freed. We recommend upgrading past commit fc78b2fc21f10c4c9c4d5d659a685710ffa63659"
-    },
-    {
-        "Modified": "2022-11-21T19:44:00",
-        "Published": "2022-09-09T15:15:00",
-        "access": {},
-        "assigner": "secalert@redhat.com",
-        "cvss": null,
-        "cwe": "CWE-125",
-        "id": "CVE-2022-2905",
-        "impact": {},
-        "last-modified": "2022-11-21T19:44:00",
-        "references": [
-            "https://bugzilla.redhat.com/show_bug.cgi?id=2121800",
-            "https://lore.kernel.org/bpf/984b37f9fdf7ac36831d2137415a4a915744c1b6.1661462653.git.daniel@iogearbox.net/",
-            "https://lists.debian.org/debian-lts-announce/2022/11/msg00001.html"
-        ],
-        "summary": "An out-of-bounds memory read flaw was found in the Linux kernel's BPF subsystem in how a user calls the bpf_tail_call function with a key larger than the max_entries of the map. This flaw allows a local user to gain unauthorized access to data."
-    },
-    {
-        "Modified": "2022-11-21T19:44:00",
-        "Published": "2022-09-09T05:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-416",
-        "id": "CVE-2022-40307",
-        "impact": {},
-        "last-modified": "2022-11-21T19:44:00",
-        "references": [
-            "https://github.com/torvalds/linux/commit/9cb636b5f6a8cc6d1b50809ec8f8d33ae0c84c95",
-            "https://lists.debian.org/debian-lts-announce/2022/10/msg00000.html",
-            "https://www.debian.org/security/2022/dsa-5257",
-            "https://lists.debian.org/debian-lts-announce/2022/11/msg00001.html"
-        ],
-        "summary": "An issue was discovered in the Linux kernel through 5.19.8. drivers/firmware/efi/capsule-loader.c has a race condition with a resultant use-after-free."
-    },
-    {
-        "Modified": "2022-11-21T19:42:00",
-        "Published": "2022-11-17T08:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-78",
-        "id": "CVE-2022-45461",
-        "impact": {},
-        "last-modified": "2022-11-21T19:42:00",
-        "references": [
-            "https://www.veritas.com/content/support/en_US/security/VTS22-015"
-        ],
-        "summary": "The Java Admin Console in Veritas NetBackup through 10.1 and related Veritas products on Linux and UNIX allows authenticated non-root users (that have been explicitly added to the auth.conf file) to execute arbitrary commands as root."
-    },
-    {
-        "Modified": "2022-11-21T19:41:00",
-        "Published": "2022-11-17T05:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-306",
-        "id": "CVE-2022-42982",
-        "impact": {},
-        "last-modified": "2022-11-21T19:41:00",
-        "references": [
-            "https://igs.bkg.bund.de/ntrip/bkgcaster",
-            "https://cve.mahi.be/bkg_ntrip_udp/"
-        ],
-        "summary": "BKG Professional NtripCaster 2.0.39 allows querying information over the UDP protocol without authentication. The NTRIP sourcetable is typically quite long (tens of kBs) and can be requested with a packet of only 30 bytes. This presents a vector that can be used for UDP amplification attacks. Normally, only authenticated streaming data will be provided over UDP and not the sourcetable."
-    },
-    {
-        "Modified": "2022-11-21T19:39:00",
-        "Published": "2022-11-17T05:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-36432",
-        "impact": {},
-        "last-modified": "2022-11-21T19:39:00",
-        "references": [
-            "https://github.com/afine-com/CVE-2022-36432"
-        ],
-        "summary": "The Preview functionality in the Amasty Blog Pro 2.10.3 plugin for Magento 2 uses eval unsafely. This allows attackers to perform Cross-site Scripting attacks on admin panel users by manipulating the generated preview application response."
-    },
-    {
-        "Modified": "2022-11-21T19:39:00",
-        "Published": "2020-04-01T22:15:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "MEDIUM",
-            "vector": "NETWORK"
-        },
-        "assigner": "talos-cna@cisco.com",
-        "cvss": 6.8,
-        "cvss-time": "2022-11-21T19:39:00",
-        "cvss-vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
-        "cwe": "CWE-195",
-        "id": "CVE-2020-6096",
-        "impact": {
-            "availability": "PARTIAL",
-            "confidentiality": "PARTIAL",
-            "integrity": "PARTIAL"
-        },
-        "last-modified": "2022-11-21T19:39:00",
-        "references": [
-            "https://sourceware.org/bugzilla/show_bug.cgi?id=25620",
-            "https://www.talosintelligence.com/vulnerability_reports/TALOS-2020-1019",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/URXOIA2LDUKHQXK4BE55BQBRI6ZZG3Y6/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/SPYXTDOOB4PQGTYAMZAZNJIB3FF6YQXI/",
-            "https://security.gentoo.org/glsa/202101-20",
-            "https://lists.apache.org/thread.html/rf9fa47ab66495c78bb4120b0754dd9531ca2ff0430f6685ac9b07772@%3Cdev.mina.apache.org%3E",
-            "https://lists.debian.org/debian-lts-announce/2022/10/msg00021.html"
-        ],
-        "summary": "An exploitable signed comparison vulnerability exists in the ARMv7 memcpy() implementation of GNU glibc 2.30.9000. Calling memcpy() (on ARMv7 targets that utilize the GNU glibc implementation) with a negative value for the 'num' parameter results in a signed comparison vulnerability. If an attacker underflows the 'num' parameter to memcpy(), this vulnerability could lead to undefined behavior such as writing to out-of-bounds memory and potentially remote code execution. Furthermore, this memcpy() implementation allows for program execution to continue in scenarios where a segmentation fault or crash should have occurred. The dangers occur in that subsequent execution and iterations of this code will be executed with this corrupted data."
-    },
-    {
-        "Modified": "2022-11-21T19:36:00",
-        "Published": "2021-09-13T18:15:00",
-        "access": {
-            "authentication": "SINGLE",
-            "complexity": "LOW",
-            "vector": "NETWORK"
-        },
-        "assigner": "info@cert.vde.com",
-        "cvss": 6.5,
-        "cvss-time": "2022-11-21T19:36:00",
-        "cvss-vector": "AV:N/AC:L/Au:S/C:P/I:P/A:P",
-        "cwe": "CWE-78",
-        "id": "CVE-2021-33553",
-        "impact": {
-            "availability": "PARTIAL",
-            "confidentiality": "PARTIAL",
-            "integrity": "PARTIAL"
-        },
-        "last-modified": "2022-11-21T19:36:00",
-        "references": [
-            "https://www.randorisec.fr/fr/udp-technology-ip-camera-vulnerabilities/",
-            "https://us-cert.cisa.gov/ics/advisories/icsa-21-208-03"
-        ],
-        "summary": "Multiple camera devices by UDP Technology, Geutebr\u00c3\u00bcck and other vendors are vulnerable to command injection, which may allow an attacker to remotely execute arbitrary code."
-    },
-    {
-        "Modified": "2022-11-21T19:36:00",
-        "Published": "2021-09-13T18:15:00",
-        "access": {
-            "authentication": "SINGLE",
-            "complexity": "LOW",
-            "vector": "NETWORK"
-        },
-        "assigner": "info@cert.vde.com",
-        "cvss": 6.5,
-        "cvss-time": "2022-11-21T19:36:00",
-        "cvss-vector": "AV:N/AC:L/Au:S/C:P/I:P/A:P",
-        "cwe": "CWE-78",
-        "id": "CVE-2021-33551",
-        "impact": {
-            "availability": "PARTIAL",
-            "confidentiality": "PARTIAL",
-            "integrity": "PARTIAL"
-        },
-        "last-modified": "2022-11-21T19:36:00",
-        "references": [
-            "https://www.randorisec.fr/fr/udp-technology-ip-camera-vulnerabilities/",
-            "https://us-cert.cisa.gov/ics/advisories/icsa-21-208-03"
-        ],
-        "summary": "Multiple camera devices by UDP Technology, Geutebr\u00c3\u00bcck and other vendors are vulnerable to command injection, which may allow an attacker to remotely execute arbitrary code."
-    },
-    {
-        "Modified": "2022-11-21T19:36:00",
-        "Published": "2021-09-13T18:15:00",
-        "access": {
-            "authentication": "SINGLE",
-            "complexity": "LOW",
-            "vector": "NETWORK"
-        },
-        "assigner": "info@cert.vde.com",
-        "cvss": 6.5,
-        "cvss-time": "2022-11-21T19:36:00",
-        "cvss-vector": "AV:N/AC:L/Au:S/C:P/I:P/A:P",
-        "cwe": "CWE-78",
-        "id": "CVE-2021-33548",
-        "impact": {
-            "availability": "PARTIAL",
-            "confidentiality": "PARTIAL",
-            "integrity": "PARTIAL"
-        },
-        "last-modified": "2022-11-21T19:36:00",
-        "references": [
-            "https://www.randorisec.fr/fr/udp-technology-ip-camera-vulnerabilities/",
-            "https://us-cert.cisa.gov/ics/advisories/icsa-21-208-03"
-        ],
-        "summary": "Multiple camera devices by UDP Technology, Geutebr\u00c3\u00bcck and other vendors are vulnerable to command injection, which may allow an attacker to remotely execute arbitrary code."
-    },
-    {
-        "Modified": "2022-11-21T19:36:00",
-        "Published": "2021-09-13T18:15:00",
-        "access": {
-            "authentication": "SINGLE",
-            "complexity": "LOW",
-            "vector": "NETWORK"
-        },
-        "assigner": "info@cert.vde.com",
-        "cvss": 6.5,
-        "cvss-time": "2022-11-21T19:36:00",
-        "cvss-vector": "AV:N/AC:L/Au:S/C:P/I:P/A:P",
-        "cwe": "CWE-78",
-        "id": "CVE-2021-33550",
-        "impact": {
-            "availability": "PARTIAL",
-            "confidentiality": "PARTIAL",
-            "integrity": "PARTIAL"
-        },
-        "last-modified": "2022-11-21T19:36:00",
-        "references": [
-            "https://www.randorisec.fr/fr/udp-technology-ip-camera-vulnerabilities/",
-            "https://us-cert.cisa.gov/ics/advisories/icsa-21-208-03"
-        ],
-        "summary": "Multiple camera devices by UDP Technology, Geutebr\u00c3\u00bcck and other vendors are vulnerable to command injection, which may allow an attacker to remotely execute arbitrary code."
-    },
-    {
-        "Modified": "2022-11-21T19:36:00",
-        "Published": "2021-09-13T18:15:00",
-        "access": {
-            "authentication": "SINGLE",
-            "complexity": "LOW",
-            "vector": "NETWORK"
-        },
-        "assigner": "info@cert.vde.com",
-        "cvss": 6.5,
-        "cvss-time": "2022-11-21T19:36:00",
-        "cvss-vector": "AV:N/AC:L/Au:S/C:P/I:P/A:P",
-        "cwe": "CWE-78",
-        "id": "CVE-2021-33552",
-        "impact": {
-            "availability": "PARTIAL",
-            "confidentiality": "PARTIAL",
-            "integrity": "PARTIAL"
-        },
-        "last-modified": "2022-11-21T19:36:00",
-        "references": [
-            "https://www.randorisec.fr/fr/udp-technology-ip-camera-vulnerabilities/",
-            "https://us-cert.cisa.gov/ics/advisories/icsa-21-208-03"
-        ],
-        "summary": "Multiple camera devices by UDP Technology, Geutebr\u00c3\u00bcck and other vendors are vulnerable to command injection, which may allow an attacker to remotely execute arbitrary code."
-    },
-    {
-        "Modified": "2022-11-21T19:36:00",
-        "Published": "2020-10-06T14:15:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "LOW",
-            "vector": "LOCAL"
-        },
-        "assigner": "secalert@redhat.com",
-        "cvss": 4.9,
-        "cvss-time": "2022-11-21T19:36:00",
-        "cvss-vector": "AV:L/AC:L/Au:N/C:N/I:N/A:C",
-        "cwe": "CWE-835",
-        "id": "CVE-2020-25641",
-        "impact": {
-            "availability": "COMPLETE",
-            "confidentiality": "NONE",
-            "integrity": "NONE"
-        },
-        "last-modified": "2022-11-21T19:36:00",
-        "references": [
-            "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=7e24969022cbd61ddc586f14824fc205661bb124",
-            "https://www.kernel.org/doc/html/latest/block/biovecs.html",
-            "https://bugzilla.redhat.com/show_bug.cgi?id=1881424",
-            "http://www.openwall.com/lists/oss-security/2020/10/06/9",
-            "http://lists.opensuse.org/opensuse-security-announce/2020-10/msg00021.html",
-            "https://usn.ubuntu.com/4576-1/",
-            "http://lists.opensuse.org/opensuse-security-announce/2020-10/msg00042.html",
-            "https://lists.debian.org/debian-lts-announce/2020/10/msg00034.html",
-            "https://lists.debian.org/debian-lts-announce/2020/10/msg00032.html"
-        ],
-        "summary": "A flaw was found in the Linux kernel's implementation of biovecs in versions before 5.9-rc7. A zero-length biovec request issued by the block subsystem could cause the kernel to enter an infinite loop, causing a denial of service. This flaw allows a local attacker with basic privileges to issue requests to a block device, resulting in a denial of service. The highest threat from this vulnerability is to system availability."
-    },
-    {
-        "Modified": "2022-11-21T19:35:00",
-        "Published": "2022-09-23T05:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-41319",
-        "impact": {},
-        "last-modified": "2022-11-21T19:35:00",
-        "references": [
-            "https://www.veritas.com/content/support/en_US/security/VTS22-014"
-        ],
-        "summary": "A Reflected Cross-Site Scripting (XSS) vulnerability affects the Veritas Desktop Laptop Option (DLO) application login page (aka the DLOServer/restore/login.jsp URI). This affects versions before 9.8 (e.g., 9.1 through 9.7)."
-    },
-    {
-        "Modified": "2022-11-21T19:34:00",
-        "Published": "2022-11-18T23:15:00",
-        "access": {},
-        "assigner": "audit@patchstack.com",
-        "cvss": null,
-        "cwe": "CWE-862",
-        "id": "CVE-2022-44584",
-        "impact": {},
-        "last-modified": "2022-11-21T19:34:00",
-        "references": [
-            "https://patchstack.com/database/vulnerability/watchtowerhq/wordpress-watchtowerhq-plugin-3-6-15-unauth-arbitrary-file-deletion-vulnerability?_s_id=cve",
-            "https://wordpress.org/plugins/watchtowerhq/#developers"
-        ],
-        "summary": "Unauth. Arbitrary File Deletion vulnerability in WatchTowerHQ plugin <= 3.6.15 on WordPress."
-    },
-    {
-        "Modified": "2022-11-21T19:34:00",
-        "Published": "2022-10-07T05:15:00",
-        "access": {},
-        "assigner": "security-officer@isc.org",
-        "cvss": null,
-        "cwe": "CWE-476",
-        "id": "CVE-2022-2928",
-        "impact": {},
-        "last-modified": "2022-11-21T19:34:00",
-        "references": [
-            "https://kb.isc.org/docs/cve-2022-2928",
-            "https://lists.debian.org/debian-lts-announce/2022/10/msg00015.html",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/QQXYCIWUDILRCNBAIMVFCSGXBRKEPB4K/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/T6IBFH4MRRNJQVWEKILQ6I6CXWW766FX/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/2SARIK7KZ7MGQIWDRWZFAOSQSPXY4GOU/"
-        ],
-        "summary": "In ISC DHCP 4.4.0 -> 4.4.3, ISC DHCP 4.1-ESV-R1 -> 4.1-ESV-R16-P1, when the function option_code_hash_lookup() is called from add_option(), it increases the option's refcount field. However, there is not a corresponding call to option_dereference() to decrement the refcount field. The function add_option() is only used in server responses to lease query packets. Each lease query response calls this function for several options, so eventually, the reference counters could overflow and cause the server to abort."
-    },
-    {
-        "Modified": "2022-11-21T19:33:00",
-        "Published": "2022-11-18T23:15:00",
-        "access": {},
-        "assigner": "audit@patchstack.com",
-        "cvss": null,
-        "cwe": "CWE-552",
-        "id": "CVE-2022-44583",
-        "impact": {},
-        "last-modified": "2022-11-21T19:33:00",
-        "references": [
-            "https://wordpress.org/plugins/watchtowerhq/#developers",
-            "https://patchstack.com/database/vulnerability/watchtowerhq/wordpress-watchtowerhq-plugin-3-6-15-unauth-arbitrary-file-download-vulnerability?_s_id=cve"
-        ],
-        "summary": "Unauth. Arbitrary File Download vulnerability in WatchTowerHQ plugin <= 3.6.15 on WordPress."
-    },
-    {
-        "Modified": "2022-11-21T19:32:00",
-        "Published": "2022-11-18T23:15:00",
-        "access": {},
-        "assigner": "audit@patchstack.com",
-        "cvss": null,
-        "cwe": "CWE-434",
-        "id": "CVE-2022-42698",
-        "impact": {},
-        "last-modified": "2022-11-21T19:32:00",
-        "references": [
-            "https://patchstack.com/database/vulnerability/api2cart-bridge-connector/wordpress-api2cart-bridge-connector-plugin-1-1-0-arbitrary-file-upload-vulnerability?_s_id=cve",
-            "https://wordpress.org/plugins/api2cart-bridge-connector/#developers"
-        ],
-        "summary": "Unauth. Arbitrary File Upload vulnerability in WordPress Api2Cart Bridge Connector plugin <= 1.1.0 on WordPress."
-    },
-    {
-        "Modified": "2022-11-21T19:32:00",
-        "Published": "2022-11-18T23:15:00",
-        "access": {},
-        "assigner": "audit@patchstack.com",
-        "cvss": null,
-        "cwe": "CWE-89",
-        "id": "CVE-2022-42497",
-        "impact": {},
-        "last-modified": "2022-11-21T19:32:00",
-        "references": [
-            "https://patchstack.com/database/vulnerability/api2cart-bridge-connector/wordpress-api2cart-bridge-connector-plugin-1-1-0-arbitrary-code-execution-vulnerability?_s_id=cve",
-            "https://wordpress.org/plugins/api2cart-bridge-connector/#developers"
-        ],
-        "summary": "Arbitrary Code Execution vulnerability in Api2Cart Bridge Connector plugin <= 1.1.0 on WordPress."
     }
 ]
