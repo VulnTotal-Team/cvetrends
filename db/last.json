@@ -1,21 +1,421 @@
 [
     {
-        "Modified": "2022-11-23T09:15:00",
-        "Published": "2022-11-23T09:15:00",
+        "Modified": "2022-11-23T14:57:00",
+        "Published": "2022-11-22T01:15:00",
         "access": {},
-        "assigner": "security@apache.org",
+        "assigner": "cve@mitre.org",
         "cvss": null,
-        "cwe": "CWE-77",
-        "id": "CVE-2022-45462",
+        "cwe": "CWE-89",
+        "id": "CVE-2022-43215",
         "impact": {},
-        "last-modified": "2022-11-23T09:15:00",
+        "last-modified": "2022-11-23T14:57:00",
         "references": [
-            "https://lists.apache.org/thread/2f126y32bf1v3mvxkdgt2jr5j3l1t01w"
+            "https://github.com/Qrayyy/CVE/blob/main/Billing%20System%20Project%20v1.0/CVE-2022-43215(sql%20in%20getOrderReport.php).md",
+            "https://www.sourcecodester.com/php/14831/billing-system-project-php-source-code-free-download.html"
         ],
-        "summary": "Alarm instance management has command injection when there is a specific command configured. It is only for logged-in users. We recommend you upgrade to version 2.0.6 or higher"
+        "summary": "Billing System Project v1.0 was discovered to contain a SQL injection vulnerability via the endDate parameter at getOrderReport.php."
     },
     {
-        "Modified": "2022-11-23T07:15:00",
+        "Modified": "2022-11-23T14:57:00",
+        "Published": "2022-11-22T01:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-89",
+        "id": "CVE-2022-43214",
+        "impact": {},
+        "last-modified": "2022-11-23T14:57:00",
+        "references": [
+            "https://github.com/Qrayyy/CVE/blob/main/Billing%20System%20Project%20v1.0/CVE-2022-43214(sql%20in%20printOrder.php).md",
+            "https://www.sourcecodester.com/php/14831/billing-system-project-php-source-code-free-download.html"
+        ],
+        "summary": "Billing System Project v1.0 was discovered to contain a SQL injection vulnerability via the orderId parameter at printOrder.php."
+    },
+    {
+        "Modified": "2022-11-23T14:43:00",
+        "Published": "2022-07-14T15:15:00",
+        "access": {},
+        "assigner": "cve-assignments@hackerone.com",
+        "cvss": null,
+        "cwe": "CWE-444",
+        "id": "CVE-2022-32213",
+        "impact": {},
+        "last-modified": "2022-11-23T14:43:00",
+        "references": [
+            "https://nodejs.org/en/blog/vulnerability/july-2022-security-releases/",
+            "https://hackerone.com/reports/1524555"
+        ],
+        "summary": "The llhttp parser <v14.20.1, <v16.17.1 and <v18.9.1 in the http module in Node.js does not correctly parse and validate Transfer-Encoding headers and can lead to HTTP Request Smuggling (HRS)."
+    },
+    {
+        "Modified": "2022-11-23T14:43:00",
+        "Published": "2022-07-14T15:15:00",
+        "access": {},
+        "assigner": "cve-assignments@hackerone.com",
+        "cvss": null,
+        "cwe": "CWE-444",
+        "id": "CVE-2022-32214",
+        "impact": {},
+        "last-modified": "2022-11-23T14:43:00",
+        "references": [
+            "https://hackerone.com/reports/1524692",
+            "https://nodejs.org/en/blog/vulnerability/july-2022-security-releases/"
+        ],
+        "summary": "The llhttp parser <v14.20.1, <v16.17.1 and <v18.9.1 in the http module in Node.js does not strictly use the CRLF sequence to delimit HTTP requests. This can lead to HTTP Request Smuggling (HRS)."
+    },
+    {
+        "Modified": "2022-11-23T14:43:00",
+        "Published": "2022-07-14T15:15:00",
+        "access": {},
+        "assigner": "cve-assignments@hackerone.com",
+        "cvss": null,
+        "cwe": "CWE-444",
+        "id": "CVE-2022-32215",
+        "impact": {},
+        "last-modified": "2022-11-23T14:43:00",
+        "references": [
+            "https://nodejs.org/en/blog/vulnerability/july-2022-security-releases/",
+            "https://hackerone.com/reports/1501679"
+        ],
+        "summary": "The llhttp parser <v14.20.1, <v16.17.1 and <v18.9.1 in the http module in Node.js does not correctly handle multi-line Transfer-Encoding headers. This can lead to HTTP Request Smuggling (HRS)."
+    },
+    {
+        "Modified": "2022-11-23T14:30:00",
+        "Published": "2022-11-15T21:15:00",
+        "access": {},
+        "assigner": "psirt@cisco.com",
+        "cvss": null,
+        "cwe": "NVD-CWE-Other",
+        "id": "CVE-2022-20943",
+        "impact": {},
+        "last-modified": "2022-11-23T14:30:00",
+        "references": [
+            "https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-snort-smb-3nfhJtr"
+        ],
+        "summary": "Multiple vulnerabilities in the Server Message Block Version 2 (SMB2) processor of the Snort detection engine on multiple Cisco products could allow an unauthenticated, remote attacker to bypass the configured policies or cause a denial of service (DoS) condition on an affected device. These vulnerabilities are due to improper management of system resources when the Snort detection engine is processing SMB2 traffic. An attacker could exploit these vulnerabilities by sending a high rate of certain types of SMB2 packets through an affected device. A successful exploit could allow the attacker to trigger a reload of the Snort process, resulting in a DoS condition. Note: When the snort preserve-connection option is enabled for the Snort detection engine, a successful exploit could also allow the attacker to bypass the configured policies and deliver a malicious payload to the protected network. The snort preserve-connection setting is enabled by default. See the Details [\"#details\"] section of this advisory for more information. Note: Only products that have Snort 3 configured are affected. Products that are configured with Snort 2 are not affected."
+    },
+    {
+        "Modified": "2022-11-23T14:24:00",
+        "Published": "2022-07-15T12:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2022-31097",
+        "impact": {},
+        "last-modified": "2022-11-23T14:24:00",
+        "references": [
+            "https://grafana.com/docs/grafana/next/release-notes/release-notes-8-4-10/",
+            "https://github.com/grafana/grafana/security/advisories/GHSA-vw7q-p2qg-4m5f",
+            "https://grafana.com/docs/grafana/latest/release-notes/release-notes-9-0-3/",
+            "https://grafana.com/docs/grafana/latest/release-notes/release-notes-8-5-9/",
+            "https://security.netapp.com/advisory/ntap-20220901-0010/"
+        ],
+        "summary": "Grafana is an open-source platform for monitoring and observability. Versions on the 8.x and 9.x branch prior to 9.0.3, 8.5.9, 8.4.10, and 8.3.10 are vulnerable to stored cross-site scripting via the Unified Alerting feature of Grafana. An attacker can exploit this vulnerability to escalate privilege from editor to admin by tricking an authenticated admin to click on a link. Versions 9.0.3, 8.5.9, 8.4.10, and 8.3.10 contain a patch. As a workaround, it is possible to disable alerting or use legacy alerting."
+    },
+    {
+        "Modified": "2022-11-23T14:15:00",
+        "Published": "2022-11-21T05:15:00",
+        "access": {},
+        "assigner": "security@huntr.dev",
+        "cvss": null,
+        "cwe": "CWE-89",
+        "id": "CVE-2022-4093",
+        "impact": {},
+        "last-modified": "2022-11-23T14:15:00",
+        "references": [
+            "https://github.com/dolibarr/dolibarr/commit/7c1eac9774bd1fed0b7b4594159f2ac2d12a4011",
+            "https://huntr.dev/bounties/677ca8ee-ffbc-4b39-b294-2ce81bd56788"
+        ],
+        "summary": "SQL injection attacks can result in unauthorized access to sensitive data, such as passwords, credit card details, or personal user information. Many high-profile data breaches in recent years have been the result of SQL injection attacks, leading to reputational damage and regulatory fines. In some cases, an attacker can obtain a persistent backdoor into an organization's systems, leading to a long-term compromise that can go unnoticed for an extended period. This affect 16.0.1 and 16.0.2 only. 16.0.0 or lower, and 16.0.3 or higher are not affected"
+    },
+    {
+        "Modified": "2022-11-23T14:01:00",
+        "Published": "2022-11-09T21:15:00",
+        "access": {},
+        "assigner": "psirt@amd.com",
+        "cvss": null,
+        "cwe": "CWE-401",
+        "id": "CVE-2021-26393",
+        "impact": {},
+        "last-modified": "2022-11-23T14:01:00",
+        "references": [
+            "https://www.amd.com/en/corporate/product-security/bulletin/amd-sb-1029"
+        ],
+        "summary": "Insufficient memory cleanup in the AMD Secure Processor (ASP) Trusted Execution Environment (TEE) may allow an authenticated attacker with privileges to generate a valid signed TA and potentially poison the contents of the process memory with attacker controlled data resulting in a loss of confidentiality."
+    },
+    {
+        "Modified": "2022-11-23T14:00:00",
+        "Published": "2022-11-09T21:15:00",
+        "access": {},
+        "assigner": "psirt@amd.com",
+        "cvss": null,
+        "cwe": "NVD-CWE-noinfo",
+        "id": "CVE-2021-26391",
+        "impact": {},
+        "last-modified": "2022-11-23T14:00:00",
+        "references": [
+            "https://www.amd.com/en/corporate/product-security/bulletin/amd-sb-1029"
+        ],
+        "summary": "Insufficient verification of multiple header signatures while loading a Trusted Application (TA) may allow an attacker with privileges to gain code execution in that TA or the OS/kernel."
+    },
+    {
+        "Modified": "2022-11-23T14:00:00",
+        "Published": "2022-11-09T21:15:00",
+        "access": {},
+        "assigner": "psirt@amd.com",
+        "cvss": null,
+        "cwe": "CWE-787",
+        "id": "CVE-2021-26392",
+        "impact": {},
+        "last-modified": "2022-11-23T14:00:00",
+        "references": [
+            "https://www.amd.com/en/corporate/product-security/bulletin/amd-sb-1029"
+        ],
+        "summary": "Insufficient verification of missing size check in 'LoadModule' may lead to an out-of-bounds write potentially allowing an attacker with privileges to gain code execution of the OS/kernel by loading a malicious TA."
+    },
+    {
+        "Modified": "2022-11-23T13:59:00",
+        "Published": "2022-11-09T21:15:00",
+        "access": {},
+        "assigner": "psirt@amd.com",
+        "cvss": null,
+        "cwe": "CWE-863",
+        "id": "CVE-2021-26360",
+        "impact": {},
+        "last-modified": "2022-11-23T13:59:00",
+        "references": [
+            "https://www.amd.com/en/corporate/product-security/bulletin/amd-sb-1029"
+        ],
+        "summary": "An attacker with local access to the system can make unauthorized modifications of the security configuration of the SOC registers. This could allow potential corruption of AMD secure processor\u2019s encrypted memory contents which may lead to arbitrary code execution in ASP."
+    },
+    {
+        "Modified": "2022-11-23T13:58:00",
+        "Published": "2022-11-09T21:15:00",
+        "access": {},
+        "assigner": "psirt@amd.com",
+        "cvss": null,
+        "cwe": "NVD-CWE-Other",
+        "id": "CVE-2020-12931",
+        "impact": {},
+        "last-modified": "2022-11-23T13:58:00",
+        "references": [
+            "https://www.amd.com/en/corporate/product-security/bulletin/amd-sb-1029"
+        ],
+        "summary": "Improper parameters handling in the AMD Secure Processor (ASP) kernel may allow a privileged attacker to elevate their privileges potentially leading to loss of integrity."
+    },
+    {
+        "Modified": "2022-11-23T13:57:00",
+        "Published": "2022-11-18T22:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-20",
+        "id": "CVE-2022-41908",
+        "impact": {},
+        "last-modified": "2022-11-23T13:57:00",
+        "references": [
+            "https://github.com/tensorflow/tensorflow/commit/9f03a9d3bafe902c1e6beb105b2f24172f238645",
+            "https://github.com/tensorflow/tensorflow/blob/master/tensorflow/python/lib/core/py_func.cc",
+            "https://github.com/tensorflow/tensorflow/security/advisories/GHSA-mv77-9g28-cwg3"
+        ],
+        "summary": "TensorFlow is an open source platform for machine learning. An input `token` that is not a UTF-8 bytestring will trigger a `CHECK` fail in `tf.raw_ops.PyFunc`. We have patched the issue in GitHub commit 9f03a9d3bafe902c1e6beb105b2f24172f238645. The fix will be included in TensorFlow 2.11. We will also cherrypick this commit on TensorFlow 2.10.1, 2.9.3, and TensorFlow 2.8.4, as these are also affected and still in supported range."
+    },
+    {
+        "Modified": "2022-11-23T13:57:00",
+        "Published": "2022-11-09T21:15:00",
+        "access": {},
+        "assigner": "psirt@amd.com",
+        "cvss": null,
+        "cwe": "NVD-CWE-Other",
+        "id": "CVE-2020-12930",
+        "impact": {},
+        "last-modified": "2022-11-23T13:57:00",
+        "references": [
+            "https://www.amd.com/en/corporate/product-security/bulletin/amd-sb-1029"
+        ],
+        "summary": "Improper parameters handling in AMD Secure Processor (ASP) drivers may allow a privileged attacker to elevate their privileges potentially leading to loss of integrity."
+    },
+    {
+        "Modified": "2022-11-23T13:52:00",
+        "Published": "2022-11-18T22:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-131",
+        "id": "CVE-2022-41907",
+        "impact": {},
+        "last-modified": "2022-11-23T13:52:00",
+        "references": [
+            "https://github.com/tensorflow/tensorflow/commit/00c821af032ba9e5f5fa3fe14690c8d28a657624",
+            "https://github.com/tensorflow/tensorflow/blob/master/tensorflow/core/kernels/image/resize_nearest_neighbor_op.cc",
+            "https://github.com/tensorflow/tensorflow/security/advisories/GHSA-368v-7v32-52fx"
+        ],
+        "summary": "TensorFlow is an open source platform for machine learning. When `tf.raw_ops.ResizeNearestNeighborGrad` is given a large `size` input, it overflows. We have patched the issue in GitHub commit 00c821af032ba9e5f5fa3fe14690c8d28a657624. The fix will be included in TensorFlow 2.11. We will also cherrypick this commit on TensorFlow 2.10.1, 2.9.3, and TensorFlow 2.8.4, as these are also affected and still in supported range."
+    },
+    {
+        "Modified": "2022-11-23T13:41:00",
+        "Published": "2022-11-18T22:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-20",
+        "id": "CVE-2022-41901",
+        "impact": {},
+        "last-modified": "2022-11-23T13:41:00",
+        "references": [
+            "https://github.com/tensorflow/tensorflow/commit/f856d02e5322821aad155dad9b3acab1e9f5d693",
+            "https://github.com/tensorflow/tensorflow/security/advisories/GHSA-g9fm-r5mm-rf9f",
+            "https://github.com/tensorflow/tensorflow/blob/master/tensorflow/core/kernels/sparse/sparse_matrix.h"
+        ],
+        "summary": "TensorFlow is an open source platform for machine learning. An input `sparse_matrix` that is not a matrix with a shape with rank 0 will trigger a `CHECK` fail in `tf.raw_ops.SparseMatrixNNZ`. We have patched the issue in GitHub commit f856d02e5322821aad155dad9b3acab1e9f5d693. The fix will be included in TensorFlow 2.11. We will also cherrypick this commit on TensorFlow 2.10.1, 2.9.3, and TensorFlow 2.8.4, as these are also affected and still in supported range."
+    },
+    {
+        "Modified": "2022-11-23T13:35:00",
+        "Published": "2022-11-18T22:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-787",
+        "id": "CVE-2022-41900",
+        "impact": {},
+        "last-modified": "2022-11-23T13:35:00",
+        "references": [
+            "https://github.com/tensorflow/tensorflow/security/advisories/GHSA-xvwp-h6jv-7472",
+            "https://github.com/tensorflow/tensorflow/commit/216525144ee7c910296f5b05d214ca1327c9ce48"
+        ],
+        "summary": "TensorFlow is an open source platform for machine learning. The security vulnerability results in FractionalMax(AVG)Pool with illegal pooling_ratio. Attackers using Tensorflow can exploit the vulnerability. They can access heap memory which is not in the control of user, leading to a crash or remote code execution. We have patched the issue in GitHub commit 216525144ee7c910296f5b05d214ca1327c9ce48. The fix will be included in TensorFlow 2.11.0. We will also cherry pick this commit on TensorFlow 2.10.1."
+    },
+    {
+        "Modified": "2022-11-23T13:27:00",
+        "Published": "2022-11-18T22:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-20",
+        "id": "CVE-2022-41899",
+        "impact": {},
+        "last-modified": "2022-11-23T13:27:00",
+        "references": [
+            "https://github.com/tensorflow/tensorflow/security/advisories/GHSA-27rc-728f-x5w2",
+            "https://github.com/tensorflow/tensorflow/blob/master/tensorflow/core/kernels/sdca_internal.cc",
+            "https://github.com/tensorflow/tensorflow/commit/80ff197d03db2a70c6a111f97dcdacad1b0babfa"
+        ],
+        "summary": "TensorFlow is an open source platform for machine learning. Inputs `dense_features` or `example_state_data` not of rank 2 will trigger a `CHECK` fail in `SdcaOptimizer`. We have patched the issue in GitHub commit 80ff197d03db2a70c6a111f97dcdacad1b0babfa. The fix will be included in TensorFlow 2.11. We will also cherrypick this commit on TensorFlow 2.10.1, 2.9.3, and TensorFlow 2.8.4, as these are also affected and still in supported range."
+    },
+    {
+        "Modified": "2022-11-23T13:22:00",
+        "Published": "2022-11-19T00:15:00",
+        "access": {},
+        "assigner": "audit@patchstack.com",
+        "cvss": null,
+        "cwe": "CWE-863",
+        "id": "CVE-2022-41155",
+        "impact": {},
+        "last-modified": "2022-11-23T13:22:00",
+        "references": [
+            "https://wordpress.org/plugins/iq-block-country/#developers",
+            "https://patchstack.com/database/vulnerability/iq-block-country/wordpress-iq-block-country-plugin-1-2-18-block-bypass-vulnerability?_s_id=cve"
+        ],
+        "summary": "Block BYPASS vulnerability in iQ Block Country plugin <= 1.2.18 on WordPress."
+    },
+    {
+        "Modified": "2022-11-23T13:20:00",
+        "Published": "2022-11-18T23:15:00",
+        "access": {},
+        "assigner": "audit@patchstack.com",
+        "cvss": null,
+        "cwe": "NVD-CWE-noinfo",
+        "id": "CVE-2022-45369",
+        "impact": {},
+        "last-modified": "2022-11-23T13:20:00",
+        "references": [
+            "https://patchstack.com/database/vulnerability/widget-google-reviews/wordpress-plugin-for-google-reviews-plugin-2-2-2-auth-broken-access-control-vulnerability?_s_id=cve"
+        ],
+        "summary": "Auth. (subscriber+) Broken Access Control vulnerability in Plugin for Google Reviews plugin <= 2.2.2 on WordPress."
+    },
+    {
+        "Modified": "2022-11-23T13:19:00",
+        "Published": "2022-11-18T23:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-94",
+        "id": "CVE-2022-45132",
+        "impact": {},
+        "last-modified": "2022-11-23T13:19:00",
+        "references": [
+            "https://lists.lavasoftware.org/archives/list/lava-announce@lists.lavasoftware.org/thread/WHXGQMIZAPW3GCQEXYHC32N2ZAAAIYCY/",
+            "https://podalirius.net/en/articles/python-vulnerabilities-code-execution-in-jinja-templates/"
+        ],
+        "summary": "In Linaro Automated Validation Architecture (LAVA) before 2022.11.1, remote code execution can be achieved through user-submitted Jinja2 template. The REST API endpoint for validating device configuration files in lava-server loads input as a Jinja2 template in a way that can be used to trigger remote code execution in the LAVA server."
+    },
+    {
+        "Modified": "2022-11-23T13:17:00",
+        "Published": "2022-11-18T23:15:00",
+        "access": {},
+        "assigner": "audit@patchstack.com",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2022-45082",
+        "impact": {},
+        "last-modified": "2022-11-23T13:17:00",
+        "references": [
+            "https://wordpress.org/plugins/accordions-or-faqs/#developers",
+            "https://patchstack.com/database/vulnerability/accordions-or-faqs/wordpress-accordions-plugin-2-0-3-multiple-auth-stored-cross-site-scripting-xss-vulnerabilities?_s_id=cve"
+        ],
+        "summary": "Multiple Auth. (admin+) Stored Cross-Site Scripting (XSS) vulnerabilities in Accordions plugin <= 2.0.3 on WordPress via &addons-style-name and &accordions_or_faqs_license_key."
+    },
+    {
+        "Modified": "2022-11-23T13:16:00",
+        "Published": "2022-11-23T06:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-45472",
+        "impact": {},
+        "last-modified": "2022-11-23T13:16:00",
+        "references": [
+            "https://github.com/nicbrinkley/CVE-2022-45472",
+            "https://www.caehealthcare.com/learningspace/enterprise/"
+        ],
+        "summary": "CAE LearningSpace Enterprise (with Intuity License) image 267r patch 639 allows DOM XSS, related to ontouchmove and onpointerup."
+    },
+    {
+        "Modified": "2022-11-23T13:16:00",
+        "Published": "2022-11-23T06:15:00",
+        "access": {},
+        "assigner": "responsibledisclosure@mattermost.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-4019",
+        "impact": {},
+        "last-modified": "2022-11-23T13:16:00",
+        "references": [
+            "https://mattermost.com/security-updates/",
+            "https://hackerone.com/reports/1685979"
+        ],
+        "summary": "A denial-of-service vulnerability in the Mattermost Playbooks plugin allows an authenticated user to crash the server via multiple large requests to one of the Playbooks API endpoints."
+    },
+    {
+        "Modified": "2022-11-23T13:16:00",
+        "Published": "2022-11-23T06:15:00",
+        "access": {},
+        "assigner": "responsibledisclosure@mattermost.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-4044",
+        "impact": {},
+        "last-modified": "2022-11-23T13:16:00",
+        "references": [
+            "https://hackerone.com/reports/1680241",
+            "https://mattermost.com/security-updates/"
+        ],
+        "summary": "A denial-of-service vulnerability in Mattermost allows an authenticated user to crash the server via multiple large autoresponder messages."
+    },
+    {
+        "Modified": "2022-11-23T13:16:00",
         "Published": "2022-11-23T07:15:00",
         "access": {},
         "assigner": "cve@mitre.org",
@@ -23,7 +423,7 @@
         "cwe": "Unknown",
         "id": "CVE-2021-46854",
         "impact": {},
-        "last-modified": "2022-11-23T07:15:00",
+        "last-modified": "2022-11-23T13:16:00",
         "references": [
             "https://github.com/proftpd/proftpd/issues/1284",
             "https://github.com/proftpd/proftpd/pull/1285",
@@ -33,7 +433,7 @@
         "summary": "mod_radius in ProFTPD before 1.3.7c allows memory disclosure to RADIUS servers because it copies blocks of 16 characters."
     },
     {
-        "Modified": "2022-11-23T07:15:00",
+        "Modified": "2022-11-23T13:16:00",
         "Published": "2022-11-23T07:15:00",
         "access": {},
         "assigner": "responsibledisclosure@mattermost.com",
@@ -41,59 +441,511 @@
         "cwe": "Unknown",
         "id": "CVE-2022-4045",
         "impact": {},
-        "last-modified": "2022-11-23T07:15:00",
+        "last-modified": "2022-11-23T13:16:00",
         "references": [
             "https://mattermost.com/security-updates/"
         ],
         "summary": "A denial-of-service vulnerability in the Mattermost allows an authenticated user to crash the server via multiple requests to one of the API endpoints which could fetch a large amount of data."
     },
     {
-        "Modified": "2022-11-23T06:15:00",
-        "Published": "2022-11-23T06:15:00",
+        "Modified": "2022-11-23T13:16:00",
+        "Published": "2022-11-23T09:15:00",
+        "access": {},
+        "assigner": "security@apache.org",
+        "cvss": null,
+        "cwe": "CWE-77",
+        "id": "CVE-2022-45462",
+        "impact": {},
+        "last-modified": "2022-11-23T13:16:00",
+        "references": [
+            "https://lists.apache.org/thread/2f126y32bf1v3mvxkdgt2jr5j3l1t01w"
+        ],
+        "summary": "Alarm instance management has command injection when there is a specific command configured. It is only for logged-in users. We recommend you upgrade to version 2.0.6 or higher"
+    },
+    {
+        "Modified": "2022-11-23T13:16:00",
+        "Published": "2022-11-23T01:15:00",
         "access": {},
         "assigner": "cve@mitre.org",
         "cvss": null,
         "cwe": "Unknown",
-        "id": "CVE-2022-45472",
+        "id": "CVE-2020-23583",
         "impact": {},
-        "last-modified": "2022-11-23T06:15:00",
+        "last-modified": "2022-11-23T13:16:00",
         "references": [
-            "https://github.com/nicbrinkley/CVE-2022-45472",
-            "https://www.caehealthcare.com/learningspace/enterprise/"
+            "https://github.com/huzaifahussain98/CVE-2020-23583"
         ],
-        "summary": "CAE LearningSpace Enterprise (with Intuity License) image 267r patch 639 allows DOM XSS, related to ontouchmove and onpointerup."
+        "summary": "OPTILINK OP-XT71000N V2.2 is vulnerable to Remote Code Execution. The issue occurs when the attacker sends an arbitrary code on \"/diag_ping_admin.asp\" to \"PingTest\" interface that leads to COMMAND EXECUTION. An attacker can successfully trigger the COMMAND and can compromise full system."
     },
     {
-        "Modified": "2022-11-23T06:15:00",
-        "Published": "2022-11-23T06:15:00",
+        "Modified": "2022-11-23T13:16:00",
+        "Published": "2022-11-23T02:15:00",
         "access": {},
-        "assigner": "responsibledisclosure@mattermost.com",
+        "assigner": "cve@mitre.org",
         "cvss": null,
         "cwe": "Unknown",
-        "id": "CVE-2022-4019",
+        "id": "CVE-2020-23589",
         "impact": {},
-        "last-modified": "2022-11-23T06:15:00",
+        "last-modified": "2022-11-23T13:16:00",
         "references": [
-            "https://mattermost.com/security-updates/",
-            "https://hackerone.com/reports/1685979"
+            "https://github.com/huzaifahussain98/CVE-2020-23589"
         ],
-        "summary": "A denial-of-service vulnerability in the Mattermost Playbooks plugin allows an authenticated user to crash the server via multiple large requests to one of the Playbooks API endpoints."
+        "summary": "A vulnerability in OPTILINK OP-XT71000N Hardware Version: V2.2 , Firmware Version: OP_V3.3.1-191028 allows an unauthenticated, remote attacker to conduct a cross-site request forgery (CSRF) attack to cause a Denial of Service by Rebooting the router through \" /mgm_dev_reboot.asp.\""
     },
     {
-        "Modified": "2022-11-23T06:15:00",
-        "Published": "2022-11-23T06:15:00",
+        "Modified": "2022-11-23T13:16:00",
+        "Published": "2022-11-23T03:15:00",
         "access": {},
-        "assigner": "responsibledisclosure@mattermost.com",
+        "assigner": "cve@mitre.org",
         "cvss": null,
         "cwe": "Unknown",
-        "id": "CVE-2022-4044",
+        "id": "CVE-2022-43213",
         "impact": {},
-        "last-modified": "2022-11-23T06:15:00",
+        "last-modified": "2022-11-23T13:16:00",
         "references": [
-            "https://hackerone.com/reports/1680241",
-            "https://mattermost.com/security-updates/"
+            "https://github.com/Qrayyy/CVE/blob/main/Billing%20System%20Project%20v1.0/CVE-2022-43213(sql%20in%20editorder.php).md",
+            "https://www.sourcecodester.com/php/14831/billing-system-project-php-source-code-free-download.html"
         ],
-        "summary": "A denial-of-service vulnerability in Mattermost allows an authenticated user to crash the server via multiple large autoresponder messages."
+        "summary": "Billing System Project v1.0 was discovered to contain a SQL injection vulnerability via the id parameter at editorder.php."
+    },
+    {
+        "Modified": "2022-11-23T13:16:00",
+        "Published": "2022-11-23T01:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2020-23585",
+        "impact": {},
+        "last-modified": "2022-11-23T13:16:00",
+        "references": [
+            "https://github.com/huzaifahussain98/CVE-2020-23585"
+        ],
+        "summary": "A remote attacker can conduct a cross-site request forgery (CSRF) attack on OPTILINK OP-XT71000N Hardware Version: V2.2 , Firmware Version: OP_V3.3.1-191028. The vulnerability is due to insufficient CSRF protections for the \"mgm_config_file.asp\" because of which attacker can create a crafted \"csrf form\" which sends \" malicious xml data\" to \"/boaform/admin/formMgmConfigUpload\". the exploit allows attacker to \"gain full privileges\" and to \"fully compromise of router & network\"."
+    },
+    {
+        "Modified": "2022-11-23T13:16:00",
+        "Published": "2022-11-23T01:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2020-23593",
+        "impact": {},
+        "last-modified": "2022-11-23T13:16:00",
+        "references": [
+            "https://github.com/huzaifahussain98/CVE-2020-23593"
+        ],
+        "summary": "A vulnerability in OPTILINK OP-XT71000N Hardware Version: V2.2, Firmware Version: OP_V3.3.1-191028 allows an unauthenticated, remote attacker to conduct a cross site request forgery (CSRF) attack to enable syslog mode through ' /mgm_log_cfg.asp.' The system starts to log events, 'Remote' mode or 'Both' mode on \"Syslog -- Configuration page\" logs events and sends to remote syslog server IP and Port."
+    },
+    {
+        "Modified": "2022-11-23T13:16:00",
+        "Published": "2022-11-23T02:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2020-23584",
+        "impact": {},
+        "last-modified": "2022-11-23T13:16:00",
+        "references": [
+            "https://github.com/huzaifahussain98/CVE-2020-23584"
+        ],
+        "summary": "Unauthenticated remote code execution in OPTILINK OP-XT71000N, Hardware Version: V2.2 occurs when the attacker passes arbitrary commands with IP-ADDRESS using \" | \" to execute commands on \" /diag_tracert_admin.asp \" in the \"PingTest\" parameter that leads to command execution."
+    },
+    {
+        "Modified": "2022-11-23T13:16:00",
+        "Published": "2022-11-23T02:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2020-23586",
+        "impact": {},
+        "last-modified": "2022-11-23T13:16:00",
+        "references": [
+            "https://github.com/huzaifahussain98/CVE-2020-23586"
+        ],
+        "summary": "A vulnerability found in OPTILINK OP-XT71000N Hardware Version: V2.2 , Firmware Version: OP_V3.3.1-191028 allows an unauthenticated, remote attacker to conduct a cross-site request forgery (CSRF) attack to Add Network Traffic Control Type Rule."
+    },
+    {
+        "Modified": "2022-11-23T13:16:00",
+        "Published": "2022-11-23T02:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2020-23587",
+        "impact": {},
+        "last-modified": "2022-11-23T13:16:00",
+        "references": [
+            "https://github.com/huzaifahussain98/CVE-2020-23587"
+        ],
+        "summary": "A vulnerability found in the OPTILINK OP-XT71000N Hardware Version: V2.2 , Firmware Version: OP_V3.3.1-191028 allows an unauthenticated, remote attacker to conduct a cross-site request forgery (CSRF) attack to men in the middle attack by adding New Routes in RoutingConfiguration on \" /routing.asp \"."
+    },
+    {
+        "Modified": "2022-11-23T13:16:00",
+        "Published": "2022-11-23T02:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2020-23588",
+        "impact": {},
+        "last-modified": "2022-11-23T13:16:00",
+        "references": [
+            "https://github.com/huzaifahussain98/CVE-2020-23588"
+        ],
+        "summary": "A vulnerability in OPTILINK OP-XT71000N Hardware Version: V2.2 , Firmware Version: OP_V3.3.1-191028 allows an unauthenticated, remote attacker to conduct a cross-site request forgery (CSRF) attack to \"Enable or Disable Ports\" and to \"Change port number\" through \" /rmtacc.asp \"."
+    },
+    {
+        "Modified": "2022-11-23T13:16:00",
+        "Published": "2022-11-23T02:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2020-23590",
+        "impact": {},
+        "last-modified": "2022-11-23T13:16:00",
+        "references": [
+            "https://github.com/huzaifahussain98/CVE-2020-23590"
+        ],
+        "summary": "A vulnerability in Optilink OP-XT71000N Hardware version: V2.2 , Firmware Version: OP_V3.3.1-191028 allows an unauthenticated remote attacker to conduct a cross-site request forgery (CSRF) attack to change the Password for \"WLAN SSID\" through \"wlwpa.asp\"."
+    },
+    {
+        "Modified": "2022-11-23T13:16:00",
+        "Published": "2022-11-23T02:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2020-23591",
+        "impact": {},
+        "last-modified": "2022-11-23T13:16:00",
+        "references": [
+            "https://github.com/huzaifahussain98/CVE-2020-23591"
+        ],
+        "summary": "A vulnerability in OPTILINK OP-XT71000N Hardware Version: V2.2 , Firmware Version: OP_V3.3.1-191028 allows an attacker to upload arbitrary files through \" /mgm_dev_upgrade.asp \" which can \"delete every file for Denial of Service (using 'rm -rf *.*' in the code), reverse connection (using '.asp' webshell), backdoor."
+    },
+    {
+        "Modified": "2022-11-23T13:16:00",
+        "Published": "2022-11-23T02:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2020-23592",
+        "impact": {},
+        "last-modified": "2022-11-23T13:16:00",
+        "references": [
+            "https://github.com/huzaifahussain98/CVE-2020-23592"
+        ],
+        "summary": "A vulnerability in OPTILINK OP-XT71000N Hardware Version: V2.2 , Firmware Version: OP_V3.3.1-191028 allows an unauthenticated, remote attacker to conduct a cross-site request forgery (CSRF) attack to Reset ONU to Factory Default through ' /mgm_dev_reset.asp.' Resetting to default leads to Escalation of Privileges by logging-in with default credentials."
+    },
+    {
+        "Modified": "2022-11-23T13:16:00",
+        "Published": "2022-11-23T02:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-35500",
+        "impact": {},
+        "last-modified": "2022-11-23T13:16:00",
+        "references": [
+            "https://github.com/afine-com/CVE-2022-35500",
+            "http://amasty.com"
+        ],
+        "summary": "Amasty Blog 2.10.3 is vulnerable to Cross Site Scripting (XSS) via leave comment functionality."
+    },
+    {
+        "Modified": "2022-11-23T13:16:00",
+        "Published": "2022-11-23T02:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-37429",
+        "impact": {},
+        "last-modified": "2022-11-23T13:16:00",
+        "references": [
+            "https://www.silverstripe.org/download/security-releases/",
+            "https://www.silverstripe.org/download/security-releases/CVE-2022-37429",
+            "https://www.silverstripe.org/blog/tag/release",
+            "https://forum.silverstripe.org/c/releases"
+        ],
+        "summary": "Silverstripe silverstripe/framework through 4.11 allows XSS (issue 1 of 2) via JavaScript payload to the href attribute of a link by splitting a javascript URL with white space characters."
+    },
+    {
+        "Modified": "2022-11-23T13:16:00",
+        "Published": "2022-11-23T02:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-37430",
+        "impact": {},
+        "last-modified": "2022-11-23T13:16:00",
+        "references": [
+            "https://www.silverstripe.org/download/security-releases/",
+            "https://www.silverstripe.org/download/security-releases/CVE-2022-37430",
+            "https://www.silverstripe.org/blog/tag/release",
+            "https://forum.silverstripe.org/c/releases"
+        ],
+        "summary": "Silverstripe silverstripe/framework through 4.11 allows XSS vulnerability via href attribute of a link (issue 2 of 2)."
+    },
+    {
+        "Modified": "2022-11-23T13:16:00",
+        "Published": "2022-11-23T02:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-37772",
+        "impact": {},
+        "last-modified": "2022-11-23T13:16:00",
+        "references": [
+            "http://maarch.com",
+            "https://github.com/frame84/vulns/blob/main/MaarchRM/CVE-2022-37772/README.md"
+        ],
+        "summary": "Maarch RM 2.8.3 solution contains an improper restriction of excessive authentication attempts due to excessive verbose responses from the application. An unauthenticated remote attacker could potentially exploit this vulnerability, leading to compromised accounts."
+    },
+    {
+        "Modified": "2022-11-23T13:16:00",
+        "Published": "2022-11-23T02:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-38145",
+        "impact": {},
+        "last-modified": "2022-11-23T13:16:00",
+        "references": [
+            "https://www.silverstripe.org/download/security-releases/",
+            "https://www.silverstripe.org/download/security-releases/CVE-2022-38145",
+            "https://www.silverstripe.org/blog/tag/release",
+            "https://forum.silverstripe.org/c/releases"
+        ],
+        "summary": "Silverstripe silverstripe/framework through 4.11 allows XSS (issue 1 of 3) via remote attackers adding a Javascript payload to a page's meta description and get it executed in the versioned history compare view."
+    },
+    {
+        "Modified": "2022-11-23T13:16:00",
+        "Published": "2022-11-23T02:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-42095",
+        "impact": {},
+        "last-modified": "2022-11-23T13:16:00",
+        "references": [
+            "https://grimthereaperteam.medium.com/declined-backdrop-xss-at-pages-26e5d63686bc",
+            "https://github.com/bypazs/Declined_backdrop-XSS-at-pAGES",
+            "https://backdropcms.org",
+            "https://github.com/backdrop/backdrop/releases/tag/1.23.0"
+        ],
+        "summary": "Backdrop CMS version 1.23.0 was discovered to contain a stored cross-site scripting (XSS) vulnerability via the Page content."
+    },
+    {
+        "Modified": "2022-11-23T13:16:00",
+        "Published": "2022-11-23T03:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-34830",
+        "impact": {},
+        "last-modified": "2022-11-23T13:16:00",
+        "references": [
+            "https://developer.arm.com/Arm%20Security%20Center/Mali%20GPU%20Driver%20Vulnerabilities",
+            "https://developer.arm.com/support/arm-security-updates"
+        ],
+        "summary": "An Arm product family through 2022-06-29 has a TOCTOU Race Condition that allows non-privileged user to make improper GPU processing operations to gain access to already freed memory."
+    },
+    {
+        "Modified": "2022-11-23T13:16:00",
+        "Published": "2022-11-23T03:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-36337",
+        "impact": {},
+        "last-modified": "2022-11-23T13:16:00",
+        "references": [
+            "https://www.insyde.com/security-pledge",
+            "https://www.insyde.com/security-pledge/SA-2022039"
+        ],
+        "summary": "An issue was discovered in Insyde InsydeH2O with kernel 5.0 through 5.5. A stack buffer overflow vulnerability in the MebxConfiguration driver leads to arbitrary code execution. Control of a UEFI variable under the OS can cause this overflow when read by BIOS code."
+    },
+    {
+        "Modified": "2022-11-23T13:16:00",
+        "Published": "2022-11-23T03:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-37421",
+        "impact": {},
+        "last-modified": "2022-11-23T13:16:00",
+        "references": [
+            "https://www.silverstripe.org/download/security-releases/CVE-2022-37421",
+            "https://www.silverstripe.org/download/security-releases/",
+            "https://www.silverstripe.org/blog/tag/release",
+            "https://forum.silverstripe.org/c/releases"
+        ],
+        "summary": "Silverstripe silverstripe/cms through 4.11.0 allows XSS."
+    },
+    {
+        "Modified": "2022-11-23T13:16:00",
+        "Published": "2022-11-23T03:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-38147",
+        "impact": {},
+        "last-modified": "2022-11-23T13:16:00",
+        "references": [
+            "https://www.silverstripe.org/download/security-releases/CVE-2022-38147",
+            "https://www.silverstripe.org/download/security-releases/",
+            "https://www.silverstripe.org/blog/tag/release",
+            "https://forum.silverstripe.org/c/releases"
+        ],
+        "summary": "Silverstripe silverstripe/framework through 4.11 allows XSS (issue 3 of 3)."
+    },
+    {
+        "Modified": "2022-11-23T13:16:00",
+        "Published": "2022-11-23T03:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-40770",
+        "impact": {},
+        "last-modified": "2022-11-23T13:16:00",
+        "references": [
+            "https://manageengine.com",
+            "https://www.manageengine.com/products/service-desk/CVE-2022-40770.html"
+        ],
+        "summary": "Zoho ManageEngine ServiceDesk Plus versions 13010 and prior are vulnerable to authenticated command injection. This can be exploited by high-privileged users."
+    },
+    {
+        "Modified": "2022-11-23T13:16:00",
+        "Published": "2022-11-23T03:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-41446",
+        "impact": {},
+        "last-modified": "2022-11-23T13:16:00",
+        "references": [
+            "https://github.com/RashidKhanPathan/CVE-2022-41446",
+            "https://ihexcoder.wixsite.com/secresearch/post/privilege-escalation-in-teachers-record-management-system-using-codeignitor",
+            "https://phpgurukul.com/teachers-record-management-system-using-codeigniter/",
+            "https://drive.google.com/file/d/1Rre498CWp9pWyW9h5ran8GkW6TA2NztC/view?usp=sharing"
+        ],
+        "summary": "An access control issue in /Admin/dashboard.php of Record Management System using CodeIgniter v1.0 allows attackers to access and modify user data."
+    },
+    {
+        "Modified": "2022-11-23T13:16:00",
+        "Published": "2022-11-23T00:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-37773",
+        "impact": {},
+        "last-modified": "2022-11-23T13:16:00",
+        "references": [
+            "http://maarch.com",
+            "https://github.com/frame84/vulns/blob/main/MaarchRM/CVE-2022-37773/README.md"
+        ],
+        "summary": "An authenticated SQL Injection vulnerability in the statistics page (/statistics/retrieve) of Maarch RM 2.8, via the filter parameter, allows the complete disclosure of all databases."
+    },
+    {
+        "Modified": "2022-11-23T13:16:00",
+        "Published": "2022-11-23T00:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-37774",
+        "impact": {},
+        "last-modified": "2022-11-23T13:16:00",
+        "references": [
+            "http://maarch.com",
+            "https://github.com/frame84/vulns/blob/main/MaarchRM/CVE-2022-37774/README.md"
+        ],
+        "summary": "There is a broken access control vulnerability in the Maarch RM 2.8.3 solution. When accessing some specific document (pdf, email) from an archive, a preview is proposed by the application. This preview generates a URL including an md5 hash of the file accessed. The document's URL (https://{url}/tmp/{MD5 hash of the document}) is then accessible without authentication."
+    },
+    {
+        "Modified": "2022-11-23T13:16:00",
+        "Published": "2022-11-23T00:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-38724",
+        "impact": {},
+        "last-modified": "2022-11-23T13:16:00",
+        "references": [
+            "https://www.silverstripe.org/download/security-releases/",
+            "https://www.silverstripe.org/blog/tag/release",
+            "https://forum.silverstripe.org/c/releases",
+            "https://www.silverstripe.org/download/security-releases/CVE-2022-38724"
+        ],
+        "summary": "Silverstripe silverstripe/framework through 4.11.0, silverstripe/assets through 1.11.0, and silverstripe/asset-admin through 1.11.0 allow XSS."
+    },
+    {
+        "Modified": "2022-11-23T13:16:00",
+        "Published": "2022-11-23T00:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-40303",
+        "impact": {},
+        "last-modified": "2022-11-23T13:16:00",
+        "references": [
+            "https://gitlab.gnome.org/GNOME/libxml2/-/commit/c846986356fc149915a74972bf198abc266bc2c0",
+            "https://gitlab.gnome.org/GNOME/libxml2/-/tags/v2.10.3"
+        ],
+        "summary": "An issue was discovered in libxml2 before 2.10.3. When parsing a multi-gigabyte XML document with the XML_PARSE_HUGE parser option enabled, several integer counters can overflow. This results in an attempt to access an array at a negative 2GB offset, typically leading to a segmentation fault."
+    },
+    {
+        "Modified": "2022-11-23T13:16:00",
+        "Published": "2022-11-23T00:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-40870",
+        "impact": {},
+        "last-modified": "2022-11-23T13:16:00",
+        "references": [
+            "https://github.com/IthacaLabs/Parallels/tree/main/ParallelsRemoteApplicationServer",
+            "https://github.com/IthacaLabs/Parallels/blob/main/ParallelsRemoteApplicationServer/HHI_CVE-2022-40870.txt"
+        ],
+        "summary": "The Web Client of Parallels Remote Application Server v18.0 is vulnerable to Host Header Injection attacks. This vulnerability allows attackers to execute arbitrary commands via a crafted payload injected into the Host header."
+    },
+    {
+        "Modified": "2022-11-23T13:16:00",
+        "Published": "2022-11-23T00:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-43751",
+        "impact": {},
+        "last-modified": "2022-11-23T13:16:00",
+        "references": [
+            "https://mcafee.com",
+            "https://www.mcafee.com/support/?articleId=TS103348&page=shell&shell=article-view"
+        ],
+        "summary": "McAfee Total Protection prior to version 16.0.49 contains an uncontrolled search path element vulnerability due to the use of a variable pointing to a subdirectory that may be controllable by an unprivileged user. This may have allowed the unprivileged user to execute arbitrary code with system privileges."
     },
     {
         "Modified": "2022-11-23T04:15:00",
@@ -138,124 +990,6 @@
             "https://www.debian.org/security/2022/dsa-5287"
         ],
         "summary": "A null pointer de-reference was found in the way samba kerberos server handled missing sname in TGS-REQ (Ticket Granting Server - Request). An authenticated user could use this flaw to crash the samba server."
-    },
-    {
-        "Modified": "2022-11-23T03:15:00",
-        "Published": "2022-11-23T03:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-43213",
-        "impact": {},
-        "last-modified": "2022-11-23T03:15:00",
-        "references": [
-            "https://github.com/Qrayyy/CVE/blob/main/Billing%20System%20Project%20v1.0/CVE-2022-43213(sql%20in%20editorder.php).md",
-            "https://www.sourcecodester.com/php/14831/billing-system-project-php-source-code-free-download.html"
-        ],
-        "summary": "Billing System Project v1.0 was discovered to contain a SQL injection vulnerability via the id parameter at editorder.php."
-    },
-    {
-        "Modified": "2022-11-23T03:15:00",
-        "Published": "2022-11-23T03:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-34830",
-        "impact": {},
-        "last-modified": "2022-11-23T03:15:00",
-        "references": [
-            "https://developer.arm.com/Arm%20Security%20Center/Mali%20GPU%20Driver%20Vulnerabilities",
-            "https://developer.arm.com/support/arm-security-updates"
-        ],
-        "summary": "An Arm product family through 2022-06-29 has a TOCTOU Race Condition that allows non-privileged user to make improper GPU processing operations to gain access to already freed memory."
-    },
-    {
-        "Modified": "2022-11-23T03:15:00",
-        "Published": "2022-11-23T03:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-36337",
-        "impact": {},
-        "last-modified": "2022-11-23T03:15:00",
-        "references": [
-            "https://www.insyde.com/security-pledge",
-            "https://www.insyde.com/security-pledge/SA-2022039"
-        ],
-        "summary": "An issue was discovered in Insyde InsydeH2O with kernel 5.0 through 5.5. A stack buffer overflow vulnerability in the MebxConfiguration driver leads to arbitrary code execution. Control of a UEFI variable under the OS can cause this overflow when read by BIOS code."
-    },
-    {
-        "Modified": "2022-11-23T03:15:00",
-        "Published": "2022-11-23T03:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-37421",
-        "impact": {},
-        "last-modified": "2022-11-23T03:15:00",
-        "references": [
-            "https://www.silverstripe.org/download/security-releases/CVE-2022-37421",
-            "https://www.silverstripe.org/download/security-releases/",
-            "https://www.silverstripe.org/blog/tag/release",
-            "https://forum.silverstripe.org/c/releases"
-        ],
-        "summary": "Silverstripe silverstripe/cms through 4.11.0 allows XSS."
-    },
-    {
-        "Modified": "2022-11-23T03:15:00",
-        "Published": "2022-11-23T03:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-38147",
-        "impact": {},
-        "last-modified": "2022-11-23T03:15:00",
-        "references": [
-            "https://www.silverstripe.org/download/security-releases/CVE-2022-38147",
-            "https://www.silverstripe.org/download/security-releases/",
-            "https://www.silverstripe.org/blog/tag/release",
-            "https://forum.silverstripe.org/c/releases"
-        ],
-        "summary": "Silverstripe silverstripe/framework through 4.11 allows XSS (issue 3 of 3)."
-    },
-    {
-        "Modified": "2022-11-23T03:15:00",
-        "Published": "2022-11-23T03:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-40770",
-        "impact": {},
-        "last-modified": "2022-11-23T03:15:00",
-        "references": [
-            "https://manageengine.com",
-            "https://www.manageengine.com/products/service-desk/CVE-2022-40770.html"
-        ],
-        "summary": "Zoho ManageEngine ServiceDesk Plus versions 13010 and prior are vulnerable to authenticated command injection. This can be exploited by high-privileged users."
-    },
-    {
-        "Modified": "2022-11-23T03:15:00",
-        "Published": "2022-11-23T03:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-41446",
-        "impact": {},
-        "last-modified": "2022-11-23T03:15:00",
-        "references": [
-            "https://github.com/RashidKhanPathan/CVE-2022-41446",
-            "https://ihexcoder.wixsite.com/secresearch/post/privilege-escalation-in-teachers-record-management-system-using-codeignitor",
-            "https://phpgurukul.com/teachers-record-management-system-using-codeigniter/",
-            "https://drive.google.com/file/d/1Rre498CWp9pWyW9h5ran8GkW6TA2NztC/view?usp=sharing"
-        ],
-        "summary": "An access control issue in /Admin/dashboard.php of Record Management System using CodeIgniter v1.0 allows attackers to access and modify user data."
     },
     {
         "Modified": "2022-11-23T03:15:00",
@@ -545,230 +1279,6 @@
     },
     {
         "Modified": "2022-11-23T02:15:00",
-        "Published": "2022-11-23T02:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2020-23589",
-        "impact": {},
-        "last-modified": "2022-11-23T02:15:00",
-        "references": [
-            "https://github.com/huzaifahussain98/CVE-2020-23589"
-        ],
-        "summary": "A vulnerability in OPTILINK OP-XT71000N Hardware Version: V2.2 , Firmware Version: OP_V3.3.1-191028 allows an unauthenticated, remote attacker to conduct a cross-site request forgery (CSRF) attack to cause a Denial of Service by Rebooting the router through \" /mgm_dev_reboot.asp.\""
-    },
-    {
-        "Modified": "2022-11-23T02:15:00",
-        "Published": "2022-11-23T02:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2020-23584",
-        "impact": {},
-        "last-modified": "2022-11-23T02:15:00",
-        "references": [
-            "https://github.com/huzaifahussain98/CVE-2020-23584"
-        ],
-        "summary": "Unauthenticated remote code execution in OPTILINK OP-XT71000N, Hardware Version: V2.2 occurs when the attacker passes arbitrary commands with IP-ADDRESS using \" | \" to execute commands on \" /diag_tracert_admin.asp \" in the \"PingTest\" parameter that leads to command execution."
-    },
-    {
-        "Modified": "2022-11-23T02:15:00",
-        "Published": "2022-11-23T02:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2020-23586",
-        "impact": {},
-        "last-modified": "2022-11-23T02:15:00",
-        "references": [
-            "https://github.com/huzaifahussain98/CVE-2020-23586"
-        ],
-        "summary": "A vulnerability found in OPTILINK OP-XT71000N Hardware Version: V2.2 , Firmware Version: OP_V3.3.1-191028 allows an unauthenticated, remote attacker to conduct a cross-site request forgery (CSRF) attack to Add Network Traffic Control Type Rule."
-    },
-    {
-        "Modified": "2022-11-23T02:15:00",
-        "Published": "2022-11-23T02:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2020-23587",
-        "impact": {},
-        "last-modified": "2022-11-23T02:15:00",
-        "references": [
-            "https://github.com/huzaifahussain98/CVE-2020-23587"
-        ],
-        "summary": "A vulnerability found in the OPTILINK OP-XT71000N Hardware Version: V2.2 , Firmware Version: OP_V3.3.1-191028 allows an unauthenticated, remote attacker to conduct a cross-site request forgery (CSRF) attack to men in the middle attack by adding New Routes in RoutingConfiguration on \" /routing.asp \"."
-    },
-    {
-        "Modified": "2022-11-23T02:15:00",
-        "Published": "2022-11-23T02:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2020-23588",
-        "impact": {},
-        "last-modified": "2022-11-23T02:15:00",
-        "references": [
-            "https://github.com/huzaifahussain98/CVE-2020-23588"
-        ],
-        "summary": "A vulnerability in OPTILINK OP-XT71000N Hardware Version: V2.2 , Firmware Version: OP_V3.3.1-191028 allows an unauthenticated, remote attacker to conduct a cross-site request forgery (CSRF) attack to \"Enable or Disable Ports\" and to \"Change port number\" through \" /rmtacc.asp \"."
-    },
-    {
-        "Modified": "2022-11-23T02:15:00",
-        "Published": "2022-11-23T02:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2020-23590",
-        "impact": {},
-        "last-modified": "2022-11-23T02:15:00",
-        "references": [
-            "https://github.com/huzaifahussain98/CVE-2020-23590"
-        ],
-        "summary": "A vulnerability in Optilink OP-XT71000N Hardware version: V2.2 , Firmware Version: OP_V3.3.1-191028 allows an unauthenticated remote attacker to conduct a cross-site request forgery (CSRF) attack to change the Password for \"WLAN SSID\" through \"wlwpa.asp\"."
-    },
-    {
-        "Modified": "2022-11-23T02:15:00",
-        "Published": "2022-11-23T02:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2020-23591",
-        "impact": {},
-        "last-modified": "2022-11-23T02:15:00",
-        "references": [
-            "https://github.com/huzaifahussain98/CVE-2020-23591"
-        ],
-        "summary": "A vulnerability in OPTILINK OP-XT71000N Hardware Version: V2.2 , Firmware Version: OP_V3.3.1-191028 allows an attacker to upload arbitrary files through \" /mgm_dev_upgrade.asp \" which can \"delete every file for Denial of Service (using 'rm -rf *.*' in the code), reverse connection (using '.asp' webshell), backdoor."
-    },
-    {
-        "Modified": "2022-11-23T02:15:00",
-        "Published": "2022-11-23T02:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2020-23592",
-        "impact": {},
-        "last-modified": "2022-11-23T02:15:00",
-        "references": [
-            "https://github.com/huzaifahussain98/CVE-2020-23592"
-        ],
-        "summary": "A vulnerability in OPTILINK OP-XT71000N Hardware Version: V2.2 , Firmware Version: OP_V3.3.1-191028 allows an unauthenticated, remote attacker to conduct a cross-site request forgery (CSRF) attack to Reset ONU to Factory Default through ' /mgm_dev_reset.asp.' Resetting to default leads to Escalation of Privileges by logging-in with default credentials."
-    },
-    {
-        "Modified": "2022-11-23T02:15:00",
-        "Published": "2022-11-23T02:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-35500",
-        "impact": {},
-        "last-modified": "2022-11-23T02:15:00",
-        "references": [
-            "https://github.com/afine-com/CVE-2022-35500",
-            "http://amasty.com"
-        ],
-        "summary": "Amasty Blog 2.10.3 is vulnerable to Cross Site Scripting (XSS) via leave comment functionality."
-    },
-    {
-        "Modified": "2022-11-23T02:15:00",
-        "Published": "2022-11-23T02:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-37429",
-        "impact": {},
-        "last-modified": "2022-11-23T02:15:00",
-        "references": [
-            "https://www.silverstripe.org/download/security-releases/",
-            "https://www.silverstripe.org/download/security-releases/CVE-2022-37429",
-            "https://www.silverstripe.org/blog/tag/release",
-            "https://forum.silverstripe.org/c/releases"
-        ],
-        "summary": "Silverstripe silverstripe/framework through 4.11 allows XSS (issue 1 of 2) via JavaScript payload to the href attribute of a link by splitting a javascript URL with white space characters."
-    },
-    {
-        "Modified": "2022-11-23T02:15:00",
-        "Published": "2022-11-23T02:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-37430",
-        "impact": {},
-        "last-modified": "2022-11-23T02:15:00",
-        "references": [
-            "https://www.silverstripe.org/download/security-releases/",
-            "https://www.silverstripe.org/download/security-releases/CVE-2022-37430",
-            "https://www.silverstripe.org/blog/tag/release",
-            "https://forum.silverstripe.org/c/releases"
-        ],
-        "summary": "Silverstripe silverstripe/framework through 4.11 allows XSS vulnerability via href attribute of a link (issue 2 of 2)."
-    },
-    {
-        "Modified": "2022-11-23T02:15:00",
-        "Published": "2022-11-23T02:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-37772",
-        "impact": {},
-        "last-modified": "2022-11-23T02:15:00",
-        "references": [
-            "http://maarch.com",
-            "https://github.com/frame84/vulns/blob/main/MaarchRM/CVE-2022-37772/README.md"
-        ],
-        "summary": "Maarch RM 2.8.3 solution contains an improper restriction of excessive authentication attempts due to excessive verbose responses from the application. An unauthenticated remote attacker could potentially exploit this vulnerability, leading to compromised accounts."
-    },
-    {
-        "Modified": "2022-11-23T02:15:00",
-        "Published": "2022-11-23T02:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-38145",
-        "impact": {},
-        "last-modified": "2022-11-23T02:15:00",
-        "references": [
-            "https://www.silverstripe.org/download/security-releases/",
-            "https://www.silverstripe.org/download/security-releases/CVE-2022-38145",
-            "https://www.silverstripe.org/blog/tag/release",
-            "https://forum.silverstripe.org/c/releases"
-        ],
-        "summary": "Silverstripe silverstripe/framework through 4.11 allows XSS (issue 1 of 3) via remote attackers adding a Javascript payload to a page's meta description and get it executed in the versioned history compare view."
-    },
-    {
-        "Modified": "2022-11-23T02:15:00",
-        "Published": "2022-11-23T02:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-42095",
-        "impact": {},
-        "last-modified": "2022-11-23T02:15:00",
-        "references": [
-            "https://grimthereaperteam.medium.com/declined-backdrop-xss-at-pages-26e5d63686bc",
-            "https://github.com/bypazs/Declined_backdrop-XSS-at-pAGES",
-            "https://backdropcms.org",
-            "https://github.com/backdrop/backdrop/releases/tag/1.23.0"
-        ],
-        "summary": "Backdrop CMS version 1.23.0 was discovered to contain a stored cross-site scripting (XSS) vulnerability via the Page content."
-    },
-    {
-        "Modified": "2022-11-23T02:15:00",
         "Published": "2022-10-19T22:15:00",
         "access": {},
         "assigner": "f5sirt@f5.com",
@@ -833,149 +1343,6 @@
             "https://lists.debian.org/debian-lts-announce/2022/11/msg00031.html"
         ],
         "summary": "ALPACA is an application layer protocol content confusion attack, exploiting TLS servers implementing different protocols but using compatible certificates, such as multi-domain or wildcard certificates. A MiTM attacker having access to victim's traffic at the TCP/IP layer can redirect traffic from one subdomain to another, resulting in a valid TLS session. This breaks the authentication of TLS and cross-protocol attacks may be possible where the behavior of one protocol service may compromise the other at the application layer."
-    },
-    {
-        "Modified": "2022-11-23T01:15:00",
-        "Published": "2022-11-23T01:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2020-23583",
-        "impact": {},
-        "last-modified": "2022-11-23T01:15:00",
-        "references": [
-            "https://github.com/huzaifahussain98/CVE-2020-23583"
-        ],
-        "summary": "OPTILINK OP-XT71000N V2.2 is vulnerable to Remote Code Execution. The issue occurs when the attacker sends an arbitrary code on \"/diag_ping_admin.asp\" to \"PingTest\" interface that leads to COMMAND EXECUTION. An attacker can successfully trigger the COMMAND and can compromise full system."
-    },
-    {
-        "Modified": "2022-11-23T01:15:00",
-        "Published": "2022-11-23T01:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2020-23585",
-        "impact": {},
-        "last-modified": "2022-11-23T01:15:00",
-        "references": [
-            "https://github.com/huzaifahussain98/CVE-2020-23585"
-        ],
-        "summary": "A remote attacker can conduct a cross-site request forgery (CSRF) attack on OPTILINK OP-XT71000N Hardware Version: V2.2 , Firmware Version: OP_V3.3.1-191028. The vulnerability is due to insufficient CSRF protections for the \"mgm_config_file.asp\" because of which attacker can create a crafted \"csrf form\" which sends \" malicious xml data\" to \"/boaform/admin/formMgmConfigUpload\". the exploit allows attacker to \"gain full privileges\" and to \"fully compromise of router & network\"."
-    },
-    {
-        "Modified": "2022-11-23T01:15:00",
-        "Published": "2022-11-23T01:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2020-23593",
-        "impact": {},
-        "last-modified": "2022-11-23T01:15:00",
-        "references": [
-            "https://github.com/huzaifahussain98/CVE-2020-23593"
-        ],
-        "summary": "A vulnerability in OPTILINK OP-XT71000N Hardware Version: V2.2, Firmware Version: OP_V3.3.1-191028 allows an unauthenticated, remote attacker to conduct a cross site request forgery (CSRF) attack to enable syslog mode through ' /mgm_log_cfg.asp.' The system starts to log events, 'Remote' mode or 'Both' mode on \"Syslog -- Configuration page\" logs events and sends to remote syslog server IP and Port."
-    },
-    {
-        "Modified": "2022-11-23T00:15:00",
-        "Published": "2022-11-23T00:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-37773",
-        "impact": {},
-        "last-modified": "2022-11-23T00:15:00",
-        "references": [
-            "http://maarch.com",
-            "https://github.com/frame84/vulns/blob/main/MaarchRM/CVE-2022-37773/README.md"
-        ],
-        "summary": "An authenticated SQL Injection vulnerability in the statistics page (/statistics/retrieve) of Maarch RM 2.8, via the filter parameter, allows the complete disclosure of all databases."
-    },
-    {
-        "Modified": "2022-11-23T00:15:00",
-        "Published": "2022-11-23T00:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-37774",
-        "impact": {},
-        "last-modified": "2022-11-23T00:15:00",
-        "references": [
-            "http://maarch.com",
-            "https://github.com/frame84/vulns/blob/main/MaarchRM/CVE-2022-37774/README.md"
-        ],
-        "summary": "There is a broken access control vulnerability in the Maarch RM 2.8.3 solution. When accessing some specific document (pdf, email) from an archive, a preview is proposed by the application. This preview generates a URL including an md5 hash of the file accessed. The document's URL (https://{url}/tmp/{MD5 hash of the document}) is then accessible without authentication."
-    },
-    {
-        "Modified": "2022-11-23T00:15:00",
-        "Published": "2022-11-23T00:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-38724",
-        "impact": {},
-        "last-modified": "2022-11-23T00:15:00",
-        "references": [
-            "https://www.silverstripe.org/download/security-releases/",
-            "https://www.silverstripe.org/blog/tag/release",
-            "https://forum.silverstripe.org/c/releases",
-            "https://www.silverstripe.org/download/security-releases/CVE-2022-38724"
-        ],
-        "summary": "Silverstripe silverstripe/framework through 4.11.0, silverstripe/assets through 1.11.0, and silverstripe/asset-admin through 1.11.0 allow XSS."
-    },
-    {
-        "Modified": "2022-11-23T00:15:00",
-        "Published": "2022-11-23T00:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-40303",
-        "impact": {},
-        "last-modified": "2022-11-23T00:15:00",
-        "references": [
-            "https://gitlab.gnome.org/GNOME/libxml2/-/commit/c846986356fc149915a74972bf198abc266bc2c0",
-            "https://gitlab.gnome.org/GNOME/libxml2/-/tags/v2.10.3"
-        ],
-        "summary": "An issue was discovered in libxml2 before 2.10.3. When parsing a multi-gigabyte XML document with the XML_PARSE_HUGE parser option enabled, several integer counters can overflow. This results in an attempt to access an array at a negative 2GB offset, typically leading to a segmentation fault."
-    },
-    {
-        "Modified": "2022-11-23T00:15:00",
-        "Published": "2022-11-23T00:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-40870",
-        "impact": {},
-        "last-modified": "2022-11-23T00:15:00",
-        "references": [
-            "https://github.com/IthacaLabs/Parallels/tree/main/ParallelsRemoteApplicationServer",
-            "https://github.com/IthacaLabs/Parallels/blob/main/ParallelsRemoteApplicationServer/HHI_CVE-2022-40870.txt"
-        ],
-        "summary": "The Web Client of Parallels Remote Application Server v18.0 is vulnerable to Host Header Injection attacks. This vulnerability allows attackers to execute arbitrary commands via a crafted payload injected into the Host header."
-    },
-    {
-        "Modified": "2022-11-23T00:15:00",
-        "Published": "2022-11-23T00:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-43751",
-        "impact": {},
-        "last-modified": "2022-11-23T00:15:00",
-        "references": [
-            "https://mcafee.com",
-            "https://www.mcafee.com/support/?articleId=TS103348&page=shell&shell=article-view"
-        ],
-        "summary": "McAfee Total Protection prior to version 16.0.49 contains an uncontrolled search path element vulnerability due to the use of a variable pointing to a subdirectory that may be controllable by an unprivileged user. This may have allowed the unprivileged user to execute arbitrary code with system privileges."
     },
     {
         "Modified": "2022-11-22T23:15:00",
@@ -1379,387 +1746,5 @@
             "https://github.com/tensorflow/tensorflow/commit/af4a6a3c8b95022c351edae94560acc61253a1b8"
         ],
         "summary": "TensorFlow is an open source platform for machine learning. If `SparseFillEmptyRowsGrad` is given empty inputs, TensorFlow will crash. We have patched the issue in GitHub commit af4a6a3c8b95022c351edae94560acc61253a1b8. The fix will be included in TensorFlow 2.11. We will also cherrypick this commit on TensorFlow 2.10.1, 2.9.3, and TensorFlow 2.8.4, as these are also affected and still in supported range."
-    },
-    {
-        "Modified": "2022-11-22T21:07:00",
-        "Published": "2022-11-18T23:15:00",
-        "access": {},
-        "assigner": "audit@patchstack.com",
-        "cvss": null,
-        "cwe": "CWE-352",
-        "id": "CVE-2022-45073",
-        "impact": {},
-        "last-modified": "2022-11-22T21:07:00",
-        "references": [
-            "https://patchstack.com/database/vulnerability/wp-rest-api-authentication/wordpress-rest-api-authentication-plugin-2-4-0-cross-site-request-forgery-csrf-vulnerability?_s_id=cve"
-        ],
-        "summary": "Cross-Site Request Forgery (CSRF) vulnerability in REST API Authentication plugin <= 2.4.0 on WordPress."
-    },
-    {
-        "Modified": "2022-11-22T21:04:00",
-        "Published": "2022-11-18T23:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-436",
-        "id": "CVE-2021-33621",
-        "impact": {},
-        "last-modified": "2022-11-22T21:04:00",
-        "references": [
-            "https://www.ruby-lang.org/en/news/2022/11/22/http-response-splitting-in-cgi-cve-2021-33621/"
-        ],
-        "summary": "The cgi gem before 0.1.0.2, 0.2.x before 0.2.2, and 0.3.x before 0.3.5 for Ruby allows HTTP response splitting. This is relevant to applications that use untrusted user input either to generate an HTTP response or to create a CGI::Cookie object."
-    },
-    {
-        "Modified": "2022-11-22T21:02:00",
-        "Published": "2022-11-18T22:15:00",
-        "access": {},
-        "assigner": "security-advisories@github.com",
-        "cvss": null,
-        "cwe": "CWE-120",
-        "id": "CVE-2022-41894",
-        "impact": {},
-        "last-modified": "2022-11-22T21:02:00",
-        "references": [
-            "https://github.com/tensorflow/tensorflow/commit/72c0bdcb25305b0b36842d746cc61d72658d2941",
-            "https://github.com/tensorflow/tensorflow/blob/091e63f0ea33def7ecad661a5ac01dcafbafa90b/tensorflow/lite/kernels/internal/reference/conv3d_transpose.h#L121",
-            "https://github.com/tensorflow/tensorflow/security/advisories/GHSA-h6q3-vv32-2cq5"
-        ],
-        "summary": "TensorFlow is an open source platform for machine learning. The reference kernel of the `CONV_3D_TRANSPOSE` TensorFlow Lite operator wrongly increments the data_ptr when adding the bias to the result. Instead of `data_ptr += num_channels;` it should be `data_ptr += output_num_channels;` as if the number of input channels is different than the number of output channels, the wrong result will be returned and a buffer overflow will occur if num_channels > output_num_channels. An attacker can craft a model with a specific number of input channels. It is then possible to write specific values through the bias of the layer outside the bounds of the buffer. This attack only works if the reference kernel resolver is used in the interpreter. We have patched the issue in GitHub commit 72c0bdcb25305b0b36842d746cc61d72658d2941. The fix will be included in TensorFlow 2.11. We will also cherrypick this commit on TensorFlow 2.10.1, 2.9.3, and TensorFlow 2.8.4, as these are also affected and still in supported range."
-    },
-    {
-        "Modified": "2022-11-22T20:52:00",
-        "Published": "2022-11-18T23:15:00",
-        "access": {},
-        "assigner": "audit@patchstack.com",
-        "cvss": null,
-        "cwe": "NVD-CWE-Other",
-        "id": "CVE-2022-44634",
-        "impact": {},
-        "last-modified": "2022-11-22T20:52:00",
-        "references": [
-            "https://wordpress.org/plugins/import-shopify-to-woocommerce/#developers",
-            "https://patchstack.com/database/vulnerability/import-shopify-to-woocommerce/wordpress-s2w-import-shopify-to-woocommerce-plugin-1-1-12-auth-local-file-inclusion-lfi-vulnerability?_s_id=cve"
-        ],
-        "summary": "Auth. (admin+) Arbitrary File Read vulnerability in S2W \u2013 Import Shopify to WooCommerce plugin <= 1.1.12 on WordPress."
-    },
-    {
-        "Modified": "2022-11-22T20:50:00",
-        "Published": "2022-11-18T22:15:00",
-        "access": {},
-        "assigner": "security-advisories@github.com",
-        "cvss": null,
-        "cwe": "CWE-617",
-        "id": "CVE-2022-41893",
-        "impact": {},
-        "last-modified": "2022-11-22T20:50:00",
-        "references": [
-            "https://github.com/tensorflow/tensorflow/security/advisories/GHSA-67pf-62xr-q35m",
-            "https://github.com/tensorflow/tensorflow/blob/master/tensorflow/core/kernels/list_kernels.cc",
-            "https://github.com/tensorflow/tensorflow/commit/888e34b49009a4e734c27ab0c43b0b5102682c56"
-        ],
-        "summary": "TensorFlow is an open source platform for machine learning. If `tf.raw_ops.TensorListResize` is given a nonscalar value for input `size`, it results `CHECK` fail which can be used to trigger a denial of service attack. We have patched the issue in GitHub commit 888e34b49009a4e734c27ab0c43b0b5102682c56. The fix will be included in TensorFlow 2.11. We will also cherrypick this commit on TensorFlow 2.10.1, 2.9.3, and TensorFlow 2.8.4, as these are also affected and still in supported range."
-    },
-    {
-        "Modified": "2022-11-22T20:48:00",
-        "Published": "2022-11-18T23:15:00",
-        "access": {},
-        "assigner": "audit@patchstack.com",
-        "cvss": null,
-        "cwe": "CWE-639",
-        "id": "CVE-2022-43492",
-        "impact": {},
-        "last-modified": "2022-11-22T20:48:00",
-        "references": [
-            "https://wordpress.org/plugins/wpdiscuz/#developers",
-            "https://patchstack.com/database/vulnerability/wpdiscuz/wordpress-comments-wpdiscuz-plugin-7-4-2-insecure-direct-object-references-idor-vulnerability?_s_id=cve"
-        ],
-        "summary": "Auth. (subscriber+) Insecure Direct Object References (IDOR) vulnerability in Comments \u2013 wpDiscuz plugin 7.4.2 on WordPress."
-    },
-    {
-        "Modified": "2022-11-22T20:44:00",
-        "Published": "2022-11-18T23:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2021-31739",
-        "impact": {},
-        "last-modified": "2022-11-22T20:44:00",
-        "references": [
-            "https://www.pentagrid.ch/en/blog/multiple-vulnerabilities-in-seppmail/"
-        ],
-        "summary": "The SEPPmail solution is vulnerable to a Cross-Site Scripting vulnerability (XSS), because user input is not correctly encoded in HTML attributes when returned by the server.SEPPmail 11.1.10 allows XSS via a recipient address."
-    },
-    {
-        "Modified": "2022-11-22T20:39:00",
-        "Published": "2022-11-18T23:15:00",
-        "access": {},
-        "assigner": "audit@patchstack.com",
-        "cvss": null,
-        "cwe": "NVD-CWE-noinfo",
-        "id": "CVE-2022-42883",
-        "impact": {},
-        "last-modified": "2022-11-22T20:39:00",
-        "references": [
-            "https://patchstack.com/database/vulnerability/quiz-master-next/wordpress-quiz-and-survey-master-plugin-7-3-10-sensitive-information-disclosure-vulnerability?_s_id=cve"
-        ],
-        "summary": "Sensitive Information Disclosure vulnerability discovered by Quiz And Survey Master plugin <= 7.3.10 on WordPress."
-    },
-    {
-        "Modified": "2022-11-22T20:36:00",
-        "Published": "2022-11-18T23:15:00",
-        "access": {},
-        "assigner": "audit@patchstack.com",
-        "cvss": null,
-        "cwe": "CWE-269",
-        "id": "CVE-2022-42459",
-        "impact": {},
-        "last-modified": "2022-11-22T20:36:00",
-        "references": [
-            "https://patchstack.com/database/vulnerability/image-hover-effects-ultimate/wordpress-image-hover-effects-ultimate-plugin-9-7-1-auth-wordpress-options-change-vulnerability?_s_id=cve",
-            "https://wordpress.org/plugins/image-hover-effects-ultimate/"
-        ],
-        "summary": "Auth. WordPress Options Change vulnerability in Image Hover Effects Ultimate plugin <= 9.7.1 on WordPress."
-    },
-    {
-        "Modified": "2022-11-22T20:31:00",
-        "Published": "2022-11-18T23:15:00",
-        "access": {},
-        "assigner": "security@vmware.com",
-        "cvss": null,
-        "cwe": "CWE-427",
-        "id": "CVE-2022-31694",
-        "impact": {},
-        "last-modified": "2022-11-22T20:31:00",
-        "references": [
-            "https://blog.installbuilder.com/2022/11/installbuilder-22100-released.html"
-        ],
-        "summary": "InstallBuilder Qt installers built with versions previous to 22.10 try to load DLLs from the installer binary parent directory when displaying popups. This may allow an attacker to plant a malicious DLL in the installer parent directory to allow executing code with the privileges of the installer (when the popup triggers the loading of the library). Exploiting these type of vulnerabilities generally require that an attacker has access to a vulnerable machine to plant the malicious DLL."
-    },
-    {
-        "Modified": "2022-11-22T20:28:00",
-        "Published": "2022-11-18T23:15:00",
-        "access": {},
-        "assigner": "security@elastic.co",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2021-37936",
-        "impact": {},
-        "last-modified": "2022-11-22T20:28:00",
-        "references": [
-            "https://www.elastic.co/community/security/",
-            "https://discuss.elastic.co/t/elastic-stack-7-14-1-security-update/283077"
-        ],
-        "summary": "It was discovered that Kibana was not sanitizing document fields containing HTML snippets. Using this vulnerability, an attacker with the ability to write documents to an elasticsearch index could inject HTML. When the Discover app highlighted a search term containing the HTML, it would be rendered for the user."
-    },
-    {
-        "Modified": "2022-11-22T20:22:00",
-        "Published": "2022-11-18T23:15:00",
-        "access": {},
-        "assigner": "audit@patchstack.com",
-        "cvss": null,
-        "cwe": "NVD-CWE-Other",
-        "id": "CVE-2022-41839",
-        "impact": {},
-        "last-modified": "2022-11-22T20:22:00",
-        "references": [
-            "https://patchstack.com/database/vulnerability/loginpress/wordpress-loginpress-plugin-1-6-2-broken-access-control-vulnerability?_s_id=cve"
-        ],
-        "summary": "Broken Access Control vulnerability in WordPress LoginPress plugin <= 1.6.2 on WordPress leading to unauth. changing of Opt-In or Opt-Out tracking settings."
-    },
-    {
-        "Modified": "2022-11-22T20:15:00",
-        "Published": "2022-08-23T16:15:00",
-        "access": {},
-        "assigner": "secalert@redhat.com",
-        "cvss": null,
-        "cwe": "CWE-59",
-        "id": "CVE-2021-23177",
-        "impact": {},
-        "last-modified": "2022-11-22T20:15:00",
-        "references": [
-            "https://bugzilla.redhat.com/show_bug.cgi?id=2024245",
-            "https://github.com/libarchive/libarchive/issues/1565",
-            "https://access.redhat.com/security/cve/CVE-2021-23177",
-            "https://github.com/libarchive/libarchive/commit/fba4f123cc456d2b2538f811bb831483bf336bad",
-            "https://lists.debian.org/debian-lts-announce/2022/11/msg00030.html"
-        ],
-        "summary": "An improper link resolution flaw while extracting an archive can lead to changing the access control list (ACL) of the target of the link. An attacker may provide a malicious archive to a victim user, who would trigger this flaw when trying to extract the archive. A local attacker may use this flaw to change the ACL of a file on the system and gain more privileges."
-    },
-    {
-        "Modified": "2022-11-22T20:15:00",
-        "Published": "2022-08-23T16:15:00",
-        "access": {},
-        "assigner": "secalert@redhat.com",
-        "cvss": null,
-        "cwe": "CWE-59",
-        "id": "CVE-2021-31566",
-        "impact": {},
-        "last-modified": "2022-11-22T20:15:00",
-        "references": [
-            "https://github.com/libarchive/libarchive/commit/b41daecb5ccb4c8e3b2c53fd6147109fc12c3043",
-            "https://access.redhat.com/security/cve/CVE-2021-31566",
-            "https://bugzilla.redhat.com/show_bug.cgi?id=2024237",
-            "https://github.com/libarchive/libarchive/issues/1566",
-            "https://lists.debian.org/debian-lts-announce/2022/11/msg00030.html"
-        ],
-        "summary": "An improper link resolution flaw can occur while extracting an archive leading to changing modes, times, access control lists, and flags of a file outside of the archive. An attacker may provide a malicious archive to a victim user, who would trigger this flaw when trying to extract the archive. A local attacker may use this flaw to gain more privileges in a system."
-    },
-    {
-        "Modified": "2022-11-22T20:15:00",
-        "Published": "2019-11-21T23:15:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "LOW",
-            "vector": "LOCAL"
-        },
-        "assigner": "cve@mitre.org",
-        "cvss": 2.1,
-        "cvss-time": "2022-11-22T20:15:00",
-        "cvss-vector": "AV:L/AC:L/Au:N/C:N/I:N/A:P",
-        "cwe": "CWE-125",
-        "id": "CVE-2019-19221",
-        "impact": {
-            "availability": "PARTIAL",
-            "confidentiality": "NONE",
-            "integrity": "NONE"
-        },
-        "last-modified": "2022-11-22T20:15:00",
-        "references": [
-            "https://github.com/libarchive/libarchive/commit/22b1db9d46654afc6f0c28f90af8cdc84a199f41",
-            "https://github.com/libarchive/libarchive/issues/1276",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RHFV25AVTASTWZRF3KTSL357AQ6TYHM4/",
-            "https://usn.ubuntu.com/4293-1/",
-            "https://lists.debian.org/debian-lts-announce/2022/04/msg00020.html",
-            "https://lists.debian.org/debian-lts-announce/2022/11/msg00030.html"
-        ],
-        "summary": "In Libarchive 3.4.0, archive_wstring_append_from_mbs in archive_string.c has an out-of-bounds read because of an incorrect mbrtowc or mbtowc call. For example, bsdtar crashes via a crafted archive."
-    },
-    {
-        "Modified": "2022-11-22T20:07:00",
-        "Published": "2022-11-18T21:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-776",
-        "id": "CVE-2022-44641",
-        "impact": {},
-        "last-modified": "2022-11-22T20:07:00",
-        "references": [
-            "https://lists.lavasoftware.org/archives/list/lava-announce@lists.lavasoftware.org/thread/WHXGQMIZAPW3GCQEXYHC32N2ZAAAIYCY/"
-        ],
-        "summary": "In Linaro Automated Validation Architecture (LAVA) before 2022.11, users with valid credentials can submit crafted XMLRPC requests that cause a recursive XML entity expansion, leading to excessive use of memory on the server and a Denial of Service."
-    },
-    {
-        "Modified": "2022-11-22T20:01:00",
-        "Published": "2022-11-18T09:15:00",
-        "access": {},
-        "assigner": "cve@usom.gov.tr",
-        "cvss": null,
-        "cwe": "NVD-CWE-Other",
-        "id": "CVE-2022-24038",
-        "impact": {},
-        "last-modified": "2022-11-22T20:01:00",
-        "references": [
-            "https://www.usom.gov.tr/bildirim/tr-22-0691"
-        ],
-        "summary": "Karmasis informatics solutions Infraskope Security Event Manager product has an unauthenticated access which could allow an unauthenticated attacker to damage the page where the agents are listed."
-    },
-    {
-        "Modified": "2022-11-22T19:59:00",
-        "Published": "2022-11-18T08:15:00",
-        "access": {},
-        "assigner": "cve@usom.gov.tr",
-        "cvss": null,
-        "cwe": "NVD-CWE-Other",
-        "id": "CVE-2022-24037",
-        "impact": {},
-        "last-modified": "2022-11-22T19:59:00",
-        "references": [
-            "https://www.usom.gov.tr/bildirim/tr-22-0691"
-        ],
-        "summary": "Karmasis informatics solutions Infraskope Security Event Manager product has an unauthenticated access which could allow an unauthenticated attacker to obtain critical information."
-    },
-    {
-        "Modified": "2022-11-22T19:54:00",
-        "Published": "2022-11-17T22:15:00",
-        "access": {},
-        "assigner": "ics-cert@hq.dhs.gov",
-        "cvss": null,
-        "cwe": "CWE-22",
-        "id": "CVE-2022-3090",
-        "impact": {},
-        "last-modified": "2022-11-22T19:54:00",
-        "references": [
-            "https://www.cisa.gov/uscert/ics/advisories/icsa-22-321-01"
-        ],
-        "summary": "Red Lion Controls Crimson 3.0 versions 707.000 and prior, Crimson 3.1 versions 3126.001 and prior, and Crimson 3.2 versions 3.2.0044.0 and prior are vulnerable to path traversal. When attempting to open a file using a specific path, the user's password hash is sent to an arbitrary host. This could allow an attacker to obtain user credential hashes."
-    },
-    {
-        "Modified": "2022-11-22T19:45:00",
-        "Published": "2022-11-15T22:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-787",
-        "id": "CVE-2022-29277",
-        "impact": {},
-        "last-modified": "2022-11-22T19:45:00",
-        "references": [
-            "https://www.insyde.com/security-pledge",
-            "https://www.insyde.com/security-pledge/SA-2022060"
-        ],
-        "summary": "Incorrect pointer checks within the the FwBlockServiceSmm driver can allow arbitrary RAM modifications During review of the FwBlockServiceSmm driver, certain instances of SpiAccessLib could be tricked into writing 0xff to arbitrary system and SMRAM addresses. Fixed in: INTEL Purley-R: 05.21.51.0048 Whitley: 05.42.23.0066 Cedar Island: 05.42.11.0021 Eagle Stream: 05.44.25.0052 Greenlow/Greenlow-R(skylake/kabylake): Trunk Mehlow/Mehlow-R (CoffeeLake-S): Trunk Tatlow (RKL-S): Trunk Denverton: 05.10.12.0042 Snow Ridge: Trunk Graneville DE: 05.05.15.0038 Grangeville DE NS: 05.27.26.0023 Bakerville: 05.21.51.0026 Idaville: 05.44.27.0030 Whiskey Lake: Trunk Comet Lake-S: Trunk Tiger Lake H/UP3: 05.43.12.0052 Alder Lake: 05.44.23.0047 Gemini Lake: Not Affected Apollo Lake: Not Affected Elkhart Lake: 05.44.30.0018 AMD ROME: trunk MILAN: 05.36.10.0017 GENOA: 05.52.25.0006 Snowy Owl: Trunk R1000: 05.32.50.0018 R2000: 05.44.30.0005 V2000: Trunk V3000: 05.44.30.0007 Ryzen 5000: 05.44.30.0004 Embedded ROME: Trunk Embedded MILAN: Trunk Hygon Hygon #1/#2: 05.36.26.0016 Hygon #3: 05.44.26.0007 https://www.insyde.com/security-pledge/SA-2022060"
-    },
-    {
-        "Modified": "2022-11-22T19:34:00",
-        "Published": "2022-11-18T22:15:00",
-        "access": {},
-        "assigner": "security-advisories@github.com",
-        "cvss": null,
-        "cwe": "CWE-125",
-        "id": "CVE-2022-41897",
-        "impact": {},
-        "last-modified": "2022-11-22T19:34:00",
-        "references": [
-            "https://github.com/tensorflow/tensorflow/commit/d71090c3e5ca325bdf4b02eb236cfb3ee823e927",
-            "https://github.com/tensorflow/tensorflow/security/advisories/GHSA-f2w8-jw48-fr7j",
-            "https://github.com/tensorflow/tensorflow/blob/master/tensorflow/core/kernels/fractional_max_pool_op.cc"
-        ],
-        "summary": "TensorFlow is an open source platform for machine learning. If `FractionMaxPoolGrad` is given outsize inputs `row_pooling_sequence` and `col_pooling_sequence`, TensorFlow will crash. We have patched the issue in GitHub commit d71090c3e5ca325bdf4b02eb236cfb3ee823e927. The fix will be included in TensorFlow 2.11. We will also cherrypick this commit on TensorFlow 2.10.1, 2.9.3, and TensorFlow 2.8.4, as these are also affected and still in supported range."
-    },
-    {
-        "Modified": "2022-11-22T19:33:00",
-        "Published": "2022-11-18T22:15:00",
-        "access": {},
-        "assigner": "security-advisories@github.com",
-        "cvss": null,
-        "cwe": "CWE-20",
-        "id": "CVE-2022-41896",
-        "impact": {},
-        "last-modified": "2022-11-22T19:33:00",
-        "references": [
-            "https://github.com/tensorflow/tensorflow/commit/39ec7eaf1428e90c37787e5b3fbd68ebd3c48860",
-            "https://github.com/tensorflow/tensorflow/blob/master/tensorflow/core/kernels/image/mirror_pad_op.cc",
-            "https://github.com/tensorflow/tensorflow/security/advisories/GHSA-rmg2-f698-wq35"
-        ],
-        "summary": "TensorFlow is an open source platform for machine learning. If `ThreadUnsafeUnigramCandidateSampler` is given input `filterbank_channel_count` greater than the allowed max size, TensorFlow will crash. We have patched the issue in GitHub commit 39ec7eaf1428e90c37787e5b3fbd68ebd3c48860. The fix will be included in TensorFlow 2.11. We will also cherrypick this commit on TensorFlow 2.10.1, 2.9.3, and TensorFlow 2.8.4, as these are also affected and still in supported range."
-    },
-    {
-        "Modified": "2022-11-22T19:17:00",
-        "Published": "2022-11-22T19:15:00",
-        "access": {},
-        "assigner": "secalert@redhat.com",
-        "cvss": null,
-        "cwe": "CWE-248",
-        "id": "CVE-2022-3500",
-        "impact": {},
-        "last-modified": "2022-11-22T19:17:00",
-        "references": [
-            "https://github.com/keylime/keylime/pull/1128",
-            "https://access.redhat.com/security/cve/CVE-2022-3500"
-        ],
-        "summary": "A vulnerability was found in keylime. This security issue happens in some circumstances, due to some improperly handled exceptions, there exists the possibility that a rogue agent could create errors on the verifier that stopped attestation attempts for that host leaving it in an attested state but not verifying that anymore."
     }
 ]
