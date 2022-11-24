@@ -1,5 +1,576 @@
 [
     {
+        "Modified": "2022-11-24T16:15:00",
+        "Published": "2022-11-24T16:15:00",
+        "access": {},
+        "assigner": "security@apache.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-26885",
+        "impact": {},
+        "last-modified": "2022-11-24T16:15:00",
+        "references": [
+            "https://lists.apache.org/thread/z7084r9cs2r26cszkkgjqpb5bhnxqssp"
+        ],
+        "summary": "When using tasks to read config files, there is a risk of database password disclosure. We recommend you upgrade to version 2.0.6 or higher."
+    },
+    {
+        "Modified": "2022-11-24T16:15:00",
+        "Published": "2022-11-23T21:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-44789",
+        "impact": {},
+        "last-modified": "2022-11-24T16:15:00",
+        "references": [
+            "https://github.com/alalng/CVE-2022-44789/blob/main/PublicReferenceURL.txt",
+            "https://github.com/ccxvii/mujs/commit/edb50ad66f7601ca9a3544a0e9045e8a8c60561f",
+            "https://github.com/ccxvii/mujs/releases/tag/1.3.2"
+        ],
+        "summary": "A logical issue in O_getOwnPropertyDescriptor() in Artifex MuJS 1.0.0 through 1.3.x before 1.3.2 allows an attacker to achieve Remote Code Execution through memory corruption, via the loading of a crafted JavaScript file."
+    },
+    {
+        "Modified": "2022-11-24T16:15:00",
+        "Published": "2022-11-22T02:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-36227",
+        "impact": {},
+        "last-modified": "2022-11-24T16:15:00",
+        "references": [
+            "https://github.com/libarchive/libarchive/issues/1754",
+            "https://bugs.gentoo.org/882521"
+        ],
+        "summary": "In libarchive 3.6.1, the software does not check for an error after calling calloc function that can return with a NULL pointer if the function fails, which leads to a resultant NULL pointer dereference. NOTE: the discoverer cites this CWE-476 remark but third parties dispute the code-execution impact: \"In rare circumstances, when NULL is equivalent to the 0x0 memory address and privileged code can access it, then writing or reading memory is possible, which may lead to code execution.\""
+    },
+    {
+        "Modified": "2022-11-24T16:15:00",
+        "Published": "2022-10-16T06:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "NVD-CWE-Other",
+        "id": "CVE-2022-41323",
+        "impact": {},
+        "last-modified": "2022-11-24T16:15:00",
+        "references": [
+            "https://docs.djangoproject.com/en/4.0/releases/security/",
+            "https://github.com/django/django/commit/5b6b257fa7ec37ff27965358800c67e2dd11c924",
+            "https://www.djangoproject.com/weblog/2022/oct/04/security-releases/",
+            "https://groups.google.com/forum/#!forum/django-announce",
+            "https://security.netapp.com/advisory/ntap-20221124-0001/"
+        ],
+        "summary": "In Django 3.2 before 3.2.16, 4.0 before 4.0.8, and 4.1 before 4.1.2, internationalized URLs were subject to a potential denial of service attack via the locale parameter, which is treated as a regular expression."
+    },
+    {
+        "Modified": "2022-11-24T16:15:00",
+        "Published": "2022-10-02T05:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-502",
+        "id": "CVE-2022-42003",
+        "impact": {},
+        "last-modified": "2022-11-24T16:15:00",
+        "references": [
+            "https://github.com/FasterXML/jackson-databind/commit/d78d00ee7b5245b93103fef3187f70543d67ca33",
+            "https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=51020",
+            "https://github.com/FasterXML/jackson-databind/issues/3590",
+            "https://security.gentoo.org/glsa/202210-21",
+            "https://www.debian.org/security/2022/dsa-5283",
+            "https://security.netapp.com/advisory/ntap-20221124-0004/"
+        ],
+        "summary": "In FasterXML jackson-databind before 2.14.0-rc1, resource exhaustion can occur because of a lack of a check in primitive value deserializers to avoid deep wrapper array nesting, when the UNWRAP_SINGLE_VALUE_ARRAYS feature is enabled. Additional fix version in 2.13.4.1 and 2.12.17.1"
+    },
+    {
+        "Modified": "2022-11-24T16:15:00",
+        "Published": "2022-10-13T22:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-347",
+        "id": "CVE-2022-31123",
+        "impact": {},
+        "last-modified": "2022-11-24T16:15:00",
+        "references": [
+            "https://github.com/grafana/grafana/security/advisories/GHSA-rhxj-gh46-jvw8",
+            "https://github.com/grafana/grafana/releases/tag/v9.1.8",
+            "https://security.netapp.com/advisory/ntap-20221124-0002/"
+        ],
+        "summary": "Grafana is an open source observability and data visualization platform. Versions prior to 9.1.8 and 8.5.14 are vulnerable to a bypass in the plugin signature verification. An attacker can convince a server admin to download and successfully run a malicious plugin even though unsigned plugins are not allowed. Versions 9.1.8 and 8.5.14 contain a patch for this issue. As a workaround, do not install plugins downloaded from untrusted sources."
+    },
+    {
+        "Modified": "2022-11-24T16:15:00",
+        "Published": "2022-09-29T12:15:00",
+        "access": {},
+        "assigner": "security@huntr.dev",
+        "cvss": null,
+        "cwe": "CWE-416",
+        "id": "CVE-2022-3352",
+        "impact": {},
+        "last-modified": "2022-11-24T16:15:00",
+        "references": [
+            "https://huntr.dev/bounties/d058f182-a49b-40c7-9234-43d4c5a29f60",
+            "https://github.com/vim/vim/commit/ef976323e770315b5fca544efb6b2faa25674d15",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/LSSEWQLK55MCNT4Z2IIJEJYEI5HLCODI/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/4QI7AETXBHPC7SGA77Q7O5IEGULWYET7/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/GTBVD4J2SKVSWK4VBN5JP5OEVK6GDS3N/",
+            "https://lists.debian.org/debian-lts-announce/2022/11/msg00032.html"
+        ],
+        "summary": "Use After Free in GitHub repository vim/vim prior to 9.0.0614."
+    },
+    {
+        "Modified": "2022-11-24T16:15:00",
+        "Published": "2022-09-22T13:15:00",
+        "access": {},
+        "assigner": "security@huntr.dev",
+        "cvss": null,
+        "cwe": "CWE-416",
+        "id": "CVE-2022-3256",
+        "impact": {},
+        "last-modified": "2022-11-24T16:15:00",
+        "references": [
+            "https://github.com/vim/vim/commit/8ecfa2c56b4992c7f067b92488aa9acea5a454ad",
+            "https://huntr.dev/bounties/8336a3df-212a-4f8d-ae34-76ef1f936bb3",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/LSSEWQLK55MCNT4Z2IIJEJYEI5HLCODI/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/4QI7AETXBHPC7SGA77Q7O5IEGULWYET7/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/GTBVD4J2SKVSWK4VBN5JP5OEVK6GDS3N/",
+            "https://lists.debian.org/debian-lts-announce/2022/11/msg00032.html"
+        ],
+        "summary": "Use After Free in GitHub repository vim/vim prior to 9.0.0530."
+    },
+    {
+        "Modified": "2022-11-24T16:15:00",
+        "Published": "2022-09-18T20:15:00",
+        "access": {},
+        "assigner": "security@huntr.dev",
+        "cvss": null,
+        "cwe": "CWE-416",
+        "id": "CVE-2022-3235",
+        "impact": {},
+        "last-modified": "2022-11-24T16:15:00",
+        "references": [
+            "https://huntr.dev/bounties/96d5f7a0-a834-4571-b73b-0fe523b941af",
+            "https://github.com/vim/vim/commit/1c3dd8ddcba63c1af5112e567215b3cec2de11d0",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/LSSEWQLK55MCNT4Z2IIJEJYEI5HLCODI/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/4QI7AETXBHPC7SGA77Q7O5IEGULWYET7/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/GTBVD4J2SKVSWK4VBN5JP5OEVK6GDS3N/",
+            "https://lists.debian.org/debian-lts-announce/2022/11/msg00032.html"
+        ],
+        "summary": "Use After Free in GitHub repository vim/vim prior to 9.0.0490."
+    },
+    {
+        "Modified": "2022-11-24T16:15:00",
+        "Published": "2022-06-19T19:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "MEDIUM",
+            "vector": "NETWORK"
+        },
+        "assigner": "security@huntr.dev",
+        "cvss": 6.8,
+        "cvss-time": "2022-11-24T16:15:00",
+        "cvss-vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
+        "cwe": "CWE-787",
+        "id": "CVE-2022-2129",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "PARTIAL",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-11-24T16:15:00",
+        "references": [
+            "https://huntr.dev/bounties/3aaf06e7-9ae1-454d-b8ca-8709c98e5352",
+            "https://github.com/vim/vim/commit/d6211a52ab9f53b82f884561ed43d2fe4d24ff7d",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/GFD2A4YLBR7OIRHTL7CK6YNMEIQ264CN/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/U743FMJGFQ35GBPCQ6OWMVZEJPDFVEWM/",
+            "https://security.gentoo.org/glsa/202208-32",
+            "https://lists.debian.org/debian-lts-announce/2022/11/msg00032.html"
+        ],
+        "summary": "Out-of-bounds Write in GitHub repository vim/vim prior to 8.2."
+    },
+    {
+        "Modified": "2022-11-24T16:15:00",
+        "Published": "2022-06-09T16:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "MEDIUM",
+            "vector": "NETWORK"
+        },
+        "assigner": "security@huntr.dev",
+        "cvss": 6.8,
+        "cvss-time": "2022-11-24T16:15:00",
+        "cvss-vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
+        "cwe": "CWE-787",
+        "id": "CVE-2022-2000",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "PARTIAL",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-11-24T16:15:00",
+        "references": [
+            "https://huntr.dev/bounties/f61a64e2-d163-461b-a77e-46ab38e021f0",
+            "https://github.com/vim/vim/commit/44a3f3353e0407e9fffee138125a6927d1c9e7e5",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/4JJNUS4AEVYSEJMCK6JZB57QHD5V2G4O/",
+            "https://security.gentoo.org/glsa/202208-32",
+            "https://support.apple.com/kb/HT213488",
+            "https://support.apple.com/kb/HT213443",
+            "https://support.apple.com/kb/HT213444",
+            "http://seclists.org/fulldisclosure/2022/Oct/41",
+            "http://seclists.org/fulldisclosure/2022/Oct/28",
+            "http://seclists.org/fulldisclosure/2022/Oct/43",
+            "http://seclists.org/fulldisclosure/2022/Oct/45",
+            "https://lists.debian.org/debian-lts-announce/2022/11/msg00032.html"
+        ],
+        "summary": "Out-of-bounds Write in GitHub repository vim/vim prior to 8.2."
+    },
+    {
+        "Modified": "2022-11-24T16:15:00",
+        "Published": "2022-05-31T14:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "MEDIUM",
+            "vector": "NETWORK"
+        },
+        "assigner": "security@huntr.dev",
+        "cvss": 6.8,
+        "cvss-time": "2022-11-24T16:15:00",
+        "cvss-vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
+        "cwe": "CWE-122",
+        "id": "CVE-2022-1942",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "PARTIAL",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-11-24T16:15:00",
+        "references": [
+            "https://huntr.dev/bounties/67ca4d3b-9175-43c1-925c-72a7091bc071",
+            "https://github.com/vim/vim/commit/71223e2db87c2bf3b09aecb46266b56cda26191d",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/TYNK6SDCMOLQJOI3B4AOE66P2G2IH4ZM/",
+            "https://security.gentoo.org/glsa/202208-32",
+            "https://support.apple.com/kb/HT213488",
+            "http://seclists.org/fulldisclosure/2022/Oct/41",
+            "http://seclists.org/fulldisclosure/2022/Oct/28",
+            "https://lists.debian.org/debian-lts-announce/2022/11/msg00032.html"
+        ],
+        "summary": "Heap-based Buffer Overflow in GitHub repository vim/vim prior to 8.2."
+    },
+    {
+        "Modified": "2022-11-24T16:15:00",
+        "Published": "2022-05-27T15:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "MEDIUM",
+            "vector": "NETWORK"
+        },
+        "assigner": "security@huntr.dev",
+        "cvss": 6.8,
+        "cvss-time": "2022-11-24T16:15:00",
+        "cvss-vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
+        "cwe": "CWE-787",
+        "id": "CVE-2022-1897",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "PARTIAL",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-11-24T16:15:00",
+        "references": [
+            "https://huntr.dev/bounties/82c12151-c283-40cf-aa05-2e39efa89118",
+            "https://github.com/vim/vim/commit/338f1fc0ee3ca929387448fe464579d6113fa76a",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/QMFHBC5OQXDPV2SDYA2JUQGVCPYASTJB/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/OZSLFIKFYU5Y2KM5EJKQNYHWRUBDQ4GJ/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/TYNK6SDCMOLQJOI3B4AOE66P2G2IH4ZM/",
+            "https://security.gentoo.org/glsa/202208-32",
+            "https://support.apple.com/kb/HT213488",
+            "http://seclists.org/fulldisclosure/2022/Oct/41",
+            "http://seclists.org/fulldisclosure/2022/Oct/28",
+            "https://lists.debian.org/debian-lts-announce/2022/11/msg00032.html"
+        ],
+        "summary": "Out-of-bounds Write in GitHub repository vim/vim prior to 8.2."
+    },
+    {
+        "Modified": "2022-11-24T16:15:00",
+        "Published": "2022-05-19T13:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "LOCAL"
+        },
+        "assigner": "security@huntr.dev",
+        "cvss": 4.6,
+        "cvss-time": "2022-11-24T16:15:00",
+        "cvss-vector": "AV:L/AC:L/Au:N/C:P/I:P/A:P",
+        "cwe": "CWE-787",
+        "id": "CVE-2022-1785",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "PARTIAL",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-11-24T16:15:00",
+        "references": [
+            "https://huntr.dev/bounties/8c969cba-eef2-4943-b44a-4e3089599109",
+            "https://github.com/vim/vim/commit/e2bd8600b873d2cd1f9d667c28cba8b1dba18839",
+            "https://security.gentoo.org/glsa/202208-32",
+            "https://lists.debian.org/debian-lts-announce/2022/11/msg00032.html"
+        ],
+        "summary": "Out-of-bounds Write in GitHub repository vim/vim prior to 8.2.4977."
+    },
+    {
+        "Modified": "2022-11-24T16:15:00",
+        "Published": "2022-05-10T14:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "MEDIUM",
+            "vector": "NETWORK"
+        },
+        "assigner": "security@huntr.dev",
+        "cvss": 6.8,
+        "cvss-time": "2022-11-24T16:15:00",
+        "cvss-vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
+        "cwe": "CWE-787",
+        "id": "CVE-2022-1621",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "PARTIAL",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-11-24T16:15:00",
+        "references": [
+            "https://huntr.dev/bounties/520ce714-bfd2-4646-9458-f52cd22bb2fb",
+            "https://github.com/vim/vim/commit/7c824682d2028432ee082703ef0ab399867a089b",
+            "https://lists.debian.org/debian-lts-announce/2022/05/msg00022.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/HIP7KG7TVS5YF3QREAY2GOGUT3YUBZAI/",
+            "https://security.gentoo.org/glsa/202208-32",
+            "https://support.apple.com/kb/HT213488",
+            "http://seclists.org/fulldisclosure/2022/Oct/41",
+            "http://seclists.org/fulldisclosure/2022/Oct/28",
+            "https://lists.debian.org/debian-lts-announce/2022/11/msg00032.html"
+        ],
+        "summary": "Heap buffer overflow in vim_strncpy find_word in GitHub repository vim/vim prior to 8.2.4919. This vulnerability is capable of crashing software, Bypass Protection Mechanism, Modify Memory, and possible remote execution"
+    },
+    {
+        "Modified": "2022-11-24T16:15:00",
+        "Published": "2022-05-08T10:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "MEDIUM",
+            "vector": "NETWORK"
+        },
+        "assigner": "security@huntr.dev",
+        "cvss": 6.8,
+        "cvss-time": "2022-11-24T16:15:00",
+        "cvss-vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
+        "cwe": "CWE-122",
+        "id": "CVE-2022-1619",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "PARTIAL",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-11-24T16:15:00",
+        "references": [
+            "https://huntr.dev/bounties/b3200483-624e-4c76-a070-e246f62a7450",
+            "https://github.com/vim/vim/commit/ef02f16609ff0a26ffc6e20263523424980898fe",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/A6BY5P7ERZS7KXSBCGFCOXLMLGWUUJIH/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/JUN33257RUM4RS2I4GZETKFSAXPETATG/",
+            "https://lists.debian.org/debian-lts-announce/2022/05/msg00022.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/HIP7KG7TVS5YF3QREAY2GOGUT3YUBZAI/",
+            "https://security.gentoo.org/glsa/202208-32",
+            "https://security.netapp.com/advisory/ntap-20220930-0007/",
+            "https://support.apple.com/kb/HT213488",
+            "http://seclists.org/fulldisclosure/2022/Oct/41",
+            "http://seclists.org/fulldisclosure/2022/Oct/28",
+            "https://lists.debian.org/debian-lts-announce/2022/11/msg00032.html"
+        ],
+        "summary": "Heap-based Buffer Overflow in function cmdline_erase_chars in GitHub repository vim/vim prior to 8.2.4899. This vulnerabilities are capable of crashing software, modify memory, and possible remote execution"
+    },
+    {
+        "Modified": "2022-11-24T16:15:00",
+        "Published": "2022-02-21T20:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "MEDIUM",
+            "vector": "NETWORK"
+        },
+        "assigner": "security@huntr.dev",
+        "cvss": 4.3,
+        "cvss-time": "2022-11-24T16:15:00",
+        "cvss-vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P",
+        "cwe": "CWE-476",
+        "id": "CVE-2022-0696",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "NONE",
+            "integrity": "NONE"
+        },
+        "last-modified": "2022-11-24T16:15:00",
+        "references": [
+            "https://github.com/vim/vim/commit/0f6e28f686dbb59ab3b562408ab9b2234797b9b1",
+            "https://huntr.dev/bounties/7416c2cb-1809-4834-8989-e84ff033f15f",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/7ZLEHVP4LNAGER4ZDGUDS5V5YVQD6INF/",
+            "https://support.apple.com/kb/HT213488",
+            "http://seclists.org/fulldisclosure/2022/Oct/41",
+            "http://seclists.org/fulldisclosure/2022/Oct/28",
+            "https://lists.debian.org/debian-lts-announce/2022/11/msg00032.html"
+        ],
+        "summary": "NULL Pointer Dereference in GitHub repository vim/vim prior to 8.2.4428."
+    },
+    {
+        "Modified": "2022-11-24T16:15:00",
+        "Published": "2022-02-17T12:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "MEDIUM",
+            "vector": "NETWORK"
+        },
+        "assigner": "security@huntr.dev",
+        "cvss": 6.8,
+        "cvss-time": "2022-11-24T16:15:00",
+        "cvss-vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
+        "cwe": "CWE-121",
+        "id": "CVE-2022-0629",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "PARTIAL",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-11-24T16:15:00",
+        "references": [
+            "https://github.com/vim/vim/commit/34f8117dec685ace52cd9e578e2729db278163fc",
+            "https://huntr.dev/bounties/95e2b0da-e480-4ee8-9324-a93a2ab0a877",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UURGABNDL77YR5FRQKTFBYNBDQX2KO7Q/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/7ZLEHVP4LNAGER4ZDGUDS5V5YVQD6INF/",
+            "https://security.gentoo.org/glsa/202208-32",
+            "https://support.apple.com/kb/HT213488",
+            "http://seclists.org/fulldisclosure/2022/Oct/41",
+            "http://seclists.org/fulldisclosure/2022/Oct/28",
+            "https://lists.debian.org/debian-lts-announce/2022/11/msg00032.html"
+        ],
+        "summary": "Stack-based Buffer Overflow in GitHub repository vim/vim prior to 8.2."
+    },
+    {
+        "Modified": "2022-11-24T16:15:00",
+        "Published": "2022-01-28T22:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "MEDIUM",
+            "vector": "NETWORK"
+        },
+        "assigner": "security@huntr.dev",
+        "cvss": 6.8,
+        "cvss-time": "2022-11-24T16:15:00",
+        "cvss-vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
+        "cwe": "CWE-122",
+        "id": "CVE-2022-0392",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "PARTIAL",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-11-24T16:15:00",
+        "references": [
+            "https://github.com/vim/vim/commit/806d037671e133bd28a7864248763f643967973a",
+            "https://huntr.dev/bounties/d00a2acd-1935-4195-9d5b-4115ef6b3126",
+            "https://security.gentoo.org/glsa/202208-32",
+            "https://support.apple.com/kb/HT213488",
+            "https://support.apple.com/kb/HT213444",
+            "http://seclists.org/fulldisclosure/2022/Oct/28",
+            "http://seclists.org/fulldisclosure/2022/Oct/41",
+            "http://seclists.org/fulldisclosure/2022/Oct/43",
+            "https://lists.debian.org/debian-lts-announce/2022/11/msg00032.html"
+        ],
+        "summary": "Heap-based Buffer Overflow in GitHub repository vim prior to 8.2."
+    },
+    {
+        "Modified": "2022-11-24T16:15:00",
+        "Published": "2022-01-21T12:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "security@huntr.dev",
+        "cvss": 7.5,
+        "cvss-time": "2022-11-24T16:15:00",
+        "cvss-vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+        "cwe": "CWE-787",
+        "id": "CVE-2022-0318",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "PARTIAL",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-11-24T16:15:00",
+        "references": [
+            "https://github.com/vim/vim/commit/57df9e8a9f9ae1aafdde9b86b10ad907627a87dc",
+            "https://huntr.dev/bounties/0d10ba02-b138-4e68-a284-67f781a62d08",
+            "https://security.gentoo.org/glsa/202208-32",
+            "https://support.apple.com/kb/HT213488",
+            "https://support.apple.com/kb/HT213444",
+            "http://seclists.org/fulldisclosure/2022/Oct/28",
+            "http://seclists.org/fulldisclosure/2022/Oct/41",
+            "http://seclists.org/fulldisclosure/2022/Oct/43",
+            "https://lists.debian.org/debian-lts-announce/2022/11/msg00032.html"
+        ],
+        "summary": "Heap-based Buffer Overflow in vim/vim prior to 8.2."
+    },
+    {
+        "Modified": "2022-11-24T16:15:00",
+        "Published": "2021-09-06T12:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "LOCAL"
+        },
+        "assigner": "security@huntr.dev",
+        "cvss": 4.6,
+        "cvss-time": "2022-11-24T16:15:00",
+        "cvss-vector": "AV:L/AC:L/Au:N/C:P/I:P/A:P",
+        "cwe": "CWE-122",
+        "id": "CVE-2021-3770",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "PARTIAL",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-11-24T16:15:00",
+        "references": [
+            "https://github.com/vim/vim/commit/b7081e135a16091c93f6f5f7525a5c58fb7ca9f9",
+            "https://huntr.dev/bounties/016ad2f2-07c1-4d14-a8ce-6eed10729365",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/J2CJLY3CF55I2ULG2X4ENXLSXAXYW5J4/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/X4FFQARG3LGREPDZRI4C7ERQL3RJKEWQ/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/ZFNTMVZCN4TRTTCAXRLVQ7H2P7FYAIZQ/",
+            "http://www.openwall.com/lists/oss-security/2021/10/01/1",
+            "https://security.gentoo.org/glsa/202208-32",
+            "https://security.netapp.com/advisory/ntap-20221124-0003/"
+        ],
+        "summary": "vim is vulnerable to Heap-based Buffer Overflow"
+    },
+    {
+        "Modified": "2022-11-24T15:15:00",
+        "Published": "2022-11-24T08:15:00",
+        "access": {},
+        "assigner": "security@huntr.dev",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-4136",
+        "impact": {},
+        "last-modified": "2022-11-24T15:15:00",
+        "references": [
+            "https://huntr.dev/bounties/fe418ae1-7c80-4d91-8a5a-923d60ba78c3",
+            "https://github.com/qmpaas/leadshop/commit/f27e9ca5c93eaadda1097396b65c234b16186d67"
+        ],
+        "summary": "Dangerous method exposed which can lead to RCE in qmpass/leadshop v1.4.15 allows an attacker to control the target host by calling any function in leadshop.php via the GET method."
+    },
+    {
         "Modified": "2022-11-24T13:15:00",
         "Published": "2022-11-24T13:15:00",
         "access": {},
@@ -93,22 +664,6 @@
             "https://www.mitsubishielectric.com/en/psirt/vulnerability/pdf/2022-016_en.pdf"
         ],
         "summary": "Improper Input Validation vulnerability in Mitsubishi Electric GOT2000 Series GT27 model FTP server versions 01.39.000 and prior, Mitsubishi Electric GOT2000 Series GT25 model FTP server versions 01.39.000 and prior and Mitsubishi Electric GOT2000 Series GT23 model FTP server versions 01.39.000 and prior allows a remote authenticated attacker to cause a Denial of Service condition by sending specially crafted command."
-    },
-    {
-        "Modified": "2022-11-24T08:15:00",
-        "Published": "2022-11-24T08:15:00",
-        "access": {},
-        "assigner": "security@huntr.dev",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-4136",
-        "impact": {},
-        "last-modified": "2022-11-24T08:15:00",
-        "references": [
-            "https://huntr.dev/bounties/fe418ae1-7c80-4d91-8a5a-923d60ba78c3",
-            "https://github.com/qmpaas/leadshop/commit/f27e9ca5c93eaadda1097396b65c234b16186d67"
-        ],
-        "summary": "Attackers can call any existing functions at will, control the target server to access, download, create files, delete files, etc. Access may make the server a dos server. Download, so that an attacker can download the PHP Trojan to the server. Creating and deleting will destroy normal services. More than ten IPs are using this service."
     },
     {
         "Modified": "2022-11-24T07:15:00",
@@ -766,21 +1321,6 @@
         "assigner": "cve@mitre.org",
         "cvss": null,
         "cwe": "Unknown",
-        "id": "CVE-2022-44789",
-        "impact": {},
-        "last-modified": "2022-11-24T01:59:00",
-        "references": [
-            "https://github.com/alalng/CVE-2022-44789/blob/main/PublicReferenceURL.txt"
-        ],
-        "summary": "A logical issue in O_getOwnPropertyDescriptor() in Artifex MuJS 1.0.0 through 1.3.1 allows an attacker to achieve Remote Code Execution through memory corruption, via the loading of a crafted JavaScript file."
-    },
-    {
-        "Modified": "2022-11-24T01:59:00",
-        "Published": "2022-11-23T21:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
         "id": "CVE-2022-45276",
         "impact": {},
         "last-modified": "2022-11-24T01:59:00",
@@ -1402,357 +1942,5 @@
             "https://www.netgear.com/about/security/"
         ],
         "summary": "Netgear R7000P V1.3.1.64 is vulnerable to Buffer Overflow via parameters KEY1 and KEY2."
-    },
-    {
-        "Modified": "2022-11-23T19:37:00",
-        "Published": "2022-11-18T23:15:00",
-        "access": {},
-        "assigner": "audit@patchstack.com",
-        "cvss": null,
-        "cwe": "NVD-CWE-noinfo",
-        "id": "CVE-2022-41135",
-        "impact": {},
-        "last-modified": "2022-11-23T19:37:00",
-        "references": [
-            "https://patchstack.com/database/vulnerability/modula-best-grid-gallery/wordpress-modula-plugin-2-6-9-unauth-plugin-settings-change-vulnerability?_s_id=cve"
-        ],
-        "summary": "Unauth. Plugin Settings Change vulnerability in Modula plugin <= 2.6.9 on WordPress."
-    },
-    {
-        "Modified": "2022-11-23T19:34:00",
-        "Published": "2022-11-18T23:15:00",
-        "access": {},
-        "assigner": "audit@patchstack.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-40963",
-        "impact": {},
-        "last-modified": "2022-11-23T19:34:00",
-        "references": [
-            "https://wordpress.org/plugins/wp-pagebuilder/",
-            "https://patchstack.com/database/vulnerability/wp-pagebuilder/wordpress-wp-page-builder-plugin-1-2-6-multiple-auth-stored-cross-site-scripting-xss-vulnerabilities?_s_id=cve"
-        ],
-        "summary": "Multiple Auth. (author+) Stored Cross-Site Scripting (XSS) vulnerabilities in WP Page Builder plugin <= 1.2.6 on WordPress."
-    },
-    {
-        "Modified": "2022-11-23T19:33:00",
-        "Published": "2022-11-18T23:15:00",
-        "access": {},
-        "assigner": "audit@patchstack.com",
-        "cvss": null,
-        "cwe": "CWE-863",
-        "id": "CVE-2022-40216",
-        "impact": {},
-        "last-modified": "2022-11-23T19:33:00",
-        "references": [
-            "https://wordpress.org/plugins/bp-better-messages/#developers",
-            "https://patchstack.com/database/vulnerability/bp-better-messages/wordpress-better-messages-plugin-1-9-10-69-messaging-block-bypass-vulnerability?_s_id=cve"
-        ],
-        "summary": "Auth. (subscriber+) Messaging Block Bypass vulnerability in Better Messages plugin <= 1.9.10.69 on WordPress."
-    },
-    {
-        "Modified": "2022-11-23T19:27:00",
-        "Published": "2022-11-22T13:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-42097",
-        "impact": {},
-        "last-modified": "2022-11-23T19:27:00",
-        "references": [
-            "https://github.com/bypazs/CVE-2022-42097",
-            "https://grimthereaperteam.medium.com/cve-2022-42097-backdrop-xss-at-comments-2ea536ec55e1",
-            "https://backdropcms.org",
-            "https://github.com/backdrop/backdrop/releases/tag/1.23.0"
-        ],
-        "summary": "Backdrop CMS version 1.23.0 was discovered to contain a stored cross-site scripting (XSS) vulnerability via 'Comment.' ."
-    },
-    {
-        "Modified": "2022-11-23T19:26:00",
-        "Published": "2022-11-22T13:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-89",
-        "id": "CVE-2022-42098",
-        "impact": {},
-        "last-modified": "2022-11-23T19:26:00",
-        "references": [
-            "https://github.com/msaad1999/KLiK-SocialMediaWebsite/releases/tag/v1.0.1",
-            "https://github.com/bypazs/CVE-2022-42098",
-            "https://grimthereaperteam.medium.com/cve-2022-42098-klik-sql-injection-6a9299621789",
-            "https://github.com/msaad1999/KLiK-SocialMediaWebsite"
-        ],
-        "summary": "KLiK SocialMediaWebsite version v1.0.1 is vulnerable to SQL Injection via the profile.php."
-    },
-    {
-        "Modified": "2022-11-23T19:23:00",
-        "Published": "2022-11-22T14:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-787",
-        "id": "CVE-2022-44190",
-        "impact": {},
-        "last-modified": "2022-11-23T19:23:00",
-        "references": [
-            "https://github.com/RobinWang825/IoT_vuln/tree/main/Netgear/R7000P/6",
-            "https://www.netgear.com/about/security/"
-        ],
-        "summary": "Netgear R7000P V1.3.1.64 is vulnerable to Buffer Overflow via parameter enable_band_steering."
-    },
-    {
-        "Modified": "2022-11-23T19:22:00",
-        "Published": "2022-11-22T14:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-787",
-        "id": "CVE-2022-44188",
-        "impact": {},
-        "last-modified": "2022-11-23T19:22:00",
-        "references": [
-            "https://www.netgear.com/about/security/",
-            "https://github.com/RobinWang825/IoT_vuln/tree/main/Netgear/R7000P/5"
-        ],
-        "summary": "Netgear R7000P V1.3.0.8 is vulnerable to Buffer Overflow in /usr/sbin/httpd via parameter enable_band_steering."
-    },
-    {
-        "Modified": "2022-11-23T19:22:00",
-        "Published": "2022-02-17T15:15:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "MEDIUM",
-            "vector": "NETWORK"
-        },
-        "assigner": "security-advisories@github.com",
-        "cvss": 6.8,
-        "cvss-time": "2022-11-23T19:22:00",
-        "cvss-vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
-        "cwe": "CWE-295",
-        "id": "CVE-2022-23632",
-        "impact": {
-            "availability": "PARTIAL",
-            "confidentiality": "PARTIAL",
-            "integrity": "PARTIAL"
-        },
-        "last-modified": "2022-11-23T19:22:00",
-        "references": [
-            "https://github.com/traefik/traefik/security/advisories/GHSA-hrhx-6h34-j5hc",
-            "https://github.com/traefik/traefik/pull/8764",
-            "https://github.com/traefik/traefik/releases/tag/v2.6.1",
-            "https://www.oracle.com/security-alerts/cpujul2022.html"
-        ],
-        "summary": "Traefik is an HTTP reverse proxy and load balancer. Prior to version 2.6.1, Traefik skips the router transport layer security (TLS) configuration when the host header is a fully qualified domain name (FQDN). For a request, the TLS configuration choice can be different than the router choice, which implies the use of a wrong TLS configuration. When sending a request using FQDN handled by a router configured with a dedicated TLS configuration, the TLS configuration falls back to the default configuration that might not correspond to the configured one. If the CNAME flattening is enabled, the selected TLS configuration is the SNI one and the routing uses the CNAME value, so this can skip the expected TLS configuration. Version 2.6.1 contains a patch for this issue. As a workaround, one may add the FDQN to the host rule. However, there is no workaround if the CNAME flattening is enabled."
-    },
-    {
-        "Modified": "2022-11-23T19:21:00",
-        "Published": "2022-11-22T13:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-42094",
-        "impact": {},
-        "last-modified": "2022-11-23T19:21:00",
-        "references": [
-            "https://grimthereaperteam.medium.com/cve-2022-42094-backdrop-xss-at-cards-84266b5250f1",
-            "https://github.com/bypazs/CVE-2022-42094",
-            "https://backdropcms.org",
-            "https://github.com/backdrop/backdrop/releases/tag/1.23.0"
-        ],
-        "summary": "Backdrop CMS version 1.23.0 was discovered to contain a stored cross-site scripting (XSS) vulnerability via the 'Card' content."
-    },
-    {
-        "Modified": "2022-11-23T19:17:00",
-        "Published": "2022-11-22T14:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-41445",
-        "impact": {},
-        "last-modified": "2022-11-23T19:17:00",
-        "references": [
-            "https://github.com/RashidKhanPathan/CVE-2022-41445",
-            "https://drive.google.com/file/d/18OjJQA2-8-Hdt0HTMwp4aL_Mp_WuffvL/view?usp=sharing",
-            "https://phpgurukul.com/teachers-record-management-system-using-codeigniter/",
-            "https://ihexcoder.wixsite.com/secresearch/post/cve-2022-41445-cross-site-scripting-in-teachers-record-management-system-using-codeignitor"
-        ],
-        "summary": "A cross-site scripting (XSS) vulnerability in Record Management System using CodeIgniter 1.0 allows attackers to execute arbitrary web scripts or HTML via a crafted payload injected into the Add Subject page."
-    },
-    {
-        "Modified": "2022-11-23T19:15:00",
-        "Published": "2022-11-23T19:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2021-43258",
-        "impact": {},
-        "last-modified": "2022-11-23T19:15:00",
-        "references": [
-            "http://www.churchdb.org/",
-            "https://github.com/rapid7/metasploit-framework/pull/17257",
-            "https://sourceforge.net/projects/churchinfo/files/"
-        ],
-        "summary": "CartView.php in ChurchInfo 1.3.0 allows attackers to achieve remote code execution through insecure uploads. This requires authenticated access tot he ChurchInfo application. Once authenticated, a user can add names to their cart, and compose an email. Uploading an attachment for the email stores the attachment on the site in the /tmp_attach/ folder where it can be accessed with a GET request. There are no limitations on files that can be attached, allowing for malicious PHP code to be uploaded and interpreted by the server."
-    },
-    {
-        "Modified": "2022-11-23T19:15:00",
-        "Published": "2022-11-23T19:15:00",
-        "access": {},
-        "assigner": "security-advisories@github.com",
-        "cvss": null,
-        "cwe": "CWE-502",
-        "id": "CVE-2022-41875",
-        "impact": {},
-        "last-modified": "2022-11-23T19:15:00",
-        "references": [
-            "https://github.com/airbnb/optica/security/advisories/GHSA-cf87-4h6x-phh6",
-            "https://www.rubydoc.info/gems/oj/3.0.2/Oj.safe_load",
-            "https://github.com/ohler55/oj/blob/develop/pages/Security.md"
-        ],
-        "summary": "A remote code execution (RCE) vulnerability in Optica allows unauthenticated attackers to execute arbitrary code via specially crafted JSON payloads. Specially crafted JSON payloads may lead to RCE (remote code execution) on the attacked system running Optica. The vulnerability was patched in v. 0.10.2, where the call to the function `oj.load` was changed to `oj.safe_load`."
-    },
-    {
-        "Modified": "2022-11-23T19:15:00",
-        "Published": "2022-11-23T19:15:00",
-        "access": {},
-        "assigner": "security-advisories@github.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-41923",
-        "impact": {},
-        "last-modified": "2022-11-23T19:15:00",
-        "references": [
-            "https://github.com/grails/grails-spring-security-core/security/advisories/GHSA-frqg-vvxg-jqqh",
-            "https://grails.org/blog/2022-11-22-ss-plugin-auth-cve.html",
-            "https://github.com/grails/GSSC-CVE-2022-41923"
-        ],
-        "summary": "Grails Spring Security Core plugin is vulnerable to privilege escalation. The vulnerability allows an attacker access to one endpoint (i.e. the targeted endpoint) using the authorization requirements of a different endpoint (i.e. the donor endpoint). In some Grails framework applications, access to the targeted endpoint will be granted based on meeting the authorization requirements of the donor endpoint, which can result in a privilege escalation attack. This vulnerability has been patched in grails-spring-security-core versions 3.3.2, 4.0.5 and 5.1.1. Impacted Applications: Grails Spring Security Core plugin versions: 1.x 2.x >=3.0.0 <3.3.2 >=4.0.0 <4.0.5 >=5.0.0 <5.1.1 We strongly suggest that all Grails framework applications using the Grails Spring Security Core plugin be updated to a patched release of the plugin. Workarounds: Users should create a subclass extending one of the following classes from the `grails.plugin.springsecurity.web.access.intercept` package, depending on their security configuration: * `AnnotationFilterInvocationDefinition` * `InterceptUrlMapFilterInvocationDefinition` * `RequestmapFilterInvocationDefinition` In each case, the subclass should override the `calculateUri` method like so: ``` @Override protected String calculateUri(HttpServletRequest request) { UrlPathHelper.defaultInstance.getRequestUri(request) } ``` This should be considered a temporary measure, as the patched versions of grails-spring-security-core deprecates the `calculateUri` method. Once upgraded to a patched version of the plugin, this workaround is no longer needed. The workaround is especially important for version 2.x, as no patch is available version 2.x of the GSSC plugin."
-    },
-    {
-        "Modified": "2022-11-23T19:15:00",
-        "Published": "2022-11-23T19:15:00",
-        "access": {},
-        "assigner": "security-advisories@github.com",
-        "cvss": null,
-        "cwe": "CWE-346",
-        "id": "CVE-2022-41924",
-        "impact": {},
-        "last-modified": "2022-11-23T19:15:00",
-        "references": [
-            "https://github.com/tailscale/tailscale/security/advisories/GHSA-vqp6-rc3h-83cp",
-            "https://emily.id.au/tailscale",
-            "https://tailscale.com/security-bulletins/#ts-2022-004"
-        ],
-        "summary": "A vulnerability identified in the Tailscale Windows client allows a malicious website to reconfigure the Tailscale daemon `tailscaled`, which can then be used to remotely execute code. In the Tailscale Windows client, the local API was bound to a local TCP socket, and communicated with the Windows client GUI in cleartext with no Host header verification. This allowed an attacker-controlled website visited by the node to rebind DNS to an attacker-controlled DNS server, and then make local API requests in the client, including changing the coordination server to an attacker-controlled coordination server. An attacker-controlled coordination server can send malicious URL responses to the client, including pushing executables or installing an SMB share. These allow the attacker to remotely execute code on the node. All Windows clients prior to version v.1.32.3 are affected. If you are running Tailscale on Windows, upgrade to v1.32.3 or later to remediate the issue."
-    },
-    {
-        "Modified": "2022-11-23T19:15:00",
-        "Published": "2022-11-23T19:15:00",
-        "access": {},
-        "assigner": "security-advisories@github.com",
-        "cvss": null,
-        "cwe": "CWE-352",
-        "id": "CVE-2022-41925",
-        "impact": {},
-        "last-modified": "2022-11-23T19:15:00",
-        "references": [
-            "https://github.com/tailscale/tailscale/security/advisories/GHSA-qccm-wmcq-pwr6",
-            "https://emily.id.au/tailscale",
-            "https://tailscale.com/security-bulletins/#ts-2022-005"
-        ],
-        "summary": "A vulnerability identified in the Tailscale client allows a malicious website to access the peer API, which can then be used to access Tailscale environment variables. In the Tailscale client, the peer API was vulnerable to DNS rebinding. This allowed an attacker-controlled website visited by the node to rebind DNS for the peer API to an attacker-controlled DNS server, and then making peer API requests in the client, including accessing the node\u2019s Tailscale environment variables. An attacker with access to the peer API on a node could use that access to read the node\u2019s environment variables, including any credentials or secrets stored in environment variables. This may include Tailscale authentication keys, which could then be used to add new nodes to the user\u2019s tailnet. The peer API access could also be used to learn of other nodes in the tailnet or send files via Taildrop. All Tailscale clients prior to version v1.32.3 are affected. Upgrade to v1.32.3 or later to remediate the issue."
-    },
-    {
-        "Modified": "2022-11-23T19:15:00",
-        "Published": "2022-11-23T19:15:00",
-        "access": {},
-        "assigner": "security-advisories@github.com",
-        "cvss": null,
-        "cwe": "CWE-352",
-        "id": "CVE-2022-41927",
-        "impact": {},
-        "last-modified": "2022-11-23T19:15:00",
-        "references": [
-            "https://github.com/xwiki/xwiki-platform/commit/7fd4cda0590180c4d34f557597e9e10e263def9e",
-            "https://github.com/xwiki/xwiki-platform/security/advisories/GHSA-mq7h-5574-hw9f"
-        ],
-        "summary": "XWiki Platform is vulnerable to Cross-Site Request Forgery (CSRF) that may allow attackers to delete or rename tags without needing any confirmation. The problem has been patched in XWiki 13.10.7, 14.4.1 and 14.5RC1. Workarounds: It's possible to patch existing instances directly by editing the page Main.Tags and add this kind of check, in the code for renaming and for deleting: ``` #if (!$services.csrf.isTokenValid($request.get('form_token'))) #set ($discard = $response.sendError(401, \"Wrong CSRF token\")) #end ```"
-    },
-    {
-        "Modified": "2022-11-23T19:15:00",
-        "Published": "2022-11-23T19:15:00",
-        "access": {},
-        "assigner": "security-advisories@github.com",
-        "cvss": null,
-        "cwe": "CWE-95",
-        "id": "CVE-2022-41928",
-        "impact": {},
-        "last-modified": "2022-11-23T19:15:00",
-        "references": [
-            "https://github.com/xwiki/xwiki-platform/security/advisories/GHSA-9hqh-fmhg-vq2j",
-            "https://jira.xwiki.org/browse/XWIKI-19800"
-        ],
-        "summary": "XWiki Platform vulnerable to Improper Neutralization of Directives in Dynamically Evaluated Code ('Eval Injection') in AttachmentSelector.xml. The issue can also be reproduced by inserting the dangerous payload in the `height` or `alt` macro properties. This has been patched in versions 13.10.7, 14.4.2, and 14.5. The issue can be fixed on a running wiki by updating `XWiki.AttachmentSelector` with the versions below: - 14.5-rc-1+: https://github.com/xwiki/xwiki-platform/commit/eb15147adf94bddb92626f862c1710d45bcd64a7#diff-e1513599ab698991f6cbba55d38f3f464432ced8d137a668b1f7618c7e747e23 - 14.4.2+: https://github.com/xwiki/xwiki-platform/commit/c02f8eb1f3c953d124f2c097021536f8bc00fa8d#diff-e1513599ab698991f6cbba55d38f3f464432ced8d137a668b1f7618c7e747e23 - 13.10.7+: https://github.com/xwiki/xwiki-platform/commit/efd0df0468d46149ba68b66660b93f31b6318515#diff-e1513599ab698991f6cbba55d38f3f464432ced8d137a668b1f7618c7e747e23"
-    },
-    {
-        "Modified": "2022-11-23T19:15:00",
-        "Published": "2022-11-23T19:15:00",
-        "access": {},
-        "assigner": "security-advisories@github.com",
-        "cvss": null,
-        "cwe": "CWE-862",
-        "id": "CVE-2022-41929",
-        "impact": {},
-        "last-modified": "2022-11-23T19:15:00",
-        "references": [
-            "https://github.com/xwiki/xwiki-platform/security/advisories/GHSA-2gj2-vj98-j2qq",
-            "https://github.com/xwiki/xwiki-platform/commit/0b732f2ef0224e2aaf10e2e1ef48dbd3fb6e10cd",
-            "https://jira.xwiki.org/browse/XWIKI-19804"
-        ],
-        "summary": "org.xwiki.platform:xwiki-platform-oldcore is missing authorization in User#setDisabledStatus, which may allow an incorrectly authorized user with only Script rights to enable or disable a user. This operation is meant to only be available for users with admin rights. This problem has been patched in XWiki 13.10.7, 14.4.2 and 14.5RC1."
-    },
-    {
-        "Modified": "2022-11-23T19:15:00",
-        "Published": "2022-10-24T14:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2021-46849",
-        "impact": {},
-        "last-modified": "2022-11-23T19:15:00",
-        "references": [],
-        "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: CVE-2021-29421. Reason: This candidate is a duplicate of CVE-2021-29421. Notes: All CVE users should reference CVE-2021-29421 instead of this candidate. All references and descriptions in this candidate have been removed to prevent accidental usage."
-    },
-    {
-        "Modified": "2022-11-23T19:15:00",
-        "Published": "2022-07-07T23:15:00",
-        "access": {
-            "authentication": "SINGLE",
-            "complexity": "MEDIUM",
-            "vector": "NETWORK"
-        },
-        "assigner": "cve@mitre.org",
-        "cvss": 3.5,
-        "cvss-time": "2022-11-23T19:15:00",
-        "cvss-vector": "AV:N/AC:M/Au:S/C:N/I:P/A:N",
-        "cwe": "CWE-79",
-        "id": "CVE-2022-32060",
-        "impact": {
-            "availability": "NONE",
-            "confidentiality": "NONE",
-            "integrity": "PARTIAL"
-        },
-        "last-modified": "2022-11-23T19:15:00",
-        "references": [
-            "https://grimthereaperteam.medium.com/snipe-it-version-v6-0-2-file-upload-cross-site-scripting-b15becc1a5ea",
-            "https://github.com/bypazs/CVE-2022-32060"
-        ],
-        "summary": "An arbitrary file upload vulnerability in the Update Branding Settings component of Snipe-IT v6.0.2 allows attackers to execute arbitrary code via a crafted file."
     }
 ]
