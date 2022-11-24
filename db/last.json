@@ -1,5 +1,224 @@
 [
     {
+        "Modified": "2022-11-23T23:15:00",
+        "Published": "2022-11-23T23:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-45873",
+        "impact": {},
+        "last-modified": "2022-11-23T23:15:00",
+        "references": [
+            "https://github.com/systemd/systemd/commit/076b807be472630692c5348c60d0c2b7b28ad437",
+            "https://github.com/systemd/systemd/pull/25055#issuecomment-1313733553"
+        ],
+        "summary": "systemd 250 and 251 allows local users to achieve a systemd-coredump deadlock by triggering a crash that has a long backtrace. This occurs in parse_elf_object in shared/elf-util.c. The exploitation methodology is to crash a binary calling the same function recursively, and put it in a deeply nested directory to make its backtrace large enough to cause the deadlock. This must be done 16 times when MaxConnections=16 is set for the systemd/units/systemd-coredump.socket file."
+    },
+    {
+        "Modified": "2022-11-23T22:15:00",
+        "Published": "2022-11-23T22:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-45872",
+        "impact": {},
+        "last-modified": "2022-11-23T22:15:00",
+        "references": [
+            "https://iterm2.com/downloads.html"
+        ],
+        "summary": "iTerm2 before 3.4.18 mishandles a DECRQSS response."
+    },
+    {
+        "Modified": "2022-11-23T21:15:00",
+        "Published": "2022-11-23T21:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-400",
+        "id": "CVE-2022-41932",
+        "impact": {},
+        "last-modified": "2022-11-23T21:15:00",
+        "references": [
+            "https://jira.xwiki.org/browse/XWIKI-19886",
+            "https://github.com/xwiki/xwiki-platform/security/advisories/GHSA-4x5r-6v26-7j4v"
+        ],
+        "summary": "XWiki Platform is a generic wiki platform offering runtime services for applications built on top of it. It's possible to make XWiki create many new schemas and fill them with tables just by using a crafted user identifier in the login form. This may lead to degraded database performance. The problem has been patched in XWiki 13.10.8, 14.6RC1 and 14.4.2. Users are advised to upgrade. There are no known workarounds for this issue."
+    },
+    {
+        "Modified": "2022-11-23T21:15:00",
+        "Published": "2022-11-23T21:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-312",
+        "id": "CVE-2022-41933",
+        "impact": {},
+        "last-modified": "2022-11-23T21:15:00",
+        "references": [
+            "https://github.com/xwiki/xwiki-platform/commit/443e8398b75a1295067d74afb5898370782d863a#diff-f8a8f8ba80dfc55f044e2e60b521ce379176430ca6921b0f87b79cf682531f79L322",
+            "https://jira.xwiki.org/browse/XWIKI-19945",
+            "https://jira.xwiki.org/browse/XWIKI-19869",
+            "https://github.com/xwiki/xwiki-platform/security/advisories/GHSA-q2hm-2h45-v5g3",
+            "https://github.com/xwiki/xwiki-platform/security/advisories/GHSA-599v-w48h-rjrm"
+        ],
+        "summary": "XWiki Platform is a generic wiki platform offering runtime services for applications built on top of it. When the `reset a forgotten password` feature of XWiki was used, the password was then stored in plain text in database. This only concerns XWiki 13.1RC1 and newer versions. Note that it only concerns the reset password feature available from the \"Forgot your password\" link in the login view: the features allowing a user to change their password, or for an admin to change a user password are not impacted. This vulnerability is particularly dangerous in combination with other vulnerabilities allowing to perform data leak of personal data from users, such as GHSA-599v-w48h-rjrm. Note that this vulnerability only concerns the users of the main wiki: in case of farms, the users registered on subwiki are not impacted thanks to a bug we discovered when investigating this. The problem has been patched in version 14.6RC1, 14.4.3 and 13.10.8. The patch involves a migration of the impacted users as well as the history of the page, to ensure no password remains in plain text in the database. This migration also involves to inform the users about the possible disclosure of their passwords: by default, two emails are automatically sent to the impacted users. A first email to inform about the possibility that their password have been leaked, and a second email using the reset password feature to ask them to set a new password. It's also possible for administrators to set some properties for the migration: it's possible to decide if the user password should be reset (default) or if the passwords should be kept but only hashed. Note that in the first option, the users won't be able to login anymore until they set a new password if they were impacted. Note that in both options, mails will be sent to users to inform them and encourage them to change their passwords."
+    },
+    {
+        "Modified": "2022-11-23T21:15:00",
+        "Published": "2022-11-23T21:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-43196",
+        "impact": {},
+        "last-modified": "2022-11-23T21:15:00",
+        "references": [
+            "https://gist.github.com/yinfei6/f6c8a9ac39afae45c3f2aa32a7f1b205"
+        ],
+        "summary": "dedecmdv6 v6.1.9 is vulnerable to Arbitrary file deletion via file_manage_control.php."
+    },
+    {
+        "Modified": "2022-11-23T21:15:00",
+        "Published": "2022-11-23T21:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-44117",
+        "impact": {},
+        "last-modified": "2022-11-23T21:15:00",
+        "references": [
+            "https://gist.github.com/yinfei6/20bd1d3ebe0803c2d8756ace3e173676"
+        ],
+        "summary": "Boa 0.94.14rc21 is vulnerable to SQL Injection via username."
+    },
+    {
+        "Modified": "2022-11-23T21:15:00",
+        "Published": "2022-11-23T21:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-44118",
+        "impact": {},
+        "last-modified": "2022-11-23T21:15:00",
+        "references": [
+            "https://gist.github.com/yinfei6/56bb396f579cb67840ed1ecb77460a5b"
+        ],
+        "summary": "dedecmdv6 v6.1.9 is vulnerable to Remote Code Execution (RCE) via file_manage_control.php."
+    },
+    {
+        "Modified": "2022-11-23T21:15:00",
+        "Published": "2022-11-23T21:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-44120",
+        "impact": {},
+        "last-modified": "2022-11-23T21:15:00",
+        "references": [
+            "https://gist.github.com/yinfei6/73295ac40b5b3fc0b55db58c17eecfda"
+        ],
+        "summary": "dedecmdv6 6.1.9 is vulnerable to SQL Injection. via sys_sql_query.php."
+    },
+    {
+        "Modified": "2022-11-23T21:15:00",
+        "Published": "2022-11-23T21:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-44789",
+        "impact": {},
+        "last-modified": "2022-11-23T21:15:00",
+        "references": [
+            "https://github.com/alalng/CVE-2022-44789/blob/main/PublicReferenceURL.txt"
+        ],
+        "summary": "A logical issue in O_getOwnPropertyDescriptor() in Artifex MuJS 1.0.0 through 1.3.1 allows an attacker to achieve Remote Code Execution through memory corruption, via the loading of a crafted JavaScript file."
+    },
+    {
+        "Modified": "2022-11-23T21:15:00",
+        "Published": "2022-11-23T21:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-45276",
+        "impact": {},
+        "last-modified": "2022-11-23T21:15:00",
+        "references": [
+            "https://github.com/Zoe0427/YJCMS"
+        ],
+        "summary": "An issue in the /index/user/user_edit.html component of YJCMS v1.0.9 allows unauthenticated attackers to obtain the Administrator account password."
+    },
+    {
+        "Modified": "2022-11-23T21:15:00",
+        "Published": "2022-11-23T21:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-45278",
+        "impact": {},
+        "last-modified": "2022-11-23T21:15:00",
+        "references": [
+            "https://github.com/Cherry-toto/jizhicms/issues/83"
+        ],
+        "summary": "Jizhicms v2.3.3 was discovered to contain a SQL injection vulnerability via the /index.php/admins/Fields/get_fields.html component."
+    },
+    {
+        "Modified": "2022-11-23T21:15:00",
+        "Published": "2022-11-23T21:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-45280",
+        "impact": {},
+        "last-modified": "2022-11-23T21:15:00",
+        "references": [
+            "https://github.com/weng-xianhu/eyoucms/issues/32"
+        ],
+        "summary": "A cross-site scripting (XSS) vulnerability in the Url parameter in /login.php of EyouCMS v1.6.0 allows attackers to execute arbitrary web scripts or HTML via a crafted payload."
+    },
+    {
+        "Modified": "2022-11-23T21:15:00",
+        "Published": "2022-11-23T21:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-45868",
+        "impact": {},
+        "last-modified": "2022-11-23T21:15:00",
+        "references": [
+            "https://github.com/h2database/h2database/blob/96832bf5a97cdc0adc1f2066ed61c54990d66ab5/h2/src/main/org/h2/server/web/WebServer.java#L346-L347",
+            "https://sites.google.com/sonatype.com/vulnerabilities/sonatype-2022-6243"
+        ],
+        "summary": "The web-based admin console in H2 Database Engine through 2.1.214 can be started via the CLI with the argument -webAdminPassword, which allows the user to specify the password in cleartext for the web admin console. Consequently, a local user (or an attacker that has obtained local access through some means) would be able to discover the password by listing processes and their arguments. NOTE: the vendor states \"This is not a vulnerability of H2 Console ... Passwords should never be passed on the command line and every qualified DBA or system administrator is expected to know that.\""
+    },
+    {
+        "Modified": "2022-11-23T21:15:00",
+        "Published": "2022-11-23T20:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-200",
+        "id": "CVE-2022-41935",
+        "impact": {},
+        "last-modified": "2022-11-23T21:15:00",
+        "references": [
+            "https://github.com/xwiki/xwiki-platform/security/advisories/GHSA-p2x4-6ghr-6vmq",
+            "https://jira.xwiki.org/browse/XWIKI-19999",
+            "https://github.com/xwiki/xwiki-platform/commit/1450b6e3c69ac7df25e5a2571186d1f43402facd#diff-5a739e5865b1f1ad9d79b724791be51b0095a0170cc078911c940478b13b949a"
+        ],
+        "summary": "XWiki Platform is a generic wiki platform offering runtime services for applications built on top of it. Users without the right to view documents can deduce their existence by repeated Livetable queries. The issue has been patched in XWiki 14.6RC1, 13.10.8, and 14.4.3, the response is not properly cleaned up of obfuscated entries. As a workaround, The patch for the document `XWiki.LiveTableResultsMacros` can be manually applied or a XAR archive of a patched version can be imported, on versions 12.10.11, 13.9-rc-1, and 13.4.4. There are no known workarounds for this issue."
+    },
+    {
         "Modified": "2022-11-23T20:58:00",
         "Published": "2022-11-23T02:15:00",
         "access": {},
@@ -139,23 +358,6 @@
             "https://github.com/xwiki/xwiki-platform/commit/2fc20891e6c6b0ca05ee07e315e7f435e8919f8d"
         ],
         "summary": "XWiki Platform is a generic wiki platform offering runtime services for applications built on top of it. Any user with view rights on commonly accessible documents including the menu macro can execute arbitrary Groovy, Python or Velocity code in XWiki leading to full access to the XWiki installation due to improper escaping of the macro content and parameters of the menu macro. The problem has been patched in XWiki 14.6RC1, 13.10.8 and 14.4.3. The patch (commit `2fc20891`) for the document `Menu.MenuMacro` can be manually applied or a XAR archive of a patched version can be imported. The menu macro was basically unchanged since XWiki 11.6 so on XWiki 11.6 or later the patch for version of 13.10.8 (commit `59ccca24a`) can most likely be applied, on XWiki version 14.0 and later the versions in XWiki 14.6 and 14.4.3 should be appropriate."
-    },
-    {
-        "Modified": "2022-11-23T20:41:00",
-        "Published": "2022-11-23T20:15:00",
-        "access": {},
-        "assigner": "security-advisories@github.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-41935",
-        "impact": {},
-        "last-modified": "2022-11-23T20:41:00",
-        "references": [
-            "https://github.com/xwiki/xwiki-platform/security/advisories/GHSA-p2x4-6ghr-6vmq",
-            "https://jira.xwiki.org/browse/XWIKI-19999",
-            "https://github.com/xwiki/xwiki-platform/commit/1450b6e3c69ac7df25e5a2571186d1f43402facd#diff-5a739e5865b1f1ad9d79b724791be51b0095a0170cc078911c940478b13b949a"
-        ],
-        "summary": "XWiki Platform is a generic wiki platform offering runtime services for applications built on top of it. Users without the right to view documents can deduce their existence by repeated Livetable queries. The issue has been patched in XWiki 14.6RC1, 13.10.8, and 14.4.3, the response is not properly cleaned up of obfuscated entries. As a workaround, The patch for the document `XWiki.LiveTableResultsMacros` can be manually applied or a XAR archive of a patched version can be imported, on versions 12.10.11, 13.9-rc-1, and 13.4.4. There are no known workarounds for this issue.\n\n"
     },
     {
         "Modified": "2022-11-23T20:41:00",
@@ -1621,212 +1823,5 @@
             "https://www.solarwinds.com/trust-center/security-advisories/CVE-2022-38113"
         ],
         "summary": "This vulnerability discloses build and services versions in the server response header."
-    },
-    {
-        "Modified": "2022-11-23T18:32:00",
-        "Published": "2022-11-23T17:15:00",
-        "access": {},
-        "assigner": "psirt@solarwinds.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-38114",
-        "impact": {},
-        "last-modified": "2022-11-23T18:32:00",
-        "references": [
-            "https://documentation.solarwinds.com/en/success_center/sem/content/release_notes/sem_2022-4_release_notes.htm",
-            "https://www.solarwinds.com/trust-center/security-advisories/CVE-2022-38114"
-        ],
-        "summary": "This vulnerability occurs when a web server fails to correctly process the Content-Length of POST requests. This can lead to HTTP request smuggling or XSS."
-    },
-    {
-        "Modified": "2022-11-23T18:32:00",
-        "Published": "2022-11-23T17:15:00",
-        "access": {},
-        "assigner": "psirt@solarwinds.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-38115",
-        "impact": {},
-        "last-modified": "2022-11-23T18:32:00",
-        "references": [
-            "https://www.solarwinds.com/trust-center/security-advisories/CVE-2022-38115",
-            "https://documentation.solarwinds.com/en/success_center/sem/content/release_notes/sem_2022-4_release_notes.htm"
-        ],
-        "summary": "Insecure method vulnerability in which allowed HTTP methods are disclosed. E.g., OPTIONS, DELETE, TRACE, and PUT"
-    },
-    {
-        "Modified": "2022-11-23T18:32:00",
-        "Published": "2022-11-23T18:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2009-1142",
-        "impact": {},
-        "last-modified": "2022-11-23T18:32:00",
-        "references": [
-            "https://bugs.gentoo.org/264577",
-            "https://github.com/vmware/open-vm-tools/releases/tag/2009.03.18-154848"
-        ],
-        "summary": "An issue was discovered in open-vm-tools 2009.03.18-154848. Local users can gain privileges via a symlink attack on /tmp files if vmware-user-suid-wrapper is setuid root and the ChmodChownDirectory function is enabled."
-    },
-    {
-        "Modified": "2022-11-23T18:32:00",
-        "Published": "2022-11-23T18:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2009-1143",
-        "impact": {},
-        "last-modified": "2022-11-23T18:32:00",
-        "references": [
-            "https://bugs.gentoo.org/264577",
-            "https://github.com/vmware/open-vm-tools/releases/tag/2009.03.18-154848"
-        ],
-        "summary": "An issue was discovered in open-vm-tools 2009.03.18-154848. Local users can bypass intended access restrictions on mounting shares via a symlink attack that leverages a realpath race condition in mount.vmhgfs (aka hgfsmounter)."
-    },
-    {
-        "Modified": "2022-11-23T18:32:00",
-        "Published": "2022-11-23T18:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2021-35284",
-        "impact": {},
-        "last-modified": "2022-11-23T18:32:00",
-        "references": [
-            "https://github.com/rizalafani/cms-php/issues/1"
-        ],
-        "summary": "SQL Injection vulnerability in function get_user in login_manager.php in rizalafani cms-php v1."
-    },
-    {
-        "Modified": "2022-11-23T18:32:00",
-        "Published": "2022-11-23T18:15:00",
-        "access": {},
-        "assigner": "product-cna@github.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-23740",
-        "impact": {},
-        "last-modified": "2022-11-23T18:32:00",
-        "references": [
-            "https://docs.github.com/en/enterprise-server@3.7/admin/release-notes#3.7.1"
-        ],
-        "summary": "CRITICAL: An improper neutralization of argument delimiters in a command vulnerability was identified in GitHub Enterprise Server that enabled remote code execution. To exploit this vulnerability, an attacker would need permission to create and build GitHub Pages using GitHub Actions. This vulnerability affected only version 3.7.0 of GitHub Enterprise Server and was fixed in version 3.7.1. This vulnerability was reported via the GitHub Bug Bounty program."
-    },
-    {
-        "Modified": "2022-11-23T18:32:00",
-        "Published": "2022-11-23T18:15:00",
-        "access": {},
-        "assigner": "security-advisories@github.com",
-        "cvss": null,
-        "cwe": "CWE-345",
-        "id": "CVE-2022-36111",
-        "impact": {},
-        "last-modified": "2022-11-23T18:32:00",
-        "references": [
-            "https://github.com/codenotary/immudb/releases/tag/v1.4.1",
-            "https://github.com/codenotary/immudb/tree/master/docs/security/vulnerabilities/linear-fake",
-            "https://github.com/codenotary/immudb/security/advisories/GHSA-672p-m5jq-mrh8",
-            "https://pkg.go.dev/github.com/codenotary/immudb/pkg/client"
-        ],
-        "summary": "immudb is a database with built-in cryptographic proof and verification. In versions prior to 1.4.1, a malicious immudb server can provide a falsified proof that will be accepted by the client SDK signing a falsified transaction replacing the genuine one. This situation can not be triggered by a genuine immudb server and requires the client to perform a specific list of verified operations resulting in acceptance of an invalid state value. This vulnerability only affects immudb client SDKs, the immudb server itself is not affected by this vulnerability. This issue has been patched in version 1.4.1."
-    },
-    {
-        "Modified": "2022-11-23T18:32:00",
-        "Published": "2022-11-23T18:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-39833",
-        "impact": {},
-        "last-modified": "2022-11-23T18:32:00",
-        "references": [
-            "https://www.filecloud.com/supportdocs/fcdoc/latest/server/security-advisories/2022-security-advisories/advisory-2022-10-01-unauthorized-access-and-potential-remote-code-execution"
-        ],
-        "summary": "FileCloud Versions 20.2 and later allows remote attackers to potentially cause unauthorized remote code execution and access to reported API endpoints via a crafted HTTP request."
-    },
-    {
-        "Modified": "2022-11-23T18:32:00",
-        "Published": "2022-11-23T18:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-40304",
-        "impact": {},
-        "last-modified": "2022-11-23T18:32:00",
-        "references": [
-            "https://gitlab.gnome.org/GNOME/libxml2/-/tags/v2.10.3",
-            "https://gitlab.gnome.org/GNOME/libxml2/-/commit/1b41ec4e9433b05bb0376be4725804c54ef1d80b",
-            "https://gitlab.gnome.org/GNOME/libxml2/-/tags"
-        ],
-        "summary": "An issue was discovered in libxml2 before 2.10.3. Certain invalid XML entity definitions can corrupt a hash table key, potentially leading to subsequent logic errors. In one case, a double-free can be provoked."
-    },
-    {
-        "Modified": "2022-11-23T18:32:00",
-        "Published": "2022-11-23T18:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-40771",
-        "impact": {},
-        "last-modified": "2022-11-23T18:32:00",
-        "references": [
-            "https://manageengine.com",
-            "https://www.manageengine.com/products/service-desk/CVE-2022-40771.html"
-        ],
-        "summary": "Zoho ManageEngine ServiceDesk Plus versions 13010 and prior are vulnerable to an XML External Entity attack that leads to Information Disclosure."
-    },
-    {
-        "Modified": "2022-11-23T18:32:00",
-        "Published": "2022-11-23T18:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-40772",
-        "impact": {},
-        "last-modified": "2022-11-23T18:32:00",
-        "references": [
-            "https://manageengine.com",
-            "https://www.manageengine.com/products/service-desk/CVE-2022-40772.html"
-        ],
-        "summary": "Zoho ManageEngine ServiceDesk Plus versions 13010 and prior are vulnerable to a validation bypass that allows users to access sensitive data via the report module."
-    },
-    {
-        "Modified": "2022-11-23T18:32:00",
-        "Published": "2022-11-23T18:15:00",
-        "access": {},
-        "assigner": "security-advisories@github.com",
-        "cvss": null,
-        "cwe": "CWE-502",
-        "id": "CVE-2022-41922",
-        "impact": {},
-        "last-modified": "2022-11-23T18:32:00",
-        "references": [
-            "https://github.com/yiisoft/yii/security/advisories/GHSA-442f-wcwq-fpcf",
-            "https://github.com/yiisoft/yii/commit/ed67b7cc57216557c5c595c6650cdd2d3aa41c52"
-        ],
-        "summary": "`yiisoft/yii` before version 1.1.27 are vulnerable to Remote Code Execution (RCE) if the application calls `unserialize()` on arbitrary user input. This has been patched in 1.1.27."
-    },
-    {
-        "Modified": "2022-11-23T18:28:00",
-        "Published": "2022-11-21T21:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-352",
-        "id": "CVE-2020-23582",
-        "impact": {},
-        "last-modified": "2022-11-23T18:28:00",
-        "references": [
-            "https://github.com/huzaifahussain98/CVE-2020-23582"
-        ],
-        "summary": "A vulnerability in the \"/admin/wlmultipleap.asp\" of optilink OP-XT71000N version: V2.2 could allow an unauthenticated, remote attacker to conduct a cross-site request forgery (CSRF) attack to create Multiple WLAN BSSID."
     }
 ]
