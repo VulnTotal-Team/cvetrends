@@ -1,5 +1,87 @@
 [
     {
+        "Modified": "2022-11-26T23:15:00",
+        "Published": "2022-11-15T23:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-193",
+        "id": "CVE-2022-41916",
+        "impact": {},
+        "last-modified": "2022-11-26T23:15:00",
+        "references": [
+            "https://github.com/heimdal/heimdal/security/advisories/GHSA-mgqr-gvh6-23cx",
+            "https://www.debian.org/security/2022/dsa-5287",
+            "https://lists.debian.org/debian-lts-announce/2022/11/msg00034.html"
+        ],
+        "summary": "Heimdal is an implementation of ASN.1/DER, PKIX, and Kerberos. Versions prior to 7.7.1 are vulnerable to a denial of service vulnerability in Heimdal's PKI certificate validation library, affecting the KDC (via PKINIT) and kinit (via PKINIT), as well as any third-party applications using Heimdal's libhx509. Users should upgrade to Heimdal 7.7.1 or 7.8. There are no known workarounds for this issue."
+    },
+    {
+        "Modified": "2022-11-26T23:15:00",
+        "Published": "2021-10-12T18:15:00",
+        "access": {
+            "authentication": "SINGLE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "secalert@redhat.com",
+        "cvss": 4.0,
+        "cvss-time": "2022-11-26T23:15:00",
+        "cvss-vector": "AV:N/AC:L/Au:S/C:N/I:N/A:P",
+        "cwe": "CWE-476",
+        "id": "CVE-2021-3671",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "NONE",
+            "integrity": "NONE"
+        },
+        "last-modified": "2022-11-26T23:15:00",
+        "references": [
+            "https://bugzilla.samba.org/show_bug.cgi?id=14770,",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2013080,",
+            "https://github.com/heimdal/heimdal/commit/04171147948d0a3636bc6374181926f0fb2ec83a",
+            "https://www.debian.org/security/2022/dsa-5287",
+            "https://lists.debian.org/debian-lts-announce/2022/11/msg00034.html"
+        ],
+        "summary": "A null pointer de-reference was found in the way samba kerberos server handled missing sname in TGS-REQ (Ticket Granting Server - Request). An authenticated user could use this flaw to crash the samba server."
+    },
+    {
+        "Modified": "2022-11-26T23:15:00",
+        "Published": "2019-12-10T23:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "secalert@redhat.com",
+        "cvss": 6.4,
+        "cvss-time": "2022-11-26T23:15:00",
+        "cvss-vector": "AV:N/AC:L/Au:N/C:P/I:P/A:N",
+        "cwe": "CWE-285",
+        "id": "CVE-2019-14870",
+        "impact": {
+            "availability": "NONE",
+            "confidentiality": "PARTIAL",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-11-26T23:15:00",
+        "references": [
+            "https://www.samba.org/samba/security/CVE-2019-14870.html",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2019-14870",
+            "https://security.netapp.com/advisory/ntap-20191210-0002/",
+            "https://usn.ubuntu.com/4217-1/",
+            "https://usn.ubuntu.com/4217-2/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/PJH3ROOFYMOATD2UEPC47P5RPBDTY77E/",
+            "https://www.synology.com/security/advisory/Synology_SA_19_40",
+            "http://lists.opensuse.org/opensuse-security-announce/2019-12/msg00038.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/WNKA4YIPV7AZR7KK3GW6L3HKGHSGJZFE/",
+            "https://security.gentoo.org/glsa/202003-52",
+            "https://lists.debian.org/debian-lts-announce/2021/05/msg00023.html",
+            "https://lists.debian.org/debian-lts-announce/2022/11/msg00034.html"
+        ],
+        "summary": "All Samba versions 4.x.x before 4.9.17, 4.10.x before 4.10.11 and 4.11.x before 4.11.3 have an issue, where the S4U (MS-SFU) Kerberos delegation model includes a feature allowing for a subset of clients to be opted out of constrained delegation in any way, either S4U2Self or regular Kerberos authentication, by forcing all tickets for these clients to be non-forwardable. In AD this is implemented by a user attribute delegation_not_allowed (aka not-delegated), which translates to disallow-forwardable. However the Samba AD DC does not do that for S4U2Self and does set the forwardable flag even if the impersonated client has the not-delegated flag set."
+    },
+    {
         "Modified": "2022-11-26T22:15:00",
         "Published": "2022-11-26T22:15:00",
         "access": {},
@@ -1601,52 +1683,5 @@
             "https://windriver.com"
         ],
         "summary": "An issue was discovered in Wind River VxWorks 6.9 and 7, that allows a specifically crafted packet sent by a Radius server, may cause Denial of Service during the IP Radius access procedure."
-    },
-    {
-        "Modified": "2022-11-25T18:42:00",
-        "Published": "2022-11-25T16:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-37720",
-        "impact": {},
-        "last-modified": "2022-11-25T18:42:00",
-        "references": [
-            "http://orchard.com",
-            "https://labs.integrity.pt/advisories/cve-2022-37720/",
-            "http://orchardproject.com"
-        ],
-        "summary": "Orchardproject Orchard CMS 1.10.3 is vulnerable to Cross Site Scripting (XSS). When a low privileged user such as an author or publisher, injects a crafted html and javascript payload in a blog post, leading to full admin account takeover or privilege escalation when the malicious blog post is loaded in the victim's browser."
-    },
-    {
-        "Modified": "2022-11-25T18:42:00",
-        "Published": "2022-11-25T16:15:00",
-        "access": {},
-        "assigner": "psirt@fortinet.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-38377",
-        "impact": {},
-        "last-modified": "2022-11-25T18:42:00",
-        "references": [
-            "https://fortiguard.com/psirt/FG-IR-20-143"
-        ],
-        "summary": "An improper access control vulnerability [CWE-284] in FortiManager 7.2.0, 7.0.0 through 7.0.3, 6.4.0 through 6.4.7, 6.2.0 through 6.2.9, 6.0.0 through 6.0.11 and FortiAnalyzer 7.2.0, 7.0.0 through 7.0.3, 6.4.0 through 6.4.8, 6.2.0 through 6.2.10, 6.0.0 through 6.0.12 may allow a remote and authenticated admin user assigned to a specific ADOM to access other ADOMs information such as device information and dashboard information."
-    },
-    {
-        "Modified": "2022-11-25T18:42:00",
-        "Published": "2022-11-25T16:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-44411",
-        "impact": {},
-        "last-modified": "2022-11-25T18:42:00",
-        "references": [
-            "https://shimo.im/docs/5xkGMZx0ZeUmpx3X"
-        ],
-        "summary": "Web Based Quiz System v1.0 transmits user passwords in plaintext during the authentication process, allowing attackers to obtain users' passwords via a bruteforce attack."
     }
 ]
