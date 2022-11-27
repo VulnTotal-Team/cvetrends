@@ -1,5 +1,78 @@
 [
     {
+        "Modified": "2022-11-27T22:15:00",
+        "Published": "2022-10-02T05:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-502",
+        "id": "CVE-2022-42004",
+        "impact": {},
+        "last-modified": "2022-11-27T22:15:00",
+        "references": [
+            "https://github.com/FasterXML/jackson-databind/issues/3582",
+            "https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=50490",
+            "https://github.com/FasterXML/jackson-databind/commit/063183589218fec19a9293ed2f17ec53ea80ba88",
+            "https://security.gentoo.org/glsa/202210-21",
+            "https://www.debian.org/security/2022/dsa-5283",
+            "https://security.netapp.com/advisory/ntap-20221118-0008/",
+            "https://lists.debian.org/debian-lts-announce/2022/11/msg00035.html"
+        ],
+        "summary": "In FasterXML jackson-databind before 2.13.4, resource exhaustion can occur because of a lack of a check in BeanDeserializer._deserializeFromArray to prevent use of deeply nested arrays. An application is vulnerable only with certain customized choices for deserialization."
+    },
+    {
+        "Modified": "2022-11-27T22:15:00",
+        "Published": "2022-10-02T05:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-502",
+        "id": "CVE-2022-42003",
+        "impact": {},
+        "last-modified": "2022-11-27T22:15:00",
+        "references": [
+            "https://github.com/FasterXML/jackson-databind/commit/d78d00ee7b5245b93103fef3187f70543d67ca33",
+            "https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=51020",
+            "https://github.com/FasterXML/jackson-databind/issues/3590",
+            "https://security.gentoo.org/glsa/202210-21",
+            "https://www.debian.org/security/2022/dsa-5283",
+            "https://security.netapp.com/advisory/ntap-20221124-0004/",
+            "https://lists.debian.org/debian-lts-announce/2022/11/msg00035.html"
+        ],
+        "summary": "In FasterXML jackson-databind before 2.14.0-rc1, resource exhaustion can occur because of a lack of a check in primitive value deserializers to avoid deep wrapper array nesting, when the UNWRAP_SINGLE_VALUE_ARRAYS feature is enabled. Additional fix version in 2.13.4.1 and 2.12.17.1"
+    },
+    {
+        "Modified": "2022-11-27T22:15:00",
+        "Published": "2022-03-11T07:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "cve@mitre.org",
+        "cvss": 5.0,
+        "cvss-time": "2022-11-27T22:15:00",
+        "cvss-vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+        "cwe": "CWE-787",
+        "id": "CVE-2020-36518",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "NONE",
+            "integrity": "NONE"
+        },
+        "last-modified": "2022-11-27T22:15:00",
+        "references": [
+            "https://github.com/FasterXML/jackson-databind/issues/2816",
+            "https://www.oracle.com/security-alerts/cpuapr2022.html",
+            "https://lists.debian.org/debian-lts-announce/2022/05/msg00001.html",
+            "https://security.netapp.com/advisory/ntap-20220506-0004/",
+            "https://www.oracle.com/security-alerts/cpujul2022.html",
+            "https://www.debian.org/security/2022/dsa-5283",
+            "https://lists.debian.org/debian-lts-announce/2022/11/msg00035.html"
+        ],
+        "summary": "jackson-databind before 2.13.0 allows a Java StackOverflow exception and denial of service via a large depth of nested objects."
+    },
+    {
         "Modified": "2022-11-27T04:33:00",
         "Published": "2022-11-23T18:15:00",
         "access": {},
@@ -1634,53 +1707,5 @@
             "https://github.com/Rajeshwar40/CVE/blob/main/CVE-2022-45218"
         ],
         "summary": "Human Resource Management System v1.0.0 was discovered to contain a cross-site scripting (XSS) vulnerability. This vulnerability is triggered via a crafted payload injected into an authentication error message."
-    },
-    {
-        "Modified": "2022-11-25T18:42:00",
-        "Published": "2022-11-25T18:15:00",
-        "access": {},
-        "assigner": "help@fluidattacks.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-0698",
-        "impact": {},
-        "last-modified": "2022-11-25T18:42:00",
-        "references": [
-            "https://github.com/microweber/microweber/",
-            "https://fluidattacks.com/advisories/garrix/"
-        ],
-        "summary": "Microweber version 1.3.1 allows an unauthenticated user to perform an account takeover via an XSS on the 'select-file' parameter."
-    },
-    {
-        "Modified": "2022-11-25T18:42:00",
-        "Published": "2022-11-25T18:15:00",
-        "access": {},
-        "assigner": "help@fluidattacks.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-41705",
-        "impact": {},
-        "last-modified": "2022-11-25T18:42:00",
-        "references": [
-            "https://github.com/uasoft-indonesia/badaso/",
-            "https://fluidattacks.com/advisories/headhunterz/"
-        ],
-        "summary": "Badaso version 2.6.3 allows an unauthenticated remote attacker to execute arbitrary code remotely on the server. This is possible because the application does not properly validate the data uploaded by users."
-    },
-    {
-        "Modified": "2022-11-25T18:42:00",
-        "Published": "2022-11-25T18:15:00",
-        "access": {},
-        "assigner": "security-advisories@github.com",
-        "cvss": null,
-        "cwe": "CWE-502",
-        "id": "CVE-2022-41958",
-        "impact": {},
-        "last-modified": "2022-11-25T18:42:00",
-        "references": [
-            "https://github.com/4ra1n/super-xray/commit/4d0d59663596db03f39d7edd2be251d48b52dcfc",
-            "https://github.com/4ra1n/super-xray/security/advisories/GHSA-39pv-4vmj-c4fr"
-        ],
-        "summary": "super-xray is a web vulnerability scanning tool. Versions prior to 0.7 assumed trusted input for the program config which is stored in a yaml file. An attacker with local access to the file could exploit this and compromise the program. This issue has been addressed in commit `4d0d5966` and will be included in future releases. Users are advised to upgrade. There are no known workarounds for this issue."
     }
 ]
