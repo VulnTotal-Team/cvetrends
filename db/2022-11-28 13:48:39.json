@@ -1,0 +1,1729 @@
+{
+    "data": [
+        {
+            "assigner": "openssl-security@openssl.org",
+            "audience_size": 135673,
+            "cve": "CVE-2022-3786",
+            "cve_urls": null,
+            "cvssv2_base_score": null,
+            "cvssv2_severity": null,
+            "cvssv3_base_score": 7.5,
+            "cvssv3_base_severity": "HIGH",
+            "cwes": [
+                {
+                    "cwe_description": "Buffer Copy without Checking Size of Input ('Classic Buffer Overflow')",
+                    "cwe_id": "CWE-120"
+                }
+            ],
+            "description": "A buffer overrun can be triggered in X.509 certificate verification, specifically in name constraint checking. Note that this occurs after certificate chain signature verification and requires either a CA to have signed a malicious certificate or for an application to continue certificate verification despite failure to construct a path to a trusted issuer. An attacker can craft a malicious email address in a certificate to overflow an arbitrary number of bytes containing the `.' character (decimal 46) on the stack. This buffer overflow could result in a crash (causing a denial of service). In a TLS client, this can be triggered by connecting to a malicious server. In a TLS server, this can be triggered if the server requests client authentication and a malicious client connects.",
+            "epss_score": "0.04499",
+            "github_repos": [
+                {
+                    "created": "2022-10-28T09:51:41Z",
+                    "description": "Operational information regarding CVE-2022-3602 and CVE-2022-3786, two vulnerabilities in OpenSSL 3",
+                    "language": null,
+                    "name": "OpenSSL-2022",
+                    "stars": 529,
+                    "topics": [
+                        "cve-2022-3602",
+                        "cve-2022-3786",
+                        "openssl",
+                        "spookyssl"
+                    ],
+                    "updated": "2022-11-26T16:34:53Z",
+                    "url": "https://github.com/NCSC-NL/OpenSSL-2022"
+                },
+                {
+                    "created": "2022-11-02T17:33:26Z",
+                    "description": null,
+                    "language": "C",
+                    "name": "cve-2022-3602-and-cve-2022-3786-openssl-poc",
+                    "stars": 14,
+                    "topics": [],
+                    "updated": "2022-11-26T23:50:56Z",
+                    "url": "https://github.com/rbowes-r7/cve-2022-3602-and-cve-2022-3786-openssl-poc"
+                },
+                {
+                    "created": "2022-11-01T14:06:44Z",
+                    "description": "OpenSSL Vulnerability Scanner for Windows",
+                    "language": "C",
+                    "name": "osslscanwin",
+                    "stars": 4,
+                    "topics": [
+                        "cve",
+                        "cve-2022-3602",
+                        "cve-2022-3786",
+                        "openssl",
+                        "scanner",
+                        "security-scanner",
+                        "security-tool",
+                        "security-tools",
+                        "spookyssl",
+                        "vulnerability",
+                        "vulnerability-scanners"
+                    ],
+                    "updated": "2022-11-10T17:46:57Z",
+                    "url": "https://github.com/Qualys/osslscanwin"
+                },
+                {
+                    "created": "2022-11-07T07:58:36Z",
+                    "description": null,
+                    "language": "Python",
+                    "name": "CVE-2022-3602-and-CVE-2022-3786",
+                    "stars": 2,
+                    "topics": [],
+                    "updated": "2022-11-09T08:22:53Z",
+                    "url": "https://github.com/cybersecurityworks553/CVE-2022-3602-and-CVE-2022-3786"
+                },
+                {
+                    "created": "2022-11-01T01:34:39Z",
+                    "description": "Find SpookySSL in Prisma Cloud Compute scans",
+                    "language": "JavaScript",
+                    "name": "find-spooky-prismacloud",
+                    "stars": 2,
+                    "topics": [
+                        "cve-2022-3602",
+                        "cve-2022-3786",
+                        "openssl",
+                        "prismacloud",
+                        "scanner",
+                        "security",
+                        "spookyssl"
+                    ],
+                    "updated": "2022-11-02T21:37:56Z",
+                    "url": "https://github.com/hi-artem/find-spooky-prismacloud"
+                }
+            ],
+            "lastModifiedDate": "2022-11-04T12:15Z",
+            "num_retweets": 23,
+            "num_tweets": 6,
+            "num_tweets_and_retweets": 29,
+            "publishedDate": "2022-11-01T18:15Z",
+            "reddit_posts": [
+                {
+                    "created": 1667319146.0,
+                    "is_self": false,
+                    "num_comments": 84,
+                    "reddit_url": "https://www.reddit.com/r/programming/comments/yjcu8j/cve20223786_and_cve20223602_x509_email_address/",
+                    "subreddit": "programming",
+                    "subreddit_subscribers": 4908826,
+                    "title": "CVE-2022-3786 and CVE-2022-3602: X.509 Email Address Buffer Overflows",
+                    "upvotes": 207,
+                    "url": "https://www.openssl.org/blog/blog/2022/11/01/email-address-overflows/"
+                },
+                {
+                    "created": 1667319182.0,
+                    "is_self": false,
+                    "num_comments": 20,
+                    "reddit_url": "https://www.reddit.com/r/linux/comments/yjcuta/openssl_vulnerabilities_cve20223786_and/",
+                    "subreddit": "linux",
+                    "subreddit_subscribers": 789657,
+                    "title": "OpenSSL Vulnerabilities - CVE-2022-3786 and CVE-2022-3602: X.509 Email Address Buffer Overflows",
+                    "upvotes": 91,
+                    "url": "https://www.openssl.org/blog/blog/2022/11/01/email-address-overflows/"
+                },
+                {
+                    "created": 1667473710.0,
+                    "is_self": false,
+                    "num_comments": 0,
+                    "reddit_url": "https://www.reddit.com/r/netsec/comments/ykzip5/cve20223602_cve20223786_oss_tools_to_detect/",
+                    "subreddit": "netsec",
+                    "subreddit_subscribers": 461151,
+                    "title": "CVE-2022-3602 &amp; CVE-2022-3786 - OSS tools to detect susceptibility to the recent OpenSSL issues",
+                    "upvotes": 67,
+                    "url": "https://github.com/jfrog/jfrog-openssl-tools"
+                },
+                {
+                    "created": 1668097633.0,
+                    "is_self": true,
+                    "num_comments": 10,
+                    "reddit_url": "https://www.reddit.com/r/embedded/comments/yrk3jm/new_vulnerabilities_cve20223602_and_cve20223786/",
+                    "subreddit": "embedded",
+                    "subreddit_subscribers": 101814,
+                    "title": "New vulnerabilities (CVE-2022-3602 and CVE-2022-3786) in OpenSSL, how they affect IoT and RTOS Devices.",
+                    "upvotes": 49,
+                    "url": "https://www.reddit.com/r/embedded/comments/yrk3jm/new_vulnerabilities_cve20223602_and_cve20223786/"
+                },
+                {
+                    "created": 1667444220.0,
+                    "is_self": false,
+                    "num_comments": 1,
+                    "reddit_url": "https://www.reddit.com/r/crypto/comments/ykqfah/openssl_email_address_overflows_cve20223786_and/",
+                    "subreddit": "crypto",
+                    "subreddit_subscribers": 273087,
+                    "title": "OpenSSL: email address overflows - CVE-2022-3786 and CVE-2022-3602: X.509 Email Address Buffer Overflows",
+                    "upvotes": 40,
+                    "url": "https://www.openssl.org/blog/blog/2022/11/01/email-address-overflows/"
+                }
+            ],
+            "score": 7.5,
+            "severity": "HIGH",
+            "tweets": [
+                {
+                    "created_at": "2022-11-28 01:00",
+                    "likes": 51,
+                    "num_retweets": 23,
+                    "retweets": 23,
+                    "tweet_id": "1597032565809897472",
+                    "tweet_text": "Everything you need to know about the new OpenSSL vulnerabilities (CVE-2022-3602 &amp; CVE-2022-3786) https://t.co/eMv4MGpyZH  #Pentesting #OpenSSL #CVE #Vulnerability #CyberSecurity #Infosec https://t.co/bZZmQUiGjD",
+                    "twitter_user_handle": "ptracesecurity",
+                    "twitter_user_name": "Ptrace Security GmbH",
+                    "twitter_user_profile_pic": "https://pbs.twimg.com/profile_images/659444735791210500/XGvv9R-0_normal.jpg",
+                    "urls": [
+                        {
+                            "display_url": "pentest-tools.com/blog/openssl-v\u2026",
+                            "expanded_url": "https://pentest-tools.com/blog/openssl-vulnerabilities-2022",
+                            "url": "https://t.co/eMv4MGpyZH"
+                        }
+                    ]
+                },
+                {
+                    "created_at": "2022-11-28 06:08",
+                    "likes": 0,
+                    "num_retweets": 0,
+                    "retweets": 0,
+                    "tweet_id": "1597110044713418752",
+                    "tweet_text": "I think that the second retweeted(10 times) tweet that contains CVE ID between Nov 27 2022 06:01 UTC and Nov 28 2022 06:00 UTC is:\nhttps://t.co/xrBxkJH6uE\nIt has CVE-2022-3786. #l24_ns7dqame62n56",
+                    "twitter_user_handle": "ipssignatures",
+                    "twitter_user_name": "ipssignatures",
+                    "twitter_user_profile_pic": "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png",
+                    "urls": [
+                        {
+                            "display_url": "twitter.com/ptracesecurity\u2026",
+                            "expanded_url": "https://twitter.com/ptracesecurity/status/1597032565809897472",
+                            "url": "https://t.co/xrBxkJH6uE"
+                        }
+                    ]
+                },
+                {
+                    "created_at": "2022-11-28 08:08",
+                    "likes": 0,
+                    "num_retweets": 0,
+                    "retweets": 0,
+                    "tweet_id": "1597140244805177345",
+                    "tweet_text": "(Same from about 2 hours ago.)\nI think that the second retweeted(13 times) tweet that contains CVE ID between Nov 27 2022 08:01 UTC and Nov 28 2022 08:00 UTC is:\nhttps://t.co/xrBxkJGyF6\nIt has CVE-2022-3786. #l24_ns7dqame62n56",
+                    "twitter_user_handle": "ipssignatures",
+                    "twitter_user_name": "ipssignatures",
+                    "twitter_user_profile_pic": "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png",
+                    "urls": [
+                        {
+                            "display_url": "twitter.com/ptracesecurity\u2026",
+                            "expanded_url": "https://twitter.com/ptracesecurity/status/1597032565809897472",
+                            "url": "https://t.co/xrBxkJGyF6"
+                        }
+                    ]
+                },
+                {
+                    "created_at": "2022-11-28 10:08",
+                    "likes": 0,
+                    "num_retweets": 0,
+                    "retweets": 0,
+                    "tweet_id": "1597170443638935553",
+                    "tweet_text": "(Same from about 4 hours ago.)\nI think that the second retweeted(17 times) tweet that contains CVE ID between Nov 27 2022 10:01 UTC and Nov 28 2022 10:00 UTC is:\nhttps://t.co/xrBxkJH6uE\nIt has CVE-2022-3786. #l24_ns7dqame62n56",
+                    "twitter_user_handle": "ipssignatures",
+                    "twitter_user_name": "ipssignatures",
+                    "twitter_user_profile_pic": "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png",
+                    "urls": [
+                        {
+                            "display_url": "twitter.com/ptracesecurity\u2026",
+                            "expanded_url": "https://twitter.com/ptracesecurity/status/1597032565809897472",
+                            "url": "https://t.co/xrBxkJH6uE"
+                        }
+                    ]
+                },
+                {
+                    "created_at": "2022-11-28 12:08",
+                    "likes": 0,
+                    "num_retweets": 0,
+                    "retweets": 0,
+                    "tweet_id": "1597200644816805889",
+                    "tweet_text": "(Same from about 6 hours ago.)\nI think that the second retweeted(20 times) tweet that contains CVE ID between Nov 27 2022 12:01 UTC and Nov 28 2022 12:00 UTC is:\nhttps://t.co/xrBxkJoXgw\nIt has CVE-2022-3786. #l24_ns7dqame62n56",
+                    "twitter_user_handle": "ipssignatures",
+                    "twitter_user_name": "ipssignatures",
+                    "twitter_user_profile_pic": "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png",
+                    "urls": [
+                        {
+                            "display_url": "twitter.com/ptracesecurity\u2026",
+                            "expanded_url": "https://twitter.com/ptracesecurity/status/1597032565809897472",
+                            "url": "https://t.co/xrBxkJoXgw"
+                        }
+                    ]
+                }
+            ],
+            "vendor_advisories": [
+                "https://www.openssl.org/news/secadv/20221101.txt"
+            ],
+            "vendors": [
+                {
+                    "products": [
+                        {
+                            "product": "Openssl",
+                            "versions": [
+                                "*"
+                            ]
+                        }
+                    ],
+                    "vendor": "Openssl"
+                },
+                {
+                    "products": [
+                        {
+                            "product": "Fedora",
+                            "versions": [
+                                "36",
+                                "37"
+                            ]
+                        }
+                    ],
+                    "vendor": "Fedoraproject"
+                }
+            ]
+        },
+        {
+            "assigner": "openssl-security@openssl.org",
+            "audience_size": 135672,
+            "cve": "CVE-2022-3602",
+            "cve_urls": null,
+            "cvssv2_base_score": null,
+            "cvssv2_severity": null,
+            "cvssv3_base_score": 7.5,
+            "cvssv3_base_severity": "HIGH",
+            "cwes": [
+                {
+                    "cwe_description": "Buffer Copy without Checking Size of Input ('Classic Buffer Overflow')",
+                    "cwe_id": "CWE-120"
+                }
+            ],
+            "description": "A buffer overrun can be triggered in X.509 certificate verification, specifically in name constraint checking. Note that this occurs after certificate chain signature verification and requires either a CA to have signed the malicious certificate or for the application to continue certificate verification despite failure to construct a path to a trusted issuer. An attacker can craft a malicious email address to overflow four attacker-controlled bytes on the stack. This buffer overflow could result in a crash (causing a denial of service) or potentially remote code execution. Many platforms implement stack overflow protections which would mitigate against the risk of remote code execution. The risk may be further mitigated based on stack layout for any given platform/compiler. Pre-announcements of CVE-2022-3602 described this issue as CRITICAL. Further analysis based on some of the mitigating factors described above have led this to be downgraded to HIGH. Users are still encouraged to upgrade to a new version as soon as possible. In a TLS client, this can be triggered by connecting to a malicious server. In a TLS server, this can be triggered if the server requests client authentication and a malicious client connects. Fixed in OpenSSL 3.0.7 (Affected 3.0.0,3.0.1,3.0.2,3.0.3,3.0.4,3.0.5,3.0.6).",
+            "epss_score": "0.53308",
+            "github_repos": [
+                {
+                    "created": "2022-10-28T09:51:41Z",
+                    "description": "Operational information regarding CVE-2022-3602 and CVE-2022-3786, two vulnerabilities in OpenSSL 3",
+                    "language": null,
+                    "name": "OpenSSL-2022",
+                    "stars": 529,
+                    "topics": [
+                        "cve-2022-3602",
+                        "cve-2022-3786",
+                        "openssl",
+                        "spookyssl"
+                    ],
+                    "updated": "2022-11-26T16:34:53Z",
+                    "url": "https://github.com/NCSC-NL/OpenSSL-2022"
+                },
+                {
+                    "created": "2022-10-30T23:32:56Z",
+                    "description": null,
+                    "language": "Python",
+                    "name": "CVE-2022-3602",
+                    "stars": 164,
+                    "topics": [],
+                    "updated": "2022-11-28T06:19:08Z",
+                    "url": "https://github.com/colmmacc/CVE-2022-3602"
+                },
+                {
+                    "created": "2022-11-02T17:33:26Z",
+                    "description": null,
+                    "language": "C",
+                    "name": "cve-2022-3602-and-cve-2022-3786-openssl-poc",
+                    "stars": 14,
+                    "topics": [],
+                    "updated": "2022-11-26T23:50:56Z",
+                    "url": "https://github.com/rbowes-r7/cve-2022-3602-and-cve-2022-3786-openssl-poc"
+                },
+                {
+                    "created": "2022-10-31T18:52:24Z",
+                    "description": null,
+                    "language": "C",
+                    "name": "CVE-2022-3602-poc",
+                    "stars": 13,
+                    "topics": [],
+                    "updated": "2022-11-27T15:42:57Z",
+                    "url": "https://github.com/eatscrayon/CVE-2022-3602-poc"
+                },
+                {
+                    "created": "2022-11-02T13:41:35Z",
+                    "description": "SpookySSL PCAPS and Network Coverage",
+                    "language": null,
+                    "name": "spookyssl-pcaps",
+                    "stars": 9,
+                    "topics": [
+                        "cve-2022-3602",
+                        "detection",
+                        "network",
+                        "openssl",
+                        "pcaps",
+                        "spookyssl",
+                        "suricata"
+                    ],
+                    "updated": "2022-11-22T07:24:48Z",
+                    "url": "https://github.com/fox-it/spookyssl-pcaps"
+                }
+            ],
+            "lastModifiedDate": "2022-11-04T19:49Z",
+            "num_retweets": 23,
+            "num_tweets": 6,
+            "num_tweets_and_retweets": 29,
+            "publishedDate": "2022-11-01T18:15Z",
+            "reddit_posts": [
+                {
+                    "created": 1669043924.0,
+                    "is_self": false,
+                    "num_comments": 69,
+                    "reddit_url": "https://www.reddit.com/r/programming/comments/z11huj/why_cve20223602_was_not_detected_by_fuzz_testing/",
+                    "subreddit": "programming",
+                    "subreddit_subscribers": 4908825,
+                    "title": "Why CVE-2022-3602 was not detected by fuzz testing",
+                    "upvotes": 562,
+                    "url": "https://allsoftwaresucks.blogspot.com/2022/11/why-cve-2022-3602-was-not-detected-by.html"
+                },
+                {
+                    "created": 1667319146.0,
+                    "is_self": false,
+                    "num_comments": 84,
+                    "reddit_url": "https://www.reddit.com/r/programming/comments/yjcu8j/cve20223786_and_cve20223602_x509_email_address/",
+                    "subreddit": "programming",
+                    "subreddit_subscribers": 4908825,
+                    "title": "CVE-2022-3786 and CVE-2022-3602: X.509 Email Address Buffer Overflows",
+                    "upvotes": 203,
+                    "url": "https://www.openssl.org/blog/blog/2022/11/01/email-address-overflows/"
+                },
+                {
+                    "created": 1667319182.0,
+                    "is_self": false,
+                    "num_comments": 20,
+                    "reddit_url": "https://www.reddit.com/r/linux/comments/yjcuta/openssl_vulnerabilities_cve20223786_and/",
+                    "subreddit": "linux",
+                    "subreddit_subscribers": 789657,
+                    "title": "OpenSSL Vulnerabilities - CVE-2022-3786 and CVE-2022-3602: X.509 Email Address Buffer Overflows",
+                    "upvotes": 95,
+                    "url": "https://www.openssl.org/blog/blog/2022/11/01/email-address-overflows/"
+                },
+                {
+                    "created": 1667473710.0,
+                    "is_self": false,
+                    "num_comments": 0,
+                    "reddit_url": "https://www.reddit.com/r/netsec/comments/ykzip5/cve20223602_cve20223786_oss_tools_to_detect/",
+                    "subreddit": "netsec",
+                    "subreddit_subscribers": 461151,
+                    "title": "CVE-2022-3602 &amp; CVE-2022-3786 - OSS tools to detect susceptibility to the recent OpenSSL issues",
+                    "upvotes": 63,
+                    "url": "https://github.com/jfrog/jfrog-openssl-tools"
+                },
+                {
+                    "created": 1667321847.0,
+                    "is_self": false,
+                    "num_comments": 1,
+                    "reddit_url": "https://www.reddit.com/r/netsec/comments/yje4iw/the_openssl_punycode_vulnerability_cve20223602/",
+                    "subreddit": "netsec",
+                    "subreddit_subscribers": 461151,
+                    "title": "The OpenSSL punycode vulnerability (CVE-2022-3602): Overview, detection, exploitation, and remediation | Datadog Security Labs",
+                    "upvotes": 56,
+                    "url": "https://securitylabs.datadoghq.com/articles/openssl-november-1-vulnerabilities/"
+                }
+            ],
+            "score": 7.5,
+            "severity": "HIGH",
+            "tweets": [
+                {
+                    "created_at": "2022-11-28 01:00",
+                    "likes": 51,
+                    "num_retweets": 23,
+                    "retweets": 23,
+                    "tweet_id": "1597032565809897472",
+                    "tweet_text": "Everything you need to know about the new OpenSSL vulnerabilities (CVE-2022-3602 &amp; CVE-2022-3786) https://t.co/eMv4MGpyZH  #Pentesting #OpenSSL #CVE #Vulnerability #CyberSecurity #Infosec https://t.co/bZZmQUiGjD",
+                    "twitter_user_handle": "ptracesecurity",
+                    "twitter_user_name": "Ptrace Security GmbH",
+                    "twitter_user_profile_pic": "https://pbs.twimg.com/profile_images/659444735791210500/XGvv9R-0_normal.jpg",
+                    "urls": [
+                        {
+                            "display_url": "pentest-tools.com/blog/openssl-v\u2026",
+                            "expanded_url": "https://pentest-tools.com/blog/openssl-vulnerabilities-2022",
+                            "url": "https://t.co/eMv4MGpyZH"
+                        }
+                    ]
+                },
+                {
+                    "created_at": "2022-11-28 08:08",
+                    "likes": 0,
+                    "num_retweets": 0,
+                    "retweets": 0,
+                    "tweet_id": "1597140243664101377",
+                    "tweet_text": "(Same from about 2 hours ago.)\nI think that the second retweeted(13 times) tweet that contains CVE ID between Nov 27 2022 08:01 UTC and Nov 28 2022 08:00 UTC is:\nhttps://t.co/xrBxkJoXgw\nIt has CVE-2022-3602. #l24_id3rfzyvgogmc",
+                    "twitter_user_handle": "ipssignatures",
+                    "twitter_user_name": "ipssignatures",
+                    "twitter_user_profile_pic": "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png",
+                    "urls": [
+                        {
+                            "display_url": "twitter.com/ptracesecurity\u2026",
+                            "expanded_url": "https://twitter.com/ptracesecurity/status/1597032565809897472",
+                            "url": "https://t.co/xrBxkJoXgw"
+                        }
+                    ]
+                },
+                {
+                    "created_at": "2022-11-28 10:08",
+                    "likes": 0,
+                    "num_retweets": 0,
+                    "retweets": 0,
+                    "tweet_id": "1597170442774749184",
+                    "tweet_text": "(Same from about 4 hours ago.)\nI think that the second retweeted(17 times) tweet that contains CVE ID between Nov 27 2022 10:01 UTC and Nov 28 2022 10:00 UTC is:\nhttps://t.co/xrBxkJGyF6\nIt has CVE-2022-3602. #l24_id3rfzyvgogmc",
+                    "twitter_user_handle": "ipssignatures",
+                    "twitter_user_name": "ipssignatures",
+                    "twitter_user_profile_pic": "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png",
+                    "urls": [
+                        {
+                            "display_url": "twitter.com/ptracesecurity\u2026",
+                            "expanded_url": "https://twitter.com/ptracesecurity/status/1597032565809897472",
+                            "url": "https://t.co/xrBxkJGyF6"
+                        }
+                    ]
+                },
+                {
+                    "created_at": "2022-11-28 06:06",
+                    "likes": 0,
+                    "num_retweets": 0,
+                    "retweets": 0,
+                    "tweet_id": "1597109534983880705",
+                    "tweet_text": "The vuln CVE-2022-3602 has a tweet created 0 days ago and retweeted 10 times.\nhttps://t.co/xrBxkJH6uE\n#pow1rtrtwwcve",
+                    "twitter_user_handle": "ipssignatures",
+                    "twitter_user_name": "ipssignatures",
+                    "twitter_user_profile_pic": "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png",
+                    "urls": [
+                        {
+                            "display_url": "twitter.com/ptracesecurity\u2026",
+                            "expanded_url": "https://twitter.com/ptracesecurity/status/1597032565809897472",
+                            "url": "https://t.co/xrBxkJH6uE"
+                        }
+                    ]
+                },
+                {
+                    "created_at": "2022-11-28 06:08",
+                    "likes": 0,
+                    "num_retweets": 0,
+                    "retweets": 0,
+                    "tweet_id": "1597110043798904832",
+                    "tweet_text": "I think that the second retweeted(10 times) tweet that contains CVE ID between Nov 27 2022 06:01 UTC and Nov 28 2022 06:00 UTC is:\nhttps://t.co/xrBxkJGyF6\nIt has CVE-2022-3602. #l24_id3rfzyvgogmc",
+                    "twitter_user_handle": "ipssignatures",
+                    "twitter_user_name": "ipssignatures",
+                    "twitter_user_profile_pic": "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png",
+                    "urls": [
+                        {
+                            "display_url": "twitter.com/ptracesecurity\u2026",
+                            "expanded_url": "https://twitter.com/ptracesecurity/status/1597032565809897472",
+                            "url": "https://t.co/xrBxkJGyF6"
+                        }
+                    ]
+                }
+            ],
+            "vendor_advisories": [
+                "https://www.openssl.org/news/secadv/20221101.txt"
+            ],
+            "vendors": [
+                {
+                    "products": [
+                        {
+                            "product": "Openssl",
+                            "versions": [
+                                "*"
+                            ]
+                        }
+                    ],
+                    "vendor": "Openssl"
+                },
+                {
+                    "products": [
+                        {
+                            "product": "Fedora",
+                            "versions": [
+                                "36",
+                                "37",
+                                "26",
+                                "27"
+                            ]
+                        }
+                    ],
+                    "vendor": "Fedoraproject"
+                },
+                {
+                    "products": [
+                        {
+                            "product": "Clustered Data Ontap",
+                            "versions": [
+                                "-"
+                            ]
+                        }
+                    ],
+                    "vendor": "Netapp"
+                }
+            ]
+        },
+        {
+            "assigner": "chrome-cve-admin@google.com",
+            "audience_size": 103501,
+            "cve": "CVE-2022-4135",
+            "cve_urls": null,
+            "cvssv2_base_score": null,
+            "cvssv2_severity": null,
+            "cvssv3_base_score": null,
+            "cvssv3_base_severity": null,
+            "cwes": [],
+            "description": "Heap buffer overflow in GPU in Google Chrome prior to 107.0.5304.121 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: High)",
+            "epss_score": "0.01055",
+            "github_repos": [
+                {
+                    "created": "2022-11-11T20:58:08Z",
+                    "description": "Zimbra <9.0.0.p27 RCE",
+                    "language": "Python",
+                    "name": "cve-2022-41352-zimbra-rce",
+                    "stars": 74,
+                    "topics": [
+                        "cpio",
+                        "cve",
+                        "cve-2022-41352",
+                        "python3",
+                        "rce",
+                        "zimbra"
+                    ],
+                    "updated": "2022-11-28T13:11:27Z",
+                    "url": "https://github.com/Cr4ckC4t/cve-2022-41352-zimbra-rce"
+                },
+                {
+                    "created": "2022-10-10T13:04:34Z",
+                    "description": "cve-2022-41352 poc",
+                    "language": "Python",
+                    "name": "cve-2022-41352",
+                    "stars": 7,
+                    "topics": [],
+                    "updated": "2022-10-26T03:48:30Z",
+                    "url": "https://github.com/segfault-it/cve-2022-41352"
+                },
+                {
+                    "created": "2022-11-21T07:10:12Z",
+                    "description": null,
+                    "language": "Java",
+                    "name": "cve-2022-41352-zimbra-rce",
+                    "stars": 1,
+                    "topics": [],
+                    "updated": "2022-11-22T08:49:55Z",
+                    "url": "https://github.com/aryrz/cve-2022-41352-zimbra-rce"
+                },
+                {
+                    "created": "2022-10-15T17:06:00Z",
+                    "description": null,
+                    "language": null,
+                    "name": "CVE-2022-41358",
+                    "stars": 0,
+                    "topics": [],
+                    "updated": "2022-10-15T17:06:00Z",
+                    "url": "https://github.com/thecasual/CVE-2022-41358"
+                }
+            ],
+            "lastModifiedDate": "2022-11-25T13:59Z",
+            "num_retweets": 7,
+            "num_tweets": 20,
+            "num_tweets_and_retweets": 27,
+            "publishedDate": "2022-11-25T01:15Z",
+            "reddit_posts": [
+                {
+                    "created": 1669445403.0,
+                    "is_self": false,
+                    "num_comments": 0,
+                    "reddit_url": "https://www.reddit.com/r/blueteamsec/comments/z50nx3/stable_channel_update_for_chrome_desktop_google/",
+                    "subreddit": "blueteamsec",
+                    "subreddit_subscribers": 31260,
+                    "title": "Stable Channel Update for Chrome Desktop - Google is aware that an exploit for CVE-2022-4135 exists in the wild.",
+                    "upvotes": 13,
+                    "url": "https://chromereleases.googleblog.com/2022/11/stable-channel-update-for-desktop_24.html?m=1"
+                },
+                {
+                    "created": 1669395547.0,
+                    "is_self": true,
+                    "num_comments": 0,
+                    "reddit_url": "https://www.reddit.com/r/HackProtectSlo/comments/z4i92n/google_releases_patch_for_an_actively_exploited/",
+                    "subreddit": "HackProtectSlo",
+                    "subreddit_subscribers": 222,
+                    "title": "Google Releases Patch for an Actively Exploited Zero-day Vulnerability in its Chrome Browser (CVE-2022-4135)",
+                    "upvotes": 2,
+                    "url": "https://www.reddit.com/r/HackProtectSlo/comments/z4i92n/google_releases_patch_for_an_actively_exploited/"
+                },
+                {
+                    "created": 1669626398.0,
+                    "is_self": true,
+                    "num_comments": 0,
+                    "reddit_url": "https://www.reddit.com/r/Hacks_And_Exploits/comments/z6rqc6/update_chrome_browser_now_to_patch_new_actively/",
+                    "subreddit": "Hacks_And_Exploits",
+                    "subreddit_subscribers": 2,
+                    "title": "Update Chrome Browser Now to Patch New Actively Exploited Zero-Day Flaw",
+                    "upvotes": 1,
+                    "url": "https://www.reddit.com/r/Hacks_And_Exploits/comments/z6rqc6/update_chrome_browser_now_to_patch_new_actively/"
+                },
+                {
+                    "created": 1669385389.0,
+                    "is_self": false,
+                    "num_comments": 0,
+                    "reddit_url": "https://www.reddit.com/r/SecurityIT/comments/z4ea8l/cve20224135_0day_per_chrome/",
+                    "subreddit": "SecurityIT",
+                    "subreddit_subscribers": 61,
+                    "title": "CVE-2022-4135 - 0day per chrome",
+                    "upvotes": 1,
+                    "url": "https://nvd.nist.gov/vuln/detail/CVE-2022-4135"
+                },
+                {
+                    "created": 1669340321.0,
+                    "is_self": false,
+                    "num_comments": 0,
+                    "reddit_url": "https://www.reddit.com/r/netcve/comments/z40gn7/cve20224135/",
+                    "subreddit": "netcve",
+                    "subreddit_subscribers": 109,
+                    "title": "CVE-2022-4135",
+                    "upvotes": 1,
+                    "url": "https://cve.report/CVE-2022-4135"
+                }
+            ],
+            "score": null,
+            "severity": null,
+            "tweets": [
+                {
+                    "created_at": "2022-11-27 14:00",
+                    "likes": 5,
+                    "num_retweets": 2,
+                    "retweets": 3,
+                    "tweet_id": "1596866443940925442",
+                    "tweet_text": "Top 3 trending CVEs on Twitter\n\nPast 24 hrs:\nCVE-2021-40444: 105.6K (audience size)\nCVE-2022-45934: 92.4K\nCVE-2022-4135: 90.8K\n\nPast 7 days:\nCVE-2022-4135: 3.7M\nCVE-2022-33942: 1.2M\nCVE-2022-41924: 1.1M\n\nhttps://t.co/LhpwNP6xog",
+                    "twitter_user_handle": "CVEtrends",
+                    "twitter_user_name": "CVE Trends",
+                    "twitter_user_profile_pic": "https://pbs.twimg.com/profile_images/1465356279585644556/y1IAsYUX_normal.jpg",
+                    "urls": [
+                        {
+                            "display_url": "cvetrends.com",
+                            "expanded_url": "https://cvetrends.com",
+                            "url": "https://t.co/LhpwNP6xog"
+                        }
+                    ]
+                },
+                {
+                    "created_at": "2022-11-28 08:28",
+                    "likes": 2,
+                    "num_retweets": 1,
+                    "retweets": 1,
+                    "tweet_id": "1597145490700861443",
+                    "tweet_text": "Heap buffer overflow in GPU in Google Chrome CVE-2022-4135\nhttps://t.co/rAIJ6mDp1w\nClassification: Critical, Solution: Update, Exploit: Wild",
+                    "twitter_user_handle": "samilaiho",
+                    "twitter_user_name": "Sami Laiho",
+                    "twitter_user_profile_pic": "https://pbs.twimg.com/profile_images/1124698234432229377/GGydPKA-_normal.jpg",
+                    "urls": [
+                        {
+                            "display_url": "chromereleases.googleblog.com/2022/11/stable\u2026",
+                            "expanded_url": "https://chromereleases.googleblog.com/2022/11/stable-channel-update-for-desktop_24.html",
+                            "url": "https://t.co/rAIJ6mDp1w"
+                        }
+                    ]
+                },
+                {
+                    "created_at": "2022-11-28 10:01",
+                    "likes": 1,
+                    "num_retweets": 1,
+                    "retweets": 1,
+                    "tweet_id": "1597168707993833472",
+                    "tweet_text": "Google Chrome buffer overflow | CVE-2022-4135 - https://t.co/TUaSaTMFOX\n\n#CVE #Vulnerability #OSINT #ThreatIntel #Cyber",
+                    "twitter_user_handle": "RedPacketSec",
+                    "twitter_user_name": "RedPacket Security",
+                    "twitter_user_profile_pic": "https://pbs.twimg.com/profile_images/1557095801272373248/RmJX2gB4_normal.jpg",
+                    "urls": [
+                        {
+                            "display_url": "redpacketsecurity.com/google-chrome-\u2026",
+                            "expanded_url": "https://www.redpacketsecurity.com/google-chrome-buffer-overflow-cve-2022-4135/",
+                            "url": "https://t.co/TUaSaTMFOX"
+                        }
+                    ]
+                },
+                {
+                    "created_at": "2022-11-28 01:43",
+                    "likes": 7,
+                    "num_retweets": 1,
+                    "retweets": 1,
+                    "tweet_id": "1597043545122435074",
+                    "tweet_text": "\u0627\u0635\u062f\u0631\u062a #google \u062a\u062d\u062f\u064a\u062b\u0627\u064b \u0644\u0645\u062a\u0635\u0641\u062d #Chrome \u0644\u062a\u0635\u062d\u064a\u062d \u062b\u063a\u0631\u0629 \u062c\u062f\u064a\u062f\u0629 0day vulnerability \n\n(CVE-2022-4135) \n\n\u0627\u0644\u0645\u0648\u062c\u0648\u062f\u0629 \u0641\u064a \u0645\u0643\u0648\u0646 GPU https://t.co/xCEkpwArwQ",
+                    "twitter_user_handle": "r00t_nasser",
+                    "twitter_user_name": "\u0646\u0627\u0635\u0631 \u0628\u0646 \u062d\u0627\u0633\u0646 | \u0623\u0645\u0646 \u0633\u064a\u0628\u0631\u0627\u0646\u064a\ud83d\udee1",
+                    "twitter_user_profile_pic": "https://pbs.twimg.com/profile_images/1593940684616175618/uiCj7aeO_normal.jpg",
+                    "urls": []
+                },
+                {
+                    "created_at": "2022-11-27 14:50",
+                    "likes": 1,
+                    "num_retweets": 0,
+                    "retweets": 0,
+                    "tweet_id": "1596879052216078336",
+                    "tweet_text": "Google \u0432\u044b\u043f\u0443\u0441\u0442\u0438\u043b\u0430 \u044d\u043a\u0441\u0442\u0440\u0435\u043d\u043d\u043e\u0435 \u043e\u0431\u043d\u043e\u0432\u043b\u0435\u043d\u0438\u0435 \u0434\u043b\u044f \u0431\u0440\u0430\u0443\u0437\u0435\u0440\u0430 Chrome: \u043e\u043d\u043e \u0443\u0441\u0442\u0440\u0430\u043d\u044f\u0435\u0442 \u043e\u0448\u0438\u0431\u043a\u0443 CVE-2022-4135, \u043f\u0440\u0438\u0432\u043e\u0434\u044f\u0449\u0443\u044e \u043a \u043f\u0435\u0440\u0435\u043f\u043e\u043b\u043d\u0435\u043d\u0438\u044e \u0431\u0443\u0444\u0435\u0440\u0430 \u0432 \u043a\u043e\u043c\u043f\u043e\u043d\u0435\u043d\u0442\u0435 \u0433\u0440\u0430\u0444\u0438\u0447\u0435\u0441\u043a\u043e\u0433\u043e \u043f\u0440\u043e\u0446\u0435\u0441\u0441\u0430. \u042d\u043a\u0441\u043f\u043b\u043e\u0439\u0442 \u043f\u043e\u0437\u0432\u043e\u043b\u044f\u0435\u0442 \u0445\u0430\u043a\u0435\u0440\u0430\u043c \u0437\u0430\u043f\u0443\u0441\u043a\u0430\u0442\u044c \u043f\u0440\u043e\u0438\u0437\u0432\u043e\u043b\u044c\u043d\u044b\u0439 \u043a\u043e\u0434. https://t.co/baikf58mTU",
+                    "twitter_user_handle": "blancvpn",
+                    "twitter_user_name": "BlancVPN",
+                    "twitter_user_profile_pic": "https://pbs.twimg.com/profile_images/1564620632482095104/VFq8UX2t_normal.jpg",
+                    "urls": []
+                }
+            ],
+            "vendor_advisories": [],
+            "vendors": []
+        },
+        {
+            "assigner": "help@fluidattacks.com",
+            "audience_size": 100707,
+            "cve": "CVE-2022-0698",
+            "cve_urls": null,
+            "cvssv2_base_score": null,
+            "cvssv2_severity": null,
+            "cvssv3_base_score": null,
+            "cvssv3_base_severity": null,
+            "cwes": [],
+            "description": "Microweber version 1.3.1 allows an unauthenticated user to perform an account takeover via an XSS on the 'select-file' parameter.",
+            "epss_score": "0.00885",
+            "github_repos": [],
+            "lastModifiedDate": "2022-11-25T18:42Z",
+            "num_retweets": 5,
+            "num_tweets": 7,
+            "num_tweets_and_retweets": 12,
+            "publishedDate": "2022-11-25T18:15Z",
+            "reddit_posts": [
+                {
+                    "created": 1669629679.0,
+                    "is_self": false,
+                    "num_comments": 0,
+                    "reddit_url": "https://www.reddit.com/r/RedPacketSecurity/comments/z6sn7o/microweber_crosssite_scripting_cve20220698/",
+                    "subreddit": "RedPacketSecurity",
+                    "subreddit_subscribers": 557,
+                    "title": "Microweber cross-site scripting | CVE-2022-0698",
+                    "upvotes": 1,
+                    "url": "https://www.redpacketsecurity.com/microweber-cross-site-scripting-cve-2022-0698/"
+                },
+                {
+                    "created": 1659445330.0,
+                    "is_self": true,
+                    "num_comments": 0,
+                    "reddit_url": "https://www.reddit.com/r/k12cybersecurity/comments/web4md/msisac_cybersecurity_advisory_multiple/",
+                    "subreddit": "k12cybersecurity",
+                    "subreddit_subscribers": 69,
+                    "title": "MS-ISAC CYBERSECURITY ADVISORY - Multiple Vulnerabilities in Google Android OS Could Allow for Remote Code Execution - PATCH: NOW",
+                    "upvotes": 1,
+                    "url": "https://www.reddit.com/r/k12cybersecurity/comments/web4md/msisac_cybersecurity_advisory_multiple/"
+                }
+            ],
+            "score": null,
+            "severity": null,
+            "tweets": [
+                {
+                    "created_at": "2022-11-28 04:33",
+                    "likes": 2,
+                    "num_retweets": 2,
+                    "retweets": 2,
+                    "tweet_id": "1597086243531038721",
+                    "tweet_text": "CVE-2022-0698: Microweber DOM Cross-Site Scripting Vulnerability https://t.co/R9mNr8KnVl #security #opensource #cybersecurity #malware #cyber #pentesting #malwareanalysis #infosec #redteam #malwarehunting #hacking #infosec #threathunting #bugbounty #tools #offensivesecurity",
+                    "twitter_user_handle": "FilipiPires",
+                    "twitter_user_name": "Filipi Pires",
+                    "twitter_user_profile_pic": "https://pbs.twimg.com/profile_images/1531334436800831488/evf2wJ4z_normal.jpg",
+                    "urls": [
+                        {
+                            "display_url": "ift.tt/rBZLAFl",
+                            "expanded_url": "https://ift.tt/rBZLAFl",
+                            "url": "https://t.co/R9mNr8KnVl"
+                        }
+                    ]
+                },
+                {
+                    "created_at": "2022-11-28 03:28",
+                    "likes": 1,
+                    "num_retweets": 2,
+                    "retweets": 2,
+                    "tweet_id": "1597069811586306048",
+                    "tweet_text": "\ud83d\udde3 CVE-2022-0698: Microweber DOM Cross-Site Scripting Vulnerability\nhttps://t.co/oZ3NE8pK0a\n\n#security #cybernews #cybersecurity #fridaysecurity #linkedin #twitter #telegram",
+                    "twitter_user_handle": "fridaysecurity",
+                    "twitter_user_name": "Friday Security News",
+                    "twitter_user_profile_pic": "https://pbs.twimg.com/profile_images/1525867150279311361/6JfVBZDl_normal.png",
+                    "urls": [
+                        {
+                            "display_url": "securityonline.info/cve-2022-0698-\u2026",
+                            "expanded_url": "https://securityonline.info/cve-2022-0698-microweber-dom-cross-site-scripting-vulnerability/",
+                            "url": "https://t.co/oZ3NE8pK0a"
+                        }
+                    ]
+                },
+                {
+                    "created_at": "2022-11-28 10:01",
+                    "likes": 1,
+                    "num_retweets": 1,
+                    "retweets": 1,
+                    "tweet_id": "1597168706844561408",
+                    "tweet_text": "Microweber cross-site scripting | CVE-2022-0698 - https://t.co/N91hBUdrfj\n\n#CVE #Vulnerability #OSINT #ThreatIntel #Cyber",
+                    "twitter_user_handle": "RedPacketSec",
+                    "twitter_user_name": "RedPacket Security",
+                    "twitter_user_profile_pic": "https://pbs.twimg.com/profile_images/1557095801272373248/RmJX2gB4_normal.jpg",
+                    "urls": [
+                        {
+                            "display_url": "redpacketsecurity.com/microweber-cro\u2026",
+                            "expanded_url": "https://www.redpacketsecurity.com/microweber-cross-site-scripting-cve-2022-0698/",
+                            "url": "https://t.co/N91hBUdrfj"
+                        }
+                    ]
+                },
+                {
+                    "created_at": "2022-11-28 03:21",
+                    "likes": 1,
+                    "num_retweets": 0,
+                    "retweets": 0,
+                    "tweet_id": "1597068167880544256",
+                    "tweet_text": "CVE-2022-0698: Microweber DOM Cross-Site Scripting Vulnerability https://t.co/Rhj0QDXEE8 #opensource #infosec #security #pentesting",
+                    "twitter_user_handle": "the_yellow_fall",
+                    "twitter_user_name": "Gray Hats",
+                    "twitter_user_profile_pic": "https://pbs.twimg.com/profile_images/419147954344058880/bTW9Gx7T_normal.png",
+                    "urls": [
+                        {
+                            "display_url": "securityonline.info/cve-2022-0698-\u2026",
+                            "expanded_url": "https://securityonline.info/cve-2022-0698-microweber-dom-cross-site-scripting-vulnerability/",
+                            "url": "https://t.co/Rhj0QDXEE8"
+                        }
+                    ]
+                },
+                {
+                    "created_at": "2022-11-28 07:44",
+                    "likes": 0,
+                    "num_retweets": 0,
+                    "retweets": 0,
+                    "tweet_id": "1597134297642987522",
+                    "tweet_text": "CVE-2022-0698: Microweber DOM Cross-Site Scripting Vulnerability\n\nhttps://t.co/CISHK2d80d",
+                    "twitter_user_handle": "PentestingN",
+                    "twitter_user_name": "Pentesting News",
+                    "twitter_user_profile_pic": "https://pbs.twimg.com/profile_images/1473953427126370307/3MoIVS8I_normal.jpg",
+                    "urls": [
+                        {
+                            "display_url": "securityonline.info/cve-2022-0698-\u2026",
+                            "expanded_url": "https://securityonline.info/cve-2022-0698-microweber-dom-cross-site-scripting-vulnerability/",
+                            "url": "https://t.co/CISHK2d80d"
+                        }
+                    ]
+                }
+            ],
+            "vendor_advisories": [],
+            "vendors": []
+        },
+        {
+            "assigner": "cve@mitre.org",
+            "audience_size": 63790,
+            "cve": "CVE-2022-45939",
+            "cve_urls": null,
+            "cvssv2_base_score": null,
+            "cvssv2_severity": null,
+            "cvssv3_base_score": null,
+            "cvssv3_base_severity": null,
+            "cwes": [],
+            "description": "GNU Emacs through 28.2 allows attackers to execute commands via shell metacharacters in the name of a source-code file, because lib-src/etags.c uses the system C library function in its implementation of the ctags program. For example, a victim may use the \"ctags *\" command (suggested in the ctags documentation) in a situation where the current working directory has contents that depend on untrusted input.",
+            "epss_score": "0.00885",
+            "github_repos": [],
+            "lastModifiedDate": "2022-11-28T06:15Z",
+            "num_retweets": 1,
+            "num_tweets": 12,
+            "num_tweets_and_retweets": 13,
+            "publishedDate": "2022-11-28T06:15Z",
+            "reddit_posts": [
+                {
+                    "created": 1669617499.0,
+                    "is_self": false,
+                    "num_comments": 0,
+                    "reddit_url": "https://www.reddit.com/r/netcve/comments/z6p7gh/cve202245939/",
+                    "subreddit": "netcve",
+                    "subreddit_subscribers": 109,
+                    "title": "CVE-2022-45939",
+                    "upvotes": 1,
+                    "url": "https://cve.report/CVE-2022-45939"
+                }
+            ],
+            "score": null,
+            "severity": null,
+            "tweets": [
+                {
+                    "created_at": "2022-11-28 05:45",
+                    "likes": 3,
+                    "num_retweets": 1,
+                    "retweets": 2,
+                    "tweet_id": "1597104303386554368",
+                    "tweet_text": "CVE-2022-45939 GNU Emacs through 28.2 allows attackers to execute commands via shell metacharacters in the name of a source-code file, because lib-src/etags.c uses the system C library function in its implementation of the ctags program. For examp... https://t.co/WkAhbx1HF8",
+                    "twitter_user_handle": "CVEnew",
+                    "twitter_user_name": "CVE",
+                    "twitter_user_profile_pic": "https://pbs.twimg.com/profile_images/1447927972393111557/PQRMlVvZ_normal.jpg",
+                    "urls": [
+                        {
+                            "display_url": "cve.mitre.org/cgi-bin/cvenam\u2026",
+                            "expanded_url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-45939",
+                            "url": "https://t.co/WkAhbx1HF8"
+                        }
+                    ]
+                },
+                {
+                    "created_at": "2022-11-28 06:06",
+                    "likes": 0,
+                    "num_retweets": 0,
+                    "retweets": 0,
+                    "tweet_id": "1597109563009933312",
+                    "tweet_text": "CVE-2022-45939 : GNU Emacs through 28.2 allows attackers to execute commands via shell metacharacters in the name of a source-code file, because lib-src/etags.c uses the system C library function in its implementation of the ctags progra... https://t.co/57BoHKhlo9",
+                    "twitter_user_handle": "CVEreport",
+                    "twitter_user_name": "CVE.report",
+                    "twitter_user_profile_pic": "https://pbs.twimg.com/profile_images/589794568574357505/gwqqrkZn_normal.png",
+                    "urls": [
+                        {
+                            "display_url": "cve.report/CVE-2022-45939",
+                            "expanded_url": "https://cve.report/CVE-2022-45939",
+                            "url": "https://t.co/57BoHKhlo9"
+                        }
+                    ]
+                },
+                {
+                    "created_at": "2022-11-28 06:11",
+                    "likes": 0,
+                    "num_retweets": 0,
+                    "retweets": 0,
+                    "tweet_id": "1597111011571826689",
+                    "tweet_text": "CVEnew: CVE-2022-45939 GNU Emacs through 28.2 allows attackers to execute commands via shell metacharacters in the name of a source-code file, because lib-src/etags.c uses the system C library function in its implementation of the ctags program. For exam\u2026 https://t.co/4KGq25PcsS",
+                    "twitter_user_handle": "hernanespinoza",
+                    "twitter_user_name": "Hernan Espinoza",
+                    "twitter_user_profile_pic": "https://pbs.twimg.com/profile_images/1547685026636017665/VkgyrG2V_normal.jpg",
+                    "urls": [
+                        {
+                            "display_url": "cve.mitre.org/cgi-bin/cvenam\u2026",
+                            "expanded_url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-45939",
+                            "url": "https://t.co/4KGq25PcsS"
+                        }
+                    ]
+                },
+                {
+                    "created_at": "2022-11-28 06:26",
+                    "likes": 0,
+                    "num_retweets": 0,
+                    "retweets": 0,
+                    "tweet_id": "1597114775959351297",
+                    "tweet_text": "\ud83d\udea8 NEW: CVE-2022-45939 \ud83d\udea8 GNU Emacs through 28.2 allows attackers to execute commands via shell metacharacters in the name of a source-code file, because lib-src/etags.c uses the system C library function in its impl... (click for more)  https://t.co/xQJSW4Ahqe",
+                    "twitter_user_handle": "threatintelctr",
+                    "twitter_user_name": "Threat Intel Center",
+                    "twitter_user_profile_pic": "https://pbs.twimg.com/profile_images/904224973987840000/dMy1x9Ho_normal.jpg",
+                    "urls": [
+                        {
+                            "display_url": "nvd.nist.gov/vuln/detail/CV\u2026",
+                            "expanded_url": "https://nvd.nist.gov/vuln/detail/CVE-2022-45939",
+                            "url": "https://t.co/xQJSW4Ahqe"
+                        }
+                    ]
+                },
+                {
+                    "created_at": "2022-11-28 06:56",
+                    "likes": 0,
+                    "num_retweets": 0,
+                    "retweets": 0,
+                    "tweet_id": "1597122326260486144",
+                    "tweet_text": "\ud83d\udea8 NEW: CVE-2022-45939 \ud83d\udea8 GNU Emacs through 28.2 allows attackers to execute commands via shell metacharacters in the name of a source-code file, because lib-src/etags.c uses the system C library function in its impl... (click for more)  https://t.co/xQJSW4jeoe",
+                    "twitter_user_handle": "threatintelctr",
+                    "twitter_user_name": "Threat Intel Center",
+                    "twitter_user_profile_pic": "https://pbs.twimg.com/profile_images/904224973987840000/dMy1x9Ho_normal.jpg",
+                    "urls": [
+                        {
+                            "display_url": "nvd.nist.gov/vuln/detail/CV\u2026",
+                            "expanded_url": "https://nvd.nist.gov/vuln/detail/CVE-2022-45939",
+                            "url": "https://t.co/xQJSW4jeoe"
+                        }
+                    ]
+                }
+            ],
+            "vendor_advisories": [],
+            "vendors": []
+        },
+        {
+            "assigner": "talos-cna@cisco.com",
+            "audience_size": 59813,
+            "cve": "CVE-2022-43590",
+            "cve_urls": null,
+            "cvssv2_base_score": null,
+            "cvssv2_severity": null,
+            "cvssv3_base_score": null,
+            "cvssv3_base_severity": null,
+            "cwes": [
+                {
+                    "cwe_description": "NULL Pointer Dereference",
+                    "cwe_id": "CWE-476"
+                }
+            ],
+            "description": "A null pointer dereference vulnerability exists in the handle_ioctl_0x830a0_systembuffer functionality of Callback technologies CBFS Filter 20.0.8317. A specially-crafted I/O request packet (IRP) can lead to denial of service. An attacker can issue an ioctl to trigger this vulnerability.",
+            "epss_score": null,
+            "github_repos": [],
+            "lastModifiedDate": "2022-11-28T11:15Z",
+            "num_retweets": 0,
+            "num_tweets": 10,
+            "num_tweets_and_retweets": 10,
+            "publishedDate": "2022-11-28T11:15Z",
+            "reddit_posts": [
+                {
+                    "created": 1669631926.0,
+                    "is_self": false,
+                    "num_comments": 0,
+                    "reddit_url": "https://www.reddit.com/r/netcve/comments/z6taaj/cve202243590/",
+                    "subreddit": "netcve",
+                    "subreddit_subscribers": 109,
+                    "title": "CVE-2022-43590",
+                    "upvotes": 1,
+                    "url": "https://cve.report/CVE-2022-43590"
+                }
+            ],
+            "score": null,
+            "severity": null,
+            "tweets": [
+                {
+                    "created_at": "2022-11-28 10:26",
+                    "likes": 0,
+                    "num_retweets": 0,
+                    "retweets": 0,
+                    "tweet_id": "1597175181818359812",
+                    "tweet_text": "CVE-2022-43590 : A null pointer dereference vulnerability exists in the handle_ioctl_0x830a0_systembuffer functionality of Callback technologies CBFS Filter 20.0.8317. A specially-crafted I/O request packet  IRP  can lead to denial of se... https://t.co/xswHu9V2ws",
+                    "twitter_user_handle": "CVEreport",
+                    "twitter_user_name": "CVE.report",
+                    "twitter_user_profile_pic": "https://pbs.twimg.com/profile_images/589794568574357505/gwqqrkZn_normal.png",
+                    "urls": [
+                        {
+                            "display_url": "cve.report/CVE-2022-43590",
+                            "expanded_url": "https://cve.report/CVE-2022-43590",
+                            "url": "https://t.co/xswHu9V2ws"
+                        }
+                    ]
+                },
+                {
+                    "created_at": "2022-11-28 11:26",
+                    "likes": 0,
+                    "num_retweets": 0,
+                    "retweets": 0,
+                    "tweet_id": "1597190310295228417",
+                    "tweet_text": "\ud83d\udea8 NEW: CVE-2022-43590 \ud83d\udea8 A null pointer dereference vulnerability exists in the handle_ioctl_0x830a0_systembuffer functionality of Callback technologies CBFS Filter 20.0.8317. A specially-crafted I/O request packet ... (click for more)  https://t.co/cgIYTTRLQs",
+                    "twitter_user_handle": "threatintelctr",
+                    "twitter_user_name": "Threat Intel Center",
+                    "twitter_user_profile_pic": "https://pbs.twimg.com/profile_images/904224973987840000/dMy1x9Ho_normal.jpg",
+                    "urls": [
+                        {
+                            "display_url": "nvd.nist.gov/vuln/detail/CV\u2026",
+                            "expanded_url": "https://nvd.nist.gov/vuln/detail/CVE-2022-43590",
+                            "url": "https://t.co/cgIYTTRLQs"
+                        }
+                    ]
+                },
+                {
+                    "created_at": "2022-11-28 12:29",
+                    "likes": 0,
+                    "num_retweets": 0,
+                    "retweets": 0,
+                    "tweet_id": "1597205986993123328",
+                    "tweet_text": "CVE-2022-43590 A null pointer dereference vulnerability exists in the handle_ioctl_0x830a0_systembuffer functionality of Callback technologies CBFS Filter 20.0.8317. A specially-crafted I/O request packet (IRP) can lead to denial of service. An at... https://t.co/GSkNS9deMs",
+                    "twitter_user_handle": "eyeTSystems",
+                    "twitter_user_name": "\ud835\udc9f\ud835\udcb6\ud835\udcc3\ud835\udcbe\ud835\udc52\ud835\udcc1",
+                    "twitter_user_profile_pic": "https://pbs.twimg.com/profile_images/733144294278582272/6tkqfYMy_normal.jpg",
+                    "urls": [
+                        {
+                            "display_url": "cve.mitre.org/cgi-bin/cvenam\u2026",
+                            "expanded_url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-43590",
+                            "url": "https://t.co/GSkNS9deMs"
+                        }
+                    ]
+                },
+                {
+                    "created_at": "2022-11-28 13:15",
+                    "likes": 0,
+                    "num_retweets": 0,
+                    "retweets": 0,
+                    "tweet_id": "1597217530602471424",
+                    "tweet_text": "New post from https://t.co/uXvPWJy6tj (CVE-2022-43590) has been published on https://t.co/HR8N9vLS8U",
+                    "twitter_user_handle": "WolfgangSesin",
+                    "twitter_user_name": "Wolfgang Sesin",
+                    "twitter_user_profile_pic": "https://pbs.twimg.com/profile_images/957011635369054208/Om3jbj7z_normal.jpg",
+                    "urls": [
+                        {
+                            "display_url": "sesin.at",
+                            "expanded_url": "http://www.sesin.at",
+                            "url": "https://t.co/uXvPWJy6tj"
+                        },
+                        {
+                            "display_url": "sesin.at/2022/11/28/cve\u2026",
+                            "expanded_url": "https://www.sesin.at/2022/11/28/cve-2022-43590/",
+                            "url": "https://t.co/HR8N9vLS8U"
+                        }
+                    ]
+                },
+                {
+                    "created_at": "2022-11-28 13:15",
+                    "likes": 0,
+                    "num_retweets": 0,
+                    "retweets": 0,
+                    "tweet_id": "1597217532645081088",
+                    "tweet_text": "New post from https://t.co/9KYxtdZjkl (CVE-2022-43590) has been published on https://t.co/jgocN3wyDK",
+                    "twitter_user_handle": "www_sesin_at",
+                    "twitter_user_name": "www.sesin.at",
+                    "twitter_user_profile_pic": "https://pbs.twimg.com/profile_images/958100963822329858/fb_N8h5n_normal.jpg",
+                    "urls": [
+                        {
+                            "display_url": "sesin.at",
+                            "expanded_url": "http://www.sesin.at",
+                            "url": "https://t.co/9KYxtdZjkl"
+                        },
+                        {
+                            "display_url": "sesin.at/2022/11/28/cve\u2026",
+                            "expanded_url": "https://www.sesin.at/2022/11/28/cve-2022-43590/",
+                            "url": "https://t.co/jgocN3wyDK"
+                        }
+                    ]
+                }
+            ],
+            "vendor_advisories": [],
+            "vendors": []
+        },
+        {
+            "assigner": "talos-cna@cisco.com",
+            "audience_size": 59812,
+            "cve": "CVE-2022-43589",
+            "cve_urls": null,
+            "cvssv2_base_score": null,
+            "cvssv2_severity": null,
+            "cvssv3_base_score": null,
+            "cvssv3_base_severity": null,
+            "cwes": [
+                {
+                    "cwe_description": "NULL Pointer Dereference",
+                    "cwe_id": "CWE-476"
+                }
+            ],
+            "description": "A null pointer dereference vulnerability exists in the handle_ioctl_8314C functionality of Callback technologies CBFS Filter 20.0.8317. A specially-crafted I/O request packet (IRP) can lead to denial of service. An attacker can issue an ioctl to trigger this vulnerability.",
+            "epss_score": null,
+            "github_repos": [],
+            "lastModifiedDate": "2022-11-28T11:15Z",
+            "num_retweets": 0,
+            "num_tweets": 10,
+            "num_tweets_and_retweets": 10,
+            "publishedDate": "2022-11-28T11:15Z",
+            "reddit_posts": [
+                {
+                    "created": 1669631926.0,
+                    "is_self": false,
+                    "num_comments": 0,
+                    "reddit_url": "https://www.reddit.com/r/netcve/comments/z6taad/cve202243589/",
+                    "subreddit": "netcve",
+                    "subreddit_subscribers": 109,
+                    "title": "CVE-2022-43589",
+                    "upvotes": 1,
+                    "url": "https://cve.report/CVE-2022-43589"
+                }
+            ],
+            "score": null,
+            "severity": null,
+            "tweets": [
+                {
+                    "created_at": "2022-11-28 10:26",
+                    "likes": 0,
+                    "num_retweets": 0,
+                    "retweets": 0,
+                    "tweet_id": "1597175113526685696",
+                    "tweet_text": "CVE-2022-43589 : A null pointer dereference vulnerability exists in the handle_ioctl_8314C functionality of Callback technologies CBFS Filter 20.0.8317. A specially-crafted I/O request packet  IRP  can lead to denial of service. An attac... https://t.co/ovqh8pPqtk",
+                    "twitter_user_handle": "CVEreport",
+                    "twitter_user_name": "CVE.report",
+                    "twitter_user_profile_pic": "https://pbs.twimg.com/profile_images/589794568574357505/gwqqrkZn_normal.png",
+                    "urls": [
+                        {
+                            "display_url": "cve.report/CVE-2022-43589",
+                            "expanded_url": "https://cve.report/CVE-2022-43589",
+                            "url": "https://t.co/ovqh8pPqtk"
+                        }
+                    ]
+                },
+                {
+                    "created_at": "2022-11-28 11:26",
+                    "likes": 0,
+                    "num_retweets": 0,
+                    "retweets": 0,
+                    "tweet_id": "1597190310341345281",
+                    "tweet_text": "\ud83d\udea8 NEW: CVE-2022-43589 \ud83d\udea8 A null pointer dereference vulnerability exists in the handle_ioctl_8314C functionality of Callback technologies CBFS Filter 20.0.8317. A specially-crafted I/O request packet (IRP) can lead ... (click for more)  https://t.co/IQmLkWHdM2",
+                    "twitter_user_handle": "threatintelctr",
+                    "twitter_user_name": "Threat Intel Center",
+                    "twitter_user_profile_pic": "https://pbs.twimg.com/profile_images/904224973987840000/dMy1x9Ho_normal.jpg",
+                    "urls": [
+                        {
+                            "display_url": "nvd.nist.gov/vuln/detail/CV\u2026",
+                            "expanded_url": "https://nvd.nist.gov/vuln/detail/CVE-2022-43589",
+                            "url": "https://t.co/IQmLkWHdM2"
+                        }
+                    ]
+                },
+                {
+                    "created_at": "2022-11-28 11:45",
+                    "likes": 1,
+                    "num_retweets": 0,
+                    "retweets": 0,
+                    "tweet_id": "1597194898431582208",
+                    "tweet_text": "CVE-2022-43589 A null pointer dereference vulnerability exists in the handle_ioctl_8314C functionality of Callback technologies CBFS Filter 20.0.8317. A specially-crafted I/O request packet (IRP) can lead to denial of service. An attacker can issu... https://t.co/Jj11UXklhE",
+                    "twitter_user_handle": "CVEnew",
+                    "twitter_user_name": "CVE",
+                    "twitter_user_profile_pic": "https://pbs.twimg.com/profile_images/1447927972393111557/PQRMlVvZ_normal.jpg",
+                    "urls": [
+                        {
+                            "display_url": "cve.mitre.org/cgi-bin/cvenam\u2026",
+                            "expanded_url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-43589",
+                            "url": "https://t.co/Jj11UXklhE"
+                        }
+                    ]
+                },
+                {
+                    "created_at": "2022-11-28 12:12",
+                    "likes": 0,
+                    "num_retweets": 0,
+                    "retweets": 0,
+                    "tweet_id": "1597201806592966657",
+                    "tweet_text": "CVEnew: CVE-2022-43589 A null pointer dereference vulnerability exists in the handle_ioctl_8314C functionality of Callback technologies CBFS Filter 20.0.8317. A specially-crafted I/O request packet (IRP) can lead to denial of service. An attacker can iss\u2026 https://t.co/W3HSIMq0IX",
+                    "twitter_user_handle": "hernanespinoza",
+                    "twitter_user_name": "Hernan Espinoza",
+                    "twitter_user_profile_pic": "https://pbs.twimg.com/profile_images/1547685026636017665/VkgyrG2V_normal.jpg",
+                    "urls": [
+                        {
+                            "display_url": "cve.mitre.org/cgi-bin/cvenam\u2026",
+                            "expanded_url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-43589",
+                            "url": "https://t.co/W3HSIMq0IX"
+                        }
+                    ]
+                },
+                {
+                    "created_at": "2022-11-28 12:26",
+                    "likes": 0,
+                    "num_retweets": 0,
+                    "retweets": 0,
+                    "tweet_id": "1597205380693512192",
+                    "tweet_text": "\ud83d\udea8 NEW: CVE-2022-43589 \ud83d\udea8 A null pointer dereference vulnerability exists in the handle_ioctl_8314C functionality of Callback technologies CBFS Filter 20.0.8317. A specially-crafted I/O request packet (IRP) can lead ... (click for more)  https://t.co/IQmLkWpCns",
+                    "twitter_user_handle": "threatintelctr",
+                    "twitter_user_name": "Threat Intel Center",
+                    "twitter_user_profile_pic": "https://pbs.twimg.com/profile_images/904224973987840000/dMy1x9Ho_normal.jpg",
+                    "urls": [
+                        {
+                            "display_url": "nvd.nist.gov/vuln/detail/CV\u2026",
+                            "expanded_url": "https://nvd.nist.gov/vuln/detail/CVE-2022-43589",
+                            "url": "https://t.co/IQmLkWpCns"
+                        }
+                    ]
+                }
+            ],
+            "vendor_advisories": [],
+            "vendors": []
+        },
+        {
+            "assigner": "talos-cna@cisco.com",
+            "audience_size": 59809,
+            "cve": "CVE-2022-43588",
+            "cve_urls": null,
+            "cvssv2_base_score": null,
+            "cvssv2_severity": null,
+            "cvssv3_base_score": null,
+            "cvssv3_base_severity": null,
+            "cwes": [
+                {
+                    "cwe_description": "NULL Pointer Dereference",
+                    "cwe_id": "CWE-476"
+                }
+            ],
+            "description": "A null pointer dereference vulnerability exists in the handle_ioctl_83150 functionality of Callback technologies CBFS Filter 20.0.8317. A specially-crafted I/O request packet (IRP) can lead to denial of service. An attacker can issue an ioctl to trigger this vulnerability.",
+            "epss_score": null,
+            "github_repos": [],
+            "lastModifiedDate": "2022-11-28T11:15Z",
+            "num_retweets": 0,
+            "num_tweets": 10,
+            "num_tweets_and_retweets": 10,
+            "publishedDate": "2022-11-28T11:15Z",
+            "reddit_posts": [
+                {
+                    "created": 1669631925.0,
+                    "is_self": false,
+                    "num_comments": 0,
+                    "reddit_url": "https://www.reddit.com/r/netcve/comments/z6taa0/cve202243588/",
+                    "subreddit": "netcve",
+                    "subreddit_subscribers": 109,
+                    "title": "CVE-2022-43588",
+                    "upvotes": 1,
+                    "url": "https://cve.report/CVE-2022-43588"
+                }
+            ],
+            "score": null,
+            "severity": null,
+            "tweets": [
+                {
+                    "created_at": "2022-11-28 10:26",
+                    "likes": 0,
+                    "num_retweets": 0,
+                    "retweets": 0,
+                    "tweet_id": "1597174994605408258",
+                    "tweet_text": "CVE-2022-43588 : A null pointer dereference vulnerability exists in the handle_ioctl_83150 functionality of Callback technologies CBFS Filter 20.0.8317. A specially-crafted I/O request packet  IRP  can lead to denial of service. An attac... https://t.co/bcKoUx4mAY",
+                    "twitter_user_handle": "CVEreport",
+                    "twitter_user_name": "CVE.report",
+                    "twitter_user_profile_pic": "https://pbs.twimg.com/profile_images/589794568574357505/gwqqrkZn_normal.png",
+                    "urls": [
+                        {
+                            "display_url": "cve.report/CVE-2022-43588",
+                            "expanded_url": "https://cve.report/CVE-2022-43588",
+                            "url": "https://t.co/bcKoUx4mAY"
+                        }
+                    ]
+                },
+                {
+                    "created_at": "2022-11-28 11:26",
+                    "likes": 0,
+                    "num_retweets": 0,
+                    "retweets": 0,
+                    "tweet_id": "1597190310437609472",
+                    "tweet_text": "\ud83d\udea8 NEW: CVE-2022-43588 \ud83d\udea8 A null pointer dereference vulnerability exists in the handle_ioctl_83150 functionality of Callback technologies CBFS Filter 20.0.8317. A specially-crafted I/O request packet (IRP) can lead ... (click for more)  https://t.co/R321cE5RnT",
+                    "twitter_user_handle": "threatintelctr",
+                    "twitter_user_name": "Threat Intel Center",
+                    "twitter_user_profile_pic": "https://pbs.twimg.com/profile_images/904224973987840000/dMy1x9Ho_normal.jpg",
+                    "urls": [
+                        {
+                            "display_url": "nvd.nist.gov/vuln/detail/CV\u2026",
+                            "expanded_url": "https://nvd.nist.gov/vuln/detail/CVE-2022-43588",
+                            "url": "https://t.co/R321cE5RnT"
+                        }
+                    ]
+                },
+                {
+                    "created_at": "2022-11-28 12:12",
+                    "likes": 0,
+                    "num_retweets": 0,
+                    "retweets": 0,
+                    "tweet_id": "1597201812414959616",
+                    "tweet_text": "CVEnew: CVE-2022-43588 A null pointer dereference vulnerability exists in the handle_ioctl_83150 functionality of Callback technologies CBFS Filter 20.0.8317. A specially-crafted I/O request packet (IRP) can lead to denial of service. An attacker can iss\u2026 https://t.co/xi7S8gcqos",
+                    "twitter_user_handle": "hernanespinoza",
+                    "twitter_user_name": "Hernan Espinoza",
+                    "twitter_user_profile_pic": "https://pbs.twimg.com/profile_images/1547685026636017665/VkgyrG2V_normal.jpg",
+                    "urls": [
+                        {
+                            "display_url": "cve.mitre.org/cgi-bin/cvenam\u2026",
+                            "expanded_url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-43588",
+                            "url": "https://t.co/xi7S8gcqos"
+                        }
+                    ]
+                },
+                {
+                    "created_at": "2022-11-28 12:26",
+                    "likes": 0,
+                    "num_retweets": 0,
+                    "retweets": 0,
+                    "tweet_id": "1597205380580483073",
+                    "tweet_text": "\ud83d\udea8 NEW: CVE-2022-43588 \ud83d\udea8 A null pointer dereference vulnerability exists in the handle_ioctl_83150 functionality of Callback technologies CBFS Filter 20.0.8317. A specially-crafted I/O request packet (IRP) can lead ... (click for more)  https://t.co/R321cDOgwl",
+                    "twitter_user_handle": "threatintelctr",
+                    "twitter_user_name": "Threat Intel Center",
+                    "twitter_user_profile_pic": "https://pbs.twimg.com/profile_images/904224973987840000/dMy1x9Ho_normal.jpg",
+                    "urls": [
+                        {
+                            "display_url": "nvd.nist.gov/vuln/detail/CV\u2026",
+                            "expanded_url": "https://nvd.nist.gov/vuln/detail/CVE-2022-43588",
+                            "url": "https://t.co/R321cDOgwl"
+                        }
+                    ]
+                },
+                {
+                    "created_at": "2022-11-28 12:29",
+                    "likes": 0,
+                    "num_retweets": 0,
+                    "retweets": 0,
+                    "tweet_id": "1597205988540616707",
+                    "tweet_text": "CVE-2022-43588 A null pointer dereference vulnerability exists in the handle_ioctl_83150 functionality of Callback technologies CBFS Filter 20.0.8317. A specially-crafted I/O request packet (IRP) can lead to denial of service. An attacker can issu... https://t.co/Lrqpg3f1sT",
+                    "twitter_user_handle": "eyeTSystems",
+                    "twitter_user_name": "\ud835\udc9f\ud835\udcb6\ud835\udcc3\ud835\udcbe\ud835\udc52\ud835\udcc1",
+                    "twitter_user_profile_pic": "https://pbs.twimg.com/profile_images/733144294278582272/6tkqfYMy_normal.jpg",
+                    "urls": [
+                        {
+                            "display_url": "cve.mitre.org/cgi-bin/cvenam\u2026",
+                            "expanded_url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-43588",
+                            "url": "https://t.co/Lrqpg3f1sT"
+                        }
+                    ]
+                }
+            ],
+            "vendor_advisories": [],
+            "vendors": []
+        },
+        {
+            "assigner": "secalert@redhat.com",
+            "audience_size": 51189,
+            "cve": "CVE-2022-4116",
+            "cve_urls": null,
+            "cvssv2_base_score": null,
+            "cvssv2_severity": null,
+            "cvssv3_base_score": 9.8,
+            "cvssv3_base_severity": "CRITICAL",
+            "cwes": [
+                {
+                    "cwe_description": "Improper Control of Generation of Code ('Code Injection')",
+                    "cwe_id": "CWE-94"
+                }
+            ],
+            "description": "A vulnerability was found in quarkus. This security flaw happens in Dev UI Config Editor which is vulnerable to drive-by localhost attacks leading to remote code execution.",
+            "epss_score": "0.01156",
+            "github_repos": [],
+            "lastModifiedDate": "2022-11-26T03:32Z",
+            "num_retweets": 14,
+            "num_tweets": 6,
+            "num_tweets_and_retweets": 20,
+            "publishedDate": "2022-11-22T19:15Z",
+            "reddit_posts": [
+                {
+                    "created": 1669631571.0,
+                    "is_self": false,
+                    "num_comments": 0,
+                    "reddit_url": "https://www.reddit.com/r/quarkus/comments/z6t6lm/quarkus_2142final_and_2135final_released_fix_for/",
+                    "subreddit": "quarkus",
+                    "subreddit_subscribers": 1238,
+                    "title": "Quarkus 2.14.2.Final and 2.13.5.Final released - Fix for CVE-2022-4116",
+                    "upvotes": 2,
+                    "url": "https://quarkus.io/blog/quarkus-2-14-2-final-released/"
+                },
+                {
+                    "created": 1669149542.0,
+                    "is_self": false,
+                    "num_comments": 0,
+                    "reddit_url": "https://www.reddit.com/r/netcve/comments/z24azf/cve20224116/",
+                    "subreddit": "netcve",
+                    "subreddit_subscribers": 109,
+                    "title": "CVE-2022-4116",
+                    "upvotes": 1,
+                    "url": "https://cve.report/CVE-2022-4116"
+                }
+            ],
+            "score": 9.8,
+            "severity": "CRITICAL",
+            "tweets": [
+                {
+                    "created_at": "2022-11-28 10:11",
+                    "likes": 26,
+                    "num_retweets": 14,
+                    "retweets": 14,
+                    "tweet_id": "1597171237301755904",
+                    "tweet_text": "Quarkus https://t.co/BuG4k3WaTX and https://t.co/pHuiJkU3M9 released with a fix for CVE-2022-4116, which could lead to remote code execution when running in dev mode. Upgrade is highly recommended. https://t.co/aaQGzCHRJs",
+                    "twitter_user_handle": "QuarkusIO",
+                    "twitter_user_name": "QuarkusIO",
+                    "twitter_user_profile_pic": "https://pbs.twimg.com/profile_images/1123882083900850177/Wtda2djF_normal.png",
+                    "urls": [
+                        {
+                            "display_url": "2.14.2.Final",
+                            "expanded_url": "http://2.14.2.Final",
+                            "url": "https://t.co/BuG4k3WaTX"
+                        },
+                        {
+                            "display_url": "2.13.5.Final",
+                            "expanded_url": "http://2.13.5.Final",
+                            "url": "https://t.co/pHuiJkU3M9"
+                        },
+                        {
+                            "display_url": "quarkus.io/blog/quarkus-2\u2026",
+                            "expanded_url": "https://quarkus.io/blog/quarkus-2-14-2-final-released/",
+                            "url": "https://t.co/aaQGzCHRJs"
+                        }
+                    ]
+                },
+                {
+                    "created_at": "2022-11-28 11:41",
+                    "likes": 0,
+                    "num_retweets": 0,
+                    "retweets": 0,
+                    "tweet_id": "1597193937651105795",
+                    "tweet_text": "Quarkus https://t.co/uXGJfjNg2s and https://t.co/DxahcUPUTJ released - Fix for CVE-2022-4116 https://t.co/UsfxbqK81z via @quarkusio",
+                    "twitter_user_handle": "imohitsuman",
+                    "twitter_user_name": "Mohit Suman",
+                    "twitter_user_profile_pic": "https://pbs.twimg.com/profile_images/1585039340497174528/0AR48LVS_normal.jpg",
+                    "urls": [
+                        {
+                            "display_url": "2.14.2.Final",
+                            "expanded_url": "http://2.14.2.Final",
+                            "url": "https://t.co/uXGJfjNg2s"
+                        },
+                        {
+                            "display_url": "2.13.5.Final",
+                            "expanded_url": "http://2.13.5.Final",
+                            "url": "https://t.co/DxahcUPUTJ"
+                        },
+                        {
+                            "display_url": "quarkus.io/blog/quarkus-2\u2026",
+                            "expanded_url": "https://quarkus.io/blog/quarkus-2-14-2-final-released/",
+                            "url": "https://t.co/UsfxbqK81z"
+                        }
+                    ]
+                },
+                {
+                    "created_at": "2022-11-28 12:04",
+                    "likes": 0,
+                    "num_retweets": 0,
+                    "retweets": 0,
+                    "tweet_id": "1597199632106496002",
+                    "tweet_text": "The vuln CVE-2022-4116 has a tweet created 0 days ago and retweeted 13 times.\nhttps://t.co/1mqxGI9uNy\n#Sx6y7jfa3z5uwe",
+                    "twitter_user_handle": "ipssignatures",
+                    "twitter_user_name": "ipssignatures",
+                    "twitter_user_profile_pic": "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png",
+                    "urls": [
+                        {
+                            "display_url": "twitter.com/QuarkusIO/stat\u2026",
+                            "expanded_url": "https://twitter.com/QuarkusIO/status/1597171237301755904",
+                            "url": "https://t.co/1mqxGI9uNy"
+                        }
+                    ]
+                },
+                {
+                    "created_at": "2022-11-28 11:02",
+                    "likes": 0,
+                    "num_retweets": 0,
+                    "retweets": 0,
+                    "tweet_id": "1597184231457054723",
+                    "tweet_text": "Quarkus https://t.co/6vyqgF3Vrw and https://t.co/ElR7eYug1S released - Fix for CVE-2022-4116 https://t.co/qgwObTuxcd via @quarkusio",
+                    "twitter_user_handle": "danieloh30",
+                    "twitter_user_name": "Daniel Oh",
+                    "twitter_user_profile_pic": "https://pbs.twimg.com/profile_images/1585719069013340161/zuGDZyXI_normal.jpg",
+                    "urls": [
+                        {
+                            "display_url": "2.14.2.Final",
+                            "expanded_url": "http://2.14.2.Final",
+                            "url": "https://t.co/6vyqgF3Vrw"
+                        },
+                        {
+                            "display_url": "2.13.5.Final",
+                            "expanded_url": "http://2.13.5.Final",
+                            "url": "https://t.co/ElR7eYug1S"
+                        },
+                        {
+                            "display_url": "quarkus.io/blog/quarkus-2\u2026",
+                            "expanded_url": "https://quarkus.io/blog/quarkus-2-14-2-final-released/",
+                            "url": "https://t.co/qgwObTuxcd"
+                        }
+                    ]
+                },
+                {
+                    "created_at": "2022-11-28 12:04",
+                    "likes": 0,
+                    "num_retweets": 0,
+                    "retweets": 0,
+                    "tweet_id": "1597199631062114304",
+                    "tweet_text": "I know no IPS that has a protection/signature/rule for the vulnerability CVE-2022-4116.\nThe vuln was published 5 days ago by NIST.\nhttps://t.co/BPA987dlFr\n#Sx6y7jfa3z5uwe",
+                    "twitter_user_handle": "ipssignatures",
+                    "twitter_user_name": "ipssignatures",
+                    "twitter_user_profile_pic": "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png",
+                    "urls": [
+                        {
+                            "display_url": "twitter.com/search?src=spr\u2026",
+                            "expanded_url": "https://twitter.com/search?src=sprv&q=CVE-2022-4116",
+                            "url": "https://t.co/BPA987dlFr"
+                        }
+                    ]
+                }
+            ],
+            "vendor_advisories": [
+                "https://access.redhat.com/security/cve/CVE-2022-4116"
+            ],
+            "vendors": [
+                {
+                    "products": [
+                        {
+                            "product": "Build Of Quarkus",
+                            "versions": [
+                                "-"
+                            ]
+                        }
+                    ],
+                    "vendor": "Redhat"
+                }
+            ]
+        },
+        {
+            "assigner": "security@eset.com",
+            "audience_size": 48816,
+            "cve": "CVE-2022-4020",
+            "cve_urls": null,
+            "cvssv2_base_score": null,
+            "cvssv2_severity": null,
+            "cvssv3_base_score": null,
+            "cvssv3_base_severity": null,
+            "cwes": [],
+            "description": "Vulnerability in the HQSwSmiDxe DXE driver on some consumer Acer Notebook devices may allow an attacker with elevated privileges to modify UEFI Secure Boot settings by modifying an NVRAM variable.",
+            "epss_score": null,
+            "github_repos": [],
+            "lastModifiedDate": "2022-11-28T13:15Z",
+            "num_retweets": 0,
+            "num_tweets": 3,
+            "num_tweets_and_retweets": 3,
+            "publishedDate": "2022-11-28T13:15Z",
+            "reddit_posts": [
+                {
+                    "created": 1669642720.0,
+                    "is_self": false,
+                    "num_comments": 0,
+                    "reddit_url": "https://www.reddit.com/r/netcve/comments/z6wtuc/cve20224020/",
+                    "subreddit": "netcve",
+                    "subreddit_subscribers": 109,
+                    "title": "CVE-2022-4020",
+                    "upvotes": 1,
+                    "url": "https://cve.report/CVE-2022-4020"
+                }
+            ],
+            "score": null,
+            "severity": null,
+            "tweets": [
+                {
+                    "created_at": "2022-11-28 13:04",
+                    "likes": 1,
+                    "num_retweets": 0,
+                    "retweets": 0,
+                    "tweet_id": "1597214961532534784",
+                    "tweet_text": "CVE-2022-4020 : Vulnerability in the HQSwSmiDxe DXE driver on some consumer Acer Notebook devices may allow an attacker with elevated privileges to modify UEFI Secure Boot settings by modifying an NVRAM variable.... https://t.co/3wWV2oNaFR",
+                    "twitter_user_handle": "CVEreport",
+                    "twitter_user_name": "CVE.report",
+                    "twitter_user_profile_pic": "https://pbs.twimg.com/profile_images/589794568574357505/gwqqrkZn_normal.png",
+                    "urls": [
+                        {
+                            "display_url": "cve.report/CVE-2022-4020",
+                            "expanded_url": "https://cve.report/CVE-2022-4020",
+                            "url": "https://t.co/3wWV2oNaFR"
+                        }
+                    ]
+                },
+                {
+                    "created_at": "2022-11-28 13:26",
+                    "likes": 0,
+                    "num_retweets": 0,
+                    "retweets": 0,
+                    "tweet_id": "1597220472436973569",
+                    "tweet_text": "\ud83d\udea8 NEW: CVE-2022-4020 \ud83d\udea8 Vulnerability in the HQSwSmiDxe DXE driver on some consumer Acer Notebook devices may allow an attacker with elevated privileges to modify UEFI Secure Boot settings by modifying an NVRAM var... (click for more)  https://t.co/WknikxKxrm",
+                    "twitter_user_handle": "threatintelctr",
+                    "twitter_user_name": "Threat Intel Center",
+                    "twitter_user_profile_pic": "https://pbs.twimg.com/profile_images/904224973987840000/dMy1x9Ho_normal.jpg",
+                    "urls": [
+                        {
+                            "display_url": "nvd.nist.gov/vuln/detail/CV\u2026",
+                            "expanded_url": "https://nvd.nist.gov/vuln/detail/CVE-2022-4020",
+                            "url": "https://t.co/WknikxKxrm"
+                        }
+                    ]
+                },
+                {
+                    "created_at": "2022-11-28 13:45",
+                    "likes": 0,
+                    "num_retweets": 0,
+                    "retweets": 0,
+                    "tweet_id": "1597225112473853952",
+                    "tweet_text": "CVE-2022-4020 Vulnerability in the HQSwSmiDxe DXE driver on some consumer Acer Notebook devices may allow an attacker with elevated privileges to modify UEFI Secure Boot settings by modifying an NVRAM variable. https://t.co/8gXdrTjjwU",
+                    "twitter_user_handle": "CVEnew",
+                    "twitter_user_name": "CVE",
+                    "twitter_user_profile_pic": "https://pbs.twimg.com/profile_images/1447927972393111557/PQRMlVvZ_normal.jpg",
+                    "urls": [
+                        {
+                            "display_url": "cve.mitre.org/cgi-bin/cvenam\u2026",
+                            "expanded_url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-4020",
+                            "url": "https://t.co/8gXdrTjjwU"
+                        }
+                    ]
+                }
+            ],
+            "vendor_advisories": [],
+            "vendors": []
+        }
+    ],
+    "latest_client_version": "0.1.14",
+    "updated": "2022-11-28 13:48:39"
+}
