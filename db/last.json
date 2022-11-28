@@ -1,5 +1,85 @@
 [
     {
+        "Modified": "2022-11-28T01:27:00",
+        "Published": "2022-11-23T15:15:00",
+        "access": {},
+        "assigner": "security@google.com",
+        "cvss": null,
+        "cwe": "CWE-416",
+        "id": "CVE-2022-42896",
+        "impact": {},
+        "last-modified": "2022-11-28T01:27:00",
+        "references": [
+            "https://kernel.dance/#711f8c3fb3db61897080468586b970c87c61d9e4",
+            "https://github.com/torvalds/linux/commit/711f8c3fb3db61897080468586b970c87c61d9e4"
+        ],
+        "summary": "There are use-after-free vulnerabilities in the Linux kernel's net/bluetooth/l2cap_core.c's l2cap_connect and l2cap_le_connect_req functions which may allow code execution and leaking kernel memory (respectively) remotely via Bluetooth. A remote attacker could execute code leaking kernel memory via Bluetooth if within proximity of the victim. We recommend upgrading past commit https://www.google.com/url https://github.com/torvalds/linux/commit/711f8c3fb3db61897080468586b970c87c61d9e4 https://www.google.com/url"
+    },
+    {
+        "Modified": "2022-11-28T01:19:00",
+        "Published": "2022-11-23T15:15:00",
+        "access": {},
+        "assigner": "security@google.com",
+        "cvss": null,
+        "cwe": "CWE-824",
+        "id": "CVE-2022-42895",
+        "impact": {},
+        "last-modified": "2022-11-28T01:19:00",
+        "references": [
+            "https://kernel.dance/#b1a2cd50c0357f243b7435a732b4e62ba3157a2e",
+            "https://github.com/torvalds/linux/commit/b1a2cd50c0357f243b7435a732b4e62ba3157a2e"
+        ],
+        "summary": "There is an infoleak vulnerability in the Linux kernel's net/bluetooth/l2cap_core.c's l2cap_parse_conf_req function which can be used to leak kernel pointers remotely. We recommend upgrading past commit https://github.com/torvalds/linux/commit/b1a2cd50c0357f243b7435a732b4e62ba3157a2e https://www.google.com/url"
+    },
+    {
+        "Modified": "2022-11-28T01:15:00",
+        "Published": "2022-11-09T06:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "NVD-CWE-noinfo",
+        "id": "CVE-2022-45060",
+        "impact": {},
+        "last-modified": "2022-11-28T01:15:00",
+        "references": [
+            "https://docs.varnish-software.com/security/VSV00011",
+            "https://varnish-cache.org/security/VSV00011.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/XGF6LFTHXCSYMYUX5HLMVXQH3WHCSFLU/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/G6ZMOZVBLZXHEV5VRW4I4SOWLQEK5OF5/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/M4KVVCIQVINQQ2D7ORNARSYALMJUMP3I/",
+            "https://lists.debian.org/debian-lts-announce/2022/11/msg00036.html"
+        ],
+        "summary": "An HTTP Request Forgery issue was discovered in Varnish Cache 5.x and 6.x before 6.0.11, 7.x before 7.1.2, and 7.2.x before 7.2.1. An attacker may introduce characters through HTTP/2 pseudo-headers that are invalid in the context of an HTTP/1 request line, causing the Varnish server to produce invalid HTTP/1 requests to the backend. This could, in turn, be used to exploit vulnerabilities in a server behind the Varnish server. Note: the 6.0.x LTS series (before 6.0.11) is affected."
+    },
+    {
+        "Modified": "2022-11-28T01:15:00",
+        "Published": "2020-04-08T23:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "cve@mitre.org",
+        "cvss": 5.0,
+        "cvss-time": "2022-11-28T01:15:00",
+        "cvss-vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+        "cwe": "CWE-617",
+        "id": "CVE-2020-11653",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "NONE",
+            "integrity": "NONE"
+        },
+        "last-modified": "2022-11-28T01:15:00",
+        "references": [
+            "https://varnish-cache.org/security/VSV00005.html#vsv00005",
+            "http://lists.opensuse.org/opensuse-security-announce/2020-06/msg00031.html",
+            "http://lists.opensuse.org/opensuse-security-announce/2020-06/msg00026.html",
+            "https://lists.debian.org/debian-lts-announce/2022/11/msg00036.html"
+        ],
+        "summary": "An issue was discovered in Varnish Cache before 6.0.6 LTS, 6.1.x and 6.2.x before 6.2.3, and 6.3.x before 6.3.2. It occurs when communication with a TLS termination proxy uses PROXY version 2. There can be an assertion failure and daemon restart, which causes a performance loss."
+    },
+    {
         "Modified": "2022-11-27T22:15:00",
         "Published": "2022-10-02T05:15:00",
         "access": {},
@@ -1131,25 +1211,6 @@
     },
     {
         "Modified": "2022-11-26T03:15:00",
-        "Published": "2022-11-09T06:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "NVD-CWE-noinfo",
-        "id": "CVE-2022-45060",
-        "impact": {},
-        "last-modified": "2022-11-26T03:15:00",
-        "references": [
-            "https://docs.varnish-software.com/security/VSV00011",
-            "https://varnish-cache.org/security/VSV00011.html",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/XGF6LFTHXCSYMYUX5HLMVXQH3WHCSFLU/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/G6ZMOZVBLZXHEV5VRW4I4SOWLQEK5OF5/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/M4KVVCIQVINQQ2D7ORNARSYALMJUMP3I/"
-        ],
-        "summary": "An HTTP Request Forgery issue was discovered in Varnish Cache 5.x and 6.x before 6.0.11, 7.x before 7.1.2, and 7.2.x before 7.2.1. An attacker may introduce characters through HTTP/2 pseudo-headers that are invalid in the context of an HTTP/1 request line, causing the Varnish server to produce invalid HTTP/1 requests to the backend. This could, in turn, be used to exploit vulnerabilities in a server behind the Varnish server. Note: the 6.0.x LTS series (before 6.0.11) is affected."
-    },
-    {
-        "Modified": "2022-11-26T03:15:00",
         "Published": "2022-08-11T01:15:00",
         "access": {},
         "assigner": "cve@mitre.org",
@@ -1659,53 +1720,5 @@
             "http://jeecg-boot.com"
         ],
         "summary": "Jeecg-boot v3.4.3 was discovered to contain a SQL injection vulnerability via the component /sys/duplicate/check."
-    },
-    {
-        "Modified": "2022-11-25T18:42:00",
-        "Published": "2022-11-25T17:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-45207",
-        "impact": {},
-        "last-modified": "2022-11-25T18:42:00",
-        "references": [
-            "http://jeecg-boot.com",
-            "https://github.com/jeecgboot/jeecg-boot/issues/4127"
-        ],
-        "summary": "Jeecg-boot v3.4.3 was discovered to contain a SQL injection vulnerability via the component updateNullByEmptyString."
-    },
-    {
-        "Modified": "2022-11-25T18:42:00",
-        "Published": "2022-11-25T17:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-45210",
-        "impact": {},
-        "last-modified": "2022-11-25T18:42:00",
-        "references": [
-            "http://jeecg-boot.com",
-            "https://github.com/jeecgboot/jeecg-boot/issues/4125"
-        ],
-        "summary": "Jeecg-boot v3.4.3 was discovered to contain a SQL injection vulnerability via the component /sys/user/deleteRecycleBin."
-    },
-    {
-        "Modified": "2022-11-25T18:42:00",
-        "Published": "2022-11-25T17:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-45218",
-        "impact": {},
-        "last-modified": "2022-11-25T18:42:00",
-        "references": [
-            "https://www.sourcecodester.com/sites/default/files/download/oretnom23/hrm.zip",
-            "https://github.com/Rajeshwar40/CVE/blob/main/CVE-2022-45218"
-        ],
-        "summary": "Human Resource Management System v1.0.0 was discovered to contain a cross-site scripting (XSS) vulnerability. This vulnerability is triggered via a crafted payload injected into an authentication error message."
     }
 ]
