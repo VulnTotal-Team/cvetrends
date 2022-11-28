@@ -1,5 +1,20 @@
 [
     {
+        "Modified": "2022-11-28T06:15:00",
+        "Published": "2022-11-28T06:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-45939",
+        "impact": {},
+        "last-modified": "2022-11-28T06:15:00",
+        "references": [
+            "https://git.savannah.gnu.org/cgit/emacs.git/commit/?id=d48bb4874bc6cd3e69c7a15fc3c91cc141025c51"
+        ],
+        "summary": "GNU Emacs through 28.2 allows attackers to execute commands via shell metacharacters in the name of a source-code file, because lib-src/etags.c uses the system C library function in its implementation of the ctags program. For example, a victim may use the \"ctags *\" command (suggested in the ctags documentation) in a situation where the current working directory has contents that depend on untrusted input."
+    },
+    {
         "Modified": "2022-11-28T01:27:00",
         "Published": "2022-11-23T15:15:00",
         "access": {},
@@ -1704,21 +1719,5 @@
             "https://github.com/jeecgboot/jeecg-boot/issues/4128"
         ],
         "summary": "Jeecg-boot v3.4.3 was discovered to contain a SQL injection vulnerability via the component /sys/dict/queryTableData."
-    },
-    {
-        "Modified": "2022-11-25T18:42:00",
-        "Published": "2022-11-25T17:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-45206",
-        "impact": {},
-        "last-modified": "2022-11-25T18:42:00",
-        "references": [
-            "https://github.com/jeecgboot/jeecg-boot/issues/4129",
-            "http://jeecg-boot.com"
-        ],
-        "summary": "Jeecg-boot v3.4.3 was discovered to contain a SQL injection vulnerability via the component /sys/duplicate/check."
     }
 ]
