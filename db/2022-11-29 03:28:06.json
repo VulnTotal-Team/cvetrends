@@ -1,567 +1,8 @@
 {
     "data": [
         {
-            "assigner": "openssl-security@openssl.org",
-            "audience_size": 153641,
-            "cve": "CVE-2022-3786",
-            "cve_urls": null,
-            "cvssv2_base_score": null,
-            "cvssv2_severity": null,
-            "cvssv3_base_score": 7.5,
-            "cvssv3_base_severity": "HIGH",
-            "cwes": [
-                {
-                    "cwe_description": "Buffer Copy without Checking Size of Input ('Classic Buffer Overflow')",
-                    "cwe_id": "CWE-120"
-                }
-            ],
-            "description": "A buffer overrun can be triggered in X.509 certificate verification, specifically in name constraint checking. Note that this occurs after certificate chain signature verification and requires either a CA to have signed a malicious certificate or for an application to continue certificate verification despite failure to construct a path to a trusted issuer. An attacker can craft a malicious email address in a certificate to overflow an arbitrary number of bytes containing the `.' character (decimal 46) on the stack. This buffer overflow could result in a crash (causing a denial of service). In a TLS client, this can be triggered by connecting to a malicious server. In a TLS server, this can be triggered if the server requests client authentication and a malicious client connects.",
-            "epss_score": "0.04499",
-            "github_repos": [
-                {
-                    "created": "2022-10-28T09:51:41Z",
-                    "description": "Operational information regarding CVE-2022-3602 and CVE-2022-3786, two vulnerabilities in OpenSSL 3",
-                    "language": null,
-                    "name": "OpenSSL-2022",
-                    "stars": 529,
-                    "topics": [
-                        "cve-2022-3602",
-                        "cve-2022-3786",
-                        "openssl",
-                        "spookyssl"
-                    ],
-                    "updated": "2022-11-26T16:34:53Z",
-                    "url": "https://github.com/NCSC-NL/OpenSSL-2022"
-                },
-                {
-                    "created": "2022-11-02T17:33:26Z",
-                    "description": null,
-                    "language": "C",
-                    "name": "cve-2022-3602-and-cve-2022-3786-openssl-poc",
-                    "stars": 14,
-                    "topics": [],
-                    "updated": "2022-11-26T23:50:56Z",
-                    "url": "https://github.com/rbowes-r7/cve-2022-3602-and-cve-2022-3786-openssl-poc"
-                },
-                {
-                    "created": "2022-11-01T14:06:44Z",
-                    "description": "OpenSSL Vulnerability Scanner for Windows",
-                    "language": "C",
-                    "name": "osslscanwin",
-                    "stars": 4,
-                    "topics": [
-                        "cve",
-                        "cve-2022-3602",
-                        "cve-2022-3786",
-                        "openssl",
-                        "scanner",
-                        "security-scanner",
-                        "security-tool",
-                        "security-tools",
-                        "spookyssl",
-                        "vulnerability",
-                        "vulnerability-scanners"
-                    ],
-                    "updated": "2022-11-10T17:46:57Z",
-                    "url": "https://github.com/Qualys/osslscanwin"
-                },
-                {
-                    "created": "2022-11-07T07:58:36Z",
-                    "description": null,
-                    "language": "Python",
-                    "name": "CVE-2022-3602-and-CVE-2022-3786",
-                    "stars": 2,
-                    "topics": [],
-                    "updated": "2022-11-09T08:22:53Z",
-                    "url": "https://github.com/cybersecurityworks553/CVE-2022-3602-and-CVE-2022-3786"
-                },
-                {
-                    "created": "2022-11-01T01:34:39Z",
-                    "description": "Find SpookySSL in Prisma Cloud Compute scans",
-                    "language": "JavaScript",
-                    "name": "find-spooky-prismacloud",
-                    "stars": 2,
-                    "topics": [
-                        "cve-2022-3602",
-                        "cve-2022-3786",
-                        "openssl",
-                        "prismacloud",
-                        "scanner",
-                        "security",
-                        "spookyssl"
-                    ],
-                    "updated": "2022-11-02T21:37:56Z",
-                    "url": "https://github.com/hi-artem/find-spooky-prismacloud"
-                }
-            ],
-            "lastModifiedDate": "2022-11-04T12:15Z",
-            "num_retweets": 37,
-            "num_tweets": 11,
-            "num_tweets_and_retweets": 48,
-            "publishedDate": "2022-11-01T18:15Z",
-            "reddit_posts": [
-                {
-                    "created": 1667319146.0,
-                    "is_self": false,
-                    "num_comments": 84,
-                    "reddit_url": "https://www.reddit.com/r/programming/comments/yjcu8j/cve20223786_and_cve20223602_x509_email_address/",
-                    "subreddit": "programming",
-                    "subreddit_subscribers": 4910206,
-                    "title": "CVE-2022-3786 and CVE-2022-3602: X.509 Email Address Buffer Overflows",
-                    "upvotes": 208,
-                    "url": "https://www.openssl.org/blog/blog/2022/11/01/email-address-overflows/"
-                },
-                {
-                    "created": 1667319182.0,
-                    "is_self": false,
-                    "num_comments": 20,
-                    "reddit_url": "https://www.reddit.com/r/linux/comments/yjcuta/openssl_vulnerabilities_cve20223786_and/",
-                    "subreddit": "linux",
-                    "subreddit_subscribers": 789743,
-                    "title": "OpenSSL Vulnerabilities - CVE-2022-3786 and CVE-2022-3602: X.509 Email Address Buffer Overflows",
-                    "upvotes": 91,
-                    "url": "https://www.openssl.org/blog/blog/2022/11/01/email-address-overflows/"
-                },
-                {
-                    "created": 1667473710.0,
-                    "is_self": false,
-                    "num_comments": 0,
-                    "reddit_url": "https://www.reddit.com/r/netsec/comments/ykzip5/cve20223602_cve20223786_oss_tools_to_detect/",
-                    "subreddit": "netsec",
-                    "subreddit_subscribers": 461179,
-                    "title": "CVE-2022-3602 &amp; CVE-2022-3786 - OSS tools to detect susceptibility to the recent OpenSSL issues",
-                    "upvotes": 66,
-                    "url": "https://github.com/jfrog/jfrog-openssl-tools"
-                },
-                {
-                    "created": 1668097633.0,
-                    "is_self": true,
-                    "num_comments": 10,
-                    "reddit_url": "https://www.reddit.com/r/embedded/comments/yrk3jm/new_vulnerabilities_cve20223602_and_cve20223786/",
-                    "subreddit": "embedded",
-                    "subreddit_subscribers": 101872,
-                    "title": "New vulnerabilities (CVE-2022-3602 and CVE-2022-3786) in OpenSSL, how they affect IoT and RTOS Devices.",
-                    "upvotes": 48,
-                    "url": "https://www.reddit.com/r/embedded/comments/yrk3jm/new_vulnerabilities_cve20223602_and_cve20223786/"
-                },
-                {
-                    "created": 1667444220.0,
-                    "is_self": false,
-                    "num_comments": 1,
-                    "reddit_url": "https://www.reddit.com/r/crypto/comments/ykqfah/openssl_email_address_overflows_cve20223786_and/",
-                    "subreddit": "crypto",
-                    "subreddit_subscribers": 273096,
-                    "title": "OpenSSL: email address overflows - CVE-2022-3786 and CVE-2022-3602: X.509 Email Address Buffer Overflows",
-                    "upvotes": 42,
-                    "url": "https://www.openssl.org/blog/blog/2022/11/01/email-address-overflows/"
-                }
-            ],
-            "score": 7.5,
-            "severity": "HIGH",
-            "tweets": [
-                {
-                    "created_at": "2022-11-28 01:00",
-                    "likes": 76,
-                    "num_retweets": 35,
-                    "retweets": 38,
-                    "tweet_id": "1597032565809897472",
-                    "tweet_text": "Everything you need to know about the new OpenSSL vulnerabilities (CVE-2022-3602 &amp; CVE-2022-3786) https://t.co/eMv4MGpyZH  #Pentesting #OpenSSL #CVE #Vulnerability #CyberSecurity #Infosec https://t.co/bZZmQUiGjD",
-                    "twitter_user_handle": "ptracesecurity",
-                    "twitter_user_name": "Ptrace Security GmbH",
-                    "twitter_user_profile_pic": "https://pbs.twimg.com/profile_images/659444735791210500/XGvv9R-0_normal.jpg",
-                    "urls": [
-                        {
-                            "display_url": "pentest-tools.com/blog/openssl-v\u2026",
-                            "expanded_url": "https://pentest-tools.com/blog/openssl-vulnerabilities-2022",
-                            "url": "https://t.co/eMv4MGpyZH"
-                        }
-                    ]
-                },
-                {
-                    "created_at": "2022-11-28 14:00",
-                    "likes": 10,
-                    "num_retweets": 2,
-                    "retweets": 3,
-                    "tweet_id": "1597228833324793857",
-                    "tweet_text": "Top 3 trending CVEs on Twitter\n\nPast 24 hrs:\nCVE-2022-3786: 135.7K (audience size)\nCVE-2022-3602: 135.7K\nCVE-2022-4135: 103.5K\n\nPast 7 days:\nCVE-2022-4135: 3.8M\nCVE-2022-33942: 1.3M\nCVE-2022-41924: 1.1M\n\nhttps://t.co/LhpwNP6xog",
-                    "twitter_user_handle": "CVEtrends",
-                    "twitter_user_name": "CVE Trends",
-                    "twitter_user_profile_pic": "https://pbs.twimg.com/profile_images/1465356279585644556/y1IAsYUX_normal.jpg",
-                    "urls": [
-                        {
-                            "display_url": "cvetrends.com",
-                            "expanded_url": "https://cvetrends.com",
-                            "url": "https://t.co/LhpwNP6xog"
-                        }
-                    ]
-                },
-                {
-                    "created_at": "2022-11-28 10:08",
-                    "likes": 0,
-                    "num_retweets": 0,
-                    "retweets": 0,
-                    "tweet_id": "1597170443638935553",
-                    "tweet_text": "(Same from about 4 hours ago.)\nI think that the second retweeted(17 times) tweet that contains CVE ID between Nov 27 2022 10:01 UTC and Nov 28 2022 10:00 UTC is:\nhttps://t.co/xrBxkJH6uE\nIt has CVE-2022-3786. #l24_ns7dqame62n56",
-                    "twitter_user_handle": "ipssignatures",
-                    "twitter_user_name": "ipssignatures",
-                    "twitter_user_profile_pic": "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png",
-                    "urls": [
-                        {
-                            "display_url": "twitter.com/ptracesecurity\u2026",
-                            "expanded_url": "https://twitter.com/ptracesecurity/status/1597032565809897472",
-                            "url": "https://t.co/xrBxkJH6uE"
-                        }
-                    ]
-                },
-                {
-                    "created_at": "2022-11-28 12:08",
-                    "likes": 0,
-                    "num_retweets": 0,
-                    "retweets": 0,
-                    "tweet_id": "1597200644816805889",
-                    "tweet_text": "(Same from about 6 hours ago.)\nI think that the second retweeted(20 times) tweet that contains CVE ID between Nov 27 2022 12:01 UTC and Nov 28 2022 12:00 UTC is:\nhttps://t.co/xrBxkJoXgw\nIt has CVE-2022-3786. #l24_ns7dqame62n56",
-                    "twitter_user_handle": "ipssignatures",
-                    "twitter_user_name": "ipssignatures",
-                    "twitter_user_profile_pic": "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png",
-                    "urls": [
-                        {
-                            "display_url": "twitter.com/ptracesecurity\u2026",
-                            "expanded_url": "https://twitter.com/ptracesecurity/status/1597032565809897472",
-                            "url": "https://t.co/xrBxkJoXgw"
-                        }
-                    ]
-                },
-                {
-                    "created_at": "2022-11-28 18:08",
-                    "likes": 0,
-                    "num_retweets": 0,
-                    "retweets": 0,
-                    "tweet_id": "1597291243750318080",
-                    "tweet_text": "(Same from about 4 hours ago.)\nI think that the most retweeted(34 times) tweet that contains CVE ID between Nov 27 2022 18:01 UTC and Nov 28 2022 18:00 UTC is:\nhttps://t.co/xrBxkJoXgw\nIt has CVE-2022-3786. #l24_ns7dqame62n56",
-                    "twitter_user_handle": "ipssignatures",
-                    "twitter_user_name": "ipssignatures",
-                    "twitter_user_profile_pic": "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png",
-                    "urls": [
-                        {
-                            "display_url": "twitter.com/ptracesecurity\u2026",
-                            "expanded_url": "https://twitter.com/ptracesecurity/status/1597032565809897472",
-                            "url": "https://t.co/xrBxkJoXgw"
-                        }
-                    ]
-                }
-            ],
-            "vendor_advisories": [
-                "https://www.openssl.org/news/secadv/20221101.txt"
-            ],
-            "vendors": [
-                {
-                    "products": [
-                        {
-                            "product": "Openssl",
-                            "versions": [
-                                "*"
-                            ]
-                        }
-                    ],
-                    "vendor": "Openssl"
-                },
-                {
-                    "products": [
-                        {
-                            "product": "Fedora",
-                            "versions": [
-                                "36",
-                                "37"
-                            ]
-                        }
-                    ],
-                    "vendor": "Fedoraproject"
-                }
-            ]
-        },
-        {
-            "assigner": "openssl-security@openssl.org",
-            "audience_size": 153640,
-            "cve": "CVE-2022-3602",
-            "cve_urls": null,
-            "cvssv2_base_score": null,
-            "cvssv2_severity": null,
-            "cvssv3_base_score": 7.5,
-            "cvssv3_base_severity": "HIGH",
-            "cwes": [
-                {
-                    "cwe_description": "Buffer Copy without Checking Size of Input ('Classic Buffer Overflow')",
-                    "cwe_id": "CWE-120"
-                }
-            ],
-            "description": "A buffer overrun can be triggered in X.509 certificate verification, specifically in name constraint checking. Note that this occurs after certificate chain signature verification and requires either a CA to have signed the malicious certificate or for the application to continue certificate verification despite failure to construct a path to a trusted issuer. An attacker can craft a malicious email address to overflow four attacker-controlled bytes on the stack. This buffer overflow could result in a crash (causing a denial of service) or potentially remote code execution. Many platforms implement stack overflow protections which would mitigate against the risk of remote code execution. The risk may be further mitigated based on stack layout for any given platform/compiler. Pre-announcements of CVE-2022-3602 described this issue as CRITICAL. Further analysis based on some of the mitigating factors described above have led this to be downgraded to HIGH. Users are still encouraged to upgrade to a new version as soon as possible. In a TLS client, this can be triggered by connecting to a malicious server. In a TLS server, this can be triggered if the server requests client authentication and a malicious client connects. Fixed in OpenSSL 3.0.7 (Affected 3.0.0,3.0.1,3.0.2,3.0.3,3.0.4,3.0.5,3.0.6).",
-            "epss_score": "0.53308",
-            "github_repos": [
-                {
-                    "created": "2022-10-28T09:51:41Z",
-                    "description": "Operational information regarding CVE-2022-3602 and CVE-2022-3786, two vulnerabilities in OpenSSL 3",
-                    "language": null,
-                    "name": "OpenSSL-2022",
-                    "stars": 529,
-                    "topics": [
-                        "cve-2022-3602",
-                        "cve-2022-3786",
-                        "openssl",
-                        "spookyssl"
-                    ],
-                    "updated": "2022-11-26T16:34:53Z",
-                    "url": "https://github.com/NCSC-NL/OpenSSL-2022"
-                },
-                {
-                    "created": "2022-10-30T23:32:56Z",
-                    "description": null,
-                    "language": "Python",
-                    "name": "CVE-2022-3602",
-                    "stars": 164,
-                    "topics": [],
-                    "updated": "2022-11-28T06:19:08Z",
-                    "url": "https://github.com/colmmacc/CVE-2022-3602"
-                },
-                {
-                    "created": "2022-11-02T17:33:26Z",
-                    "description": null,
-                    "language": "C",
-                    "name": "cve-2022-3602-and-cve-2022-3786-openssl-poc",
-                    "stars": 14,
-                    "topics": [],
-                    "updated": "2022-11-26T23:50:56Z",
-                    "url": "https://github.com/rbowes-r7/cve-2022-3602-and-cve-2022-3786-openssl-poc"
-                },
-                {
-                    "created": "2022-10-31T18:52:24Z",
-                    "description": null,
-                    "language": "C",
-                    "name": "CVE-2022-3602-poc",
-                    "stars": 13,
-                    "topics": [],
-                    "updated": "2022-11-27T15:42:57Z",
-                    "url": "https://github.com/eatscrayon/CVE-2022-3602-poc"
-                },
-                {
-                    "created": "2022-11-02T13:41:35Z",
-                    "description": "SpookySSL PCAPS and Network Coverage",
-                    "language": null,
-                    "name": "spookyssl-pcaps",
-                    "stars": 9,
-                    "topics": [
-                        "cve-2022-3602",
-                        "detection",
-                        "network",
-                        "openssl",
-                        "pcaps",
-                        "spookyssl",
-                        "suricata"
-                    ],
-                    "updated": "2022-11-22T07:24:48Z",
-                    "url": "https://github.com/fox-it/spookyssl-pcaps"
-                }
-            ],
-            "lastModifiedDate": "2022-11-04T19:49Z",
-            "num_retweets": 37,
-            "num_tweets": 11,
-            "num_tweets_and_retweets": 48,
-            "publishedDate": "2022-11-01T18:15Z",
-            "reddit_posts": [
-                {
-                    "created": 1669043924.0,
-                    "is_self": false,
-                    "num_comments": 69,
-                    "reddit_url": "https://www.reddit.com/r/programming/comments/z11huj/why_cve20223602_was_not_detected_by_fuzz_testing/",
-                    "subreddit": "programming",
-                    "subreddit_subscribers": 4910206,
-                    "title": "Why CVE-2022-3602 was not detected by fuzz testing",
-                    "upvotes": 566,
-                    "url": "https://allsoftwaresucks.blogspot.com/2022/11/why-cve-2022-3602-was-not-detected-by.html"
-                },
-                {
-                    "created": 1667319146.0,
-                    "is_self": false,
-                    "num_comments": 84,
-                    "reddit_url": "https://www.reddit.com/r/programming/comments/yjcu8j/cve20223786_and_cve20223602_x509_email_address/",
-                    "subreddit": "programming",
-                    "subreddit_subscribers": 4910206,
-                    "title": "CVE-2022-3786 and CVE-2022-3602: X.509 Email Address Buffer Overflows",
-                    "upvotes": 207,
-                    "url": "https://www.openssl.org/blog/blog/2022/11/01/email-address-overflows/"
-                },
-                {
-                    "created": 1667319182.0,
-                    "is_self": false,
-                    "num_comments": 20,
-                    "reddit_url": "https://www.reddit.com/r/linux/comments/yjcuta/openssl_vulnerabilities_cve20223786_and/",
-                    "subreddit": "linux",
-                    "subreddit_subscribers": 789743,
-                    "title": "OpenSSL Vulnerabilities - CVE-2022-3786 and CVE-2022-3602: X.509 Email Address Buffer Overflows",
-                    "upvotes": 92,
-                    "url": "https://www.openssl.org/blog/blog/2022/11/01/email-address-overflows/"
-                },
-                {
-                    "created": 1667473710.0,
-                    "is_self": false,
-                    "num_comments": 0,
-                    "reddit_url": "https://www.reddit.com/r/netsec/comments/ykzip5/cve20223602_cve20223786_oss_tools_to_detect/",
-                    "subreddit": "netsec",
-                    "subreddit_subscribers": 461179,
-                    "title": "CVE-2022-3602 &amp; CVE-2022-3786 - OSS tools to detect susceptibility to the recent OpenSSL issues",
-                    "upvotes": 66,
-                    "url": "https://github.com/jfrog/jfrog-openssl-tools"
-                },
-                {
-                    "created": 1667321847.0,
-                    "is_self": false,
-                    "num_comments": 1,
-                    "reddit_url": "https://www.reddit.com/r/netsec/comments/yje4iw/the_openssl_punycode_vulnerability_cve20223602/",
-                    "subreddit": "netsec",
-                    "subreddit_subscribers": 461179,
-                    "title": "The OpenSSL punycode vulnerability (CVE-2022-3602): Overview, detection, exploitation, and remediation | Datadog Security Labs",
-                    "upvotes": 53,
-                    "url": "https://securitylabs.datadoghq.com/articles/openssl-november-1-vulnerabilities/"
-                }
-            ],
-            "score": 7.5,
-            "severity": "HIGH",
-            "tweets": [
-                {
-                    "created_at": "2022-11-28 01:00",
-                    "likes": 76,
-                    "num_retweets": 35,
-                    "retweets": 38,
-                    "tweet_id": "1597032565809897472",
-                    "tweet_text": "Everything you need to know about the new OpenSSL vulnerabilities (CVE-2022-3602 &amp; CVE-2022-3786) https://t.co/eMv4MGpyZH  #Pentesting #OpenSSL #CVE #Vulnerability #CyberSecurity #Infosec https://t.co/bZZmQUiGjD",
-                    "twitter_user_handle": "ptracesecurity",
-                    "twitter_user_name": "Ptrace Security GmbH",
-                    "twitter_user_profile_pic": "https://pbs.twimg.com/profile_images/659444735791210500/XGvv9R-0_normal.jpg",
-                    "urls": [
-                        {
-                            "display_url": "pentest-tools.com/blog/openssl-v\u2026",
-                            "expanded_url": "https://pentest-tools.com/blog/openssl-vulnerabilities-2022",
-                            "url": "https://t.co/eMv4MGpyZH"
-                        }
-                    ]
-                },
-                {
-                    "created_at": "2022-11-28 14:00",
-                    "likes": 10,
-                    "num_retweets": 2,
-                    "retweets": 3,
-                    "tweet_id": "1597228833324793857",
-                    "tweet_text": "Top 3 trending CVEs on Twitter\n\nPast 24 hrs:\nCVE-2022-3786: 135.7K (audience size)\nCVE-2022-3602: 135.7K\nCVE-2022-4135: 103.5K\n\nPast 7 days:\nCVE-2022-4135: 3.8M\nCVE-2022-33942: 1.3M\nCVE-2022-41924: 1.1M\n\nhttps://t.co/LhpwNP6xog",
-                    "twitter_user_handle": "CVEtrends",
-                    "twitter_user_name": "CVE Trends",
-                    "twitter_user_profile_pic": "https://pbs.twimg.com/profile_images/1465356279585644556/y1IAsYUX_normal.jpg",
-                    "urls": [
-                        {
-                            "display_url": "cvetrends.com",
-                            "expanded_url": "https://cvetrends.com",
-                            "url": "https://t.co/LhpwNP6xog"
-                        }
-                    ]
-                },
-                {
-                    "created_at": "2022-11-28 10:08",
-                    "likes": 0,
-                    "num_retweets": 0,
-                    "retweets": 0,
-                    "tweet_id": "1597170442774749184",
-                    "tweet_text": "(Same from about 4 hours ago.)\nI think that the second retweeted(17 times) tweet that contains CVE ID between Nov 27 2022 10:01 UTC and Nov 28 2022 10:00 UTC is:\nhttps://t.co/xrBxkJGyF6\nIt has CVE-2022-3602. #l24_id3rfzyvgogmc",
-                    "twitter_user_handle": "ipssignatures",
-                    "twitter_user_name": "ipssignatures",
-                    "twitter_user_profile_pic": "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png",
-                    "urls": [
-                        {
-                            "display_url": "twitter.com/ptracesecurity\u2026",
-                            "expanded_url": "https://twitter.com/ptracesecurity/status/1597032565809897472",
-                            "url": "https://t.co/xrBxkJGyF6"
-                        }
-                    ]
-                },
-                {
-                    "created_at": "2022-11-28 18:08",
-                    "likes": 0,
-                    "num_retweets": 0,
-                    "retweets": 0,
-                    "tweet_id": "1597291242702123009",
-                    "tweet_text": "(Same from about 4 hours ago.)\nI think that the most retweeted(34 times) tweet that contains CVE ID between Nov 27 2022 18:01 UTC and Nov 28 2022 18:00 UTC is:\nhttps://t.co/xrBxkJH6uE\nIt has CVE-2022-3602. #l24_id3rfzyvgogmc",
-                    "twitter_user_handle": "ipssignatures",
-                    "twitter_user_name": "ipssignatures",
-                    "twitter_user_profile_pic": "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png",
-                    "urls": [
-                        {
-                            "display_url": "twitter.com/ptracesecurity\u2026",
-                            "expanded_url": "https://twitter.com/ptracesecurity/status/1597032565809897472",
-                            "url": "https://t.co/xrBxkJH6uE"
-                        }
-                    ]
-                },
-                {
-                    "created_at": "2022-11-28 20:08",
-                    "likes": 0,
-                    "num_retweets": 0,
-                    "retweets": 0,
-                    "tweet_id": "1597321442726711297",
-                    "tweet_text": "(most \u2192 second)\nI think that the second retweeted(37 times) tweet that contains CVE ID between Nov 27 2022 20:01 UTC and Nov 28 2022 20:00 UTC is:\nhttps://t.co/xrBxkJGyF6\nIt has CVE-2022-3602. #l24_id3rfzyvgogmc",
-                    "twitter_user_handle": "ipssignatures",
-                    "twitter_user_name": "ipssignatures",
-                    "twitter_user_profile_pic": "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png",
-                    "urls": [
-                        {
-                            "display_url": "twitter.com/ptracesecurity\u2026",
-                            "expanded_url": "https://twitter.com/ptracesecurity/status/1597032565809897472",
-                            "url": "https://t.co/xrBxkJGyF6"
-                        }
-                    ]
-                }
-            ],
-            "vendor_advisories": [
-                "https://www.openssl.org/news/secadv/20221101.txt"
-            ],
-            "vendors": [
-                {
-                    "products": [
-                        {
-                            "product": "Openssl",
-                            "versions": [
-                                "*"
-                            ]
-                        }
-                    ],
-                    "vendor": "Openssl"
-                },
-                {
-                    "products": [
-                        {
-                            "product": "Fedora",
-                            "versions": [
-                                "36",
-                                "37",
-                                "26",
-                                "27"
-                            ]
-                        }
-                    ],
-                    "vendor": "Fedoraproject"
-                },
-                {
-                    "products": [
-                        {
-                            "product": "Clustered Data Ontap",
-                            "versions": [
-                                "-"
-                            ]
-                        }
-                    ],
-                    "vendor": "Netapp"
-                }
-            ]
-        },
-        {
             "assigner": "chrome-cve-admin@google.com",
-            "audience_size": 143778,
+            "audience_size": 136440,
             "cve": "CVE-2022-4135",
             "cve_urls": null,
             "cvssv2_base_score": null,
@@ -626,9 +67,9 @@
                 }
             ],
             "lastModifiedDate": "2022-11-28T14:44Z",
-            "num_retweets": 10,
-            "num_tweets": 24,
-            "num_tweets_and_retweets": 34,
+            "num_retweets": 29,
+            "num_tweets": 38,
+            "num_tweets_and_retweets": 67,
             "publishedDate": "2022-11-25T01:15Z",
             "reddit_posts": [
                 {
@@ -637,9 +78,9 @@
                     "num_comments": 0,
                     "reddit_url": "https://www.reddit.com/r/blueteamsec/comments/z50nx3/stable_channel_update_for_chrome_desktop_google/",
                     "subreddit": "blueteamsec",
-                    "subreddit_subscribers": 31265,
+                    "subreddit_subscribers": 31272,
                     "title": "Stable Channel Update for Chrome Desktop - Google is aware that an exploit for CVE-2022-4135 exists in the wild.",
-                    "upvotes": 13,
+                    "upvotes": 14,
                     "url": "https://chromereleases.googleblog.com/2022/11/stable-channel-update-for-desktop_24.html?m=1"
                 },
                 {
@@ -676,15 +117,15 @@
                     "url": "https://www.reddit.com/r/Hacks_And_Exploits/comments/z6rqc6/update_chrome_browser_now_to_patch_new_actively/"
                 },
                 {
-                    "created": 1669385389.0,
+                    "created": 1669340321.0,
                     "is_self": false,
                     "num_comments": 0,
-                    "reddit_url": "https://www.reddit.com/r/SecurityIT/comments/z4ea8l/cve20224135_0day_per_chrome/",
-                    "subreddit": "SecurityIT",
-                    "subreddit_subscribers": 62,
-                    "title": "CVE-2022-4135 - 0day per chrome",
+                    "reddit_url": "https://www.reddit.com/r/netcve/comments/z40gn7/cve20224135/",
+                    "subreddit": "netcve",
+                    "subreddit_subscribers": 109,
+                    "title": "CVE-2022-4135",
                     "upvotes": 1,
-                    "url": "https://nvd.nist.gov/vuln/detail/CVE-2022-4135"
+                    "url": "https://cve.report/CVE-2022-4135"
                 }
             ],
             "score": 9.6,
@@ -692,9 +133,9 @@
             "tweets": [
                 {
                     "created_at": "2022-11-28 14:00",
-                    "likes": 10,
-                    "num_retweets": 2,
-                    "retweets": 3,
+                    "likes": 25,
+                    "num_retweets": 10,
+                    "retweets": 11,
                     "tweet_id": "1597228833324793857",
                     "tweet_text": "Top 3 trending CVEs on Twitter\n\nPast 24 hrs:\nCVE-2022-3786: 135.7K (audience size)\nCVE-2022-3602: 135.7K\nCVE-2022-4135: 103.5K\n\nPast 7 days:\nCVE-2022-4135: 3.8M\nCVE-2022-33942: 1.3M\nCVE-2022-41924: 1.1M\n\nhttps://t.co/LhpwNP6xog",
                     "twitter_user_handle": "CVEtrends",
@@ -705,6 +146,24 @@
                             "display_url": "cvetrends.com",
                             "expanded_url": "https://cvetrends.com",
                             "url": "https://t.co/LhpwNP6xog"
+                        }
+                    ]
+                },
+                {
+                    "created_at": "2022-11-28 17:24",
+                    "likes": 2,
+                    "num_retweets": 3,
+                    "retweets": 3,
+                    "tweet_id": "1597280300949975042",
+                    "tweet_text": "\u26a0\ufe0f Before you start shopping this #CyberMonday, ensure your #Chrome client is up to date from its latest #zeroday #vulnerability, CVE-2022-4135. \n\nWe've laid out how to patch manually and with PDQ Deploy and Inventory.\n\n#sysadmin #infosec #cybersecurity\nhttps://t.co/KlCKuhDO2T",
+                    "twitter_user_handle": "admarsenal",
+                    "twitter_user_name": "PDQ",
+                    "twitter_user_profile_pic": "https://pbs.twimg.com/profile_images/1491162092757393409/lffoXWX4_normal.jpg",
+                    "urls": [
+                        {
+                            "display_url": "hubs.ly/Q01tkPSK0",
+                            "expanded_url": "https://hubs.ly/Q01tkPSK0",
+                            "url": "https://t.co/KlCKuhDO2T"
                         }
                     ]
                 },
@@ -727,24 +186,6 @@
                     ]
                 },
                 {
-                    "created_at": "2022-11-28 17:24",
-                    "likes": 0,
-                    "num_retweets": 1,
-                    "retweets": 1,
-                    "tweet_id": "1597280300949975042",
-                    "tweet_text": "\u26a0\ufe0f Before you start shopping this #CyberMonday, ensure your #Chrome client is up to date from its latest #zeroday #vulnerability, CVE-2022-4135. \n\nWe've laid out how to patch manually and with PDQ Deploy and Inventory.\n\n#sysadmin #infosec #cybersecurity\nhttps://t.co/KlCKuhDO2T",
-                    "twitter_user_handle": "admarsenal",
-                    "twitter_user_name": "PDQ",
-                    "twitter_user_profile_pic": "https://pbs.twimg.com/profile_images/1491162092757393409/lffoXWX4_normal.jpg",
-                    "urls": [
-                        {
-                            "display_url": "hubs.ly/Q01tkPSK0",
-                            "expanded_url": "https://hubs.ly/Q01tkPSK0",
-                            "url": "https://t.co/KlCKuhDO2T"
-                        }
-                    ]
-                },
-                {
                     "created_at": "2022-11-28 08:28",
                     "likes": 2,
                     "num_retweets": 1,
@@ -763,16 +204,22 @@
                     ]
                 },
                 {
-                    "created_at": "2022-11-28 01:43",
-                    "likes": 7,
+                    "created_at": "2022-11-28 23:21",
+                    "likes": 1,
                     "num_retweets": 1,
                     "retweets": 1,
-                    "tweet_id": "1597043545122435074",
-                    "tweet_text": "\u0627\u0635\u062f\u0631\u062a #google \u062a\u062d\u062f\u064a\u062b\u0627\u064b \u0644\u0645\u062a\u0635\u0641\u062d #Chrome \u0644\u062a\u0635\u062d\u064a\u062d \u062b\u063a\u0631\u0629 \u062c\u062f\u064a\u062f\u0629 0day vulnerability \n\n(CVE-2022-4135) \n\n\u0627\u0644\u0645\u0648\u062c\u0648\u062f\u0629 \u0641\u064a \u0645\u0643\u0648\u0646 GPU https://t.co/xCEkpwArwQ",
-                    "twitter_user_handle": "r00t_nasser",
-                    "twitter_user_name": "\u0646\u0627\u0635\u0631 \u0628\u0646 \u062d\u0627\u0633\u0646 | \u0623\u0645\u0646 \u0633\u064a\u0628\u0631\u0627\u0646\u064a\ud83d\udee1",
-                    "twitter_user_profile_pic": "https://pbs.twimg.com/profile_images/1593940684616175618/uiCj7aeO_normal.jpg",
-                    "urls": []
+                    "tweet_id": "1597370246125363200",
+                    "tweet_text": "Microsoft Edge 107.0.1418.62 Release!\nhttps://t.co/YzUY4zc6Tv\n\u6628\u65e5\u56c0\u3063\u3066\u307e\u3057\u305f\u304c\u3001\u3084\u306f\u308a\u51fa\u305f\u6a21\u69d8\u3002\u8a71\u984c\u3068\u306a\u3063\u3066\u3044\u308b CVE-2022-4135 \u5bfe\u5fdc\u3092\u542b\u3080\u30bb\u30ad\u30e5\u30ea\u30c6\u30a3\u30a2\u30c3\u30d7\u30c7\u30fc\u30c8\u3067\u3059\u306e\u3067\u65e9\u3081\u306e\u30a2\u30c3\u30d7\u30c7\u30fc\u30c8\u3092\u3002",
+                    "twitter_user_handle": "Syynya",
+                    "twitter_user_name": "\u3057\u30fc\u306b\u3083\u266a",
+                    "twitter_user_profile_pic": "https://pbs.twimg.com/profile_images/1353186786286002177/gAyuIrjL_normal.jpg",
+                    "urls": [
+                        {
+                            "display_url": "learn.microsoft.com/en-us/deployed\u2026",
+                            "expanded_url": "https://learn.microsoft.com/en-us/deployedge/microsoft-edge-relnote-stable-channel#version-1070141862-november-28-2022",
+                            "url": "https://t.co/YzUY4zc6Tv"
+                        }
+                    ]
                 }
             ],
             "vendor_advisories": [
@@ -794,7 +241,7 @@
         },
         {
             "assigner": "secure@microsoft.com",
-            "audience_size": 125058,
+            "audience_size": 131443,
             "cve": "CVE-2022-34721",
             "cve_urls": null,
             "cvssv2_base_score": null,
@@ -806,11 +253,22 @@
             "epss_score": "0.01601",
             "github_repos": [],
             "lastModifiedDate": "2022-09-15T20:23Z",
-            "num_retweets": 7,
-            "num_tweets": 1,
-            "num_tweets_and_retweets": 8,
+            "num_retweets": 8,
+            "num_tweets": 3,
+            "num_tweets_and_retweets": 11,
             "publishedDate": "2022-09-13T19:15Z",
             "reddit_posts": [
+                {
+                    "created": 1669670195.0,
+                    "is_self": false,
+                    "num_comments": 0,
+                    "reddit_url": "https://www.reddit.com/r/cybersecurity/comments/z78t69/mandarinspeaking_threat_actors_exploit_rce/",
+                    "subreddit": "cybersecurity",
+                    "subreddit_subscribers": 419256,
+                    "title": "Mandarin-speaking threat actors Exploit RCE Vulnerability (CVE-2022-34721) in Windows Internet Key Exchange (IKE) in a \"Bleed You\" campaign targeting retail, industrial conglomerates, government, financial services, IT services, and e-commerce industries in the U.S., the U.K, Australia, Canada, ...",
+                    "upvotes": 4,
+                    "url": "https://cyware.com/news/hackers-exploit-rce-vulnerability-in-windows-internet-key-exchange-ce908a01"
+                },
                 {
                     "created": 1664975970.0,
                     "is_self": false,
@@ -839,7 +297,7 @@
             "tweets": [
                 {
                     "created_at": "2022-11-28 14:04",
-                    "likes": 10,
+                    "likes": 11,
                     "num_retweets": 7,
                     "retweets": 7,
                     "tweet_id": "1597230015229624322",
@@ -847,6 +305,36 @@
                     "twitter_user_handle": "campuscodi",
                     "twitter_user_name": "Catalin Cimpanu",
                     "twitter_user_profile_pic": "https://pbs.twimg.com/profile_images/1554501058721882113/BXRruXC9_normal.png",
+                    "urls": []
+                },
+                {
+                    "created_at": "2022-11-28 23:05",
+                    "likes": 2,
+                    "num_retweets": 1,
+                    "retweets": 1,
+                    "tweet_id": "1597366215147601921",
+                    "tweet_text": "#BleedYou campaign actively exploiting CVE-2022-34721 where exploitation can lead to memory corruption and remote code execution. \n\nWill probably end in #ransomware.\n\nhttps://t.co/sKExxiMSpw",
+                    "twitter_user_handle": "fancy_4n6",
+                    "twitter_user_name": "Shanna Niggans \ud83e\udd84",
+                    "twitter_user_profile_pic": "https://pbs.twimg.com/profile_images/1524896648165330944/xcN3bT3E_normal.jpg",
+                    "urls": [
+                        {
+                            "display_url": "darkreading.com/threat-intelli\u2026",
+                            "expanded_url": "https://www.darkreading.com/threat-intelligence/cyber-threat-weak-windows-servers-bleed-you-campaign",
+                            "url": "https://t.co/sKExxiMSpw"
+                        }
+                    ]
+                },
+                {
+                    "created_at": "2022-11-29 00:51",
+                    "likes": 0,
+                    "num_retweets": 0,
+                    "retweets": 0,
+                    "tweet_id": "1597392881186054145",
+                    "tweet_text": "\"The critical flaw, tracked as CVE-2022-34721, has been under active attack since September,\"",
+                    "twitter_user_handle": "ohhara_shiojiri",
+                    "twitter_user_name": "ohhara_P\ud83e\uddd0Slow life in the isekai",
+                    "twitter_user_profile_pic": "https://pbs.twimg.com/profile_images/1563526838831706114/4LwY-yAH_normal.png",
                     "urls": []
                 }
             ],
@@ -868,8 +356,140 @@
             ]
         },
         {
+            "assigner": "audit@patchstack.com",
+            "audience_size": 100129,
+            "cve": "CVE-2022-38140",
+            "cve_urls": null,
+            "cvssv2_base_score": null,
+            "cvssv2_severity": null,
+            "cvssv3_base_score": null,
+            "cvssv3_base_severity": null,
+            "cwes": [
+                {
+                    "cwe_description": "Unrestricted Upload of File with Dangerous Type",
+                    "cwe_id": "CWE-434"
+                }
+            ],
+            "description": "Auth. (contributor+) Arbitrary File Upload in SEO Plugin by Squirrly SEO plugin <= 12.1.10 on WordPress.",
+            "epss_score": null,
+            "github_repos": [],
+            "lastModifiedDate": "2022-11-28T20:15Z",
+            "num_retweets": 1,
+            "num_tweets": 9,
+            "num_tweets_and_retweets": 10,
+            "publishedDate": "2022-11-28T20:15Z",
+            "reddit_posts": [
+                {
+                    "created": 1669671505.0,
+                    "is_self": false,
+                    "num_comments": 0,
+                    "reddit_url": "https://www.reddit.com/r/netcve/comments/z79f9j/cve202238140/",
+                    "subreddit": "netcve",
+                    "subreddit_subscribers": 109,
+                    "title": "CVE-2022-38140",
+                    "upvotes": 1,
+                    "url": "https://cve.report/CVE-2022-38140"
+                }
+            ],
+            "score": null,
+            "severity": null,
+            "tweets": [
+                {
+                    "created_at": "2022-11-28 20:55",
+                    "likes": 0,
+                    "num_retweets": 1,
+                    "retweets": 1,
+                    "tweet_id": "1597333508044820483",
+                    "tweet_text": "Potentially Critical CVE Detected!\nCVE-2022-38140\nAuth. (contributor+) Arbitrary File Upload in SEO Plugin by Squirrly SEO plugin &lt;= 12.1.10 on WordPress....\nCVSS: 8.97\n#WordpressFile #CVE #CyberSecurity",
+                    "twitter_user_handle": "Robo_Alerts",
+                    "twitter_user_name": "Robo Shadow Alerts",
+                    "twitter_user_profile_pic": "https://pbs.twimg.com/profile_images/1439862150890237953/WjKa3G1I_normal.jpg",
+                    "urls": []
+                },
+                {
+                    "created_at": "2022-11-28 23:06",
+                    "likes": 0,
+                    "num_retweets": 0,
+                    "retweets": 0,
+                    "tweet_id": "1597366245896093701",
+                    "tweet_text": "I declare CVE-2022-38140 to be named Odorless Hake\nhttps://t.co/aWa9rxWVRx",
+                    "twitter_user_handle": "vulnonym",
+                    "twitter_user_name": "vulnonym",
+                    "twitter_user_profile_pic": "https://pbs.twimg.com/profile_images/1235605772878438405/6p9IJVtn_normal.jpg",
+                    "urls": [
+                        {
+                            "display_url": "nvd.nist.gov/vuln/detail/CV\u2026",
+                            "expanded_url": "https://nvd.nist.gov/vuln/detail/CVE-2022-38140",
+                            "url": "https://t.co/aWa9rxWVRx"
+                        }
+                    ]
+                },
+                {
+                    "created_at": "2022-11-28 20:26",
+                    "likes": 0,
+                    "num_retweets": 0,
+                    "retweets": 0,
+                    "tweet_id": "1597326168486707200",
+                    "tweet_text": "\ud83d\udea8 NEW: CVE-2022-38140 \ud83d\udea8 Auth. (contributor+) Arbitrary File Upload in SEO Plugin by Squirrly SEO plugin &lt;= 12.1.10 on WordPress. https://t.co/vEhDn303HB",
+                    "twitter_user_handle": "threatintelctr",
+                    "twitter_user_name": "Threat Intel Center",
+                    "twitter_user_profile_pic": "https://pbs.twimg.com/profile_images/904224973987840000/dMy1x9Ho_normal.jpg",
+                    "urls": [
+                        {
+                            "display_url": "nvd.nist.gov/vuln/detail/CV\u2026",
+                            "expanded_url": "https://nvd.nist.gov/vuln/detail/CVE-2022-38140",
+                            "url": "https://t.co/vEhDn303HB"
+                        }
+                    ]
+                },
+                {
+                    "created_at": "2022-11-28 20:45",
+                    "likes": 1,
+                    "num_retweets": 0,
+                    "retweets": 0,
+                    "tweet_id": "1597330798100639744",
+                    "tweet_text": "CVE-2022-38140 Auth. (contributor+) Arbitrary File Upload in SEO Plugin by Squirrly SEO plugin &lt;= 12.1.10 on WordPress. https://t.co/mdihqffWdG",
+                    "twitter_user_handle": "CVEnew",
+                    "twitter_user_name": "CVE",
+                    "twitter_user_profile_pic": "https://pbs.twimg.com/profile_images/1447927972393111557/PQRMlVvZ_normal.jpg",
+                    "urls": [
+                        {
+                            "display_url": "cve.mitre.org/cgi-bin/cvenam\u2026",
+                            "expanded_url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-38140",
+                            "url": "https://t.co/mdihqffWdG"
+                        }
+                    ]
+                },
+                {
+                    "created_at": "2022-11-28 21:30",
+                    "likes": 0,
+                    "num_retweets": 0,
+                    "retweets": 0,
+                    "tweet_id": "1597342144129368064",
+                    "tweet_text": "New post from https://t.co/9KYxtdZjkl (CVE-2022-38140) has been published on https://t.co/yFJfXId4Hs",
+                    "twitter_user_handle": "www_sesin_at",
+                    "twitter_user_name": "www.sesin.at",
+                    "twitter_user_profile_pic": "https://pbs.twimg.com/profile_images/958100963822329858/fb_N8h5n_normal.jpg",
+                    "urls": [
+                        {
+                            "display_url": "sesin.at",
+                            "expanded_url": "http://www.sesin.at",
+                            "url": "https://t.co/9KYxtdZjkl"
+                        },
+                        {
+                            "display_url": "sesin.at/2022/11/28/cve\u2026",
+                            "expanded_url": "https://www.sesin.at/2022/11/28/cve-2022-38140/",
+                            "url": "https://t.co/yFJfXId4Hs"
+                        }
+                    ]
+                }
+            ],
+            "vendor_advisories": [],
+            "vendors": []
+        },
+        {
             "assigner": "help@fluidattacks.com",
-            "audience_size": 102069,
+            "audience_size": 97804,
             "cve": "CVE-2022-0698",
             "cve_urls": null,
             "cvssv2_base_score": null,
@@ -882,8 +502,8 @@
             "github_repos": [],
             "lastModifiedDate": "2022-11-25T18:42Z",
             "num_retweets": 5,
-            "num_tweets": 8,
-            "num_tweets_and_retweets": 13,
+            "num_tweets": 7,
+            "num_tweets_and_retweets": 12,
             "publishedDate": "2022-11-25T18:15Z",
             "reddit_posts": [
                 {
@@ -967,24 +587,6 @@
                     ]
                 },
                 {
-                    "created_at": "2022-11-28 03:21",
-                    "likes": 1,
-                    "num_retweets": 0,
-                    "retweets": 0,
-                    "tweet_id": "1597068167880544256",
-                    "tweet_text": "CVE-2022-0698: Microweber DOM Cross-Site Scripting Vulnerability https://t.co/Rhj0QDXEE8 #opensource #infosec #security #pentesting",
-                    "twitter_user_handle": "the_yellow_fall",
-                    "twitter_user_name": "Gray Hats",
-                    "twitter_user_profile_pic": "https://pbs.twimg.com/profile_images/419147954344058880/bTW9Gx7T_normal.png",
-                    "urls": [
-                        {
-                            "display_url": "securityonline.info/cve-2022-0698-\u2026",
-                            "expanded_url": "https://securityonline.info/cve-2022-0698-microweber-dom-cross-site-scripting-vulnerability/",
-                            "url": "https://t.co/Rhj0QDXEE8"
-                        }
-                    ]
-                },
-                {
                     "created_at": "2022-11-28 16:49",
                     "likes": 0,
                     "num_retweets": 0,
@@ -999,6 +601,24 @@
                             "display_url": "securityonline.info/cve-2022-0698-\u2026",
                             "expanded_url": "https://securityonline.info/cve-2022-0698-microweber-dom-cross-site-scripting-vulnerability/",
                             "url": "https://t.co/1Qa3h0TIBj"
+                        }
+                    ]
+                },
+                {
+                    "created_at": "2022-11-28 11:14",
+                    "likes": 0,
+                    "num_retweets": 0,
+                    "retweets": 0,
+                    "tweet_id": "1597187181050998784",
+                    "tweet_text": "#Vulnerability #CVE20220698 CVE-2022-0698: Microweber DOM Cross-Site Scripting Vulnerability https://t.co/yTE9fGX0YB",
+                    "twitter_user_handle": "Komodosec",
+                    "twitter_user_name": "Komodo Cyber Consulting",
+                    "twitter_user_profile_pic": "https://pbs.twimg.com/profile_images/532759052397207552/LGMpfmcr_normal.png",
+                    "urls": [
+                        {
+                            "display_url": "securityonline.info/cve-2022-0698-\u2026",
+                            "expanded_url": "https://securityonline.info/cve-2022-0698-microweber-dom-cross-site-scripting-vulnerability/?utm_source=dlvr.it&utm_medium=twitter",
+                            "url": "https://t.co/yTE9fGX0YB"
                         }
                     ]
                 }
@@ -1099,9 +719,9 @@
                     "num_comments": 92,
                     "reddit_url": "https://www.reddit.com/r/msp/comments/xrkfdf/threat_advisory_new_0day_vulnerabilities_found_in/",
                     "subreddit": "msp",
-                    "subreddit_subscribers": 139078,
+                    "subreddit_subscribers": 139093,
                     "title": "Threat advisory: New 0-Day Vulnerabilities Found in Microsoft Exchange",
-                    "upvotes": 185,
+                    "upvotes": 186,
                     "url": "https://www.reddit.com/r/msp/comments/xrkfdf/threat_advisory_new_0day_vulnerabilities_found_in/"
                 },
                 {
@@ -1110,9 +730,9 @@
                     "num_comments": 0,
                     "reddit_url": "https://www.reddit.com/r/networking/comments/xvcrkc/cve202241082_and_cve202241040_related_to_zeroday/",
                     "subreddit": "networking",
-                    "subreddit_subscribers": 278195,
+                    "subreddit_subscribers": 278217,
                     "title": "CVE-2022-41082 and CVE-2022-41040 related to Zero-day Vulnerabilities in Microsoft Exchange Server",
-                    "upvotes": 67,
+                    "upvotes": 69,
                     "url": "https://www.reddit.com/r/networking/comments/xvcrkc/cve202241082_and_cve202241040_related_to_zeroday/"
                 },
                 {
@@ -1121,7 +741,7 @@
                     "num_comments": 9,
                     "reddit_url": "https://www.reddit.com/r/crowdstrike/comments/xsvyn4/situational_awareness_proxynotshell_cve202240140/",
                     "subreddit": "crowdstrike",
-                    "subreddit_subscribers": 10977,
+                    "subreddit_subscribers": 10979,
                     "title": "SITUATIONAL AWARENESS // ProxyNotShell // CVE-2022-40140 &amp; CVE-2022-41082",
                     "upvotes": 42,
                     "url": "https://www.reddit.com/r/crowdstrike/comments/xsvyn4/situational_awareness_proxynotshell_cve202240140/"
@@ -1132,9 +752,9 @@
                     "num_comments": 0,
                     "reddit_url": "https://www.reddit.com/r/techhumor/comments/xukupz/exchange_0days/",
                     "subreddit": "techhumor",
-                    "subreddit_subscribers": 6681,
+                    "subreddit_subscribers": 6680,
                     "title": "Exchange 0-days",
-                    "upvotes": 22,
+                    "upvotes": 24,
                     "url": "https://i.redd.it/9z8zv0kcolr91.png"
                 },
                 {
@@ -1143,7 +763,7 @@
                     "num_comments": 14,
                     "reddit_url": "https://www.reddit.com/r/exchangeserver/comments/xy5dgy/testing_proxynotshell_cve202241040_cve202241082/",
                     "subreddit": "exchangeserver",
-                    "subreddit_subscribers": 33148,
+                    "subreddit_subscribers": 33149,
                     "title": "Testing ProxyNotShell (CVE-2022-41040; CVE-2022-41082) mitigation?",
                     "upvotes": 12,
                     "url": "https://www.reddit.com/r/exchangeserver/comments/xy5dgy/testing_proxynotshell_cve202241040_cve202241082/"
@@ -1154,7 +774,7 @@
             "tweets": [
                 {
                     "created_at": "2022-11-28 15:16",
-                    "likes": 2,
+                    "likes": 3,
                     "num_retweets": 1,
                     "retweets": 1,
                     "tweet_id": "1597248113504358402",
@@ -1172,7 +792,7 @@
                 },
                 {
                     "created_at": "2022-11-28 12:26",
-                    "likes": 8,
+                    "likes": 12,
                     "num_retweets": 0,
                     "retweets": 0,
                     "tweet_id": "1597205232697880576",
@@ -1307,9 +927,9 @@
                     "num_comments": 92,
                     "reddit_url": "https://www.reddit.com/r/msp/comments/xrkfdf/threat_advisory_new_0day_vulnerabilities_found_in/",
                     "subreddit": "msp",
-                    "subreddit_subscribers": 139078,
+                    "subreddit_subscribers": 139093,
                     "title": "Threat advisory: New 0-Day Vulnerabilities Found in Microsoft Exchange",
-                    "upvotes": 190,
+                    "upvotes": 186,
                     "url": "https://www.reddit.com/r/msp/comments/xrkfdf/threat_advisory_new_0day_vulnerabilities_found_in/"
                 },
                 {
@@ -1318,9 +938,9 @@
                     "num_comments": 0,
                     "reddit_url": "https://www.reddit.com/r/networking/comments/xvcrkc/cve202241082_and_cve202241040_related_to_zeroday/",
                     "subreddit": "networking",
-                    "subreddit_subscribers": 278195,
+                    "subreddit_subscribers": 278217,
                     "title": "CVE-2022-41082 and CVE-2022-41040 related to Zero-day Vulnerabilities in Microsoft Exchange Server",
-                    "upvotes": 67,
+                    "upvotes": 66,
                     "url": "https://www.reddit.com/r/networking/comments/xvcrkc/cve202241082_and_cve202241040_related_to_zeroday/"
                 },
                 {
@@ -1329,9 +949,9 @@
                     "num_comments": 9,
                     "reddit_url": "https://www.reddit.com/r/crowdstrike/comments/xsvyn4/situational_awareness_proxynotshell_cve202240140/",
                     "subreddit": "crowdstrike",
-                    "subreddit_subscribers": 10977,
+                    "subreddit_subscribers": 10979,
                     "title": "SITUATIONAL AWARENESS // ProxyNotShell // CVE-2022-40140 &amp; CVE-2022-41082",
-                    "upvotes": 42,
+                    "upvotes": 44,
                     "url": "https://www.reddit.com/r/crowdstrike/comments/xsvyn4/situational_awareness_proxynotshell_cve202240140/"
                 },
                 {
@@ -1340,9 +960,9 @@
                     "num_comments": 0,
                     "reddit_url": "https://www.reddit.com/r/crowdstrike/comments/z4ygfc/happy_cakeday_rcrowdstrike_today_youre_8/",
                     "subreddit": "crowdstrike",
-                    "subreddit_subscribers": 10977,
+                    "subreddit_subscribers": 10979,
                     "title": "Happy Cakeday, r/crowdstrike! Today you're 8",
-                    "upvotes": 30,
+                    "upvotes": 29,
                     "url": "https://www.reddit.com/r/crowdstrike/comments/z4ygfc/happy_cakeday_rcrowdstrike_today_youre_8/"
                 },
                 {
@@ -1351,9 +971,9 @@
                     "num_comments": 0,
                     "reddit_url": "https://www.reddit.com/r/techhumor/comments/xukupz/exchange_0days/",
                     "subreddit": "techhumor",
-                    "subreddit_subscribers": 6681,
+                    "subreddit_subscribers": 6680,
                     "title": "Exchange 0-days",
-                    "upvotes": 24,
+                    "upvotes": 22,
                     "url": "https://i.redd.it/9z8zv0kcolr91.png"
                 }
             ],
@@ -1362,7 +982,7 @@
             "tweets": [
                 {
                     "created_at": "2022-11-28 15:16",
-                    "likes": 2,
+                    "likes": 3,
                     "num_retweets": 1,
                     "retweets": 1,
                     "tweet_id": "1597248113504358402",
@@ -1380,7 +1000,7 @@
                 },
                 {
                     "created_at": "2022-11-28 12:26",
-                    "likes": 8,
+                    "likes": 12,
                     "num_retweets": 0,
                     "retweets": 0,
                     "tweet_id": "1597205232697880576",
@@ -1411,123 +1031,155 @@
             ]
         },
         {
-            "assigner": "audit@patchstack.com",
-            "audience_size": 95876,
-            "cve": "CVE-2022-38140",
+            "assigner": "chrome-cve-admin@google.com",
+            "audience_size": 92586,
+            "cve": "CVE-2022-3890",
             "cve_urls": null,
             "cvssv2_base_score": null,
             "cvssv2_severity": null,
-            "cvssv3_base_score": null,
-            "cvssv3_base_severity": null,
+            "cvssv3_base_score": 9.6,
+            "cvssv3_base_severity": "CRITICAL",
             "cwes": [
                 {
-                    "cwe_description": "Unrestricted Upload of File with Dangerous Type",
-                    "cwe_id": "CWE-434"
+                    "cwe_description": "Out-of-bounds Write",
+                    "cwe_id": "CWE-787"
                 }
             ],
-            "description": "Auth. (contributor+) Arbitrary File Upload in SEO Plugin by Squirrly SEO plugin <= 12.1.10 on WordPress.",
-            "epss_score": null,
+            "description": "Heap buffer overflow in Crashpad in Google Chrome on Android prior to 107.0.5304.106 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: High)",
+            "epss_score": "0.01136",
             "github_repos": [],
-            "lastModifiedDate": "2022-11-28T20:15Z",
-            "num_retweets": 1,
-            "num_tweets": 5,
-            "num_tweets_and_retweets": 6,
-            "publishedDate": "2022-11-28T20:15Z",
-            "reddit_posts": [],
-            "score": null,
-            "severity": null,
+            "lastModifiedDate": "2022-11-14T15:15Z",
+            "num_retweets": 52,
+            "num_tweets": 10,
+            "num_tweets_and_retweets": 62,
+            "publishedDate": "2022-11-09T04:15Z",
+            "reddit_posts": [
+                {
+                    "created": 1668002338.0,
+                    "is_self": true,
+                    "num_comments": 0,
+                    "reddit_url": "https://www.reddit.com/r/k12cybersecurity/comments/yqjrai/msisac_cybersecurity_advisory_multiple/",
+                    "subreddit": "k12cybersecurity",
+                    "subreddit_subscribers": 70,
+                    "title": "MS-ISAC CYBERSECURITY ADVISORY \u2013 Multiple Vulnerabilities in Google Chrome Could Allow for Arbitrary Code Execution \u2013 PATCH: NOW",
+                    "upvotes": 1,
+                    "url": "https://www.reddit.com/r/k12cybersecurity/comments/yqjrai/msisac_cybersecurity_advisory_multiple/"
+                },
+                {
+                    "created": 1667972302.0,
+                    "is_self": false,
+                    "num_comments": 0,
+                    "reddit_url": "https://www.reddit.com/r/netcve/comments/yq9uak/cve20223890/",
+                    "subreddit": "netcve",
+                    "subreddit_subscribers": 109,
+                    "title": "CVE-2022-3890",
+                    "upvotes": 1,
+                    "url": "https://cve.report/CVE-2022-3890"
+                }
+            ],
+            "score": 9.6,
+            "severity": "CRITICAL",
             "tweets": [
                 {
-                    "created_at": "2022-11-28 20:55",
-                    "likes": 0,
-                    "num_retweets": 1,
-                    "retweets": 1,
-                    "tweet_id": "1597333508044820483",
-                    "tweet_text": "Potentially Critical CVE Detected!\nCVE-2022-38140\nAuth. (contributor+) Arbitrary File Upload in SEO Plugin by Squirrly SEO plugin &lt;= 12.1.10 on WordPress....\nCVSS: 8.97\n#WordpressFile #CVE #CyberSecurity",
-                    "twitter_user_handle": "Robo_Alerts",
-                    "twitter_user_name": "Robo Shadow Alerts",
-                    "twitter_user_profile_pic": "https://pbs.twimg.com/profile_images/1439862150890237953/WjKa3G1I_normal.jpg",
+                    "created_at": "2022-11-28 12:58",
+                    "likes": 542,
+                    "num_retweets": 52,
+                    "retweets": 59,
+                    "tweet_id": "1597213423942914050",
+                    "tweet_text": "I was awarded $95k google search XSS \nproof hash: 7be9446750c5c1ffe5005736312212ad\nCVE-2022-3890\n\n\u0627\u0644\u062d\u0645\u062f\u0644\u0644\u0647 \u0645\u0646 \u0627\u0641\u0636\u0644 \u0627\u0646\u062c\u0627\u0632\u0627\u062a\u064a \u062d\u062a\u0649 \u0627\u0644\u0627\u0646 \nPoC soon after disclosure https://t.co/9qWeH8d8gZ",
+                    "twitter_user_handle": "Fake_CISSP",
+                    "twitter_user_name": "\u0645. \u0633\u064a\u0628\u0631\u0627\u0646\u064a \u0644\u0643 \u0639\u0644\u064a\u0647 \ud83e\udd21",
+                    "twitter_user_profile_pic": "https://pbs.twimg.com/profile_images/1493125847686995969/l-4G5mBH_normal.jpg",
                     "urls": []
                 },
                 {
-                    "created_at": "2022-11-28 20:26",
+                    "created_at": "2022-11-28 15:17",
+                    "likes": 1,
+                    "num_retweets": 0,
+                    "retweets": 0,
+                    "tweet_id": "1597248288633196544",
+                    "tweet_text": "@Fake_CISSP That looks awesome! If you could briefly comment on how you turned CVE-2022-3890 (sandbox espace) to an XSS, it would be very appreciated.",
+                    "twitter_user_handle": "AnixPasBesoin",
+                    "twitter_user_name": "Anis LOUNIS",
+                    "twitter_user_profile_pic": "https://pbs.twimg.com/profile_images/1389652845243375616/15ID_7yJ_normal.jpg",
+                    "urls": []
+                },
+                {
+                    "created_at": "2022-11-28 16:04",
                     "likes": 0,
                     "num_retweets": 0,
                     "retweets": 0,
-                    "tweet_id": "1597326168486707200",
-                    "tweet_text": "\ud83d\udea8 NEW: CVE-2022-38140 \ud83d\udea8 Auth. (contributor+) Arbitrary File Upload in SEO Plugin by Squirrly SEO plugin &lt;= 12.1.10 on WordPress. https://t.co/vEhDn303HB",
-                    "twitter_user_handle": "threatintelctr",
-                    "twitter_user_name": "Threat Intel Center",
-                    "twitter_user_profile_pic": "https://pbs.twimg.com/profile_images/904224973987840000/dMy1x9Ho_normal.jpg",
+                    "tweet_id": "1597260027252731905",
+                    "tweet_text": "I know no IPS that has a protection/signature/rule for the vulnerability CVE-2022-3890.\nThe vuln was published 19 days ago by NIST.\nhttps://t.co/IwkspvPvaH\n#S4srx4nbkf2ivy",
+                    "twitter_user_handle": "ipssignatures",
+                    "twitter_user_name": "ipssignatures",
+                    "twitter_user_profile_pic": "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png",
                     "urls": [
                         {
-                            "display_url": "nvd.nist.gov/vuln/detail/CV\u2026",
-                            "expanded_url": "https://nvd.nist.gov/vuln/detail/CVE-2022-38140",
-                            "url": "https://t.co/vEhDn303HB"
+                            "display_url": "twitter.com/search?src=spr\u2026",
+                            "expanded_url": "https://twitter.com/search?src=sprv&q=CVE-2022-3890",
+                            "url": "https://t.co/IwkspvPvaH"
                         }
                     ]
                 },
                 {
-                    "created_at": "2022-11-28 20:45",
+                    "created_at": "2022-11-28 16:04",
                     "likes": 0,
                     "num_retweets": 0,
                     "retweets": 0,
-                    "tweet_id": "1597330798100639744",
-                    "tweet_text": "CVE-2022-38140 Auth. (contributor+) Arbitrary File Upload in SEO Plugin by Squirrly SEO plugin &lt;= 12.1.10 on WordPress. https://t.co/mdihqffWdG",
-                    "twitter_user_handle": "CVEnew",
-                    "twitter_user_name": "CVE",
-                    "twitter_user_profile_pic": "https://pbs.twimg.com/profile_images/1447927972393111557/PQRMlVvZ_normal.jpg",
+                    "tweet_id": "1597260028251197440",
+                    "tweet_text": "The vuln CVE-2022-3890 has a tweet created 0 days ago and retweeted 14 times.\nhttps://t.co/qHpNPt2XcZ\n#S4srx4nbkf2ivy",
+                    "twitter_user_handle": "ipssignatures",
+                    "twitter_user_name": "ipssignatures",
+                    "twitter_user_profile_pic": "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png",
                     "urls": [
                         {
-                            "display_url": "cve.mitre.org/cgi-bin/cvenam\u2026",
-                            "expanded_url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-38140",
-                            "url": "https://t.co/mdihqffWdG"
+                            "display_url": "twitter.com/Fake_CISSP/sta\u2026",
+                            "expanded_url": "https://twitter.com/Fake_CISSP/status/1597213423942914050",
+                            "url": "https://t.co/qHpNPt2XcZ"
                         }
                     ]
                 },
                 {
-                    "created_at": "2022-11-28 20:07",
+                    "created_at": "2022-11-28 18:08",
                     "likes": 0,
                     "num_retweets": 0,
                     "retweets": 0,
-                    "tweet_id": "1597321423080538112",
-                    "tweet_text": "CVE-2022-38140 : Auth.  contributor+  Arbitrary File Upload in SEO Plugin by Squirrly SEO plugin &lt;= 12.1.10 on WordPress.... https://t.co/Ykdcr8NVhh",
-                    "twitter_user_handle": "CVEreport",
-                    "twitter_user_name": "CVE.report",
-                    "twitter_user_profile_pic": "https://pbs.twimg.com/profile_images/589794568574357505/gwqqrkZn_normal.png",
+                    "tweet_id": "1597291237064704002",
+                    "tweet_text": "I think that the second retweeted(30 times) tweet that contains CVE ID between Nov 27 2022 18:01 UTC and Nov 28 2022 18:00 UTC is:\nhttps://t.co/qHpNPt2XcZ\nIt has CVE-2022-3890. #l24_4srx4nbkf2ivy",
+                    "twitter_user_handle": "ipssignatures",
+                    "twitter_user_name": "ipssignatures",
+                    "twitter_user_profile_pic": "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png",
                     "urls": [
                         {
-                            "display_url": "cve.report/CVE-2022-38140",
-                            "expanded_url": "https://cve.report/CVE-2022-38140",
-                            "url": "https://t.co/Ykdcr8NVhh"
-                        }
-                    ]
-                },
-                {
-                    "created_at": "2022-11-28 20:56",
-                    "likes": 0,
-                    "num_retweets": 0,
-                    "retweets": 0,
-                    "tweet_id": "1597333718514823168",
-                    "tweet_text": "\ud83d\udea8 NEW: CVE-2022-38140 \ud83d\udea8 Auth. (contributor+) Arbitrary File Upload in SEO Plugin by Squirrly SEO plugin &lt;= 12.1.10 on WordPress. https://t.co/vEhDn3hEz9",
-                    "twitter_user_handle": "threatintelctr",
-                    "twitter_user_name": "Threat Intel Center",
-                    "twitter_user_profile_pic": "https://pbs.twimg.com/profile_images/904224973987840000/dMy1x9Ho_normal.jpg",
-                    "urls": [
-                        {
-                            "display_url": "nvd.nist.gov/vuln/detail/CV\u2026",
-                            "expanded_url": "https://nvd.nist.gov/vuln/detail/CVE-2022-38140",
-                            "url": "https://t.co/vEhDn3hEz9"
+                            "display_url": "twitter.com/Fake_CISSP/sta\u2026",
+                            "expanded_url": "https://twitter.com/Fake_CISSP/status/1597213423942914050",
+                            "url": "https://t.co/qHpNPt2XcZ"
                         }
                     ]
                 }
             ],
-            "vendor_advisories": [],
-            "vendors": []
+            "vendor_advisories": [
+                "https://chromereleases.googleblog.com/2022/11/stable-channel-update-for-desktop.html",
+                "https://crbug.com/1380083"
+            ],
+            "vendors": [
+                {
+                    "products": [
+                        {
+                            "product": "Chrome",
+                            "versions": [
+                                "*"
+                            ]
+                        }
+                    ],
+                    "vendor": "Google"
+                }
+            ]
         },
         {
             "assigner": "secalert@redhat.com",
-            "audience_size": 87481,
+            "audience_size": 91880,
             "cve": "CVE-2022-4116",
             "cve_urls": null,
             "cvssv2_base_score": null,
@@ -1545,8 +1197,8 @@
             "github_repos": [],
             "lastModifiedDate": "2022-11-26T03:32Z",
             "num_retweets": 21,
-            "num_tweets": 10,
-            "num_tweets_and_retweets": 31,
+            "num_tweets": 13,
+            "num_tweets_and_retweets": 34,
             "publishedDate": "2022-11-22T19:15Z",
             "reddit_posts": [
                 {
@@ -1557,7 +1209,7 @@
                     "subreddit": "quarkus",
                     "subreddit_subscribers": 1239,
                     "title": "Quarkus 2.14.2.Final and 2.13.5.Final released - Fix for CVE-2022-4116",
-                    "upvotes": 4,
+                    "upvotes": 5,
                     "url": "https://quarkus.io/blog/quarkus-2-14-2-final-released/"
                 },
                 {
@@ -1660,12 +1312,12 @@
                     ]
                 },
                 {
-                    "created_at": "2022-11-28 12:04",
+                    "created_at": "2022-11-28 14:08",
                     "likes": 0,
                     "num_retweets": 0,
                     "retweets": 0,
-                    "tweet_id": "1597199632106496002",
-                    "tweet_text": "The vuln CVE-2022-4116 has a tweet created 0 days ago and retweeted 13 times.\nhttps://t.co/1mqxGI9uNy\n#Sx6y7jfa3z5uwe",
+                    "tweet_id": "1597230835094245376",
+                    "tweet_text": "(Same from about 2 hours ago.)\nI think that the third retweeted(14 times) tweet that contains CVE ID between Nov 27 2022 14:01 UTC and Nov 28 2022 14:00 UTC is:\nhttps://t.co/1mqxGI9uNy\nIt has CVE-2022-4116. #l24_x6y7jfa3z5uwe",
                     "twitter_user_handle": "ipssignatures",
                     "twitter_user_name": "ipssignatures",
                     "twitter_user_profile_pic": "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png",
@@ -1678,12 +1330,12 @@
                     ]
                 },
                 {
-                    "created_at": "2022-11-28 14:08",
+                    "created_at": "2022-11-28 12:04",
                     "likes": 0,
                     "num_retweets": 0,
                     "retweets": 0,
-                    "tweet_id": "1597230835094245376",
-                    "tweet_text": "(Same from about 2 hours ago.)\nI think that the third retweeted(14 times) tweet that contains CVE ID between Nov 27 2022 14:01 UTC and Nov 28 2022 14:00 UTC is:\nhttps://t.co/1mqxGI9uNy\nIt has CVE-2022-4116. #l24_x6y7jfa3z5uwe",
+                    "tweet_id": "1597199632106496002",
+                    "tweet_text": "The vuln CVE-2022-4116 has a tweet created 0 days ago and retweeted 13 times.\nhttps://t.co/1mqxGI9uNy\n#Sx6y7jfa3z5uwe",
                     "twitter_user_handle": "ipssignatures",
                     "twitter_user_name": "ipssignatures",
                     "twitter_user_profile_pic": "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png",
@@ -1715,7 +1367,7 @@
         },
         {
             "assigner": "security@eset.com",
-            "audience_size": 83273,
+            "audience_size": 87228,
             "cve": "CVE-2022-4020",
             "cve_urls": null,
             "cvssv2_base_score": null,
@@ -1728,8 +1380,8 @@
             "github_repos": [],
             "lastModifiedDate": "2022-11-28T13:55Z",
             "num_retweets": 1,
-            "num_tweets": 11,
-            "num_tweets_and_retweets": 12,
+            "num_tweets": 14,
+            "num_tweets_and_retweets": 15,
             "publishedDate": "2022-11-28T13:15Z",
             "reddit_posts": [
                 {
@@ -1785,7 +1437,7 @@
                 },
                 {
                     "created_at": "2022-11-28 13:55",
-                    "likes": 6,
+                    "likes": 7,
                     "num_retweets": 0,
                     "retweets": 0,
                     "tweet_id": "1597227775420952579",
@@ -1839,8 +1491,151 @@
             ],
             "vendor_advisories": [],
             "vendors": []
+        },
+        {
+            "assigner": "contact@wpscan.com",
+            "audience_size": 75079,
+            "cve": "CVE-2022-3689",
+            "cve_urls": null,
+            "cvssv2_base_score": null,
+            "cvssv2_severity": null,
+            "cvssv3_base_score": null,
+            "cvssv3_base_severity": null,
+            "cwes": [
+                {
+                    "cwe_description": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')",
+                    "cwe_id": "CWE-89"
+                }
+            ],
+            "description": "The HTML Forms WordPress plugin before 1.3.25 does not properly properly escape a parameter before using it in a SQL statement, leading to a SQL injection exploitable by high privilege users",
+            "epss_score": null,
+            "github_repos": [],
+            "lastModifiedDate": "2022-11-28T14:50Z",
+            "num_retweets": 2,
+            "num_tweets": 11,
+            "num_tweets_and_retweets": 13,
+            "publishedDate": "2022-11-28T14:15Z",
+            "reddit_posts": [
+                {
+                    "created": 1669649908.0,
+                    "is_self": false,
+                    "num_comments": 0,
+                    "reddit_url": "https://www.reddit.com/r/netcve/comments/z6zncc/cve20223689/",
+                    "subreddit": "netcve",
+                    "subreddit_subscribers": 109,
+                    "title": "CVE-2022-3689",
+                    "upvotes": 1,
+                    "url": "https://cve.report/CVE-2022-3689"
+                }
+            ],
+            "score": null,
+            "severity": null,
+            "tweets": [
+                {
+                    "created_at": "2022-11-28 16:16",
+                    "likes": 0,
+                    "num_retweets": 1,
+                    "retweets": 1,
+                    "tweet_id": "1597263045931180033",
+                    "tweet_text": "New post from https://t.co/uXvPWJy6tj (CVE-2022-3689 | HTML Forms Plugin up to 1.3.24 on WordPress sql injection) has been published on https://t.co/4dV5mcPj1Q",
+                    "twitter_user_handle": "WolfgangSesin",
+                    "twitter_user_name": "Wolfgang Sesin",
+                    "twitter_user_profile_pic": "https://pbs.twimg.com/profile_images/957011635369054208/Om3jbj7z_normal.jpg",
+                    "urls": [
+                        {
+                            "display_url": "sesin.at",
+                            "expanded_url": "http://www.sesin.at",
+                            "url": "https://t.co/uXvPWJy6tj"
+                        },
+                        {
+                            "display_url": "sesin.at/2022/11/28/cve\u2026",
+                            "expanded_url": "https://www.sesin.at/2022/11/28/cve-2022-3689-html-forms-plugin-up-to-1-3-24-on-wordpress-sql-injection/",
+                            "url": "https://t.co/4dV5mcPj1Q"
+                        }
+                    ]
+                },
+                {
+                    "created_at": "2022-11-28 16:16",
+                    "likes": 0,
+                    "num_retweets": 1,
+                    "retweets": 1,
+                    "tweet_id": "1597263047957127170",
+                    "tweet_text": "New post from https://t.co/9KYxtdZjkl (CVE-2022-3689 | HTML Forms Plugin up to 1.3.24 on WordPress sql injection) has been published on https://t.co/ZXBkNuJstr",
+                    "twitter_user_handle": "www_sesin_at",
+                    "twitter_user_name": "www.sesin.at",
+                    "twitter_user_profile_pic": "https://pbs.twimg.com/profile_images/958100963822329858/fb_N8h5n_normal.jpg",
+                    "urls": [
+                        {
+                            "display_url": "sesin.at",
+                            "expanded_url": "http://www.sesin.at",
+                            "url": "https://t.co/9KYxtdZjkl"
+                        },
+                        {
+                            "display_url": "sesin.at/2022/11/28/cve\u2026",
+                            "expanded_url": "https://www.sesin.at/2022/11/28/cve-2022-3689-html-forms-plugin-up-to-1-3-24-on-wordpress-sql-injection/",
+                            "url": "https://t.co/ZXBkNuJstr"
+                        }
+                    ]
+                },
+                {
+                    "created_at": "2022-11-28 14:05",
+                    "likes": 0,
+                    "num_retweets": 0,
+                    "retweets": 0,
+                    "tweet_id": "1597230269739712512",
+                    "tweet_text": "CVE-2022-3689 : The HTML Forms WordPress plugin before 1.3.25 does not properly properly escape a parameter before using it in a SQL statement, leading to a SQL injection exploitable by high privilege users... https://t.co/PIwUsEHoaJ",
+                    "twitter_user_handle": "CVEreport",
+                    "twitter_user_name": "CVE.report",
+                    "twitter_user_profile_pic": "https://pbs.twimg.com/profile_images/589794568574357505/gwqqrkZn_normal.png",
+                    "urls": [
+                        {
+                            "display_url": "cve.report/CVE-2022-3689",
+                            "expanded_url": "https://cve.report/CVE-2022-3689",
+                            "url": "https://t.co/PIwUsEHoaJ"
+                        }
+                    ]
+                },
+                {
+                    "created_at": "2022-11-28 14:45",
+                    "likes": 0,
+                    "num_retweets": 0,
+                    "retweets": 0,
+                    "tweet_id": "1597240226606649345",
+                    "tweet_text": "CVE-2022-3689 The HTML Forms WordPress plugin before 1.3.25 does not properly properly escape a parameter before using it in a SQL statement, leading to a SQL injection exploitable by high privilege users https://t.co/UGtBrHwsrn",
+                    "twitter_user_handle": "CVEnew",
+                    "twitter_user_name": "CVE",
+                    "twitter_user_profile_pic": "https://pbs.twimg.com/profile_images/1447927972393111557/PQRMlVvZ_normal.jpg",
+                    "urls": [
+                        {
+                            "display_url": "cve.mitre.org/cgi-bin/cvenam\u2026",
+                            "expanded_url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-3689",
+                            "url": "https://t.co/UGtBrHwsrn"
+                        }
+                    ]
+                },
+                {
+                    "created_at": "2022-11-28 15:12",
+                    "likes": 0,
+                    "num_retweets": 0,
+                    "retweets": 0,
+                    "tweet_id": "1597246965909057537",
+                    "tweet_text": "CVEnew: CVE-2022-3689 The HTML Forms WordPress plugin before 1.3.25 does not properly properly escape a parameter before using it in a SQL statement, leading to a SQL injection exploitable by high privilege users https://t.co/DQqSJ9wl4i",
+                    "twitter_user_handle": "hernanespinoza",
+                    "twitter_user_name": "Hernan Espinoza",
+                    "twitter_user_profile_pic": "https://pbs.twimg.com/profile_images/1547685026636017665/VkgyrG2V_normal.jpg",
+                    "urls": [
+                        {
+                            "display_url": "cve.mitre.org/cgi-bin/cvenam\u2026",
+                            "expanded_url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-3689",
+                            "url": "https://t.co/DQqSJ9wl4i"
+                        }
+                    ]
+                }
+            ],
+            "vendor_advisories": [],
+            "vendors": []
         }
     ],
     "latest_client_version": "0.1.14",
-    "updated": "2022-11-28 21:13:16"
+    "updated": "2022-11-29 03:28:06"
 }
