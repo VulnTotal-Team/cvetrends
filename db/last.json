@@ -1,5 +1,296 @@
 [
     {
+        "Modified": "2022-11-30T18:49:00",
+        "Published": "2022-11-21T17:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-787",
+        "id": "CVE-2022-35897",
+        "impact": {},
+        "last-modified": "2022-11-30T18:49:00",
+        "references": [
+            "https://www.insyde.com/security-pledge",
+            "https://www.insyde.com/security-pledge/SA-2022041"
+        ],
+        "summary": "An stack buffer overflow vulnerability leads to arbitrary code execution issue was discovered in Insyde InsydeH2O with kernel 5.0 through 5.5. If the attacker modifies specific UEFI variables, it can cause a stack overflow, leading to arbitrary code execution. The specific variables are normally locked (read-only) at the OS level and therefore an attack would require direct SPI modification. If an attacker can change the values of at least two variables out of three (SecureBootEnforce, SecureBoot, RestoreBootSettings), it is possible to execute arbitrary code."
+    },
+    {
+        "Modified": "2022-11-30T18:48:00",
+        "Published": "2022-10-21T06:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-190",
+        "id": "CVE-2022-37454",
+        "impact": {},
+        "last-modified": "2022-11-30T18:48:00",
+        "references": [
+            "https://news.ycombinator.com/item?id=33281106",
+            "https://csrc.nist.gov/projects/hash-functions/sha-3-project",
+            "https://mouha.be/sha-3-buffer-overflow/",
+            "https://github.com/XKCP/XKCP/security/advisories/GHSA-6w4m-2xhg-2658",
+            "https://lists.debian.org/debian-lts-announce/2022/10/msg00041.html",
+            "https://lists.debian.org/debian-lts-announce/2022/11/msg00000.html",
+            "https://www.debian.org/security/2022/dsa-5267",
+            "https://www.debian.org/security/2022/dsa-5269",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/CMIEXLMTW5GO36HTFFWIPB3OHZXCT3G4/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/3ALQ6BDDPX5HU5YBQOBMDVAA2TSGDKIJ/"
+        ],
+        "summary": "The Keccak XKCP SHA-3 reference implementation before fdc6fef has an integer overflow and resultant buffer overflow that allows attackers to execute arbitrary code or eliminate expected cryptographic properties. This occurs in the sponge function interface."
+    },
+    {
+        "Modified": "2022-11-30T18:46:00",
+        "Published": "2022-08-23T16:15:00",
+        "access": {},
+        "assigner": "secalert@redhat.com",
+        "cvss": null,
+        "cwe": "CWE-287",
+        "id": "CVE-2021-3827",
+        "impact": {},
+        "last-modified": "2022-11-30T18:46:00",
+        "references": [
+            "https://github.com/keycloak/keycloak/commit/44000caaf5051d7f218d1ad79573bd3d175cad0d",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2007512",
+            "https://access.redhat.com/security/cve/CVE-2021-3827",
+            "https://github.com/keycloak/keycloak/security/advisories/GHSA-4pc7-vqv5-5r3v"
+        ],
+        "summary": "A flaw was found in keycloak, where the default ECP binding flow allows other authentication flows to be bypassed. By exploiting this behavior, an attacker can bypass the MFA authentication by sending a SOAP request with an AuthnRequest and Authorization header with the user's credentials. The highest threat from this vulnerability is to confidentiality and integrity."
+    },
+    {
+        "Modified": "2022-11-30T18:42:00",
+        "Published": "2022-11-30T17:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-44151",
+        "impact": {},
+        "last-modified": "2022-11-30T18:42:00",
+        "references": [
+            "https://github.com/li-baige/bug_report/blob/main/vendors/oretnom23/Simple%20Inventory%20Management%20System/SQLi-1.md"
+        ],
+        "summary": "Simple Inventory Management System v1.0 is vulnerable to SQL Injection via /ims/login.php."
+    },
+    {
+        "Modified": "2022-11-30T18:42:00",
+        "Published": "2022-11-30T17:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-125",
+        "id": "CVE-2022-46149",
+        "impact": {},
+        "last-modified": "2022-11-30T18:42:00",
+        "references": [
+            "https://github.com/capnproto/capnproto/commit/25d34c67863fd960af34fc4f82a7ca3362ee74b9",
+            "https://github.com/capnproto/capnproto/security/advisories/GHSA-qqff-4vw4-f6hx"
+        ],
+        "summary": "Cap'n Proto is a data interchange format and remote procedure call (RPC) system. Cap'n Proro prior to versions 0.7.1, 0.8.1, 0.9.2, and 0.10.3, as well as versions of Cap'n Proto's Rust implementation prior to 0.13.7, 0.14.11, and 0.15.2 are vulnerable to out-of-bounds read due to logic error handling list-of-list. This issue may lead someone to remotely segfault a peer by sending it a malicious message, if the victim performs certain actions on a list-of-pointer type. Exfiltration of memory is possible if the victim performs additional certain actions on a list-of-pointer type. To be vulnerable, an application must perform a specific sequence of actions, described in the GitHub Security Advisory. The bug is present in inlined code, therefore the fix will require rebuilding dependent applications. Cap'n Proto has C++ fixes available in versions 0.7.1, 0.8.1, 0.9.2, and 0.10.3. The `capnp` Rust crate has fixes available in versions 0.13.7, 0.14.11, and 0.15.2."
+    },
+    {
+        "Modified": "2022-11-30T18:42:00",
+        "Published": "2022-11-30T17:15:00",
+        "access": {},
+        "assigner": "cna@vuldb.com",
+        "cvss": null,
+        "cwe": "CWE-707",
+        "id": "CVE-2022-4234",
+        "impact": {},
+        "last-modified": "2022-11-30T18:42:00",
+        "references": [
+            "https://vuldb.com/?id.214595",
+            "https://www.jianshu.com/p/3efa724c789d?v=1669372054033"
+        ],
+        "summary": "A vulnerability was found in SourceCodester Canteen Management System. It has been rated as problematic. This issue affects the function builtin_echo of the file youthappam/brand.php. The manipulation of the argument brand_name leads to cross site scripting. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-214595."
+    },
+    {
+        "Modified": "2022-11-30T18:42:00",
+        "Published": "2022-11-30T18:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-44294",
+        "impact": {},
+        "last-modified": "2022-11-30T18:42:00",
+        "references": [
+            "https://github.com/Distance10086/bug_report/blob/main/vendors/oretnom23/sanitization-management-system/SQLi-3.md"
+        ],
+        "summary": "Sanitization Management System v1.0 is vulnerable to SQL Injection via /php-sms/admin/?page=services/manage_service&id=."
+    },
+    {
+        "Modified": "2022-11-30T18:42:00",
+        "Published": "2022-11-30T18:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-44295",
+        "impact": {},
+        "last-modified": "2022-11-30T18:42:00",
+        "references": [
+            "https://github.com/Distance10086/bug_report/blob/main/vendors/oretnom23/sanitization-management-system/SQLi-1.md"
+        ],
+        "summary": "Sanitization Management System v1.0 is vulnerable to SQL Injection via /php-sms/admin/orders/assign_team.php?id=."
+    },
+    {
+        "Modified": "2022-11-30T18:42:00",
+        "Published": "2022-11-30T18:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-44296",
+        "impact": {},
+        "last-modified": "2022-11-30T18:42:00",
+        "references": [
+            "https://github.com/Distance10086/bug_report/blob/main/vendors/oretnom23/sanitization-management-system/SQLi-2.md"
+        ],
+        "summary": "Sanitization Management System v1.0 is vulnerable to SQL Injection via /php-sms/admin/quotes/manage_remark.php?id=."
+    },
+    {
+        "Modified": "2022-11-30T18:23:00",
+        "Published": "2022-11-22T02:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-787",
+        "id": "CVE-2022-35407",
+        "impact": {},
+        "last-modified": "2022-11-30T18:23:00",
+        "references": [
+            "https://www.insyde.com/security-pledge",
+            "https://www.insyde.com/security-pledge/SA-2022040"
+        ],
+        "summary": "An issue was discovered in Insyde InsydeH2O with kernel 5.0 through 5.5. A stack buffer overflow leads to arbitrary code execution in the SetupUtility driver on Intel platforms. An attacker can change the values of certain UEFI variables. If the size of the second variable exceeds the size of the first, then the buffer will be overwritten. This issue affects the SetupUtility driver of InsydeH2O."
+    },
+    {
+        "Modified": "2022-11-30T18:11:00",
+        "Published": "2022-11-23T18:15:00",
+        "access": {},
+        "assigner": "product-cna@github.com",
+        "cvss": null,
+        "cwe": "CWE-88",
+        "id": "CVE-2022-23740",
+        "impact": {},
+        "last-modified": "2022-11-30T18:11:00",
+        "references": [
+            "https://docs.github.com/en/enterprise-server@3.7/admin/release-notes#3.7.1"
+        ],
+        "summary": "CRITICAL: An improper neutralization of argument delimiters in a command vulnerability was identified in GitHub Enterprise Server that enabled remote code execution. To exploit this vulnerability, an attacker would need permission to create and build GitHub Pages using GitHub Actions. This vulnerability affected only version 3.7.0 of GitHub Enterprise Server and was fixed in version 3.7.1. This vulnerability was reported via the GitHub Bug Bounty program."
+    },
+    {
+        "Modified": "2022-11-30T17:46:00",
+        "Published": "2022-11-23T21:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-400",
+        "id": "CVE-2022-41932",
+        "impact": {},
+        "last-modified": "2022-11-30T17:46:00",
+        "references": [
+            "https://jira.xwiki.org/browse/XWIKI-19886",
+            "https://github.com/xwiki/xwiki-platform/security/advisories/GHSA-4x5r-6v26-7j4v"
+        ],
+        "summary": "XWiki Platform is a generic wiki platform offering runtime services for applications built on top of it. It's possible to make XWiki create many new schemas and fill them with tables just by using a crafted user identifier in the login form. This may lead to degraded database performance. The problem has been patched in XWiki 13.10.8, 14.6RC1 and 14.4.2. Users are advised to upgrade. There are no known workarounds for this issue."
+    },
+    {
+        "Modified": "2022-11-30T17:44:00",
+        "Published": "2022-11-22T01:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-434",
+        "id": "CVE-2022-30529",
+        "impact": {},
+        "last-modified": "2022-11-30T17:44:00",
+        "references": [
+            "https://github.com/killmonday/isic.lk-RCE",
+            "https://github.com/asith-eranga/isic"
+        ],
+        "summary": "File upload vulnerability in asith-eranga ISIC tour booking through version published on Feb 13th 2018, allows attackers to upload arbitrary files via /system/application/libs/js/tinymce/plugins/filemanager/dialog.php and /system/application/libs/js/tinymce/plugins/filemanager/upload.php."
+    },
+    {
+        "Modified": "2022-11-30T17:34:00",
+        "Published": "2022-11-23T20:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-200",
+        "id": "CVE-2022-41935",
+        "impact": {},
+        "last-modified": "2022-11-30T17:34:00",
+        "references": [
+            "https://github.com/xwiki/xwiki-platform/security/advisories/GHSA-p2x4-6ghr-6vmq",
+            "https://jira.xwiki.org/browse/XWIKI-19999",
+            "https://github.com/xwiki/xwiki-platform/commit/1450b6e3c69ac7df25e5a2571186d1f43402facd#diff-5a739e5865b1f1ad9d79b724791be51b0095a0170cc078911c940478b13b949a"
+        ],
+        "summary": "XWiki Platform is a generic wiki platform offering runtime services for applications built on top of it. Users without the right to view documents can deduce their existence by repeated Livetable queries. The issue has been patched in XWiki 14.6RC1, 13.10.8, and 14.4.3, the response is not properly cleaned up of obfuscated entries. As a workaround, The patch for the document `XWiki.LiveTableResultsMacros` can be manually applied or a XAR archive of a patched version can be imported, on versions 12.10.11, 13.9-rc-1, and 13.4.4. There are no known workarounds for this issue."
+    },
+    {
+        "Modified": "2022-11-30T17:30:00",
+        "Published": "2022-11-23T20:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-74",
+        "id": "CVE-2022-41934",
+        "impact": {},
+        "last-modified": "2022-11-30T17:30:00",
+        "references": [
+            "https://github.com/xwiki/xwiki-platform/security/advisories/GHSA-6w8h-26xx-cf8q",
+            "https://github.com/xwiki/xwiki-platform/commit/59ccca24a8465a19f40c51d65fcc2c09c1edea16",
+            "https://jira.xwiki.org/browse/XWIKI-19857",
+            "https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Imports#HImportingXWikipages",
+            "https://github.com/xwiki/xwiki-platform/commit/2fc20891e6c6b0ca05ee07e315e7f435e8919f8d"
+        ],
+        "summary": "XWiki Platform is a generic wiki platform offering runtime services for applications built on top of it. Any user with view rights on commonly accessible documents including the menu macro can execute arbitrary Groovy, Python or Velocity code in XWiki leading to full access to the XWiki installation due to improper escaping of the macro content and parameters of the menu macro. The problem has been patched in XWiki 14.6RC1, 13.10.8 and 14.4.3. The patch (commit `2fc20891`) for the document `Menu.MenuMacro` can be manually applied or a XAR archive of a patched version can be imported. The menu macro was basically unchanged since XWiki 11.6 so on XWiki 11.6 or later the patch for version of 13.10.8 (commit `59ccca24a`) can most likely be applied, on XWiki version 14.0 and later the versions in XWiki 14.6 and 14.4.3 should be appropriate."
+    },
+    {
+        "Modified": "2022-11-30T17:15:00",
+        "Published": "2021-11-04T17:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "jenkinsci-cert@googlegroups.com",
+        "cvss": 7.5,
+        "cvss-time": "2022-11-30T17:15:00",
+        "cvss-vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+        "cwe": "CWE-863",
+        "id": "CVE-2021-21693",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "PARTIAL",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-11-30T17:15:00",
+        "references": [
+            "https://www.jenkins.io/security/advisory/2021-11-04/#SECURITY-2455"
+        ],
+        "summary": "When creating temporary files, agent-to-controller access to create those files is only checked after they've been created in Jenkins 2.318 and earlier, LTS 2.303.2 and earlier."
+    },
+    {
+        "Modified": "2022-11-30T17:00:00",
+        "Published": "2022-11-23T20:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-95",
+        "id": "CVE-2022-41931",
+        "impact": {},
+        "last-modified": "2022-11-30T17:00:00",
+        "references": [
+            "https://jira.xwiki.org/browse/XWIKI-19805",
+            "https://github.com/xwiki/xwiki-platform/commit/47eb8a5fba550f477944eb6da8ca91b87eaf1d01",
+            "https://github.com/xwiki/xwiki-platform/security/advisories/GHSA-5j7g-cf6r-g2h7"
+        ],
+        "summary": "xwiki-platform-icon-ui is vulnerable to Improper Neutralization of Directives in Dynamically Evaluated Code ('Eval Injection'). Any user with view rights on commonly accessible documents including the icon picker macro can execute arbitrary Groovy, Python or Velocity code in XWiki due to improper neutralization of the macro parameters of the icon picker macro. The problem has been patched in XWiki 13.10.7, 14.5 and 14.4.2. Workarounds: The [patch](https://github.com/xwiki/xwiki-platform/commit/47eb8a5fba550f477944eb6da8ca91b87eaf1d01) can be manually applied by editing `IconThemesCode.IconPickerMacro` in the object editor. The whole document can also be replaced by the current version by importing the document from the XAR archive of a fixed version as the only changes to the document have been security fixes and small formatting changes."
+    },
+    {
         "Modified": "2022-11-30T16:50:00",
         "Published": "2022-11-23T19:15:00",
         "access": {},
@@ -1458,261 +1749,5 @@
             "https://medium.com/@just0rg/book-store-management-system-1-0-unrestricted-input-leads-to-xss-74506d42492e"
         ],
         "summary": "Web-Based Student Clearance System v1.0 was discovered to contain a cross-site scripting (XSS) vulnerability in Admin/add-admin.php. This vulnerability allows attackers to execute arbitrary web scripts or HTML via a crafted payload injected into the txtfullname parameter."
-    },
-    {
-        "Modified": "2022-11-30T03:54:00",
-        "Published": "2022-11-28T15:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-345",
-        "id": "CVE-2022-31877",
-        "impact": {},
-        "last-modified": "2022-11-30T03:54:00",
-        "references": [
-            "https://patsch.dev/2022/07/08/cve-2022-31877-privilege-escalation-in-msi-centers-msi-terminalserver-exe/",
-            "http://msi.com"
-        ],
-        "summary": "An issue in the component MSI.TerminalServer.exe of MSI Center v1.0.41.0 allows attackers to escalate privileges via a crafted TCP packet."
-    },
-    {
-        "Modified": "2022-11-30T03:53:00",
-        "Published": "2022-11-28T14:15:00",
-        "access": {},
-        "assigner": "contact@wpscan.com",
-        "cvss": null,
-        "cwe": "CWE-89",
-        "id": "CVE-2022-3865",
-        "impact": {},
-        "last-modified": "2022-11-30T03:53:00",
-        "references": [
-            "https://wpscan.com/vulnerability/fbe4aed8-964a-4774-bbc3-d432792bfeb6"
-        ],
-        "summary": "The WP User Merger WordPress plugin before 1.5.3 does not properly sanitise and escape a parameter before using it in a SQL statement, leading to a SQL injection exploitable by users with a role as low as admin"
-    },
-    {
-        "Modified": "2022-11-30T03:52:00",
-        "Published": "2022-11-28T14:15:00",
-        "access": {},
-        "assigner": "contact@wpscan.com",
-        "cvss": null,
-        "cwe": "CWE-352",
-        "id": "CVE-2022-3850",
-        "impact": {},
-        "last-modified": "2022-11-30T03:52:00",
-        "references": [
-            "https://wpscan.com/vulnerability/8ae42ec0-7e3a-4ea5-8e76-0aae7b92a8e9"
-        ],
-        "summary": "The Find and Replace All WordPress plugin before 1.3 does not have CSRF check when replacing string, which could allow attackers to make a logged admin replace arbitrary string in database tables via a CSRF attack"
-    },
-    {
-        "Modified": "2022-11-30T03:52:00",
-        "Published": "2022-11-28T14:15:00",
-        "access": {},
-        "assigner": "contact@wpscan.com",
-        "cvss": null,
-        "cwe": "CWE-89",
-        "id": "CVE-2022-3848",
-        "impact": {},
-        "last-modified": "2022-11-30T03:52:00",
-        "references": [
-            "https://wpscan.com/vulnerability/da1f0313-2576-490e-a95f-bf12de340610"
-        ],
-        "summary": "The WP User Merger WordPress plugin before 1.5.3 does not properly sanitise and escape a parameter before using it in a SQL statement, leading to a SQL injection exploitable by users with a role as low as admin"
-    },
-    {
-        "Modified": "2022-11-30T03:52:00",
-        "Published": "2022-11-28T14:15:00",
-        "access": {},
-        "assigner": "contact@wpscan.com",
-        "cvss": null,
-        "cwe": "CWE-89",
-        "id": "CVE-2022-3849",
-        "impact": {},
-        "last-modified": "2022-11-30T03:52:00",
-        "references": [
-            "https://wpscan.com/vulnerability/511327d3-499b-4ad9-8fd3-99f9f7deb4f5"
-        ],
-        "summary": "The WP User Merger WordPress plugin before 1.5.3 does not properly sanitise and escape a parameter before using it in a SQL statement, leading to a SQL injection exploitable by users with a role as low as admin"
-    },
-    {
-        "Modified": "2022-11-30T03:50:00",
-        "Published": "2022-11-28T14:15:00",
-        "access": {},
-        "assigner": "contact@wpscan.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-3847",
-        "impact": {},
-        "last-modified": "2022-11-30T03:50:00",
-        "references": [
-            "https://wpscan.com/vulnerability/a70ad549-2e09-44fb-b894-4271ad4a84f6"
-        ],
-        "summary": "The Showing URL in QR Code WordPress plugin through 0.0.1 does not have CSRF check when updating its settings, and is missing sanitisation as well as escaping, which could allow attackers to make logged in admin or editor add Stored XSS payloads via a CSRF attack"
-    },
-    {
-        "Modified": "2022-11-30T03:50:00",
-        "Published": "2022-11-28T14:15:00",
-        "access": {},
-        "assigner": "contact@wpscan.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-3834",
-        "impact": {},
-        "last-modified": "2022-11-30T03:50:00",
-        "references": [
-            "https://wpscan.com/vulnerability/1dbe0f24-b757-49fe-846f-7c259df9f361"
-        ],
-        "summary": "The Google Forms WordPress plugin through 0.95 does not sanitise and escape some of its settings, which could allow high privilege users such as admin to perform Stored Cross-Site Scripting attacks even when the unfiltered_html capability is disallowed (for example in multisite setup)."
-    },
-    {
-        "Modified": "2022-11-30T03:50:00",
-        "Published": "2022-11-28T14:15:00",
-        "access": {},
-        "assigner": "contact@wpscan.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-3839",
-        "impact": {},
-        "last-modified": "2022-11-30T03:50:00",
-        "references": [
-            "https://wpscan.com/vulnerability/809cea63-9dbe-495c-8388-e294299d3e90"
-        ],
-        "summary": "The Analytics for WP WordPress plugin through 1.5.1 does not sanitise and escape some of its settings, which could allow high privilege users such as admin to perform Stored Cross-Site Scripting attacks even when the unfiltered_html capability is disallowed (for example in multisite setup)."
-    },
-    {
-        "Modified": "2022-11-30T03:49:00",
-        "Published": "2022-11-28T14:15:00",
-        "access": {},
-        "assigner": "contact@wpscan.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-3833",
-        "impact": {},
-        "last-modified": "2022-11-30T03:49:00",
-        "references": [
-            "https://wpscan.com/vulnerability/41096d40-83d4-40b4-9632-afef51e8b00e"
-        ],
-        "summary": "The Fancier Author Box by ThematoSoup WordPress plugin through 1.4 does not sanitise and escape some of its settings, which could allow high privilege users such as admin to perform Stored Cross-Site Scripting attacks even when the unfiltered_html capability is disallowed (for example in multisite setup)."
-    },
-    {
-        "Modified": "2022-11-30T03:48:00",
-        "Published": "2022-11-28T14:15:00",
-        "access": {},
-        "assigner": "contact@wpscan.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-3831",
-        "impact": {},
-        "last-modified": "2022-11-30T03:48:00",
-        "references": [
-            "https://wpscan.com/vulnerability/fa23bd68-69f3-440e-902c-a3bb6c8a40b8"
-        ],
-        "summary": "The reCAPTCHA WordPress plugin through 1.6 does not sanitise and escape some of its settings, which could allow high privilege users such as admin to perform Stored Cross-Site Scripting attacks even when the unfiltered_html capability is disallowed (for example in multisite setup)."
-    },
-    {
-        "Modified": "2022-11-30T03:48:00",
-        "Published": "2022-11-28T14:15:00",
-        "access": {},
-        "assigner": "contact@wpscan.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-3824",
-        "impact": {},
-        "last-modified": "2022-11-30T03:48:00",
-        "references": [
-            "https://wpscan.com/vulnerability/3ca6d724-cd79-4e07-b8d0-a8c1688abf16"
-        ],
-        "summary": "The WP Admin UI Customize WordPress plugin before 1.5.13 does not sanitise and escape some of its settings, which could allow high privilege users such as admin to perform Stored Cross-Site Scripting attacks even when the unfiltered_html capability is disallowed (for example in multisite setup)."
-    },
-    {
-        "Modified": "2022-11-30T03:48:00",
-        "Published": "2022-11-28T14:15:00",
-        "access": {},
-        "assigner": "contact@wpscan.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-3828",
-        "impact": {},
-        "last-modified": "2022-11-30T03:48:00",
-        "references": [
-            "https://wpscan.com/vulnerability/4188ed01-b64b-4aba-a215-e8dc5b308486"
-        ],
-        "summary": "The Video Thumbnails WordPress plugin through 2.12.3 does not sanitise and escape some of its settings, which could allow high privilege users such as admin to perform Stored Cross-Site Scripting attacks even when the unfiltered_html capability is disallowed (for example in multisite setup)."
-    },
-    {
-        "Modified": "2022-11-30T03:46:00",
-        "Published": "2022-11-28T14:15:00",
-        "access": {},
-        "assigner": "contact@wpscan.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-3823",
-        "impact": {},
-        "last-modified": "2022-11-30T03:46:00",
-        "references": [
-            "https://wpscan.com/vulnerability/a072b091-5e5f-4e88-bd3d-2f4582e6564e"
-        ],
-        "summary": "The Beautiful Cookie Consent Banner WordPress plugin before 2.9.1 does not sanitise and escape some of its settings, which could allow high privilege users such as admin to perform Stored Cross-Site Scripting attacks even when the unfiltered_html capability is disallowed (for example in multisite setup)."
-    },
-    {
-        "Modified": "2022-11-30T03:46:00",
-        "Published": "2022-11-28T14:15:00",
-        "access": {},
-        "assigner": "contact@wpscan.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-3822",
-        "impact": {},
-        "last-modified": "2022-11-30T03:46:00",
-        "references": [
-            "https://wpscan.com/vulnerability/48ec2e4a-0190-4f36-afd1-d5799ba28c13"
-        ],
-        "summary": "The Donations via PayPal WordPress plugin before 1.9.9 does not sanitise and escape some of its settings, which could allow high privilege users such as admin to perform Stored Cross-Site Scripting attacks even when the unfiltered_html capability is disallowed (for example in multisite setup)."
-    },
-    {
-        "Modified": "2022-11-30T03:45:00",
-        "Published": "2022-11-28T14:15:00",
-        "access": {},
-        "assigner": "contact@wpscan.com",
-        "cvss": null,
-        "cwe": "CWE-89",
-        "id": "CVE-2022-3689",
-        "impact": {},
-        "last-modified": "2022-11-30T03:45:00",
-        "references": [
-            "https://wpscan.com/vulnerability/e9c551a3-7482-4421-8197-5886d028776c"
-        ],
-        "summary": "The HTML Forms WordPress plugin before 1.3.25 does not properly properly escape a parameter before using it in a SQL statement, leading to a SQL injection exploitable by high privilege users"
-    },
-    {
-        "Modified": "2022-11-30T03:45:00",
-        "Published": "2022-11-28T14:15:00",
-        "access": {},
-        "assigner": "contact@wpscan.com",
-        "cvss": null,
-        "cwe": "CWE-89",
-        "id": "CVE-2022-3768",
-        "impact": {},
-        "last-modified": "2022-11-30T03:45:00",
-        "references": [
-            "https://wpscan.com/vulnerability/1d8bf5bb-5a17-49b7-a5ba-5f2866e1f8a3"
-        ],
-        "summary": "The WPSmartContracts WordPress plugin before 1.3.12 does not properly sanitise and escape a parameter before using it in a SQL statement, leading to a SQL injection exploitable by users with a role as low as author"
-    },
-    {
-        "Modified": "2022-11-30T03:45:00",
-        "Published": "2022-11-28T14:15:00",
-        "access": {},
-        "assigner": "contact@wpscan.com",
-        "cvss": null,
-        "cwe": "CWE-89",
-        "id": "CVE-2022-3769",
-        "impact": {},
-        "last-modified": "2022-11-30T03:45:00",
-        "references": [
-            "https://wpscan.com/vulnerability/2f9ffc1e-c8a9-47bb-a76b-d043c93e63f8"
-        ],
-        "summary": "The OWM Weather WordPress plugin before 5.6.9 does not properly sanitise and escape a parameter before using it in a SQL statement, leading to a SQL injection exploitable by users with a role as low as contributor"
     }
 ]
