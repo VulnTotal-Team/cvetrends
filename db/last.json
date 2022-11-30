@@ -1,5 +1,569 @@
 [
     {
+        "Modified": "2022-11-30T16:50:00",
+        "Published": "2022-11-23T19:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-862",
+        "id": "CVE-2022-41930",
+        "impact": {},
+        "last-modified": "2022-11-30T16:50:00",
+        "references": [
+            "https://github.com/xwiki/xwiki-platform/commit/5be1cc0adf917bf10899c47723fa451e950271fa",
+            "https://jira.xwiki.org/browse/XWIKI-19792",
+            "https://github.com/xwiki/xwiki-platform/security/advisories/GHSA-p5v9-g8w8-5q4v"
+        ],
+        "summary": "org.xwiki.platform:xwiki-platform-user-profile-ui is missing authorization to enable or disable users. Any user (logged in or not) with access to the page XWiki.XWikiUserProfileSheet can enable or disable any user profile. This might allow to a disabled user to re-enable themselves, or to an attacker to disable any user of the wiki. The problem has been patched in XWiki 13.10.7, 14.5RC1 and 14.4.2. Workarounds: The problem can be patched immediately by editing the page `XWiki.XWikiUserProfileSheet` in the wiki and by performing the changes contained in https://github.com/xwiki/xwiki-platform/commit/5be1cc0adf917bf10899c47723fa451e950271fa."
+    },
+    {
+        "Modified": "2022-11-30T16:48:00",
+        "Published": "2022-11-23T19:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-862",
+        "id": "CVE-2022-41929",
+        "impact": {},
+        "last-modified": "2022-11-30T16:48:00",
+        "references": [
+            "https://github.com/xwiki/xwiki-platform/security/advisories/GHSA-2gj2-vj98-j2qq",
+            "https://github.com/xwiki/xwiki-platform/commit/0b732f2ef0224e2aaf10e2e1ef48dbd3fb6e10cd",
+            "https://jira.xwiki.org/browse/XWIKI-19804"
+        ],
+        "summary": "org.xwiki.platform:xwiki-platform-oldcore is missing authorization in User#setDisabledStatus, which may allow an incorrectly authorized user with only Script rights to enable or disable a user. This operation is meant to only be available for users with admin rights. This problem has been patched in XWiki 13.10.7, 14.4.2 and 14.5RC1."
+    },
+    {
+        "Modified": "2022-11-30T16:38:00",
+        "Published": "2022-11-23T19:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-95",
+        "id": "CVE-2022-41928",
+        "impact": {},
+        "last-modified": "2022-11-30T16:38:00",
+        "references": [
+            "https://github.com/xwiki/xwiki-platform/security/advisories/GHSA-9hqh-fmhg-vq2j",
+            "https://jira.xwiki.org/browse/XWIKI-19800"
+        ],
+        "summary": "XWiki Platform vulnerable to Improper Neutralization of Directives in Dynamically Evaluated Code ('Eval Injection') in AttachmentSelector.xml. The issue can also be reproduced by inserting the dangerous payload in the `height` or `alt` macro properties. This has been patched in versions 13.10.7, 14.4.2, and 14.5. The issue can be fixed on a running wiki by updating `XWiki.AttachmentSelector` with the versions below: - 14.5-rc-1+: https://github.com/xwiki/xwiki-platform/commit/eb15147adf94bddb92626f862c1710d45bcd64a7#diff-e1513599ab698991f6cbba55d38f3f464432ced8d137a668b1f7618c7e747e23 - 14.4.2+: https://github.com/xwiki/xwiki-platform/commit/c02f8eb1f3c953d124f2c097021536f8bc00fa8d#diff-e1513599ab698991f6cbba55d38f3f464432ced8d137a668b1f7618c7e747e23 - 13.10.7+: https://github.com/xwiki/xwiki-platform/commit/efd0df0468d46149ba68b66660b93f31b6318515#diff-e1513599ab698991f6cbba55d38f3f464432ced8d137a668b1f7618c7e747e23"
+    },
+    {
+        "Modified": "2022-11-30T16:37:00",
+        "Published": "2022-11-23T18:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "NVD-CWE-noinfo",
+        "id": "CVE-2022-39833",
+        "impact": {},
+        "last-modified": "2022-11-30T16:37:00",
+        "references": [
+            "https://www.filecloud.com/supportdocs/fcdoc/latest/server/security-advisories/2022-security-advisories/advisory-2022-10-01-unauthorized-access-and-potential-remote-code-execution",
+            "https://gist.github.com/DylanGrl/4b4e0d53bb7626b2ab3f834ec5a2b23c"
+        ],
+        "summary": "FileCloud Versions 20.2 and later allows remote attackers to potentially cause unauthorized remote code execution and access to reported API endpoints via a crafted HTTP request."
+    },
+    {
+        "Modified": "2022-11-30T16:33:00",
+        "Published": "2022-11-30T15:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2021-31740",
+        "impact": {},
+        "last-modified": "2022-11-30T16:33:00",
+        "references": [
+            "https://www.pentagrid.ch/en/blog/multiple-vulnerabilities-in-seppmail/"
+        ],
+        "summary": "SEPPMail's web frontend, user input is not embedded correctly in the web page and therefore leads to cross-site scripting vulnerabilities (XSS)."
+    },
+    {
+        "Modified": "2022-11-30T16:33:00",
+        "Published": "2022-11-30T15:15:00",
+        "access": {},
+        "assigner": "security@m-files.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-1606",
+        "impact": {},
+        "last-modified": "2022-11-30T16:33:00",
+        "references": [
+            "https://www.m-files.com/about/trust-center/security-advisories/cve-2022-1606/"
+        ],
+        "summary": "Incorrect privilege assignment in M-Files Server versions before 22.3.11164.0 and before 22.3.11237.1 allows user to read unmanaged objects."
+    },
+    {
+        "Modified": "2022-11-30T16:33:00",
+        "Published": "2022-11-30T15:15:00",
+        "access": {},
+        "assigner": "security@m-files.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-1911",
+        "impact": {},
+        "last-modified": "2022-11-30T16:33:00",
+        "references": [
+            "https://www.m-files.com/about/trust-center/security-advisories/cve-2022-1911/"
+        ],
+        "summary": "Error in parser function in M-Files Server versions before 22.6.11534.1 and before 22.6.11505.0 allowed unauthenticated access to some information of the underlying operating system."
+    },
+    {
+        "Modified": "2022-11-30T16:33:00",
+        "Published": "2022-11-30T15:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-44136",
+        "impact": {},
+        "last-modified": "2022-11-30T16:33:00",
+        "references": [
+            "https://com0t.github.io/zenar.io/2022/10/18/Unauthent-RCE-Zenar.io~9.3.html"
+        ],
+        "summary": "Zenario CMS 9.3.57186 is vulnerable to Remote Code Excution (RCE)."
+    },
+    {
+        "Modified": "2022-11-30T16:30:00",
+        "Published": "2009-03-14T18:30:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "secalert@redhat.com",
+        "cvss": 7.5,
+        "cvss-time": "2022-11-30T16:30:00",
+        "cvss-vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+        "cwe": "CWE-190",
+        "id": "CVE-2009-0586",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "PARTIAL",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-11-30T16:30:00",
+        "references": [
+            "http://www.securityfocus.com/bid/34100",
+            "http://cgit.freedesktop.org/gstreamer/gst-plugins-base/commit/?id=566583e87147f774e7fc4c78b5f7e61d427e40a9",
+            "http://ocert.org/patches/2008-015/gst-plugins-base-CVE-2009-0586.diff",
+            "http://www.ocert.org/advisories/ocert-2008-015.html",
+            "http://openwall.com/lists/oss-security/2009/03/12/2",
+            "http://secunia.com/advisories/34335",
+            "http://www.ubuntu.com/usn/USN-735-1",
+            "http://secunia.com/advisories/34350",
+            "http://www.mandriva.com/security/advisories?name=MDVSA-2009:085",
+            "http://lists.opensuse.org/opensuse-security-announce/2009-04/msg00010.html",
+            "http://secunia.com/advisories/35777",
+            "http://security.gentoo.org/glsa/glsa-200907-11.xml",
+            "https://exchange.xforce.ibmcloud.com/vulnerabilities/49274",
+            "https://oval.cisecurity.org/repository/search/definition/oval%3Aorg.mitre.oval%3Adef%3A9694",
+            "http://www.securityfocus.com/archive/1/501712/100/0/threaded"
+        ],
+        "summary": "Integer overflow in the gst_vorbis_tag_add_coverart function (gst-libs/gst/tag/gstvorbistag.c) in vorbistag in gst-plugins-base (aka gstreamer-plugins-base) before 0.10.23 in GStreamer allows context-dependent attackers to execute arbitrary code via a crafted COVERART tag that is converted from a base64 representation, which triggers a heap-based buffer overflow."
+    },
+    {
+        "Modified": "2022-11-30T16:29:00",
+        "Published": "2021-09-09T19:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "LOCAL"
+        },
+        "assigner": "mobile.security@samsung.com",
+        "cvss": 2.1,
+        "cvss-time": "2022-11-30T16:29:00",
+        "cvss-vector": "AV:L/AC:L/Au:N/C:N/I:P/A:N",
+        "cwe": "NVD-CWE-Other",
+        "id": "CVE-2021-25463",
+        "impact": {
+            "availability": "NONE",
+            "confidentiality": "NONE",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-11-30T16:29:00",
+        "references": [
+            "https://security.samsungmobile.com/serviceWeb.smsb?year=2021&month=9"
+        ],
+        "summary": "Improper access control vulnerability in PENUP prior to version 3.8.00.18 allows arbitrary webpage loading in webview."
+    },
+    {
+        "Modified": "2022-11-30T16:29:00",
+        "Published": "2020-04-15T14:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "secalert_us@oracle.com",
+        "cvss": 7.5,
+        "cvss-time": "2022-11-30T16:29:00",
+        "cvss-vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+        "cwe": "NVD-CWE-noinfo",
+        "id": "CVE-2020-2801",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "PARTIAL",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-11-30T16:29:00",
+        "references": [
+            "https://www.oracle.com/security-alerts/cpuapr2020.html"
+        ],
+        "summary": "Vulnerability in the Oracle WebLogic Server product of Oracle Fusion Middleware (component: Core). Supported versions that are affected are 10.3.6.0.0, 12.1.3.0.0, 12.2.1.3.0 and 12.2.1.4.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via IIOP, T3 to compromise Oracle WebLogic Server. Successful attacks of this vulnerability can result in takeover of Oracle WebLogic Server. Note: The patch for this issue will address the vulnerability only if the WLS instance is using JDK 1.7.0_191 or later, or JDK 1.8.0_181 or later. CVSS 3.0 Base Score 9.8 (Confidentiality, Integrity and Availability impacts). CVSS Vector: (CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H)."
+    },
+    {
+        "Modified": "2022-11-30T16:26:00",
+        "Published": "2022-11-23T18:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-611",
+        "id": "CVE-2022-40304",
+        "impact": {},
+        "last-modified": "2022-11-30T16:26:00",
+        "references": [
+            "https://gitlab.gnome.org/GNOME/libxml2/-/tags/v2.10.3",
+            "https://gitlab.gnome.org/GNOME/libxml2/-/commit/1b41ec4e9433b05bb0376be4725804c54ef1d80b",
+            "https://gitlab.gnome.org/GNOME/libxml2/-/tags"
+        ],
+        "summary": "An issue was discovered in libxml2 before 2.10.3. Certain invalid XML entity definitions can corrupt a hash table key, potentially leading to subsequent logic errors. In one case, a double-free can be provoked."
+    },
+    {
+        "Modified": "2022-11-30T16:22:00",
+        "Published": "2022-11-23T19:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-352",
+        "id": "CVE-2022-41927",
+        "impact": {},
+        "last-modified": "2022-11-30T16:22:00",
+        "references": [
+            "https://github.com/xwiki/xwiki-platform/commit/7fd4cda0590180c4d34f557597e9e10e263def9e",
+            "https://github.com/xwiki/xwiki-platform/security/advisories/GHSA-mq7h-5574-hw9f"
+        ],
+        "summary": "XWiki Platform is vulnerable to Cross-Site Request Forgery (CSRF) that may allow attackers to delete or rename tags without needing any confirmation. The problem has been patched in XWiki 13.10.7, 14.4.1 and 14.5RC1. Workarounds: It's possible to patch existing instances directly by editing the page Main.Tags and add this kind of check, in the code for renaming and for deleting: ``` #if (!$services.csrf.isTokenValid($request.get('form_token'))) #set ($discard = $response.sendError(401, \"Wrong CSRF token\")) #end ```"
+    },
+    {
+        "Modified": "2022-11-30T16:15:00",
+        "Published": "2022-03-25T19:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "LOCAL"
+        },
+        "assigner": "secalert@redhat.com",
+        "cvss": 4.6,
+        "cvss-time": "2022-11-30T16:15:00",
+        "cvss-vector": "AV:L/AC:L/Au:N/C:P/I:P/A:P",
+        "cwe": "CWE-281",
+        "id": "CVE-2022-0330",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "PARTIAL",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-11-30T16:15:00",
+        "references": [
+            "https://www.openwall.com/lists/oss-security/2022/01/25/12",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2042404",
+            "https://security.netapp.com/advisory/ntap-20220526-0001/",
+            "http://www.openwall.com/lists/oss-security/2022/11/30/1"
+        ],
+        "summary": "A random memory access flaw was found in the Linux kernel's GPU i915 kernel driver functionality in the way a user may run malicious code on the GPU. This flaw allows a local user to crash the system or escalate their privileges on the system."
+    },
+    {
+        "Modified": "2022-11-30T16:08:00",
+        "Published": "2022-11-25T18:15:00",
+        "access": {},
+        "assigner": "help@fluidattacks.com",
+        "cvss": null,
+        "cwe": "CWE-434",
+        "id": "CVE-2022-41705",
+        "impact": {},
+        "last-modified": "2022-11-30T16:08:00",
+        "references": [
+            "https://github.com/uasoft-indonesia/badaso/",
+            "https://fluidattacks.com/advisories/headhunterz/"
+        ],
+        "summary": "Badaso version 2.6.3 allows an unauthenticated remote attacker to execute arbitrary code remotely on the server. This is possible because the application does not properly validate the data uploaded by users."
+    },
+    {
+        "Modified": "2022-11-30T16:07:00",
+        "Published": "2022-11-25T18:15:00",
+        "access": {},
+        "assigner": "help@fluidattacks.com",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2022-0698",
+        "impact": {},
+        "last-modified": "2022-11-30T16:07:00",
+        "references": [
+            "https://github.com/microweber/microweber/",
+            "https://fluidattacks.com/advisories/garrix/"
+        ],
+        "summary": "Microweber version 1.3.1 allows an unauthenticated user to perform an account takeover via an XSS on the 'select-file' parameter."
+    },
+    {
+        "Modified": "2022-11-30T16:07:00",
+        "Published": "2022-11-23T19:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-502",
+        "id": "CVE-2022-41875",
+        "impact": {},
+        "last-modified": "2022-11-30T16:07:00",
+        "references": [
+            "https://github.com/airbnb/optica/security/advisories/GHSA-cf87-4h6x-phh6",
+            "https://www.rubydoc.info/gems/oj/3.0.2/Oj.safe_load",
+            "https://github.com/ohler55/oj/blob/develop/pages/Security.md"
+        ],
+        "summary": "A remote code execution (RCE) vulnerability in Optica allows unauthenticated attackers to execute arbitrary code via specially crafted JSON payloads. Specially crafted JSON payloads may lead to RCE (remote code execution) on the attacked system running Optica. The vulnerability was patched in v. 0.10.2, where the call to the function `oj.load` was changed to `oj.safe_load`."
+    },
+    {
+        "Modified": "2022-11-30T16:01:00",
+        "Published": "2022-11-25T18:15:00",
+        "access": {},
+        "assigner": "help@fluidattacks.com",
+        "cvss": null,
+        "cwe": "CWE-22",
+        "id": "CVE-2022-41712",
+        "impact": {},
+        "last-modified": "2022-11-30T16:01:00",
+        "references": [
+            "https://fluidattacks.com/advisories/kiniza/",
+            "https://github.com/frappe/frappe/"
+        ],
+        "summary": "Frappe version 14.10.0 allows an external attacker to remotely obtain arbitrary local files. This is possible because the application does not correctly validate the information injected by the user in the import_file parameter."
+    },
+    {
+        "Modified": "2022-11-30T15:52:00",
+        "Published": "2022-11-23T19:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-434",
+        "id": "CVE-2021-43258",
+        "impact": {},
+        "last-modified": "2022-11-30T15:52:00",
+        "references": [
+            "http://www.churchdb.org/",
+            "https://github.com/rapid7/metasploit-framework/pull/17257",
+            "https://sourceforge.net/projects/churchinfo/files/"
+        ],
+        "summary": "CartView.php in ChurchInfo 1.3.0 allows attackers to achieve remote code execution through insecure uploads. This requires authenticated access tot he ChurchInfo application. Once authenticated, a user can add names to their cart, and compose an email. Uploading an attachment for the email stores the attachment on the site in the /tmp_attach/ folder where it can be accessed with a GET request. There are no limitations on files that can be attached, allowing for malicious PHP code to be uploaded and interpreted by the server."
+    },
+    {
+        "Modified": "2022-11-30T15:48:00",
+        "Published": "2022-11-24T17:15:00",
+        "access": {},
+        "assigner": "security@huntr.dev",
+        "cvss": null,
+        "cwe": "CWE-307",
+        "id": "CVE-2022-2650",
+        "impact": {},
+        "last-modified": "2022-11-30T15:48:00",
+        "references": [
+            "https://huntr.dev/bounties/f0d85efa-4e78-4b1d-848f-edea115af64b",
+            "https://github.com/wger-project/wger/commit/5e3167e3a2dc95836fa2607fe201524c031a2c4c"
+        ],
+        "summary": "Improper Restriction of Excessive Authentication Attempts in GitHub repository wger-project/wger prior to 2.2."
+    },
+    {
+        "Modified": "2022-11-30T15:31:00",
+        "Published": "2022-11-21T13:15:00",
+        "access": {},
+        "assigner": "security@wordfence.com",
+        "cvss": null,
+        "cwe": "CWE-502",
+        "id": "CVE-2022-3861",
+        "impact": {},
+        "last-modified": "2022-11-30T15:31:00",
+        "references": [
+            "https://www.wordfence.com/vulnerability-advisories-continued/#CVE-2022-3861",
+            "https://github.com/MrTuxracer/advisories/blob/master/CVEs/CVE-2022-3861.txt",
+            "https://muffingroup.com/betheme/"
+        ],
+        "summary": "The Betheme theme for WordPress is vulnerable to PHP Object Injection in versions up to, and including, 26.5.1.4 via deserialization of untrusted input supplied via the import, mfn-items-import-page, and mfn-items-import parameters passed through the mfn_builder_import, mfn_builder_import_page, importdata, importsinglepage, and importfromclipboard functions. This makes it possible for authenticated attackers, with contributor level permissions and above to inject a PHP Object. The additional presence of a POP chain would make it possible for attackers to execute code, retrieve sensitive data, delete files, etc.."
+    },
+    {
+        "Modified": "2022-11-30T15:29:00",
+        "Published": "2022-11-21T07:15:00",
+        "access": {},
+        "assigner": "cna@vuldb.com",
+        "cvss": null,
+        "cwe": "CWE-203",
+        "id": "CVE-2022-4087",
+        "impact": {},
+        "last-modified": "2022-11-30T15:29:00",
+        "references": [
+            "https://vuldb.com/?id.214054",
+            "https://github.com/ipxe/ipxe/commit/186306d6199096b7a7c4b4574d4be8cdb8426729"
+        ],
+        "summary": "A vulnerability was found in iPXE. It has been declared as problematic. This vulnerability affects the function tls_new_ciphertext of the file src/net/tls.c of the component TLS. The manipulation of the argument pad_len leads to information exposure through discrepancy. The name of the patch is 186306d6199096b7a7c4b4574d4be8cdb8426729. It is recommended to apply a patch to fix this issue. VDB-214054 is the identifier assigned to this vulnerability."
+    },
+    {
+        "Modified": "2022-11-30T15:27:00",
+        "Published": "2022-11-23T03:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-787",
+        "id": "CVE-2022-36337",
+        "impact": {},
+        "last-modified": "2022-11-30T15:27:00",
+        "references": [
+            "https://www.insyde.com/security-pledge",
+            "https://www.insyde.com/security-pledge/SA-2022039"
+        ],
+        "summary": "An issue was discovered in Insyde InsydeH2O with kernel 5.0 through 5.5. A stack buffer overflow vulnerability in the MebxConfiguration driver leads to arbitrary code execution. Control of a UEFI variable under the OS can cause this overflow when read by BIOS code."
+    },
+    {
+        "Modified": "2022-11-30T15:22:00",
+        "Published": "2022-11-21T10:15:00",
+        "access": {},
+        "assigner": "info@cert.vde.com",
+        "cvss": null,
+        "cwe": "CWE-639",
+        "id": "CVE-2022-3589",
+        "impact": {},
+        "last-modified": "2022-11-30T15:22:00",
+        "references": [
+            "https://cert.vde.com/de/advisories/VDE-2022-052/"
+        ],
+        "summary": "An API Endpoint used by Miele's \"AppWash\" MobileApp in all versions was vulnerable to an authorization bypass. A low privileged, remote attacker would have been able to gain read and partial write access to other users data by modifying a small part of a HTTP request sent to the API. Reading or changing the password of another user was not possible, thus no impact to Availability."
+    },
+    {
+        "Modified": "2022-11-30T15:16:00",
+        "Published": "2022-11-28T14:15:00",
+        "access": {},
+        "assigner": "contact@wpscan.com",
+        "cvss": null,
+        "cwe": "CWE-502",
+        "id": "CVE-2022-3490",
+        "impact": {},
+        "last-modified": "2022-11-30T15:16:00",
+        "references": [
+            "https://wpscan.com/vulnerability/0c9f22e0-1d46-4957-9ba5-5cca78861136"
+        ],
+        "summary": "The Checkout Field Editor (Checkout Manager) for WooCommerce WordPress plugin before 1.8.0 unserializes user input provided via the settings, which could allow high privilege users such as admin to perform PHP Object Injection when a suitable gadget is present"
+    },
+    {
+        "Modified": "2022-11-30T15:15:00",
+        "Published": "2022-11-28T14:15:00",
+        "access": {},
+        "assigner": "contact@wpscan.com",
+        "cvss": null,
+        "cwe": "CWE-22",
+        "id": "CVE-2021-25059",
+        "impact": {},
+        "last-modified": "2022-11-30T15:15:00",
+        "references": [
+            "https://wpscan.com/vulnerability/b125a765-a6b6-421b-bd8a-effec12bc629"
+        ],
+        "summary": "The Download Plugin WordPress plugin before 2.0.0 does not properly validate a user has the required privileges to access a backup's nonce identifier, which may allow any users with an account on the site (such as subscriber) to download a full copy of the website."
+    },
+    {
+        "Modified": "2022-11-30T15:15:00",
+        "Published": "2022-11-28T14:15:00",
+        "access": {},
+        "assigner": "contact@wpscan.com",
+        "cvss": null,
+        "cwe": "CWE-1236",
+        "id": "CVE-2022-3603",
+        "impact": {},
+        "last-modified": "2022-11-30T15:15:00",
+        "references": [
+            "https://wpscan.com/vulnerability/376e2bc7-2eb9-4e0a-809c-1582940ebdc7"
+        ],
+        "summary": "The Export customers list csv for WooCommerce, WordPress users csv, export Guest customer list WordPress plugin before 2.0.69 does not validate data when outputting it back in a CSV file, which could lead to CSV injection."
+    },
+    {
+        "Modified": "2022-11-30T15:14:00",
+        "Published": "2022-11-30T14:15:00",
+        "access": {},
+        "assigner": "cna@vuldb.com",
+        "cvss": null,
+        "cwe": "CWE-707",
+        "id": "CVE-2021-4242",
+        "impact": {},
+        "last-modified": "2022-11-30T15:14:00",
+        "references": [
+            "https://github.com/smallpiggy/Sapido--rce/blob/main/Sapido%E8%B7%AF%E7%94%B1%E5%99%A8-rce.py",
+            "https://blog.csdn.net/qq_44159028/article/details/114590267",
+            "https://vuldb.com/?id.214592"
+        ],
+        "summary": "A vulnerability was found in Sapido BR270n, BRC76n, GR297 and RB1732 and classified as critical. Affected by this issue is some unknown functionality of the file ip/syscmd.htm. The manipulation leads to os command injection. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. The identifier of this vulnerability is VDB-214592."
+    },
+    {
+        "Modified": "2022-11-30T15:14:00",
+        "Published": "2022-11-30T14:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-38801",
+        "impact": {},
+        "last-modified": "2022-11-30T15:14:00",
+        "references": [
+            "https://www.zkteco.com/",
+            "https://gist.github.com/hamoshwani/5ac860dd6757440174f446c62b24653f"
+        ],
+        "summary": "In Zkteco BioTime < 8.5.3 Build:20200816.447, an employee can hijack an administrator session and cookies using blind cross-site scripting."
+    },
+    {
+        "Modified": "2022-11-30T15:14:00",
+        "Published": "2022-11-30T14:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-38802",
+        "impact": {},
+        "last-modified": "2022-11-30T15:14:00",
+        "references": [
+            "https://www.zkteco.com/",
+            "https://gist.github.com/hamoshwani/fd7e3d9d9ff8896f1ccf8426dccaf97e"
+        ],
+        "summary": "Zkteco BioTime < 8.5.3 Build:20200816.447 is vulnerable to Incorrect Access Control via resign, private message, manual log, time interval, attshift, and holiday. An authenticated administrator can read local files by exploiting XSS into a pdf generator when exporting data as a PDF"
+    },
+    {
+        "Modified": "2022-11-30T15:14:00",
+        "Published": "2022-11-30T14:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-38803",
+        "impact": {},
+        "last-modified": "2022-11-30T15:14:00",
+        "references": [
+            "https://gist.github.com/hamoshwani/44653bfe7b8cc461692a2f074b1ef475",
+            "https://www.zkteco.com/"
+        ],
+        "summary": "Zkteco BioTime < 8.5.3 Build:20200816.447 is vulnerable to Incorrect Access Control via Leave, overtime, Manual log. An authenticated employee can read local files by exploiting XSS into a pdf generator when exporting data as a PDF"
+    },
+    {
+        "Modified": "2022-11-30T15:14:00",
+        "Published": "2022-11-21T10:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-416",
+        "id": "CVE-2022-45146",
+        "impact": {},
+        "last-modified": "2022-11-30T15:14:00",
+        "references": [
+            "https://www.bouncycastle.org/latest_releases.html",
+            "https://github.com/bcgit/bc-java/wiki/CVE-2022-45146"
+        ],
+        "summary": "An issue was discovered in the FIPS Java API of Bouncy Castle BC-FJA before 1.0.2.4. Changes to the JVM garbage collector in Java 13 and later trigger an issue in the BC-FJA FIPS modules where it is possible for temporary keys used by the module to be zeroed out while still in use by the module, resulting in errors or potential information loss. NOTE: FIPS compliant users are unaffected because the FIPS certification is only for Java 7, 8, and 11."
+    },
+    {
         "Modified": "2022-11-30T14:53:00",
         "Published": "2022-11-23T03:15:00",
         "access": {},
@@ -89,71 +653,6 @@
             "https://forum.silverstripe.org/c/releases"
         ],
         "summary": "Silverstripe silverstripe/framework through 4.11 allows XSS vulnerability via href attribute of a link (issue 2 of 2)."
-    },
-    {
-        "Modified": "2022-11-30T14:15:00",
-        "Published": "2022-11-30T14:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-707",
-        "id": "CVE-2021-4242",
-        "impact": {},
-        "last-modified": "2022-11-30T14:15:00",
-        "references": [
-            "https://github.com/smallpiggy/Sapido--rce/blob/main/Sapido%E8%B7%AF%E7%94%B1%E5%99%A8-rce.py",
-            "https://blog.csdn.net/qq_44159028/article/details/114590267",
-            "https://vuldb.com/?id.214592"
-        ],
-        "summary": "A vulnerability was found in Sapido BR270n, BRC76n, GR297 and RB1732 and classified as critical. Affected by this issue is some unknown functionality of the file ip/syscmd.htm. The manipulation leads to os command injection. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. The identifier of this vulnerability is VDB-214592."
-    },
-    {
-        "Modified": "2022-11-30T14:15:00",
-        "Published": "2022-11-30T14:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-38801",
-        "impact": {},
-        "last-modified": "2022-11-30T14:15:00",
-        "references": [
-            "https://www.zkteco.com/",
-            "https://gist.github.com/hamoshwani/5ac860dd6757440174f446c62b24653f"
-        ],
-        "summary": "In Zkteco BioTime < 8.5.3 Build:20200816.447, an employee can hijack an administrator session and cookies using blind cross-site scripting."
-    },
-    {
-        "Modified": "2022-11-30T14:15:00",
-        "Published": "2022-11-30T14:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-38802",
-        "impact": {},
-        "last-modified": "2022-11-30T14:15:00",
-        "references": [
-            "https://www.zkteco.com/",
-            "https://gist.github.com/hamoshwani/fd7e3d9d9ff8896f1ccf8426dccaf97e"
-        ],
-        "summary": "Zkteco BioTime < 8.5.3 Build:20200816.447 is vulnerable to Incorrect Access Control via resign, private message, manual log, time interval, attshift, and holiday. An authenticated administrator can read local files by exploiting XSS into a pdf generator when exporting data as a PDF"
-    },
-    {
-        "Modified": "2022-11-30T14:15:00",
-        "Published": "2022-11-30T14:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-38803",
-        "impact": {},
-        "last-modified": "2022-11-30T14:15:00",
-        "references": [
-            "https://gist.github.com/hamoshwani/44653bfe7b8cc461692a2f074b1ef475",
-            "https://www.zkteco.com/"
-        ],
-        "summary": "Zkteco BioTime < 8.5.3 Build:20200816.447 is vulnerable to Incorrect Access Control via Leave, overtime, Manual log. An authenticated employee can read local files by exploiting XSS into a pdf generator when exporting data as a PDF"
     },
     {
         "Modified": "2022-11-30T13:48:00",
@@ -1215,449 +1714,5 @@
             "https://wpscan.com/vulnerability/2f9ffc1e-c8a9-47bb-a76b-d043c93e63f8"
         ],
         "summary": "The OWM Weather WordPress plugin before 5.6.9 does not properly sanitise and escape a parameter before using it in a SQL statement, leading to a SQL injection exploitable by users with a role as low as contributor"
-    },
-    {
-        "Modified": "2022-11-30T03:44:00",
-        "Published": "2022-11-28T14:15:00",
-        "access": {},
-        "assigner": "contact@wpscan.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-3610",
-        "impact": {},
-        "last-modified": "2022-11-30T03:44:00",
-        "references": [
-            "https://wpscan.com/vulnerability/33b52dd7-613f-46e4-b8ee-beddd31689eb"
-        ],
-        "summary": "The Jeeng Push Notifications WordPress plugin before 2.0.4 does not sanitise and escape some of its settings, which could allow high privilege users such as admin to perform Stored Cross-Site Scripting attacks even when the unfiltered_html capability is disallowed (for example in multisite setup)"
-    },
-    {
-        "Modified": "2022-11-30T03:43:00",
-        "Published": "2022-11-28T14:15:00",
-        "access": {},
-        "assigner": "contact@wpscan.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-3601",
-        "impact": {},
-        "last-modified": "2022-11-30T03:43:00",
-        "references": [
-            "https://wpscan.com/vulnerability/28b7ee77-5826-4c98-b09a-8f197e1a6d18"
-        ],
-        "summary": "The Image Hover Effects Css3 WordPress plugin through 4.5 does not sanitise and escape some of its settings, which could allow high privilege users such as admin to perform Stored Cross-Site Scripting attacks even when the unfiltered_html capability is disallowed (for example in multisite setup)."
-    },
-    {
-        "Modified": "2022-11-30T03:42:00",
-        "Published": "2022-11-28T14:15:00",
-        "access": {},
-        "assigner": "contact@wpscan.com",
-        "cvss": null,
-        "cwe": "CWE-639",
-        "id": "CVE-2022-3511",
-        "impact": {},
-        "last-modified": "2022-11-30T03:42:00",
-        "references": [
-            "https://wpscan.com/vulnerability/9e57285a-0023-4711-874c-6e7b3c2673d1"
-        ],
-        "summary": "The Awesome Support WordPress plugin before 6.1.2 does not ensure that the exported tickets archive to be downloaded belongs to the user making the request, allowing a low privileged user, such as subscriber to download arbitrary exported tickets via an IDOR vector"
-    },
-    {
-        "Modified": "2022-11-30T03:40:00",
-        "Published": "2022-11-28T14:15:00",
-        "access": {},
-        "assigner": "contact@wpscan.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-2311",
-        "impact": {},
-        "last-modified": "2022-11-30T03:40:00",
-        "references": [
-            "https://wpscan.com/vulnerability/287a14dc-d1fc-481d-84af-7eb172dc68c9"
-        ],
-        "summary": "The Find and Replace All WordPress plugin before 1.3 does not sanitize and escape some parameters from its setting page before outputting them back to the user, leading to a Reflected Cross-Site Scripting issue."
-    },
-    {
-        "Modified": "2022-11-30T03:40:00",
-        "Published": "2022-11-28T14:15:00",
-        "access": {},
-        "assigner": "contact@wpscan.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-2983",
-        "impact": {},
-        "last-modified": "2022-11-30T03:40:00",
-        "references": [
-            "https://wpscan.com/vulnerability/e2af8c7f-9bd4-4902-8df8-72ffb414fdbf"
-        ],
-        "summary": "The Salat Times WordPress plugin before 3.2.2 does not sanitize and escapes its settings, allowing high-privilege users such as admin to perform Cross-Site Scripting attacks even when the unfiltered_html capability is disallowed."
-    },
-    {
-        "Modified": "2022-11-30T02:35:00",
-        "Published": "2022-11-30T01:15:00",
-        "access": {},
-        "assigner": "Mitsubishielectric.Psirt@yd.MitsubishiElectric.co.jp",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-40265",
-        "impact": {},
-        "last-modified": "2022-11-30T02:35:00",
-        "references": [
-            "https://jvn.jp/vu/JVNVU94702422",
-            "https://www.mitsubishielectric.com/en/psirt/vulnerability/pdf/2022-017_en.pdf"
-        ],
-        "summary": "Improper Input Validation vulnerability in Mitsubishi Electric Corporation MELSEC iQ-R Series RJ71EN71 Firmware version \"65\" and prior and Mitsubishi Electric Corporation MELSEC iQ-R Series R04/08/16/32/120ENCPU Network Part Firmware version \"65\" and prior allows a remote unauthenticated attacker to cause a Denial of Service condition by sending specially crafted packets. A system reset is required for recovery."
-    },
-    {
-        "Modified": "2022-11-30T02:35:00",
-        "Published": "2022-11-30T00:15:00",
-        "access": {},
-        "assigner": "chrome-cve-admin@google.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-4178",
-        "impact": {},
-        "last-modified": "2022-11-30T02:35:00",
-        "references": [
-            "https://crbug.com/1376099",
-            "https://chromereleases.googleblog.com/2022/11/stable-channel-update-for-desktop_29.html"
-        ],
-        "summary": "Use after free in Mojo in Google Chrome prior to 108.0.5359.71 allowed a remote attacker who had compromised the renderer process to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)"
-    },
-    {
-        "Modified": "2022-11-30T02:35:00",
-        "Published": "2022-11-30T00:15:00",
-        "access": {},
-        "assigner": "chrome-cve-admin@google.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-4180",
-        "impact": {},
-        "last-modified": "2022-11-30T02:35:00",
-        "references": [
-            "https://chromereleases.googleblog.com/2022/11/stable-channel-update-for-desktop_29.html",
-            "https://crbug.com/1378564"
-        ],
-        "summary": "Use after free in Mojo in Google Chrome prior to 108.0.5359.71 allowed an attacker who convinced a user to install a malicious extension to potentially exploit heap corruption via a crafted Chrome Extension. (Chromium security severity: High)"
-    },
-    {
-        "Modified": "2022-11-30T02:35:00",
-        "Published": "2022-11-29T23:15:00",
-        "access": {},
-        "assigner": "security-advisories@github.com",
-        "cvss": null,
-        "cwe": "CWE-522",
-        "id": "CVE-2022-46155",
-        "impact": {},
-        "last-modified": "2022-11-30T02:35:00",
-        "references": [
-            "https://github.com/Airtable/airtable.js/security/advisories/GHSA-vqm5-9546-x25v",
-            "https://github.com/Airtable/airtable.js/releases/tag/v0.11.6",
-            "https://github.com/Airtable/airtable.js/pull/330/commits/b468d8fe48d75e3d5fe46d0ea7770f4658951ed0"
-        ],
-        "summary": "Airtable.js is the JavaScript client for Airtable. Prior to version 0.11.6, Airtable.js had a misconfigured build script in its source package. When the build script is run, it would bundle environment variables into the build target of a transpiled bundle. Specifically, the AIRTABLE_API_KEY and AIRTABLE_ENDPOINT_URL environment variables are inserted during Browserify builds due to being referenced in Airtable.js code. This only affects copies of Airtable.js built from its source, not those installed via npm or yarn. Airtable API keys set in users\u2019 environments via the AIRTABLE_API_KEY environment variable may be bundled into local copies of Airtable.js source code if all of the following conditions are met: 1) the user has cloned the Airtable.js source onto their machine, 2) the user runs the `npm prepare` script, and 3) the user' has the AIRTABLE_API_KEY environment variable set. If these conditions are met, a user\u2019s local build of Airtable.js would be modified to include the value of the AIRTABLE_API_KEY environment variable, which could then be accidentally shipped in the bundled code. Users who do not meet all three of these conditions are not impacted by this issue. Users should upgrade to Airtable.js version 0.11.6 or higher; or, as a workaround unset the AIRTABLE_API_KEY environment variable in their shell and/or remove it from your .bashrc, .zshrc, or other shell configuration files. Users should also regenerate any Airtable API keys they use, as the keysy may be present in bundled code."
-    },
-    {
-        "Modified": "2022-11-30T02:35:00",
-        "Published": "2022-11-30T00:15:00",
-        "access": {},
-        "assigner": "chrome-cve-admin@google.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-4181",
-        "impact": {},
-        "last-modified": "2022-11-30T02:35:00",
-        "references": [
-            "https://chromereleases.googleblog.com/2022/11/stable-channel-update-for-desktop_29.html",
-            "https://crbug.com/1382581"
-        ],
-        "summary": "Use after free in Forms in Google Chrome prior to 108.0.5359.71 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)"
-    },
-    {
-        "Modified": "2022-11-30T02:35:00",
-        "Published": "2022-11-30T00:15:00",
-        "access": {},
-        "assigner": "chrome-cve-admin@google.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-4174",
-        "impact": {},
-        "last-modified": "2022-11-30T02:35:00",
-        "references": [
-            "https://crbug.com/1379054",
-            "https://chromereleases.googleblog.com/2022/11/stable-channel-update-for-desktop_29.html"
-        ],
-        "summary": "Type confusion in V8 in Google Chrome prior to 108.0.5359.71 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)"
-    },
-    {
-        "Modified": "2022-11-30T02:35:00",
-        "Published": "2022-11-30T00:15:00",
-        "access": {},
-        "assigner": "chrome-cve-admin@google.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-4182",
-        "impact": {},
-        "last-modified": "2022-11-30T02:35:00",
-        "references": [
-            "https://chromereleases.googleblog.com/2022/11/stable-channel-update-for-desktop_29.html",
-            "https://crbug.com/1368739"
-        ],
-        "summary": "Inappropriate implementation in Fenced Frames in Google Chrome prior to 108.0.5359.71 allowed a remote attacker to bypass fenced frame restrictions via a crafted HTML page. (Chromium security severity: Medium)"
-    },
-    {
-        "Modified": "2022-11-30T02:35:00",
-        "Published": "2022-11-30T00:15:00",
-        "access": {},
-        "assigner": "chrome-cve-admin@google.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-4175",
-        "impact": {},
-        "last-modified": "2022-11-30T02:35:00",
-        "references": [
-            "https://crbug.com/1381401",
-            "https://chromereleases.googleblog.com/2022/11/stable-channel-update-for-desktop_29.html"
-        ],
-        "summary": "Use after free in Camera Capture in Google Chrome prior to 108.0.5359.71 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)"
-    },
-    {
-        "Modified": "2022-11-30T02:35:00",
-        "Published": "2022-11-30T00:15:00",
-        "access": {},
-        "assigner": "chrome-cve-admin@google.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-4183",
-        "impact": {},
-        "last-modified": "2022-11-30T02:35:00",
-        "references": [
-            "https://chromereleases.googleblog.com/2022/11/stable-channel-update-for-desktop_29.html",
-            "https://crbug.com/1251790"
-        ],
-        "summary": "Insufficient policy enforcement in Popup Blocker in Google Chrome prior to 108.0.5359.71 allowed a remote attacker to bypass navigation restrictions via a crafted HTML page. (Chromium security severity: Medium)"
-    },
-    {
-        "Modified": "2022-11-30T02:35:00",
-        "Published": "2022-11-30T00:15:00",
-        "access": {},
-        "assigner": "chrome-cve-admin@google.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-4176",
-        "impact": {},
-        "last-modified": "2022-11-30T02:35:00",
-        "references": [
-            "https://chromereleases.googleblog.com/2022/11/stable-channel-update-for-desktop_29.html",
-            "https://crbug.com/1361066"
-        ],
-        "summary": "Out of bounds write in Lacros Graphics in Google Chrome on Chrome OS and Lacros prior to 108.0.5359.71 allowed a remote attacker who convinced a user to engage in specific UI interactions to potentially exploit heap corruption via UI interactions. (Chromium security severity: High)"
-    },
-    {
-        "Modified": "2022-11-30T02:35:00",
-        "Published": "2022-11-30T00:15:00",
-        "access": {},
-        "assigner": "chrome-cve-admin@google.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-4184",
-        "impact": {},
-        "last-modified": "2022-11-30T02:35:00",
-        "references": [
-            "https://crbug.com/1358647",
-            "https://chromereleases.googleblog.com/2022/11/stable-channel-update-for-desktop_29.html"
-        ],
-        "summary": "Insufficient policy enforcement in Autofill in Google Chrome prior to 108.0.5359.71 allowed a remote attacker to bypass autofill restrictions via a crafted HTML page. (Chromium security severity: Medium)"
-    },
-    {
-        "Modified": "2022-11-30T02:35:00",
-        "Published": "2022-11-30T00:15:00",
-        "access": {},
-        "assigner": "chrome-cve-admin@google.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-4177",
-        "impact": {},
-        "last-modified": "2022-11-30T02:35:00",
-        "references": [
-            "https://crbug.com/1379242",
-            "https://chromereleases.googleblog.com/2022/11/stable-channel-update-for-desktop_29.html"
-        ],
-        "summary": "Use after free in Extensions in Google Chrome prior to 108.0.5359.71 allowed an attacker who convinced a user to install an extension to potentially exploit heap corruption via a crafted Chrome Extension and UI interaction. (Chromium security severity: High)"
-    },
-    {
-        "Modified": "2022-11-30T02:35:00",
-        "Published": "2022-11-30T00:15:00",
-        "access": {},
-        "assigner": "chrome-cve-admin@google.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-4185",
-        "impact": {},
-        "last-modified": "2022-11-30T02:35:00",
-        "references": [
-            "https://chromereleases.googleblog.com/2022/11/stable-channel-update-for-desktop_29.html",
-            "https://crbug.com/1373025"
-        ],
-        "summary": "Inappropriate implementation in Navigation in Google Chrome on iOS prior to 108.0.5359.71 allowed a remote attacker to spoof the contents of the modal dialogue via a crafted HTML page. (Chromium security severity: Medium)"
-    },
-    {
-        "Modified": "2022-11-30T02:35:00",
-        "Published": "2022-11-30T00:15:00",
-        "access": {},
-        "assigner": "chrome-cve-admin@google.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-4179",
-        "impact": {},
-        "last-modified": "2022-11-30T02:35:00",
-        "references": [
-            "https://chromereleases.googleblog.com/2022/11/stable-channel-update-for-desktop_29.html",
-            "https://crbug.com/1377783"
-        ],
-        "summary": "Use after free in Audio in Google Chrome prior to 108.0.5359.71 allowed an attacker who convinced a user to install a malicious extension to potentially exploit heap corruption via a crafted Chrome Extension. (Chromium security severity: High)"
-    },
-    {
-        "Modified": "2022-11-30T02:35:00",
-        "Published": "2022-11-30T00:15:00",
-        "access": {},
-        "assigner": "chrome-cve-admin@google.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-4186",
-        "impact": {},
-        "last-modified": "2022-11-30T02:35:00",
-        "references": [
-            "https://crbug.com/1377165",
-            "https://chromereleases.googleblog.com/2022/11/stable-channel-update-for-desktop_29.html"
-        ],
-        "summary": "Insufficient validation of untrusted input in Downloads in Google Chrome prior to 108.0.5359.71 allowed an attacker who convinced a user to install a malicious extension to bypass Downloads restrictions via a crafted HTML page. (Chromium security severity: Medium)"
-    },
-    {
-        "Modified": "2022-11-30T02:35:00",
-        "Published": "2022-11-30T00:15:00",
-        "access": {},
-        "assigner": "chrome-cve-admin@google.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-4187",
-        "impact": {},
-        "last-modified": "2022-11-30T02:35:00",
-        "references": [
-            "https://crbug.com/1381217",
-            "https://chromereleases.googleblog.com/2022/11/stable-channel-update-for-desktop_29.html"
-        ],
-        "summary": "Insufficient policy enforcement in DevTools in Google Chrome on Windows prior to 108.0.5359.71 allowed a remote attacker to bypass filesystem restrictions via a crafted HTML page. (Chromium security severity: Medium)"
-    },
-    {
-        "Modified": "2022-11-30T02:35:00",
-        "Published": "2022-11-30T00:15:00",
-        "access": {},
-        "assigner": "chrome-cve-admin@google.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-4188",
-        "impact": {},
-        "last-modified": "2022-11-30T02:35:00",
-        "references": [
-            "https://chromereleases.googleblog.com/2022/11/stable-channel-update-for-desktop_29.html",
-            "https://crbug.com/1340879"
-        ],
-        "summary": "Insufficient validation of untrusted input in CORS in Google Chrome on Android prior to 108.0.5359.71 allowed a remote attacker to bypass same origin policy via a crafted HTML page. (Chromium security severity: Medium)"
-    },
-    {
-        "Modified": "2022-11-30T02:35:00",
-        "Published": "2022-11-30T00:15:00",
-        "access": {},
-        "assigner": "chrome-cve-admin@google.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-4189",
-        "impact": {},
-        "last-modified": "2022-11-30T02:35:00",
-        "references": [
-            "https://crbug.com/1344647",
-            "https://chromereleases.googleblog.com/2022/11/stable-channel-update-for-desktop_29.html"
-        ],
-        "summary": "Insufficient policy enforcement in DevTools in Google Chrome prior to 108.0.5359.71 allowed an attacker who convinced a user to install a malicious extension to bypass navigation restrictions via a crafted Chrome Extension. (Chromium security severity: Medium)"
-    },
-    {
-        "Modified": "2022-11-30T02:35:00",
-        "Published": "2022-11-30T00:15:00",
-        "access": {},
-        "assigner": "chrome-cve-admin@google.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-4190",
-        "impact": {},
-        "last-modified": "2022-11-30T02:35:00",
-        "references": [
-            "https://chromereleases.googleblog.com/2022/11/stable-channel-update-for-desktop_29.html",
-            "https://crbug.com/1378997"
-        ],
-        "summary": "Insufficient data validation in Directory in Google Chrome prior to 108.0.5359.71 allowed a remote attacker to bypass file system restrictions via a crafted HTML page. (Chromium security severity: Medium)"
-    },
-    {
-        "Modified": "2022-11-30T02:35:00",
-        "Published": "2022-11-30T00:15:00",
-        "access": {},
-        "assigner": "chrome-cve-admin@google.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-4191",
-        "impact": {},
-        "last-modified": "2022-11-30T02:35:00",
-        "references": [
-            "https://crbug.com/1373941",
-            "https://chromereleases.googleblog.com/2022/11/stable-channel-update-for-desktop_29.html"
-        ],
-        "summary": "Use after free in Sign-In in Google Chrome prior to 108.0.5359.71 allowed a remote attacker who convinced a user to engage in specific UI interaction to potentially exploit heap corruption via profile destruction. (Chromium security severity: Medium)"
-    },
-    {
-        "Modified": "2022-11-30T02:35:00",
-        "Published": "2022-11-30T00:15:00",
-        "access": {},
-        "assigner": "chrome-cve-admin@google.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-4192",
-        "impact": {},
-        "last-modified": "2022-11-30T02:35:00",
-        "references": [
-            "https://crbug.com/1344514",
-            "https://chromereleases.googleblog.com/2022/11/stable-channel-update-for-desktop_29.html"
-        ],
-        "summary": "Use after free in Live Caption in Google Chrome prior to 108.0.5359.71 allowed a remote attacker who convinced a user to engage in specific UI interaction to potentially exploit heap corruption via UI interaction. (Chromium security severity: Medium)"
-    },
-    {
-        "Modified": "2022-11-30T02:35:00",
-        "Published": "2022-11-30T00:15:00",
-        "access": {},
-        "assigner": "chrome-cve-admin@google.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-4193",
-        "impact": {},
-        "last-modified": "2022-11-30T02:35:00",
-        "references": [
-            "https://chromereleases.googleblog.com/2022/11/stable-channel-update-for-desktop_29.html",
-            "https://crbug.com/1354518"
-        ],
-        "summary": "Insufficient policy enforcement in File System API in Google Chrome prior to 108.0.5359.71 allowed a remote attacker to bypass file system restrictions via a crafted HTML page. (Chromium security severity: Medium)"
-    },
-    {
-        "Modified": "2022-11-30T02:35:00",
-        "Published": "2022-11-30T00:15:00",
-        "access": {},
-        "assigner": "chrome-cve-admin@google.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-4194",
-        "impact": {},
-        "last-modified": "2022-11-30T02:35:00",
-        "references": [
-            "https://chromereleases.googleblog.com/2022/11/stable-channel-update-for-desktop_29.html",
-            "https://crbug.com/1370562"
-        ],
-        "summary": "Use after free in Accessibility in Google Chrome prior to 108.0.5359.71 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: Medium)"
     }
 ]
