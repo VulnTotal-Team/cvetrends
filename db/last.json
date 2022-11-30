@@ -1,5 +1,52 @@
 [
     {
+        "Modified": "2022-11-30T09:15:00",
+        "Published": "2022-11-30T09:15:00",
+        "access": {},
+        "assigner": "trellixpsirt@trellix.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-3859",
+        "impact": {},
+        "last-modified": "2022-11-30T09:15:00",
+        "references": [
+            "https://kcm.trellix.com/corporate/index?page=content&id=SB10391"
+        ],
+        "summary": "An uncontrolled search path vulnerability exists in Trellix Agent (TA) for Windows in versions prior to 5.7.8. This allows an attacker with admin access, which is required to place the DLL in the restricted Windows System folder, to elevate their privileges to System by placing a malicious DLL there."
+    },
+    {
+        "Modified": "2022-11-30T07:15:00",
+        "Published": "2022-11-30T07:15:00",
+        "access": {},
+        "assigner": "cna@vuldb.com",
+        "cvss": null,
+        "cwe": "CWE-707",
+        "id": "CVE-2022-4222",
+        "impact": {},
+        "last-modified": "2022-11-30T07:15:00",
+        "references": [
+            "https://www.jianshu.com/p/bda61089bf1d",
+            "https://vuldb.com/?id.214523"
+        ],
+        "summary": "A vulnerability was found in SourceCodester Canteen Management System. It has been rated as critical. This issue affects the function query of the file ajax_invoice.php of the component POST Request Handler. The manipulation of the argument search leads to sql injection. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-214523."
+    },
+    {
+        "Modified": "2022-11-30T06:15:00",
+        "Published": "2022-11-30T06:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-46338",
+        "impact": {},
+        "last-modified": "2022-11-30T06:15:00",
+        "references": [
+            "https://github.com/MatMoul/g810-led/pull/297",
+            "https://bugs.debian.org/1024998"
+        ],
+        "summary": "g810-led 0.4.2, a LED configuration tool for Logitech Gx10 keyboards, contained a udev rule to make supported device nodes world-readable and writable, allowing any process on the system to read traffic from keyboards, including sensitive data."
+    },
+    {
         "Modified": "2022-11-30T05:15:00",
         "Published": "2022-11-30T05:15:00",
         "access": {},
@@ -1680,53 +1727,5 @@
             "https://www.wordfence.com/vulnerability-advisories-continued/#CVE-2022-4031"
         ],
         "summary": "The Simple:Press plugin for WordPress is vulnerable to arbitrary file modifications in versions up to, and including, 6.8 via the 'file' parameter which does not properly restrict files to be edited in the context of the plugin. This makes it possible with attackers, with high-level permissions such as an administrator, to supply paths to arbitrary files on the server that can be modified outside of the intended scope of the plugin."
-    },
-    {
-        "Modified": "2022-11-29T21:22:00",
-        "Published": "2022-11-29T21:15:00",
-        "access": {},
-        "assigner": "security@wordfence.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-4032",
-        "impact": {},
-        "last-modified": "2022-11-29T21:22:00",
-        "references": [
-            "https://www.wordfence.com/vulnerability-advisories-continued/#CVE-2022-4032",
-            "https://plugins.trac.wordpress.org/changeset?sfp_email=&sfph_mail=&reponame=&old=2801761%40quiz-master-next&new=2801761%40quiz-master-next&sfp_email=&sfph_mail="
-        ],
-        "summary": "The Quiz and Survey Master plugin for WordPress is vulnerable to iFrame Injection via the 'question[id]' parameter in versions up to, and including, 8.0.4 due to insufficient input sanitization and output escaping that allowed iframe tags to be injected. This makes it possible for unauthenticated attackers to inject iFrames in pages that will execute whenever a user accesses an injected page."
-    },
-    {
-        "Modified": "2022-11-29T21:22:00",
-        "Published": "2022-11-29T21:15:00",
-        "access": {},
-        "assigner": "security@wordfence.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-4033",
-        "impact": {},
-        "last-modified": "2022-11-29T21:22:00",
-        "references": [
-            "https://www.wordfence.com/vulnerability-advisories-continued/#CVE-2022-4033",
-            "https://plugins.trac.wordpress.org/changeset?sfp_email=&sfph_mail=&reponame=&old=2801761%40quiz-master-next&new=2801761%40quiz-master-next&sfp_email=&sfph_mail="
-        ],
-        "summary": "The Quiz and Survey Master plugin for WordPress is vulnerable to input validation bypass via the 'question[id]' parameter in versions up to, and including, 8.0.4 due to insufficient input validation that allows attackers to inject content other than the specified value (i.e. a number, file path, etc..). This makes it possible attackers to submit values other than the intended input type."
-    },
-    {
-        "Modified": "2022-11-29T21:22:00",
-        "Published": "2022-11-29T21:15:00",
-        "access": {},
-        "assigner": "security@wordfence.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-4034",
-        "impact": {},
-        "last-modified": "2022-11-29T21:22:00",
-        "references": [
-            "https://www.wordfence.com/vulnerability-advisories-continued/#CVE-2022-4034",
-            "https://plugins.trac.wordpress.org/changeset?sfp_email=&sfph_mail=&reponame=&old=2803896%40appointment-hour-booking&new=2803896%40appointment-hour-booking&sfp_email=&sfph_mail="
-        ],
-        "summary": "The Appointment Hour Booking Plugin for WordPress is vulnerable to CSV Injection in versions up to, and including, 1.3.72. This makes it possible for unauthenticated attackers to embed untrusted input into content during booking creation that may be exported as a CSV file when a site's administrator exports booking details. This can result in code execution when these files are downloaded and opened on a local system with a vulnerable configuration."
     }
 ]
