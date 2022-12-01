@@ -1,5 +1,163 @@
 [
     {
+        "Modified": "2022-12-01T16:47:00",
+        "Published": "2022-11-29T04:15:00",
+        "access": {},
+        "assigner": "cve@cert.org.tw",
+        "cvss": null,
+        "cwe": "CWE-1236",
+        "id": "CVE-2022-41675",
+        "impact": {},
+        "last-modified": "2022-12-01T16:47:00",
+        "references": [
+            "https://www.twcert.org.tw/tw/cp-132-6738-b78f4-1.html"
+        ],
+        "summary": "A remote attacker with general user privilege can inject malicious code in the form content of Raiden MAILD Mail Server website. Other users export form content as CSV file can trigger arbitrary code execution and allow the attacker to perform arbitrary system operation or disrupt service on the user side."
+    },
+    {
+        "Modified": "2022-12-01T16:46:00",
+        "Published": "2022-11-25T18:15:00",
+        "access": {},
+        "assigner": "help@fluidattacks.com",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2022-41706",
+        "impact": {},
+        "last-modified": "2022-12-01T16:46:00",
+        "references": [
+            "https://github.com/spatie/browsershot/",
+            "https://fluidattacks.com/advisories/eminem/"
+        ],
+        "summary": "Browsershot version 3.57.2 allows an external attacker to remotely obtain arbitrary local files. This is possible because the application does not validate the URL protocol passed to the Browsershot::url method."
+    },
+    {
+        "Modified": "2022-12-01T15:48:00",
+        "Published": "2022-11-30T17:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-89",
+        "id": "CVE-2022-44151",
+        "impact": {},
+        "last-modified": "2022-12-01T15:48:00",
+        "references": [
+            "https://github.com/li-baige/bug_report/blob/main/vendors/oretnom23/Simple%20Inventory%20Management%20System/SQLi-1.md"
+        ],
+        "summary": "Simple Inventory Management System v1.0 is vulnerable to SQL Injection via /ims/login.php."
+    },
+    {
+        "Modified": "2022-12-01T15:45:00",
+        "Published": "2022-11-23T19:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-352",
+        "id": "CVE-2022-41924",
+        "impact": {},
+        "last-modified": "2022-12-01T15:45:00",
+        "references": [
+            "https://github.com/tailscale/tailscale/security/advisories/GHSA-vqp6-rc3h-83cp",
+            "https://emily.id.au/tailscale",
+            "https://tailscale.com/security-bulletins/#ts-2022-004"
+        ],
+        "summary": "A vulnerability identified in the Tailscale Windows client allows a malicious website to reconfigure the Tailscale daemon `tailscaled`, which can then be used to remotely execute code. In the Tailscale Windows client, the local API was bound to a local TCP socket, and communicated with the Windows client GUI in cleartext with no Host header verification. This allowed an attacker-controlled website visited by the node to rebind DNS to an attacker-controlled DNS server, and then make local API requests in the client, including changing the coordination server to an attacker-controlled coordination server. An attacker-controlled coordination server can send malicious URL responses to the client, including pushing executables or installing an SMB share. These allow the attacker to remotely execute code on the node. All Windows clients prior to version v.1.32.3 are affected. If you are running Tailscale on Windows, upgrade to v1.32.3 or later to remediate the issue."
+    },
+    {
+        "Modified": "2022-12-01T15:33:00",
+        "Published": "2022-11-23T19:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-269",
+        "id": "CVE-2022-41923",
+        "impact": {},
+        "last-modified": "2022-12-01T15:33:00",
+        "references": [
+            "https://github.com/grails/grails-spring-security-core/security/advisories/GHSA-frqg-vvxg-jqqh",
+            "https://grails.org/blog/2022-11-22-ss-plugin-auth-cve.html",
+            "https://github.com/grails/GSSC-CVE-2022-41923"
+        ],
+        "summary": "Grails Spring Security Core plugin is vulnerable to privilege escalation. The vulnerability allows an attacker access to one endpoint (i.e. the targeted endpoint) using the authorization requirements of a different endpoint (i.e. the donor endpoint). In some Grails framework applications, access to the targeted endpoint will be granted based on meeting the authorization requirements of the donor endpoint, which can result in a privilege escalation attack. This vulnerability has been patched in grails-spring-security-core versions 3.3.2, 4.0.5 and 5.1.1. Impacted Applications: Grails Spring Security Core plugin versions: 1.x 2.x >=3.0.0 <3.3.2 >=4.0.0 <4.0.5 >=5.0.0 <5.1.1 We strongly suggest that all Grails framework applications using the Grails Spring Security Core plugin be updated to a patched release of the plugin. Workarounds: Users should create a subclass extending one of the following classes from the `grails.plugin.springsecurity.web.access.intercept` package, depending on their security configuration: * `AnnotationFilterInvocationDefinition` * `InterceptUrlMapFilterInvocationDefinition` * `RequestmapFilterInvocationDefinition` In each case, the subclass should override the `calculateUri` method like so: ``` @Override protected String calculateUri(HttpServletRequest request) { UrlPathHelper.defaultInstance.getRequestUri(request) } ``` This should be considered a temporary measure, as the patched versions of grails-spring-security-core deprecates the `calculateUri` method. Once upgraded to a patched version of the plugin, this workaround is no longer needed. The workaround is especially important for version 2.x, as no patch is available version 2.x of the GSSC plugin."
+    },
+    {
+        "Modified": "2022-12-01T15:26:00",
+        "Published": "2022-11-25T19:15:00",
+        "access": {},
+        "assigner": "vuln@krcert.or.kr",
+        "cvss": null,
+        "cwe": "CWE-94",
+        "id": "CVE-2022-41158",
+        "impact": {},
+        "last-modified": "2022-12-01T15:26:00",
+        "references": [
+            "https://www.krcert.or.kr/krcert/secNoticeView.do?bulletin_writing_sequence=67043"
+        ],
+        "summary": "Remote code execution vulnerability can be achieved by using cookie values as paths to a file by this builder program. A remote attacker could exploit the vulnerability to execute or inject malicious code."
+    },
+    {
+        "Modified": "2022-12-01T15:15:00",
+        "Published": "2022-12-01T15:15:00",
+        "access": {},
+        "assigner": "cna@vuldb.com",
+        "cvss": null,
+        "cwe": "CWE-88",
+        "id": "CVE-2022-4257",
+        "impact": {},
+        "last-modified": "2022-12-01T15:15:00",
+        "references": [
+            "https://github.com/siriuswhiter/VulnHub/blob/main/C-Data/rce1.md",
+            "https://vuldb.com/?id.214631"
+        ],
+        "summary": "A vulnerability was found in C-DATA Web Management System. It has been rated as critical. This issue affects some unknown processing of the file cgi-bin/jumpto.php of the component GET Parameter Handler. The manipulation of the argument hostname leads to argument injection. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-214631."
+    },
+    {
+        "Modified": "2022-12-01T15:15:00",
+        "Published": "2022-11-29T04:15:00",
+        "access": {},
+        "assigner": "cve@cert.org.tw",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2022-41676",
+        "impact": {},
+        "last-modified": "2022-12-01T15:15:00",
+        "references": [
+            "https://www.twcert.org.tw/tw/cp-132-6743-0a2c4-1.html"
+        ],
+        "summary": "Raiden MAILD Mail Server website mail field has insufficient filtering for user input. A remote attacker with general user privilege can send email using the website with malicious JavaScript in the input field, which triggers XSS (Reflected Cross-Site Scripting) attack to the mail recipient."
+    },
+    {
+        "Modified": "2022-12-01T15:15:00",
+        "Published": "2022-11-17T23:15:00",
+        "access": {},
+        "assigner": "audit@patchstack.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-44577",
+        "impact": {},
+        "last-modified": "2022-12-01T15:15:00",
+        "references": [],
+        "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was withdrawn by its CNA. Further investigation showed that it was not a security issue. Notes: none."
+    },
+    {
+        "Modified": "2022-12-01T15:15:00",
+        "Published": "2022-08-29T15:15:00",
+        "access": {},
+        "assigner": "secalert@redhat.com",
+        "cvss": null,
+        "cwe": "CWE-252",
+        "id": "CVE-2022-0485",
+        "impact": {},
+        "last-modified": "2022-12-01T15:15:00",
+        "references": [
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2050324",
+            "https://listman.redhat.com/archives/libguestfs/2022-February/msg00104.html",
+            "https://access.redhat.com/security/cve/CVE-2022-0485",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2046194",
+            "https://gitlab.com/nbdkit/libnbd/-/commit/8d444b41d09a700c7ee6f9182a649f3f2d325abb"
+        ],
+        "summary": "A flaw was found in the copying tool `nbdcopy` of libnbd. When performing multi-threaded copies using asynchronous nbd calls, nbdcopy was blindly treating the completion of an asynchronous command as successful, rather than checking the *error parameter. This could result in the silent creation of a corrupted destination image."
+    },
+    {
         "Modified": "2022-12-01T14:45:00",
         "Published": "2022-11-25T19:15:00",
         "access": {},
@@ -1868,175 +2026,5 @@
             "http://lists.opensuse.org/opensuse-security-announce/2019-05/msg00068.html"
         ],
         "summary": "A Bleichenbacher type side-channel based padding oracle attack was found in the way gnutls handles verification of RSA decrypted PKCS#1 v1.5 data. An attacker who is able to run process on the same physical core as the victim process, could use this to extract plaintext or in some cases downgrade any TLS connections to a vulnerable server."
-    },
-    {
-        "Modified": "2022-11-30T21:19:00",
-        "Published": "2022-11-25T08:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-707",
-        "id": "CVE-2022-4091",
-        "impact": {},
-        "last-modified": "2022-11-30T21:19:00",
-        "references": [
-            "https://vuldb.com/?id.214359",
-            "https://www.jianshu.com/p/e977cda45d3c?v=1669360616628"
-        ],
-        "summary": "A vulnerability was found in SourceCodester Canteen Management System. It has been classified as problematic. This affects the function query of the file food.php. The manipulation of the argument product_name leads to cross site scripting. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-214359."
-    },
-    {
-        "Modified": "2022-11-30T21:19:00",
-        "Published": "2018-04-11T16:29:00",
-        "access": {
-            "authentication": "SINGLE",
-            "complexity": "LOW",
-            "vector": "NETWORK"
-        },
-        "assigner": "secalert@redhat.com",
-        "cvss": 5.5,
-        "cvss-time": "2022-11-30T21:19:00",
-        "cvss-vector": "AV:N/AC:L/Au:S/C:P/I:P/A:N",
-        "cwe": "CWE-863",
-        "id": "CVE-2017-2599",
-        "impact": {
-            "availability": "NONE",
-            "confidentiality": "PARTIAL",
-            "integrity": "PARTIAL"
-        },
-        "last-modified": "2022-11-30T21:19:00",
-        "references": [
-            "https://jenkins.io/security/advisory/2017-02-01/",
-            "https://github.com/jenkinsci/jenkins/commit/4ed5c850b6855ab064a66d02fb338f366853ce89",
-            "https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2017-2599",
-            "http://www.securityfocus.com/bid/95949"
-        ],
-        "summary": "Jenkins before versions 2.44 and 2.32.2 is vulnerable to an insufficient permission check. This allows users with permissions to create new items (e.g. jobs) to overwrite existing items they don't have access to (SECURITY-321)."
-    },
-    {
-        "Modified": "2022-11-30T21:15:00",
-        "Published": "2022-03-03T22:15:00",
-        "access": {},
-        "assigner": "infosec@edk2.groups.io",
-        "cvss": null,
-        "cvss-time": "2022-03-10T01:55:00",
-        "cvss-vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
-        "cwe": "Unknown",
-        "id": "CVE-2021-38577",
-        "impact": {},
-        "last-modified": "2022-11-30T21:15:00",
-        "references": [],
-        "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. Reason: This CVE has been rejected as it was incorrectly assigned. All references and descriptions in this candidate have been removed to prevent accidental usage."
-    },
-    {
-        "Modified": "2022-11-30T21:10:00",
-        "Published": "2022-11-25T15:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "NVD-CWE-noinfo",
-        "id": "CVE-2022-38166",
-        "impact": {},
-        "last-modified": "2022-11-30T21:10:00",
-        "references": [
-            "https://www.f-secure.com/en/home/support/security-advisories/cve-2022-38166"
-        ],
-        "summary": "In F-Secure Endpoint Protection for Windows and macOS before channel with Capricorn database 2022-11-22_07, the aerdl.dll unpacker handler crashes. This can lead to a scanning engine crash, triggerable remotely by an attacker for denial of service."
-    },
-    {
-        "Modified": "2022-11-30T21:02:00",
-        "Published": "2022-11-25T14:15:00",
-        "access": {},
-        "assigner": "security@huntr.dev",
-        "cvss": null,
-        "cwe": "CWE-787",
-        "id": "CVE-2022-4141",
-        "impact": {},
-        "last-modified": "2022-11-30T21:02:00",
-        "references": [
-            "https://huntr.dev/bounties/20ece512-c600-45ac-8a84-d0931e05541f",
-            "https://github.com/vim/vim/commit/cc762a48d42b579fb7bdec2c614636b830342dd5"
-        ],
-        "summary": "Heap based buffer overflow in vim/vim 9.0.0946 and below by allowing an attacker to CTRL-W gf in the expression used in the RHS of the substitute command."
-    },
-    {
-        "Modified": "2022-11-30T20:49:00",
-        "Published": "2022-11-25T06:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-287",
-        "id": "CVE-2022-36133",
-        "impact": {},
-        "last-modified": "2022-11-30T20:49:00",
-        "references": [
-            "https://download.epson-biz.com/epson/epson_public_document.php?name=Infomation_history.pdf",
-            "https://download.epson-biz.com/modules/colorworks/"
-        ],
-        "summary": "The WebConfig functionality of Epson TM-C3500 and TM-C7500 devices with firmware version WAM31500 allows authentication bypass."
-    },
-    {
-        "Modified": "2022-11-30T20:47:00",
-        "Published": "2022-11-27T03:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-89",
-        "id": "CVE-2022-45930",
-        "impact": {},
-        "last-modified": "2022-11-30T20:47:00",
-        "references": [
-            "https://jira.opendaylight.org/browse/AAA-240",
-            "https://git.opendaylight.org/gerrit/c/aaa/+/103242"
-        ],
-        "summary": "A SQL injection issue was discovered in AAA in OpenDaylight (ODL) before 0.16.5. The aaa-idm-store-h2/src/main/java/org/opendaylight/aaa/datastore/h2/DomainStore.java deleteDomain function is affected for the /auth/v1/domains/ API interface."
-    },
-    {
-        "Modified": "2022-11-30T20:46:00",
-        "Published": "2022-11-27T03:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-89",
-        "id": "CVE-2022-45931",
-        "impact": {},
-        "last-modified": "2022-11-30T20:46:00",
-        "references": [
-            "https://git.opendaylight.org/gerrit/c/aaa/+/103243",
-            "https://jira.opendaylight.org/browse/AAA-241"
-        ],
-        "summary": "A SQL injection issue was discovered in AAA in OpenDaylight (ODL) before 0.16.5. The aaa-idm-store-h2/src/main/java/org/opendaylight/aaa/datastore/h2/UserStore.java deleteUser function is affected when the API interface /auth/v1/users/ is used."
-    },
-    {
-        "Modified": "2022-11-30T20:46:00",
-        "Published": "2022-11-23T21:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-312",
-        "id": "CVE-2022-45868",
-        "impact": {},
-        "last-modified": "2022-11-30T20:46:00",
-        "references": [
-            "https://github.com/h2database/h2database/blob/96832bf5a97cdc0adc1f2066ed61c54990d66ab5/h2/src/main/org/h2/server/web/WebServer.java#L346-L347",
-            "https://sites.google.com/sonatype.com/vulnerabilities/sonatype-2022-6243"
-        ],
-        "summary": "The web-based admin console in H2 Database Engine through 2.1.214 can be started via the CLI with the argument -webAdminPassword, which allows the user to specify the password in cleartext for the web admin console. Consequently, a local user (or an attacker that has obtained local access through some means) would be able to discover the password by listing processes and their arguments. NOTE: the vendor states \"This is not a vulnerability of H2 Console ... Passwords should never be passed on the command line and every qualified DBA or system administrator is expected to know that.\""
-    },
-    {
-        "Modified": "2022-11-30T20:43:00",
-        "Published": "2022-11-27T03:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-89",
-        "id": "CVE-2022-45932",
-        "impact": {},
-        "last-modified": "2022-11-30T20:43:00",
-        "references": [
-            "https://jira.opendaylight.org/browse/AAA-239",
-            "https://git.opendaylight.org/gerrit/c/aaa/+/103241"
-        ],
-        "summary": "A SQL injection issue was discovered in AAA in OpenDaylight (ODL) before 0.16.5. The aaa-idm-store-h2/src/main/java/org/opendaylight/aaa/datastore/h2/RoleStore.java deleteRole function is affected when the API interface /auth/v1/roles/ is used."
     }
 ]
