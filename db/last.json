@@ -1,5 +1,580 @@
 [
     {
+        "Modified": "2022-12-01T20:56:00",
+        "Published": "2022-11-29T17:15:00",
+        "access": {},
+        "assigner": "report@snyk.io",
+        "cvss": null,
+        "cwe": "CWE-22",
+        "id": "CVE-2022-25848",
+        "impact": {},
+        "last-modified": "2022-12-01T20:56:00",
+        "references": [
+            "https://security.snyk.io/vuln/SNYK-JS-STATICDEVSERVER-3149917",
+            "https://gist.github.com/lirantal/5550bcd0bdf92c1b56fbb20e141fe5bd"
+        ],
+        "summary": "This affects all versions of package static-dev-server. This is because when paths from users to the root directory are joined, the assets for the path accessed are relative to that of the root directory."
+    },
+    {
+        "Modified": "2022-12-01T20:52:00",
+        "Published": "2022-11-29T21:15:00",
+        "access": {},
+        "assigner": "security@wordfence.com",
+        "cvss": null,
+        "cwe": "CWE-352",
+        "id": "CVE-2022-3747",
+        "impact": {},
+        "last-modified": "2022-12-01T20:52:00",
+        "references": [
+            "https://muffingroup.com/betheme/features/be-custom/",
+            "https://github.com/MrTuxracer/advisories/blob/master/CVEs/CVE-2022-3747.txt",
+            "https://www.wordfence.com/vulnerability-advisories-continued/#CVE-2022-3747"
+        ],
+        "summary": "The Becustom plugin for WordPress is vulnerable to Cross-Site Request Forgery in versions up to, and including, 1.0.5.2. This is due to missing nonce validation when saving the plugin's settings. This makes it possible for unauthenticated attackers to update the plugin's settings like betheme_url_slug, replaced_theme_author, and betheme_label to name a few, via a forged request granted they can trick a site administrator into performing an action such as clicking on a link."
+    },
+    {
+        "Modified": "2022-12-01T20:48:00",
+        "Published": "2022-11-29T21:15:00",
+        "access": {},
+        "assigner": "security@huntr.dev",
+        "cvss": null,
+        "cwe": "CWE-89",
+        "id": "CVE-2022-3751",
+        "impact": {},
+        "last-modified": "2022-12-01T20:48:00",
+        "references": [
+            "https://huntr.dev/bounties/a04cff99-5d53-45e5-a882-771b0fad62c9",
+            "https://github.com/owncast/owncast/commit/23b6e5868d5501726c27a3fabbecf49000968591"
+        ],
+        "summary": "SQL Injection in GitHub repository owncast/owncast prior to 0.0.13."
+    },
+    {
+        "Modified": "2022-12-01T20:43:00",
+        "Published": "2022-11-25T19:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-20",
+        "id": "CVE-2022-39338",
+        "impact": {},
+        "last-modified": "2022-12-01T20:43:00",
+        "references": [
+            "https://github.com/nextcloud/security-advisories/security/advisories/GHSA-5fpw-795h-rg57",
+            "https://github.com/nextcloud/user_oidc/pull/496",
+            "https://hackerone.com/reports/1687410"
+        ],
+        "summary": "user_oidc is an OpenID Connect user backend for Nextcloud. Versions prior to 1.2.1 did not properly validate discovery urls which may lead to a stored cross site scripting attack vector. The impact is limited due to the restrictive CSP that is applied on this endpoint. Additionally this vulnerability has only been shown to be exploitable in the Safari web browser. This issue has been addressed in version 1.2.1. Users are advised to upgrade. Users unable to upgrade should urge their users to avoid using the Safari web browser."
+    },
+    {
+        "Modified": "2022-12-01T20:43:00",
+        "Published": "2022-11-25T19:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-319",
+        "id": "CVE-2022-39339",
+        "impact": {},
+        "last-modified": "2022-12-01T20:43:00",
+        "references": [
+            "https://hackerone.com/reports/1687005",
+            "https://github.com/nextcloud/user_oidc/pull/495",
+            "https://github.com/nextcloud/security-advisories/security/advisories/GHSA-2vff-cq8h-chhg"
+        ],
+        "summary": "user_oidc is an OpenID Connect user backend for Nextcloud. In versions prior to 1.2.1 sensitive information such as the OIDC client credentials and tokens are sent in plain text of HTTP without TLS. Any malicious actor with access to monitor user traffic may have been able to compromise account security. This issue has been addressed in in user_oidc v1.2.1. Users are advised to upgrade. Users unable to upgrade may use https to access Nextcloud. Set an HTTPS discovery URL in the provider settings (in Nextcloud OIDC admin settings)."
+    },
+    {
+        "Modified": "2022-12-01T20:37:00",
+        "Published": "2022-11-28T15:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-690",
+        "id": "CVE-2022-41957",
+        "impact": {},
+        "last-modified": "2022-12-01T20:37:00",
+        "references": [
+            "https://github.com/julianhille/MuhammaraJS/pull/235",
+            "https://github.com/julianhille/MuhammaraJS/security/advisories/GHSA-2r7v-cmch-5x26",
+            "https://github.com/julianhille/MuhammaraJS/pull/238"
+        ],
+        "summary": "Muhammara is a node module with c/cpp bindings to modify PDF with JavaScript for node or electron. The package muhammara before 2.6.2 and from 3.0.0 and before 3.3.0, as well as all versions of muhammara's predecessor package hummus, are vulnerable to Denial of Service (DoS) when supplied with a maliciously crafted PDF file to be parsed. The issue has been patched in muhammara version 3.4.0 and the fix has been backported to version 2.6.2. As a workaround, do not process files from untrusted sources. If using hummus, replace the package with muhammara."
+    },
+    {
+        "Modified": "2022-12-01T20:28:00",
+        "Published": "2022-11-29T21:15:00",
+        "access": {},
+        "assigner": "security@wordfence.com",
+        "cvss": null,
+        "cwe": "CWE-94",
+        "id": "CVE-2022-3384",
+        "impact": {},
+        "last-modified": "2022-12-01T20:28:00",
+        "references": [
+            "https://plugins.trac.wordpress.org/changeset?sfp_email=&sfph_mail=&reponame=&old=2805393%40ultimate-member&new=2805393%40ultimate-member&sfp_email=&sfph_mail=",
+            "https://www.wordfence.com/vulnerability-advisories-continued/#CVE-2022-3384",
+            "https://www.yuque.com/docs/share/8796eef9-ac4c-4339-96b4-6c21313ecf3e",
+            "https://github.com/H4de5-7/vulnerabilities/blob/main/CVE-2022-3383%20%26%26%20CVE-2022-3384.md"
+        ],
+        "summary": "The Ultimate Member plugin for WordPress is vulnerable to Remote Code Execution in versions up to, and including, 2.5.0 via the populate_dropdown_options function that accepts user supplied input and passes it through call_user_func(). This is restricted to non-parameter PHP functions like phpinfo(); since user supplied parameters are not passed through the function. This makes it possible for authenticated attackers, with administrative privileges, to execute code on the server."
+    },
+    {
+        "Modified": "2022-12-01T20:28:00",
+        "Published": "2022-11-28T15:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-200",
+        "id": "CVE-2022-41944",
+        "impact": {},
+        "last-modified": "2022-12-01T20:28:00",
+        "references": [
+            "https://github.com/discourse/discourse/commit/c6ee28ec756436cc9ce154dd2c8e4c441f92f693",
+            "https://github.com/discourse/discourse/security/advisories/GHSA-354r-jpj5-53c2"
+        ],
+        "summary": "Discourse is an open-source discussion platform. In stable versions prior to 2.8.12 and beta or tests-passed versions prior to 2.9.0.beta.13, under certain conditions, a user can see notifications for topics they no longer have access to. If there is sensitive information in the topic title, it will therefore have been exposed. This issue is patched in stable version 2.8.12, beta version 2.9.0.beta13, and tests-passed version 2.9.0.beta13. There are no workarounds available."
+    },
+    {
+        "Modified": "2022-12-01T20:27:00",
+        "Published": "2022-11-29T21:15:00",
+        "access": {},
+        "assigner": "security@wordfence.com",
+        "cvss": null,
+        "cwe": "CWE-22",
+        "id": "CVE-2022-3361",
+        "impact": {},
+        "last-modified": "2022-12-01T20:27:00",
+        "references": [
+            "https://github.com/H4de5-7/vulnerabilities/blob/main/CVE-2022-3361.md",
+            "https://plugins.trac.wordpress.org/changeset?sfp_email=&sfph_mail=&reponame=&old=2805393%40ultimate-member&new=2805393%40ultimate-member&sfp_email=&sfph_mail=",
+            "https://www.yuque.com/docs/share/23f988ad-1402-42f2-b8d2-c7a87a4022bd",
+            "https://www.wordfence.com/vulnerability-advisories-continued/#CVE-2022-3361"
+        ],
+        "summary": "The Ultimate Member plugin for WordPress is vulnerable to directory traversal in versions up to, and including 2.5.0 due to insufficient input validation on the 'template' attribute used in shortcodes. This makes it possible for attackers with administrative privileges to supply arbitrary paths using traversal (../../) to access and include files outside of the intended directory. If an attacker can successfully upload a php file then remote code execution via inclusion may also be possible. Note: for users with less than administrative capabilities, /wp-admin access needs to be enabled for that user in order for this to be exploitable by those users."
+    },
+    {
+        "Modified": "2022-12-01T20:25:00",
+        "Published": "2022-11-29T04:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "NVD-CWE-noinfo",
+        "id": "CVE-2022-44038",
+        "impact": {},
+        "last-modified": "2022-12-01T20:25:00",
+        "references": [
+            "https://cyber-guy.gitbook.io/cyber-guys-blog/pocs/cve-2022-44038"
+        ],
+        "summary": "Russound XSourcePlayer 777D v06.08.03 was discovered to contain a remote code execution vulnerability via the scriptRunner.cgi component."
+    },
+    {
+        "Modified": "2022-12-01T20:25:00",
+        "Published": "2022-11-28T13:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-20",
+        "id": "CVE-2022-38900",
+        "impact": {},
+        "last-modified": "2022-12-01T20:25:00",
+        "references": [
+            "https://github.com/sindresorhus/query-string/issues/345",
+            "https://github.com/SamVerschueren/decode-uri-component/issues/5"
+        ],
+        "summary": "decode-uri-component 0.2.0 is vulnerable to Improper Input Validation resulting in DoS."
+    },
+    {
+        "Modified": "2022-12-01T20:23:00",
+        "Published": "2022-11-28T13:15:00",
+        "access": {},
+        "assigner": "security@eset.com",
+        "cvss": null,
+        "cwe": "CWE-276",
+        "id": "CVE-2022-4020",
+        "impact": {},
+        "last-modified": "2022-12-01T20:23:00",
+        "references": [
+            "https://community.acer.com/en/kb/articles/15520-security-vulnerability-regarding-vulnerability-that-may-allow-changes-to-secure-boot-settings"
+        ],
+        "summary": "Vulnerability in the HQSwSmiDxe DXE driver on some consumer Acer Notebook devices may allow an attacker with elevated privileges to modify UEFI Secure Boot settings by modifying an NVRAM variable."
+    },
+    {
+        "Modified": "2022-12-01T20:20:00",
+        "Published": "2022-11-28T15:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-287",
+        "id": "CVE-2022-41912",
+        "impact": {},
+        "last-modified": "2022-12-01T20:20:00",
+        "references": [
+            "https://github.com/crewjam/saml/commit/aee3fb1edeeaf1088fcb458727e0fd863d277f8b",
+            "https://github.com/crewjam/saml/security/advisories/GHSA-j2jp-wvqg-wc2g"
+        ],
+        "summary": "The crewjam/saml go library prior to version 0.4.9 is vulnerable to an authentication bypass when processing SAML responses containing multiple Assertion elements. This issue has been corrected in version 0.4.9. There are no workarounds other than upgrading to a fixed version."
+    },
+    {
+        "Modified": "2022-12-01T20:20:00",
+        "Published": "2022-11-28T15:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-770",
+        "id": "CVE-2022-41921",
+        "impact": {},
+        "last-modified": "2022-12-01T20:20:00",
+        "references": [
+            "https://github.com/discourse/discourse/security/advisories/GHSA-mfh7-6cv6-qccc",
+            "https://github.com/discourse/discourse/commit/3de765c89524a526ce611e11468d758a471a933f"
+        ],
+        "summary": "Discourse is an open-source discussion platform. Prior to version 2.9.0.beta13, users can post chat messages of an unlimited length, which can cause a denial of service for other users when posting huge amounts of text. Users should upgrade to version 2.9.0.beta13, where a limit has been introduced. No known workarounds are available."
+    },
+    {
+        "Modified": "2022-12-01T20:17:00",
+        "Published": "2022-11-28T11:15:00",
+        "access": {},
+        "assigner": "talos-cna@cisco.com",
+        "cvss": null,
+        "cwe": "CWE-476",
+        "id": "CVE-2022-43589",
+        "impact": {},
+        "last-modified": "2022-12-01T20:17:00",
+        "references": [
+            "https://talosintelligence.com/vulnerability_reports/TALOS-2022-1648"
+        ],
+        "summary": "A null pointer dereference vulnerability exists in the handle_ioctl_8314C functionality of Callback technologies CBFS Filter 20.0.8317. A specially-crafted I/O request packet (IRP) can lead to denial of service. An attacker can issue an ioctl to trigger this vulnerability."
+    },
+    {
+        "Modified": "2022-12-01T20:17:00",
+        "Published": "2022-11-28T11:15:00",
+        "access": {},
+        "assigner": "talos-cna@cisco.com",
+        "cvss": null,
+        "cwe": "CWE-476",
+        "id": "CVE-2022-43590",
+        "impact": {},
+        "last-modified": "2022-12-01T20:17:00",
+        "references": [
+            "https://talosintelligence.com/vulnerability_reports/TALOS-2022-1649"
+        ],
+        "summary": "A null pointer dereference vulnerability exists in the handle_ioctl_0x830a0_systembuffer functionality of Callback technologies CBFS Filter 20.0.8317. A specially-crafted I/O request packet (IRP) can lead to denial of service. An attacker can issue an ioctl to trigger this vulnerability."
+    },
+    {
+        "Modified": "2022-12-01T20:16:00",
+        "Published": "2022-11-28T11:15:00",
+        "access": {},
+        "assigner": "talos-cna@cisco.com",
+        "cvss": null,
+        "cwe": "CWE-476",
+        "id": "CVE-2022-43588",
+        "impact": {},
+        "last-modified": "2022-12-01T20:16:00",
+        "references": [
+            "https://talosintelligence.com/vulnerability_reports/TALOS-2022-1647"
+        ],
+        "summary": "A null pointer dereference vulnerability exists in the handle_ioctl_83150 functionality of Callback technologies CBFS Filter 20.0.8317. A specially-crafted I/O request packet (IRP) can lead to denial of service. An attacker can issue an ioctl to trigger this vulnerability."
+    },
+    {
+        "Modified": "2022-12-01T20:14:00",
+        "Published": "2022-11-29T21:15:00",
+        "access": {},
+        "assigner": "security@wordfence.com",
+        "cvss": null,
+        "cwe": "CWE-94",
+        "id": "CVE-2022-3383",
+        "impact": {},
+        "last-modified": "2022-12-01T20:14:00",
+        "references": [
+            "https://plugins.trac.wordpress.org/changeset?sfp_email=&sfph_mail=&reponame=&old=2805393%40ultimate-member&new=2805393%40ultimate-member&sfp_email=&sfph_mail=",
+            "https://www.yuque.com/docs/share/8796eef9-ac4c-4339-96b4-6c21313ecf3e",
+            "https://www.wordfence.com/vulnerability-advisories-continued/#CVE-2022-3383",
+            "https://github.com/H4de5-7/vulnerabilities/blob/main/CVE-2022-3383%20%26%26%20CVE-2022-3384.md"
+        ],
+        "summary": "The Ultimate Member plugin for WordPress is vulnerable to Remote Code Execution in versions up to, and including, 2.5.0 via the get_option_value_from_callback function that accepts user supplied input and passes it through call_user_func(). This makes it possible for authenticated attackers, with administrative capabilities, to execute code on the server."
+    },
+    {
+        "Modified": "2022-12-01T20:13:00",
+        "Published": "2022-11-29T17:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2022-44355",
+        "impact": {},
+        "last-modified": "2022-12-01T20:13:00",
+        "references": [
+            "https://github.com/strik3r0x1/Vulns/blob/main/SolarView%20Compact%20XSS%20up%20to%207.0.md"
+        ],
+        "summary": "SolarView Compact 7.0 is vulnerable to Cross-site Scripting (XSS) via /network_test.php."
+    },
+    {
+        "Modified": "2022-12-01T20:12:00",
+        "Published": "2022-11-29T20:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2022-44279",
+        "impact": {},
+        "last-modified": "2022-12-01T20:12:00",
+        "references": [
+            "https://github.com/Onetpaer/bug_report/blob/main/vendors/mayuri_k/garage-management-system/xss1.md"
+        ],
+        "summary": "Garage Management System v1.0 is vulnerable to Cross Site Scripting (XSS) via /garage/php_action/createBrand.php."
+    },
+    {
+        "Modified": "2022-12-01T20:01:00",
+        "Published": "2022-11-29T17:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-434",
+        "id": "CVE-2022-44354",
+        "impact": {},
+        "last-modified": "2022-12-01T20:01:00",
+        "references": [
+            "https://github.com/strik3r0x1/Vulns/blob/main/Unrestricted%20File%20Upload_%20SolarView%20Compact%204.0%2C5.0.md"
+        ],
+        "summary": "SolarView Compact 4.0 and 5.0 is vulnerable to Unrestricted File Upload via a crafted php file."
+    },
+    {
+        "Modified": "2022-12-01T19:57:00",
+        "Published": "2022-11-29T21:15:00",
+        "access": {},
+        "assigner": "security@wordfence.com",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2022-4027",
+        "impact": {},
+        "last-modified": "2022-12-01T19:57:00",
+        "references": [
+            "https://www.wordfence.com/vulnerability-advisories-continued/#CVE-2022-4027",
+            "https://plugins.trac.wordpress.org/changeset?sfp_email=&sfph_mail=&reponame=&old=2804020%40simplepress&new=2804020%40simplepress&sfp_email=&sfph_mail="
+        ],
+        "summary": "The Simple:Press plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'postitem' parameter manipulated during a forum response in versions up to, and including, 6.8 due to insufficient input sanitization and output escaping that makes injecting object and embed tags possible. This makes it possible for unauthenticated attackers to inject arbitrary web scripts in pages when responding to forum threads that will execute whenever a user accesses an injected page."
+    },
+    {
+        "Modified": "2022-12-01T19:56:00",
+        "Published": "2022-11-29T21:15:00",
+        "access": {},
+        "assigner": "security@wordfence.com",
+        "cvss": null,
+        "cwe": "CWE-639",
+        "id": "CVE-2022-3995",
+        "impact": {},
+        "last-modified": "2022-12-01T19:56:00",
+        "references": [
+            "https://plugins.trac.wordpress.org/changeset/2817824/woo-wallet/trunk?contextall=1&old=2816610&old_path=%2Fwoo-wallet%2Ftrunk",
+            "https://www.wordfence.com/vulnerability-advisories-continued/#CVE-2022-3995"
+        ],
+        "summary": "The TeraWallet plugin for WordPress is vulnerable to Insecure Direct Object Reference in versions up to, and including, 1.4.3. This is due to insufficient validation of the user-controlled key on the lock_unlock_terawallet AJAX action. This makes it possible for authenticated attackers, with subscriber-level permissions and above, to lock/unlock other users wallets."
+    },
+    {
+        "Modified": "2022-12-01T19:50:00",
+        "Published": "2022-11-25T19:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-400",
+        "id": "CVE-2022-39346",
+        "impact": {},
+        "last-modified": "2022-12-01T19:50:00",
+        "references": [
+            "https://github.com/nextcloud/security-advisories/security/advisories/GHSA-6w9f-jgjx-4vj6",
+            "https://github.com/nextcloud/server/pull/33052",
+            "https://hackerone.com/reports/1588562"
+        ],
+        "summary": "Nextcloud server is an open source personal cloud server. Affected versions of nextcloud server did not properly limit user display names which could allow a malicious users to overload the backing database and cause a denial of service. It is recommended that the Nextcloud Server is upgraded to 22.2.10, 23.0.7 or 24.0.3. There are no known workarounds for this issue."
+    },
+    {
+        "Modified": "2022-12-01T19:48:00",
+        "Published": "2022-11-28T06:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-78",
+        "id": "CVE-2022-45939",
+        "impact": {},
+        "last-modified": "2022-12-01T19:48:00",
+        "references": [
+            "https://git.savannah.gnu.org/cgit/emacs.git/commit/?id=d48bb4874bc6cd3e69c7a15fc3c91cc141025c51"
+        ],
+        "summary": "GNU Emacs through 28.2 allows attackers to execute commands via shell metacharacters in the name of a source-code file, because lib-src/etags.c uses the system C library function in its implementation of the ctags program. For example, a victim may use the \"ctags *\" command (suggested in the ctags documentation) in a situation where the current working directory has contents that depend on untrusted input."
+    },
+    {
+        "Modified": "2022-12-01T19:46:00",
+        "Published": "2022-11-27T04:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-190",
+        "id": "CVE-2022-45934",
+        "impact": {},
+        "last-modified": "2022-12-01T19:46:00",
+        "references": [
+            "https://git.kernel.org/pub/scm/linux/kernel/git/bluetooth/bluetooth-next.git/commit/?id=ae4569813a6e931258db627cdfe50dfb4f917d5d"
+        ],
+        "summary": "An issue was discovered in the Linux kernel through 6.0.10. l2cap_config_req in net/bluetooth/l2cap_core.c has an integer wraparound via L2CAP_CONF_REQ packets."
+    },
+    {
+        "Modified": "2022-12-01T19:42:00",
+        "Published": "2022-11-25T19:15:00",
+        "access": {},
+        "assigner": "vuln@krcert.or.kr",
+        "cvss": null,
+        "cwe": "CWE-345",
+        "id": "CVE-2022-41156",
+        "impact": {},
+        "last-modified": "2022-12-01T19:42:00",
+        "references": [
+            "https://www.krcert.or.kr/krcert/secNoticeView.do?bulletin_writing_sequence=67041"
+        ],
+        "summary": "Remote code execution vulnerability due to insufficient verification of URLs, etc. in OndiskPlayerAgent. A remote attacker could exploit the vulnerability to cause remote code execution by causing an arbitrary user to download and execute malicious code."
+    },
+    {
+        "Modified": "2022-12-01T19:37:00",
+        "Published": "2022-11-25T19:15:00",
+        "access": {},
+        "assigner": "vuln@krcert.or.kr",
+        "cvss": null,
+        "cwe": "CWE-798",
+        "id": "CVE-2022-41157",
+        "impact": {},
+        "last-modified": "2022-12-01T19:37:00",
+        "references": [
+            "https://www.krcert.or.kr/krcert/secNoticeView.do?bulletin_writing_sequence=67042"
+        ],
+        "summary": "A specific file on the sERP server if Kyungrinara(ERP solution) has a fixed password with the SYSTEM authority. This vulnerability could allow attackers to leak or steal sensitive information or execute malicious commands."
+    },
+    {
+        "Modified": "2022-12-01T19:28:00",
+        "Published": "2022-11-29T21:15:00",
+        "access": {},
+        "assigner": "security@wordfence.com",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2022-3896",
+        "impact": {},
+        "last-modified": "2022-12-01T19:28:00",
+        "references": [
+            "https://www.wordfence.com/vulnerability-advisories-continued/#CVE-2022-3896",
+            "https://www.tipsandtricks-hq.com/wordpress-affiliate-platform-plugin-simple-affiliate-program-for-wordpress-blogsite-1474"
+        ],
+        "summary": "The WP Affiliate Platform plugin for WordPress is vulnerable to Reflected Cross-Site Scripting via $_SERVER[\"REQUEST_URI\"] in versions up to, and including, 6.3.9 due to insufficient input sanitization and output escaping. This makes it possible for unauthenticated attackers to inject arbitrary web scripts in pages that execute if they can successfully trick a user into performing an action such as clicking on a link. This is unlikely to work in modern browsers."
+    },
+    {
+        "Modified": "2022-12-01T19:20:00",
+        "Published": "2022-11-27T04:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-295",
+        "id": "CVE-2022-43705",
+        "impact": {},
+        "last-modified": "2022-12-01T19:20:00",
+        "references": [
+            "https://github.com/randombit/botan/releases/tag/2.19.3",
+            "https://github.com/randombit/botan/security/advisories/GHSA-4v9w-qvcq-6q7w"
+        ],
+        "summary": "In Botan before 2.19.3, it is possible to forge OCSP responses due to a certificate verification error. This issue was introduced in Botan 1.11.34 (November 2016)."
+    },
+    {
+        "Modified": "2022-12-01T19:17:00",
+        "Published": "2022-11-29T21:15:00",
+        "access": {},
+        "assigner": "security@wordfence.com",
+        "cvss": null,
+        "cwe": "CWE-352",
+        "id": "CVE-2022-3898",
+        "impact": {},
+        "last-modified": "2022-12-01T19:17:00",
+        "references": [
+            "https://www.tipsandtricks-hq.com/wordpress-affiliate-platform-plugin-simple-affiliate-program-for-wordpress-blogsite-1474",
+            "https://www.wordfence.com/vulnerability-advisories-continued/#CVE-2022-3898"
+        ],
+        "summary": "The WP Affiliate Platform plugin for WordPress is vulnerable to Cross-Site Request Forgery in versions up to, and including, 6.3.9. This is due to missing or incorrect nonce validation on various functions including the affiliates_menu method. This makes it possible for unauthenticated attackers to delete affiliate records, via forged request granted they can trick a site administrator into performing an action such as clicking on a link."
+    },
+    {
+        "Modified": "2022-12-01T19:17:00",
+        "Published": "2022-11-29T21:15:00",
+        "access": {},
+        "assigner": "security@wordfence.com",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2022-3897",
+        "impact": {},
+        "last-modified": "2022-12-01T19:17:00",
+        "references": [
+            "https://www.wordfence.com/vulnerability-advisories-continued/#CVE-2022-3897",
+            "https://www.tipsandtricks-hq.com/wordpress-affiliate-platform-plugin-simple-affiliate-program-for-wordpress-blogsite-1474"
+        ],
+        "summary": "The WP Affiliate Platform plugin for WordPress is vulnerable to Stored Cross-Site Scripting via several parameters in versions up to, and including, 6.3.9 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with administrator-level permissions and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page."
+    },
+    {
+        "Modified": "2022-12-01T19:15:00",
+        "Published": "2022-12-01T19:15:00",
+        "access": {},
+        "assigner": "psirt@us.ibm.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-43900",
+        "impact": {},
+        "last-modified": "2022-12-01T19:15:00",
+        "references": [
+            "https://www.ibm.com/support/pages/node/6842605",
+            "https://exchange.xforce.ibmcloud.com/vulnerabilities/240827"
+        ],
+        "summary": "IBM WebSphere Automation for IBM Cloud Pak for Watson AIOps 1.4.2 could provide a weaker than expected security. A local attacker can create an outbound network connection to another system. IBM X-Force ID: 240827."
+    },
+    {
+        "Modified": "2022-12-01T19:15:00",
+        "Published": "2022-12-01T19:15:00",
+        "access": {},
+        "assigner": "psirt@us.ibm.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-43901",
+        "impact": {},
+        "last-modified": "2022-12-01T19:15:00",
+        "references": [
+            "https://www.ibm.com/support/pages/node/6842605",
+            "https://exchange.xforce.ibmcloud.com/vulnerabilities/240829"
+        ],
+        "summary": "IBM WebSphere Automation for IBM Cloud Pak for Watson AIOps 1.4.3 could disclose sensitive information. An authenticated local attacker could exploit this vulnerability to possibly gain information to other IBM WebSphere Automation for IBM Cloud Pak for Watson AIOps components. IBM X-Force ID: 240829."
+    },
+    {
+        "Modified": "2022-12-01T19:14:00",
+        "Published": "2022-11-28T22:15:00",
+        "access": {},
+        "assigner": "secalert@redhat.com",
+        "cvss": null,
+        "cwe": "CWE-476",
+        "id": "CVE-2022-4127",
+        "impact": {},
+        "last-modified": "2022-12-01T19:14:00",
+        "references": [
+            "https://lore.kernel.org/all/d5a19c1e-9968-e22e-5917-c3139c5e7e89@kernel.dk/",
+            "https://github.com/torvalds/linux/commit/d785a773bed966a75ca1f11d108ae1897189975b"
+        ],
+        "summary": "A NULL pointer dereference issue was discovered in the Linux kernel in io_files_update_with_index_alloc. A local user could use this flaw to potentially crash the system causing a denial of service."
+    },
+    {
+        "Modified": "2022-12-01T19:09:00",
+        "Published": "2022-11-29T21:15:00",
+        "access": {},
+        "assigner": "security@wordfence.com",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2022-3991",
+        "impact": {},
+        "last-modified": "2022-12-01T19:09:00",
+        "references": [
+            "https://plugins.trac.wordpress.org/browser/photospace/trunk/photospace.php#L87",
+            "https://www.wordfence.com/vulnerability-advisories-continued/#CVE-2022-3991"
+        ],
+        "summary": "The Photospace Gallery plugin for WordPress is vulnerable to Stored Cross-Site Scripting via its settings parameters saved via the update() function in versions up to, and including, 2.3.5 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with subscriber-level permissions and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page."
+    },
+    {
         "Modified": "2022-12-01T18:41:00",
         "Published": "2022-11-29T21:15:00",
         "access": {},
@@ -1012,582 +1587,5 @@
             "https://cert.vde.com/en/advisories/VDE-2022-045/"
         ],
         "summary": "A path traversal vulnerability was discovered in multiple Pilz products. An unauthenticated local attacker could use a zipped, malicious configuration file to trigger arbitrary file writes ('zip-slip'). File writes do not affect confidentiality or availability."
-    },
-    {
-        "Modified": "2022-12-01T14:15:00",
-        "Published": "2022-11-24T10:15:00",
-        "access": {},
-        "assigner": "info@cert.vde.com",
-        "cvss": null,
-        "cwe": "CWE-22",
-        "id": "CVE-2022-40977",
-        "impact": {},
-        "last-modified": "2022-12-01T14:15:00",
-        "references": [
-            "https://cert.vde.com/en/advisories/VDE-2022-033/"
-        ],
-        "summary": "A path traversal vulnerability was discovered in Pilz PASvisu Server before 1.12.0. An unauthenticated remote attacker could use a zipped, malicious configuration file to trigger arbitrary file writes ('zip-slip'). File writes do not affect confidentiality or availability."
-    },
-    {
-        "Modified": "2022-12-01T14:15:00",
-        "Published": "2022-11-10T12:15:00",
-        "access": {},
-        "assigner": "info@cert.vde.com",
-        "cvss": null,
-        "cwe": "CWE-330",
-        "id": "CVE-2022-42787",
-        "impact": {},
-        "last-modified": "2022-12-01T14:15:00",
-        "references": [
-            "https://cert.vde.com/de/advisories/VDE-2022-043"
-        ],
-        "summary": "Multiple W&T products of the Comserver Series use a small number space for allocating sessions ids. After login of an user an unathenticated remote attacker can brute force the users session id and get access to his account on the the device. As the user needs to log in for the attack to be successful a user interaction is required."
-    },
-    {
-        "Modified": "2022-12-01T13:49:00",
-        "Published": "2022-11-25T15:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "NVD-CWE-noinfo",
-        "id": "CVE-2022-38767",
-        "impact": {},
-        "last-modified": "2022-12-01T13:49:00",
-        "references": [
-            "https://support2.windriver.com/index.php?page=cve&on=view&id=CVE-2022-38767",
-            "https://windriver.com"
-        ],
-        "summary": "An issue was discovered in Wind River VxWorks 6.9 and 7, that allows a specifically crafted packet sent by a Radius server, may cause Denial of Service during the IP Radius access procedure."
-    },
-    {
-        "Modified": "2022-12-01T13:45:00",
-        "Published": "2022-11-25T05:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-77",
-        "id": "CVE-2022-40282",
-        "impact": {},
-        "last-modified": "2022-12-01T13:45:00",
-        "references": [
-            "https://www.belden.com/support/security-assurance",
-            "http://seclists.org/fulldisclosure/2022/Nov/19",
-            "http://packetstormsecurity.com/files/170063/Hirschmann-Belden-BAT-C2-8.8.1.0R8-Command-Injection.html"
-        ],
-        "summary": "The web server of Hirschmann BAT-C2 before 09.13.01.00R04 allows authenticated command injection. This allows an authenticated attacker to pass commands to the shell of the system because the dir parameter of the FsCreateDir Ajax function is not sufficiently sanitized. The vendor's ID is BSECV-2022-21."
-    },
-    {
-        "Modified": "2022-12-01T13:40:00",
-        "Published": "2022-12-01T13:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-28607",
-        "impact": {},
-        "last-modified": "2022-12-01T13:40:00",
-        "references": [
-            "https://github.com/killmonday/isic.lk-RCE"
-        ],
-        "summary": "An issue was discovered in asith-eranga ISIC tour booking through version published on Feb 13th 2018, allows attackers to gain sensitive information via the action parameter to /system/user/modules/mod_users/controller.php."
-    },
-    {
-        "Modified": "2022-12-01T13:40:00",
-        "Published": "2022-12-01T13:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-30528",
-        "impact": {},
-        "last-modified": "2022-12-01T13:40:00",
-        "references": [
-            "https://github.com/killmonday/isic.lk-RCE",
-            "https://github.com/asith-eranga/isic"
-        ],
-        "summary": "SQL Injection vulnerability in asith-eranga ISIC tour booking through version published on Feb 13th 2018, allows attackers to execute arbitrary commands via the username parameter to /system/user/modules/mod_users/controller.php."
-    },
-    {
-        "Modified": "2022-12-01T13:40:00",
-        "Published": "2022-12-01T11:15:00",
-        "access": {},
-        "assigner": "security@google.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-1471",
-        "impact": {},
-        "last-modified": "2022-12-01T13:40:00",
-        "references": [
-            "https://github.com/google/security-research/security/advisories/GHSA-mjmj-j48q-9wg2"
-        ],
-        "summary": "SnakeYaml's Constructor() class does not restrict types which can be instantiated during deserialization. Deserializing yaml content provided by an attacker can lead to remote code execution. We recommend using SnakeYaml's SafeConsturctor when parsing untrusted content to restrict deserialization."
-    },
-    {
-        "Modified": "2022-12-01T13:40:00",
-        "Published": "2022-12-01T11:15:00",
-        "access": {},
-        "assigner": "info@cert.vde.com",
-        "cvss": null,
-        "cwe": "CWE-1059",
-        "id": "CVE-2022-3270",
-        "impact": {},
-        "last-modified": "2022-12-01T13:40:00",
-        "references": [
-            "https://cert.vde.com/en/advisories/VDE-2022-041/"
-        ],
-        "summary": "In multiple products by Festo a remote unauthenticated attacker could use functions of an undocumented protocol which could lead to a complete loss of confidentiality, integrity and availability."
-    },
-    {
-        "Modified": "2022-12-01T13:40:00",
-        "Published": "2022-12-01T06:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-36431",
-        "impact": {},
-        "last-modified": "2022-12-01T13:40:00",
-        "references": [
-            "https://www.synacktiv.com/sites/default/files/2022-11/trufusion_enterprise_unauthenticated_arbitrary_file_write.pdf",
-            "https://docs.rocketsoftware.com/bundle/TRUfusionEnterprise_ReleaseNotes_V7.9.6.1/resource/TRUfusionEnterprise_ReleaseNotes_V7.9.6.1.pdf"
-        ],
-        "summary": "An arbitrary file upload vulnerability in Rocket TRUfusion Enterprise before 7.9.6.1 allows unauthenticated attackers to execute arbitrary code via a crafted JSP file. Issue fixed in version 7.9.6.1."
-    },
-    {
-        "Modified": "2022-12-01T13:40:00",
-        "Published": "2022-12-01T08:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-404",
-        "id": "CVE-2022-4246",
-        "impact": {},
-        "last-modified": "2022-12-01T13:40:00",
-        "references": [
-            "https://seclists.org/fulldisclosure/2022/Nov/att-16/potplayer_7z.bin",
-            "https://vuldb.com/?id.214623",
-            "https://seclists.org/fulldisclosure/2022/Nov/16"
-        ],
-        "summary": "A vulnerability classified as problematic has been found in Kakao PotPlayer. This affects an unknown part of the component MID File Handler. The manipulation leads to denial of service. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-214623."
-    },
-    {
-        "Modified": "2022-12-01T13:40:00",
-        "Published": "2022-12-01T08:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-707",
-        "id": "CVE-2022-4247",
-        "impact": {},
-        "last-modified": "2022-12-01T13:40:00",
-        "references": [
-            "https://vuldb.com/?id.214624",
-            "https://github.com/aman05382/movie_ticket_booking_system_php/issues/1"
-        ],
-        "summary": "A vulnerability classified as critical was found in Movie Ticket Booking System. This vulnerability affects unknown code of the file booking.php. The manipulation of the argument id leads to sql injection. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used. The identifier of this vulnerability is VDB-214624."
-    },
-    {
-        "Modified": "2022-12-01T13:40:00",
-        "Published": "2022-12-01T08:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-707",
-        "id": "CVE-2022-4248",
-        "impact": {},
-        "last-modified": "2022-12-01T13:40:00",
-        "references": [
-            "https://vuldb.com/?id.214625",
-            "https://github.com/aman05382/movie_ticket_booking_system_php/issues/3"
-        ],
-        "summary": "A vulnerability, which was classified as critical, has been found in Movie Ticket Booking System. This issue affects some unknown processing of the file editBooking.php. The manipulation of the argument id leads to sql injection. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. The identifier VDB-214625 was assigned to this vulnerability."
-    },
-    {
-        "Modified": "2022-12-01T13:40:00",
-        "Published": "2022-12-01T08:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-4249",
-        "impact": {},
-        "last-modified": "2022-12-01T13:40:00",
-        "references": [
-            "https://vuldb.com/?id.214626",
-            "https://github.com/aman05382/movie_ticket_booking_system_php/issues/5"
-        ],
-        "summary": "A vulnerability, which was classified as problematic, was found in Movie Ticket Booking System. Affected is an unknown function of the component POST Request Handler. The manipulation of the argument ORDER_ID leads to cross site scripting. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used. VDB-214626 is the identifier assigned to this vulnerability."
-    },
-    {
-        "Modified": "2022-12-01T13:40:00",
-        "Published": "2022-12-01T08:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-707",
-        "id": "CVE-2022-4250",
-        "impact": {},
-        "last-modified": "2022-12-01T13:40:00",
-        "references": [
-            "https://vuldb.com/?id.214627",
-            "https://github.com/aman05382/movie_ticket_booking_system_php/issues/2"
-        ],
-        "summary": "A vulnerability has been found in Movie Ticket Booking System and classified as problematic. Affected by this vulnerability is an unknown functionality of the file booking.php. The manipulation of the argument id leads to cross site scripting. The attack can be launched remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-214627."
-    },
-    {
-        "Modified": "2022-12-01T13:40:00",
-        "Published": "2022-12-01T08:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-707",
-        "id": "CVE-2022-4251",
-        "impact": {},
-        "last-modified": "2022-12-01T13:40:00",
-        "references": [
-            "https://vuldb.com/?id.214628",
-            "https://github.com/aman05382/movie_ticket_booking_system_php/issues/4"
-        ],
-        "summary": "A vulnerability was found in Movie Ticket Booking System and classified as problematic. Affected by this issue is some unknown functionality of the file editBooking.php. The manipulation leads to cross site scripting. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. The identifier of this vulnerability is VDB-214628."
-    },
-    {
-        "Modified": "2022-12-01T13:40:00",
-        "Published": "2022-12-01T08:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-707",
-        "id": "CVE-2022-4252",
-        "impact": {},
-        "last-modified": "2022-12-01T13:40:00",
-        "references": [
-            "https://vuldb.com/?id.214629",
-            "https://blog.csdn.net/weixin_43864034/article/details/128127288"
-        ],
-        "summary": "A vulnerability was found in SourceCodester Canteen Management System. It has been classified as problematic. This affects the function builtin_echo of the file categories.php. The manipulation leads to cross site scripting. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. The identifier VDB-214629 was assigned to this vulnerability."
-    },
-    {
-        "Modified": "2022-12-01T13:40:00",
-        "Published": "2022-12-01T08:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-707",
-        "id": "CVE-2022-4253",
-        "impact": {},
-        "last-modified": "2022-12-01T13:40:00",
-        "references": [
-            "https://vuldb.com/?id.214630",
-            "https://blog.csdn.net/weixin_43864034/article/details/128127516"
-        ],
-        "summary": "A vulnerability was found in SourceCodester Canteen Management System. It has been declared as problematic. This vulnerability affects the function builtin_echo of the file customer.php. The manipulation leads to cross site scripting. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used. VDB-214630 is the identifier assigned to this vulnerability."
-    },
-    {
-        "Modified": "2022-12-01T13:40:00",
-        "Published": "2022-12-01T09:15:00",
-        "access": {},
-        "assigner": "csirt@divd.nl",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-45050",
-        "impact": {},
-        "last-modified": "2022-12-01T13:40:00",
-        "references": [
-            "https://csirt.divd.nl/CVE-2022-45050/"
-        ],
-        "summary": "A reflected XSS vulnerability has been found in Axiell Iguana CMS, allowing an attacker to execute code in a victim's browser. The title parameter on the twitter.php endpoint does not properly neutralise user input, resulting in the vulnerability."
-    },
-    {
-        "Modified": "2022-12-01T13:40:00",
-        "Published": "2022-12-01T10:15:00",
-        "access": {},
-        "assigner": "tbd@nist.gov",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-4221",
-        "impact": {},
-        "last-modified": "2022-12-01T13:40:00",
-        "references": [
-            "https://onekey.com/blog/security-advisory-asus-m25-nas-vulnerability/"
-        ],
-        "summary": "Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection') vulnerability in Asus NAS-M25 allows an unauthenticated attacker to inject arbitrary OS commands via unsanitized cookie values.This issue affects NAS-M25: through 1.0.1.7."
-    },
-    {
-        "Modified": "2022-12-01T13:40:00",
-        "Published": "2022-12-01T05:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-40489",
-        "impact": {},
-        "last-modified": "2022-12-01T13:40:00",
-        "references": [
-            "https://github.com/thinkcmf/thinkcmf/issues/736"
-        ],
-        "summary": "ThinkCMF version 6.0.7 is affected by a Cross Site Request Forgery (CSRF) vulnerability that allows a Super Administrator user to be injected into administrative users."
-    },
-    {
-        "Modified": "2022-12-01T13:40:00",
-        "Published": "2022-12-01T05:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-40849",
-        "impact": {},
-        "last-modified": "2022-12-01T13:40:00",
-        "references": [
-            "https://github.com/thinkcmf/thinkcmf/issues/737"
-        ],
-        "summary": "ThinkCMF version 6.0.7 is affected by Stored Cross-Site Scripting (XSS). An attacker who successfully exploited this vulnerability could inject a Persistent XSS payload in the Slideshow Management section that execute arbitrary JavaScript code on the client side, e.g., to steal the administrator's PHP session token (PHPSESSID)."
-    },
-    {
-        "Modified": "2022-12-01T13:40:00",
-        "Published": "2022-12-01T05:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-44262",
-        "impact": {},
-        "last-modified": "2022-12-01T13:40:00",
-        "references": [
-            "https://github.com/ff4j/ff4j/issues/624"
-        ],
-        "summary": "ff4j 1.8.1 is vulnerable to Remote Code Execution (RCE)."
-    },
-    {
-        "Modified": "2022-12-01T13:40:00",
-        "Published": "2022-12-01T05:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-45045",
-        "impact": {},
-        "last-modified": "2022-12-01T13:40:00",
-        "references": [
-            "https://vulncheck.com/blog/xiongmai-iot-exploitation"
-        ],
-        "summary": "Multiple Xiongmai NVR devices, including MBD6304T V4.02.R11.00000117.10001.131900.00000 and NBD6808T-PL V4.02.R11.C7431119.12001.130000.00000, allow authenticated users to execute arbitrary commands as root, as exploited in the wild starting in approximately 2019. A remote and authenticated attacker, possibly using the default admin:tlJwpbo6 credentials, can connect to port 34567 and execute arbitrary operating system commands via a crafted JSON file during an upgrade request. Since at least 2021, Xiongmai has applied patches to prevent attackers from using this mechanism to execute telnetd."
-    },
-    {
-        "Modified": "2022-12-01T13:40:00",
-        "Published": "2022-12-01T05:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-45640",
-        "impact": {},
-        "last-modified": "2022-12-01T13:40:00",
-        "references": [
-            "https://github.com/Double-q1015/CVE-vulns/blob/main/tenda_ac6v1.0_vuln/Tenda%20AC6V1.0%20V15.03.05.19%20Stack%20overflow%20vulnerability.md",
-            "https://vulncheck.com/blog/xiongmai-iot-exploitation"
-        ],
-        "summary": "Tenda Tenda AC6V1.0 V15.03.05.19 is affected by buffer overflow. Causes a denial of service (local)."
-    },
-    {
-        "Modified": "2022-12-01T13:37:00",
-        "Published": "2022-11-25T19:15:00",
-        "access": {},
-        "assigner": "security-advisories@github.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-39331",
-        "impact": {},
-        "last-modified": "2022-12-01T13:37:00",
-        "references": [
-            "https://github.com/nextcloud/desktop/pull/4944",
-            "https://hackerone.com/reports/1668028",
-            "https://github.com/nextcloud/security-advisories/security/advisories/GHSA-c3xh-q694-6rc5"
-        ],
-        "summary": "Nexcloud desktop is the Desktop sync client for Nextcloud. An attacker can inject arbitrary HyperText Markup Language into the Desktop Client application in the notifications. It is recommended that the Nextcloud Desktop client is upgraded to 3.6.1. There are no known workarounds for this issue."
-    },
-    {
-        "Modified": "2022-12-01T13:28:00",
-        "Published": "2022-11-25T16:15:00",
-        "access": {},
-        "assigner": "psirt@fortinet.com",
-        "cvss": null,
-        "cwe": "NVD-CWE-Other",
-        "id": "CVE-2022-38377",
-        "impact": {},
-        "last-modified": "2022-12-01T13:28:00",
-        "references": [
-            "https://fortiguard.com/psirt/FG-IR-20-143"
-        ],
-        "summary": "An improper access control vulnerability [CWE-284] in FortiManager 7.2.0, 7.0.0 through 7.0.3, 6.4.0 through 6.4.7, 6.2.0 through 6.2.9, 6.0.0 through 6.0.11 and FortiAnalyzer 7.2.0, 7.0.0 through 7.0.3, 6.4.0 through 6.4.8, 6.2.0 through 6.2.10, 6.0.0 through 6.0.12 may allow a remote and authenticated admin user assigned to a specific ADOM to access other ADOMs information such as device information and dashboard information."
-    },
-    {
-        "Modified": "2022-12-01T07:15:00",
-        "Published": "2022-11-07T00:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "NVD-CWE-noinfo",
-        "id": "CVE-2022-42919",
-        "impact": {},
-        "last-modified": "2022-12-01T07:15:00",
-        "references": [
-            "https://github.com/python/cpython/issues/97514",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/VCRKBB5Y5EWTJUNC7LK665WO64DDXSTN/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/PI5DYIED6U26BGX5IRZWNCP6TY4M2ZGZ/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/FKGCQPIVHEAIJ77R3RSNSQWYBUDVWDKU/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/P2LHWWEI5OBQ6RELULMVU6KMDYG4WZXH/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/XX6LLAXGZVZ327REY6MDZRMMP47LJ53P/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/R6KGIRHSENZ4QAB234Z36HVIDTRJ3MFI/"
-        ],
-        "summary": "Python 3.9.x and 3.10.x through 3.10.8 on Linux allows local privilege escalation in a non-default configuration. The Python multiprocessing library, when used with the forkserver start method on Linux, allows pickles to be deserialized from any user in the same machine local network namespace, which in many system configurations means any user on the same machine. Pickles can execute arbitrary code. Thus, this allows for local user privilege escalation to the user that any forkserver process is running as. Setting multiprocessing.util.abstract_sockets_supported to False is a workaround. The forkserver start method for multiprocessing is not the default start method. This issue is Linux specific because only Linux supports abstract namespace sockets. CPython before 3.9 does not make use of Linux abstract namespace sockets by default. Support for users manually specifying an abstract namespace socket was added as a bugfix in 3.7.8 and 3.8.4, but users would need to make specific uncommon API calls in order to do that in CPython before 3.9."
-    },
-    {
-        "Modified": "2022-12-01T07:15:00",
-        "Published": "2022-10-12T23:15:00",
-        "access": {},
-        "assigner": "security-advisories@github.com",
-        "cvss": null,
-        "cwe": "CWE-125",
-        "id": "CVE-2022-39283",
-        "impact": {},
-        "last-modified": "2022-12-01T07:15:00",
-        "references": [
-            "https://github.com/FreeRDP/FreeRDP/releases/tag/2.8.1",
-            "https://github.com/FreeRDP/FreeRDP/security/advisories/GHSA-6cf9-3328-qrvh",
-            "https://security.gentoo.org/glsa/202210-24",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/HEWWYMGWIMD4RDCOGHWMZXUMBGZHC5NW/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RLZCF7YHNC5BECDPEJNAZUYGNNM7NFME/"
-        ],
-        "summary": "FreeRDP is a free remote desktop protocol library and clients. All FreeRDP based clients when using the `/video` command line switch might read uninitialized data, decode it as audio/video and display the result. FreeRDP based server implementations are not affected. This issue has been patched in version 2.8.1. If you cannot upgrade do not use the `/video` switch."
-    },
-    {
-        "Modified": "2022-12-01T07:15:00",
-        "Published": "2022-10-12T23:15:00",
-        "access": {},
-        "assigner": "security-advisories@github.com",
-        "cvss": null,
-        "cwe": "CWE-908",
-        "id": "CVE-2022-39282",
-        "impact": {},
-        "last-modified": "2022-12-01T07:15:00",
-        "references": [
-            "https://github.com/FreeRDP/FreeRDP/releases/tag/2.8.1",
-            "https://github.com/FreeRDP/FreeRDP/security/advisories/GHSA-c45q-wcpg-mxjq",
-            "https://security.gentoo.org/glsa/202210-24",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/HEWWYMGWIMD4RDCOGHWMZXUMBGZHC5NW/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RLZCF7YHNC5BECDPEJNAZUYGNNM7NFME/"
-        ],
-        "summary": "FreeRDP is a free remote desktop protocol library and clients. FreeRDP based clients on unix systems using `/parallel` command line switch might read uninitialized data and send it to the server the client is currently connected to. FreeRDP based server implementations are not affected. Please upgrade to 2.8.1 where this issue is patched. If unable to upgrade, do not use parallel port redirection (`/parallel` command line switch) as a workaround."
-    },
-    {
-        "Modified": "2022-12-01T02:27:00",
-        "Published": "2022-11-30T18:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-89",
-        "id": "CVE-2022-44294",
-        "impact": {},
-        "last-modified": "2022-12-01T02:27:00",
-        "references": [
-            "https://github.com/Distance10086/bug_report/blob/main/vendors/oretnom23/sanitization-management-system/SQLi-3.md"
-        ],
-        "summary": "Sanitization Management System v1.0 is vulnerable to SQL Injection via /php-sms/admin/?page=services/manage_service&id=."
-    },
-    {
-        "Modified": "2022-12-01T02:27:00",
-        "Published": "2022-11-30T18:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-89",
-        "id": "CVE-2022-44295",
-        "impact": {},
-        "last-modified": "2022-12-01T02:27:00",
-        "references": [
-            "https://github.com/Distance10086/bug_report/blob/main/vendors/oretnom23/sanitization-management-system/SQLi-1.md"
-        ],
-        "summary": "Sanitization Management System v1.0 is vulnerable to SQL Injection via /php-sms/admin/orders/assign_team.php?id=."
-    },
-    {
-        "Modified": "2022-12-01T02:26:00",
-        "Published": "2022-11-30T18:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-89",
-        "id": "CVE-2022-44296",
-        "impact": {},
-        "last-modified": "2022-12-01T02:26:00",
-        "references": [
-            "https://github.com/Distance10086/bug_report/blob/main/vendors/oretnom23/sanitization-management-system/SQLi-2.md"
-        ],
-        "summary": "Sanitization Management System v1.0 is vulnerable to SQL Injection via /php-sms/admin/quotes/manage_remark.php?id=."
-    },
-    {
-        "Modified": "2022-12-01T02:03:00",
-        "Published": "2022-11-30T23:15:00",
-        "access": {},
-        "assigner": "ics-cert@hq.dhs.gov",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2019-18265",
-        "impact": {},
-        "last-modified": "2022-12-01T02:03:00",
-        "references": [
-            "https://www.digitalalertsystems.com/security-advisory"
-        ],
-        "summary": "Digital Alert Systems\u2019 DASDEC software prior to version 4.1 contains a cross-site scripting (XSS) vulnerability that allows remote attackers to inject arbitrary web script or HTML via the SSH username, username field of the login page, or via the HTTP host header. The injected content is stored in logs and rendered when viewed in the web application."
-    },
-    {
-        "Modified": "2022-12-01T02:03:00",
-        "Published": "2022-11-30T23:15:00",
-        "access": {},
-        "assigner": "security-advisories@github.com",
-        "cvss": null,
-        "cwe": "CWE-74",
-        "id": "CVE-2022-46162",
-        "impact": {},
-        "last-modified": "2022-12-01T02:03:00",
-        "references": [
-            "https://github.com/discourse/discourse-bbcode/commit/91478f5cfecdcc43cf85b997168a8ecfd0f8df90",
-            "https://github.com/discourse/discourse-bbcode/security/advisories/GHSA-8c87-xpqv-c7mp"
-        ],
-        "summary": "discourse-bbcode is the official BBCode plugin for Discourse. Prior to commit 91478f5, CSS injection can occur when rendering content generated with the discourse-bccode plugin. This vulnerability only affects sites which have the discourse-bbcode plugin installed and enabled. This issue is patched in commit 91478f5. As a workaround, ensure that the Content Security Policy is enabled and monitor any posts that contain bbcode."
-    },
-    {
-        "Modified": "2022-12-01T02:03:00",
-        "Published": "2022-12-01T00:15:00",
-        "access": {},
-        "assigner": "ics-cert@hq.dhs.gov",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-40204",
-        "impact": {},
-        "last-modified": "2022-12-01T02:03:00",
-        "references": [
-            "https://www.digitalalertsystems.com/security-advisory"
-        ],
-        "summary": "A cross-site scripting (XSS) vulnerability exists in all current versions of Digital Alert Systems DASDEC software via the Host Header in undisclosed pages after login."
-    },
-    {
-        "Modified": "2022-12-01T02:03:00",
-        "Published": "2022-11-30T22:15:00",
-        "access": {},
-        "assigner": "security-advisories@github.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-46156",
-        "impact": {},
-        "last-modified": "2022-12-01T02:03:00",
-        "references": [
-            "https://github.com/grafana/synthetic-monitoring-agent/security/advisories/GHSA-9j4f-f249-q5w8",
-            "https://github.com/grafana/synthetic-monitoring-agent/pull/375",
-            "https://github.com/grafana/synthetic-monitoring-agent/pull/374",
-            "https://github.com/grafana/synthetic-monitoring-agent/pull/373",
-            "https://github.com/grafana/synthetic-monitoring-agent/commit/d8dc7f9c1c641881cbcf0a09e178b90ebf0f0228",
-            "https://github.com/grafana/synthetic-monitoring-agent/releases/tag/v0.12.0"
-        ],
-        "summary": "The Synthetic Monitoring Agent for Grafana's Synthetic Monitoring application provides probe functionality and executes network checks for monitoring remote targets. Users running the Synthetic Monitoring agent prior to version 0.12.0 in their local network are impacted. The authentication token used to communicate with the Synthetic Monitoring API is exposed through a debugging endpoint. This token can be used to retrieve the Synthetic Monitoring checks created by the user and assigned to the agent identified with that token. The Synthetic Monitoring API will reject connections from already-connected agents, so access to the token does not guarantee access to the checks. Version 0.12.0 contains a fix. Users are advised to rotate the agent tokens. After upgrading to version v0.12.0 or later, it's recommended that users of distribution packages review the configuration stored in `/etc/synthetic-monitoring/synthetic-monitoring-agent.conf`, specifically the `API_TOKEN` variable which has been renamed to `SM_AGENT_API_TOKEN`. As a workaround for previous versions, it's recommended that users review the agent settings and set the HTTP listening address in a manner that limits the exposure, for example, localhost or a non-routed network, by using the command line parameter `-listen-address`, e.g. `-listen-address localhost:4050`."
     }
 ]
