@@ -1,5 +1,35 @@
 [
     {
+        "Modified": "2022-12-01T11:15:00",
+        "Published": "2022-12-01T11:15:00",
+        "access": {},
+        "assigner": "security@google.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-1471",
+        "impact": {},
+        "last-modified": "2022-12-01T11:15:00",
+        "references": [
+            "https://github.com/google/security-research/security/advisories/GHSA-mjmj-j48q-9wg2"
+        ],
+        "summary": "SnakeYaml's Constructor() class does not restrict types which can be instantiated during deserialization. Deserializing yaml content provided by an attacker can lead to remote code execution. We recommend using SnakeYaml's SafeConsturctor when parsing untrusted content to restrict deserialization."
+    },
+    {
+        "Modified": "2022-12-01T11:15:00",
+        "Published": "2022-12-01T11:15:00",
+        "access": {},
+        "assigner": "info@cert.vde.com",
+        "cvss": null,
+        "cwe": "CWE-1059",
+        "id": "CVE-2022-3270",
+        "impact": {},
+        "last-modified": "2022-12-01T11:15:00",
+        "references": [
+            "https://cert.vde.com/en/advisories/VDE-2022-041/"
+        ],
+        "summary": "In multiple products by Festo a remote unauthenticated attacker could use functions of an undocumented protocol which could lead to a complete loss of confidentiality, integrity and availability."
+    },
+    {
         "Modified": "2022-12-01T10:15:00",
         "Published": "2022-12-01T10:15:00",
         "access": {},
@@ -2006,51 +2036,5 @@
             "https://www.zonealarm.com/software/extreme-security/release-history"
         ],
         "summary": "Check Point ZoneAlarm before version 15.8.200.19118 allows a local actor to escalate privileges during the upgrade process. In addition, weak permissions in the ProgramData\\CheckPoint\\ZoneAlarm\\Data\\Updates directory allow a local attacker the ability to execute an arbitrary file write, leading to execution of code as local system, in ZoneAlarm versions before v15.8.211.192119"
-    },
-    {
-        "Modified": "2022-11-30T19:02:00",
-        "Published": "2022-04-08T06:15:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "LOW",
-            "vector": "NETWORK"
-        },
-        "assigner": "cve@mitre.org",
-        "cvss": 6.4,
-        "cvss-time": "2022-11-30T19:02:00",
-        "cvss-vector": "AV:N/AC:L/Au:N/C:P/I:N/A:P",
-        "cwe": "CWE-125",
-        "id": "CVE-2022-28805",
-        "impact": {
-            "availability": "PARTIAL",
-            "confidentiality": "PARTIAL",
-            "integrity": "NONE"
-        },
-        "last-modified": "2022-11-30T19:02:00",
-        "references": [
-            "https://lua-users.org/lists/lua-l/2022-02/msg00001.html",
-            "https://lua-users.org/lists/lua-l/2022-02/msg00070.html",
-            "https://lua-users.org/lists/lua-l/2022-04/msg00009.html",
-            "https://github.com/lua/lua/commit/1f3c6f4534c6411313361697d98d1145a1f030fa",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RJNJ66IFDUKWJJZXHGOLRGIA3HWWC36R/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UHYZOEFDVLVAD6EEP4CDW6DNONIVVHPA/"
-        ],
-        "summary": "singlevar in lparser.c in Lua from (including) 5.4.0 up to (excluding) 5.4.4 lacks a certain luaK_exp2anyregup call, leading to a heap-based buffer over-read that might affect a system that compiles untrusted Lua code."
-    },
-    {
-        "Modified": "2022-11-30T18:49:00",
-        "Published": "2022-11-21T17:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-787",
-        "id": "CVE-2022-35897",
-        "impact": {},
-        "last-modified": "2022-11-30T18:49:00",
-        "references": [
-            "https://www.insyde.com/security-pledge",
-            "https://www.insyde.com/security-pledge/SA-2022041"
-        ],
-        "summary": "An stack buffer overflow vulnerability leads to arbitrary code execution issue was discovered in Insyde InsydeH2O with kernel 5.0 through 5.5. If the attacker modifies specific UEFI variables, it can cause a stack overflow, leading to arbitrary code execution. The specific variables are normally locked (read-only) at the OS level and therefore an attack would require direct SPI modification. If an attacker can change the values of at least two variables out of three (SecureBootEnforce, SecureBoot, RestoreBootSettings), it is possible to execute arbitrary code."
     }
 ]
