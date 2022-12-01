@@ -1,6 +1,234 @@
 [
     {
-        "Modified": "2022-12-01T11:15:00",
+        "Modified": "2022-12-01T14:45:00",
+        "Published": "2022-11-25T19:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-732",
+        "id": "CVE-2022-41926",
+        "impact": {},
+        "last-modified": "2022-12-01T14:45:00",
+        "references": [
+            "https://hackerone.com/reports/1596459",
+            "https://github.com/nextcloud/security-advisories/security/advisories/GHSA-564v-3rfc-352m",
+            "https://github.com/nextcloud/talk-android/pull/2148"
+        ],
+        "summary": "Nextcould talk android is the android OS implementation of the nextcloud talk chat system. In affected versions the receiver is not protected by broadcastPermission allowing malicious apps to monitor communication. It is recommended that the Nextcloud Talk Android is upgraded to 14.1.0. There are no known workarounds for this issue."
+    },
+    {
+        "Modified": "2022-12-01T14:40:00",
+        "Published": "2022-08-23T16:15:00",
+        "access": {},
+        "assigner": "secalert@redhat.com",
+        "cvss": null,
+        "cwe": "CWE-295",
+        "id": "CVE-2020-35509",
+        "impact": {},
+        "last-modified": "2022-12-01T14:40:00",
+        "references": [
+            "https://access.redhat.com/security/cve/cve-2020-35509"
+        ],
+        "summary": "A flaw was found in keycloak affecting versions 11.0.3 and 12.0.0. An expired certificate would be accepted by the direct-grant authenticator because of missing time stamp validations. The highest threat from this vulnerability is to data confidentiality and integrity."
+    },
+    {
+        "Modified": "2022-12-01T14:33:00",
+        "Published": "2022-11-23T23:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-400",
+        "id": "CVE-2022-45873",
+        "impact": {},
+        "last-modified": "2022-12-01T14:33:00",
+        "references": [
+            "https://github.com/systemd/systemd/commit/076b807be472630692c5348c60d0c2b7b28ad437",
+            "https://github.com/systemd/systemd/pull/25055#issuecomment-1313733553",
+            "https://github.com/systemd/systemd/pull/24853#issuecomment-1326561497"
+        ],
+        "summary": "systemd 250 and 251 allows local users to achieve a systemd-coredump deadlock by triggering a crash that has a long backtrace. This occurs in parse_elf_object in shared/elf-util.c. The exploitation methodology is to crash a binary calling the same function recursively, and put it in a deeply nested directory to make its backtrace large enough to cause the deadlock. This must be done 16 times when MaxConnections=16 is set for the systemd/units/systemd-coredump.socket file."
+    },
+    {
+        "Modified": "2022-12-01T14:16:00",
+        "Published": "2022-11-25T19:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-295",
+        "id": "CVE-2022-39334",
+        "impact": {},
+        "last-modified": "2022-12-01T14:16:00",
+        "references": [
+            "https://hackerone.com/reports/1699740",
+            "https://github.com/nextcloud/security-advisories/security/advisories/GHSA-82xx-98xv-4jxv",
+            "https://github.com/nextcloud/desktop/pull/5022",
+            "https://github.com/nextcloud/desktop/issues/4927"
+        ],
+        "summary": "Nextcloud desktop is the desktop sync client for Nextcloud. Versions prior to 3.6.1 would incorrectly trust invalid TLS certificates. A Man-in-the-middle attack is possible in case a user can be made running a nextcloudcmd CLI command locally. It is recommended that the Nextcloud Desktop client is upgraded to 3.6.1. There are no known workarounds for this vulnerability."
+    },
+    {
+        "Modified": "2022-12-01T14:15:00",
+        "Published": "2022-12-01T14:15:00",
+        "access": {},
+        "assigner": "secure@symantec.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-37016",
+        "impact": {},
+        "last-modified": "2022-12-01T14:15:00",
+        "references": [
+            "https://support.broadcom.com/web/ecx/support-content-notification/-/external/content/SecurityAdvisories/0/21014"
+        ],
+        "summary": "Symantec Endpoint Protection (Windows) agent may be susceptible to a Privilege Escalation vulnerability, which is a type of issue whereby an attacker may attempt to compromise the software application to gain elevated access to resources that are normally protected from an application or user."
+    },
+    {
+        "Modified": "2022-12-01T14:15:00",
+        "Published": "2022-12-01T14:15:00",
+        "access": {},
+        "assigner": "secure@symantec.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-37017",
+        "impact": {},
+        "last-modified": "2022-12-01T14:15:00",
+        "references": [
+            "https://support.broadcom.com/web/ecx/support-content-notification/-/external/content/SecurityAdvisories/0/21014"
+        ],
+        "summary": "Symantec Endpoint Protection (Windows) agent, prior to 14.3 RU6/14.3 RU5 Patch 1, may be susceptible to a Security Control Bypass vulnerability, which is a type of issue that can potentially allow a threat actor to circumvent existing security controls. This CVE applies narrowly to the Client User Interface Password protection and Policy Import/Export Password protection, if it has been enabled."
+    },
+    {
+        "Modified": "2022-12-01T14:15:00",
+        "Published": "2022-11-28T16:15:00",
+        "access": {},
+        "assigner": "cve-coordination@incibe.es",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2021-45036",
+        "impact": {},
+        "last-modified": "2022-12-01T14:15:00",
+        "references": [
+            "https://www.incibe-cert.es/en/early-warning/security-advisories/velneo-vclient-improper-authentication-0",
+            "https://doc.velneo.com/v/32/velneo/notas-de-la-version#mejoras-de-seguridad-en-validacion-de-usuario-y-contrasena",
+            "https://www.velneo.com/blog/disponible-la-nueva-version-velneo-32",
+            "https://doc.velneo.com/v/32/velneo-vserver/funcionalidades/protocolo-vatps",
+            "https://velneo.es/mivelneo/listado-de-cambios-velneo-32/",
+            "https://doc.velneo.com/v/32/velneo/notas-de-la-version#a-partir-de-esta-version-todos-los-servidores-arrancaran-con-protocolo-vatps",
+            "https://doc.velneo.com/v/32/velneo/funcionalidades-comunes/conexion-con-velneo-vserver"
+        ],
+        "summary": "Velneo vClient on its 28.1.3 version, could allow an attacker with knowledge of the victims's username and hashed password to spoof the victim's id against the server."
+    },
+    {
+        "Modified": "2022-12-01T14:15:00",
+        "Published": "2022-11-24T10:15:00",
+        "access": {},
+        "assigner": "info@cert.vde.com",
+        "cvss": null,
+        "cwe": "CWE-22",
+        "id": "CVE-2022-40976",
+        "impact": {},
+        "last-modified": "2022-12-01T14:15:00",
+        "references": [
+            "https://cert.vde.com/en/advisories/VDE-2022-044/",
+            "https://cert.vde.com/en/advisories/VDE-2022-045/"
+        ],
+        "summary": "A path traversal vulnerability was discovered in multiple Pilz products. An unauthenticated local attacker could use a zipped, malicious configuration file to trigger arbitrary file writes ('zip-slip'). File writes do not affect confidentiality or availability."
+    },
+    {
+        "Modified": "2022-12-01T14:15:00",
+        "Published": "2022-11-24T10:15:00",
+        "access": {},
+        "assigner": "info@cert.vde.com",
+        "cvss": null,
+        "cwe": "CWE-22",
+        "id": "CVE-2022-40977",
+        "impact": {},
+        "last-modified": "2022-12-01T14:15:00",
+        "references": [
+            "https://cert.vde.com/en/advisories/VDE-2022-033/"
+        ],
+        "summary": "A path traversal vulnerability was discovered in Pilz PASvisu Server before 1.12.0. An unauthenticated remote attacker could use a zipped, malicious configuration file to trigger arbitrary file writes ('zip-slip'). File writes do not affect confidentiality or availability."
+    },
+    {
+        "Modified": "2022-12-01T14:15:00",
+        "Published": "2022-11-10T12:15:00",
+        "access": {},
+        "assigner": "info@cert.vde.com",
+        "cvss": null,
+        "cwe": "CWE-330",
+        "id": "CVE-2022-42787",
+        "impact": {},
+        "last-modified": "2022-12-01T14:15:00",
+        "references": [
+            "https://cert.vde.com/de/advisories/VDE-2022-043"
+        ],
+        "summary": "Multiple W&T products of the Comserver Series use a small number space for allocating sessions ids. After login of an user an unathenticated remote attacker can brute force the users session id and get access to his account on the the device. As the user needs to log in for the attack to be successful a user interaction is required."
+    },
+    {
+        "Modified": "2022-12-01T13:49:00",
+        "Published": "2022-11-25T15:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "NVD-CWE-noinfo",
+        "id": "CVE-2022-38767",
+        "impact": {},
+        "last-modified": "2022-12-01T13:49:00",
+        "references": [
+            "https://support2.windriver.com/index.php?page=cve&on=view&id=CVE-2022-38767",
+            "https://windriver.com"
+        ],
+        "summary": "An issue was discovered in Wind River VxWorks 6.9 and 7, that allows a specifically crafted packet sent by a Radius server, may cause Denial of Service during the IP Radius access procedure."
+    },
+    {
+        "Modified": "2022-12-01T13:45:00",
+        "Published": "2022-11-25T05:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-77",
+        "id": "CVE-2022-40282",
+        "impact": {},
+        "last-modified": "2022-12-01T13:45:00",
+        "references": [
+            "https://www.belden.com/support/security-assurance",
+            "http://seclists.org/fulldisclosure/2022/Nov/19",
+            "http://packetstormsecurity.com/files/170063/Hirschmann-Belden-BAT-C2-8.8.1.0R8-Command-Injection.html"
+        ],
+        "summary": "The web server of Hirschmann BAT-C2 before 09.13.01.00R04 allows authenticated command injection. This allows an authenticated attacker to pass commands to the shell of the system because the dir parameter of the FsCreateDir Ajax function is not sufficiently sanitized. The vendor's ID is BSECV-2022-21."
+    },
+    {
+        "Modified": "2022-12-01T13:40:00",
+        "Published": "2022-12-01T13:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-28607",
+        "impact": {},
+        "last-modified": "2022-12-01T13:40:00",
+        "references": [
+            "https://github.com/killmonday/isic.lk-RCE"
+        ],
+        "summary": "An issue was discovered in asith-eranga ISIC tour booking through version published on Feb 13th 2018, allows attackers to gain sensitive information via the action parameter to /system/user/modules/mod_users/controller.php."
+    },
+    {
+        "Modified": "2022-12-01T13:40:00",
+        "Published": "2022-12-01T13:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-30528",
+        "impact": {},
+        "last-modified": "2022-12-01T13:40:00",
+        "references": [
+            "https://github.com/killmonday/isic.lk-RCE",
+            "https://github.com/asith-eranga/isic"
+        ],
+        "summary": "SQL Injection vulnerability in asith-eranga ISIC tour booking through version published on Feb 13th 2018, allows attackers to execute arbitrary commands via the username parameter to /system/user/modules/mod_users/controller.php."
+    },
+    {
+        "Modified": "2022-12-01T13:40:00",
         "Published": "2022-12-01T11:15:00",
         "access": {},
         "assigner": "security@google.com",
@@ -8,14 +236,14 @@
         "cwe": "Unknown",
         "id": "CVE-2022-1471",
         "impact": {},
-        "last-modified": "2022-12-01T11:15:00",
+        "last-modified": "2022-12-01T13:40:00",
         "references": [
             "https://github.com/google/security-research/security/advisories/GHSA-mjmj-j48q-9wg2"
         ],
         "summary": "SnakeYaml's Constructor() class does not restrict types which can be instantiated during deserialization. Deserializing yaml content provided by an attacker can lead to remote code execution. We recommend using SnakeYaml's SafeConsturctor when parsing untrusted content to restrict deserialization."
     },
     {
-        "Modified": "2022-12-01T11:15:00",
+        "Modified": "2022-12-01T13:40:00",
         "Published": "2022-12-01T11:15:00",
         "access": {},
         "assigner": "info@cert.vde.com",
@@ -23,44 +251,30 @@
         "cwe": "CWE-1059",
         "id": "CVE-2022-3270",
         "impact": {},
-        "last-modified": "2022-12-01T11:15:00",
+        "last-modified": "2022-12-01T13:40:00",
         "references": [
             "https://cert.vde.com/en/advisories/VDE-2022-041/"
         ],
         "summary": "In multiple products by Festo a remote unauthenticated attacker could use functions of an undocumented protocol which could lead to a complete loss of confidentiality, integrity and availability."
     },
     {
-        "Modified": "2022-12-01T10:15:00",
-        "Published": "2022-12-01T10:15:00",
+        "Modified": "2022-12-01T13:40:00",
+        "Published": "2022-12-01T06:15:00",
         "access": {},
-        "assigner": "tbd@nist.gov",
+        "assigner": "cve@mitre.org",
         "cvss": null,
         "cwe": "Unknown",
-        "id": "CVE-2022-4221",
+        "id": "CVE-2022-36431",
         "impact": {},
-        "last-modified": "2022-12-01T10:15:00",
+        "last-modified": "2022-12-01T13:40:00",
         "references": [
-            "https://onekey.com/blog/security-advisory-asus-m25-nas-vulnerability/"
+            "https://www.synacktiv.com/sites/default/files/2022-11/trufusion_enterprise_unauthenticated_arbitrary_file_write.pdf",
+            "https://docs.rocketsoftware.com/bundle/TRUfusionEnterprise_ReleaseNotes_V7.9.6.1/resource/TRUfusionEnterprise_ReleaseNotes_V7.9.6.1.pdf"
         ],
-        "summary": "Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection') vulnerability in Asus NAS-M25 allows an unauthenticated attacker to inject arbitrary OS commands via unsanitized cookie values.This issue affects NAS-M25: through 1.0.1.7."
+        "summary": "An arbitrary file upload vulnerability in Rocket TRUfusion Enterprise before 7.9.6.1 allows unauthenticated attackers to execute arbitrary code via a crafted JSP file. Issue fixed in version 7.9.6.1."
     },
     {
-        "Modified": "2022-12-01T09:15:00",
-        "Published": "2022-12-01T09:15:00",
-        "access": {},
-        "assigner": "csirt@divd.nl",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-45050",
-        "impact": {},
-        "last-modified": "2022-12-01T09:15:00",
-        "references": [
-            "https://csirt.divd.nl/CVE-2022-45050/"
-        ],
-        "summary": "A reflected XSS vulnerability has been found in Axiell Iguana CMS, allowing an attacker to execute code in a victim's browser. The title parameter on the twitter.php endpoint does not properly neutralise user input, resulting in the vulnerability."
-    },
-    {
-        "Modified": "2022-12-01T08:15:00",
+        "Modified": "2022-12-01T13:40:00",
         "Published": "2022-12-01T08:15:00",
         "access": {},
         "assigner": "cna@vuldb.com",
@@ -68,7 +282,7 @@
         "cwe": "CWE-404",
         "id": "CVE-2022-4246",
         "impact": {},
-        "last-modified": "2022-12-01T08:15:00",
+        "last-modified": "2022-12-01T13:40:00",
         "references": [
             "https://seclists.org/fulldisclosure/2022/Nov/att-16/potplayer_7z.bin",
             "https://vuldb.com/?id.214623",
@@ -77,7 +291,7 @@
         "summary": "A vulnerability classified as problematic has been found in Kakao PotPlayer. This affects an unknown part of the component MID File Handler. The manipulation leads to denial of service. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-214623."
     },
     {
-        "Modified": "2022-12-01T08:15:00",
+        "Modified": "2022-12-01T13:40:00",
         "Published": "2022-12-01T08:15:00",
         "access": {},
         "assigner": "cna@vuldb.com",
@@ -85,7 +299,7 @@
         "cwe": "CWE-707",
         "id": "CVE-2022-4247",
         "impact": {},
-        "last-modified": "2022-12-01T08:15:00",
+        "last-modified": "2022-12-01T13:40:00",
         "references": [
             "https://vuldb.com/?id.214624",
             "https://github.com/aman05382/movie_ticket_booking_system_php/issues/1"
@@ -93,7 +307,7 @@
         "summary": "A vulnerability classified as critical was found in Movie Ticket Booking System. This vulnerability affects unknown code of the file booking.php. The manipulation of the argument id leads to sql injection. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used. The identifier of this vulnerability is VDB-214624."
     },
     {
-        "Modified": "2022-12-01T08:15:00",
+        "Modified": "2022-12-01T13:40:00",
         "Published": "2022-12-01T08:15:00",
         "access": {},
         "assigner": "cna@vuldb.com",
@@ -101,7 +315,7 @@
         "cwe": "CWE-707",
         "id": "CVE-2022-4248",
         "impact": {},
-        "last-modified": "2022-12-01T08:15:00",
+        "last-modified": "2022-12-01T13:40:00",
         "references": [
             "https://vuldb.com/?id.214625",
             "https://github.com/aman05382/movie_ticket_booking_system_php/issues/3"
@@ -109,7 +323,7 @@
         "summary": "A vulnerability, which was classified as critical, has been found in Movie Ticket Booking System. This issue affects some unknown processing of the file editBooking.php. The manipulation of the argument id leads to sql injection. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. The identifier VDB-214625 was assigned to this vulnerability."
     },
     {
-        "Modified": "2022-12-01T08:15:00",
+        "Modified": "2022-12-01T13:40:00",
         "Published": "2022-12-01T08:15:00",
         "access": {},
         "assigner": "cna@vuldb.com",
@@ -117,7 +331,7 @@
         "cwe": "Unknown",
         "id": "CVE-2022-4249",
         "impact": {},
-        "last-modified": "2022-12-01T08:15:00",
+        "last-modified": "2022-12-01T13:40:00",
         "references": [
             "https://vuldb.com/?id.214626",
             "https://github.com/aman05382/movie_ticket_booking_system_php/issues/5"
@@ -125,7 +339,7 @@
         "summary": "A vulnerability, which was classified as problematic, was found in Movie Ticket Booking System. Affected is an unknown function of the component POST Request Handler. The manipulation of the argument ORDER_ID leads to cross site scripting. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used. VDB-214626 is the identifier assigned to this vulnerability."
     },
     {
-        "Modified": "2022-12-01T08:15:00",
+        "Modified": "2022-12-01T13:40:00",
         "Published": "2022-12-01T08:15:00",
         "access": {},
         "assigner": "cna@vuldb.com",
@@ -133,7 +347,7 @@
         "cwe": "CWE-707",
         "id": "CVE-2022-4250",
         "impact": {},
-        "last-modified": "2022-12-01T08:15:00",
+        "last-modified": "2022-12-01T13:40:00",
         "references": [
             "https://vuldb.com/?id.214627",
             "https://github.com/aman05382/movie_ticket_booking_system_php/issues/2"
@@ -141,7 +355,7 @@
         "summary": "A vulnerability has been found in Movie Ticket Booking System and classified as problematic. Affected by this vulnerability is an unknown functionality of the file booking.php. The manipulation of the argument id leads to cross site scripting. The attack can be launched remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-214627."
     },
     {
-        "Modified": "2022-12-01T08:15:00",
+        "Modified": "2022-12-01T13:40:00",
         "Published": "2022-12-01T08:15:00",
         "access": {},
         "assigner": "cna@vuldb.com",
@@ -149,7 +363,7 @@
         "cwe": "CWE-707",
         "id": "CVE-2022-4251",
         "impact": {},
-        "last-modified": "2022-12-01T08:15:00",
+        "last-modified": "2022-12-01T13:40:00",
         "references": [
             "https://vuldb.com/?id.214628",
             "https://github.com/aman05382/movie_ticket_booking_system_php/issues/4"
@@ -157,7 +371,7 @@
         "summary": "A vulnerability was found in Movie Ticket Booking System and classified as problematic. Affected by this issue is some unknown functionality of the file editBooking.php. The manipulation leads to cross site scripting. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. The identifier of this vulnerability is VDB-214628."
     },
     {
-        "Modified": "2022-12-01T08:15:00",
+        "Modified": "2022-12-01T13:40:00",
         "Published": "2022-12-01T08:15:00",
         "access": {},
         "assigner": "cna@vuldb.com",
@@ -165,7 +379,7 @@
         "cwe": "CWE-707",
         "id": "CVE-2022-4252",
         "impact": {},
-        "last-modified": "2022-12-01T08:15:00",
+        "last-modified": "2022-12-01T13:40:00",
         "references": [
             "https://vuldb.com/?id.214629",
             "https://blog.csdn.net/weixin_43864034/article/details/128127288"
@@ -173,7 +387,7 @@
         "summary": "A vulnerability was found in SourceCodester Canteen Management System. It has been classified as problematic. This affects the function builtin_echo of the file categories.php. The manipulation leads to cross site scripting. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. The identifier VDB-214629 was assigned to this vulnerability."
     },
     {
-        "Modified": "2022-12-01T08:15:00",
+        "Modified": "2022-12-01T13:40:00",
         "Published": "2022-12-01T08:15:00",
         "access": {},
         "assigner": "cna@vuldb.com",
@@ -181,12 +395,150 @@
         "cwe": "CWE-707",
         "id": "CVE-2022-4253",
         "impact": {},
-        "last-modified": "2022-12-01T08:15:00",
+        "last-modified": "2022-12-01T13:40:00",
         "references": [
             "https://vuldb.com/?id.214630",
             "https://blog.csdn.net/weixin_43864034/article/details/128127516"
         ],
         "summary": "A vulnerability was found in SourceCodester Canteen Management System. It has been declared as problematic. This vulnerability affects the function builtin_echo of the file customer.php. The manipulation leads to cross site scripting. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used. VDB-214630 is the identifier assigned to this vulnerability."
+    },
+    {
+        "Modified": "2022-12-01T13:40:00",
+        "Published": "2022-12-01T09:15:00",
+        "access": {},
+        "assigner": "csirt@divd.nl",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-45050",
+        "impact": {},
+        "last-modified": "2022-12-01T13:40:00",
+        "references": [
+            "https://csirt.divd.nl/CVE-2022-45050/"
+        ],
+        "summary": "A reflected XSS vulnerability has been found in Axiell Iguana CMS, allowing an attacker to execute code in a victim's browser. The title parameter on the twitter.php endpoint does not properly neutralise user input, resulting in the vulnerability."
+    },
+    {
+        "Modified": "2022-12-01T13:40:00",
+        "Published": "2022-12-01T10:15:00",
+        "access": {},
+        "assigner": "tbd@nist.gov",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-4221",
+        "impact": {},
+        "last-modified": "2022-12-01T13:40:00",
+        "references": [
+            "https://onekey.com/blog/security-advisory-asus-m25-nas-vulnerability/"
+        ],
+        "summary": "Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection') vulnerability in Asus NAS-M25 allows an unauthenticated attacker to inject arbitrary OS commands via unsanitized cookie values.This issue affects NAS-M25: through 1.0.1.7."
+    },
+    {
+        "Modified": "2022-12-01T13:40:00",
+        "Published": "2022-12-01T05:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-40489",
+        "impact": {},
+        "last-modified": "2022-12-01T13:40:00",
+        "references": [
+            "https://github.com/thinkcmf/thinkcmf/issues/736"
+        ],
+        "summary": "ThinkCMF version 6.0.7 is affected by a Cross Site Request Forgery (CSRF) vulnerability that allows a Super Administrator user to be injected into administrative users."
+    },
+    {
+        "Modified": "2022-12-01T13:40:00",
+        "Published": "2022-12-01T05:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-40849",
+        "impact": {},
+        "last-modified": "2022-12-01T13:40:00",
+        "references": [
+            "https://github.com/thinkcmf/thinkcmf/issues/737"
+        ],
+        "summary": "ThinkCMF version 6.0.7 is affected by Stored Cross-Site Scripting (XSS). An attacker who successfully exploited this vulnerability could inject a Persistent XSS payload in the Slideshow Management section that execute arbitrary JavaScript code on the client side, e.g., to steal the administrator's PHP session token (PHPSESSID)."
+    },
+    {
+        "Modified": "2022-12-01T13:40:00",
+        "Published": "2022-12-01T05:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-44262",
+        "impact": {},
+        "last-modified": "2022-12-01T13:40:00",
+        "references": [
+            "https://github.com/ff4j/ff4j/issues/624"
+        ],
+        "summary": "ff4j 1.8.1 is vulnerable to Remote Code Execution (RCE)."
+    },
+    {
+        "Modified": "2022-12-01T13:40:00",
+        "Published": "2022-12-01T05:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-45045",
+        "impact": {},
+        "last-modified": "2022-12-01T13:40:00",
+        "references": [
+            "https://vulncheck.com/blog/xiongmai-iot-exploitation"
+        ],
+        "summary": "Multiple Xiongmai NVR devices, including MBD6304T V4.02.R11.00000117.10001.131900.00000 and NBD6808T-PL V4.02.R11.C7431119.12001.130000.00000, allow authenticated users to execute arbitrary commands as root, as exploited in the wild starting in approximately 2019. A remote and authenticated attacker, possibly using the default admin:tlJwpbo6 credentials, can connect to port 34567 and execute arbitrary operating system commands via a crafted JSON file during an upgrade request. Since at least 2021, Xiongmai has applied patches to prevent attackers from using this mechanism to execute telnetd."
+    },
+    {
+        "Modified": "2022-12-01T13:40:00",
+        "Published": "2022-12-01T05:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-45640",
+        "impact": {},
+        "last-modified": "2022-12-01T13:40:00",
+        "references": [
+            "https://github.com/Double-q1015/CVE-vulns/blob/main/tenda_ac6v1.0_vuln/Tenda%20AC6V1.0%20V15.03.05.19%20Stack%20overflow%20vulnerability.md",
+            "https://vulncheck.com/blog/xiongmai-iot-exploitation"
+        ],
+        "summary": "Tenda Tenda AC6V1.0 V15.03.05.19 is affected by buffer overflow. Causes a denial of service (local)."
+    },
+    {
+        "Modified": "2022-12-01T13:37:00",
+        "Published": "2022-11-25T19:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2022-39331",
+        "impact": {},
+        "last-modified": "2022-12-01T13:37:00",
+        "references": [
+            "https://github.com/nextcloud/desktop/pull/4944",
+            "https://hackerone.com/reports/1668028",
+            "https://github.com/nextcloud/security-advisories/security/advisories/GHSA-c3xh-q694-6rc5"
+        ],
+        "summary": "Nexcloud desktop is the Desktop sync client for Nextcloud. An attacker can inject arbitrary HyperText Markup Language into the Desktop Client application in the notifications. It is recommended that the Nextcloud Desktop client is upgraded to 3.6.1. There are no known workarounds for this issue."
+    },
+    {
+        "Modified": "2022-12-01T13:28:00",
+        "Published": "2022-11-25T16:15:00",
+        "access": {},
+        "assigner": "psirt@fortinet.com",
+        "cvss": null,
+        "cwe": "NVD-CWE-Other",
+        "id": "CVE-2022-38377",
+        "impact": {},
+        "last-modified": "2022-12-01T13:28:00",
+        "references": [
+            "https://fortiguard.com/psirt/FG-IR-20-143"
+        ],
+        "summary": "An improper access control vulnerability [CWE-284] in FortiManager 7.2.0, 7.0.0 through 7.0.3, 6.4.0 through 6.4.7, 6.2.0 through 6.2.9, 6.0.0 through 6.0.11 and FortiAnalyzer 7.2.0, 7.0.0 through 7.0.3, 6.4.0 through 6.4.8, 6.2.0 through 6.2.10, 6.0.0 through 6.0.12 may allow a remote and authenticated admin user assigned to a specific ADOM to access other ADOMs information such as device information and dashboard information."
     },
     {
         "Modified": "2022-12-01T07:15:00",
@@ -246,98 +598,6 @@
             "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RLZCF7YHNC5BECDPEJNAZUYGNNM7NFME/"
         ],
         "summary": "FreeRDP is a free remote desktop protocol library and clients. FreeRDP based clients on unix systems using `/parallel` command line switch might read uninitialized data and send it to the server the client is currently connected to. FreeRDP based server implementations are not affected. Please upgrade to 2.8.1 where this issue is patched. If unable to upgrade, do not use parallel port redirection (`/parallel` command line switch) as a workaround."
-    },
-    {
-        "Modified": "2022-12-01T06:15:00",
-        "Published": "2022-12-01T06:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-36431",
-        "impact": {},
-        "last-modified": "2022-12-01T06:15:00",
-        "references": [
-            "https://www.synacktiv.com/sites/default/files/2022-11/trufusion_enterprise_unauthenticated_arbitrary_file_write.pdf",
-            "https://docs.rocketsoftware.com/bundle/TRUfusionEnterprise_ReleaseNotes_V7.9.6.1/resource/TRUfusionEnterprise_ReleaseNotes_V7.9.6.1.pdf"
-        ],
-        "summary": "An arbitrary file upload vulnerability in Rocket TRUfusion Enterprise before 7.9.6.1 allows unauthenticated attackers to execute arbitrary code via a crafted JSP file. Issue fixed in version 7.9.6.1."
-    },
-    {
-        "Modified": "2022-12-01T05:15:00",
-        "Published": "2022-12-01T05:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-40489",
-        "impact": {},
-        "last-modified": "2022-12-01T05:15:00",
-        "references": [
-            "https://github.com/thinkcmf/thinkcmf/issues/736"
-        ],
-        "summary": "ThinkCMF version 6.0.7 is affected by a Cross Site Request Forgery (CSRF) vulnerability that allows a Super Administrator user to be injected into administrative users."
-    },
-    {
-        "Modified": "2022-12-01T05:15:00",
-        "Published": "2022-12-01T05:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-40849",
-        "impact": {},
-        "last-modified": "2022-12-01T05:15:00",
-        "references": [
-            "https://github.com/thinkcmf/thinkcmf/issues/737"
-        ],
-        "summary": "ThinkCMF version 6.0.7 is affected by Stored Cross-Site Scripting (XSS). An attacker who successfully exploited this vulnerability could inject a Persistent XSS payload in the Slideshow Management section that execute arbitrary JavaScript code on the client side, e.g., to steal the administrator's PHP session token (PHPSESSID)."
-    },
-    {
-        "Modified": "2022-12-01T05:15:00",
-        "Published": "2022-12-01T05:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-44262",
-        "impact": {},
-        "last-modified": "2022-12-01T05:15:00",
-        "references": [
-            "https://github.com/ff4j/ff4j/issues/624"
-        ],
-        "summary": "ff4j 1.8.1 is vulnerable to Remote Code Execution (RCE)."
-    },
-    {
-        "Modified": "2022-12-01T05:15:00",
-        "Published": "2022-12-01T05:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-45045",
-        "impact": {},
-        "last-modified": "2022-12-01T05:15:00",
-        "references": [
-            "https://vulncheck.com/blog/xiongmai-iot-exploitation"
-        ],
-        "summary": "Multiple Xiongmai NVR devices, including MBD6304T V4.02.R11.00000117.10001.131900.00000 and NBD6808T-PL V4.02.R11.C7431119.12001.130000.00000, allow authenticated users to execute arbitrary commands as root, as exploited in the wild starting in approximately 2019. A remote and authenticated attacker, possibly using the default admin:tlJwpbo6 credentials, can connect to port 34567 and execute arbitrary operating system commands via a crafted JSON file during an upgrade request. Since at least 2021, Xiongmai has applied patches to prevent attackers from using this mechanism to execute telnetd."
-    },
-    {
-        "Modified": "2022-12-01T05:15:00",
-        "Published": "2022-12-01T05:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-45640",
-        "impact": {},
-        "last-modified": "2022-12-01T05:15:00",
-        "references": [
-            "https://github.com/Double-q1015/CVE-vulns/blob/main/tenda_ac6v1.0_vuln/Tenda%20AC6V1.0%20V15.03.05.19%20Stack%20overflow%20vulnerability.md",
-            "https://vulncheck.com/blog/xiongmai-iot-exploitation"
-        ],
-        "summary": "Tenda Tenda AC6V1.0 V15.03.05.19 is affected by buffer overflow. Causes a denial of service (local)."
     },
     {
         "Modified": "2022-12-01T02:27:00",
@@ -611,23 +871,6 @@
             "http://packetstormsecurity.com/files/170070/perfSONAR-4.4.5-Cross-Site-Request-Forgery.html"
         ],
         "summary": "perfSONAR v4.x <= v4.4.5 was discovered to contain a Cross-Site Request Forgery (CSRF) which is triggered when an attacker injects crafted input into the Search function."
-    },
-    {
-        "Modified": "2022-11-30T23:15:00",
-        "Published": "2022-11-25T05:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-40282",
-        "impact": {},
-        "last-modified": "2022-11-30T23:15:00",
-        "references": [
-            "https://www.belden.com/support/security-assurance",
-            "http://seclists.org/fulldisclosure/2022/Nov/19",
-            "http://packetstormsecurity.com/files/170063/Hirschmann-Belden-BAT-C2-8.8.1.0R8-Command-Injection.html"
-        ],
-        "summary": "The web server of Hirschmann BAT-C2 before 09.13.01.00R04 allows authenticated command injection. This allows an authenticated attacker to pass commands to the shell of the system because the dir parameter of the FsCreateDir Ajax function is not sufficiently sanitized. The vendor's ID is BSECV-2022-21."
     },
     {
         "Modified": "2022-11-30T23:15:00",
@@ -1795,246 +2038,5 @@
             "https://git.opendaylight.org/gerrit/c/aaa/+/103241"
         ],
         "summary": "A SQL injection issue was discovered in AAA in OpenDaylight (ODL) before 0.16.5. The aaa-idm-store-h2/src/main/java/org/opendaylight/aaa/datastore/h2/RoleStore.java deleteRole function is affected when the API interface /auth/v1/roles/ is used."
-    },
-    {
-        "Modified": "2022-11-30T20:39:00",
-        "Published": "2022-11-23T22:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "NVD-CWE-noinfo",
-        "id": "CVE-2022-45872",
-        "impact": {},
-        "last-modified": "2022-11-30T20:39:00",
-        "references": [
-            "https://iterm2.com/downloads.html"
-        ],
-        "summary": "iTerm2 before 3.4.18 mishandles a DECRQSS response."
-    },
-    {
-        "Modified": "2022-11-30T20:38:00",
-        "Published": "2022-11-22T13:15:00",
-        "access": {},
-        "assigner": "cybersecurity@schneider-electric.com",
-        "cvss": null,
-        "cwe": "CWE-269",
-        "id": "CVE-2022-0222",
-        "impact": {},
-        "last-modified": "2022-11-30T20:38:00",
-        "references": [
-            "https://www.se.com/us/en/download/document/SEVD-2022-102-02/"
-        ],
-        "summary": "A CWE-269: Improper Privilege Management vulnerability exists that could cause a denial of service of the Ethernet communication of the controller when sending a specific request over SNMP. Affected products: Modicon M340 CPUs(BMXP34* versions prior to V3.40), Modicon M340 X80 Ethernet Communication modules:BMXNOE0100 (H), BMXNOE0110 (H), BMXNOR0200H RTU(BMXNOE* all versions)(BMXNOR* versions prior to v1.7 IR24)"
-    },
-    {
-        "Modified": "2022-11-30T20:37:00",
-        "Published": "2022-11-22T11:15:00",
-        "access": {},
-        "assigner": "cybersecurity@hitachienergy.com",
-        "cvss": null,
-        "cwe": "CWE-312",
-        "id": "CVE-2022-2513",
-        "impact": {},
-        "last-modified": "2022-11-30T20:37:00",
-        "references": [
-            "https://search.abb.com/library/Download.aspx?DocumentID=8DBD000120&LanguageCode=en&DocumentPartId=&Action=Launch"
-        ],
-        "summary": "A vulnerability exists in the Intelligent Electronic Device (IED) Connectivity Package (ConnPack) credential storage function in Hitachi Energy\u2019s PCM600 product included in the versions listed below, where IEDs credentials are stored in a cleartext format in the PCM600 database. An attacker who manages to get access to the exported backup file can exploit the vulnerability and obtain credentials of the IEDs. The credentials may be used to perform unauthorized modifications such as loading incorrect configurations, reboot the IEDs or cause a denial-of-service on the IEDs."
-    },
-    {
-        "Modified": "2022-11-30T20:35:00",
-        "Published": "2022-11-24T16:15:00",
-        "access": {},
-        "assigner": "security@apache.org",
-        "cvss": null,
-        "cwe": "CWE-522",
-        "id": "CVE-2022-26885",
-        "impact": {},
-        "last-modified": "2022-11-30T20:35:00",
-        "references": [
-            "https://lists.apache.org/thread/z7084r9cs2r26cszkkgjqpb5bhnxqssp"
-        ],
-        "summary": "When using tasks to read config files, there is a risk of database password disclosure. We recommend you upgrade to version 2.0.6 or higher."
-    },
-    {
-        "Modified": "2022-11-30T20:32:00",
-        "Published": "2022-11-24T10:15:00",
-        "access": {},
-        "assigner": "info@cert.vde.com",
-        "cvss": null,
-        "cwe": "CWE-22",
-        "id": "CVE-2022-40977",
-        "impact": {},
-        "last-modified": "2022-11-30T20:32:00",
-        "references": [
-            "https://cert.vde.com/en/advisories/VDE-2022-033/"
-        ],
-        "summary": "A path traversal vulnerability was discovered in Pilz PASvisu Server before 1.12.0. An unauthenticated remote attacker could use a zipped, malicious configuration file to trigger arbitrary file writes ('zip-slip')."
-    },
-    {
-        "Modified": "2022-11-30T20:30:00",
-        "Published": "2022-11-25T18:15:00",
-        "access": {},
-        "assigner": "help@fluidattacks.com",
-        "cvss": null,
-        "cwe": "CWE-352",
-        "id": "CVE-2022-45475",
-        "impact": {},
-        "last-modified": "2022-11-30T20:30:00",
-        "references": [
-            "https://fluidattacks.com/advisories/mosey/",
-            "https://github.com/prasathmani/tinyfilemanager/"
-        ],
-        "summary": "Tiny File Manager version 2.4.8 allows an unauthenticated remote attacker to execute arbitrary code remotely on the server. This is possible because the application is vulnerable to CSRF, processes uploaded files server-side (instead of just returning them for download), and allows unauthenticated users to access uploaded files."
-    },
-    {
-        "Modified": "2022-11-30T20:23:00",
-        "Published": "2022-11-22T12:15:00",
-        "access": {},
-        "assigner": "cybersecurity@schneider-electric.com",
-        "cvss": null,
-        "cwe": "CWE-191",
-        "id": "CVE-2022-37301",
-        "impact": {},
-        "last-modified": "2022-11-30T20:23:00",
-        "references": [
-            "https://www.se.com/us/en/download/document/SEVD-2022-221-02/"
-        ],
-        "summary": "A CWE-191: Integer Underflow (Wrap or Wraparound) vulnerability exists that could cause a denial of service of the controller due to memory access violations when using the Modbus TCP protocol. Affected products: Modicon M340 CPU (part numbers BMXP34*)(V3.40 and prior), Modicon M580 CPU (part numbers BMEP* and BMEH*)(V3.22 and prior), Legacy Modicon Quantum/Premium(All Versions), Modicon Momentum MDI (171CBU*)(All Versions), Modicon MC80 (BMKC80)(V1.7 and prior)"
-    },
-    {
-        "Modified": "2022-11-30T20:20:00",
-        "Published": "2022-11-24T10:15:00",
-        "access": {},
-        "assigner": "info@cert.vde.com",
-        "cvss": null,
-        "cwe": "CWE-22",
-        "id": "CVE-2022-40976",
-        "impact": {},
-        "last-modified": "2022-11-30T20:20:00",
-        "references": [
-            "https://cert.vde.com/en/advisories/VDE-2022-044/",
-            "https://cert.vde.com/en/advisories/VDE-2022-045/"
-        ],
-        "summary": "A path traversal vulnerability was discovered in multiple Pilz products. An unauthenticated local attacker could use a zipped, malicious configuration file to trigger arbitrary file writes ('zip-slip')."
-    },
-    {
-        "Modified": "2022-11-30T20:18:00",
-        "Published": "2022-11-25T18:15:00",
-        "access": {},
-        "assigner": "help@fluidattacks.com",
-        "cvss": null,
-        "cwe": "CWE-352",
-        "id": "CVE-2022-45476",
-        "impact": {},
-        "last-modified": "2022-11-30T20:18:00",
-        "references": [
-            "https://fluidattacks.com/advisories/mosey/",
-            "https://github.com/prasathmani/tinyfilemanager/"
-        ],
-        "summary": "Tiny File Manager version 2.4.8 allows an unauthenticated remote attacker to execute arbitrary code remotely on the server. This is possible because the application is vulnerable to CSRF, processes uploaded files server-side (instead of just returning them for download), and allows unauthenticated users to access uploaded files."
-    },
-    {
-        "Modified": "2022-11-30T20:16:00",
-        "Published": "2022-11-25T18:15:00",
-        "access": {},
-        "assigner": "security-advisories@github.com",
-        "cvss": null,
-        "cwe": "CWE-502",
-        "id": "CVE-2022-41958",
-        "impact": {},
-        "last-modified": "2022-11-30T20:16:00",
-        "references": [
-            "https://github.com/4ra1n/super-xray/commit/4d0d59663596db03f39d7edd2be251d48b52dcfc",
-            "https://github.com/4ra1n/super-xray/security/advisories/GHSA-39pv-4vmj-c4fr"
-        ],
-        "summary": "super-xray is a web vulnerability scanning tool. Versions prior to 0.7 assumed trusted input for the program config which is stored in a yaml file. An attacker with local access to the file could exploit this and compromise the program. This issue has been addressed in commit `4d0d5966` and will be included in future releases. Users are advised to upgrade. There are no known workarounds for this issue."
-    },
-    {
-        "Modified": "2022-11-30T20:02:00",
-        "Published": "2022-11-24T09:15:00",
-        "access": {},
-        "assigner": "Mitsubishielectric.Psirt@yd.MitsubishiElectric.co.jp",
-        "cvss": null,
-        "cwe": "CWE-20",
-        "id": "CVE-2022-40266",
-        "impact": {},
-        "last-modified": "2022-11-30T20:02:00",
-        "references": [
-            "https://jvn.jp/vu/JVNVU95633416",
-            "https://www.mitsubishielectric.com/en/psirt/vulnerability/pdf/2022-016_en.pdf"
-        ],
-        "summary": "Improper Input Validation vulnerability in Mitsubishi Electric GOT2000 Series GT27 model FTP server versions 01.39.000 and prior, Mitsubishi Electric GOT2000 Series GT25 model FTP server versions 01.39.000 and prior and Mitsubishi Electric GOT2000 Series GT23 model FTP server versions 01.39.000 and prior allows a remote authenticated attacker to cause a Denial of Service condition by sending specially crafted command."
-    },
-    {
-        "Modified": "2022-11-30T19:52:00",
-        "Published": "2022-11-24T08:15:00",
-        "access": {},
-        "assigner": "security@huntr.dev",
-        "cvss": null,
-        "cwe": "NVD-CWE-Other",
-        "id": "CVE-2022-4136",
-        "impact": {},
-        "last-modified": "2022-11-30T19:52:00",
-        "references": [
-            "https://huntr.dev/bounties/fe418ae1-7c80-4d91-8a5a-923d60ba78c3",
-            "https://github.com/qmpaas/leadshop/commit/f27e9ca5c93eaadda1097396b65c234b16186d67"
-        ],
-        "summary": "Dangerous method exposed which can lead to RCE in qmpass/leadshop v1.4.15 allows an attacker to control the target host by calling any function in leadshop.php via the GET method."
-    },
-    {
-        "Modified": "2022-11-30T19:48:00",
-        "Published": "2022-11-24T07:15:00",
-        "access": {},
-        "assigner": "tbd@nist.gov",
-        "cvss": null,
-        "cwe": "CWE-22",
-        "id": "CVE-2022-44749",
-        "impact": {},
-        "last-modified": "2022-11-30T19:48:00",
-        "references": [
-            "https://www.knime.com/security/advisories"
-        ],
-        "summary": "A directory traversal vulnerability in the ZIP archive extraction routines of KNIME Analytics Platform 3.2.0 and above can result in arbitrary files being overwritten on the user's system. This vulnerability is also known as 'Zip-Slip'. An attacker can create a KNIME workflow that, when being opened by a user, can overwrite arbitrary files that the user has write access to. It's not necessary to execute the workflow, opening the workflow is sufficient. The user will notice that something is wrong because an error is being reported but only after the files have already been written. This can impact data integrity (file contents are changed) or cause errors in other software (vital files being corrupted). It can even lead to remote code execution if executable files are being replaced and subsequently executed by the user. In all cases the attacker has to know the location of files on the user's system, though."
-    },
-    {
-        "Modified": "2022-11-30T19:38:00",
-        "Published": "2022-11-24T07:15:00",
-        "access": {},
-        "assigner": "tbd@nist.gov",
-        "cvss": null,
-        "cwe": "CWE-22",
-        "id": "CVE-2022-44748",
-        "impact": {},
-        "last-modified": "2022-11-30T19:38:00",
-        "references": [
-            "https://www.knime.com/security/advisories"
-        ],
-        "summary": "A directory traversal vulnerability in the ZIP archive extraction routines of KNIME Server since 4.3.0 can result in arbitrary files being overwritten on the server's file system. This vulnerability is also known as 'Zip-Slip'. An attacker can create a KNIME workflow that, when being uploaded, can overwrite arbitrary files that the operating system user running the KNIME Server process has write access to. The user must be authenticated and have permissions to upload files to KNIME Server. This can impact data integrity (file contents are changed) or cause errors in other software (vital files being corrupted). It can even lead to remote code execution if executable files are being replaced and subsequently executed by the KNIME Server process user. In all cases the attacker has to know the location of files on the server's file system, though. Note that users that have permissions to upload workflows usually also have permissions to run them on the KNIME Server and can therefore already execute arbitrary code in the context of the KNIME Executor's operating system user. There is no workaround to prevent this vulnerability from being exploited. Updates to fixed versions 4.13.6, 4.14.3, or 4.15.3 are advised."
-    },
-    {
-        "Modified": "2022-11-30T19:15:00",
-        "Published": "2022-05-11T16:15:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "LOW",
-            "vector": "LOCAL"
-        },
-        "assigner": "cve@checkpoint.com",
-        "cvss": 4.6,
-        "cvss-time": "2022-11-30T19:15:00",
-        "cvss-vector": "AV:L/AC:L/Au:N/C:P/I:P/A:P",
-        "cwe": "NVD-CWE-noinfo",
-        "id": "CVE-2022-23743",
-        "impact": {
-            "availability": "PARTIAL",
-            "confidentiality": "PARTIAL",
-            "integrity": "PARTIAL"
-        },
-        "last-modified": "2022-11-30T19:15:00",
-        "references": [
-            "https://www.zonealarm.com/software/extreme-security/release-history"
-        ],
-        "summary": "Check Point ZoneAlarm before version 15.8.200.19118 allows a local actor to escalate privileges during the upgrade process. In addition, weak permissions in the ProgramData\\CheckPoint\\ZoneAlarm\\Data\\Updates directory allow a local attacker the ability to execute an arbitrary file write, leading to execution of code as local system, in ZoneAlarm versions before v15.8.211.192119"
     }
 ]
