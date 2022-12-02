@@ -1,5 +1,974 @@
 [
     {
+        "Modified": "2022-12-02T18:59:00",
+        "Published": "2022-11-30T13:15:00",
+        "access": {},
+        "assigner": "report@snyk.io",
+        "cvss": null,
+        "cwe": "CWE-77",
+        "id": "CVE-2022-22984",
+        "impact": {},
+        "last-modified": "2022-12-02T18:59:00",
+        "references": [
+            "https://security.snyk.io/vuln/SNYK-JS-SNYKMVNPLUGIN-3038623",
+            "https://security.snyk.io/vuln/SNYK-JS-SNYKSNYKHEXPLUGIN-3039680",
+            "https://github.com/snyk/cli/commit/80d97a93326406e09776156daf72e3caa03ae25a",
+            "https://www.imperva.com/blog/how-scanning-your-projects-for-security-issues-can-lead-to-remote-code-execution/",
+            "https://security.snyk.io/vuln/SNYK-JS-SNYKGRADLEPLUGIN-3038624",
+            "https://github.com/snyk/snyk-python-plugin/commit/8591abdd9236108ac3e30c70c09238d6bb6aabf4",
+            "https://github.com/snyk/snyk-sbt-plugin/commit/99c09eb12c9f8f2b237aea9627aab1ae3cab6437",
+            "https://github.com/snyk/snyk-cocoapods-plugin/commit/c73e049c5200772babde61c40aab57296bf91381",
+            "https://security.snyk.io/vuln/SNYK-JS-SNYK-3038622",
+            "https://security.snyk.io/vuln/SNYK-JS-SNYKDOCKERPLUGIN-3039679",
+            "https://security.snyk.io/vuln/SNYK-JS-SNYKSNYKCOCOAPODSPLUGIN-3038625",
+            "https://security.snyk.io/vuln/SNYK-JS-SNYKSBTPLUGIN-3038626",
+            "https://github.com/snyk/snyk-gradle-plugin/commit/bb1c1c72a75e97723a76b14d2d73f70744ed5009",
+            "https://security.snyk.io/vuln/SNYK-JS-SNYKPYTHONPLUGIN-3039677",
+            "https://github.com/snyk/snyk-hex-plugin/commit/e8dd2a330b40d7fc0ab47e34413e80a0146d7ac3",
+            "https://github.com/snyk/snyk-docker-plugin/commit/d730d7630691a61587b120bb11daaaf4b58a8357",
+            "https://github.com/snyk/snyk-mvn-plugin/commit/02cda9ba1ea36b00ead3f6ec2de0f97397ebec50"
+        ],
+        "summary": "The package snyk before 1.1064.0; the package snyk-mvn-plugin before 2.31.3; the package snyk-gradle-plugin before 3.24.5; the package @snyk/snyk-cocoapods-plugin before 2.5.3; the package snyk-sbt-plugin before 2.16.2; the package snyk-python-plugin before 1.24.2; the package snyk-docker-plugin before 5.6.5; the package @snyk/snyk-hex-plugin before 1.1.6 are vulnerable to Command Injection due to an incomplete fix for [CVE-2022-40764](https://security.snyk.io/vuln/SNYK-JS-SNYK-3037342). A successful exploit allows attackers to run arbitrary commands on the host system where the Snyk CLI is installed by passing in crafted command line flags. In order to exploit this vulnerability, a user would have to execute the snyk test command on untrusted files. In most cases, an attacker positioned to control the command line arguments to the Snyk CLI would already be positioned to execute arbitrary commands. However, this could be abused in specific scenarios, such as continuous integration pipelines, where developers can control the arguments passed to the Snyk CLI to leverage this component as part of a wider attack against an integration/build pipeline. This issue has been addressed in the latest Snyk Docker images available at https://hub.docker.com/r/snyk/snyk as of 2022-11-29. Images downloaded and built prior to that date should be updated. The issue has also been addressed in the Snyk TeamCity CI/CD plugin as of version v20221130.093605."
+    },
+    {
+        "Modified": "2022-12-02T18:57:00",
+        "Published": "2022-11-29T23:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-522",
+        "id": "CVE-2022-46155",
+        "impact": {},
+        "last-modified": "2022-12-02T18:57:00",
+        "references": [
+            "https://github.com/Airtable/airtable.js/security/advisories/GHSA-vqm5-9546-x25v",
+            "https://github.com/Airtable/airtable.js/releases/tag/v0.11.6",
+            "https://github.com/Airtable/airtable.js/pull/330/commits/b468d8fe48d75e3d5fe46d0ea7770f4658951ed0"
+        ],
+        "summary": "Airtable.js is the JavaScript client for Airtable. Prior to version 0.11.6, Airtable.js had a misconfigured build script in its source package. When the build script is run, it would bundle environment variables into the build target of a transpiled bundle. Specifically, the AIRTABLE_API_KEY and AIRTABLE_ENDPOINT_URL environment variables are inserted during Browserify builds due to being referenced in Airtable.js code. This only affects copies of Airtable.js built from its source, not those installed via npm or yarn. Airtable API keys set in users\u2019 environments via the AIRTABLE_API_KEY environment variable may be bundled into local copies of Airtable.js source code if all of the following conditions are met: 1) the user has cloned the Airtable.js source onto their machine, 2) the user runs the `npm prepare` script, and 3) the user' has the AIRTABLE_API_KEY environment variable set. If these conditions are met, a user\u2019s local build of Airtable.js would be modified to include the value of the AIRTABLE_API_KEY environment variable, which could then be accidentally shipped in the bundled code. Users who do not meet all three of these conditions are not impacted by this issue. Users should upgrade to Airtable.js version 0.11.6 or higher; or, as a workaround unset the AIRTABLE_API_KEY environment variable in their shell and/or remove it from your .bashrc, .zshrc, or other shell configuration files. Users should also regenerate any Airtable API keys they use, as the keysy may be present in bundled code."
+    },
+    {
+        "Modified": "2022-12-02T18:48:00",
+        "Published": "2022-12-01T08:15:00",
+        "access": {},
+        "assigner": "cna@vuldb.com",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2022-4249",
+        "impact": {},
+        "last-modified": "2022-12-02T18:48:00",
+        "references": [
+            "https://vuldb.com/?id.214626",
+            "https://github.com/aman05382/movie_ticket_booking_system_php/issues/5"
+        ],
+        "summary": "A vulnerability, which was classified as problematic, was found in Movie Ticket Booking System. Affected is an unknown function of the component POST Request Handler. The manipulation of the argument ORDER_ID leads to cross site scripting. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used. VDB-214626 is the identifier assigned to this vulnerability."
+    },
+    {
+        "Modified": "2022-12-02T18:45:00",
+        "Published": "2022-11-29T17:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-129",
+        "id": "CVE-2022-46152",
+        "impact": {},
+        "last-modified": "2022-12-02T18:45:00",
+        "references": [
+            "https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?vector=AV:L/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H/E:U/RL:X/RC:X/CR:M/IR:M/AR:M/MAV:L/MAC:L/MPR:H/MUI:N/MS:C/MC:H/MI:H/MA:H&version=3.1",
+            "https://github.com/OP-TEE/optee_os/commit/728616b28df659cf0bdde6e58a471f6ef25d023c",
+            "https://github.com/OP-TEE/optee_os/blob/c2d449482de098f1c894b94f338440e5a327813d/core/tee/entry_std.c#L257",
+            "https://github.com/OP-TEE/optee_os/security/advisories/GHSA-65w8-6mrg-52g7"
+        ],
+        "summary": "OP-TEE Trusted OS is the secure side implementation of OP-TEE project, a Trusted Execution Environment. Versions prior to 3.19.0, contain an Improper Validation of Array Index vulnerability. The function `cleanup_shm_refs()` is called by both `entry_invoke_command()` and `entry_open_session()`. The commands `OPTEE_MSG_CMD_OPEN_SESSION` and `OPTEE_MSG_CMD_INVOKE_COMMAND` can be executed from the normal world via an OP-TEE SMC. This function is not validating the `num_params` argument, which is only limited to `OPTEE_MSG_MAX_NUM_PARAMS` (127) in the function `get_cmd_buffer()`. Therefore, an attacker in the normal world can craft an SMC call that will cause out-of-bounds reading in `cleanup_shm_refs` and potentially freeing of fake-objects in the function `mobj_put()`. A normal-world attacker with permission to execute SMC instructions may exploit this flaw. Maintainers believe this problem permits local privilege escalation from the normal world to the secure world. Version 3.19.0 contains a fix for this issue. There are no known workarounds."
+    },
+    {
+        "Modified": "2022-12-02T18:43:00",
+        "Published": "2022-12-01T08:15:00",
+        "access": {},
+        "assigner": "cna@vuldb.com",
+        "cvss": null,
+        "cwe": "CWE-707",
+        "id": "CVE-2022-4253",
+        "impact": {},
+        "last-modified": "2022-12-02T18:43:00",
+        "references": [
+            "https://vuldb.com/?id.214630",
+            "https://blog.csdn.net/weixin_43864034/article/details/128127516"
+        ],
+        "summary": "A vulnerability was found in SourceCodester Canteen Management System. It has been declared as problematic. This vulnerability affects the function builtin_echo of the file customer.php. The manipulation leads to cross site scripting. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used. VDB-214630 is the identifier assigned to this vulnerability."
+    },
+    {
+        "Modified": "2022-12-02T18:41:00",
+        "Published": "2022-12-01T08:15:00",
+        "access": {},
+        "assigner": "cna@vuldb.com",
+        "cvss": null,
+        "cwe": "CWE-707",
+        "id": "CVE-2022-4252",
+        "impact": {},
+        "last-modified": "2022-12-02T18:41:00",
+        "references": [
+            "https://vuldb.com/?id.214629",
+            "https://blog.csdn.net/weixin_43864034/article/details/128127288"
+        ],
+        "summary": "A vulnerability was found in SourceCodester Canteen Management System. It has been classified as problematic. This affects the function builtin_echo of the file categories.php. The manipulation leads to cross site scripting. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. The identifier VDB-214629 was assigned to this vulnerability."
+    },
+    {
+        "Modified": "2022-12-02T18:29:00",
+        "Published": "2022-11-30T14:15:00",
+        "access": {},
+        "assigner": "cna@vuldb.com",
+        "cvss": null,
+        "cwe": "CWE-78",
+        "id": "CVE-2021-4242",
+        "impact": {},
+        "last-modified": "2022-12-02T18:29:00",
+        "references": [
+            "https://github.com/smallpiggy/Sapido--rce/blob/main/Sapido%E8%B7%AF%E7%94%B1%E5%99%A8-rce.py",
+            "https://blog.csdn.net/qq_44159028/article/details/114590267",
+            "https://vuldb.com/?id.214592"
+        ],
+        "summary": "A vulnerability was found in Sapido BR270n, BRC76n, GR297 and RB1732 and classified as critical. Affected by this issue is some unknown functionality of the file ip/syscmd.htm. The manipulation leads to os command injection. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. The identifier of this vulnerability is VDB-214592."
+    },
+    {
+        "Modified": "2022-12-02T18:26:00",
+        "Published": "2022-12-01T08:15:00",
+        "access": {},
+        "assigner": "cna@vuldb.com",
+        "cvss": null,
+        "cwe": "CWE-707",
+        "id": "CVE-2022-4248",
+        "impact": {},
+        "last-modified": "2022-12-02T18:26:00",
+        "references": [
+            "https://vuldb.com/?id.214625",
+            "https://github.com/aman05382/movie_ticket_booking_system_php/issues/3"
+        ],
+        "summary": "A vulnerability, which was classified as critical, has been found in Movie Ticket Booking System. This issue affects some unknown processing of the file editBooking.php. The manipulation of the argument id leads to sql injection. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. The identifier VDB-214625 was assigned to this vulnerability."
+    },
+    {
+        "Modified": "2022-12-02T18:18:00",
+        "Published": "2022-12-02T18:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-45646",
+        "impact": {},
+        "last-modified": "2022-12-02T18:18:00",
+        "references": [
+            "https://github.com/Double-q1015/CVE-vulns/blob/main/tenda_ac6/formSetClientState_limitSpeedUp/formSetClientState_limitSpeed.md"
+        ],
+        "summary": "Tenda AC6V1.0 V15.03.05.19 was discovered to contain a buffer overflow via the limitSpeedUp parameter in the formSetClientState function."
+    },
+    {
+        "Modified": "2022-12-02T18:18:00",
+        "Published": "2022-12-02T18:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-45649",
+        "impact": {},
+        "last-modified": "2022-12-02T18:18:00",
+        "references": [
+            "https://github.com/Double-q1015/CVE-vulns/blob/main/tenda_ac6/formSetPPTPServer_endIp/formSetPPTPServer_endIp.md"
+        ],
+        "summary": "Tenda AC6V1.0 V15.03.05.19 was discovered to contain a buffer overflow via the endIp parameter in the formSetPPTPServer function."
+    },
+    {
+        "Modified": "2022-12-02T18:18:00",
+        "Published": "2022-12-02T18:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-45651",
+        "impact": {},
+        "last-modified": "2022-12-02T18:18:00",
+        "references": [
+            "https://github.com/Double-q1015/CVE-vulns/blob/main/tenda_ac6/formSetVirtualSer/formSetVirtualSer.md"
+        ],
+        "summary": "Tenda AC6V1.0 V15.03.05.19 was discovered to contain a buffer overflow via the list parameter in the formSetVirtualSer function."
+    },
+    {
+        "Modified": "2022-12-02T18:18:00",
+        "Published": "2022-12-02T18:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-45655",
+        "impact": {},
+        "last-modified": "2022-12-02T18:18:00",
+        "references": [
+            "https://github.com/Double-q1015/CVE-vulns/blob/main/tenda_ac6/form_fast_setting_wifi_set_timeZone/form_fast_setting_wifi_set_timeZone.md"
+        ],
+        "summary": "Tenda AC6V1.0 V15.03.05.19 was discovered to contain a buffer overflow via the timeZone parameter in the form_fast_setting_wifi_set function."
+    },
+    {
+        "Modified": "2022-12-02T18:18:00",
+        "Published": "2022-12-02T18:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-45656",
+        "impact": {},
+        "last-modified": "2022-12-02T18:18:00",
+        "references": [
+            "https://github.com/Double-q1015/CVE-vulns/blob/main/tenda_ac6/fromSetSysTime/fromSetSysTime.md"
+        ],
+        "summary": "Tenda AC6V1.0 V15.03.05.19 was discovered to contain a buffer overflow via the time parameter in the fromSetSysTime function."
+    },
+    {
+        "Modified": "2022-12-02T18:18:00",
+        "Published": "2022-12-02T18:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-45657",
+        "impact": {},
+        "last-modified": "2022-12-02T18:18:00",
+        "references": [
+            "https://github.com/Double-q1015/CVE-vulns/blob/main/tenda_ac6/fromSetIpMacBind/fromSetIpMacBind.md"
+        ],
+        "summary": "Tenda AC6V1.0 V15.03.05.19 was discovered to contain a buffer overflow via the list parameter in the fromSetIpMacBind function."
+    },
+    {
+        "Modified": "2022-12-02T18:18:00",
+        "Published": "2022-12-02T18:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-45658",
+        "impact": {},
+        "last-modified": "2022-12-02T18:18:00",
+        "references": [
+            "https://github.com/Double-q1015/CVE-vulns/blob/main/tenda_ac6/setSchedWifi_schedEndTime/setSchedWifi_schedEndTime.md"
+        ],
+        "summary": "Tenda AC6V1.0 V15.03.05.19 was discovered to contain a buffer overflow via the schedEndTime parameter in the setSchedWifi function."
+    },
+    {
+        "Modified": "2022-12-02T18:18:00",
+        "Published": "2022-12-02T18:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-45659",
+        "impact": {},
+        "last-modified": "2022-12-02T18:18:00",
+        "references": [
+            "https://github.com/Double-q1015/CVE-vulns/blob/main/tenda_ac6/fromSetWirelessRepeat/fromSetWirelessRepeat.md"
+        ],
+        "summary": "Tenda AC6V1.0 V15.03.05.19 was discovered to contain a buffer overflow via the wpapsk_crypto parameter in the fromSetWirelessRepeat function."
+    },
+    {
+        "Modified": "2022-12-02T18:18:00",
+        "Published": "2022-12-02T18:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-45660",
+        "impact": {},
+        "last-modified": "2022-12-02T18:18:00",
+        "references": [
+            "https://github.com/Double-q1015/CVE-vulns/blob/main/tenda_ac6/setSchedWifi_schedStartTime/setSchedWifi_schedStartTime.md"
+        ],
+        "summary": "Tenda AC6V1.0 V15.03.05.19 was discovered to contain a buffer overflow via the schedStartTime parameter in the setSchedWifi function."
+    },
+    {
+        "Modified": "2022-12-02T18:18:00",
+        "Published": "2022-12-02T18:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-45661",
+        "impact": {},
+        "last-modified": "2022-12-02T18:18:00",
+        "references": [
+            "https://github.com/Double-q1015/CVE-vulns/blob/main/tenda_ac6/setSmartPowerManagement/setSmartPowerManagement.md"
+        ],
+        "summary": "Tenda AC6V1.0 V15.03.05.19 was discovered to contain a buffer overflow via the time parameter in the setSmartPowerManagement function."
+    },
+    {
+        "Modified": "2022-12-02T18:18:00",
+        "Published": "2022-12-02T18:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-45663",
+        "impact": {},
+        "last-modified": "2022-12-02T18:18:00",
+        "references": [
+            "https://github.com/Double-q1015/CVE-vulns/blob/main/tenda_i22/formWifiMacFilterSet/formWifiMacFilterSet.md"
+        ],
+        "summary": "Tenda i22 V1.0.0.3(4687) was discovered to contain a buffer overflow via the index parameter in the formWifiMacFilterSet function."
+    },
+    {
+        "Modified": "2022-12-02T18:18:00",
+        "Published": "2022-12-02T18:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-45664",
+        "impact": {},
+        "last-modified": "2022-12-02T18:18:00",
+        "references": [
+            "https://github.com/Double-q1015/CVE-vulns/blob/main/tenda_i22/formwrlSSIDget/formWifiMacFilterGet.md"
+        ],
+        "summary": "Tenda i22 V1.0.0.3(4687) was discovered to contain a buffer overflow via the list parameter in the formwrlSSIDget function."
+    },
+    {
+        "Modified": "2022-12-02T18:18:00",
+        "Published": "2022-12-02T18:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-45667",
+        "impact": {},
+        "last-modified": "2022-12-02T18:18:00",
+        "references": [
+            "https://github.com/Double-q1015/CVE-vulns/blob/main/tenda_i22/fromSysToolRestoreSet/fromSysToolRestoreSet.md"
+        ],
+        "summary": "Tenda i22 V1.0.0.3(4687) is vulnerable to Cross Site Request Forgery (CSRF) via function fromSysToolRestoreSet."
+    },
+    {
+        "Modified": "2022-12-02T18:18:00",
+        "Published": "2022-12-02T18:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-45668",
+        "impact": {},
+        "last-modified": "2022-12-02T18:18:00",
+        "references": [
+            "https://github.com/Double-q1015/CVE-vulns/blob/main/tenda_i22/fromSysToolReboot/fromSysToolReboot.md"
+        ],
+        "summary": "Tenda i22 V1.0.0.3(4687) is vulnerable to Cross Site Request Forgery (CSRF) via function fromSysToolReboot."
+    },
+    {
+        "Modified": "2022-12-02T18:18:00",
+        "Published": "2022-12-02T18:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-45669",
+        "impact": {},
+        "last-modified": "2022-12-02T18:18:00",
+        "references": [
+            "https://github.com/ConfusedChenSir/VulnerabilityProjectRecords/blob/main/formWifiMacFilterGet/formWifiMacFilterGet.md"
+        ],
+        "summary": "Tenda i22 V1.0.0.3(4687) was discovered to contain a buffer overflow via the index parameter in the formWifiMacFilterGet function."
+    },
+    {
+        "Modified": "2022-12-02T18:18:00",
+        "Published": "2022-12-02T18:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-45670",
+        "impact": {},
+        "last-modified": "2022-12-02T18:18:00",
+        "references": [
+            "https://github.com/ConfusedChenSir/VulnerabilityProjectRecords/blob/main/formSetAutoPing_ping1/formSetAutoPing_ping1.md"
+        ],
+        "summary": "Tenda i22 V1.0.0.3(4687) was discovered to contain a buffer overflow via the ping1 parameter in the formSetAutoPing function."
+    },
+    {
+        "Modified": "2022-12-02T18:18:00",
+        "Published": "2022-12-02T18:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-45641",
+        "impact": {},
+        "last-modified": "2022-12-02T18:18:00",
+        "references": [
+            "https://github.com/Double-q1015/CVE-vulns/blob/main/tenda_ac6/formSetMacFilterCfg/formSetMacFilterCfg.md"
+        ],
+        "summary": "Tenda AC6V1.0 V15.03.05.19 is vulnerable to Buffer Overflow via formSetMacFilterCfg."
+    },
+    {
+        "Modified": "2022-12-02T18:18:00",
+        "Published": "2022-12-02T18:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-45643",
+        "impact": {},
+        "last-modified": "2022-12-02T18:18:00",
+        "references": [
+            "https://github.com/Double-q1015/CVE-vulns/blob/main/tenda_ac6/addWifiMacFilter_deviceId/addWifiMacFilter_deviceId.md"
+        ],
+        "summary": "Tenda AC6V1.0 V15.03.05.19 was discovered to contain a buffer overflow via the deviceId parameter in the addWifiMacFilter function."
+    },
+    {
+        "Modified": "2022-12-02T18:18:00",
+        "Published": "2022-12-02T18:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-45644",
+        "impact": {},
+        "last-modified": "2022-12-02T18:18:00",
+        "references": [
+            "https://github.com/Double-q1015/CVE-vulns/blob/main/tenda_ac6/formSetClientState_deviceId/formSetClientState_deviceId.md"
+        ],
+        "summary": "Tenda AC6V1.0 V15.03.05.19 was discovered to contain a buffer overflow via the deviceId parameter in the formSetClientState function."
+    },
+    {
+        "Modified": "2022-12-02T18:18:00",
+        "Published": "2022-12-02T18:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-45645",
+        "impact": {},
+        "last-modified": "2022-12-02T18:18:00",
+        "references": [
+            "https://github.com/Double-q1015/CVE-vulns/blob/main/tenda_ac6/addWifiMacFilter_deviceMac/addWifiMacFilter_derviceMac.md"
+        ],
+        "summary": "Tenda AC6V1.0 V15.03.05.19 was discovered to contain a buffer overflow via the deviceMac parameter in the addWifiMacFilter function."
+    },
+    {
+        "Modified": "2022-12-02T18:18:00",
+        "Published": "2022-12-02T18:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-45647",
+        "impact": {},
+        "last-modified": "2022-12-02T18:18:00",
+        "references": [
+            "https://github.com/Double-q1015/CVE-vulns/blob/main/tenda_ac6/formSetClientState_limitSpeed/formSetClientState_limitSpeed.md"
+        ],
+        "summary": "Tenda AC6V1.0 V15.03.05.19 was discovered to contain a buffer overflow via the limitSpeed parameter in the formSetClientState function."
+    },
+    {
+        "Modified": "2022-12-02T18:18:00",
+        "Published": "2022-12-02T18:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-45648",
+        "impact": {},
+        "last-modified": "2022-12-02T18:18:00",
+        "references": [
+            "https://github.com/Double-q1015/CVE-vulns/blob/main/tenda_ac6/formSetDeviceName/formSetDeviceName.md"
+        ],
+        "summary": "Tenda AC6V1.0 V15.03.05.19 was discovered to contain a buffer overflow via the devName parameter in the formSetDeviceName function."
+    },
+    {
+        "Modified": "2022-12-02T18:18:00",
+        "Published": "2022-12-02T18:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-45650",
+        "impact": {},
+        "last-modified": "2022-12-02T18:18:00",
+        "references": [
+            "https://github.com/Double-q1015/CVE-vulns/blob/main/tenda_ac6/formSetFirewallCfg/formSetFirewallCfg.md"
+        ],
+        "summary": "Tenda AC6V1.0 V15.03.05.19 was discovered to contain a buffer overflow via the firewallEn parameter in the formSetFirewallCfg function."
+    },
+    {
+        "Modified": "2022-12-02T18:18:00",
+        "Published": "2022-12-02T18:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-45653",
+        "impact": {},
+        "last-modified": "2022-12-02T18:18:00",
+        "references": [
+            "https://github.com/Double-q1015/CVE-vulns/blob/main/tenda_ac6/fromNatStaticSetting/fromNatStaticSetting_page.md"
+        ],
+        "summary": "Tenda AC6V1.0 V15.03.05.19 was discovered to contain a buffer overflow via the page parameter in the fromNatStaticSetting function."
+    },
+    {
+        "Modified": "2022-12-02T18:18:00",
+        "Published": "2022-12-02T18:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-45652",
+        "impact": {},
+        "last-modified": "2022-12-02T18:18:00",
+        "references": [
+            "https://github.com/Double-q1015/CVE-vulns/blob/main/tenda_ac6/formSetPPTPServer_startIp/formSetPPTPServer_startIp.md"
+        ],
+        "summary": "Tenda AC6V1.0 V15.03.05.19 was discovered to contain a buffer overflow via the startIp parameter in the formSetPPTPServer function."
+    },
+    {
+        "Modified": "2022-12-02T18:18:00",
+        "Published": "2022-12-02T18:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-45671",
+        "impact": {},
+        "last-modified": "2022-12-02T18:18:00",
+        "references": [
+            "https://github.com/Double-q1015/CVE-vulns/blob/main/tenda_i22/formSetAppFilterRule/formSetAppFilterRule.md"
+        ],
+        "summary": "Tenda i22 V1.0.0.3(4687) was discovered to contain a buffer overflow via the appData parameter in the formSetAppFilterRule function."
+    },
+    {
+        "Modified": "2022-12-02T18:18:00",
+        "Published": "2022-12-02T18:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-45654",
+        "impact": {},
+        "last-modified": "2022-12-02T18:18:00",
+        "references": [
+            "https://github.com/Double-q1015/CVE-vulns/blob/main/tenda_ac6/form_fast_setting_wifi_set_ssid/form_fast_setting_wifi_set_ssid.md"
+        ],
+        "summary": "Tenda AC6V1.0 V15.03.05.19 was discovered to contain a buffer overflow via the ssid parameter in the form_fast_setting_wifi_set function."
+    },
+    {
+        "Modified": "2022-12-02T18:18:00",
+        "Published": "2022-12-02T18:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-45672",
+        "impact": {},
+        "last-modified": "2022-12-02T18:18:00",
+        "references": [
+            "https://github.com/Double-q1015/CVE-vulns/blob/main/tenda_i22/formWx3AuthorizeSet/formWx3AuthorizeSet.md"
+        ],
+        "summary": "Tenda i22 V1.0.0.3(4687) was discovered to contain a buffer overflow via the formWx3AuthorizeSet function."
+    },
+    {
+        "Modified": "2022-12-02T18:18:00",
+        "Published": "2022-12-02T18:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-287",
+        "id": "CVE-2022-46145",
+        "impact": {},
+        "last-modified": "2022-12-02T18:18:00",
+        "references": [
+            "https://goauthentik.io/docs/releases/2022.11#fixed-in-2022112",
+            "https://goauthentik.io/docs/releases/2022.10#fixed-in-2022102",
+            "https://github.com/goauthentik/authentik/security/advisories/GHSA-mjfw-54m5-fvjf"
+        ],
+        "summary": "authentik is an open-source identity provider. Versions prior to 2022.11.2 and 2022.10.2 are vulnerable to unauthorized user creation and potential account takeover. With the default flows, unauthenticated users can create new accounts in authentik. If a flow exists that allows for email-verified password recovery, this can be used to overwrite the email address of admin accounts and take over their accounts. authentik 2022.11.2 and 2022.10.2 fix this issue. As a workaround, a policy can be created and bound to the `default-user-settings-flow flow` with the contents `return request.user.is_authenticated`."
+    },
+    {
+        "Modified": "2022-12-02T18:15:00",
+        "Published": "2009-03-09T21:30:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "MEDIUM",
+            "vector": "NETWORK"
+        },
+        "assigner": "cve@mitre.org",
+        "cvss": 4.3,
+        "cvss-time": "2022-12-02T18:15:00",
+        "cvss-vector": "AV:N/AC:M/Au:N/C:N/I:P/A:N",
+        "cwe": "CWE-79",
+        "id": "CVE-2009-0855",
+        "impact": {
+            "availability": "NONE",
+            "confidentiality": "NONE",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-12-02T18:15:00",
+        "references": [
+            "http://www.vupen.com/english/advisories/2009/0607",
+            "http://www-01.ibm.com/support/docview.wss?uid=swg1PK77505",
+            "http://secunia.com/advisories/34131",
+            "http://www-01.ibm.com/support/docview.wss?uid=swg1PK81212",
+            "http://www.securityfocus.com/bid/34001",
+            "http://www-01.ibm.com/support/docview.wss?uid=swg1PK82988",
+            "http://secunia.com/advisories/34461",
+            "http://www.vupen.com/english/advisories/2009/0854",
+            "http://www.securityfocus.com/bid/34259",
+            "http://packetstormsecurity.com/files/170073/IBM-Websphere-Application-Server-7.0-Cross-Site-Scripting.html"
+        ],
+        "summary": "Cross-site scripting (XSS) vulnerability in the administrative console in IBM WebSphere Application Server (WAS) 6.1 before 6.1.0.23 on z/OS allows remote attackers to inject arbitrary web script or HTML via unspecified vectors."
+    },
+    {
+        "Modified": "2022-12-02T18:14:00",
+        "Published": "2022-12-01T08:15:00",
+        "access": {},
+        "assigner": "cna@vuldb.com",
+        "cvss": null,
+        "cwe": "CWE-707",
+        "id": "CVE-2022-4247",
+        "impact": {},
+        "last-modified": "2022-12-02T18:14:00",
+        "references": [
+            "https://vuldb.com/?id.214624",
+            "https://github.com/aman05382/movie_ticket_booking_system_php/issues/1"
+        ],
+        "summary": "A vulnerability classified as critical was found in Movie Ticket Booking System. This vulnerability affects unknown code of the file booking.php. The manipulation of the argument id leads to sql injection. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used. The identifier of this vulnerability is VDB-214624."
+    },
+    {
+        "Modified": "2022-12-02T17:57:00",
+        "Published": "2022-11-30T15:15:00",
+        "access": {},
+        "assigner": "security@m-files.com",
+        "cvss": null,
+        "cwe": "CWE-668",
+        "id": "CVE-2022-1911",
+        "impact": {},
+        "last-modified": "2022-12-02T17:57:00",
+        "references": [
+            "https://www.m-files.com/about/trust-center/security-advisories/cve-2022-1911/"
+        ],
+        "summary": "Error in parser function in M-Files Server versions before 22.6.11534.1 and before 22.6.11505.0 allowed unauthenticated access to some information of the underlying operating system."
+    },
+    {
+        "Modified": "2022-12-02T17:40:00",
+        "Published": "2022-12-02T17:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-44363",
+        "impact": {},
+        "last-modified": "2022-12-02T17:40:00",
+        "references": [
+            "https://github.com/Double-q1015/CVE-vulns/blob/main/Tenda/i21/formSetSnmpInfo/readme.md"
+        ],
+        "summary": "Tenda i21 V1.0.0.14(4656) is vulnerable to Buffer Overflow via /goform/setSnmpInfo."
+    },
+    {
+        "Modified": "2022-12-02T17:40:00",
+        "Published": "2022-12-02T17:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-44367",
+        "impact": {},
+        "last-modified": "2022-12-02T17:40:00",
+        "references": [
+            "https://github.com/Double-q1015/CVE-vulns/blob/main/Tenda/i21/formSetUplinkInfo/readme.md"
+        ],
+        "summary": "Tenda i21 V1.0.0.14(4656) is vulnerable to Buffer Overflow via /goform/setUplinkInfo."
+    },
+    {
+        "Modified": "2022-12-02T17:40:00",
+        "Published": "2022-12-02T17:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-44277",
+        "impact": {},
+        "last-modified": "2022-12-02T17:40:00",
+        "references": [
+            "https://github.com/llwyx200113/bug_report/blob/main/vendors/oretnom23/sanitization-management-system/SQLi-1.md"
+        ],
+        "summary": "Sanitization Management System v1.0 is vulnerable to SQL Injection via /php-sms/classes/Master.php?f=delete_product."
+    },
+    {
+        "Modified": "2022-12-02T17:40:00",
+        "Published": "2022-12-02T17:15:00",
+        "access": {},
+        "assigner": "security@huntr.dev",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-3591",
+        "impact": {},
+        "last-modified": "2022-12-02T17:40:00",
+        "references": [
+            "https://github.com/vim/vim/commit/8f3c3c6cd044e3b5bf08dbfa3b3f04bb3f711bad",
+            "https://huntr.dev/bounties/a5a998c2-4b07-47a7-91be-dbc1886b3921"
+        ],
+        "summary": "Use After Free in GitHub repository vim/vim prior to 9.0.0789."
+    },
+    {
+        "Modified": "2022-12-02T17:40:00",
+        "Published": "2022-12-02T17:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-44345",
+        "impact": {},
+        "last-modified": "2022-12-02T17:40:00",
+        "references": [
+            "https://github.com/BGP-OSPF/bug_report/blob/main/vendors/oretnom23/sanitization-management-system/SQLi-1.md"
+        ],
+        "summary": "Sanitization Management System v1.0 is vulnerable to SQL Injection via /php-sms/admin/?page=quotes/view_quote&id=."
+    },
+    {
+        "Modified": "2022-12-02T17:40:00",
+        "Published": "2022-12-02T17:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-44347",
+        "impact": {},
+        "last-modified": "2022-12-02T17:40:00",
+        "references": [
+            "https://github.com/BGP-OSPF/bug_report/blob/main/vendors/oretnom23/sanitization-management-system/SQLi-2.md"
+        ],
+        "summary": "Sanitization Management System v1.0 is vulnerable to SQL Injection via /php-sms/admin/?page=inquiries/view_inquiry&id=."
+    },
+    {
+        "Modified": "2022-12-02T17:40:00",
+        "Published": "2022-12-02T17:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-44348",
+        "impact": {},
+        "last-modified": "2022-12-02T17:40:00",
+        "references": [
+            "https://github.com/BGP-OSPF/bug_report/blob/main/vendors/oretnom23/sanitization-management-system/SQLi-3.md"
+        ],
+        "summary": "Sanitization Management System v1.0 is vulnerable to SQL Injection via /php-sms/admin/orders/update_status.php?id=."
+    },
+    {
+        "Modified": "2022-12-02T17:40:00",
+        "Published": "2022-12-02T17:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-44362",
+        "impact": {},
+        "last-modified": "2022-12-02T17:40:00",
+        "references": [
+            "https://github.com/Double-q1015/CVE-vulns/blob/main/Tenda/i21/formAddSysLogRule/readme.md"
+        ],
+        "summary": "Tenda i21 V1.0.0.14(4656) is vulnerable to Buffer Overflow via /goform/AddSysLogRule."
+    },
+    {
+        "Modified": "2022-12-02T17:40:00",
+        "Published": "2022-12-02T17:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-44365",
+        "impact": {},
+        "last-modified": "2022-12-02T17:40:00",
+        "references": [
+            "https://github.com/Double-q1015/CVE-vulns/blob/main/Tenda/i21/formSetSysPwd/readme.md"
+        ],
+        "summary": "Tenda i21 V1.0.0.14(4656) has a stack overflow vulnerability via /goform/setSysPwd."
+    },
+    {
+        "Modified": "2022-12-02T17:40:00",
+        "Published": "2022-12-02T17:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-44366",
+        "impact": {},
+        "last-modified": "2022-12-02T17:40:00",
+        "references": [
+            "https://github.com/Double-q1015/CVE-vulns/blob/main/Tenda/i21/formSetDiagnoseInfo/readme.md"
+        ],
+        "summary": "Tenda i21 V1.0.0.14(4656) is vulnerable to Buffer Overflow via /goform/setDiagnoseInfo."
+    },
+    {
+        "Modified": "2022-12-02T17:40:00",
+        "Published": "2022-12-02T17:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-45673",
+        "impact": {},
+        "last-modified": "2022-12-02T17:40:00",
+        "references": [
+            "https://github.com/ConfusedChenSir/VulnerabilityProjectRecords/blob/main/fromSysToolRestoreSet/fromSysToolRestoreSet.md"
+        ],
+        "summary": "Tenda AC6V1.0 V15.03.05.19 is vulnerable to Cross Site Request Forgery (CSRF) via function fromSysToolRestoreSet."
+    },
+    {
+        "Modified": "2022-12-02T17:40:00",
+        "Published": "2022-12-02T17:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-44367",
+        "impact": {},
+        "last-modified": "2022-12-02T17:40:00",
+        "references": [
+            "https://github.com/Double-q1015/CVE-vulns/blob/main/Tenda/i21/formSetUplinkInfo/readme.md"
+        ],
+        "summary": "Tenda i21 V1.0.0.14(4656) is vulnerable to Buffer Overflow via /goform/setUplinkInfo."
+    },
+    {
+        "Modified": "2022-12-02T17:40:00",
+        "Published": "2022-12-02T17:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-45674",
+        "impact": {},
+        "last-modified": "2022-12-02T17:40:00",
+        "references": [
+            "https://github.com/ConfusedChenSir/VulnerabilityProjectRecords/blob/main/fromSysToolReboot/fromSysToolReboot.md"
+        ],
+        "summary": "Tenda AC6V1.0 V15.03.05.19 is vulnerable to Cross Site Request Forgery (CSRF) via function fromSysToolReboot."
+    },
+    {
+        "Modified": "2022-12-02T17:36:00",
+        "Published": "2022-12-01T08:15:00",
+        "access": {},
+        "assigner": "cna@vuldb.com",
+        "cvss": null,
+        "cwe": "CWE-404",
+        "id": "CVE-2022-4246",
+        "impact": {},
+        "last-modified": "2022-12-02T17:36:00",
+        "references": [
+            "https://seclists.org/fulldisclosure/2022/Nov/att-16/potplayer_7z.bin",
+            "https://vuldb.com/?id.214623",
+            "https://seclists.org/fulldisclosure/2022/Nov/16"
+        ],
+        "summary": "A vulnerability classified as problematic has been found in Kakao PotPlayer. This affects an unknown part of the component MID File Handler. The manipulation leads to denial of service. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-214623."
+    },
+    {
+        "Modified": "2022-12-02T17:35:00",
+        "Published": "2022-11-30T15:15:00",
+        "access": {},
+        "assigner": "security@m-files.com",
+        "cvss": null,
+        "cwe": "CWE-269",
+        "id": "CVE-2022-1606",
+        "impact": {},
+        "last-modified": "2022-12-02T17:35:00",
+        "references": [
+            "https://www.m-files.com/about/trust-center/security-advisories/cve-2022-1606/"
+        ],
+        "summary": "Incorrect privilege assignment in M-Files Server versions before 22.3.11164.0 and before 22.3.11237.1 allows user to read unmanaged objects."
+    },
+    {
+        "Modified": "2022-12-02T17:27:00",
+        "Published": "2022-12-01T05:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "NVD-CWE-noinfo",
+        "id": "CVE-2022-44262",
+        "impact": {},
+        "last-modified": "2022-12-02T17:27:00",
+        "references": [
+            "https://github.com/ff4j/ff4j/issues/624"
+        ],
+        "summary": "ff4j 1.8.1 is vulnerable to Remote Code Execution (RCE)."
+    },
+    {
+        "Modified": "2022-12-02T17:27:00",
+        "Published": "2022-11-30T15:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2021-31740",
+        "impact": {},
+        "last-modified": "2022-12-02T17:27:00",
+        "references": [
+            "https://www.pentagrid.ch/en/blog/multiple-vulnerabilities-in-seppmail/"
+        ],
+        "summary": "SEPPMail's web frontend, user input is not embedded correctly in the web page and therefore leads to cross-site scripting vulnerabilities (XSS)."
+    },
+    {
+        "Modified": "2022-12-02T17:24:00",
+        "Published": "2022-12-01T05:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2022-40849",
+        "impact": {},
+        "last-modified": "2022-12-02T17:24:00",
+        "references": [
+            "https://github.com/thinkcmf/thinkcmf/issues/737"
+        ],
+        "summary": "ThinkCMF version 6.0.7 is affected by Stored Cross-Site Scripting (XSS). An attacker who successfully exploited this vulnerability could inject a Persistent XSS payload in the Slideshow Management section that execute arbitrary JavaScript code on the client side, e.g., to steal the administrator's PHP session token (PHPSESSID)."
+    },
+    {
+        "Modified": "2022-12-02T17:18:00",
+        "Published": "2022-11-30T14:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2022-38802",
+        "impact": {},
+        "last-modified": "2022-12-02T17:18:00",
+        "references": [
+            "https://www.zkteco.com/",
+            "https://gist.github.com/hamoshwani/fd7e3d9d9ff8896f1ccf8426dccaf97e"
+        ],
+        "summary": "Zkteco BioTime < 8.5.3 Build:20200816.447 is vulnerable to Incorrect Access Control via resign, private message, manual log, time interval, attshift, and holiday. An authenticated administrator can read local files by exploiting XSS into a pdf generator when exporting data as a PDF"
+    },
+    {
+        "Modified": "2022-12-02T17:18:00",
+        "Published": "2022-11-30T14:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2022-38803",
+        "impact": {},
+        "last-modified": "2022-12-02T17:18:00",
+        "references": [
+            "https://gist.github.com/hamoshwani/44653bfe7b8cc461692a2f074b1ef475",
+            "https://www.zkteco.com/"
+        ],
+        "summary": "Zkteco BioTime < 8.5.3 Build:20200816.447 is vulnerable to Incorrect Access Control via Leave, overtime, Manual log. An authenticated employee can read local files by exploiting XSS into a pdf generator when exporting data as a PDF"
+    },
+    {
+        "Modified": "2022-12-02T17:17:00",
+        "Published": "2022-12-01T05:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-352",
+        "id": "CVE-2022-40489",
+        "impact": {},
+        "last-modified": "2022-12-02T17:17:00",
+        "references": [
+            "https://github.com/thinkcmf/thinkcmf/issues/736"
+        ],
+        "summary": "ThinkCMF version 6.0.7 is affected by a Cross Site Request Forgery (CSRF) vulnerability that allows a Super Administrator user to be injected into administrative users."
+    },
+    {
         "Modified": "2022-12-02T16:57:00",
         "Published": "2022-11-23T21:15:00",
         "access": {},
@@ -625,985 +1594,5 @@
             "https://bulletin.iese.de/post/wp-user-merger_1-5-1_1/"
         ],
         "summary": "The WP User Merger WordPress plugin before 1.5.3 does not properly sanitise and escape a parameter before using it in a SQL statement, leading to a SQL injection exploitable by users with a role as low as admin"
-    },
-    {
-        "Modified": "2022-12-02T12:15:00",
-        "Published": "2022-11-28T14:15:00",
-        "access": {},
-        "assigner": "contact@wpscan.com",
-        "cvss": null,
-        "cwe": "CWE-89",
-        "id": "CVE-2022-3768",
-        "impact": {},
-        "last-modified": "2022-12-02T12:15:00",
-        "references": [
-            "https://wpscan.com/vulnerability/1d8bf5bb-5a17-49b7-a5ba-5f2866e1f8a3",
-            "https://bulletin.iese.de/post/wp-smart-contracts_1-3-11/"
-        ],
-        "summary": "The WPSmartContracts WordPress plugin before 1.3.12 does not properly sanitise and escape a parameter before using it in a SQL statement, leading to a SQL injection exploitable by users with a role as low as author"
-    },
-    {
-        "Modified": "2022-12-02T12:15:00",
-        "Published": "2022-11-28T14:15:00",
-        "access": {},
-        "assigner": "contact@wpscan.com",
-        "cvss": null,
-        "cwe": "CWE-89",
-        "id": "CVE-2022-3769",
-        "impact": {},
-        "last-modified": "2022-12-02T12:15:00",
-        "references": [
-            "https://wpscan.com/vulnerability/2f9ffc1e-c8a9-47bb-a76b-d043c93e63f8",
-            "https://bulletin.iese.de/post/owm-weather_5-6-8/"
-        ],
-        "summary": "The OWM Weather WordPress plugin before 5.6.9 does not properly sanitise and escape a parameter before using it in a SQL statement, leading to a SQL injection exploitable by users with a role as low as contributor"
-    },
-    {
-        "Modified": "2022-12-02T12:15:00",
-        "Published": "2022-11-28T14:15:00",
-        "access": {},
-        "assigner": "contact@wpscan.com",
-        "cvss": null,
-        "cwe": "CWE-89",
-        "id": "CVE-2022-3848",
-        "impact": {},
-        "last-modified": "2022-12-02T12:15:00",
-        "references": [
-            "https://wpscan.com/vulnerability/da1f0313-2576-490e-a95f-bf12de340610",
-            "https://bulletin.iese.de/post/wp-user-merger_1-5-1_2/"
-        ],
-        "summary": "The WP User Merger WordPress plugin before 1.5.3 does not properly sanitise and escape a parameter before using it in a SQL statement, leading to a SQL injection exploitable by users with a role as low as admin"
-    },
-    {
-        "Modified": "2022-12-02T12:15:00",
-        "Published": "2022-11-28T14:15:00",
-        "access": {},
-        "assigner": "contact@wpscan.com",
-        "cvss": null,
-        "cwe": "CWE-89",
-        "id": "CVE-2022-3849",
-        "impact": {},
-        "last-modified": "2022-12-02T12:15:00",
-        "references": [
-            "https://wpscan.com/vulnerability/511327d3-499b-4ad9-8fd3-99f9f7deb4f5",
-            "https://bulletin.iese.de/post/wp-user-merger_1-5-1_3/"
-        ],
-        "summary": "The WP User Merger WordPress plugin before 1.5.3 does not properly sanitise and escape a parameter before using it in a SQL statement, leading to a SQL injection exploitable by users with a role as low as admin"
-    },
-    {
-        "Modified": "2022-12-02T08:15:00",
-        "Published": "2022-11-09T21:15:00",
-        "access": {},
-        "assigner": "psirt@amd.com",
-        "cvss": null,
-        "cwe": "NVD-CWE-noinfo",
-        "id": "CVE-2022-23824",
-        "impact": {},
-        "last-modified": "2022-12-02T08:15:00",
-        "references": [
-            "https://www.amd.com/en/corporate/product-security/bulletin/amd-sb-1040",
-            "http://www.openwall.com/lists/oss-security/2022/11/10/2",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/YTMITQBGC23MSDHUCAPCVGLMVXIBXQTQ/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/NTQMPJC5N6XJYQ232OZFLK47HVZNRBY3/"
-        ],
-        "summary": "IBPB may not prevent return branch predictions from being specified by pre-IBPB branch targets leading to a potential information disclosure."
-    },
-    {
-        "Modified": "2022-12-02T08:15:00",
-        "Published": "2022-11-06T23:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-120",
-        "id": "CVE-2022-40284",
-        "impact": {},
-        "last-modified": "2022-12-02T08:15:00",
-        "references": [
-            "http://www.openwall.com/lists/oss-security/2022/10/31/2",
-            "https://github.com/tuxera/ntfs-3g/releases",
-            "https://lists.debian.org/debian-lts-announce/2022/11/msg00029.html",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/IA2D4PYOR7ABI7BWBMMMYKY2OPHTV2NI/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/2BOQ7YLFT43KLXEN3EB6CS4DP635RJWP/"
-        ],
-        "summary": "A buffer overflow was discovered in NTFS-3G before 2022.10.3. Crafted metadata in an NTFS image can cause code execution. A local attacker can exploit this if the ntfs-3g binary is setuid root. A physically proximate attacker can exploit this if NTFS-3G software is configured to execute upon attachment of an external storage device."
-    },
-    {
-        "Modified": "2022-12-02T04:14:00",
-        "Published": "2022-12-02T03:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-44929",
-        "impact": {},
-        "last-modified": "2022-12-02T04:14:00",
-        "references": [
-            "https://cyber-guy.gitbook.io/cyber-guys-blog/pocs/cve-2022-44929"
-        ],
-        "summary": "An access control issue in D-Link DVG-G5402SP GE_1.03 allows unauthenticated attackers to escalate privileges via arbitrarily editing VoIP SIB profiles."
-    },
-    {
-        "Modified": "2022-12-02T04:14:00",
-        "Published": "2022-12-02T03:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-44930",
-        "impact": {},
-        "last-modified": "2022-12-02T04:14:00",
-        "references": [
-            "https://cyber-guy.gitbook.io/cyber-guys-blog/pocs/cve-2022-44930"
-        ],
-        "summary": "D-Link DHP-W310AV 3.10EU was discovered to contain a command injection vulnerability via the System Checks function."
-    },
-    {
-        "Modified": "2022-12-02T04:14:00",
-        "Published": "2022-12-02T03:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-45562",
-        "impact": {},
-        "last-modified": "2022-12-02T04:14:00",
-        "references": [
-            "https://cyber-guy.gitbook.io/cyber-guys-blog/pocs/cve-2022-45562"
-        ],
-        "summary": "Insecure permissions in Telos Alliance Omnia MPX Node v1.0.0 to v1.4.9 allow attackers to manipulate and access system settings with backdoor account low privilege, this can lead to change hardware settings and execute arbitrary commands in vulnerable system functions that is requires high privilege to access."
-    },
-    {
-        "Modified": "2022-12-02T02:57:00",
-        "Published": "2022-12-02T02:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-43325",
-        "impact": {},
-        "last-modified": "2022-12-02T02:57:00",
-        "references": [
-            "https://cyber-guy.gitbook.io/cyber-guys-blog/pocs/cve-2022-43325"
-        ],
-        "summary": "An unauthenticated command injection vulnerability in the product license validation function of Telos Alliance Omnia MPX Node 1.3.* - 1.4.* allows attackers to execute arbitrary commands via a crafted payload injected into the license input."
-    },
-    {
-        "Modified": "2022-12-02T02:57:00",
-        "Published": "2022-12-02T02:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-44928",
-        "impact": {},
-        "last-modified": "2022-12-02T02:57:00",
-        "references": [
-            "https://cyber-guy.gitbook.io/cyber-guys-blog/pocs/cve-2022-44928"
-        ],
-        "summary": "D-Link DVG-G5402SP GE_1.03 was discovered to contain a command injection vulnerability via the Maintenance function."
-    },
-    {
-        "Modified": "2022-12-02T01:15:00",
-        "Published": "2022-10-12T21:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-295",
-        "id": "CVE-2022-41316",
-        "impact": {},
-        "last-modified": "2022-12-02T01:15:00",
-        "references": [
-            "https://discuss.hashicorp.com/t/hcsec-2022-24-vaults-tls-cert-auth-method-only-loaded-crl-after-first-request/45483",
-            "https://discuss.hashicorp.com",
-            "https://security.netapp.com/advisory/ntap-20221201-0001/"
-        ],
-        "summary": "HashiCorp Vault and Vault Enterprise\u2019s TLS certificate auth method did not initially load the optionally configured CRL issued by the role's CA into memory on startup, resulting in the revocation list not being checked if the CRL has not yet been retrieved. Fixed in 1.12.0, 1.11.4, 1.10.7, and 1.9.10."
-    },
-    {
-        "Modified": "2022-12-02T01:15:00",
-        "Published": "2022-08-26T16:15:00",
-        "access": {},
-        "assigner": "secalert@redhat.com",
-        "cvss": null,
-        "cwe": "CWE-214",
-        "id": "CVE-2021-3859",
-        "impact": {},
-        "last-modified": "2022-12-02T01:15:00",
-        "references": [
-            "https://issues.redhat.com/browse/UNDERTOW-1979",
-            "https://github.com/undertow-io/undertow/commit/e43f0ada3f4da6e8579e0020cec3cb1a81e487c2",
-            "https://bugzilla.redhat.com/show_bug.cgi?id=2010378",
-            "https://access.redhat.com/security/cve/CVE-2021-3859",
-            "https://github.com/undertow-io/undertow/pull/1296",
-            "https://security.netapp.com/advisory/ntap-20221201-0004/"
-        ],
-        "summary": "A flaw was found in Undertow that tripped the client-side invocation timeout with certain calls made over HTTP2. This flaw allows an attacker to carry out denial of service attacks."
-    },
-    {
-        "Modified": "2022-12-02T01:15:00",
-        "Published": "2022-08-25T14:15:00",
-        "access": {},
-        "assigner": "security@apache.org",
-        "cvss": null,
-        "cwe": "CWE-502",
-        "id": "CVE-2021-25642",
-        "impact": {},
-        "last-modified": "2022-12-02T01:15:00",
-        "references": [
-            "https://lists.apache.org/thread/g6vf2h4wdgzzdgk91mqozhs58wotq150",
-            "https://security.netapp.com/advisory/ntap-20221201-0003/"
-        ],
-        "summary": "ZKConfigurationStore which is optionally used by CapacityScheduler of Apache Hadoop YARN deserializes data obtained from ZooKeeper without validation. An attacker having access to ZooKeeper can run arbitrary commands as YARN user by exploiting this. Users should upgrade to Apache Hadoop 2.10.2, 3.2.4, 3.3.4 or later (containing YARN-11126) if ZKConfigurationStore is used."
-    },
-    {
-        "Modified": "2022-12-02T01:15:00",
-        "Published": "2022-08-23T20:15:00",
-        "access": {},
-        "assigner": "secalert@redhat.com",
-        "cvss": null,
-        "cwe": "CWE-416",
-        "id": "CVE-2021-3975",
-        "impact": {},
-        "last-modified": "2022-12-02T01:15:00",
-        "references": [
-            "https://access.redhat.com/security/cve/CVE-2021-3975",
-            "https://github.com/libvirt/libvirt/commit/1ac703a7d0789e46833f4013a3876c2e3af18ec7",
-            "https://ubuntu.com/security/CVE-2021-3975",
-            "https://bugzilla.redhat.com/show_bug.cgi?id=2024326",
-            "https://security.netapp.com/advisory/ntap-20221201-0002/"
-        ],
-        "summary": "A use-after-free flaw was found in libvirt. The qemuMonitorUnregister() function in qemuProcessHandleMonitorEOF is called using multiple threads without being adequately protected by a monitor lock. This flaw could be triggered by the virConnectGetAllDomainStats API when the guest is shutting down. An unprivileged client with a read-only connection could use this flaw to perform a denial of service attack by causing the libvirt daemon to crash."
-    },
-    {
-        "Modified": "2022-12-01T23:41:00",
-        "Published": "2022-11-30T07:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-89",
-        "id": "CVE-2022-4222",
-        "impact": {},
-        "last-modified": "2022-12-01T23:41:00",
-        "references": [
-            "https://www.jianshu.com/p/bda61089bf1d",
-            "https://vuldb.com/?id.214523"
-        ],
-        "summary": "A vulnerability was found in SourceCodester Canteen Management System. It has been rated as critical. This issue affects the function query of the file ajax_invoice.php of the component POST Request Handler. The manipulation of the argument search leads to sql injection. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-214523."
-    },
-    {
-        "Modified": "2022-12-01T23:41:00",
-        "Published": "2022-11-30T05:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-798",
-        "id": "CVE-2022-44096",
-        "impact": {},
-        "last-modified": "2022-12-01T23:41:00",
-        "references": [
-            "https://github.com/upasvi/CVE-/issues/1"
-        ],
-        "summary": "Sanitization Management System v1.0 was discovered to contain hardcoded credentials which allows attackers to escalate privileges and access the admin panel."
-    },
-    {
-        "Modified": "2022-12-01T23:41:00",
-        "Published": "2022-11-30T05:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-798",
-        "id": "CVE-2022-44097",
-        "impact": {},
-        "last-modified": "2022-12-01T23:41:00",
-        "references": [
-            "https://github.com/upasvi/CVE-/issues/2"
-        ],
-        "summary": "Book Store Management System v1.0 was discovered to contain hardcoded credentials which allows attackers to escalate privileges and access the admin panel."
-    },
-    {
-        "Modified": "2022-12-01T23:39:00",
-        "Published": "2022-11-30T12:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-200",
-        "id": "CVE-2022-4228",
-        "impact": {},
-        "last-modified": "2022-12-01T23:39:00",
-        "references": [
-            "https://github.com/lithonn/bug-report/tree/main/vendors/oretnom23/bsms_ci/passwd-hash",
-            "https://vuldb.com/?id.214587"
-        ],
-        "summary": "A vulnerability classified as problematic has been found in SourceCodester Book Store Management System 1.0. This affects an unknown part of the file /bsms_ci/index.php/user/edit_user/. The manipulation of the argument password leads to information disclosure. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-214587."
-    },
-    {
-        "Modified": "2022-12-01T23:39:00",
-        "Published": "2022-11-30T12:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "NVD-CWE-Other",
-        "id": "CVE-2022-4229",
-        "impact": {},
-        "last-modified": "2022-12-01T23:39:00",
-        "references": [
-            "https://github.com/lithonn/bug-report/tree/main/vendors/oretnom23/bsms_ci/broken-access-control",
-            "https://vuldb.com/?id.214588"
-        ],
-        "summary": "A vulnerability classified as critical was found in SourceCodester Book Store Management System 1.0. This vulnerability affects unknown code of the file /bsms_ci/index.php. The manipulation leads to improper access controls. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used. The identifier of this vulnerability is VDB-214588."
-    },
-    {
-        "Modified": "2022-12-01T23:38:00",
-        "Published": "2022-11-30T12:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-434",
-        "id": "CVE-2022-4232",
-        "impact": {},
-        "last-modified": "2022-12-01T23:38:00",
-        "references": [
-            "https://vuldb.com/?id.214590"
-        ],
-        "summary": "A vulnerability, which was classified as critical, was found in SourceCodester Event Registration System 1.0. Affected is an unknown function. The manipulation of the argument cmd leads to unrestricted upload. It is possible to launch the attack remotely. VDB-214590 is the identifier assigned to this vulnerability."
-    },
-    {
-        "Modified": "2022-12-01T23:36:00",
-        "Published": "2022-11-30T00:15:00",
-        "access": {},
-        "assigner": "chrome-cve-admin@google.com",
-        "cvss": null,
-        "cwe": "CWE-416",
-        "id": "CVE-2022-4177",
-        "impact": {},
-        "last-modified": "2022-12-01T23:36:00",
-        "references": [
-            "https://crbug.com/1379242",
-            "https://chromereleases.googleblog.com/2022/11/stable-channel-update-for-desktop_29.html"
-        ],
-        "summary": "Use after free in Extensions in Google Chrome prior to 108.0.5359.71 allowed an attacker who convinced a user to install an extension to potentially exploit heap corruption via a crafted Chrome Extension and UI interaction. (Chromium security severity: High)"
-    },
-    {
-        "Modified": "2022-12-01T23:35:00",
-        "Published": "2022-11-30T00:15:00",
-        "access": {},
-        "assigner": "chrome-cve-admin@google.com",
-        "cvss": null,
-        "cwe": "CWE-416",
-        "id": "CVE-2022-4178",
-        "impact": {},
-        "last-modified": "2022-12-01T23:35:00",
-        "references": [
-            "https://crbug.com/1376099",
-            "https://chromereleases.googleblog.com/2022/11/stable-channel-update-for-desktop_29.html"
-        ],
-        "summary": "Use after free in Mojo in Google Chrome prior to 108.0.5359.71 allowed a remote attacker who had compromised the renderer process to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)"
-    },
-    {
-        "Modified": "2022-12-01T23:35:00",
-        "Published": "2022-11-30T00:15:00",
-        "access": {},
-        "assigner": "chrome-cve-admin@google.com",
-        "cvss": null,
-        "cwe": "CWE-416",
-        "id": "CVE-2022-4180",
-        "impact": {},
-        "last-modified": "2022-12-01T23:35:00",
-        "references": [
-            "https://chromereleases.googleblog.com/2022/11/stable-channel-update-for-desktop_29.html",
-            "https://crbug.com/1378564"
-        ],
-        "summary": "Use after free in Mojo in Google Chrome prior to 108.0.5359.71 allowed an attacker who convinced a user to install a malicious extension to potentially exploit heap corruption via a crafted Chrome Extension. (Chromium security severity: High)"
-    },
-    {
-        "Modified": "2022-12-01T23:35:00",
-        "Published": "2022-11-30T00:15:00",
-        "access": {},
-        "assigner": "chrome-cve-admin@google.com",
-        "cvss": null,
-        "cwe": "CWE-416",
-        "id": "CVE-2022-4179",
-        "impact": {},
-        "last-modified": "2022-12-01T23:35:00",
-        "references": [
-            "https://chromereleases.googleblog.com/2022/11/stable-channel-update-for-desktop_29.html",
-            "https://crbug.com/1377783"
-        ],
-        "summary": "Use after free in Audio in Google Chrome prior to 108.0.5359.71 allowed an attacker who convinced a user to install a malicious extension to potentially exploit heap corruption via a crafted Chrome Extension. (Chromium security severity: High)"
-    },
-    {
-        "Modified": "2022-12-01T23:34:00",
-        "Published": "2022-11-30T00:15:00",
-        "access": {},
-        "assigner": "chrome-cve-admin@google.com",
-        "cvss": null,
-        "cwe": "CWE-416",
-        "id": "CVE-2022-4181",
-        "impact": {},
-        "last-modified": "2022-12-01T23:34:00",
-        "references": [
-            "https://chromereleases.googleblog.com/2022/11/stable-channel-update-for-desktop_29.html",
-            "https://crbug.com/1382581"
-        ],
-        "summary": "Use after free in Forms in Google Chrome prior to 108.0.5359.71 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)"
-    },
-    {
-        "Modified": "2022-12-01T23:34:00",
-        "Published": "2022-11-30T00:15:00",
-        "access": {},
-        "assigner": "chrome-cve-admin@google.com",
-        "cvss": null,
-        "cwe": "NVD-CWE-noinfo",
-        "id": "CVE-2022-4182",
-        "impact": {},
-        "last-modified": "2022-12-01T23:34:00",
-        "references": [
-            "https://chromereleases.googleblog.com/2022/11/stable-channel-update-for-desktop_29.html",
-            "https://crbug.com/1368739"
-        ],
-        "summary": "Inappropriate implementation in Fenced Frames in Google Chrome prior to 108.0.5359.71 allowed a remote attacker to bypass fenced frame restrictions via a crafted HTML page. (Chromium security severity: Medium)"
-    },
-    {
-        "Modified": "2022-12-01T23:33:00",
-        "Published": "2022-11-30T00:15:00",
-        "access": {},
-        "assigner": "chrome-cve-admin@google.com",
-        "cvss": null,
-        "cwe": "NVD-CWE-noinfo",
-        "id": "CVE-2022-4183",
-        "impact": {},
-        "last-modified": "2022-12-01T23:33:00",
-        "references": [
-            "https://chromereleases.googleblog.com/2022/11/stable-channel-update-for-desktop_29.html",
-            "https://crbug.com/1251790"
-        ],
-        "summary": "Insufficient policy enforcement in Popup Blocker in Google Chrome prior to 108.0.5359.71 allowed a remote attacker to bypass navigation restrictions via a crafted HTML page. (Chromium security severity: Medium)"
-    },
-    {
-        "Modified": "2022-12-01T23:33:00",
-        "Published": "2022-11-30T00:15:00",
-        "access": {},
-        "assigner": "chrome-cve-admin@google.com",
-        "cvss": null,
-        "cwe": "NVD-CWE-noinfo",
-        "id": "CVE-2022-4184",
-        "impact": {},
-        "last-modified": "2022-12-01T23:33:00",
-        "references": [
-            "https://crbug.com/1358647",
-            "https://chromereleases.googleblog.com/2022/11/stable-channel-update-for-desktop_29.html"
-        ],
-        "summary": "Insufficient policy enforcement in Autofill in Google Chrome prior to 108.0.5359.71 allowed a remote attacker to bypass autofill restrictions via a crafted HTML page. (Chromium security severity: Medium)"
-    },
-    {
-        "Modified": "2022-12-01T23:32:00",
-        "Published": "2022-11-30T00:15:00",
-        "access": {},
-        "assigner": "chrome-cve-admin@google.com",
-        "cvss": null,
-        "cwe": "CWE-843",
-        "id": "CVE-2022-4174",
-        "impact": {},
-        "last-modified": "2022-12-01T23:32:00",
-        "references": [
-            "https://crbug.com/1379054",
-            "https://chromereleases.googleblog.com/2022/11/stable-channel-update-for-desktop_29.html"
-        ],
-        "summary": "Type confusion in V8 in Google Chrome prior to 108.0.5359.71 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)"
-    },
-    {
-        "Modified": "2022-12-01T23:32:00",
-        "Published": "2022-11-30T00:15:00",
-        "access": {},
-        "assigner": "chrome-cve-admin@google.com",
-        "cvss": null,
-        "cwe": "CWE-416",
-        "id": "CVE-2022-4175",
-        "impact": {},
-        "last-modified": "2022-12-01T23:32:00",
-        "references": [
-            "https://crbug.com/1381401",
-            "https://chromereleases.googleblog.com/2022/11/stable-channel-update-for-desktop_29.html"
-        ],
-        "summary": "Use after free in Camera Capture in Google Chrome prior to 108.0.5359.71 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)"
-    },
-    {
-        "Modified": "2022-12-01T23:32:00",
-        "Published": "2022-11-30T00:15:00",
-        "access": {},
-        "assigner": "chrome-cve-admin@google.com",
-        "cvss": null,
-        "cwe": "CWE-787",
-        "id": "CVE-2022-4176",
-        "impact": {},
-        "last-modified": "2022-12-01T23:32:00",
-        "references": [
-            "https://chromereleases.googleblog.com/2022/11/stable-channel-update-for-desktop_29.html",
-            "https://crbug.com/1361066"
-        ],
-        "summary": "Out of bounds write in Lacros Graphics in Google Chrome on Chrome OS and Lacros prior to 108.0.5359.71 allowed a remote attacker who convinced a user to engage in specific UI interactions to potentially exploit heap corruption via UI interactions. (Chromium security severity: High)"
-    },
-    {
-        "Modified": "2022-12-01T23:32:00",
-        "Published": "2022-11-30T00:15:00",
-        "access": {},
-        "assigner": "chrome-cve-admin@google.com",
-        "cvss": null,
-        "cwe": "NVD-CWE-noinfo",
-        "id": "CVE-2022-4185",
-        "impact": {},
-        "last-modified": "2022-12-01T23:32:00",
-        "references": [
-            "https://chromereleases.googleblog.com/2022/11/stable-channel-update-for-desktop_29.html",
-            "https://crbug.com/1373025"
-        ],
-        "summary": "Inappropriate implementation in Navigation in Google Chrome on iOS prior to 108.0.5359.71 allowed a remote attacker to spoof the contents of the modal dialogue via a crafted HTML page. (Chromium security severity: Medium)"
-    },
-    {
-        "Modified": "2022-12-01T23:31:00",
-        "Published": "2022-11-30T00:15:00",
-        "access": {},
-        "assigner": "chrome-cve-admin@google.com",
-        "cvss": null,
-        "cwe": "CWE-20",
-        "id": "CVE-2022-4186",
-        "impact": {},
-        "last-modified": "2022-12-01T23:31:00",
-        "references": [
-            "https://crbug.com/1377165",
-            "https://chromereleases.googleblog.com/2022/11/stable-channel-update-for-desktop_29.html"
-        ],
-        "summary": "Insufficient validation of untrusted input in Downloads in Google Chrome prior to 108.0.5359.71 allowed an attacker who convinced a user to install a malicious extension to bypass Downloads restrictions via a crafted HTML page. (Chromium security severity: Medium)"
-    },
-    {
-        "Modified": "2022-12-01T23:31:00",
-        "Published": "2022-11-30T00:15:00",
-        "access": {},
-        "assigner": "chrome-cve-admin@google.com",
-        "cvss": null,
-        "cwe": "NVD-CWE-noinfo",
-        "id": "CVE-2022-4187",
-        "impact": {},
-        "last-modified": "2022-12-01T23:31:00",
-        "references": [
-            "https://crbug.com/1381217",
-            "https://chromereleases.googleblog.com/2022/11/stable-channel-update-for-desktop_29.html"
-        ],
-        "summary": "Insufficient policy enforcement in DevTools in Google Chrome on Windows prior to 108.0.5359.71 allowed a remote attacker to bypass filesystem restrictions via a crafted HTML page. (Chromium security severity: Medium)"
-    },
-    {
-        "Modified": "2022-12-01T23:30:00",
-        "Published": "2022-11-30T00:15:00",
-        "access": {},
-        "assigner": "chrome-cve-admin@google.com",
-        "cvss": null,
-        "cwe": "CWE-20",
-        "id": "CVE-2022-4188",
-        "impact": {},
-        "last-modified": "2022-12-01T23:30:00",
-        "references": [
-            "https://chromereleases.googleblog.com/2022/11/stable-channel-update-for-desktop_29.html",
-            "https://crbug.com/1340879"
-        ],
-        "summary": "Insufficient validation of untrusted input in CORS in Google Chrome on Android prior to 108.0.5359.71 allowed a remote attacker to bypass same origin policy via a crafted HTML page. (Chromium security severity: Medium)"
-    },
-    {
-        "Modified": "2022-12-01T23:29:00",
-        "Published": "2022-11-30T00:15:00",
-        "access": {},
-        "assigner": "chrome-cve-admin@google.com",
-        "cvss": null,
-        "cwe": "NVD-CWE-noinfo",
-        "id": "CVE-2022-4189",
-        "impact": {},
-        "last-modified": "2022-12-01T23:29:00",
-        "references": [
-            "https://crbug.com/1344647",
-            "https://chromereleases.googleblog.com/2022/11/stable-channel-update-for-desktop_29.html"
-        ],
-        "summary": "Insufficient policy enforcement in DevTools in Google Chrome prior to 108.0.5359.71 allowed an attacker who convinced a user to install a malicious extension to bypass navigation restrictions via a crafted Chrome Extension. (Chromium security severity: Medium)"
-    },
-    {
-        "Modified": "2022-12-01T23:28:00",
-        "Published": "2022-11-30T00:15:00",
-        "access": {},
-        "assigner": "chrome-cve-admin@google.com",
-        "cvss": null,
-        "cwe": "NVD-CWE-noinfo",
-        "id": "CVE-2022-4190",
-        "impact": {},
-        "last-modified": "2022-12-01T23:28:00",
-        "references": [
-            "https://chromereleases.googleblog.com/2022/11/stable-channel-update-for-desktop_29.html",
-            "https://crbug.com/1378997"
-        ],
-        "summary": "Insufficient data validation in Directory in Google Chrome prior to 108.0.5359.71 allowed a remote attacker to bypass file system restrictions via a crafted HTML page. (Chromium security severity: Medium)"
-    },
-    {
-        "Modified": "2022-12-01T23:27:00",
-        "Published": "2022-11-30T00:15:00",
-        "access": {},
-        "assigner": "chrome-cve-admin@google.com",
-        "cvss": null,
-        "cwe": "CWE-416",
-        "id": "CVE-2022-4191",
-        "impact": {},
-        "last-modified": "2022-12-01T23:27:00",
-        "references": [
-            "https://crbug.com/1373941",
-            "https://chromereleases.googleblog.com/2022/11/stable-channel-update-for-desktop_29.html"
-        ],
-        "summary": "Use after free in Sign-In in Google Chrome prior to 108.0.5359.71 allowed a remote attacker who convinced a user to engage in specific UI interaction to potentially exploit heap corruption via profile destruction. (Chromium security severity: Medium)"
-    },
-    {
-        "Modified": "2022-12-01T23:27:00",
-        "Published": "2022-11-30T00:15:00",
-        "access": {},
-        "assigner": "chrome-cve-admin@google.com",
-        "cvss": null,
-        "cwe": "CWE-416",
-        "id": "CVE-2022-4194",
-        "impact": {},
-        "last-modified": "2022-12-01T23:27:00",
-        "references": [
-            "https://chromereleases.googleblog.com/2022/11/stable-channel-update-for-desktop_29.html",
-            "https://crbug.com/1370562"
-        ],
-        "summary": "Use after free in Accessibility in Google Chrome prior to 108.0.5359.71 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: Medium)"
-    },
-    {
-        "Modified": "2022-12-01T23:26:00",
-        "Published": "2022-11-30T00:15:00",
-        "access": {},
-        "assigner": "chrome-cve-admin@google.com",
-        "cvss": null,
-        "cwe": "CWE-416",
-        "id": "CVE-2022-4192",
-        "impact": {},
-        "last-modified": "2022-12-01T23:26:00",
-        "references": [
-            "https://crbug.com/1344514",
-            "https://chromereleases.googleblog.com/2022/11/stable-channel-update-for-desktop_29.html"
-        ],
-        "summary": "Use after free in Live Caption in Google Chrome prior to 108.0.5359.71 allowed a remote attacker who convinced a user to engage in specific UI interaction to potentially exploit heap corruption via UI interaction. (Chromium security severity: Medium)"
-    },
-    {
-        "Modified": "2022-12-01T23:26:00",
-        "Published": "2022-11-30T00:15:00",
-        "access": {},
-        "assigner": "chrome-cve-admin@google.com",
-        "cvss": null,
-        "cwe": "NVD-CWE-noinfo",
-        "id": "CVE-2022-4193",
-        "impact": {},
-        "last-modified": "2022-12-01T23:26:00",
-        "references": [
-            "https://chromereleases.googleblog.com/2022/11/stable-channel-update-for-desktop_29.html",
-            "https://crbug.com/1354518"
-        ],
-        "summary": "Insufficient policy enforcement in File System API in Google Chrome prior to 108.0.5359.71 allowed a remote attacker to bypass file system restrictions via a crafted HTML page. (Chromium security severity: Medium)"
-    },
-    {
-        "Modified": "2022-12-01T23:26:00",
-        "Published": "2022-11-30T00:15:00",
-        "access": {},
-        "assigner": "chrome-cve-admin@google.com",
-        "cvss": null,
-        "cwe": "NVD-CWE-noinfo",
-        "id": "CVE-2022-4195",
-        "impact": {},
-        "last-modified": "2022-12-01T23:26:00",
-        "references": [
-            "https://chromereleases.googleblog.com/2022/11/stable-channel-update-for-desktop_29.html",
-            "https://crbug.com/1371926"
-        ],
-        "summary": "Insufficient policy enforcement in Safe Browsing in Google Chrome prior to 108.0.5359.71 allowed a remote attacker to bypass Safe Browsing warnings via a malicious file. (Chromium security severity: Medium)"
-    },
-    {
-        "Modified": "2022-12-01T23:22:00",
-        "Published": "2022-11-30T03:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-89",
-        "id": "CVE-2022-45328",
-        "impact": {},
-        "last-modified": "2022-12-01T23:22:00",
-        "references": [
-            "https://github.com/zhangzhaoyuela/bug_report/blob/main/vendors/Godfrey%20De%20Blessed/church-management-system/SQLi-1.md"
-        ],
-        "summary": "Church Management System v1.0 was discovered to contain a SQL injection vulnerability via the id parameter at /admin/edit_members.php."
-    },
-    {
-        "Modified": "2022-12-01T23:21:00",
-        "Published": "2022-11-28T22:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-639",
-        "id": "CVE-2022-24187",
-        "impact": {},
-        "last-modified": "2022-12-01T23:21:00",
-        "references": [
-            "https://www.scrawledsecurityblog.com/2022/11/automating-unsolicited-richard-pics.html",
-            "https://apps.apple.com/us/app/ourphoto-keep-our-memories/id1476241568"
-        ],
-        "summary": "The user_id and device_id on the Ourphoto App version 1.4.1 /device/* end-points both suffer from insecure direct object reference vulnerabilities. Other end-users user_id and device_id values can be enumerated by incrementing or decrementing id numbers. The impact of this vulnerability allows an attacker to discover sensitive information such as end-user email addresses, and their unique frame_token value of all other Ourphoto App end-users."
-    },
-    {
-        "Modified": "2022-12-01T23:20:00",
-        "Published": "2022-11-28T22:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-312",
-        "id": "CVE-2022-24188",
-        "impact": {},
-        "last-modified": "2022-12-01T23:20:00",
-        "references": [
-            "https://www.scrawledsecurityblog.com/2022/11/automating-unsolicited-richard-pics.html"
-        ],
-        "summary": "The /device/signin end-point for the Ourphoto App version 1.4.1 discloses clear-text password information for functionality within the picture frame devices. The deviceVideoCallPassword and mqttPassword are returned in clear-text. The lack of sessions management and presence of insecure direct object references allows to return password information for other end-users devices. Many of the picture frame devices offer video calling, and it is likely this information can be used to abuse that functionality."
-    },
-    {
-        "Modified": "2022-12-01T23:20:00",
-        "Published": "2022-11-28T22:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-863",
-        "id": "CVE-2022-24189",
-        "impact": {},
-        "last-modified": "2022-12-01T23:20:00",
-        "references": [
-            "https://www.scrawledsecurityblog.com/2022/11/automating-unsolicited-richard-pics.html"
-        ],
-        "summary": "The user_token authorization header on the Ourphoto App version 1.4.1 /apiv1/* end-points is not implemented properly. Removing the value causes all requests to succeed, bypassing authorization and session management. The impact of this vulnerability allows an attacker POST api calls with other users unique identifiers and enumerate information of all other end-users."
-    },
-    {
-        "Modified": "2022-12-01T23:19:00",
-        "Published": "2022-11-28T22:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-862",
-        "id": "CVE-2022-24190",
-        "impact": {},
-        "last-modified": "2022-12-01T23:19:00",
-        "references": [
-            "https://www.scrawledsecurityblog.com/2022/11/automating-unsolicited-richard-pics.html"
-        ],
-        "summary": "The /device/acceptBind end-point for Ourphoto App version 1.4.1 does not require authentication or authorization. The user_token header is not implemented or present on this end-point. An attacker can send a request to bind their account to any users picture frame, then send a POST request to accept their own bind request, without the end-users approval or interaction."
-    },
-    {
-        "Modified": "2022-12-01T23:14:00",
-        "Published": "2022-11-28T21:15:00",
-        "access": {},
-        "assigner": "security-advisories@github.com",
-        "cvss": null,
-        "cwe": "CWE-601",
-        "id": "CVE-2022-41965",
-        "impact": {},
-        "last-modified": "2022-12-01T23:14:00",
-        "references": [
-            "https://github.com/opencast/opencast/security/advisories/GHSA-r3qr-vwvg-43f7",
-            "https://github.com/opencast/opencast/commit/d2ce2321590f86b066a67e8c231cf68219aea017"
-        ],
-        "summary": "Opencast is a free, open-source platform to support the management of educational audio and video content. Prior to Opencast 12.5, Opencast's Paella authentication page could be used to redirect to an arbitrary URL for authenticated users. The vulnerability allows attackers to redirect users to sites outside of one's Opencast install, potentially facilitating phishing attacks or other security issues. This issue is fixed in Opencast 12.5 and newer."
-    },
-    {
-        "Modified": "2022-12-01T23:12:00",
-        "Published": "2022-11-28T21:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-352",
-        "id": "CVE-2022-44937",
-        "impact": {},
-        "last-modified": "2022-12-01T23:12:00",
-        "references": [
-            "https://github.com/5497lvren/Zhenhao/issues/1"
-        ],
-        "summary": "Bosscms v2.0.0 was discovered to contain a Cross-Site Request Forgery (CSRF) via the Add function under the Administrator List module."
-    },
-    {
-        "Modified": "2022-12-01T23:11:00",
-        "Published": "2022-11-28T21:15:00",
-        "access": {},
-        "assigner": "security-advisories@github.com",
-        "cvss": null,
-        "cwe": "CWE-494",
-        "id": "CVE-2022-45442",
-        "impact": {},
-        "last-modified": "2022-12-01T23:11:00",
-        "references": [
-            "https://github.com/advisories/GHSA-8x94-hmjh-97hq",
-            "https://github.com/sinatra/sinatra/commit/ea8fc9495a350f7551b39e3025bfcd06f49f363b",
-            "https://github.com/sinatra/sinatra/security/advisories/GHSA-2x8x-jmrp-phxw",
-            "https://www.blackhat.com/docs/eu-14/materials/eu-14-Hafif-Reflected-File-Download-A-New-Web-Attack-Vector.pdf"
-        ],
-        "summary": "Sinatra is a domain-specific language for creating web applications in Ruby. An issue was discovered in Sinatra 2.0 before 2.2.3 and 3.0 before 3.0.4. An application is vulnerable to a reflected file download (RFD) attack that sets the Content-Disposition header of a response when the filename is derived from user-supplied input. Version 2.2.3 and 3.0.4 contain patches for this issue."
-    },
-    {
-        "Modified": "2022-12-01T23:07:00",
-        "Published": "2022-11-28T21:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-22",
-        "id": "CVE-2022-45921",
-        "impact": {},
-        "last-modified": "2022-12-01T23:07:00",
-        "references": [
-            "https://github.com/FusionAuth/fusionauth-issues/issues/1983",
-            "https://fusionauth.io/docs/v1/tech/release-notes"
-        ],
-        "summary": "FusionAuth before 1.41.3 allows a file outside of the application root to be viewed or retrieved using an HTTP request. To be specific, an attacker may be able to view or retrieve any file readable by the user running the FusionAuth process."
-    },
-    {
-        "Modified": "2022-12-01T23:07:00",
-        "Published": "2022-11-28T21:15:00",
-        "access": {},
-        "assigner": "security-advisories@github.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-46147",
-        "impact": {},
-        "last-modified": "2022-12-01T23:07:00",
-        "references": [
-            "https://github.com/openedx/xblock-drag-and-drop-v2/security/advisories/GHSA-qv6c-367r-3w6q",
-            "https://github.com/openedx/xblock-drag-and-drop-v2/pull/295#issuecomment-1277693864",
-            "https://github.com/openedx/xblock-drag-and-drop-v2/releases/tag/v3.0.0",
-            "https://github.com/openedx/xblock-drag-and-drop-v2/commit/68887d1b4a44325d2de7573d450e41129ba98b1a"
-        ],
-        "summary": "Drag and Drop XBlock v2 implements a drag-and-drop style problem, where a learner has to drag items to zones on a target image. Versions prior to 3.0.0 are vulnerable to cross-site scripting in multiple XBlock Fields. Any platform that has deployed the XBlock may be impacted. Version 3.0.0 contains a patch for this issue. There are no known workarounds."
-    },
-    {
-        "Modified": "2022-12-01T23:01:00",
-        "Published": "2022-11-28T18:15:00",
-        "access": {},
-        "assigner": "security@wordfence.com",
-        "cvss": null,
-        "cwe": "CWE-862",
-        "id": "CVE-2022-4169",
-        "impact": {},
-        "last-modified": "2022-12-01T23:01:00",
-        "references": [
-            "https://www.wordfence.com/vulnerability-advisories-continued/#CVE-2022-4169",
-            "https://plugins.trac.wordpress.org/changeset?sfp_email=&sfph_mail=&reponame=&new=2814605%40theme-translation-for-polylang%2Ftrunk&old=2812254%40theme-translation-for-polylang%2Ftrunk&sfp_email=&sfph_mail="
-        ],
-        "summary": "The Theme and plugin translation for Polylang is vulnerable to authorization bypass in versions up to, and including, 3.2.16 due to missing capability checks in the process_polylang_theme_translation_wp_loaded() function. This makes it possible for unauthenticated attackers to update plugin and theme translation settings and to import translation strings."
-    },
-    {
-        "Modified": "2022-12-01T23:00:00",
-        "Published": "2022-11-28T19:15:00",
-        "access": {},
-        "assigner": "vulnreport@tenable.com",
-        "cvss": null,
-        "cwe": "CWE-835",
-        "id": "CVE-2022-4104",
-        "impact": {},
-        "last-modified": "2022-12-01T23:00:00",
-        "references": [
-            "https://tenable.com/security/research/TRA-2022-35"
-        ],
-        "summary": "A loop with an unreachable exit condition can be triggered by passing a crafted JPEG file to the Lepton image compression tool, resulting in a denial-of-service."
-    },
-    {
-        "Modified": "2022-12-01T22:57:00",
-        "Published": "2022-11-28T20:15:00",
-        "access": {},
-        "assigner": "audit@patchstack.com",
-        "cvss": null,
-        "cwe": "CWE-352",
-        "id": "CVE-2022-34654",
-        "impact": {},
-        "last-modified": "2022-12-01T22:57:00",
-        "references": [
-            "https://patchstack.com/database/vulnerability/manage-notification-emails/wordpress-manage-notification-e-mails-plugin-1-8-2-cross-site-request-forgery-csrf-vulnerability?_s_id=cve"
-        ],
-        "summary": "Cross-Site Request Forgery (CSRF) in Virgial Berveling's Manage Notification E-mails plugin <= 1.8.2 on WordPress."
-    },
-    {
-        "Modified": "2022-12-01T22:56:00",
-        "Published": "2022-11-28T20:15:00",
-        "access": {},
-        "assigner": "audit@patchstack.com",
-        "cvss": null,
-        "cwe": "CWE-434",
-        "id": "CVE-2022-38140",
-        "impact": {},
-        "last-modified": "2022-12-01T22:56:00",
-        "references": [
-            "https://patchstack.com/database/vulnerability/squirrly-seo/wordpress-seo-plugin-by-squirrly-seo-plugin-12-1-10-auth-arbitrary-file-upload-vulnerability?_s_id=cve"
-        ],
-        "summary": "Auth. (contributor+) Arbitrary File Upload in SEO Plugin by Squirrly SEO plugin <= 12.1.10 on WordPress."
-    },
-    {
-        "Modified": "2022-12-01T22:54:00",
-        "Published": "2022-11-28T17:15:00",
-        "access": {},
-        "assigner": "psirt@us.ibm.com",
-        "cvss": null,
-        "cwe": "CWE-522",
-        "id": "CVE-2022-41732",
-        "impact": {},
-        "last-modified": "2022-12-01T22:54:00",
-        "references": [
-            "https://www.ibm.com/support/pages/node/6841617",
-            "https://exchange.xforce.ibmcloud.com/vulnerabilities/237407"
-        ],
-        "summary": "IBM Maximo Mobile 8.7 and 8.8 stores user credentials in plain clear text which can be read by a local user. IBM X-Force ID: 237407."
-    },
-    {
-        "Modified": "2022-12-01T22:53:00",
-        "Published": "2022-11-28T16:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-89",
-        "id": "CVE-2022-44399",
-        "impact": {},
-        "last-modified": "2022-12-01T22:53:00",
-        "references": [
-            "https://github.com/tavenli/bug_report/blob/main/vendors/Nikhil_B/Poultry%20Farm%20Management%20System/SQLi-1.md"
-        ],
-        "summary": "Poultry Farm Management System v1.0 contains a SQL injection vulnerability via the del parameter at /Redcock-Farm/farm/category.php."
-    },
-    {
-        "Modified": "2022-12-01T22:51:00",
-        "Published": "2022-11-28T16:15:00",
-        "access": {},
-        "assigner": "cve-coordination@incibe.es",
-        "cvss": null,
-        "cwe": "CWE-290",
-        "id": "CVE-2021-45036",
-        "impact": {},
-        "last-modified": "2022-12-01T22:51:00",
-        "references": [
-            "https://www.incibe-cert.es/en/early-warning/security-advisories/velneo-vclient-improper-authentication-0",
-            "https://doc.velneo.com/v/32/velneo/notas-de-la-version#mejoras-de-seguridad-en-validacion-de-usuario-y-contrasena",
-            "https://www.velneo.com/blog/disponible-la-nueva-version-velneo-32",
-            "https://doc.velneo.com/v/32/velneo-vserver/funcionalidades/protocolo-vatps",
-            "https://velneo.es/mivelneo/listado-de-cambios-velneo-32/",
-            "https://doc.velneo.com/v/32/velneo/notas-de-la-version#a-partir-de-esta-version-todos-los-servidores-arrancaran-con-protocolo-vatps",
-            "https://doc.velneo.com/v/32/velneo/funcionalidades-comunes/conexion-con-velneo-vserver"
-        ],
-        "summary": "Velneo vClient on its 28.1.3 version, could allow an attacker with knowledge of the victims's username and hashed password to spoof the victim's id against the server."
-    },
-    {
-        "Modified": "2022-12-01T22:40:00",
-        "Published": "2022-11-28T15:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-44284",
-        "impact": {},
-        "last-modified": "2022-12-01T22:40:00",
-        "references": [
-            "https://packetstormsecurity.com/files/169531/Dinstar-FXO-Analog-VoIP-Gateway-DAG2000-16O-Cross-Site-Scripting.html"
-        ],
-        "summary": "Dinstar FXO Analog VoIP Gateway DAG2000-16O is vulnerable to Cross Site Scripting (XSS)."
     }
 ]
