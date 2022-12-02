@@ -1,591 +1,497 @@
 [
     {
-        "Modified": "2022-12-02T18:59:00",
-        "Published": "2022-11-30T13:15:00",
+        "Modified": "2022-12-02T20:41:00",
+        "Published": "2022-10-06T18:16:00",
         "access": {},
-        "assigner": "report@snyk.io",
+        "assigner": "security-advisories@github.com",
         "cvss": null,
         "cwe": "CWE-77",
-        "id": "CVE-2022-22984",
+        "id": "CVE-2022-39265",
         "impact": {},
-        "last-modified": "2022-12-02T18:59:00",
+        "last-modified": "2022-12-02T20:41:00",
         "references": [
-            "https://security.snyk.io/vuln/SNYK-JS-SNYKMVNPLUGIN-3038623",
-            "https://security.snyk.io/vuln/SNYK-JS-SNYKSNYKHEXPLUGIN-3039680",
-            "https://github.com/snyk/cli/commit/80d97a93326406e09776156daf72e3caa03ae25a",
-            "https://www.imperva.com/blog/how-scanning-your-projects-for-security-issues-can-lead-to-remote-code-execution/",
-            "https://security.snyk.io/vuln/SNYK-JS-SNYKGRADLEPLUGIN-3038624",
-            "https://github.com/snyk/snyk-python-plugin/commit/8591abdd9236108ac3e30c70c09238d6bb6aabf4",
-            "https://github.com/snyk/snyk-sbt-plugin/commit/99c09eb12c9f8f2b237aea9627aab1ae3cab6437",
-            "https://github.com/snyk/snyk-cocoapods-plugin/commit/c73e049c5200772babde61c40aab57296bf91381",
-            "https://security.snyk.io/vuln/SNYK-JS-SNYK-3038622",
-            "https://security.snyk.io/vuln/SNYK-JS-SNYKDOCKERPLUGIN-3039679",
-            "https://security.snyk.io/vuln/SNYK-JS-SNYKSNYKCOCOAPODSPLUGIN-3038625",
-            "https://security.snyk.io/vuln/SNYK-JS-SNYKSBTPLUGIN-3038626",
-            "https://github.com/snyk/snyk-gradle-plugin/commit/bb1c1c72a75e97723a76b14d2d73f70744ed5009",
-            "https://security.snyk.io/vuln/SNYK-JS-SNYKPYTHONPLUGIN-3039677",
-            "https://github.com/snyk/snyk-hex-plugin/commit/e8dd2a330b40d7fc0ab47e34413e80a0146d7ac3",
-            "https://github.com/snyk/snyk-docker-plugin/commit/d730d7630691a61587b120bb11daaaf4b58a8357",
-            "https://github.com/snyk/snyk-mvn-plugin/commit/02cda9ba1ea36b00ead3f6ec2de0f97397ebec50"
+            "https://mybb.com/versions/1.8.31/",
+            "https://github.com/mybb/mybb/security/advisories/GHSA-hxhm-rq9f-7xj7",
+            "https://github.com/mybb/mybb/commit/0cd318136a10b029bb5c8a8f6dddf39d87519797",
+            "https://github.com/mybb/mybb/blob/mybb_1830/install/resources/settings.xml#L2331-L2338"
         ],
-        "summary": "The package snyk before 1.1064.0; the package snyk-mvn-plugin before 2.31.3; the package snyk-gradle-plugin before 3.24.5; the package @snyk/snyk-cocoapods-plugin before 2.5.3; the package snyk-sbt-plugin before 2.16.2; the package snyk-python-plugin before 1.24.2; the package snyk-docker-plugin before 5.6.5; the package @snyk/snyk-hex-plugin before 1.1.6 are vulnerable to Command Injection due to an incomplete fix for [CVE-2022-40764](https://security.snyk.io/vuln/SNYK-JS-SNYK-3037342). A successful exploit allows attackers to run arbitrary commands on the host system where the Snyk CLI is installed by passing in crafted command line flags. In order to exploit this vulnerability, a user would have to execute the snyk test command on untrusted files. In most cases, an attacker positioned to control the command line arguments to the Snyk CLI would already be positioned to execute arbitrary commands. However, this could be abused in specific scenarios, such as continuous integration pipelines, where developers can control the arguments passed to the Snyk CLI to leverage this component as part of a wider attack against an integration/build pipeline. This issue has been addressed in the latest Snyk Docker images available at https://hub.docker.com/r/snyk/snyk as of 2022-11-29. Images downloaded and built prior to that date should be updated. The issue has also been addressed in the Snyk TeamCity CI/CD plugin as of version v20221130.093605."
+        "summary": "MyBB is a free and open source forum software. The _Mail Settings_ ? Additional Parameters for PHP's mail() function mail_parameters setting value, in connection with the configured mail program's options and behavior, may allow access to sensitive information and Remote Code Execution (RCE). The vulnerable module requires Admin CP access with the `_Can manage settings?_` permission and may depend on configured file permissions. MyBB 1.8.31 resolves this issue with the commit `0cd318136a`. Users are advised to upgrade. There are no known workarounds for this vulnerability."
     },
     {
-        "Modified": "2022-12-02T18:57:00",
-        "Published": "2022-11-29T23:15:00",
+        "Modified": "2022-12-02T20:40:00",
+        "Published": "2022-10-06T18:15:00",
         "access": {},
-        "assigner": "security-advisories@github.com",
+        "assigner": "securityalerts@avaya.com",
         "cvss": null,
-        "cwe": "CWE-522",
-        "id": "CVE-2022-46155",
+        "cwe": "CWE-732",
+        "id": "CVE-2022-2975",
         "impact": {},
-        "last-modified": "2022-12-02T18:57:00",
+        "last-modified": "2022-12-02T20:40:00",
         "references": [
-            "https://github.com/Airtable/airtable.js/security/advisories/GHSA-vqm5-9546-x25v",
-            "https://github.com/Airtable/airtable.js/releases/tag/v0.11.6",
-            "https://github.com/Airtable/airtable.js/pull/330/commits/b468d8fe48d75e3d5fe46d0ea7770f4658951ed0"
+            "https://download.avaya.com/css/public/documents/101083688"
         ],
-        "summary": "Airtable.js is the JavaScript client for Airtable. Prior to version 0.11.6, Airtable.js had a misconfigured build script in its source package. When the build script is run, it would bundle environment variables into the build target of a transpiled bundle. Specifically, the AIRTABLE_API_KEY and AIRTABLE_ENDPOINT_URL environment variables are inserted during Browserify builds due to being referenced in Airtable.js code. This only affects copies of Airtable.js built from its source, not those installed via npm or yarn. Airtable API keys set in users\u2019 environments via the AIRTABLE_API_KEY environment variable may be bundled into local copies of Airtable.js source code if all of the following conditions are met: 1) the user has cloned the Airtable.js source onto their machine, 2) the user runs the `npm prepare` script, and 3) the user' has the AIRTABLE_API_KEY environment variable set. If these conditions are met, a user\u2019s local build of Airtable.js would be modified to include the value of the AIRTABLE_API_KEY environment variable, which could then be accidentally shipped in the bundled code. Users who do not meet all three of these conditions are not impacted by this issue. Users should upgrade to Airtable.js version 0.11.6 or higher; or, as a workaround unset the AIRTABLE_API_KEY environment variable in their shell and/or remove it from your .bashrc, .zshrc, or other shell configuration files. Users should also regenerate any Airtable API keys they use, as the keysy may be present in bundled code."
+        "summary": "A vulnerability related to weak permissions was detected in Avaya Aura Application Enablement Services web application, allowing an administrative user to modify accounts leading to execution of arbitrary code as the root user. This issue affects Application Enablement Services versions 8.0.0.0 through 8.1.3.4 and 10.1.0.0 through 10.1.0.1. Versions prior to 8.0.0.0 are end of manufacturing support and were not evaluated."
     },
     {
-        "Modified": "2022-12-02T18:48:00",
-        "Published": "2022-12-01T08:15:00",
+        "Modified": "2022-12-02T20:37:00",
+        "Published": "2020-07-15T18:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "MEDIUM",
+            "vector": "NETWORK"
+        },
+        "assigner": "secalert_us@oracle.com",
+        "cvss": 5.8,
+        "cvss-time": "2022-12-02T20:37:00",
+        "cvss-vector": "AV:N/AC:M/Au:N/C:P/I:P/A:N",
+        "cwe": "NVD-CWE-noinfo",
+        "id": "CVE-2020-14723",
+        "impact": {
+            "availability": "NONE",
+            "confidentiality": "PARTIAL",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-12-02T20:37:00",
+        "references": [
+            "https://www.oracle.com/security-alerts/cpujul2020.html",
+            "https://cybersecurityworks.com/zerodays/cve-2020-14723-oracle.html"
+        ],
+        "summary": "Vulnerability in the Oracle Help Technologies product of Oracle Fusion Middleware (component: Web UIX). Supported versions that are affected are 11.1.1.9.0 and 12.2.1.3.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle Help Technologies. Successful attacks require human interaction from a person other than the attacker and while the vulnerability is in Oracle Help Technologies, attacks may significantly impact additional products. Successful attacks of this vulnerability can result in unauthorized access to critical data or complete access to all Oracle Help Technologies accessible data as well as unauthorized update, insert or delete access to some of Oracle Help Technologies accessible data. CVSS 3.1 Base Score 8.2 (Confidentiality and Integrity impacts). CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:L/A:N)."
+    },
+    {
+        "Modified": "2022-12-02T20:16:00",
+        "Published": "2020-12-02T18:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "MEDIUM",
+            "vector": "NETWORK"
+        },
+        "assigner": "talos-cna@cisco.com",
+        "cvss": 4.3,
+        "cvss-time": "2022-12-02T20:16:00",
+        "cvss-vector": "AV:N/AC:M/Au:N/C:P/I:N/A:N",
+        "cwe": "CWE-125",
+        "id": "CVE-2020-13498",
+        "impact": {
+            "availability": "NONE",
+            "confidentiality": "PARTIAL",
+            "integrity": "NONE"
+        },
+        "last-modified": "2022-12-02T20:16:00",
+        "references": [
+            "https://talosintelligence.com/vulnerability_reports/TALOS-2020-1105"
+        ],
+        "summary": "An exploitable vulnerability exists in the way Pixar OpenUSD 20.05 handles parses certain encoded types. A specially crafted malformed file can trigger an arbitrary out of bounds memory access which could lead to information disclosure. This vulnerability could be used to bypass mitigations and aid further exploitation. To trigger this vulnerability, the victim needs to access an attacker-provided malformed file."
+    },
+    {
+        "Modified": "2022-12-02T20:15:00",
+        "Published": "2022-12-02T20:15:00",
         "access": {},
-        "assigner": "cna@vuldb.com",
+        "assigner": "ics-cert@hq.dhs.gov",
         "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-4249",
+        "cwe": "CWE-326",
+        "id": "CVE-2022-2640",
         "impact": {},
-        "last-modified": "2022-12-02T18:48:00",
+        "last-modified": "2022-12-02T20:15:00",
         "references": [
-            "https://vuldb.com/?id.214626",
-            "https://github.com/aman05382/movie_ticket_booking_system_php/issues/5"
+            "https://www.cisa.gov/uscert/ics/advisories/icsa-22-335-02"
         ],
-        "summary": "A vulnerability, which was classified as problematic, was found in Movie Ticket Booking System. Affected is an unknown function of the component POST Request Handler. The manipulation of the argument ORDER_ID leads to cross site scripting. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used. VDB-214626 is the identifier assigned to this vulnerability."
+        "summary": "The Config-files of Horner Automation\u2019s RCC 972 with firmware version 15.40 are encrypted with weak XOR encryption vulnerable to reverse engineering. This could allow an attacker to obtain credentials to run services such as File Transfer Protocol (FTP) and Hypertext Transfer Protocol (HTTP)."
     },
     {
-        "Modified": "2022-12-02T18:45:00",
-        "Published": "2022-11-29T17:15:00",
+        "Modified": "2022-12-02T20:15:00",
+        "Published": "2022-12-02T20:15:00",
         "access": {},
-        "assigner": "security-advisories@github.com",
+        "assigner": "ics-cert@hq.dhs.gov",
         "cvss": null,
-        "cwe": "CWE-129",
-        "id": "CVE-2022-46152",
+        "cwe": "CWE-321",
+        "id": "CVE-2022-2641",
         "impact": {},
-        "last-modified": "2022-12-02T18:45:00",
+        "last-modified": "2022-12-02T20:15:00",
         "references": [
-            "https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?vector=AV:L/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H/E:U/RL:X/RC:X/CR:M/IR:M/AR:M/MAV:L/MAC:L/MPR:H/MUI:N/MS:C/MC:H/MI:H/MA:H&version=3.1",
-            "https://github.com/OP-TEE/optee_os/commit/728616b28df659cf0bdde6e58a471f6ef25d023c",
-            "https://github.com/OP-TEE/optee_os/blob/c2d449482de098f1c894b94f338440e5a327813d/core/tee/entry_std.c#L257",
-            "https://github.com/OP-TEE/optee_os/security/advisories/GHSA-65w8-6mrg-52g7"
+            "https://www.cisa.gov/uscert/ics/advisories/icsa-22-335-02"
         ],
-        "summary": "OP-TEE Trusted OS is the secure side implementation of OP-TEE project, a Trusted Execution Environment. Versions prior to 3.19.0, contain an Improper Validation of Array Index vulnerability. The function `cleanup_shm_refs()` is called by both `entry_invoke_command()` and `entry_open_session()`. The commands `OPTEE_MSG_CMD_OPEN_SESSION` and `OPTEE_MSG_CMD_INVOKE_COMMAND` can be executed from the normal world via an OP-TEE SMC. This function is not validating the `num_params` argument, which is only limited to `OPTEE_MSG_MAX_NUM_PARAMS` (127) in the function `get_cmd_buffer()`. Therefore, an attacker in the normal world can craft an SMC call that will cause out-of-bounds reading in `cleanup_shm_refs` and potentially freeing of fake-objects in the function `mobj_put()`. A normal-world attacker with permission to execute SMC instructions may exploit this flaw. Maintainers believe this problem permits local privilege escalation from the normal world to the secure world. Version 3.19.0 contains a fix for this issue. There are no known workarounds."
+        "summary": "Horner Automation\u2019s RCC 972 with firmware version 15.40 has a static encryption key on the device. This could allow an attacker to perform unauthorized changes to the device, remotely execute arbitrary code, or cause a denial-of-service condition."
     },
     {
-        "Modified": "2022-12-02T18:43:00",
-        "Published": "2022-12-01T08:15:00",
+        "Modified": "2022-12-02T20:15:00",
+        "Published": "2022-12-02T20:15:00",
         "access": {},
-        "assigner": "cna@vuldb.com",
+        "assigner": "ics-cert@hq.dhs.gov",
         "cvss": null,
-        "cwe": "CWE-707",
-        "id": "CVE-2022-4253",
+        "cwe": "CWE-1108",
+        "id": "CVE-2022-2642",
         "impact": {},
-        "last-modified": "2022-12-02T18:43:00",
+        "last-modified": "2022-12-02T20:15:00",
         "references": [
-            "https://vuldb.com/?id.214630",
-            "https://blog.csdn.net/weixin_43864034/article/details/128127516"
+            "https://www.cisa.gov/uscert/ics/advisories/icsa-22-335-02"
         ],
-        "summary": "A vulnerability was found in SourceCodester Canteen Management System. It has been declared as problematic. This vulnerability affects the function builtin_echo of the file customer.php. The manipulation leads to cross site scripting. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used. VDB-214630 is the identifier assigned to this vulnerability."
+        "summary": "Horner Automation\u2019s RCC 972 firmware version 15.40 contains global variables. This could allow an attacker to read out sensitive values and variable keys from the device."
     },
     {
-        "Modified": "2022-12-02T18:41:00",
-        "Published": "2022-12-01T08:15:00",
+        "Modified": "2022-12-02T20:15:00",
+        "Published": "2022-12-02T20:15:00",
         "access": {},
-        "assigner": "cna@vuldb.com",
+        "assigner": "ics-cert@hq.dhs.gov",
         "cvss": null,
-        "cwe": "CWE-707",
-        "id": "CVE-2022-4252",
+        "cwe": "CWE-1263",
+        "id": "CVE-2022-3086",
         "impact": {},
-        "last-modified": "2022-12-02T18:41:00",
+        "last-modified": "2022-12-02T20:15:00",
         "references": [
-            "https://vuldb.com/?id.214629",
-            "https://blog.csdn.net/weixin_43864034/article/details/128127288"
+            "https://www.cisa.gov/uscert/ics/advisories/icsa-22-333-04"
         ],
-        "summary": "A vulnerability was found in SourceCodester Canteen Management System. It has been classified as problematic. This affects the function builtin_echo of the file categories.php. The manipulation leads to cross site scripting. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. The identifier VDB-214629 was assigned to this vulnerability."
+        "summary": "An attacker with physical access to Moxa's bootloader versions of UC-8580 Series V1.1, UC-8540 Series V1.0 to V1.2, UC-8410A Series V2.2, UC-8200 Series V1.0 to V2.4, UC-8100A-ME-T Series V1.0 to V1.1, UC-8100 Series V1.2 to V1.3, UC-5100 Series V1.2, UC-3100 Series V1.2 to V2.0, UC-2100 Series V1.3 to V1.5, and UC-2100-W Series V1.3 to V1.5 can initiate a restart of the device and gain access to its BIOS. Command line options can then be altered, allowing the attacker to access the terminal. From the terminal, the attacker can modify the device\u2019s authentication files to create a new user and gain full access to the system."
     },
     {
-        "Modified": "2022-12-02T18:29:00",
-        "Published": "2022-11-30T14:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-78",
-        "id": "CVE-2021-4242",
-        "impact": {},
-        "last-modified": "2022-12-02T18:29:00",
-        "references": [
-            "https://github.com/smallpiggy/Sapido--rce/blob/main/Sapido%E8%B7%AF%E7%94%B1%E5%99%A8-rce.py",
-            "https://blog.csdn.net/qq_44159028/article/details/114590267",
-            "https://vuldb.com/?id.214592"
-        ],
-        "summary": "A vulnerability was found in Sapido BR270n, BRC76n, GR297 and RB1732 and classified as critical. Affected by this issue is some unknown functionality of the file ip/syscmd.htm. The manipulation leads to os command injection. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. The identifier of this vulnerability is VDB-214592."
-    },
-    {
-        "Modified": "2022-12-02T18:26:00",
-        "Published": "2022-12-01T08:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-707",
-        "id": "CVE-2022-4248",
-        "impact": {},
-        "last-modified": "2022-12-02T18:26:00",
-        "references": [
-            "https://vuldb.com/?id.214625",
-            "https://github.com/aman05382/movie_ticket_booking_system_php/issues/3"
-        ],
-        "summary": "A vulnerability, which was classified as critical, has been found in Movie Ticket Booking System. This issue affects some unknown processing of the file editBooking.php. The manipulation of the argument id leads to sql injection. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. The identifier VDB-214625 was assigned to this vulnerability."
-    },
-    {
-        "Modified": "2022-12-02T18:18:00",
-        "Published": "2022-12-02T18:15:00",
+        "Modified": "2022-12-02T20:15:00",
+        "Published": "2022-12-02T20:15:00",
         "access": {},
         "assigner": "cve@mitre.org",
         "cvss": null,
         "cwe": "Unknown",
-        "id": "CVE-2022-45646",
+        "id": "CVE-2022-44290",
         "impact": {},
-        "last-modified": "2022-12-02T18:18:00",
+        "last-modified": "2022-12-02T20:15:00",
         "references": [
-            "https://github.com/Double-q1015/CVE-vulns/blob/main/tenda_ac6/formSetClientState_limitSpeedUp/formSetClientState_limitSpeed.md"
+            "http://webtareas.com",
+            "https://github.com/anhdq201/webtareas/issues/2"
         ],
-        "summary": "Tenda AC6V1.0 V15.03.05.19 was discovered to contain a buffer overflow via the limitSpeedUp parameter in the formSetClientState function."
+        "summary": "webTareas 2.4p5 was discovered to contain a SQL injection vulnerability via the id parameter in deleteapprovalstages.php."
     },
     {
-        "Modified": "2022-12-02T18:18:00",
-        "Published": "2022-12-02T18:15:00",
+        "Modified": "2022-12-02T20:15:00",
+        "Published": "2022-12-02T20:15:00",
         "access": {},
         "assigner": "cve@mitre.org",
         "cvss": null,
         "cwe": "Unknown",
-        "id": "CVE-2022-45649",
+        "id": "CVE-2022-44291",
         "impact": {},
-        "last-modified": "2022-12-02T18:18:00",
+        "last-modified": "2022-12-02T20:15:00",
         "references": [
-            "https://github.com/Double-q1015/CVE-vulns/blob/main/tenda_ac6/formSetPPTPServer_endIp/formSetPPTPServer_endIp.md"
+            "http://webtareas.com",
+            "https://github.com/anhdq201/webtareas/issues/1"
         ],
-        "summary": "Tenda AC6V1.0 V15.03.05.19 was discovered to contain a buffer overflow via the endIp parameter in the formSetPPTPServer function."
+        "summary": "webTareas 2.4p5 was discovered to contain a SQL injection vulnerability via the id parameter in phasesets.php."
     },
     {
-        "Modified": "2022-12-02T18:18:00",
-        "Published": "2022-12-02T18:15:00",
+        "Modified": "2022-12-02T20:15:00",
+        "Published": "2022-12-02T20:15:00",
         "access": {},
         "assigner": "cve@mitre.org",
         "cvss": null,
         "cwe": "Unknown",
-        "id": "CVE-2022-45651",
+        "id": "CVE-2022-44944",
         "impact": {},
-        "last-modified": "2022-12-02T18:18:00",
+        "last-modified": "2022-12-02T20:15:00",
         "references": [
-            "https://github.com/Double-q1015/CVE-vulns/blob/main/tenda_ac6/formSetVirtualSer/formSetVirtualSer.md"
+            "https://github.com/anhdq201/rukovoditel/issues/14",
+            "http://rukovoditel.com"
         ],
-        "summary": "Tenda AC6V1.0 V15.03.05.19 was discovered to contain a buffer overflow via the list parameter in the formSetVirtualSer function."
+        "summary": "Rukovoditel v3.2.1 was discovered to contain a stored cross-site scripting (XSS) vulnerability in the Add Announcement function at /index.php?module=help_pages/pages&entities_id=24. This vulnerability allows attackers to execute arbitrary web scripts or HTML via a crafted payload injected into the Title field."
     },
     {
-        "Modified": "2022-12-02T18:18:00",
-        "Published": "2022-12-02T18:15:00",
+        "Modified": "2022-12-02T20:15:00",
+        "Published": "2022-12-02T20:15:00",
         "access": {},
         "assigner": "cve@mitre.org",
         "cvss": null,
         "cwe": "Unknown",
-        "id": "CVE-2022-45655",
+        "id": "CVE-2022-44945",
         "impact": {},
-        "last-modified": "2022-12-02T18:18:00",
+        "last-modified": "2022-12-02T20:15:00",
         "references": [
-            "https://github.com/Double-q1015/CVE-vulns/blob/main/tenda_ac6/form_fast_setting_wifi_set_timeZone/form_fast_setting_wifi_set_timeZone.md"
+            "https://github.com/anhdq201/rukovoditel/issues/16",
+            "http://rukovoditel.com"
         ],
-        "summary": "Tenda AC6V1.0 V15.03.05.19 was discovered to contain a buffer overflow via the timeZone parameter in the form_fast_setting_wifi_set function."
+        "summary": "Rukovoditel v3.2.1 was discovered to contain a SQL injection vulnerability via the heading_field_id parameter."
     },
     {
-        "Modified": "2022-12-02T18:18:00",
-        "Published": "2022-12-02T18:15:00",
+        "Modified": "2022-12-02T20:15:00",
+        "Published": "2022-12-02T20:15:00",
         "access": {},
         "assigner": "cve@mitre.org",
         "cvss": null,
         "cwe": "Unknown",
-        "id": "CVE-2022-45656",
+        "id": "CVE-2022-44946",
         "impact": {},
-        "last-modified": "2022-12-02T18:18:00",
+        "last-modified": "2022-12-02T20:15:00",
         "references": [
-            "https://github.com/Double-q1015/CVE-vulns/blob/main/tenda_ac6/fromSetSysTime/fromSetSysTime.md"
+            "https://github.com/anhdq201/rukovoditel/issues/15",
+            "http://rukovoditel.com"
         ],
-        "summary": "Tenda AC6V1.0 V15.03.05.19 was discovered to contain a buffer overflow via the time parameter in the fromSetSysTime function."
+        "summary": "Rukovoditel v3.2.1 was discovered to contain a stored cross-site scripting (XSS) vulnerability in the Add Page function at /index.php?module=help_pages/pages&entities_id=24. This vulnerability allows attackers to execute arbitrary web scripts or HTML via a crafted payload injected into the Title field."
     },
     {
-        "Modified": "2022-12-02T18:18:00",
-        "Published": "2022-12-02T18:15:00",
+        "Modified": "2022-12-02T20:15:00",
+        "Published": "2022-12-02T20:15:00",
         "access": {},
         "assigner": "cve@mitre.org",
         "cvss": null,
         "cwe": "Unknown",
-        "id": "CVE-2022-45657",
+        "id": "CVE-2022-44947",
         "impact": {},
-        "last-modified": "2022-12-02T18:18:00",
+        "last-modified": "2022-12-02T20:15:00",
         "references": [
-            "https://github.com/Double-q1015/CVE-vulns/blob/main/tenda_ac6/fromSetIpMacBind/fromSetIpMacBind.md"
+            "https://github.com/anhdq201/rukovoditel/issues/13",
+            "http://rukovoditel.com"
         ],
-        "summary": "Tenda AC6V1.0 V15.03.05.19 was discovered to contain a buffer overflow via the list parameter in the fromSetIpMacBind function."
+        "summary": "Rukovoditel v3.2.1 was discovered to contain a stored cross-site scripting (XSS) vulnerability in the Highlight Row feature at /index.php?module=entities/listing_types&entities_id=24. This vulnerability allows attackers to execute arbitrary web scripts or HTML via a crafted payload injected into the Note field after clicking \"Add\"."
     },
     {
-        "Modified": "2022-12-02T18:18:00",
-        "Published": "2022-12-02T18:15:00",
+        "Modified": "2022-12-02T20:15:00",
+        "Published": "2022-12-02T20:15:00",
         "access": {},
         "assigner": "cve@mitre.org",
         "cvss": null,
         "cwe": "Unknown",
-        "id": "CVE-2022-45658",
+        "id": "CVE-2022-44948",
         "impact": {},
-        "last-modified": "2022-12-02T18:18:00",
+        "last-modified": "2022-12-02T20:15:00",
         "references": [
-            "https://github.com/Double-q1015/CVE-vulns/blob/main/tenda_ac6/setSchedWifi_schedEndTime/setSchedWifi_schedEndTime.md"
+            "https://github.com/anhdq201/rukovoditel/issues/8",
+            "http://rukovoditel.com"
         ],
-        "summary": "Tenda AC6V1.0 V15.03.05.19 was discovered to contain a buffer overflow via the schedEndTime parameter in the setSchedWifi function."
+        "summary": "Rukovoditel v3.2.1 was discovered to contain a stored cross-site scripting (XSS) vulnerability in the Entities Group feature at/index.php?module=entities/entities_groups. This vulnerability allows attackers to execute arbitrary web scripts or HTML via a crafted payload injected into the Name field after clicking \"Add\"."
     },
     {
-        "Modified": "2022-12-02T18:18:00",
-        "Published": "2022-12-02T18:15:00",
+        "Modified": "2022-12-02T20:15:00",
+        "Published": "2022-12-02T20:15:00",
         "access": {},
         "assigner": "cve@mitre.org",
         "cvss": null,
         "cwe": "Unknown",
-        "id": "CVE-2022-45659",
+        "id": "CVE-2022-44949",
         "impact": {},
-        "last-modified": "2022-12-02T18:18:00",
+        "last-modified": "2022-12-02T20:15:00",
         "references": [
-            "https://github.com/Double-q1015/CVE-vulns/blob/main/tenda_ac6/fromSetWirelessRepeat/fromSetWirelessRepeat.md"
+            "https://github.com/anhdq201/rukovoditel/issues/12",
+            "http://rukovoditel.com"
         ],
-        "summary": "Tenda AC6V1.0 V15.03.05.19 was discovered to contain a buffer overflow via the wpapsk_crypto parameter in the fromSetWirelessRepeat function."
+        "summary": "Rukovoditel v3.2.1 was discovered to contain a stored cross-site scripting (XSS) vulnerability in the Add New Field function at /index.php?module=entities/fields&entities_id=24. This vulnerability allows attackers to execute arbitrary web scripts or HTML via a crafted payload injected into the Short Name field."
     },
     {
-        "Modified": "2022-12-02T18:18:00",
-        "Published": "2022-12-02T18:15:00",
+        "Modified": "2022-12-02T20:15:00",
+        "Published": "2022-12-02T20:15:00",
         "access": {},
         "assigner": "cve@mitre.org",
         "cvss": null,
         "cwe": "Unknown",
-        "id": "CVE-2022-45660",
+        "id": "CVE-2022-44950",
         "impact": {},
-        "last-modified": "2022-12-02T18:18:00",
+        "last-modified": "2022-12-02T20:15:00",
         "references": [
-            "https://github.com/Double-q1015/CVE-vulns/blob/main/tenda_ac6/setSchedWifi_schedStartTime/setSchedWifi_schedStartTime.md"
+            "http://rukovoditel.com",
+            "https://github.com/anhdq201/rukovoditel/issues/10"
         ],
-        "summary": "Tenda AC6V1.0 V15.03.05.19 was discovered to contain a buffer overflow via the schedStartTime parameter in the setSchedWifi function."
+        "summary": "Rukovoditel v3.2.1 was discovered to contain a stored cross-site scripting (XSS) vulnerability in the Add New Field function at /index.php?module=entities/fields&entities_id=24. This vulnerability allows attackers to execute arbitrary web scripts or HTML via a crafted payload injected into the Name field."
     },
     {
-        "Modified": "2022-12-02T18:18:00",
-        "Published": "2022-12-02T18:15:00",
+        "Modified": "2022-12-02T20:15:00",
+        "Published": "2022-12-02T20:15:00",
         "access": {},
         "assigner": "cve@mitre.org",
         "cvss": null,
         "cwe": "Unknown",
-        "id": "CVE-2022-45661",
+        "id": "CVE-2022-44951",
         "impact": {},
-        "last-modified": "2022-12-02T18:18:00",
+        "last-modified": "2022-12-02T20:15:00",
         "references": [
-            "https://github.com/Double-q1015/CVE-vulns/blob/main/tenda_ac6/setSmartPowerManagement/setSmartPowerManagement.md"
+            "https://github.com/anhdq201/rukovoditel/issues/11",
+            "http://rukovoditel.com"
         ],
-        "summary": "Tenda AC6V1.0 V15.03.05.19 was discovered to contain a buffer overflow via the time parameter in the setSmartPowerManagement function."
+        "summary": "Rukovoditel v3.2.1 was discovered to contain a stored cross-site scripting (XSS) vulnerability in the Add New Form tab function at /index.php?module=entities/forms&entities_id=24. This vulnerability allows attackers to execute arbitrary web scripts or HTML via a crafted payload injected into the Name field."
     },
     {
-        "Modified": "2022-12-02T18:18:00",
-        "Published": "2022-12-02T18:15:00",
+        "Modified": "2022-12-02T20:15:00",
+        "Published": "2022-12-02T20:15:00",
         "access": {},
         "assigner": "cve@mitre.org",
         "cvss": null,
         "cwe": "Unknown",
-        "id": "CVE-2022-45663",
+        "id": "CVE-2022-44952",
         "impact": {},
-        "last-modified": "2022-12-02T18:18:00",
+        "last-modified": "2022-12-02T20:15:00",
         "references": [
-            "https://github.com/Double-q1015/CVE-vulns/blob/main/tenda_i22/formWifiMacFilterSet/formWifiMacFilterSet.md"
+            "https://github.com/anhdq201/rukovoditel/issues/9",
+            "http://rukovoditel.com"
         ],
-        "summary": "Tenda i22 V1.0.0.3(4687) was discovered to contain a buffer overflow via the index parameter in the formWifiMacFilterSet function."
+        "summary": "Rukovoditel v3.2.1 was discovered to contain a stored cross-site scripting (XSS) vulnerability in /index.php?module=configuration/application. This vulnerability allows attackers to execute arbitrary web scripts or HTML via a crafted payload injected into the Copyright Text field after clicking \"Add\"."
     },
     {
-        "Modified": "2022-12-02T18:18:00",
-        "Published": "2022-12-02T18:15:00",
+        "Modified": "2022-12-02T20:15:00",
+        "Published": "2022-12-02T20:15:00",
         "access": {},
         "assigner": "cve@mitre.org",
         "cvss": null,
         "cwe": "Unknown",
-        "id": "CVE-2022-45664",
+        "id": "CVE-2022-44953",
         "impact": {},
-        "last-modified": "2022-12-02T18:18:00",
+        "last-modified": "2022-12-02T20:15:00",
         "references": [
-            "https://github.com/Double-q1015/CVE-vulns/blob/main/tenda_i22/formwrlSSIDget/formWifiMacFilterGet.md"
+            "https://github.com/anhdq201/webtareas/issues/8",
+            "http://webtareas.com"
         ],
-        "summary": "Tenda i22 V1.0.0.3(4687) was discovered to contain a buffer overflow via the list parameter in the formwrlSSIDget function."
+        "summary": "webtareas 2.4p5 was discovered to contain a cross-site scripting (XSS) vulnerability in the component /linkedcontent/listfiles.php. This vulnerability allows attackers to execute arbitrary web scripts or HTML via a crafted payload injected into the Name field after clicking \"Add\"."
     },
     {
-        "Modified": "2022-12-02T18:18:00",
-        "Published": "2022-12-02T18:15:00",
+        "Modified": "2022-12-02T20:15:00",
+        "Published": "2022-12-02T20:15:00",
         "access": {},
         "assigner": "cve@mitre.org",
         "cvss": null,
         "cwe": "Unknown",
-        "id": "CVE-2022-45667",
+        "id": "CVE-2022-44954",
         "impact": {},
-        "last-modified": "2022-12-02T18:18:00",
+        "last-modified": "2022-12-02T20:15:00",
         "references": [
-            "https://github.com/Double-q1015/CVE-vulns/blob/main/tenda_i22/fromSysToolRestoreSet/fromSysToolRestoreSet.md"
+            "https://github.com/anhdq201/webtareas/issues/10",
+            "http://webtareas.com"
         ],
-        "summary": "Tenda i22 V1.0.0.3(4687) is vulnerable to Cross Site Request Forgery (CSRF) via function fromSysToolRestoreSet."
+        "summary": "webtareas 2.4p5 was discovered to contain a cross-site scripting (XSS) vulnerability in the component /contacts/listcontacts.php. This vulnerability allows attackers to execute arbitrary web scripts or HTML via a crafted payload injected into the Last Name field after clicking \"Add\"."
     },
     {
-        "Modified": "2022-12-02T18:18:00",
-        "Published": "2022-12-02T18:15:00",
+        "Modified": "2022-12-02T20:15:00",
+        "Published": "2022-12-02T20:15:00",
         "access": {},
         "assigner": "cve@mitre.org",
         "cvss": null,
         "cwe": "Unknown",
-        "id": "CVE-2022-45668",
+        "id": "CVE-2022-44955",
         "impact": {},
-        "last-modified": "2022-12-02T18:18:00",
+        "last-modified": "2022-12-02T20:15:00",
         "references": [
-            "https://github.com/Double-q1015/CVE-vulns/blob/main/tenda_i22/fromSysToolReboot/fromSysToolReboot.md"
+            "http://webtareas.com",
+            "https://github.com/anhdq201/webtareas/issues/5"
         ],
-        "summary": "Tenda i22 V1.0.0.3(4687) is vulnerable to Cross Site Request Forgery (CSRF) via function fromSysToolReboot."
+        "summary": "webtareas 2.4p5 was discovered to contain a cross-site scripting (XSS) vulnerability in the Chat function. This vulnerability allows attackers to execute arbitrary web scripts or HTML via a crafted payload injected into the Messages field."
     },
     {
-        "Modified": "2022-12-02T18:18:00",
-        "Published": "2022-12-02T18:15:00",
+        "Modified": "2022-12-02T20:15:00",
+        "Published": "2022-12-02T20:15:00",
         "access": {},
         "assigner": "cve@mitre.org",
         "cvss": null,
         "cwe": "Unknown",
-        "id": "CVE-2022-45669",
+        "id": "CVE-2022-44956",
         "impact": {},
-        "last-modified": "2022-12-02T18:18:00",
+        "last-modified": "2022-12-02T20:15:00",
         "references": [
-            "https://github.com/ConfusedChenSir/VulnerabilityProjectRecords/blob/main/formWifiMacFilterGet/formWifiMacFilterGet.md"
+            "http://webtareas.com",
+            "https://github.com/anhdq201/webtareas/issues/3"
         ],
-        "summary": "Tenda i22 V1.0.0.3(4687) was discovered to contain a buffer overflow via the index parameter in the formWifiMacFilterGet function."
+        "summary": "webtareas 2.4p5 was discovered to contain a cross-site scripting (XSS) vulnerability in the component /projects/listprojects.php. This vulnerability allows attackers to execute arbitrary web scripts or HTML via a crafted payload injected into the Name field."
     },
     {
-        "Modified": "2022-12-02T18:18:00",
-        "Published": "2022-12-02T18:15:00",
+        "Modified": "2022-12-02T20:15:00",
+        "Published": "2022-12-02T20:15:00",
         "access": {},
         "assigner": "cve@mitre.org",
         "cvss": null,
         "cwe": "Unknown",
-        "id": "CVE-2022-45670",
+        "id": "CVE-2022-44957",
         "impact": {},
-        "last-modified": "2022-12-02T18:18:00",
+        "last-modified": "2022-12-02T20:15:00",
         "references": [
-            "https://github.com/ConfusedChenSir/VulnerabilityProjectRecords/blob/main/formSetAutoPing_ping1/formSetAutoPing_ping1.md"
+            "http://webtareas.com",
+            "https://github.com/anhdq201/webtareas/issues/11"
         ],
-        "summary": "Tenda i22 V1.0.0.3(4687) was discovered to contain a buffer overflow via the ping1 parameter in the formSetAutoPing function."
+        "summary": "webtareas 2.4p5 was discovered to contain a cross-site scripting (XSS) vulnerability in the component /clients/listclients.php. This vulnerability allows attackers to execute arbitrary web scripts or HTML via a crafted payload injected into the Name field."
     },
     {
-        "Modified": "2022-12-02T18:18:00",
-        "Published": "2022-12-02T18:15:00",
+        "Modified": "2022-12-02T20:15:00",
+        "Published": "2022-12-02T20:15:00",
         "access": {},
         "assigner": "cve@mitre.org",
         "cvss": null,
         "cwe": "Unknown",
-        "id": "CVE-2022-45641",
+        "id": "CVE-2022-44959",
         "impact": {},
-        "last-modified": "2022-12-02T18:18:00",
+        "last-modified": "2022-12-02T20:15:00",
         "references": [
-            "https://github.com/Double-q1015/CVE-vulns/blob/main/tenda_ac6/formSetMacFilterCfg/formSetMacFilterCfg.md"
+            "http://webtareas.com",
+            "https://github.com/anhdq201/webtareas/issues/6"
         ],
-        "summary": "Tenda AC6V1.0 V15.03.05.19 is vulnerable to Buffer Overflow via formSetMacFilterCfg."
+        "summary": "webtareas 2.4p5 was discovered to contain a cross-site scripting (XSS) vulnerability in the component /meetings/listmeetings.php. This vulnerability allows attackers to execute arbitrary web scripts or HTML via a crafted payload injected into the Name field."
     },
     {
-        "Modified": "2022-12-02T18:18:00",
-        "Published": "2022-12-02T18:15:00",
+        "Modified": "2022-12-02T20:15:00",
+        "Published": "2022-12-02T20:15:00",
         "access": {},
         "assigner": "cve@mitre.org",
         "cvss": null,
         "cwe": "Unknown",
-        "id": "CVE-2022-45643",
+        "id": "CVE-2022-44960",
         "impact": {},
-        "last-modified": "2022-12-02T18:18:00",
+        "last-modified": "2022-12-02T20:15:00",
         "references": [
-            "https://github.com/Double-q1015/CVE-vulns/blob/main/tenda_ac6/addWifiMacFilter_deviceId/addWifiMacFilter_deviceId.md"
+            "http://webtareas.com",
+            "https://github.com/anhdq201/webtareas/issues/4"
         ],
-        "summary": "Tenda AC6V1.0 V15.03.05.19 was discovered to contain a buffer overflow via the deviceId parameter in the addWifiMacFilter function."
+        "summary": "webtareas 2.4p5 was discovered to contain a cross-site scripting (XSS) vulnerability in the component /general/search.php?searchtype=simple. This vulnerability allows attackers to execute arbitrary web scripts or HTML via a crafted payload injected into the Search field."
     },
     {
-        "Modified": "2022-12-02T18:18:00",
-        "Published": "2022-12-02T18:15:00",
+        "Modified": "2022-12-02T20:15:00",
+        "Published": "2022-12-02T20:15:00",
         "access": {},
         "assigner": "cve@mitre.org",
         "cvss": null,
         "cwe": "Unknown",
-        "id": "CVE-2022-45644",
+        "id": "CVE-2022-44961",
         "impact": {},
-        "last-modified": "2022-12-02T18:18:00",
+        "last-modified": "2022-12-02T20:15:00",
         "references": [
-            "https://github.com/Double-q1015/CVE-vulns/blob/main/tenda_ac6/formSetClientState_deviceId/formSetClientState_deviceId.md"
+            "https://github.com/anhdq201/webtareas/issues/7",
+            "http://webtareas.com"
         ],
-        "summary": "Tenda AC6V1.0 V15.03.05.19 was discovered to contain a buffer overflow via the deviceId parameter in the formSetClientState function."
+        "summary": "webtareas 2.4p5 was discovered to contain a cross-site scripting (XSS) vulnerability in the component /forums/editforum.php. This vulnerability allows attackers to execute arbitrary web scripts or HTML via a crafted payload injected into the Name field."
     },
     {
-        "Modified": "2022-12-02T18:18:00",
-        "Published": "2022-12-02T18:15:00",
+        "Modified": "2022-12-02T20:15:00",
+        "Published": "2022-12-02T20:15:00",
         "access": {},
         "assigner": "cve@mitre.org",
         "cvss": null,
         "cwe": "Unknown",
-        "id": "CVE-2022-45645",
+        "id": "CVE-2022-44962",
         "impact": {},
-        "last-modified": "2022-12-02T18:18:00",
+        "last-modified": "2022-12-02T20:15:00",
         "references": [
-            "https://github.com/Double-q1015/CVE-vulns/blob/main/tenda_ac6/addWifiMacFilter_deviceMac/addWifiMacFilter_derviceMac.md"
+            "http://webtareas.com",
+            "https://github.com/anhdq201/webtareas/issues/12"
         ],
-        "summary": "Tenda AC6V1.0 V15.03.05.19 was discovered to contain a buffer overflow via the deviceMac parameter in the addWifiMacFilter function."
+        "summary": "webtareas 2.4p5 was discovered to contain a cross-site scripting (XSS) vulnerability in the component /calendar/viewcalendar.php. This vulnerability allows attackers to execute arbitrary web scripts or HTML via a crafted payload injected into the Subject field."
     },
     {
-        "Modified": "2022-12-02T18:18:00",
-        "Published": "2022-12-02T18:15:00",
-        "access": {},
+        "Modified": "2022-12-02T20:15:00",
+        "Published": "2021-06-17T19:15:00",
+        "access": {
+            "authentication": "SINGLE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
         "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-45647",
-        "impact": {},
-        "last-modified": "2022-12-02T18:18:00",
+        "cvss": 6.5,
+        "cvss-time": "2022-12-02T20:15:00",
+        "cvss-vector": "AV:N/AC:L/Au:S/C:P/I:P/A:P",
+        "cwe": "CWE-434",
+        "id": "CVE-2020-36388",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "PARTIAL",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-12-02T20:15:00",
         "references": [
-            "https://github.com/Double-q1015/CVE-vulns/blob/main/tenda_ac6/formSetClientState_limitSpeed/formSetClientState_limitSpeed.md"
+            "https://civicrm.org/advisory/civi-sa-2020-03",
+            "https://blog.sonarsource.com/civicrm-code-execution-vulnerability-chain-explained/"
         ],
-        "summary": "Tenda AC6V1.0 V15.03.05.19 was discovered to contain a buffer overflow via the limitSpeed parameter in the formSetClientState function."
+        "summary": "In CiviCRM before 5.21.3 and 5.22.x through 5.24.x before 5.24.3, users may be able to upload and execute a crafted PHAR archive."
     },
     {
-        "Modified": "2022-12-02T18:18:00",
-        "Published": "2022-12-02T18:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-45648",
-        "impact": {},
-        "last-modified": "2022-12-02T18:18:00",
-        "references": [
-            "https://github.com/Double-q1015/CVE-vulns/blob/main/tenda_ac6/formSetDeviceName/formSetDeviceName.md"
-        ],
-        "summary": "Tenda AC6V1.0 V15.03.05.19 was discovered to contain a buffer overflow via the devName parameter in the formSetDeviceName function."
-    },
-    {
-        "Modified": "2022-12-02T18:18:00",
-        "Published": "2022-12-02T18:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-45650",
-        "impact": {},
-        "last-modified": "2022-12-02T18:18:00",
-        "references": [
-            "https://github.com/Double-q1015/CVE-vulns/blob/main/tenda_ac6/formSetFirewallCfg/formSetFirewallCfg.md"
-        ],
-        "summary": "Tenda AC6V1.0 V15.03.05.19 was discovered to contain a buffer overflow via the firewallEn parameter in the formSetFirewallCfg function."
-    },
-    {
-        "Modified": "2022-12-02T18:18:00",
-        "Published": "2022-12-02T18:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-45653",
-        "impact": {},
-        "last-modified": "2022-12-02T18:18:00",
-        "references": [
-            "https://github.com/Double-q1015/CVE-vulns/blob/main/tenda_ac6/fromNatStaticSetting/fromNatStaticSetting_page.md"
-        ],
-        "summary": "Tenda AC6V1.0 V15.03.05.19 was discovered to contain a buffer overflow via the page parameter in the fromNatStaticSetting function."
-    },
-    {
-        "Modified": "2022-12-02T18:18:00",
-        "Published": "2022-12-02T18:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-45652",
-        "impact": {},
-        "last-modified": "2022-12-02T18:18:00",
-        "references": [
-            "https://github.com/Double-q1015/CVE-vulns/blob/main/tenda_ac6/formSetPPTPServer_startIp/formSetPPTPServer_startIp.md"
-        ],
-        "summary": "Tenda AC6V1.0 V15.03.05.19 was discovered to contain a buffer overflow via the startIp parameter in the formSetPPTPServer function."
-    },
-    {
-        "Modified": "2022-12-02T18:18:00",
-        "Published": "2022-12-02T18:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-45671",
-        "impact": {},
-        "last-modified": "2022-12-02T18:18:00",
-        "references": [
-            "https://github.com/Double-q1015/CVE-vulns/blob/main/tenda_i22/formSetAppFilterRule/formSetAppFilterRule.md"
-        ],
-        "summary": "Tenda i22 V1.0.0.3(4687) was discovered to contain a buffer overflow via the appData parameter in the formSetAppFilterRule function."
-    },
-    {
-        "Modified": "2022-12-02T18:18:00",
-        "Published": "2022-12-02T18:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-45654",
-        "impact": {},
-        "last-modified": "2022-12-02T18:18:00",
-        "references": [
-            "https://github.com/Double-q1015/CVE-vulns/blob/main/tenda_ac6/form_fast_setting_wifi_set_ssid/form_fast_setting_wifi_set_ssid.md"
-        ],
-        "summary": "Tenda AC6V1.0 V15.03.05.19 was discovered to contain a buffer overflow via the ssid parameter in the form_fast_setting_wifi_set function."
-    },
-    {
-        "Modified": "2022-12-02T18:18:00",
-        "Published": "2022-12-02T18:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-45672",
-        "impact": {},
-        "last-modified": "2022-12-02T18:18:00",
-        "references": [
-            "https://github.com/Double-q1015/CVE-vulns/blob/main/tenda_i22/formWx3AuthorizeSet/formWx3AuthorizeSet.md"
-        ],
-        "summary": "Tenda i22 V1.0.0.3(4687) was discovered to contain a buffer overflow via the formWx3AuthorizeSet function."
-    },
-    {
-        "Modified": "2022-12-02T18:18:00",
-        "Published": "2022-12-02T18:15:00",
-        "access": {},
-        "assigner": "security-advisories@github.com",
-        "cvss": null,
-        "cwe": "CWE-287",
-        "id": "CVE-2022-46145",
-        "impact": {},
-        "last-modified": "2022-12-02T18:18:00",
-        "references": [
-            "https://goauthentik.io/docs/releases/2022.11#fixed-in-2022112",
-            "https://goauthentik.io/docs/releases/2022.10#fixed-in-2022102",
-            "https://github.com/goauthentik/authentik/security/advisories/GHSA-mjfw-54m5-fvjf"
-        ],
-        "summary": "authentik is an open-source identity provider. Versions prior to 2022.11.2 and 2022.10.2 are vulnerable to unauthorized user creation and potential account takeover. With the default flows, unauthenticated users can create new accounts in authentik. If a flow exists that allows for email-verified password recovery, this can be used to overwrite the email address of admin accounts and take over their accounts. authentik 2022.11.2 and 2022.10.2 fix this issue. As a workaround, a policy can be created and bound to the `default-user-settings-flow flow` with the contents `return request.user.is_authenticated`."
-    },
-    {
-        "Modified": "2022-12-02T18:15:00",
-        "Published": "2009-03-09T21:30:00",
+        "Modified": "2022-12-02T20:15:00",
+        "Published": "2021-06-17T19:15:00",
         "access": {
             "authentication": "NONE",
             "complexity": "MEDIUM",
@@ -593,994 +499,1097 @@
         },
         "assigner": "cve@mitre.org",
         "cvss": 4.3,
-        "cvss-time": "2022-12-02T18:15:00",
+        "cvss-time": "2022-12-02T20:15:00",
         "cvss-vector": "AV:N/AC:M/Au:N/C:N/I:P/A:N",
-        "cwe": "CWE-79",
-        "id": "CVE-2009-0855",
+        "cwe": "CWE-352",
+        "id": "CVE-2020-36389",
         "impact": {
             "availability": "NONE",
             "confidentiality": "NONE",
             "integrity": "PARTIAL"
         },
-        "last-modified": "2022-12-02T18:15:00",
+        "last-modified": "2022-12-02T20:15:00",
         "references": [
-            "http://www.vupen.com/english/advisories/2009/0607",
-            "http://www-01.ibm.com/support/docview.wss?uid=swg1PK77505",
-            "http://secunia.com/advisories/34131",
-            "http://www-01.ibm.com/support/docview.wss?uid=swg1PK81212",
-            "http://www.securityfocus.com/bid/34001",
-            "http://www-01.ibm.com/support/docview.wss?uid=swg1PK82988",
-            "http://secunia.com/advisories/34461",
-            "http://www.vupen.com/english/advisories/2009/0854",
-            "http://www.securityfocus.com/bid/34259",
-            "http://packetstormsecurity.com/files/170073/IBM-Websphere-Application-Server-7.0-Cross-Site-Scripting.html"
+            "https://civicrm.org/advisory/civi-sa-2020-11-csrf-ckeditor-configuration-form",
+            "https://blog.sonarsource.com/civicrm-code-execution-vulnerability-chain-explained/"
         ],
-        "summary": "Cross-site scripting (XSS) vulnerability in the administrative console in IBM WebSphere Application Server (WAS) 6.1 before 6.1.0.23 on z/OS allows remote attackers to inject arbitrary web script or HTML via unspecified vectors."
+        "summary": "In CiviCRM before 5.28.1 and CiviCRM ESR before 5.27.5 ESR, the CKEditor configuration form allows CSRF."
     },
     {
-        "Modified": "2022-12-02T18:14:00",
-        "Published": "2022-12-01T08:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-707",
-        "id": "CVE-2022-4247",
-        "impact": {},
-        "last-modified": "2022-12-02T18:14:00",
-        "references": [
-            "https://vuldb.com/?id.214624",
-            "https://github.com/aman05382/movie_ticket_booking_system_php/issues/1"
-        ],
-        "summary": "A vulnerability classified as critical was found in Movie Ticket Booking System. This vulnerability affects unknown code of the file booking.php. The manipulation of the argument id leads to sql injection. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used. The identifier of this vulnerability is VDB-214624."
-    },
-    {
-        "Modified": "2022-12-02T17:57:00",
-        "Published": "2022-11-30T15:15:00",
-        "access": {},
-        "assigner": "security@m-files.com",
-        "cvss": null,
-        "cwe": "CWE-668",
-        "id": "CVE-2022-1911",
-        "impact": {},
-        "last-modified": "2022-12-02T17:57:00",
-        "references": [
-            "https://www.m-files.com/about/trust-center/security-advisories/cve-2022-1911/"
-        ],
-        "summary": "Error in parser function in M-Files Server versions before 22.6.11534.1 and before 22.6.11505.0 allowed unauthenticated access to some information of the underlying operating system."
-    },
-    {
-        "Modified": "2022-12-02T17:40:00",
-        "Published": "2022-12-02T17:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-44363",
-        "impact": {},
-        "last-modified": "2022-12-02T17:40:00",
-        "references": [
-            "https://github.com/Double-q1015/CVE-vulns/blob/main/Tenda/i21/formSetSnmpInfo/readme.md"
-        ],
-        "summary": "Tenda i21 V1.0.0.14(4656) is vulnerable to Buffer Overflow via /goform/setSnmpInfo."
-    },
-    {
-        "Modified": "2022-12-02T17:40:00",
-        "Published": "2022-12-02T17:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-44367",
-        "impact": {},
-        "last-modified": "2022-12-02T17:40:00",
-        "references": [
-            "https://github.com/Double-q1015/CVE-vulns/blob/main/Tenda/i21/formSetUplinkInfo/readme.md"
-        ],
-        "summary": "Tenda i21 V1.0.0.14(4656) is vulnerable to Buffer Overflow via /goform/setUplinkInfo."
-    },
-    {
-        "Modified": "2022-12-02T17:40:00",
-        "Published": "2022-12-02T17:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-44277",
-        "impact": {},
-        "last-modified": "2022-12-02T17:40:00",
-        "references": [
-            "https://github.com/llwyx200113/bug_report/blob/main/vendors/oretnom23/sanitization-management-system/SQLi-1.md"
-        ],
-        "summary": "Sanitization Management System v1.0 is vulnerable to SQL Injection via /php-sms/classes/Master.php?f=delete_product."
-    },
-    {
-        "Modified": "2022-12-02T17:40:00",
-        "Published": "2022-12-02T17:15:00",
-        "access": {},
-        "assigner": "security@huntr.dev",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-3591",
-        "impact": {},
-        "last-modified": "2022-12-02T17:40:00",
-        "references": [
-            "https://github.com/vim/vim/commit/8f3c3c6cd044e3b5bf08dbfa3b3f04bb3f711bad",
-            "https://huntr.dev/bounties/a5a998c2-4b07-47a7-91be-dbc1886b3921"
-        ],
-        "summary": "Use After Free in GitHub repository vim/vim prior to 9.0.0789."
-    },
-    {
-        "Modified": "2022-12-02T17:40:00",
-        "Published": "2022-12-02T17:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-44345",
-        "impact": {},
-        "last-modified": "2022-12-02T17:40:00",
-        "references": [
-            "https://github.com/BGP-OSPF/bug_report/blob/main/vendors/oretnom23/sanitization-management-system/SQLi-1.md"
-        ],
-        "summary": "Sanitization Management System v1.0 is vulnerable to SQL Injection via /php-sms/admin/?page=quotes/view_quote&id=."
-    },
-    {
-        "Modified": "2022-12-02T17:40:00",
-        "Published": "2022-12-02T17:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-44347",
-        "impact": {},
-        "last-modified": "2022-12-02T17:40:00",
-        "references": [
-            "https://github.com/BGP-OSPF/bug_report/blob/main/vendors/oretnom23/sanitization-management-system/SQLi-2.md"
-        ],
-        "summary": "Sanitization Management System v1.0 is vulnerable to SQL Injection via /php-sms/admin/?page=inquiries/view_inquiry&id=."
-    },
-    {
-        "Modified": "2022-12-02T17:40:00",
-        "Published": "2022-12-02T17:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-44348",
-        "impact": {},
-        "last-modified": "2022-12-02T17:40:00",
-        "references": [
-            "https://github.com/BGP-OSPF/bug_report/blob/main/vendors/oretnom23/sanitization-management-system/SQLi-3.md"
-        ],
-        "summary": "Sanitization Management System v1.0 is vulnerable to SQL Injection via /php-sms/admin/orders/update_status.php?id=."
-    },
-    {
-        "Modified": "2022-12-02T17:40:00",
-        "Published": "2022-12-02T17:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-44362",
-        "impact": {},
-        "last-modified": "2022-12-02T17:40:00",
-        "references": [
-            "https://github.com/Double-q1015/CVE-vulns/blob/main/Tenda/i21/formAddSysLogRule/readme.md"
-        ],
-        "summary": "Tenda i21 V1.0.0.14(4656) is vulnerable to Buffer Overflow via /goform/AddSysLogRule."
-    },
-    {
-        "Modified": "2022-12-02T17:40:00",
-        "Published": "2022-12-02T17:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-44365",
-        "impact": {},
-        "last-modified": "2022-12-02T17:40:00",
-        "references": [
-            "https://github.com/Double-q1015/CVE-vulns/blob/main/Tenda/i21/formSetSysPwd/readme.md"
-        ],
-        "summary": "Tenda i21 V1.0.0.14(4656) has a stack overflow vulnerability via /goform/setSysPwd."
-    },
-    {
-        "Modified": "2022-12-02T17:40:00",
-        "Published": "2022-12-02T17:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-44366",
-        "impact": {},
-        "last-modified": "2022-12-02T17:40:00",
-        "references": [
-            "https://github.com/Double-q1015/CVE-vulns/blob/main/Tenda/i21/formSetDiagnoseInfo/readme.md"
-        ],
-        "summary": "Tenda i21 V1.0.0.14(4656) is vulnerable to Buffer Overflow via /goform/setDiagnoseInfo."
-    },
-    {
-        "Modified": "2022-12-02T17:40:00",
-        "Published": "2022-12-02T17:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-45673",
-        "impact": {},
-        "last-modified": "2022-12-02T17:40:00",
-        "references": [
-            "https://github.com/ConfusedChenSir/VulnerabilityProjectRecords/blob/main/fromSysToolRestoreSet/fromSysToolRestoreSet.md"
-        ],
-        "summary": "Tenda AC6V1.0 V15.03.05.19 is vulnerable to Cross Site Request Forgery (CSRF) via function fromSysToolRestoreSet."
-    },
-    {
-        "Modified": "2022-12-02T17:40:00",
-        "Published": "2022-12-02T17:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-44367",
-        "impact": {},
-        "last-modified": "2022-12-02T17:40:00",
-        "references": [
-            "https://github.com/Double-q1015/CVE-vulns/blob/main/Tenda/i21/formSetUplinkInfo/readme.md"
-        ],
-        "summary": "Tenda i21 V1.0.0.14(4656) is vulnerable to Buffer Overflow via /goform/setUplinkInfo."
-    },
-    {
-        "Modified": "2022-12-02T17:40:00",
-        "Published": "2022-12-02T17:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-45674",
-        "impact": {},
-        "last-modified": "2022-12-02T17:40:00",
-        "references": [
-            "https://github.com/ConfusedChenSir/VulnerabilityProjectRecords/blob/main/fromSysToolReboot/fromSysToolReboot.md"
-        ],
-        "summary": "Tenda AC6V1.0 V15.03.05.19 is vulnerable to Cross Site Request Forgery (CSRF) via function fromSysToolReboot."
-    },
-    {
-        "Modified": "2022-12-02T17:36:00",
-        "Published": "2022-12-01T08:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-404",
-        "id": "CVE-2022-4246",
-        "impact": {},
-        "last-modified": "2022-12-02T17:36:00",
-        "references": [
-            "https://seclists.org/fulldisclosure/2022/Nov/att-16/potplayer_7z.bin",
-            "https://vuldb.com/?id.214623",
-            "https://seclists.org/fulldisclosure/2022/Nov/16"
-        ],
-        "summary": "A vulnerability classified as problematic has been found in Kakao PotPlayer. This affects an unknown part of the component MID File Handler. The manipulation leads to denial of service. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-214623."
-    },
-    {
-        "Modified": "2022-12-02T17:35:00",
-        "Published": "2022-11-30T15:15:00",
-        "access": {},
-        "assigner": "security@m-files.com",
-        "cvss": null,
-        "cwe": "CWE-269",
-        "id": "CVE-2022-1606",
-        "impact": {},
-        "last-modified": "2022-12-02T17:35:00",
-        "references": [
-            "https://www.m-files.com/about/trust-center/security-advisories/cve-2022-1606/"
-        ],
-        "summary": "Incorrect privilege assignment in M-Files Server versions before 22.3.11164.0 and before 22.3.11237.1 allows user to read unmanaged objects."
-    },
-    {
-        "Modified": "2022-12-02T17:27:00",
-        "Published": "2022-12-01T05:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "NVD-CWE-noinfo",
-        "id": "CVE-2022-44262",
-        "impact": {},
-        "last-modified": "2022-12-02T17:27:00",
-        "references": [
-            "https://github.com/ff4j/ff4j/issues/624"
-        ],
-        "summary": "ff4j 1.8.1 is vulnerable to Remote Code Execution (RCE)."
-    },
-    {
-        "Modified": "2022-12-02T17:27:00",
-        "Published": "2022-11-30T15:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2021-31740",
-        "impact": {},
-        "last-modified": "2022-12-02T17:27:00",
-        "references": [
-            "https://www.pentagrid.ch/en/blog/multiple-vulnerabilities-in-seppmail/"
-        ],
-        "summary": "SEPPMail's web frontend, user input is not embedded correctly in the web page and therefore leads to cross-site scripting vulnerabilities (XSS)."
-    },
-    {
-        "Modified": "2022-12-02T17:24:00",
-        "Published": "2022-12-01T05:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-40849",
-        "impact": {},
-        "last-modified": "2022-12-02T17:24:00",
-        "references": [
-            "https://github.com/thinkcmf/thinkcmf/issues/737"
-        ],
-        "summary": "ThinkCMF version 6.0.7 is affected by Stored Cross-Site Scripting (XSS). An attacker who successfully exploited this vulnerability could inject a Persistent XSS payload in the Slideshow Management section that execute arbitrary JavaScript code on the client side, e.g., to steal the administrator's PHP session token (PHPSESSID)."
-    },
-    {
-        "Modified": "2022-12-02T17:18:00",
-        "Published": "2022-11-30T14:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-38802",
-        "impact": {},
-        "last-modified": "2022-12-02T17:18:00",
-        "references": [
-            "https://www.zkteco.com/",
-            "https://gist.github.com/hamoshwani/fd7e3d9d9ff8896f1ccf8426dccaf97e"
-        ],
-        "summary": "Zkteco BioTime < 8.5.3 Build:20200816.447 is vulnerable to Incorrect Access Control via resign, private message, manual log, time interval, attshift, and holiday. An authenticated administrator can read local files by exploiting XSS into a pdf generator when exporting data as a PDF"
-    },
-    {
-        "Modified": "2022-12-02T17:18:00",
-        "Published": "2022-11-30T14:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-38803",
-        "impact": {},
-        "last-modified": "2022-12-02T17:18:00",
-        "references": [
-            "https://gist.github.com/hamoshwani/44653bfe7b8cc461692a2f074b1ef475",
-            "https://www.zkteco.com/"
-        ],
-        "summary": "Zkteco BioTime < 8.5.3 Build:20200816.447 is vulnerable to Incorrect Access Control via Leave, overtime, Manual log. An authenticated employee can read local files by exploiting XSS into a pdf generator when exporting data as a PDF"
-    },
-    {
-        "Modified": "2022-12-02T17:17:00",
-        "Published": "2022-12-01T05:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-352",
-        "id": "CVE-2022-40489",
-        "impact": {},
-        "last-modified": "2022-12-02T17:17:00",
-        "references": [
-            "https://github.com/thinkcmf/thinkcmf/issues/736"
-        ],
-        "summary": "ThinkCMF version 6.0.7 is affected by a Cross Site Request Forgery (CSRF) vulnerability that allows a Super Administrator user to be injected into administrative users."
-    },
-    {
-        "Modified": "2022-12-02T16:57:00",
-        "Published": "2022-11-23T21:15:00",
-        "access": {},
-        "assigner": "security-advisories@github.com",
-        "cvss": null,
-        "cwe": "CWE-312",
-        "id": "CVE-2022-41933",
-        "impact": {},
-        "last-modified": "2022-12-02T16:57:00",
-        "references": [
-            "https://github.com/xwiki/xwiki-platform/commit/443e8398b75a1295067d74afb5898370782d863a#diff-f8a8f8ba80dfc55f044e2e60b521ce379176430ca6921b0f87b79cf682531f79L322",
-            "https://jira.xwiki.org/browse/XWIKI-19945",
-            "https://jira.xwiki.org/browse/XWIKI-19869",
-            "https://github.com/xwiki/xwiki-platform/security/advisories/GHSA-q2hm-2h45-v5g3",
-            "https://github.com/xwiki/xwiki-platform/security/advisories/GHSA-599v-w48h-rjrm"
-        ],
-        "summary": "XWiki Platform is a generic wiki platform offering runtime services for applications built on top of it. When the `reset a forgotten password` feature of XWiki was used, the password was then stored in plain text in database. This only concerns XWiki 13.1RC1 and newer versions. Note that it only concerns the reset password feature available from the \"Forgot your password\" link in the login view: the features allowing a user to change their password, or for an admin to change a user password are not impacted. This vulnerability is particularly dangerous in combination with other vulnerabilities allowing to perform data leak of personal data from users, such as GHSA-599v-w48h-rjrm. Note that this vulnerability only concerns the users of the main wiki: in case of farms, the users registered on subwiki are not impacted thanks to a bug we discovered when investigating this. The problem has been patched in version 14.6RC1, 14.4.3 and 13.10.8. The patch involves a migration of the impacted users as well as the history of the page, to ensure no password remains in plain text in the database. This migration also involves to inform the users about the possible disclosure of their passwords: by default, two emails are automatically sent to the impacted users. A first email to inform about the possibility that their password have been leaked, and a second email using the reset password feature to ask them to set a new password. It's also possible for administrators to set some properties for the migration: it's possible to decide if the user password should be reset (default) or if the passwords should be kept but only hashed. Note that in the first option, the users won't be able to login anymore until they set a new password if they were impacted. Note that in both options, mails will be sent to users to inform them and encourage them to change their passwords."
-    },
-    {
-        "Modified": "2022-12-02T16:53:00",
-        "Published": "2022-11-29T21:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "NVD-CWE-noinfo",
-        "id": "CVE-2021-31693",
-        "impact": {},
-        "last-modified": "2022-12-02T16:53:00",
-        "references": [
-            "https://www.vmware.com/security/advisories/VMSA-2022-0029.html"
-        ],
-        "summary": "VMware Tools for Windows (12.x.y prior to 12.1.5, 11.x.y and 10.x.y) contains a denial-of-service vulnerability in the VM3DMP driver. A malicious actor with local user privileges in the Windows guest OS, where VMware Tools is installed, can trigger a PANIC in the VM3DMP driver leading to a denial-of-service condition in the Windows guest OS."
-    },
-    {
-        "Modified": "2022-12-02T16:36:00",
-        "Published": "2022-11-30T23:15:00",
-        "access": {},
-        "assigner": "security-advisories@github.com",
-        "cvss": null,
-        "cwe": "CWE-74",
-        "id": "CVE-2022-46162",
-        "impact": {},
-        "last-modified": "2022-12-02T16:36:00",
-        "references": [
-            "https://github.com/discourse/discourse-bbcode/commit/91478f5cfecdcc43cf85b997168a8ecfd0f8df90",
-            "https://github.com/discourse/discourse-bbcode/security/advisories/GHSA-8c87-xpqv-c7mp"
-        ],
-        "summary": "discourse-bbcode is the official BBCode plugin for Discourse. Prior to commit 91478f5, CSS injection can occur when rendering content generated with the discourse-bccode plugin. This vulnerability only affects sites which have the discourse-bbcode plugin installed and enabled. This issue is patched in commit 91478f5. As a workaround, ensure that the Content Security Policy is enabled and monitor any posts that contain bbcode."
-    },
-    {
-        "Modified": "2022-12-02T16:28:00",
-        "Published": "2022-11-30T17:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-707",
-        "id": "CVE-2022-4234",
-        "impact": {},
-        "last-modified": "2022-12-02T16:28:00",
-        "references": [
-            "https://vuldb.com/?id.214595",
-            "https://www.jianshu.com/p/3efa724c789d?v=1669372054033"
-        ],
-        "summary": "A vulnerability was found in SourceCodester Canteen Management System. It has been rated as problematic. This issue affects the function builtin_echo of the file youthappam/brand.php. The manipulation of the argument brand_name leads to cross site scripting. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-214595."
-    },
-    {
-        "Modified": "2022-12-02T16:19:00",
-        "Published": "2022-12-02T16:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-43272",
-        "impact": {},
-        "last-modified": "2022-12-02T16:19:00",
-        "references": [
-            "https://github.com/songxpu/bug_report/tree/master/DCMTK/memory_leak_in_3.6.7",
-            "https://www.wolai.com/vaVuMxU4gGqFakbzvc9NYw"
-        ],
-        "summary": "DCMTK v3.6.7 was discovered to contain a memory leak via the T_ASC_Association object."
-    },
-    {
-        "Modified": "2022-12-02T16:19:00",
-        "Published": "2022-12-02T16:15:00",
-        "access": {},
-        "assigner": "disclosure@synopsys.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-45480",
-        "impact": {},
-        "last-modified": "2022-12-02T16:19:00",
-        "references": [
-            "https://www.synopsys.com/blogs/software-security/cyrc-advisory-remote-code-execution-vulnerabilities-mouse-keyboard-apps/"
-        ],
-        "summary": "PC Keyboard WiFi & Bluetooth allows an attacker (in a man-in-the-middle position between the server and a connected device) to see all data (including keypresses) in cleartext. CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N"
-    },
-    {
-        "Modified": "2022-12-02T16:19:00",
-        "Published": "2022-12-02T16:15:00",
-        "access": {},
-        "assigner": "disclosure@synopsys.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-45482",
-        "impact": {},
-        "last-modified": "2022-12-02T16:19:00",
-        "references": [
-            "https://www.synopsys.com/blogs/software-security/cyrc-advisory-remote-code-execution-vulnerabilities-mouse-keyboard-apps/"
-        ],
-        "summary": "Lazy Mouse server enforces weak password requirements and doesn't implement rate limiting, allowing remote unauthenticated users to easily and quickly brute force the PIN and execute arbitrary commands. CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
-    },
-    {
-        "Modified": "2022-12-02T16:19:00",
-        "Published": "2022-12-02T16:15:00",
-        "access": {},
-        "assigner": "disclosure@synopsys.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-45483",
-        "impact": {},
-        "last-modified": "2022-12-02T16:19:00",
-        "references": [
-            "https://www.synopsys.com/blogs/software-security/cyrc-advisory-remote-code-execution-vulnerabilities-mouse-keyboard-apps/"
-        ],
-        "summary": "Lazy Mouse allows an attacker (in a man in the middle position between the server and a connected device) to see all data (including keypresses) in cleartext. CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N"
-    },
-    {
-        "Modified": "2022-12-02T16:19:00",
-        "Published": "2022-12-02T16:15:00",
-        "access": {},
-        "assigner": "security@huntr.dev",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-4271",
-        "impact": {},
-        "last-modified": "2022-12-02T16:19:00",
-        "references": [
-            "https://huntr.dev/bounties/a11c922f-255a-412a-aa87-7f3bd7121599",
-            "https://github.com/osticket/osticket/commit/5213ff138c6be6144a6692376ac0803a42eca168"
-        ],
-        "summary": "Cross-site Scripting (XSS) - Reflected in GitHub repository osticket/osticket prior to 1.16.4."
-    },
-    {
-        "Modified": "2022-12-02T16:13:00",
-        "Published": "2022-11-30T15:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "NVD-CWE-noinfo",
-        "id": "CVE-2022-44136",
-        "impact": {},
-        "last-modified": "2022-12-02T16:13:00",
-        "references": [
-            "https://com0t.github.io/zenar.io/2022/10/18/Unauthent-RCE-Zenar.io~9.3.html"
-        ],
-        "summary": "Zenario CMS 9.3.57186 is vulnerable to Remote Code Excution (RCE)."
-    },
-    {
-        "Modified": "2022-12-02T16:09:00",
-        "Published": "2022-11-29T14:15:00",
-        "access": {},
-        "assigner": "security-advisories@github.com",
-        "cvss": null,
-        "cwe": "CWE-303",
-        "id": "CVE-2022-46146",
-        "impact": {},
-        "last-modified": "2022-12-02T16:09:00",
-        "references": [
-            "https://github.com/prometheus/exporter-toolkit/security/advisories/GHSA-7rg2-cxvp-9p7p",
-            "https://github.com/prometheus/exporter-toolkit/commit/5b1eab34484ddd353986bce736cd119d863e4ff5",
-            "http://www.openwall.com/lists/oss-security/2022/11/29/1",
-            "http://www.openwall.com/lists/oss-security/2022/11/29/2",
-            "http://www.openwall.com/lists/oss-security/2022/11/29/4"
-        ],
-        "summary": "Prometheus Exporter Toolkit is a utility package to build exporters. Prior to versions 0.7.2 and 0.8.2, i someone has access to a Prometheus web.yml file and users' bcrypted passwords, they can bypass security by poisoning the built-in authentication cache. Versions 0.7.2 and 0.8.2 contain a fix for the issue. There is no workaround, but attacker must have access to the hashed password to use this functionality."
-    },
-    {
-        "Modified": "2022-12-02T16:03:00",
-        "Published": "2022-11-30T05:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-362",
-        "id": "CVE-2022-45869",
-        "impact": {},
-        "last-modified": "2022-12-02T16:03:00",
-        "references": [
-            "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=47b0c2e4c220f2251fd8dcfbb44479819c715e15"
-        ],
-        "summary": "A race condition in the x86 KVM subsystem in the Linux kernel through 6.1-rc6 allows guest OS users to cause a denial of service (host OS crash or host OS memory corruption) when nested virtualisation and the TDP MMU are enabled."
-    },
-    {
-        "Modified": "2022-12-02T16:02:00",
-        "Published": "2022-11-30T03:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-787",
-        "id": "CVE-2022-45337",
-        "impact": {},
-        "last-modified": "2022-12-02T16:02:00",
-        "references": [
-            "https://github.com/no1rr/Vulnerability/tree/master/Tenda/TX9Pro/1"
-        ],
-        "summary": "Tenda TX9 Pro v22.03.02.10 was discovered to contain a stack overflow via the list parameter at /goform/SetIpMacBind."
-    },
-    {
-        "Modified": "2022-12-02T16:00:00",
-        "Published": "2022-11-30T03:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-787",
-        "id": "CVE-2022-45332",
-        "impact": {},
-        "last-modified": "2022-12-02T16:00:00",
-        "references": [
-            "https://github.com/LibreDWG/libredwg/issues/524"
-        ],
-        "summary": "LibreDWG v0.12.4.4643 was discovered to contain a heap buffer overflow via the function decode_preR13_section_hdr at decode_r11.c."
-    },
-    {
-        "Modified": "2022-12-02T15:52:00",
-        "Published": "2022-11-28T22:15:00",
-        "access": {},
-        "assigner": "security@microfocus.com",
-        "cvss": null,
-        "cwe": "CWE-287",
-        "id": "CVE-2022-38753",
-        "impact": {},
-        "last-modified": "2022-12-02T15:52:00",
-        "references": [
-            "https://www.netiq.com/documentation/advanced-authentication-63/advanced-authentication-releasenotes-6341/data/advanced-authentication-releasenotes-6341.html"
-        ],
-        "summary": "This update resolves a multi-factor authentication bypass attack"
-    },
-    {
-        "Modified": "2022-12-02T15:39:00",
-        "Published": "2022-12-02T15:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-45215",
-        "impact": {},
-        "last-modified": "2022-12-02T15:39:00",
-        "references": [
-            "https://www.sourcecodester.com/php/15748/book-store-management-system-project-using-php-codeigniter-3-free-source-code.html",
-            "https://github.com/Rajeshwar40/CVE/blob/main/CVE-2022-45215"
-        ],
-        "summary": "A cross-site scripting (XSS) vulnerability in Book Store Management System v1.0.0 allows attackers to execute arbitrary web scripts or HTML via a crafted payload injected into the Name parameter under the Add New System User module."
-    },
-    {
-        "Modified": "2022-12-02T15:39:00",
-        "Published": "2022-12-02T15:15:00",
-        "access": {},
-        "assigner": "security-advisories@github.com",
-        "cvss": null,
-        "cwe": "CWE-770",
-        "id": "CVE-2022-46159",
-        "impact": {},
-        "last-modified": "2022-12-02T15:39:00",
-        "references": [
-            "https://github.com/discourse/discourse/security/advisories/GHSA-qf99-xpx6-hgxp",
-            "https://github.com/discourse/discourse/commit/0ce38bd7bce862db251b882613ab7053ca777382"
-        ],
-        "summary": "Discourse is an open-source discussion platform. In version 2.8.13 and prior on the `stable` branch and version 2.9.0.beta14 and prior on the `beta` and `tests-passed` branches, any authenticated user can create an unlisted topic. These topics, which are not readily available to other users, can take up unnecessary site resources. A patch for this issue is available in the `main` branch of Discourse. There are no known workarounds available."
-    },
-    {
-        "Modified": "2022-12-02T15:38:00",
-        "Published": "2022-11-29T05:15:00",
-        "access": {},
-        "assigner": "dl_cve@linecorp.com",
-        "cvss": null,
-        "cwe": "CWE-400",
-        "id": "CVE-2022-41568",
-        "impact": {},
-        "last-modified": "2022-12-02T15:38:00",
-        "references": [
-            "https://hackerone.com/reports/1701642"
-        ],
-        "summary": "LINE client for iOS before 12.17.0 might be crashed by sharing an invalid shared key of e2ee in group chat."
-    },
-    {
-        "Modified": "2022-12-02T15:20:00",
-        "Published": "2022-11-28T22:15:00",
-        "access": {},
-        "assigner": "ics-cert@hq.dhs.gov",
-        "cvss": null,
-        "cwe": "CWE-269",
-        "id": "CVE-2022-3088",
-        "impact": {},
-        "last-modified": "2022-12-02T15:20:00",
-        "references": [
-            "https://www.cisa.gov/uscert/ics/advisories/icsa-22-326-05"
-        ],
-        "summary": "UC-8100A-ME-T System Image: Versions v1.0 to v1.6, UC-2100 System Image: Versions v1.0 to v1.12, UC-2100-W System Image: Versions v1.0 to v 1.12, UC-3100 System Image: Versions v1.0 to v1.6, UC-5100 System Image: Versions v1.0 to v1.4, UC-8100 System Image: Versions v3.0 to v3.5, UC-8100-ME-T System Image: Versions v3.0 and v3.1, UC-8100A-ME-T System Image: Versions v1.0 to v1.6, UC-8200 System Image: v1.0 to v1.5, AIG-300 System Image: v1.0 to v1.4, UC-8410A with Debian 9 System Image: Versions v4.0.2 and v4.1.2, UC-8580 with Debian 9 System Image: Versions v2.0 and v2.1, UC-8540 with Debian 9 System Image: Versions v2.0 and v2.1, and DA-662C-16-LX (GLB) System Image: Versions v1.0.2 to v1.1.2 of Moxa's ARM-based computers have an execution with unnecessary privileges vulnerability, which could allow an attacker with user-level privileges to gain root privileges."
-    },
-    {
-        "Modified": "2022-12-02T15:14:00",
-        "Published": "2022-11-22T19:15:00",
+        "Modified": "2022-12-02T20:14:00",
+        "Published": "2022-08-18T19:15:00",
         "access": {},
         "assigner": "secalert@redhat.com",
         "cvss": null,
-        "cwe": "CWE-94",
-        "id": "CVE-2022-4116",
+        "cwe": "CWE-1321",
+        "id": "CVE-2022-2625",
         "impact": {},
-        "last-modified": "2022-12-02T15:14:00",
+        "last-modified": "2022-12-02T20:14:00",
         "references": [
-            "https://access.redhat.com/security/cve/CVE-2022-4116"
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2113825",
+            "https://www.postgresql.org/about/news/postgresql-145-138-1212-1117-1022-and-15-beta-3-released-2496/",
+            "https://security.gentoo.org/glsa/202211-04"
         ],
-        "summary": "A vulnerability was found in quarkus. This security flaw happens in Dev UI Config Editor which is vulnerable to drive-by localhost attacks leading to remote code execution."
+        "summary": "A vulnerability was found in PostgreSQL. This attack requires permission to create non-temporary objects in at least one schema, the ability to lure or wait for an administrator to create or update an affected extension in that schema, and the ability to lure or wait for a victim to use the object targeted in CREATE OR REPLACE or CREATE IF NOT EXISTS. Given all three prerequisites, this flaw allows an attacker to run arbitrary code as the victim role, which may be a superuser."
     },
     {
-        "Modified": "2022-12-02T15:14:00",
-        "Published": "2022-10-02T05:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-502",
-        "id": "CVE-2022-42003",
-        "impact": {},
-        "last-modified": "2022-12-02T15:14:00",
-        "references": [
-            "https://github.com/FasterXML/jackson-databind/commit/d78d00ee7b5245b93103fef3187f70543d67ca33",
-            "https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=51020",
-            "https://github.com/FasterXML/jackson-databind/issues/3590",
-            "https://security.gentoo.org/glsa/202210-21",
-            "https://www.debian.org/security/2022/dsa-5283",
-            "https://security.netapp.com/advisory/ntap-20221124-0004/",
-            "https://lists.debian.org/debian-lts-announce/2022/11/msg00035.html"
-        ],
-        "summary": "In FasterXML jackson-databind before 2.14.0-rc1, resource exhaustion can occur because of a lack of a check in primitive value deserializers to avoid deep wrapper array nesting, when the UNWRAP_SINGLE_VALUE_ARRAYS feature is enabled. Additional fix version in 2.13.4.1 and 2.12.17.1"
-    },
-    {
-        "Modified": "2022-12-02T15:12:00",
-        "Published": "2022-11-30T14:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-38801",
-        "impact": {},
-        "last-modified": "2022-12-02T15:12:00",
-        "references": [
-            "https://www.zkteco.com/",
-            "https://gist.github.com/hamoshwani/5ac860dd6757440174f446c62b24653f"
-        ],
-        "summary": "In Zkteco BioTime < 8.5.3 Build:20200816.447, an employee can hijack an administrator session and cookies using blind cross-site scripting."
-    },
-    {
-        "Modified": "2022-12-02T15:11:00",
-        "Published": "2022-11-29T05:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-639",
-        "id": "CVE-2022-43326",
-        "impact": {},
-        "last-modified": "2022-12-02T15:11:00",
-        "references": [
-            "https://cyber-guy.gitbook.io/cyber-guys-blog/pocs/cve-2022-43326"
-        ],
-        "summary": "An Insecure Direct Object Reference (IDOR) vulnerability in the password reset function of Telos Alliance Omnia MPX Node 1.0.0-1.4.[*] allows attackers to arbitrarily change user and Administrator account passwords."
-    },
-    {
-        "Modified": "2022-12-02T15:10:00",
-        "Published": "2022-11-30T13:15:00",
-        "access": {},
-        "assigner": "audit@patchstack.com",
-        "cvss": null,
-        "cwe": "CWE-352",
-        "id": "CVE-2022-26366",
-        "impact": {},
-        "last-modified": "2022-12-02T15:10:00",
-        "references": [
-            "https://patchstack.com/database/vulnerability/adrotate/wordpress-adrotate-banner-manager-plugin-5-9-multiple-cross-site-request-forgery-csrf-vulnerabilities?_s_id=cve"
-        ],
-        "summary": "Cross-Site Request Forgery (CSRF) in AdRotate Banner Manager Plugin <= 5.9 on WordPress."
-    },
-    {
-        "Modified": "2022-12-02T15:10:00",
-        "Published": "2022-10-02T05:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-502",
-        "id": "CVE-2022-42004",
-        "impact": {},
-        "last-modified": "2022-12-02T15:10:00",
-        "references": [
-            "https://github.com/FasterXML/jackson-databind/issues/3582",
-            "https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=50490",
-            "https://github.com/FasterXML/jackson-databind/commit/063183589218fec19a9293ed2f17ec53ea80ba88",
-            "https://security.gentoo.org/glsa/202210-21",
-            "https://www.debian.org/security/2022/dsa-5283",
-            "https://security.netapp.com/advisory/ntap-20221118-0008/",
-            "https://lists.debian.org/debian-lts-announce/2022/11/msg00035.html"
-        ],
-        "summary": "In FasterXML jackson-databind before 2.13.4, resource exhaustion can occur because of a lack of a check in BeanDeserializer._deserializeFromArray to prevent use of deeply nested arrays. An application is vulnerable only with certain customized choices for deserialization."
-    },
-    {
-        "Modified": "2022-12-02T15:09:00",
-        "Published": "2022-11-30T13:15:00",
-        "access": {},
-        "assigner": "audit@patchstack.com",
-        "cvss": null,
-        "cwe": "CWE-367",
-        "id": "CVE-2022-45842",
-        "impact": {},
-        "last-modified": "2022-12-02T15:09:00",
-        "references": [
-            "https://patchstack.com/database/vulnerability/wp-ulike/wordpress-wp-ulike-plugin-4-6-3-race-condition-vulnerability?_s_id=cve"
-        ],
-        "summary": "Unauth. Race Condition vulnerability in WP ULike Plugin <= 4.6.4 on WordPress allows attackers to increase/decrease rating scores."
-    },
-    {
-        "Modified": "2022-12-02T15:09:00",
-        "Published": "2022-11-29T09:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-190",
-        "id": "CVE-2022-4202",
-        "impact": {},
-        "last-modified": "2022-12-02T15:09:00",
-        "references": [
-            "https://vuldb.com/?id.214518",
-            "https://drive.google.com/file/d/1HVWa6IpAbvsMS5rx091RfjUB4GfXrMLE/view"
-        ],
-        "summary": "A vulnerability, which was classified as problematic, was found in GPAC 2.1-DEV-rev490-g68064e101-master. Affected is the function lsr_translate_coords of the file laser/lsr_dec.c. The manipulation leads to integer overflow. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used. VDB-214518 is the identifier assigned to this vulnerability."
-    },
-    {
-        "Modified": "2022-12-02T15:03:00",
-        "Published": "2021-09-09T19:15:00",
+        "Modified": "2022-12-02T20:13:00",
+        "Published": "2020-09-23T22:15:00",
         "access": {
             "authentication": "NONE",
             "complexity": "LOW",
             "vector": "LOCAL"
         },
-        "assigner": "mobile.security@samsung.com",
+        "assigner": "cve@mitre.org",
         "cvss": 2.1,
-        "cvss-time": "2022-12-02T15:03:00",
-        "cvss-vector": "AV:L/AC:L/Au:N/C:N/I:P/A:N",
-        "cwe": "NVD-CWE-Other",
-        "id": "CVE-2021-25463",
+        "cvss-time": "2022-12-02T20:13:00",
+        "cvss-vector": "AV:L/AC:L/Au:N/C:N/I:N/A:P",
+        "cwe": "CWE-670",
+        "id": "CVE-2020-25598",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "NONE",
+            "integrity": "NONE"
+        },
+        "last-modified": "2022-12-02T20:13:00",
+        "references": [
+            "https://xenbits.xen.org/xsa/advisory-334.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/4JRXMKEMQRQYWYEPHVBIWUEAVQ3LU4FN/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/DA633Y3G5KX7MKRN4PFEGM3IVTJMBEOM/",
+            "http://lists.opensuse.org/opensuse-security-announce/2020-10/msg00008.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RJZERRBJN6E6STDCHT4JHP4MI6TKBCJE/",
+            "https://security.gentoo.org/glsa/202011-06"
+        ],
+        "summary": "An issue was discovered in Xen 4.14.x. There is a missing unlock in the XENMEM_acquire_resource error path. The RCU (Read, Copy, Update) mechanism is a synchronisation primitive. A buggy error path in the XENMEM_acquire_resource exits without releasing an RCU reference, which is conceptually similar to forgetting to unlock a spinlock. A buggy or malicious HVM stubdomain can cause an RCU reference to be leaked. This causes subsequent administration operations, (e.g., CPU offline) to livelock, resulting in a host Denial of Service. The buggy codepath has been present since Xen 4.12. Xen 4.14 and later are vulnerable to the DoS. The side effects are believed to be benign on Xen 4.12 and 4.13, but patches are provided nevertheless. The vulnerability can generally only be exploited by x86 HVM VMs, as these are generally the only type of VM that have a Qemu stubdomain. x86 PV and PVH domains, as well as ARM VMs, typically don't use a stubdomain. Only VMs using HVM stubdomains can exploit the vulnerability. VMs using PV stubdomains, or with emulators running in dom0, cannot exploit the vulnerability."
+    },
+    {
+        "Modified": "2022-12-02T20:12:00",
+        "Published": "2022-08-05T22:15:00",
+        "access": {},
+        "assigner": "talos-cna@cisco.com",
+        "cvss": null,
+        "cwe": "CWE-787",
+        "id": "CVE-2022-27631",
+        "impact": {},
+        "last-modified": "2022-12-02T20:12:00",
+        "references": [
+            "https://talosintelligence.com/vulnerability_reports/TALOS-2022-1510"
+        ],
+        "summary": "A memory corruption vulnerability exists in the httpd unescape functionality of DD-WRT Revision 32270 - Revision 48599. A specially-crafted HTTP request can lead to memory corruption. An attacker can send a network request to trigger this vulnerability."
+    },
+    {
+        "Modified": "2022-12-02T20:11:00",
+        "Published": "2022-07-28T15:15:00",
+        "access": {},
+        "assigner": "secalert@redhat.com",
+        "cvss": null,
+        "cwe": "CWE-287",
+        "id": "CVE-2022-2553",
+        "impact": {},
+        "last-modified": "2022-12-02T20:11:00",
+        "references": [
+            "https://github.com/ClusterLabs/booth/commit/35bf0b7b048d715f671eb68974fb6b4af6528c67",
+            "https://www.debian.org/security/2022/dsa-5194",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/J4T4TTXAABVUCMPUL7XQ2PH5EYYOOQZY/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/OHDOFX7NQFH3UGZZA3SGW5SVMDDHIUVD/"
+        ],
+        "summary": "The authfile directive in the booth config file is ignored, preventing use of authentication in communications from node to node. As a result, nodes that do not have the correct authentication key are not prevented from communicating with other nodes in the cluster."
+    },
+    {
+        "Modified": "2022-12-02T20:08:00",
+        "Published": "2022-08-05T22:15:00",
+        "access": {},
+        "assigner": "talos-cna@cisco.com",
+        "cvss": null,
+        "cwe": "CWE-787",
+        "id": "CVE-2022-26376",
+        "impact": {},
+        "last-modified": "2022-12-02T20:08:00",
+        "references": [
+            "https://talosintelligence.com/vulnerability_reports/TALOS-2022-1511"
+        ],
+        "summary": "A memory corruption vulnerability exists in the httpd unescape functionality of Asuswrt prior to 3.0.0.4.386_48706 and Asuswrt-Merlin New Gen prior to 386.7.. A specially-crafted HTTP request can lead to memory corruption. An attacker can send a network request to trigger this vulnerability."
+    },
+    {
+        "Modified": "2022-12-02T20:04:00",
+        "Published": "2022-08-03T19:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-89",
+        "id": "CVE-2022-31197",
+        "impact": {},
+        "last-modified": "2022-12-02T20:04:00",
+        "references": [
+            "https://github.com/pgjdbc/pgjdbc/commit/739e599d52ad80f8dcd6efedc6157859b1a9d637",
+            "https://github.com/pgjdbc/pgjdbc/security/advisories/GHSA-r38f-c4h4-hqq2",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/I6WHUADTZBBQLVHO4YG4XCWDGWBT4LRP/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UTFE6SV33P5YYU2GNTQZQKQRVR3GYE4S/",
+            "https://lists.debian.org/debian-lts-announce/2022/10/msg00009.html"
+        ],
+        "summary": "PostgreSQL JDBC Driver (PgJDBC for short) allows Java programs to connect to a PostgreSQL database using standard, database independent Java code. The PGJDBC implementation of the `java.sql.ResultRow.refreshRow()` method is not performing escaping of column names so a malicious column name that contains a statement terminator, e.g. `;`, could lead to SQL injection. This could lead to executing additional SQL commands as the application's JDBC user. User applications that do not invoke the `ResultSet.refreshRow()` method are not impacted. User application that do invoke that method are impacted if the underlying database that they are querying via their JDBC application may be under the control of an attacker. The attack requires the attacker to trick the user into executing SQL against a table name who's column names would contain the malicious SQL and subsequently invoke the `refreshRow()` method on the ResultSet. Note that the application's JDBC user and the schema owner need not be the same. A JDBC application that executes as a privileged user querying database schemas owned by potentially malicious less-privileged users would be vulnerable. In that situation it may be possible for the malicious user to craft a schema that causes the application to execute commands as the privileged user. Patched versions will be released as `42.2.26` and `42.4.1`. Users are advised to upgrade. There are no known workarounds for this issue."
+    },
+    {
+        "Modified": "2022-12-02T20:02:00",
+        "Published": "2022-07-20T06:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-770",
+        "id": "CVE-2021-46828",
+        "impact": {},
+        "last-modified": "2022-12-02T20:02:00",
+        "references": [
+            "http://git.linux-nfs.org/?p=steved/libtirpc.git;a=commit;h=86529758570cef4c73fb9b9c4104fdc510f701ed",
+            "https://www.debian.org/security/2022/dsa-5200",
+            "https://lists.debian.org/debian-lts-announce/2022/08/msg00004.html",
+            "https://security.netapp.com/advisory/ntap-20221007-0004/",
+            "https://security.gentoo.org/glsa/202210-33"
+        ],
+        "summary": "In libtirpc before 1.3.3rc1, remote attackers could exhaust the file descriptors of a process that uses libtirpc because idle TCP connections are mishandled. This can, in turn, lead to an svc_run infinite loop without accepting new connections."
+    },
+    {
+        "Modified": "2022-12-02T20:01:00",
+        "Published": "2022-03-11T18:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "secalert@redhat.com",
+        "cvss": 5.0,
+        "cvss-time": "2022-12-02T20:01:00",
+        "cvss-vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+        "cwe": "CWE-770",
+        "id": "CVE-2021-32476",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "NONE",
+            "integrity": "NONE"
+        },
+        "last-modified": "2022-12-02T20:01:00",
+        "references": [
+            "https://moodle.org/mod/forum/discuss.php?d=422310"
+        ],
+        "summary": "A denial-of-service risk was identified in the draft files area, due to it not respecting user file upload limits. Moodle versions 3.10 to 3.10.3, 3.9 to 3.9.6, 3.8 to 3.8.8, 3.5 to 3.5.17 and earlier unsupported versions are affected."
+    },
+    {
+        "Modified": "2022-12-02T19:58:00",
+        "Published": "2020-04-06T13:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "report@snyk.io",
+        "cvss": 5.0,
+        "cvss-time": "2022-12-02T19:58:00",
+        "cvss-vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N",
+        "cwe": "CWE-1321",
+        "id": "CVE-2020-7638",
         "impact": {
             "availability": "NONE",
             "confidentiality": "NONE",
             "integrity": "PARTIAL"
         },
-        "last-modified": "2022-12-02T15:03:00",
+        "last-modified": "2022-12-02T19:58:00",
         "references": [
-            "https://security.samsungmobile.com/serviceWeb.smsb?year=2021&month=9"
+            "https://snyk.io/vuln/SNYK-JS-CONFINIT-564433",
+            "https://github.com/davideicardi/confinit/commit/a34e06ca5c1c8b047ef112ef188b2fe30d2a1eab"
         ],
-        "summary": "Improper access control vulnerability in PENUP prior to version 3.8.00.18 allows arbitrary webpage loading in webview."
+        "summary": "confinit through 0.3.0 is vulnerable to Prototype Pollution.The 'setDeepProperty' function could be tricked into adding or modifying properties of 'Object.prototype' using a '__proto__' payload."
     },
     {
-        "Modified": "2022-12-02T14:52:00",
-        "Published": "2022-11-30T05:15:00",
-        "access": {},
+        "Modified": "2022-12-02T19:58:00",
+        "Published": "2020-03-12T23:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "report@snyk.io",
+        "cvss": 5.0,
+        "cvss-time": "2022-12-02T19:58:00",
+        "cvss-vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N",
+        "cwe": "CWE-1321",
+        "id": "CVE-2020-7600",
+        "impact": {
+            "availability": "NONE",
+            "confidentiality": "NONE",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-12-02T19:58:00",
+        "references": [
+            "https://snyk.io/vuln/SNYK-JS-QUERYMEN-559867",
+            "https://github.com/diegohaz/querymen/commit/1987fefcb3b7508253a29502a008d5063a873cef"
+        ],
+        "summary": "querymen prior to 2.1.4 allows modification of object properties. The parameters of exported function handler(type, name, fn) can be controlled by users without any sanitization. This could be abused for Prototype Pollution attacks."
+    },
+    {
+        "Modified": "2022-12-02T19:58:00",
+        "Published": "2020-04-06T13:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "report@snyk.io",
+        "cvss": 5.0,
+        "cvss-time": "2022-12-02T19:58:00",
+        "cvss-vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N",
+        "cwe": "CWE-1321",
+        "id": "CVE-2020-7637",
+        "impact": {
+            "availability": "NONE",
+            "confidentiality": "NONE",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-12-02T19:58:00",
+        "references": [
+            "https://snyk.io/vuln/SNYK-JS-CLASSTRANSFORMER-564431",
+            "https://github.com/typestack/class-transformer/commit/8f04eb9db02de708f1a20f6f2d2bb309b2fed01e"
+        ],
+        "summary": "class-transformer before 0.3.1 allow attackers to perform Prototype Pollution. The classToPlainFromExist function could be tricked into adding or modifying properties of Object.prototype using a __proto__ payload."
+    },
+    {
+        "Modified": "2022-12-02T19:58:00",
+        "Published": "2020-03-11T23:15:00",
+        "access": {
+            "authentication": "SINGLE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "report@snyk.io",
+        "cvss": 6.5,
+        "cvss-time": "2022-12-02T19:58:00",
+        "cvss-vector": "AV:N/AC:L/Au:S/C:P/I:P/A:P",
+        "cwe": "CWE-1321",
+        "id": "CVE-2019-10808",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "PARTIAL",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-12-02T19:58:00",
+        "references": [
+            "https://snyk.io/vuln/SNYK-JS-UTILITIFY-559497",
+            "https://github.com/xcritical-software/utilitify/commit/88d6e27009823338bf319ffb768fe6b08e8ad2d1,"
+        ],
+        "summary": "utilitify prior to 1.0.3 allows modification of object properties. The merge method could be tricked into adding or modifying properties of the Object.prototype."
+    },
+    {
+        "Modified": "2022-12-02T19:57:00",
+        "Published": "2020-06-19T11:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "report@snyk.io",
+        "cvss": 7.5,
+        "cvss-time": "2022-12-02T19:57:00",
+        "cvss-vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+        "cwe": "CWE-1321",
+        "id": "CVE-2020-7679",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "PARTIAL",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-12-02T19:57:00",
+        "references": [
+            "https://snyk.io/vuln/SNYK-JS-CASPERJS-572803",
+            "https://github.com/casperjs/casperjs/blob/master/modules/utils.js%23L680",
+            "https://snyk.io/vuln/SNYK-JAVA-ORGWEBJARSBOWER-572804"
+        ],
+        "summary": "In all versions of package casperjs, the mergeObjects utility function is susceptible to Prototype Pollution."
+    },
+    {
+        "Modified": "2022-12-02T19:57:00",
+        "Published": "2020-04-07T14:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "report@snyk.io",
+        "cvss": 5.0,
+        "cvss-time": "2022-12-02T19:57:00",
+        "cvss-vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N",
+        "cwe": "CWE-1321",
+        "id": "CVE-2020-7616",
+        "impact": {
+            "availability": "NONE",
+            "confidentiality": "NONE",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-12-02T19:57:00",
+        "references": [
+            "https://snyk.io/vuln/SNYK-JS-EXPRESSMOCKMIDDLEWARE-564120",
+            "https://github.com/LingyuCoder/express-mock-middleware/blob/master/lib/index.js#L39"
+        ],
+        "summary": "express-mock-middleware through 0.0.6 is vulnerable to Prototype Pollution. Exported functions by the package can be tricked into adding or modifying properties of the `Object.prototype`. Exploitation of this vulnerability requires creation of a new directory where an attack code can be placed which will then be exported by `express-mock-middleware`. As such, this is considered to be a low risk."
+    },
+    {
+        "Modified": "2022-12-02T19:57:00",
+        "Published": "2020-04-28T19:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "MEDIUM",
+            "vector": "NETWORK"
+        },
+        "assigner": "report@snyk.io",
+        "cvss": 6.8,
+        "cvss-time": "2022-12-02T19:57:00",
+        "cvss-vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
+        "cwe": "CWE-1321",
+        "id": "CVE-2020-7644",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "PARTIAL",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-12-02T19:57:00",
+        "references": [
+            "https://github.com/nathan7/fun-map/blob/master/index.js#L137,",
+            "https://snyk.io/vuln/SNYK-JS-FUNMAP-564436"
+        ],
+        "summary": "fun-map through 3.3.1 is vulnerable to Prototype Pollution. The function assocInM could be tricked into adding or modifying properties of 'Object.prototype' using a '__proto__' payload."
+    },
+    {
+        "Modified": "2022-12-02T19:57:00",
+        "Published": "2020-04-06T13:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "report@snyk.io",
+        "cvss": 5.0,
+        "cvss-time": "2022-12-02T19:57:00",
+        "cvss-vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N",
+        "cwe": "CWE-1321",
+        "id": "CVE-2020-7639",
+        "impact": {
+            "availability": "NONE",
+            "confidentiality": "NONE",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-12-02T19:57:00",
+        "references": [
+            "https://github.com/eivindfjeldstad/dot/commit/774e4b0c97ca35d2ae40df2cd14428d37dd07a0b",
+            "https://snyk.io/vuln/SNYK-JS-EIVIFJDOT-564435"
+        ],
+        "summary": "eivindfjeldstad-dot below 1.0.3 is vulnerable to Prototype Pollution.The function 'set' could be tricked into adding or modifying properties of 'Object.prototype' using a '__proto__' payload."
+    },
+    {
+        "Modified": "2022-12-02T19:57:00",
+        "Published": "2020-04-07T14:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "report@snyk.io",
+        "cvss": 5.0,
+        "cvss-time": "2022-12-02T19:57:00",
+        "cvss-vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N",
+        "cwe": "CWE-1321",
+        "id": "CVE-2020-7618",
+        "impact": {
+            "availability": "NONE",
+            "confidentiality": "NONE",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-12-02T19:57:00",
+        "references": [
+            "https://github.com/monsterkodi/sds/blob/master/js/set.js#L31",
+            "https://snyk.io/vuln/SNYK-JS-SDS-564123"
+        ],
+        "summary": "sds through 3.2.0 is vulnerable to Prototype Pollution.The library could be tricked into adding or modifying properties of the 'Object.prototype' by abusing the 'set' function located in 'js/set.js'."
+    },
+    {
+        "Modified": "2022-12-02T19:57:00",
+        "Published": "2020-04-23T04:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
         "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-352",
-        "id": "CVE-2022-41413",
-        "impact": {},
-        "last-modified": "2022-12-02T14:52:00",
+        "cvss": 7.5,
+        "cvss-time": "2022-12-02T19:57:00",
+        "cvss-vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+        "cwe": "CWE-1321",
+        "id": "CVE-2020-12079",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "PARTIAL",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-12-02T19:57:00",
         "references": [
-            "https://github.com/renmizo/CVE-2022-41413",
-            "http://packetstormsecurity.com/files/170070/perfSONAR-4.4.5-Cross-Site-Request-Forgery.html"
+            "https://github.com/beakerbrowser/beaker/issues/1519",
+            "https://github.com/beakerbrowser/beaker/releases/tag/0.8.9"
         ],
-        "summary": "perfSONAR v4.x <= v4.4.5 was discovered to contain a Cross-Site Request Forgery (CSRF) which is triggered when an attacker injects crafted input into the Search function."
+        "summary": "Beaker before 0.8.9 allows a sandbox escape, enabling system access and code execution. This occurs because Electron context isolation is not used, and therefore an attacker can conduct a prototype-pollution attack against the Electron internal messaging API."
     },
     {
-        "Modified": "2022-12-02T14:47:00",
-        "Published": "2022-11-30T05:15:00",
-        "access": {},
+        "Modified": "2022-12-02T19:57:00",
+        "Published": "2020-05-14T00:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "security-advisories@github.com",
+        "cvss": 6.4,
+        "cvss-time": "2022-12-02T19:57:00",
+        "cvss-vector": "AV:N/AC:L/Au:N/C:N/I:P/A:P",
+        "cwe": "CWE-1321",
+        "id": "CVE-2020-11066",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "NONE",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-12-02T19:57:00",
+        "references": [
+            "https://github.com/TYPO3/TYPO3.CMS/security/advisories/GHSA-2rxh-h6h9-qrqc"
+        ],
+        "summary": "In TYPO3 CMS greater than or equal to 9.0.0 and less than 9.5.17 and greater than or equal to 10.0.0 and less than 10.4.2, calling unserialize() on malicious user-submitted content can lead to modification of dynamically-determined object attributes and result in triggering deletion of an arbitrary directory in the file system, if it is writable for the web server. It can also trigger message submission via email using the identity of the web site (mail relay). Another insecure deserialization vulnerability is required to actually exploit mentioned aspects. This has been fixed in 9.5.17 and 10.4.2."
+    },
+    {
+        "Modified": "2022-12-02T19:56:00",
+        "Published": "2020-08-17T14:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "report@snyk.io",
+        "cvss": 7.5,
+        "cvss-time": "2022-12-02T19:56:00",
+        "cvss-vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+        "cwe": "CWE-1321",
+        "id": "CVE-2020-7702",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "PARTIAL",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-12-02T19:56:00",
+        "references": [
+            "https://snyk.io/vuln/SNYK-JS-TEMPL8-598770"
+        ],
+        "summary": "All versions of package templ8 are vulnerable to Prototype Pollution via the parse function."
+    },
+    {
+        "Modified": "2022-12-02T19:56:00",
+        "Published": "2020-08-14T15:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "report@snyk.io",
+        "cvss": 7.5,
+        "cvss-time": "2022-12-02T19:56:00",
+        "cvss-vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+        "cwe": "CWE-1321",
+        "id": "CVE-2020-7700",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "PARTIAL",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-12-02T19:56:00",
+        "references": [
+            "https://snyk.io/vuln/SNYK-JS-PHPJS-598681"
+        ],
+        "summary": "All versions of phpjs are vulnerable to Prototype Pollution via parse_str."
+    },
+    {
+        "Modified": "2022-12-02T19:56:00",
+        "Published": "2020-08-14T15:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "report@snyk.io",
+        "cvss": 7.5,
+        "cvss-time": "2022-12-02T19:56:00",
+        "cvss-vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+        "cwe": "CWE-1321",
+        "id": "CVE-2020-7701",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "PARTIAL",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-12-02T19:56:00",
+        "references": [
+            "https://snyk.io/vuln/SNYK-JS-MADLIBOBJECTUTILS-598676"
+        ],
+        "summary": "madlib-object-utils before 0.1.7 is vulnerable to Prototype Pollution via setValue."
+    },
+    {
+        "Modified": "2022-12-02T19:56:00",
+        "Published": "2020-08-17T17:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "report@snyk.io",
+        "cvss": 7.5,
+        "cvss-time": "2022-12-02T19:56:00",
+        "cvss-vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+        "cwe": "CWE-1321",
+        "id": "CVE-2020-7704",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "PARTIAL",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-12-02T19:56:00",
+        "references": [
+            "https://github.com/piranna/linux-cmdline/commit/53c61a88bc47eb25d71832205056beaab95cf677",
+            "https://snyk.io/vuln/SNYK-JS-LINUXCMDLINE-598674"
+        ],
+        "summary": "The package linux-cmdline before 1.0.1 are vulnerable to Prototype Pollution via the constructor."
+    },
+    {
+        "Modified": "2022-12-02T19:56:00",
+        "Published": "2020-07-30T09:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "report@snyk.io",
+        "cvss": 7.5,
+        "cvss-time": "2022-12-02T19:56:00",
+        "cvss-vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+        "cwe": "CWE-1321",
+        "id": "CVE-2020-7699",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "PARTIAL",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-12-02T19:56:00",
+        "references": [
+            "https://snyk.io/vuln/SNYK-JS-EXPRESSFILEUPLOAD-595969",
+            "https://github.com/richardgirges/express-fileupload/issues/236",
+            "https://security.netapp.com/advisory/ntap-20200821-0003/"
+        ],
+        "summary": "This affects the package express-fileupload before 1.1.8. If the parseNested option is enabled, sending a corrupt HTTP request can lead to denial of service or arbitrary code execution."
+    },
+    {
+        "Modified": "2022-12-02T19:56:00",
+        "Published": "2020-08-17T15:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "report@snyk.io",
+        "cvss": 7.5,
+        "cvss-time": "2022-12-02T19:56:00",
+        "cvss-vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+        "cwe": "CWE-1321",
+        "id": "CVE-2020-7703",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "PARTIAL",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-12-02T19:56:00",
+        "references": [
+            "https://snyk.io/vuln/SNYK-JS-NISUTILS-598799"
+        ],
+        "summary": "All versions of package nis-utils are vulnerable to Prototype Pollution via the setValue function."
+    },
+    {
+        "Modified": "2022-12-02T19:56:00",
+        "Published": "2020-08-18T10:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "report@snyk.io",
+        "cvss": 7.5,
+        "cvss-time": "2022-12-02T19:56:00",
+        "cvss-vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+        "cwe": "CWE-1321",
+        "id": "CVE-2020-7706",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "PARTIAL",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-12-02T19:56:00",
+        "references": [
+            "https://github.com/mattinsler/connie-lang/commit/ef376d404c712dd28309ba07f28a8f87f24a015a",
+            "https://snyk.io/vuln/SNYK-JS-CONNIELANG-598853"
+        ],
+        "summary": "The package connie-lang before 0.1.1 are vulnerable to Prototype Pollution in the configuration language library used by connie."
+    },
+    {
+        "Modified": "2022-12-02T19:56:00",
+        "Published": "2020-07-15T20:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "MEDIUM",
+            "vector": "NETWORK"
+        },
         "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-918",
-        "id": "CVE-2022-41412",
-        "impact": {},
-        "last-modified": "2022-12-02T14:47:00",
+        "cvss": 6.8,
+        "cvss-time": "2022-12-02T19:56:00",
+        "cvss-vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
+        "cwe": "CWE-1321",
+        "id": "CVE-2020-15366",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "PARTIAL",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-12-02T19:56:00",
         "references": [
-            "https://github.com/renmizo/CVE-2022-41412",
-            "http://packetstormsecurity.com/files/170069/perfSONAR-4.4.4-Open-Proxy-Relay.html"
+            "https://hackerone.com/bugs?subject=user&report_id=894259",
+            "https://github.com/ajv-validator/ajv/releases/tag/v6.12.3",
+            "https://github.com/ajv-validator/ajv/tags"
         ],
-        "summary": "An issue in the graphData.cgi component of perfSONAR v4.4.5 and prior allows attackers to access sensitive data and execute Server-Side Request Forgery (SSRF) attacks."
+        "summary": "An issue was discovered in ajv.validate() in Ajv (aka Another JSON Schema Validator) 6.12.2. A carefully crafted JSON schema could be provided that allows execution of other code by prototype pollution. (While untrusted schemas are recommended against, the worst case of an untrusted schema should be a denial of service, not execution of code.)"
     },
     {
-        "Modified": "2022-12-02T14:16:00",
-        "Published": "2022-12-02T14:15:00",
+        "Modified": "2022-12-02T19:55:00",
+        "Published": "2020-09-01T09:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "report@snyk.io",
+        "cvss": 7.5,
+        "cvss-time": "2022-12-02T19:55:00",
+        "cvss-vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+        "cwe": "CWE-1321",
+        "id": "CVE-2020-7713",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "PARTIAL",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-12-02T19:55:00",
+        "references": [
+            "https://snyk.io/vuln/SNYK-JS-ARRFLATTENUNFLATTEN-598396"
+        ],
+        "summary": "All versions of package arr-flatten-unflatten are vulnerable to Prototype Pollution via the constructor."
+    },
+    {
+        "Modified": "2022-12-02T19:55:00",
+        "Published": "2020-08-18T14:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "report@snyk.io",
+        "cvss": 7.5,
+        "cvss-time": "2022-12-02T19:55:00",
+        "cvss-vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+        "cwe": "CWE-1321",
+        "id": "CVE-2020-7707",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "PARTIAL",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-12-02T19:55:00",
+        "references": [
+            "https://snyk.io/vuln/SNYK-JS-PROPERTYEXPR-598800",
+            "https://snyk.io/vuln/SNYK-JAVA-ORGWEBJARSNPM-598857",
+            "https://github.com/jquense/expr/commit/df846910915d59f711ce63c1f817815bceab5ff7"
+        ],
+        "summary": "The package property-expr before 2.0.3 are vulnerable to Prototype Pollution via the setter function."
+    },
+    {
+        "Modified": "2022-12-02T19:55:00",
+        "Published": "2020-09-01T10:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "report@snyk.io",
+        "cvss": 7.5,
+        "cvss-time": "2022-12-02T19:55:00",
+        "cvss-vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+        "cwe": "CWE-1321",
+        "id": "CVE-2020-7717",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "PARTIAL",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-12-02T19:55:00",
+        "references": [
+            "https://snyk.io/vuln/SNYK-JS-DOTNOTES-598668"
+        ],
+        "summary": "All versions of package dot-notes are vulnerable to Prototype Pollution via the create function."
+    },
+    {
+        "Modified": "2022-12-02T19:55:00",
+        "Published": "2020-09-01T10:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "report@snyk.io",
+        "cvss": 7.5,
+        "cvss-time": "2022-12-02T19:55:00",
+        "cvss-vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+        "cwe": "CWE-1321",
+        "id": "CVE-2020-7716",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "PARTIAL",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-12-02T19:55:00",
+        "references": [
+            "https://snyk.io/vuln/SNYK-JS-DEEPS-598667"
+        ],
+        "summary": "All versions of package deeps are vulnerable to Prototype Pollution via the set function."
+    },
+    {
+        "Modified": "2022-12-02T19:55:00",
+        "Published": "2020-08-18T15:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "report@snyk.io",
+        "cvss": 7.5,
+        "cvss-time": "2022-12-02T19:55:00",
+        "cvss-vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+        "cwe": "CWE-1321",
+        "id": "CVE-2020-7708",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "PARTIAL",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-12-02T19:55:00",
+        "references": [
+            "https://snyk.io/vuln/SNYK-JS-IRRELONPATH-598672",
+            "https://github.com/Irrelon/irrelon-path/commit/8a126b160c1a854ae511659c111413ad9910ebe3",
+            "https://snyk.io/vuln/SNYK-JS-IRRELONPATH-598673"
+        ],
+        "summary": "The package irrelon-path before 4.7.0; the package @irrelon/path before 4.7.0 are vulnerable to Prototype Pollution via the set, unSet, pushVal and pullVal functions."
+    },
+    {
+        "Modified": "2022-12-02T19:55:00",
+        "Published": "2020-09-01T10:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "report@snyk.io",
+        "cvss": 7.5,
+        "cvss-time": "2022-12-02T19:55:00",
+        "cvss-vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+        "cwe": "CWE-1321",
+        "id": "CVE-2020-7715",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "PARTIAL",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-12-02T19:55:00",
+        "references": [
+            "https://snyk.io/vuln/SNYK-JS-DEEPGETSET-598666"
+        ],
+        "summary": "All versions of package deep-get-set are vulnerable to Prototype Pollution via the main function."
+    },
+    {
+        "Modified": "2022-12-02T19:55:00",
+        "Published": "2020-09-01T10:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "report@snyk.io",
+        "cvss": 7.5,
+        "cvss-time": "2022-12-02T19:55:00",
+        "cvss-vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+        "cwe": "CWE-1321",
+        "id": "CVE-2020-7714",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "PARTIAL",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-12-02T19:55:00",
+        "references": [
+            "https://snyk.io/vuln/SNYK-JS-CONFUCIOUS-598665"
+        ],
+        "summary": "All versions of package confucious are vulnerable to Prototype Pollution via the set function."
+    },
+    {
+        "Modified": "2022-12-02T19:54:00",
+        "Published": "2022-03-30T16:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "LOCAL"
+        },
+        "assigner": "secalert@redhat.com",
+        "cvss": 3.6,
+        "cvss-time": "2022-12-02T19:54:00",
+        "cvss-vector": "AV:L/AC:L/Au:N/C:P/I:P/A:N",
+        "cwe": "NVD-CWE-Other",
+        "id": "CVE-2020-35501",
+        "impact": {
+            "availability": "NONE",
+            "confidentiality": "PARTIAL",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-12-02T19:54:00",
+        "references": [
+            "https://bugzilla.redhat.com/show_bug.cgi?id=1908577"
+        ],
+        "summary": "A flaw was found in the Linux kernels implementation of audit rules, where a syscall can unexpectedly not be correctly not be logged by the audit subsystem"
+    },
+    {
+        "Modified": "2022-12-02T19:54:00",
+        "Published": "2020-09-01T10:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "report@snyk.io",
+        "cvss": 7.5,
+        "cvss-time": "2022-12-02T19:54:00",
+        "cvss-vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+        "cwe": "CWE-1321",
+        "id": "CVE-2020-7718",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "PARTIAL",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-12-02T19:54:00",
+        "references": [
+            "https://snyk.io/vuln/SNYK-JS-GAMMAUTILS-598670"
+        ],
+        "summary": "All versions of package gammautils are vulnerable to Prototype Pollution via the deepSet and deepMerge functions."
+    },
+    {
+        "Modified": "2022-12-02T19:54:00",
+        "Published": "2020-09-01T10:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "report@snyk.io",
+        "cvss": 7.5,
+        "cvss-time": "2022-12-02T19:54:00",
+        "cvss-vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+        "cwe": "CWE-1321",
+        "id": "CVE-2020-7719",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "PARTIAL",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-12-02T19:54:00",
+        "references": [
+            "https://snyk.io/vuln/SNYK-JS-LOCUTUS-598675",
+            "https://github.com/kvz/locutus/pull/418/"
+        ],
+        "summary": "Versions of package locutus before 2.0.12 are vulnerable to prototype Pollution via the php.strings.parse_str function."
+    },
+    {
+        "Modified": "2022-12-02T19:53:00",
+        "Published": "2020-09-01T10:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "report@snyk.io",
+        "cvss": 7.5,
+        "cvss-time": "2022-12-02T19:53:00",
+        "cvss-vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+        "cwe": "CWE-1321",
+        "id": "CVE-2020-7721",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "PARTIAL",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-12-02T19:53:00",
+        "references": [
+            "https://snyk.io/vuln/SNYK-JS-NODEOOJS-598678"
+        ],
+        "summary": "All versions of package node-oojs are vulnerable to Prototype Pollution via the setPath function."
+    },
+    {
+        "Modified": "2022-12-02T19:53:00",
+        "Published": "2020-09-01T10:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "report@snyk.io",
+        "cvss": 7.5,
+        "cvss-time": "2022-12-02T19:53:00",
+        "cvss-vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+        "cwe": "CWE-1321",
+        "id": "CVE-2020-7720",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "PARTIAL",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-12-02T19:53:00",
+        "references": [
+            "https://snyk.io/vuln/SNYK-JS-NODEFORGE-598677",
+            "https://snyk.io/vuln/SNYK-JAVA-ORGWEBJARSNPM-609293",
+            "https://github.com/digitalbazaar/forge/blob/master/CHANGELOG.md"
+        ],
+        "summary": "The package node-forge before 0.10.0 is vulnerable to Prototype Pollution via the util.setPath function. Note: Version 0.10.0 is a breaking change removing the vulnerable functions."
+    },
+    {
+        "Modified": "2022-12-02T19:52:00",
+        "Published": "2020-09-01T10:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "report@snyk.io",
+        "cvss": 7.5,
+        "cvss-time": "2022-12-02T19:52:00",
+        "cvss-vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+        "cwe": "CWE-1321",
+        "id": "CVE-2020-7722",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "PARTIAL",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-12-02T19:52:00",
+        "references": [
+            "https://snyk.io/vuln/SNYK-JS-NODEEUTILS-598679"
+        ],
+        "summary": "All versions of package nodee-utils are vulnerable to Prototype Pollution via the deepSet function."
+    },
+    {
+        "Modified": "2022-12-02T19:51:00",
+        "Published": "2022-12-02T19:15:00",
         "access": {},
-        "assigner": "security@apache.org",
+        "assigner": "security@huntr.dev",
         "cvss": null,
         "cwe": "Unknown",
-        "id": "CVE-2022-46366",
+        "id": "CVE-2022-3520",
         "impact": {},
-        "last-modified": "2022-12-02T14:16:00",
+        "last-modified": "2022-12-02T19:51:00",
         "references": [
-            "https://lists.apache.org/thread/bwn1vjrvz1hq0wbdzj23wz322244swhj"
+            "https://github.com/vim/vim/commit/36343ae0fb7247e060abfd35fb8e4337b33abb4b",
+            "https://huntr.dev/bounties/c1db3b70-f4fe-481f-8a24-0b1449c94246"
         ],
-        "summary": "** UNSUPPORTED WHEN ASSIGNED ** Apache Tapestry 3.x allows deserialization of untrusted data, leading to remote code execution. This issue is similar to but distinct from CVE-2020-17531, which applies the the (also unsupported) 4.x version line. NOTE: This vulnerability only affects Apache Tapestry version line 3.x, which is no longer supported by the maintainer. Users are recommended to upgrade to a supported version line of Apache Tapestry."
+        "summary": "Heap-based Buffer Overflow in GitHub repository vim/vim prior to 9.0.0765."
     },
     {
-        "Modified": "2022-12-02T13:55:00",
-        "Published": "2022-11-30T12:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-4233",
-        "impact": {},
-        "last-modified": "2022-12-02T13:55:00",
+        "Modified": "2022-12-02T19:51:00",
+        "Published": "2020-09-01T10:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "report@snyk.io",
+        "cvss": 7.5,
+        "cvss-time": "2022-12-02T19:51:00",
+        "cvss-vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+        "cwe": "CWE-1321",
+        "id": "CVE-2020-7723",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "PARTIAL",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-12-02T19:51:00",
         "references": [
-            "https://vuldb.com/?id.214591"
+            "https://snyk.io/vuln/SNYK-JS-PROMISEHELPERS-598686"
         ],
-        "summary": "A vulnerability has been found in SourceCodester Event Registration System 1.0 and classified as problematic. Affected by this vulnerability is an unknown functionality of the file /event/admin/?page=user/list. The manipulation of the argument First Name/Last Name leads to cross site scripting. The attack can be launched remotely. The associated identifier of this vulnerability is VDB-214591."
+        "summary": "All versions of package promisehelpers are vulnerable to Prototype Pollution via the insert function."
     },
     {
-        "Modified": "2022-12-02T13:54:00",
-        "Published": "2022-11-29T17:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-552",
-        "id": "CVE-2022-44356",
-        "impact": {},
-        "last-modified": "2022-12-02T13:54:00",
+        "Modified": "2022-12-02T19:51:00",
+        "Published": "2020-09-01T10:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "report@snyk.io",
+        "cvss": 7.5,
+        "cvss-time": "2022-12-02T19:51:00",
+        "cvss-vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+        "cwe": "CWE-1321",
+        "id": "CVE-2020-7724",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "PARTIAL",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-12-02T19:51:00",
         "references": [
-            "https://github.com/strik3r0x1/Vulns/blob/main/Wavlink%20WL-WN531G3.md"
+            "https://snyk.io/vuln/SNYK-JS-TINYCONF-598792"
         ],
-        "summary": "WAVLINK Quantum D4G (WL-WN531G3) running firmware versions M31G3.V5030.201204 and M31G3.V5030.200325 has an access control issue which allows unauthenticated attackers to download configuration data and log files."
+        "summary": "All versions of package tiny-conf are vulnerable to Prototype Pollution via the set function."
     },
     {
-        "Modified": "2022-12-02T13:53:00",
-        "Published": "2022-11-30T09:15:00",
-        "access": {},
-        "assigner": "trellixpsirt@trellix.com",
-        "cvss": null,
-        "cwe": "CWE-427",
-        "id": "CVE-2022-3859",
-        "impact": {},
-        "last-modified": "2022-12-02T13:53:00",
+        "Modified": "2022-12-02T19:50:00",
+        "Published": "2020-09-01T10:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "report@snyk.io",
+        "cvss": 7.5,
+        "cvss-time": "2022-12-02T19:50:00",
+        "cvss-vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+        "cwe": "CWE-1321",
+        "id": "CVE-2020-7725",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "PARTIAL",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-12-02T19:50:00",
         "references": [
-            "https://kcm.trellix.com/corporate/index?page=content&id=SB10391"
+            "https://snyk.io/vuln/SNYK-JS-WORKSMITH-598798"
         ],
-        "summary": "An uncontrolled search path vulnerability exists in Trellix Agent (TA) for Windows in versions prior to 5.7.8. This allows an attacker with admin access, which is required to place the DLL in the restricted Windows System folder, to elevate their privileges to System by placing a malicious DLL there."
+        "summary": "All versions of package worksmith are vulnerable to Prototype Pollution via the setValue function."
     },
     {
-        "Modified": "2022-12-02T13:48:00",
-        "Published": "2022-12-02T13:15:00",
-        "access": {},
-        "assigner": "security@m-files.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-4270",
-        "impact": {},
-        "last-modified": "2022-12-02T13:48:00",
-        "references": [
-            "https://www.m-files.com/about/trust-center/security-advisories/cve-2022-4270/"
-        ],
-        "summary": "Incorrect privilege assignment issue in M-Files Web in M-Files Web versions before 22.5.11436.1 could have changed permissions accidentally."
-    },
-    {
-        "Modified": "2022-12-02T13:15:00",
-        "Published": "2022-12-02T12:15:00",
-        "access": {},
-        "assigner": "cve@usom.gov.tr",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-2808",
-        "impact": {},
-        "last-modified": "2022-12-02T13:15:00",
-        "references": [
-            "https://www.usom.gov.tr/bildirim/tr-22-0708"
-        ],
-        "summary": "Algan Yaz?l?m Prens Student Information System product has an authenticated Insecure Direct Object Reference (IDOR) vulnerability."
-    },
-    {
-        "Modified": "2022-12-02T12:30:00",
-        "Published": "2022-12-02T12:15:00",
-        "access": {},
-        "assigner": "cve@usom.gov.tr",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-2807",
-        "impact": {},
-        "last-modified": "2022-12-02T12:30:00",
-        "references": [
-            "https://www.usom.gov.tr/bildirim/tr-22-0708"
-        ],
-        "summary": "Algan Yaz\u00c4\u00b1l\u00c4\u00b1m Prens Student Information System product has an unauthenticated SQL Injection vulnerability."
-    },
-    {
-        "Modified": "2022-12-02T12:15:00",
-        "Published": "2022-11-28T14:15:00",
-        "access": {},
-        "assigner": "contact@wpscan.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-3847",
-        "impact": {},
-        "last-modified": "2022-12-02T12:15:00",
-        "references": [
-            "https://wpscan.com/vulnerability/a70ad549-2e09-44fb-b894-4271ad4a84f6",
-            "https://bulletin.iese.de/post/get-site-to-phone-by-qr-code_0-0-1/"
-        ],
-        "summary": "The Showing URL in QR Code WordPress plugin through 0.0.1 does not have CSRF check when updating its settings, and is missing sanitisation as well as escaping, which could allow attackers to make logged in admin or editor add Stored XSS payloads via a CSRF attack"
-    },
-    {
-        "Modified": "2022-12-02T12:15:00",
+        "Modified": "2022-12-02T19:48:00",
         "Published": "2022-11-28T14:15:00",
         "access": {},
         "assigner": "contact@wpscan.com",
@@ -1588,11 +1597,644 @@
         "cwe": "CWE-89",
         "id": "CVE-2022-3865",
         "impact": {},
-        "last-modified": "2022-12-02T12:15:00",
+        "last-modified": "2022-12-02T19:48:00",
         "references": [
             "https://wpscan.com/vulnerability/fbe4aed8-964a-4774-bbc3-d432792bfeb6",
             "https://bulletin.iese.de/post/wp-user-merger_1-5-1_1/"
         ],
         "summary": "The WP User Merger WordPress plugin before 1.5.3 does not properly sanitise and escape a parameter before using it in a SQL statement, leading to a SQL injection exploitable by users with a role as low as admin"
+    },
+    {
+        "Modified": "2022-12-02T19:48:00",
+        "Published": "2022-11-28T14:15:00",
+        "access": {},
+        "assigner": "contact@wpscan.com",
+        "cvss": null,
+        "cwe": "CWE-89",
+        "id": "CVE-2022-3848",
+        "impact": {},
+        "last-modified": "2022-12-02T19:48:00",
+        "references": [
+            "https://wpscan.com/vulnerability/da1f0313-2576-490e-a95f-bf12de340610",
+            "https://bulletin.iese.de/post/wp-user-merger_1-5-1_2/"
+        ],
+        "summary": "The WP User Merger WordPress plugin before 1.5.3 does not properly sanitise and escape a parameter before using it in a SQL statement, leading to a SQL injection exploitable by users with a role as low as admin"
+    },
+    {
+        "Modified": "2022-12-02T19:48:00",
+        "Published": "2022-11-28T14:15:00",
+        "access": {},
+        "assigner": "contact@wpscan.com",
+        "cvss": null,
+        "cwe": "CWE-89",
+        "id": "CVE-2022-3849",
+        "impact": {},
+        "last-modified": "2022-12-02T19:48:00",
+        "references": [
+            "https://wpscan.com/vulnerability/511327d3-499b-4ad9-8fd3-99f9f7deb4f5",
+            "https://bulletin.iese.de/post/wp-user-merger_1-5-1_3/"
+        ],
+        "summary": "The WP User Merger WordPress plugin before 1.5.3 does not properly sanitise and escape a parameter before using it in a SQL statement, leading to a SQL injection exploitable by users with a role as low as admin"
+    },
+    {
+        "Modified": "2022-12-02T19:48:00",
+        "Published": "2020-09-01T10:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "report@snyk.io",
+        "cvss": 7.5,
+        "cvss-time": "2022-12-02T19:48:00",
+        "cvss-vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+        "cwe": "CWE-1321",
+        "id": "CVE-2020-7726",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "PARTIAL",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-12-02T19:48:00",
+        "references": [
+            "https://snyk.io/vuln/SNYK-JS-SAFEOBJECT2-598801"
+        ],
+        "summary": "All versions of package safe-object2 are vulnerable to Prototype Pollution via the setter function."
+    },
+    {
+        "Modified": "2022-12-02T19:48:00",
+        "Published": "2020-09-01T10:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "report@snyk.io",
+        "cvss": 7.5,
+        "cvss-time": "2022-12-02T19:48:00",
+        "cvss-vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+        "cwe": "CWE-1321",
+        "id": "CVE-2020-7727",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "PARTIAL",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-12-02T19:48:00",
+        "references": [
+            "https://snyk.io/vuln/SNYK-JS-GEDI-598803"
+        ],
+        "summary": "All versions of package gedi are vulnerable to Prototype Pollution via the set function."
+    },
+    {
+        "Modified": "2022-12-02T19:47:00",
+        "Published": "2022-11-28T14:15:00",
+        "access": {},
+        "assigner": "contact@wpscan.com",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2022-3847",
+        "impact": {},
+        "last-modified": "2022-12-02T19:47:00",
+        "references": [
+            "https://wpscan.com/vulnerability/a70ad549-2e09-44fb-b894-4271ad4a84f6",
+            "https://bulletin.iese.de/post/get-site-to-phone-by-qr-code_0-0-1/"
+        ],
+        "summary": "The Showing URL in QR Code WordPress plugin through 0.0.1 does not have CSRF check when updating its settings, and is missing sanitisation as well as escaping, which could allow attackers to make logged in admin or editor add Stored XSS payloads via a CSRF attack"
+    },
+    {
+        "Modified": "2022-12-02T19:47:00",
+        "Published": "2022-11-28T14:15:00",
+        "access": {},
+        "assigner": "contact@wpscan.com",
+        "cvss": null,
+        "cwe": "CWE-89",
+        "id": "CVE-2022-3768",
+        "impact": {},
+        "last-modified": "2022-12-02T19:47:00",
+        "references": [
+            "https://wpscan.com/vulnerability/1d8bf5bb-5a17-49b7-a5ba-5f2866e1f8a3",
+            "https://bulletin.iese.de/post/wp-smart-contracts_1-3-11/"
+        ],
+        "summary": "The WPSmartContracts WordPress plugin before 1.3.12 does not properly sanitise and escape a parameter before using it in a SQL statement, leading to a SQL injection exploitable by users with a role as low as author"
+    },
+    {
+        "Modified": "2022-12-02T19:47:00",
+        "Published": "2022-11-28T14:15:00",
+        "access": {},
+        "assigner": "contact@wpscan.com",
+        "cvss": null,
+        "cwe": "CWE-89",
+        "id": "CVE-2022-3769",
+        "impact": {},
+        "last-modified": "2022-12-02T19:47:00",
+        "references": [
+            "https://wpscan.com/vulnerability/2f9ffc1e-c8a9-47bb-a76b-d043c93e63f8",
+            "https://bulletin.iese.de/post/owm-weather_5-6-8/"
+        ],
+        "summary": "The OWM Weather WordPress plugin before 5.6.9 does not properly sanitise and escape a parameter before using it in a SQL statement, leading to a SQL injection exploitable by users with a role as low as contributor"
+    },
+    {
+        "Modified": "2022-12-02T19:47:00",
+        "Published": "2020-10-02T10:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "report@snyk.io",
+        "cvss": 7.5,
+        "cvss-time": "2022-12-02T19:47:00",
+        "cvss-vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+        "cwe": "CWE-1321",
+        "id": "CVE-2020-7736",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "PARTIAL",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-12-02T19:47:00",
+        "references": [
+            "https://github.com/b-heilman/bmoor/commit/7d4a086a1dc3ef11ed0b323824d02348734b7da5",
+            "https://snyk.io/vuln/SNYK-JS-BMOOR-598664"
+        ],
+        "summary": "The package bmoor before 0.8.12 are vulnerable to Prototype Pollution via the set function."
+    },
+    {
+        "Modified": "2022-12-02T19:47:00",
+        "Published": "2020-09-14T17:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "security@apache.org",
+        "cvss": 7.5,
+        "cvss-time": "2022-12-02T19:47:00",
+        "cvss-vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+        "cwe": "CWE-1321",
+        "id": "CVE-2019-0230",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "PARTIAL",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-12-02T19:47:00",
+        "references": [
+            "https://cwiki.apache.org/confluence/display/ww/s2-059",
+            "http://packetstormsecurity.com/files/160108/Apache-Struts-2.5.20-Double-OGNL-Evaluation.html",
+            "https://launchpad.support.sap.com/#/notes/2982840",
+            "http://packetstormsecurity.com/files/160721/Apache-Struts-2-Forced-Multi-OGNL-Evaluation.html",
+            "https://www.oracle.com/security-alerts/cpujan2021.html",
+            "https://lists.apache.org/thread.html/r90890afea72a9571d666820b2fe5942a0a5f86be406fa31da3dd0922@%3Cannounce.apache.org%3E",
+            "https://lists.apache.org/thread.html/r1125f3044a0946d1e7e6f125a6170b58d413ebd4a95157e4608041c7@%3Cannounce.apache.org%3E",
+            "https://www.oracle.com/security-alerts/cpuApr2021.html",
+            "https://www.oracle.com/security-alerts/cpuoct2021.html"
+        ],
+        "summary": "Apache Struts 2.0.0 to 2.5.20 forced double OGNL evaluation, when evaluated on raw user input in tag attributes, may lead to remote code execution."
+    },
+    {
+        "Modified": "2022-12-02T19:46:00",
+        "Published": "2022-03-03T23:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "MEDIUM",
+            "vector": "NETWORK"
+        },
+        "assigner": "secalert@redhat.com",
+        "cvss": 6.8,
+        "cvss-time": "2022-12-02T19:46:00",
+        "cvss-vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
+        "cwe": "CWE-787",
+        "id": "CVE-2021-26259",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "PARTIAL",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-12-02T19:46:00",
+        "references": [
+            "https://github.com/michaelrsweet/htmldoc/issues/417",
+            "https://github.com/michaelrsweet/htmldoc/commit/0ddab26a542c74770317b622e985c52430092ba5"
+        ],
+        "summary": "A flaw was found in htmldoc in v1.9.12. Heap buffer overflow in render_table_row(),in ps-pdf.cxx may lead to arbitrary code execution and denial of service."
+    },
+    {
+        "Modified": "2022-12-02T19:46:00",
+        "Published": "2020-10-02T10:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "report@snyk.io",
+        "cvss": 7.5,
+        "cvss-time": "2022-12-02T19:46:00",
+        "cvss-vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+        "cwe": "CWE-1321",
+        "id": "CVE-2020-7737",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "PARTIAL",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-12-02T19:46:00",
+        "references": [
+            "https://snyk.io/vuln/SNYK-JS-SAFETYDANCE-598687"
+        ],
+        "summary": "All versions of package safetydance are vulnerable to Prototype Pollution via the set function."
+    },
+    {
+        "Modified": "2022-12-02T19:46:00",
+        "Published": "2019-05-07T14:29:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "cve@mitre.org",
+        "cvss": 7.8,
+        "cvss-time": "2022-12-02T19:46:00",
+        "cvss-vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C",
+        "cwe": "CWE-416",
+        "id": "CVE-2019-11810",
+        "impact": {
+            "availability": "COMPLETE",
+            "confidentiality": "NONE",
+            "integrity": "NONE"
+        },
+        "last-modified": "2022-12-02T19:46:00",
+        "references": [
+            "https://github.com/torvalds/linux/commit/bcf3b67d16a4c8ffae0aa79de5853435e683945c",
+            "https://git.kernel.org/cgit/linux/kernel/git/torvalds/linux.git/commit/?id=bcf3b67d16a4c8ffae0aa79de5853435e683945c",
+            "https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.0.7",
+            "http://www.securityfocus.com/bid/108286",
+            "https://usn.ubuntu.com/4008-1/",
+            "https://usn.ubuntu.com/4005-1/",
+            "https://usn.ubuntu.com/4008-3/",
+            "https://lists.debian.org/debian-lts-announce/2019/06/msg00010.html",
+            "https://support.f5.com/csp/article/K50484570",
+            "https://security.netapp.com/advisory/ntap-20190719-0003/",
+            "https://access.redhat.com/errata/RHSA-2019:1959",
+            "https://access.redhat.com/errata/RHSA-2019:1971",
+            "https://access.redhat.com/errata/RHSA-2019:2043",
+            "https://access.redhat.com/errata/RHSA-2019:2029",
+            "http://lists.opensuse.org/opensuse-security-announce/2019-08/msg00056.html",
+            "http://lists.opensuse.org/opensuse-security-announce/2019-08/msg00055.html",
+            "https://usn.ubuntu.com/4115-1/",
+            "https://usn.ubuntu.com/4118-1/",
+            "https://access.redhat.com/errata/RHSA-2019:2736",
+            "https://access.redhat.com/errata/RHSA-2019:2837",
+            "https://access.redhat.com/errata/RHSA-2019:3217",
+            "https://access.redhat.com/errata/RHSA-2020:0036"
+        ],
+        "summary": "An issue was discovered in the Linux kernel before 5.0.7. A NULL pointer dereference can occur when megasas_create_frame_pool() fails in megasas_alloc_cmds() in drivers/scsi/megaraid/megaraid_sas_base.c. This causes a Denial of Service, related to a use-after-free."
+    },
+    {
+        "Modified": "2022-12-02T19:45:00",
+        "Published": "2020-10-20T11:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "MEDIUM",
+            "vector": "NETWORK"
+        },
+        "assigner": "report@snyk.io",
+        "cvss": 6.8,
+        "cvss-time": "2022-12-02T19:45:00",
+        "cvss-vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
+        "cwe": "CWE-1321",
+        "id": "CVE-2020-7748",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "PARTIAL",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-12-02T19:45:00",
+        "references": [
+            "https://snyk.io/vuln/SNYK-JS-TSEDCORE-1019382",
+            "https://github.com/TypedProject/tsed/commit/1395773ddac35926cf058fc6da9fb8e82266761b",
+            "https://github.com/TypedProject/tsed/blob/production/packages/core/src/utils/deepExtends.ts%23L36"
+        ],
+        "summary": "This affects the package @tsed/core before 5.65.7. This vulnerability relates to the deepExtend function which is used as part of the utils directory. Depending on if user input is provided, an attacker can overwrite and pollute the object prototype of a program."
+    },
+    {
+        "Modified": "2022-12-02T19:45:00",
+        "Published": "2020-10-05T08:15:00",
+        "access": {
+            "authentication": "SINGLE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "report@snyk.io",
+        "cvss": 6.5,
+        "cvss-time": "2022-12-02T19:45:00",
+        "cvss-vector": "AV:N/AC:L/Au:S/C:P/I:P/A:P",
+        "cwe": "CWE-1321",
+        "id": "CVE-2020-7709",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "PARTIAL",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-12-02T19:45:00",
+        "references": [
+            "https://github.com/manuelstofer/json-pointer/pull/34/files",
+            "https://snyk.io/vuln/SNYK-JS-JSONPOINTER-596925",
+            "https://snyk.io/vuln/SNYK-JAVA-ORGWEBJARSNPM-598862"
+        ],
+        "summary": "This affects the package json-pointer before 0.6.1. Multiple reference of object using slash is supported."
+    },
+    {
+        "Modified": "2022-12-02T19:44:00",
+        "Published": "2020-11-12T11:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "report@snyk.io",
+        "cvss": 7.5,
+        "cvss-time": "2022-12-02T19:44:00",
+        "cvss-vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+        "cwe": "CWE-1321",
+        "id": "CVE-2020-7770",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "PARTIAL",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-12-02T19:44:00",
+        "references": [
+            "https://snyk.io/vuln/SNYK-JS-JSON8-1017116",
+            "https://github.com/sonnyp/JSON8/commit/2e890261b66cbc54ae01d0c79c71b0fd18379e7e"
+        ],
+        "summary": "This affects the package json8 before 1.0.3. The function adds in the target object the property specified in the path, however it does not properly check the key being set, leading to a prototype pollution."
+    },
+    {
+        "Modified": "2022-12-02T19:44:00",
+        "Published": "2020-11-11T11:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "report@snyk.io",
+        "cvss": 5.0,
+        "cvss-time": "2022-12-02T19:44:00",
+        "cvss-vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+        "cwe": "CWE-1321",
+        "id": "CVE-2020-7768",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "NONE",
+            "integrity": "NONE"
+        },
+        "last-modified": "2022-12-02T19:44:00",
+        "references": [
+            "https://github.com/grpc/grpc-node/pull/1606",
+            "https://github.com/grpc/grpc-node/pull/1605",
+            "https://snyk.io/vuln/SNYK-JAVA-ORGWEBJARSNPM-1038819",
+            "https://snyk.io/vuln/SNYK-JS-GRPC-598671",
+            "https://snyk.io/vuln/SNYK-JS-GRPCGRPCJS-1038818"
+        ],
+        "summary": "The package grpc before 1.24.4; the package @grpc/grpc-js before 1.1.8 are vulnerable to Prototype Pollution via loadPackageDefinition."
+    },
+    {
+        "Modified": "2022-12-02T19:44:00",
+        "Published": "2020-11-10T16:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "report@snyk.io",
+        "cvss": 7.5,
+        "cvss-time": "2022-12-02T19:44:00",
+        "cvss-vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+        "cwe": "CWE-1321",
+        "id": "CVE-2020-7766",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "PARTIAL",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-12-02T19:44:00",
+        "references": [
+            "https://snyk.io/vuln/SNYK-JS-JSONPTR-1016939",
+            "https://snyk.io/vuln/SNYK-JAVA-ORGWEBJARSNPM-1038396",
+            "https://github.com/flitbit/json-ptr/blob/master/src/util.ts%23L174"
+        ],
+        "summary": "This affects all versions of package json-ptr. The issue occurs in the set operation (https://flitbit.github.io/json-ptr/classes/_src_pointer_.jsonpointer.htmlset) when the force flag is set to true. The function recursively set the property in the target object, however it does not properly check the key being set, leading to a prototype pollution."
+    },
+    {
+        "Modified": "2022-12-02T19:44:00",
+        "Published": "2020-10-29T08:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "report@snyk.io",
+        "cvss": 5.0,
+        "cvss-time": "2022-12-02T19:44:00",
+        "cvss-vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+        "cwe": "CWE-1321",
+        "id": "CVE-2020-7746",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "NONE",
+            "integrity": "NONE"
+        },
+        "last-modified": "2022-12-02T19:44:00",
+        "references": [
+            "https://snyk.io/vuln/SNYK-JAVA-ORGWEBJARSBOWERGITHUBCHARTJS-1019376",
+            "https://github.com/chartjs/Chart.js/pull/7920",
+            "https://snyk.io/vuln/SNYK-JS-CHARTJS-1018716",
+            "https://snyk.io/vuln/SNYK-JAVA-ORGWEBJARSBOWER-1019375",
+            "https://snyk.io/vuln/SNYK-JAVA-ORGWEBJARSNPM-1019374"
+        ],
+        "summary": "This affects the package chart.js before 2.9.4. The options parameter is not properly sanitized when it is processed. When the options are processed, the existing options (or the defaults options) are deeply merged with provided options. However, during this operation, the keys of the object being set are not checked, leading to a prototype pollution."
+    },
+    {
+        "Modified": "2022-12-02T19:44:00",
+        "Published": "2019-07-01T15:15:00",
+        "access": {
+            "authentication": "SINGLE",
+            "complexity": "MEDIUM",
+            "vector": "NETWORK"
+        },
+        "assigner": "psirt@us.ibm.com",
+        "cvss": 3.5,
+        "cvss-time": "2022-12-02T19:44:00",
+        "cvss-vector": "AV:N/AC:M/Au:S/C:N/I:P/A:N",
+        "cwe": "CWE-79",
+        "id": "CVE-2019-4237",
+        "impact": {
+            "availability": "NONE",
+            "confidentiality": "NONE",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-12-02T19:44:00",
+        "references": [
+            "https://www.ibm.com/support/docview.wss?uid=ibm10879825",
+            "https://exchange.xforce.ibmcloud.com/vulnerabilities/159419"
+        ],
+        "summary": "A Cross-Frame Scripting vulnerability in IBM InfoSphere Information Server 11.3, 11.5, and 11.7 can allow an attacker to load the vulnerable application inside an HTML iframe tag on a malicious page. IBM X-Force ID: 159419."
+    },
+    {
+        "Modified": "2022-12-02T19:44:00",
+        "Published": "2019-06-26T15:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "psirt@us.ibm.com",
+        "cvss": 5.0,
+        "cvss-time": "2022-12-02T19:44:00",
+        "cvss-vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N",
+        "cwe": "CWE-521",
+        "id": "CVE-2019-4235",
+        "impact": {
+            "availability": "NONE",
+            "confidentiality": "PARTIAL",
+            "integrity": "NONE"
+        },
+        "last-modified": "2022-12-02T19:44:00",
+        "references": [
+            "https://www-01.ibm.com/support/docview.wss?uid=ibm10885602",
+            "https://exchange.xforce.ibmcloud.com/vulnerabilities/159417"
+        ],
+        "summary": "IBM PureApplication System 2.2.3.0 through 2.2.5.3 does not require that users should have strong passwords by default, which makes it easier for attackers to compromise user accounts. IBM X-Force ID: 159417."
+    },
+    {
+        "Modified": "2022-12-02T19:44:00",
+        "Published": "2019-06-26T15:15:00",
+        "access": {
+            "authentication": "SINGLE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "psirt@us.ibm.com",
+        "cvss": 4.0,
+        "cvss-time": "2022-12-02T19:44:00",
+        "cvss-vector": "AV:N/AC:L/Au:S/C:N/I:P/A:N",
+        "cwe": "NVD-CWE-noinfo",
+        "id": "CVE-2019-4234",
+        "impact": {
+            "availability": "NONE",
+            "confidentiality": "NONE",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-12-02T19:44:00",
+        "references": [
+            "https://www-01.ibm.com/support/docview.wss?uid=ibm10885602",
+            "https://exchange.xforce.ibmcloud.com/vulnerabilities/159416"
+        ],
+        "summary": "IBM PureApplication System 2.2.3.0 through 2.2.5.3 weakness in the implementation of locking feature in pattern editor. An attacker by intercepting the subsequent requests can bypass business logic to modify the pattern to unlocked state. IBM X-Force ID: 159416."
+    },
+    {
+        "Modified": "2022-12-02T19:44:00",
+        "Published": "2019-06-27T14:15:00",
+        "access": {
+            "authentication": "SINGLE",
+            "complexity": "MEDIUM",
+            "vector": "NETWORK"
+        },
+        "assigner": "psirt@us.ibm.com",
+        "cvss": 3.5,
+        "cvss-time": "2022-12-02T19:44:00",
+        "cvss-vector": "AV:N/AC:M/Au:S/C:N/I:P/A:N",
+        "cwe": "CWE-79",
+        "id": "CVE-2019-4249",
+        "impact": {
+            "availability": "NONE",
+            "confidentiality": "NONE",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-12-02T19:44:00",
+        "references": [
+            "https://exchange.xforce.ibmcloud.com/vulnerabilities/159647",
+            "http://www.ibm.com/support/docview.wss?uid=ibm10956525"
+        ],
+        "summary": "IBM Rational Collaborative Lifecycle Management 6.0 through 6.0.6.1 is vulnerable to cross-site scripting. This vulnerability allows users to embed arbitrary JavaScript code in the Web UI thus altering the intended functionality potentially leading to credentials disclosure within a trusted session. IBM X-Force ID: 159647."
+    },
+    {
+        "Modified": "2022-12-02T19:43:00",
+        "Published": "2020-11-12T18:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "vulnerabilitylab@mend.io",
+        "cvss": 7.5,
+        "cvss-time": "2022-12-02T19:43:00",
+        "cvss-vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+        "cwe": "CWE-1321",
+        "id": "CVE-2020-28269",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "PARTIAL",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-12-02T19:43:00",
+        "references": [
+            "https://github.com/jprichardson/field/blob/2a3811dfc4cdd13833977477d2533534fc61ce06/lib/field.js#L39",
+            "https://www.whitesourcesoftware.com/vulnerability-database/CVE-2020-28269"
+        ],
+        "summary": "Prototype pollution vulnerability in 'field' versions 0.0.1 through 1.0.1 allows attacker to cause a denial of service and may lead to remote code execution."
+    },
+    {
+        "Modified": "2022-12-02T19:43:00",
+        "Published": "2019-07-17T14:15:00",
+        "access": {
+            "authentication": "SINGLE",
+            "complexity": "MEDIUM",
+            "vector": "NETWORK"
+        },
+        "assigner": "psirt@us.ibm.com",
+        "cvss": 3.5,
+        "cvss-time": "2022-12-02T19:43:00",
+        "cvss-vector": "AV:N/AC:M/Au:S/C:N/I:P/A:N",
+        "cwe": "CWE-79",
+        "id": "CVE-2019-4211",
+        "impact": {
+            "availability": "NONE",
+            "confidentiality": "NONE",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-12-02T19:43:00",
+        "references": [
+            "https://www.ibm.com/support/docview.wss?uid=ibm10957143",
+            "https://exchange.xforce.ibmcloud.com/vulnerabilities/159131"
+        ],
+        "summary": "IBM QRadar SIEM 7.2 and 7.3 is vulnerable to cross-site scripting. This vulnerability allows users to embed arbitrary JavaScript code in the Web UI thus altering the intended functionality potentially leading to credentials disclosure within a trusted session. IBM X-Force ID: 159131."
+    },
+    {
+        "Modified": "2022-12-02T19:43:00",
+        "Published": "2019-10-01T15:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "psirt@us.ibm.com",
+        "cvss": 5.0,
+        "cvss-time": "2022-12-02T19:43:00",
+        "cvss-vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N",
+        "cwe": "NVD-CWE-noinfo",
+        "id": "CVE-2019-4246",
+        "impact": {
+            "availability": "NONE",
+            "confidentiality": "PARTIAL",
+            "integrity": "NONE"
+        },
+        "last-modified": "2022-12-02T19:43:00",
+        "references": [
+            "https://exchange.xforce.ibmcloud.com/vulnerabilities/159521",
+            "https://www.ibm.com/support/pages/node/884380"
+        ],
+        "summary": "IBM Daeja ViewONE Virtual 5.0 through 5.0.6 could expose internal parameters to ViewONE clients that could be used in further attacks against the system. IBM X-Force ID: 159521."
     }
 ]
