@@ -1,5 +1,463 @@
 [
     {
+        "Modified": "2022-12-02T16:57:00",
+        "Published": "2022-11-23T21:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-312",
+        "id": "CVE-2022-41933",
+        "impact": {},
+        "last-modified": "2022-12-02T16:57:00",
+        "references": [
+            "https://github.com/xwiki/xwiki-platform/commit/443e8398b75a1295067d74afb5898370782d863a#diff-f8a8f8ba80dfc55f044e2e60b521ce379176430ca6921b0f87b79cf682531f79L322",
+            "https://jira.xwiki.org/browse/XWIKI-19945",
+            "https://jira.xwiki.org/browse/XWIKI-19869",
+            "https://github.com/xwiki/xwiki-platform/security/advisories/GHSA-q2hm-2h45-v5g3",
+            "https://github.com/xwiki/xwiki-platform/security/advisories/GHSA-599v-w48h-rjrm"
+        ],
+        "summary": "XWiki Platform is a generic wiki platform offering runtime services for applications built on top of it. When the `reset a forgotten password` feature of XWiki was used, the password was then stored in plain text in database. This only concerns XWiki 13.1RC1 and newer versions. Note that it only concerns the reset password feature available from the \"Forgot your password\" link in the login view: the features allowing a user to change their password, or for an admin to change a user password are not impacted. This vulnerability is particularly dangerous in combination with other vulnerabilities allowing to perform data leak of personal data from users, such as GHSA-599v-w48h-rjrm. Note that this vulnerability only concerns the users of the main wiki: in case of farms, the users registered on subwiki are not impacted thanks to a bug we discovered when investigating this. The problem has been patched in version 14.6RC1, 14.4.3 and 13.10.8. The patch involves a migration of the impacted users as well as the history of the page, to ensure no password remains in plain text in the database. This migration also involves to inform the users about the possible disclosure of their passwords: by default, two emails are automatically sent to the impacted users. A first email to inform about the possibility that their password have been leaked, and a second email using the reset password feature to ask them to set a new password. It's also possible for administrators to set some properties for the migration: it's possible to decide if the user password should be reset (default) or if the passwords should be kept but only hashed. Note that in the first option, the users won't be able to login anymore until they set a new password if they were impacted. Note that in both options, mails will be sent to users to inform them and encourage them to change their passwords."
+    },
+    {
+        "Modified": "2022-12-02T16:53:00",
+        "Published": "2022-11-29T21:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "NVD-CWE-noinfo",
+        "id": "CVE-2021-31693",
+        "impact": {},
+        "last-modified": "2022-12-02T16:53:00",
+        "references": [
+            "https://www.vmware.com/security/advisories/VMSA-2022-0029.html"
+        ],
+        "summary": "VMware Tools for Windows (12.x.y prior to 12.1.5, 11.x.y and 10.x.y) contains a denial-of-service vulnerability in the VM3DMP driver. A malicious actor with local user privileges in the Windows guest OS, where VMware Tools is installed, can trigger a PANIC in the VM3DMP driver leading to a denial-of-service condition in the Windows guest OS."
+    },
+    {
+        "Modified": "2022-12-02T16:36:00",
+        "Published": "2022-11-30T23:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-74",
+        "id": "CVE-2022-46162",
+        "impact": {},
+        "last-modified": "2022-12-02T16:36:00",
+        "references": [
+            "https://github.com/discourse/discourse-bbcode/commit/91478f5cfecdcc43cf85b997168a8ecfd0f8df90",
+            "https://github.com/discourse/discourse-bbcode/security/advisories/GHSA-8c87-xpqv-c7mp"
+        ],
+        "summary": "discourse-bbcode is the official BBCode plugin for Discourse. Prior to commit 91478f5, CSS injection can occur when rendering content generated with the discourse-bccode plugin. This vulnerability only affects sites which have the discourse-bbcode plugin installed and enabled. This issue is patched in commit 91478f5. As a workaround, ensure that the Content Security Policy is enabled and monitor any posts that contain bbcode."
+    },
+    {
+        "Modified": "2022-12-02T16:28:00",
+        "Published": "2022-11-30T17:15:00",
+        "access": {},
+        "assigner": "cna@vuldb.com",
+        "cvss": null,
+        "cwe": "CWE-707",
+        "id": "CVE-2022-4234",
+        "impact": {},
+        "last-modified": "2022-12-02T16:28:00",
+        "references": [
+            "https://vuldb.com/?id.214595",
+            "https://www.jianshu.com/p/3efa724c789d?v=1669372054033"
+        ],
+        "summary": "A vulnerability was found in SourceCodester Canteen Management System. It has been rated as problematic. This issue affects the function builtin_echo of the file youthappam/brand.php. The manipulation of the argument brand_name leads to cross site scripting. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-214595."
+    },
+    {
+        "Modified": "2022-12-02T16:19:00",
+        "Published": "2022-12-02T16:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-43272",
+        "impact": {},
+        "last-modified": "2022-12-02T16:19:00",
+        "references": [
+            "https://github.com/songxpu/bug_report/tree/master/DCMTK/memory_leak_in_3.6.7",
+            "https://www.wolai.com/vaVuMxU4gGqFakbzvc9NYw"
+        ],
+        "summary": "DCMTK v3.6.7 was discovered to contain a memory leak via the T_ASC_Association object."
+    },
+    {
+        "Modified": "2022-12-02T16:19:00",
+        "Published": "2022-12-02T16:15:00",
+        "access": {},
+        "assigner": "disclosure@synopsys.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-45480",
+        "impact": {},
+        "last-modified": "2022-12-02T16:19:00",
+        "references": [
+            "https://www.synopsys.com/blogs/software-security/cyrc-advisory-remote-code-execution-vulnerabilities-mouse-keyboard-apps/"
+        ],
+        "summary": "PC Keyboard WiFi & Bluetooth allows an attacker (in a man-in-the-middle position between the server and a connected device) to see all data (including keypresses) in cleartext. CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N"
+    },
+    {
+        "Modified": "2022-12-02T16:19:00",
+        "Published": "2022-12-02T16:15:00",
+        "access": {},
+        "assigner": "disclosure@synopsys.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-45482",
+        "impact": {},
+        "last-modified": "2022-12-02T16:19:00",
+        "references": [
+            "https://www.synopsys.com/blogs/software-security/cyrc-advisory-remote-code-execution-vulnerabilities-mouse-keyboard-apps/"
+        ],
+        "summary": "Lazy Mouse server enforces weak password requirements and doesn't implement rate limiting, allowing remote unauthenticated users to easily and quickly brute force the PIN and execute arbitrary commands. CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+    },
+    {
+        "Modified": "2022-12-02T16:19:00",
+        "Published": "2022-12-02T16:15:00",
+        "access": {},
+        "assigner": "disclosure@synopsys.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-45483",
+        "impact": {},
+        "last-modified": "2022-12-02T16:19:00",
+        "references": [
+            "https://www.synopsys.com/blogs/software-security/cyrc-advisory-remote-code-execution-vulnerabilities-mouse-keyboard-apps/"
+        ],
+        "summary": "Lazy Mouse allows an attacker (in a man in the middle position between the server and a connected device) to see all data (including keypresses) in cleartext. CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N"
+    },
+    {
+        "Modified": "2022-12-02T16:19:00",
+        "Published": "2022-12-02T16:15:00",
+        "access": {},
+        "assigner": "security@huntr.dev",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-4271",
+        "impact": {},
+        "last-modified": "2022-12-02T16:19:00",
+        "references": [
+            "https://huntr.dev/bounties/a11c922f-255a-412a-aa87-7f3bd7121599",
+            "https://github.com/osticket/osticket/commit/5213ff138c6be6144a6692376ac0803a42eca168"
+        ],
+        "summary": "Cross-site Scripting (XSS) - Reflected in GitHub repository osticket/osticket prior to 1.16.4."
+    },
+    {
+        "Modified": "2022-12-02T16:13:00",
+        "Published": "2022-11-30T15:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "NVD-CWE-noinfo",
+        "id": "CVE-2022-44136",
+        "impact": {},
+        "last-modified": "2022-12-02T16:13:00",
+        "references": [
+            "https://com0t.github.io/zenar.io/2022/10/18/Unauthent-RCE-Zenar.io~9.3.html"
+        ],
+        "summary": "Zenario CMS 9.3.57186 is vulnerable to Remote Code Excution (RCE)."
+    },
+    {
+        "Modified": "2022-12-02T16:09:00",
+        "Published": "2022-11-29T14:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-303",
+        "id": "CVE-2022-46146",
+        "impact": {},
+        "last-modified": "2022-12-02T16:09:00",
+        "references": [
+            "https://github.com/prometheus/exporter-toolkit/security/advisories/GHSA-7rg2-cxvp-9p7p",
+            "https://github.com/prometheus/exporter-toolkit/commit/5b1eab34484ddd353986bce736cd119d863e4ff5",
+            "http://www.openwall.com/lists/oss-security/2022/11/29/1",
+            "http://www.openwall.com/lists/oss-security/2022/11/29/2",
+            "http://www.openwall.com/lists/oss-security/2022/11/29/4"
+        ],
+        "summary": "Prometheus Exporter Toolkit is a utility package to build exporters. Prior to versions 0.7.2 and 0.8.2, i someone has access to a Prometheus web.yml file and users' bcrypted passwords, they can bypass security by poisoning the built-in authentication cache. Versions 0.7.2 and 0.8.2 contain a fix for the issue. There is no workaround, but attacker must have access to the hashed password to use this functionality."
+    },
+    {
+        "Modified": "2022-12-02T16:03:00",
+        "Published": "2022-11-30T05:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-362",
+        "id": "CVE-2022-45869",
+        "impact": {},
+        "last-modified": "2022-12-02T16:03:00",
+        "references": [
+            "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=47b0c2e4c220f2251fd8dcfbb44479819c715e15"
+        ],
+        "summary": "A race condition in the x86 KVM subsystem in the Linux kernel through 6.1-rc6 allows guest OS users to cause a denial of service (host OS crash or host OS memory corruption) when nested virtualisation and the TDP MMU are enabled."
+    },
+    {
+        "Modified": "2022-12-02T16:02:00",
+        "Published": "2022-11-30T03:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-787",
+        "id": "CVE-2022-45337",
+        "impact": {},
+        "last-modified": "2022-12-02T16:02:00",
+        "references": [
+            "https://github.com/no1rr/Vulnerability/tree/master/Tenda/TX9Pro/1"
+        ],
+        "summary": "Tenda TX9 Pro v22.03.02.10 was discovered to contain a stack overflow via the list parameter at /goform/SetIpMacBind."
+    },
+    {
+        "Modified": "2022-12-02T16:00:00",
+        "Published": "2022-11-30T03:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-787",
+        "id": "CVE-2022-45332",
+        "impact": {},
+        "last-modified": "2022-12-02T16:00:00",
+        "references": [
+            "https://github.com/LibreDWG/libredwg/issues/524"
+        ],
+        "summary": "LibreDWG v0.12.4.4643 was discovered to contain a heap buffer overflow via the function decode_preR13_section_hdr at decode_r11.c."
+    },
+    {
+        "Modified": "2022-12-02T15:52:00",
+        "Published": "2022-11-28T22:15:00",
+        "access": {},
+        "assigner": "security@microfocus.com",
+        "cvss": null,
+        "cwe": "CWE-287",
+        "id": "CVE-2022-38753",
+        "impact": {},
+        "last-modified": "2022-12-02T15:52:00",
+        "references": [
+            "https://www.netiq.com/documentation/advanced-authentication-63/advanced-authentication-releasenotes-6341/data/advanced-authentication-releasenotes-6341.html"
+        ],
+        "summary": "This update resolves a multi-factor authentication bypass attack"
+    },
+    {
+        "Modified": "2022-12-02T15:39:00",
+        "Published": "2022-12-02T15:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-45215",
+        "impact": {},
+        "last-modified": "2022-12-02T15:39:00",
+        "references": [
+            "https://www.sourcecodester.com/php/15748/book-store-management-system-project-using-php-codeigniter-3-free-source-code.html",
+            "https://github.com/Rajeshwar40/CVE/blob/main/CVE-2022-45215"
+        ],
+        "summary": "A cross-site scripting (XSS) vulnerability in Book Store Management System v1.0.0 allows attackers to execute arbitrary web scripts or HTML via a crafted payload injected into the Name parameter under the Add New System User module."
+    },
+    {
+        "Modified": "2022-12-02T15:39:00",
+        "Published": "2022-12-02T15:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-770",
+        "id": "CVE-2022-46159",
+        "impact": {},
+        "last-modified": "2022-12-02T15:39:00",
+        "references": [
+            "https://github.com/discourse/discourse/security/advisories/GHSA-qf99-xpx6-hgxp",
+            "https://github.com/discourse/discourse/commit/0ce38bd7bce862db251b882613ab7053ca777382"
+        ],
+        "summary": "Discourse is an open-source discussion platform. In version 2.8.13 and prior on the `stable` branch and version 2.9.0.beta14 and prior on the `beta` and `tests-passed` branches, any authenticated user can create an unlisted topic. These topics, which are not readily available to other users, can take up unnecessary site resources. A patch for this issue is available in the `main` branch of Discourse. There are no known workarounds available."
+    },
+    {
+        "Modified": "2022-12-02T15:38:00",
+        "Published": "2022-11-29T05:15:00",
+        "access": {},
+        "assigner": "dl_cve@linecorp.com",
+        "cvss": null,
+        "cwe": "CWE-400",
+        "id": "CVE-2022-41568",
+        "impact": {},
+        "last-modified": "2022-12-02T15:38:00",
+        "references": [
+            "https://hackerone.com/reports/1701642"
+        ],
+        "summary": "LINE client for iOS before 12.17.0 might be crashed by sharing an invalid shared key of e2ee in group chat."
+    },
+    {
+        "Modified": "2022-12-02T15:20:00",
+        "Published": "2022-11-28T22:15:00",
+        "access": {},
+        "assigner": "ics-cert@hq.dhs.gov",
+        "cvss": null,
+        "cwe": "CWE-269",
+        "id": "CVE-2022-3088",
+        "impact": {},
+        "last-modified": "2022-12-02T15:20:00",
+        "references": [
+            "https://www.cisa.gov/uscert/ics/advisories/icsa-22-326-05"
+        ],
+        "summary": "UC-8100A-ME-T System Image: Versions v1.0 to v1.6, UC-2100 System Image: Versions v1.0 to v1.12, UC-2100-W System Image: Versions v1.0 to v 1.12, UC-3100 System Image: Versions v1.0 to v1.6, UC-5100 System Image: Versions v1.0 to v1.4, UC-8100 System Image: Versions v3.0 to v3.5, UC-8100-ME-T System Image: Versions v3.0 and v3.1, UC-8100A-ME-T System Image: Versions v1.0 to v1.6, UC-8200 System Image: v1.0 to v1.5, AIG-300 System Image: v1.0 to v1.4, UC-8410A with Debian 9 System Image: Versions v4.0.2 and v4.1.2, UC-8580 with Debian 9 System Image: Versions v2.0 and v2.1, UC-8540 with Debian 9 System Image: Versions v2.0 and v2.1, and DA-662C-16-LX (GLB) System Image: Versions v1.0.2 to v1.1.2 of Moxa's ARM-based computers have an execution with unnecessary privileges vulnerability, which could allow an attacker with user-level privileges to gain root privileges."
+    },
+    {
+        "Modified": "2022-12-02T15:14:00",
+        "Published": "2022-11-22T19:15:00",
+        "access": {},
+        "assigner": "secalert@redhat.com",
+        "cvss": null,
+        "cwe": "CWE-94",
+        "id": "CVE-2022-4116",
+        "impact": {},
+        "last-modified": "2022-12-02T15:14:00",
+        "references": [
+            "https://access.redhat.com/security/cve/CVE-2022-4116"
+        ],
+        "summary": "A vulnerability was found in quarkus. This security flaw happens in Dev UI Config Editor which is vulnerable to drive-by localhost attacks leading to remote code execution."
+    },
+    {
+        "Modified": "2022-12-02T15:14:00",
+        "Published": "2022-10-02T05:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-502",
+        "id": "CVE-2022-42003",
+        "impact": {},
+        "last-modified": "2022-12-02T15:14:00",
+        "references": [
+            "https://github.com/FasterXML/jackson-databind/commit/d78d00ee7b5245b93103fef3187f70543d67ca33",
+            "https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=51020",
+            "https://github.com/FasterXML/jackson-databind/issues/3590",
+            "https://security.gentoo.org/glsa/202210-21",
+            "https://www.debian.org/security/2022/dsa-5283",
+            "https://security.netapp.com/advisory/ntap-20221124-0004/",
+            "https://lists.debian.org/debian-lts-announce/2022/11/msg00035.html"
+        ],
+        "summary": "In FasterXML jackson-databind before 2.14.0-rc1, resource exhaustion can occur because of a lack of a check in primitive value deserializers to avoid deep wrapper array nesting, when the UNWRAP_SINGLE_VALUE_ARRAYS feature is enabled. Additional fix version in 2.13.4.1 and 2.12.17.1"
+    },
+    {
+        "Modified": "2022-12-02T15:12:00",
+        "Published": "2022-11-30T14:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2022-38801",
+        "impact": {},
+        "last-modified": "2022-12-02T15:12:00",
+        "references": [
+            "https://www.zkteco.com/",
+            "https://gist.github.com/hamoshwani/5ac860dd6757440174f446c62b24653f"
+        ],
+        "summary": "In Zkteco BioTime < 8.5.3 Build:20200816.447, an employee can hijack an administrator session and cookies using blind cross-site scripting."
+    },
+    {
+        "Modified": "2022-12-02T15:11:00",
+        "Published": "2022-11-29T05:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-639",
+        "id": "CVE-2022-43326",
+        "impact": {},
+        "last-modified": "2022-12-02T15:11:00",
+        "references": [
+            "https://cyber-guy.gitbook.io/cyber-guys-blog/pocs/cve-2022-43326"
+        ],
+        "summary": "An Insecure Direct Object Reference (IDOR) vulnerability in the password reset function of Telos Alliance Omnia MPX Node 1.0.0-1.4.[*] allows attackers to arbitrarily change user and Administrator account passwords."
+    },
+    {
+        "Modified": "2022-12-02T15:10:00",
+        "Published": "2022-11-30T13:15:00",
+        "access": {},
+        "assigner": "audit@patchstack.com",
+        "cvss": null,
+        "cwe": "CWE-352",
+        "id": "CVE-2022-26366",
+        "impact": {},
+        "last-modified": "2022-12-02T15:10:00",
+        "references": [
+            "https://patchstack.com/database/vulnerability/adrotate/wordpress-adrotate-banner-manager-plugin-5-9-multiple-cross-site-request-forgery-csrf-vulnerabilities?_s_id=cve"
+        ],
+        "summary": "Cross-Site Request Forgery (CSRF) in AdRotate Banner Manager Plugin <= 5.9 on WordPress."
+    },
+    {
+        "Modified": "2022-12-02T15:10:00",
+        "Published": "2022-10-02T05:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-502",
+        "id": "CVE-2022-42004",
+        "impact": {},
+        "last-modified": "2022-12-02T15:10:00",
+        "references": [
+            "https://github.com/FasterXML/jackson-databind/issues/3582",
+            "https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=50490",
+            "https://github.com/FasterXML/jackson-databind/commit/063183589218fec19a9293ed2f17ec53ea80ba88",
+            "https://security.gentoo.org/glsa/202210-21",
+            "https://www.debian.org/security/2022/dsa-5283",
+            "https://security.netapp.com/advisory/ntap-20221118-0008/",
+            "https://lists.debian.org/debian-lts-announce/2022/11/msg00035.html"
+        ],
+        "summary": "In FasterXML jackson-databind before 2.13.4, resource exhaustion can occur because of a lack of a check in BeanDeserializer._deserializeFromArray to prevent use of deeply nested arrays. An application is vulnerable only with certain customized choices for deserialization."
+    },
+    {
+        "Modified": "2022-12-02T15:09:00",
+        "Published": "2022-11-30T13:15:00",
+        "access": {},
+        "assigner": "audit@patchstack.com",
+        "cvss": null,
+        "cwe": "CWE-367",
+        "id": "CVE-2022-45842",
+        "impact": {},
+        "last-modified": "2022-12-02T15:09:00",
+        "references": [
+            "https://patchstack.com/database/vulnerability/wp-ulike/wordpress-wp-ulike-plugin-4-6-3-race-condition-vulnerability?_s_id=cve"
+        ],
+        "summary": "Unauth. Race Condition vulnerability in WP ULike Plugin <= 4.6.4 on WordPress allows attackers to increase/decrease rating scores."
+    },
+    {
+        "Modified": "2022-12-02T15:09:00",
+        "Published": "2022-11-29T09:15:00",
+        "access": {},
+        "assigner": "cna@vuldb.com",
+        "cvss": null,
+        "cwe": "CWE-190",
+        "id": "CVE-2022-4202",
+        "impact": {},
+        "last-modified": "2022-12-02T15:09:00",
+        "references": [
+            "https://vuldb.com/?id.214518",
+            "https://drive.google.com/file/d/1HVWa6IpAbvsMS5rx091RfjUB4GfXrMLE/view"
+        ],
+        "summary": "A vulnerability, which was classified as problematic, was found in GPAC 2.1-DEV-rev490-g68064e101-master. Affected is the function lsr_translate_coords of the file laser/lsr_dec.c. The manipulation leads to integer overflow. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used. VDB-214518 is the identifier assigned to this vulnerability."
+    },
+    {
+        "Modified": "2022-12-02T15:03:00",
+        "Published": "2021-09-09T19:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "LOCAL"
+        },
+        "assigner": "mobile.security@samsung.com",
+        "cvss": 2.1,
+        "cvss-time": "2022-12-02T15:03:00",
+        "cvss-vector": "AV:L/AC:L/Au:N/C:N/I:P/A:N",
+        "cwe": "NVD-CWE-Other",
+        "id": "CVE-2021-25463",
+        "impact": {
+            "availability": "NONE",
+            "confidentiality": "NONE",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-12-02T15:03:00",
+        "references": [
+            "https://security.samsungmobile.com/serviceWeb.smsb?year=2021&month=9"
+        ],
+        "summary": "Improper access control vulnerability in PENUP prior to version 3.8.00.18 allows arbitrary webpage loading in webview."
+    },
+    {
         "Modified": "2022-12-02T14:52:00",
         "Published": "2022-11-30T05:15:00",
         "access": {},
@@ -1147,451 +1605,5 @@
             "https://packetstormsecurity.com/files/169531/Dinstar-FXO-Analog-VoIP-Gateway-DAG2000-16O-Cross-Site-Scripting.html"
         ],
         "summary": "Dinstar FXO Analog VoIP Gateway DAG2000-16O is vulnerable to Cross Site Scripting (XSS)."
-    },
-    {
-        "Modified": "2022-12-01T22:36:00",
-        "Published": "2022-11-28T15:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-120",
-        "id": "CVE-2022-44283",
-        "impact": {},
-        "last-modified": "2022-12-01T22:36:00",
-        "references": [
-            "https://packetstormsecurity.com/files/169427/AVS-Audio-Converter-10.3-Stack-Overflow.html"
-        ],
-        "summary": "AVS Audio Converter 10.3 is vulnerable to Buffer Overflow."
-    },
-    {
-        "Modified": "2022-12-01T22:15:00",
-        "Published": "2022-12-01T22:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-35120",
-        "impact": {},
-        "last-modified": "2022-12-01T22:15:00",
-        "references": [
-            "https://la.rsbir.ch/CVE-2022-35120.pdf"
-        ],
-        "summary": "IXPdata EasyInstall 6.6.14725 contains an access control issue."
-    },
-    {
-        "Modified": "2022-12-01T22:15:00",
-        "Published": "2022-12-01T22:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-43333",
-        "impact": {},
-        "last-modified": "2022-12-01T22:15:00",
-        "references": [
-            "https://www.teleniasoftware.com/timeline/tvox-22-0-23/"
-        ],
-        "summary": "Telenia Software s.r.l TVox before v22.0.17 was discovered to contain a remote code execution (RCE) vulnerability in the component action_export_control.php."
-    },
-    {
-        "Modified": "2022-12-01T22:15:00",
-        "Published": "2022-12-01T22:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-44211",
-        "impact": {},
-        "last-modified": "2022-12-01T22:15:00",
-        "references": [
-            "https://forum.gl-inet.com/t/security-advisories-vulnerabilities-and-cves-of-gl-inet-software/25518"
-        ],
-        "summary": "In GL.iNet Goodcloud 1.1 Incorrect access control allows a remote attacker to access/change devices' settings."
-    },
-    {
-        "Modified": "2022-12-01T22:15:00",
-        "Published": "2022-12-01T22:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-44212",
-        "impact": {},
-        "last-modified": "2022-12-01T22:15:00",
-        "references": [
-            "https://forum.gl-inet.com/t/security-advisories-vulnerabilities-and-cves-of-gl-inet-software/25518/2"
-        ],
-        "summary": "In GL.iNet Goodcloud 1.0, insecure design allows remote attacker to access devices' admin panel."
-    },
-    {
-        "Modified": "2022-12-01T22:15:00",
-        "Published": "2022-11-29T21:15:00",
-        "access": {},
-        "assigner": "security@wordfence.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-4032",
-        "impact": {},
-        "last-modified": "2022-12-01T22:15:00",
-        "references": [
-            "https://www.wordfence.com/vulnerability-advisories-continued/#CVE-2022-4032",
-            "https://plugins.trac.wordpress.org/changeset?sfp_email=&sfph_mail=&reponame=&old=2801761%40quiz-master-next&new=2801761%40quiz-master-next&sfp_email=&sfph_mail="
-        ],
-        "summary": "The Quiz and Survey Master plugin for WordPress is vulnerable to iFrame Injection via the 'question[id]' parameter in versions up to, and including, 8.0.4 due to insufficient input sanitization and output escaping that allowed iframe tags to be injected. This makes it possible for unauthenticated attackers to inject iFrames in pages that will execute whenever a user accesses an injected page."
-    },
-    {
-        "Modified": "2022-12-01T22:12:00",
-        "Published": "2022-11-29T21:15:00",
-        "access": {},
-        "assigner": "security@wordfence.com",
-        "cvss": null,
-        "cwe": "CWE-20",
-        "id": "CVE-2022-4033",
-        "impact": {},
-        "last-modified": "2022-12-01T22:12:00",
-        "references": [
-            "https://www.wordfence.com/vulnerability-advisories-continued/#CVE-2022-4033",
-            "https://plugins.trac.wordpress.org/changeset?sfp_email=&sfph_mail=&reponame=&old=2801761%40quiz-master-next&new=2801761%40quiz-master-next&sfp_email=&sfph_mail="
-        ],
-        "summary": "The Quiz and Survey Master plugin for WordPress is vulnerable to input validation bypass via the 'question[id]' parameter in versions up to, and including, 8.0.4 due to insufficient input validation that allows attackers to inject content other than the specified value (i.e. a number, file path, etc..). This makes it possible attackers to submit values other than the intended input type."
-    },
-    {
-        "Modified": "2022-12-01T22:08:00",
-        "Published": "2022-11-29T21:15:00",
-        "access": {},
-        "assigner": "security@wordfence.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-4035",
-        "impact": {},
-        "last-modified": "2022-12-01T22:08:00",
-        "references": [
-            "https://www.wordfence.com/vulnerability-advisories-continued/#CVE-2022-4035",
-            "https://plugins.trac.wordpress.org/changeset?sfp_email=&sfph_mail=&reponame=&old=2803896%40appointment-hour-booking&new=2803896%40appointment-hour-booking&sfp_email=&sfph_mail="
-        ],
-        "summary": "The Appointment Hour Booking plugin for WordPress is vulnerable to iFrame Injection via the \u2018email\u2019 or general field parameters in versions up to, and including, 1.3.72 due to insufficient input sanitization and output escaping that makes injecting iFrame tags possible. This makes it possible for unauthenticated attackers to inject iFrames when submitting a booking that will execute whenever a user accesses the injected booking details page."
-    },
-    {
-        "Modified": "2022-12-01T22:04:00",
-        "Published": "2022-11-29T21:15:00",
-        "access": {},
-        "assigner": "security@wordfence.com",
-        "cvss": null,
-        "cwe": "CWE-1236",
-        "id": "CVE-2022-4034",
-        "impact": {},
-        "last-modified": "2022-12-01T22:04:00",
-        "references": [
-            "https://www.wordfence.com/vulnerability-advisories-continued/#CVE-2022-4034",
-            "https://plugins.trac.wordpress.org/changeset?sfp_email=&sfph_mail=&reponame=&old=2803896%40appointment-hour-booking&new=2803896%40appointment-hour-booking&sfp_email=&sfph_mail="
-        ],
-        "summary": "The Appointment Hour Booking Plugin for WordPress is vulnerable to CSV Injection in versions up to, and including, 1.3.72. This makes it possible for unauthenticated attackers to embed untrusted input into content during booking creation that may be exported as a CSV file when a site's administrator exports booking details. This can result in code execution when these files are downloaded and opened on a local system with a vulnerable configuration."
-    },
-    {
-        "Modified": "2022-12-01T22:02:00",
-        "Published": "2022-11-29T17:15:00",
-        "access": {},
-        "assigner": "security-advisories@github.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-46148",
-        "impact": {},
-        "last-modified": "2022-12-01T22:02:00",
-        "references": [
-            "https://github.com/discourse/discourse/security/advisories/GHSA-c5h6-6gg5-84fh"
-        ],
-        "summary": "Discourse is an open-source messaging platform. In versions 2.8.10 and prior on the `stable` branch and versions 2.9.0.beta11 and prior on the `beta` and `tests-passed` branches, users composing malicious messages and navigating to drafts page could self-XSS. This vulnerability can lead to a full XSS on sites which have modified or disabled Discourse\u2019s default Content Security Policy. This issue is patched in the latest stable, beta and tests-passed versions of Discourse."
-    },
-    {
-        "Modified": "2022-12-01T21:57:00",
-        "Published": "2022-11-29T18:15:00",
-        "access": {},
-        "assigner": "security-advisories@github.com",
-        "cvss": null,
-        "cwe": "CWE-200",
-        "id": "CVE-2022-46150",
-        "impact": {},
-        "last-modified": "2022-12-01T21:57:00",
-        "references": [
-            "https://github.com/discourse/discourse/security/advisories/GHSA-rqvq-94h8-p5wv",
-            "https://github.com/discourse/discourse/commit/84c83e8d4a1907f8a2972f0ab44b6402aa910c3b"
-        ],
-        "summary": "Discourse is an open-source discussion platform. Prior to version 2.8.13 of the `stable` branch and version 2.9.0.beta14 of the `beta` and `tests-passed` branches, unauthorized users may learn of the existence of hidden tags and that they have been applied to topics that they have access to. This issue is patched in version 2.8.13 of the `stable` branch and version 2.9.0.beta14 of the `beta` and `tests-passed` branches. As a workaround, use the `disable_email` site setting to disable all emails to non-staff users."
-    },
-    {
-        "Modified": "2022-12-01T21:51:00",
-        "Published": "2022-11-29T21:15:00",
-        "access": {},
-        "assigner": "security@wordfence.com",
-        "cvss": null,
-        "cwe": "CWE-863",
-        "id": "CVE-2022-4036",
-        "impact": {},
-        "last-modified": "2022-12-01T21:51:00",
-        "references": [
-            "https://www.wordfence.com/vulnerability-advisories-continued/#CVE-2022-4036",
-            "https://plugins.trac.wordpress.org/changeset?sfp_email=&sfph_mail=&reponame=&old=2803896%40appointment-hour-booking&new=2803896%40appointment-hour-booking&sfp_email=&sfph_mail="
-        ],
-        "summary": "The Appointment Hour Booking plugin for WordPress is vulnerable to CAPTCHA bypass in versions up to, and including, 1.3.72. This is due to the use of insufficiently strong hashing algorithm on the CAPTCHA secret that is also displayed to the user via a cookie."
-    },
-    {
-        "Modified": "2022-12-01T21:50:00",
-        "Published": "2022-11-29T13:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-36433",
-        "impact": {},
-        "last-modified": "2022-12-01T21:50:00",
-        "references": [
-            "https://github.com/afine-com/CVE-2022-36433",
-            "https://weglow.ski"
-        ],
-        "summary": "The blog-post creation functionality in the Amasty Blog Pro 2.10.3 plugin for Magento 2 allows injection of JavaScript code in the short_content and full_content fields, leading to XSS attacks against admin panel users via posts/preview or posts/save."
-    },
-    {
-        "Modified": "2022-12-01T21:48:00",
-        "Published": "2022-12-01T21:15:00",
-        "access": {},
-        "assigner": "product-cna@github.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-23737",
-        "impact": {},
-        "last-modified": "2022-12-01T21:48:00",
-        "references": [
-            "https://docs.github.com/en/enterprise-server@3.2/admin/release-notes#3.2.20",
-            "https://docs.github.com/en/enterprise-server@3.3/admin/release-notes#3.3.15",
-            "https://docs.github.com/en/enterprise-server@3.4/admin/release-notes#3.4.10",
-            "https://docs.github.com/en/enterprise-server@3.6/admin/release-notes#3.6.3",
-            "https://docs.github.com/en/enterprise-server@3.5/admin/release-notes#3.5.7"
-        ],
-        "summary": "An improper privilege management vulnerability was identified in GitHub Enterprise Server that allowed users with improper privileges to create or delete pages via the API. To exploit this vulnerability, an attacker would need to be added to an organization's repo with write permissions. This vulnerability affected all versions of GitHub Enterprise Server prior to 3.7 and was fixed in versions 3.2.20, 3.3.15, 3.4.10, 3.5.7, and 3.6.3. This vulnerability was reported via the GitHub Bug Bounty program."
-    },
-    {
-        "Modified": "2022-12-01T21:48:00",
-        "Published": "2022-12-01T21:15:00",
-        "access": {},
-        "assigner": "security-advisories@github.com",
-        "cvss": null,
-        "cwe": "CWE-400",
-        "id": "CVE-2022-41968",
-        "impact": {},
-        "last-modified": "2022-12-01T21:48:00",
-        "references": [
-            "https://github.com/nextcloud/security-advisories/security/advisories/GHSA-m92j-xxc8-hq3v",
-            "https://hackerone.com/reports/1596148",
-            "https://github.com/nextcloud/server/pull/33139"
-        ],
-        "summary": "Nextcloud Server is an open source personal cloud server. Prior to versions 23.0.10 and 24.0.5, calendar name lengths are not validated before writing to a database. As a result, an attacker can send unnecessary amounts of data against the database. Version 23.0.10 and 24.0.5 contain patches for the issue. No known workarounds are available."
-    },
-    {
-        "Modified": "2022-12-01T21:48:00",
-        "Published": "2022-12-01T21:15:00",
-        "access": {},
-        "assigner": "security-advisories@github.com",
-        "cvss": null,
-        "cwe": "CWE-400",
-        "id": "CVE-2022-41969",
-        "impact": {},
-        "last-modified": "2022-12-01T21:48:00",
-        "references": [
-            "https://github.com/nextcloud/security-advisories/security/advisories/GHSA-4gm7-j7wg-m4fx",
-            "https://github.com/nextcloud/server/pull/34500",
-            "https://hackerone.com/reports/1727424"
-        ],
-        "summary": "Nextcloud Server is an open source personal cloud server. Prior to versions 23.0.11, 24.0.7, and 25.0.0, there is no password length limit when creating a user as an administrator. An administrator can cause a limited DoS attack against their own server. Versions 23.0.11, 24.0.7, and 25.0.0 contain a fix for the issue. As a workaround, don't create user accounts with long passwords."
-    },
-    {
-        "Modified": "2022-12-01T21:48:00",
-        "Published": "2022-12-01T21:15:00",
-        "access": {},
-        "assigner": "security-advisories@github.com",
-        "cvss": null,
-        "cwe": "CWE-863",
-        "id": "CVE-2022-41970",
-        "impact": {},
-        "last-modified": "2022-12-01T21:48:00",
-        "references": [
-            "https://github.com/nextcloud/server/pull/34788",
-            "https://github.com/nextcloud/security-advisories/security/advisories/GHSA-9mh6-cph8-772c",
-            "https://hackerone.com/reports/1745766"
-        ],
-        "summary": "Nextcloud Server is an open source personal cloud server. Prior to versions 24.0.7 and 25.0.1, disabled download shares still allow download through preview images. Images could be downloaded and previews of documents (first page) can be downloaded without being watermarked. Versions 24.0.7 and 25.0.1 contain a fix for this issue. No known workarounds are available."
-    },
-    {
-        "Modified": "2022-12-01T21:48:00",
-        "Published": "2022-12-01T21:15:00",
-        "access": {},
-        "assigner": "security-advisories@github.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-41971",
-        "impact": {},
-        "last-modified": "2022-12-01T21:48:00",
-        "references": [
-            "https://hackerone.com/reports/1706248",
-            "https://github.com/nextcloud/spreed/pull/7974",
-            "https://github.com/nextcloud/security-advisories/security/advisories/GHSA-wx6w-xpg9-6fv4"
-        ],
-        "summary": "Nextcould Talk android is a video and audio conferencing app for Nextcloud. Prior to versions 12.2.8, 13.0.10, 14.0.6, and 15.0.0, guests can continue to receive video streams from a call after being removed from a conversation. An attacker would be able to see videos on a call in a public conversation after being removed from that conversation, provided that they were removed while being in the call. Versions 12.2.8, 13.0.10, 14.0.6, and 15.0.0 contain patches for the issue. No known workarounds are available."
-    },
-    {
-        "Modified": "2022-12-01T21:48:00",
-        "Published": "2022-12-01T21:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-42718",
-        "impact": {},
-        "last-modified": "2022-12-01T21:48:00",
-        "references": [
-            "https://www.ni.com/en-us/support/documentation/supplemental/22/privilege-escalation-in-ni-labview-cli-.html"
-        ],
-        "summary": "Incorrect default permissions in the installation folder for NI LabVIEW Command Line Interface (CLI) may allow an authenticated user to potentially enable escalation of privilege via local access."
-    },
-    {
-        "Modified": "2022-12-01T21:45:00",
-        "Published": "2022-11-29T18:15:00",
-        "access": {},
-        "assigner": "secalert@redhat.com",
-        "cvss": null,
-        "cwe": "CWE-125",
-        "id": "CVE-2022-4144",
-        "impact": {},
-        "last-modified": "2022-12-01T21:45:00",
-        "references": [
-            "https://bugzilla.redhat.com/show_bug.cgi?id=2148506",
-            "https://lists.nongnu.org/archive/html/qemu-devel/2022-11/msg04143.html"
-        ],
-        "summary": "An out-of-bounds read flaw was found in the QXL display device emulation in QEMU. The qxl_phys2virt() function does not check the size of the structure pointed to by the guest physical address, potentially reading past the end of the bar space into adjacent pages. A malicious guest user could use this flaw to crash the QEMU process on the host causing a denial of service condition."
-    },
-    {
-        "Modified": "2022-12-01T21:40:00",
-        "Published": "2022-11-29T18:15:00",
-        "access": {},
-        "assigner": "secalert@redhat.com",
-        "cvss": null,
-        "cwe": "CWE-120",
-        "id": "CVE-2022-4172",
-        "impact": {},
-        "last-modified": "2022-12-01T21:40:00",
-        "references": [
-            "https://gitlab.com/qemu-project/qemu/-/commit/defb7098",
-            "https://gitlab.com/qemu-project/qemu/-/issues/1268",
-            "https://lore.kernel.org/qemu-devel/20221024154233.1043347-1-lk@c--e.de/"
-        ],
-        "summary": "An integer overflow and buffer overflow issues were found in the ACPI Error Record Serialization Table (ERST) device of QEMU in the read_erst_record() and write_erst_record() functions. Both issues may allow the guest to overrun the host buffer allocated for the ERST memory device. A malicious guest could use these flaws to crash the QEMU process on the host."
-    },
-    {
-        "Modified": "2022-12-01T21:37:00",
-        "Published": "2022-11-29T21:15:00",
-        "access": {},
-        "assigner": "psirt@solarwinds.com",
-        "cvss": null,
-        "cwe": "CWE-77",
-        "id": "CVE-2022-36962",
-        "impact": {},
-        "last-modified": "2022-12-01T21:37:00",
-        "references": [
-            "https://www.solarwinds.com/trust-center/security-advisories/CVE-2022-36962",
-            "https://documentation.solarwinds.com/en/success_center/orionplatform/content/release_notes/solarwinds_platform_2022-4_release_notes.htm"
-        ],
-        "summary": "SolarWinds Platform was susceptible to Command Injection. This vulnerability allows a remote adversary with complete control over the SolarWinds database to execute arbitrary commands."
-    },
-    {
-        "Modified": "2022-12-01T21:37:00",
-        "Published": "2022-11-29T21:15:00",
-        "access": {},
-        "assigner": "psirt@solarwinds.com",
-        "cvss": null,
-        "cwe": "CWE-502",
-        "id": "CVE-2022-36964",
-        "impact": {},
-        "last-modified": "2022-12-01T21:37:00",
-        "references": [
-            "https://documentation.solarwinds.com/en/success_center/orionplatform/content/release_notes/solarwinds_platform_2022-4_release_notes.htm",
-            "https://www.solarwinds.com/trust-center/security-advisories/CVE-2022-36964"
-        ],
-        "summary": "SolarWinds Platform was susceptible to the Deserialization of Untrusted Data. This vulnerability allows a remote adversary with valid access to SolarWinds Web Console to execute arbitrary commands."
-    },
-    {
-        "Modified": "2022-12-01T21:24:00",
-        "Published": "2022-11-29T15:15:00",
-        "access": {},
-        "assigner": "security@apache.org",
-        "cvss": null,
-        "cwe": "CWE-22",
-        "id": "CVE-2022-44635",
-        "impact": {},
-        "last-modified": "2022-12-01T21:24:00",
-        "references": [
-            "https://lists.apache.org/thread/t8q6fmh3o6yqmy69qtqxppk9yg9wfybg",
-            "http://www.openwall.com/lists/oss-security/2022/11/29/3"
-        ],
-        "summary": "Apache Fineract allowed an authenticated user to perform remote code execution due to a path traversal vulnerability in a file upload component of Apache Fineract, allowing an attacker to run remote code. This issue affects Apache Fineract version 1.8.0 and prior versions. We recommend users to upgrade to 1.8.1."
-    },
-    {
-        "Modified": "2022-12-01T21:22:00",
-        "Published": "2022-11-29T05:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-494",
-        "id": "CVE-2022-40799",
-        "impact": {},
-        "last-modified": "2022-12-01T21:22:00",
-        "references": [
-            "https://gitlab.com/lu-ka/cve-2022-40799"
-        ],
-        "summary": "Data Integrity Failure in 'Backup Config' in D-Link DNR-322L <= 2.60B15 allows an authenticated attacker to execute OS level commands on the device."
-    },
-    {
-        "Modified": "2022-12-01T21:18:00",
-        "Published": "2022-11-29T04:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-401",
-        "id": "CVE-2022-45204",
-        "impact": {},
-        "last-modified": "2022-12-01T21:18:00",
-        "references": [
-            "https://github.com/gpac/gpac/issues/2307"
-        ],
-        "summary": "GPAC v2.1-DEV-rev428-gcb8ae46c8-master was discovered to contain a memory leak via the function dimC_box_read at isomedia/box_code_3gpp.c."
-    },
-    {
-        "Modified": "2022-12-01T21:16:00",
-        "Published": "2022-11-29T21:15:00",
-        "access": {},
-        "assigner": "psirt@solarwinds.com",
-        "cvss": null,
-        "cwe": "NVD-CWE-noinfo",
-        "id": "CVE-2022-36960",
-        "impact": {},
-        "last-modified": "2022-12-01T21:16:00",
-        "references": [
-            "https://documentation.solarwinds.com/en/success_center/orionplatform/content/release_notes/solarwinds_platform_2022-4_release_notes.htm",
-            "https://www.solarwinds.com/trust-center/security-advisories/CVE-2022-36960"
-        ],
-        "summary": "SolarWinds Platform was susceptible to Improper Input Validation. This vulnerability allows a remote adversary with valid access to SolarWinds Web Console to escalate user privileges."
-    },
-    {
-        "Modified": "2022-12-01T21:16:00",
-        "Published": "2022-11-29T16:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-416",
-        "id": "CVE-2022-45343",
-        "impact": {},
-        "last-modified": "2022-12-01T21:16:00",
-        "references": [
-            "https://github.com/gpac/gpac/issues/2315"
-        ],
-        "summary": "GPAC v2.1-DEV-rev478-g696e6f868-master was discovered to contain a heap use-after-free via the Q_IsTypeOn function at /gpac/src/bifs/unquantize.c."
     }
 ]
