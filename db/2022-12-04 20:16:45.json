@@ -1,0 +1,2201 @@
+{
+    "data": [
+        {
+            "assigner": "cve@mitre.org",
+            "audience_size": 1247250,
+            "cve": "CVE-2022-41352",
+            "cve_urls": null,
+            "cvssv2_base_score": null,
+            "cvssv2_severity": null,
+            "cvssv3_base_score": 9.8,
+            "cvssv3_base_severity": "CRITICAL",
+            "cwes": [
+                {
+                    "cwe_description": "Unrestricted Upload of File with Dangerous Type",
+                    "cwe_id": "CWE-434"
+                }
+            ],
+            "description": "An issue was discovered in Zimbra Collaboration (ZCS) 8.8.15 and 9.0. An attacker can upload arbitrary files through amavisd via a cpio loophole (extraction to /opt/zimbra/jetty/webapps/zimbra/public) that can lead to incorrect access to any other user accounts. Zimbra recommends pax over cpio. Also, pax is in the prerequisites of Zimbra on Ubuntu; however, pax is no longer part of a default Red Hat installation after RHEL 6 (or CentOS 6). Once pax is installed, amavisd automatically prefers it over cpio.",
+            "epss_score": "0.7906",
+            "github_repos": [
+                {
+                    "created": "2022-11-11T20:58:08Z",
+                    "description": "Zimbra <9.0.0.p27 RCE",
+                    "language": "Python",
+                    "name": "cve-2022-41352-zimbra-rce",
+                    "stars": 78,
+                    "topics": [
+                        "cpio",
+                        "cve",
+                        "cve-2022-41352",
+                        "python3",
+                        "rce",
+                        "zimbra"
+                    ],
+                    "updated": "2022-11-30T04:48:04Z",
+                    "url": "https://github.com/Cr4ckC4t/cve-2022-41352-zimbra-rce"
+                },
+                {
+                    "created": "2022-10-10T13:04:34Z",
+                    "description": "cve-2022-41352 poc",
+                    "language": "Python",
+                    "name": "cve-2022-41352",
+                    "stars": 7,
+                    "topics": [],
+                    "updated": "2022-10-26T03:48:30Z",
+                    "url": "https://github.com/segfault-it/cve-2022-41352"
+                },
+                {
+                    "created": "2022-11-21T07:10:12Z",
+                    "description": null,
+                    "language": "Java",
+                    "name": "cve-2022-41352-zimbra-rce",
+                    "stars": 1,
+                    "topics": [],
+                    "updated": "2022-11-22T08:49:55Z",
+                    "url": "https://github.com/aryrz/cve-2022-41352-zimbra-rce"
+                }
+            ],
+            "lastModifiedDate": "2022-11-09T20:42Z",
+            "num_retweets": 68,
+            "num_tweets": 9,
+            "num_tweets_and_retweets": 77,
+            "publishedDate": "2022-09-26T02:15Z",
+            "reddit_posts": [
+                {
+                    "created": 1665378328.0,
+                    "is_self": false,
+                    "num_comments": 1,
+                    "reddit_url": "https://www.reddit.com/r/blueteamsec/comments/y06351/cve202241352_zimbra_collaboration_zcs_8815_and_90/",
+                    "subreddit": "blueteamsec",
+                    "subreddit_subscribers": 31383,
+                    "title": "CVE-2022-41352 | Zimbra Collaboration (ZCS) 8.8.15 and 9.0 exploit which can be emailed and is known to be exploited in the wild",
+                    "upvotes": 12,
+                    "url": "https://attackerkb.com/topics/1DDTvUNFzH/cve-2022-41352/rapid7-analysis"
+                },
+                {
+                    "created": 1666162043.0,
+                    "is_self": false,
+                    "num_comments": 2,
+                    "reddit_url": "https://www.reddit.com/r/blueteamsec/comments/y7vb6b/ongoing_exploitation_of_cve202241352_zimbra_0day/",
+                    "subreddit": "blueteamsec",
+                    "subreddit_subscribers": 31383,
+                    "title": "Ongoing exploitation of CVE-2022-41352 (Zimbra 0-day)",
+                    "upvotes": 10,
+                    "url": "https://securelist.com/ongoing-exploitation-of-cve-2022-41352-zimbra-0-day/107703/"
+                },
+                {
+                    "created": 1665180398.0,
+                    "is_self": true,
+                    "num_comments": 1,
+                    "reddit_url": "https://www.reddit.com/r/HackProtectSlo/comments/xybnvf/zimbra_0day_ranljivost_cve202241352/",
+                    "subreddit": "HackProtectSlo",
+                    "subreddit_subscribers": 229,
+                    "title": "Zimbra - 0-day ranljivost CVE-2022-41352",
+                    "upvotes": 3,
+                    "url": "https://www.reddit.com/r/HackProtectSlo/comments/xybnvf/zimbra_0day_ranljivost_cve202241352/"
+                },
+                {
+                    "created": 1665666038.0,
+                    "is_self": false,
+                    "num_comments": 1,
+                    "reddit_url": "https://www.reddit.com/r/cybersecurity/comments/y2y5as/ongoing_exploitation_of_cve202241352_zimbra_0day/",
+                    "subreddit": "cybersecurity",
+                    "subreddit_subscribers": 421050,
+                    "title": "Ongoing exploitation of CVE-2022-41352 (Zimbra 0-day)",
+                    "upvotes": 2,
+                    "url": "https://securelist.com/ongoing-exploitation-of-cve-2022-41352-zimbra-0-day/107703/"
+                },
+                {
+                    "created": 1665666169.0,
+                    "is_self": false,
+                    "num_comments": 0,
+                    "reddit_url": "https://www.reddit.com/r/UIC/comments/y2y749/ongoing_exploitation_of_cve202241352_zimbra_0day/",
+                    "subreddit": "UIC",
+                    "subreddit_subscribers": 3266,
+                    "title": "Ongoing exploitation of CVE-2022-41352 (Zimbra 0-day)",
+                    "upvotes": 2,
+                    "url": "https://securelist.com/ongoing-exploitation-of-cve-2022-41352-zimbra-0-day/107703/"
+                }
+            ],
+            "score": 9.8,
+            "severity": "CRITICAL",
+            "tweets": [
+                {
+                    "created_at": "2022-12-04 11:55",
+                    "likes": 211,
+                    "num_retweets": 61,
+                    "retweets": 61,
+                    "tweet_id": "1599371692241203211",
+                    "tweet_text": "Threat actors have been actively exploiting Zimbra CVE-2022-41352 flaw to #hack several servers in the wild.\n\nThis flaw is an RCE flaw and has a CVSS score of 9.8 of 10 (very very critical).\n\n#AIIMS Delhi was also using Zimbra (exploitation of this flaw in AIIMS is not confirmed)",
+                    "twitter_user_handle": "sunnynehrabro",
+                    "twitter_user_name": "Sunny Nehra",
+                    "twitter_user_profile_pic": "https://pbs.twimg.com/profile_images/953305098788024320/MrWyHrnW_normal.jpg",
+                    "urls": []
+                },
+                {
+                    "created_at": "2022-12-04 14:00",
+                    "likes": 38,
+                    "num_retweets": 7,
+                    "retweets": 8,
+                    "tweet_id": "1599403161298649091",
+                    "tweet_text": "Top 3 trending CVEs on Twitter\n\nPast 24 hrs:\nCVE-2022-41352: 1.2M (audience size)\nCVE-2022-41120: 623.7K\nCVE-2022-21661: 136.2K\n\nPast 7 days:\nCVE-2022-4262: 2.4M\nCVE-2022-4116: 2.1M\nCVE-2022-4020: 1.8M\n\nhttps://t.co/LhpwNP6xog",
+                    "twitter_user_handle": "CVEtrends",
+                    "twitter_user_name": "CVE Trends",
+                    "twitter_user_profile_pic": "https://pbs.twimg.com/profile_images/1465356279585644556/y1IAsYUX_normal.jpg",
+                    "urls": [
+                        {
+                            "display_url": "cvetrends.com",
+                            "expanded_url": "https://cvetrends.com",
+                            "url": "https://t.co/LhpwNP6xog"
+                        }
+                    ]
+                },
+                {
+                    "created_at": "2022-12-04 14:06",
+                    "likes": 0,
+                    "num_retweets": 0,
+                    "retweets": 0,
+                    "tweet_id": "1599404656903462914",
+                    "tweet_text": "The vuln CVE-2022-41352 has a tweet created 0 days ago and retweeted 41 times.\nhttps://t.co/RW34005Kd6\n#pow1rtrtwwcve",
+                    "twitter_user_handle": "ipssignatures",
+                    "twitter_user_name": "ipssignatures",
+                    "twitter_user_profile_pic": "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png",
+                    "urls": [
+                        {
+                            "display_url": "twitter.com/sunnynehrabro/\u2026",
+                            "expanded_url": "https://twitter.com/sunnynehrabro/status/1599371692241203211",
+                            "url": "https://t.co/RW34005Kd6"
+                        }
+                    ]
+                },
+                {
+                    "created_at": "2022-12-04 16:08",
+                    "likes": 0,
+                    "num_retweets": 0,
+                    "retweets": 0,
+                    "tweet_id": "1599435366045569024",
+                    "tweet_text": "(Same from about 2 hours ago.)\nI think that the second retweeted(53 times) tweet that contains CVE ID between Dec 3 2022 16:01 UTC and Dec 4 2022 16:00 UTC is:\nhttps://t.co/RW34005Kd6\nIt has CVE-2022-41352. #l24_aqu7ss6ucozhc",
+                    "twitter_user_handle": "ipssignatures",
+                    "twitter_user_name": "ipssignatures",
+                    "twitter_user_profile_pic": "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png",
+                    "urls": [
+                        {
+                            "display_url": "twitter.com/sunnynehrabro/\u2026",
+                            "expanded_url": "https://twitter.com/sunnynehrabro/status/1599371692241203211",
+                            "url": "https://t.co/RW34005Kd6"
+                        }
+                    ]
+                },
+                {
+                    "created_at": "2022-12-04 20:08",
+                    "likes": 0,
+                    "num_retweets": 0,
+                    "retweets": 0,
+                    "tweet_id": "1599495757513609218",
+                    "tweet_text": "(second \u2192 third)\nI think that the third retweeted(61 times) tweet that contains CVE ID between Dec 3 2022 20:01 UTC and Dec 4 2022 20:00 UTC is:\nhttps://t.co/RW34005Kd6\nIt has CVE-2022-41352. #l24_aqu7ss6ucozhc",
+                    "twitter_user_handle": "ipssignatures",
+                    "twitter_user_name": "ipssignatures",
+                    "twitter_user_profile_pic": "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png",
+                    "urls": [
+                        {
+                            "display_url": "twitter.com/sunnynehrabro/\u2026",
+                            "expanded_url": "https://twitter.com/sunnynehrabro/status/1599371692241203211",
+                            "url": "https://t.co/RW34005Kd6"
+                        }
+                    ]
+                }
+            ],
+            "vendor_advisories": [
+                "https://wiki.zimbra.com/wiki/Zimbra_Security_Advisories",
+                "https://wiki.zimbra.com/wiki/Security_Center",
+                "https://forums.zimbra.org/viewtopic.php?t=71153&p=306532"
+            ],
+            "vendors": [
+                {
+                    "products": [
+                        {
+                            "product": "Collaboration",
+                            "versions": [
+                                "9.0.0",
+                                "8.8.15"
+                            ]
+                        }
+                    ],
+                    "vendor": "Zimbra"
+                }
+            ]
+        },
+        {
+            "assigner": "cve@mitre.org",
+            "audience_size": 371283,
+            "cve": "CVE-2022-44721",
+            "cve_urls": null,
+            "cvssv2_base_score": null,
+            "cvssv2_severity": null,
+            "cvssv3_base_score": null,
+            "cvssv3_base_severity": null,
+            "cwes": [],
+            "description": "CrowdStrike Falcon 6.44.15806 allows an administrative attacker to uninstall Falcon Sensor, bypassing the intended protection mechanism in which uninstallation requires possessing a one-time token. (The sensor is managed at the kernel level.)",
+            "epss_score": "0.01404",
+            "github_repos": [
+                {
+                    "created": "2022-11-30T08:58:18Z",
+                    "description": null,
+                    "language": "C++",
+                    "name": "CVE-2022-44721-CsFalconUninstaller",
+                    "stars": 12,
+                    "topics": [],
+                    "updated": "2022-12-04T17:01:07Z",
+                    "url": "https://github.com/purplededa/CVE-2022-44721-CsFalconUninstaller"
+                }
+            ],
+            "lastModifiedDate": "2022-12-04T05:15Z",
+            "num_retweets": 46,
+            "num_tweets": 20,
+            "num_tweets_and_retweets": 66,
+            "publishedDate": "2022-12-04T05:15Z",
+            "reddit_posts": [
+                {
+                    "created": 1670132411.0,
+                    "is_self": false,
+                    "num_comments": 0,
+                    "reddit_url": "https://www.reddit.com/r/netcve/comments/zc1qcx/cve202244721/",
+                    "subreddit": "netcve",
+                    "subreddit_subscribers": 112,
+                    "title": "CVE-2022-44721",
+                    "upvotes": 1,
+                    "url": "https://cve.report/CVE-2022-44721"
+                },
+                {
+                    "created": 1670169450.0,
+                    "is_self": true,
+                    "num_comments": 0,
+                    "reddit_url": "https://www.reddit.com/r/DailyCVE/comments/zcda7y/cve202244721/",
+                    "subreddit": "DailyCVE",
+                    "subreddit_subscribers": 165,
+                    "title": "CVE-2022-44721",
+                    "upvotes": 1,
+                    "url": "https://www.reddit.com/r/DailyCVE/comments/zcda7y/cve202244721/"
+                }
+            ],
+            "score": null,
+            "severity": null,
+            "tweets": [
+                {
+                    "created_at": "2022-12-04 05:44",
+                    "likes": 107,
+                    "num_retweets": 28,
+                    "retweets": 34,
+                    "tweet_id": "1599278556885839874",
+                    "tweet_text": "CVE-2022-44721 Privilege escalation in Crowdstrike Falcon Uninstaller. \nExploiting this vulnerability allows an attacker with administrative privileges to bypass the token check on Windows end-devices and to uninstall the sensor from the device...\n\nPoC\nhttps://t.co/2gnwqVu9xX https://t.co/RYixATcl9O",
+                    "twitter_user_handle": "cyber_advising",
+                    "twitter_user_name": "Cyber Advising",
+                    "twitter_user_profile_pic": "https://pbs.twimg.com/profile_images/1104711695249928193/AeGicsxU_normal.png",
+                    "urls": [
+                        {
+                            "display_url": "github.com/purplededa/CVE\u2026",
+                            "expanded_url": "https://github.com/purplededa/CVE-2022-44721-CsFalconUninstaller",
+                            "url": "https://t.co/2gnwqVu9xX"
+                        }
+                    ]
+                },
+                {
+                    "created_at": "2022-12-04 05:45",
+                    "likes": 38,
+                    "num_retweets": 17,
+                    "retweets": 16,
+                    "tweet_id": "1599278626159169536",
+                    "tweet_text": "CVE-2022-44721 CrowdStrike Falcon 6.44.15806 allows an administrative attacker to uninstall Falcon Sensor, bypassing the intended protection mechanism in which uninstallation requires possessing a one-time token. (The sensor is managed at the kern... https://t.co/m9ONIVBJnI",
+                    "twitter_user_handle": "CVEnew",
+                    "twitter_user_name": "CVE",
+                    "twitter_user_profile_pic": "https://pbs.twimg.com/profile_images/1447927972393111557/PQRMlVvZ_normal.jpg",
+                    "urls": [
+                        {
+                            "display_url": "cve.mitre.org/cgi-bin/cvenam\u2026",
+                            "expanded_url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-44721",
+                            "url": "https://t.co/m9ONIVBJnI"
+                        }
+                    ]
+                },
+                {
+                    "created_at": "2022-12-04 12:04",
+                    "likes": 0,
+                    "num_retweets": 1,
+                    "retweets": 1,
+                    "tweet_id": "1599373959635533824",
+                    "tweet_text": "The vuln CVE-2022-44721 has a tweet created 0 days ago and retweeted 10 times.\nhttps://t.co/5PaXwjHMNN\n#Solw7ahijj6y6y",
+                    "twitter_user_handle": "ipssignatures",
+                    "twitter_user_name": "ipssignatures",
+                    "twitter_user_profile_pic": "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png",
+                    "urls": [
+                        {
+                            "display_url": "twitter.com/cyber_advising\u2026",
+                            "expanded_url": "https://twitter.com/cyber_advising/status/1599278556885839874",
+                            "url": "https://t.co/5PaXwjHMNN"
+                        }
+                    ]
+                },
+                {
+                    "created_at": "2022-12-04 18:26",
+                    "likes": 0,
+                    "num_retweets": 0,
+                    "retweets": 0,
+                    "tweet_id": "1599470245093072897",
+                    "tweet_text": "CVE-2022-44721 https://t.co/tJ6AymwPzn #HarsiaInfo",
+                    "twitter_user_handle": "Har_sia",
+                    "twitter_user_name": "CVE Analysis",
+                    "twitter_user_profile_pic": "https://pbs.twimg.com/profile_images/1247376762910040064/tGL_ot6T_normal.jpg",
+                    "urls": [
+                        {
+                            "display_url": "har-sia.info/CVE-2022-44721\u2026",
+                            "expanded_url": "https://har-sia.info/CVE-2022-44721.html",
+                            "url": "https://t.co/tJ6AymwPzn"
+                        }
+                    ]
+                },
+                {
+                    "created_at": "2022-12-04 19:56",
+                    "likes": 0,
+                    "num_retweets": 0,
+                    "retweets": 0,
+                    "tweet_id": "1599492947367841797",
+                    "tweet_text": "\ud83d\udea8 NEW: CVE-2022-44721 \ud83d\udea8 CrowdStrike Falcon 6.44.15806 allows an administrative attacker to uninstall Falcon Sensor, bypassing the intended protection mechanism in which uninstallation requires possessing a one-time... (click for more)  https://t.co/cfaLM3wrih",
+                    "twitter_user_handle": "threatintelctr",
+                    "twitter_user_name": "Threat Intel Center",
+                    "twitter_user_profile_pic": "https://pbs.twimg.com/profile_images/904224973987840000/dMy1x9Ho_normal.jpg",
+                    "urls": [
+                        {
+                            "display_url": "nvd.nist.gov/vuln/detail/CV\u2026",
+                            "expanded_url": "https://nvd.nist.gov/vuln/detail/CVE-2022-44721",
+                            "url": "https://t.co/cfaLM3wrih"
+                        }
+                    ]
+                }
+            ],
+            "vendor_advisories": [],
+            "vendors": []
+        },
+        {
+            "assigner": "security-advisories@github.com",
+            "audience_size": 315483,
+            "cve": "CVE-2022-21661",
+            "cve_urls": null,
+            "cvssv2_base_score": 5.0,
+            "cvssv2_severity": "MEDIUM",
+            "cvssv3_base_score": 7.5,
+            "cvssv3_base_severity": "HIGH",
+            "cwes": [
+                {
+                    "cwe_description": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')",
+                    "cwe_id": "CWE-89"
+                }
+            ],
+            "description": "WordPress is a free and open-source content management system written in PHP and paired with a MariaDB database. Due to improper sanitization in WP_Query, there can be cases where SQL injection is possible through plugins or themes that use it in a certain way. This has been patched in WordPress version 5.8.3. Older affected versions are also fixed via security release, that go back till 3.7.37. We strongly recommend that you keep auto-updates enabled. There are no known workarounds for this vulnerability.",
+            "epss_score": "0.11157",
+            "github_repos": [
+                {
+                    "created": "2022-11-06T20:44:10Z",
+                    "description": "The first poc video presenting the sql injection test from (  WordPress Core 5.8.2-'WP_Query'  / CVE-2022-21661) ",
+                    "language": null,
+                    "name": "CVE-2022-21661",
+                    "stars": 44,
+                    "topics": [
+                        "cve",
+                        "cve-2022-21661",
+                        "exploit",
+                        "poc",
+                        "wordpress"
+                    ],
+                    "updated": "2022-12-04T20:15:24Z",
+                    "url": "https://github.com/APTIRAN/CVE-2022-21661"
+                },
+                {
+                    "created": "2022-07-28T13:12:51Z",
+                    "description": "WordPress WP_Query SQL Injection POC",
+                    "language": "Go",
+                    "name": "CVE-2022-21661",
+                    "stars": 19,
+                    "topics": [],
+                    "updated": "2022-12-04T04:27:09Z",
+                    "url": "https://github.com/z92g/CVE-2022-21661"
+                },
+                {
+                    "created": "2022-02-12T11:31:26Z",
+                    "description": null,
+                    "language": null,
+                    "name": "wordpress-CVE-2022-21661",
+                    "stars": 15,
+                    "topics": [],
+                    "updated": "2022-08-11T12:56:20Z",
+                    "url": "https://github.com/purple-WL/wordpress-CVE-2022-21661"
+                },
+                {
+                    "created": "2022-05-28T10:46:48Z",
+                    "description": "Wordpress 5.8.2  CVE-2022-21661 Vuln enviroment POC exploit",
+                    "language": "JavaScript",
+                    "name": "Wordpress-cve-CVE-2022-21661",
+                    "stars": 12,
+                    "topics": [],
+                    "updated": "2022-11-21T19:42:10Z",
+                    "url": "https://github.com/0x4E0x650x6F/Wordpress-cve-CVE-2022-21661"
+                },
+                {
+                    "created": "2022-01-18T01:05:04Z",
+                    "description": "WordPress Core 5.8.2 - 'WP_Query' SQL Injection",
+                    "language": null,
+                    "name": "CVE-2022-21661-WordPress-Core-5.8.2-WP_Query-SQL-Injection",
+                    "stars": 11,
+                    "topics": [],
+                    "updated": "2022-11-06T06:30:31Z",
+                    "url": "https://github.com/TAPESH-TEAM/CVE-2022-21661-WordPress-Core-5.8.2-WP_Query-SQL-Injection"
+                }
+            ],
+            "lastModifiedDate": "2022-04-12T18:47Z",
+            "num_retweets": 87,
+            "num_tweets": 23,
+            "num_tweets_and_retweets": 110,
+            "publishedDate": "2022-01-06T23:15Z",
+            "reddit_posts": [
+                {
+                    "created": 1651011131.0,
+                    "is_self": true,
+                    "num_comments": 2,
+                    "reddit_url": "https://www.reddit.com/r/HowToHack/comments/uco6j0/wordpress_core_582_sql_injection/",
+                    "subreddit": "HowToHack",
+                    "subreddit_subscribers": 377273,
+                    "title": "Wordpress Core 5.8.2 - SQL INJECTION",
+                    "upvotes": 17,
+                    "url": "https://www.reddit.com/r/HowToHack/comments/uco6j0/wordpress_core_582_sql_injection/"
+                },
+                {
+                    "created": 1642780693.0,
+                    "is_self": false,
+                    "num_comments": 0,
+                    "reddit_url": "https://www.reddit.com/r/RedPacketSecurity/comments/s9dxhd/cve202221661/",
+                    "subreddit": "RedPacketSecurity",
+                    "subreddit_subscribers": 565,
+                    "title": "CVE-2022-21661",
+                    "upvotes": 1,
+                    "url": "https://www.redpacketsecurity.com/cve-2022-21661-7/"
+                },
+                {
+                    "created": 1641902291.0,
+                    "is_self": false,
+                    "num_comments": 0,
+                    "reddit_url": "https://www.reddit.com/r/RedPacketSecurity/comments/s1ba6i/cve202221661_8211_wordpress_wordpress_8211_sqli/",
+                    "subreddit": "RedPacketSecurity",
+                    "subreddit_subscribers": 565,
+                    "title": "CVE-2022-21661 &amp;#8211; WordPress / WordPress &amp;#8211; SQLi",
+                    "upvotes": 1,
+                    "url": "https://www.redpacketsecurity.com/cve-2022-21661-wordpress-wordpress-sqli/"
+                },
+                {
+                    "created": 1642442296.0,
+                    "is_self": false,
+                    "num_comments": 0,
+                    "reddit_url": "https://www.reddit.com/r/RedPacketSecurity/comments/s6a7nh/cve202221661/",
+                    "subreddit": "RedPacketSecurity",
+                    "subreddit_subscribers": 565,
+                    "title": "CVE-2022-21661",
+                    "upvotes": 1,
+                    "url": "https://www.redpacketsecurity.com/cve-2022-21661-3/"
+                },
+                {
+                    "created": 1642784292.0,
+                    "is_self": false,
+                    "num_comments": 0,
+                    "reddit_url": "https://www.reddit.com/r/RedPacketSecurity/comments/s9fash/cve202221661/",
+                    "subreddit": "RedPacketSecurity",
+                    "subreddit_subscribers": 565,
+                    "title": "CVE-2022-21661",
+                    "upvotes": 1,
+                    "url": "https://www.redpacketsecurity.com/cve-2022-21661-12/"
+                }
+            ],
+            "score": 7.5,
+            "severity": "HIGH",
+            "tweets": [
+                {
+                    "created_at": "2022-12-04 07:50",
+                    "likes": 248,
+                    "num_retweets": 72,
+                    "retweets": 80,
+                    "tweet_id": "1599310245918289920",
+                    "tweet_text": "CVE-2022-21661 :  WordPress Core 5.8.2 - 'WP_Query' SQL Injection \n\nhttps://t.co/zy9f6sO8Ag\n#WordPress #security #hack https://t.co/2NJaGdk3ZE",
+                    "twitter_user_handle": "cyberkendra",
+                    "twitter_user_name": "Cyber Kendra",
+                    "twitter_user_profile_pic": "https://pbs.twimg.com/profile_images/945545310775910400/zx-yLarD_normal.jpg",
+                    "urls": [
+                        {
+                            "display_url": "github.com/APTIRAN/CVE-20\u2026",
+                            "expanded_url": "https://github.com/APTIRAN/CVE-2022-21661",
+                            "url": "https://t.co/zy9f6sO8Ag"
+                        }
+                    ]
+                },
+                {
+                    "created_at": "2022-12-04 14:00",
+                    "likes": 38,
+                    "num_retweets": 7,
+                    "retweets": 8,
+                    "tweet_id": "1599403161298649091",
+                    "tweet_text": "Top 3 trending CVEs on Twitter\n\nPast 24 hrs:\nCVE-2022-41352: 1.2M (audience size)\nCVE-2022-41120: 623.7K\nCVE-2022-21661: 136.2K\n\nPast 7 days:\nCVE-2022-4262: 2.4M\nCVE-2022-4116: 2.1M\nCVE-2022-4020: 1.8M\n\nhttps://t.co/LhpwNP6xog",
+                    "twitter_user_handle": "CVEtrends",
+                    "twitter_user_name": "CVE Trends",
+                    "twitter_user_profile_pic": "https://pbs.twimg.com/profile_images/1465356279585644556/y1IAsYUX_normal.jpg",
+                    "urls": [
+                        {
+                            "display_url": "cvetrends.com",
+                            "expanded_url": "https://cvetrends.com",
+                            "url": "https://t.co/LhpwNP6xog"
+                        }
+                    ]
+                },
+                {
+                    "created_at": "2022-12-04 17:08",
+                    "likes": 5,
+                    "num_retweets": 4,
+                    "retweets": 5,
+                    "tweet_id": "1599450503074959360",
+                    "tweet_text": "#WordPress Core v5.8.2 SQL Injection (#SQLi) #vulnerability CVE-2022-21661 POC:\n\nhttps://t.co/EJTSFcGLit https://t.co/IGkNV1Tylo",
+                    "twitter_user_handle": "securestep9",
+                    "twitter_user_name": "Sam Stepanyan",
+                    "twitter_user_profile_pic": "https://pbs.twimg.com/profile_images/1114515035865399296/V6nLLbjK_normal.jpg",
+                    "urls": [
+                        {
+                            "display_url": "github.com/APTIRAN/CVE-20\u2026",
+                            "expanded_url": "https://github.com/APTIRAN/CVE-2022-21661",
+                            "url": "https://t.co/EJTSFcGLit"
+                        }
+                    ]
+                },
+                {
+                    "created_at": "2022-12-04 14:26",
+                    "likes": 1,
+                    "num_retweets": 2,
+                    "retweets": 2,
+                    "tweet_id": "1599409746263826432",
+                    "tweet_text": "The first poc video presenting the sql injection test from ( WordPress Core 5.8.2-'WP_Query' / CVE-2022-21661):\n https://t.co/dtnvDBgAkp\n\n#websecurity #wordpressecurity #wordpresswebsite #wordpress #Pentesting #oscp https://t.co/Gv06ZV9yNm",
+                    "twitter_user_handle": "AstraKernel",
+                    "twitter_user_name": "AstraKernel",
+                    "twitter_user_profile_pic": "https://pbs.twimg.com/profile_images/1595849346452688896/7wzvloEm_normal.jpg",
+                    "urls": [
+                        {
+                            "display_url": "github.com/APTIRAN/CVE-20\u2026",
+                            "expanded_url": "https://github.com/APTIRAN/CVE-2022-21661",
+                            "url": "https://t.co/dtnvDBgAkp"
+                        }
+                    ]
+                },
+                {
+                    "created_at": "2022-12-04 08:18",
+                    "likes": 1,
+                    "num_retweets": 1,
+                    "retweets": 1,
+                    "tweet_id": "1599317143098515456",
+                    "tweet_text": "I bet that no one has a screenshot of a fully working poc for CVE-2022-21661\nGrabbing an admin hash.\n\nNot including the original authors python example image!",
+                    "twitter_user_handle": "Random_Robbie",
+                    "twitter_user_name": "Random Robbie",
+                    "twitter_user_profile_pic": "https://pbs.twimg.com/profile_images/1262636717925961728/5GY08UgF_normal.jpg",
+                    "urls": []
+                }
+            ],
+            "vendor_advisories": [
+                "https://wordpress.org/news/2022/01/wordpress-5-8-3-security-release/"
+            ],
+            "vendors": [
+                {
+                    "products": [
+                        {
+                            "product": "Wordpress",
+                            "versions": [
+                                "*"
+                            ]
+                        }
+                    ],
+                    "vendor": "Wordpress"
+                },
+                {
+                    "products": [
+                        {
+                            "product": "Fedora",
+                            "versions": [
+                                "34",
+                                "35"
+                            ]
+                        }
+                    ],
+                    "vendor": "Fedoraproject"
+                },
+                {
+                    "products": [
+                        {
+                            "product": "Debian Linux",
+                            "versions": [
+                                "9.0",
+                                "10.0",
+                                "11.0"
+                            ]
+                        }
+                    ],
+                    "vendor": "Debian"
+                }
+            ]
+        },
+        {
+            "assigner": "secure@microsoft.com",
+            "audience_size": 265273,
+            "cve": "CVE-2022-41120",
+            "cve_urls": null,
+            "cvssv2_base_score": null,
+            "cvssv2_severity": null,
+            "cvssv3_base_score": 7.8,
+            "cvssv3_base_severity": "HIGH",
+            "cwes": [],
+            "description": "Microsoft Windows Sysmon Elevation of Privilege Vulnerability.",
+            "epss_score": "0.0115",
+            "github_repos": [],
+            "lastModifiedDate": "2022-11-16T02:45Z",
+            "num_retweets": 54,
+            "num_tweets": 26,
+            "num_tweets_and_retweets": 80,
+            "publishedDate": "2022-11-09T22:15Z",
+            "reddit_posts": [
+                {
+                    "created": 1668037120.0,
+                    "is_self": false,
+                    "num_comments": 0,
+                    "reddit_url": "https://www.reddit.com/r/netcve/comments/yqz8gm/cve202241120/",
+                    "subreddit": "netcve",
+                    "subreddit_subscribers": 112,
+                    "title": "CVE-2022-41120",
+                    "upvotes": 1,
+                    "url": "https://cve.report/CVE-2022-41120"
+                }
+            ],
+            "score": 7.8,
+            "severity": "HIGH",
+            "tweets": [
+                {
+                    "created_at": "2022-12-04 05:38",
+                    "likes": 126,
+                    "num_retweets": 47,
+                    "retweets": 57,
+                    "tweet_id": "1599276871182856192",
+                    "tweet_text": "(CVE-2022-41120/CVE-2022-XXXXX) Proof of Concept for arbitrary file delete/write in Microsoft Sysmon.\nVulnerability is in code responsible for ClipboardChange event that can be reached through RPC. Local users can send data to RPC server ...\n\nPoC\nhttps://t.co/iEXFIvvfob https://t.co/PD3UHQIlS2",
+                    "twitter_user_handle": "cyber_advising",
+                    "twitter_user_name": "Cyber Advising",
+                    "twitter_user_profile_pic": "https://pbs.twimg.com/profile_images/1104711695249928193/AeGicsxU_normal.png",
+                    "urls": [
+                        {
+                            "display_url": "github.com/Wh04m1001/Sysm\u2026",
+                            "expanded_url": "https://github.com/Wh04m1001/SysmonEoP",
+                            "url": "https://t.co/iEXFIvvfob"
+                        }
+                    ]
+                },
+                {
+                    "created_at": "2022-12-04 14:00",
+                    "likes": 38,
+                    "num_retweets": 7,
+                    "retweets": 8,
+                    "tweet_id": "1599403161298649091",
+                    "tweet_text": "Top 3 trending CVEs on Twitter\n\nPast 24 hrs:\nCVE-2022-41352: 1.2M (audience size)\nCVE-2022-41120: 623.7K\nCVE-2022-21661: 136.2K\n\nPast 7 days:\nCVE-2022-4262: 2.4M\nCVE-2022-4116: 2.1M\nCVE-2022-4020: 1.8M\n\nhttps://t.co/LhpwNP6xog",
+                    "twitter_user_handle": "CVEtrends",
+                    "twitter_user_name": "CVE Trends",
+                    "twitter_user_profile_pic": "https://pbs.twimg.com/profile_images/1465356279585644556/y1IAsYUX_normal.jpg",
+                    "urls": [
+                        {
+                            "display_url": "cvetrends.com",
+                            "expanded_url": "https://cvetrends.com",
+                            "url": "https://t.co/LhpwNP6xog"
+                        }
+                    ]
+                },
+                {
+                    "created_at": "2022-12-03 22:06",
+                    "likes": 0,
+                    "num_retweets": 0,
+                    "retweets": 0,
+                    "tweet_id": "1599163067429969923",
+                    "tweet_text": "The vuln CVE-2022-41120 has a tweet created 0 days ago and retweeted 36 times.\nhttps://t.co/1VK5oCSSbk\n#pow1rtrtwwcve",
+                    "twitter_user_handle": "ipssignatures",
+                    "twitter_user_name": "ipssignatures",
+                    "twitter_user_profile_pic": "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png",
+                    "urls": [
+                        {
+                            "display_url": "twitter.com/filip_dragovic\u2026",
+                            "expanded_url": "https://twitter.com/filip_dragovic/status/1599125980798652416",
+                            "url": "https://t.co/1VK5oCSSbk"
+                        }
+                    ]
+                },
+                {
+                    "created_at": "2022-12-04 00:08",
+                    "likes": 0,
+                    "num_retweets": 0,
+                    "retweets": 0,
+                    "tweet_id": "1599193783823908864",
+                    "tweet_text": "(Same from about 2 hours ago.)\nI think that the most retweeted(42 times) tweet that contains CVE ID between Dec 3 2022 00:01 UTC and Dec 4 2022 00:00 UTC is:\nhttps://t.co/1VK5oCSSbk\nIt has CVE-2022-41120. #l24_licm24alnq5vi",
+                    "twitter_user_handle": "ipssignatures",
+                    "twitter_user_name": "ipssignatures",
+                    "twitter_user_profile_pic": "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png",
+                    "urls": [
+                        {
+                            "display_url": "twitter.com/filip_dragovic\u2026",
+                            "expanded_url": "https://twitter.com/filip_dragovic/status/1599125980798652416",
+                            "url": "https://t.co/1VK5oCSSbk"
+                        }
+                    ]
+                },
+                {
+                    "created_at": "2022-12-04 08:08",
+                    "likes": 0,
+                    "num_retweets": 0,
+                    "retweets": 0,
+                    "tweet_id": "1599314577719758848",
+                    "tweet_text": "(Same from about 10 hours ago.)\nI think that the most retweeted(71 times) tweet that contains CVE ID between Dec 3 2022 08:01 UTC and Dec 4 2022 08:00 UTC is:\nhttps://t.co/1VK5oCSSbk\nIt has CVE-2022-41120. #l24_licm24alnq5vi",
+                    "twitter_user_handle": "ipssignatures",
+                    "twitter_user_name": "ipssignatures",
+                    "twitter_user_profile_pic": "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png",
+                    "urls": [
+                        {
+                            "display_url": "twitter.com/filip_dragovic\u2026",
+                            "expanded_url": "https://twitter.com/filip_dragovic/status/1599125980798652416",
+                            "url": "https://t.co/1VK5oCSSbk"
+                        }
+                    ]
+                }
+            ],
+            "vendor_advisories": [
+                "https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-41120"
+            ],
+            "vendors": [
+                {
+                    "products": [
+                        {
+                            "product": "Windows Sysmon",
+                            "versions": [
+                                "-"
+                            ]
+                        }
+                    ],
+                    "vendor": "Microsoft"
+                }
+            ]
+        },
+        {
+            "assigner": "openssl-security@openssl.org",
+            "audience_size": 102470,
+            "cve": "CVE-2022-3786",
+            "cve_urls": null,
+            "cvssv2_base_score": null,
+            "cvssv2_severity": null,
+            "cvssv3_base_score": 7.5,
+            "cvssv3_base_severity": "HIGH",
+            "cwes": [
+                {
+                    "cwe_description": "Buffer Copy without Checking Size of Input ('Classic Buffer Overflow')",
+                    "cwe_id": "CWE-120"
+                }
+            ],
+            "description": "A buffer overrun can be triggered in X.509 certificate verification, specifically in name constraint checking. Note that this occurs after certificate chain signature verification and requires either a CA to have signed a malicious certificate or for an application to continue certificate verification despite failure to construct a path to a trusted issuer. An attacker can craft a malicious email address in a certificate to overflow an arbitrary number of bytes containing the `.' character (decimal 46) on the stack. This buffer overflow could result in a crash (causing a denial of service). In a TLS client, this can be triggered by connecting to a malicious server. In a TLS server, this can be triggered if the server requests client authentication and a malicious client connects.",
+            "epss_score": "0.04499",
+            "github_repos": [
+                {
+                    "created": "2022-10-28T09:51:41Z",
+                    "description": "Operational information regarding CVE-2022-3602 and CVE-2022-3786, two vulnerabilities in OpenSSL 3",
+                    "language": null,
+                    "name": "OpenSSL-2022",
+                    "stars": 534,
+                    "topics": [
+                        "cve-2022-3602",
+                        "cve-2022-3786",
+                        "openssl",
+                        "spookyssl"
+                    ],
+                    "updated": "2022-12-01T17:13:11Z",
+                    "url": "https://github.com/NCSC-NL/OpenSSL-2022"
+                },
+                {
+                    "created": "2022-11-02T17:33:26Z",
+                    "description": null,
+                    "language": "C",
+                    "name": "cve-2022-3602-and-cve-2022-3786-openssl-poc",
+                    "stars": 15,
+                    "topics": [],
+                    "updated": "2022-11-30T05:34:54Z",
+                    "url": "https://github.com/rbowes-r7/cve-2022-3602-and-cve-2022-3786-openssl-poc"
+                },
+                {
+                    "created": "2022-11-01T14:06:44Z",
+                    "description": "OpenSSL Vulnerability Scanner for Windows",
+                    "language": "C",
+                    "name": "osslscanwin",
+                    "stars": 5,
+                    "topics": [
+                        "cve",
+                        "cve-2022-3602",
+                        "cve-2022-3786",
+                        "openssl",
+                        "scanner",
+                        "security-scanner",
+                        "security-tool",
+                        "security-tools",
+                        "spookyssl",
+                        "vulnerability",
+                        "vulnerability-scanners"
+                    ],
+                    "updated": "2022-12-03T12:49:46Z",
+                    "url": "https://github.com/Qualys/osslscanwin"
+                },
+                {
+                    "created": "2022-11-07T07:58:36Z",
+                    "description": null,
+                    "language": "Python",
+                    "name": "CVE-2022-3602-and-CVE-2022-3786",
+                    "stars": 2,
+                    "topics": [],
+                    "updated": "2022-11-09T08:22:53Z",
+                    "url": "https://github.com/cybersecurityworks553/CVE-2022-3602-and-CVE-2022-3786"
+                },
+                {
+                    "created": "2022-11-01T01:34:39Z",
+                    "description": "Find SpookySSL in Prisma Cloud Compute scans",
+                    "language": "JavaScript",
+                    "name": "find-spooky-prismacloud",
+                    "stars": 2,
+                    "topics": [
+                        "cve-2022-3602",
+                        "cve-2022-3786",
+                        "openssl",
+                        "prismacloud",
+                        "scanner",
+                        "security",
+                        "spookyssl"
+                    ],
+                    "updated": "2022-11-02T21:37:56Z",
+                    "url": "https://github.com/hi-artem/find-spooky-prismacloud"
+                }
+            ],
+            "lastModifiedDate": "2022-11-04T12:15Z",
+            "num_retweets": 16,
+            "num_tweets": 7,
+            "num_tweets_and_retweets": 23,
+            "publishedDate": "2022-11-01T18:15Z",
+            "reddit_posts": [
+                {
+                    "created": 1667319146.0,
+                    "is_self": false,
+                    "num_comments": 84,
+                    "reddit_url": "https://www.reddit.com/r/programming/comments/yjcu8j/cve20223786_and_cve20223602_x509_email_address/",
+                    "subreddit": "programming",
+                    "subreddit_subscribers": 4934456,
+                    "title": "CVE-2022-3786 and CVE-2022-3602: X.509 Email Address Buffer Overflows",
+                    "upvotes": 202,
+                    "url": "https://www.openssl.org/blog/blog/2022/11/01/email-address-overflows/"
+                },
+                {
+                    "created": 1667319182.0,
+                    "is_self": false,
+                    "num_comments": 20,
+                    "reddit_url": "https://www.reddit.com/r/linux/comments/yjcuta/openssl_vulnerabilities_cve20223786_and/",
+                    "subreddit": "linux",
+                    "subreddit_subscribers": 790956,
+                    "title": "OpenSSL Vulnerabilities - CVE-2022-3786 and CVE-2022-3602: X.509 Email Address Buffer Overflows",
+                    "upvotes": 94,
+                    "url": "https://www.openssl.org/blog/blog/2022/11/01/email-address-overflows/"
+                },
+                {
+                    "created": 1667473710.0,
+                    "is_self": false,
+                    "num_comments": 0,
+                    "reddit_url": "https://www.reddit.com/r/netsec/comments/ykzip5/cve20223602_cve20223786_oss_tools_to_detect/",
+                    "subreddit": "netsec",
+                    "subreddit_subscribers": 461678,
+                    "title": "CVE-2022-3602 &amp; CVE-2022-3786 - OSS tools to detect susceptibility to the recent OpenSSL issues",
+                    "upvotes": 63,
+                    "url": "https://github.com/jfrog/jfrog-openssl-tools"
+                },
+                {
+                    "created": 1668097633.0,
+                    "is_self": true,
+                    "num_comments": 10,
+                    "reddit_url": "https://www.reddit.com/r/embedded/comments/yrk3jm/new_vulnerabilities_cve20223602_and_cve20223786/",
+                    "subreddit": "embedded",
+                    "subreddit_subscribers": 102936,
+                    "title": "New vulnerabilities (CVE-2022-3602 and CVE-2022-3786) in OpenSSL, how they affect IoT and RTOS Devices.",
+                    "upvotes": 49,
+                    "url": "https://www.reddit.com/r/embedded/comments/yrk3jm/new_vulnerabilities_cve20223602_and_cve20223786/"
+                },
+                {
+                    "created": 1667444220.0,
+                    "is_self": false,
+                    "num_comments": 1,
+                    "reddit_url": "https://www.reddit.com/r/crypto/comments/ykqfah/openssl_email_address_overflows_cve20223786_and/",
+                    "subreddit": "crypto",
+                    "subreddit_subscribers": 273361,
+                    "title": "OpenSSL: email address overflows - CVE-2022-3786 and CVE-2022-3602: X.509 Email Address Buffer Overflows",
+                    "upvotes": 40,
+                    "url": "https://www.openssl.org/blog/blog/2022/11/01/email-address-overflows/"
+                }
+            ],
+            "score": 7.5,
+            "severity": "HIGH",
+            "tweets": [
+                {
+                    "created_at": "2022-12-04 05:34",
+                    "likes": 48,
+                    "num_retweets": 16,
+                    "retweets": 19,
+                    "tweet_id": "1599276003783647233",
+                    "tweet_text": "How to replicate OpenSSL vulnerabilities CVE-2022-3602 and CVE-2022-3786 and use libfuzzer https://t.co/r9FQpdPgiE",
+                    "twitter_user_handle": "Dinosn",
+                    "twitter_user_name": "Nicolas Krassas",
+                    "twitter_user_profile_pic": "https://pbs.twimg.com/profile_images/1292159799141060610/CLgtH-wo_normal.jpg",
+                    "urls": [
+                        {
+                            "display_url": "reddit.com/r/ReverseEngin\u2026",
+                            "expanded_url": "https://www.reddit.com/r/ReverseEngineering/comments/zbyx41/how_to_replicate_openssl_vulnerabilities/",
+                            "url": "https://t.co/r9FQpdPgiE"
+                        }
+                    ]
+                },
+                {
+                    "created_at": "2022-12-04 10:06",
+                    "likes": 0,
+                    "num_retweets": 0,
+                    "retweets": 0,
+                    "tweet_id": "1599344260402356224",
+                    "tweet_text": "The vuln CVE-2022-3786 has a tweet created 0 days ago and retweeted 11 times.\nhttps://t.co/yXkbYPK0Jq\n#pow1rtrtwwcve",
+                    "twitter_user_handle": "ipssignatures",
+                    "twitter_user_name": "ipssignatures",
+                    "twitter_user_profile_pic": "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png",
+                    "urls": [
+                        {
+                            "display_url": "twitter.com/Dinosn/status/\u2026",
+                            "expanded_url": "https://twitter.com/Dinosn/status/1599276003783647233",
+                            "url": "https://t.co/yXkbYPK0Jq"
+                        }
+                    ]
+                },
+                {
+                    "created_at": "2022-12-04 12:08",
+                    "likes": 0,
+                    "num_retweets": 0,
+                    "retweets": 0,
+                    "tweet_id": "1599374964532076544",
+                    "tweet_text": "(second \u2192 third)\nI think that the third retweeted(15 times) tweet that contains CVE ID between Dec 3 2022 12:01 UTC and Dec 4 2022 12:00 UTC is:\nhttps://t.co/yXkbYPK0Jq\nIt has CVE-2022-3786. #l24_ns7dqame62n56",
+                    "twitter_user_handle": "ipssignatures",
+                    "twitter_user_name": "ipssignatures",
+                    "twitter_user_profile_pic": "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png",
+                    "urls": [
+                        {
+                            "display_url": "twitter.com/Dinosn/status/\u2026",
+                            "expanded_url": "https://twitter.com/Dinosn/status/1599276003783647233",
+                            "url": "https://t.co/yXkbYPK0Jq"
+                        }
+                    ]
+                },
+                {
+                    "created_at": "2022-12-04 06:02",
+                    "likes": 0,
+                    "num_retweets": 0,
+                    "retweets": 0,
+                    "tweet_id": "1599283052483645441",
+                    "tweet_text": "How to replicate OpenSSL vulnerabilities CVE-2022-3602 and CVE-2022-3786 and use libfuzzer\nhttps://t.co/hmX3YfXIxl\nhttps://t.co/MttyW80kDV",
+                    "twitter_user_handle": "buaqbot",
+                    "twitter_user_name": "unSafe.sh Bot",
+                    "twitter_user_profile_pic": "https://pbs.twimg.com/profile_images/1422514037154226177/7ViYgn37_normal.png",
+                    "urls": [
+                        {
+                            "display_url": "ift.tt/SxNQVnY",
+                            "expanded_url": "https://ift.tt/SxNQVnY",
+                            "url": "https://t.co/hmX3YfXIxl"
+                        },
+                        {
+                            "display_url": "ift.tt/RKvrVLb",
+                            "expanded_url": "https://ift.tt/RKvrVLb",
+                            "url": "https://t.co/MttyW80kDV"
+                        }
+                    ]
+                },
+                {
+                    "created_at": "2022-12-04 08:08",
+                    "likes": 0,
+                    "num_retweets": 0,
+                    "retweets": 0,
+                    "tweet_id": "1599314566797737984",
+                    "tweet_text": "(Same from about 2 hours ago.)\nI think that the third retweeted(6 times) tweet that contains CVE ID between Dec 3 2022 08:01 UTC and Dec 4 2022 08:00 UTC is:\nhttps://t.co/yXkbYPK0Jq\nIt has CVE-2022-3786. #l24_ns7dqame62n56",
+                    "twitter_user_handle": "ipssignatures",
+                    "twitter_user_name": "ipssignatures",
+                    "twitter_user_profile_pic": "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png",
+                    "urls": [
+                        {
+                            "display_url": "twitter.com/Dinosn/status/\u2026",
+                            "expanded_url": "https://twitter.com/Dinosn/status/1599276003783647233",
+                            "url": "https://t.co/yXkbYPK0Jq"
+                        }
+                    ]
+                }
+            ],
+            "vendor_advisories": [
+                "https://www.openssl.org/news/secadv/20221101.txt"
+            ],
+            "vendors": [
+                {
+                    "products": [
+                        {
+                            "product": "Openssl",
+                            "versions": [
+                                "*"
+                            ]
+                        }
+                    ],
+                    "vendor": "Openssl"
+                },
+                {
+                    "products": [
+                        {
+                            "product": "Fedora",
+                            "versions": [
+                                "36",
+                                "37"
+                            ]
+                        }
+                    ],
+                    "vendor": "Fedoraproject"
+                }
+            ]
+        },
+        {
+            "assigner": "openssl-security@openssl.org",
+            "audience_size": 102470,
+            "cve": "CVE-2022-3602",
+            "cve_urls": null,
+            "cvssv2_base_score": null,
+            "cvssv2_severity": null,
+            "cvssv3_base_score": 7.5,
+            "cvssv3_base_severity": "HIGH",
+            "cwes": [
+                {
+                    "cwe_description": "Buffer Copy without Checking Size of Input ('Classic Buffer Overflow')",
+                    "cwe_id": "CWE-120"
+                }
+            ],
+            "description": "A buffer overrun can be triggered in X.509 certificate verification, specifically in name constraint checking. Note that this occurs after certificate chain signature verification and requires either a CA to have signed the malicious certificate or for the application to continue certificate verification despite failure to construct a path to a trusted issuer. An attacker can craft a malicious email address to overflow four attacker-controlled bytes on the stack. This buffer overflow could result in a crash (causing a denial of service) or potentially remote code execution. Many platforms implement stack overflow protections which would mitigate against the risk of remote code execution. The risk may be further mitigated based on stack layout for any given platform/compiler. Pre-announcements of CVE-2022-3602 described this issue as CRITICAL. Further analysis based on some of the mitigating factors described above have led this to be downgraded to HIGH. Users are still encouraged to upgrade to a new version as soon as possible. In a TLS client, this can be triggered by connecting to a malicious server. In a TLS server, this can be triggered if the server requests client authentication and a malicious client connects. Fixed in OpenSSL 3.0.7 (Affected 3.0.0,3.0.1,3.0.2,3.0.3,3.0.4,3.0.5,3.0.6).",
+            "epss_score": "0.53308",
+            "github_repos": [
+                {
+                    "created": "2022-10-28T09:51:41Z",
+                    "description": "Operational information regarding CVE-2022-3602 and CVE-2022-3786, two vulnerabilities in OpenSSL 3",
+                    "language": null,
+                    "name": "OpenSSL-2022",
+                    "stars": 534,
+                    "topics": [
+                        "cve-2022-3602",
+                        "cve-2022-3786",
+                        "openssl",
+                        "spookyssl"
+                    ],
+                    "updated": "2022-12-01T17:13:11Z",
+                    "url": "https://github.com/NCSC-NL/OpenSSL-2022"
+                },
+                {
+                    "created": "2022-10-30T23:32:56Z",
+                    "description": null,
+                    "language": "Python",
+                    "name": "CVE-2022-3602",
+                    "stars": 164,
+                    "topics": [],
+                    "updated": "2022-11-28T06:19:08Z",
+                    "url": "https://github.com/colmmacc/CVE-2022-3602"
+                },
+                {
+                    "created": "2022-11-02T17:33:26Z",
+                    "description": null,
+                    "language": "C",
+                    "name": "cve-2022-3602-and-cve-2022-3786-openssl-poc",
+                    "stars": 15,
+                    "topics": [],
+                    "updated": "2022-11-30T05:34:54Z",
+                    "url": "https://github.com/rbowes-r7/cve-2022-3602-and-cve-2022-3786-openssl-poc"
+                },
+                {
+                    "created": "2022-10-31T18:52:24Z",
+                    "description": null,
+                    "language": "C",
+                    "name": "CVE-2022-3602-poc",
+                    "stars": 13,
+                    "topics": [],
+                    "updated": "2022-11-27T15:42:57Z",
+                    "url": "https://github.com/eatscrayon/CVE-2022-3602-poc"
+                },
+                {
+                    "created": "2022-11-02T13:41:35Z",
+                    "description": "SpookySSL PCAPS and Network Coverage",
+                    "language": null,
+                    "name": "spookyssl-pcaps",
+                    "stars": 9,
+                    "topics": [
+                        "cve-2022-3602",
+                        "detection",
+                        "network",
+                        "openssl",
+                        "pcaps",
+                        "spookyssl",
+                        "suricata"
+                    ],
+                    "updated": "2022-11-22T07:24:48Z",
+                    "url": "https://github.com/fox-it/spookyssl-pcaps"
+                }
+            ],
+            "lastModifiedDate": "2022-11-04T19:49Z",
+            "num_retweets": 16,
+            "num_tweets": 7,
+            "num_tweets_and_retweets": 23,
+            "publishedDate": "2022-11-01T18:15Z",
+            "reddit_posts": [
+                {
+                    "created": 1669043924.0,
+                    "is_self": false,
+                    "num_comments": 69,
+                    "reddit_url": "https://www.reddit.com/r/programming/comments/z11huj/why_cve20223602_was_not_detected_by_fuzz_testing/",
+                    "subreddit": "programming",
+                    "subreddit_subscribers": 4934456,
+                    "title": "Why CVE-2022-3602 was not detected by fuzz testing",
+                    "upvotes": 563,
+                    "url": "https://allsoftwaresucks.blogspot.com/2022/11/why-cve-2022-3602-was-not-detected-by.html"
+                },
+                {
+                    "created": 1667319146.0,
+                    "is_self": false,
+                    "num_comments": 84,
+                    "reddit_url": "https://www.reddit.com/r/programming/comments/yjcu8j/cve20223786_and_cve20223602_x509_email_address/",
+                    "subreddit": "programming",
+                    "subreddit_subscribers": 4934456,
+                    "title": "CVE-2022-3786 and CVE-2022-3602: X.509 Email Address Buffer Overflows",
+                    "upvotes": 203,
+                    "url": "https://www.openssl.org/blog/blog/2022/11/01/email-address-overflows/"
+                },
+                {
+                    "created": 1667319182.0,
+                    "is_self": false,
+                    "num_comments": 20,
+                    "reddit_url": "https://www.reddit.com/r/linux/comments/yjcuta/openssl_vulnerabilities_cve20223786_and/",
+                    "subreddit": "linux",
+                    "subreddit_subscribers": 790956,
+                    "title": "OpenSSL Vulnerabilities - CVE-2022-3786 and CVE-2022-3602: X.509 Email Address Buffer Overflows",
+                    "upvotes": 90,
+                    "url": "https://www.openssl.org/blog/blog/2022/11/01/email-address-overflows/"
+                },
+                {
+                    "created": 1667473710.0,
+                    "is_self": false,
+                    "num_comments": 0,
+                    "reddit_url": "https://www.reddit.com/r/netsec/comments/ykzip5/cve20223602_cve20223786_oss_tools_to_detect/",
+                    "subreddit": "netsec",
+                    "subreddit_subscribers": 461678,
+                    "title": "CVE-2022-3602 &amp; CVE-2022-3786 - OSS tools to detect susceptibility to the recent OpenSSL issues",
+                    "upvotes": 60,
+                    "url": "https://github.com/jfrog/jfrog-openssl-tools"
+                },
+                {
+                    "created": 1667321847.0,
+                    "is_self": false,
+                    "num_comments": 1,
+                    "reddit_url": "https://www.reddit.com/r/netsec/comments/yje4iw/the_openssl_punycode_vulnerability_cve20223602/",
+                    "subreddit": "netsec",
+                    "subreddit_subscribers": 461678,
+                    "title": "The OpenSSL punycode vulnerability (CVE-2022-3602): Overview, detection, exploitation, and remediation | Datadog Security Labs",
+                    "upvotes": 53,
+                    "url": "https://securitylabs.datadoghq.com/articles/openssl-november-1-vulnerabilities/"
+                }
+            ],
+            "score": 7.5,
+            "severity": "HIGH",
+            "tweets": [
+                {
+                    "created_at": "2022-12-04 05:34",
+                    "likes": 48,
+                    "num_retweets": 16,
+                    "retweets": 19,
+                    "tweet_id": "1599276003783647233",
+                    "tweet_text": "How to replicate OpenSSL vulnerabilities CVE-2022-3602 and CVE-2022-3786 and use libfuzzer https://t.co/r9FQpdPgiE",
+                    "twitter_user_handle": "Dinosn",
+                    "twitter_user_name": "Nicolas Krassas",
+                    "twitter_user_profile_pic": "https://pbs.twimg.com/profile_images/1292159799141060610/CLgtH-wo_normal.jpg",
+                    "urls": [
+                        {
+                            "display_url": "reddit.com/r/ReverseEngin\u2026",
+                            "expanded_url": "https://www.reddit.com/r/ReverseEngineering/comments/zbyx41/how_to_replicate_openssl_vulnerabilities/",
+                            "url": "https://t.co/r9FQpdPgiE"
+                        }
+                    ]
+                },
+                {
+                    "created_at": "2022-12-04 12:08",
+                    "likes": 0,
+                    "num_retweets": 0,
+                    "retweets": 0,
+                    "tweet_id": "1599374963730956289",
+                    "tweet_text": "(second \u2192 third)\nI think that the third retweeted(15 times) tweet that contains CVE ID between Dec 3 2022 12:01 UTC and Dec 4 2022 12:00 UTC is:\nhttps://t.co/yXkbYPK0Jq\nIt has CVE-2022-3602. #l24_id3rfzyvgogmc",
+                    "twitter_user_handle": "ipssignatures",
+                    "twitter_user_name": "ipssignatures",
+                    "twitter_user_profile_pic": "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png",
+                    "urls": [
+                        {
+                            "display_url": "twitter.com/Dinosn/status/\u2026",
+                            "expanded_url": "https://twitter.com/Dinosn/status/1599276003783647233",
+                            "url": "https://t.co/yXkbYPK0Jq"
+                        }
+                    ]
+                },
+                {
+                    "created_at": "2022-12-04 06:02",
+                    "likes": 0,
+                    "num_retweets": 0,
+                    "retweets": 0,
+                    "tweet_id": "1599283052483645441",
+                    "tweet_text": "How to replicate OpenSSL vulnerabilities CVE-2022-3602 and CVE-2022-3786 and use libfuzzer\nhttps://t.co/hmX3YfXIxl\nhttps://t.co/MttyW80kDV",
+                    "twitter_user_handle": "buaqbot",
+                    "twitter_user_name": "unSafe.sh Bot",
+                    "twitter_user_profile_pic": "https://pbs.twimg.com/profile_images/1422514037154226177/7ViYgn37_normal.png",
+                    "urls": [
+                        {
+                            "display_url": "ift.tt/SxNQVnY",
+                            "expanded_url": "https://ift.tt/SxNQVnY",
+                            "url": "https://t.co/hmX3YfXIxl"
+                        },
+                        {
+                            "display_url": "ift.tt/RKvrVLb",
+                            "expanded_url": "https://ift.tt/RKvrVLb",
+                            "url": "https://t.co/MttyW80kDV"
+                        }
+                    ]
+                },
+                {
+                    "created_at": "2022-12-04 08:08",
+                    "likes": 0,
+                    "num_retweets": 0,
+                    "retweets": 0,
+                    "tweet_id": "1599314566030172161",
+                    "tweet_text": "(Same from about 2 hours ago.)\nI think that the third retweeted(6 times) tweet that contains CVE ID between Dec 3 2022 08:01 UTC and Dec 4 2022 08:00 UTC is:\nhttps://t.co/yXkbYPK0Jq\nIt has CVE-2022-3602. #l24_id3rfzyvgogmc",
+                    "twitter_user_handle": "ipssignatures",
+                    "twitter_user_name": "ipssignatures",
+                    "twitter_user_profile_pic": "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png",
+                    "urls": [
+                        {
+                            "display_url": "twitter.com/Dinosn/status/\u2026",
+                            "expanded_url": "https://twitter.com/Dinosn/status/1599276003783647233",
+                            "url": "https://t.co/yXkbYPK0Jq"
+                        }
+                    ]
+                },
+                {
+                    "created_at": "2022-12-04 10:06",
+                    "likes": 0,
+                    "num_retweets": 0,
+                    "retweets": 0,
+                    "tweet_id": "1599344259198590976",
+                    "tweet_text": "The vuln CVE-2022-3602 has a tweet created 0 days ago and retweeted 11 times.\nhttps://t.co/yXkbYPK0Jq\n#pow1rtrtwwcve",
+                    "twitter_user_handle": "ipssignatures",
+                    "twitter_user_name": "ipssignatures",
+                    "twitter_user_profile_pic": "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png",
+                    "urls": [
+                        {
+                            "display_url": "twitter.com/Dinosn/status/\u2026",
+                            "expanded_url": "https://twitter.com/Dinosn/status/1599276003783647233",
+                            "url": "https://t.co/yXkbYPK0Jq"
+                        }
+                    ]
+                }
+            ],
+            "vendor_advisories": [
+                "https://www.openssl.org/news/secadv/20221101.txt"
+            ],
+            "vendors": [
+                {
+                    "products": [
+                        {
+                            "product": "Openssl",
+                            "versions": [
+                                "*"
+                            ]
+                        }
+                    ],
+                    "vendor": "Openssl"
+                },
+                {
+                    "products": [
+                        {
+                            "product": "Fedora",
+                            "versions": [
+                                "36",
+                                "37",
+                                "26",
+                                "27"
+                            ]
+                        }
+                    ],
+                    "vendor": "Fedoraproject"
+                },
+                {
+                    "products": [
+                        {
+                            "product": "Clustered Data Ontap",
+                            "versions": [
+                                "-"
+                            ]
+                        }
+                    ],
+                    "vendor": "Netapp"
+                }
+            ]
+        },
+        {
+            "assigner": "security@apache.org",
+            "audience_size": 101101,
+            "cve": "CVE-2021-44228",
+            "cve_urls": null,
+            "cvssv2_base_score": 9.3,
+            "cvssv2_severity": "HIGH",
+            "cvssv3_base_score": 10.0,
+            "cvssv3_base_severity": "CRITICAL",
+            "cwes": [
+                {
+                    "cwe_description": "Improper Neutralization of Special Elements used in an Expression Language Statement ('Expression Language Injection')",
+                    "cwe_id": "CWE-917"
+                }
+            ],
+            "description": "Apache Log4j2 2.0-beta9 through 2.15.0 (excluding security releases 2.12.2, 2.12.3, and 2.3.1) JNDI features used in configuration, log messages, and parameters do not protect against attacker controlled LDAP and other JNDI related endpoints. An attacker who can control log messages or log message parameters can execute arbitrary code loaded from LDAP servers when message lookup substitution is enabled. From log4j 2.15.0, this behavior has been disabled by default. From version 2.16.0 (along with 2.12.2, 2.12.3, and 2.3.1), this functionality has been completely removed. Note that this vulnerability is specific to log4j-core and does not affect log4net, log4cxx, or other Apache Logging Services projects.",
+            "epss_score": "0.95466",
+            "github_repos": [
+                {
+                    "created": "2021-12-13T03:57:50Z",
+                    "description": "A fully automated, accurate, and extensive scanner for finding log4j RCE CVE-2021-44228 ",
+                    "language": "Python",
+                    "name": "log4j-scan",
+                    "stars": 3128,
+                    "topics": [],
+                    "updated": "2022-12-02T00:58:51Z",
+                    "url": "https://github.com/fullhunt/log4j-scan"
+                },
+                {
+                    "created": "2021-12-12T06:27:24Z",
+                    "description": "Operational information regarding the log4shell vulnerabilities in the Log4j logging library.",
+                    "language": "Python",
+                    "name": "log4shell",
+                    "stars": 1890,
+                    "topics": [
+                        "cve-2021-4104",
+                        "cve-2021-44228",
+                        "cve-2021-45046",
+                        "cve-2021-45105",
+                        "log4j",
+                        "log4shell",
+                        "vulnerability"
+                    ],
+                    "updated": "2022-12-02T02:22:59Z",
+                    "url": "https://github.com/NCSC-NL/log4shell"
+                },
+                {
+                    "created": "2021-12-10T23:19:28Z",
+                    "description": "A Proof-Of-Concept for the CVE-2021-44228 vulnerability. ",
+                    "language": "Python",
+                    "name": "log4j-shell-poc",
+                    "stars": 1507,
+                    "topics": [
+                        "cve-2021-44228",
+                        "java",
+                        "log4j",
+                        "security"
+                    ],
+                    "updated": "2022-12-04T15:05:27Z",
+                    "url": "https://github.com/kozmer/log4j-shell-poc"
+                },
+                {
+                    "created": "2021-12-21T16:23:29Z",
+                    "description": "log4j-scanner is a project derived from other members of the open-source community by CISA to help organizations identify potentially vulnerable web services affected by the log4j vulnerabilities. ",
+                    "language": "Java",
+                    "name": "log4j-scanner",
+                    "stars": 1252,
+                    "topics": [
+                        "cve-2021-44228",
+                        "cve-2021-45046",
+                        "log4j",
+                        "security",
+                        "security-tools"
+                    ],
+                    "updated": "2022-12-04T18:13:07Z",
+                    "url": "https://github.com/cisagov/log4j-scanner"
+                },
+                {
+                    "created": "2021-12-10T12:38:20Z",
+                    "description": "Spring Boot web application vulnerable to Log4Shell (CVE-2021-44228).",
+                    "language": "Java",
+                    "name": "log4shell-vulnerable-app",
+                    "stars": 1029,
+                    "topics": [
+                        "log4shell"
+                    ],
+                    "updated": "2022-12-01T19:22:28Z",
+                    "url": "https://github.com/christophetd/log4shell-vulnerable-app"
+                }
+            ],
+            "lastModifiedDate": "2022-08-17T17:46Z",
+            "num_retweets": 4,
+            "num_tweets": 1,
+            "num_tweets_and_retweets": 5,
+            "publishedDate": "2021-12-10T10:15Z",
+            "reddit_posts": [
+                {
+                    "created": 1639961119.0,
+                    "is_self": true,
+                    "num_comments": 209,
+                    "reddit_url": "https://www.reddit.com/r/sysadmin/comments/rkaco9/log4jsherlock_a_fast_powershell_script_that_can/",
+                    "subreddit": "sysadmin",
+                    "subreddit_subscribers": 755627,
+                    "title": "Log4jSherlock a fast PowerShell script that can scan multiple computers, made by a paranoid sysadmin.",
+                    "upvotes": 1753,
+                    "url": "https://www.reddit.com/r/sysadmin/comments/rkaco9/log4jsherlock_a_fast_powershell_script_that_can/"
+                },
+                {
+                    "created": 1639433423.0,
+                    "is_self": false,
+                    "num_comments": 106,
+                    "reddit_url": "https://www.reddit.com/r/programming/comments/rfrlxo/log4shell_log4j_vulnerability_cve202144228/",
+                    "subreddit": "programming",
+                    "subreddit_subscribers": 4934457,
+                    "title": "Log4Shell log4j vulnerability (CVE-2021-44228) - cheat-sheet reference guide",
+                    "upvotes": 1218,
+                    "url": "https://www.techsolvency.com/story-so-far/cve-2021-44228-log4j-log4shell/"
+                },
+                {
+                    "created": 1639376901.0,
+                    "is_self": true,
+                    "num_comments": 543,
+                    "reddit_url": "https://www.reddit.com/r/sysadmin/comments/rf97b2/log4shell_will_go_down_in_history/",
+                    "subreddit": "sysadmin",
+                    "subreddit_subscribers": 755627,
+                    "title": "Log4Shell Will Go Down In History",
+                    "upvotes": 1168,
+                    "url": "https://www.reddit.com/r/sysadmin/comments/rf97b2/log4shell_will_go_down_in_history/"
+                },
+                {
+                    "created": 1639121254.0,
+                    "is_self": true,
+                    "num_comments": 89,
+                    "reddit_url": "https://www.reddit.com/r/blueteamsec/comments/rd38z9/log4j_0day_being_exploited/",
+                    "subreddit": "blueteamsec",
+                    "subreddit_subscribers": 31383,
+                    "title": "Log4j 0day being exploited",
+                    "upvotes": 505,
+                    "url": "https://www.reddit.com/r/blueteamsec/comments/rd38z9/log4j_0day_being_exploited/"
+                },
+                {
+                    "created": 1639568794.0,
+                    "is_self": true,
+                    "num_comments": 82,
+                    "reddit_url": "https://www.reddit.com/r/sysadmin/comments/rgxa1r/psa_when_theres_a_0day_dont_trust_random_people/",
+                    "subreddit": "sysadmin",
+                    "subreddit_subscribers": 755627,
+                    "title": "PSA: When there's a 0day, don't trust random people on the internet. Verify everything.",
+                    "upvotes": 464,
+                    "url": "https://www.reddit.com/r/sysadmin/comments/rgxa1r/psa_when_theres_a_0day_dont_trust_random_people/"
+                }
+            ],
+            "score": 10.0,
+            "severity": "CRITICAL",
+            "tweets": [
+                {
+                    "created_at": "2022-12-04 20:07",
+                    "likes": 7,
+                    "num_retweets": 4,
+                    "retweets": 4,
+                    "tweet_id": "1599495693563203585",
+                    "tweet_text": "Top 10 exploited vulnerabilities in 2022\n\n1.Log4Shell (CVE-2021-44228)\n2.Follina (CVE-2022-30190)\n3.Spring4Shell (CVE-2022-22965)\nhttps://t.co/pWuHaAIFa0 Chrome zero-day (CVE-2022-0609)\n5.F5 BIG-IP (CVE-2022-1388)\n\n#bugbounty #bugbountytips #cybersecurity #infosec",
+                    "twitter_user_handle": "NandanLohitaksh",
+                    "twitter_user_name": "Lohitaksh Nandan",
+                    "twitter_user_profile_pic": "https://pbs.twimg.com/profile_images/1568913347273457664/Jvq20WBi_normal.jpg",
+                    "urls": [
+                        {
+                            "display_url": "4.Google",
+                            "expanded_url": "http://4.Google",
+                            "url": "https://t.co/pWuHaAIFa0"
+                        }
+                    ]
+                }
+            ],
+            "vendor_advisories": [
+                "https://logging.apache.org/log4j/2.x/security.html",
+                "https://security.netapp.com/advisory/ntap-20211210-0007/",
+                "https://msrc-blog.microsoft.com/2021/12/11/microsofts-response-to-cve-2021-44228-apache-log4j2/"
+            ],
+            "vendors": [
+                {
+                    "products": [
+                        {
+                            "product": "Log4J",
+                            "versions": [
+                                "2.0",
+                                "*"
+                            ]
+                        }
+                    ],
+                    "vendor": "Apache"
+                },
+                {
+                    "products": [
+                        {
+                            "product": "Captial",
+                            "versions": [
+                                "*"
+                            ]
+                        }
+                    ],
+                    "vendor": "Siemens"
+                },
+                {
+                    "products": [
+                        {
+                            "product": "Data Center Manager",
+                            "versions": [
+                                "-"
+                            ]
+                        }
+                    ],
+                    "vendor": "Intel"
+                },
+                {
+                    "products": [
+                        {
+                            "product": "Debian Linux",
+                            "versions": [
+                                "9.0",
+                                "10.0",
+                                "11.0"
+                            ]
+                        }
+                    ],
+                    "vendor": "Debian"
+                },
+                {
+                    "products": [
+                        {
+                            "product": "Fedora",
+                            "versions": [
+                                "34",
+                                "35"
+                            ]
+                        }
+                    ],
+                    "vendor": "Fedoraproject"
+                },
+                {
+                    "products": [
+                        {
+                            "product": "Email Security",
+                            "versions": [
+                                "*"
+                            ]
+                        }
+                    ],
+                    "vendor": "Sonicwall"
+                },
+                {
+                    "products": [
+                        {
+                            "product": "Snapcenter",
+                            "versions": [
+                                "-"
+                            ]
+                        }
+                    ],
+                    "vendor": "Netapp"
+                },
+                {
+                    "products": [
+                        {
+                            "product": "Common Services Platform Collector",
+                            "versions": [
+                                "002.010\\(000.000\\)",
+                                "002.009\\(001.002\\)",
+                                "002.009\\(001.001\\)",
+                                "002.009\\(001.000\\)",
+                                "002.009\\(000.002\\)",
+                                "002.009\\(000.001\\)",
+                                "002.009\\(000.000\\)"
+                            ]
+                        }
+                    ],
+                    "vendor": "Cisco"
+                },
+                {
+                    "products": [
+                        {
+                            "product": "Snow Commander",
+                            "versions": [
+                                "*"
+                            ]
+                        }
+                    ],
+                    "vendor": "Snowsoftware"
+                },
+                {
+                    "products": [
+                        {
+                            "product": "Synchro",
+                            "versions": [
+                                "*"
+                            ]
+                        }
+                    ],
+                    "vendor": "Bentley"
+                },
+                {
+                    "products": [
+                        {
+                            "product": "Rhythmyx",
+                            "versions": [
+                                "*"
+                            ]
+                        }
+                    ],
+                    "vendor": "Percussion"
+                }
+            ]
+        },
+        {
+            "assigner": "secure@microsoft.com",
+            "audience_size": 101101,
+            "cve": "CVE-2022-30190",
+            "cve_urls": null,
+            "cvssv2_base_score": 9.3,
+            "cvssv2_severity": "HIGH",
+            "cvssv3_base_score": 7.8,
+            "cvssv3_base_severity": "HIGH",
+            "cwes": [],
+            "description": "Microsoft Windows Support Diagnostic Tool (MSDT) Remote Code Execution Vulnerability.",
+            "epss_score": "0.69589",
+            "github_repos": [
+                {
+                    "created": "2022-06-02T12:33:18Z",
+                    "description": "CVE-2022-30190-follina.py-\u4fee\u6539\u7248\uff0c\u53ef\u4ee5\u81ea\u5b9a\u4e49word\u6a21\u677f\uff0c\u65b9\u4fbf\u5b9e\u6218\u4e2d\u9493\u9c7c\u4f7f\u7528\u3002",
+                    "language": "Python",
+                    "name": "CVE-2022-30190-follina-Office-MSDT-Fixed",
+                    "stars": 345,
+                    "topics": [],
+                    "updated": "2022-11-22T05:37:26Z",
+                    "url": "https://github.com/komomon/CVE-2022-30190-follina-Office-MSDT-Fixed"
+                },
+                {
+                    "created": "2022-05-30T18:17:38Z",
+                    "description": "POC CVE-2022-30190 : CVE 0-day MS Offic RCE aka msdt follina",
+                    "language": "Python",
+                    "name": "PoC-CVE-2022-30190",
+                    "stars": 143,
+                    "topics": [
+                        "cve",
+                        "follina",
+                        "msoffice",
+                        "poc",
+                        "proof-of-concept",
+                        "rce",
+                        "vulnerability"
+                    ],
+                    "updated": "2022-11-15T17:38:38Z",
+                    "url": "https://github.com/JMousqueton/PoC-CVE-2022-30190"
+                },
+                {
+                    "created": "2022-05-31T06:45:25Z",
+                    "description": "CVE-2022-30190  Follina POC",
+                    "language": "HTML",
+                    "name": "CVE-2022-30190",
+                    "stars": 102,
+                    "topics": [],
+                    "updated": "2022-12-04T00:31:42Z",
+                    "url": "https://github.com/onecloudemoji/CVE-2022-30190"
+                },
+                {
+                    "created": "2022-05-31T12:15:18Z",
+                    "description": "Microsoft Office Word Rce \u590d\u73b0(CVE-2022-30190)",
+                    "language": "Rich Text Format",
+                    "name": "CVE-2022-30190",
+                    "stars": 50,
+                    "topics": [],
+                    "updated": "2022-12-01T11:54:51Z",
+                    "url": "https://github.com/bytecaps/CVE-2022-30190"
+                },
+                {
+                    "created": "2022-05-31T14:10:11Z",
+                    "description": "This Repository Talks about the Follina MSDT from Defender Perspective",
+                    "language": "YARA",
+                    "name": "MSDT_CVE-2022-30190",
+                    "stars": 36,
+                    "topics": [],
+                    "updated": "2022-08-23T08:13:34Z",
+                    "url": "https://github.com/archanchoudhury/MSDT_CVE-2022-30190"
+                }
+            ],
+            "lastModifiedDate": "2022-06-07T18:15Z",
+            "num_retweets": 4,
+            "num_tweets": 1,
+            "num_tweets_and_retweets": 5,
+            "publishedDate": "2022-06-01T20:15Z",
+            "reddit_posts": [
+                {
+                    "created": 1654023945.0,
+                    "is_self": false,
+                    "num_comments": 10,
+                    "reddit_url": "https://www.reddit.com/r/cybersecurity/comments/v1xmbh/exploiting_msdt_0day_cve202230190/",
+                    "subreddit": "cybersecurity",
+                    "subreddit_subscribers": 421050,
+                    "title": "Exploiting MSDT 0-Day CVE-2022-30190",
+                    "upvotes": 245,
+                    "url": "https://www.youtube.com/watch?v=dGCOhORNKRk"
+                },
+                {
+                    "created": 1653891741.0,
+                    "is_self": true,
+                    "num_comments": 81,
+                    "reddit_url": "https://www.reddit.com/r/msp/comments/v0tuvs/ms_office_vuln_polite_warning_about_nearterm/",
+                    "subreddit": "msp",
+                    "subreddit_subscribers": 139322,
+                    "title": "MS Office Vuln: Polite warning about near-term malicious attachments",
+                    "upvotes": 198,
+                    "url": "https://www.reddit.com/r/msp/comments/v0tuvs/ms_office_vuln_polite_warning_about_nearterm/"
+                },
+                {
+                    "created": 1653913996.0,
+                    "is_self": true,
+                    "num_comments": 44,
+                    "reddit_url": "https://www.reddit.com/r/sysadmin/comments/v0z7bx/another_week_another_0day/",
+                    "subreddit": "sysadmin",
+                    "subreddit_subscribers": 755627,
+                    "title": "Another week, another 0-Day",
+                    "upvotes": 144,
+                    "url": "https://www.reddit.com/r/sysadmin/comments/v0z7bx/another_week_another_0day/"
+                },
+                {
+                    "created": 1654855693.0,
+                    "is_self": false,
+                    "num_comments": 18,
+                    "reddit_url": "https://www.reddit.com/r/linux4noobs/comments/v94fhq/what_desktop_environment_the_op_of_the_youtube/",
+                    "subreddit": "linux4noobs",
+                    "subreddit_subscribers": 202148,
+                    "title": "What desktop environment the OP of the YouTube video is using (Parrot OS)? Stolen from a YouTube channel about CVE 2022-30190 (msdt)",
+                    "upvotes": 121,
+                    "url": "https://i.redd.it/fmy3dq03qr491.jpg"
+                },
+                {
+                    "created": 1654005120.0,
+                    "is_self": true,
+                    "num_comments": 16,
+                    "reddit_url": "https://www.reddit.com/r/crowdstrike/comments/v1qrnz/hunting_follina_microsoft_code_execution/",
+                    "subreddit": "crowdstrike",
+                    "subreddit_subscribers": 11054,
+                    "title": "Hunting Follina - Microsoft Code Execution Vulnerability",
+                    "upvotes": 91,
+                    "url": "https://www.reddit.com/r/crowdstrike/comments/v1qrnz/hunting_follina_microsoft_code_execution/"
+                }
+            ],
+            "score": 7.8,
+            "severity": "HIGH",
+            "tweets": [
+                {
+                    "created_at": "2022-12-04 20:07",
+                    "likes": 7,
+                    "num_retweets": 4,
+                    "retweets": 4,
+                    "tweet_id": "1599495693563203585",
+                    "tweet_text": "Top 10 exploited vulnerabilities in 2022\n\n1.Log4Shell (CVE-2021-44228)\n2.Follina (CVE-2022-30190)\n3.Spring4Shell (CVE-2022-22965)\nhttps://t.co/pWuHaAIFa0 Chrome zero-day (CVE-2022-0609)\n5.F5 BIG-IP (CVE-2022-1388)\n\n#bugbounty #bugbountytips #cybersecurity #infosec",
+                    "twitter_user_handle": "NandanLohitaksh",
+                    "twitter_user_name": "Lohitaksh Nandan",
+                    "twitter_user_profile_pic": "https://pbs.twimg.com/profile_images/1568913347273457664/Jvq20WBi_normal.jpg",
+                    "urls": [
+                        {
+                            "display_url": "4.Google",
+                            "expanded_url": "http://4.Google",
+                            "url": "https://t.co/pWuHaAIFa0"
+                        }
+                    ]
+                }
+            ],
+            "vendor_advisories": [
+                "https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-30190"
+            ],
+            "vendors": [
+                {
+                    "products": [
+                        {
+                            "product": "Windows 10",
+                            "versions": [
+                                "21h2"
+                            ]
+                        }
+                    ],
+                    "vendor": "Microsoft"
+                }
+            ]
+        },
+        {
+            "assigner": "security@vmware.com",
+            "audience_size": 101101,
+            "cve": "CVE-2022-22965",
+            "cve_urls": null,
+            "cvssv2_base_score": 7.5,
+            "cvssv2_severity": "HIGH",
+            "cvssv3_base_score": 9.8,
+            "cvssv3_base_severity": "CRITICAL",
+            "cwes": [
+                {
+                    "cwe_description": "Improper Control of Generation of Code ('Code Injection')",
+                    "cwe_id": "CWE-94"
+                }
+            ],
+            "description": "A Spring MVC or Spring WebFlux application running on JDK 9+ may be vulnerable to remote code execution (RCE) via data binding. The specific exploit requires the application to run on Tomcat as a WAR deployment. If the application is deployed as a Spring Boot executable jar, i.e. the default, it is not vulnerable to the exploit. However, the nature of the vulnerability is more general, and there may be other ways to exploit it.",
+            "epss_score": "0.95668",
+            "github_repos": [
+                {
+                    "created": "2022-03-30T07:54:45Z",
+                    "description": "Spring4Shell Proof Of Concept/And vulnerable application CVE-2022-22965",
+                    "language": "Python",
+                    "name": "Spring4Shell-POC",
+                    "stars": 304,
+                    "topics": [
+                        "cve-2022-22965",
+                        "java",
+                        "rce",
+                        "spring",
+                        "spring-core-rce",
+                        "spring4shell",
+                        "springshell",
+                        "tomcat"
+                    ],
+                    "updated": "2022-11-23T03:12:07Z",
+                    "url": "https://github.com/BobTheShoplifter/Spring4Shell-POC"
+                },
+                {
+                    "created": "2022-03-31T00:24:28Z",
+                    "description": "Dockerized Spring4Shell (CVE-2022-22965) PoC application and exploit",
+                    "language": "Python",
+                    "name": "Spring4Shell-POC",
+                    "stars": 273,
+                    "topics": [],
+                    "updated": "2022-11-30T02:46:16Z",
+                    "url": "https://github.com/reznok/Spring4Shell-POC"
+                },
+                {
+                    "created": "2022-03-30T17:05:46Z",
+                    "description": "Spring4Shell - Spring Core RCE - CVE-2022-22965",
+                    "language": "Python",
+                    "name": "SpringShell",
+                    "stars": 115,
+                    "topics": [
+                        "cve",
+                        "cve-2022-22965",
+                        "rce",
+                        "spring",
+                        "spring-core-rce",
+                        "spring-security",
+                        "spring4shell",
+                        "springcore",
+                        "springshell",
+                        "working-example"
+                    ],
+                    "updated": "2022-11-15T02:44:37Z",
+                    "url": "https://github.com/TheGejr/SpringShell"
+                },
+                {
+                    "created": "2022-04-07T00:08:16Z",
+                    "description": "Spring Framework RCE (CVE-2022-22965) Nmap (NSE) Checker (Non-Intrusive)",
+                    "language": "Lua",
+                    "name": "CVE-2022-22965",
+                    "stars": 98,
+                    "topics": [],
+                    "updated": "2022-11-12T14:42:32Z",
+                    "url": "https://github.com/alt3kx/CVE-2022-22965"
+                },
+                {
+                    "created": "2022-04-01T04:51:44Z",
+                    "description": "SpringFramework \u8fdc\u7a0b\u4ee3\u7801\u6267\u884c\u6f0f\u6d1eCVE-2022-22965",
+                    "language": "Python",
+                    "name": "SpringFramework_CVE-2022-22965_RCE",
+                    "stars": 73,
+                    "topics": [],
+                    "updated": "2022-11-30T04:47:04Z",
+                    "url": "https://github.com/Axx8/SpringFramework_CVE-2022-22965_RCE"
+                }
+            ],
+            "lastModifiedDate": "2022-07-25T18:20Z",
+            "num_retweets": 4,
+            "num_tweets": 1,
+            "num_tweets_and_retweets": 5,
+            "publishedDate": "2022-04-01T23:15Z",
+            "reddit_posts": [
+                {
+                    "created": 1648741380.0,
+                    "is_self": false,
+                    "num_comments": 30,
+                    "reddit_url": "https://www.reddit.com/r/netsec/comments/tt2m51/critical_vulnerability_in_spring_core/",
+                    "subreddit": "netsec",
+                    "subreddit_subscribers": 461679,
+                    "title": "Critical Vulnerability in Spring Core: CVE-2022-22965 a.k.a. Spring4Shell",
+                    "upvotes": 168,
+                    "url": "https://sysdig.com/blog/cve-2022-22965-spring-core-spring4shell/"
+                },
+                {
+                    "created": 1649295663.0,
+                    "is_self": false,
+                    "num_comments": 0,
+                    "reddit_url": "https://www.reddit.com/r/netsec/comments/ty1u2b/spring_framework_rce_cve202222965_nmap_nse/",
+                    "subreddit": "netsec",
+                    "subreddit_subscribers": 461679,
+                    "title": "Spring Framework RCE (CVE-2022-22965) Nmap (NSE) Checker (Non-Intrusive)",
+                    "upvotes": 101,
+                    "url": "https://github.com/alt3kx/CVE-2022-22965"
+                },
+                {
+                    "created": 1648753084.0,
+                    "is_self": true,
+                    "num_comments": 18,
+                    "reddit_url": "https://www.reddit.com/r/java/comments/tt6xj7/spring_boot_rce_cve202222965_can_anybody_explain/",
+                    "subreddit": "java",
+                    "subreddit_subscribers": 279490,
+                    "title": "Spring Boot RCE CVE-2022-22965: can anybody explain why .war packages are affected but .jar (default) are not?",
+                    "upvotes": 40,
+                    "url": "https://www.reddit.com/r/java/comments/tt6xj7/spring_boot_rce_cve202222965_can_anybody_explain/"
+                },
+                {
+                    "created": 1648750834.0,
+                    "is_self": true,
+                    "num_comments": 13,
+                    "reddit_url": "https://www.reddit.com/r/crowdstrike/comments/tt63jd/20220331_situational_awareness_spring4shell/",
+                    "subreddit": "crowdstrike",
+                    "subreddit_subscribers": 11054,
+                    "title": "2022-03-31 \\\\ SITUATIONAL AWARENESS \\\\ Spring4Shell (CVE-2022-22965) Vulnerability Details",
+                    "upvotes": 21,
+                    "url": "https://www.reddit.com/r/crowdstrike/comments/tt63jd/20220331_situational_awareness_spring4shell/"
+                },
+                {
+                    "created": 1649085311.0,
+                    "is_self": true,
+                    "num_comments": 2,
+                    "reddit_url": "https://www.reddit.com/r/unifi_versions/comments/tw4h5x/statement_regarding_spring_cve202222965_202222950/",
+                    "subreddit": "unifi_versions",
+                    "subreddit_subscribers": 2341,
+                    "title": "Statement Regarding Spring CVE-2022-22965, 2022-22950, and 2022-22963 001",
+                    "upvotes": 16,
+                    "url": "https://www.reddit.com/r/unifi_versions/comments/tw4h5x/statement_regarding_spring_cve202222965_202222950/"
+                }
+            ],
+            "score": 9.8,
+            "severity": "CRITICAL",
+            "tweets": [
+                {
+                    "created_at": "2022-12-04 20:07",
+                    "likes": 7,
+                    "num_retweets": 4,
+                    "retweets": 4,
+                    "tweet_id": "1599495693563203585",
+                    "tweet_text": "Top 10 exploited vulnerabilities in 2022\n\n1.Log4Shell (CVE-2021-44228)\n2.Follina (CVE-2022-30190)\n3.Spring4Shell (CVE-2022-22965)\nhttps://t.co/pWuHaAIFa0 Chrome zero-day (CVE-2022-0609)\n5.F5 BIG-IP (CVE-2022-1388)\n\n#bugbounty #bugbountytips #cybersecurity #infosec",
+                    "twitter_user_handle": "NandanLohitaksh",
+                    "twitter_user_name": "Lohitaksh Nandan",
+                    "twitter_user_profile_pic": "https://pbs.twimg.com/profile_images/1568913347273457664/Jvq20WBi_normal.jpg",
+                    "urls": [
+                        {
+                            "display_url": "4.Google",
+                            "expanded_url": "http://4.Google",
+                            "url": "https://t.co/pWuHaAIFa0"
+                        }
+                    ]
+                }
+            ],
+            "vendor_advisories": [
+                "https://tanzu.vmware.com/security/cve-2022-22965"
+            ],
+            "vendors": [
+                {
+                    "products": [
+                        {
+                            "product": "Spring Framework",
+                            "versions": [
+                                "*"
+                            ]
+                        }
+                    ],
+                    "vendor": "Vmware"
+                },
+                {
+                    "products": [
+                        {
+                            "product": "Cx Cloud Agent",
+                            "versions": [
+                                "*"
+                            ]
+                        }
+                    ],
+                    "vendor": "Cisco"
+                },
+                {
+                    "products": [
+                        {
+                            "product": "Communications Cloud Native Core Network Slice Selection Function",
+                            "versions": [
+                                "1.15.0"
+                            ]
+                        }
+                    ],
+                    "vendor": "Oracle"
+                },
+                {
+                    "products": [
+                        {
+                            "product": "Operation Scheduler",
+                            "versions": [
+                                "*"
+                            ]
+                        }
+                    ],
+                    "vendor": "Siemens"
+                },
+                {
+                    "products": [
+                        {
+                            "product": "Netbackup Flex Scale Appliance",
+                            "versions": [
+                                "2.1",
+                                "3.0"
+                            ]
+                        }
+                    ],
+                    "vendor": "Veritas"
+                }
+            ]
+        },
+        {
+            "assigner": "chrome-cve-admin@google.com",
+            "audience_size": 101101,
+            "cve": "CVE-2022-0609",
+            "cve_urls": null,
+            "cvssv2_base_score": 6.8,
+            "cvssv2_severity": "MEDIUM",
+            "cvssv3_base_score": 8.8,
+            "cvssv3_base_severity": "HIGH",
+            "cwes": [
+                {
+                    "cwe_description": "Use After Free",
+                    "cwe_id": "CWE-416"
+                }
+            ],
+            "description": "Use after free in Animation in Google Chrome prior to 98.0.4758.102 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page.",
+            "epss_score": "0.01055",
+            "github_repos": [],
+            "lastModifiedDate": "2022-04-08T17:14Z",
+            "num_retweets": 4,
+            "num_tweets": 1,
+            "num_tweets_and_retweets": 5,
+            "publishedDate": "2022-04-05T00:15Z",
+            "reddit_posts": [
+                {
+                    "created": 1648357616.0,
+                    "is_self": true,
+                    "num_comments": 0,
+                    "reddit_url": "https://www.reddit.com/r/Scams/comments/tpd0ve/psa_update_google_chrome_asap_and_malicious/",
+                    "subreddit": "Scams",
+                    "subreddit_subscribers": 431945,
+                    "title": "PSA: Update Google Chrome ASAP and malicious, attacker-owned job search websites to look out for",
+                    "upvotes": 22,
+                    "url": "https://www.reddit.com/r/Scams/comments/tpd0ve/psa_update_google_chrome_asap_and_malicious/"
+                },
+                {
+                    "created": 1648181523.0,
+                    "is_self": false,
+                    "num_comments": 0,
+                    "reddit_url": "https://www.reddit.com/r/newsokuexp/comments/tndqp8/\u5317\u671d\u9bae\u306e\u30cf\u30c3\u30ab\u30fc\u30b0\u30eb\u30fc\u30d7\u304cchrome\u306e\u30bc\u30ed\u30c7\u30a4\u8106\u5f31\u6027cve20220609\u3092\u60aa\u7528\u3057\u3066\u3044\u305f\u3068\u5224\u660e/",
+                    "subreddit": "newsokuexp",
+                    "subreddit_subscribers": 11211,
+                    "title": "\u5317\u671d\u9bae\u306e\u30cf\u30c3\u30ab\u30fc\u30b0\u30eb\u30fc\u30d7\u304cChrome\u306e\u30bc\u30ed\u30c7\u30a4\u8106\u5f31\u6027\u300cCVE-2022-0609\u300d\u3092\u60aa\u7528\u3057\u3066\u3044\u305f\u3068\u5224\u660e",
+                    "upvotes": 8,
+                    "url": "https://gigazine.net/news/20220325-north-korea-hackers-chrome-zeroday/"
+                },
+                {
+                    "created": 1645054310.0,
+                    "is_self": true,
+                    "num_comments": 4,
+                    "reddit_url": "https://www.reddit.com/r/debian/comments/su9rfb/bullseye_chromium_security_patches_and/",
+                    "subreddit": "debian",
+                    "subreddit_subscribers": 60425,
+                    "title": "bullseye - Chromium security patches and packages.debian.org issue",
+                    "upvotes": 5,
+                    "url": "https://www.reddit.com/r/debian/comments/su9rfb/bullseye_chromium_security_patches_and/"
+                },
+                {
+                    "created": 1648240650.0,
+                    "is_self": true,
+                    "num_comments": 1,
+                    "reddit_url": "https://www.reddit.com/r/cyber1sec14all/comments/tnyi5t/north_korean_hackers_attacked_google_chrome_users/",
+                    "subreddit": "cyber1sec14all",
+                    "subreddit_subscribers": 177,
+                    "title": "North Korean hackers attacked Google Chrome users",
+                    "upvotes": 3,
+                    "url": "https://www.reddit.com/r/cyber1sec14all/comments/tnyi5t/north_korean_hackers_attacked_google_chrome_users/"
+                },
+                {
+                    "created": 1645113031.0,
+                    "is_self": true,
+                    "num_comments": 0,
+                    "reddit_url": "https://www.reddit.com/r/chromeos/comments/surxov/cve20220609_chromeos_implications/",
+                    "subreddit": "chromeos",
+                    "subreddit_subscribers": 559687,
+                    "title": "CVE-2022-0609: ChromeOS implications?",
+                    "upvotes": 2,
+                    "url": "https://www.reddit.com/r/chromeos/comments/surxov/cve20220609_chromeos_implications/"
+                }
+            ],
+            "score": 8.8,
+            "severity": "HIGH",
+            "tweets": [
+                {
+                    "created_at": "2022-12-04 20:07",
+                    "likes": 7,
+                    "num_retweets": 4,
+                    "retweets": 4,
+                    "tweet_id": "1599495693563203585",
+                    "tweet_text": "Top 10 exploited vulnerabilities in 2022\n\n1.Log4Shell (CVE-2021-44228)\n2.Follina (CVE-2022-30190)\n3.Spring4Shell (CVE-2022-22965)\nhttps://t.co/pWuHaAIFa0 Chrome zero-day (CVE-2022-0609)\n5.F5 BIG-IP (CVE-2022-1388)\n\n#bugbounty #bugbountytips #cybersecurity #infosec",
+                    "twitter_user_handle": "NandanLohitaksh",
+                    "twitter_user_name": "Lohitaksh Nandan",
+                    "twitter_user_profile_pic": "https://pbs.twimg.com/profile_images/1568913347273457664/Jvq20WBi_normal.jpg",
+                    "urls": [
+                        {
+                            "display_url": "4.Google",
+                            "expanded_url": "http://4.Google",
+                            "url": "https://t.co/pWuHaAIFa0"
+                        }
+                    ]
+                }
+            ],
+            "vendor_advisories": [
+                "https://chromereleases.googleblog.com/2022/02/stable-channel-update-for-desktop_14.html",
+                "https://crbug.com/1296150"
+            ],
+            "vendors": [
+                {
+                    "products": [
+                        {
+                            "product": "Chrome",
+                            "versions": [
+                                "*"
+                            ]
+                        }
+                    ],
+                    "vendor": "Google"
+                }
+            ]
+        }
+    ],
+    "latest_client_version": "0.1.14",
+    "updated": "2022-12-04 20:16:45"
+}
