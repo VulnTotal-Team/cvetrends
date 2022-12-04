@@ -1,5 +1,42 @@
 [
     {
+        "Modified": "2022-12-04T16:15:00",
+        "Published": "2022-11-04T17:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-120",
+        "id": "CVE-2021-34055",
+        "impact": {},
+        "last-modified": "2022-12-04T16:15:00",
+        "references": [
+            "https://github.com/Matthias-Wandel/jhead/issues/36",
+            "https://lists.debian.org/debian-lts-announce/2022/12/msg00004.html"
+        ],
+        "summary": "jhead 3.06 is vulnerable to Buffer Overflow via exif.c in function Put16u."
+    },
+    {
+        "Modified": "2022-12-04T16:15:00",
+        "Published": "2022-10-17T18:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-78",
+        "id": "CVE-2022-41751",
+        "impact": {},
+        "last-modified": "2022-12-04T16:15:00",
+        "references": [
+            "https://github.com/Matthias-Wandel/jhead/blob/63ce118c6a59ea64ac357236a11a47aaf569d622/jhead.c#L788",
+            "https://github.com/Matthias-Wandel/jhead/pull/57",
+            "https://github.com/Matthias-Wandel/jhead",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/TAVB3ZX7E5ULEXESU5NXZIAHY6CVGCHB/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/EG26AD7KJAY5B6L6OERSGL4FRXJE3GOB/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/5NM6FET4ZNWV4EQGKZTLZFWTNVODGVOK/",
+            "https://lists.debian.org/debian-lts-announce/2022/12/msg00004.html"
+        ],
+        "summary": "Jhead 3.06.0.1 allows attackers to execute arbitrary OS commands by placing them in a JPEG filename and then using the regeneration -rgt50 option."
+    },
+    {
         "Modified": "2022-12-04T05:15:00",
         "Published": "2022-12-04T05:15:00",
         "access": {},
@@ -2206,68 +2243,5 @@
             "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/XP42AC5VPTY45QKMRL3W4G4EXIUMFXRE/"
         ],
         "summary": "Advancecomp v2.3 was discovered to contain a heap buffer overflow via the component __interceptor_memcpy at /sanitizer_common/sanitizer_common_interceptors.inc."
-    },
-    {
-        "Modified": "2022-12-03T03:00:00",
-        "Published": "2020-06-15T17:15:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "LOW",
-            "vector": "NETWORK"
-        },
-        "assigner": "cve@mitre.org",
-        "cvss": 5.0,
-        "cvss-time": "2022-12-03T03:00:00",
-        "cvss-vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
-        "cwe": "CWE-190",
-        "id": "CVE-2020-14155",
-        "impact": {
-            "availability": "PARTIAL",
-            "confidentiality": "NONE",
-            "integrity": "NONE"
-        },
-        "last-modified": "2022-12-03T03:00:00",
-        "references": [
-            "https://bugs.gentoo.org/717920",
-            "https://www.pcre.org/original/changelog.txt",
-            "https://about.gitlab.com/releases/2020/07/01/security-release-13-1-2-release/",
-            "https://support.apple.com/kb/HT211931",
-            "http://seclists.org/fulldisclosure/2020/Dec/32",
-            "https://support.apple.com/kb/HT212147",
-            "http://seclists.org/fulldisclosure/2021/Feb/14",
-            "https://lists.apache.org/thread.html/rf9fa47ab66495c78bb4120b0754dd9531ca2ff0430f6685ac9b07772@%3Cdev.mina.apache.org%3E",
-            "https://www.oracle.com/security-alerts/cpuapr2022.html",
-            "https://security.netapp.com/advisory/ntap-20221028-0010/"
-        ],
-        "summary": "libpcre in PCRE before 8.44 allows an integer overflow via a large number after a (?C substring."
-    },
-    {
-        "Modified": "2022-12-03T02:58:00",
-        "Published": "2019-12-03T15:15:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "MEDIUM",
-            "vector": "LOCAL"
-        },
-        "assigner": "secalert@redhat.com",
-        "cvss": 3.3,
-        "cvss-time": "2022-12-03T02:58:00",
-        "cvss-vector": "AV:L/AC:M/Au:N/C:N/I:P/A:P",
-        "cwe": "CWE-367",
-        "id": "CVE-2013-4235",
-        "impact": {
-            "availability": "PARTIAL",
-            "confidentiality": "NONE",
-            "integrity": "PARTIAL"
-        },
-        "last-modified": "2022-12-03T02:58:00",
-        "references": [
-            "https://security-tracker.debian.org/tracker/CVE-2013-4235",
-            "https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2013-4235",
-            "https://access.redhat.com/security/cve/cve-2013-4235",
-            "https://lists.apache.org/thread.html/rf9fa47ab66495c78bb4120b0754dd9531ca2ff0430f6685ac9b07772@%3Cdev.mina.apache.org%3E",
-            "https://security.gentoo.org/glsa/202210-26"
-        ],
-        "summary": "shadow: TOCTOU (time-of-check time-of-use) race condition when copying and removing directory trees"
     }
 ]
