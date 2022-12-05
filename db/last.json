@@ -1,5 +1,146 @@
 [
     {
+        "Modified": "2022-12-05T14:58:00",
+        "Published": "2022-11-30T22:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "NVD-CWE-Other",
+        "id": "CVE-2022-46156",
+        "impact": {},
+        "last-modified": "2022-12-05T14:58:00",
+        "references": [
+            "https://github.com/grafana/synthetic-monitoring-agent/security/advisories/GHSA-9j4f-f249-q5w8",
+            "https://github.com/grafana/synthetic-monitoring-agent/pull/375",
+            "https://github.com/grafana/synthetic-monitoring-agent/pull/374",
+            "https://github.com/grafana/synthetic-monitoring-agent/pull/373",
+            "https://github.com/grafana/synthetic-monitoring-agent/commit/d8dc7f9c1c641881cbcf0a09e178b90ebf0f0228",
+            "https://github.com/grafana/synthetic-monitoring-agent/releases/tag/v0.12.0"
+        ],
+        "summary": "The Synthetic Monitoring Agent for Grafana's Synthetic Monitoring application provides probe functionality and executes network checks for monitoring remote targets. Users running the Synthetic Monitoring agent prior to version 0.12.0 in their local network are impacted. The authentication token used to communicate with the Synthetic Monitoring API is exposed through a debugging endpoint. This token can be used to retrieve the Synthetic Monitoring checks created by the user and assigned to the agent identified with that token. The Synthetic Monitoring API will reject connections from already-connected agents, so access to the token does not guarantee access to the checks. Version 0.12.0 contains a fix. Users are advised to rotate the agent tokens. After upgrading to version v0.12.0 or later, it's recommended that users of distribution packages review the configuration stored in `/etc/synthetic-monitoring/synthetic-monitoring-agent.conf`, specifically the `API_TOKEN` variable which has been renamed to `SM_AGENT_API_TOKEN`. As a workaround for previous versions, it's recommended that users review the agent settings and set the HTTP listening address in a manner that limits the exposure, for example, localhost or a non-routed network, by using the command line parameter `-listen-address`, e.g. `-listen-address localhost:4050`."
+    },
+    {
+        "Modified": "2022-12-05T14:20:00",
+        "Published": "2022-12-05T14:15:00",
+        "access": {},
+        "assigner": "security@apache.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-45046",
+        "impact": {},
+        "last-modified": "2022-12-05T14:20:00",
+        "references": [
+            "https://camel.apache.org/security/CVE-2022-45046.html"
+        ],
+        "summary": "The camel-ldap component allows LDAP Injection when using the filter option. Users are recommended to either move to the Camel-Spring-Ldap component (which is not affected) or upgrade to 3.14.6 or 3.18.4."
+    },
+    {
+        "Modified": "2022-12-05T14:18:00",
+        "Published": "2022-12-02T21:15:00",
+        "access": {},
+        "assigner": "chrome-cve-admin@google.com",
+        "cvss": null,
+        "cwe": "CWE-843",
+        "id": "CVE-2022-4262",
+        "impact": {},
+        "last-modified": "2022-12-05T14:18:00",
+        "references": [
+            "https://chromereleases.googleblog.com/2022/12/stable-channel-update-for-desktop.html",
+            "https://crbug.com/1394403"
+        ],
+        "summary": "Type confusion in V8 in Google Chrome prior to 108.0.5359.94 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)"
+    },
+    {
+        "Modified": "2022-12-05T13:15:00",
+        "Published": "2022-12-01T18:15:00",
+        "access": {},
+        "assigner": "security-alert@sophos.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-3226",
+        "impact": {},
+        "last-modified": "2022-12-05T13:15:00",
+        "references": [
+            "https://www.sophos.com/en-us/security-advisories/sophos-sa-20221201-sfos-19-5-0"
+        ],
+        "summary": "An OS command injection vulnerability allows admins to execute code via SSL VPN configuration uploads in Sophos Firewall releases older than version 19.5 GA."
+    },
+    {
+        "Modified": "2022-12-05T13:15:00",
+        "Published": "2022-12-01T18:15:00",
+        "access": {},
+        "assigner": "security-alert@sophos.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-3696",
+        "impact": {},
+        "last-modified": "2022-12-05T13:15:00",
+        "references": [
+            "https://www.sophos.com/en-us/security-advisories/sophos-sa-20221201-sfos-19-5-0"
+        ],
+        "summary": "A post-auth code injection vulnerability allows admins to execute code in Webadmin of Sophos Firewall releases older than version 19.5 GA."
+    },
+    {
+        "Modified": "2022-12-05T13:15:00",
+        "Published": "2022-12-01T18:15:00",
+        "access": {},
+        "assigner": "security-alert@sophos.com",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2022-3709",
+        "impact": {},
+        "last-modified": "2022-12-05T13:15:00",
+        "references": [
+            "https://www.sophos.com/en-us/security-advisories/sophos-sa-20221201-sfos-19-5-0"
+        ],
+        "summary": "A stored XSS vulnerability allows admin to super-admin privilege escalation in the Webadmin import group wizard of Sophos Firewall releases older than version 19.5 GA."
+    },
+    {
+        "Modified": "2022-12-05T13:15:00",
+        "Published": "2022-12-01T18:15:00",
+        "access": {},
+        "assigner": "security-alert@sophos.com",
+        "cvss": null,
+        "cwe": "CWE-89",
+        "id": "CVE-2022-3710",
+        "impact": {},
+        "last-modified": "2022-12-05T13:15:00",
+        "references": [
+            "https://www.sophos.com/en-us/security-advisories/sophos-sa-20221201-sfos-19-5-0"
+        ],
+        "summary": "A post-auth read-only SQL injection vulnerability allows API clients to read non-sensitive configuration database contents in the API controller of Sophos Firewall releases older than version 19.5 GA."
+    },
+    {
+        "Modified": "2022-12-05T13:15:00",
+        "Published": "2022-12-01T18:15:00",
+        "access": {},
+        "assigner": "security-alert@sophos.com",
+        "cvss": null,
+        "cwe": "CWE-89",
+        "id": "CVE-2022-3711",
+        "impact": {},
+        "last-modified": "2022-12-05T13:15:00",
+        "references": [
+            "https://www.sophos.com/en-us/security-advisories/sophos-sa-20221201-sfos-19-5-0"
+        ],
+        "summary": "A post-auth read-only SQL injection vulnerability allows users to read non-sensitive configuration database contents in the User Portal of Sophos Firewall releases older than version 19.5 GA."
+    },
+    {
+        "Modified": "2022-12-05T13:15:00",
+        "Published": "2022-12-01T18:15:00",
+        "access": {},
+        "assigner": "security-alert@sophos.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-3713",
+        "impact": {},
+        "last-modified": "2022-12-05T13:15:00",
+        "references": [
+            "https://www.sophos.com/en-us/security-advisories/sophos-sa-20221201-sfos-19-5-0"
+        ],
+        "summary": "A code injection vulnerability allows adjacent attackers to execute code in the Wifi controller of Sophos Firewall releases older than version 19.5 GA."
+    },
+    {
         "Modified": "2022-12-05T12:16:00",
         "Published": "2022-12-05T11:15:00",
         "access": {},
@@ -1872,252 +2013,5 @@
             "http://www.securityfocus.com/bid/106552"
         ],
         "summary": "Premisys Identicard version 3.1.190 contains hardcoded credentials in the WCF service on port 9003. An authenticated remote attacker can use these credentials to access the badge system database and modify its contents."
-    },
-    {
-        "Modified": "2022-12-03T14:43:00",
-        "Published": "2019-03-25T19:29:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "LOW",
-            "vector": "NETWORK"
-        },
-        "assigner": "psirt@us.ibm.com",
-        "cvss": 5.0,
-        "cvss-time": "2022-12-03T14:43:00",
-        "cvss-vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
-        "cwe": "CWE-400",
-        "id": "CVE-2019-4046",
-        "impact": {
-            "availability": "PARTIAL",
-            "confidentiality": "NONE",
-            "integrity": "NONE"
-        },
-        "last-modified": "2022-12-03T14:43:00",
-        "references": [
-            "https://www.ibm.com/support/docview.wss?uid=ibm10869570",
-            "https://exchange.xforce.ibmcloud.com/vulnerabilities/156242",
-            "http://www.securityfocus.com/bid/107623"
-        ],
-        "summary": "IBM WebSphere Application Server 7.0, 8.0, 8.5, and 9.0 is vulnerable to a denial of service, caused by improper handling of request headers. A remote attacker could exploit this vulnerability to cause the consumption of Memory. IBM X-Force ID: 156242."
-    },
-    {
-        "Modified": "2022-12-03T14:43:00",
-        "Published": "2019-04-02T14:29:00",
-        "access": {
-            "authentication": "SINGLE",
-            "complexity": "LOW",
-            "vector": "NETWORK"
-        },
-        "assigner": "psirt@us.ibm.com",
-        "cvss": 5.5,
-        "cvss-time": "2022-12-03T14:43:00",
-        "cvss-vector": "AV:N/AC:L/Au:S/C:P/I:N/A:P",
-        "cwe": "CWE-611",
-        "id": "CVE-2019-4043",
-        "impact": {
-            "availability": "PARTIAL",
-            "confidentiality": "PARTIAL",
-            "integrity": "NONE"
-        },
-        "last-modified": "2022-12-03T14:43:00",
-        "references": [
-            "https://www.ibm.com/support/docview.wss?uid=ibm10874238",
-            "https://exchange.xforce.ibmcloud.com/vulnerabilities/156239",
-            "http://www.securityfocus.com/bid/107778"
-        ],
-        "summary": "IBM Sterling B2B Integrator Standard Edition 5.2.0 snf 6.0.0.0 is vulnerable to an XML External Entity Injection (XXE) attack when processing XML data. A remote attacker could exploit this vulnerability to expose sensitive information or consume memory resources. IBM X-Force ID: 156239."
-    },
-    {
-        "Modified": "2022-12-03T14:43:00",
-        "Published": "2019-03-05T18:29:00",
-        "access": {
-            "authentication": "SINGLE",
-            "complexity": "MEDIUM",
-            "vector": "NETWORK"
-        },
-        "assigner": "psirt@us.ibm.com",
-        "cvss": 3.5,
-        "cvss-time": "2022-12-03T14:43:00",
-        "cvss-vector": "AV:N/AC:M/Au:S/C:N/I:P/A:N",
-        "cwe": "CWE-79",
-        "id": "CVE-2019-4027",
-        "impact": {
-            "availability": "NONE",
-            "confidentiality": "NONE",
-            "integrity": "PARTIAL"
-        },
-        "last-modified": "2022-12-03T14:43:00",
-        "references": [
-            "https://www.ibm.com/support/docview.wss?uid=ibm10874246",
-            "https://exchange.xforce.ibmcloud.com/vulnerabilities/155905",
-            "http://www.securityfocus.com/bid/107223"
-        ],
-        "summary": "IBM Sterling B2B Integrator 5.2.0.1 through 6.0.0.0 is vulnerable to cross-site scripting. This vulnerability allows users to embed arbitrary JavaScript code in the Web UI thus altering the intended functionality potentially leading to credentials disclosure within a trusted session. IBM X-ForceID: 155905."
-    },
-    {
-        "Modified": "2022-12-03T14:42:00",
-        "Published": "2019-02-07T15:29:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "LOW",
-            "vector": "NETWORK"
-        },
-        "assigner": "psirt@us.ibm.com",
-        "cvss": 5.0,
-        "cvss-time": "2022-12-03T14:42:00",
-        "cvss-vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N",
-        "cwe": "CWE-532",
-        "id": "CVE-2019-4008",
-        "impact": {
-            "availability": "NONE",
-            "confidentiality": "PARTIAL",
-            "integrity": "NONE"
-        },
-        "last-modified": "2022-12-03T14:42:00",
-        "references": [
-            "https://www.ibm.com/support/docview.wss?uid=ibm10869772",
-            "https://exchange.xforce.ibmcloud.com/vulnerabilities/155626",
-            "http://www.securityfocus.com/bid/106961"
-        ],
-        "summary": "API Connect V2018.1 through 2018.4.1.1 is impacted by access token leak. Authorization tokens in some URLs can result in the tokens being written to log files. IBM X-Force ID: 155626."
-    },
-    {
-        "Modified": "2022-12-03T14:42:00",
-        "Published": "2019-02-04T21:29:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "LOW",
-            "vector": "LOCAL"
-        },
-        "assigner": "psirt@us.ibm.com",
-        "cvss": 4.6,
-        "cvss-time": "2022-12-03T14:42:00",
-        "cvss-vector": "AV:L/AC:L/Au:N/C:P/I:P/A:P",
-        "cwe": "CWE-94",
-        "id": "CVE-2019-4038",
-        "impact": {
-            "availability": "PARTIAL",
-            "confidentiality": "PARTIAL",
-            "integrity": "PARTIAL"
-        },
-        "last-modified": "2022-12-03T14:42:00",
-        "references": [
-            "https://www.ibm.com/support/docview.wss?uid=ibm10869604",
-            "https://exchange.xforce.ibmcloud.com/vulnerabilities/156162"
-        ],
-        "summary": "IBM Security Identity Manager 6.0 and 7.0 could allow an attacker to create unexpected control flow paths through the application, potentially bypassing security checks. Exploitation of this weakness can result in a limited form of code injection. IBM X-Force ID: 156162."
-    },
-    {
-        "Modified": "2022-12-03T14:33:00",
-        "Published": "2020-07-22T22:15:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "LOW",
-            "vector": "NETWORK"
-        },
-        "assigner": "cve@mitre.org",
-        "cvss": 7.5,
-        "cvss-time": "2022-12-03T14:33:00",
-        "cvss-vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
-        "cwe": "NVD-CWE-noinfo",
-        "id": "CVE-2020-15901",
-        "impact": {
-            "availability": "PARTIAL",
-            "confidentiality": "PARTIAL",
-            "integrity": "PARTIAL"
-        },
-        "last-modified": "2022-12-03T14:33:00",
-        "references": [
-            "https://www.nagios.com/downloads/nagios-xi/change-log/",
-            "https://www.nagios.com/products/security/",
-            "https://insinuator.net/2020/07/security-advisories-for-nagios-xi/"
-        ],
-        "summary": "In Nagios XI before 5.7.3, ajaxhelper.php allows remote authenticated attackers to execute arbitrary commands via cmdsubsys."
-    },
-    {
-        "Modified": "2022-12-03T14:32:00",
-        "Published": "2020-07-20T18:15:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "LOW",
-            "vector": "NETWORK"
-        },
-        "assigner": "psirt@cisco.com",
-        "cvss": 5.0,
-        "cvss-time": "2022-12-03T14:32:00",
-        "cvss-vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
-        "cwe": "CWE-476",
-        "id": "CVE-2020-3481",
-        "impact": {
-            "availability": "PARTIAL",
-            "confidentiality": "NONE",
-            "integrity": "NONE"
-        },
-        "last-modified": "2022-12-03T14:32:00",
-        "references": [
-            "https://blog.clamav.net/2020/07/clamav-01024-security-patch-released.html",
-            "https://security.gentoo.org/glsa/202007-23",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/QM7EXJHDEZJLWM2NKH6TCDXOBP5NNYIN/",
-            "https://usn.ubuntu.com/4435-1/",
-            "https://usn.ubuntu.com/4435-2/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/IJ67VH37NCG25PICGWFWZHSVG7PBT7MC/",
-            "https://lists.debian.org/debian-lts-announce/2020/08/msg00010.html"
-        ],
-        "summary": "A vulnerability in the EGG archive parsing module in Clam AntiVirus (ClamAV) Software versions 0.102.0 - 0.102.3 could allow an unauthenticated, remote attacker to cause a denial of service condition on an affected device. The vulnerability is due to a null pointer dereference. An attacker could exploit this vulnerability by sending a crafted EGG file to an affected device. An exploit could allow the attacker to cause the ClamAV scanning process crash, resulting in a denial of service condition."
-    },
-    {
-        "Modified": "2022-12-03T14:32:00",
-        "Published": "2020-07-20T19:15:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "LOW",
-            "vector": "LOCAL"
-        },
-        "assigner": "cve@mitre.org",
-        "cvss": 4.6,
-        "cvss-time": "2022-12-03T14:32:00",
-        "cvss-vector": "AV:L/AC:L/Au:N/C:P/I:P/A:P",
-        "cwe": "CWE-276",
-        "id": "CVE-2020-15852",
-        "impact": {
-            "availability": "PARTIAL",
-            "confidentiality": "PARTIAL",
-            "integrity": "PARTIAL"
-        },
-        "last-modified": "2022-12-03T14:32:00",
-        "references": [
-            "https://github.com/torvalds/linux/commit/cadfad870154e14f745ec845708bc17d166065f2",
-            "http://xenbits.xen.org/xsa/advisory-329.html",
-            "https://git.kernel.org/cgit/linux/kernel/git/torvalds/linux.git/commit/?id=cadfad870154e14f745ec845708bc17d166065f2",
-            "http://www.openwall.com/lists/oss-security/2020/07/21/2",
-            "https://security.netapp.com/advisory/ntap-20200810-0001/"
-        ],
-        "summary": "An issue was discovered in the Linux kernel 5.5 through 5.7.9, as used in Xen through 4.13.x for x86 PV guests. An attacker may be granted the I/O port permissions of an unrelated task. This occurs because tss_invalidate_io_bitmap mishandling causes a loss of synchronization between the I/O bitmaps of TSS and Xen, aka CID-cadfad870154."
-    },
-    {
-        "Modified": "2022-12-03T14:31:00",
-        "Published": "2019-06-26T15:15:00",
-        "access": {
-            "authentication": "SINGLE",
-            "complexity": "LOW",
-            "vector": "NETWORK"
-        },
-        "assigner": "psirt@us.ibm.com",
-        "cvss": 6.5,
-        "cvss-time": "2022-12-03T14:31:00",
-        "cvss-vector": "AV:N/AC:L/Au:S/C:P/I:P/A:P",
-        "cwe": "CWE-89",
-        "id": "CVE-2019-4224",
-        "impact": {
-            "availability": "PARTIAL",
-            "confidentiality": "PARTIAL",
-            "integrity": "PARTIAL"
-        },
-        "last-modified": "2022-12-03T14:31:00",
-        "references": [
-            "https://www-01.ibm.com/support/docview.wss?uid=ibm10885602",
-            "https://exchange.xforce.ibmcloud.com/vulnerabilities/159240"
-        ],
-        "summary": "IBM PureApplication System 2.2.3.0 through 2.2.5.3 is vulnerable to SQL injection. A remote attacker could send specially-crafted SQL statements, which could allow the attacker to view, add, modify or delete information in the back-end database. IBM X-Force ID: 159240."
     }
 ]
