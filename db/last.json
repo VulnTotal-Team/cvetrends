@@ -1,5 +1,1256 @@
 [
     {
+        "Modified": "2022-12-06T20:54:00",
+        "Published": "2019-04-30T21:29:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "vulnreport@tenable.com",
+        "cvss": 6.4,
+        "cvss-time": "2022-12-06T20:54:00",
+        "cvss-vector": "AV:N/AC:L/Au:N/C:N/I:P/A:P",
+        "cwe": "NVD-CWE-Other",
+        "id": "CVE-2019-3935",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "NONE",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-12-06T20:54:00",
+        "references": [
+            "https://www.tenable.com/security/research/tra-2019-20"
+        ],
+        "summary": "Crestron AM-100 with firmware 1.6.0.2 and AM-101 with firmware 2.7.0.2 allows anyone to act as a moderator to a slide show via crafted HTTP POST requests to conference.cgi. A remote, unauthenticated attacker can use this vulnerability to start, stop, and disconnect active slideshows."
+    },
+    {
+        "Modified": "2022-12-06T20:52:00",
+        "Published": "2019-04-30T21:29:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "vulnreport@tenable.com",
+        "cvss": 7.5,
+        "cvss-time": "2022-12-06T20:52:00",
+        "cvss-vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+        "cwe": "CWE-798",
+        "id": "CVE-2019-3939",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "PARTIAL",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-12-06T20:52:00",
+        "references": [
+            "https://www.tenable.com/security/research/tra-2019-20"
+        ],
+        "summary": "Crestron AM-100 with firmware 1.6.0.2 and AM-101 with firmware 2.7.0.2 use default credentials admin/admin and moderator/moderator for the web interface. An unauthenticated, remote attacker can use these credentials to gain privileged access to the device."
+    },
+    {
+        "Modified": "2022-12-06T20:52:00",
+        "Published": "2019-04-30T21:29:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "LOCAL"
+        },
+        "assigner": "vulnreport@tenable.com",
+        "cvss": 2.1,
+        "cvss-time": "2022-12-06T20:52:00",
+        "cvss-vector": "AV:L/AC:L/Au:N/C:P/I:N/A:N",
+        "cwe": "CWE-798",
+        "id": "CVE-2019-3938",
+        "impact": {
+            "availability": "NONE",
+            "confidentiality": "PARTIAL",
+            "integrity": "NONE"
+        },
+        "last-modified": "2022-12-06T20:52:00",
+        "references": [
+            "https://www.tenable.com/security/research/tra-2019-20"
+        ],
+        "summary": "Crestron AM-100 with firmware 1.6.0.2 and AM-101 with firmware 2.7.0.2 stores usernames, passwords, and other configuration options in the file generated via the \"export configuration\" feature. The configuration file is encrypted using the awenc binary. The same binary can be used to decrypt any configuration file since all the encryption logic is hard coded. A local attacker can use this vulnerability to gain access to devices username and passwords."
+    },
+    {
+        "Modified": "2022-12-06T20:51:00",
+        "Published": "2019-07-30T21:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "LOCAL"
+        },
+        "assigner": "cve-assignments@hackerone.com",
+        "cvss": 4.6,
+        "cvss-time": "2022-12-06T20:51:00",
+        "cvss-vector": "AV:L/AC:L/Au:N/C:P/I:P/A:P",
+        "cwe": "CWE-287",
+        "id": "CVE-2019-5455",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "PARTIAL",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-12-06T20:51:00",
+        "references": [
+            "https://hackerone.com/reports/490946"
+        ],
+        "summary": "Bypassing lock protection exists in Nextcloud Android app 3.6.0 when creating a multi-account and aborting the process."
+    },
+    {
+        "Modified": "2022-12-06T20:51:00",
+        "Published": "2019-07-30T14:15:00",
+        "access": {
+            "authentication": "SINGLE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "psirt@us.ibm.com",
+        "cvss": 5.5,
+        "cvss-time": "2022-12-06T20:51:00",
+        "cvss-vector": "AV:N/AC:L/Au:S/C:P/I:N/A:P",
+        "cwe": "CWE-611",
+        "id": "CVE-2019-4456",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "PARTIAL",
+            "integrity": "NONE"
+        },
+        "last-modified": "2022-12-06T20:51:00",
+        "references": [
+            "https://www.ibm.com/support/docview.wss?uid=ibm10959177",
+            "https://exchange.xforce.ibmcloud.com/vulnerabilities/163620"
+        ],
+        "summary": "IBM Daeja ViewONE Professional, Standard & Virtual 5.0.5 and 5.0.6 is vulnerable to an XML External Entity Injection (XXE) attack when processing XML data. A remote attacker could exploit this vulnerability to expose sensitive information or consume memory resources. IBM X-Force ID: 163620."
+    },
+    {
+        "Modified": "2022-12-06T20:51:00",
+        "Published": "2019-07-30T21:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "MEDIUM",
+            "vector": "NETWORK"
+        },
+        "assigner": "cve-assignments@hackerone.com",
+        "cvss": 4.3,
+        "cvss-time": "2022-12-06T20:51:00",
+        "cvss-vector": "AV:N/AC:M/Au:N/C:P/I:N/A:N",
+        "cwe": "CWE-255",
+        "id": "CVE-2019-5456",
+        "impact": {
+            "availability": "NONE",
+            "confidentiality": "PARTIAL",
+            "integrity": "NONE"
+        },
+        "last-modified": "2022-12-06T20:51:00",
+        "references": [
+            "https://community.ui.com/releases/862b962b-55f6-4324-96be-610f647d5c1c",
+            "https://hackerone.com/reports/519582",
+            "https://community.ui.com/releases/Security-Advisory-Bulletin-003-003/982bbaa8-2a07-4f81-a5f6-0bb84753f391",
+            "https://community.ui.com/releases/9f698d0b-8279-40d3-9f1a-d36db4813124"
+        ],
+        "summary": "SMTP MITM refers to a malicious actor setting up an SMTP proxy server between the UniFi Controller version <= 5.10.21 and their actual SMTP server to record their SMTP credentials for malicious use later."
+    },
+    {
+        "Modified": "2022-12-06T20:51:00",
+        "Published": "2020-08-18T21:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "cve@mitre.org",
+        "cvss": 10.0,
+        "cvss-time": "2022-12-06T20:51:00",
+        "cvss-vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C",
+        "cwe": "CWE-78",
+        "id": "CVE-2020-24032",
+        "impact": {
+            "availability": "COMPLETE",
+            "confidentiality": "COMPLETE",
+            "integrity": "COMPLETE"
+        },
+        "last-modified": "2022-12-06T20:51:00",
+        "references": [
+            "https://www.stor2rrd.com/download.php",
+            "https://pastebin.com/dHhawgx8",
+            "https://pastebin.com/G8981Fj8"
+        ],
+        "summary": "tz.pl on XoruX LPAR2RRD and STOR2RRD 2.70 virtual appliances allows cmd=set&tz=OS command injection via shell metacharacters in a timezone."
+    },
+    {
+        "Modified": "2022-12-06T20:50:00",
+        "Published": "2020-08-24T15:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "LOCAL"
+        },
+        "assigner": "secalert@redhat.com",
+        "cvss": 3.6,
+        "cvss-time": "2022-12-06T20:50:00",
+        "cvss-vector": "AV:L/AC:L/Au:N/C:N/I:P/A:P",
+        "cwe": "CWE-59",
+        "id": "CVE-2020-14367",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "NONE",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-12-06T20:50:00",
+        "references": [
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6WKABKNLCSC3MACCWU6OM2YGWVWFWFMU/",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=1870298",
+            "https://security.gentoo.org/glsa/202008-23",
+            "https://usn.ubuntu.com/4475-1/"
+        ],
+        "summary": "A flaw was found in chrony versions before 3.5.1 when creating the PID file under the /var/run/chrony folder. The file is created during chronyd startup while still running as the root user, and when it's opened for writing, chronyd does not check for an existing symbolic link with the same file name. This flaw allows an attacker with privileged access to create a symlink with the default PID file name pointing to any destination file in the system, resulting in data loss and a denial of service due to the path traversal."
+    },
+    {
+        "Modified": "2022-12-06T20:50:00",
+        "Published": "2020-08-24T08:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "cve@mitre.org",
+        "cvss": 5.0,
+        "cvss-time": "2022-12-06T20:50:00",
+        "cvss-vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N",
+        "cwe": "CWE-347",
+        "id": "CVE-2020-13101",
+        "impact": {
+            "availability": "NONE",
+            "confidentiality": "NONE",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-12-06T20:50:00",
+        "references": [
+            "https://www.oasis-open.org/standards#dssv1.0",
+            "https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=dss-x",
+            "https://www.oasis-open.org/apps/org/workgroup/dss-x/"
+        ],
+        "summary": "In OASIS Digital Signature Services (DSS) 1.0, an attacker can control the validation outcome (i.e., trigger either a valid or invalid outcome for a valid or invalid signature) via a crafted XML signature, when the InlineXML option is used. This defeats the expectation of non-repudiation."
+    },
+    {
+        "Modified": "2022-12-06T20:49:00",
+        "Published": "2020-08-24T16:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "MEDIUM",
+            "vector": "NETWORK"
+        },
+        "assigner": "cve@mitre.org",
+        "cvss": 6.8,
+        "cvss-time": "2022-12-06T20:49:00",
+        "cvss-vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
+        "cwe": "CWE-352",
+        "id": "CVE-2020-14043",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "PARTIAL",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-12-06T20:49:00",
+        "references": [
+            "https://github.com/Codiad/Codiad/blob/master/README.md",
+            "https://github.com/Codiad/Codiad/issues/1122",
+            "https://advisory.checkmarx.net/advisory/CX-2020-4279"
+        ],
+        "summary": "** PRODUCT NOT SUPPORTED WHEN ASSIGNED ** A Cross Side Request Forgery (CSRF) vulnerability was found in Codiad v1.7.8 and later. The request to download a plugin from the marketplace is only available to admin users and it isn't CSRF protected in components/market/controller.php. This might cause admins to make a vulnerable request without them knowing and result in remote code execution. NOTE: the vendor states \"Codiad is no longer under active maintenance by core contributors.\""
+    },
+    {
+        "Modified": "2022-12-06T20:46:00",
+        "Published": "2020-08-24T16:15:00",
+        "access": {
+            "authentication": "SINGLE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "cve@mitre.org",
+        "cvss": 6.5,
+        "cvss-time": "2022-12-06T20:46:00",
+        "cvss-vector": "AV:N/AC:L/Au:S/C:P/I:P/A:P",
+        "cwe": "CWE-918",
+        "id": "CVE-2020-14044",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "PARTIAL",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-12-06T20:46:00",
+        "references": [
+            "https://github.com/Codiad/Codiad/blob/master/README.md",
+            "https://github.com/Codiad/Codiad/issues/1122",
+            "https://advisory.checkmarx.net/advisory/CX-2020-4280"
+        ],
+        "summary": "** PRODUCT NOT SUPPORTED WHEN ASSIGNED ** A Server-Side Request Forgery (SSRF) vulnerability was found in Codiad v1.7.8 and later. A user with admin privileges could use the plugin install feature to make the server request any URL via components/market/class.market.php. This could potentially result in remote code execution. NOTE: the vendor states \"Codiad is no longer under active maintenance by core contributors.\""
+    },
+    {
+        "Modified": "2022-12-06T20:43:00",
+        "Published": "2022-12-05T04:15:00",
+        "access": {},
+        "assigner": "vultures@jpcert.or.jp",
+        "cvss": null,
+        "cwe": "CWE-78",
+        "id": "CVE-2022-41642",
+        "impact": {},
+        "last-modified": "2022-12-06T20:43:00",
+        "references": [
+            "https://jvn.jp/en/jp/JVN56968681/index.html",
+            "https://github.com/kujirahand/nadesiko3/issues/1325",
+            "https://github.com/kujirahand/nadesiko3/issues/1347"
+        ],
+        "summary": "OS command injection vulnerability in Nadesiko3 (PC Version) v3.3.61 and earlier allows a remote attacker to execute an arbitrary OS command when processing compression and decompression on the product."
+    },
+    {
+        "Modified": "2022-12-06T20:40:00",
+        "Published": "2022-12-04T23:15:00",
+        "access": {},
+        "assigner": "audit@patchstack.com",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2022-40968",
+        "impact": {},
+        "last-modified": "2022-12-06T20:40:00",
+        "references": [
+            "https://patchstack.com/database/vulnerability/2kb-amazon-affiliates-store/wordpress-2kb-amazon-affiliates-store-plugin-2-1-5-auth-stored-cross-site-scripting-xss-vulnerability?_s_id=cve"
+        ],
+        "summary": "Reflected Cross-Site Scripting (XSS) vulnerability in 2kb Amazon Affiliates Store plugin <=2.1.5 on WordPress."
+    },
+    {
+        "Modified": "2022-12-06T20:34:00",
+        "Published": "2022-12-05T20:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-125",
+        "id": "CVE-2022-23467",
+        "impact": {},
+        "last-modified": "2022-12-06T20:34:00",
+        "references": [
+            "https://github.com/openrazer/openrazer/security/advisories/GHSA-39hg-jvc9-fg7h",
+            "https://github.com/openrazer/openrazer/commit/33aa7f07d54ae066f201c6d298cb4a2181cb90e6"
+        ],
+        "summary": "OpenRazer is an open source driver and user-space daemon to control Razer device lighting and other features on GNU/Linux. Using a modified USB device an attacker can leak stack addresses of the `razer_attr_read_dpi_stages`, potentially bypassing KASLR. To exploit this vulnerability an attacker would need to access to a users keyboard or mouse or would need to convince a user to use a modified device. The issue has been patched in v3.5.1. Users are advised to upgrade and should be reminded not to plug in unknown USB devices."
+    },
+    {
+        "Modified": "2022-12-06T20:33:00",
+        "Published": "2022-12-05T23:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2022-43706",
+        "impact": {},
+        "last-modified": "2022-12-06T20:33:00",
+        "references": [
+            "https://stackstorm.com/2022/12/v3-8-0-released/"
+        ],
+        "summary": "Cross-site scripting (XSS) vulnerability in the Web UI of StackStorm versions prior to 3.8.0 allowed logged in users with write access to pack rules to inject arbitrary script or HTML that may be executed in Web UI for other logged in users."
+    },
+    {
+        "Modified": "2022-12-06T20:30:00",
+        "Published": "2022-12-05T22:15:00",
+        "access": {},
+        "assigner": "cert@cert.org",
+        "cvss": null,
+        "cwe": "NVD-CWE-noinfo",
+        "id": "CVE-2022-40259",
+        "impact": {},
+        "last-modified": "2022-12-06T20:30:00",
+        "references": [
+            "https://cp.ami.com/MegaRAC%20Security%20Advisory/SP-X/AMI_MegaRAC_SPx_Arbitrary_Code_via_Redfish_API.pdf"
+        ],
+        "summary": "AMI MegaRAC Redfish Arbitrary Code Execution"
+    },
+    {
+        "Modified": "2022-12-06T20:22:00",
+        "Published": "2022-12-05T23:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-89",
+        "id": "CVE-2022-45019",
+        "impact": {},
+        "last-modified": "2022-12-06T20:22:00",
+        "references": [
+            "https://github.com/nu11secur1ty/CVE-nu11secur1ty/tree/main/vendors/slims.web.id/SLIMS-9.5.0"
+        ],
+        "summary": "SLiMS 9 Bulian v9.5.0 was discovered to contain a SQL injection vulnerability via the keywords parameter."
+    },
+    {
+        "Modified": "2022-12-06T20:21:00",
+        "Published": "2022-12-05T20:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2022-43097",
+        "impact": {},
+        "last-modified": "2022-12-06T20:21:00",
+        "references": [
+            "https://github.com/nibin-m/CVE-2022-43097"
+        ],
+        "summary": "Phpgurukul User Registration & User Management System v3.0 was discovered to contain multiple stored cross-site scripting (XSS) vulnerabilities via the firstname and lastname parameters of the registration form & login pages."
+    },
+    {
+        "Modified": "2022-12-06T20:18:00",
+        "Published": "2022-12-06T00:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-787",
+        "id": "CVE-2022-45283",
+        "impact": {},
+        "last-modified": "2022-12-06T20:18:00",
+        "references": [
+            "https://github.com/gpac/gpac/issues/2295"
+        ],
+        "summary": "GPAC MP4box v2.0.0 was discovered to contain a stack overflow in the smil_parse_time_list parameter at /scenegraph/svg_attributes.c."
+    },
+    {
+        "Modified": "2022-12-06T20:15:00",
+        "Published": "2022-12-06T20:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2022-23475",
+        "impact": {},
+        "last-modified": "2022-12-06T20:15:00",
+        "references": [
+            "https://github.com/lirantal/daloradius/security/advisories/GHSA-c9xx-6mvw-9v84",
+            "https://github.com/lirantal/daloradius/commit/ec3b4a419e20540cf28ce60e48998b893e3f1dea"
+        ],
+        "summary": "daloRADIUS is an open source RADIUS web management application. daloRadius 1.3 and prior are vulnerable to a combination cross site scripting (XSS) and cross site request forgery (CSRF) vulnerability which leads to account takeover in the mng-del.php file because of an unescaped variable reflected in the DOM on line 116. This issue has been addressed in commit `ec3b4a419e`. Users are advised to manually apply the commit in order to mitigate this issue. Users may also mitigate this issue with in two parts 1) The CSRF vulnerability can be mitigated by making the daloRadius session cookie to samesite=Lax or by the implimentation of a CSRF token in all forms. 2) The XSS vulnerability may be mitigated by escaping it or by introducing a Content-Security policy."
+    },
+    {
+        "Modified": "2022-12-06T20:15:00",
+        "Published": "2022-12-06T20:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-44900",
+        "impact": {},
+        "last-modified": "2022-12-06T20:15:00",
+        "references": [
+            "https://github.com/miurahr/py7zr/commit/1bb43f17515c7f69673a1c88ab9cc72a7bbef406"
+        ],
+        "summary": "A directory traversal vulnerability in the SevenZipFile.extractall() function of the python library py7zr v0.20.0 and earlier allows attackers to write arbitrary files via extracting a crafted 7z file."
+    },
+    {
+        "Modified": "2022-12-06T20:15:00",
+        "Published": "2022-12-06T20:15:00",
+        "access": {},
+        "assigner": "tbd@nist.gov",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-46332",
+        "impact": {},
+        "last-modified": "2022-12-06T20:15:00",
+        "references": [
+            "https://www.proofpoint.com/security/security-advisories/pfpt-sa-2022-0002"
+        ],
+        "summary": "The Admin Smart Search feature in Proofpoint Enterprise Protection (PPS/PoD) contains a stored cross-site scripting vulnerability that enables an anonymous email sender to gain admin privileges within the user interface. This affects all versions 8.19.0 and below."
+    },
+    {
+        "Modified": "2022-12-06T20:15:00",
+        "Published": "2022-12-06T20:15:00",
+        "access": {},
+        "assigner": "tbd@nist.gov",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-46333",
+        "impact": {},
+        "last-modified": "2022-12-06T20:15:00",
+        "references": [
+            "https://www.proofpoint.com/security/security-advisories/pfpt-sa-2022-0003"
+        ],
+        "summary": "The admin user interface in Proofpoint Enterprise Protection (PPS/PoD) contains a command injection vulnerability that enables an admin to execute commands beyond their allowed scope. This affects all versions 8.19.0 and below."
+    },
+    {
+        "Modified": "2022-12-06T20:12:00",
+        "Published": "2022-12-05T20:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "NVD-CWE-noinfo",
+        "id": "CVE-2022-45771",
+        "impact": {},
+        "last-modified": "2022-12-06T20:12:00",
+        "references": [
+            "https://github.com/pwndoc/pwndoc",
+            "https://github.com/pwndoc/pwndoc/issues/401"
+        ],
+        "summary": "An issue in the /api/audits component of Pwndoc v0.5.3 allows attackers to escalate privileges and execute arbitrary code via uploading a crafted audit file."
+    },
+    {
+        "Modified": "2022-12-06T20:10:00",
+        "Published": "2022-12-06T00:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-287",
+        "id": "CVE-2022-38336",
+        "impact": {},
+        "last-modified": "2022-12-06T20:10:00",
+        "references": [
+            "https://docs.ssh-mitm.at/vulnerabilities/CVE-2022-38336.html"
+        ],
+        "summary": "An access control issue in MobaXterm before v22.1 allows attackers to make connections to the server via the SSH or SFTP protocols without authentication."
+    },
+    {
+        "Modified": "2022-12-06T20:08:00",
+        "Published": "2022-12-05T21:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2021-34181",
+        "impact": {},
+        "last-modified": "2022-12-06T20:08:00",
+        "references": [
+            "https://www.cnblogs.com/mrhonest/p/16949304.html"
+        ],
+        "summary": "Cross Site Scripting (XSS) vulnerability in TomExam 3.0 via p_name parameter to list.thtml."
+    },
+    {
+        "Modified": "2022-12-06T20:06:00",
+        "Published": "2022-12-05T23:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2022-45020",
+        "impact": {},
+        "last-modified": "2022-12-06T20:06:00",
+        "references": [
+            "https://github.com/nu11secur1ty/CVE-nu11secur1ty/tree/main/vendors/rukovoditel.net/2022/rukovoditel-3.2.1"
+        ],
+        "summary": "Rukovoditel v3.2.1 was discovered to contain a DOM-based cross-site scripting (XSS) vulnerability in the component /rukovoditel/index.php?module=users/login. This vulnerability allows attackers to cause a Denial of Service (DoS) via a crafted GET request."
+    },
+    {
+        "Modified": "2022-12-06T20:05:00",
+        "Published": "2022-12-05T21:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-77",
+        "id": "CVE-2022-46169",
+        "impact": {},
+        "last-modified": "2022-12-06T20:05:00",
+        "references": [
+            "https://github.com/Cacti/cacti/security/advisories/GHSA-6p93-p743-35gf",
+            "https://github.com/Cacti/cacti/commit/b43f13ae7f1e6bfe4e8e56a80a7cd867cf2db52b",
+            "https://github.com/Cacti/cacti/commit/a8d59e8fa5f0054aa9c6981b1cbe30ef0e2a0ec9",
+            "https://github.com/Cacti/cacti/commit/7f0e16312dd5ce20f93744ef8b9c3b0f1ece2216"
+        ],
+        "summary": "Cacti is an open source platform which provides a robust and extensible operational monitoring and fault management framework for users. In affected versions a command injection vulnerability allows an unauthenticated user to execute arbitrary code on a server running Cacti, if a specific data source was selected for any monitored device. The vulnerability resides in the `remote_agent.php` file. This file can be accessed without authentication. This function retrieves the IP address of the client via `get_client_addr` and resolves this IP address to the corresponding hostname via `gethostbyaddr`. After this, it is verified that an entry within the `poller` table exists, where the hostname corresponds to the resolved hostname. If such an entry was found, the function returns `true` and the client is authorized. This authorization can be bypassed due to the implementation of the `get_client_addr` function. The function is defined in the file `lib/functions.php` and checks serval `$_SERVER` variables to determine the IP address of the client. The variables beginning with `HTTP_` can be arbitrarily set by an attacker. Since there is a default entry in the `poller` table with the hostname of the server running Cacti, an attacker can bypass the authentication e.g. by providing the header `Forwarded-For: <TARGETIP>`. This way the function `get_client_addr` returns the IP address of the server running Cacti. The following call to `gethostbyaddr` will resolve this IP address to the hostname of the server, which will pass the `poller` hostname check because of the default entry. After the authorization of the `remote_agent.php` file is bypassed, an attacker can trigger different actions. One of these actions is called `polldata`. The called function `poll_for_data` retrieves a few request parameters and loads the corresponding `poller_item` entries from the database. If the `action` of a `poller_item` equals `POLLER_ACTION_SCRIPT_PHP`, the function `proc_open` is used to execute a PHP script. The attacker-controlled parameter `$poller_id` is retrieved via the function `get_nfilter_request_var`, which allows arbitrary strings. This variable is later inserted into the string passed to `proc_open`, which leads to a command injection vulnerability. By e.g. providing the `poller_id=;id` the `id` command is executed. In order to reach the vulnerable call, the attacker must provide a `host_id` and `local_data_id`, where the `action` of the corresponding `poller_item` is set to `POLLER_ACTION_SCRIPT_PHP`. Both of these ids (`host_id` and `local_data_id`) can easily be bruteforced. The only requirement is that a `poller_item` with an `POLLER_ACTION_SCRIPT_PHP` action exists. This is very likely on a productive instance because this action is added by some predefined templates like `Device - Uptime` or `Device - Polling Time`. This command injection vulnerability allows an unauthenticated user to execute arbitrary commands if a `poller_item` with the `action` type `POLLER_ACTION_SCRIPT_PHP` (`2`) is configured. The authorization bypass should be prevented by not allowing an attacker to make `get_client_addr` (file `lib/functions.php`) return an arbitrary IP address. This could be done by not honoring the `HTTP_...` `$_SERVER` variables. If these should be kept for compatibility reasons it should at least be prevented to fake the IP address of the server running Cacti. This vulnerability has been addressed in both the 1.2.x and 1.3.x release branches with `1.2.23` being the first release containing the patch."
+    },
+    {
+        "Modified": "2022-12-06T20:04:00",
+        "Published": "2022-12-05T23:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-91",
+        "id": "CVE-2022-46464",
+        "impact": {},
+        "last-modified": "2022-12-06T20:04:00",
+        "references": [
+            "https://github.com/nu11secur1ty/CVE-nu11secur1ty/tree/main/vendors/concretecms.org/2022/concretecms-9.1.3"
+        ],
+        "summary": "ConcreteCMS v9.1.3 was discovered to be vulnerable to Xpath injection attacks. This vulnerability allows attackers to access sensitive XML data via a crafted payload injected into the URL path folder \"3\"."
+    },
+    {
+        "Modified": "2022-12-06T20:00:00",
+        "Published": "2022-12-05T23:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2022-45990",
+        "impact": {},
+        "last-modified": "2022-12-06T20:00:00",
+        "references": [
+            "https://github.com/nu11secur1ty/CVE-nu11secur1ty/tree/main/vendors/winston-dsouza/ecommerce-website"
+        ],
+        "summary": "A cross-site scripting (XSS) vulnerability in the component /signup_script.php of Ecommerce-Website v1.0 allows attackers to execute arbitrary web scripts or HTML via a crafted payload injected into the eMail parameter."
+    },
+    {
+        "Modified": "2022-12-06T19:55:00",
+        "Published": "2022-12-05T23:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2022-45769",
+        "impact": {},
+        "last-modified": "2022-12-06T19:55:00",
+        "references": [
+            "https://github.com/nu11secur1ty/CVE-nu11secur1ty/tree/main/vendors/clicshopping.org/2022/ClicShopping_V3"
+        ],
+        "summary": "A cross-site scripting (XSS) vulnerability in ClicShopping_V3 v3.402 allows attackers to execute arbitrary web scripts or HTML via a crafted URL parameter."
+    },
+    {
+        "Modified": "2022-12-06T19:51:00",
+        "Published": "2022-12-05T17:15:00",
+        "access": {},
+        "assigner": "contact@wpscan.com",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2022-3909",
+        "impact": {},
+        "last-modified": "2022-12-06T19:51:00",
+        "references": [
+            "https://wpscan.com/vulnerability/8d57a534-7630-491a-a0fd-90430f85ae78"
+        ],
+        "summary": "The Add Comments WordPress plugin through 1.0.1 does not sanitise and escape some of its settings, which could allow high privilege users such as admin to perform Stored Cross-Site Scripting attacks even when the unfiltered_html capability is disallowed (for example in multisite setup)."
+    },
+    {
+        "Modified": "2022-12-06T19:51:00",
+        "Published": "2022-11-04T22:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-665",
+        "id": "CVE-2022-39384",
+        "impact": {},
+        "last-modified": "2022-12-06T19:51:00",
+        "references": [
+            "https://github.com/OpenZeppelin/openzeppelin-contracts/pull/3006",
+            "https://github.com/OpenZeppelin/openzeppelin-contracts/security/advisories/GHSA-9c22-pwxw-p6hx"
+        ],
+        "summary": "OpenZeppelin Contracts is a library for secure smart contract development. Before version 4.4.1 but after 3.2.0, initializer functions that are invoked separate from contract creation (the most prominent example being minimal proxies) may be reentered if they make an untrusted non-view external call. Once an initializer has finished running it can never be re-executed. However, an exception put in place to support multiple inheritance made reentrancy possible in the scenario described above, breaking the expectation that there is a single execution. Note that upgradeable proxies are commonly initialized together with contract creation, where reentrancy is not feasible, so the impact of this issue is believed to be minor. This issue has been patched, please upgrade to version 4.4.1. As a workaround, avoid untrusted external calls during initialization."
+    },
+    {
+        "Modified": "2022-12-06T19:51:00",
+        "Published": "2022-08-15T11:21:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-354",
+        "id": "CVE-2022-35961",
+        "impact": {},
+        "last-modified": "2022-12-06T19:51:00",
+        "references": [
+            "https://github.com/OpenZeppelin/openzeppelin-contracts/pull/3610",
+            "https://github.com/OpenZeppelin/openzeppelin-contracts/security/advisories/GHSA-4h98-2769-gh6h",
+            "https://github.com/OpenZeppelin/openzeppelin-contracts/releases/tag/v4.7.3"
+        ],
+        "summary": "OpenZeppelin Contracts is a library for secure smart contract development. The functions `ECDSA.recover` and `ECDSA.tryRecover` are vulnerable to a kind of signature malleability due to accepting EIP-2098 compact signatures in addition to the traditional 65 byte signature format. This is only an issue for the functions that take a single `bytes` argument, and not the functions that take `r, v, s` or `r, vs` as separate arguments. The potentially affected contracts are those that implement signature reuse or replay protection by marking the signature itself as used rather than the signed message or a nonce included in it. A user may take a signature that has already been submitted, submit it again in a different form, and bypass this protection. The issue has been patched in 4.7.3."
+    },
+    {
+        "Modified": "2022-12-06T19:51:00",
+        "Published": "2022-08-01T21:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-682",
+        "id": "CVE-2022-31198",
+        "impact": {},
+        "last-modified": "2022-12-06T19:51:00",
+        "references": [
+            "https://github.com/OpenZeppelin/openzeppelin-contracts/pull/3561",
+            "https://github.com/OpenZeppelin/openzeppelin-contracts/security/advisories/GHSA-xrc4-737v-9q75"
+        ],
+        "summary": "OpenZeppelin Contracts is a library for secure smart contract development. This issue concerns instances of Governor that use the module `GovernorVotesQuorumFraction`, a mechanism that determines quorum requirements as a percentage of the voting token's total supply. In affected instances, when a proposal is passed to lower the quorum requirements, past proposals may become executable if they had been defeated only due to lack of quorum, and the number of votes it received meets the new quorum requirement. Analysis of instances on chain found only one proposal that met this condition, and we are actively monitoring for new occurrences of this particular issue. This issue has been patched in v4.7.2. Users are advised to upgrade. Users unable to upgrade should consider avoiding lowering quorum requirements if a past proposal was defeated for lack of quorum."
+    },
+    {
+        "Modified": "2022-12-06T19:51:00",
+        "Published": "2022-08-01T21:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-400",
+        "id": "CVE-2022-35915",
+        "impact": {},
+        "last-modified": "2022-12-06T19:51:00",
+        "references": [
+            "https://github.com/OpenZeppelin/openzeppelin-contracts/pull/3587",
+            "https://github.com/OpenZeppelin/openzeppelin-contracts/security/advisories/GHSA-7grf-83vw-6f5x"
+        ],
+        "summary": "OpenZeppelin Contracts is a library for secure smart contract development. The target contract of an EIP-165 `supportsInterface` query can cause unbounded gas consumption by returning a lot of data, while it is generally assumed that this operation has a bounded cost. The issue has been fixed in v4.7.2. Users are advised to upgrade. There are no known workarounds for this issue."
+    },
+    {
+        "Modified": "2022-12-06T19:51:00",
+        "Published": "2022-08-01T21:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-669",
+        "id": "CVE-2022-35916",
+        "impact": {},
+        "last-modified": "2022-12-06T19:51:00",
+        "references": [
+            "https://github.com/OpenZeppelin/openzeppelin-contracts/pull/3578",
+            "https://github.com/OpenZeppelin/openzeppelin-contracts/security/advisories/GHSA-9j3m-g383-29qr"
+        ],
+        "summary": "OpenZeppelin Contracts is a library for secure smart contract development. Contracts using the cross chain utilities for Arbitrum L2, `CrossChainEnabledArbitrumL2` or `LibArbitrumL2`, will classify direct interactions of externally owned accounts (EOAs) as cross chain calls, even though they are not started on L1. This issue has been patched in v4.7.2. Users are advised to upgrade. There are no known workarounds for this issue."
+    },
+    {
+        "Modified": "2022-12-06T19:48:00",
+        "Published": "2022-12-05T17:15:00",
+        "access": {},
+        "assigner": "contact@wpscan.com",
+        "cvss": null,
+        "cwe": "CWE-200",
+        "id": "CVE-2022-3907",
+        "impact": {},
+        "last-modified": "2022-12-06T19:48:00",
+        "references": [
+            "https://wpscan.com/vulnerability/7920c1c1-709d-4b1f-ac08-f0a02ddb329c"
+        ],
+        "summary": "The Clerk WordPress plugin before 4.0.0 is affected by time-based attacks in the validation function for all API requests due to the usage of comparison operators to verify API keys against the ones stored in the site options."
+    },
+    {
+        "Modified": "2022-12-06T19:48:00",
+        "Published": "2022-12-02T23:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-94",
+        "id": "CVE-2022-23465",
+        "impact": {},
+        "last-modified": "2022-12-06T19:48:00",
+        "references": [
+            "https://github.com/migueldeicaza/SwiftTerm/security/advisories/GHSA-jq43-q8mx-r7mq",
+            "https://github.com/migueldeicaza/SwiftTerm/commit/a94e6b24d24ce9680ad79884992e1dff8e150a31"
+        ],
+        "summary": "SwiftTerm is a Xterm/VT100 Terminal emulator. Prior to commit a94e6b24d24ce9680ad79884992e1dff8e150a31, an attacker could modify the window title via a certain character escape sequence and then insert it back to the command line in the user's terminal, e.g. when the user views a file containing the malicious sequence, which could allow the attacker to execute arbitrary commands. Version a94e6b24d24ce9680ad79884992e1dff8e150a31 contains a patch for this issue. There are no known workarounds available."
+    },
+    {
+        "Modified": "2022-12-06T19:42:00",
+        "Published": "2022-12-05T17:15:00",
+        "access": {},
+        "assigner": "contact@wpscan.com",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2022-3892",
+        "impact": {},
+        "last-modified": "2022-12-06T19:42:00",
+        "references": [
+            "https://wpscan.com/vulnerability/33dddaec-a32a-4fce-89d6-164565be13e1"
+        ],
+        "summary": "The WP OAuth Server (OAuth Authentication) WordPress plugin before 4.2.2 does not sanitize and escape Client IDs, which could allow high privilege users such as admin to perform Stored Cross-Site Scripting attacks even when the unfiltered_html capability is disallowed (for example in multisite setup)"
+    },
+    {
+        "Modified": "2022-12-06T19:40:00",
+        "Published": "2022-12-05T17:15:00",
+        "access": {},
+        "assigner": "contact@wpscan.com",
+        "cvss": null,
+        "cwe": "CWE-352",
+        "id": "CVE-2022-3926",
+        "impact": {},
+        "last-modified": "2022-12-06T19:40:00",
+        "references": [
+            "https://wpscan.com/vulnerability/e1fcde2a-91a5-40cb-876b-884f01c80336"
+        ],
+        "summary": "The WP OAuth Server (OAuth Authentication) WordPress plugin before 3.4.2 does not have CSRF check when regenerating secrets, which could allow attackers to make logged in admins regenerate the secret of an arbitrary client given they know the client ID"
+    },
+    {
+        "Modified": "2022-12-06T19:36:00",
+        "Published": "2022-11-30T01:15:00",
+        "access": {},
+        "assigner": "Mitsubishielectric.Psirt@yd.MitsubishiElectric.co.jp",
+        "cvss": null,
+        "cwe": "CWE-20",
+        "id": "CVE-2022-40265",
+        "impact": {},
+        "last-modified": "2022-12-06T19:36:00",
+        "references": [
+            "https://jvn.jp/vu/JVNVU94702422",
+            "https://www.mitsubishielectric.com/en/psirt/vulnerability/pdf/2022-017_en.pdf"
+        ],
+        "summary": "Improper Input Validation vulnerability in Mitsubishi Electric Corporation MELSEC iQ-R Series RJ71EN71 Firmware version \"65\" and prior and Mitsubishi Electric Corporation MELSEC iQ-R Series R04/08/16/32/120ENCPU Network Part Firmware version \"65\" and prior allows a remote unauthenticated attacker to cause a Denial of Service condition by sending specially crafted packets. A system reset is required for recovery."
+    },
+    {
+        "Modified": "2022-12-06T19:27:00",
+        "Published": "2022-11-30T06:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-668",
+        "id": "CVE-2022-46338",
+        "impact": {},
+        "last-modified": "2022-12-06T19:27:00",
+        "references": [
+            "https://github.com/MatMoul/g810-led/pull/297",
+            "https://bugs.debian.org/1024998",
+            "https://lists.debian.org/debian-lts-announce/2022/12/msg00002.html"
+        ],
+        "summary": "g810-led 0.4.2, a LED configuration tool for Logitech Gx10 keyboards, contained a udev rule to make supported device nodes world-readable and writable, allowing any process on the system to read traffic from keyboards, including sensitive data."
+    },
+    {
+        "Modified": "2022-12-06T19:26:00",
+        "Published": "2022-12-05T19:15:00",
+        "access": {},
+        "assigner": "security@huntr.dev",
+        "cvss": null,
+        "cwe": "CWE-697",
+        "id": "CVE-2022-4293",
+        "impact": {},
+        "last-modified": "2022-12-06T19:26:00",
+        "references": [
+            "https://huntr.dev/bounties/385a835f-6e33-4d00-acce-ac99f3939143",
+            "https://github.com/vim/vim/commit/cdef1cefa2a440911c727558562f83ed9b00e16b"
+        ],
+        "summary": "Floating Point Comparison with Incorrect Operator in GitHub repository vim/vim prior to 9.0.0804."
+    },
+    {
+        "Modified": "2022-12-06T19:24:00",
+        "Published": "2022-12-05T19:15:00",
+        "access": {},
+        "assigner": "security@huntr.dev",
+        "cvss": null,
+        "cwe": "CWE-416",
+        "id": "CVE-2022-4292",
+        "impact": {},
+        "last-modified": "2022-12-06T19:24:00",
+        "references": [
+            "https://huntr.dev/bounties/da3d4c47-e57a-451e-993d-9df0ed31f57b",
+            "https://github.com/vim/vim/commit/c3d27ada14acd02db357f2d16347acc22cb17e93"
+        ],
+        "summary": "Use After Free in GitHub repository vim/vim prior to 9.0.0882."
+    },
+    {
+        "Modified": "2022-12-06T19:23:00",
+        "Published": "2022-12-06T19:15:00",
+        "access": {},
+        "assigner": "security@tibco.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-41559",
+        "impact": {},
+        "last-modified": "2022-12-06T19:23:00",
+        "references": [
+            "https://www.tibco.com/services/support/advisories"
+        ],
+        "summary": "The Web Client component of TIBCO Software Inc.'s TIBCO Nimbus contains an easily exploitable vulnerability that allows an unauthenticated attacker with network access to exploit an open redirect on the affected system. A successful attack using this vulnerability requires human interaction from a person other than the attacker. Affected releases are TIBCO Software Inc.'s TIBCO Nimbus: version 10.5.0."
+    },
+    {
+        "Modified": "2022-12-06T19:23:00",
+        "Published": "2022-12-06T19:15:00",
+        "access": {},
+        "assigner": "security@tibco.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-41560",
+        "impact": {},
+        "last-modified": "2022-12-06T19:23:00",
+        "references": [
+            "https://www.tibco.com/services/support/advisories"
+        ],
+        "summary": "The Statement Set Upload via the Web Client component of TIBCO Software Inc.'s TIBCO Nimbus contains an easily exploitable vulnerability that allows a low privileged attacker with network access to execute a Denial of Service Attack on the affected system. Affected releases are TIBCO Software Inc.'s TIBCO Nimbus: version 10.5.0."
+    },
+    {
+        "Modified": "2022-12-06T19:23:00",
+        "Published": "2022-12-06T19:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-43369",
+        "impact": {},
+        "last-modified": "2022-12-06T19:23:00",
+        "references": [
+            "https://phpgurukul.com/auto-taxi-stand-management-system-using-php-and-mysql/",
+            "https://github.com/sudoninja-noob/CVE-2022-43369/blob/main/CVE-2022-43369"
+        ],
+        "summary": "AutoTaxi Stand Management System v1.0 was discovered to contain a cross-site scripting (XSS) vulnerability via the component search.php."
+    },
+    {
+        "Modified": "2022-12-06T19:23:00",
+        "Published": "2022-12-06T19:15:00",
+        "access": {},
+        "assigner": "psirt@us.ibm.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-43867",
+        "impact": {},
+        "last-modified": "2022-12-06T19:23:00",
+        "references": [
+            "https://www.ibm.com/support/pages/node/6844771",
+            "https://exchange.xforce.ibmcloud.com/vulnerabilities/239437"
+        ],
+        "summary": "IBM Spectrum Scale 5.1.0.1 through 5.1.4.1 could allow a local attacker to execute arbitrary commands in the container. IBM X-Force ID: 239437."
+    },
+    {
+        "Modified": "2022-12-06T19:23:00",
+        "Published": "2022-12-06T19:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-45548",
+        "impact": {},
+        "last-modified": "2022-12-06T19:23:00",
+        "references": [
+            "https://github.com/loadream/AyaCMS/issues/4"
+        ],
+        "summary": "AyaCMS v3.1.2 has an Arbitrary File Upload vulnerability."
+    },
+    {
+        "Modified": "2022-12-06T19:23:00",
+        "Published": "2022-12-06T19:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-22",
+        "id": "CVE-2022-46154",
+        "impact": {},
+        "last-modified": "2022-12-06T19:23:00",
+        "references": [
+            "https://github.com/kalcaddle/KodExplorer/security/advisories/GHSA-6f8p-4w5q-j5j2",
+            "https://github.com/kalcaddle/KodExplorer/commit/1f7072c0e12150686f10ee8cda82c004f04be98c"
+        ],
+        "summary": "Kodexplorer is a chinese language web based file manager and browser based code editor. Versions prior to 4.50 did not prevent unauthenticated users from requesting arbitrary files from the host OS file system. As a result any files available to the host process may be accessed by arbitrary users. This issue has been addressed in version 4.50. Users are advised to upgrade. There are no known workarounds for this issue."
+    },
+    {
+        "Modified": "2022-12-06T19:23:00",
+        "Published": "2022-12-06T19:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-94",
+        "id": "CVE-2022-46161",
+        "impact": {},
+        "last-modified": "2022-12-06T19:23:00",
+        "references": [
+            "https://securitylab.github.com/advisories/GHSL-2022-068_pdfmake/",
+            "https://github.com/bpampuch/pdfmake/blob/802813970ac6de68a0bd0931b74150b33da0dd18/dev-playground/server.js#L32"
+        ],
+        "summary": "pdfmake is an open source client/server side PDF printing in pure JavaScript. In versions up to and including 0.2.5 pdfmake contains an unsafe evaluation of user controlled input. Users of pdfmake are thus subject to arbitrary code execution in the context of the process running the pdfmake code. There are no known fixes for this issue. Users are advised to restrict access to trusted user input."
+    },
+    {
+        "Modified": "2022-12-06T19:23:00",
+        "Published": "2022-12-06T19:15:00",
+        "access": {},
+        "assigner": "secalert@redhat.com",
+        "cvss": null,
+        "cwe": "CWE-1026",
+        "id": "CVE-2022-4147",
+        "impact": {},
+        "last-modified": "2022-12-06T19:23:00",
+        "references": [
+            "https://access.redhat.com/security/cve/CVE-2022-4147"
+        ],
+        "summary": "Quarkus CORS filter allows simple GET and POST requests with invalid Origin to proceed. Simple GET or POST requests made with XMLHttpRequest are the ones which have no event listeners registered on the object returned by the XMLHttpRequest upload property and have no ReadableStream object used in the request."
+    },
+    {
+        "Modified": "2022-12-06T19:23:00",
+        "Published": "2022-12-06T17:15:00",
+        "access": {},
+        "assigner": "psirt@fortinet.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-30305",
+        "impact": {},
+        "last-modified": "2022-12-06T19:23:00",
+        "references": [
+            "https://fortiguard.com/psirt/FG-IR-21-170"
+        ],
+        "summary": "An insufficient logging [CWE-778] vulnerability in FortiSandbox versions 4.0.0 to 4.0.2, 3.2.0 to 3.2.3 and 3.1.0 to 3.1.5 and FortiDeceptor versions 4.2.0, 4.1.0 through 4.1.1, 4.0.0 through 4.0.2, 3.3.0 through 3.3.3, 3.2.0 through 3.2.2,3.1.0 through 3.1.1 and 3.0.0 through 3.0.2 may allow a remote attacker to repeatedly enter incorrect credentials without causing a log entry, and with no limit on the number of failed authentication attempts."
+    },
+    {
+        "Modified": "2022-12-06T19:23:00",
+        "Published": "2022-12-06T17:15:00",
+        "access": {},
+        "assigner": "psirt@fortinet.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-33875",
+        "impact": {},
+        "last-modified": "2022-12-06T19:23:00",
+        "references": [
+            "https://fortiguard.com/psirt/FG-IR-22-252"
+        ],
+        "summary": "An improper neutralization of special elements used in an SQL Command ('SQL Injection') vulnerability in Fortinet FortiADC version 7.1.0, version 7.0.0 through 7.0.2 and version 6.2.4 and below allows an authenticated attacker to execute unauthorized code or commands via specifically crafted HTTP requests."
+    },
+    {
+        "Modified": "2022-12-06T19:23:00",
+        "Published": "2022-12-06T17:15:00",
+        "access": {},
+        "assigner": "psirt@fortinet.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-33876",
+        "impact": {},
+        "last-modified": "2022-12-06T19:23:00",
+        "references": [
+            "https://fortiguard.com/psirt/FG-IR-22-253"
+        ],
+        "summary": "Multiple instances of improper input validation vulnerability in Fortinet FortiADC version 7.1.0, version 7.0.0 through 7.0.2 and version 6.2.4 and below allows an authenticated attacker to retrieve files with specific extension from the underlying Linux system via crafted HTTP requests."
+    },
+    {
+        "Modified": "2022-12-06T19:23:00",
+        "Published": "2022-12-06T17:15:00",
+        "access": {},
+        "assigner": "psirt@fortinet.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-35843",
+        "impact": {},
+        "last-modified": "2022-12-06T19:23:00",
+        "references": [
+            "https://fortiguard.com/psirt/FG-IR-22-255"
+        ],
+        "summary": "An authentication bypass by assumed-immutable data vulnerability [CWE-302] in the FortiOS SSH login component 7.2.0, 7.0.0 through 7.0.7, 6.4.0 through 6.4.9, 6.2 all versions, 6.0 all versions and FortiProxy SSH login component 7.0.0 through 7.0.5, 2.0.0 through 2.0.10, 1.2.0 all versions may allow a remote and unauthenticated attacker to login into the device via sending specially crafted Access-Challenge response from the Radius server."
+    },
+    {
+        "Modified": "2022-12-06T19:23:00",
+        "Published": "2022-12-06T17:15:00",
+        "access": {},
+        "assigner": "psirt@fortinet.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-38379",
+        "impact": {},
+        "last-modified": "2022-12-06T19:23:00",
+        "references": [
+            "https://fortiguard.com/psirt/FG-IR-22-220"
+        ],
+        "summary": "Improper neutralization of input during web page generation [CWE-79] in FortiSOAR 7.0.0 through 7.0.3 and 7.2.0 may allow an authenticated attacker to inject HTML tags via input fields of various components within FortiSOAR."
+    },
+    {
+        "Modified": "2022-12-06T19:23:00",
+        "Published": "2022-12-06T17:15:00",
+        "access": {},
+        "assigner": "psirt@fortinet.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-40680",
+        "impact": {},
+        "last-modified": "2022-12-06T19:23:00",
+        "references": [
+            "https://fortiguard.com/psirt/FG-IR-21-248"
+        ],
+        "summary": "A improper neutralization of input during web page generation ('cross-site scripting') in Fortinet FortiOS 6.0.7 - 6.0.15, 6.2.2 - 6.2.12, 6.4.0 - 6.4.9 and 7.0.0 - 7.0.3 allows a privileged attacker to execute unauthorized code or commands via storing malicious payloads in replacement messages."
+    },
+    {
+        "Modified": "2022-12-06T19:23:00",
+        "Published": "2022-12-06T17:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-45326",
+        "impact": {},
+        "last-modified": "2022-12-06T19:23:00",
+        "references": [
+            "https://www.navsec.net/2022/11/12/kwoksys-xxe.html",
+            "http://www.kwoksys.com/wiki/index.php?title=Release_Notes"
+        ],
+        "summary": "An XML external entity (XXE) injection vulnerability in Kwoksys Kwok Information Server before v2.9.5.SP31 allows remote authenticated users to conduct server-side request forgery (SSRF) attacks."
+    },
+    {
+        "Modified": "2022-12-06T19:23:00",
+        "Published": "2022-12-06T18:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2022-23466",
+        "impact": {},
+        "last-modified": "2022-12-06T19:23:00",
+        "references": [
+            "https://github.com/kitabisa/teler/commit/20f59eda2420ac64e29f199a61230a0abc875e8e",
+            "https://github.com/kitabisa/teler/security/advisories/GHSA-xr7p-8q82-878q"
+        ],
+        "summary": "teler is an real-time intrusion detection and threat alert dashboard. teler prior to version 2.0.0-rc.4 is vulnerable to DOM-based cross-site scripting (XSS) in the teler dashboard. When teler requests messages from the event stream on the `/events` endpoint, the log data displayed on the dashboard are not sanitized. This only affects authenticated users and can only be exploited based on detected threats if the log contains a DOM scripting payload. This vulnerability has been fixed on version `v2.0.0-rc.4`. Users are advised to upgrade. There are no known workarounds for this vulnerability."
+    },
+    {
+        "Modified": "2022-12-06T19:23:00",
+        "Published": "2022-12-06T18:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-23470",
+        "impact": {},
+        "last-modified": "2022-12-06T19:23:00",
+        "references": [
+            "https://github.com/galaxyproject/galaxy/security/advisories/GHSA-grjf-2ghx-q77x",
+            "https://github.com/galaxyproject/galaxy/commit/e5e6bda4f014f807ca77ee0cf6af777a55918346"
+        ],
+        "summary": "Galaxy is an open-source platform for data analysis. An arbitrary file read exists in Galaxy 22.01 and Galaxy 22.05 due to the switch to Gunicorn, which can be used to read any file accessible to the operating system user under which Galaxy is running. This vulnerability affects Galaxy 22.01 and higher, after the switch to gunicorn, which serve static contents directly. Additionally, the vulnerability is mitigated when using Nginx or Apache to serve /static/* contents, instead of Galaxy's internal middleware. This issue has been patched in commit `e5e6bda4f` and will be included in future releases. Users are advised to manually patch their installations. There are no known workarounds for this vulnerability."
+    },
+    {
+        "Modified": "2022-12-06T19:23:00",
+        "Published": "2022-12-06T18:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-338",
+        "id": "CVE-2022-23472",
+        "impact": {},
+        "last-modified": "2022-12-06T19:23:00",
+        "references": [
+            "https://github.com/ArjunSharda/Passeo/security/advisories/GHSA-mhhf-vgwh-fw9h",
+            "https://github.com/ArjunSharda/Passeo/commit/8caa798b6bc4647dca59b2376204b6dc6176361a",
+            "https://peps.python.org/pep-0506/"
+        ],
+        "summary": "Passeo is an open source python password generator. Versions prior to 1.0.5 rely on the python `random` library for random value selection. The python `random` library warns that it should not be used for security purposes due to its reliance on a non-cryptographically secure random number generator. As a result a motivated attacker may be able to guess generated passwords. This issue has been addressed in version 1.0.5. Users are advised to upgrade. There are no known workarounds for this vulnerability."
+    },
+    {
+        "Modified": "2022-12-06T19:23:00",
+        "Published": "2022-12-06T18:15:00",
+        "access": {},
+        "assigner": "psirt@us.ibm.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-34361",
+        "impact": {},
+        "last-modified": "2022-12-06T19:23:00",
+        "references": [
+            "https://exchange.xforce.ibmcloud.com/vulnerabilities/230522",
+            "https://www.ibm.com/support/pages/node/6844763"
+        ],
+        "summary": "IBM Sterling Secure Proxy 6.0.3 uses weaker than expected cryptographic algorithms that could allow an attacker to decrypt highly sensitive information. IBM X-Force ID: 230522."
+    },
+    {
+        "Modified": "2022-12-06T19:22:00",
+        "Published": "2022-12-05T15:15:00",
+        "access": {},
+        "assigner": "security@mediatek.com",
+        "cvss": null,
+        "cwe": "CWE-20",
+        "id": "CVE-2022-32631",
+        "impact": {},
+        "last-modified": "2022-12-06T19:22:00",
+        "references": [
+            "https://corp.mediatek.com/product-security-bulletin/December-2022"
+        ],
+        "summary": "In Wi-Fi, there is a possible out of bounds write due to improper input validation. This could lead to local escalation of privilege with System execution privileges needed. User interaction is not needed for exploitation. Patch ID: ALPS07453613; Issue ID: ALPS07453613."
+    },
+    {
+        "Modified": "2022-12-06T19:22:00",
+        "Published": "2022-12-05T15:15:00",
+        "access": {},
+        "assigner": "security@mediatek.com",
+        "cvss": null,
+        "cwe": "CWE-20",
+        "id": "CVE-2022-32632",
+        "impact": {},
+        "last-modified": "2022-12-06T19:22:00",
+        "references": [
+            "https://corp.mediatek.com/product-security-bulletin/December-2022"
+        ],
+        "summary": "In Wi-Fi, there is a possible out of bounds write due to improper input validation. This could lead to local escalation of privilege with System execution privileges needed. User interaction is not needed for exploitation. Patch ID: ALPS07441630; Issue ID: ALPS07441630."
+    },
+    {
+        "Modified": "2022-12-06T19:20:00",
+        "Published": "2022-12-05T17:15:00",
+        "access": {},
+        "assigner": "contact@wpscan.com",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2022-3838",
+        "impact": {},
+        "last-modified": "2022-12-06T19:20:00",
+        "references": [
+            "https://wpscan.com/vulnerability/2dc82bd7-651f-4af0-ad2a-c20a38eea0d0"
+        ],
+        "summary": "The WPUpper Share Buttons WordPress plugin through 3.42 does not sanitise and escape some of its settings, which could allow high privilege users such as admin to perform Stored Cross-Site Scripting attacks even when the unfiltered_html capability is disallowed (for example in multisite setup)."
+    },
+    {
+        "Modified": "2022-12-06T19:20:00",
+        "Published": "2022-12-05T15:15:00",
+        "access": {},
+        "assigner": "security@mediatek.com",
+        "cvss": null,
+        "cwe": "CWE-269",
+        "id": "CVE-2022-32633",
+        "impact": {},
+        "last-modified": "2022-12-06T19:20:00",
+        "references": [
+            "https://corp.mediatek.com/product-security-bulletin/December-2022"
+        ],
+        "summary": "In Wi-Fi, there is a possible memory access violation due to a logic error. This could lead to local escalation of privilege with System execution privileges needed. User interaction is not needed for exploitation. Patch ID: ALPS07441637; Issue ID: ALPS07441637."
+    },
+    {
+        "Modified": "2022-12-06T19:18:00",
+        "Published": "2022-12-05T17:15:00",
+        "access": {},
+        "assigner": "contact@wpscan.com",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2022-3837",
+        "impact": {},
+        "last-modified": "2022-12-06T19:18:00",
+        "references": [
+            "https://wpscan.com/vulnerability/8554ca79-5a4b-49df-a75f-5faa4136bb8c"
+        ],
+        "summary": "The Uji Countdown WordPress plugin through 2.2 does not sanitise and escape some of its settings, which could allow high privilege users such as admin to perform Stored Cross-Site Scripting attacks even when the unfiltered_html capability is disallowed (for example in multisite setup)."
+    },
+    {
+        "Modified": "2022-12-06T19:17:00",
+        "Published": "2022-12-05T17:15:00",
+        "access": {},
+        "assigner": "contact@wpscan.com",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2022-3830",
+        "impact": {},
+        "last-modified": "2022-12-06T19:17:00",
+        "references": [
+            "https://wpscan.com/vulnerability/98b2321d-fb66-4e02-9906-63af7b08d647"
+        ],
+        "summary": "The WP Page Builder WordPress plugin through 1.2.8 does not sanitise and escape some of its settings, which could allow high privilege users such as admin to perform Stored Cross-Site Scripting attacks even when the unfiltered_html capability is disallowed (for example in multisite setup)."
+    },
+    {
+        "Modified": "2022-12-06T19:10:00",
+        "Published": "2022-12-05T17:15:00",
+        "access": {},
+        "assigner": "contact@wpscan.com",
+        "cvss": null,
+        "cwe": "CWE-200",
+        "id": "CVE-2022-3694",
+        "impact": {},
+        "last-modified": "2022-12-06T19:10:00",
+        "references": [
+            "https://wpscan.com/vulnerability/ad12bab7-9baf-4646-a93a-0d3286407c1e"
+        ],
+        "summary": "The Syncee WordPress plugin before 1.0.10 leaks the administrator token that can be used to take over the administrator's account."
+    },
+    {
+        "Modified": "2022-12-06T19:04:00",
+        "Published": "2022-12-05T17:15:00",
+        "access": {},
+        "assigner": "contact@wpscan.com",
+        "cvss": null,
+        "cwe": "CWE-639",
+        "id": "CVE-2022-3846",
+        "impact": {},
+        "last-modified": "2022-12-06T19:04:00",
+        "references": [
+            "https://wpscan.com/vulnerability/6220c7ef-69a6-49c4-9c56-156b945446af"
+        ],
+        "summary": "The Workreap WordPress theme before 2.6.3 has a vulnerability with the notifications feature as it's possible to read any user's notification (employer or freelancer) as the notification ID is brute-forceable."
+    },
+    {
+        "Modified": "2022-12-06T19:04:00",
+        "Published": "2022-12-01T18:15:00",
+        "access": {},
+        "assigner": "psirt@us.ibm.com",
+        "cvss": null,
+        "cwe": "CWE-352",
+        "id": "CVE-2022-41297",
+        "impact": {},
+        "last-modified": "2022-12-06T19:04:00",
+        "references": [
+            "https://exchange.xforce.ibmcloud.com/vulnerabilities/237212",
+            "https://www.ibm.com/support/pages/node/6843071"
+        ],
+        "summary": "IBM Db2U 3.5, 4.0, and 4.5 is vulnerable to cross-site request forgery which could allow an attacker to execute malicious and unauthorized actions transmitted from a user that the website trusts. IBM X-Force ID: 237212."
+    },
+    {
         "Modified": "2022-12-06T18:55:00",
         "Published": "2022-12-05T17:15:00",
         "access": {},
@@ -104,71 +1355,6 @@
             "https://corp.mediatek.com/product-security-bulletin/December-2022"
         ],
         "summary": "In throttling, there is a possible out of bounds write due to an incorrect calculation of buffer size. This could lead to local escalation of privilege with System execution privileges needed. User interaction is not needed for exploitation. Patch ID: ALPS07405966; Issue ID: ALPS07405966."
-    },
-    {
-        "Modified": "2022-12-06T18:15:00",
-        "Published": "2022-12-06T18:15:00",
-        "access": {},
-        "assigner": "security-advisories@github.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-23466",
-        "impact": {},
-        "last-modified": "2022-12-06T18:15:00",
-        "references": [
-            "https://github.com/kitabisa/teler/commit/20f59eda2420ac64e29f199a61230a0abc875e8e",
-            "https://github.com/kitabisa/teler/security/advisories/GHSA-xr7p-8q82-878q"
-        ],
-        "summary": "teler is an real-time intrusion detection and threat alert dashboard. teler prior to version 2.0.0-rc.4 is vulnerable to DOM-based cross-site scripting (XSS) in the teler dashboard. When teler requests messages from the event stream on the `/events` endpoint, the log data displayed on the dashboard are not sanitized. This only affects authenticated users and can only be exploited based on detected threats if the log contains a DOM scripting payload. This vulnerability has been fixed on version `v2.0.0-rc.4`. Users are advised to upgrade. There are no known workarounds for this vulnerability."
-    },
-    {
-        "Modified": "2022-12-06T18:15:00",
-        "Published": "2022-12-06T18:15:00",
-        "access": {},
-        "assigner": "security-advisories@github.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-23470",
-        "impact": {},
-        "last-modified": "2022-12-06T18:15:00",
-        "references": [
-            "https://github.com/galaxyproject/galaxy/security/advisories/GHSA-grjf-2ghx-q77x",
-            "https://github.com/galaxyproject/galaxy/commit/e5e6bda4f014f807ca77ee0cf6af777a55918346"
-        ],
-        "summary": "Galaxy is an open-source platform for data analysis. An arbitrary file read exists in Galaxy 22.01 and Galaxy 22.05 due to the switch to Gunicorn, which can be used to read any file accessible to the operating system user under which Galaxy is running. This vulnerability affects Galaxy 22.01 and higher, after the switch to gunicorn, which serve static contents directly. Additionally, the vulnerability is mitigated when using Nginx or Apache to serve /static/* contents, instead of Galaxy's internal middleware. This issue has been patched in commit `e5e6bda4f` and will be included in future releases. Users are advised to manually patch their installations. There are no known workarounds for this vulnerability."
-    },
-    {
-        "Modified": "2022-12-06T18:15:00",
-        "Published": "2022-12-06T18:15:00",
-        "access": {},
-        "assigner": "security-advisories@github.com",
-        "cvss": null,
-        "cwe": "CWE-338",
-        "id": "CVE-2022-23472",
-        "impact": {},
-        "last-modified": "2022-12-06T18:15:00",
-        "references": [
-            "https://github.com/ArjunSharda/Passeo/security/advisories/GHSA-mhhf-vgwh-fw9h",
-            "https://github.com/ArjunSharda/Passeo/commit/8caa798b6bc4647dca59b2376204b6dc6176361a",
-            "https://peps.python.org/pep-0506/"
-        ],
-        "summary": "Passeo is an open source python password generator. Versions prior to 1.0.5 rely on the python `random` library for random value selection. The python `random` library warns that it should not be used for security purposes due to its reliance on a non-cryptographically secure random number generator. As a result a motivated attacker may be able to guess generated passwords. This issue has been addressed in version 1.0.5. Users are advised to upgrade. There are no known workarounds for this vulnerability."
-    },
-    {
-        "Modified": "2022-12-06T18:15:00",
-        "Published": "2022-12-06T18:15:00",
-        "access": {},
-        "assigner": "psirt@us.ibm.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-34361",
-        "impact": {},
-        "last-modified": "2022-12-06T18:15:00",
-        "references": [
-            "https://exchange.xforce.ibmcloud.com/vulnerabilities/230522",
-            "https://www.ibm.com/support/pages/node/6844763"
-        ],
-        "summary": "IBM Sterling Secure Proxy 6.0.3 uses weaker than expected cryptographic algorithms that could allow an attacker to decrypt highly sensitive information. IBM X-Force ID: 230522."
     },
     {
         "Modified": "2022-12-06T18:15:00",
@@ -334,112 +1520,6 @@
     },
     {
         "Modified": "2022-12-06T17:15:00",
-        "Published": "2022-12-06T17:15:00",
-        "access": {},
-        "assigner": "psirt@fortinet.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-30305",
-        "impact": {},
-        "last-modified": "2022-12-06T17:15:00",
-        "references": [
-            "https://fortiguard.com/psirt/FG-IR-21-170"
-        ],
-        "summary": "An insufficient logging [CWE-778] vulnerability in FortiSandbox versions 4.0.0 to 4.0.2, 3.2.0 to 3.2.3 and 3.1.0 to 3.1.5 and FortiDeceptor versions 4.2.0, 4.1.0 through 4.1.1, 4.0.0 through 4.0.2, 3.3.0 through 3.3.3, 3.2.0 through 3.2.2,3.1.0 through 3.1.1 and 3.0.0 through 3.0.2 may allow a remote attacker to repeatedly enter incorrect credentials without causing a log entry, and with no limit on the number of failed authentication attempts."
-    },
-    {
-        "Modified": "2022-12-06T17:15:00",
-        "Published": "2022-12-06T17:15:00",
-        "access": {},
-        "assigner": "psirt@fortinet.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-33875",
-        "impact": {},
-        "last-modified": "2022-12-06T17:15:00",
-        "references": [
-            "https://fortiguard.com/psirt/FG-IR-22-252"
-        ],
-        "summary": "An improper neutralization of special elements used in an SQL Command ('SQL Injection') vulnerability in Fortinet FortiADC version 7.1.0, version 7.0.0 through 7.0.2 and version 6.2.4 and below allows an authenticated attacker to execute unauthorized code or commands via specifically crafted HTTP requests."
-    },
-    {
-        "Modified": "2022-12-06T17:15:00",
-        "Published": "2022-12-06T17:15:00",
-        "access": {},
-        "assigner": "psirt@fortinet.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-33876",
-        "impact": {},
-        "last-modified": "2022-12-06T17:15:00",
-        "references": [
-            "https://fortiguard.com/psirt/FG-IR-22-253"
-        ],
-        "summary": "Multiple instances of improper input validation vulnerability in Fortinet FortiADC version 7.1.0, version 7.0.0 through 7.0.2 and version 6.2.4 and below allows an authenticated attacker to retrieve files with specific extension from the underlying Linux system via crafted HTTP requests."
-    },
-    {
-        "Modified": "2022-12-06T17:15:00",
-        "Published": "2022-12-06T17:15:00",
-        "access": {},
-        "assigner": "psirt@fortinet.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-35843",
-        "impact": {},
-        "last-modified": "2022-12-06T17:15:00",
-        "references": [
-            "https://fortiguard.com/psirt/FG-IR-22-255"
-        ],
-        "summary": "An authentication bypass by assumed-immutable data vulnerability [CWE-302] in the FortiOS SSH login component 7.2.0, 7.0.0 through 7.0.7, 6.4.0 through 6.4.9, 6.2 all versions, 6.0 all versions and FortiProxy SSH login component 7.0.0 through 7.0.5, 2.0.0 through 2.0.10, 1.2.0 all versions may allow a remote and unauthenticated attacker to login into the device via sending specially crafted Access-Challenge response from the Radius server."
-    },
-    {
-        "Modified": "2022-12-06T17:15:00",
-        "Published": "2022-12-06T17:15:00",
-        "access": {},
-        "assigner": "psirt@fortinet.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-38379",
-        "impact": {},
-        "last-modified": "2022-12-06T17:15:00",
-        "references": [
-            "https://fortiguard.com/psirt/FG-IR-22-220"
-        ],
-        "summary": "Improper neutralization of input during web page generation [CWE-79] in FortiSOAR 7.0.0 through 7.0.3 and 7.2.0 may allow an authenticated attacker to inject HTML tags via input fields of various components within FortiSOAR."
-    },
-    {
-        "Modified": "2022-12-06T17:15:00",
-        "Published": "2022-12-06T17:15:00",
-        "access": {},
-        "assigner": "psirt@fortinet.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-40680",
-        "impact": {},
-        "last-modified": "2022-12-06T17:15:00",
-        "references": [
-            "https://fortiguard.com/psirt/FG-IR-21-248"
-        ],
-        "summary": "A improper neutralization of input during web page generation ('cross-site scripting') in Fortinet FortiOS 6.0.7 - 6.0.15, 6.2.2 - 6.2.12, 6.4.0 - 6.4.9 and 7.0.0 - 7.0.3 allows a privileged attacker to execute unauthorized code or commands via storing malicious payloads in replacement messages."
-    },
-    {
-        "Modified": "2022-12-06T17:15:00",
-        "Published": "2022-12-06T17:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-45326",
-        "impact": {},
-        "last-modified": "2022-12-06T17:15:00",
-        "references": [
-            "https://www.navsec.net/2022/11/12/kwoksys-xxe.html",
-            "http://www.kwoksys.com/wiki/index.php?title=Release_Notes"
-        ],
-        "summary": "An XML external entity (XXE) injection vulnerability in Kwoksys Kwok Information Server before v2.9.5.SP31 allows remote authenticated users to conduct server-side request forgery (SSRF) attacks."
-    },
-    {
-        "Modified": "2022-12-06T17:15:00",
         "Published": "2022-12-01T19:15:00",
         "access": {},
         "assigner": "psirt@us.ibm.com",
@@ -590,1239 +1670,5 @@
             "https://github.com/Ha0Liu/cveAdd/blob/developer/JreCMS%20template%20injection%20vulnerability/JreCMS%20template%20injection%20vulnerability.md"
         ],
         "summary": "A vulnerability was found in SpringBootCMS and classified as critical. Affected by this issue is some unknown functionality of the component Template Management. The manipulation leads to injection. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. VDB-214790 is the identifier assigned to this vulnerability."
-    },
-    {
-        "Modified": "2022-12-06T16:46:00",
-        "Published": "2022-12-01T11:15:00",
-        "access": {},
-        "assigner": "security@google.com",
-        "cvss": null,
-        "cwe": "CWE-502",
-        "id": "CVE-2022-1471",
-        "impact": {},
-        "last-modified": "2022-12-06T16:46:00",
-        "references": [
-            "https://github.com/google/security-research/security/advisories/GHSA-mjmj-j48q-9wg2"
-        ],
-        "summary": "SnakeYaml's Constructor() class does not restrict types which can be instantiated during deserialization. Deserializing yaml content provided by an attacker can lead to remote code execution. We recommend using SnakeYaml's SafeConsturctor when parsing untrusted content to restrict deserialization."
-    },
-    {
-        "Modified": "2022-12-06T16:46:00",
-        "Published": "2022-11-30T12:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-384",
-        "id": "CVE-2022-4231",
-        "impact": {},
-        "last-modified": "2022-12-06T16:46:00",
-        "references": [
-            "https://github.com/lithonn/bug-report/tree/main/vendors/tribalsystems/zenario/session-fixation",
-            "https://vuldb.com/?id.214589"
-        ],
-        "summary": "A vulnerability, which was classified as problematic, has been found in Tribal Systems Zenario CMS 9.3.57595. This issue affects some unknown processing of the component Remember Me Handler. The manipulation leads to session fixiation. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. The identifier VDB-214589 was assigned to this vulnerability."
-    },
-    {
-        "Modified": "2022-12-06T16:44:00",
-        "Published": "2022-12-01T17:15:00",
-        "access": {},
-        "assigner": "psirt@wdc.com",
-        "cvss": null,
-        "cwe": "CWE-22",
-        "id": "CVE-2022-29837",
-        "impact": {},
-        "last-modified": "2022-12-06T16:44:00",
-        "references": [
-            "https://www.westerndigital.com/support/product-security/wdc-22018-western-digital-my-cloud-home-my-cloud-home-duo-and-sandisk-ibi-firmware-version-8-12-0-178"
-        ],
-        "summary": "A path traversal vulnerability was addressed in Western Digital My Cloud Home, My Cloud Home Duo and SanDisk ibi which could allow an attacker to initiate installation of custom ZIP packages and overwrite system files. This could potentially lead to a code execution."
-    },
-    {
-        "Modified": "2022-12-06T16:43:00",
-        "Published": "2022-12-05T04:15:00",
-        "access": {},
-        "assigner": "vultures@jpcert.or.jp",
-        "cvss": null,
-        "cwe": "CWE-755",
-        "id": "CVE-2022-41777",
-        "impact": {},
-        "last-modified": "2022-12-06T16:43:00",
-        "references": [
-            "https://jvn.jp/en/jp/JVN56968681/index.html",
-            "https://github.com/kujirahand/nadesiko3/issues/1325",
-            "https://github.com/kujirahand/nadesiko3/issues/1347"
-        ],
-        "summary": "Improper check or handling of exceptional conditions vulnerability in Nako3edit, editor component of nadesiko3 (PC Version) v3.3.74 and earlier allows a remote attacker to inject an invalid value to decodeURIComponent of nako3edit, which may lead the server to crash."
-    },
-    {
-        "Modified": "2022-12-06T16:42:00",
-        "Published": "2022-12-05T04:15:00",
-        "access": {},
-        "assigner": "vultures@jpcert.or.jp",
-        "cvss": null,
-        "cwe": "CWE-290",
-        "id": "CVE-2022-41798",
-        "impact": {},
-        "last-modified": "2022-12-06T16:42:00",
-        "references": [
-            "https://www.kyoceradocumentsolutions.co.jp/support/information/info_20221101.html",
-            "https://jvn.jp/en/jp/JVN46345126/index.html",
-            "https://www.kyoceradocumentsolutions.com/en/our-business/security/information/2022-11-01.html"
-        ],
-        "summary": "Session information easily guessable vulnerability exists in Kyocera Document Solutions MFPs and printers, which may allow a network-adjacent attacker to log in to the product by spoofing a user with guessed session information. Affected products/versions are as follows: TASKalfa 7550ci/6550ci, TASKalfa 5550ci/4550ci/3550ci/3050ci, TASKalfa 255c/205c, TASKalfa 256ci/206ci, ECOSYS M6526cdn/M6526cidn, FS-C2126MFP/C2126MFP+/C2026MFP/C2026MFP+, TASKalfa 8000i/6500i, TASKalfa 5500i/4500i/3500i, TASKalfa 305/255, TASKalfa 306i/256i, LS-3140MFP/3140MFP+/3640MFP, ECOSYS M2535dn, LS-1135MFP/1035MFP, LS-C8650DN/C8600DN, ECOSYS P6026cdn, FS-C5250DN, LS-4300DN/4200DN/2100DN, ECOSYS P4040dn, ECOSYS P2135dn, and FS-1370DN."
-    },
-    {
-        "Modified": "2022-12-06T16:39:00",
-        "Published": "2022-12-05T04:15:00",
-        "access": {},
-        "assigner": "vultures@jpcert.or.jp",
-        "cvss": null,
-        "cwe": "CWE-352",
-        "id": "CVE-2022-43470",
-        "impact": {},
-        "last-modified": "2022-12-06T16:39:00",
-        "references": [
-            "https://www.fsi.co.jp/mobile/plusF/news/22102803.html",
-            "https://www.fsi.co.jp/mobile/plusF/news/22102802.html",
-            "https://jvn.jp/en/jp/JVN74285622/index.html",
-            "https://www.fsi.co.jp/mobile/plusF/news/22102804.html",
-            "https://www.fsi.co.jp/mobile/plusF/news/22102801.html"
-        ],
-        "summary": "Cross-site request forgery (CSRF) vulnerability in +F FS040U software versions v2.3.4 and earlier, +F FS020W software versions v4.0.0 and earlier, +F FS030W software versions v3.3.5 and earlier, and +F FS040W software versions v1.4.1 and earlier allows an adjacent attacker to hijack the authentication of an administrator and user's unintended operations such as to reboot the product and/or reset the configuration to the initial set-up may be performed."
-    },
-    {
-        "Modified": "2022-12-06T16:32:00",
-        "Published": "2022-12-02T18:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-120",
-        "id": "CVE-2022-45649",
-        "impact": {},
-        "last-modified": "2022-12-06T16:32:00",
-        "references": [
-            "https://github.com/Double-q1015/CVE-vulns/blob/main/tenda_ac6/formSetPPTPServer_endIp/formSetPPTPServer_endIp.md"
-        ],
-        "summary": "Tenda AC6V1.0 V15.03.05.19 was discovered to contain a buffer overflow via the endIp parameter in the formSetPPTPServer function."
-    },
-    {
-        "Modified": "2022-12-06T16:32:00",
-        "Published": "2022-12-02T18:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-120",
-        "id": "CVE-2022-45651",
-        "impact": {},
-        "last-modified": "2022-12-06T16:32:00",
-        "references": [
-            "https://github.com/Double-q1015/CVE-vulns/blob/main/tenda_ac6/formSetVirtualSer/formSetVirtualSer.md"
-        ],
-        "summary": "Tenda AC6V1.0 V15.03.05.19 was discovered to contain a buffer overflow via the list parameter in the formSetVirtualSer function."
-    },
-    {
-        "Modified": "2022-12-06T16:32:00",
-        "Published": "2022-12-02T18:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-120",
-        "id": "CVE-2022-45648",
-        "impact": {},
-        "last-modified": "2022-12-06T16:32:00",
-        "references": [
-            "https://github.com/Double-q1015/CVE-vulns/blob/main/tenda_ac6/formSetDeviceName/formSetDeviceName.md"
-        ],
-        "summary": "Tenda AC6V1.0 V15.03.05.19 was discovered to contain a buffer overflow via the devName parameter in the formSetDeviceName function."
-    },
-    {
-        "Modified": "2022-12-06T16:32:00",
-        "Published": "2022-12-02T18:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-120",
-        "id": "CVE-2022-45650",
-        "impact": {},
-        "last-modified": "2022-12-06T16:32:00",
-        "references": [
-            "https://github.com/Double-q1015/CVE-vulns/blob/main/tenda_ac6/formSetFirewallCfg/formSetFirewallCfg.md"
-        ],
-        "summary": "Tenda AC6V1.0 V15.03.05.19 was discovered to contain a buffer overflow via the firewallEn parameter in the formSetFirewallCfg function."
-    },
-    {
-        "Modified": "2022-12-06T16:31:00",
-        "Published": "2022-12-06T16:15:00",
-        "access": {},
-        "assigner": "VulnerabilityReporting@secomea.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-38123",
-        "impact": {},
-        "last-modified": "2022-12-06T16:31:00",
-        "references": [
-            "https://www.secomea.com/support/cybersecurity-advisory/"
-        ],
-        "summary": "Improper Input Validation of plugin files in Administrator Interface of Secomea GateManager allows a server administrator to inject code into the GateManager interface. This issue affects: Secomea GateManager versions prior to 10.0."
-    },
-    {
-        "Modified": "2022-12-06T16:31:00",
-        "Published": "2022-12-06T16:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-41325",
-        "impact": {},
-        "last-modified": "2022-12-06T16:31:00",
-        "references": [
-            "https://www.videolan.org/security/sb-vlc3018.html",
-            "https://www.synacktiv.com/sites/default/files/2022-11/vlc_vnc_int_overflow-CVE-2022-41325.pdf",
-            "https://twitter.com/0xMitsurugi"
-        ],
-        "summary": "An integer overflow in the VNC module in VideoLAN VLC Media Player through 3.0.17.4 allows attackers, by tricking a user into opening a crafted playlist or connecting to a rogue VNC server, to crash VLC or execute code under some conditions."
-    },
-    {
-        "Modified": "2022-12-06T16:31:00",
-        "Published": "2022-12-06T16:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-43363",
-        "impact": {},
-        "last-modified": "2022-12-06T16:31:00",
-        "references": [
-            "https://pastebin.com/72MRwNXW",
-            "https://bugs.telegram.org/c/17831"
-        ],
-        "summary": "** DISPUTED ** Telegram Web 15.3.1 allows XSS via a certain payload derived from a Target Corporation website. NOTE: some third parties have been unable to discern any relationship between the Pastebin information and a possible XSS finding."
-    },
-    {
-        "Modified": "2022-12-06T16:31:00",
-        "Published": "2022-12-06T16:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-44289",
-        "impact": {},
-        "last-modified": "2022-12-06T16:31:00",
-        "references": [
-            "https://github.com/top-think/framework/issues/2772"
-        ],
-        "summary": "Thinkphp 5.1.41 and 5.0.24 has a code logic error which causes file upload getshell."
-    },
-    {
-        "Modified": "2022-12-06T16:31:00",
-        "Published": "2022-12-06T16:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-46382",
-        "impact": {},
-        "last-modified": "2022-12-06T16:31:00",
-        "references": [
-            "https://rackn.com/products/rebar/"
-        ],
-        "summary": "RackN Digital Rebar through 4.6.14, 4.7 through 4.7.22, 4.8 through 4.8.5, 4.9 through 4.9.12, and 4.10 through 4.10.8 has Insecure Permissions. After signing into Digital Rebar, users are issued authentication tokens tied to their account to perform actions within Digital Rebar. During the validation process of these tokens, Digital Rebar did not check if the user account still exists. Deleted Digital Rebar users could still use their tokens to perform actions within Digital Rebar."
-    },
-    {
-        "Modified": "2022-12-06T16:30:00",
-        "Published": "2022-12-02T18:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-120",
-        "id": "CVE-2022-45646",
-        "impact": {},
-        "last-modified": "2022-12-06T16:30:00",
-        "references": [
-            "https://github.com/Double-q1015/CVE-vulns/blob/main/tenda_ac6/formSetClientState_limitSpeedUp/formSetClientState_limitSpeed.md"
-        ],
-        "summary": "Tenda AC6V1.0 V15.03.05.19 was discovered to contain a buffer overflow via the limitSpeedUp parameter in the formSetClientState function."
-    },
-    {
-        "Modified": "2022-12-06T16:30:00",
-        "Published": "2022-12-02T18:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-120",
-        "id": "CVE-2022-45647",
-        "impact": {},
-        "last-modified": "2022-12-06T16:30:00",
-        "references": [
-            "https://github.com/Double-q1015/CVE-vulns/blob/main/tenda_ac6/formSetClientState_limitSpeed/formSetClientState_limitSpeed.md"
-        ],
-        "summary": "Tenda AC6V1.0 V15.03.05.19 was discovered to contain a buffer overflow via the limitSpeed parameter in the formSetClientState function."
-    },
-    {
-        "Modified": "2022-12-06T16:30:00",
-        "Published": "2022-12-01T11:15:00",
-        "access": {},
-        "assigner": "info@cert.vde.com",
-        "cvss": null,
-        "cwe": "NVD-CWE-Other",
-        "id": "CVE-2022-3270",
-        "impact": {},
-        "last-modified": "2022-12-06T16:30:00",
-        "references": [
-            "https://cert.vde.com/en/advisories/VDE-2022-041/"
-        ],
-        "summary": "In multiple products by Festo a remote unauthenticated attacker could use functions of an undocumented protocol which could lead to a complete loss of confidentiality, integrity and availability."
-    },
-    {
-        "Modified": "2022-12-06T16:27:00",
-        "Published": "2022-12-05T04:15:00",
-        "access": {},
-        "assigner": "vultures@jpcert.or.jp",
-        "cvss": null,
-        "cwe": "CWE-522",
-        "id": "CVE-2022-43442",
-        "impact": {},
-        "last-modified": "2022-12-06T16:27:00",
-        "references": [
-            "https://www.fsi.co.jp/mobile/plusF/news/22102803.html",
-            "https://www.fsi.co.jp/mobile/plusF/news/22102802.html",
-            "https://jvn.jp/en/jp/JVN74285622/index.html",
-            "https://www.fsi.co.jp/mobile/plusF/news/22102804.html",
-            "https://www.fsi.co.jp/mobile/plusF/news/22102801.html"
-        ],
-        "summary": "Plaintext storage of a password vulnerability exists in +F FS040U software versions v2.3.4 and earlier, which may allow an attacker to obtain the login password of +F FS040U and log in to the management console."
-    },
-    {
-        "Modified": "2022-12-06T16:18:00",
-        "Published": "2022-12-05T15:15:00",
-        "access": {},
-        "assigner": "security@mediatek.com",
-        "cvss": null,
-        "cwe": "CWE-787",
-        "id": "CVE-2022-32594",
-        "impact": {},
-        "last-modified": "2022-12-06T16:18:00",
-        "references": [
-            "https://corp.mediatek.com/product-security-bulletin/December-2022"
-        ],
-        "summary": "In widevine, there is a possible out of bounds write due to an incorrect bounds check. This could lead to local escalation of privilege with System execution privileges needed. User interaction is not needed for exploitation. Patch ID: ALPS07446207; Issue ID: ALPS07446207."
-    },
-    {
-        "Modified": "2022-12-06T16:16:00",
-        "Published": "2022-12-05T07:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-639",
-        "id": "CVE-2022-4281",
-        "impact": {},
-        "last-modified": "2022-12-06T16:16:00",
-        "references": [
-            "https://vuldb.com/?id.214789"
-        ],
-        "summary": "A vulnerability has been found in Facepay 1.0 and classified as critical. Affected by this vulnerability is an unknown functionality of the file /face-recognition-php/facepay-master/camera.php. The manipulation of the argument userId leads to authorization bypass. The attack can be launched remotely. The identifier VDB-214789 was assigned to this vulnerability."
-    },
-    {
-        "Modified": "2022-12-06T16:15:00",
-        "Published": "2022-12-05T22:15:00",
-        "access": {},
-        "assigner": "cert@cert.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-40259",
-        "impact": {},
-        "last-modified": "2022-12-06T16:15:00",
-        "references": [
-            "https://cp.ami.com/MegaRAC%20Security%20Advisory/SP-X/AMI_MegaRAC_SPx_Arbitrary_Code_via_Redfish_API.pdf"
-        ],
-        "summary": "AMI MegaRAC Redfish Arbitrary Code Execution"
-    },
-    {
-        "Modified": "2022-12-06T16:15:00",
-        "Published": "2022-12-05T04:15:00",
-        "access": {},
-        "assigner": "vultures@jpcert.or.jp",
-        "cvss": null,
-        "cwe": "CWE-862",
-        "id": "CVE-2022-41807",
-        "impact": {},
-        "last-modified": "2022-12-06T16:15:00",
-        "references": [
-            "https://www.kyoceradocumentsolutions.co.jp/support/information/info_20221101.html",
-            "https://jvn.jp/en/jp/JVN46345126/index.html",
-            "https://www.kyoceradocumentsolutions.com/en/our-business/security/information/2022-11-01.html"
-        ],
-        "summary": "Missing authorization vulnerability exists in Kyocera Document Solutions MFPs and printers, which may allow a network-adjacent attacker to alter the product settings without authentication by sending a specially crafted request. Affected products/versions are as follows: TASKalfa 7550ci/6550ci, TASKalfa 5550ci/4550ci/3550ci/3050ci, TASKalfa 255c/205c, TASKalfa 256ci/206ci, ECOSYS M6526cdn/M6526cidn, FS-C2126MFP/C2126MFP+/C2026MFP/C2026MFP+, TASKalfa 8000i/6500i, TASKalfa 5500i/4500i/3500i, TASKalfa 305/255, TASKalfa 306i/256i, LS-3140MFP/3140MFP+/3640MFP, ECOSYS M2535dn, LS-1135MFP/1035MFP, LS-C8650DN/C8600DN, ECOSYS P6026cdn, FS-C5250DN, LS-4300DN/4200DN/2100DN, ECOSYS P4040dn, ECOSYS P2135dn, and FS-1370DN."
-    },
-    {
-        "Modified": "2022-12-06T16:15:00",
-        "Published": "2022-11-28T22:15:00",
-        "access": {},
-        "assigner": "ics-cert@hq.dhs.gov",
-        "cvss": null,
-        "cwe": "CWE-250",
-        "id": "CVE-2022-3088",
-        "impact": {},
-        "last-modified": "2022-12-06T16:15:00",
-        "references": [
-            "https://www.cisa.gov/uscert/ics/advisories/icsa-22-326-05"
-        ],
-        "summary": "UC-8100A-ME-T System Image: Versions v1.0 to v1.6, UC-2100 System Image: Versions v1.0 to v1.12, UC-2100-W System Image: Versions v1.0 to v 1.12, UC-3100 System Image: Versions v1.0 to v1.6, UC-5100 System Image: Versions v1.0 to v1.4, UC-8100 System Image: Versions v3.0 to v3.5, UC-8100-ME-T System Image: Versions v3.0 and v3.1 UC-8200 System Image: v1.0 to v1.5, AIG-300 System Image: v1.0 to v1.4, UC-8410A with Debian 9 System Image: Versions v4.0.2 and v4.1.2, UC-8580 with Debian 9 System Image: Versions v2.0 and v2.1, UC-8540 with Debian 9 System Image: Versions v2.0 and v2.1, and DA-662C-16-LX (GLB) System Image: Versions v1.0.2 to v1.1.2 of Moxa's ARM-based computers have an execution with unnecessary privileges vulnerability, which could allow an attacker with user-level privileges to gain root privileges."
-    },
-    {
-        "Modified": "2022-12-06T16:15:00",
-        "Published": "2021-10-28T19:15:00",
-        "access": {
-            "authentication": "SINGLE",
-            "complexity": "LOW",
-            "vector": "NETWORK"
-        },
-        "assigner": "product-security@apple.com",
-        "cvss": 4.0,
-        "cvss-time": "2022-12-06T16:15:00",
-        "cvss-vector": "AV:N/AC:L/Au:S/C:N/I:N/A:P",
-        "cwe": "CWE-400",
-        "id": "CVE-2020-10005",
-        "impact": {
-            "availability": "PARTIAL",
-            "confidentiality": "NONE",
-            "integrity": "NONE"
-        },
-        "last-modified": "2022-12-06T16:15:00",
-        "references": [
-            "https://support.apple.com/en-us/HT211931",
-            "https://talosintelligence.com/vulnerability_reports/TALOS-2021-1246"
-        ],
-        "summary": "A resource exhaustion issue was addressed with improved input validation. This issue is fixed in macOS Big Sur 11.0.1. An attacker in a privileged network position may be able to perform denial of service."
-    },
-    {
-        "Modified": "2022-12-06T16:15:00",
-        "Published": "2021-01-26T18:15:00",
-        "access": {
-            "authentication": "SINGLE",
-            "complexity": "LOW",
-            "vector": "NETWORK"
-        },
-        "assigner": "cve@mitre.org",
-        "cvss": 9.0,
-        "cvss-time": "2022-12-06T16:15:00",
-        "cvss-vector": "AV:N/AC:L/Au:S/C:C/I:C/A:C",
-        "cwe": "CWE-78",
-        "id": "CVE-2020-35576",
-        "impact": {
-            "availability": "COMPLETE",
-            "confidentiality": "COMPLETE",
-            "integrity": "COMPLETE"
-        },
-        "last-modified": "2022-12-06T16:15:00",
-        "references": [
-            "https://jvn.jp/en/vu/JVNVU92444096/",
-            "https://www.tp-link.com/us/security",
-            "https://www.tp-link.com/jp/support/download/tl-wr841n/v13/#Firmware"
-        ],
-        "summary": "A Command Injection issue in the traceroute feature on TP-Link TL-WR841N V13 (JP) with firmware versions prior to 201216 allows authenticated users to execute arbitrary code as root via shell metacharacters, a different vulnerability than CVE-2018-12577."
-    },
-    {
-        "Modified": "2022-12-06T16:13:00",
-        "Published": "2022-11-30T17:15:00",
-        "access": {},
-        "assigner": "security-advisories@github.com",
-        "cvss": null,
-        "cwe": "CWE-125",
-        "id": "CVE-2022-46149",
-        "impact": {},
-        "last-modified": "2022-12-06T16:13:00",
-        "references": [
-            "https://github.com/capnproto/capnproto/commit/25d34c67863fd960af34fc4f82a7ca3362ee74b9",
-            "https://github.com/capnproto/capnproto/security/advisories/GHSA-qqff-4vw4-f6hx",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/WKXM4JAFXLTXU5IQB3OUBQVCIICZWGYX/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/ZOCQQOPMVQOFUWBWAGVGN76OYAV3WXY4/"
-        ],
-        "summary": "Cap'n Proto is a data interchange format and remote procedure call (RPC) system. Cap'n Proro prior to versions 0.7.1, 0.8.1, 0.9.2, and 0.10.3, as well as versions of Cap'n Proto's Rust implementation prior to 0.13.7, 0.14.11, and 0.15.2 are vulnerable to out-of-bounds read due to logic error handling list-of-list. This issue may lead someone to remotely segfault a peer by sending it a malicious message, if the victim performs certain actions on a list-of-pointer type. Exfiltration of memory is possible if the victim performs additional certain actions on a list-of-pointer type. To be vulnerable, an application must perform a specific sequence of actions, described in the GitHub Security Advisory. The bug is present in inlined code, therefore the fix will require rebuilding dependent applications. Cap'n Proto has C++ fixes available in versions 0.7.1, 0.8.1, 0.9.2, and 0.10.3. The `capnp` Rust crate has fixes available in versions 0.13.7, 0.14.11, and 0.15.2."
-    },
-    {
-        "Modified": "2022-12-06T16:02:00",
-        "Published": "2022-12-05T04:15:00",
-        "access": {},
-        "assigner": "vultures@jpcert.or.jp",
-        "cvss": null,
-        "cwe": "CWE-78",
-        "id": "CVE-2022-42496",
-        "impact": {},
-        "last-modified": "2022-12-06T16:02:00",
-        "references": [
-            "https://jvn.jp/en/jp/JVN56968681/index.html",
-            "https://github.com/kujirahand/nadesiko3/issues/1325",
-            "https://github.com/kujirahand/nadesiko3/issues/1347"
-        ],
-        "summary": "OS command injection vulnerability in Nako3edit, editor component of nadesiko3 (PC Version) v3.3.74 and earlier allows a remote attacker to obtain appkey of the product and execute an arbitrary OS command on the product."
-    },
-    {
-        "Modified": "2022-12-06T15:59:00",
-        "Published": "2022-12-05T04:15:00",
-        "access": {},
-        "assigner": "vultures@jpcert.or.jp",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-41830",
-        "impact": {},
-        "last-modified": "2022-12-06T15:59:00",
-        "references": [
-            "https://www.kyoceradocumentsolutions.co.jp/support/information/info_20221101.html",
-            "https://jvn.jp/en/jp/JVN46345126/index.html",
-            "https://www.kyoceradocumentsolutions.com/en/our-business/security/information/2022-11-01.html"
-        ],
-        "summary": "Stored cross-site scripting vulnerability in Kyocera Document Solutions MFPs and printers allows a remote authenticated attacker with an administrative privilege to inject arbitrary script. Affected products/versions are as follows: TASKalfa 7550ci/6550ci, TASKalfa 5550ci/4550ci/3550ci/3050ci, TASKalfa 255c/205c, TASKalfa 256ci/206ci, ECOSYS M6526cdn/M6526cidn, FS-C2126MFP/C2126MFP+/C2026MFP/C2026MFP+, TASKalfa 8000i/6500i, TASKalfa 5500i/4500i/3500i, TASKalfa 305/255, TASKalfa 306i/256i, LS-3140MFP/3140MFP+/3640MFP, ECOSYS M2535dn, LS-1135MFP/1035MFP, LS-C8650DN/C8600DN, ECOSYS P6026cdn, FS-C5250DN, LS-4300DN/4200DN/2100DN, ECOSYS P4040dn, ECOSYS P2135dn, and FS-1370DN."
-    },
-    {
-        "Modified": "2022-12-06T15:51:00",
-        "Published": "2022-12-01T22:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-312",
-        "id": "CVE-2022-35120",
-        "impact": {},
-        "last-modified": "2022-12-06T15:51:00",
-        "references": [
-            "https://la.rsbir.ch/CVE-2022-35120.pdf"
-        ],
-        "summary": "IXPdata EasyInstall 6.6.14725 contains an access control issue."
-    },
-    {
-        "Modified": "2022-12-06T15:50:00",
-        "Published": "2022-12-01T05:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-78",
-        "id": "CVE-2022-45045",
-        "impact": {},
-        "last-modified": "2022-12-06T15:50:00",
-        "references": [
-            "https://vulncheck.com/blog/xiongmai-iot-exploitation"
-        ],
-        "summary": "Multiple Xiongmai NVR devices, including MBD6304T V4.02.R11.00000117.10001.131900.00000 and NBD6808T-PL V4.02.R11.C7431119.12001.130000.00000, allow authenticated users to execute arbitrary commands as root, as exploited in the wild starting in approximately 2019. A remote and authenticated attacker, possibly using the default admin:tlJwpbo6 credentials, can connect to port 34567 and execute arbitrary operating system commands via a crafted JSON file during an upgrade request. Since at least 2021, Xiongmai has applied patches to prevent attackers from using this mechanism to execute telnetd."
-    },
-    {
-        "Modified": "2022-12-06T15:49:00",
-        "Published": "2022-11-30T19:15:00",
-        "access": {},
-        "assigner": "cve@checkpoint.com",
-        "cvss": null,
-        "cwe": "CWE-307",
-        "id": "CVE-2022-23746",
-        "impact": {},
-        "last-modified": "2022-12-06T15:49:00",
-        "references": [
-            "https://supportcenter.checkpoint.com/supportcenter/portal?eventSubmit_doGoviewsolutiondetails=&solutionid=sk180271"
-        ],
-        "summary": "The IPsec VPN blade has a dedicated portal for downloading and connecting through SSL Network Extender (SNX). If the portal is configured for username/password authentication, it is vulnerable to a brute-force attack on usernames and passwords."
-    },
-    {
-        "Modified": "2022-12-06T15:41:00",
-        "Published": "2022-12-01T21:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-276",
-        "id": "CVE-2022-42718",
-        "impact": {},
-        "last-modified": "2022-12-06T15:41:00",
-        "references": [
-            "https://www.ni.com/en-us/support/documentation/supplemental/22/privilege-escalation-in-ni-labview-cli-.html"
-        ],
-        "summary": "Incorrect default permissions in the installation folder for NI LabVIEW Command Line Interface (CLI) may allow an authenticated user to potentially enable escalation of privilege via local access."
-    },
-    {
-        "Modified": "2022-12-06T15:37:00",
-        "Published": "2022-11-29T04:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-287",
-        "id": "CVE-2022-44037",
-        "impact": {},
-        "last-modified": "2022-12-06T15:37:00",
-        "references": [
-            "https://cyber-guy.gitbook.io/cyber-guys-blog/pocs/cve-2022-44037"
-        ],
-        "summary": "An access control issue in APsystems ENERGY COMMUNICATION UNIT (ECU-C) Power Control Software V4.1NA, V3.11.4, W2.1NA, V4.1SAA, C1.2.2 allows attackers to access sensitive data and execute specific commands and functions with full admin rights without authenticating allows him to perform multiple attacks, such as attacking wireless network in the product's range."
-    },
-    {
-        "Modified": "2022-12-06T15:35:00",
-        "Published": "2022-12-06T15:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2020-6627",
-        "impact": {},
-        "last-modified": "2022-12-06T15:35:00",
-        "references": [
-            "https://www.invictuseurope.com/blog/",
-            "https://pentest.blog/advisory-seagate-central-storage-remote-code-execution/",
-            "https://github.com/rapid7/metasploit-framework/pull/12844"
-        ],
-        "summary": "The web-management application on Seagate Central NAS STCG2000300, STCG3000300, and STCG4000300 devices allows OS command injection via mv_backend_launch in cirrus/application/helpers/mv_backend_helper.php by leveraging the \"start\" state and sending a check_device_name request."
-    },
-    {
-        "Modified": "2022-12-06T15:35:00",
-        "Published": "2022-12-06T15:15:00",
-        "access": {},
-        "assigner": "audit@patchstack.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-40209",
-        "impact": {},
-        "last-modified": "2022-12-06T15:35:00",
-        "references": [
-            "https://patchstack.com/database/vulnerability/wp-smart-import/wordpress-importer-plugin-1-0-2-reflected-cross-site-scripting-xss-vulnerability?_s_id=cve"
-        ],
-        "summary": "Unauth. Reflected Cross-Site Scripting (XSS) vulnerability in Xylus Themes WP Smart Import plugin <= 1.0.2 on WordPress."
-    },
-    {
-        "Modified": "2022-12-06T15:35:00",
-        "Published": "2022-12-06T15:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-46383",
-        "impact": {},
-        "last-modified": "2022-12-06T15:35:00",
-        "references": [
-            "https://docs.rackn.io/en/latest/doc/security/cve_2022_46383.html",
-            "https://rackn.com/products/rebar/"
-        ],
-        "summary": "RackN Digital Rebar through 4.6.14, 4.7 through 4.7.22, 4.8 through 4.8.5, 4.9 through 4.9.12, and 4.10 through 4.10.8 has exposed a privileged token via a public API endpoint (Incorrect Access Control). The token can be used to escalate privileges within the Digital Rebar system and grant full administrative access."
-    },
-    {
-        "Modified": "2022-12-06T15:27:00",
-        "Published": "2022-12-01T22:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "NVD-CWE-Other",
-        "id": "CVE-2022-44211",
-        "impact": {},
-        "last-modified": "2022-12-06T15:27:00",
-        "references": [
-            "https://forum.gl-inet.com/t/security-advisories-vulnerabilities-and-cves-of-gl-inet-software/25518"
-        ],
-        "summary": "In GL.iNet Goodcloud 1.1 Incorrect access control allows a remote attacker to access/change devices' settings."
-    },
-    {
-        "Modified": "2022-12-06T15:26:00",
-        "Published": "2022-12-01T22:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "NVD-CWE-noinfo",
-        "id": "CVE-2022-44212",
-        "impact": {},
-        "last-modified": "2022-12-06T15:26:00",
-        "references": [
-            "https://forum.gl-inet.com/t/security-advisories-vulnerabilities-and-cves-of-gl-inet-software/25518/2"
-        ],
-        "summary": "In GL.iNet Goodcloud 1.0, insecure design allows remote attacker to access devices' admin panel."
-    },
-    {
-        "Modified": "2022-12-06T15:15:00",
-        "Published": "2022-04-18T17:15:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "MEDIUM",
-            "vector": "NETWORK"
-        },
-        "assigner": "talos-cna@cisco.com",
-        "cvss": 6.8,
-        "cvss-time": "2022-12-06T15:15:00",
-        "cvss-vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
-        "cwe": "CWE-129",
-        "id": "CVE-2020-28609",
-        "impact": {
-            "availability": "PARTIAL",
-            "confidentiality": "PARTIAL",
-            "integrity": "PARTIAL"
-        },
-        "last-modified": "2022-12-06T15:15:00",
-        "references": [
-            "https://talosintelligence.com/vulnerability_reports/TALOS-2020-1225",
-            "https://lists.debian.org/debian-lts-announce/2022/12/msg00011.html"
-        ],
-        "summary": "Multiple code execution vulnerabilities exists in the Nef polygon-parsing functionality of CGAL libcgal CGAL-5.1.1. A specially crafted malformed file can lead to an out-of-bounds read and type confusion, which could lead to code execution. An attacker can provide malicious input to trigger any of these vulnerabilities. An oob read vulnerability exists in Nef_2/PM_io_parser.h PM_io_parser<PMDEC>::read_face() store_iv()."
-    },
-    {
-        "Modified": "2022-12-06T15:15:00",
-        "Published": "2022-04-18T17:15:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "MEDIUM",
-            "vector": "NETWORK"
-        },
-        "assigner": "talos-cna@cisco.com",
-        "cvss": 6.8,
-        "cvss-time": "2022-12-06T15:15:00",
-        "cvss-vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
-        "cwe": "CWE-129",
-        "id": "CVE-2020-28610",
-        "impact": {
-            "availability": "PARTIAL",
-            "confidentiality": "PARTIAL",
-            "integrity": "PARTIAL"
-        },
-        "last-modified": "2022-12-06T15:15:00",
-        "references": [
-            "https://talosintelligence.com/vulnerability_reports/TALOS-2020-1225",
-            "https://lists.debian.org/debian-lts-announce/2022/12/msg00011.html"
-        ],
-        "summary": "Multiple code execution vulnerabilities exists in the Nef polygon-parsing functionality of CGAL libcgal CGAL-5.1.1. A specially crafted malformed file can lead to an out-of-bounds read and type confusion, which could lead to code execution. An attacker can provide malicious input to trigger any of these vulnerabilities. An oob read vulnerability exists in Nef_S2/SM_io_parser.h SM_io_parser<Decorator_>::read_vertex() set_face()."
-    },
-    {
-        "Modified": "2022-12-06T15:15:00",
-        "Published": "2022-04-18T17:15:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "MEDIUM",
-            "vector": "NETWORK"
-        },
-        "assigner": "talos-cna@cisco.com",
-        "cvss": 6.8,
-        "cvss-time": "2022-12-06T15:15:00",
-        "cvss-vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
-        "cwe": "CWE-129",
-        "id": "CVE-2020-28624",
-        "impact": {
-            "availability": "PARTIAL",
-            "confidentiality": "PARTIAL",
-            "integrity": "PARTIAL"
-        },
-        "last-modified": "2022-12-06T15:15:00",
-        "references": [
-            "https://talosintelligence.com/vulnerability_reports/TALOS-2020-1225",
-            "https://lists.debian.org/debian-lts-announce/2022/12/msg00011.html"
-        ],
-        "summary": "Multiple code execution vulnerabilities exists in the Nef polygon-parsing functionality of CGAL libcgal CGAL-5.1.1. A specially crafted malformed file can lead to an out-of-bounds read and type confusion, which could lead to code execution. An attacker can provide malicious input to trigger any of these vulnerabilities. An oob read vulnerability exists in Nef_S2/SNC_io_parser.h SNC_io_parser<EW>::read_facet() fh->boundary_entry_objects SEdge_of."
-    },
-    {
-        "Modified": "2022-12-06T15:15:00",
-        "Published": "2022-04-18T17:15:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "MEDIUM",
-            "vector": "NETWORK"
-        },
-        "assigner": "talos-cna@cisco.com",
-        "cvss": 6.8,
-        "cvss-time": "2022-12-06T15:15:00",
-        "cvss-vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
-        "cwe": "CWE-129",
-        "id": "CVE-2020-28625",
-        "impact": {
-            "availability": "PARTIAL",
-            "confidentiality": "PARTIAL",
-            "integrity": "PARTIAL"
-        },
-        "last-modified": "2022-12-06T15:15:00",
-        "references": [
-            "https://talosintelligence.com/vulnerability_reports/TALOS-2020-1225",
-            "https://lists.debian.org/debian-lts-announce/2022/12/msg00011.html"
-        ],
-        "summary": "Multiple code execution vulnerabilities exists in the Nef polygon-parsing functionality of CGAL libcgal CGAL-5.1.1. A specially crafted malformed file can lead to an out-of-bounds read and type confusion, which could lead to code execution. An attacker can provide malicious input to trigger any of these vulnerabilities. An oob read vulnerability exists in Nef_S2/SNC_io_parser.h SNC_io_parser<EW>::read_facet() fh->boundary_entry_objects SLoop_of."
-    },
-    {
-        "Modified": "2022-12-06T15:15:00",
-        "Published": "2022-04-18T17:15:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "MEDIUM",
-            "vector": "NETWORK"
-        },
-        "assigner": "talos-cna@cisco.com",
-        "cvss": 6.8,
-        "cvss-time": "2022-12-06T15:15:00",
-        "cvss-vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
-        "cwe": "CWE-129",
-        "id": "CVE-2020-28627",
-        "impact": {
-            "availability": "PARTIAL",
-            "confidentiality": "PARTIAL",
-            "integrity": "PARTIAL"
-        },
-        "last-modified": "2022-12-06T15:15:00",
-        "references": [
-            "https://talosintelligence.com/vulnerability_reports/TALOS-2020-1225",
-            "https://lists.debian.org/debian-lts-announce/2022/12/msg00011.html"
-        ],
-        "summary": "Multiple code execution vulnerabilities exists in the Nef polygon-parsing functionality of CGAL libcgal CGAL-5.1.1. A specially crafted malformed file can lead to an out-of-bounds read and type confusion, which could lead to code execution. An attacker can provide malicious input to trigger any of these vulnerabilities. An oob read vulnerability exists in Nef_S2/SNC_io_parser.h SNC_io_parser<EW>::read_volume() ch->shell_entry_objects()."
-    },
-    {
-        "Modified": "2022-12-06T15:15:00",
-        "Published": "2022-04-18T17:15:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "MEDIUM",
-            "vector": "NETWORK"
-        },
-        "assigner": "talos-cna@cisco.com",
-        "cvss": 6.8,
-        "cvss-time": "2022-12-06T15:15:00",
-        "cvss-vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
-        "cwe": "CWE-129",
-        "id": "CVE-2020-28628",
-        "impact": {
-            "availability": "PARTIAL",
-            "confidentiality": "PARTIAL",
-            "integrity": "PARTIAL"
-        },
-        "last-modified": "2022-12-06T15:15:00",
-        "references": [
-            "https://talosintelligence.com/vulnerability_reports/TALOS-2020-1225",
-            "https://lists.debian.org/debian-lts-announce/2022/12/msg00011.html"
-        ],
-        "summary": "Multiple code execution vulnerabilities exists in the Nef polygon-parsing functionality of CGAL libcgal CGAL-5.1.1. A specially crafted malformed file can lead to an out-of-bounds read and type confusion, which could lead to code execution. An attacker can provide malicious input to trigger any of these vulnerabilities. An oob read vulnerability exists in Nef_S2/SNC_io_parser.h SNC_io_parser<EW>::read_volume() seh->twin()."
-    },
-    {
-        "Modified": "2022-12-06T15:15:00",
-        "Published": "2022-04-18T17:15:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "MEDIUM",
-            "vector": "NETWORK"
-        },
-        "assigner": "talos-cna@cisco.com",
-        "cvss": 6.8,
-        "cvss-time": "2022-12-06T15:15:00",
-        "cvss-vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
-        "cwe": "CWE-129",
-        "id": "CVE-2020-28629",
-        "impact": {
-            "availability": "PARTIAL",
-            "confidentiality": "PARTIAL",
-            "integrity": "PARTIAL"
-        },
-        "last-modified": "2022-12-06T15:15:00",
-        "references": [
-            "https://talosintelligence.com/vulnerability_reports/TALOS-2020-1225",
-            "https://lists.debian.org/debian-lts-announce/2022/12/msg00011.html"
-        ],
-        "summary": "Multiple code execution vulnerabilities exists in the Nef polygon-parsing functionality of CGAL libcgal CGAL-5.1.1. A specially crafted malformed file can lead to an out-of-bounds read and type confusion, which could lead to code execution. An attacker can provide malicious input to trigger any of these vulnerabilities. An oob read vulnerability exists in Nef_S2/SNC_io_parser.h SNC_io_parser<EW>::read_sedge() seh->sprev()."
-    },
-    {
-        "Modified": "2022-12-06T15:15:00",
-        "Published": "2022-04-18T17:15:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "MEDIUM",
-            "vector": "NETWORK"
-        },
-        "assigner": "talos-cna@cisco.com",
-        "cvss": 6.8,
-        "cvss-time": "2022-12-06T15:15:00",
-        "cvss-vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
-        "cwe": "CWE-129",
-        "id": "CVE-2020-28630",
-        "impact": {
-            "availability": "PARTIAL",
-            "confidentiality": "PARTIAL",
-            "integrity": "PARTIAL"
-        },
-        "last-modified": "2022-12-06T15:15:00",
-        "references": [
-            "https://talosintelligence.com/vulnerability_reports/TALOS-2020-1225",
-            "https://lists.debian.org/debian-lts-announce/2022/12/msg00011.html"
-        ],
-        "summary": "Multiple code execution vulnerabilities exists in the Nef polygon-parsing functionality of CGAL libcgal CGAL-5.1.1. A specially crafted malformed file can lead to an out-of-bounds read and type confusion, which could lead to code execution. An attacker can provide malicious input to trigger any of these vulnerabilities. An oob read vulnerability exists in Nef_S2/SNC_io_parser.h SNC_io_parser<EW>::read_sedge() seh->snext()."
-    },
-    {
-        "Modified": "2022-12-06T15:15:00",
-        "Published": "2022-04-18T17:15:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "MEDIUM",
-            "vector": "NETWORK"
-        },
-        "assigner": "talos-cna@cisco.com",
-        "cvss": 6.8,
-        "cvss-time": "2022-12-06T15:15:00",
-        "cvss-vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
-        "cwe": "CWE-129",
-        "id": "CVE-2020-28631",
-        "impact": {
-            "availability": "PARTIAL",
-            "confidentiality": "PARTIAL",
-            "integrity": "PARTIAL"
-        },
-        "last-modified": "2022-12-06T15:15:00",
-        "references": [
-            "https://talosintelligence.com/vulnerability_reports/TALOS-2020-1225",
-            "https://lists.debian.org/debian-lts-announce/2022/12/msg00011.html"
-        ],
-        "summary": "Multiple code execution vulnerabilities exists in the Nef polygon-parsing functionality of CGAL libcgal CGAL-5.1.1. A specially crafted malformed file can lead to an out-of-bounds read and type confusion, which could lead to code execution. An attacker can provide malicious input to trigger any of these vulnerabilities. An oob read vulnerability exists in Nef_S2/SNC_io_parser.h SNC_io_parser<EW>::read_sedge() seh->source()."
-    },
-    {
-        "Modified": "2022-12-06T15:15:00",
-        "Published": "2022-04-18T17:15:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "MEDIUM",
-            "vector": "NETWORK"
-        },
-        "assigner": "talos-cna@cisco.com",
-        "cvss": 6.8,
-        "cvss-time": "2022-12-06T15:15:00",
-        "cvss-vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
-        "cwe": "CWE-129",
-        "id": "CVE-2020-28632",
-        "impact": {
-            "availability": "PARTIAL",
-            "confidentiality": "PARTIAL",
-            "integrity": "PARTIAL"
-        },
-        "last-modified": "2022-12-06T15:15:00",
-        "references": [
-            "https://talosintelligence.com/vulnerability_reports/TALOS-2020-1225",
-            "https://lists.debian.org/debian-lts-announce/2022/12/msg00011.html"
-        ],
-        "summary": "Multiple code execution vulnerabilities exists in the Nef polygon-parsing functionality of CGAL libcgal CGAL-5.1.1. A specially crafted malformed file can lead to an out-of-bounds read and type confusion, which could lead to code execution. An attacker can provide malicious input to trigger any of these vulnerabilities. An oob read vulnerability exists in Nef_S2/SNC_io_parser.h SNC_io_parser<EW>::read_sedge() seh->incident_sface()."
-    },
-    {
-        "Modified": "2022-12-06T15:15:00",
-        "Published": "2022-04-18T17:15:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "MEDIUM",
-            "vector": "NETWORK"
-        },
-        "assigner": "talos-cna@cisco.com",
-        "cvss": 6.8,
-        "cvss-time": "2022-12-06T15:15:00",
-        "cvss-vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
-        "cwe": "CWE-129",
-        "id": "CVE-2020-28633",
-        "impact": {
-            "availability": "PARTIAL",
-            "confidentiality": "PARTIAL",
-            "integrity": "PARTIAL"
-        },
-        "last-modified": "2022-12-06T15:15:00",
-        "references": [
-            "https://talosintelligence.com/vulnerability_reports/TALOS-2020-1225",
-            "https://lists.debian.org/debian-lts-announce/2022/12/msg00011.html"
-        ],
-        "summary": "Multiple code execution vulnerabilities exists in the Nef polygon-parsing functionality of CGAL libcgal CGAL-5.1.1. A specially crafted malformed file can lead to an out-of-bounds read and type confusion, which could lead to code execution. An attacker can provide malicious input to trigger any of these vulnerabilities. An oob read vulnerability exists in Nef_S2/SNC_io_parser.h SNC_io_parser<EW>::read_sedge() seh->prev()."
-    },
-    {
-        "Modified": "2022-12-06T15:15:00",
-        "Published": "2022-04-18T17:15:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "MEDIUM",
-            "vector": "NETWORK"
-        },
-        "assigner": "talos-cna@cisco.com",
-        "cvss": 6.8,
-        "cvss-time": "2022-12-06T15:15:00",
-        "cvss-vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
-        "cwe": "CWE-129",
-        "id": "CVE-2020-28634",
-        "impact": {
-            "availability": "PARTIAL",
-            "confidentiality": "PARTIAL",
-            "integrity": "PARTIAL"
-        },
-        "last-modified": "2022-12-06T15:15:00",
-        "references": [
-            "https://talosintelligence.com/vulnerability_reports/TALOS-2020-1225",
-            "https://lists.debian.org/debian-lts-announce/2022/12/msg00011.html"
-        ],
-        "summary": "Multiple code execution vulnerabilities exists in the Nef polygon-parsing functionality of CGAL libcgal CGAL-5.1.1. A specially crafted malformed file can lead to an out-of-bounds read and type confusion, which could lead to code execution. An attacker can provide malicious input to trigger any of these vulnerabilities. An oob read vulnerability exists in Nef_S2/SNC_io_parser.h SNC_io_parser<EW>::read_sedge() seh->next()."
-    },
-    {
-        "Modified": "2022-12-06T15:15:00",
-        "Published": "2022-04-18T17:15:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "MEDIUM",
-            "vector": "NETWORK"
-        },
-        "assigner": "talos-cna@cisco.com",
-        "cvss": 6.8,
-        "cvss-time": "2022-12-06T15:15:00",
-        "cvss-vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
-        "cwe": "CWE-129",
-        "id": "CVE-2020-28635",
-        "impact": {
-            "availability": "PARTIAL",
-            "confidentiality": "PARTIAL",
-            "integrity": "PARTIAL"
-        },
-        "last-modified": "2022-12-06T15:15:00",
-        "references": [
-            "https://talosintelligence.com/vulnerability_reports/TALOS-2020-1225",
-            "https://lists.debian.org/debian-lts-announce/2022/12/msg00011.html"
-        ],
-        "summary": "Multiple code execution vulnerabilities exists in the Nef polygon-parsing functionality of CGAL libcgal CGAL-5.1.1. A specially crafted malformed file can lead to an out-of-bounds read and type confusion, which could lead to code execution. An attacker can provide malicious input to trigger any of these vulnerabilities. An oob read vulnerability exists in Nef_S2/SNC_io_parser.h SNC_io_parser<EW>::read_sedge() seh->facet()."
-    },
-    {
-        "Modified": "2022-12-06T15:15:00",
-        "Published": "2022-04-18T17:15:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "MEDIUM",
-            "vector": "NETWORK"
-        },
-        "assigner": "talos-cna@cisco.com",
-        "cvss": 6.8,
-        "cvss-time": "2022-12-06T15:15:00",
-        "cvss-vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
-        "cwe": "CWE-129",
-        "id": "CVE-2020-35629",
-        "impact": {
-            "availability": "PARTIAL",
-            "confidentiality": "PARTIAL",
-            "integrity": "PARTIAL"
-        },
-        "last-modified": "2022-12-06T15:15:00",
-        "references": [
-            "https://talosintelligence.com/vulnerability_reports/TALOS-2020-1225",
-            "https://lists.debian.org/debian-lts-announce/2022/12/msg00011.html"
-        ],
-        "summary": "Multiple code execution vulnerabilities exists in the Nef polygon-parsing functionality of CGAL libcgal CGAL-5.1.1. A specially crafted malformed file can lead to an out-of-bounds read and type confusion, which could lead to code execution. An attacker can provide malicious input to trigger any of these vulnerabilities. An oob read vulnerability exists in Nef_S2/SNC_io_parser.h SNC_io_parser<EW>::read_sloop() slh->facet()."
-    },
-    {
-        "Modified": "2022-12-06T15:15:00",
-        "Published": "2022-04-18T17:15:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "MEDIUM",
-            "vector": "NETWORK"
-        },
-        "assigner": "talos-cna@cisco.com",
-        "cvss": 6.8,
-        "cvss-time": "2022-12-06T15:15:00",
-        "cvss-vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
-        "cwe": "CWE-129",
-        "id": "CVE-2020-35630",
-        "impact": {
-            "availability": "PARTIAL",
-            "confidentiality": "PARTIAL",
-            "integrity": "PARTIAL"
-        },
-        "last-modified": "2022-12-06T15:15:00",
-        "references": [
-            "https://talosintelligence.com/vulnerability_reports/TALOS-2020-1225",
-            "https://lists.debian.org/debian-lts-announce/2022/12/msg00011.html"
-        ],
-        "summary": "Multiple code execution vulnerabilities exists in the Nef polygon-parsing functionality of CGAL libcgal CGAL-5.1.1. A specially crafted malformed file can lead to an out-of-bounds read and type confusion, which could lead to code execution. An attacker can provide malicious input to trigger any of these vulnerabilities. An oob read vulnerability exists in Nef_S2/SNC_io_parser.h SNC_io_parser<EW>::read_sface() sfh->center_vertex()."
-    },
-    {
-        "Modified": "2022-12-06T15:15:00",
-        "Published": "2022-04-18T17:15:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "MEDIUM",
-            "vector": "NETWORK"
-        },
-        "assigner": "talos-cna@cisco.com",
-        "cvss": 6.8,
-        "cvss-time": "2022-12-06T15:15:00",
-        "cvss-vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
-        "cwe": "CWE-129",
-        "id": "CVE-2020-35631",
-        "impact": {
-            "availability": "PARTIAL",
-            "confidentiality": "PARTIAL",
-            "integrity": "PARTIAL"
-        },
-        "last-modified": "2022-12-06T15:15:00",
-        "references": [
-            "https://talosintelligence.com/vulnerability_reports/TALOS-2020-1225",
-            "https://lists.debian.org/debian-lts-announce/2022/12/msg00011.html"
-        ],
-        "summary": "Multiple code execution vulnerabilities exists in the Nef polygon-parsing functionality of CGAL libcgal CGAL-5.1.1. A specially crafted malformed file can lead to an out-of-bounds read and type confusion, which could lead to code execution. An attacker can provide malicious input to trigger any of these vulnerabilities. An oob read vulnerability exists in Nef_S2/SNC_io_parser.h SNC_io_parser<EW>::read_sface() SD.link_as_face_cycle()."
-    },
-    {
-        "Modified": "2022-12-06T15:15:00",
-        "Published": "2022-04-18T17:15:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "MEDIUM",
-            "vector": "NETWORK"
-        },
-        "assigner": "talos-cna@cisco.com",
-        "cvss": 6.8,
-        "cvss-time": "2022-12-06T15:15:00",
-        "cvss-vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
-        "cwe": "CWE-129",
-        "id": "CVE-2020-35632",
-        "impact": {
-            "availability": "PARTIAL",
-            "confidentiality": "PARTIAL",
-            "integrity": "PARTIAL"
-        },
-        "last-modified": "2022-12-06T15:15:00",
-        "references": [
-            "https://talosintelligence.com/vulnerability_reports/TALOS-2020-1225",
-            "https://lists.debian.org/debian-lts-announce/2022/12/msg00011.html"
-        ],
-        "summary": "Multiple code execution vulnerabilities exists in the Nef polygon-parsing functionality of CGAL libcgal CGAL-5.1.1. A specially crafted malformed file can lead to an out-of-bounds read and type confusion, which could lead to code execution. An attacker can provide malicious input to trigger any of these vulnerabilities. An oob read vulnerability exists in Nef_S2/SNC_io_parser.h SNC_io_parser<EW>::read_sface() sfh->boundary_entry_objects Edge_of."
-    },
-    {
-        "Modified": "2022-12-06T15:15:00",
-        "Published": "2022-04-18T17:15:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "MEDIUM",
-            "vector": "NETWORK"
-        },
-        "assigner": "talos-cna@cisco.com",
-        "cvss": 6.8,
-        "cvss-time": "2022-12-06T15:15:00",
-        "cvss-vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
-        "cwe": "CWE-129",
-        "id": "CVE-2020-28602",
-        "impact": {
-            "availability": "PARTIAL",
-            "confidentiality": "PARTIAL",
-            "integrity": "PARTIAL"
-        },
-        "last-modified": "2022-12-06T15:15:00",
-        "references": [
-            "https://talosintelligence.com/vulnerability_reports/TALOS-2020-1225",
-            "https://lists.debian.org/debian-lts-announce/2022/12/msg00011.html"
-        ],
-        "summary": "Multiple code execution vulnerabilities exists in the Nef polygon-parsing functionality of CGAL libcgal CGAL-5.1.1. A specially crafted malformed file can lead to an out-of-bounds read and type confusion, which could lead to code execution. An attacker can provide malicious input to trigger any of these vulnerabilities. An oob read vulnerability exists in Nef_2/PM_io_parser.h PM_io_parser<PMDEC>::read_vertex() Halfedge_of[]."
-    },
-    {
-        "Modified": "2022-12-06T15:15:00",
-        "Published": "2022-04-18T17:15:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "MEDIUM",
-            "vector": "NETWORK"
-        },
-        "assigner": "talos-cna@cisco.com",
-        "cvss": 6.8,
-        "cvss-time": "2022-12-06T15:15:00",
-        "cvss-vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
-        "cwe": "CWE-129",
-        "id": "CVE-2020-28603",
-        "impact": {
-            "availability": "PARTIAL",
-            "confidentiality": "PARTIAL",
-            "integrity": "PARTIAL"
-        },
-        "last-modified": "2022-12-06T15:15:00",
-        "references": [
-            "https://talosintelligence.com/vulnerability_reports/TALOS-2020-1225",
-            "https://lists.debian.org/debian-lts-announce/2022/12/msg00011.html"
-        ],
-        "summary": "Multiple code execution vulnerabilities exists in the Nef polygon-parsing functionality of CGAL libcgal CGAL-5.1.1. A specially crafted malformed file can lead to an out-of-bounds read and type confusion, which could lead to code execution. An attacker can provide malicious input to trigger any of these vulnerabilities. An oob read vulnerability exists in Nef_2/PM_io_parser.h PM_io_parser<PMDEC>::read_hedge() e->set_prev()."
-    },
-    {
-        "Modified": "2022-12-06T15:15:00",
-        "Published": "2022-04-18T17:15:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "MEDIUM",
-            "vector": "NETWORK"
-        },
-        "assigner": "talos-cna@cisco.com",
-        "cvss": 6.8,
-        "cvss-time": "2022-12-06T15:15:00",
-        "cvss-vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
-        "cwe": "CWE-129",
-        "id": "CVE-2020-28604",
-        "impact": {
-            "availability": "PARTIAL",
-            "confidentiality": "PARTIAL",
-            "integrity": "PARTIAL"
-        },
-        "last-modified": "2022-12-06T15:15:00",
-        "references": [
-            "https://talosintelligence.com/vulnerability_reports/TALOS-2020-1225",
-            "https://lists.debian.org/debian-lts-announce/2022/12/msg00011.html"
-        ],
-        "summary": "Multiple code execution vulnerabilities exists in the Nef polygon-parsing functionality of CGAL libcgal CGAL-5.1.1. A specially crafted malformed file can lead to an out-of-bounds read and type confusion, which could lead to code execution. An attacker can provide malicious input to trigger any of these vulnerabilities. An oob read vulnerability exists in Nef_2/PM_io_parser.h PM_io_parser<PMDEC>::read_hedge() e->set_next()."
-    },
-    {
-        "Modified": "2022-12-06T15:15:00",
-        "Published": "2022-04-18T17:15:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "MEDIUM",
-            "vector": "NETWORK"
-        },
-        "assigner": "talos-cna@cisco.com",
-        "cvss": 6.8,
-        "cvss-time": "2022-12-06T15:15:00",
-        "cvss-vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
-        "cwe": "CWE-129",
-        "id": "CVE-2020-28605",
-        "impact": {
-            "availability": "PARTIAL",
-            "confidentiality": "PARTIAL",
-            "integrity": "PARTIAL"
-        },
-        "last-modified": "2022-12-06T15:15:00",
-        "references": [
-            "https://talosintelligence.com/vulnerability_reports/TALOS-2020-1225",
-            "https://lists.debian.org/debian-lts-announce/2022/12/msg00011.html"
-        ],
-        "summary": "Multiple code execution vulnerabilities exists in the Nef polygon-parsing functionality of CGAL libcgal CGAL-5.1.1. A specially crafted malformed file can lead to an out-of-bounds read and type confusion, which could lead to code execution. An attacker can provide malicious input to trigger any of these vulnerabilities. An oob read exists in Nef_2/PM_io_parser.h PM_io_parser<PMDEC>::read_hedge() e->set_vertex()."
-    },
-    {
-        "Modified": "2022-12-06T15:15:00",
-        "Published": "2022-04-18T17:15:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "MEDIUM",
-            "vector": "NETWORK"
-        },
-        "assigner": "talos-cna@cisco.com",
-        "cvss": 6.8,
-        "cvss-time": "2022-12-06T15:15:00",
-        "cvss-vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
-        "cwe": "CWE-129",
-        "id": "CVE-2020-28606",
-        "impact": {
-            "availability": "PARTIAL",
-            "confidentiality": "PARTIAL",
-            "integrity": "PARTIAL"
-        },
-        "last-modified": "2022-12-06T15:15:00",
-        "references": [
-            "https://talosintelligence.com/vulnerability_reports/TALOS-2020-1225",
-            "https://lists.debian.org/debian-lts-announce/2022/12/msg00011.html"
-        ],
-        "summary": "Multiple code execution vulnerabilities exists in the Nef polygon-parsing functionality of CGAL libcgal CGAL-5.1.1. A specially crafted malformed file can lead to an out-of-bounds read and type confusion, which could lead to code execution. An attacker can provide malicious input to trigger any of these vulnerabilities. An oob read vulnerability exists in Nef_2/PM_io_parser.h PM_io_parser<PMDEC>::read_hedge() e->set_face()."
-    },
-    {
-        "Modified": "2022-12-06T15:15:00",
-        "Published": "2022-04-18T17:15:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "MEDIUM",
-            "vector": "NETWORK"
-        },
-        "assigner": "talos-cna@cisco.com",
-        "cvss": 6.8,
-        "cvss-time": "2022-12-06T15:15:00",
-        "cvss-vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
-        "cwe": "CWE-129",
-        "id": "CVE-2020-28607",
-        "impact": {
-            "availability": "PARTIAL",
-            "confidentiality": "PARTIAL",
-            "integrity": "PARTIAL"
-        },
-        "last-modified": "2022-12-06T15:15:00",
-        "references": [
-            "https://talosintelligence.com/vulnerability_reports/TALOS-2020-1225",
-            "https://lists.debian.org/debian-lts-announce/2022/12/msg00011.html"
-        ],
-        "summary": "Multiple code execution vulnerabilities exists in the Nef polygon-parsing functionality of CGAL libcgal CGAL-5.1.1. A specially crafted malformed file can lead to an out-of-bounds read and type confusion, which could lead to code execution. An attacker can provide malicious input to trigger any of these vulnerabilities. An oob read vulnerability exists in Nef_2/PM_io_parser.h PM_io_parser<PMDEC>::read_face() set_halfedge()."
     }
 ]
