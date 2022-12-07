@@ -1,85 +1,226 @@
 [
     {
-        "Modified": "2022-12-07T10:15:00",
-        "Published": "2022-12-07T10:15:00",
+        "Modified": "2022-12-07T14:34:00",
+        "Published": "2022-12-01T18:15:00",
         "access": {},
-        "assigner": "vultures@jpcert.or.jp",
+        "assigner": "ics-cert@hq.dhs.gov",
+        "cvss": null,
+        "cwe": "CWE-22",
+        "id": "CVE-2022-2969",
+        "impact": {},
+        "last-modified": "2022-12-07T14:34:00",
+        "references": [
+            "https://www.cisa.gov/uscert/ics/advisories/icsa-22-307-03"
+        ],
+        "summary": "Delta Industrial Automation DIALink versions prior to v1.5.0.0 Beta 4 uses an external input to construct a pathname intended to identify a file or directory located underneath a restricted parent directory. However, the software does not properly neutralize special elements within the pathname, which can cause the pathname to resolve to a location outside of the restricted directory."
+    },
+    {
+        "Modified": "2022-12-07T14:31:00",
+        "Published": "2022-12-04T19:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-918",
+        "id": "CVE-2022-35508",
+        "impact": {},
+        "last-modified": "2022-12-07T14:31:00",
+        "references": [
+            "https://git.proxmox.com/?p=pve-http-server.git;a=commitdiff;h=c2bd69c7b5e9c775f96021cf8ae53da3dbd9029d",
+            "https://git.proxmox.com/?p=pve-http-server.git;a=commitdiff;h=580d540ea907ba15f64379c5bb69ecf1a49a875f",
+            "https://git.proxmox.com/?p=pve-http-server.git;a=commitdiff;h=e9df8a6e76b2a18f89295a5d92a62177bbf0f762",
+            "https://starlabs.sg/blog/2022/12-multiple-vulnerabilites-in-proxmox-ve--proxmox-mail-gateway/"
+        ],
+        "summary": "Proxmox Virtual Environment (PVE) and Proxmox Mail Gateway (PMG) are vulnerable to SSRF when proxying HTTP requests between pve(pmg)proxy and pve(pmg)daemon. An attacker with an unprivileged account can craft an HTTP request to achieve SSRF and file disclosure of any files on the server. Also, in Proxmox Mail Gateway, privilege escalation to the root@pam account is possible if the backup feature has ever been used, because backup files such as pmg-backup_YYYY_MM_DD_*.tgz have 0644 permissions and contain an authkey value. This is fixed in pve-http-server 4.1-3."
+    },
+    {
+        "Modified": "2022-12-07T14:30:00",
+        "Published": "2022-12-06T07:15:00",
+        "access": {},
+        "assigner": "security@unisoc.com",
+        "cvss": null,
+        "cwe": "CWE-862",
+        "id": "CVE-2022-39096",
+        "impact": {},
+        "last-modified": "2022-12-07T14:30:00",
+        "references": [
+            "https://www.unisoc.com/en_us/secy/announcementDetail/1599588060988411006"
+        ],
+        "summary": "In power management service, there is a missing permission check. This could lead to set up power management service with no additional execution privileges needed."
+    },
+    {
+        "Modified": "2022-12-07T14:15:00",
+        "Published": "2022-12-07T14:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
         "cvss": null,
         "cwe": "Unknown",
-        "id": "CVE-2022-34840",
+        "id": "CVE-2022-45217",
         "impact": {},
-        "last-modified": "2022-12-07T10:15:00",
+        "last-modified": "2022-12-07T14:15:00",
         "references": [
-            "https://jvn.jp/en/vu/JVNVU92805279/index.html",
-            "https://www.buffalo.jp/news/detail/20221003-01.html"
+            "https://github.com/sudoninja-noob/CVE-2022-45217/blob/main/CVE-2022-45217",
+            "https://www.sourcecodester.com/php/15748/book-store-management-system-project-using-php-codeigniter-3-free-source-code.html"
         ],
-        "summary": "Use of hard-coded credentials vulnerability in multiple Buffalo network devices allows a network-adjacent attacker to alter?configuration settings of the device. The affected products/versions are as follows: WZR-300HP firmware Ver. 2.00 and earlier, WZR-450HP firmware Ver. 2.00 and earlier, WZR-600DHP firmware Ver. 2.00 and earlier, WZR-900DHP firmware Ver. 1.15 and earlier, HW-450HP-ZWE firmware Ver. 2.00 and earlier, WZR-450HP-CWT firmware Ver. 2.00 and earlier, WZR-450HP-UB firmware Ver. 2.00 and earlier, WZR-600DHP2 firmware Ver. 1.15 and earlier, and WZR-D1100H firmware Ver. 2.00 and earlier."
+        "summary": "A cross-site scripting (XSS) vulnerability in Book Store Management System v1.0.0 allows attackers to execute arbitrary web scripts or HTML via a crafted payload injected into the Level parameter under the Add New System User module."
     },
     {
-        "Modified": "2022-12-07T10:15:00",
-        "Published": "2022-12-07T10:15:00",
+        "Modified": "2022-12-07T14:15:00",
+        "Published": "2022-06-16T16:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "cve@mitre.org",
+        "cvss": 5.0,
+        "cvss-time": "2022-12-07T14:15:00",
+        "cvss-vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+        "cwe": "CWE-415",
+        "id": "CVE-2022-31291",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "NONE",
+            "integrity": "NONE"
+        },
+        "last-modified": "2022-12-07T14:15:00",
+        "references": [
+            "https://github.com/COVESA/dlt-daemon/pull/376/commits",
+            "https://lists.debian.org/debian-lts-announce/2022/12/msg00016.html"
+        ],
+        "summary": "An issue in dlt_config_file_parser.c of dlt-daemon v2.18.8 allows attackers to cause a double free via crafted TCP packets."
+    },
+    {
+        "Modified": "2022-12-07T14:15:00",
+        "Published": "2021-02-10T07:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "cve@mitre.org",
+        "cvss": 7.5,
+        "cvss-time": "2022-12-07T14:15:00",
+        "cvss-vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+        "cwe": "CWE-787",
+        "id": "CVE-2020-36244",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "PARTIAL",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-12-07T14:15:00",
+        "references": [
+            "https://github.com/GENIVI/dlt-daemon/compare/v2.18.5...v2.18.6",
+            "https://github.com/GENIVI/dlt-daemon/issues/265",
+            "https://us-cert.cisa.gov/ics/advisories/icsa-21-147-01",
+            "https://lists.debian.org/debian-lts-announce/2022/12/msg00016.html"
+        ],
+        "summary": "The daemon in GENIVI diagnostic log and trace (DLT), is vulnerable to a heap-based buffer overflow that could allow an attacker to remotely execute arbitrary code on the DLT-Daemon (versions prior to 2.18.6)."
+    },
+    {
+        "Modified": "2022-12-07T14:15:00",
+        "Published": "2020-11-30T19:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "MEDIUM",
+            "vector": "NETWORK"
+        },
+        "assigner": "cve@mitre.org",
+        "cvss": 6.8,
+        "cvss-time": "2022-12-07T14:15:00",
+        "cvss-vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
+        "cwe": "CWE-787",
+        "id": "CVE-2020-29394",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "PARTIAL",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-12-07T14:15:00",
+        "references": [
+            "https://github.com/GENIVI/dlt-daemon/issues/274",
+            "https://github.com/GENIVI/dlt-daemon/pull/275",
+            "https://github.com/GENIVI/dlt-daemon/pull/288",
+            "https://lists.debian.org/debian-lts-announce/2022/12/msg00016.html"
+        ],
+        "summary": "A buffer overflow in the dlt_filter_load function in dlt_common.c from dlt-daemon through 2.18.5 (GENIVI Diagnostic Log and Trace) allows arbitrary code execution because fscanf is misused (no limit on the number of characters to be read in the format argument)."
+    },
+    {
+        "Modified": "2022-12-07T14:15:00",
+        "Published": "2020-08-19T14:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "MEDIUM",
+            "vector": "NETWORK"
+        },
+        "assigner": "psirt@adobe.com",
+        "cvss": 9.3,
+        "cvss-time": "2022-12-07T14:15:00",
+        "cvss-vector": "AV:N/AC:M/Au:N/C:C/I:C/A:C",
+        "cwe": "CWE-416",
+        "id": "CVE-2020-9715",
+        "impact": {
+            "availability": "COMPLETE",
+            "confidentiality": "COMPLETE",
+            "integrity": "COMPLETE"
+        },
+        "last-modified": "2022-12-07T14:15:00",
+        "references": [
+            "https://helpx.adobe.com/security/products/acrobat/apsb20-48.html",
+            "https://www.zerodayinitiative.com/advisories/ZDI-20-991/",
+            "https://blog.exodusintel.com/2021/04/20/analysis-of-a-use-after-free-vulnerability-in-adobe-acrobat-reader-dc/"
+        ],
+        "summary": "Adobe Acrobat and Reader versions 2020.009.20074 and earlier, 2020.001.30002, 2017.011.30171 and earlier, and 2015.006.30523 and earlier have an use-after-free vulnerability. Successful exploitation could lead to arbitrary code execution ."
+    },
+    {
+        "Modified": "2022-12-07T13:57:00",
+        "Published": "2022-12-06T00:15:00",
         "access": {},
-        "assigner": "vultures@jpcert.or.jp",
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-798",
+        "id": "CVE-2022-38337",
+        "impact": {},
+        "last-modified": "2022-12-07T13:57:00",
+        "references": [
+            "https://docs.ssh-mitm.at/vulnerabilities/CVE-2022-38337.html"
+        ],
+        "summary": "When aborting a SFTP connection, MobaXterm before v22.1 sends a hardcoded password to the server. The server treats this as an invalid login attempt which can result in a Denial of Service (DoS) for the user if services like fail2ban are used."
+    },
+    {
+        "Modified": "2022-12-07T13:53:00",
+        "Published": "2022-12-07T07:15:00",
+        "access": {},
+        "assigner": "cna@vuldb.com",
+        "cvss": null,
+        "cwe": "CWE-707",
+        "id": "CVE-2022-4322",
+        "impact": {},
+        "last-modified": "2022-12-07T13:53:00",
+        "references": [
+            "https://vuldb.com/?id.215013",
+            "https://gitee.com/makunet/maku-boot/issues/I5ZUYI",
+            "https://gitee.com/makunet/maku-boot/commit/446eb7294332efca2bfd791bc37281cedac0d0ff"
+        ],
+        "summary": "A vulnerability, which was classified as critical, was found in maku-boot up to 2.2.0. This affects the function doExecute of the file AbstractScheduleJob.java of the component Scheduled Task Handler. The manipulation leads to injection. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. The name of the patch is 446eb7294332efca2bfd791bc37281cedac0d0ff. It is recommended to apply a patch to fix this issue. The identifier VDB-215013 was assigned to this vulnerability."
+    },
+    {
+        "Modified": "2022-12-07T13:53:00",
+        "Published": "2022-12-07T08:15:00",
+        "access": {},
+        "assigner": "tbd@nist.gov",
         "cvss": null,
         "cwe": "Unknown",
-        "id": "CVE-2022-39044",
+        "id": "CVE-2022-46741",
         "impact": {},
-        "last-modified": "2022-12-07T10:15:00",
+        "last-modified": "2022-12-07T13:53:00",
         "references": [
-            "https://jvn.jp/en/vu/JVNVU92805279/index.html",
-            "https://www.buffalo.jp/news/detail/20221003-01.html"
+            "https://github.com/PaddlePaddle/Paddle/blob/develop/security/advisory/pdsa-2022-001.md"
         ],
-        "summary": "Hidden functionality vulnerability in multiple Buffalo network devices allows a network-adjacent attacker with an administrative privilege to execute an arbitrary OS command. The affected products/versions are as follows: WCR-300 firmware Ver. 1.87 and earlier, WHR-HP-G300N firmware Ver. 2.00 and earlier, WHR-HP-GN firmware Ver. 1.87 and earlier, WPL-05G300 firmware Ver. 1.88 and earlier, WZR-300HP firmware Ver. 2.00 and earlier, WZR-450HP firmware Ver. 2.00 and earlier, WZR-600DHP firmware Ver. 2.00 and earlier, WZR-900DHP firmware Ver. 1.15 and earlier, WZR-HP-AG300H firmware Ver. 1.76 and earlier, WZR-HP-G302H firmware Ver. 1.86 and earlier, WLAE-AG300N firmware Ver. 1.86 and earlier, FS-600DHP firmware Ver. 3.40 and earlier, FS-G300N firmware Ver. 3.14 and earlier, FS-HP-G300N firmware Ver. 3.33 and earlier, FS-R600DHP firmware Ver. 3.40 and earlier, BHR-4GRV firmware Ver. 2.00 and earlier, DWR-HP-G300NH firmware Ver. 1.84 and earlier, DWR-PG firmware Ver. 1.83 and earlier, HW-450HP-ZWE firmware Ver. 2.00 and earlier, WER-A54G54 firmware Ver. 1.43 and earlier, WER-AG54 firmware Ver. 1.43 and earlier, WER-AM54G54 firmware Ver. 1.43 and earlier, WER-AMG54 firmware Ver. 1.43 and earlier, WHR-300 firmware Ver. 2.00 and earlier, WHR-300HP firmware Ver. 2.00 and earlier, WHR-AM54G54 firmware Ver. 1.43 and earlier, WHR-AMG54 firmware Ver. 1.43 and earlier, WHR-AMPG firmware Ver. 1.52 and earlier, WHR-G firmware Ver. 1.49 and earlier, WHR-G300N firmware Ver. 1.65 and earlier, WHR-G301N firmware Ver. 1.87 and earlier, WHR-G54S firmware Ver. 1.43 and earlier, WHR-G54S-NI firmware Ver. 1.24 and earlier, WHR-HP-AMPG firmware Ver. 1.43 and earlier, WHR-HP-G firmware Ver. 1.49 and earlier, WHR-HP-G54 firmware Ver. 1.43 and earlier, WLI-H4-D600 firmware Ver. 1.88 and earlier, WLI-TX4-AG300N firmware Ver. 1.53 and earlier, WS024BF firmware Ver. 1.60 and earlier, WS024BF-NW firmware Ver. 1.60 and earlier, WZR2-G108 firmware Ver. 1.33 and earlier, WZR2-G300N firmware Ver. 1.55 and earlier, WZR-450HP-CWT firmware Ver. 2.00 and earlier, WZR-450HP-UB firmware Ver. 2.00 and earlier, WZR-600DHP2 firmware Ver. 1.15 and earlier, WZR-AGL300NH firmware Ver. 1.55 and earlier, WZR-AMPG144NH firmware Ver. 1.49 and earlier, WZR-AMPG300NH firmware Ver. 1.51 and earlier, WZR-D1100H firmware Ver. 2.00 and earlier, WZR-G144N firmware Ver. 1.48 and earlier, WZR-G144NH firmware Ver. 1.48 and earlier, WZR-HP-G300NH firmware Ver. 1.84 and earlier, WZR-HP-G301NH firmware Ver. 1.84 and earlier, and WZR-HP-G450H firmware Ver. 1.90 and earlier."
+        "summary": "Out-of-bounds read in gather_tree in PaddlePaddle before 2.4."
     },
     {
-        "Modified": "2022-12-07T10:15:00",
-        "Published": "2022-12-07T10:15:00",
-        "access": {},
-        "assigner": "vultures@jpcert.or.jp",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-40966",
-        "impact": {},
-        "last-modified": "2022-12-07T10:15:00",
-        "references": [
-            "https://jvn.jp/en/vu/JVNVU92805279/index.html",
-            "https://www.buffalo.jp/news/detail/20221003-01.html"
-        ],
-        "summary": "Authentication bypass vulnerability in multiple Buffalo network devices allows a network-adjacent attacker to bypass authentication and access the device. The affected products/versions are as follows: WCR-300 firmware Ver. 1.87 and earlier, WHR-HP-G300N firmware Ver. 2.00 and earlier, WHR-HP-GN firmware Ver. 1.87 and earlier, WPL-05G300 firmware Ver. 1.88 and earlier, WRM-D2133HP firmware Ver. 2.85 and earlier, WRM-D2133HS firmware Ver. 2.96 and earlier, WTR-M2133HP firmware Ver. 2.85 and earlier, WTR-M2133HS firmware Ver. 2.96 and earlier, WXR-1900DHP firmware Ver. 2.50 and earlier, WXR-1900DHP2 firmware Ver. 2.59 and earlier, WXR-1900DHP3 firmware Ver. 2.63 and earlier, WXR-5950AX12 firmware Ver. 3.40 and earlier, WXR-6000AX12B firmware Ver. 3.40 and earlier, WXR-6000AX12S firmware Ver. 3.40 and earlier, WZR-300HP firmware Ver. 2.00 and earlier, WZR-450HP firmware Ver. 2.00 and earlier, WZR-600DHP firmware Ver. 2.00 and earlier, WZR-900DHP firmware Ver. 1.15 and earlier, WZR-1750DHP2 firmware Ver. 2.31 and earlier, WZR-HP-AG300H firmware Ver. 1.76 and earlier, WZR-HP-G302H firmware Ver. 1.86 and earlier, WEM-1266 firmware Ver. 2.85 and earlier, WEM-1266WP firmware Ver. 2.85 and earlier, WLAE-AG300N firmware Ver. 1.86 and earlier, FS-600DHP firmware Ver. 3.40 and earlier, FS-G300N firmware Ver. 3.14 and earlier, FS-HP-G300N firmware Ver. 3.33 and earlier, FS-R600DHP firmware Ver. 3.40 and earlier, BHR-4GRV firmware Ver. 2.00 and earlier, DWR-HP-G300NH firmware Ver. 1.84 and earlier, DWR-PG firmware Ver. 1.83 and earlier, HW-450HP-ZWE firmware Ver. 2.00 and earlier, WER-A54G54 firmware Ver. 1.43 and earlier, WER-AG54 firmware Ver. 1.43 and earlier, WER-AM54G54 firmware Ver. 1.43 and earlier, WER-AMG54 firmware Ver. 1.43 and earlier, WHR-300 firmware Ver. 2.00 and earlier, WHR-300HP firmware Ver. 2.00 and earlier, WHR-AM54G54 firmware Ver. 1.43 and earlier, WHR-AMG54 firmware Ver. 1.43 and earlier, WHR-AMPG firmware Ver. 1.52 and earlier, WHR-G firmware Ver. 1.49 and earlier, WHR-G300N firmware Ver. 1.65 and earlier, WHR-G301N firmware Ver. 1.87 and earlier, WHR-G54S firmware Ver. 1.43 and earlier, WHR-G54S-NI firmware Ver. 1.24 and earlier, WHR-HP-AMPG firmware Ver. 1.43 and earlier, WHR-HP-G firmware Ver. 1.49 and earlier, WHR-HP-G54 firmware Ver. 1.43 and earlier, WLI-H4-D600 firmware Ver. 1.88 and earlier, WS024BF firmware Ver. 1.60 and earlier, WS024BF-NW firmware Ver. 1.60 and earlier, WXR-1750DHP firmware Ver. 2.60 and earlier, WXR-1750DHP2 firmware Ver. 2.60 and earlier, WZR-1166DHP firmware Ver. 2.18 and earlier, WZR-1166DHP2 firmware Ver. 2.18 and earlier, WZR-1750DHP firmware Ver. 2.30 and earlier, WZR2-G300N firmware Ver. 1.55 and earlier, WZR-450HP-CWT firmware Ver. 2.00 and earlier, WZR-450HP-UB firmware Ver. 2.00 and earlier, WZR-600DHP2 firmware Ver. 1.15 and earlier, WZR-600DHP3 firmware Ver. 2.19 and earlier, WZR-900DHP2 firmware Ver. 2.19 and earlier, WZR-AGL300NH firmware Ver. 1.55 and earlier, WZR-AMPG144NH firmware Ver. 1.49 and earlier, WZR-AMPG300NH firmware Ver. 1.51 and earlier, WZR-D1100H firmware Ver. 2.00 and earlier, WZR-G144N firmware Ver. 1.48 and earlier, WZR-G144NH firmware Ver. 1.48 and earlier, WZR-HP-G300NH firmware Ver. 1.84 and earlier, WZR-HP-G301NH firmware Ver. 1.84 and earlier, WZR-HP-G450H firmware Ver. 1.90 and earlier, WZR-S1750DHP firmware Ver. 2.32 and earlier, WZR-S600DHP firmware Ver. 2.19 and earlier, and WZR-S900DHP firmware Ver. 2.19 and earlier."
-    },
-    {
-        "Modified": "2022-12-07T10:15:00",
-        "Published": "2022-12-07T10:15:00",
-        "access": {},
-        "assigner": "vultures@jpcert.or.jp",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-42458",
-        "impact": {},
-        "last-modified": "2022-12-07T10:15:00",
-        "references": [
-            "https://www.bingo-cms.jp/information/20221011.html",
-            "https://jvn.jp/en/jp/JVN74592196/index.html"
-        ],
-        "summary": "Authentication bypass using an alternate path or channel vulnerability in bingo!CMS version1.7.4.1 and earlier allows a remote unauthenticated attacker to upload an arbitrary file. As a result, an arbitrary script may be executed and/or a file may be altered."
-    },
-    {
-        "Modified": "2022-12-07T10:15:00",
-        "Published": "2022-12-07T10:15:00",
-        "access": {},
-        "assigner": "security@apache.org",
-        "cvss": null,
-        "cwe": "CWE-90",
-        "id": "CVE-2022-45910",
-        "impact": {},
-        "last-modified": "2022-12-07T10:15:00",
-        "references": [
-            "https://lists.apache.org/thread/m693p0dq6jvwwvmy2wnhj6k854z0s444"
-        ],
-        "summary": "Improper neutralization of special elements used in an LDAP query ('LDAP Injection') vulnerability in ActiveDirectory and Sharepoint ActiveDirectory authority connectors of Apache ManifoldCF allows an attacker to manipulate the LDAP search queries (DoS, additional queries, filter manipulation) during user lookup, if the username or the domain string are passed to the UserACLs servlet without validation. This issue affects Apache ManifoldCF version 2.23 and prior versions."
-    },
-    {
-        "Modified": "2022-12-07T09:15:00",
+        "Modified": "2022-12-07T13:53:00",
         "Published": "2022-12-07T09:15:00",
         "access": {},
         "assigner": "tbd@nist.gov",
@@ -87,11 +228,143 @@
         "cwe": "Unknown",
         "id": "CVE-2022-46742",
         "impact": {},
-        "last-modified": "2022-12-07T09:15:00",
+        "last-modified": "2022-12-07T13:53:00",
         "references": [
             "https://github.com/PaddlePaddle/Paddle/blob/develop/security/advisory/pdsa-2022-002.md"
         ],
         "summary": "Code injection in paddle.audio.functional.get_window in PaddlePaddle 2.4.0-rc0 allows arbitrary code execution."
+    },
+    {
+        "Modified": "2022-12-07T13:53:00",
+        "Published": "2022-12-07T10:15:00",
+        "access": {},
+        "assigner": "vultures@jpcert.or.jp",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-34840",
+        "impact": {},
+        "last-modified": "2022-12-07T13:53:00",
+        "references": [
+            "https://jvn.jp/en/vu/JVNVU92805279/index.html",
+            "https://www.buffalo.jp/news/detail/20221003-01.html"
+        ],
+        "summary": "Use of hard-coded credentials vulnerability in multiple Buffalo network devices allows a network-adjacent attacker to alter?configuration settings of the device. The affected products/versions are as follows: WZR-300HP firmware Ver. 2.00 and earlier, WZR-450HP firmware Ver. 2.00 and earlier, WZR-600DHP firmware Ver. 2.00 and earlier, WZR-900DHP firmware Ver. 1.15 and earlier, HW-450HP-ZWE firmware Ver. 2.00 and earlier, WZR-450HP-CWT firmware Ver. 2.00 and earlier, WZR-450HP-UB firmware Ver. 2.00 and earlier, WZR-600DHP2 firmware Ver. 1.15 and earlier, and WZR-D1100H firmware Ver. 2.00 and earlier."
+    },
+    {
+        "Modified": "2022-12-07T13:53:00",
+        "Published": "2022-12-07T10:15:00",
+        "access": {},
+        "assigner": "vultures@jpcert.or.jp",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-39044",
+        "impact": {},
+        "last-modified": "2022-12-07T13:53:00",
+        "references": [
+            "https://jvn.jp/en/vu/JVNVU92805279/index.html",
+            "https://www.buffalo.jp/news/detail/20221003-01.html"
+        ],
+        "summary": "Hidden functionality vulnerability in multiple Buffalo network devices allows a network-adjacent attacker with an administrative privilege to execute an arbitrary OS command. The affected products/versions are as follows: WCR-300 firmware Ver. 1.87 and earlier, WHR-HP-G300N firmware Ver. 2.00 and earlier, WHR-HP-GN firmware Ver. 1.87 and earlier, WPL-05G300 firmware Ver. 1.88 and earlier, WZR-300HP firmware Ver. 2.00 and earlier, WZR-450HP firmware Ver. 2.00 and earlier, WZR-600DHP firmware Ver. 2.00 and earlier, WZR-900DHP firmware Ver. 1.15 and earlier, WZR-HP-AG300H firmware Ver. 1.76 and earlier, WZR-HP-G302H firmware Ver. 1.86 and earlier, WLAE-AG300N firmware Ver. 1.86 and earlier, FS-600DHP firmware Ver. 3.40 and earlier, FS-G300N firmware Ver. 3.14 and earlier, FS-HP-G300N firmware Ver. 3.33 and earlier, FS-R600DHP firmware Ver. 3.40 and earlier, BHR-4GRV firmware Ver. 2.00 and earlier, DWR-HP-G300NH firmware Ver. 1.84 and earlier, DWR-PG firmware Ver. 1.83 and earlier, HW-450HP-ZWE firmware Ver. 2.00 and earlier, WER-A54G54 firmware Ver. 1.43 and earlier, WER-AG54 firmware Ver. 1.43 and earlier, WER-AM54G54 firmware Ver. 1.43 and earlier, WER-AMG54 firmware Ver. 1.43 and earlier, WHR-300 firmware Ver. 2.00 and earlier, WHR-300HP firmware Ver. 2.00 and earlier, WHR-AM54G54 firmware Ver. 1.43 and earlier, WHR-AMG54 firmware Ver. 1.43 and earlier, WHR-AMPG firmware Ver. 1.52 and earlier, WHR-G firmware Ver. 1.49 and earlier, WHR-G300N firmware Ver. 1.65 and earlier, WHR-G301N firmware Ver. 1.87 and earlier, WHR-G54S firmware Ver. 1.43 and earlier, WHR-G54S-NI firmware Ver. 1.24 and earlier, WHR-HP-AMPG firmware Ver. 1.43 and earlier, WHR-HP-G firmware Ver. 1.49 and earlier, WHR-HP-G54 firmware Ver. 1.43 and earlier, WLI-H4-D600 firmware Ver. 1.88 and earlier, WLI-TX4-AG300N firmware Ver. 1.53 and earlier, WS024BF firmware Ver. 1.60 and earlier, WS024BF-NW firmware Ver. 1.60 and earlier, WZR2-G108 firmware Ver. 1.33 and earlier, WZR2-G300N firmware Ver. 1.55 and earlier, WZR-450HP-CWT firmware Ver. 2.00 and earlier, WZR-450HP-UB firmware Ver. 2.00 and earlier, WZR-600DHP2 firmware Ver. 1.15 and earlier, WZR-AGL300NH firmware Ver. 1.55 and earlier, WZR-AMPG144NH firmware Ver. 1.49 and earlier, WZR-AMPG300NH firmware Ver. 1.51 and earlier, WZR-D1100H firmware Ver. 2.00 and earlier, WZR-G144N firmware Ver. 1.48 and earlier, WZR-G144NH firmware Ver. 1.48 and earlier, WZR-HP-G300NH firmware Ver. 1.84 and earlier, WZR-HP-G301NH firmware Ver. 1.84 and earlier, and WZR-HP-G450H firmware Ver. 1.90 and earlier."
+    },
+    {
+        "Modified": "2022-12-07T13:53:00",
+        "Published": "2022-12-07T10:15:00",
+        "access": {},
+        "assigner": "vultures@jpcert.or.jp",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-40966",
+        "impact": {},
+        "last-modified": "2022-12-07T13:53:00",
+        "references": [
+            "https://jvn.jp/en/vu/JVNVU92805279/index.html",
+            "https://www.buffalo.jp/news/detail/20221003-01.html"
+        ],
+        "summary": "Authentication bypass vulnerability in multiple Buffalo network devices allows a network-adjacent attacker to bypass authentication and access the device. The affected products/versions are as follows: WCR-300 firmware Ver. 1.87 and earlier, WHR-HP-G300N firmware Ver. 2.00 and earlier, WHR-HP-GN firmware Ver. 1.87 and earlier, WPL-05G300 firmware Ver. 1.88 and earlier, WRM-D2133HP firmware Ver. 2.85 and earlier, WRM-D2133HS firmware Ver. 2.96 and earlier, WTR-M2133HP firmware Ver. 2.85 and earlier, WTR-M2133HS firmware Ver. 2.96 and earlier, WXR-1900DHP firmware Ver. 2.50 and earlier, WXR-1900DHP2 firmware Ver. 2.59 and earlier, WXR-1900DHP3 firmware Ver. 2.63 and earlier, WXR-5950AX12 firmware Ver. 3.40 and earlier, WXR-6000AX12B firmware Ver. 3.40 and earlier, WXR-6000AX12S firmware Ver. 3.40 and earlier, WZR-300HP firmware Ver. 2.00 and earlier, WZR-450HP firmware Ver. 2.00 and earlier, WZR-600DHP firmware Ver. 2.00 and earlier, WZR-900DHP firmware Ver. 1.15 and earlier, WZR-1750DHP2 firmware Ver. 2.31 and earlier, WZR-HP-AG300H firmware Ver. 1.76 and earlier, WZR-HP-G302H firmware Ver. 1.86 and earlier, WEM-1266 firmware Ver. 2.85 and earlier, WEM-1266WP firmware Ver. 2.85 and earlier, WLAE-AG300N firmware Ver. 1.86 and earlier, FS-600DHP firmware Ver. 3.40 and earlier, FS-G300N firmware Ver. 3.14 and earlier, FS-HP-G300N firmware Ver. 3.33 and earlier, FS-R600DHP firmware Ver. 3.40 and earlier, BHR-4GRV firmware Ver. 2.00 and earlier, DWR-HP-G300NH firmware Ver. 1.84 and earlier, DWR-PG firmware Ver. 1.83 and earlier, HW-450HP-ZWE firmware Ver. 2.00 and earlier, WER-A54G54 firmware Ver. 1.43 and earlier, WER-AG54 firmware Ver. 1.43 and earlier, WER-AM54G54 firmware Ver. 1.43 and earlier, WER-AMG54 firmware Ver. 1.43 and earlier, WHR-300 firmware Ver. 2.00 and earlier, WHR-300HP firmware Ver. 2.00 and earlier, WHR-AM54G54 firmware Ver. 1.43 and earlier, WHR-AMG54 firmware Ver. 1.43 and earlier, WHR-AMPG firmware Ver. 1.52 and earlier, WHR-G firmware Ver. 1.49 and earlier, WHR-G300N firmware Ver. 1.65 and earlier, WHR-G301N firmware Ver. 1.87 and earlier, WHR-G54S firmware Ver. 1.43 and earlier, WHR-G54S-NI firmware Ver. 1.24 and earlier, WHR-HP-AMPG firmware Ver. 1.43 and earlier, WHR-HP-G firmware Ver. 1.49 and earlier, WHR-HP-G54 firmware Ver. 1.43 and earlier, WLI-H4-D600 firmware Ver. 1.88 and earlier, WS024BF firmware Ver. 1.60 and earlier, WS024BF-NW firmware Ver. 1.60 and earlier, WXR-1750DHP firmware Ver. 2.60 and earlier, WXR-1750DHP2 firmware Ver. 2.60 and earlier, WZR-1166DHP firmware Ver. 2.18 and earlier, WZR-1166DHP2 firmware Ver. 2.18 and earlier, WZR-1750DHP firmware Ver. 2.30 and earlier, WZR2-G300N firmware Ver. 1.55 and earlier, WZR-450HP-CWT firmware Ver. 2.00 and earlier, WZR-450HP-UB firmware Ver. 2.00 and earlier, WZR-600DHP2 firmware Ver. 1.15 and earlier, WZR-600DHP3 firmware Ver. 2.19 and earlier, WZR-900DHP2 firmware Ver. 2.19 and earlier, WZR-AGL300NH firmware Ver. 1.55 and earlier, WZR-AMPG144NH firmware Ver. 1.49 and earlier, WZR-AMPG300NH firmware Ver. 1.51 and earlier, WZR-D1100H firmware Ver. 2.00 and earlier, WZR-G144N firmware Ver. 1.48 and earlier, WZR-G144NH firmware Ver. 1.48 and earlier, WZR-HP-G300NH firmware Ver. 1.84 and earlier, WZR-HP-G301NH firmware Ver. 1.84 and earlier, WZR-HP-G450H firmware Ver. 1.90 and earlier, WZR-S1750DHP firmware Ver. 2.32 and earlier, WZR-S600DHP firmware Ver. 2.19 and earlier, and WZR-S900DHP firmware Ver. 2.19 and earlier."
+    },
+    {
+        "Modified": "2022-12-07T13:53:00",
+        "Published": "2022-12-07T10:15:00",
+        "access": {},
+        "assigner": "vultures@jpcert.or.jp",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-42458",
+        "impact": {},
+        "last-modified": "2022-12-07T13:53:00",
+        "references": [
+            "https://www.bingo-cms.jp/information/20221011.html",
+            "https://jvn.jp/en/jp/JVN74592196/index.html"
+        ],
+        "summary": "Authentication bypass using an alternate path or channel vulnerability in bingo!CMS version1.7.4.1 and earlier allows a remote unauthenticated attacker to upload an arbitrary file. As a result, an arbitrary script may be executed and/or a file may be altered."
+    },
+    {
+        "Modified": "2022-12-07T13:53:00",
+        "Published": "2022-12-07T10:15:00",
+        "access": {},
+        "assigner": "security@apache.org",
+        "cvss": null,
+        "cwe": "CWE-90",
+        "id": "CVE-2022-45910",
+        "impact": {},
+        "last-modified": "2022-12-07T13:53:00",
+        "references": [
+            "https://lists.apache.org/thread/m693p0dq6jvwwvmy2wnhj6k854z0s444"
+        ],
+        "summary": "Improper neutralization of special elements used in an LDAP query ('LDAP Injection') vulnerability in ActiveDirectory and Sharepoint ActiveDirectory authority connectors of Apache ManifoldCF allows an attacker to manipulate the LDAP search queries (DoS, additional queries, filter manipulation) during user lookup, if the username or the domain string are passed to the UserACLs servlet without validation. This issue affects Apache ManifoldCF version 2.23 and prior versions."
+    },
+    {
+        "Modified": "2022-12-07T13:49:00",
+        "Published": "2022-12-05T22:15:00",
+        "access": {},
+        "assigner": "cve-assignments@hackerone.com",
+        "cvss": null,
+        "cwe": "CWE-287",
+        "id": "CVE-2022-43549",
+        "impact": {},
+        "last-modified": "2022-12-07T13:49:00",
+        "references": [
+            "https://www.veeam.com/kb4374"
+        ],
+        "summary": "Improper authentication in Veeam Backup for Google Cloud v1.0 and v3.0 allows attackers to bypass authentication mechanisms."
+    },
+    {
+        "Modified": "2022-12-07T13:42:00",
+        "Published": "2022-12-05T16:15:00",
+        "access": {},
+        "assigner": "secalert@redhat.com",
+        "cvss": null,
+        "cwe": "CWE-833",
+        "id": "CVE-2022-4269",
+        "impact": {},
+        "last-modified": "2022-12-07T13:42:00",
+        "references": [
+            "https://lore.kernel.org/netdev/33dc43f587ec1388ba456b4915c75f02a8aae226.1663945716.git.dcaratti@redhat.com/"
+        ],
+        "summary": "A flaw was found in the Linux kernel Traffic Control (TC) subsystem. Using a specific networking configuration (redirecting egress packets to ingress using TC action \"mirred\") a local unprivileged user could trigger a CPU soft lockup (ABBA deadlock) when the transport protocol in use (TCP or SCTP) does a retransmission, resulting in a denial of service condition."
+    },
+    {
+        "Modified": "2022-12-07T13:15:00",
+        "Published": "2022-07-20T20:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2022-31160",
+        "impact": {},
+        "last-modified": "2022-12-07T13:15:00",
+        "references": [
+            "https://github.com/jquery/jquery-ui/security/advisories/GHSA-h6gj-6jjq-h8g9",
+            "https://github.com/jquery/jquery-ui/commit/8cc5bae1caa1fcf96bf5862c5646c787020ba3f9",
+            "https://blog.jqueryui.com/2022/07/jquery-ui-1-13-2-released/",
+            "https://www.drupal.org/sa-contrib-2022-052",
+            "https://security.netapp.com/advisory/ntap-20220909-0007/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/J5LGNTICB5BRFAG3DHVVELS6H3CZSQMO/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6XBR3G3JR5ZIOJDO4224M3INXDS2VFDD/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/QB2FJQXCNHO32VGVOC6DY6IPGVE4VDU6/",
+            "https://lists.debian.org/debian-lts-announce/2022/12/msg00015.html"
+        ],
+        "summary": "jQuery UI is a curated set of user interface interactions, effects, widgets, and themes built on top of jQuery. Versions prior to 1.13.2 are potentially vulnerable to cross-site scripting. Initializing a checkboxradio widget on an input enclosed within a label makes that parent label contents considered as the input label. Calling `.checkboxradio( \"refresh\" )` on such a widget and the initial HTML contained encoded HTML entities will make them erroneously get decoded. This can lead to potentially executing JavaScript code. The bug has been patched in jQuery UI 1.13.2. To remediate the issue, someone who can change the initial HTML can wrap all the non-input contents of the `label` in a `span`."
     },
     {
         "Modified": "2022-12-07T08:15:00",
@@ -105,38 +378,6 @@
         "last-modified": "2022-12-07T08:15:00",
         "references": [],
         "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was withdrawn. Further investigation showed that it was not a vulnerability. Notes: none."
-    },
-    {
-        "Modified": "2022-12-07T08:15:00",
-        "Published": "2022-12-07T08:15:00",
-        "access": {},
-        "assigner": "tbd@nist.gov",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-46741",
-        "impact": {},
-        "last-modified": "2022-12-07T08:15:00",
-        "references": [
-            "https://github.com/PaddlePaddle/Paddle/blob/develop/security/advisory/pdsa-2022-001.md"
-        ],
-        "summary": "Out-of-bounds read in gather_tree in PaddlePaddle before 2.4."
-    },
-    {
-        "Modified": "2022-12-07T07:15:00",
-        "Published": "2022-12-07T07:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-707",
-        "id": "CVE-2022-4322",
-        "impact": {},
-        "last-modified": "2022-12-07T07:15:00",
-        "references": [
-            "https://vuldb.com/?id.215013",
-            "https://gitee.com/makunet/maku-boot/issues/I5ZUYI",
-            "https://gitee.com/makunet/maku-boot/commit/446eb7294332efca2bfd791bc37281cedac0d0ff"
-        ],
-        "summary": "A vulnerability, which was classified as critical, was found in maku-boot up to 2.2.0. This affects the function doExecute of the file AbstractScheduleJob.java of the component Scheduled Task Handler. The manipulation leads to injection. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. The name of the patch is 446eb7294332efca2bfd791bc37281cedac0d0ff. It is recommended to apply a patch to fix this issue. The identifier VDB-215013 was assigned to this vulnerability."
     },
     {
         "Modified": "2022-12-07T04:52:00",
@@ -1504,287 +1745,5 @@
             "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/2CUL3Z7MEED7RFQZVGQL2MTKSFFZKAAY/"
         ],
         "summary": ".NET Core and Visual Studio Denial of Service Vulnerability."
-    },
-    {
-        "Modified": "2022-12-07T02:35:00",
-        "Published": "2022-09-20T21:15:00",
-        "access": {},
-        "assigner": "product-security@apple.com",
-        "cvss": null,
-        "cwe": "NVD-CWE-noinfo",
-        "id": "CVE-2022-32872",
-        "impact": {},
-        "last-modified": "2022-12-07T02:35:00",
-        "references": [
-            "https://support.apple.com/en-us/HT213445",
-            "https://support.apple.com/en-us/HT213446",
-            "http://seclists.org/fulldisclosure/2022/Oct/39",
-            "http://seclists.org/fulldisclosure/2022/Oct/40"
-        ],
-        "summary": "A logic issue was addressed with improved restrictions. This issue is fixed in iOS 16, iOS 15.7 and iPadOS 15.7. A person with physical access to an iOS device may be able to access photos from the lock screen."
-    },
-    {
-        "Modified": "2022-12-07T02:32:00",
-        "Published": "2022-09-20T21:15:00",
-        "access": {},
-        "assigner": "product-security@apple.com",
-        "cvss": null,
-        "cwe": "NVD-CWE-noinfo",
-        "id": "CVE-2022-32795",
-        "impact": {},
-        "last-modified": "2022-12-07T02:32:00",
-        "references": [
-            "https://support.apple.com/en-us/HT213445",
-            "https://support.apple.com/en-us/HT213446",
-            "http://seclists.org/fulldisclosure/2022/Oct/39",
-            "http://seclists.org/fulldisclosure/2022/Oct/40"
-        ],
-        "summary": "This issue was addressed with improved checks. This issue is fixed in iOS 16, iOS 15.7 and iPadOS 15.7. Visiting a malicious website may lead to address bar spoofing."
-    },
-    {
-        "Modified": "2022-12-07T02:31:00",
-        "Published": "2022-08-23T16:15:00",
-        "access": {},
-        "assigner": "secalert@redhat.com",
-        "cvss": null,
-        "cwe": "CWE-200",
-        "id": "CVE-2021-3800",
-        "impact": {},
-        "last-modified": "2022-12-07T02:31:00",
-        "references": [
-            "https://access.redhat.com/security/cve/CVE-2021-3800",
-            "https://www.openwall.com/lists/oss-security/2017/06/23/8",
-            "https://gitlab.gnome.org/GNOME/glib/-/commit/3529bb4450a51995",
-            "https://bugzilla.redhat.com/show_bug.cgi?id=1938284",
-            "https://lists.debian.org/debian-lts-announce/2022/09/msg00020.html",
-            "https://security.netapp.com/advisory/ntap-20221028-0004/"
-        ],
-        "summary": "A flaw was found in glib before version 2.63.6. Due to random charset alias, pkexec can leak content from files owned by privileged users to unprivileged ones under the right condition."
-    },
-    {
-        "Modified": "2022-12-07T02:28:00",
-        "Published": "2021-08-10T21:15:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "MEDIUM",
-            "vector": "NETWORK"
-        },
-        "assigner": "cve@mitre.org",
-        "cvss": 4.3,
-        "cvss-time": "2022-12-07T02:28:00",
-        "cvss-vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P",
-        "cwe": "CWE-120",
-        "id": "CVE-2020-21681",
-        "impact": {
-            "availability": "PARTIAL",
-            "confidentiality": "NONE",
-            "integrity": "NONE"
-        },
-        "last-modified": "2022-12-07T02:28:00",
-        "references": [
-            "https://sourceforge.net/p/mcj/tickets/73/"
-        ],
-        "summary": "A global buffer overflow in the set_color component in genge.c of fig2dev 3.2.7b allows attackers to cause a denial of service (DOS) via converting a xfig file into ge format."
-    },
-    {
-        "Modified": "2022-12-07T02:23:00",
-        "Published": "2022-08-23T16:15:00",
-        "access": {},
-        "assigner": "secalert@redhat.com",
-        "cvss": null,
-        "cwe": "CWE-190",
-        "id": "CVE-2021-20304",
-        "impact": {},
-        "last-modified": "2022-12-07T02:23:00",
-        "references": [
-            "https://access.redhat.com/security/cve/CVE-2021-20304",
-            "https://github.com/AcademySoftwareFoundation/openexr/pull/849",
-            "https://github.com/AcademySoftwareFoundation/openexr/commit/51a92d67f53c08230734e74564c807043cbfe41e",
-            "https://bugzilla.redhat.com/show_bug.cgi?id=1939157",
-            "https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26229",
-            "https://security.gentoo.org/glsa/202210-31"
-        ],
-        "summary": "A flaw was found in OpenEXR's hufDecode functionality. This flaw allows an attacker who can pass a crafted file to be processed by OpenEXR, to trigger an undefined right shift error. The highest threat from this vulnerability is to system availability."
-    },
-    {
-        "Modified": "2022-12-07T02:22:00",
-        "Published": "2021-08-10T21:15:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "MEDIUM",
-            "vector": "NETWORK"
-        },
-        "assigner": "cve@mitre.org",
-        "cvss": 4.3,
-        "cvss-time": "2022-12-07T02:22:00",
-        "cvss-vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P",
-        "cwe": "CWE-787",
-        "id": "CVE-2020-21680",
-        "impact": {
-            "availability": "PARTIAL",
-            "confidentiality": "NONE",
-            "integrity": "NONE"
-        },
-        "last-modified": "2022-12-07T02:22:00",
-        "references": [
-            "https://sourceforge.net/p/mcj/tickets/74/"
-        ],
-        "summary": "A stack-based buffer overflow in the put_arrow() component in genpict2e.c of fig2dev 3.2.7b allows attackers to cause a denial of service (DOS) via converting a xfig file into pict2e format."
-    },
-    {
-        "Modified": "2022-12-07T02:18:00",
-        "Published": "2022-07-07T13:15:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "MEDIUM",
-            "vector": "NETWORK"
-        },
-        "assigner": "cve-assignments@hackerone.com",
-        "cvss": 4.3,
-        "cvss-time": "2022-12-07T02:18:00",
-        "cvss-vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P",
-        "cwe": "CWE-770",
-        "id": "CVE-2022-32205",
-        "impact": {
-            "availability": "PARTIAL",
-            "confidentiality": "NONE",
-            "integrity": "NONE"
-        },
-        "last-modified": "2022-12-07T02:18:00",
-        "references": [
-            "https://hackerone.com/reports/1569946",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/BEV6BR4MTI3CEWK2YU2HQZUW5FAS3FEY/",
-            "https://www.debian.org/security/2022/dsa-5197",
-            "https://security.netapp.com/advisory/ntap-20220915-0003/",
-            "https://support.apple.com/kb/HT213488",
-            "http://seclists.org/fulldisclosure/2022/Oct/41"
-        ],
-        "summary": "A malicious server can serve excessive amounts of `Set-Cookie:` headers in a HTTP response to curl and curl < 7.84.0 stores all of them. A sufficiently large amount of (big) cookies make subsequent HTTP requests to this, or other servers to which the cookies match, create requests that become larger than the threshold that curl uses internally to avoid sending crazy large requests (1048576 bytes) and instead returns an error.This denial state might remain for as long as the same cookies are kept, match and haven't expired. Due to cookie matching rules, a server on `foo.example.com` can set cookies that also would match for `bar.example.com`, making it it possible for a \"sister server\" to effectively cause a denial of service for a sibling site on the same second level domain using this method."
-    },
-    {
-        "Modified": "2022-12-07T02:16:00",
-        "Published": "2022-10-31T16:15:00",
-        "access": {},
-        "assigner": "contact@wpscan.com",
-        "cvss": null,
-        "cwe": "CWE-502",
-        "id": "CVE-2022-3357",
-        "impact": {},
-        "last-modified": "2022-12-07T02:16:00",
-        "references": [
-            "https://wpscan.com/vulnerability/2e28a4e7-e7d3-485c-949c-e300e5b66cbd"
-        ],
-        "summary": "The Smart Slider 3 WordPress plugin before 3.5.1.11 unserialises the content of an imported file, which could lead to PHP object injection issues when a user import (intentionally or not) a malicious file, and a suitable gadget chain is present on the site."
-    },
-    {
-        "Modified": "2022-12-07T02:12:00",
-        "Published": "2022-02-16T20:15:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "LOW",
-            "vector": "LOCAL"
-        },
-        "assigner": "cve@mitre.org",
-        "cvss": 4.9,
-        "cvss-time": "2022-12-07T02:12:00",
-        "cvss-vector": "AV:L/AC:L/Au:N/C:N/I:N/A:C",
-        "cwe": "CWE-476",
-        "id": "CVE-2022-25258",
-        "impact": {
-            "availability": "COMPLETE",
-            "confidentiality": "NONE",
-            "integrity": "NONE"
-        },
-        "last-modified": "2022-12-07T02:12:00",
-        "references": [
-            "https://github.com/torvalds/linux/commit/75e5b4849b81e19e9efe1654b30d7f3151c33c2c",
-            "https://github.com/szymonh/d-os-descriptor",
-            "https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.16.10",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/TCW2KZYJ2H6BKZE3CVLHRIXYDGNYYC5P/",
-            "https://www.debian.org/security/2022/dsa-5096",
-            "https://lists.debian.org/debian-lts-announce/2022/03/msg00012.html",
-            "https://lists.debian.org/debian-lts-announce/2022/03/msg00011.html",
-            "https://www.debian.org/security/2022/dsa-5092",
-            "https://security.netapp.com/advisory/ntap-20221028-0007/"
-        ],
-        "summary": "An issue was discovered in drivers/usb/gadget/composite.c in the Linux kernel before 5.16.10. The USB Gadget subsystem lacks certain validation of interface OS descriptor requests (ones with a large array index and ones associated with NULL function pointer retrieval). Memory corruption might occur."
-    },
-    {
-        "Modified": "2022-12-07T02:00:00",
-        "Published": "2021-08-10T21:15:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "MEDIUM",
-            "vector": "NETWORK"
-        },
-        "assigner": "cve@mitre.org",
-        "cvss": 4.3,
-        "cvss-time": "2022-12-07T02:00:00",
-        "cvss-vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P",
-        "cwe": "CWE-120",
-        "id": "CVE-2020-21683",
-        "impact": {
-            "availability": "PARTIAL",
-            "confidentiality": "NONE",
-            "integrity": "NONE"
-        },
-        "last-modified": "2022-12-07T02:00:00",
-        "references": [
-            "https://sourceforge.net/p/mcj/tickets/77/"
-        ],
-        "summary": "A global buffer overflow in the shade_or_tint_name_after_declare_color in genpstricks.c of fig2dev 3.2.7b allows attackers to cause a denial of service (DOS) via converting a xfig file into pstricks format."
-    },
-    {
-        "Modified": "2022-12-07T01:58:00",
-        "Published": "2022-02-16T19:15:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "MEDIUM",
-            "vector": "LOCAL"
-        },
-        "assigner": "secalert@redhat.com",
-        "cvss": 1.9,
-        "cvss-time": "2022-12-07T01:58:00",
-        "cvss-vector": "AV:L/AC:M/Au:N/C:P/I:N/A:N",
-        "cwe": "CWE-125",
-        "id": "CVE-2021-3753",
-        "impact": {
-            "availability": "NONE",
-            "confidentiality": "PARTIAL",
-            "integrity": "NONE"
-        },
-        "last-modified": "2022-12-07T01:58:00",
-        "references": [
-            "https://bugzilla.redhat.com/show_bug.cgi?id=1999589",
-            "https://www.openwall.com/lists/oss-security/2021/09/01/4",
-            "https://github.com/torvalds/linux/commit/2287a51ba822384834dafc1c798453375d1107c7",
-            "https://security.netapp.com/advisory/ntap-20221028-0003/"
-        ],
-        "summary": "A race problem was seen in the vt_k_ioctl in drivers/tty/vt/vt_ioctl.c in the Linux kernel, which may cause an out of bounds read in vt as the write access to vc_mode is not protected by lock-in vt_ioctl (KDSETMDE). The highest threat from this vulnerability is to data confidentiality."
-    },
-    {
-        "Modified": "2022-12-07T01:55:00",
-        "Published": "2021-08-10T21:15:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "MEDIUM",
-            "vector": "NETWORK"
-        },
-        "assigner": "cve@mitre.org",
-        "cvss": 4.3,
-        "cvss-time": "2022-12-07T01:55:00",
-        "cvss-vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P",
-        "cwe": "CWE-120",
-        "id": "CVE-2020-21684",
-        "impact": {
-            "availability": "PARTIAL",
-            "confidentiality": "NONE",
-            "integrity": "NONE"
-        },
-        "last-modified": "2022-12-07T01:55:00",
-        "references": [
-            "https://sourceforge.net/p/mcj/tickets/75/"
-        ],
-        "summary": "A global buffer overflow in the put_font in genpict2e.c of fig2dev 3.2.7b allows attackers to cause a denial of service (DOS) via converting a xfig file into pict2e format."
     }
 ]
