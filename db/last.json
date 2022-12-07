@@ -1,5 +1,71 @@
 [
     {
+        "Modified": "2022-12-07T00:15:00",
+        "Published": "2022-12-06T00:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-40918",
+        "impact": {},
+        "last-modified": "2022-12-07T00:15:00",
+        "references": [
+            "https://medium.com/@meekworth/exploiting-the-lw9621-drone-camera-module-773f00081368",
+            "https://1af95112-6fd8-4c8f-8bd6-c47f8ef7b77a.filesusr.com/ugd/c1f861_51eb0d33d5764efc93e9d5f19c306950.pdf"
+        ],
+        "summary": "Buffer overflow in firmware lewei_cam binary version 2.0.10 in Force 1 Discovery Wifi U818A HD+ FPV Drone allows attacker to gain remote code execution as root user via a specially crafted UDP packet. Please update the Reference section to these links > http://thiscomputer.com/ > https://www.bostoncyber.org/ > https://medium.com/@meekworth/exploiting-the-lw9621-drone-camera-module-773f00081368"
+    },
+    {
+        "Modified": "2022-12-07T00:15:00",
+        "Published": "2022-11-09T07:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-88",
+        "id": "CVE-2022-45062",
+        "impact": {},
+        "last-modified": "2022-12-07T00:15:00",
+        "references": [
+            "https://gitlab.xfce.org/xfce/xfce4-settings/-/commit/55e3c5fb667e96ad1412cf249879262b369d28d7",
+            "https://gitlab.xfce.org/xfce/xfce4-settings/-/commit/f34a92a84f96268ad24a7a13fd5edc9f1d526110",
+            "https://gitlab.xfce.org/xfce/xfce4-settings/-/tags",
+            "https://gitlab.xfce.org/xfce/xfce4-settings/-/issues/390",
+            "https://www.debian.org/security/2022/dsa-5296"
+        ],
+        "summary": "In Xfce xfce4-settings before 4.16.4 and 4.17.x before 4.17.1, there is an argument injection vulnerability in xfce4-mime-helper."
+    },
+    {
+        "Modified": "2022-12-06T23:15:00",
+        "Published": "2022-12-06T23:15:00",
+        "access": {},
+        "assigner": "audit@patchstack.com",
+        "cvss": null,
+        "cwe": "CWE-94",
+        "id": "CVE-2022-42699",
+        "impact": {},
+        "last-modified": "2022-12-06T23:15:00",
+        "references": [
+            "https://patchstack.com/database/vulnerability/easy-wp-smtp/wordpress-easy-wp-smtp-plugin-1-5-1-auth-remote-code-execution-rce-vulnerability?_s_id=cve"
+        ],
+        "summary": "Auth. Remote Code Execution vulnerability in Easy WP SMTP plugin <= 1.5.1 on WordPress."
+    },
+    {
+        "Modified": "2022-12-06T23:15:00",
+        "Published": "2022-12-06T23:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-44030",
+        "impact": {},
+        "last-modified": "2022-12-06T23:15:00",
+        "references": [
+            "https://www.redmine.org/projects/redmine/wiki/Security_Advisories",
+            "https://www.redmine.org/news/139"
+        ],
+        "summary": "Redmine 5.x before 5.0.4 allows downloading of file attachments of any Issue or any Wiki page due to insufficient permission checks. Depending on the configuration, this may require login as a registered user."
+    },
+    {
         "Modified": "2022-12-06T22:15:00",
         "Published": "2022-12-06T22:15:00",
         "access": {},
@@ -2277,67 +2343,5 @@
             "https://github.com/OpenZeppelin/openzeppelin-contracts/security/advisories/GHSA-7grf-83vw-6f5x"
         ],
         "summary": "OpenZeppelin Contracts is a library for secure smart contract development. The target contract of an EIP-165 `supportsInterface` query can cause unbounded gas consumption by returning a lot of data, while it is generally assumed that this operation has a bounded cost. The issue has been fixed in v4.7.2. Users are advised to upgrade. There are no known workarounds for this issue."
-    },
-    {
-        "Modified": "2022-12-06T19:51:00",
-        "Published": "2022-08-01T21:15:00",
-        "access": {},
-        "assigner": "security-advisories@github.com",
-        "cvss": null,
-        "cwe": "CWE-669",
-        "id": "CVE-2022-35916",
-        "impact": {},
-        "last-modified": "2022-12-06T19:51:00",
-        "references": [
-            "https://github.com/OpenZeppelin/openzeppelin-contracts/pull/3578",
-            "https://github.com/OpenZeppelin/openzeppelin-contracts/security/advisories/GHSA-9j3m-g383-29qr"
-        ],
-        "summary": "OpenZeppelin Contracts is a library for secure smart contract development. Contracts using the cross chain utilities for Arbitrum L2, `CrossChainEnabledArbitrumL2` or `LibArbitrumL2`, will classify direct interactions of externally owned accounts (EOAs) as cross chain calls, even though they are not started on L1. This issue has been patched in v4.7.2. Users are advised to upgrade. There are no known workarounds for this issue."
-    },
-    {
-        "Modified": "2022-12-06T19:48:00",
-        "Published": "2022-12-05T17:15:00",
-        "access": {},
-        "assigner": "contact@wpscan.com",
-        "cvss": null,
-        "cwe": "CWE-200",
-        "id": "CVE-2022-3907",
-        "impact": {},
-        "last-modified": "2022-12-06T19:48:00",
-        "references": [
-            "https://wpscan.com/vulnerability/7920c1c1-709d-4b1f-ac08-f0a02ddb329c"
-        ],
-        "summary": "The Clerk WordPress plugin before 4.0.0 is affected by time-based attacks in the validation function for all API requests due to the usage of comparison operators to verify API keys against the ones stored in the site options."
-    },
-    {
-        "Modified": "2022-12-06T19:48:00",
-        "Published": "2022-12-02T23:15:00",
-        "access": {},
-        "assigner": "security-advisories@github.com",
-        "cvss": null,
-        "cwe": "CWE-94",
-        "id": "CVE-2022-23465",
-        "impact": {},
-        "last-modified": "2022-12-06T19:48:00",
-        "references": [
-            "https://github.com/migueldeicaza/SwiftTerm/security/advisories/GHSA-jq43-q8mx-r7mq",
-            "https://github.com/migueldeicaza/SwiftTerm/commit/a94e6b24d24ce9680ad79884992e1dff8e150a31"
-        ],
-        "summary": "SwiftTerm is a Xterm/VT100 Terminal emulator. Prior to commit a94e6b24d24ce9680ad79884992e1dff8e150a31, an attacker could modify the window title via a certain character escape sequence and then insert it back to the command line in the user's terminal, e.g. when the user views a file containing the malicious sequence, which could allow the attacker to execute arbitrary commands. Version a94e6b24d24ce9680ad79884992e1dff8e150a31 contains a patch for this issue. There are no known workarounds available."
-    },
-    {
-        "Modified": "2022-12-06T19:42:00",
-        "Published": "2022-12-05T17:15:00",
-        "access": {},
-        "assigner": "contact@wpscan.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-3892",
-        "impact": {},
-        "last-modified": "2022-12-06T19:42:00",
-        "references": [
-            "https://wpscan.com/vulnerability/33dddaec-a32a-4fce-89d6-164565be13e1"
-        ],
-        "summary": "The WP OAuth Server (OAuth Authentication) WordPress plugin before 4.2.2 does not sanitize and escape Client IDs, which could allow high privilege users such as admin to perform Stored Cross-Site Scripting attacks even when the unfiltered_html capability is disallowed (for example in multisite setup)"
     }
 ]
