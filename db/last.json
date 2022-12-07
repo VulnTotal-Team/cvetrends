@@ -1,5 +1,880 @@
 [
     {
+        "Modified": "2022-12-07T20:15:00",
+        "Published": "2022-12-07T20:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-46770",
+        "impact": {},
+        "last-modified": "2022-12-07T20:15:00",
+        "references": [
+            "https://github.com/mirage/qubes-mirage-firewall/issues/166"
+        ],
+        "summary": "qubes-mirage-firewall (aka Mirage firewall for QubesOS) 0.8.x through 0.8.3 allows guest OS users to cause a denial of service (CPU consumption and loss of forwarding) via a crafted multicast UDP packet (IP address range of 224.0.0.0 through 239.255.255.255)."
+    },
+    {
+        "Modified": "2022-12-07T20:15:00",
+        "Published": "2022-11-28T22:15:00",
+        "access": {},
+        "assigner": "ics-cert@hq.dhs.gov",
+        "cvss": null,
+        "cwe": "CWE-250",
+        "id": "CVE-2022-3088",
+        "impact": {},
+        "last-modified": "2022-12-07T20:15:00",
+        "references": [
+            "https://www.cisa.gov/uscert/ics/advisories/icsa-22-326-05"
+        ],
+        "summary": "UC-8100A-ME-T System Image: Versions v1.0 to v1.6, UC-2100 System Image: Versions v1.0 to v1.12, UC-2100-W System Image: Versions v1.0 to v 1.12,&nbsp;UC-3100 System Image: Versions v1.0 to v1.6,&nbsp;UC-5100 System Image: Versions v1.0 to v1.4, UC-8100 System Image: Versions v3.0 to v3.5, UC-8100-ME-T System Image: Versions v3.0 and v3.1, UC-8200 System Image: v1.0 to v1.5, AIG-300 System Image: v1.0 to v1.4, UC-8410A with Debian 9 System Image: Versions v4.0.2 and v4.1.2, UC-8580 with Debian 9 System Image: Versions v2.0 and v2.1, UC-8540 with Debian 9 System Image: Versions v2.0 and v2.1, and DA-662C-16-LX (GLB) System Image: Versions v1.0.2 to v1.1.2 of Moxa's ARM-based computers have an execution with unnecessary privileges vulnerability, which could allow an attacker with user-level privileges to gain root privileges."
+    },
+    {
+        "Modified": "2022-12-07T20:15:00",
+        "Published": "2022-08-25T18:15:00",
+        "access": {},
+        "assigner": "secalert@redhat.com",
+        "cvss": null,
+        "cwe": "CWE-787",
+        "id": "CVE-2022-0135",
+        "impact": {},
+        "last-modified": "2022-12-07T20:15:00",
+        "references": [
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2037790",
+            "https://security.gentoo.org/glsa/202210-05",
+            "https://lists.debian.org/debian-lts-announce/2022/12/msg00017.html"
+        ],
+        "summary": "An out-of-bounds write issue was found in the VirGL virtual OpenGL renderer (virglrenderer). This flaw allows a malicious guest to create a specially crafted virgil resource and then issue a VIRTGPU_EXECBUFFER ioctl, leading to a denial of service or possible code execution."
+    },
+    {
+        "Modified": "2022-12-07T20:15:00",
+        "Published": "2020-01-27T05:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "LOCAL"
+        },
+        "assigner": "cve@mitre.org",
+        "cvss": 2.1,
+        "cvss-time": "2022-12-07T20:15:00",
+        "cvss-vector": "AV:L/AC:L/Au:N/C:N/I:N/A:P",
+        "cwe": "CWE-415",
+        "id": "CVE-2020-8003",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "NONE",
+            "integrity": "NONE"
+        },
+        "last-modified": "2022-12-07T20:15:00",
+        "references": [
+            "https://gitlab.freedesktop.org/virgl/virglrenderer/commit/f9b079ccc319c98499111f66bd654fc9b56cf15f?merge_request_iid=340",
+            "https://gitlab.freedesktop.org/virgl/virglrenderer/merge_requests/340",
+            "https://gitlab.freedesktop.org/virgl/virglrenderer/merge_requests/340/diffs?commit_id=f9b079ccc319c98499111f66bd654fc9b56cf15f",
+            "https://gitlab.freedesktop.org/virgl/virglrenderer/merge_requests/340/diffs?commit_id=3320973c9f2068f60cf6613c2811a8824781878a",
+            "https://lists.debian.org/debian-lts-announce/2022/12/msg00017.html"
+        ],
+        "summary": "A double-free vulnerability in vrend_renderer.c in virglrenderer through 0.8.1 allows attackers to cause a denial of service by triggering texture allocation failure, because vrend_renderer_resource_allocated_texture is not an appropriate place for a free."
+    },
+    {
+        "Modified": "2022-12-07T20:15:00",
+        "Published": "2019-12-23T16:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "LOCAL"
+        },
+        "assigner": "cve@mitre.org",
+        "cvss": 3.6,
+        "cvss-time": "2022-12-07T20:15:00",
+        "cvss-vector": "AV:L/AC:L/Au:N/C:P/I:N/A:P",
+        "cwe": "CWE-125",
+        "id": "CVE-2019-18390",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "PARTIAL",
+            "integrity": "NONE"
+        },
+        "last-modified": "2022-12-07T20:15:00",
+        "references": [
+            "https://access.redhat.com/security/cve/cve-2019-18390",
+            "https://gitlab.freedesktop.org/virgl/virglrenderer/merge_requests/314/diffs?commit_id=d2cdbcf6a8f2317f250fd54f08aa35dde2fa3e30#3cd772559e0d73afa136d6818023cfd0c4c8ecc0_0_151",
+            "https://gitlab.freedesktop.org/virgl/virglrenderer/commit/24f67de7a9088a873844a39be03cee6882260ac9",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=1765584",
+            "http://lists.opensuse.org/opensuse-security-announce/2020-01/msg00028.html",
+            "https://lists.debian.org/debian-lts-announce/2022/12/msg00017.html"
+        ],
+        "summary": "An out-of-bounds read in the vrend_blit_need_swizzle function in vrend_renderer.c in virglrenderer through 0.8.0 allows guest OS users to cause a denial of service via VIRGL_CCMD_BLIT commands."
+    },
+    {
+        "Modified": "2022-12-07T20:15:00",
+        "Published": "2020-01-27T05:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "LOCAL"
+        },
+        "assigner": "cve@mitre.org",
+        "cvss": 2.1,
+        "cvss-time": "2022-12-07T20:15:00",
+        "cvss-vector": "AV:L/AC:L/Au:N/C:N/I:N/A:P",
+        "cwe": "CWE-476",
+        "id": "CVE-2020-8002",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "NONE",
+            "integrity": "NONE"
+        },
+        "last-modified": "2022-12-07T20:15:00",
+        "references": [
+            "https://gitlab.freedesktop.org/virgl/virglrenderer/merge_requests/340",
+            "https://gitlab.freedesktop.org/virgl/virglrenderer/merge_requests/340/diffs?commit_id=725e12beba4a41934f0ab62d399b5d4de2d13190",
+            "https://gitlab.freedesktop.org/virgl/virglrenderer/merge_requests/340/diffs?commit_id=572a36879701598fa727f50313508be99865b58f",
+            "https://lists.debian.org/debian-lts-announce/2022/12/msg00017.html"
+        ],
+        "summary": "A NULL pointer dereference in vrend_renderer.c in virglrenderer through 0.8.1 allows attackers to cause a denial of service via commands that attempt to launch a grid without previously providing a Compute Shader (CS)."
+    },
+    {
+        "Modified": "2022-12-07T20:15:00",
+        "Published": "2019-12-23T16:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "LOCAL"
+        },
+        "assigner": "cve@mitre.org",
+        "cvss": 2.1,
+        "cvss-time": "2022-12-07T20:15:00",
+        "cvss-vector": "AV:L/AC:L/Au:N/C:N/I:N/A:P",
+        "cwe": "CWE-476",
+        "id": "CVE-2019-18388",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "NONE",
+            "integrity": "NONE"
+        },
+        "last-modified": "2022-12-07T20:15:00",
+        "references": [
+            "https://bugzilla.redhat.com/show_bug.cgi?id=1765578",
+            "https://access.redhat.com/security/cve/cve-2019-18388",
+            "https://gitlab.freedesktop.org/virgl/virglrenderer/commit/0d9a2c88dc3a70023541b3260b9f00c982abda16",
+            "https://gitlab.freedesktop.org/virgl/virglrenderer/merge_requests/314/diffs?commit_id=d2cdbcf6a8f2317f250fd54f08aa35dde2fa3e30#diff-content-3cd772559e0d73afa136d6818023cfd0c4c8ecc0",
+            "http://lists.opensuse.org/opensuse-security-announce/2020-01/msg00028.html",
+            "https://lists.debian.org/debian-lts-announce/2022/12/msg00017.html"
+        ],
+        "summary": "A NULL pointer dereference in vrend_renderer.c in virglrenderer through 0.8.0 allows guest OS users to cause a denial of service via malformed commands."
+    },
+    {
+        "Modified": "2022-12-07T20:15:00",
+        "Published": "2019-12-23T16:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "LOCAL"
+        },
+        "assigner": "cve@mitre.org",
+        "cvss": 4.6,
+        "cvss-time": "2022-12-07T20:15:00",
+        "cvss-vector": "AV:L/AC:L/Au:N/C:P/I:P/A:P",
+        "cwe": "CWE-787",
+        "id": "CVE-2019-18389",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "PARTIAL",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-12-07T20:15:00",
+        "references": [
+            "https://gitlab.freedesktop.org/virgl/virglrenderer/merge_requests/314/diffs?commit_id=9c280a28651507e6ef87b17b90d47b6af3a4ab7d",
+            "https://gitlab.freedesktop.org/virgl/virglrenderer/commit/cbc8d8b75be360236cada63784046688aeb6d921",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=1765577",
+            "https://access.redhat.com/security/cve/cve-2019-18389",
+            "http://lists.opensuse.org/opensuse-security-announce/2020-01/msg00028.html",
+            "https://lists.debian.org/debian-lts-announce/2022/12/msg00017.html"
+        ],
+        "summary": "A heap-based buffer overflow in the vrend_renderer_transfer_write_iov function in vrend_renderer.c in virglrenderer through 0.8.0 allows guest OS users to cause a denial of service, or QEMU guest-to-host escape and code execution, via VIRGL_CCMD_RESOURCE_INLINE_WRITE commands."
+    },
+    {
+        "Modified": "2022-12-07T20:15:00",
+        "Published": "2019-12-23T16:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "LOCAL"
+        },
+        "assigner": "cve@mitre.org",
+        "cvss": 2.1,
+        "cvss-time": "2022-12-07T20:15:00",
+        "cvss-vector": "AV:L/AC:L/Au:N/C:N/I:N/A:P",
+        "cwe": "CWE-787",
+        "id": "CVE-2019-18391",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "NONE",
+            "integrity": "NONE"
+        },
+        "last-modified": "2022-12-07T20:15:00",
+        "references": [
+            "https://access.redhat.com/security/cve/cve-2019-18391",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=1765589",
+            "https://gitlab.freedesktop.org/virgl/virglrenderer/merge_requests/314/diffs?commit_id=8c9cfb4e425542e96f0717189fe4658555baaf08",
+            "https://gitlab.freedesktop.org/virgl/virglrenderer/commit/2abeb1802e3c005b17a7123e382171b3fb665971",
+            "http://lists.opensuse.org/opensuse-security-announce/2020-01/msg00028.html",
+            "https://lists.debian.org/debian-lts-announce/2022/12/msg00017.html"
+        ],
+        "summary": "A heap-based buffer overflow in the vrend_renderer_transfer_write_iov function in vrend_renderer.c in virglrenderer through 0.8.0 allows guest OS users to cause a denial of service via VIRGL_CCMD_RESOURCE_INLINE_WRITE commands."
+    },
+    {
+        "Modified": "2022-12-07T20:14:00",
+        "Published": "2021-08-23T10:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "LOCAL"
+        },
+        "assigner": "security@apache.org",
+        "cvss": 3.6,
+        "cvss-time": "2022-12-07T20:14:00",
+        "cvss-vector": "AV:L/AC:L/Au:N/C:P/I:N/A:P",
+        "cwe": "CWE-125",
+        "id": "CVE-2021-35940",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "PARTIAL",
+            "integrity": "NONE"
+        },
+        "last-modified": "2022-12-07T20:14:00",
+        "references": [
+            "http://mail-archives.apache.org/mod_mbox/www-announce/201710.mbox/%3CCACsi251B8UaLvM-rrH9fv57-zWi0zhyF3275_jPg1a9VEVVoxw@mail.gmail.com%3E",
+            "https://lists.apache.org/thread.html/ra2868b53339a6af65577146ad87016368c138388b09bff9d2860f50e%40%3Cdev.apr.apache.org%3E",
+            "http://svn.apache.org/viewvc?view=revision&revision=1891198",
+            "https://dist.apache.org/repos/dist/release/apr/patches/apr-1.7.0-CVE-2021-35940.patch",
+            "http://www.openwall.com/lists/oss-security/2021/08/23/1",
+            "https://lists.apache.org/thread.html/ra2868b53339a6af65577146ad87016368c138388b09bff9d2860f50e@%3Cdev.apr.apache.org%3E",
+            "https://lists.apache.org/thread.html/rb1f3c85f50fbd924a0051675118d1609e57957a02ece7facb723155b@%3Cannounce.apache.org%3E",
+            "https://lists.apache.org/thread.html/r7bb4a6ed88fc48152174e664aae30ea9a8b058eb5b44cf08cb9beb4b@%3Cdev.httpd.apache.org%3E",
+            "https://lists.apache.org/thread.html/r7bb4a6ed88fc48152174e664aae30ea9a8b058eb5b44cf08cb9beb4b@%3Cdev.apr.apache.org%3E",
+            "https://lists.apache.org/thread.html/r72a069753b9363c29732e59ad8f0d22a633fb6a699980407511ac961@%3Cdev.apr.apache.org%3E",
+            "https://lists.apache.org/thread.html/r317c398ee5736e627f7887b06607e5c58b45a696d352ba8c14615f55@%3Cdev.apr.apache.org%3E",
+            "https://lists.apache.org/thread.html/ra38094406cc38a05218ebd1158187feda021b0c3a1df400bbf296af8@%3Cdev.apr.apache.org%3E",
+            "https://lists.apache.org/thread.html/r72479f4dcffaa8a4732d5a0e87fecc4bace4932e28fc26f7d400e2b3@%3Cdev.tomcat.apache.org%3E",
+            "https://lists.apache.org/thread.html/r54c755c74b9e3846cfd84039b1967d37d2870750a02d7c603983f6ed@%3Cdev.tomcat.apache.org%3E",
+            "https://lists.apache.org/thread.html/rafe54755850e93de287c36540972457b2dd86332106aa7817c7c27fb@%3Cdev.tomcat.apache.org%3E",
+            "https://lists.apache.org/thread.html/r1c788464a25fbc046a72aff451bc8186386315d92a2dd0349903fa4f@%3Cdev.tomcat.apache.org%3E",
+            "https://www.oracle.com/security-alerts/cpujul2022.html"
+        ],
+        "summary": "An out-of-bounds array read in the apr_time_exp*() functions was fixed in the Apache Portable Runtime 1.6.3 release (CVE-2017-12613). The fix for this issue was not carried forward to the APR 1.7.x branch, and hence version 1.7.0 regressed compared to 1.6.3 and is vulnerable to the same issue."
+    },
+    {
+        "Modified": "2022-12-07T20:14:00",
+        "Published": "2021-08-18T15:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "security-advisories@github.com",
+        "cvss": 5.0,
+        "cvss-time": "2022-12-07T20:14:00",
+        "cvss-vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+        "cwe": "CWE-835",
+        "id": "CVE-2021-37714",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "NONE",
+            "integrity": "NONE"
+        },
+        "last-modified": "2022-12-07T20:14:00",
+        "references": [
+            "https://jsoup.org/news/release-1.14.1",
+            "https://jsoup.org/news/release-1.14.2",
+            "https://github.com/jhy/jsoup/security/advisories/GHSA-m72m-mhq2-9p6c",
+            "https://lists.apache.org/thread.html/r685c5235235ad0c26e86d0ee987fb802c9675de6081dbf0516464e0b@%3Cnotifications.james.apache.org%3E",
+            "https://lists.apache.org/thread.html/rc3354080fc67fb50b45b3c2d12dc4ca2a3c1c78dad3d3ba012c038aa@%3Cnotifications.james.apache.org%3E",
+            "https://lists.apache.org/thread.html/r97404676a5cf591988faedb887d64e278f522adcaa823d89ca69defe@%3Cnotifications.james.apache.org%3E",
+            "https://lists.apache.org/thread.html/r50e9c9466c592ca9d707a5dea549524d19e3287da08d8392f643960e@%3Cissues.maven.apache.org%3E",
+            "https://lists.apache.org/thread.html/r215009dbf7467a9f6506d0c0024cb36cad30071010e62c9352cfaaf0@%3Cissues.maven.apache.org%3E",
+            "https://lists.apache.org/thread.html/r377b93d79817ce649e9e68b3456e6f499747ef1643fa987b342e082e@%3Cissues.maven.apache.org%3E",
+            "https://lists.apache.org/thread.html/r3d71f18adb78e50f626dde689161ca63d3b7491bd9718fcddfaecba7@%3Cissues.maven.apache.org%3E",
+            "https://www.oracle.com/security-alerts/cpujan2022.html",
+            "https://security.netapp.com/advisory/ntap-20220210-0022/",
+            "https://www.oracle.com/security-alerts/cpuapr2022.html",
+            "https://www.oracle.com/security-alerts/cpujul2022.html"
+        ],
+        "summary": "jsoup is a Java library for working with HTML. Those using jsoup versions prior to 1.14.2 to parse untrusted HTML or XML may be vulnerable to DOS attacks. If the parser is run on user supplied input, an attacker may supply content that causes the parser to get stuck (loop indefinitely until cancelled), to complete more slowly than usual, or to throw an unexpected exception. This effect may support a denial of service attack. The issue is patched in version 1.14.2. There are a few available workarounds. Users may rate limit input parsing, limit the size of inputs based on system resources, and/or implement thread watchdogs to cap and timeout parse runtimes."
+    },
+    {
+        "Modified": "2022-12-07T20:07:00",
+        "Published": "2022-12-06T22:15:00",
+        "access": {},
+        "assigner": "audit@patchstack.com",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2022-45816",
+        "impact": {},
+        "last-modified": "2022-12-07T20:07:00",
+        "references": [
+            "https://patchstack.com/database/vulnerability/gd-bbpress-attachments/wordpress-gd-bbpress-attachments-plugin-4-3-1-auth-stored-cross-site-scripting-xss-vulnerability?_s_id=cve"
+        ],
+        "summary": "Auth. Stored Cross-Site Scripting (XSS) vulnerability in GD bbPress Attachments plugin <= 4.3.1 on WordPress."
+    },
+    {
+        "Modified": "2022-12-07T20:06:00",
+        "Published": "2022-12-06T10:15:00",
+        "access": {},
+        "assigner": "cna@vuldb.com",
+        "cvss": null,
+        "cwe": "CWE-400",
+        "id": "CVE-2022-4296",
+        "impact": {},
+        "last-modified": "2022-12-07T20:06:00",
+        "references": [
+            "https://vuldb.com/?id.214812",
+            "https://www.youtube.com/watch?v=D--fb-cesmA"
+        ],
+        "summary": "A vulnerability classified as problematic has been found in TP-Link TL-WR740N. Affected is an unknown function of the component ARP Handler. The manipulation leads to resource consumption. The attack needs to be done within the local network. The exploit has been disclosed to the public and may be used. The identifier of this vulnerability is VDB-214812."
+    },
+    {
+        "Modified": "2022-12-07T20:05:00",
+        "Published": "2022-12-06T10:15:00",
+        "access": {},
+        "assigner": "cna@vuldb.com",
+        "cvss": null,
+        "cwe": "CWE-707",
+        "id": "CVE-2022-4300",
+        "impact": {},
+        "last-modified": "2022-12-07T20:05:00",
+        "references": [
+            "https://vuldb.com/?id.214901",
+            "https://github.com/Ha0Liu/cveAdd/blob/developer/fastcms%E6%A8%A1%E7%89%88%E6%B3%A8%E5%85%A5/fastcms%20template%20injection%20vulnerability.md",
+            "https://github.com/Ha0Liu/cveAdd/blob/developer/fastcms????/fastcms%20template%20injection%20vulnerability.md"
+        ],
+        "summary": "A vulnerability was found in FastCMS. It has been rated as critical. This issue affects some unknown processing of the file /template/edit of the component Template Handler. The manipulation leads to injection. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. The identifier VDB-214901 was assigned to this vulnerability."
+    },
+    {
+        "Modified": "2022-12-07T20:03:00",
+        "Published": "2019-10-04T14:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "MEDIUM",
+            "vector": "NETWORK"
+        },
+        "assigner": "psirt@us.ibm.com",
+        "cvss": 4.3,
+        "cvss-time": "2022-12-07T20:03:00",
+        "cvss-vector": "AV:N/AC:M/Au:N/C:N/I:P/A:N",
+        "cwe": "CWE-79",
+        "id": "CVE-2019-4564",
+        "impact": {
+            "availability": "NONE",
+            "confidentiality": "NONE",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-12-07T20:03:00",
+        "references": [
+            "https://exchange.xforce.ibmcloud.com/vulnerabilities/166625",
+            "https://www.ibm.com/support/pages/node/302001"
+        ],
+        "summary": "IBM Security Key Lifecycle Manager 2.6, 2.7, 3.0, and 3.0.1 is vulnerable to cross-site scripting. This vulnerability allows users to embed arbitrary JavaScript code in the Web UI thus altering the intended functionality potentially leading to credentials disclosure within a trusted session."
+    },
+    {
+        "Modified": "2022-12-07T20:02:00",
+        "Published": "2019-10-03T14:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "psirt@us.ibm.com",
+        "cvss": 5.0,
+        "cvss-time": "2022-12-07T20:02:00",
+        "cvss-vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N",
+        "cwe": "CWE-209",
+        "id": "CVE-2019-4441",
+        "impact": {
+            "availability": "NONE",
+            "confidentiality": "PARTIAL",
+            "integrity": "NONE"
+        },
+        "last-modified": "2022-12-07T20:02:00",
+        "references": [
+            "https://exchange.xforce.ibmcloud.com/vulnerabilities/163177",
+            "https://www.ibm.com/support/pages/node/959023"
+        ],
+        "summary": "IBM WebSphere Application Server 7.0, 8.0, 8.5, 9.0, and Liberty could allow a remote attacker to obtain sensitive information when a stack trace is returned in the browser. IBM X-Force ID: 163177."
+    },
+    {
+        "Modified": "2022-12-07T19:59:00",
+        "Published": "2020-01-02T23:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "cve@mitre.org",
+        "cvss": 7.5,
+        "cvss-time": "2022-12-07T19:59:00",
+        "cvss-vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+        "cwe": "CWE-502",
+        "id": "CVE-2016-1000027",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "PARTIAL",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-12-07T19:59:00",
+        "references": [
+            "https://security-tracker.debian.org/tracker/CVE-2016-1000027",
+            "https://raw.githubusercontent.com/distributedweaknessfiling/cvelist/master/2016/1000xxx/CVE-2016-1000027.json",
+            "https://www.tenable.com/security/research/tra-2016-20",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2016-1000027",
+            "https://github.com/spring-projects/spring-framework/issues/24434#issuecomment-582313417",
+            "https://github.com/spring-projects/spring-framework/issues/24434#issuecomment-579669626",
+            "https://spring.io/blog/2022/05/11/spring-framework-5-3-20-and-5-2-22-available-now",
+            "https://github.com/spring-projects/spring-framework/issues/24434#issuecomment-744519525"
+        ],
+        "summary": "Pivotal Spring Framework through 5.3.16 suffers from a potential remote code execution (RCE) issue if used for Java deserialization of untrusted data. Depending on how the library is implemented within a product, this issue may or not occur, and authentication may be required. NOTE: the vendor's position is that untrusted data is not an intended use case. The product's behavior will not be changed because some users rely on deserialization of trusted data."
+    },
+    {
+        "Modified": "2022-12-07T19:57:00",
+        "Published": "2022-12-06T15:15:00",
+        "access": {},
+        "assigner": "audit@patchstack.com",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2022-40209",
+        "impact": {},
+        "last-modified": "2022-12-07T19:57:00",
+        "references": [
+            "https://patchstack.com/database/vulnerability/wp-smart-import/wordpress-importer-plugin-1-0-2-reflected-cross-site-scripting-xss-vulnerability?_s_id=cve"
+        ],
+        "summary": "Unauth. Reflected Cross-Site Scripting (XSS) vulnerability in Xylus Themes WP Smart Import plugin <= 1.0.2 on WordPress."
+    },
+    {
+        "Modified": "2022-12-07T19:55:00",
+        "Published": "2019-10-01T15:15:00",
+        "access": {
+            "authentication": "SINGLE",
+            "complexity": "MEDIUM",
+            "vector": "NETWORK"
+        },
+        "assigner": "psirt@us.ibm.com",
+        "cvss": 3.5,
+        "cvss-time": "2022-12-07T19:55:00",
+        "cvss-vector": "AV:N/AC:M/Au:S/C:N/I:P/A:N",
+        "cwe": "CWE-79",
+        "id": "CVE-2019-4497",
+        "impact": {
+            "availability": "NONE",
+            "confidentiality": "NONE",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-12-07T19:55:00",
+        "references": [
+            "https://www.ibm.com/support/pages/node/1074690",
+            "https://exchange.xforce.ibmcloud.com/vulnerabilities/164118"
+        ],
+        "summary": "IBM Jazz Reporting Service (JRS) 6.0, 6.0.1, 6.0.2, 6.0.3, 6.0.4, 6.0.5, 6.0.6, and 6.0.6.1 is vulnerable to cross-site scripting. This vulnerability allows users to embed arbitrary JavaScript code in the Web UI thus altering the intended functionality potentially leading to credentials disclosure within a trusted session. IBM X-Force ID: 164118."
+    },
+    {
+        "Modified": "2022-12-07T19:55:00",
+        "Published": "2019-10-02T15:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "psirt@us.ibm.com",
+        "cvss": 5.0,
+        "cvss-time": "2022-12-07T19:55:00",
+        "cvss-vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N",
+        "cwe": "CWE-922",
+        "id": "CVE-2019-4549",
+        "impact": {
+            "availability": "NONE",
+            "confidentiality": "PARTIAL",
+            "integrity": "NONE"
+        },
+        "last-modified": "2022-12-07T19:55:00",
+        "references": [
+            "https://exchange.xforce.ibmcloud.com/vulnerabilities/165951",
+            "https://www.ibm.com/support/pages/node/1077045"
+        ],
+        "summary": "IBM Security Directory Server 6.4.0 discloses sensitive information to unauthorized users. The information can be used to mount further attacks on the system. IBM X-Force ID: 165951."
+    },
+    {
+        "Modified": "2022-12-07T19:55:00",
+        "Published": "2019-10-03T14:15:00",
+        "access": {
+            "authentication": "SINGLE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "psirt@us.ibm.com",
+        "cvss": 6.5,
+        "cvss-time": "2022-12-07T19:55:00",
+        "cvss-vector": "AV:N/AC:L/Au:S/C:P/I:P/A:P",
+        "cwe": "NVD-CWE-noinfo",
+        "id": "CVE-2019-4422",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "PARTIAL",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-12-07T19:55:00",
+        "references": [
+            "https://exchange.xforce.ibmcloud.com/vulnerabilities/162768",
+            "https://supportcontent.ibm.com/support/pages/node/957491"
+        ],
+        "summary": "IBM Security Guardium 9.0, 9.5, and 10.6 are vulnerable to a privilege escalation which could allow an authenticated user to change the accessmgr password. IBM X-Force ID: 162768."
+    },
+    {
+        "Modified": "2022-12-07T19:54:00",
+        "Published": "2022-12-06T15:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-78",
+        "id": "CVE-2020-6627",
+        "impact": {},
+        "last-modified": "2022-12-07T19:54:00",
+        "references": [
+            "https://www.invictuseurope.com/blog/",
+            "https://pentest.blog/advisory-seagate-central-storage-remote-code-execution/",
+            "https://github.com/rapid7/metasploit-framework/pull/12844"
+        ],
+        "summary": "The web-management application on Seagate Central NAS STCG2000300, STCG3000300, and STCG4000300 devices allows OS command injection via mv_backend_launch in cirrus/application/helpers/mv_backend_helper.php by leveraging the \"start\" state and sending a check_device_name request."
+    },
+    {
+        "Modified": "2022-12-07T19:54:00",
+        "Published": "2019-10-02T15:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "MEDIUM",
+            "vector": "NETWORK"
+        },
+        "assigner": "psirt@us.ibm.com",
+        "cvss": 4.3,
+        "cvss-time": "2022-12-07T19:54:00",
+        "cvss-vector": "AV:N/AC:M/Au:N/C:N/I:P/A:N",
+        "cwe": "CWE-79",
+        "id": "CVE-2019-4542",
+        "impact": {
+            "availability": "NONE",
+            "confidentiality": "NONE",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-12-07T19:54:00",
+        "references": [
+            "https://www.ibm.com/support/pages/node/1077045",
+            "https://exchange.xforce.ibmcloud.com/vulnerabilities/165815"
+        ],
+        "summary": "IBM Security Directory Server 6.4.0 is vulnerable to cross-site scripting. This vulnerability allows users to embed arbitrary JavaScript code in the Web UI thus altering the intended functionality potentially leading to credentials disclosure within a trusted session. IBM X-Force ID: 165815."
+    },
+    {
+        "Modified": "2022-12-07T19:54:00",
+        "Published": "2019-10-01T15:15:00",
+        "access": {
+            "authentication": "SINGLE",
+            "complexity": "MEDIUM",
+            "vector": "NETWORK"
+        },
+        "assigner": "psirt@us.ibm.com",
+        "cvss": 3.5,
+        "cvss-time": "2022-12-07T19:54:00",
+        "cvss-vector": "AV:N/AC:M/Au:S/C:N/I:P/A:N",
+        "cwe": "CWE-79",
+        "id": "CVE-2019-4495",
+        "impact": {
+            "availability": "NONE",
+            "confidentiality": "NONE",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-12-07T19:54:00",
+        "references": [
+            "https://www.ibm.com/support/pages/node/1074690",
+            "https://exchange.xforce.ibmcloud.com/vulnerabilities/164116"
+        ],
+        "summary": "IBM Jazz Reporting Service (JRS) 6.0, 6.0.1, 6.0.2, 6.0.3, 6.0.4, 6.0.5, 6.0.6, and 6.0.6.1 is vulnerable to cross-site scripting. This vulnerability allows users to embed arbitrary JavaScript code in the Web UI thus altering the intended functionality potentially leading to credentials disclosure within a trusted session. IBM X-Force ID: 164116."
+    },
+    {
+        "Modified": "2022-12-07T19:50:00",
+        "Published": "2022-12-06T21:15:00",
+        "access": {},
+        "assigner": "audit@patchstack.com",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2022-45848",
+        "impact": {},
+        "last-modified": "2022-12-07T19:50:00",
+        "references": [
+            "https://patchstack.com/database/vulnerability/contest-gallery/wordpress-contest-gallery-plugin-13-1-0-9-unauth-stored-cross-site-scripting-xss-vulnerability?_s_id=cve"
+        ],
+        "summary": "Unauth. Stored Cross-Site Scripting (XSS) vulnerability in Contest Gallery plugin <= 13.1.0.9 on WordPress."
+    },
+    {
+        "Modified": "2022-12-07T19:42:00",
+        "Published": "2019-10-02T15:15:00",
+        "access": {
+            "authentication": "SINGLE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "psirt@us.ibm.com",
+        "cvss": 5.5,
+        "cvss-time": "2022-12-07T19:42:00",
+        "cvss-vector": "AV:N/AC:L/Au:S/C:N/I:P/A:P",
+        "cwe": "CWE-91",
+        "id": "CVE-2019-4539",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "NONE",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-12-07T19:42:00",
+        "references": [
+            "https://www.ibm.com/support/pages/node/1077045",
+            "https://exchange.xforce.ibmcloud.com/vulnerabilities/165812"
+        ],
+        "summary": "IBM Security Directory Server 6.4.0 does not properly neutralize special elements that are used in XML, allowing attackers to modify the syntax, content, or commands of the XML before it is processed by an end system. IBM X-Force ID: 165812."
+    },
+    {
+        "Modified": "2022-12-07T19:40:00",
+        "Published": "2022-12-05T21:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-416",
+        "id": "CVE-2022-42705",
+        "impact": {},
+        "last-modified": "2022-12-07T19:40:00",
+        "references": [
+            "https://downloads.asterisk.org/pub/security/AST-2022-008.html"
+        ],
+        "summary": "A use-after-free in res_pjsip_pubsub.c in Sangoma Asterisk 16.28, 18.14, 19.6, and certified/18.9-cert2 may allow a remote authenticated attacker to crash Asterisk (denial of service) by performing activity on a subscription via a reliable transport at the same time that Asterisk is also performing activity on that subscription."
+    },
+    {
+        "Modified": "2022-12-07T19:36:00",
+        "Published": "2022-12-06T07:15:00",
+        "access": {},
+        "assigner": "security@unisoc.com",
+        "cvss": null,
+        "cwe": "CWE-668",
+        "id": "CVE-2022-42782",
+        "impact": {},
+        "last-modified": "2022-12-07T19:36:00",
+        "references": [
+            "https://www.unisoc.com/en_us/secy/announcementDetail/1599588060988411006"
+        ],
+        "summary": "In wlan driver, there is a possible missing permission check, This could lead to local information disclosure."
+    },
+    {
+        "Modified": "2022-12-07T19:35:00",
+        "Published": "2022-12-05T21:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-22",
+        "id": "CVE-2022-42706",
+        "impact": {},
+        "last-modified": "2022-12-07T19:35:00",
+        "references": [
+            "https://downloads.asterisk.org/pub/security/AST-2022-009.html"
+        ],
+        "summary": "An issue was discovered in Sangoma Asterisk through 16.28, 17 and 18 through 18.14, 19 through 19.6, and certified through 18.9-cert1. GetConfig, via Asterisk Manager Interface, allows a connected application to access files outside of the asterisk configuration directory, aka Directory Traversal."
+    },
+    {
+        "Modified": "2022-12-07T19:31:00",
+        "Published": "2022-12-06T07:15:00",
+        "access": {},
+        "assigner": "security@unisoc.com",
+        "cvss": null,
+        "cwe": "CWE-668",
+        "id": "CVE-2022-42766",
+        "impact": {},
+        "last-modified": "2022-12-07T19:31:00",
+        "references": [
+            "https://www.unisoc.com/en_us/secy/announcementDetail/1599588060988411006"
+        ],
+        "summary": "In wlan driver, there is a possible missing permission check, This could lead to local information disclosure."
+    },
+    {
+        "Modified": "2022-12-07T19:24:00",
+        "Published": "2019-10-02T15:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "MEDIUM",
+            "vector": "NETWORK"
+        },
+        "assigner": "psirt@us.ibm.com",
+        "cvss": 5.8,
+        "cvss-time": "2022-12-07T19:24:00",
+        "cvss-vector": "AV:N/AC:M/Au:N/C:P/I:P/A:N",
+        "cwe": "CWE-601",
+        "id": "CVE-2019-4538",
+        "impact": {
+            "availability": "NONE",
+            "confidentiality": "PARTIAL",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-12-07T19:24:00",
+        "references": [
+            "https://www.ibm.com/support/pages/node/1077045",
+            "https://exchange.xforce.ibmcloud.com/vulnerabilities/165660"
+        ],
+        "summary": "IBM Security Directory Server 6.4.0 could allow a remote attacker to conduct phishing attacks, using an open redirect attack. By persuading a victim to visit a specially-crafted Web site, a remote attacker could exploit this vulnerability to spoof the URL displayed to redirect a user to a malicious Web site that would appear to be trusted. This could allow the attacker to obtain highly sensitive information or conduct further attacks against the victim. IBM X-Force ID: 165660."
+    },
+    {
+        "Modified": "2022-12-07T19:17:00",
+        "Published": "2019-10-02T15:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "psirt@us.ibm.com",
+        "cvss": 5.0,
+        "cvss-time": "2022-12-07T19:17:00",
+        "cvss-vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N",
+        "cwe": "CWE-307",
+        "id": "CVE-2019-4520",
+        "impact": {
+            "availability": "NONE",
+            "confidentiality": "PARTIAL",
+            "integrity": "NONE"
+        },
+        "last-modified": "2022-12-07T19:17:00",
+        "references": [
+            "https://www.ibm.com/support/pages/node/1077045",
+            "https://exchange.xforce.ibmcloud.com/vulnerabilities/165178"
+        ],
+        "summary": "IBM Security Directory Server 6.4.0 uses an inadequate account lockout setting that could allow a remote attacker to brute force account credentials. IBM X-Force ID: 165178."
+    },
+    {
+        "Modified": "2022-12-07T19:15:00",
+        "Published": "2022-12-07T19:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-44351",
+        "impact": {},
+        "last-modified": "2022-12-07T19:15:00",
+        "references": [
+            "https://github.com/zorlan/skycaiji/issues/46"
+        ],
+        "summary": "Skycaiji v2.5.1 was discovered to contain a deserialization vulnerability via /SkycaijiApp/admin/controller/Mystore.php."
+    },
+    {
+        "Modified": "2022-12-07T19:15:00",
+        "Published": "2022-12-07T19:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-44373",
+        "impact": {},
+        "last-modified": "2022-12-07T19:15:00",
+        "references": [
+            "https://github.com/johnawm/vulner-box/blob/master/TRENDNet/TEW-820AP/02/README.md"
+        ],
+        "summary": "A stack overflow vulnerability exists in TrendNet Wireless AC Easy-Upgrader TEW-820AP (Version v1.0R, firmware version 1.01.B01) which may result in remote code execution."
+    },
+    {
+        "Modified": "2022-12-07T19:15:00",
+        "Published": "2022-12-07T19:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-45550",
+        "impact": {},
+        "last-modified": "2022-12-07T19:15:00",
+        "references": [
+            "https://shimo.im/docs/KrkEVb29pwsxZ6AJ",
+            "https://github.com/loadream/AyaCMS/issues/8"
+        ],
+        "summary": "AyaCMS 3.1.2 is vulnerable to Remote Code Execution (RCE)."
+    },
+    {
+        "Modified": "2022-12-07T19:15:00",
+        "Published": "2022-12-07T01:15:00",
+        "access": {},
+        "assigner": "security@xen.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-3643",
+        "impact": {},
+        "last-modified": "2022-12-07T19:15:00",
+        "references": [
+            "https://xenbits.xenproject.org/xsa/advisory-423.txt",
+            "http://www.openwall.com/lists/oss-security/2022/12/07/2"
+        ],
+        "summary": "Guests can trigger NIC interface reset/abort/crash via netback It is possible for a guest to trigger a NIC interface reset/abort/crash in a Linux based network backend by sending certain kinds of packets. It appears to be an (unwritten?) assumption in the rest of the Linux network stack that packet protocol headers are all contained within the linear section of the SKB and some NICs behave badly if this is not the case. This has been reported to occur with Cisco (enic) and Broadcom NetXtrem II BCM5780 (bnx2x) though it may be an issue with other NICs/drivers as well. In case the frontend is sending requests with split headers, netback will forward those violating above mentioned assumption to the networking core, resulting in said misbehavior."
+    },
+    {
+        "Modified": "2022-12-07T19:15:00",
+        "Published": "2022-12-06T20:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-44900",
+        "impact": {},
+        "last-modified": "2022-12-07T19:15:00",
+        "references": [
+            "https://github.com/miurahr/py7zr/commit/1bb43f17515c7f69673a1c88ab9cc72a7bbef406",
+            "http://packetstormsecurity.com/files/170127/py7zr-0.20.0-Directory-Traversal.html",
+            "https://lessonsec.com/cve/cve-2022-44900/"
+        ],
+        "summary": "A directory traversal vulnerability in the SevenZipFile.extractall() function of the python library py7zr v0.20.0 and earlier allows attackers to write arbitrary files via extracting a crafted 7z file."
+    },
+    {
+        "Modified": "2022-12-07T19:15:00",
+        "Published": "2022-11-04T07:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2022-44724",
+        "impact": {},
+        "last-modified": "2022-12-07T19:15:00",
+        "references": [
+            "https://stiltsoft.atlassian.net/browse/VD-3",
+            "https://www.syss.de/fileadmin/dokumente/Publikationen/Advisories/SYSS-2022-049.txt"
+        ],
+        "summary": "The Handy Tip macro in Stiltsoft Handy Macros for Confluence Server/Data Center 3.x before 3.5.5 allows remote attackers to inject arbitrary HTML or JavaScript via a Cross-Site Scripting (XSS) vulnerability."
+    },
+    {
+        "Modified": "2022-12-07T19:09:00",
+        "Published": "2022-12-06T07:15:00",
+        "access": {},
+        "assigner": "security@unisoc.com",
+        "cvss": null,
+        "cwe": "CWE-190",
+        "id": "CVE-2022-42764",
+        "impact": {},
+        "last-modified": "2022-12-07T19:09:00",
+        "references": [
+            "https://www.unisoc.com/en_us/secy/announcementDetail/1599588060988411006"
+        ],
+        "summary": "In wlan driver, there is a possible missing bounds check, This could lead to local denial of service in wlan services."
+    },
+    {
+        "Modified": "2022-12-07T19:05:00",
+        "Published": "2022-12-06T07:15:00",
+        "access": {},
+        "assigner": "security@unisoc.com",
+        "cvss": null,
+        "cwe": "CWE-862",
+        "id": "CVE-2022-39098",
+        "impact": {},
+        "last-modified": "2022-12-07T19:05:00",
+        "references": [
+            "https://www.unisoc.com/en_us/secy/announcementDetail/1599588060988411006"
+        ],
+        "summary": "In power management service, there is a missing permission check. This could lead to set up power management service with no additional execution privileges needed."
+    },
+    {
         "Modified": "2022-12-07T18:42:00",
         "Published": "2022-12-06T07:15:00",
         "access": {},
@@ -376,22 +1251,6 @@
             "https://github.com/Serces-X/vul_report/blob/main/vendors/oretnom23/Sanitization-Management-System/SQLi-1.md"
         ],
         "summary": "Sanitization Management System v1.0 is vulnerable to SQL Injection via /php-sms/admin/?page=services/view_service&id=."
-    },
-    {
-        "Modified": "2022-12-07T17:15:00",
-        "Published": "2022-12-06T20:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-44900",
-        "impact": {},
-        "last-modified": "2022-12-07T17:15:00",
-        "references": [
-            "https://github.com/miurahr/py7zr/commit/1bb43f17515c7f69673a1c88ab9cc72a7bbef406",
-            "http://packetstormsecurity.com/files/170127/py7zr-0.20.0-Directory-Traversal.html"
-        ],
-        "summary": "A directory traversal vulnerability in the SevenZipFile.extractall() function of the python library py7zr v0.20.0 and earlier allows attackers to write arbitrary files via extracting a crafted 7z file."
     },
     {
         "Modified": "2022-12-07T17:15:00",
@@ -1104,659 +1963,5 @@
             "https://www.unisoc.com/en_us/secy/announcementDetail/1599588060988411006"
         ],
         "summary": "In face detect driver, there is a possible out of bounds write due to a missing bounds check. This could lead to local denial of service in kernel."
-    },
-    {
-        "Modified": "2022-12-07T15:23:00",
-        "Published": "2022-12-06T01:15:00",
-        "access": {},
-        "assigner": "security-advisories@github.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-46151",
-        "impact": {},
-        "last-modified": "2022-12-07T15:23:00",
-        "references": [
-            "https://github.com/pinterest/querybook/security/advisories/GHSA-mrrw-9wf7-xq6w",
-            "https://github.com/pinterest/querybook/commit/88a7f10495bf5ed1a556ade51a2f2794e403c063"
-        ],
-        "summary": "Querybook is an open source data querying UI. In affected versions user provided data is not escaped in the error field of the auth callback url in `querybook/server/app/auth/oauth_auth.py` and `querybook/server/app/auth/okta_auth.py`. This may allow attackers to perform reflected cross site scripting (XSS) if Content Security Policy (CSP) is not enabled or `unsafe-inline` is allowed. Users are advised to upgrade to the latest, patched version of querybook (version 3.14.2 or greater). Users unable to upgrade may enable CSP and not allow unsafe-inline or manually escape query parameters in a reverse proxy."
-    },
-    {
-        "Modified": "2022-12-07T15:20:00",
-        "Published": "2022-12-06T07:15:00",
-        "access": {},
-        "assigner": "security@unisoc.com",
-        "cvss": null,
-        "cwe": "CWE-416",
-        "id": "CVE-2022-42754",
-        "impact": {},
-        "last-modified": "2022-12-07T15:20:00",
-        "references": [
-            "https://www.unisoc.com/en_us/secy/announcementDetail/1599588060988411006"
-        ],
-        "summary": "In npu driver, there is a memory corruption due to a use after free. This could lead to local denial of service in kernel."
-    },
-    {
-        "Modified": "2022-12-07T15:18:00",
-        "Published": "2022-12-05T22:15:00",
-        "access": {},
-        "assigner": "cve-assignments@hackerone.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-43556",
-        "impact": {},
-        "last-modified": "2022-12-07T15:18:00",
-        "references": [
-            "https://documentation.concretecms.org/developers/introduction/version-history/8510-release-notes",
-            "https://documentation.concretecms.org/developers/introduction/version-history/913-release-notes",
-            "https://www.concretecms.org/about/project-news/security/concrete-cms-security-advisory-2022-10-31"
-        ],
-        "summary": "Concrete CMS (formerly concrete5) below 8.5.10 and between 9.0.0 and 9.1.2 is vulnerable to XSS in the text input field since the result dashboard page output is not sanitized. The Concrete CMS security team has ranked this 4.2 with CVSS v3.1 vector AV:N/AC:H/PR:N/UI:R/S:U/C:L/I:L/A:N Thanks @_akbar_jafarli_ for reporting. Remediate by updating to Concrete CMS 8.5.10 and Concrete CMS 9.1.3."
-    },
-    {
-        "Modified": "2022-12-07T15:16:00",
-        "Published": "2022-12-06T07:15:00",
-        "access": {},
-        "assigner": "security@unisoc.com",
-        "cvss": null,
-        "cwe": "CWE-362",
-        "id": "CVE-2022-39134",
-        "impact": {},
-        "last-modified": "2022-12-07T15:16:00",
-        "references": [
-            "https://www.unisoc.com/en_us/secy/announcementDetail/1599588060988411006"
-        ],
-        "summary": "In audio driver, there is a use after free due to a race condition. This could lead to local denial of service in kernel."
-    },
-    {
-        "Modified": "2022-12-07T15:16:00",
-        "Published": "2022-12-05T19:15:00",
-        "access": {},
-        "assigner": "security@zabbix.com",
-        "cvss": null,
-        "cwe": "CWE-863",
-        "id": "CVE-2022-43515",
-        "impact": {},
-        "last-modified": "2022-12-07T15:16:00",
-        "references": [
-            "https://support.zabbix.com/browse/ZBXSEC-125"
-        ],
-        "summary": "Zabbix Frontend provides a feature that allows admins to maintain the installation and ensure that only certain IP addresses can access it. In this way, any user will not be able to access the Zabbix Frontend while it is being maintained and possible sensitive data will be prevented from being disclosed. An attacker can bypass this protection and access the instance using IP address not listed in the defined range."
-    },
-    {
-        "Modified": "2022-12-07T15:15:00",
-        "Published": "2022-12-06T00:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-798",
-        "id": "CVE-2022-38337",
-        "impact": {},
-        "last-modified": "2022-12-07T15:15:00",
-        "references": [
-            "https://docs.ssh-mitm.at/vulnerabilities/CVE-2022-38337.html",
-            "https://mobaxterm.mobatek.net/download-home-edition.html"
-        ],
-        "summary": "When aborting a SFTP connection, MobaXterm before v22.1 sends a hardcoded password to the server. The server treats this as an invalid login attempt which can result in a Denial of Service (DoS) for the user if services like fail2ban are used."
-    },
-    {
-        "Modified": "2022-12-07T15:14:00",
-        "Published": "2022-12-05T22:15:00",
-        "access": {},
-        "assigner": "cve-assignments@hackerone.com",
-        "cvss": null,
-        "cwe": "CWE-787",
-        "id": "CVE-2022-35260",
-        "impact": {},
-        "last-modified": "2022-12-07T15:14:00",
-        "references": [
-            "https://hackerone.com/reports/1721098"
-        ],
-        "summary": "curl can be told to parse a `.netrc` file for credentials. If that file endsin a line with 4095 consecutive non-white space letters and no newline, curlwould first read past the end of the stack-based buffer, and if the readworks, write a zero byte beyond its boundary.This will in most cases cause a segfault or similar, but circumstances might also cause different outcomes.If a malicious user can provide a custom netrc file to an application or otherwise affect its contents, this flaw could be used as denial-of-service."
-    },
-    {
-        "Modified": "2022-12-07T15:09:00",
-        "Published": "2022-12-06T07:15:00",
-        "access": {},
-        "assigner": "security@unisoc.com",
-        "cvss": null,
-        "cwe": "CWE-787",
-        "id": "CVE-2022-39133",
-        "impact": {},
-        "last-modified": "2022-12-07T15:09:00",
-        "references": [
-            "https://www.unisoc.com/en_us/secy/announcementDetail/1599588060988411006"
-        ],
-        "summary": "In wlan driver, there is a possible missing bounds check, This could lead to local denial of service in wlan services."
-    },
-    {
-        "Modified": "2022-12-07T15:08:00",
-        "Published": "2022-12-06T07:15:00",
-        "access": {},
-        "assigner": "security@unisoc.com",
-        "cvss": null,
-        "cwe": "CWE-120",
-        "id": "CVE-2022-42756",
-        "impact": {},
-        "last-modified": "2022-12-07T15:08:00",
-        "references": [
-            "https://www.unisoc.com/en_us/secy/announcementDetail/1599588060988411006"
-        ],
-        "summary": "In sensor driver, there is a possible buffer overflow due to a missing bounds check. This could lead to local denial of service in kernel."
-    },
-    {
-        "Modified": "2022-12-07T15:08:00",
-        "Published": "2022-12-06T07:15:00",
-        "access": {},
-        "assigner": "security@unisoc.com",
-        "cvss": null,
-        "cwe": "CWE-125",
-        "id": "CVE-2022-42759",
-        "impact": {},
-        "last-modified": "2022-12-07T15:08:00",
-        "references": [
-            "https://www.unisoc.com/en_us/secy/announcementDetail/1599588060988411006"
-        ],
-        "summary": "In wlan driver, there is a possible missing bounds check, This could lead to local denial of service in wlan services."
-    },
-    {
-        "Modified": "2022-12-07T15:07:00",
-        "Published": "2022-12-06T07:15:00",
-        "access": {},
-        "assigner": "security@unisoc.com",
-        "cvss": null,
-        "cwe": "CWE-787",
-        "id": "CVE-2022-42755",
-        "impact": {},
-        "last-modified": "2022-12-07T15:07:00",
-        "references": [
-            "https://www.unisoc.com/en_us/secy/announcementDetail/1599588060988411006"
-        ],
-        "summary": "In wlan driver, there is a possible missing bounds check, This could lead to local denial of service in wlan services."
-    },
-    {
-        "Modified": "2022-12-07T14:34:00",
-        "Published": "2022-12-01T18:15:00",
-        "access": {},
-        "assigner": "ics-cert@hq.dhs.gov",
-        "cvss": null,
-        "cwe": "CWE-22",
-        "id": "CVE-2022-2969",
-        "impact": {},
-        "last-modified": "2022-12-07T14:34:00",
-        "references": [
-            "https://www.cisa.gov/uscert/ics/advisories/icsa-22-307-03"
-        ],
-        "summary": "Delta Industrial Automation DIALink versions prior to v1.5.0.0 Beta 4 uses an external input to construct a pathname intended to identify a file or directory located underneath a restricted parent directory. However, the software does not properly neutralize special elements within the pathname, which can cause the pathname to resolve to a location outside of the restricted directory."
-    },
-    {
-        "Modified": "2022-12-07T14:31:00",
-        "Published": "2022-12-04T19:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-918",
-        "id": "CVE-2022-35508",
-        "impact": {},
-        "last-modified": "2022-12-07T14:31:00",
-        "references": [
-            "https://git.proxmox.com/?p=pve-http-server.git;a=commitdiff;h=c2bd69c7b5e9c775f96021cf8ae53da3dbd9029d",
-            "https://git.proxmox.com/?p=pve-http-server.git;a=commitdiff;h=580d540ea907ba15f64379c5bb69ecf1a49a875f",
-            "https://git.proxmox.com/?p=pve-http-server.git;a=commitdiff;h=e9df8a6e76b2a18f89295a5d92a62177bbf0f762",
-            "https://starlabs.sg/blog/2022/12-multiple-vulnerabilites-in-proxmox-ve--proxmox-mail-gateway/"
-        ],
-        "summary": "Proxmox Virtual Environment (PVE) and Proxmox Mail Gateway (PMG) are vulnerable to SSRF when proxying HTTP requests between pve(pmg)proxy and pve(pmg)daemon. An attacker with an unprivileged account can craft an HTTP request to achieve SSRF and file disclosure of any files on the server. Also, in Proxmox Mail Gateway, privilege escalation to the root@pam account is possible if the backup feature has ever been used, because backup files such as pmg-backup_YYYY_MM_DD_*.tgz have 0644 permissions and contain an authkey value. This is fixed in pve-http-server 4.1-3."
-    },
-    {
-        "Modified": "2022-12-07T14:30:00",
-        "Published": "2022-12-06T07:15:00",
-        "access": {},
-        "assigner": "security@unisoc.com",
-        "cvss": null,
-        "cwe": "CWE-862",
-        "id": "CVE-2022-39096",
-        "impact": {},
-        "last-modified": "2022-12-07T14:30:00",
-        "references": [
-            "https://www.unisoc.com/en_us/secy/announcementDetail/1599588060988411006"
-        ],
-        "summary": "In power management service, there is a missing permission check. This could lead to set up power management service with no additional execution privileges needed."
-    },
-    {
-        "Modified": "2022-12-07T14:15:00",
-        "Published": "2022-12-07T14:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-45217",
-        "impact": {},
-        "last-modified": "2022-12-07T14:15:00",
-        "references": [
-            "https://github.com/sudoninja-noob/CVE-2022-45217/blob/main/CVE-2022-45217",
-            "https://www.sourcecodester.com/php/15748/book-store-management-system-project-using-php-codeigniter-3-free-source-code.html"
-        ],
-        "summary": "A cross-site scripting (XSS) vulnerability in Book Store Management System v1.0.0 allows attackers to execute arbitrary web scripts or HTML via a crafted payload injected into the Level parameter under the Add New System User module."
-    },
-    {
-        "Modified": "2022-12-07T14:15:00",
-        "Published": "2022-06-16T16:15:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "LOW",
-            "vector": "NETWORK"
-        },
-        "assigner": "cve@mitre.org",
-        "cvss": 5.0,
-        "cvss-time": "2022-12-07T14:15:00",
-        "cvss-vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
-        "cwe": "CWE-415",
-        "id": "CVE-2022-31291",
-        "impact": {
-            "availability": "PARTIAL",
-            "confidentiality": "NONE",
-            "integrity": "NONE"
-        },
-        "last-modified": "2022-12-07T14:15:00",
-        "references": [
-            "https://github.com/COVESA/dlt-daemon/pull/376/commits",
-            "https://lists.debian.org/debian-lts-announce/2022/12/msg00016.html"
-        ],
-        "summary": "An issue in dlt_config_file_parser.c of dlt-daemon v2.18.8 allows attackers to cause a double free via crafted TCP packets."
-    },
-    {
-        "Modified": "2022-12-07T14:15:00",
-        "Published": "2021-02-10T07:15:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "LOW",
-            "vector": "NETWORK"
-        },
-        "assigner": "cve@mitre.org",
-        "cvss": 7.5,
-        "cvss-time": "2022-12-07T14:15:00",
-        "cvss-vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
-        "cwe": "CWE-787",
-        "id": "CVE-2020-36244",
-        "impact": {
-            "availability": "PARTIAL",
-            "confidentiality": "PARTIAL",
-            "integrity": "PARTIAL"
-        },
-        "last-modified": "2022-12-07T14:15:00",
-        "references": [
-            "https://github.com/GENIVI/dlt-daemon/compare/v2.18.5...v2.18.6",
-            "https://github.com/GENIVI/dlt-daemon/issues/265",
-            "https://us-cert.cisa.gov/ics/advisories/icsa-21-147-01",
-            "https://lists.debian.org/debian-lts-announce/2022/12/msg00016.html"
-        ],
-        "summary": "The daemon in GENIVI diagnostic log and trace (DLT), is vulnerable to a heap-based buffer overflow that could allow an attacker to remotely execute arbitrary code on the DLT-Daemon (versions prior to 2.18.6)."
-    },
-    {
-        "Modified": "2022-12-07T14:15:00",
-        "Published": "2020-11-30T19:15:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "MEDIUM",
-            "vector": "NETWORK"
-        },
-        "assigner": "cve@mitre.org",
-        "cvss": 6.8,
-        "cvss-time": "2022-12-07T14:15:00",
-        "cvss-vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
-        "cwe": "CWE-787",
-        "id": "CVE-2020-29394",
-        "impact": {
-            "availability": "PARTIAL",
-            "confidentiality": "PARTIAL",
-            "integrity": "PARTIAL"
-        },
-        "last-modified": "2022-12-07T14:15:00",
-        "references": [
-            "https://github.com/GENIVI/dlt-daemon/issues/274",
-            "https://github.com/GENIVI/dlt-daemon/pull/275",
-            "https://github.com/GENIVI/dlt-daemon/pull/288",
-            "https://lists.debian.org/debian-lts-announce/2022/12/msg00016.html"
-        ],
-        "summary": "A buffer overflow in the dlt_filter_load function in dlt_common.c from dlt-daemon through 2.18.5 (GENIVI Diagnostic Log and Trace) allows arbitrary code execution because fscanf is misused (no limit on the number of characters to be read in the format argument)."
-    },
-    {
-        "Modified": "2022-12-07T14:15:00",
-        "Published": "2020-08-19T14:15:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "MEDIUM",
-            "vector": "NETWORK"
-        },
-        "assigner": "psirt@adobe.com",
-        "cvss": 9.3,
-        "cvss-time": "2022-12-07T14:15:00",
-        "cvss-vector": "AV:N/AC:M/Au:N/C:C/I:C/A:C",
-        "cwe": "CWE-416",
-        "id": "CVE-2020-9715",
-        "impact": {
-            "availability": "COMPLETE",
-            "confidentiality": "COMPLETE",
-            "integrity": "COMPLETE"
-        },
-        "last-modified": "2022-12-07T14:15:00",
-        "references": [
-            "https://helpx.adobe.com/security/products/acrobat/apsb20-48.html",
-            "https://www.zerodayinitiative.com/advisories/ZDI-20-991/",
-            "https://blog.exodusintel.com/2021/04/20/analysis-of-a-use-after-free-vulnerability-in-adobe-acrobat-reader-dc/"
-        ],
-        "summary": "Adobe Acrobat and Reader versions 2020.009.20074 and earlier, 2020.001.30002, 2017.011.30171 and earlier, and 2015.006.30523 and earlier have an use-after-free vulnerability. Successful exploitation could lead to arbitrary code execution ."
-    },
-    {
-        "Modified": "2022-12-07T13:53:00",
-        "Published": "2022-12-07T07:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-707",
-        "id": "CVE-2022-4322",
-        "impact": {},
-        "last-modified": "2022-12-07T13:53:00",
-        "references": [
-            "https://vuldb.com/?id.215013",
-            "https://gitee.com/makunet/maku-boot/issues/I5ZUYI",
-            "https://gitee.com/makunet/maku-boot/commit/446eb7294332efca2bfd791bc37281cedac0d0ff"
-        ],
-        "summary": "A vulnerability, which was classified as critical, was found in maku-boot up to 2.2.0. This affects the function doExecute of the file AbstractScheduleJob.java of the component Scheduled Task Handler. The manipulation leads to injection. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. The name of the patch is 446eb7294332efca2bfd791bc37281cedac0d0ff. It is recommended to apply a patch to fix this issue. The identifier VDB-215013 was assigned to this vulnerability."
-    },
-    {
-        "Modified": "2022-12-07T13:53:00",
-        "Published": "2022-12-07T08:15:00",
-        "access": {},
-        "assigner": "tbd@nist.gov",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-46741",
-        "impact": {},
-        "last-modified": "2022-12-07T13:53:00",
-        "references": [
-            "https://github.com/PaddlePaddle/Paddle/blob/develop/security/advisory/pdsa-2022-001.md"
-        ],
-        "summary": "Out-of-bounds read in gather_tree in PaddlePaddle before 2.4."
-    },
-    {
-        "Modified": "2022-12-07T13:53:00",
-        "Published": "2022-12-07T09:15:00",
-        "access": {},
-        "assigner": "tbd@nist.gov",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-46742",
-        "impact": {},
-        "last-modified": "2022-12-07T13:53:00",
-        "references": [
-            "https://github.com/PaddlePaddle/Paddle/blob/develop/security/advisory/pdsa-2022-002.md"
-        ],
-        "summary": "Code injection in paddle.audio.functional.get_window in PaddlePaddle 2.4.0-rc0 allows arbitrary code execution."
-    },
-    {
-        "Modified": "2022-12-07T13:53:00",
-        "Published": "2022-12-07T10:15:00",
-        "access": {},
-        "assigner": "vultures@jpcert.or.jp",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-34840",
-        "impact": {},
-        "last-modified": "2022-12-07T13:53:00",
-        "references": [
-            "https://jvn.jp/en/vu/JVNVU92805279/index.html",
-            "https://www.buffalo.jp/news/detail/20221003-01.html"
-        ],
-        "summary": "Use of hard-coded credentials vulnerability in multiple Buffalo network devices allows a network-adjacent attacker to alter?configuration settings of the device. The affected products/versions are as follows: WZR-300HP firmware Ver. 2.00 and earlier, WZR-450HP firmware Ver. 2.00 and earlier, WZR-600DHP firmware Ver. 2.00 and earlier, WZR-900DHP firmware Ver. 1.15 and earlier, HW-450HP-ZWE firmware Ver. 2.00 and earlier, WZR-450HP-CWT firmware Ver. 2.00 and earlier, WZR-450HP-UB firmware Ver. 2.00 and earlier, WZR-600DHP2 firmware Ver. 1.15 and earlier, and WZR-D1100H firmware Ver. 2.00 and earlier."
-    },
-    {
-        "Modified": "2022-12-07T13:53:00",
-        "Published": "2022-12-07T10:15:00",
-        "access": {},
-        "assigner": "vultures@jpcert.or.jp",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-39044",
-        "impact": {},
-        "last-modified": "2022-12-07T13:53:00",
-        "references": [
-            "https://jvn.jp/en/vu/JVNVU92805279/index.html",
-            "https://www.buffalo.jp/news/detail/20221003-01.html"
-        ],
-        "summary": "Hidden functionality vulnerability in multiple Buffalo network devices allows a network-adjacent attacker with an administrative privilege to execute an arbitrary OS command. The affected products/versions are as follows: WCR-300 firmware Ver. 1.87 and earlier, WHR-HP-G300N firmware Ver. 2.00 and earlier, WHR-HP-GN firmware Ver. 1.87 and earlier, WPL-05G300 firmware Ver. 1.88 and earlier, WZR-300HP firmware Ver. 2.00 and earlier, WZR-450HP firmware Ver. 2.00 and earlier, WZR-600DHP firmware Ver. 2.00 and earlier, WZR-900DHP firmware Ver. 1.15 and earlier, WZR-HP-AG300H firmware Ver. 1.76 and earlier, WZR-HP-G302H firmware Ver. 1.86 and earlier, WLAE-AG300N firmware Ver. 1.86 and earlier, FS-600DHP firmware Ver. 3.40 and earlier, FS-G300N firmware Ver. 3.14 and earlier, FS-HP-G300N firmware Ver. 3.33 and earlier, FS-R600DHP firmware Ver. 3.40 and earlier, BHR-4GRV firmware Ver. 2.00 and earlier, DWR-HP-G300NH firmware Ver. 1.84 and earlier, DWR-PG firmware Ver. 1.83 and earlier, HW-450HP-ZWE firmware Ver. 2.00 and earlier, WER-A54G54 firmware Ver. 1.43 and earlier, WER-AG54 firmware Ver. 1.43 and earlier, WER-AM54G54 firmware Ver. 1.43 and earlier, WER-AMG54 firmware Ver. 1.43 and earlier, WHR-300 firmware Ver. 2.00 and earlier, WHR-300HP firmware Ver. 2.00 and earlier, WHR-AM54G54 firmware Ver. 1.43 and earlier, WHR-AMG54 firmware Ver. 1.43 and earlier, WHR-AMPG firmware Ver. 1.52 and earlier, WHR-G firmware Ver. 1.49 and earlier, WHR-G300N firmware Ver. 1.65 and earlier, WHR-G301N firmware Ver. 1.87 and earlier, WHR-G54S firmware Ver. 1.43 and earlier, WHR-G54S-NI firmware Ver. 1.24 and earlier, WHR-HP-AMPG firmware Ver. 1.43 and earlier, WHR-HP-G firmware Ver. 1.49 and earlier, WHR-HP-G54 firmware Ver. 1.43 and earlier, WLI-H4-D600 firmware Ver. 1.88 and earlier, WLI-TX4-AG300N firmware Ver. 1.53 and earlier, WS024BF firmware Ver. 1.60 and earlier, WS024BF-NW firmware Ver. 1.60 and earlier, WZR2-G108 firmware Ver. 1.33 and earlier, WZR2-G300N firmware Ver. 1.55 and earlier, WZR-450HP-CWT firmware Ver. 2.00 and earlier, WZR-450HP-UB firmware Ver. 2.00 and earlier, WZR-600DHP2 firmware Ver. 1.15 and earlier, WZR-AGL300NH firmware Ver. 1.55 and earlier, WZR-AMPG144NH firmware Ver. 1.49 and earlier, WZR-AMPG300NH firmware Ver. 1.51 and earlier, WZR-D1100H firmware Ver. 2.00 and earlier, WZR-G144N firmware Ver. 1.48 and earlier, WZR-G144NH firmware Ver. 1.48 and earlier, WZR-HP-G300NH firmware Ver. 1.84 and earlier, WZR-HP-G301NH firmware Ver. 1.84 and earlier, and WZR-HP-G450H firmware Ver. 1.90 and earlier."
-    },
-    {
-        "Modified": "2022-12-07T13:53:00",
-        "Published": "2022-12-07T10:15:00",
-        "access": {},
-        "assigner": "vultures@jpcert.or.jp",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-40966",
-        "impact": {},
-        "last-modified": "2022-12-07T13:53:00",
-        "references": [
-            "https://jvn.jp/en/vu/JVNVU92805279/index.html",
-            "https://www.buffalo.jp/news/detail/20221003-01.html"
-        ],
-        "summary": "Authentication bypass vulnerability in multiple Buffalo network devices allows a network-adjacent attacker to bypass authentication and access the device. The affected products/versions are as follows: WCR-300 firmware Ver. 1.87 and earlier, WHR-HP-G300N firmware Ver. 2.00 and earlier, WHR-HP-GN firmware Ver. 1.87 and earlier, WPL-05G300 firmware Ver. 1.88 and earlier, WRM-D2133HP firmware Ver. 2.85 and earlier, WRM-D2133HS firmware Ver. 2.96 and earlier, WTR-M2133HP firmware Ver. 2.85 and earlier, WTR-M2133HS firmware Ver. 2.96 and earlier, WXR-1900DHP firmware Ver. 2.50 and earlier, WXR-1900DHP2 firmware Ver. 2.59 and earlier, WXR-1900DHP3 firmware Ver. 2.63 and earlier, WXR-5950AX12 firmware Ver. 3.40 and earlier, WXR-6000AX12B firmware Ver. 3.40 and earlier, WXR-6000AX12S firmware Ver. 3.40 and earlier, WZR-300HP firmware Ver. 2.00 and earlier, WZR-450HP firmware Ver. 2.00 and earlier, WZR-600DHP firmware Ver. 2.00 and earlier, WZR-900DHP firmware Ver. 1.15 and earlier, WZR-1750DHP2 firmware Ver. 2.31 and earlier, WZR-HP-AG300H firmware Ver. 1.76 and earlier, WZR-HP-G302H firmware Ver. 1.86 and earlier, WEM-1266 firmware Ver. 2.85 and earlier, WEM-1266WP firmware Ver. 2.85 and earlier, WLAE-AG300N firmware Ver. 1.86 and earlier, FS-600DHP firmware Ver. 3.40 and earlier, FS-G300N firmware Ver. 3.14 and earlier, FS-HP-G300N firmware Ver. 3.33 and earlier, FS-R600DHP firmware Ver. 3.40 and earlier, BHR-4GRV firmware Ver. 2.00 and earlier, DWR-HP-G300NH firmware Ver. 1.84 and earlier, DWR-PG firmware Ver. 1.83 and earlier, HW-450HP-ZWE firmware Ver. 2.00 and earlier, WER-A54G54 firmware Ver. 1.43 and earlier, WER-AG54 firmware Ver. 1.43 and earlier, WER-AM54G54 firmware Ver. 1.43 and earlier, WER-AMG54 firmware Ver. 1.43 and earlier, WHR-300 firmware Ver. 2.00 and earlier, WHR-300HP firmware Ver. 2.00 and earlier, WHR-AM54G54 firmware Ver. 1.43 and earlier, WHR-AMG54 firmware Ver. 1.43 and earlier, WHR-AMPG firmware Ver. 1.52 and earlier, WHR-G firmware Ver. 1.49 and earlier, WHR-G300N firmware Ver. 1.65 and earlier, WHR-G301N firmware Ver. 1.87 and earlier, WHR-G54S firmware Ver. 1.43 and earlier, WHR-G54S-NI firmware Ver. 1.24 and earlier, WHR-HP-AMPG firmware Ver. 1.43 and earlier, WHR-HP-G firmware Ver. 1.49 and earlier, WHR-HP-G54 firmware Ver. 1.43 and earlier, WLI-H4-D600 firmware Ver. 1.88 and earlier, WS024BF firmware Ver. 1.60 and earlier, WS024BF-NW firmware Ver. 1.60 and earlier, WXR-1750DHP firmware Ver. 2.60 and earlier, WXR-1750DHP2 firmware Ver. 2.60 and earlier, WZR-1166DHP firmware Ver. 2.18 and earlier, WZR-1166DHP2 firmware Ver. 2.18 and earlier, WZR-1750DHP firmware Ver. 2.30 and earlier, WZR2-G300N firmware Ver. 1.55 and earlier, WZR-450HP-CWT firmware Ver. 2.00 and earlier, WZR-450HP-UB firmware Ver. 2.00 and earlier, WZR-600DHP2 firmware Ver. 1.15 and earlier, WZR-600DHP3 firmware Ver. 2.19 and earlier, WZR-900DHP2 firmware Ver. 2.19 and earlier, WZR-AGL300NH firmware Ver. 1.55 and earlier, WZR-AMPG144NH firmware Ver. 1.49 and earlier, WZR-AMPG300NH firmware Ver. 1.51 and earlier, WZR-D1100H firmware Ver. 2.00 and earlier, WZR-G144N firmware Ver. 1.48 and earlier, WZR-G144NH firmware Ver. 1.48 and earlier, WZR-HP-G300NH firmware Ver. 1.84 and earlier, WZR-HP-G301NH firmware Ver. 1.84 and earlier, WZR-HP-G450H firmware Ver. 1.90 and earlier, WZR-S1750DHP firmware Ver. 2.32 and earlier, WZR-S600DHP firmware Ver. 2.19 and earlier, and WZR-S900DHP firmware Ver. 2.19 and earlier."
-    },
-    {
-        "Modified": "2022-12-07T13:53:00",
-        "Published": "2022-12-07T10:15:00",
-        "access": {},
-        "assigner": "vultures@jpcert.or.jp",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-42458",
-        "impact": {},
-        "last-modified": "2022-12-07T13:53:00",
-        "references": [
-            "https://www.bingo-cms.jp/information/20221011.html",
-            "https://jvn.jp/en/jp/JVN74592196/index.html"
-        ],
-        "summary": "Authentication bypass using an alternate path or channel vulnerability in bingo!CMS version1.7.4.1 and earlier allows a remote unauthenticated attacker to upload an arbitrary file. As a result, an arbitrary script may be executed and/or a file may be altered."
-    },
-    {
-        "Modified": "2022-12-07T13:53:00",
-        "Published": "2022-12-07T10:15:00",
-        "access": {},
-        "assigner": "security@apache.org",
-        "cvss": null,
-        "cwe": "CWE-90",
-        "id": "CVE-2022-45910",
-        "impact": {},
-        "last-modified": "2022-12-07T13:53:00",
-        "references": [
-            "https://lists.apache.org/thread/m693p0dq6jvwwvmy2wnhj6k854z0s444"
-        ],
-        "summary": "Improper neutralization of special elements used in an LDAP query ('LDAP Injection') vulnerability in ActiveDirectory and Sharepoint ActiveDirectory authority connectors of Apache ManifoldCF allows an attacker to manipulate the LDAP search queries (DoS, additional queries, filter manipulation) during user lookup, if the username or the domain string are passed to the UserACLs servlet without validation. This issue affects Apache ManifoldCF version 2.23 and prior versions."
-    },
-    {
-        "Modified": "2022-12-07T13:49:00",
-        "Published": "2022-12-05T22:15:00",
-        "access": {},
-        "assigner": "cve-assignments@hackerone.com",
-        "cvss": null,
-        "cwe": "CWE-287",
-        "id": "CVE-2022-43549",
-        "impact": {},
-        "last-modified": "2022-12-07T13:49:00",
-        "references": [
-            "https://www.veeam.com/kb4374"
-        ],
-        "summary": "Improper authentication in Veeam Backup for Google Cloud v1.0 and v3.0 allows attackers to bypass authentication mechanisms."
-    },
-    {
-        "Modified": "2022-12-07T13:42:00",
-        "Published": "2022-12-05T16:15:00",
-        "access": {},
-        "assigner": "secalert@redhat.com",
-        "cvss": null,
-        "cwe": "CWE-833",
-        "id": "CVE-2022-4269",
-        "impact": {},
-        "last-modified": "2022-12-07T13:42:00",
-        "references": [
-            "https://lore.kernel.org/netdev/33dc43f587ec1388ba456b4915c75f02a8aae226.1663945716.git.dcaratti@redhat.com/"
-        ],
-        "summary": "A flaw was found in the Linux kernel Traffic Control (TC) subsystem. Using a specific networking configuration (redirecting egress packets to ingress using TC action \"mirred\") a local unprivileged user could trigger a CPU soft lockup (ABBA deadlock) when the transport protocol in use (TCP or SCTP) does a retransmission, resulting in a denial of service condition."
-    },
-    {
-        "Modified": "2022-12-07T13:15:00",
-        "Published": "2022-07-20T20:15:00",
-        "access": {},
-        "assigner": "security-advisories@github.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-31160",
-        "impact": {},
-        "last-modified": "2022-12-07T13:15:00",
-        "references": [
-            "https://github.com/jquery/jquery-ui/security/advisories/GHSA-h6gj-6jjq-h8g9",
-            "https://github.com/jquery/jquery-ui/commit/8cc5bae1caa1fcf96bf5862c5646c787020ba3f9",
-            "https://blog.jqueryui.com/2022/07/jquery-ui-1-13-2-released/",
-            "https://www.drupal.org/sa-contrib-2022-052",
-            "https://security.netapp.com/advisory/ntap-20220909-0007/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/J5LGNTICB5BRFAG3DHVVELS6H3CZSQMO/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6XBR3G3JR5ZIOJDO4224M3INXDS2VFDD/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/QB2FJQXCNHO32VGVOC6DY6IPGVE4VDU6/",
-            "https://lists.debian.org/debian-lts-announce/2022/12/msg00015.html"
-        ],
-        "summary": "jQuery UI is a curated set of user interface interactions, effects, widgets, and themes built on top of jQuery. Versions prior to 1.13.2 are potentially vulnerable to cross-site scripting. Initializing a checkboxradio widget on an input enclosed within a label makes that parent label contents considered as the input label. Calling `.checkboxradio( \"refresh\" )` on such a widget and the initial HTML contained encoded HTML entities will make them erroneously get decoded. This can lead to potentially executing JavaScript code. The bug has been patched in jQuery UI 1.13.2. To remediate the issue, someone who can change the initial HTML can wrap all the non-input contents of the `label` in a `span`."
-    },
-    {
-        "Modified": "2022-12-07T08:15:00",
-        "Published": "2022-12-07T08:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2020-35588",
-        "impact": {},
-        "last-modified": "2022-12-07T08:15:00",
-        "references": [],
-        "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was withdrawn. Further investigation showed that it was not a vulnerability. Notes: none."
-    },
-    {
-        "Modified": "2022-12-07T04:52:00",
-        "Published": "2022-12-07T01:15:00",
-        "access": {},
-        "assigner": "security@xen.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-3643",
-        "impact": {},
-        "last-modified": "2022-12-07T04:52:00",
-        "references": [
-            "https://xenbits.xenproject.org/xsa/advisory-423.txt"
-        ],
-        "summary": "Guests can trigger NIC interface reset/abort/crash via netback It is possible for a guest to trigger a NIC interface reset/abort/crash in a Linux based network backend by sending certain kinds of packets. It appears to be an (unwritten?) assumption in the rest of the Linux network stack that packet protocol headers are all contained within the linear section of the SKB and some NICs behave badly if this is not the case. This has been reported to occur with Cisco (enic) and Broadcom NetXtrem II BCM5780 (bnx2x) though it may be an issue with other NICs/drivers as well. In case the frontend is sending requests with split headers, netback will forward those violating above mentioned assumption to the networking core, resulting in said misbehavior."
-    },
-    {
-        "Modified": "2022-12-07T04:52:00",
-        "Published": "2022-12-07T02:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-44153",
-        "impact": {},
-        "last-modified": "2022-12-07T04:52:00",
-        "references": [
-            "https://nitroteam.kz/index.php?action=researches&slug=CVE-2022-44153-Rapid-SCADA-ru"
-        ],
-        "summary": "Rapid Software LLC Rapid SCADA 5.8.4 is vulnerable to Cross Site Scripting (XSS)."
-    },
-    {
-        "Modified": "2022-12-07T04:52:00",
-        "Published": "2022-12-07T02:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-45009",
-        "impact": {},
-        "last-modified": "2022-12-07T04:52:00",
-        "references": [
-            "https://github.com/realguoxiufeng/bug_report/blob/main/vendors/oretnom23/Online%20Leave%20Management%20System/UPLOAD.md"
-        ],
-        "summary": "Online Leave Management System v1.0 was discovered to contain an arbitrary file upload vulnerability at /leave_system/classes/SystemSettings.php?f=update_settings. This vulnerability allows attackers to execute arbitrary code via a crafted PHP file."
-    },
-    {
-        "Modified": "2022-12-07T04:52:00",
-        "Published": "2022-12-07T02:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-45026",
-        "impact": {},
-        "last-modified": "2022-12-07T04:52:00",
-        "references": [
-            "https://github.com/shd101wyy/vscode-markdown-preview-enhanced/issues/640"
-        ],
-        "summary": "An issue in Markdown Preview Enhanced v0.6.5 and v0.19.6 for VSCode and Atom allows attackers to execute arbitrary commands during the GFM export process."
-    },
-    {
-        "Modified": "2022-12-07T04:52:00",
-        "Published": "2022-12-07T01:15:00",
-        "access": {},
-        "assigner": "security@xen.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-42328",
-        "impact": {},
-        "last-modified": "2022-12-07T04:52:00",
-        "references": [
-            "https://xenbits.xenproject.org/xsa/advisory-424.txt"
-        ],
-        "summary": "Guests can trigger deadlock in Linux netback driver T[his CNA information record relates to multiple CVEs; the text explains which aspects/vulnerabilities correspond to which CVE.] The patch for XSA-392 introduced another issue which might result in a deadlock when trying to free the SKB of a packet dropped due to the XSA-392 handling (CVE-2022-42328). Additionally when dropping packages for other reasons the same deadlock could occur in case of netpoll being active for the interface the xen-netback driver is connected to (CVE-2022-42329)."
-    },
-    {
-        "Modified": "2022-12-07T04:52:00",
-        "Published": "2022-12-07T01:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-45915",
-        "impact": {},
-        "last-modified": "2022-12-07T04:52:00",
-        "references": [
-            "https://sec-consult.com/vulnerability-lab/advisory/multiple-critical-vulnerabilities-in-ilias-elearning-platform/"
-        ],
-        "summary": "ILIAS before 7.16 allows OS Command Injection."
-    },
-    {
-        "Modified": "2022-12-07T04:52:00",
-        "Published": "2022-12-07T01:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-45917",
-        "impact": {},
-        "last-modified": "2022-12-07T04:52:00",
-        "references": [
-            "https://sec-consult.com/vulnerability-lab/advisory/multiple-critical-vulnerabilities-in-ilias-elearning-platform/"
-        ],
-        "summary": "ILIAS before 7.16 has an Open Redirect."
-    },
-    {
-        "Modified": "2022-12-07T04:52:00",
-        "Published": "2022-12-07T01:15:00",
-        "access": {},
-        "assigner": "security@xen.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-42329",
-        "impact": {},
-        "last-modified": "2022-12-07T04:52:00",
-        "references": [
-            "https://xenbits.xenproject.org/xsa/advisory-424.txt"
-        ],
-        "summary": "Guests can trigger deadlock in Linux netback driver T[his CNA information record relates to multiple CVEs; the text explains which aspects/vulnerabilities correspond to which CVE.] The patch for XSA-392 introduced another issue which might result in a deadlock when trying to free the SKB of a packet dropped due to the XSA-392 handling (CVE-2022-42328). Additionally when dropping packages for other reasons the same deadlock could occur in case of netpoll being active for the interface the xen-netback driver is connected to (CVE-2022-42329)."
     }
 ]
