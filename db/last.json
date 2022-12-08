@@ -1,5 +1,20 @@
 [
     {
+        "Modified": "2022-12-08T11:15:00",
+        "Published": "2022-11-21T11:15:00",
+        "access": {},
+        "assigner": "contact@wpscan.com",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2022-3690",
+        "impact": {},
+        "last-modified": "2022-12-08T11:15:00",
+        "references": [
+            "https://wpscan.com/vulnerability/725f6ae4-7ec5-4d7c-9533-c9b61b59cc2b"
+        ],
+        "summary": "The Popup Maker WordPress plugin before 1.16.11 does not sanitise and escape some of its Popup options, which could allow users with a role as low as Contributor to perform Stored Cross-Site Scripting attacks, which could be used against admins"
+    },
+    {
         "Modified": "2022-12-08T10:15:00",
         "Published": "2022-12-08T10:15:00",
         "access": {},
@@ -1963,23 +1978,5 @@
             "https://github.com/labstack/echo/commit/4422e3b66b9fd498ed1ae1d0242d660d0ed3faaa"
         ],
         "summary": "Due to improper sanitization of user input on Windows, the static file handler allows for directory traversal, allowing an attacker to read files outside of the target directory that the server has permission to read."
-    },
-    {
-        "Modified": "2022-12-07T21:00:00",
-        "Published": "2022-12-07T17:15:00",
-        "access": {},
-        "assigner": "security@golang.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-41720",
-        "impact": {},
-        "last-modified": "2022-12-07T21:00:00",
-        "references": [
-            "https://groups.google.com/g/golang-announce/c/L_3rmdT0BMU/m/yZDrXjIiBQAJ",
-            "https://pkg.go.dev/vuln/GO-2022-1143",
-            "https://go.dev/cl/455716",
-            "https://go.dev/issue/56694"
-        ],
-        "summary": "On Windows, restricted files can be accessed via os.DirFS and http.Dir. The os.DirFS function and http.Dir type provide access to a tree of files rooted at a given directory. These functions permit access to Windows device files under that root. For example, os.DirFS(\"C:/tmp\").Open(\"COM1\") opens the COM1 device. Both os.DirFS and http.Dir only provide read-only filesystem access. In addition, on Windows, an os.DirFS for the directory (the root of the current drive) can permit a maliciously crafted path to escape from the drive and access any path on the system. With fix applied, the behavior of os.DirFS(\"\") has changed. Previously, an empty root was treated equivalently to \"/\", so os.DirFS(\"\").Open(\"tmp\") would open the path \"/tmp\". This now returns an error."
     }
 ]
