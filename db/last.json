@@ -1,6 +1,189 @@
 [
     {
-        "Modified": "2022-12-07T22:15:00",
+        "Modified": "2022-12-08T00:15:00",
+        "Published": "2022-12-08T00:15:00",
+        "access": {},
+        "assigner": "ics-cert@hq.dhs.gov",
+        "cvss": null,
+        "cwe": "CWE-824",
+        "id": "CVE-2022-3084",
+        "impact": {},
+        "last-modified": "2022-12-08T00:15:00",
+        "references": [
+            "https://www.cisa.gov/uscert/ics/advisories/icsa-22-326-04"
+        ],
+        "summary": "GE CIMPICITY versions 2022 and prior is vulnerable when data from a faulting address controls code flow starting at gmmiObj!CGmmiRootOptionTable, which could allow an attacker to execute arbitrary code."
+    },
+    {
+        "Modified": "2022-12-08T00:15:00",
+        "Published": "2022-12-08T00:15:00",
+        "access": {},
+        "assigner": "ics-cert@hq.dhs.gov",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-3092",
+        "impact": {},
+        "last-modified": "2022-12-08T00:15:00",
+        "references": [
+            "https://www.cisa.gov/uscert/ics/advisories/icsa-22-326-04"
+        ],
+        "summary": "GE CIMPICITY versions 2022 and prior is vulnerable to an out-of-bounds write, which could allow an attacker to execute arbitrary code."
+    },
+    {
+        "Modified": "2022-12-08T00:15:00",
+        "Published": "2022-12-08T00:15:00",
+        "access": {},
+        "assigner": "cve@rapid7.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-4261",
+        "impact": {},
+        "last-modified": "2022-12-08T00:15:00",
+        "references": [
+            "https://docs.rapid7.com/release-notes/nexpose/20221207/",
+            "https://www.rapid7.com/blog/post/2022/12/7/cve-2022-4261-rapid7-nexpose-update-validation-issue-fixed"
+        ],
+        "summary": "Rapid7 Nexpose versions prior to 6.6.172 failed to reliably validate the authenticity of update contents. This failure could allow an attacker to provide a malicious update and alter the functionality of Rapid7 Nexpose. The attacker would need some pre-existing mechanism to provide a malicious update, either through a social engineering effort, privileged access to replace downloaded updates in transit, or by performing an Attacker-in-the-Middle attack on the update service itself."
+    },
+    {
+        "Modified": "2022-12-08T00:15:00",
+        "Published": "2022-12-08T00:15:00",
+        "access": {},
+        "assigner": "security@nortonlifelock.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-4291",
+        "impact": {},
+        "last-modified": "2022-12-08T00:15:00",
+        "references": [
+            "https://support.norton.com/sp/static/external/tools/security-advisories.html"
+        ],
+        "summary": "The aswjsflt.dll library from Avast Antivirus windows contained a potentially exploitable heap corruption vulnerability that could enable an attacker to bypass the sandbox of the application it was loaded into, if applicable. This issue was fixed in version 18.0.1478 of the Script Shield Component."
+    },
+    {
+        "Modified": "2022-12-08T00:15:00",
+        "Published": "2022-12-02T20:15:00",
+        "access": {},
+        "assigner": "ics-cert@hq.dhs.gov",
+        "cvss": null,
+        "cwe": "CWE-77",
+        "id": "CVE-2022-3086",
+        "impact": {},
+        "last-modified": "2022-12-08T00:15:00",
+        "references": [
+            "https://www.cisa.gov/uscert/ics/advisories/icsa-22-321-02"
+        ],
+        "summary": "Cradlepoint IBR600 NCOS versions 6.5.0.160bc2e and prior are vulnerable to shell escape, which enables local attackers with non-superuser credentials to gain full, unrestrictive shell access which may allow an attacker to execute arbitrary code."
+    },
+    {
+        "Modified": "2022-12-08T00:08:00",
+        "Published": "2022-12-07T23:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-400",
+        "id": "CVE-2022-23471",
+        "impact": {},
+        "last-modified": "2022-12-08T00:08:00",
+        "references": [
+            "https://github.com/containerd/containerd/security/advisories/GHSA-2qjp-425j-52j9",
+            "https://github.com/containerd/containerd/commit/a05d175400b1145e5e6a735a6710579d181e7fb0"
+        ],
+        "summary": "containerd is an open source container runtime. A bug was found in containerd's CRI implementation where a user can exhaust memory on the host. In the CRI stream server, a goroutine is launched to handle terminal resize events if a TTY is requested. If the user's process fails to launch due to, for example, a faulty command, the goroutine will be stuck waiting to send without a receiver, resulting in a memory leak. Kubernetes and crictl can both be configured to use containerd's CRI implementation and the stream server is used for handling container IO. This bug has been fixed in containerd 1.6.12 and 1.5.16. Users should update to these versions to resolve the issue. Users unable to upgrade should ensure that only trusted images and commands are used and that only trusted users have permissions to execute commands in running containers."
+    },
+    {
+        "Modified": "2022-12-08T00:08:00",
+        "Published": "2022-12-07T23:15:00",
+        "access": {},
+        "assigner": "ics-cert@hq.dhs.gov",
+        "cvss": null,
+        "cwe": "CWE-822",
+        "id": "CVE-2022-2002",
+        "impact": {},
+        "last-modified": "2022-12-08T00:08:00",
+        "references": [
+            "https://www.cisa.gov/uscert/ics/advisories/icsa-22-326-04"
+        ],
+        "summary": "GE CIMPICITY versions 2022 and prior is vulnerable when data from faulting address controls code flow starting at gmmiObj!CGmmiOptionContainer, which could allow an attacker to execute arbitrary code."
+    },
+    {
+        "Modified": "2022-12-08T00:08:00",
+        "Published": "2022-12-07T23:15:00",
+        "access": {},
+        "assigner": "ics-cert@hq.dhs.gov",
+        "cvss": null,
+        "cwe": "CWE-122",
+        "id": "CVE-2022-2948",
+        "impact": {},
+        "last-modified": "2022-12-08T00:08:00",
+        "references": [
+            "https://www.cisa.gov/uscert/ics/advisories/icsa-22-326-04"
+        ],
+        "summary": "GE CIMPICITY versions 2022 and prior is vulnerable to a heap-based buffer overflow, which could allow an attacker to execute arbitrary code."
+    },
+    {
+        "Modified": "2022-12-08T00:08:00",
+        "Published": "2022-12-07T23:15:00",
+        "access": {},
+        "assigner": "ics-cert@hq.dhs.gov",
+        "cvss": null,
+        "cwe": "CWE-824",
+        "id": "CVE-2022-2952",
+        "impact": {},
+        "last-modified": "2022-12-08T00:08:00",
+        "references": [
+            "https://www.cisa.gov/uscert/ics/advisories/icsa-22-326-04"
+        ],
+        "summary": "GE CIMPICITY versions 2022 and prior is vulnerable when data from a faulting address controls code flow starting at gmmiObj!CGmmiOptionContainer, which could allow an attacker to execute arbitrary code."
+    },
+    {
+        "Modified": "2022-12-08T00:08:00",
+        "Published": "2022-12-07T21:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-23486",
+        "impact": {},
+        "last-modified": "2022-12-08T00:08:00",
+        "references": [
+            "https://github.com/libp2p/rust-libp2p/security/advisories/GHSA-jvgw-gccv-q5p8"
+        ],
+        "summary": "libp2p-rust is the official rust language Implementation of the libp2p networking stack. In versions prior to 0.45.1 an attacker node can cause a victim node to allocate a large number of small memory chunks, which can ultimately lead to the victim\u2019s process running out of memory and thus getting killed by its operating system. When executed continuously, this can lead to a denial of service attack, especially relevant on a larger scale when run against more than one node of a libp2p based network. Users are advised to upgrade to `libp2p` `v0.45.1` or above. Users unable to upgrade should reference the DoS Mitigation page for more information on how to incorporate mitigation strategies, monitor their application, and respond to attacks: https://docs.libp2p.io/reference/dos-mitigation/."
+    },
+    {
+        "Modified": "2022-12-08T00:08:00",
+        "Published": "2022-12-07T21:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-400",
+        "id": "CVE-2022-23487",
+        "impact": {},
+        "last-modified": "2022-12-08T00:08:00",
+        "references": [
+            "https://github.com/libp2p/js-libp2p/security/advisories/GHSA-f44q-634c-jvwv"
+        ],
+        "summary": "js-libp2p is the official javascript Implementation of libp2p networking stack. Versions older than `v0.38.0` of js-libp2p are vulnerable to targeted resource exhaustion attacks. These attacks target libp2p\u2019s connection, stream, peer, and memory management. An attacker can cause the allocation of large amounts of memory, ultimately leading to the process getting killed by the host\u2019s operating system. While a connection manager tasked with keeping the number of connections within manageable limits has been part of js-libp2p, this component was designed to handle the regular churn of peers, not a targeted resource exhaustion attack. Users are advised to update their js-libp2p dependency to `v0.38.0` or greater. There are no known workarounds for this vulnerability."
+    },
+    {
+        "Modified": "2022-12-08T00:08:00",
+        "Published": "2022-12-07T21:15:00",
+        "access": {},
+        "assigner": "cna@vuldb.com",
+        "cvss": null,
+        "cwe": "CWE-707",
+        "id": "CVE-2022-4341",
+        "impact": {},
+        "last-modified": "2022-12-08T00:08:00",
+        "references": [
+            "https://vuldb.com/?id.215095",
+            "https://gitee.com/csliuwy/coder-chain_gdut/issues/I53DPF"
+        ],
+        "summary": "A vulnerability has been found in csliuwy coder-chain_gdut and classified as problematic. Affected by this vulnerability is an unknown functionality of the file /back/index.php/user/User/?1. The manipulation leads to cross site scripting. The attack can be launched remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-215095."
+    },
+    {
+        "Modified": "2022-12-08T00:08:00",
         "Published": "2022-12-07T22:15:00",
         "access": {},
         "assigner": "security-advisories@github.com",
@@ -8,7 +191,7 @@
         "cwe": "CWE-345",
         "id": "CVE-2022-23491",
         "impact": {},
-        "last-modified": "2022-12-07T22:15:00",
+        "last-modified": "2022-12-08T00:08:00",
         "references": [
             "https://groups.google.com/a/mozilla.org/g/dev-security-policy/c/oxX69KFvsm4/m/yLohoVqtCgAJ",
             "https://github.com/certifi/python-certifi/security/advisories/GHSA-43fp-rhv2-5gv8"
@@ -354,52 +537,6 @@
             "https://exchange.xforce.ibmcloud.com/vulnerabilities/166627"
         ],
         "summary": "IBM Security Key Lifecycle Manager 3.0 and 3.0.1 stores user credentials in plain in clear text which can be read by a local user. IBM X-Force ID: 166627."
-    },
-    {
-        "Modified": "2022-12-07T21:15:00",
-        "Published": "2022-12-07T21:15:00",
-        "access": {},
-        "assigner": "security-advisories@github.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-23486",
-        "impact": {},
-        "last-modified": "2022-12-07T21:15:00",
-        "references": [
-            "https://github.com/libp2p/rust-libp2p/security/advisories/GHSA-jvgw-gccv-q5p8"
-        ],
-        "summary": "libp2p-rust is the official rust language Implementation of the libp2p networking stack. In versions prior to 0.45.1 an attacker node can cause a victim node to allocate a large number of small memory chunks, which can ultimately lead to the victim\u2019s process running out of memory and thus getting killed by its operating system. When executed continuously, this can lead to a denial of service attack, especially relevant on a larger scale when run against more than one node of a libp2p based network. Users are advised to upgrade to `libp2p` `v0.45.1` or above. Users unable to upgrade should reference the DoS Mitigation page for more information on how to incorporate mitigation strategies, monitor their application, and respond to attacks: https://docs.libp2p.io/reference/dos-mitigation/."
-    },
-    {
-        "Modified": "2022-12-07T21:15:00",
-        "Published": "2022-12-07T21:15:00",
-        "access": {},
-        "assigner": "security-advisories@github.com",
-        "cvss": null,
-        "cwe": "CWE-400",
-        "id": "CVE-2022-23487",
-        "impact": {},
-        "last-modified": "2022-12-07T21:15:00",
-        "references": [
-            "https://github.com/libp2p/js-libp2p/security/advisories/GHSA-f44q-634c-jvwv"
-        ],
-        "summary": "js-libp2p is the official javascript Implementation of libp2p networking stack. Versions older than `v0.38.0` of js-libp2p are vulnerable to targeted resource exhaustion attacks. These attacks target libp2p\u2019s connection, stream, peer, and memory management. An attacker can cause the allocation of large amounts of memory, ultimately leading to the process getting killed by the host\u2019s operating system. While a connection manager tasked with keeping the number of connections within manageable limits has been part of js-libp2p, this component was designed to handle the regular churn of peers, not a targeted resource exhaustion attack. Users are advised to update their js-libp2p dependency to `v0.38.0` or greater. There are no known workarounds for this vulnerability."
-    },
-    {
-        "Modified": "2022-12-07T21:15:00",
-        "Published": "2022-12-07T21:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-707",
-        "id": "CVE-2022-4341",
-        "impact": {},
-        "last-modified": "2022-12-07T21:15:00",
-        "references": [
-            "https://vuldb.com/?id.215095",
-            "https://gitee.com/csliuwy/coder-chain_gdut/issues/I53DPF"
-        ],
-        "summary": "A vulnerability has been found in csliuwy coder-chain_gdut and classified as problematic. Affected by this vulnerability is an unknown functionality of the file /back/index.php/user/User/?1. The manipulation leads to cross site scripting. The attack can be launched remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-215095."
     },
     {
         "Modified": "2022-12-07T21:15:00",
@@ -1939,160 +2076,5 @@
             "https://lists.debian.org/debian-lts-announce/2022/06/msg00006.html"
         ],
         "summary": "An issue was discovered in GNOME GLib before 2.66.6 and 2.67.x before 2.67.3. The function g_bytes_new has an integer overflow on 64-bit platforms due to an implicit cast from 64 bits to 32 bits. The overflow could potentially lead to memory corruption."
-    },
-    {
-        "Modified": "2022-12-07T17:07:00",
-        "Published": "2022-10-03T01:15:00",
-        "access": {},
-        "assigner": "secure@microsoft.com",
-        "cvss": null,
-        "cwe": "CWE-269",
-        "id": "CVE-2022-41040",
-        "impact": {},
-        "last-modified": "2022-12-07T17:07:00",
-        "references": [
-            "https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-41040",
-            "https://www.kb.cert.org/vuls/id/915563",
-            "http://packetstormsecurity.com/files/170066/Microsoft-Exchange-ProxyNotShell-Remote-Code-Execution.html"
-        ],
-        "summary": "Microsoft Exchange Server Elevation of Privilege Vulnerability."
-    },
-    {
-        "Modified": "2022-12-07T17:07:00",
-        "Published": "2022-10-03T01:15:00",
-        "access": {},
-        "assigner": "secure@microsoft.com",
-        "cvss": null,
-        "cwe": "NVD-CWE-noinfo",
-        "id": "CVE-2022-41082",
-        "impact": {},
-        "last-modified": "2022-12-07T17:07:00",
-        "references": [
-            "https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-41082",
-            "https://www.kb.cert.org/vuls/id/915563",
-            "http://packetstormsecurity.com/files/170066/Microsoft-Exchange-ProxyNotShell-Remote-Code-Execution.html"
-        ],
-        "summary": "Microsoft Exchange Server Remote Code Execution Vulnerability."
-    },
-    {
-        "Modified": "2022-12-07T17:07:00",
-        "Published": "2022-07-01T20:15:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "LOW",
-            "vector": "NETWORK"
-        },
-        "assigner": "cve@mitre.org",
-        "cvss": 5.0,
-        "cvss-time": "2022-12-07T17:07:00",
-        "cvss-vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
-        "cwe": "NVD-CWE-noinfo",
-        "id": "CVE-2022-32089",
-        "impact": {
-            "availability": "PARTIAL",
-            "confidentiality": "NONE",
-            "integrity": "NONE"
-        },
-        "last-modified": "2022-12-07T17:07:00",
-        "references": [
-            "https://jira.mariadb.org/browse/MDEV-26410",
-            "https://security.netapp.com/advisory/ntap-20220818-0005/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/ZHISY4YVO4S5QJYYIXCIAXBM7INOL4VY/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/WTVAONAZXJFGHAJ4RP2OF3EAMQCOTDSQ/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/WCOEGSVMIEXDZHBOSV6WVF7FAVRBR2JE/"
-        ],
-        "summary": "MariaDB v10.5 to v10.7 was discovered to contain a segmentation fault via the component st_select_lex_unit::exclude_level."
-    },
-    {
-        "Modified": "2022-12-07T17:06:00",
-        "Published": "2022-11-09T07:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-400",
-        "id": "CVE-2022-45061",
-        "impact": {},
-        "last-modified": "2022-12-07T17:06:00",
-        "references": [
-            "https://github.com/python/cpython/issues/98433",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/O67LRHDTJWH544KXB6KY4HMHQLYDXFPK/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/4WBZJNSALFGMPYTINIF57HAAK46U72WQ/"
-        ],
-        "summary": "An issue was discovered in Python before 3.11.1. An unnecessary quadratic algorithm exists in one path when processing some inputs to the IDNA (RFC 3490) decoder, such that a crafted, unreasonably long name being presented to the decoder could lead to a CPU denial of service. Hostnames are often supplied by remote servers that could be controlled by a malicious actor; in such a scenario, they could trigger excessive CPU consumption on the client attempting to make use of an attacker-supplied supposed hostname. For example, the attack payload could be placed in the Location header of an HTTP response with status code 302. A fix is planned in 3.11.1, 3.10.9, 3.9.16, 3.8.16, and 3.7.16."
-    },
-    {
-        "Modified": "2022-12-07T16:56:00",
-        "Published": "2022-12-06T07:15:00",
-        "access": {},
-        "assigner": "security@unisoc.com",
-        "cvss": null,
-        "cwe": "CWE-190",
-        "id": "CVE-2022-42767",
-        "impact": {},
-        "last-modified": "2022-12-07T16:56:00",
-        "references": [
-            "https://www.unisoc.com/en_us/secy/announcementDetail/1599588060988411006"
-        ],
-        "summary": "In wlan driver, there is a possible missing bounds check, This could lead to local denial of service in wlan services."
-    },
-    {
-        "Modified": "2022-12-07T16:56:00",
-        "Published": "2022-12-06T07:15:00",
-        "access": {},
-        "assigner": "security@unisoc.com",
-        "cvss": null,
-        "cwe": "CWE-125",
-        "id": "CVE-2022-42768",
-        "impact": {},
-        "last-modified": "2022-12-07T16:56:00",
-        "references": [
-            "https://www.unisoc.com/en_us/secy/announcementDetail/1599588060988411006"
-        ],
-        "summary": "In wlan driver, there is a possible missing bounds check, This could lead to local denial of service in wlan services."
-    },
-    {
-        "Modified": "2022-12-07T16:56:00",
-        "Published": "2022-12-06T07:15:00",
-        "access": {},
-        "assigner": "security@unisoc.com",
-        "cvss": null,
-        "cwe": "CWE-125",
-        "id": "CVE-2022-42769",
-        "impact": {},
-        "last-modified": "2022-12-07T16:56:00",
-        "references": [
-            "https://www.unisoc.com/en_us/secy/announcementDetail/1599588060988411006"
-        ],
-        "summary": "In wlan driver, there is a possible missing bounds check, This could lead to local denial of service in wlan services."
-    },
-    {
-        "Modified": "2022-12-07T16:52:00",
-        "Published": "2022-12-06T07:15:00",
-        "access": {},
-        "assigner": "security@unisoc.com",
-        "cvss": null,
-        "cwe": "CWE-125",
-        "id": "CVE-2022-42757",
-        "impact": {},
-        "last-modified": "2022-12-07T16:52:00",
-        "references": [
-            "https://www.unisoc.com/en_us/secy/announcementDetail/1599588060988411006"
-        ],
-        "summary": "In wlan driver, there is a possible missing bounds check, This could lead to local denial of service in wlan services."
-    },
-    {
-        "Modified": "2022-12-07T16:52:00",
-        "Published": "2022-12-06T07:15:00",
-        "access": {},
-        "assigner": "security@unisoc.com",
-        "cvss": null,
-        "cwe": "CWE-125",
-        "id": "CVE-2022-42758",
-        "impact": {},
-        "last-modified": "2022-12-07T16:52:00",
-        "references": [
-            "https://www.unisoc.com/en_us/secy/announcementDetail/1599588060988411006"
-        ],
-        "summary": "In wlan driver, there is a possible missing bounds check, This could lead to local denial of service in wlan services."
     }
 ]
