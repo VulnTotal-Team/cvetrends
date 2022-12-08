@@ -1,5 +1,684 @@
 [
     {
+        "Modified": "2022-12-08T20:15:00",
+        "Published": "2022-12-08T20:15:00",
+        "access": {},
+        "assigner": "security@golang.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-41717",
+        "impact": {},
+        "last-modified": "2022-12-08T20:15:00",
+        "references": [
+            "https://groups.google.com/g/golang-announce/c/L_3rmdT0BMU/m/yZDrXjIiBQAJ",
+            "https://pkg.go.dev/vuln/GO-2022-1144",
+            "https://go.dev/cl/455717",
+            "https://go.dev/issue/56350",
+            "https://go.dev/cl/455635"
+        ],
+        "summary": "An attacker can cause excessive memory growth in a Go server accepting HTTP/2 requests. HTTP/2 server connections contain a cache of HTTP header keys sent by the client. While the total number of entries in this cache is capped, an attacker sending very large keys can cause the server to allocate approximately 64 MiB per open connection."
+    },
+    {
+        "Modified": "2022-12-08T20:15:00",
+        "Published": "2022-12-08T20:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-44938",
+        "impact": {},
+        "last-modified": "2022-12-08T20:15:00",
+        "references": [
+            "https://pwnit.io/2022/11/23/weak-password-reset-token-leads-to-account-takeover-in-seeddms/"
+        ],
+        "summary": "Weak reset token generation in SeedDMS v6.0.20 and v5.1.7 allows attackers to execute a full account takeover via a brute force attack."
+    },
+    {
+        "Modified": "2022-12-08T20:14:00",
+        "Published": "2022-12-07T04:15:00",
+        "access": {},
+        "assigner": "f5sirt@f5.com",
+        "cvss": null,
+        "cwe": "CWE-352",
+        "id": "CVE-2022-41622",
+        "impact": {},
+        "last-modified": "2022-12-08T20:14:00",
+        "references": [
+            "https://support.f5.com/csp/article/K94221585"
+        ],
+        "summary": "In all versions, BIG-IP and BIG-IQ are vulnerable to cross-site request forgery (CSRF) attacks through iControl SOAP. Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated."
+    },
+    {
+        "Modified": "2022-12-08T20:11:00",
+        "Published": "2022-12-07T04:15:00",
+        "access": {},
+        "assigner": "vultures@jpcert.or.jp",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2022-37406",
+        "impact": {},
+        "last-modified": "2022-12-08T20:11:00",
+        "references": [
+            "https://jvn.jp/en/jp/JVN24659622/index.html",
+            "https://support.ricoh.com/bb/html/dr_ut_e/rc3/model/sp42/sp42.htm",
+            "https://support.ricoh.com/bbv2/html/dr_ut_d/ipsio/history/w/bb/pub_j/dr_ut_d/4101044/4101044791/V101/5236968/redirect_CLUTool_DOM/history.htm"
+        ],
+        "summary": "Cross-site scripting vulnerability in Aficio SP 4210N firmware versions prior to Web Support 1.05 allows a remote authenticated attacker with an administrative privilege to inject an arbitrary script."
+    },
+    {
+        "Modified": "2022-12-08T20:07:00",
+        "Published": "2022-12-07T02:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-78",
+        "id": "CVE-2022-45026",
+        "impact": {},
+        "last-modified": "2022-12-08T20:07:00",
+        "references": [
+            "https://github.com/shd101wyy/vscode-markdown-preview-enhanced/issues/640"
+        ],
+        "summary": "An issue in Markdown Preview Enhanced v0.6.5 and v0.19.6 for VSCode and Atom allows attackers to execute arbitrary commands during the GFM export process."
+    },
+    {
+        "Modified": "2022-12-08T20:06:00",
+        "Published": "2022-12-07T02:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-77",
+        "id": "CVE-2022-45025",
+        "impact": {},
+        "last-modified": "2022-12-08T20:06:00",
+        "references": [
+            "https://github.com/shd101wyy/vscode-markdown-preview-enhanced/issues/639"
+        ],
+        "summary": "Markdown Preview Enhanced v0.6.5 and v0.19.6 for VSCode and Atom was discovered to contain a command injection vulnerability via the PDF file import function."
+    },
+    {
+        "Modified": "2022-12-08T20:03:00",
+        "Published": "2022-12-06T18:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-338",
+        "id": "CVE-2022-23472",
+        "impact": {},
+        "last-modified": "2022-12-08T20:03:00",
+        "references": [
+            "https://github.com/ArjunSharda/Passeo/security/advisories/GHSA-mhhf-vgwh-fw9h",
+            "https://github.com/ArjunSharda/Passeo/commit/8caa798b6bc4647dca59b2376204b6dc6176361a",
+            "https://peps.python.org/pep-0506/"
+        ],
+        "summary": "Passeo is an open source python password generator. Versions prior to 1.0.5 rely on the python `random` library for random value selection. The python `random` library warns that it should not be used for security purposes due to its reliance on a non-cryptographically secure random number generator. As a result a motivated attacker may be able to guess generated passwords. This issue has been addressed in version 1.0.5. Users are advised to upgrade. There are no known workarounds for this vulnerability."
+    },
+    {
+        "Modified": "2022-12-08T20:03:00",
+        "Published": "2022-06-02T14:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "MEDIUM",
+            "vector": "NETWORK"
+        },
+        "assigner": "security@huntr.dev",
+        "cvss": 6.8,
+        "cvss-time": "2022-12-08T20:03:00",
+        "cvss-vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
+        "cwe": "CWE-416",
+        "id": "CVE-2022-1968",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "PARTIAL",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-12-08T20:03:00",
+        "references": [
+            "https://huntr.dev/bounties/949090e5-f4ea-4edf-bd79-cd98f0498a5b",
+            "https://github.com/vim/vim/commit/409510c588b1eec1ae33511ae97a21eb8e110895",
+            "https://lists.debian.org/debian-lts-announce/2022/06/msg00014.html",
+            "https://security.gentoo.org/glsa/202208-32",
+            "https://support.apple.com/kb/HT213488",
+            "http://seclists.org/fulldisclosure/2022/Oct/41",
+            "http://seclists.org/fulldisclosure/2022/Oct/28",
+            "https://lists.debian.org/debian-lts-announce/2022/11/msg00009.html"
+        ],
+        "summary": "Use After Free in GitHub repository vim/vim prior to 8.2."
+    },
+    {
+        "Modified": "2022-12-08T20:02:00",
+        "Published": "2022-05-27T09:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "MEDIUM",
+            "vector": "NETWORK"
+        },
+        "assigner": "security@huntr.dev",
+        "cvss": 6.8,
+        "cvss-time": "2022-12-08T20:02:00",
+        "cvss-vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
+        "cwe": "CWE-416",
+        "id": "CVE-2022-1898",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "PARTIAL",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-12-08T20:02:00",
+        "references": [
+            "https://github.com/vim/vim/commit/e2fa213cf571041dbd04ab0329303ffdc980678a",
+            "https://huntr.dev/bounties/45aad635-c2f1-47ca-a4f9-db5b25979cea",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/QMFHBC5OQXDPV2SDYA2JUQGVCPYASTJB/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/OZSLFIKFYU5Y2KM5EJKQNYHWRUBDQ4GJ/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/TYNK6SDCMOLQJOI3B4AOE66P2G2IH4ZM/",
+            "https://lists.debian.org/debian-lts-announce/2022/06/msg00014.html",
+            "https://security.gentoo.org/glsa/202208-32",
+            "https://support.apple.com/kb/HT213488",
+            "http://seclists.org/fulldisclosure/2022/Oct/28",
+            "http://seclists.org/fulldisclosure/2022/Oct/41",
+            "https://lists.debian.org/debian-lts-announce/2022/11/msg00009.html"
+        ],
+        "summary": "Use After Free in GitHub repository vim/vim prior to 8.2."
+    },
+    {
+        "Modified": "2022-12-08T20:02:00",
+        "Published": "2022-05-25T13:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "MEDIUM",
+            "vector": "NETWORK"
+        },
+        "assigner": "security@huntr.dev",
+        "cvss": 6.8,
+        "cvss-time": "2022-12-08T20:02:00",
+        "cvss-vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
+        "cwe": "CWE-125",
+        "id": "CVE-2022-1851",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "PARTIAL",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-12-08T20:02:00",
+        "references": [
+            "https://github.com/vim/vim/commit/78d52883e10d71f23ab72a3d8b9733b00da8c9ad",
+            "https://huntr.dev/bounties/f8af901a-9a46-440d-942a-8f815b59394d",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/QMFHBC5OQXDPV2SDYA2JUQGVCPYASTJB/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/OZSLFIKFYU5Y2KM5EJKQNYHWRUBDQ4GJ/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/TYNK6SDCMOLQJOI3B4AOE66P2G2IH4ZM/",
+            "https://lists.debian.org/debian-lts-announce/2022/06/msg00014.html",
+            "https://security.gentoo.org/glsa/202208-32",
+            "https://support.apple.com/kb/HT213488",
+            "http://seclists.org/fulldisclosure/2022/Oct/41",
+            "http://seclists.org/fulldisclosure/2022/Oct/28",
+            "https://lists.debian.org/debian-lts-announce/2022/11/msg00009.html"
+        ],
+        "summary": "Out-of-bounds Read in GitHub repository vim/vim prior to 8.2."
+    },
+    {
+        "Modified": "2022-12-08T20:02:00",
+        "Published": "2022-05-05T15:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "LOCAL"
+        },
+        "assigner": "secalert@redhat.com",
+        "cvss": 4.9,
+        "cvss-time": "2022-12-08T20:02:00",
+        "cvss-vector": "AV:L/AC:L/Au:N/C:N/I:N/A:C",
+        "cwe": "CWE-416",
+        "id": "CVE-2022-1516",
+        "impact": {
+            "availability": "COMPLETE",
+            "confidentiality": "NONE",
+            "integrity": "NONE"
+        },
+        "last-modified": "2022-12-08T20:02:00",
+        "references": [
+            "https://git.kernel.org/pub/scm/linux/kernel/git/netdev/net.git/commit/?id=7781607938c8",
+            "http://www.openwall.com/lists/oss-security/2022/06/19/1",
+            "https://lists.debian.org/debian-lts-announce/2022/07/msg00000.html",
+            "https://www.debian.org/security/2022/dsa-5173"
+        ],
+        "summary": "A NULL pointer dereference flaw was found in the Linux kernel\u2019s X.25 set of standardized network protocols functionality in the way a user terminates their session using a simulated Ethernet card and continued usage of this connection. This flaw allows a local user to crash the system."
+    },
+    {
+        "Modified": "2022-12-08T20:00:00",
+        "Published": "2022-09-17T22:15:00",
+        "access": {},
+        "assigner": "security@huntr.dev",
+        "cvss": null,
+        "cwe": "CWE-122",
+        "id": "CVE-2022-3234",
+        "impact": {},
+        "last-modified": "2022-12-08T20:00:00",
+        "references": [
+            "https://github.com/vim/vim/commit/c249913edc35c0e666d783bfc21595cf9f7d9e0d",
+            "https://huntr.dev/bounties/90fdf374-bf04-4386-8a23-38c83b88f0da",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/LSSEWQLK55MCNT4Z2IIJEJYEI5HLCODI/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/4QI7AETXBHPC7SGA77Q7O5IEGULWYET7/",
+            "https://lists.debian.org/debian-lts-announce/2022/11/msg00009.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/GTBVD4J2SKVSWK4VBN5JP5OEVK6GDS3N/"
+        ],
+        "summary": "Heap-based Buffer Overflow in GitHub repository vim/vim prior to 9.0.0483."
+    },
+    {
+        "Modified": "2022-12-08T20:00:00",
+        "Published": "2022-05-07T19:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "MEDIUM",
+            "vector": "NETWORK"
+        },
+        "assigner": "security@huntr.dev",
+        "cvss": 6.8,
+        "cvss-time": "2022-12-08T20:00:00",
+        "cvss-vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
+        "cwe": "CWE-416",
+        "id": "CVE-2022-1616",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "PARTIAL",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-12-08T20:00:00",
+        "references": [
+            "https://github.com/vim/vim/commit/d88934406c5375d88f8f1b65331c9f0cab68cc6c",
+            "https://huntr.dev/bounties/40f1d75f-fb2f-4281-b585-a41017f217e2",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/A6BY5P7ERZS7KXSBCGFCOXLMLGWUUJIH/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/JUN33257RUM4RS2I4GZETKFSAXPETATG/",
+            "https://lists.debian.org/debian-lts-announce/2022/05/msg00022.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/HIP7KG7TVS5YF3QREAY2GOGUT3YUBZAI/",
+            "https://security.gentoo.org/glsa/202208-32",
+            "https://support.apple.com/kb/HT213488",
+            "http://seclists.org/fulldisclosure/2022/Oct/41",
+            "http://seclists.org/fulldisclosure/2022/Oct/28",
+            "https://lists.debian.org/debian-lts-announce/2022/11/msg00009.html"
+        ],
+        "summary": "Use after free in append_command in GitHub repository vim/vim prior to 8.2.4895. This vulnerability is capable of crashing software, Bypass Protection Mechanism, Modify Memory, and possible remote execution"
+    },
+    {
+        "Modified": "2022-12-08T19:59:00",
+        "Published": "2022-12-08T19:15:00",
+        "access": {},
+        "assigner": "security@huntr.dev",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-4366",
+        "impact": {},
+        "last-modified": "2022-12-08T19:59:00",
+        "references": [
+            "https://huntr.dev/bounties/f225d69a-d971-410d-a8f9-b0026143aed8",
+            "https://github.com/lirantal/daloradius/commit/3d11f375a76ddb3741200296e15f81d82dfb80ce"
+        ],
+        "summary": "Exposure of Sensitive System Information to an Unauthorized Control Sphere in GitHub repository lirantal/daloradius prior to master branch."
+    },
+    {
+        "Modified": "2022-12-08T19:59:00",
+        "Published": "2022-12-08T17:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-40939",
+        "impact": {},
+        "last-modified": "2022-12-08T19:59:00",
+        "references": [
+            "http://220.161.30.125.dy.iij4u.or.jp:50001/web/index.html",
+            "https://cdsbz.gitbook.io/untitled/secustion-camera-vulnerability-recurrence"
+        ],
+        "summary": "In certain Secustation products the administrator account password can be read. This affects V2.5.5.3116-S50-SMA-B20171107A, V2.3.4.1301-M20-TSA-B20150617A, V2.5.5.3116-S50-RXA-B20180502A, V2.5.5.3116-S50-SMA-B20190723A, V2.5.5.3116-S50-SMB-B20161012A, V2.3.4.2103-S50-NTD-B20170508B, V2.5.5.3116-S50-SMB-B20160601A, V2.5.5.2601-S50-TSA-B20151229A, and V2.5.5.3116-S50-SMA-B20170217."
+    },
+    {
+        "Modified": "2022-12-08T19:59:00",
+        "Published": "2022-12-08T18:15:00",
+        "access": {},
+        "assigner": "security@jetbrains.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-46825",
+        "impact": {},
+        "last-modified": "2022-12-08T19:59:00",
+        "references": [
+            "https://www.jetbrains.com/privacy-security/issues-fixed/"
+        ],
+        "summary": "In JetBrains IntelliJ IDEA before 2022.3 the built-in web server leaked information about open projects."
+    },
+    {
+        "Modified": "2022-12-08T19:59:00",
+        "Published": "2022-12-08T18:15:00",
+        "access": {},
+        "assigner": "security@jetbrains.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-46826",
+        "impact": {},
+        "last-modified": "2022-12-08T19:59:00",
+        "references": [
+            "https://www.jetbrains.com/privacy-security/issues-fixed/"
+        ],
+        "summary": "In JetBrains IntelliJ IDEA before 2022.3 the built-in web server allowed an arbitrary file to be read by exploiting a path traversal vulnerability."
+    },
+    {
+        "Modified": "2022-12-08T19:59:00",
+        "Published": "2022-12-08T18:15:00",
+        "access": {},
+        "assigner": "security@jetbrains.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-46827",
+        "impact": {},
+        "last-modified": "2022-12-08T19:59:00",
+        "references": [
+            "https://www.jetbrains.com/privacy-security/issues-fixed/"
+        ],
+        "summary": "In JetBrains IntelliJ IDEA before 2022.3 an XXE attack leading to SSRF via requests to custom plugin repositories was possible."
+    },
+    {
+        "Modified": "2022-12-08T19:59:00",
+        "Published": "2022-12-08T18:15:00",
+        "access": {},
+        "assigner": "security@jetbrains.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-46828",
+        "impact": {},
+        "last-modified": "2022-12-08T19:59:00",
+        "references": [
+            "https://www.jetbrains.com/privacy-security/issues-fixed/"
+        ],
+        "summary": "In JetBrains IntelliJ IDEA before 2022.3 a DYLIB injection on macOS was possible."
+    },
+    {
+        "Modified": "2022-12-08T19:59:00",
+        "Published": "2022-12-08T18:15:00",
+        "access": {},
+        "assigner": "security@jetbrains.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-46829",
+        "impact": {},
+        "last-modified": "2022-12-08T19:59:00",
+        "references": [
+            "https://www.jetbrains.com/privacy-security/issues-fixed/"
+        ],
+        "summary": "In JetBrains JetBrains Gateway before 2022.3 a client could connect without a valid token if the host consented."
+    },
+    {
+        "Modified": "2022-12-08T19:59:00",
+        "Published": "2022-12-08T18:15:00",
+        "access": {},
+        "assigner": "security@jetbrains.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-46830",
+        "impact": {},
+        "last-modified": "2022-12-08T19:59:00",
+        "references": [
+            "https://www.jetbrains.com/privacy-security/issues-fixed/"
+        ],
+        "summary": "In JetBrains TeamCity between 2022.10 and 2022.10.1 a custom STS endpoint allowed internal port scanning."
+    },
+    {
+        "Modified": "2022-12-08T19:59:00",
+        "Published": "2022-12-08T18:15:00",
+        "access": {},
+        "assigner": "security@jetbrains.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-46831",
+        "impact": {},
+        "last-modified": "2022-12-08T19:59:00",
+        "references": [
+            "https://www.jetbrains.com/privacy-security/issues-fixed/"
+        ],
+        "summary": "In JetBrains TeamCity between 2022.10 and 2022.10.1 connecting to AWS using the \"Default Credential Provider Chain\" allowed TeamCity project administrators to access AWS resources normally limited to TeamCity system administrators."
+    },
+    {
+        "Modified": "2022-12-08T19:59:00",
+        "Published": "2022-12-08T17:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-38599",
+        "impact": {},
+        "last-modified": "2022-12-08T19:59:00",
+        "references": [
+            "http://teleport.com",
+            "https://gist.github.com/arleyna/20d858e11c48984d00926fa8cc0c2722"
+        ],
+        "summary": "Teleport v3.2.2, Teleport v3.5.6-rc6, and Teleport v3.6.3-b2 was discovered to contain an information leak via the /user/get-role-list web interface."
+    },
+    {
+        "Modified": "2022-12-08T19:59:00",
+        "Published": "2022-12-08T18:15:00",
+        "access": {},
+        "assigner": "security@jetbrains.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-46824",
+        "impact": {},
+        "last-modified": "2022-12-08T19:59:00",
+        "references": [
+            "https://www.jetbrains.com/privacy-security/issues-fixed/"
+        ],
+        "summary": "In JetBrains IntelliJ IDEA before 2022.2.4 a buffer overflow in the fsnotifier daemon on macOS was possible."
+    },
+    {
+        "Modified": "2022-12-08T19:59:00",
+        "Published": "2022-09-06T20:15:00",
+        "access": {},
+        "assigner": "security@huntr.dev",
+        "cvss": null,
+        "cwe": "CWE-416",
+        "id": "CVE-2022-3134",
+        "impact": {},
+        "last-modified": "2022-12-08T19:59:00",
+        "references": [
+            "https://github.com/vim/vim/commit/ccfde4d028e891a41e3548323c3d47b06fb0b83e",
+            "https://huntr.dev/bounties/6ec79e49-c7ab-4cd6-a517-e7934c2eb9dc",
+            "https://lists.debian.org/debian-lts-announce/2022/11/msg00009.html"
+        ],
+        "summary": "Use After Free in GitHub repository vim/vim prior to 9.0.0389."
+    },
+    {
+        "Modified": "2022-12-08T19:59:00",
+        "Published": "2022-08-23T17:15:00",
+        "access": {},
+        "assigner": "security@huntr.dev",
+        "cvss": null,
+        "cwe": "CWE-416",
+        "id": "CVE-2022-2946",
+        "impact": {},
+        "last-modified": "2022-12-08T19:59:00",
+        "references": [
+            "https://huntr.dev/bounties/5d389a18-5026-47df-a5d0-1548a9b555d5",
+            "https://github.com/vim/vim/commit/adce965162dd89bf29ee0e5baf53652e7515762c",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/C72HDIMR3KTTAO7QGTXWUMPBNFUFIBRD/",
+            "https://lists.debian.org/debian-lts-announce/2022/11/msg00009.html"
+        ],
+        "summary": "Use After Free in GitHub repository vim/vim prior to 9.0.0246."
+    },
+    {
+        "Modified": "2022-12-08T19:59:00",
+        "Published": "2022-07-02T16:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "MEDIUM",
+            "vector": "NETWORK"
+        },
+        "assigner": "security@huntr.dev",
+        "cvss": 6.8,
+        "cvss-time": "2022-12-08T19:59:00",
+        "cvss-vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
+        "cwe": "CWE-190",
+        "id": "CVE-2022-2285",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "PARTIAL",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-12-08T19:59:00",
+        "references": [
+            "https://github.com/vim/vim/commit/27efc62f5d86afcb2ecb7565587fe8dea4b036fe",
+            "https://huntr.dev/bounties/64574b28-1779-458d-a221-06c434042736",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UXPO5EHDV6J4B27E65DOQGZFELUFPRSK/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/43Y3VJPOTTY3NTREDIFUPITM2POG4ZLP/",
+            "https://security.gentoo.org/glsa/202208-32",
+            "https://lists.debian.org/debian-lts-announce/2022/11/msg00009.html"
+        ],
+        "summary": "Integer Overflow or Wraparound in GitHub repository vim/vim prior to 9.0."
+    },
+    {
+        "Modified": "2022-12-08T19:58:00",
+        "Published": "2022-06-20T15:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "MEDIUM",
+            "vector": "NETWORK"
+        },
+        "assigner": "security@huntr.dev",
+        "cvss": 6.8,
+        "cvss-time": "2022-12-08T19:58:00",
+        "cvss-vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
+        "cwe": "CWE-126",
+        "id": "CVE-2022-1720",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "PARTIAL",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-12-08T19:58:00",
+        "references": [
+            "https://github.com/vim/vim/commit/395bd1f6d3edc9f7edb5d1f2d7deaf5a9e3ab93c",
+            "https://huntr.dev/bounties/5ccfb386-7eb9-46e5-98e5-243ea4b358a8",
+            "https://lists.debian.org/debian-lts-announce/2022/06/msg00014.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/GFD2A4YLBR7OIRHTL7CK6YNMEIQ264CN/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/U743FMJGFQ35GBPCQ6OWMVZEJPDFVEWM/",
+            "https://security.gentoo.org/glsa/202208-32",
+            "https://support.apple.com/kb/HT213488",
+            "https://support.apple.com/kb/HT213443",
+            "https://support.apple.com/kb/HT213444",
+            "http://seclists.org/fulldisclosure/2022/Oct/41",
+            "http://seclists.org/fulldisclosure/2022/Oct/28",
+            "http://seclists.org/fulldisclosure/2022/Oct/43",
+            "http://seclists.org/fulldisclosure/2022/Oct/45",
+            "https://lists.debian.org/debian-lts-announce/2022/11/msg00009.html"
+        ],
+        "summary": "Buffer Over-read in function grab_file_name in GitHub repository vim/vim prior to 8.2.4956. This vulnerability is capable of crashing the software, memory modification, and possible remote execution."
+    },
+    {
+        "Modified": "2022-12-08T19:55:00",
+        "Published": "2022-12-06T19:15:00",
+        "access": {},
+        "assigner": "security@tibco.com",
+        "cvss": null,
+        "cwe": "CWE-601",
+        "id": "CVE-2022-41559",
+        "impact": {},
+        "last-modified": "2022-12-08T19:55:00",
+        "references": [
+            "https://www.tibco.com/services/support/advisories"
+        ],
+        "summary": "The Web Client component of TIBCO Software Inc.'s TIBCO Nimbus contains an easily exploitable vulnerability that allows an unauthenticated attacker with network access to exploit an open redirect on the affected system. A successful attack using this vulnerability requires human interaction from a person other than the attacker. Affected releases are TIBCO Software Inc.'s TIBCO Nimbus: version 10.5.0."
+    },
+    {
+        "Modified": "2022-12-08T19:47:00",
+        "Published": "2022-12-07T02:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2022-44153",
+        "impact": {},
+        "last-modified": "2022-12-08T19:47:00",
+        "references": [
+            "https://nitroteam.kz/index.php?action=researches&slug=CVE-2022-44153-Rapid-SCADA-ru"
+        ],
+        "summary": "Rapid Software LLC Rapid SCADA 5.8.4 is vulnerable to Cross Site Scripting (XSS)."
+    },
+    {
+        "Modified": "2022-12-08T19:38:00",
+        "Published": "2022-12-05T22:15:00",
+        "access": {},
+        "assigner": "cve-assignments@hackerone.com",
+        "cvss": null,
+        "cwe": "CWE-444",
+        "id": "CVE-2022-35256",
+        "impact": {},
+        "last-modified": "2022-12-08T19:38:00",
+        "references": [
+            "https://hackerone.com/reports/1675191"
+        ],
+        "summary": "The llhttp parser in the http module in Node v18.7.0 does not correctly handle header fields that are not terminated with CLRF. This may result in HTTP Request Smuggling."
+    },
+    {
+        "Modified": "2022-12-08T19:20:00",
+        "Published": "2022-12-05T22:15:00",
+        "access": {},
+        "assigner": "cve-assignments@hackerone.com",
+        "cvss": null,
+        "cwe": "CWE-400",
+        "id": "CVE-2022-35254",
+        "impact": {},
+        "last-modified": "2022-12-08T19:20:00",
+        "references": [
+            "https://kb.pulsesecure.net/articles/Pulse_Security_Advisories/SA45520/?kA23Z000000GH5OSAW"
+        ],
+        "summary": "An unauthenticated attacker can cause a denial-of-service to the following products: Ivanti Connect Secure (ICS) in versions prior to 9.1R14.3, 9.1R15.2, 9.1R16.2, and 22.2R4, Ivanti Policy Secure (IPS) in versions prior to 9.1R17 and 22.3R1, and Ivanti Neurons for Zero-Trust Access in versions prior to 22.3R1."
+    },
+    {
+        "Modified": "2022-12-08T19:15:00",
+        "Published": "2022-12-07T01:15:00",
+        "access": {},
+        "assigner": "security@xen.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-42328",
+        "impact": {},
+        "last-modified": "2022-12-08T19:15:00",
+        "references": [
+            "https://xenbits.xenproject.org/xsa/advisory-424.txt",
+            "http://www.openwall.com/lists/oss-security/2022/12/08/3",
+            "http://www.openwall.com/lists/oss-security/2022/12/08/2"
+        ],
+        "summary": "Guests can trigger deadlock in Linux netback driver T[his CNA information record relates to multiple CVEs; the text explains which aspects/vulnerabilities correspond to which CVE.] The patch for XSA-392 introduced another issue which might result in a deadlock when trying to free the SKB of a packet dropped due to the XSA-392 handling (CVE-2022-42328). Additionally when dropping packages for other reasons the same deadlock could occur in case of netpoll being active for the interface the xen-netback driver is connected to (CVE-2022-42329)."
+    },
+    {
+        "Modified": "2022-12-08T19:15:00",
+        "Published": "2022-12-07T01:15:00",
+        "access": {},
+        "assigner": "security@xen.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-42329",
+        "impact": {},
+        "last-modified": "2022-12-08T19:15:00",
+        "references": [
+            "https://xenbits.xenproject.org/xsa/advisory-424.txt",
+            "http://www.openwall.com/lists/oss-security/2022/12/08/3",
+            "http://www.openwall.com/lists/oss-security/2022/12/08/2"
+        ],
+        "summary": "Guests can trigger deadlock in Linux netback driver T[his CNA information record relates to multiple CVEs; the text explains which aspects/vulnerabilities correspond to which CVE.] The patch for XSA-392 introduced another issue which might result in a deadlock when trying to free the SKB of a packet dropped due to the XSA-392 handling (CVE-2022-42328). Additionally when dropping packages for other reasons the same deadlock could occur in case of netpoll being active for the interface the xen-netback driver is connected to (CVE-2022-42329)."
+    },
+    {
+        "Modified": "2022-12-08T19:07:00",
+        "Published": "2022-12-06T23:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-755",
+        "id": "CVE-2022-44030",
+        "impact": {},
+        "last-modified": "2022-12-08T19:07:00",
+        "references": [
+            "https://www.redmine.org/projects/redmine/wiki/Security_Advisories",
+            "https://www.redmine.org/news/139"
+        ],
+        "summary": "Redmine 5.x before 5.0.4 allows downloading of file attachments of any Issue or any Wiki page due to insufficient permission checks. Depending on the configuration, this may require login as a registered user."
+    },
+    {
         "Modified": "2022-12-08T18:55:00",
         "Published": "2021-04-06T13:15:00",
         "access": {
@@ -265,126 +944,6 @@
     },
     {
         "Modified": "2022-12-08T18:15:00",
-        "Published": "2022-12-08T18:15:00",
-        "access": {},
-        "assigner": "security@jetbrains.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-46825",
-        "impact": {},
-        "last-modified": "2022-12-08T18:15:00",
-        "references": [
-            "https://www.jetbrains.com/privacy-security/issues-fixed/"
-        ],
-        "summary": "In JetBrains IntelliJ IDEA before 2022.3 the built-in web server leaked information about open projects."
-    },
-    {
-        "Modified": "2022-12-08T18:15:00",
-        "Published": "2022-12-08T18:15:00",
-        "access": {},
-        "assigner": "security@jetbrains.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-46826",
-        "impact": {},
-        "last-modified": "2022-12-08T18:15:00",
-        "references": [
-            "https://www.jetbrains.com/privacy-security/issues-fixed/"
-        ],
-        "summary": "In JetBrains IntelliJ IDEA before 2022.3 the built-in web server allowed an arbitrary file to be read by exploiting a path traversal vulnerability."
-    },
-    {
-        "Modified": "2022-12-08T18:15:00",
-        "Published": "2022-12-08T18:15:00",
-        "access": {},
-        "assigner": "security@jetbrains.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-46827",
-        "impact": {},
-        "last-modified": "2022-12-08T18:15:00",
-        "references": [
-            "https://www.jetbrains.com/privacy-security/issues-fixed/"
-        ],
-        "summary": "In JetBrains IntelliJ IDEA before 2022.3 an XXE attack leading to SSRF via requests to custom plugin repositories was possible."
-    },
-    {
-        "Modified": "2022-12-08T18:15:00",
-        "Published": "2022-12-08T18:15:00",
-        "access": {},
-        "assigner": "security@jetbrains.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-46828",
-        "impact": {},
-        "last-modified": "2022-12-08T18:15:00",
-        "references": [
-            "https://www.jetbrains.com/privacy-security/issues-fixed/"
-        ],
-        "summary": "In JetBrains IntelliJ IDEA before 2022.3 a DYLIB injection on macOS was possible."
-    },
-    {
-        "Modified": "2022-12-08T18:15:00",
-        "Published": "2022-12-08T18:15:00",
-        "access": {},
-        "assigner": "security@jetbrains.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-46829",
-        "impact": {},
-        "last-modified": "2022-12-08T18:15:00",
-        "references": [
-            "https://www.jetbrains.com/privacy-security/issues-fixed/"
-        ],
-        "summary": "In JetBrains JetBrains Gateway before 2022.3 a client could connect without a valid token if the host consented."
-    },
-    {
-        "Modified": "2022-12-08T18:15:00",
-        "Published": "2022-12-08T18:15:00",
-        "access": {},
-        "assigner": "security@jetbrains.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-46830",
-        "impact": {},
-        "last-modified": "2022-12-08T18:15:00",
-        "references": [
-            "https://www.jetbrains.com/privacy-security/issues-fixed/"
-        ],
-        "summary": "In JetBrains TeamCity between 2022.10 and 2022.10.1 a custom STS endpoint allowed internal port scanning."
-    },
-    {
-        "Modified": "2022-12-08T18:15:00",
-        "Published": "2022-12-08T18:15:00",
-        "access": {},
-        "assigner": "security@jetbrains.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-46831",
-        "impact": {},
-        "last-modified": "2022-12-08T18:15:00",
-        "references": [
-            "https://www.jetbrains.com/privacy-security/issues-fixed/"
-        ],
-        "summary": "In JetBrains TeamCity between 2022.10 and 2022.10.1 connecting to AWS using the \"Default Credential Provider Chain\" allowed TeamCity project administrators to access AWS resources normally limited to TeamCity system administrators."
-    },
-    {
-        "Modified": "2022-12-08T18:15:00",
-        "Published": "2022-12-08T18:15:00",
-        "access": {},
-        "assigner": "security@jetbrains.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-46824",
-        "impact": {},
-        "last-modified": "2022-12-08T18:15:00",
-        "references": [
-            "https://www.jetbrains.com/privacy-security/issues-fixed/"
-        ],
-        "summary": "In JetBrains IntelliJ IDEA before 2022.2.4 a buffer overflow in the fsnotifier daemon on macOS was possible."
-    },
-    {
-        "Modified": "2022-12-08T18:15:00",
         "Published": "2022-11-09T22:15:00",
         "access": {},
         "assigner": "secure@microsoft.com",
@@ -477,38 +1036,6 @@
             "https://github.com/top-think/framework/issues/2772"
         ],
         "summary": "Thinkphp 5.1.41 and 5.0.24 has a code logic error which causes file upload getshell."
-    },
-    {
-        "Modified": "2022-12-08T17:15:00",
-        "Published": "2022-12-08T17:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-40939",
-        "impact": {},
-        "last-modified": "2022-12-08T17:15:00",
-        "references": [
-            "http://220.161.30.125.dy.iij4u.or.jp:50001/web/index.html",
-            "https://cdsbz.gitbook.io/untitled/secustion-camera-vulnerability-recurrence"
-        ],
-        "summary": "In certain Secustation products the administrator account password can be read. This affects V2.5.5.3116-S50-SMA-B20171107A, V2.3.4.1301-M20-TSA-B20150617A, V2.5.5.3116-S50-RXA-B20180502A, V2.5.5.3116-S50-SMA-B20190723A, V2.5.5.3116-S50-SMB-B20161012A, V2.3.4.2103-S50-NTD-B20170508B, V2.5.5.3116-S50-SMB-B20160601A, V2.5.5.2601-S50-TSA-B20151229A, and V2.5.5.3116-S50-SMA-B20170217."
-    },
-    {
-        "Modified": "2022-12-08T17:15:00",
-        "Published": "2022-12-08T17:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-38599",
-        "impact": {},
-        "last-modified": "2022-12-08T17:15:00",
-        "references": [
-            "http://teleport.com",
-            "https://gist.github.com/arleyna/20d858e11c48984d00926fa8cc0c2722"
-        ],
-        "summary": "Teleport v3.2.2, Teleport v3.5.6-rc6, and Teleport v3.6.3-b2 was discovered to contain an information leak via the /user/get-role-list web interface."
     },
     {
         "Modified": "2022-12-08T17:08:00",
@@ -1225,381 +1752,5 @@
             "https://security.samsungmobile.com/serviceWeb.smsb?year=2022&month=12"
         ],
         "summary": "Exposure of Sensitive Information from an Unauthorized Actor vulnerability in Samsung DisplayManagerService prior to Android T(13) allows local attacker to access connected DLNA device information."
-    },
-    {
-        "Modified": "2022-12-08T16:29:00",
-        "Published": "2022-12-08T16:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-45508",
-        "impact": {},
-        "last-modified": "2022-12-08T16:29:00",
-        "references": [
-            "https://github.com/z1r00/IOT_Vul/blob/main/Tenda/W30E/editUserName/readme.md"
-        ],
-        "summary": "Tenda W30E V1.0.1.25(633) was discovered to contain a stack overflow via the new_account parameter at /goform/editUserName."
-    },
-    {
-        "Modified": "2022-12-08T16:29:00",
-        "Published": "2022-12-08T16:15:00",
-        "access": {},
-        "assigner": "mobile.security@samsung.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-39915",
-        "impact": {},
-        "last-modified": "2022-12-08T16:29:00",
-        "references": [
-            "https://security.samsungmobile.com/serviceWeb.smsb?year=2022&month=12"
-        ],
-        "summary": "Improper access control vulnerability in Calendar prior to versions 11.6.08.0 in Android Q(10), 12.2.11.3000 in Android R(11), 12.3.07.2000 in Android S(12), and 12.4.02.0 in Android T(13) allows attackers to access sensitive information via implicit intent."
-    },
-    {
-        "Modified": "2022-12-08T16:29:00",
-        "Published": "2022-12-08T16:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-45509",
-        "impact": {},
-        "last-modified": "2022-12-08T16:29:00",
-        "references": [
-            "https://github.com/z1r00/IOT_Vul/blob/main/Tenda/W30E/addUserName/readme.md"
-        ],
-        "summary": "Tenda W30E V1.0.1.25(633) was discovered to contain a stack overflow via the account parameter at /goform/addUserName."
-    },
-    {
-        "Modified": "2022-12-08T16:29:00",
-        "Published": "2022-12-08T16:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-45512",
-        "impact": {},
-        "last-modified": "2022-12-08T16:29:00",
-        "references": [
-            "https://github.com/z1r00/IOT_Vul/blob/main/Tenda/W30E/SafeEmailFilter/readme.md"
-        ],
-        "summary": "Tenda W30E V1.0.1.25(633) was discovered to contain a stack overflow via the page parameter at /goform/SafeEmailFilter."
-    },
-    {
-        "Modified": "2022-12-08T16:29:00",
-        "Published": "2022-12-08T16:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-45513",
-        "impact": {},
-        "last-modified": "2022-12-08T16:29:00",
-        "references": [
-            "https://github.com/z1r00/IOT_Vul/blob/main/Tenda/W30E/P2pListFilter/readme.md"
-        ],
-        "summary": "Tenda W30E V1.0.1.25(633) was discovered to contain a stack overflow via the page parameter at /goform/P2pListFilter."
-    },
-    {
-        "Modified": "2022-12-08T16:29:00",
-        "Published": "2022-12-08T16:15:00",
-        "access": {},
-        "assigner": "secalert@redhat.com",
-        "cvss": null,
-        "cwe": "CWE-453",
-        "id": "CVE-2022-3262",
-        "impact": {},
-        "last-modified": "2022-12-08T16:29:00",
-        "references": [
-            "https://bugzilla.redhat.com/show_bug.cgi?id=2128858"
-        ],
-        "summary": "A flaw was found in Openshift. A pod with a DNSPolicy of \"ClusterFirst\" may incorrectly resolve the hostname based on a service provided. This flaw allows an attacker to supply an incorrect name with the DNS search policy, affecting confidentiality and availability."
-    },
-    {
-        "Modified": "2022-12-08T16:29:00",
-        "Published": "2022-12-08T16:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-45514",
-        "impact": {},
-        "last-modified": "2022-12-08T16:29:00",
-        "references": [
-            "https://github.com/z1r00/IOT_Vul/blob/main/Tenda/W30E/webExcptypemanFilter/readme.md"
-        ],
-        "summary": "Tenda W30E V1.0.1.25(633) was discovered to contain a stack overflow via the page parameter at /goform/webExcptypemanFilter."
-    },
-    {
-        "Modified": "2022-12-08T16:29:00",
-        "Published": "2022-12-08T16:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-45515",
-        "impact": {},
-        "last-modified": "2022-12-08T16:29:00",
-        "references": [
-            "https://github.com/z1r00/IOT_Vul/blob/main/Tenda/W30E/addressNat/readme.md"
-        ],
-        "summary": "Tenda W30E V1.0.1.25(633) was discovered to contain a stack overflow via the entries parameter at /goform/addressNat."
-    },
-    {
-        "Modified": "2022-12-08T16:29:00",
-        "Published": "2022-12-08T16:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-44931",
-        "impact": {},
-        "last-modified": "2022-12-08T16:29:00",
-        "references": [
-            "https://github.com/z1r00/IOT_Vul/blob/main/Tenda/A18/formWifiBasicSet/readme.md"
-        ],
-        "summary": "Tenda A18 v15.13.07.09 was discovered to contain a stack overflow via the security_5g parameter at /goform/WifiBasicSet."
-    },
-    {
-        "Modified": "2022-12-08T16:29:00",
-        "Published": "2022-12-08T16:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-45517",
-        "impact": {},
-        "last-modified": "2022-12-08T16:29:00",
-        "references": [
-            "https://github.com/z1r00/IOT_Vul/blob/main/Tenda/W30E/VirtualSer/readme.md"
-        ],
-        "summary": "Tenda W30E V1.0.1.25(633) was discovered to contain a stack overflow via the page parameter at /goform/VirtualSer."
-    },
-    {
-        "Modified": "2022-12-08T16:29:00",
-        "Published": "2022-12-08T16:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-45518",
-        "impact": {},
-        "last-modified": "2022-12-08T16:29:00",
-        "references": [
-            "https://github.com/z1r00/IOT_Vul/blob/main/Tenda/W30E/SetIpBind/readme.md"
-        ],
-        "summary": "Tenda W30E V1.0.1.25(633) was discovered to contain a stack overflow via the page parameter at /goform/SetIpBind."
-    },
-    {
-        "Modified": "2022-12-08T16:29:00",
-        "Published": "2022-12-08T16:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-45498",
-        "impact": {},
-        "last-modified": "2022-12-08T16:29:00",
-        "references": [
-            "https://github.com/z1r00/IOT_Vul/blob/main/Tenda/W6-S/SysToolReboot/readme.md"
-        ],
-        "summary": "An issue in the component tpi_systool_handle(0) (/goform/SysToolReboot) of Tenda W6-S v1.0.0.4(510) allows unauthenticated attackers to arbitrarily reboot the device."
-    },
-    {
-        "Modified": "2022-12-08T16:29:00",
-        "Published": "2022-12-08T16:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-45519",
-        "impact": {},
-        "last-modified": "2022-12-08T16:29:00",
-        "references": [
-            "https://github.com/z1r00/IOT_Vul/blob/main/Tenda/W30E/SafeMacFilter/readme.md"
-        ],
-        "summary": "Tenda W30E V1.0.1.25(633) was discovered to contain a stack overflow via the Go parameter at /goform/SafeMacFilter."
-    },
-    {
-        "Modified": "2022-12-08T16:29:00",
-        "Published": "2022-12-08T16:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-45497",
-        "impact": {},
-        "last-modified": "2022-12-08T16:29:00",
-        "references": [
-            "https://github.com/z1r00/IOT_Vul/blob/main/Tenda/W6-S/exeCommand/readme.md"
-        ],
-        "summary": "Tenda W6-S v1.0.0.4(510) was discovered to contain a command injection vulnerability in the tpi_get_ping_output function at /goform/exeCommand."
-    },
-    {
-        "Modified": "2022-12-08T16:29:00",
-        "Published": "2022-12-08T16:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-45520",
-        "impact": {},
-        "last-modified": "2022-12-08T16:29:00",
-        "references": [
-            "https://github.com/z1r00/IOT_Vul/blob/main/Tenda/W30E/qossetting/readme.md"
-        ],
-        "summary": "Tenda W30E V1.0.1.25(633) was discovered to contain a stack overflow via the page parameter at /goform/qossetting."
-    },
-    {
-        "Modified": "2022-12-08T16:29:00",
-        "Published": "2022-12-08T16:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-45503",
-        "impact": {},
-        "last-modified": "2022-12-08T16:29:00",
-        "references": [
-            "https://github.com/z1r00/IOT_Vul/blob/main/Tenda/W6-S/setAutoPing/readme.md"
-        ],
-        "summary": "Tenda W6-S v1.0.0.4(510) was discovered to contain a stack overflow via the linkEn parameter at /goform/setAutoPing."
-    },
-    {
-        "Modified": "2022-12-08T16:29:00",
-        "Published": "2022-12-08T16:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-45501",
-        "impact": {},
-        "last-modified": "2022-12-08T16:29:00",
-        "references": [
-            "https://github.com/z1r00/IOT_Vul/blob/main/Tenda/W6-S/wifiSSIDset/readme.md"
-        ],
-        "summary": "Tenda W6-S v1.0.0.4(510) was discovered to contain a stack overflow via the wl_radio parameter at /goform/wifiSSIDset."
-    },
-    {
-        "Modified": "2022-12-08T16:29:00",
-        "Published": "2022-12-08T16:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-45507",
-        "impact": {},
-        "last-modified": "2022-12-08T16:29:00",
-        "references": [
-            "https://github.com/z1r00/IOT_Vul/blob/main/Tenda/W30E/editFileName/readme.md"
-        ],
-        "summary": "Tenda W30E V1.0.1.25(633) was discovered to contain a stack overflow via the editNameMit parameter at /goform/editFileName."
-    },
-    {
-        "Modified": "2022-12-08T16:29:00",
-        "Published": "2022-12-08T16:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-45521",
-        "impact": {},
-        "last-modified": "2022-12-08T16:29:00",
-        "references": [
-            "https://github.com/z1r00/IOT_Vul/blob/main/Tenda/W30E/SafeUrlFilter/readme.md"
-        ],
-        "summary": "Tenda W30E V1.0.1.25(633) was discovered to contain a stack overflow via the page parameter at /goform/SafeUrlFilter."
-    },
-    {
-        "Modified": "2022-12-08T16:29:00",
-        "Published": "2022-12-08T16:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-45522",
-        "impact": {},
-        "last-modified": "2022-12-08T16:29:00",
-        "references": [
-            "https://github.com/z1r00/IOT_Vul/blob/main/Tenda/W30E/SafeClientFilter/readme.md"
-        ],
-        "summary": "Tenda W30E V1.0.1.25(633) was discovered to contain a stack overflow via the page parameter at /goform/SafeClientFilter."
-    },
-    {
-        "Modified": "2022-12-08T16:29:00",
-        "Published": "2022-12-08T16:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-45523",
-        "impact": {},
-        "last-modified": "2022-12-08T16:29:00",
-        "references": [
-            "https://github.com/z1r00/IOT_Vul/blob/main/Tenda/W30E/L7Im/readme.md"
-        ],
-        "summary": "Tenda W30E V1.0.1.25(633) was discovered to contain a stack overflow via the page parameter at /goform/L7Im."
-    },
-    {
-        "Modified": "2022-12-08T16:29:00",
-        "Published": "2022-12-08T16:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-45524",
-        "impact": {},
-        "last-modified": "2022-12-08T16:29:00",
-        "references": [
-            "https://github.com/z1r00/IOT_Vul/blob/main/Tenda/W30E/IPSECsave/readme.md"
-        ],
-        "summary": "Tenda W30E V1.0.1.25(633) was discovered to contain a stack overflow via the opttype parameter at /goform/IPSECsave."
-    },
-    {
-        "Modified": "2022-12-08T16:29:00",
-        "Published": "2022-12-08T16:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-45525",
-        "impact": {},
-        "last-modified": "2022-12-08T16:29:00",
-        "references": [
-            "https://github.com/z1r00/IOT_Vul/blob/main/Tenda/W30E/CertListInfo/readme.md"
-        ],
-        "summary": "Tenda W30E V1.0.1.25(633) was discovered to contain a stack overflow via the downaction parameter at /goform/CertListInfo."
-    },
-    {
-        "Modified": "2022-12-08T16:29:00",
-        "Published": "2022-12-08T16:15:00",
-        "access": {},
-        "assigner": "scy@openharmony.io",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-45877",
-        "impact": {},
-        "last-modified": "2022-12-08T16:29:00",
-        "references": [
-            "https://gitee.com/openharmony/security/blob/master/en/security-disclosure/2022/2022-12.md"
-        ],
-        "summary": "OpenHarmony-v3.1.4 and prior versions had an vulnerability. PIN code is transmitted to the peer device in plain text during cross-device authentication, which reduces the difficulty of man-in-the-middle attacks."
-    },
-    {
-        "Modified": "2022-12-08T16:29:00",
-        "Published": "2022-12-08T16:15:00",
-        "access": {},
-        "assigner": "secalert@redhat.com",
-        "cvss": null,
-        "cwe": "CWE-59",
-        "id": "CVE-2022-4122",
-        "impact": {},
-        "last-modified": "2022-12-08T16:29:00",
-        "references": [
-            "https://bugzilla.redhat.com/show_bug.cgi?id=2144983",
-            "https://github.com/containers/podman/pull/16315"
-        ],
-        "summary": "A vulnerability was found in buildah. Incorrect following of symlinks while reading .containerignore and .dockerignore results in information disclosure."
     }
 ]
