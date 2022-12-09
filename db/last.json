@@ -1,5 +1,51 @@
 [
     {
+        "Modified": "2022-12-09T12:55:00",
+        "Published": "2022-12-08T16:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-787",
+        "id": "CVE-2022-45499",
+        "impact": {},
+        "last-modified": "2022-12-09T12:55:00",
+        "references": [
+            "https://github.com/z1r00/IOT_Vul/blob/main/Tenda/W6-S/WifiMacFilterGet/readme.md"
+        ],
+        "summary": "Tenda W6-S v1.0.0.4(510) was discovered to contain a stack overflow via the wl_radio parameter at /goform/WifiMacFilterGet."
+    },
+    {
+        "Modified": "2022-12-09T12:46:00",
+        "Published": "2022-12-08T16:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-77",
+        "id": "CVE-2022-45497",
+        "impact": {},
+        "last-modified": "2022-12-09T12:46:00",
+        "references": [
+            "https://github.com/z1r00/IOT_Vul/blob/main/Tenda/W6-S/exeCommand/readme.md"
+        ],
+        "summary": "Tenda W6-S v1.0.0.4(510) was discovered to contain a command injection vulnerability in the tpi_get_ping_output function at /goform/exeCommand."
+    },
+    {
+        "Modified": "2022-12-09T12:43:00",
+        "Published": "2022-12-07T17:15:00",
+        "access": {},
+        "assigner": "psirt@us.ibm.com",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2022-41735",
+        "impact": {},
+        "last-modified": "2022-12-09T12:43:00",
+        "references": [
+            "https://www.ibm.com/support/pages/node/6845496",
+            "https://exchange.xforce.ibmcloud.com/vulnerabilities/237809"
+        ],
+        "summary": "IBM Business Process Manager 21.0.1 through 21.0.3.1, 20.0.0.1 through 20.0.0.2 19.0.0.1 through 19.0.0.3 is vulnerable to cross-site scripting. This vulnerability allows users to embed arbitrary JavaScript code in the Web UI thus altering the intended functionality potentially leading to credentials disclosure within a trusted session. IBM X-Force ID: 65687."
+    },
+    {
         "Modified": "2022-12-09T08:15:00",
         "Published": "2022-12-09T08:15:00",
         "access": {},
@@ -2113,58 +2159,5 @@
             "https://github.com/traefik/traefik/commit/7e3fe48b80083b41e9ff82a474a36484cabc701a"
         ],
         "summary": "Traefik is an open source HTTP reverse proxy and load balancer. In affected versions there is a potential vulnerability in Traefik managing TLS connections. A router configured with a not well-formatted TLSOption is exposed with an empty TLSOption. For instance, a route secured using an mTLS connection set with a wrong CA file is exposed without verifying the client certificates. Users are advised to upgrade to version 2.9.6. Users unable to upgrade should check their logs to detect the error messages and fix your TLS options."
-    },
-    {
-        "Modified": "2022-12-08T22:30:00",
-        "Published": "2022-12-08T22:15:00",
-        "access": {},
-        "assigner": "security-advisories@github.com",
-        "cvss": null,
-        "cwe": "CWE-200",
-        "id": "CVE-2022-46158",
-        "impact": {},
-        "last-modified": "2022-12-08T22:30:00",
-        "references": [
-            "https://github.com/PrestaShop/PrestaShop/security/advisories/GHSA-9qgp-9wwc-v29r",
-            "https://github.com/PrestaShop/PrestaShop/commit/8684d429fb7c3bb51efb098e8b92a1fd2958f8cf"
-        ],
-        "summary": "PrestaShop is an open-source e-commerce solution. Versions prior to 1.7.8.8 did not properly restrict host filesystem access for users. Users may have been able to view the contents of the upload directory without appropriate permissions. This issue has been addressed and users are advised to upgrade to version 1.7.8.8. There are no known workarounds for this issue."
-    },
-    {
-        "Modified": "2022-12-08T22:30:00",
-        "Published": "2022-12-08T22:15:00",
-        "access": {},
-        "assigner": "security-advisories@github.com",
-        "cvss": null,
-        "cwe": "CWE-200",
-        "id": "CVE-2022-23469",
-        "impact": {},
-        "last-modified": "2022-12-08T22:30:00",
-        "references": [
-            "https://github.com/traefik/traefik/pull/9574",
-            "https://github.com/traefik/traefik/releases/tag/v2.9.6",
-            "https://github.com/traefik/traefik/security/advisories/GHSA-h2ph-vhm7-g4hp"
-        ],
-        "summary": "Traefik is an open source HTTP reverse proxy and load balancer. Versions prior to 2.9.6 are subject to a potential vulnerability in Traefik displaying the Authorization header in its debug logs. In certain cases, if the log level is set to DEBUG, credentials provided using the Authorization header are displayed in the debug logs. Attackers must have access to a users logging system in order for credentials to be stolen. This issue has been addressed in version 2.9.6. Users are advised to upgrade. Users unable to upgrade may set the log level to `INFO`, `WARN`, or `ERROR`."
-    },
-    {
-        "Modified": "2022-12-08T22:30:00",
-        "Published": "2022-12-08T22:15:00",
-        "access": {},
-        "assigner": "security-advisories@github.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-23494",
-        "impact": {},
-        "last-modified": "2022-12-08T22:30:00",
-        "references": [
-            "https://github.com/tinymce/tinymce/commit/6923d85eba6de3e08ebc9c5a387b5abdaa21150e",
-            "https://www.tiny.cloud/docs/tinymce/6/file-image-upload/#images_upload_handler",
-            "https://www.tiny.cloud/docs/release-notes/release-notes5107/#securityfixes",
-            "https://github.com/tinymce/tinymce/commit/8bb2d2646d4e1a718fce61a775fa22e9d317b32d",
-            "https://github.com/tinymce/tinymce/security/advisories/GHSA-gg8r-xjwq-4w92",
-            "https://www.tiny.cloud/docs/tinymce/6/6.3-release-notes/#security-fixes"
-        ],
-        "summary": "tinymce is an open source rich text editor. A cross-site scripting (XSS) vulnerability was discovered in the alert and confirm dialogs when these dialogs were provided with malicious HTML content. This can occur in plugins that use the alert or confirm dialogs, such as in the `image` plugin, which presents these dialogs when certain errors occur. The vulnerability allowed arbitrary JavaScript execution when an alert presented in the TinyMCE UI for the current user. This vulnerability has been patched in TinyMCE 5.10.7 and TinyMCE 6.3.1 by ensuring HTML sanitization was still performed after unwrapping invalid elements. Users are advised to upgrade to either 5.10.7 or 6.3.1. Users unable to upgrade may ensure the the `images_upload_handler` returns a valid value as per the images_upload_handler documentation."
     }
 ]
