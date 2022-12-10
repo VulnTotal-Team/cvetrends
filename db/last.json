@@ -1,5 +1,22 @@
 [
     {
+        "Modified": "2022-12-10T18:15:00",
+        "Published": "2022-10-06T18:17:00",
+        "access": {},
+        "assigner": "security@google.com",
+        "cvss": null,
+        "cwe": "NVD-CWE-noinfo",
+        "id": "CVE-2022-41853",
+        "impact": {},
+        "last-modified": "2022-12-10T18:15:00",
+        "references": [
+            "http://hsqldb.org/doc/2.0/guide/sqlroutines-chapt.html#src_jrt_access_control",
+            "https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=50212#c7",
+            "https://lists.debian.org/debian-lts-announce/2022/12/msg00020.html"
+        ],
+        "summary": "Those using java.sql.Statement or java.sql.PreparedStatement in hsqldb (HyperSQL DataBase) to process untrusted input may be vulnerable to a remote code execution attack. By default it is allowed to call any static method of any Java class in the classpath resulting in code execution. The issue can be prevented by updating to 2.7.1 or by setting the system property \"hsqldb.method_class_names\" to classes which are allowed to be called. For example, System.setProperty(\"hsqldb.method_class_names\", \"abc\") or Java argument -Dhsqldb.method_class_names=\"abc\" can be used. From version 2.7.1 all classes by default are not accessible except those in java.lang.Math and need to be manually enabled."
+    },
+    {
         "Modified": "2022-12-10T16:15:00",
         "Published": "2022-12-10T16:15:00",
         "access": {},
@@ -1864,27 +1881,5 @@
             "https://security.netapp.com/advisory/ntap-20221209-0004/"
         ],
         "summary": "Grafana Image Renderer is a Grafana backend plugin that handles rendering of panels & dashboards to PNGs using a headless browser (Chromium/Chrome). An internal security review identified an unauthorized file disclosure vulnerability. It is possible for a malicious user to retrieve unauthorized files under some network conditions or via a fake datasource (if user has admin permissions in Grafana). All Grafana installations should be upgraded to version 3.6.1 as soon as possible. As a workaround it is possible to [disable HTTP remote rendering](https://grafana.com/docs/grafana/latest/setup-grafana/configure-grafana/#plugingrafana-image-renderer)."
-    },
-    {
-        "Modified": "2022-12-09T19:15:00",
-        "Published": "2022-08-23T20:15:00",
-        "access": {},
-        "assigner": "secalert@redhat.com",
-        "cvss": null,
-        "cwe": "CWE-552",
-        "id": "CVE-2021-3995",
-        "impact": {},
-        "last-modified": "2022-12-09T19:15:00",
-        "references": [
-            "https://bugzilla.redhat.com/show_bug.cgi?id=2024631https://access.redhat.com/security/cve/CVE-2021-3995",
-            "https://github.com/util-linux/util-linux/commit/57202f5713afa2af20ffbb6ab5331481d0396f8d",
-            "https://mirrors.edge.kernel.org/pub/linux/utils/util-linux/v2.37/v2.37.3-ReleaseNotes",
-            "https://www.openwall.com/lists/oss-security/2022/01/24/2",
-            "http://www.openwall.com/lists/oss-security/2022/11/30/2",
-            "http://seclists.org/fulldisclosure/2022/Dec/4",
-            "http://packetstormsecurity.com/files/170176/snap-confine-must_mkdir_and_open_with_perms-Race-Condition.html",
-            "https://security.netapp.com/advisory/ntap-20221209-0002/"
-        ],
-        "summary": "A logic error was found in the libmount library of util-linux in the function that allows an unprivileged user to unmount a FUSE filesystem. This flaw allows an unprivileged local attacker to unmount FUSE filesystems that belong to certain other users who have a UID that is a prefix of the UID of the attacker in its string form. An attacker may use this flaw to cause a denial of service to applications that use the affected filesystems."
     }
 ]
