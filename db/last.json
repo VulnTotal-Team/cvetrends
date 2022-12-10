@@ -1,5 +1,35 @@
 [
     {
+        "Modified": "2022-12-10T08:15:00",
+        "Published": "2022-03-03T23:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "MEDIUM",
+            "vector": "NETWORK"
+        },
+        "assigner": "secalert@redhat.com",
+        "cvss": 6.8,
+        "cvss-time": "2022-12-10T08:15:00",
+        "cvss-vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
+        "cwe": "CWE-287",
+        "id": "CVE-2022-0730",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "PARTIAL",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-12-10T08:15:00",
+        "references": [
+            "https://github.com/Cacti/cacti/issues/4562",
+            "https://lists.debian.org/debian-lts-announce/2022/03/msg00038.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/ZJERS4NYIGJUXEGT6ATUQA4CBYBRDLRA/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RVOALVZSCBFNOAAZVHTJFSFB7UDSNYQ2/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/ZH67CCORDEYFG7NL7G6UH47PAV2PU7BA/",
+            "https://www.debian.org/security/2022/dsa-5298"
+        ],
+        "summary": "Under certain ldap conditions, Cacti authentication can be bypassed with certain credential types."
+    },
+    {
         "Modified": "2022-12-10T05:15:00",
         "Published": "2022-11-09T07:15:00",
         "access": {},
@@ -1861,36 +1891,5 @@
             "https://security.netapp.com/advisory/ntap-20221209-0005/"
         ],
         "summary": "In Apache ActiveMQ Artemis prior to 2.24.0, an attacker could show malicious content and/or redirect users to a malicious URL in the web console by using HTML in the name of an address or queue."
-    },
-    {
-        "Modified": "2022-12-09T19:15:00",
-        "Published": "2021-08-17T20:15:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "MEDIUM",
-            "vector": "NETWORK"
-        },
-        "assigner": "security@mozilla.org",
-        "cvss": 6.8,
-        "cvss-time": "2022-12-09T19:15:00",
-        "cvss-vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
-        "cwe": "CWE-787",
-        "id": "CVE-2021-29988",
-        "impact": {
-            "availability": "PARTIAL",
-            "confidentiality": "PARTIAL",
-            "integrity": "PARTIAL"
-        },
-        "last-modified": "2022-12-09T19:15:00",
-        "references": [
-            "https://www.mozilla.org/security/advisories/mfsa2021-34/",
-            "https://www.mozilla.org/security/advisories/mfsa2021-33/",
-            "https://www.mozilla.org/security/advisories/mfsa2021-36/",
-            "https://www.mozilla.org/security/advisories/mfsa2021-35/",
-            "https://bugzilla.mozilla.org/show_bug.cgi?id=1717922",
-            "https://security.gentoo.org/glsa/202202-03",
-            "https://security.gentoo.org/glsa/202208-14"
-        ],
-        "summary": "Firefox incorrectly treated an inline list-item element as a block element, resulting in an out of bounds read or memory corruption, and a potentially exploitable crash. This vulnerability affects Thunderbird < 78.13, Thunderbird < 91, Firefox ESR < 78.13, and Firefox < 91."
     }
 ]
