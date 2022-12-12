@@ -1,5 +1,583 @@
 [
     {
+        "Modified": "2022-12-12T20:59:00",
+        "Published": "2022-10-30T00:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-307",
+        "id": "CVE-2022-44023",
+        "impact": {},
+        "last-modified": "2022-12-12T20:59:00",
+        "references": [
+            "https://github.com/pwndoc/pwndoc/issues/382"
+        ],
+        "summary": "PwnDoc through 0.5.3 might allow remote attackers to identify disabled user account names by leveraging response messages for authentication attempts."
+    },
+    {
+        "Modified": "2022-12-12T20:54:00",
+        "Published": "2022-10-26T20:15:00",
+        "access": {},
+        "assigner": "cna@vuldb.com",
+        "cvss": null,
+        "cwe": "CWE-416",
+        "id": "CVE-2022-3705",
+        "impact": {},
+        "last-modified": "2022-12-12T20:54:00",
+        "references": [
+            "https://github.com/vim/vim/commit/d0fab10ed2a86698937e3c3fed2f10bd9bb5e731",
+            "https://vuldb.com/?id.212324",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/4JCW33NOLMELTTTDJH7WGDIFJZ5YEEMK/",
+            "https://lists.debian.org/debian-lts-announce/2022/11/msg00009.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/JYEK5RNMH7MVQH6RPBKLSCCA6NMIKHDV/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/GTBVD4J2SKVSWK4VBN5JP5OEVK6GDS3N/"
+        ],
+        "summary": "A vulnerability was found in vim and classified as problematic. Affected by this issue is the function qf_update_buffer of the file quickfix.c of the component autocmd Handler. The manipulation leads to use after free. The attack may be launched remotely. Upgrading to version 9.0.0805 is able to address this issue. The name of the patch is d0fab10ed2a86698937e3c3fed2f10bd9bb5e731. It is recommended to upgrade the affected component. The identifier of this vulnerability is VDB-212324."
+    },
+    {
+        "Modified": "2022-12-12T20:45:00",
+        "Published": "2022-07-26T13:15:00",
+        "access": {},
+        "assigner": "security@xen.org",
+        "cvss": null,
+        "cwe": "NVD-CWE-noinfo",
+        "id": "CVE-2022-33745",
+        "impact": {},
+        "last-modified": "2022-12-12T20:45:00",
+        "references": [
+            "https://xenbits.xenproject.org/xsa/advisory-408.txt",
+            "http://xenbits.xen.org/xsa/advisory-408.html",
+            "http://www.openwall.com/lists/oss-security/2022/07/26/2",
+            "http://www.openwall.com/lists/oss-security/2022/07/26/3",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/HUFIMNGYP5VQAA6KE3T2I5GW6UP6F7BS/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/MYI3OMJ7RIZNL3C6GUWNANNPEUUID6FM/",
+            "https://www.debian.org/security/2022/dsa-5272"
+        ],
+        "summary": "insufficient TLB flush for x86 PV guests in shadow mode For migration as well as to work around kernels unaware of L1TF (see XSA-273), PV guests may be run in shadow paging mode. To address XSA-401, code was moved inside a function in Xen. This code movement missed a variable changing meaning / value between old and new code positions. The now wrong use of the variable did lead to a wrong TLB flush condition, omitting flushes where such are necessary."
+    },
+    {
+        "Modified": "2022-12-12T20:41:00",
+        "Published": "2022-07-12T14:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "psirt@huawei.com",
+        "cvss": 5.0,
+        "cvss-time": "2022-12-12T20:41:00",
+        "cvss-vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N",
+        "cwe": "CWE-668",
+        "id": "CVE-2021-40012",
+        "impact": {
+            "availability": "NONE",
+            "confidentiality": "PARTIAL",
+            "integrity": "NONE"
+        },
+        "last-modified": "2022-12-12T20:41:00",
+        "references": [
+            "https://consumer.huawei.com/en/support/bulletin/2022/7/",
+            "https://device.harmonyos.com/en/docs/security/update/security-bulletins-phones-202208-0000001363876177",
+            "https://consumer.huawei.com/en/support/bulletin/2022/8/"
+        ],
+        "summary": "Vulnerability of pointers being incorrectly used during data transmission in the video framework. Successful exploitation of this vulnerability may affect confidentiality."
+    },
+    {
+        "Modified": "2022-12-12T20:21:00",
+        "Published": "2015-06-07T23:59:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "cve@mitre.org",
+        "cvss": 8.5,
+        "cvss-time": "2022-12-12T20:21:00",
+        "cvss-vector": "AV:N/AC:L/Au:N/C:P/I:N/A:C",
+        "cwe": "CWE-119",
+        "id": "CVE-2015-4004",
+        "impact": {
+            "availability": "COMPLETE",
+            "confidentiality": "PARTIAL",
+            "integrity": "NONE"
+        },
+        "last-modified": "2022-12-12T20:21:00",
+        "references": [
+            "http://openwall.com/lists/oss-security/2015/06/05/7",
+            "https://lkml.org/lkml/2015/5/13/739",
+            "http://www.ubuntu.com/usn/USN-3000-1",
+            "http://www.ubuntu.com/usn/USN-2998-1",
+            "http://www.ubuntu.com/usn/USN-3002-1",
+            "http://www.ubuntu.com/usn/USN-3003-1",
+            "http://www.ubuntu.com/usn/USN-3001-1",
+            "http://www.ubuntu.com/usn/USN-3004-1",
+            "http://www.ubuntu.com/usn/USN-2989-1",
+            "http://www.securityfocus.com/bid/74669"
+        ],
+        "summary": "The OZWPAN driver in the Linux kernel through 4.0.5 relies on an untrusted length field during packet parsing, which allows remote attackers to obtain sensitive information from kernel memory or cause a denial of service (out-of-bounds read and system crash) via a crafted packet."
+    },
+    {
+        "Modified": "2022-12-12T20:20:00",
+        "Published": "2022-06-02T14:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "cve@mitre.org",
+        "cvss": 7.5,
+        "cvss-time": "2022-12-12T20:20:00",
+        "cvss-vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+        "cwe": "CWE-755",
+        "id": "CVE-2022-31799",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "PARTIAL",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-12-12T20:20:00",
+        "references": [
+            "https://github.com/bottlepy/bottle/compare/0.12.19...0.12.20",
+            "https://github.com/bottlepy/bottle/commit/e140e1b54da721a660f2eb9d58a106b7b3ff2f00",
+            "https://github.com/bottlepy/bottle/commit/a2b0ee6bb4ce88895429ec4aca856616244c4c4c",
+            "https://lists.debian.org/debian-lts-announce/2022/06/msg00010.html",
+            "https://www.debian.org/security/2022/dsa-5159",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/IE7U6J45PUEXIYYVWJKPM6QXIRKDK4HD/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/KTLOQGMDZEPIYTFC2G53OQV2ULCGYS3F/"
+        ],
+        "summary": "Bottle before 0.12.20 mishandles errors during early request binding."
+    },
+    {
+        "Modified": "2022-12-12T20:18:00",
+        "Published": "2022-06-15T22:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "MEDIUM",
+            "vector": "NETWORK"
+        },
+        "assigner": "secure@microsoft.com",
+        "cvss": 6.8,
+        "cvss-time": "2022-12-12T20:18:00",
+        "cvss-vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
+        "cwe": "NVD-CWE-noinfo",
+        "id": "CVE-2022-30168",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "PARTIAL",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-12-12T20:18:00",
+        "references": [
+            "https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-30168"
+        ],
+        "summary": "Microsoft Photos App Remote Code Execution Vulnerability."
+    },
+    {
+        "Modified": "2022-12-12T20:15:00",
+        "Published": "2022-12-12T20:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-42716",
+        "impact": {},
+        "last-modified": "2022-12-12T20:15:00",
+        "references": [
+            "https://developer.arm.com/Arm%20Security%20Center/Mali%20GPU%20Driver%20Vulnerabilities"
+        ],
+        "summary": "An issue was discovered in the Arm Mali GPU Kernel Driver. There is a use-after-free. A non-privileged user can make improper GPU processing operations to gain access to already freed memory. This affects Midgard r4p0 through r32p0, Bifrost r1p0 through r40p0, and Valhall r19p0 through r40P0."
+    },
+    {
+        "Modified": "2022-12-12T20:15:00",
+        "Published": "2022-12-12T20:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-45275",
+        "impact": {},
+        "last-modified": "2022-12-12T20:15:00",
+        "references": [
+            "https://github.com/ATKF/bug_report/blob/main/vendors/oretnom23/dynamic-transaction-queuing-system/RCE-1.md"
+        ],
+        "summary": "An arbitrary file upload vulnerability in /queuing/admin/ajax.php?action=save_settings of Dynamic Transaction Queuing System v1.0 allows attackers to execute arbitrary code via a crafted PHP file."
+    },
+    {
+        "Modified": "2022-12-12T20:15:00",
+        "Published": "2022-12-12T18:15:00",
+        "access": {},
+        "assigner": "contact@wpscan.com",
+        "cvss": null,
+        "cwe": "CWE-434",
+        "id": "CVE-2022-3921",
+        "impact": {},
+        "last-modified": "2022-12-12T20:15:00",
+        "references": [
+            "https://wpscan.com/vulnerability/e39b59b0-f24f-4de5-a21c-c4de34c3a14f"
+        ],
+        "summary": "The Listingo WordPress theme before 3.2.7 does not validate files to be uploaded via an AJAX action available to unauthenticated users, which could allow them to upload arbitrary files and lead to RCE"
+    },
+    {
+        "Modified": "2022-12-12T20:15:00",
+        "Published": "2022-11-08T22:15:00",
+        "access": {},
+        "assigner": "cna@sap.com",
+        "cvss": null,
+        "cwe": "CWE-601",
+        "id": "CVE-2022-41215",
+        "impact": {},
+        "last-modified": "2022-12-12T20:15:00",
+        "references": [
+            "https://launchpad.support.sap.com/#/notes/3251202",
+            "https://www.sap.com/documents/2022/02/fa865ea4-167e-0010-bca6-c68f7e60039b.html"
+        ],
+        "summary": "SAP NetWeaver ABAP Server and ABAP Platform allows an unauthenticated attacker to redirect users to a malicious site due to insufficient URL validation. This could lead to the user being tricked to disclose personal information."
+    },
+    {
+        "Modified": "2022-12-12T20:14:00",
+        "Published": "2022-11-01T13:15:00",
+        "access": {},
+        "assigner": "security@xen.org",
+        "cvss": null,
+        "cwe": "CWE-770",
+        "id": "CVE-2022-42316",
+        "impact": {},
+        "last-modified": "2022-12-12T20:14:00",
+        "references": [
+            "https://xenbits.xenproject.org/xsa/advisory-326.txt",
+            "http://xenbits.xen.org/xsa/advisory-326.html",
+            "https://www.debian.org/security/2022/dsa-5272",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/ZLI2NPNEH7CNJO3VZGQNOI4M4EWLNKPZ/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/YZVXG7OOOXCX6VIPEMLFDPIPUTFAYWPE/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/YTMITQBGC23MSDHUCAPCVGLMVXIBXQTQ/"
+        ],
+        "summary": "Xenstore: guests can let run xenstored out of memory T[his CNA information record relates to multiple CVEs; the text explains which aspects/vulnerabilities correspond to which CVE.] Malicious guests can cause xenstored to allocate vast amounts of memory, eventually resulting in a Denial of Service (DoS) of xenstored. There are multiple ways how guests can cause large memory allocations in xenstored: - - by issuing new requests to xenstored without reading the responses, causing the responses to be buffered in memory - - by causing large number of watch events to be generated via setting up multiple xenstore watches and then e.g. deleting many xenstore nodes below the watched path - - by creating as many nodes as allowed with the maximum allowed size and path length in as many transactions as possible - - by accessing many nodes inside a transaction"
+    },
+    {
+        "Modified": "2022-12-12T20:10:00",
+        "Published": "2022-11-01T13:15:00",
+        "access": {},
+        "assigner": "security@xen.org",
+        "cvss": null,
+        "cwe": "CWE-770",
+        "id": "CVE-2022-42315",
+        "impact": {},
+        "last-modified": "2022-12-12T20:10:00",
+        "references": [
+            "https://xenbits.xenproject.org/xsa/advisory-326.txt",
+            "http://xenbits.xen.org/xsa/advisory-326.html",
+            "https://www.debian.org/security/2022/dsa-5272",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/ZLI2NPNEH7CNJO3VZGQNOI4M4EWLNKPZ/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/YZVXG7OOOXCX6VIPEMLFDPIPUTFAYWPE/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/YTMITQBGC23MSDHUCAPCVGLMVXIBXQTQ/"
+        ],
+        "summary": "Xenstore: guests can let run xenstored out of memory T[his CNA information record relates to multiple CVEs; the text explains which aspects/vulnerabilities correspond to which CVE.] Malicious guests can cause xenstored to allocate vast amounts of memory, eventually resulting in a Denial of Service (DoS) of xenstored. There are multiple ways how guests can cause large memory allocations in xenstored: - - by issuing new requests to xenstored without reading the responses, causing the responses to be buffered in memory - - by causing large number of watch events to be generated via setting up multiple xenstore watches and then e.g. deleting many xenstore nodes below the watched path - - by creating as many nodes as allowed with the maximum allowed size and path length in as many transactions as possible - - by accessing many nodes inside a transaction"
+    },
+    {
+        "Modified": "2022-12-12T20:08:00",
+        "Published": "2022-11-01T13:15:00",
+        "access": {},
+        "assigner": "security@xen.org",
+        "cvss": null,
+        "cwe": "CWE-770",
+        "id": "CVE-2022-42313",
+        "impact": {},
+        "last-modified": "2022-12-12T20:08:00",
+        "references": [
+            "https://xenbits.xenproject.org/xsa/advisory-326.txt",
+            "http://xenbits.xen.org/xsa/advisory-326.html",
+            "https://www.debian.org/security/2022/dsa-5272",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/ZLI2NPNEH7CNJO3VZGQNOI4M4EWLNKPZ/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/YZVXG7OOOXCX6VIPEMLFDPIPUTFAYWPE/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/YTMITQBGC23MSDHUCAPCVGLMVXIBXQTQ/"
+        ],
+        "summary": "Xenstore: guests can let run xenstored out of memory T[his CNA information record relates to multiple CVEs; the text explains which aspects/vulnerabilities correspond to which CVE.] Malicious guests can cause xenstored to allocate vast amounts of memory, eventually resulting in a Denial of Service (DoS) of xenstored. There are multiple ways how guests can cause large memory allocations in xenstored: - - by issuing new requests to xenstored without reading the responses, causing the responses to be buffered in memory - - by causing large number of watch events to be generated via setting up multiple xenstore watches and then e.g. deleting many xenstore nodes below the watched path - - by creating as many nodes as allowed with the maximum allowed size and path length in as many transactions as possible - - by accessing many nodes inside a transaction"
+    },
+    {
+        "Modified": "2022-12-12T20:00:00",
+        "Published": "2022-12-12T00:15:00",
+        "access": {},
+        "assigner": "security@huntr.dev",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2022-4413",
+        "impact": {},
+        "last-modified": "2022-12-12T20:00:00",
+        "references": [
+            "https://github.com/nuxt/framework/commit/253c8f7ee0c0c580c44dedbe9387646264e90a1e",
+            "https://huntr.dev/bounties/70ac720d-c932-4ed3-98b1-dd2cbcb90185"
+        ],
+        "summary": "Cross-site Scripting (XSS) - Reflected in GitHub repository nuxt/framework prior to v3.0.0-rc.13."
+    },
+    {
+        "Modified": "2022-12-12T20:00:00",
+        "Published": "2022-11-01T13:15:00",
+        "access": {},
+        "assigner": "security@xen.org",
+        "cvss": null,
+        "cwe": "CWE-770",
+        "id": "CVE-2022-42312",
+        "impact": {},
+        "last-modified": "2022-12-12T20:00:00",
+        "references": [
+            "https://xenbits.xenproject.org/xsa/advisory-326.txt",
+            "http://xenbits.xen.org/xsa/advisory-326.html",
+            "https://www.debian.org/security/2022/dsa-5272",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/ZLI2NPNEH7CNJO3VZGQNOI4M4EWLNKPZ/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/YZVXG7OOOXCX6VIPEMLFDPIPUTFAYWPE/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/YTMITQBGC23MSDHUCAPCVGLMVXIBXQTQ/"
+        ],
+        "summary": "Xenstore: guests can let run xenstored out of memory T[his CNA information record relates to multiple CVEs; the text explains which aspects/vulnerabilities correspond to which CVE.] Malicious guests can cause xenstored to allocate vast amounts of memory, eventually resulting in a Denial of Service (DoS) of xenstored. There are multiple ways how guests can cause large memory allocations in xenstored: - - by issuing new requests to xenstored without reading the responses, causing the responses to be buffered in memory - - by causing large number of watch events to be generated via setting up multiple xenstore watches and then e.g. deleting many xenstore nodes below the watched path - - by creating as many nodes as allowed with the maximum allowed size and path length in as many transactions as possible - - by accessing many nodes inside a transaction"
+    },
+    {
+        "Modified": "2022-12-12T19:56:00",
+        "Published": "2022-10-11T13:15:00",
+        "access": {},
+        "assigner": "security@xen.org",
+        "cvss": null,
+        "cwe": "CWE-755",
+        "id": "CVE-2022-33748",
+        "impact": {},
+        "last-modified": "2022-12-12T19:56:00",
+        "references": [
+            "https://xenbits.xenproject.org/xsa/advisory-411.txt",
+            "http://xenbits.xen.org/xsa/advisory-411.html",
+            "http://www.openwall.com/lists/oss-security/2022/10/11/2",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/XWSC77GS5NATI3TT7FMVPULUPXR635XQ/",
+            "https://www.debian.org/security/2022/dsa-5272",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/TJOMUNGW6VTK5CZZRLWLVVEOUPEQBRHI/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/YZVXG7OOOXCX6VIPEMLFDPIPUTFAYWPE/"
+        ],
+        "summary": "lock order inversion in transitive grant copy handling As part of XSA-226 a missing cleanup call was inserted on an error handling path. While doing so, locking requirements were not paid attention to. As a result two cooperating guests granting each other transitive grants can cause locks to be acquired nested within one another, but in respectively opposite order. With suitable timing between the involved grant copy operations this may result in the locking up of a CPU."
+    },
+    {
+        "Modified": "2022-12-12T19:54:00",
+        "Published": "2022-12-12T03:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2022-45756",
+        "impact": {},
+        "last-modified": "2022-12-12T19:54:00",
+        "references": [
+            "https://github.com/saysky/SENS/issues/17"
+        ],
+        "summary": "SENS v1.0 is vulnerable to Cross Site Scripting (XSS)."
+    },
+    {
+        "Modified": "2022-12-12T19:44:00",
+        "Published": "2022-12-12T03:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-434",
+        "id": "CVE-2022-45759",
+        "impact": {},
+        "last-modified": "2022-12-12T19:44:00",
+        "references": [
+            "https://github.com/saysky/SENS/issues/20"
+        ],
+        "summary": "SENS v1.0 has a file upload vulnerability."
+    },
+    {
+        "Modified": "2022-12-12T19:43:00",
+        "Published": "2022-12-06T19:15:00",
+        "access": {},
+        "assigner": "secalert@redhat.com",
+        "cvss": null,
+        "cwe": "CWE-1026",
+        "id": "CVE-2022-4147",
+        "impact": {},
+        "last-modified": "2022-12-12T19:43:00",
+        "references": [
+            "https://access.redhat.com/security/cve/CVE-2022-4147"
+        ],
+        "summary": "Quarkus CORS filter allows simple GET and POST requests with invalid Origin to proceed. Simple GET or POST requests made with XMLHttpRequest are the ones which have no event listeners registered on the object returned by the XMLHttpRequest upload property and have no ReadableStream object used in the request."
+    },
+    {
+        "Modified": "2022-12-12T19:43:00",
+        "Published": "2022-11-15T23:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-863",
+        "id": "CVE-2022-41918",
+        "impact": {},
+        "last-modified": "2022-12-12T19:43:00",
+        "references": [
+            "https://github.com/opensearch-project/security/commit/f7cc569c9d3fa5d5432c76c854eed280d45ce6f4",
+            "https://github.com/opensearch-project/security/security/advisories/GHSA-wmx7-x4jp-9jgg"
+        ],
+        "summary": "OpenSearch is a community-driven, open source fork of Elasticsearch and Kibana. There is an issue with the implementation of fine-grained access control rules (document-level security, field-level security and field masking) where they are not correctly applied to the indices that back data streams potentially leading to incorrect access authorization. OpenSearch 1.3.7 and 2.4.0 contain a fix for this issue. Users are advised to update. There are no known workarounds for this issue."
+    },
+    {
+        "Modified": "2022-12-12T19:43:00",
+        "Published": "2022-09-28T04:15:00",
+        "access": {},
+        "assigner": "cve@cert.org.tw",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2022-39035",
+        "impact": {},
+        "last-modified": "2022-12-12T19:43:00",
+        "references": [
+            "https://www.twcert.org.tw/tw/cp-132-6572-5c2c8-1.html"
+        ],
+        "summary": "Smart eVision has insufficient filtering for special characters in the POST Data parameter in the specific function. An unauthenticated remote attacker can inject JavaScript to perform XSS (Stored Cross-Site Scripting) attack."
+    },
+    {
+        "Modified": "2022-12-12T19:38:00",
+        "Published": "2022-12-12T03:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2022-45758",
+        "impact": {},
+        "last-modified": "2022-12-12T19:38:00",
+        "references": [
+            "https://github.com/saysky/SENS/issues/19"
+        ],
+        "summary": "SENS v1.0 is vulnerable to Cross Site Scripting (XSS) via com.liuyanzhao.sens.web.controller.admin, getRegister."
+    },
+    {
+        "Modified": "2022-12-12T19:32:00",
+        "Published": "2022-12-12T03:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2022-44637",
+        "impact": {},
+        "last-modified": "2022-12-12T19:32:00",
+        "references": [
+            "https://www.redmine.org/projects/redmine/wiki/Security_Advisories"
+        ],
+        "summary": "Redmine before 4.2.9 and 5.0.x before 5.0.4 allows persistent XSS in its Textile formatter due to improper sanitization in Redcloth3 Textile-formatted fields. Depending on the configuration, this may require login as a registered user."
+    },
+    {
+        "Modified": "2022-12-12T19:26:00",
+        "Published": "2022-12-12T03:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2022-44031",
+        "impact": {},
+        "last-modified": "2022-12-12T19:26:00",
+        "references": [
+            "https://www.redmine.org/projects/redmine/wiki/Security_Advisories"
+        ],
+        "summary": "Redmine before 4.2.9 and 5.0.x before 5.0.4 allows persistent XSS in its Textile formatter due to improper sanitization of the blockquote syntax in Textile-formatted fields."
+    },
+    {
+        "Modified": "2022-12-12T19:20:00",
+        "Published": "2022-12-12T09:15:00",
+        "access": {},
+        "assigner": "jenkinsci-cert@googlegroups.com",
+        "cvss": null,
+        "cwe": "CWE-611",
+        "id": "CVE-2022-46682",
+        "impact": {},
+        "last-modified": "2022-12-12T19:20:00",
+        "references": [
+            "https://www.jenkins.io/security/advisory/2022-12-07/#SECURITY-2940"
+        ],
+        "summary": "Jenkins Plot Plugin 2.1.11 and earlier does not configure its XML parser to prevent XML external entity (XXE) attacks."
+    },
+    {
+        "Modified": "2022-12-12T19:18:00",
+        "Published": "2022-12-12T09:15:00",
+        "access": {},
+        "assigner": "jenkinsci-cert@googlegroups.com",
+        "cvss": null,
+        "cwe": "CWE-601",
+        "id": "CVE-2022-46683",
+        "impact": {},
+        "last-modified": "2022-12-12T19:18:00",
+        "references": [
+            "https://www.jenkins.io/security/advisory/2022-12-07/#SECURITY-2967"
+        ],
+        "summary": "Jenkins Google Login Plugin 1.4 through 1.6 (both inclusive) improperly determines that a redirect URL after login is legitimately pointing to Jenkins."
+    },
+    {
+        "Modified": "2022-12-12T19:16:00",
+        "Published": "2022-12-12T09:15:00",
+        "access": {},
+        "assigner": "jenkinsci-cert@googlegroups.com",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2022-46684",
+        "impact": {},
+        "last-modified": "2022-12-12T19:16:00",
+        "references": [
+            "https://www.jenkins.io/security/advisory/2022-12-07/#SECURITY-2869"
+        ],
+        "summary": "Jenkins Checkmarx Plugin 2022.3.3 and earlier does not escape values returned from the Checkmarx service API before inserting them into HTML reports, resulting in a stored cross-site scripting (XSS) vulnerability."
+    },
+    {
+        "Modified": "2022-12-12T19:15:00",
+        "Published": "2022-12-12T18:15:00",
+        "access": {},
+        "assigner": "security@huntr.dev",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-4314",
+        "impact": {},
+        "last-modified": "2022-12-12T19:15:00",
+        "references": [
+            "https://github.com/ikus060/rdiffweb/commit/b2df3679564d0daa2856213bb307d3e34bd89a25",
+            "https://huntr.dev/bounties/b2dc504d-92ae-4221-a096-12ff223d95a8"
+        ],
+        "summary": "Improper Privilege Management in GitHub repository ikus060/rdiffweb prior to 2.5.2."
+    },
+    {
+        "Modified": "2022-12-12T19:14:00",
+        "Published": "2022-12-12T09:15:00",
+        "access": {},
+        "assigner": "jenkinsci-cert@googlegroups.com",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2022-46686",
+        "impact": {},
+        "last-modified": "2022-12-12T19:14:00",
+        "references": [
+            "https://www.jenkins.io/security/advisory/2022-12-07/#SECURITY-2810"
+        ],
+        "summary": "Jenkins Custom Build Properties Plugin 2.79.vc095ccc85094 and earlier does not escape property values and build display names on the Custom Build Properties and Build Summary pages, resulting in a stored cross-site scripting (XSS) vulnerability exploitable by attackers able to set or change these values."
+    },
+    {
+        "Modified": "2022-12-12T19:14:00",
+        "Published": "2022-12-12T09:15:00",
+        "access": {},
+        "assigner": "jenkinsci-cert@googlegroups.com",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2022-46687",
+        "impact": {},
+        "last-modified": "2022-12-12T19:14:00",
+        "references": [
+            "https://www.jenkins.io/security/advisory/2022-12-07/#SECURITY-2814"
+        ],
+        "summary": "Jenkins Spring Config Plugin 2.0.0 and earlier does not escape build display names shown on the Spring Config view, resulting in a stored cross-site scripting (XSS) vulnerability exploitable by attackers able to change build display names."
+    },
+    {
+        "Modified": "2022-12-12T19:07:00",
+        "Published": "2022-12-12T09:15:00",
+        "access": {},
+        "assigner": "jenkinsci-cert@googlegroups.com",
+        "cvss": null,
+        "cwe": "CWE-319",
+        "id": "CVE-2022-46685",
+        "impact": {},
+        "last-modified": "2022-12-12T19:07:00",
+        "references": [
+            "https://www.jenkins.io/security/advisory/2022-12-07/#SECURITY-2661"
+        ],
+        "summary": "In Jenkins Gitea Plugin 1.4.4 and earlier, the implementation of Gitea personal access tokens did not support credentials masking, potentially exposing them through the build log."
+    },
+    {
         "Modified": "2022-12-12T18:59:00",
         "Published": "2022-12-09T15:15:00",
         "access": {},
@@ -340,21 +918,6 @@
             "https://wpscan.com/vulnerability/fe2f1d52-8421-4b46-b829-6953a0472dcb"
         ],
         "summary": "The Jetpack CRM WordPress plugin before 5.4.3 does not sanitise and escape its settings, allowing high privilege users such as admin to perform cross-Site Scripting attacks even when the unfiltered_html capability is disallowed."
-    },
-    {
-        "Modified": "2022-12-12T18:18:00",
-        "Published": "2022-12-12T18:15:00",
-        "access": {},
-        "assigner": "contact@wpscan.com",
-        "cvss": null,
-        "cwe": "CWE-434",
-        "id": "CVE-2022-3921",
-        "impact": {},
-        "last-modified": "2022-12-12T18:18:00",
-        "references": [
-            "https://wpscan.com/vulnerability/e39b59b0-f24f-4de5-a21c-c4de34c3a14f"
-        ],
-        "summary": "The does not validate files to be uploaded via an AJAX action available to unauthenticated users, which could allow them to upload arbitrary files and lead to RCE"
     },
     {
         "Modified": "2022-12-12T18:18:00",
@@ -824,23 +1387,6 @@
     },
     {
         "Modified": "2022-12-12T18:17:00",
-        "Published": "2022-12-12T18:15:00",
-        "access": {},
-        "assigner": "security@huntr.dev",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-4314",
-        "impact": {},
-        "last-modified": "2022-12-12T18:17:00",
-        "references": [
-            "https://www.cve.org/CVERecord?id=CVE-2022-4314",
-            "https://github.com/ikus060/rdiffweb/commit/b2df3679564d0daa2856213bb307d3e34bd89a25",
-            "https://huntr.dev/bounties/b2dc504d-92ae-4221-a096-12ff223d95a8"
-        ],
-        "summary": "Improper Privilege Management in GitHub repository ikus060/rdiffweb prior to 2.5.2."
-    },
-    {
-        "Modified": "2022-12-12T18:17:00",
         "Published": "2022-12-06T21:15:00",
         "access": {},
         "assigner": "audit@patchstack.com",
@@ -1099,456 +1645,5 @@
             "https://en.wikipedia.org/wiki/Directed_acyclic_graph"
         ],
         "summary": "go-merkledag implements the 'DAGService' interface and adds two ipld node types, Protobuf and Raw for the ipfs project. A `ProtoNode` may be modified in such a way as to cause various encode errors which will trigger a panic on common method calls that don't allow for error returns. A `ProtoNode` should only be able to encode to valid DAG-PB, attempting to encode invalid DAG-PB forms will result in an error from the codec. Manipulation of an existing (newly created or decoded) `ProtoNode` using the modifier methods did not account for certain states that would place the `ProtoNode` into an unencodeable form. Due to conformance with the [`github.com/ipfs/go-block-format#Block`](https://pkg.go.dev/github.com/ipfs/go-block-format#Block) and [`github.com/ipfs/go-ipld-format#Node`](https://pkg.go.dev/github.com/ipfs/go-ipld-format#Node) interfaces, certain methods, which internally require a re-encode if state has changed, will panic due to the inability to return an error. This issue has been addressed across a number of pull requests. Users are advised to upgrade to version 0.8.1 for a complete set of fixes. Users unable to upgrade may attempt to mitigate this issue by sanitising inputs when allowing user-input to set a new `CidBuilder` on a `ProtoNode` and by sanitising `Tsize` (`Link#Size`) values such that they are a reasonable byte-size for sub-DAGs where derived from user-input."
-    },
-    {
-        "Modified": "2022-12-12T17:45:00",
-        "Published": "2022-12-09T18:15:00",
-        "access": {},
-        "assigner": "psirt@wdc.com",
-        "cvss": null,
-        "cwe": "CWE-287",
-        "id": "CVE-2022-29838",
-        "impact": {},
-        "last-modified": "2022-12-12T17:45:00",
-        "references": [
-            "https://www.westerndigital.com/support/product-security/wdc-22019-my-cloud-firmware-version-5-25-124"
-        ],
-        "summary": "Improper Authentication vulnerability in the encrypted volumes and auto mount features of Western Digital My Cloud devices allows insecure direct access to the drive information in the case of a device reset. This issue affects: Western Digital My Cloud My Cloud versions prior to 5.25.124 on Linux."
-    },
-    {
-        "Modified": "2022-12-12T17:45:00",
-        "Published": "2022-12-08T22:15:00",
-        "access": {},
-        "assigner": "security-advisories@github.com",
-        "cvss": null,
-        "cwe": "CWE-755",
-        "id": "CVE-2022-23496",
-        "impact": {},
-        "last-modified": "2022-12-12T17:45:00",
-        "references": [
-            "https://github.com/nielsbasjes/yauaa/commit/3017a866e2cff0d308f264b66fde4fa79e3beb9e",
-            "https://github.com/nielsbasjes/yauaa/security/advisories/GHSA-c4pm-63cg-9j7h"
-        ],
-        "summary": "Yet Another UserAgent Analyzer (Yauaa) is a java library that tries to parse and analyze the useragent string and extract as many relevant attributes as possible. Applications using the Client Hints analysis feature introduced with 7.0.0 can crash because the Yauaa library throws an ArrayIndexOutOfBoundsException. If uncaught the exception will result in a program crash. Applications that do not use this feature are not affected. Users are advised to upgrade to version 7.9.0. Users unable to upgrade may catch and discard any ArrayIndexOutOfBoundsException thrown by the Yauaa library."
-    },
-    {
-        "Modified": "2022-12-12T17:44:00",
-        "Published": "2022-12-09T18:15:00",
-        "access": {},
-        "assigner": "psirt@wdc.com",
-        "cvss": null,
-        "cwe": "CWE-522",
-        "id": "CVE-2022-29839",
-        "impact": {},
-        "last-modified": "2022-12-12T17:44:00",
-        "references": [
-            "https://www.westerndigital.com/support/product-security/wdc-22019-my-cloud-firmware-version-5-25-124"
-        ],
-        "summary": "Insufficiently Protected Credentials vulnerability in the remote backups application on Western Digital My Cloud devices that could allow an attacker who has gained access to a relevant endpoint to use that information to access protected data. This issue affects: Western Digital My Cloud My Cloud versions prior to 5.25.124 on Linux."
-    },
-    {
-        "Modified": "2022-12-12T17:42:00",
-        "Published": "2022-12-09T18:15:00",
-        "access": {},
-        "assigner": "security@elastic.co",
-        "cvss": null,
-        "cwe": "CWE-74",
-        "id": "CVE-2022-4170",
-        "impact": {},
-        "last-modified": "2022-12-12T17:42:00",
-        "references": [
-            "https://bugzilla.redhat.com/show_bug.cgi?id=2151597",
-            "https://www.openwall.com/lists/oss-security/2022/12/05/1"
-        ],
-        "summary": "The rxvt-unicode package is vulnerable to a remote code execution, in the Perl background extension, when an attacker can control the data written to the user's terminal and certain options are set."
-    },
-    {
-        "Modified": "2022-12-12T17:41:00",
-        "Published": "2022-12-09T19:15:00",
-        "access": {},
-        "assigner": "psirt@us.ibm.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-41299",
-        "impact": {},
-        "last-modified": "2022-12-12T17:41:00",
-        "references": [
-            "https://www.ibm.com/support/pages/node/6846257",
-            "https://exchange.xforce.ibmcloud.com/vulnerabilities/237214"
-        ],
-        "summary": "IBM Cloud Transformation Advisor 2.0.1 through 3.3.1 is vulnerable to cross-site scripting. This vulnerability allows users to embed arbitrary JavaScript code in the Web UI thus altering the intended functionality potentially leading to credentials disclosure within a trusted session. IBM X-Force ID: 237214."
-    },
-    {
-        "Modified": "2022-12-12T17:41:00",
-        "Published": "2022-12-09T18:15:00",
-        "access": {},
-        "assigner": "secalert@redhat.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-4336",
-        "impact": {},
-        "last-modified": "2022-12-12T17:41:00",
-        "references": [
-            "https://mlux.cc/index.php/archives/100/"
-        ],
-        "summary": "In BAOTA linux panel there exists a stored xss vulnerability attackers can use to obtain sensitive information via the log analysis feature."
-    },
-    {
-        "Modified": "2022-12-12T17:40:00",
-        "Published": "2022-12-09T19:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-22",
-        "id": "CVE-2022-45290",
-        "impact": {},
-        "last-modified": "2022-12-12T17:40:00",
-        "references": [
-            "https://github.com/HH1F/KbaseDoc-v1.0-Arbitrary-file-deletion-vulnerability/blob/main/README.md"
-        ],
-        "summary": "Kbase Doc v1.0 was discovered to contain an arbitrary file deletion vulnerability via the component /web/IndexController.java."
-    },
-    {
-        "Modified": "2022-12-12T17:36:00",
-        "Published": "2022-12-08T16:15:00",
-        "access": {},
-        "assigner": "mobile.security@samsung.com",
-        "cvss": null,
-        "cwe": "NVD-CWE-Other",
-        "id": "CVE-2022-39900",
-        "impact": {},
-        "last-modified": "2022-12-12T17:36:00",
-        "references": [
-            "https://security.samsungmobile.com/securityUpdate.smsb?year=2022&month=12"
-        ],
-        "summary": "Improper access control vulnerability in Nice Catch prior to SMR Dec-2022 Release 1 allows physical attackers to access contents of all toast generated in the application installed in Secure Folder through Nice Catch."
-    },
-    {
-        "Modified": "2022-12-12T17:33:00",
-        "Published": "2022-12-12T16:15:00",
-        "access": {},
-        "assigner": "cert@cert.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-43503",
-        "impact": {},
-        "last-modified": "2022-12-12T17:33:00",
-        "references": [],
-        "summary": "This CVE is not valid."
-    },
-    {
-        "Modified": "2022-12-12T17:33:00",
-        "Published": "2022-12-12T16:15:00",
-        "access": {},
-        "assigner": "cert@cert.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-45119",
-        "impact": {},
-        "last-modified": "2022-12-12T17:33:00",
-        "references": [],
-        "summary": "This CVE is not valid."
-    },
-    {
-        "Modified": "2022-12-12T17:33:00",
-        "Published": "2022-12-12T16:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-45996",
-        "impact": {},
-        "last-modified": "2022-12-12T17:33:00",
-        "references": [
-            "https://github.com/bugfinder0/public_bug/tree/main/tenda/w20e/2"
-        ],
-        "summary": "Tenda W20E V16.01.0.6(3392) is vulnerable to Command injection via cmd_get_ping_output."
-    },
-    {
-        "Modified": "2022-12-12T17:33:00",
-        "Published": "2022-12-12T16:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-45997",
-        "impact": {},
-        "last-modified": "2022-12-12T17:33:00",
-        "references": [
-            "https://github.com/bugfinder0/public_bug/tree/main/tenda/w20e/1"
-        ],
-        "summary": "Tenda W20E V16.01.0.6(3392) is vulnerable to Buffer Overflow."
-    },
-    {
-        "Modified": "2022-12-12T17:33:00",
-        "Published": "2022-12-08T16:15:00",
-        "access": {},
-        "assigner": "mobile.security@samsung.com",
-        "cvss": null,
-        "cwe": "CWE-287",
-        "id": "CVE-2022-39899",
-        "impact": {},
-        "last-modified": "2022-12-12T17:33:00",
-        "references": [
-            "https://security.samsungmobile.com/securityUpdate.smsb?year=2022&month=12"
-        ],
-        "summary": "Improper authentication vulnerability in Samsung WindowManagerService prior to SMR Dec-2022 Release 1 allows attacker to send the input event using S Pen gesture."
-    },
-    {
-        "Modified": "2022-12-12T17:30:00",
-        "Published": "2022-12-08T10:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-707",
-        "id": "CVE-2022-4353",
-        "impact": {},
-        "last-modified": "2022-12-12T17:30:00",
-        "references": [
-            "https://vuldb.com/?id.215113",
-            "https://gitee.com/LinZhaoguan/pb-cms/issues/I52422"
-        ],
-        "summary": "A vulnerability has been found in LinZhaoguan pb-cms 2.0 and classified as problematic. Affected by this vulnerability is the function IpUtil.getIpAddr. The manipulation leads to cross site scripting. The attack can be launched remotely. The exploit has been disclosed to the public and may be used. The identifier VDB-215113 was assigned to this vulnerability."
-    },
-    {
-        "Modified": "2022-12-12T17:22:00",
-        "Published": "2022-12-08T00:15:00",
-        "access": {},
-        "assigner": "security@nortonlifelock.com",
-        "cvss": null,
-        "cwe": "CWE-119",
-        "id": "CVE-2022-4291",
-        "impact": {},
-        "last-modified": "2022-12-12T17:22:00",
-        "references": [
-            "https://support.norton.com/sp/static/external/tools/security-advisories.html"
-        ],
-        "summary": "The aswjsflt.dll library from Avast Antivirus windows contained a potentially exploitable heap corruption vulnerability that could enable an attacker to bypass the sandbox of the application it was loaded into, if applicable. This issue was fixed in version 18.0.1478 of the Script Shield Component."
-    },
-    {
-        "Modified": "2022-12-12T17:20:00",
-        "Published": "2022-12-08T20:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "NVD-CWE-Other",
-        "id": "CVE-2022-44938",
-        "impact": {},
-        "last-modified": "2022-12-12T17:20:00",
-        "references": [
-            "https://pwnit.io/2022/11/23/weak-password-reset-token-leads-to-account-takeover-in-seeddms/"
-        ],
-        "summary": "Weak reset token generation in SeedDMS v6.0.20 and v5.1.7 allows attackers to execute a full account takeover via a brute force attack."
-    },
-    {
-        "Modified": "2022-12-12T17:12:00",
-        "Published": "2022-12-09T20:15:00",
-        "access": {},
-        "assigner": "vulnerabilities@zephyrproject.org",
-        "cvss": null,
-        "cwe": "NVD-CWE-noinfo",
-        "id": "CVE-2022-2993",
-        "impact": {},
-        "last-modified": "2022-12-12T17:12:00",
-        "references": [
-            "https://github.com/zephyrproject-rtos/zephyr/security/advisories/GHSA-3286-jgjx-8cvr"
-        ],
-        "summary": "There is an error in the condition of the last if-statement in the function smp_check_keys. It was rejecting current keys if all requirements were unmet."
-    },
-    {
-        "Modified": "2022-12-12T17:09:00",
-        "Published": "2022-12-08T00:15:00",
-        "access": {},
-        "assigner": "cve@rapid7.com",
-        "cvss": null,
-        "cwe": "CWE-494",
-        "id": "CVE-2022-4261",
-        "impact": {},
-        "last-modified": "2022-12-12T17:09:00",
-        "references": [
-            "https://docs.rapid7.com/release-notes/nexpose/20221207/",
-            "https://www.rapid7.com/blog/post/2022/12/7/cve-2022-4261-rapid7-nexpose-update-validation-issue-fixed",
-            "https://docs.rapid7.com/release-notes/insightvm/20221207/"
-        ],
-        "summary": "Rapid7 Nexpose and InsightVM versions prior to 6.6.172 failed to reliably validate the authenticity of update contents. This failure could allow an attacker to provide a malicious update and alter the functionality of Rapid7 Nexpose. The attacker would need some pre-existing mechanism to provide a malicious update, either through a social engineering effort, privileged access to replace downloaded updates in transit, or by performing an Attacker-in-the-Middle attack on the update service itself."
-    },
-    {
-        "Modified": "2022-12-12T17:00:00",
-        "Published": "2022-12-08T16:15:00",
-        "access": {},
-        "assigner": "scy@openharmony.io",
-        "cvss": null,
-        "cwe": "CWE-276",
-        "id": "CVE-2022-45118",
-        "impact": {},
-        "last-modified": "2022-12-12T17:00:00",
-        "references": [
-            "https://gitee.com/openharmony/security/blob/master/en/security-disclosure/2022/2022-12.md"
-        ],
-        "summary": "OpenHarmony-v3.1.2 and prior versions had a vulnerability that telephony in communication subsystem sends public events with personal data, but the permission is not set. Malicious apps could listen to public events and obtain information such as mobile numbers and SMS data without permissions."
-    },
-    {
-        "Modified": "2022-12-12T16:57:00",
-        "Published": "2022-12-08T17:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-668",
-        "id": "CVE-2022-38599",
-        "impact": {},
-        "last-modified": "2022-12-12T16:57:00",
-        "references": [
-            "http://teleport.com",
-            "https://gist.github.com/arleyna/20d858e11c48984d00926fa8cc0c2722"
-        ],
-        "summary": "Teleport v3.2.2, Teleport v3.5.6-rc6, and Teleport v3.6.3-b2 was discovered to contain an information leak via the /user/get-role-list web interface."
-    },
-    {
-        "Modified": "2022-12-12T16:57:00",
-        "Published": "2022-12-08T18:15:00",
-        "access": {},
-        "assigner": "security@jetbrains.com",
-        "cvss": null,
-        "cwe": "CWE-120",
-        "id": "CVE-2022-46824",
-        "impact": {},
-        "last-modified": "2022-12-12T16:57:00",
-        "references": [
-            "https://www.jetbrains.com/privacy-security/issues-fixed/"
-        ],
-        "summary": "In JetBrains IntelliJ IDEA before 2022.2.4 a buffer overflow in the fsnotifier daemon on macOS was possible."
-    },
-    {
-        "Modified": "2022-12-12T16:56:00",
-        "Published": "2022-12-08T18:15:00",
-        "access": {},
-        "assigner": "security@jetbrains.com",
-        "cvss": null,
-        "cwe": "CWE-326",
-        "id": "CVE-2022-46825",
-        "impact": {},
-        "last-modified": "2022-12-12T16:56:00",
-        "references": [
-            "https://www.jetbrains.com/privacy-security/issues-fixed/"
-        ],
-        "summary": "In JetBrains IntelliJ IDEA before 2022.3 the built-in web server leaked information about open projects."
-    },
-    {
-        "Modified": "2022-12-12T16:56:00",
-        "Published": "2022-12-07T20:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-400",
-        "id": "CVE-2022-46770",
-        "impact": {},
-        "last-modified": "2022-12-12T16:56:00",
-        "references": [
-            "https://github.com/mirage/qubes-mirage-firewall/issues/166"
-        ],
-        "summary": "qubes-mirage-firewall (aka Mirage firewall for QubesOS) 0.8.x through 0.8.3 allows guest OS users to cause a denial of service (CPU consumption and loss of forwarding) via a crafted multicast UDP packet (IP address range of 224.0.0.0 through 239.255.255.255)."
-    },
-    {
-        "Modified": "2022-12-12T16:55:00",
-        "Published": "2022-12-08T18:15:00",
-        "access": {},
-        "assigner": "security@jetbrains.com",
-        "cvss": null,
-        "cwe": "CWE-22",
-        "id": "CVE-2022-46826",
-        "impact": {},
-        "last-modified": "2022-12-12T16:55:00",
-        "references": [
-            "https://www.jetbrains.com/privacy-security/issues-fixed/"
-        ],
-        "summary": "In JetBrains IntelliJ IDEA before 2022.3 the built-in web server allowed an arbitrary file to be read by exploiting a path traversal vulnerability."
-    },
-    {
-        "Modified": "2022-12-12T16:39:00",
-        "Published": "2022-12-08T18:15:00",
-        "access": {},
-        "assigner": "security@jetbrains.com",
-        "cvss": null,
-        "cwe": "CWE-611",
-        "id": "CVE-2022-46827",
-        "impact": {},
-        "last-modified": "2022-12-12T16:39:00",
-        "references": [
-            "https://www.jetbrains.com/privacy-security/issues-fixed/"
-        ],
-        "summary": "In JetBrains IntelliJ IDEA before 2022.3 an XXE attack leading to SSRF via requests to custom plugin repositories was possible."
-    },
-    {
-        "Modified": "2022-12-12T16:36:00",
-        "Published": "2022-12-08T18:15:00",
-        "access": {},
-        "assigner": "security@jetbrains.com",
-        "cvss": null,
-        "cwe": "CWE-434",
-        "id": "CVE-2022-46828",
-        "impact": {},
-        "last-modified": "2022-12-12T16:36:00",
-        "references": [
-            "https://www.jetbrains.com/privacy-security/issues-fixed/"
-        ],
-        "summary": "In JetBrains IntelliJ IDEA before 2022.3 a DYLIB injection on macOS was possible."
-    },
-    {
-        "Modified": "2022-12-12T16:36:00",
-        "Published": "2022-12-08T18:15:00",
-        "access": {},
-        "assigner": "security@jetbrains.com",
-        "cvss": null,
-        "cwe": "CWE-287",
-        "id": "CVE-2022-46829",
-        "impact": {},
-        "last-modified": "2022-12-12T16:36:00",
-        "references": [
-            "https://www.jetbrains.com/privacy-security/issues-fixed/"
-        ],
-        "summary": "In JetBrains JetBrains Gateway before 2022.3 a client could connect without a valid token if the host consented."
-    },
-    {
-        "Modified": "2022-12-12T16:35:00",
-        "Published": "2022-12-08T18:15:00",
-        "access": {},
-        "assigner": "security@jetbrains.com",
-        "cvss": null,
-        "cwe": "CWE-918",
-        "id": "CVE-2022-46830",
-        "impact": {},
-        "last-modified": "2022-12-12T16:35:00",
-        "references": [
-            "https://www.jetbrains.com/privacy-security/issues-fixed/"
-        ],
-        "summary": "In JetBrains TeamCity between 2022.10 and 2022.10.1 a custom STS endpoint allowed internal port scanning."
-    },
-    {
-        "Modified": "2022-12-12T16:33:00",
-        "Published": "2022-12-08T18:15:00",
-        "access": {},
-        "assigner": "security@jetbrains.com",
-        "cvss": null,
-        "cwe": "CWE-1188",
-        "id": "CVE-2022-46831",
-        "impact": {},
-        "last-modified": "2022-12-12T16:33:00",
-        "references": [
-            "https://www.jetbrains.com/privacy-security/issues-fixed/"
-        ],
-        "summary": "In JetBrains TeamCity between 2022.10 and 2022.10.1 connecting to AWS using the \"Default Credential Provider Chain\" allowed TeamCity project administrators to access AWS resources normally limited to TeamCity system administrators."
-    },
-    {
-        "Modified": "2022-12-12T16:15:00",
-        "Published": "2022-12-12T16:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-44147",
-        "impact": {},
-        "last-modified": "2022-12-12T16:15:00",
-        "references": [],
-        "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: CVE-2019-16891. Reason: This candidate is a reservation duplicate of CVE-2019-16891. Notes: All CVE users should reference CVE-2019-16891 instead of this candidate. All references and descriptions in this candidate have been removed to prevent accidental usage."
     }
 ]
