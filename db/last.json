@@ -1,6 +1,1172 @@
 [
     {
-        "Modified": "2022-12-12T12:15:00",
+        "Modified": "2022-12-12T14:58:00",
+        "Published": "2022-12-07T17:15:00",
+        "access": {},
+        "assigner": "security@golang.org",
+        "cvss": null,
+        "cwe": "CWE-22",
+        "id": "CVE-2022-41720",
+        "impact": {},
+        "last-modified": "2022-12-12T14:58:00",
+        "references": [
+            "https://groups.google.com/g/golang-announce/c/L_3rmdT0BMU/m/yZDrXjIiBQAJ",
+            "https://pkg.go.dev/vuln/GO-2022-1143",
+            "https://go.dev/cl/455716",
+            "https://go.dev/issue/56694"
+        ],
+        "summary": "On Windows, restricted files can be accessed via os.DirFS and http.Dir. The os.DirFS function and http.Dir type provide access to a tree of files rooted at a given directory. These functions permit access to Windows device files under that root. For example, os.DirFS(\"C:/tmp\").Open(\"COM1\") opens the COM1 device. Both os.DirFS and http.Dir only provide read-only filesystem access. In addition, on Windows, an os.DirFS for the directory (the root of the current drive) can permit a maliciously crafted path to escape from the drive and access any path on the system. With fix applied, the behavior of os.DirFS(\"\") has changed. Previously, an empty root was treated equivalently to \"/\", so os.DirFS(\"\").Open(\"tmp\") would open the path \"/tmp\". This now returns an error."
+    },
+    {
+        "Modified": "2022-12-12T14:56:00",
+        "Published": "2022-12-07T19:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-787",
+        "id": "CVE-2022-44373",
+        "impact": {},
+        "last-modified": "2022-12-12T14:56:00",
+        "references": [
+            "https://github.com/johnawm/vulner-box/blob/master/TRENDNet/TEW-820AP/02/README.md"
+        ],
+        "summary": "A stack overflow vulnerability exists in TrendNet Wireless AC Easy-Upgrader TEW-820AP (Version v1.0R, firmware version 1.01.B01) which may result in remote code execution."
+    },
+    {
+        "Modified": "2022-12-12T14:55:00",
+        "Published": "2022-12-07T21:15:00",
+        "access": {},
+        "assigner": "cna@vuldb.com",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2022-4341",
+        "impact": {},
+        "last-modified": "2022-12-12T14:55:00",
+        "references": [
+            "https://vuldb.com/?id.215095",
+            "https://gitee.com/csliuwy/coder-chain_gdut/issues/I53DPF"
+        ],
+        "summary": "A vulnerability has been found in csliuwy coder-chain_gdut and classified as problematic. Affected by this vulnerability is an unknown functionality of the file /back/index.php/user/User/?1. The manipulation leads to cross site scripting. The attack can be launched remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-215095."
+    },
+    {
+        "Modified": "2022-12-12T14:53:00",
+        "Published": "2022-12-07T23:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-400",
+        "id": "CVE-2022-23471",
+        "impact": {},
+        "last-modified": "2022-12-12T14:53:00",
+        "references": [
+            "https://github.com/containerd/containerd/security/advisories/GHSA-2qjp-425j-52j9",
+            "https://github.com/containerd/containerd/commit/a05d175400b1145e5e6a735a6710579d181e7fb0"
+        ],
+        "summary": "containerd is an open source container runtime. A bug was found in containerd's CRI implementation where a user can exhaust memory on the host. In the CRI stream server, a goroutine is launched to handle terminal resize events if a TTY is requested. If the user's process fails to launch due to, for example, a faulty command, the goroutine will be stuck waiting to send without a receiver, resulting in a memory leak. Kubernetes and crictl can both be configured to use containerd's CRI implementation and the stream server is used for handling container IO. This bug has been fixed in containerd 1.6.12 and 1.5.16. Users should update to these versions to resolve the issue. Users unable to upgrade should ensure that only trusted images and commands are used and that only trusted users have permissions to execute commands in running containers."
+    },
+    {
+        "Modified": "2022-12-12T14:35:00",
+        "Published": "2022-12-07T04:15:00",
+        "access": {},
+        "assigner": "vultures@jpcert.or.jp",
+        "cvss": null,
+        "cwe": "CWE-94",
+        "id": "CVE-2022-43660",
+        "impact": {},
+        "last-modified": "2022-12-12T14:35:00",
+        "references": [
+            "https://movabletype.org/news/2022/11/mt-796-688-released.html",
+            "https://jvn.jp/en/jp/JVN37014768/index.html"
+        ],
+        "summary": "Improper neutralization of Server-Side Includes (SSW) within a web page in Movable Type series allows a remote authenticated attacker with Privilege of 'Manage of Content Types' may execute an arbitrary Perl script and/or an arbitrary OS command. Affected products/versions are as follows: Movable Type 7 r.5301 and earlier (Movable Type 7 Series), Movable Type Advanced 7 r.5301 and earlier (Movable Type Advanced 7 Series), Movable Type Premium 1.53 and earlier, and Movable Type Premium Advanced 1.53 and earlier."
+    },
+    {
+        "Modified": "2022-12-12T14:28:00",
+        "Published": "2022-12-07T04:15:00",
+        "access": {},
+        "assigner": "vultures@jpcert.or.jp",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2022-42486",
+        "impact": {},
+        "last-modified": "2022-12-12T14:28:00",
+        "references": [
+            "https://basercms.net/security/JVN_53682526",
+            "https://jvn.jp/en/jp/JVN53682526/index.html"
+        ],
+        "summary": "Stored cross-site scripting vulnerability in User group management of baserCMS versions prior to 4.7.2 allows a remote authenticated attacker with an administrative privilege to inject an arbitrary script."
+    },
+    {
+        "Modified": "2022-12-12T14:23:00",
+        "Published": "2022-12-07T03:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-352",
+        "id": "CVE-2022-44849",
+        "impact": {},
+        "last-modified": "2022-12-12T14:23:00",
+        "references": [
+            "https://gitee.com/MetInfo_1/MetInfo/issues/I5YM81?from=project-issue"
+        ],
+        "summary": "A Cross-Site Request Forgery (CSRF) in the Administrator List of MetInfo v7.7 allows attackers to arbitrarily add Super Administrator account."
+    },
+    {
+        "Modified": "2022-12-12T14:22:00",
+        "Published": "2022-12-07T04:15:00",
+        "access": {},
+        "assigner": "vultures@jpcert.or.jp",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2022-41994",
+        "impact": {},
+        "last-modified": "2022-12-12T14:22:00",
+        "references": [
+            "https://basercms.net/security/JVN_53682526",
+            "https://jvn.jp/en/jp/JVN53682526/index.html"
+        ],
+        "summary": "Stored cross-site scripting vulnerability in Permission Settings of baserCMS versions prior to 4.7.2 allows a remote authenticated attacker with an administrative privilege to inject an arbitrary script."
+    },
+    {
+        "Modified": "2022-12-12T14:15:00",
+        "Published": "2022-12-12T14:15:00",
+        "access": {},
+        "assigner": "cna@vuldb.com",
+        "cvss": null,
+        "cwe": "CWE-707",
+        "id": "CVE-2021-4243",
+        "impact": {},
+        "last-modified": "2022-12-12T14:15:00",
+        "references": [
+            "https://github.com/claviska/jquery-minicolors/commit/ef134824a7f4110ada53ea6c173111a4fa2f48f3",
+            "https://vuldb.com/?id.215306",
+            "https://github.com/claviska/jquery-minicolors/releases/tag/2.3.6"
+        ],
+        "summary": "A vulnerability was found in claviska jquery-minicolors up to 2.3.5. It has been rated as problematic. Affected by this issue is some unknown functionality of the file jquery.minicolors.js. The manipulation leads to cross site scripting. The attack may be launched remotely. Upgrading to version 2.3.6 is able to address this issue. The name of the patch is ef134824a7f4110ada53ea6c173111a4fa2f48f3. It is recommended to upgrade the affected component. VDB-215306 is the identifier assigned to this vulnerability."
+    },
+    {
+        "Modified": "2022-12-12T14:15:00",
+        "Published": "2022-12-12T14:15:00",
+        "access": {},
+        "assigner": "cna@vuldb.com",
+        "cvss": null,
+        "cwe": "CWE-707",
+        "id": "CVE-2021-4244",
+        "impact": {},
+        "last-modified": "2022-12-12T14:15:00",
+        "references": [
+            "https://github.com/EvanHerman/yikes-inc-easy-mailchimp-extender/releases/tag/6.8.6",
+            "https://vuldb.com/?id.215307",
+            "https://github.com/EvanHerman/yikes-inc-easy-mailchimp-extender/pull/889",
+            "https://github.com/EvanHerman/yikes-inc-easy-mailchimp-extender/commit/3662c6593aa1bb4286781214891d26de2e947695"
+        ],
+        "summary": "A vulnerability classified as problematic has been found in yikes-inc-easy-mailchimp-extender Plugin up to 6.8.5. This affects an unknown part of the file admin/partials/ajax/add_field_to_form.php. The manipulation of the argument field_name/merge_tag/field_type/list_id leads to cross site scripting. It is possible to initiate the attack remotely. Upgrading to version 6.8.6 is able to address this issue. The name of the patch is 3662c6593aa1bb4286781214891d26de2e947695. It is recommended to upgrade the affected component. The associated identifier of this vulnerability is VDB-215307."
+    },
+    {
+        "Modified": "2022-12-12T14:15:00",
+        "Published": "2022-12-12T14:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-45968",
+        "impact": {},
+        "last-modified": "2022-12-12T14:15:00",
+        "references": [
+            "https://github.com/alist-org/alist/issues/2444"
+        ],
+        "summary": "Alist v3.4.0 is vulnerable to File Upload. A user with only file upload permission can upload any file to any folder (even a password protected one)."
+    },
+    {
+        "Modified": "2022-12-12T14:15:00",
+        "Published": "2022-12-12T14:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-45970",
+        "impact": {},
+        "last-modified": "2022-12-12T14:15:00",
+        "references": [
+            "https://github.com/alist-org/alist/issues/2457"
+        ],
+        "summary": "Alist v3.5.1 is vulnerable to Cross Site Scripting (XSS) via the bulletin board."
+    },
+    {
+        "Modified": "2022-12-12T14:15:00",
+        "Published": "2022-12-12T14:15:00",
+        "access": {},
+        "assigner": "cna@vuldb.com",
+        "cvss": null,
+        "cwe": "CWE-707",
+        "id": "CVE-2022-4421",
+        "impact": {},
+        "last-modified": "2022-12-12T14:15:00",
+        "references": [
+            "https://github.com/rathena/FluxCP/commit/8a39b2b2bf28353b3503ff1421862393db15aa7e",
+            "https://vuldb.com/?id.215304"
+        ],
+        "summary": "A vulnerability was found in rAthena FluxCP. It has been classified as problematic. Affected is an unknown function of the file themes/default/servicedesk/view.php of the component Service Desk Image URL Handler. The manipulation of the argument sslink leads to cross site scripting. It is possible to launch the attack remotely. The name of the patch is 8a39b2b2bf28353b3503ff1421862393db15aa7e. It is recommended to apply a patch to fix this issue. The identifier of this vulnerability is VDB-215304."
+    },
+    {
+        "Modified": "2022-12-12T13:17:00",
+        "Published": "2022-12-12T13:15:00",
+        "access": {},
+        "assigner": "hp-security-alert@hp.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2021-3942",
+        "impact": {},
+        "last-modified": "2022-12-12T13:17:00",
+        "references": [
+            "https://support.hp.com/us-en/document/ish_5948778-5949142-16/hpsbpi03780"
+        ],
+        "summary": "Certain HP Print products and Digital Sending products may be vulnerable to potential remote code execution and buffer overflow with use of Link-Local Multicast Name Resolution or LLMNR."
+    },
+    {
+        "Modified": "2022-12-12T13:17:00",
+        "Published": "2022-12-12T13:15:00",
+        "access": {},
+        "assigner": "psirt@us.ibm.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-22488",
+        "impact": {},
+        "last-modified": "2022-12-12T13:17:00",
+        "references": [
+            "https://exchange.xforce.ibmcloud.com/vulnerabilities/226337",
+            "https://www.ibm.com/support/pages/node/6840155"
+        ],
+        "summary": "IBM OpenBMC OP910 and OP940 could allow a privileged user to cause a denial of service by uploading or deleting too many CA certificates in a short period of time. IBM X-Force ID: 2226337."
+    },
+    {
+        "Modified": "2022-12-12T13:17:00",
+        "Published": "2022-12-12T13:15:00",
+        "access": {},
+        "assigner": "security-alert@hpe.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-37899",
+        "impact": {},
+        "last-modified": "2022-12-12T13:17:00",
+        "references": [
+            "https://www.arubanetworks.com/assets/alert/ARUBA-PSA-2022-016.txt"
+        ],
+        "summary": "Authenticated command injection vulnerabilities exist in the ArubaOS command line interface. Successful exploitation of these vulnerabilities results in the ability to execute arbitrary commands as a privileged user on the underlying operating system."
+    },
+    {
+        "Modified": "2022-12-12T13:17:00",
+        "Published": "2022-12-12T13:15:00",
+        "access": {},
+        "assigner": "security-alert@hpe.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-37900",
+        "impact": {},
+        "last-modified": "2022-12-12T13:17:00",
+        "references": [
+            "https://www.arubanetworks.com/assets/alert/ARUBA-PSA-2022-016.txt"
+        ],
+        "summary": "Authenticated command injection vulnerabilities exist in the ArubaOS command line interface. Successful exploitation of these vulnerabilities results in the ability to execute arbitrary commands as a privileged user on the underlying operating system."
+    },
+    {
+        "Modified": "2022-12-12T13:17:00",
+        "Published": "2022-12-12T13:15:00",
+        "access": {},
+        "assigner": "security-alert@hpe.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-37905",
+        "impact": {},
+        "last-modified": "2022-12-12T13:17:00",
+        "references": [
+            "https://www.arubanetworks.com/assets/alert/ARUBA-PSA-2022-016.txt"
+        ],
+        "summary": "Vulnerabilities in ArubaOS running on 7xxx series controllers exist that allows an attacker to execute arbitrary code during the boot sequence. Successful exploitation could allow an attacker to achieve permanent modification of the underlying operating system."
+    },
+    {
+        "Modified": "2022-12-12T13:17:00",
+        "Published": "2022-12-12T13:15:00",
+        "access": {},
+        "assigner": "security-alert@hpe.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-37912",
+        "impact": {},
+        "last-modified": "2022-12-12T13:17:00",
+        "references": [
+            "https://www.arubanetworks.com/assets/alert/ARUBA-PSA-2022-016.txt"
+        ],
+        "summary": "Authenticated command injection vulnerabilities exist in the ArubaOS command line interface. Successful exploitation of these vulnerabilities results in the ability to execute arbitrary commands as a privileged user on the underlying operating system."
+    },
+    {
+        "Modified": "2022-12-12T13:17:00",
+        "Published": "2022-12-12T13:15:00",
+        "access": {},
+        "assigner": "security@google.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-3510",
+        "impact": {},
+        "last-modified": "2022-12-12T13:17:00",
+        "references": [
+            "https://github.com/protocolbuffers/protobuf/commit/db7c17803320525722f45c1d26fc08bc41d1bf48"
+        ],
+        "summary": "A parsing issue similar to CVE-2022-3171, but with Message-Type Extensions in protobuf-java core and lite versions prior to 3.21.7, 3.20.3, 3.19.6 and 3.16.3 can lead to a denial of service attack. Inputs containing multiple instances of non-repeated embedded messages with repeated or unknown fields causes objects to be converted back-n-forth between mutable and immutable forms, resulting in potentially long garbage collection pauses. We recommend updating to the versions mentioned above."
+    },
+    {
+        "Modified": "2022-12-12T13:17:00",
+        "Published": "2022-12-12T13:15:00",
+        "access": {},
+        "assigner": "psirt@hcl.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-42445",
+        "impact": {},
+        "last-modified": "2022-12-12T13:17:00",
+        "references": [
+            "https://support.hcltechsw.com/csm?id=kb_article&sysparm_article=KB0101208"
+        ],
+        "summary": "HCL Launch could allow a user with administrative privileges, including \"Manage Security\" permissions, the ability to recover a credential previously saved for performing authenticated LDAP searches."
+    },
+    {
+        "Modified": "2022-12-12T13:17:00",
+        "Published": "2022-12-12T13:15:00",
+        "access": {},
+        "assigner": "security-alert@hpe.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-43541",
+        "impact": {},
+        "last-modified": "2022-12-12T13:17:00",
+        "references": [
+            "https://www.arubanetworks.com/assets/alert/ARUBA-PSA-2022-018.txt"
+        ],
+        "summary": "Vulnerabilities in the Aruba EdgeConnect Enterprise command line interface allow remote authenticated users to run arbitrary commands on the underlying host. A successful exploit could allow an attacker to execute arbitrary commands as root on the underlying operating system leading to complete system compromise in Aruba EdgeConnect Enterprise Software version(s): ECOS 9.2.1.0 and below; ECOS 9.1.3.0 and below; ECOS 9.0.7.0 and below; ECOS 8.3.7.1 and below."
+    },
+    {
+        "Modified": "2022-12-12T13:17:00",
+        "Published": "2022-12-12T13:15:00",
+        "access": {},
+        "assigner": "security-alert@hpe.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-43542",
+        "impact": {},
+        "last-modified": "2022-12-12T13:17:00",
+        "references": [
+            "https://www.arubanetworks.com/assets/alert/ARUBA-PSA-2022-018.txt"
+        ],
+        "summary": "Vulnerabilities in the Aruba EdgeConnect Enterprise command line interface allow remote authenticated users to run arbitrary commands on the underlying host. A successful exploit could allow an attacker to execute arbitrary commands as root on the underlying operating system leading to complete system compromise in Aruba EdgeConnect Enterprise Software version(s): ECOS 9.2.1.0 and below; ECOS 9.1.3.0 and below; ECOS 9.0.7.0 and below; ECOS 8.3.7.1 and below."
+    },
+    {
+        "Modified": "2022-12-12T13:17:00",
+        "Published": "2022-12-12T13:15:00",
+        "access": {},
+        "assigner": "hp-security-alert@hp.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-43780",
+        "impact": {},
+        "last-modified": "2022-12-12T13:17:00",
+        "references": [
+            "https://support.hp.com/us-en/document/ish_7095452-7095489-16/hpsbpi03813"
+        ],
+        "summary": "Certain HP ENVY, OfficeJet, and DeskJet printers may be vulnerable to a Denial of Service attack."
+    },
+    {
+        "Modified": "2022-12-12T13:17:00",
+        "Published": "2022-12-12T13:15:00",
+        "access": {},
+        "assigner": "security-alert@hpe.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-44532",
+        "impact": {},
+        "last-modified": "2022-12-12T13:17:00",
+        "references": [
+            "https://www.arubanetworks.com/assets/alert/ARUBA-PSA-2022-018.txt"
+        ],
+        "summary": "An authenticated path traversal vulnerability exists in the Aruba EdgeConnect Enterprise command line interface. Successful exploitation of this vulnerability results in the ability to read arbitrary files on the underlying operating system, including sensitive system files in Aruba EdgeConnect Enterprise Software version(s): ECOS 9.2.1.0 and below; ECOS 9.1.3.0 and below; ECOS 9.0.7.0 and below; ECOS 8.3.7.1 and below."
+    },
+    {
+        "Modified": "2022-12-12T13:17:00",
+        "Published": "2022-12-12T13:15:00",
+        "access": {},
+        "assigner": "security-alert@hpe.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-44533",
+        "impact": {},
+        "last-modified": "2022-12-12T13:17:00",
+        "references": [
+            "https://www.arubanetworks.com/assets/alert/ARUBA-PSA-2022-018.txt"
+        ],
+        "summary": "A vulnerability in the Aruba EdgeConnect Enterprise web management interface allows remote authenticated users to run arbitrary commands on the underlying host. A successful exploit could allow an attacker to execute arbitrary commands as root on the underlying operating system leading to complete system compromise in Aruba EdgeConnect Enterprise Software version(s): ECOS 9.2.1.0 and below; ECOS 9.1.3.0 and below; ECOS 9.0.7.0 and below; ECOS 8.3.7.1 and below."
+    },
+    {
+        "Modified": "2022-12-12T13:17:00",
+        "Published": "2022-12-12T13:15:00",
+        "access": {},
+        "assigner": "security@trendmicro.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-44647",
+        "impact": {},
+        "last-modified": "2022-12-12T13:17:00",
+        "references": [
+            "https://www.zerodayinitiative.com/advisories/ZDI-22-1617/",
+            "https://success.trendmicro.com/solution/000291770"
+        ],
+        "summary": "An Out-of-bounds read vulnerability in Trend Micro Apex One and Apex One as a Service could allow a local attacker to disclose sensitive information on affected installations. Please note: an attacker must first obtain the ability to execute low-privileged code on the target system in order to exploit this vulnerability. This is similar to, but not the same as CVE-2022-44648."
+    },
+    {
+        "Modified": "2022-12-12T13:17:00",
+        "Published": "2022-12-12T13:15:00",
+        "access": {},
+        "assigner": "security@trendmicro.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-44648",
+        "impact": {},
+        "last-modified": "2022-12-12T13:17:00",
+        "references": [
+            "https://www.zerodayinitiative.com/advisories/ZDI-22-1618/",
+            "https://success.trendmicro.com/solution/000291770"
+        ],
+        "summary": "An Out-of-bounds read vulnerability in Trend Micro Apex One and Apex One as a Service could allow a local attacker to disclose sensitive information on affected installations. Please note: an attacker must first obtain the ability to execute low-privileged code on the target system in order to exploit this vulnerability. This is similar to, but not the same as CVE-2022-44647."
+    },
+    {
+        "Modified": "2022-12-12T13:17:00",
+        "Published": "2022-12-12T13:15:00",
+        "access": {},
+        "assigner": "security@trendmicro.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-44649",
+        "impact": {},
+        "last-modified": "2022-12-12T13:17:00",
+        "references": [
+            "https://www.zerodayinitiative.com/advisories/ZDI-22-1619/",
+            "https://success.trendmicro.com/solution/000291770"
+        ],
+        "summary": "An out-of-bounds access vulnerability in the Unauthorized Change Prevention service of Trend Micro Apex One and Apex One as a Service could allow a local attacker to elevate privileges on affected installations. Please note: an attacker must first obtain the ability to execute low-privileged code on the target system in order to exploit this vulnerability."
+    },
+    {
+        "Modified": "2022-12-12T13:17:00",
+        "Published": "2022-12-12T13:15:00",
+        "access": {},
+        "assigner": "security@trendmicro.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-44650",
+        "impact": {},
+        "last-modified": "2022-12-12T13:17:00",
+        "references": [
+            "https://www.zerodayinitiative.com/advisories/ZDI-22-1616/",
+            "https://success.trendmicro.com/solution/000291770"
+        ],
+        "summary": "A memory corruption vulnerability in the Unauthorized Change Prevention service of Trend Micro Apex One and Apex One as a Service could allow a local attacker to elevate privileges on affected installations. Please note: an attacker must first obtain the ability to execute low-privileged code on the target system in order to exploit this vulnerability."
+    },
+    {
+        "Modified": "2022-12-12T13:17:00",
+        "Published": "2022-12-12T13:15:00",
+        "access": {},
+        "assigner": "security@trendmicro.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-44651",
+        "impact": {},
+        "last-modified": "2022-12-12T13:17:00",
+        "references": [
+            "https://www.zerodayinitiative.com/advisories/ZDI-22-1620/",
+            "https://success.trendmicro.com/solution/000291770"
+        ],
+        "summary": "A Time-of-Check Time-Of-Use vulnerability in the Trend Micro Apex One and Apex One as a Service agent could allow a local attacker to escalate privileges on affected installations. Please note: an attacker must first obtain the ability to execute low-privileged code on the target system in order to exploit this vulnerability."
+    },
+    {
+        "Modified": "2022-12-12T13:17:00",
+        "Published": "2022-12-12T13:15:00",
+        "access": {},
+        "assigner": "security@trendmicro.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-44652",
+        "impact": {},
+        "last-modified": "2022-12-12T13:17:00",
+        "references": [
+            "https://www.zerodayinitiative.com/advisories/ZDI-22-1621/",
+            "https://success.trendmicro.com/solution/000291770"
+        ],
+        "summary": "An improper handling of exceptional conditions vulnerability in Trend Micro Apex One and Apex One as a Service could allow a local attacker to escalate privileges on affected installations. Please note: an attacker must first obtain the ability to execute low-privileged code on the target system in order to exploit this vulnerability."
+    },
+    {
+        "Modified": "2022-12-12T13:17:00",
+        "Published": "2022-12-12T13:15:00",
+        "access": {},
+        "assigner": "security@trendmicro.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-44653",
+        "impact": {},
+        "last-modified": "2022-12-12T13:17:00",
+        "references": [
+            "https://www.zerodayinitiative.com/advisories/ZDI-22-1622/",
+            "https://success.trendmicro.com/solution/000291770"
+        ],
+        "summary": "A security agent directory traversal vulnerability in Trend Micro Apex One and Apex One as a Service could allow a local attacker to escalate privileges on affected installations. Please note: an attacker must first obtain the ability to execute low-privileged code on the target system in order to exploit this vulnerability."
+    },
+    {
+        "Modified": "2022-12-12T13:17:00",
+        "Published": "2022-12-12T13:15:00",
+        "access": {},
+        "assigner": "security@trendmicro.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-44654",
+        "impact": {},
+        "last-modified": "2022-12-12T13:17:00",
+        "references": [
+            "https://success.trendmicro.com/solution/000291770"
+        ],
+        "summary": "Affected builds of Trend Micro Apex One and Apex One as a Service contain a monitor engine component that is complied without the /SAFESEH memory protection mechanism which helps to monitor for malicious payloads. The affected component's memory protection mechanism has been updated to enhance product security."
+    },
+    {
+        "Modified": "2022-12-12T13:17:00",
+        "Published": "2022-12-12T13:15:00",
+        "access": {},
+        "assigner": "hp-security-alert@hp.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2021-3661",
+        "impact": {},
+        "last-modified": "2022-12-12T13:17:00",
+        "references": [
+            "https://support.hp.com/us-en/document/ish_5670997-5671021-16/hpsbhf03770"
+        ],
+        "summary": "A potential security vulnerability has been identified in certain HP Workstation BIOS (UEFI firmware) which may allow arbitrary code execution. HP is releasing firmware mitigations for the potential vulnerability."
+    },
+    {
+        "Modified": "2022-12-12T13:17:00",
+        "Published": "2022-12-12T13:15:00",
+        "access": {},
+        "assigner": "hp-security-alert@hp.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2021-3821",
+        "impact": {},
+        "last-modified": "2022-12-12T13:17:00",
+        "references": [
+            "https://support.hp.com/us-en/document/ish_4980799-4980823-16/hpsbpi03747"
+        ],
+        "summary": "A potential security vulnerability has been identified for certain HP multifunction printers (MFPs). The vulnerability may lead to Denial of Service when running HP Workpath solutions on potentially affected products."
+    },
+    {
+        "Modified": "2022-12-12T13:17:00",
+        "Published": "2022-12-12T13:15:00",
+        "access": {},
+        "assigner": "hp-security-alert@hp.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2021-3437",
+        "impact": {},
+        "last-modified": "2022-12-12T13:17:00",
+        "references": [
+            "https://support.hp.com/us-en/document/ish_4610088-4610112-16/hpsbgn03726"
+        ],
+        "summary": "Potential security vulnerabilities have been identified in an OMEN Gaming Hub SDK package which may allow escalation of privilege and/or denial of service. HP is releasing software updates to mitigate the potential vulnerabilities."
+    },
+    {
+        "Modified": "2022-12-12T13:17:00",
+        "Published": "2022-12-12T13:15:00",
+        "access": {},
+        "assigner": "hp-security-alert@hp.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2021-3919",
+        "impact": {},
+        "last-modified": "2022-12-12T13:17:00",
+        "references": [
+            "https://support.hp.com/us-en/document/ish_5481136-5481162-16/hpsbgn03761"
+        ],
+        "summary": "A potential security vulnerability has been identified in OMEN Gaming Hub and in HP Command Center which may allow escalation of privilege and/or denial of service. HP has released software updates to mitigate the potential vulnerability."
+    },
+    {
+        "Modified": "2022-12-12T13:17:00",
+        "Published": "2022-12-12T13:15:00",
+        "access": {},
+        "assigner": "security-alert@hpe.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2021-46846",
+        "impact": {},
+        "last-modified": "2022-12-12T13:17:00",
+        "references": [
+            "https://support.hpe.com/hpsc/doc/public/display?docLocale=en_US&docId=emr_na-hpesbhf04133en_us"
+        ],
+        "summary": "Cross Site Scripting vulnerability in Hewlett Packard Enterprise Integrated Lights-Out 5."
+    },
+    {
+        "Modified": "2022-12-12T13:17:00",
+        "Published": "2022-12-12T13:15:00",
+        "access": {},
+        "assigner": "hp-security-alert@hp.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-1038",
+        "impact": {},
+        "last-modified": "2022-12-12T13:17:00",
+        "references": [
+            "https://support.hp.com/us-en/document/ish_6189329-6189528-16/hpsbhf03791"
+        ],
+        "summary": "A potential security vulnerability has been identified in the HP Jumpstart software, which might allow escalation of privilege. HP is recommending that customers uninstall HP Jumpstart and use myHP software."
+    },
+    {
+        "Modified": "2022-12-12T13:17:00",
+        "Published": "2022-12-12T13:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-274",
+        "id": "CVE-2022-23511",
+        "impact": {},
+        "last-modified": "2022-12-12T13:17:00",
+        "references": [
+            "https://github.com/aws/amazon-cloudwatch-agent/security/advisories/GHSA-j8x2-2m5w-j939",
+            "https://github.com/aws/amazon-cloudwatch-agent/commit/6119858864c317ff26f41f576c169148d1250837#diff-76ed074a9305c04054cdebb9e9aad2d818052b07091de1f20cad0bbac34ffb52"
+        ],
+        "summary": "A privilege escalation issue exists within the Amazon CloudWatch Agent for Windows, software for collecting metrics and logs from Amazon EC2 instances and on-premises servers, in versions up to and including v1.247354. When users trigger a repair of the Agent, a pop-up window opens with SYSTEM permissions. Users with administrative access to affected hosts may use this to create a new command prompt as NT AUTHORITY\\SYSTEM. To trigger this issue, the third party must be able to access the affected host and elevate their privileges such that they\u2019re able to trigger the agent repair process. They must also be able to install the tools required to trigger the issue. This issue does not affect the CloudWatch Agent for macOS or Linux. Agent users should upgrade to version 1.247355 of the CloudWatch Agent to address this issue. There is no recommended work around. Affected users must update the installed version of the CloudWatch Agent to address this issue."
+    },
+    {
+        "Modified": "2022-12-12T13:17:00",
+        "Published": "2022-12-12T13:15:00",
+        "access": {},
+        "assigner": "hp-security-alert@hp.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-2794",
+        "impact": {},
+        "last-modified": "2022-12-12T13:17:00",
+        "references": [
+            "https://support.hp.com/us-en/document/ish_6720386-6720411-16/hpsbpi03807"
+        ],
+        "summary": "Certain HP PageWide Pro Printers may be vulnerable to a potential denial of service attack."
+    },
+    {
+        "Modified": "2022-12-12T13:17:00",
+        "Published": "2022-12-12T13:15:00",
+        "access": {},
+        "assigner": "tbd@nist.gov",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-32537",
+        "impact": {},
+        "last-modified": "2022-12-12T13:17:00",
+        "references": [
+            "https://www.cisa.gov/uscert/ics/advisories/icsma-22-263-01",
+            "https://global.medtronic.com/xg-en/product-security/security-bulletins/minimed-600-series-communication-issue.html"
+        ],
+        "summary": "A vulnerability exists which could allow an unauthorized user to learn aspects of the communication protocol used to pair system components while the pump is being paired with other system components. Exploitation requires nearby wireless signal proximity with the patient and the device; advanced technical knowledge is required for exploitation. Please refer to the Medtronic Product Security Bulletin for guidance"
+    },
+    {
+        "Modified": "2022-12-12T13:17:00",
+        "Published": "2022-12-12T13:15:00",
+        "access": {},
+        "assigner": "psirt@us.ibm.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-34318",
+        "impact": {},
+        "last-modified": "2022-12-12T13:17:00",
+        "references": [
+            "https://www.ibm.com/support/pages/node/6833188",
+            "https://www.ibm.com/support/pages/node/6833186",
+            "https://exchange.xforce.ibmcloud.com/vulnerabilities/229461"
+        ],
+        "summary": "IBM CICS TX 11.1 could allow a remote attacker to hijack the clicking action of the victim. By persuading a victim to visit a malicious Web site, a remote attacker could exploit this vulnerability to hijack the victim's click actions and possibly launch further attacks against the victim. IBM X-Force ID: 229461."
+    },
+    {
+        "Modified": "2022-12-12T13:17:00",
+        "Published": "2022-12-12T13:15:00",
+        "access": {},
+        "assigner": "hp-security-alert@hp.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-37018",
+        "impact": {},
+        "last-modified": "2022-12-12T13:17:00",
+        "references": [
+            "https://support.hp.com/us-en/document/ish_7191946-7191970-16/hpsbhf03820"
+        ],
+        "summary": "A potential vulnerability has been identified in the system BIOS for certain HP PC products which may allow escalation of privileges and code execution. HP is releasing firmware updates to mitigate the potential vulnerability."
+    },
+    {
+        "Modified": "2022-12-12T13:17:00",
+        "Published": "2022-12-12T13:15:00",
+        "access": {},
+        "assigner": "security-alert@hpe.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-37897",
+        "impact": {},
+        "last-modified": "2022-12-12T13:17:00",
+        "references": [
+            "https://www.arubanetworks.com/assets/alert/ARUBA-PSA-2022-016.txt"
+        ],
+        "summary": "There is a command injection vulnerability that could lead to unauthenticated remote code execution by sending specially crafted packets destined to the PAPI (Aruba Networks AP management protocol) UDP port (8211). Successful exploitation of this vulnerability results in the ability to execute arbitrary code as a privileged user on the underlying operating system."
+    },
+    {
+        "Modified": "2022-12-12T13:17:00",
+        "Published": "2022-12-12T13:15:00",
+        "access": {},
+        "assigner": "security-alert@hpe.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-37898",
+        "impact": {},
+        "last-modified": "2022-12-12T13:17:00",
+        "references": [
+            "https://www.arubanetworks.com/assets/alert/ARUBA-PSA-2022-016.txt"
+        ],
+        "summary": "Authenticated command injection vulnerabilities exist in the ArubaOS command line interface. Successful exploitation of these vulnerabilities results in the ability to execute arbitrary commands as a privileged user on the underlying operating system."
+    },
+    {
+        "Modified": "2022-12-12T13:17:00",
+        "Published": "2022-12-12T13:15:00",
+        "access": {},
+        "assigner": "security-alert@hpe.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-37901",
+        "impact": {},
+        "last-modified": "2022-12-12T13:17:00",
+        "references": [
+            "https://www.arubanetworks.com/assets/alert/ARUBA-PSA-2022-016.txt"
+        ],
+        "summary": "Authenticated command injection vulnerabilities exist in the ArubaOS command line interface. Successful exploitation of these vulnerabilities results in the ability to execute arbitrary commands as a privileged user on the underlying operating system."
+    },
+    {
+        "Modified": "2022-12-12T13:17:00",
+        "Published": "2022-12-12T13:15:00",
+        "access": {},
+        "assigner": "security-alert@hpe.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-37902",
+        "impact": {},
+        "last-modified": "2022-12-12T13:17:00",
+        "references": [
+            "https://www.arubanetworks.com/assets/alert/ARUBA-PSA-2022-016.txt"
+        ],
+        "summary": "Authenticated command injection vulnerabilities exist in the ArubaOS command line interface. Successful exploitation of these vulnerabilities results in the ability to execute arbitrary commands as a privileged user on the underlying operating system."
+    },
+    {
+        "Modified": "2022-12-12T13:17:00",
+        "Published": "2022-12-12T13:15:00",
+        "access": {},
+        "assigner": "security-alert@hpe.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-37904",
+        "impact": {},
+        "last-modified": "2022-12-12T13:17:00",
+        "references": [
+            "https://www.arubanetworks.com/assets/alert/ARUBA-PSA-2022-016.txt"
+        ],
+        "summary": "Vulnerabilities in ArubaOS running on 7xxx series controllers exist that allows an attacker to execute arbitrary code during the boot sequence. Successful exploitation could allow an attacker to achieve permanent modification of the underlying operating system."
+    },
+    {
+        "Modified": "2022-12-12T13:17:00",
+        "Published": "2022-12-12T13:15:00",
+        "access": {},
+        "assigner": "security-alert@hpe.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-37903",
+        "impact": {},
+        "last-modified": "2022-12-12T13:17:00",
+        "references": [
+            "https://www.arubanetworks.com/assets/alert/ARUBA-PSA-2022-016.txt"
+        ],
+        "summary": "A vulnerability exists that allows an authenticated attacker to overwrite an arbitrary file with attacker-controlled content via the web interface. Successful exploitation of this vulnerability could lead to full compromise the underlying host operating system."
+    },
+    {
+        "Modified": "2022-12-12T13:17:00",
+        "Published": "2022-12-12T13:15:00",
+        "access": {},
+        "assigner": "security-alert@hpe.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-37906",
+        "impact": {},
+        "last-modified": "2022-12-12T13:17:00",
+        "references": [
+            "https://www.arubanetworks.com/assets/alert/ARUBA-PSA-2022-016.txt"
+        ],
+        "summary": "An authenticated path traversal vulnerability exists in the ArubaOS command line interface. Successful exploitation of the vulnerability results in the ability to delete arbitrary files on the underlying operating system."
+    },
+    {
+        "Modified": "2022-12-12T13:17:00",
+        "Published": "2022-12-12T13:15:00",
+        "access": {},
+        "assigner": "security-alert@hpe.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-37907",
+        "impact": {},
+        "last-modified": "2022-12-12T13:17:00",
+        "references": [
+            "https://www.arubanetworks.com/assets/alert/ARUBA-PSA-2022-016.txt"
+        ],
+        "summary": "A vulnerability exists in the ArubaOS bootloader on 7xxx series controllers which can result in a denial of service (DoS) condition on an impacted system. A successful attacker can cause a system hang which can only be resolved via a power cycle of the impacted controller."
+    },
+    {
+        "Modified": "2022-12-12T13:17:00",
+        "Published": "2022-12-12T13:15:00",
+        "access": {},
+        "assigner": "security-alert@hpe.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-37908",
+        "impact": {},
+        "last-modified": "2022-12-12T13:17:00",
+        "references": [
+            "https://www.arubanetworks.com/assets/alert/ARUBA-PSA-2022-016.txt"
+        ],
+        "summary": "An authenticated attacker can impact the integrity of the ArubaOS bootloader on 7xxx series controllers. Successful exploitation can compromise the hardware chain of trust on the impacted controller."
+    },
+    {
+        "Modified": "2022-12-12T13:17:00",
+        "Published": "2022-12-12T13:15:00",
+        "access": {},
+        "assigner": "security-alert@hpe.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-37909",
+        "impact": {},
+        "last-modified": "2022-12-12T13:17:00",
+        "references": [
+            "https://www.arubanetworks.com/assets/alert/ARUBA-PSA-2022-016.txt"
+        ],
+        "summary": "Aruba has identified certain configurations of ArubaOS that can lead to sensitive information disclosure from the configured ESSIDs. The scenarios in which disclosure of potentially sensitive information can occur are complex, and depend on factors beyond the control of attackers."
+    },
+    {
+        "Modified": "2022-12-12T13:17:00",
+        "Published": "2022-12-12T13:15:00",
+        "access": {},
+        "assigner": "security-alert@hpe.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-37910",
+        "impact": {},
+        "last-modified": "2022-12-12T13:17:00",
+        "references": [
+            "https://www.arubanetworks.com/assets/alert/ARUBA-PSA-2022-016.txt"
+        ],
+        "summary": "A buffer overflow vulnerability exists in the ArubaOS command line interface. Successful exploitation of this vulnerability results in a denial of service on the affected system."
+    },
+    {
+        "Modified": "2022-12-12T13:17:00",
+        "Published": "2022-12-12T13:15:00",
+        "access": {},
+        "assigner": "security-alert@hpe.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-37911",
+        "impact": {},
+        "last-modified": "2022-12-12T13:17:00",
+        "references": [
+            "https://www.arubanetworks.com/assets/alert/ARUBA-PSA-2022-016.txt"
+        ],
+        "summary": "Due to improper restrictions on XML entities multiple vulnerabilities exist in the command line interface of ArubaOS. A successful exploit could allow an authenticated attacker to retrieve files from the local system or cause the application to consume system resources, resulting in a denial of service condition."
+    },
+    {
+        "Modified": "2022-12-12T13:17:00",
+        "Published": "2022-12-12T13:15:00",
+        "access": {},
+        "assigner": "security-alert@hpe.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-37919",
+        "impact": {},
+        "last-modified": "2022-12-12T13:17:00",
+        "references": [
+            "https://www.arubanetworks.com/assets/alert/ARUBA-PSA-2022-018.txt"
+        ],
+        "summary": "A vulnerability exists in the API of Aruba EdgeConnect Enterprise. An unauthenticated attacker can exploit this condition via the web-based management interface to create a denial-of-service condition which prevents the appliance from properly responding to API requests in Aruba EdgeConnect Enterprise Software version(s): ECOS 9.2.1.0 and below; ECOS 9.1.3.0 and below; ECOS 9.0.7.0 and below; ECOS 8.3.7.1 and below;"
+    },
+    {
+        "Modified": "2022-12-12T13:17:00",
+        "Published": "2022-12-12T13:15:00",
+        "access": {},
+        "assigner": "security-alert@hpe.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-37920",
+        "impact": {},
+        "last-modified": "2022-12-12T13:17:00",
+        "references": [
+            "https://www.arubanetworks.com/assets/alert/ARUBA-PSA-2022-018.txt"
+        ],
+        "summary": "Vulnerabilities in the Aruba EdgeConnect Enterprise command line interface allow remote authenticated users to run arbitrary commands on the underlying host. A successful exploit could allow an attacker to execute arbitrary commands as root on the underlying operating system leading to complete system compromise in Aruba EdgeConnect Enterprise Software version(s): ECOS 9.2.1.0 and below; ECOS 9.1.3.0 and below; ECOS 9.0.7.0 and below; ECOS 8.3.7.1 and below."
+    },
+    {
+        "Modified": "2022-12-12T13:17:00",
+        "Published": "2022-12-12T13:15:00",
+        "access": {},
+        "assigner": "security-alert@hpe.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-37921",
+        "impact": {},
+        "last-modified": "2022-12-12T13:17:00",
+        "references": [
+            "https://www.arubanetworks.com/assets/alert/ARUBA-PSA-2022-018.txt"
+        ],
+        "summary": "Vulnerabilities in the Aruba EdgeConnect Enterprise command line interface allow remote authenticated users to run arbitrary commands on the underlying host. A successful exploit could allow an attacker to execute arbitrary commands as root on the underlying operating system leading to complete system compromise in Aruba EdgeConnect Enterprise Software version(s): ECOS 9.2.1.0 and below; ECOS 9.1.3.0 and below; ECOS 9.0.7.0 and below; ECOS 8.3.7.1 and below."
+    },
+    {
+        "Modified": "2022-12-12T13:17:00",
+        "Published": "2022-12-12T13:15:00",
+        "access": {},
+        "assigner": "security-alert@hpe.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-37922",
+        "impact": {},
+        "last-modified": "2022-12-12T13:17:00",
+        "references": [
+            "https://www.arubanetworks.com/assets/alert/ARUBA-PSA-2022-018.txt"
+        ],
+        "summary": "Vulnerabilities in the Aruba EdgeConnect Enterprise command line interface allow remote authenticated users to run arbitrary commands on the underlying host. A successful exploit could allow an attacker to execute arbitrary commands as root on the underlying operating system leading to complete system compromise in Aruba EdgeConnect Enterprise Software version(s): ECOS 9.2.1.0 and below; ECOS 9.1.3.0 and below; ECOS 9.0.7.0 and below; ECOS 8.3.7.1 and below."
+    },
+    {
+        "Modified": "2022-12-12T13:17:00",
+        "Published": "2022-12-12T13:15:00",
+        "access": {},
+        "assigner": "security-alert@hpe.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-37923",
+        "impact": {},
+        "last-modified": "2022-12-12T13:17:00",
+        "references": [
+            "https://www.arubanetworks.com/assets/alert/ARUBA-PSA-2022-018.txt"
+        ],
+        "summary": "Vulnerabilities in the Aruba EdgeConnect Enterprise command line interface allow remote authenticated users to run arbitrary commands on the underlying host. A successful exploit could allow an attacker to execute arbitrary commands as root on the underlying operating system leading to complete system compromise in Aruba EdgeConnect Enterprise Software version(s): ECOS 9.2.1.0 and below; ECOS 9.1.3.0 and below; ECOS 9.0.7.0 and below; ECOS 8.3.7.1 and below."
+    },
+    {
+        "Modified": "2022-12-12T13:17:00",
+        "Published": "2022-12-12T13:15:00",
+        "access": {},
+        "assigner": "security-alert@hpe.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-37924",
+        "impact": {},
+        "last-modified": "2022-12-12T13:17:00",
+        "references": [
+            "https://www.arubanetworks.com/assets/alert/ARUBA-PSA-2022-018.txt"
+        ],
+        "summary": "Vulnerabilities in the Aruba EdgeConnect Enterprise command line interface allow remote authenticated users to run arbitrary commands on the underlying host. A successful exploit could allow an attacker to execute arbitrary commands as root on the underlying operating system leading to complete system compromise in Aruba EdgeConnect Enterprise Software version(s): ECOS 9.2.1.0 and below; ECOS 9.1.3.0 and below; ECOS 9.0.7.0 and below; ECOS 8.3.7.1 and below."
+    },
+    {
+        "Modified": "2022-12-12T13:17:00",
+        "Published": "2022-12-12T13:15:00",
+        "access": {},
+        "assigner": "security-alert@hpe.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-37925",
+        "impact": {},
+        "last-modified": "2022-12-12T13:17:00",
+        "references": [
+            "https://www.arubanetworks.com/assets/alert/ARUBA-PSA-2022-018.txt"
+        ],
+        "summary": "A vulnerability within the web-based management interface of Aruba EdgeConnect Enterprise could allow a remote attacker to conduct a reflected cross-site scripting (XSS) attack against a user of the interface. A successful exploit could allow an attacker to execute arbitrary script code in a victim's browser in the context of the affected interface in Aruba EdgeConnect Enterprise Software version(s): ECOS 9.2.1.0 and below; ECOS 9.1.3.0 and below; ECOS 9.0.7.0 and below; ECOS 8.3.7.1 and below."
+    },
+    {
+        "Modified": "2022-12-12T13:17:00",
+        "Published": "2022-12-12T13:15:00",
+        "access": {},
+        "assigner": "security-alert@hpe.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-37926",
+        "impact": {},
+        "last-modified": "2022-12-12T13:17:00",
+        "references": [
+            "https://www.arubanetworks.com/assets/alert/ARUBA-PSA-2022-018.txt"
+        ],
+        "summary": "A vulnerability within the web-based management interface of EdgeConnect Enterprise could allow a remote attacker to conduct a stored cross-site scripting (XSS) attack against a user of the interface by uploading a specially crafted file. A successful exploit could allow an attacker to execute arbitrary script code in a victim's browser in the context of the affected interface in Aruba EdgeConnect Enterprise Software version(s): ECOS 9.2.1.0 and below; ECOS 9.1.3.0 and below; ECOS 9.0.7.0 and below; ECOS 8.3.7.1 and below."
+    },
+    {
+        "Modified": "2022-12-12T13:17:00",
+        "Published": "2022-12-12T13:15:00",
+        "access": {},
+        "assigner": "security-alert@hpe.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-37927",
+        "impact": {},
+        "last-modified": "2022-12-12T13:17:00",
+        "references": [
+            "https://support.hpe.com/hpesc/public/docDisplay?docLocale=en_US&docId=hpesbhf04370en_us"
+        ],
+        "summary": "URL Redirection to Untrusted Site ('Open Redirect') vulnerability in Hewlett Packard Enterprise HPE OneView Global Dashboard (OVGD)."
+    },
+    {
+        "Modified": "2022-12-12T13:17:00",
+        "Published": "2022-12-12T13:15:00",
+        "access": {},
+        "assigner": "security-alert@hpe.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-37928",
+        "impact": {},
+        "last-modified": "2022-12-12T13:17:00",
+        "references": [
+            "https://support.hpe.com/hpsc/doc/public/display?docLocale=en_US&docId=emr_na-hpesbst04359en_us"
+        ],
+        "summary": "Insufficient Verification of Data Authenticity vulnerability in Hewlett Packard Enterprise HPE Nimble Storage Hybrid Flash Arrays and Nimble Storage Secondary Flash Arrays."
+    },
+    {
+        "Modified": "2022-12-12T13:17:00",
+        "Published": "2022-12-12T13:15:00",
+        "access": {},
+        "assigner": "security-alert@hpe.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-37929",
+        "impact": {},
+        "last-modified": "2022-12-12T13:17:00",
+        "references": [
+            "https://support.hpe.com/hpsc/doc/public/display?docLocale=en_US&docId=emr_na-hpesbst04360en_us"
+        ],
+        "summary": "Improper Privilege Management vulnerability in Hewlett Packard Enterprise Nimble Storage Hybrid Flash Arrays and Nimble Storage Secondary Flash Arrays."
+    },
+    {
+        "Modified": "2022-12-12T13:17:00",
+        "Published": "2022-12-12T13:15:00",
+        "access": {},
+        "assigner": "security-alert@hpe.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-37930",
+        "impact": {},
+        "last-modified": "2022-12-12T13:17:00",
+        "references": [
+            "https://support.hpe.com/hpsc/doc/public/display?docLocale=en_US&docId=emr_na-hpesbst04361en_us"
+        ],
+        "summary": "A security vulnerability has been identified in HPE Nimble Storage Hybrid Flash Arrays and HPE Nimble Storage Secondary Flash Arrays which could potentially allow local disclosure of sensitive information."
+    },
+    {
+        "Modified": "2022-12-12T13:17:00",
+        "Published": "2022-12-12T13:15:00",
+        "access": {},
+        "assigner": "security-alert@hpe.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-37932",
+        "impact": {},
+        "last-modified": "2022-12-12T13:17:00",
+        "references": [
+            "https://support.hpe.com/hpsc/doc/public/display?docLocale=en_US&docId=emr_na-hpesbnw04383en_us"
+        ],
+        "summary": "A potential security vulnerability has been identified in Hewlett Packard Enterprise OfficeConnect 1820, 1850, and 1920S Network switches. The vulnerability could be remotely exploited to allow authentication bypass. HPE has made the following software updates to resolve the vulnerability in Hewlett Packard Enterprise OfficeConnect 1820, 1850 and 1920S Network switches versions: Prior to PT.02.14; Prior to PC.01.22; Prior to PO.01.21; Prior to PD.02.22;"
+    },
+    {
+        "Modified": "2022-12-12T13:17:00",
+        "Published": "2022-12-12T13:15:00",
+        "access": {},
+        "assigner": "hp-security-alert@hp.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-38395",
+        "impact": {},
+        "last-modified": "2022-12-12T13:17:00",
+        "references": [
+            "https://support.hp.com/us-en/document/ish_6788123-6788147-16/hpsbhf03809"
+        ],
+        "summary": "HP Support Assistant uses HP Performance Tune-up as a diagnostic tool. HP Support Assistant uses Fusion to launch HP Performance Tune-up. It is possible for an attacker to exploit the DLL hijacking vulnerability and elevate privileges when Fusion launches the HP Performance Tune-up."
+    },
+    {
+        "Modified": "2022-12-12T13:17:00",
+        "Published": "2022-12-12T13:15:00",
+        "access": {},
+        "assigner": "psirt@hcl.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-38656",
+        "impact": {},
+        "last-modified": "2022-12-12T13:17:00",
+        "references": [
+            "https://support.hcltechsw.com/csm?id=kb_article&sysparm_article=KB0101265"
+        ],
+        "summary": "HCL Commerce, when using Elasticsearch, can allow a remote attacker to cause a denial of service attack on the site and make administrative changes."
+    },
+    {
+        "Modified": "2022-12-12T13:17:00",
+        "Published": "2022-12-12T13:15:00",
+        "access": {},
+        "assigner": "psirt@hcl.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-38661",
+        "impact": {},
+        "last-modified": "2022-12-12T13:17:00",
+        "references": [
+            "https://support.hcltechsw.com/csm?id=kb_article&sysparm_article=KB0100939"
+        ],
+        "summary": "HCL Workload Automation could allow a local user to overwrite key system files which would cause the system to crash."
+    },
+    {
+        "Modified": "2022-12-12T13:17:00",
+        "Published": "2022-12-12T13:15:00",
+        "access": {},
+        "assigner": "security@google.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-3509",
+        "impact": {},
+        "last-modified": "2022-12-12T13:17:00",
+        "references": [
+            "https://github.com/protocolbuffers/protobuf/commit/a3888f53317a8018e7a439bac4abeb8f3425d5e9"
+        ],
+        "summary": "A parsing issue similar to CVE-2022-3171, but with textformat in protobuf-java core and lite versions prior to 3.21.7, 3.20.3, 3.19.6 and 3.16.3 can lead to a denial of service attack. Inputs containing multiple instances of non-repeated embedded messages with repeated or unknown fields causes objects to be converted back-n-forth between mutable and immutable forms, resulting in potentially long garbage collection pauses. We recommend updating to the versions mentioned above."
+    },
+    {
+        "Modified": "2022-12-12T13:17:00",
+        "Published": "2022-12-12T13:15:00",
+        "access": {},
+        "assigner": "psirt@hcl.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-42446",
+        "impact": {},
+        "last-modified": "2022-12-12T13:17:00",
+        "references": [
+            "https://support.hcltechsw.com/csm?id=kb_article&sysparm_article=KB0101768"
+        ],
+        "summary": "Starting with Sametime 12, anonymous users are enabled by default. After logging in as an anonymous user, one has the ability to browse the User Directory and potentially create chats with internal users."
+    },
+    {
+        "Modified": "2022-12-12T13:17:00",
+        "Published": "2022-12-12T13:15:00",
+        "access": {},
+        "assigner": "security-alert@hpe.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-43518",
+        "impact": {},
+        "last-modified": "2022-12-12T13:17:00",
+        "references": [
+            "https://www.arubanetworks.com/assets/alert/ARUBA-PSA-2022-018.txt"
+        ],
+        "summary": "An authenticated path traversal vulnerability exists in the Aruba EdgeConnect Enterprise web interface. Successful exploitation of this vulnerability results in the ability to read arbitrary files on the underlying operating system, including sensitive system files in Aruba EdgeConnect Enterprise Software version(s): ECOS 9.2.1.0 and below; ECOS 9.1.3.0 and below; ECOS 9.0.7.0 and below; ECOS 8.3.7.1 and below."
+    },
+    {
+        "Modified": "2022-12-12T13:17:00",
         "Published": "2022-12-12T12:15:00",
         "access": {},
         "assigner": "info@cert.vde.com",
@@ -8,7 +1174,7 @@
         "cwe": "CWE-640",
         "id": "CVE-2022-3485",
         "impact": {},
-        "last-modified": "2022-12-12T12:15:00",
+        "last-modified": "2022-12-12T13:17:00",
         "references": [
             "https://cert.vde.com/en/advisories/VDE-2022-050/"
         ],
@@ -363,1525 +1529,5 @@
             "https://sectrio.com/vulnerability-research/cve-2022-45227/"
         ],
         "summary": "The web portal of Dragino Lora LG01 18ed40 IoT v4.3.4 has the directory listing at the URL https://10.10.20.74/lib/. This address has a backup file which can be downloaded without any authentication."
-    },
-    {
-        "Modified": "2022-12-12T11:26:00",
-        "Published": "2022-12-12T03:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-45228",
-        "impact": {},
-        "last-modified": "2022-12-12T11:26:00",
-        "references": [
-            "https://sectrio.com/vulnerability-research/cve-2022-45228/"
-        ],
-        "summary": "Dragino Lora LG01 18ed40 IoT v4.3.4 was discovered to contain a Cross-Site Request Forgery in the logout page."
-    },
-    {
-        "Modified": "2022-12-12T11:26:00",
-        "Published": "2022-12-12T03:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-45756",
-        "impact": {},
-        "last-modified": "2022-12-12T11:26:00",
-        "references": [
-            "https://github.com/saysky/SENS/issues/17"
-        ],
-        "summary": "SENS v1.0 is vulnerable to Cross Site Scripting (XSS)."
-    },
-    {
-        "Modified": "2022-12-12T11:26:00",
-        "Published": "2022-12-12T03:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-45758",
-        "impact": {},
-        "last-modified": "2022-12-12T11:26:00",
-        "references": [
-            "https://github.com/saysky/SENS/issues/19"
-        ],
-        "summary": "SENS v1.0 is vulnerable to Cross Site Scripting (XSS) via com.liuyanzhao.sens.web.controller.admin, getRegister."
-    },
-    {
-        "Modified": "2022-12-12T11:26:00",
-        "Published": "2022-12-12T03:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-45759",
-        "impact": {},
-        "last-modified": "2022-12-12T11:26:00",
-        "references": [
-            "https://github.com/saysky/SENS/issues/20"
-        ],
-        "summary": "SENS v1.0 has a file upload vulnerability."
-    },
-    {
-        "Modified": "2022-12-12T11:26:00",
-        "Published": "2022-12-12T03:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-45760",
-        "impact": {},
-        "last-modified": "2022-12-12T11:26:00",
-        "references": [
-            "https://github.com/saysky/SENS/issues/21"
-        ],
-        "summary": "SENS v1.0 is vulnerable to Incorrect Access Control vulnerability."
-    },
-    {
-        "Modified": "2022-12-12T11:26:00",
-        "Published": "2022-12-12T04:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-25836",
-        "impact": {},
-        "last-modified": "2022-12-12T11:26:00",
-        "references": [
-            "https://www.bluetooth.com/learn-about-bluetooth/key-attributes/bluetooth-security/reporting-security/"
-        ],
-        "summary": "Bluetooth\u00ae Low Energy Pairing in Bluetooth Core Specification v4.0 through v5.3 may permit an unauthenticated MITM to acquire credentials with two pairing devices via adjacent access when the MITM negotiates Legacy Passkey Pairing with the pairing Initiator and Secure Connections Passkey Pairing with the pairing Responder and brute forces the Passkey entered by the user into the Initiator. The MITM attacker can use the identified Passkey value to complete authentication with the Responder via Bluetooth pairing method confusion."
-    },
-    {
-        "Modified": "2022-12-12T11:26:00",
-        "Published": "2022-12-12T04:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-25837",
-        "impact": {},
-        "last-modified": "2022-12-12T11:26:00",
-        "references": [
-            "https://www.bluetooth.com/learn-about-bluetooth/key-attributes/bluetooth-security/reporting-security/"
-        ],
-        "summary": "Bluetooth\u00ae Pairing in Bluetooth Core Specification v1.0B through v5.3 may permit an unauthenticated MITM to acquire credentials with two pairing devices via adjacent access when at least one device supports BR/EDR Secure Connections pairing and the other BR/EDR Legacy PIN code pairing if the MITM negotiates BR/EDR Secure Simple Pairing in Secure Connections mode using the Passkey association model with the pairing Initiator and BR/EDR Legacy PIN code pairing with the pairing Responder and brute forces the Passkey entered by the user into the Responder as a 6-digit PIN code. The MITM attacker can use the identified PIN code value as the Passkey value to complete authentication with the Initiator via Bluetooth pairing method confusion."
-    },
-    {
-        "Modified": "2022-12-12T11:26:00",
-        "Published": "2022-12-12T04:15:00",
-        "access": {},
-        "assigner": "cna@sap.com",
-        "cvss": null,
-        "cwe": "CWE-668",
-        "id": "CVE-2022-31596",
-        "impact": {},
-        "last-modified": "2022-12-12T11:26:00",
-        "references": [
-            "https://launchpad.support.sap.com/#/notes/3213507",
-            "https://www.sap.com/documents/2022/02/fa865ea4-167e-0010-bca6-c68f7e60039b.html"
-        ],
-        "summary": "Under certain conditions, an attacker authenticated as a CMS administrator and with high privileges access to the Network in SAP BusinessObjects Business Intelligence Platform (Monitoring DB) - version 430, can access BOE Monitoring database to retrieve and modify (non-personal) system data which would otherwise be restricted. Also, a potential attack could be used to leave the CMS's scope and impact the database. A successful attack could have a low impact on confidentiality, a high impact on integrity, and a low impact on availability."
-    },
-    {
-        "Modified": "2022-12-12T11:26:00",
-        "Published": "2022-12-11T08:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-707",
-        "id": "CVE-2022-4400",
-        "impact": {},
-        "last-modified": "2022-12-12T11:26:00",
-        "references": [
-            "https://vuldb.com/?id.215267",
-            "https://gitee.com/zbl1996/FS-Blog/issues/I5Y6ZQ"
-        ],
-        "summary": "A vulnerability was found in zbl1996 FS-Blog and classified as problematic. This issue affects some unknown processing of the component Title Handler. The manipulation leads to cross site scripting. The attack may be initiated remotely. The associated identifier of this vulnerability is VDB-215267."
-    },
-    {
-        "Modified": "2022-12-12T02:15:00",
-        "Published": "2022-03-16T15:15:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "MEDIUM",
-            "vector": "NETWORK"
-        },
-        "assigner": "secalert@redhat.com",
-        "cvss": 4.3,
-        "cvss-time": "2022-12-12T02:15:00",
-        "cvss-vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P",
-        "cwe": "CWE-476",
-        "id": "CVE-2021-20299",
-        "impact": {
-            "availability": "PARTIAL",
-            "confidentiality": "NONE",
-            "integrity": "NONE"
-        },
-        "last-modified": "2022-12-12T02:15:00",
-        "references": [
-            "https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25740",
-            "https://github.com/AcademySoftwareFoundation/openexr/commit/25e9515b06a6bc293d871622b8cafaee7af84e0f",
-            "https://bugzilla.redhat.com/show_bug.cgi?id=1939154",
-            "https://lists.debian.org/debian-lts-announce/2022/12/msg00022.html"
-        ],
-        "summary": "A flaw was found in OpenEXR's Multipart input file functionality. A crafted multi-part input file with no actual parts can trigger a NULL pointer dereference. The highest threat from this vulnerability is to system availability."
-    },
-    {
-        "Modified": "2022-12-12T02:15:00",
-        "Published": "2022-08-23T16:15:00",
-        "access": {},
-        "assigner": "secalert@redhat.com",
-        "cvss": null,
-        "cwe": "CWE-787",
-        "id": "CVE-2021-20298",
-        "impact": {},
-        "last-modified": "2022-12-12T02:15:00",
-        "references": [
-            "https://github.com/AcademySoftwareFoundation/openexr/commit/85fd638ae0d5fa132434f4cbf32590261c1dba97",
-            "https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25913",
-            "https://bugzilla.redhat.com/show_bug.cgi?id=1939156",
-            "https://access.redhat.com/security/cve/CVE-2021-20298",
-            "https://github.com/AcademySoftwareFoundation/openexr/pull/843",
-            "https://lists.debian.org/debian-lts-announce/2022/12/msg00022.html"
-        ],
-        "summary": "A flaw was found in OpenEXR's B44Compressor. This flaw allows an attacker who can submit a crafted file to be processed by OpenEXR, to exhaust all memory accessible to the application. The highest threat from this vulnerability is to system availability."
-    },
-    {
-        "Modified": "2022-12-12T02:15:00",
-        "Published": "2022-03-25T19:15:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "MEDIUM",
-            "vector": "NETWORK"
-        },
-        "assigner": "secalert@redhat.com",
-        "cvss": 4.3,
-        "cvss-time": "2022-12-12T02:15:00",
-        "cvss-vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P",
-        "cwe": "CWE-190",
-        "id": "CVE-2021-3933",
-        "impact": {
-            "availability": "PARTIAL",
-            "confidentiality": "NONE",
-            "integrity": "NONE"
-        },
-        "last-modified": "2022-12-12T02:15:00",
-        "references": [
-            "https://bugzilla.redhat.com/show_bug.cgi?id=2019783",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/I2JSMJ7HLWFPYYV7IAQZD5ZUUUN7RWBN/",
-            "https://security.gentoo.org/glsa/202210-31",
-            "https://www.debian.org/security/2022/dsa-5299",
-            "https://lists.debian.org/debian-lts-announce/2022/12/msg00022.html"
-        ],
-        "summary": "An integer overflow could occur when OpenEXR processes a crafted file on systems where size_t < 64 bits. This could cause an invalid bytesPerLine and maxBytesPerLine value, which could lead to problems with application stability or lead to other attack paths."
-    },
-    {
-        "Modified": "2022-12-12T02:15:00",
-        "Published": "2022-03-25T19:15:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "LOW",
-            "vector": "LOCAL"
-        },
-        "assigner": "secalert@redhat.com",
-        "cvss": 2.1,
-        "cvss-time": "2022-12-12T02:15:00",
-        "cvss-vector": "AV:L/AC:L/Au:N/C:N/I:N/A:P",
-        "cwe": "CWE-369",
-        "id": "CVE-2021-3941",
-        "impact": {
-            "availability": "PARTIAL",
-            "confidentiality": "NONE",
-            "integrity": "NONE"
-        },
-        "last-modified": "2022-12-12T02:15:00",
-        "references": [
-            "https://bugzilla.redhat.com/show_bug.cgi?id=2019789",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/I2JSMJ7HLWFPYYV7IAQZD5ZUUUN7RWBN/",
-            "https://security.gentoo.org/glsa/202210-31",
-            "https://www.debian.org/security/2022/dsa-5299",
-            "https://lists.debian.org/debian-lts-announce/2022/12/msg00022.html"
-        ],
-        "summary": "In ImfChromaticities.cpp routine RGBtoXYZ(), there are some division operations such as `float Z = (1 - chroma.white.x - chroma.white.y) * Y / chroma.white.y;` and `chroma.green.y * (X + Z))) / d;` but the divisor is not checked for a 0 value. A specially crafted file could trigger a divide-by-zero condition which could affect the availability of programs linked with OpenEXR."
-    },
-    {
-        "Modified": "2022-12-12T02:15:00",
-        "Published": "2022-03-04T18:15:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "MEDIUM",
-            "vector": "NETWORK"
-        },
-        "assigner": "secalert@redhat.com",
-        "cvss": 7.1,
-        "cvss-time": "2022-12-12T02:15:00",
-        "cvss-vector": "AV:N/AC:M/Au:N/C:N/I:N/A:C",
-        "cwe": "CWE-190",
-        "id": "CVE-2021-20300",
-        "impact": {
-            "availability": "COMPLETE",
-            "confidentiality": "NONE",
-            "integrity": "NONE"
-        },
-        "last-modified": "2022-12-12T02:15:00",
-        "references": [
-            "https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25562",
-            "https://bugzilla.redhat.com/show_bug.cgi?id=1939153",
-            "https://github.com/AcademySoftwareFoundation/openexr/pull/836",
-            "https://lists.debian.org/debian-lts-announce/2022/12/msg00022.html"
-        ],
-        "summary": "A flaw was found in OpenEXR's hufUncompress functionality in OpenEXR/IlmImf/ImfHuf.cpp. This flaw allows an attacker who can submit a crafted file that is processed by OpenEXR, to trigger an integer overflow. The highest threat from this vulnerability is to system availability."
-    },
-    {
-        "Modified": "2022-12-12T02:15:00",
-        "Published": "2022-03-04T18:15:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "MEDIUM",
-            "vector": "NETWORK"
-        },
-        "assigner": "secalert@redhat.com",
-        "cvss": 7.1,
-        "cvss-time": "2022-12-12T02:15:00",
-        "cvss-vector": "AV:N/AC:M/Au:N/C:N/I:N/A:C",
-        "cwe": "NVD-CWE-noinfo",
-        "id": "CVE-2021-20302",
-        "impact": {
-            "availability": "COMPLETE",
-            "confidentiality": "NONE",
-            "integrity": "NONE"
-        },
-        "last-modified": "2022-12-12T02:15:00",
-        "references": [
-            "https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25894",
-            "https://bugzilla.redhat.com/show_bug.cgi?id=1939161",
-            "https://github.com/AcademySoftwareFoundation/openexr/pull/842",
-            "https://lists.debian.org/debian-lts-announce/2022/12/msg00022.html"
-        ],
-        "summary": "A flaw was found in OpenEXR's TiledInputFile functionality. This flaw allows an attacker who can submit a crafted single-part non-image to be processed by OpenEXR, to trigger a floating-point exception error. The highest threat from this vulnerability is to system availability."
-    },
-    {
-        "Modified": "2022-12-12T02:15:00",
-        "Published": "2022-03-04T18:15:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "MEDIUM",
-            "vector": "NETWORK"
-        },
-        "assigner": "secalert@redhat.com",
-        "cvss": 5.8,
-        "cvss-time": "2022-12-12T02:15:00",
-        "cvss-vector": "AV:N/AC:M/Au:N/C:N/I:P/A:P",
-        "cwe": "CWE-190",
-        "id": "CVE-2021-20303",
-        "impact": {
-            "availability": "PARTIAL",
-            "confidentiality": "NONE",
-            "integrity": "PARTIAL"
-        },
-        "last-modified": "2022-12-12T02:15:00",
-        "references": [
-            "https://bugzilla.redhat.com/show_bug.cgi?id=1939151",
-            "https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25505",
-            "https://github.com/AcademySoftwareFoundation/openexr/pull/831",
-            "https://lists.debian.org/debian-lts-announce/2022/12/msg00022.html"
-        ],
-        "summary": "A flaw found in function dataWindowForTile() of IlmImf/ImfTiledMisc.cpp. An attacker who is able to submit a crafted file to be processed by OpenEXR could trigger an integer overflow, leading to an out-of-bounds write on the heap. The greatest impact of this flaw is to application availability, with some potential impact to data integrity as well."
-    },
-    {
-        "Modified": "2022-12-12T02:15:00",
-        "Published": "2022-01-01T01:15:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "MEDIUM",
-            "vector": "NETWORK"
-        },
-        "assigner": "cve@mitre.org",
-        "cvss": 4.3,
-        "cvss-time": "2022-12-12T02:15:00",
-        "cvss-vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P",
-        "cwe": "CWE-787",
-        "id": "CVE-2021-45942",
-        "impact": {
-            "availability": "PARTIAL",
-            "confidentiality": "NONE",
-            "integrity": "NONE"
-        },
-        "last-modified": "2022-12-12T02:15:00",
-        "references": [
-            "https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=41416",
-            "https://github.com/google/oss-fuzz-vulns/blob/main/vulns/openexr/OSV-2021-1627.yaml",
-            "https://github.com/AcademySoftwareFoundation/openexr/commit/db217f29dfb24f6b4b5100c24ac5e7490e1c57d0",
-            "https://github.com/AcademySoftwareFoundation/openexr/commit/11cad77da87c4fa2aab7d58dd5339e254db7937e",
-            "https://github.com/AcademySoftwareFoundation/openexr/pull/1209",
-            "https://github.com/AcademySoftwareFoundation/openexr/releases/tag/v3.1.4",
-            "https://github.com/AcademySoftwareFoundation/openexr/blob/v3.1.4/CHANGES.md#version-314-january-26-2022",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/HJ5PW4WNXBKCRFGDZGAQOSVH2BKZKL4X/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/XJUK7WIQV5EKWTCZBRXFN6INHG6MLS5O/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6TEZDE2S2DB4BF4LZSSV4W3DNW7DSRHJ/",
-            "https://security.gentoo.org/glsa/202210-31",
-            "https://www.debian.org/security/2022/dsa-5299",
-            "https://lists.debian.org/debian-lts-announce/2022/12/msg00022.html"
-        ],
-        "summary": "OpenEXR 3.1.x before 3.1.4 has a heap-based buffer overflow in Imf_3_1::LineCompositeTask::execute (called from IlmThread_3_1::NullThreadPoolProvider::addTask and IlmThread_3_1::ThreadPool::addGlobalTask). NOTE: db217f2 may be inapplicable."
-    },
-    {
-        "Modified": "2022-12-12T02:15:00",
-        "Published": "2021-08-25T19:15:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "MEDIUM",
-            "vector": "NETWORK"
-        },
-        "assigner": "secalert@redhat.com",
-        "cvss": 4.3,
-        "cvss-time": "2022-12-12T02:15:00",
-        "cvss-vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P",
-        "cwe": "CWE-125",
-        "id": "CVE-2021-3605",
-        "impact": {
-            "availability": "PARTIAL",
-            "confidentiality": "NONE",
-            "integrity": "NONE"
-        },
-        "last-modified": "2022-12-12T02:15:00",
-        "references": [
-            "https://bugzilla.redhat.com/show_bug.cgi?id=1970991",
-            "https://security.gentoo.org/glsa/202210-31",
-            "https://www.debian.org/security/2022/dsa-5299",
-            "https://lists.debian.org/debian-lts-announce/2022/12/msg00022.html"
-        ],
-        "summary": "There's a flaw in OpenEXR's rleUncompress functionality in versions prior to 3.0.5. An attacker who is able to submit a crafted file to an application linked with OpenEXR could cause an out-of-bounds read. The greatest risk from this flaw is to application availability."
-    },
-    {
-        "Modified": "2022-12-12T02:15:00",
-        "Published": "2021-07-06T15:15:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "LOW",
-            "vector": "LOCAL"
-        },
-        "assigner": "secalert@redhat.com",
-        "cvss": 2.1,
-        "cvss-time": "2022-12-12T02:15:00",
-        "cvss-vector": "AV:L/AC:L/Au:N/C:N/I:N/A:P",
-        "cwe": "CWE-125",
-        "id": "CVE-2021-3598",
-        "impact": {
-            "availability": "PARTIAL",
-            "confidentiality": "NONE",
-            "integrity": "NONE"
-        },
-        "last-modified": "2022-12-12T02:15:00",
-        "references": [
-            "https://bugzilla.redhat.com/show_bug.cgi?id=1970987",
-            "https://security.gentoo.org/glsa/202210-31",
-            "https://www.debian.org/security/2022/dsa-5299",
-            "https://lists.debian.org/debian-lts-announce/2022/12/msg00022.html"
-        ],
-        "summary": "There's a flaw in OpenEXR's ImfDeepScanLineInputFile functionality in versions prior to 3.0.5. An attacker who is able to submit a crafted file to an application linked with OpenEXR could cause an out-of-bounds read. The greatest risk from this flaw is to application availability."
-    },
-    {
-        "Modified": "2022-12-12T02:15:00",
-        "Published": "2021-06-08T12:15:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "MEDIUM",
-            "vector": "NETWORK"
-        },
-        "assigner": "secalert@redhat.com",
-        "cvss": 4.3,
-        "cvss-time": "2022-12-12T02:15:00",
-        "cvss-vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P",
-        "cwe": "CWE-400",
-        "id": "CVE-2021-23215",
-        "impact": {
-            "availability": "PARTIAL",
-            "confidentiality": "NONE",
-            "integrity": "NONE"
-        },
-        "last-modified": "2022-12-12T02:15:00",
-        "references": [
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/BXFLD4ZAXKAIWO6ZPBCQEEDZB5IG676K/",
-            "https://bugzilla.redhat.com/show_bug.cgi?id=1947586",
-            "https://lists.debian.org/debian-lts-announce/2021/07/msg00001.html",
-            "https://www.debian.org/security/2022/dsa-5299",
-            "https://lists.debian.org/debian-lts-announce/2022/12/msg00022.html"
-        ],
-        "summary": "An integer overflow leading to a heap-buffer overflow was found in the DwaCompressor of OpenEXR in versions before 3.0.1. An attacker could use this flaw to crash an application compiled with OpenEXR."
-    },
-    {
-        "Modified": "2022-12-12T02:15:00",
-        "Published": "2021-06-08T12:15:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "MEDIUM",
-            "vector": "NETWORK"
-        },
-        "assigner": "secalert@redhat.com",
-        "cvss": 4.3,
-        "cvss-time": "2022-12-12T02:15:00",
-        "cvss-vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P",
-        "cwe": "CWE-400",
-        "id": "CVE-2021-26260",
-        "impact": {
-            "availability": "PARTIAL",
-            "confidentiality": "NONE",
-            "integrity": "NONE"
-        },
-        "last-modified": "2022-12-12T02:15:00",
-        "references": [
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/BXFLD4ZAXKAIWO6ZPBCQEEDZB5IG676K/",
-            "https://bugzilla.redhat.com/show_bug.cgi?id=1947582",
-            "https://lists.debian.org/debian-lts-announce/2021/07/msg00001.html",
-            "https://www.debian.org/security/2022/dsa-5299",
-            "https://lists.debian.org/debian-lts-announce/2022/12/msg00022.html"
-        ],
-        "summary": "An integer overflow leading to a heap-buffer overflow was found in the DwaCompressor of OpenEXR in versions before 3.0.1. An attacker could use this flaw to crash an application compiled with OpenEXR. This is a different flaw from CVE-2021-23215."
-    },
-    {
-        "Modified": "2022-12-12T02:15:00",
-        "Published": "2021-04-01T14:15:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "LOW",
-            "vector": "NETWORK"
-        },
-        "assigner": "secalert@redhat.com",
-        "cvss": 5.0,
-        "cvss-time": "2022-12-12T02:15:00",
-        "cvss-vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
-        "cwe": "CWE-476",
-        "id": "CVE-2021-20296",
-        "impact": {
-            "availability": "PARTIAL",
-            "confidentiality": "NONE",
-            "integrity": "NONE"
-        },
-        "last-modified": "2022-12-12T02:15:00",
-        "references": [
-            "https://bugzilla.redhat.com/show_bug.cgi?id=1939141",
-            "https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24854",
-            "https://lists.debian.org/debian-lts-announce/2021/07/msg00001.html",
-            "https://security.gentoo.org/glsa/202107-27",
-            "https://lists.debian.org/debian-lts-announce/2022/12/msg00022.html"
-        ],
-        "summary": "A flaw was found in OpenEXR in versions before 3.0.0-beta. A crafted input file supplied by an attacker, that is processed by the Dwa decompression functionality of OpenEXR's IlmImf library, could cause a NULL pointer dereference. The highest threat from this vulnerability is to system availability."
-    },
-    {
-        "Modified": "2022-12-12T02:15:00",
-        "Published": "2021-03-31T14:15:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "MEDIUM",
-            "vector": "NETWORK"
-        },
-        "assigner": "secalert@redhat.com",
-        "cvss": 4.3,
-        "cvss-time": "2022-12-12T02:15:00",
-        "cvss-vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P",
-        "cwe": "CWE-400",
-        "id": "CVE-2021-3479",
-        "impact": {
-            "availability": "PARTIAL",
-            "confidentiality": "NONE",
-            "integrity": "NONE"
-        },
-        "last-modified": "2022-12-12T02:15:00",
-        "references": [
-            "https://bugzilla.redhat.com/show_bug.cgi?id=1939149",
-            "https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25370",
-            "https://lists.debian.org/debian-lts-announce/2021/07/msg00001.html",
-            "https://security.gentoo.org/glsa/202107-27",
-            "https://lists.debian.org/debian-lts-announce/2022/12/msg00022.html"
-        ],
-        "summary": "There's a flaw in OpenEXR's Scanline API functionality in versions before 3.0.0-beta. An attacker who is able to submit a crafted file to be processed by OpenEXR could trigger excessive consumption of memory, resulting in an impact to system availability."
-    },
-    {
-        "Modified": "2022-12-12T02:15:00",
-        "Published": "2021-03-31T14:15:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "MEDIUM",
-            "vector": "NETWORK"
-        },
-        "assigner": "secalert@redhat.com",
-        "cvss": 4.3,
-        "cvss-time": "2022-12-12T02:15:00",
-        "cvss-vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P",
-        "cwe": "CWE-400",
-        "id": "CVE-2021-3478",
-        "impact": {
-            "availability": "PARTIAL",
-            "confidentiality": "NONE",
-            "integrity": "NONE"
-        },
-        "last-modified": "2022-12-12T02:15:00",
-        "references": [
-            "https://bugzilla.redhat.com/show_bug.cgi?id=1939160",
-            "https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=27409",
-            "https://lists.debian.org/debian-lts-announce/2021/07/msg00001.html",
-            "https://security.gentoo.org/glsa/202107-27",
-            "https://lists.debian.org/debian-lts-announce/2022/12/msg00022.html"
-        ],
-        "summary": "There's a flaw in OpenEXR's scanline input file functionality in versions before 3.0.0-beta. An attacker able to submit a crafted file to be processed by OpenEXR could consume excessive system memory. The greatest impact of this flaw is to system availability."
-    },
-    {
-        "Modified": "2022-12-12T02:15:00",
-        "Published": "2021-03-31T14:15:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "MEDIUM",
-            "vector": "NETWORK"
-        },
-        "assigner": "secalert@redhat.com",
-        "cvss": 4.3,
-        "cvss-time": "2022-12-12T02:15:00",
-        "cvss-vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P",
-        "cwe": "CWE-190",
-        "id": "CVE-2021-3477",
-        "impact": {
-            "availability": "PARTIAL",
-            "confidentiality": "NONE",
-            "integrity": "NONE"
-        },
-        "last-modified": "2022-12-12T02:15:00",
-        "references": [
-            "https://bugzilla.redhat.com/show_bug.cgi?id=1939159",
-            "https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26956",
-            "https://lists.debian.org/debian-lts-announce/2021/07/msg00001.html",
-            "https://security.gentoo.org/glsa/202107-27",
-            "https://lists.debian.org/debian-lts-announce/2022/12/msg00022.html"
-        ],
-        "summary": "There's a flaw in OpenEXR's deep tile sample size calculations in versions before 3.0.0-beta. An attacker who is able to submit a crafted file to be processed by OpenEXR could trigger an integer overflow, subsequently leading to an out-of-bounds read. The greatest risk of this flaw is to application availability."
-    },
-    {
-        "Modified": "2022-12-12T02:15:00",
-        "Published": "2021-03-30T18:15:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "LOW",
-            "vector": "NETWORK"
-        },
-        "assigner": "secalert@redhat.com",
-        "cvss": 5.0,
-        "cvss-time": "2022-12-12T02:15:00",
-        "cvss-vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
-        "cwe": "CWE-190",
-        "id": "CVE-2021-3476",
-        "impact": {
-            "availability": "PARTIAL",
-            "confidentiality": "NONE",
-            "integrity": "NONE"
-        },
-        "last-modified": "2022-12-12T02:15:00",
-        "references": [
-            "https://bugzilla.redhat.com/show_bug.cgi?id=1939145",
-            "https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24787",
-            "https://lists.debian.org/debian-lts-announce/2021/07/msg00001.html",
-            "https://security.gentoo.org/glsa/202107-27",
-            "https://lists.debian.org/debian-lts-announce/2022/12/msg00022.html"
-        ],
-        "summary": "A flaw was found in OpenEXR's B44 uncompression functionality in versions before 3.0.0-beta. An attacker who is able to submit a crafted file to OpenEXR could trigger shift overflows, potentially affecting application availability."
-    },
-    {
-        "Modified": "2022-12-12T02:15:00",
-        "Published": "2021-03-30T18:15:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "LOW",
-            "vector": "NETWORK"
-        },
-        "assigner": "secalert@redhat.com",
-        "cvss": 5.0,
-        "cvss-time": "2022-12-12T02:15:00",
-        "cvss-vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
-        "cwe": "CWE-190",
-        "id": "CVE-2021-3475",
-        "impact": {
-            "availability": "PARTIAL",
-            "confidentiality": "NONE",
-            "integrity": "NONE"
-        },
-        "last-modified": "2022-12-12T02:15:00",
-        "references": [
-            "https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25297",
-            "https://bugzilla.redhat.com/show_bug.cgi?id=1939144",
-            "https://lists.debian.org/debian-lts-announce/2021/07/msg00001.html",
-            "https://security.gentoo.org/glsa/202107-27",
-            "https://lists.debian.org/debian-lts-announce/2022/12/msg00022.html"
-        ],
-        "summary": "There is a flaw in OpenEXR in versions before 3.0.0-beta. An attacker who can submit a crafted file to be processed by OpenEXR could cause an integer overflow, potentially leading to problems with application availability."
-    },
-    {
-        "Modified": "2022-12-12T02:15:00",
-        "Published": "2021-03-30T18:15:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "LOW",
-            "vector": "NETWORK"
-        },
-        "assigner": "secalert@redhat.com",
-        "cvss": 5.0,
-        "cvss-time": "2022-12-12T02:15:00",
-        "cvss-vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
-        "cwe": "CWE-190",
-        "id": "CVE-2021-3474",
-        "impact": {
-            "availability": "PARTIAL",
-            "confidentiality": "NONE",
-            "integrity": "NONE"
-        },
-        "last-modified": "2022-12-12T02:15:00",
-        "references": [
-            "https://bugzilla.redhat.com/show_bug.cgi?id=1939142",
-            "https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24831",
-            "https://lists.debian.org/debian-lts-announce/2021/07/msg00001.html",
-            "https://security.gentoo.org/glsa/202107-27",
-            "https://lists.debian.org/debian-lts-announce/2022/12/msg00022.html"
-        ],
-        "summary": "There's a flaw in OpenEXR in versions before 3.0.0-beta. A crafted input file that is processed by OpenEXR could cause a shift overflow in the FastHufDecoder, potentially leading to problems with application availability."
-    },
-    {
-        "Modified": "2022-12-12T02:15:00",
-        "Published": "2020-12-09T21:15:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "MEDIUM",
-            "vector": "NETWORK"
-        },
-        "assigner": "cve@mitre.org",
-        "cvss": 4.3,
-        "cvss-time": "2022-12-12T02:15:00",
-        "cvss-vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P",
-        "cwe": "CWE-476",
-        "id": "CVE-2020-16588",
-        "impact": {
-            "availability": "PARTIAL",
-            "confidentiality": "NONE",
-            "integrity": "NONE"
-        },
-        "last-modified": "2022-12-12T02:15:00",
-        "references": [
-            "https://github.com/AcademySoftwareFoundation/openexr/commit/74504503cff86e986bac441213c403b0ba28d58f",
-            "https://github.com/AcademySoftwareFoundation/openexr/issues/493",
-            "https://lists.debian.org/debian-lts-announce/2022/12/msg00022.html"
-        ],
-        "summary": "A Null Pointer Deference issue exists in Academy Software Foundation OpenEXR 2.3.0 in generatePreview in makePreview.cpp that can cause a denial of service via a crafted EXR file."
-    },
-    {
-        "Modified": "2022-12-12T02:15:00",
-        "Published": "2020-12-09T21:15:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "MEDIUM",
-            "vector": "NETWORK"
-        },
-        "assigner": "cve@mitre.org",
-        "cvss": 4.3,
-        "cvss-time": "2022-12-12T02:15:00",
-        "cvss-vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P",
-        "cwe": "CWE-787",
-        "id": "CVE-2020-16589",
-        "impact": {
-            "availability": "PARTIAL",
-            "confidentiality": "NONE",
-            "integrity": "NONE"
-        },
-        "last-modified": "2022-12-12T02:15:00",
-        "references": [
-            "https://github.com/AcademySoftwareFoundation/openexr/commit/6bb36714528a9563dd3b92720c5063a1284b86f8",
-            "https://github.com/AcademySoftwareFoundation/openexr/issues/494",
-            "https://lists.debian.org/debian-lts-announce/2022/12/msg00022.html"
-        ],
-        "summary": "A head-based buffer overflow exists in Academy Software Foundation OpenEXR 2.3.0 in writeTileData in ImfTiledOutputFile.cpp that can cause a denial of service via a crafted EXR file."
-    },
-    {
-        "Modified": "2022-12-12T02:15:00",
-        "Published": "2020-12-09T21:15:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "MEDIUM",
-            "vector": "NETWORK"
-        },
-        "assigner": "cve@mitre.org",
-        "cvss": 4.3,
-        "cvss-time": "2022-12-12T02:15:00",
-        "cvss-vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P",
-        "cwe": "CWE-787",
-        "id": "CVE-2020-16587",
-        "impact": {
-            "availability": "PARTIAL",
-            "confidentiality": "NONE",
-            "integrity": "NONE"
-        },
-        "last-modified": "2022-12-12T02:15:00",
-        "references": [
-            "https://github.com/AcademySoftwareFoundation/openexr/commit/8b5370c688a7362673c3a5256d93695617a4cd9a",
-            "https://github.com/AcademySoftwareFoundation/openexr/issues/491",
-            "https://lists.debian.org/debian-lts-announce/2021/07/msg00001.html",
-            "https://lists.debian.org/debian-lts-announce/2022/12/msg00022.html"
-        ],
-        "summary": "A heap-based buffer overflow vulnerability exists in Academy Software Foundation OpenEXR 2.3.0 in chunkOffsetReconstruction in ImfMultiPartInputFile.cpp that can cause a denial of service via a crafted EXR file."
-    },
-    {
-        "Modified": "2022-12-12T00:33:00",
-        "Published": "2022-12-12T00:15:00",
-        "access": {},
-        "assigner": "security@huntr.dev",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-4413",
-        "impact": {},
-        "last-modified": "2022-12-12T00:33:00",
-        "references": [
-            "https://github.com/nuxt/framework/commit/253c8f7ee0c0c580c44dedbe9387646264e90a1e",
-            "https://huntr.dev/bounties/70ac720d-c932-4ed3-98b1-dd2cbcb90185"
-        ],
-        "summary": "Cross-site Scripting (XSS) - Reflected in GitHub repository nuxt/framework prior to v3.0.0-rc.13."
-    },
-    {
-        "Modified": "2022-12-12T00:33:00",
-        "Published": "2022-12-12T00:15:00",
-        "access": {},
-        "assigner": "security@huntr.dev",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-4414",
-        "impact": {},
-        "last-modified": "2022-12-12T00:33:00",
-        "references": [
-            "https://huntr.dev/bounties/131a41e5-c936-4c3f-84fc-e0e1f0e090b5",
-            "https://github.com/nuxt/framework/commit/19a2cd14929ca9b55720cb81f71687830a9e59a4"
-        ],
-        "summary": "Cross-site Scripting (XSS) - DOM in GitHub repository nuxt/framework prior to v3.0.0-rc.13."
-    },
-    {
-        "Modified": "2022-12-12T00:33:00",
-        "Published": "2022-12-11T15:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-4403",
-        "impact": {},
-        "last-modified": "2022-12-12T00:33:00",
-        "references": [
-            "https://blog.csdn.net/hzwsuki/article/details/128277038",
-            "https://vuldb.com/?id.215272"
-        ],
-        "summary": "A vulnerability classified as critical was found in SourceCodester Canteen Management System. This vulnerability affects unknown code of the file ajax_represent.php. The manipulation of the argument customer_id leads to sql injection. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used. The identifier of this vulnerability is VDB-215272."
-    },
-    {
-        "Modified": "2022-12-12T00:33:00",
-        "Published": "2022-12-11T15:15:00",
-        "access": {},
-        "assigner": "security@huntr.dev",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-4407",
-        "impact": {},
-        "last-modified": "2022-12-12T00:33:00",
-        "references": [
-            "https://huntr.dev/bounties/a1649f43-78c9-4927-b313-36911872a84b",
-            "https://github.com/thorsten/phpmyfaq/commit/1d73af34bf42764f9f9491c7ba5e9495d70e3ca5"
-        ],
-        "summary": "Cross-site Scripting (XSS) - Reflected in GitHub repository thorsten/phpmyfaq prior to 3.1.9."
-    },
-    {
-        "Modified": "2022-12-12T00:33:00",
-        "Published": "2022-12-11T15:15:00",
-        "access": {},
-        "assigner": "security@huntr.dev",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-4408",
-        "impact": {},
-        "last-modified": "2022-12-12T00:33:00",
-        "references": [
-            "https://huntr.dev/bounties/2ec4ddd4-de22-4f2d-ba92-3382b452bfea",
-            "https://github.com/thorsten/phpmyfaq/commit/e2ea332a2b5e798f2c39203b2489a2dabe831751"
-        ],
-        "summary": "Cross-site Scripting (XSS) - Stored in GitHub repository thorsten/phpmyfaq prior to 3.1.9."
-    },
-    {
-        "Modified": "2022-12-12T00:33:00",
-        "Published": "2022-12-11T15:15:00",
-        "access": {},
-        "assigner": "security@huntr.dev",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-4409",
-        "impact": {},
-        "last-modified": "2022-12-12T00:33:00",
-        "references": [
-            "https://github.com/thorsten/phpmyfaq/commit/8b47f38",
-            "https://huntr.dev/bounties/5915ed4c-5fe2-42e7-8fac-5dd0d032727c"
-        ],
-        "summary": "Sensitive Cookie in HTTPS Session Without 'Secure' Attribute in GitHub repository thorsten/phpmyfaq prior to 3.1.9."
-    },
-    {
-        "Modified": "2022-12-12T00:33:00",
-        "Published": "2022-12-11T08:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-707",
-        "id": "CVE-2022-4401",
-        "impact": {},
-        "last-modified": "2022-12-12T00:33:00",
-        "references": [
-            "https://vuldb.com/?id.215268",
-            "https://gitee.com/pallidlight/online-course-selection-system/issues/I5XNHW"
-        ],
-        "summary": "A vulnerability was found in pallidlight online-course-selection-system. It has been classified as problematic. Affected is an unknown function. The manipulation leads to cross site scripting. It is possible to launch the attack remotely. The identifier of this vulnerability is VDB-215268."
-    },
-    {
-        "Modified": "2022-12-12T00:33:00",
-        "Published": "2022-12-11T08:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-24",
-        "id": "CVE-2022-4402",
-        "impact": {},
-        "last-modified": "2022-12-12T00:33:00",
-        "references": [
-            "https://gitee.com/RainyGao/DocSys/issues/I65IYU",
-            "https://vuldb.com/?id.215271",
-            "https://github.com/A-TGAO/MxsDocVul/blob/main/ZipSlipVul.md"
-        ],
-        "summary": "A vulnerability classified as critical has been found in RainyGao DocSys 2.02.37. This affects an unknown part of the component ZIP File Decompression Handler. The manipulation leads to path traversal: '../filedir'. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-215271."
-    },
-    {
-        "Modified": "2022-12-11T16:15:00",
-        "Published": "2022-05-12T11:15:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "MEDIUM",
-            "vector": "NETWORK"
-        },
-        "assigner": "security@huntr.dev",
-        "cvss": 5.8,
-        "cvss-time": "2022-12-11T16:15:00",
-        "cvss-vector": "AV:N/AC:M/Au:N/C:P/I:P/A:N",
-        "cwe": "CWE-200",
-        "id": "CVE-2022-1650",
-        "impact": {
-            "availability": "NONE",
-            "confidentiality": "PARTIAL",
-            "integrity": "PARTIAL"
-        },
-        "last-modified": "2022-12-11T16:15:00",
-        "references": [
-            "https://huntr.dev/bounties/dc9e467f-be5d-4945-867d-1044d27e9b8e",
-            "https://github.com/eventsource/eventsource/commit/10ee0c4881a6ba2fe65ec18ed195ac35889583c4",
-            "https://lists.debian.org/debian-lts-announce/2022/12/msg00021.html"
-        ],
-        "summary": "Exposure of Sensitive Information to an Unauthorized Actor in GitHub repository eventsource/eventsource prior to v2.0.2."
-    },
-    {
-        "Modified": "2022-12-11T04:35:00",
-        "Published": "2022-12-10T22:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-707",
-        "id": "CVE-2022-4399",
-        "impact": {},
-        "last-modified": "2022-12-11T04:35:00",
-        "references": [
-            "https://vuldb.com/?id.215252",
-            "https://github.com/TicklishHoneyBee/nodau/commit/7a7d737a3929f335b9717ddbd31db91151b69ad2",
-            "https://github.com/TicklishHoneyBee/nodau/pull/26"
-        ],
-        "summary": "A vulnerability was found in TicklishHoneyBee nodau. It has been rated as critical. Affected by this issue is some unknown functionality of the file src/db.c. The manipulation of the argument value/name leads to sql injection. The name of the patch is 7a7d737a3929f335b9717ddbd31db91151b69ad2. It is recommended to apply a patch to fix this issue. The identifier of this vulnerability is VDB-215252."
-    },
-    {
-        "Modified": "2022-12-11T04:35:00",
-        "Published": "2022-12-10T19:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-863",
-        "id": "CVE-2022-4397",
-        "impact": {},
-        "last-modified": "2022-12-11T04:35:00",
-        "references": [
-            "https://github.com/morontt/zend-blog-number-2/commit/36b2d4abe20a6245e4f8df7a4b14e130b24d429d",
-            "https://vuldb.com/?id.215250"
-        ],
-        "summary": "A vulnerability was found in morontt zend-blog-number-2. It has been classified as problematic. Affected is an unknown function of the file application/forms/Comment.php of the component Comment Handler. The manipulation leads to cross-site request forgery. It is possible to launch the attack remotely. The name of the patch is 36b2d4abe20a6245e4f8df7a4b14e130b24d429d. It is recommended to apply a patch to fix this issue. VDB-215250 is the identifier assigned to this vulnerability."
-    },
-    {
-        "Modified": "2022-12-11T04:35:00",
-        "Published": "2022-12-10T20:15:00",
-        "access": {},
-        "assigner": "security@huntr.dev",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-4398",
-        "impact": {},
-        "last-modified": "2022-12-11T04:35:00",
-        "references": [
-            "https://github.com/radareorg/radare2/commit/b53a1583d05c3a5bfe5fa60da133fe59dfbb02b8",
-            "https://huntr.dev/bounties/c6f8d3ef-5420-4eba-9a5f-aba5e2b5fea2"
-        ],
-        "summary": "Integer Overflow or Wraparound in GitHub repository radareorg/radare2 prior to 5.8.0."
-    },
-    {
-        "Modified": "2022-12-11T04:35:00",
-        "Published": "2022-12-10T16:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-45145",
-        "impact": {},
-        "last-modified": "2022-12-11T04:35:00",
-        "references": [
-            "https://code.call-cc.org/cgi-bin/gitweb.cgi?p=chicken-core.git;a=blobdiff;f=egg-compile.scm;h=9ba4568113350ec75204cba55e43e27925e2d6fe;hp=c1f2ceb0fb470f63c2ba2a1cf9d8d40083c2359f;hb=a08f8f548d772ef410c672ba33a27108d8d434f3;hpb=9c6fb001c25de4390f46ffd7c3c94237f4df92a9",
-            "https://code.call-cc.org/cgi-bin/gitweb.cgi?p=chicken-core.git;a=blobdiff;f=NEWS;h=54888afff09353093453673c407cabfe76a5ce77;hp=a3fd88a892f82c8353267f50509d018bbb1934b9;hb=670478435a982fc4d1f001ea08669f53d35a51cd;hpb=a08f8f548d772ef410c672ba33a27108d8d434f3",
-            "https://lists.gnu.org/archive/html/chicken-announce/2022-11/msg00000.html"
-        ],
-        "summary": "egg-compile.scm in CHICKEN 5.x before 5.3.1 allows arbitrary OS command execution during package installation via escape characters in a .egg file."
-    },
-    {
-        "Modified": "2022-12-11T04:35:00",
-        "Published": "2022-12-10T12:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-707",
-        "id": "CVE-2022-4396",
-        "impact": {},
-        "last-modified": "2022-12-11T04:35:00",
-        "references": [
-            "https://github.com/RDFLib/pyrdfa3/commit/ffd1d62dd50d5f4190013b39cedcdfbd81f3ce3e",
-            "https://github.com/RDFLib/pyrdfa3/pull/40",
-            "https://vuldb.com/?id.215249"
-        ],
-        "summary": "** UNSUPPORTED WHEN ASSIGNED ** A vulnerability was found in RDFlib pyrdfa3 and classified as problematic. This issue affects the function _get_option of the file pyRdfa/__init__.py. The manipulation leads to cross site scripting. The attack may be initiated remotely. The name of the patch is ffd1d62dd50d5f4190013b39cedcdfbd81f3ce3e. It is recommended to apply a patch to fix this issue. The identifier VDB-215249 was assigned to this vulnerability. NOTE: This vulnerability only affects products that are no longer supported by the maintainer."
-    },
-    {
-        "Modified": "2022-12-11T04:15:00",
-        "Published": "2022-11-22T19:15:00",
-        "access": {},
-        "assigner": "secalert@redhat.com",
-        "cvss": null,
-        "cwe": "CWE-248",
-        "id": "CVE-2022-3500",
-        "impact": {},
-        "last-modified": "2022-12-11T04:15:00",
-        "references": [
-            "https://github.com/keylime/keylime/pull/1128",
-            "https://access.redhat.com/security/cve/CVE-2022-3500",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/ZQH5CJRX65QYMQN5WGUKKKE3IRJBWG5Z/"
-        ],
-        "summary": "A vulnerability was found in keylime. This security issue happens in some circumstances, due to some improperly handled exceptions, there exists the possibility that a rogue agent could create errors on the verifier that stopped attestation attempts for that host leaving it in an attested state but not verifying that anymore."
-    },
-    {
-        "Modified": "2022-12-11T04:15:00",
-        "Published": "2022-11-09T07:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-400",
-        "id": "CVE-2022-45061",
-        "impact": {},
-        "last-modified": "2022-12-11T04:15:00",
-        "references": [
-            "https://github.com/python/cpython/issues/98433",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/O67LRHDTJWH544KXB6KY4HMHQLYDXFPK/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/4WBZJNSALFGMPYTINIF57HAAK46U72WQ/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/GTPVDZDATRQFE6KAT6B4BQIQ4GRHIIIJ/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RTN2OOLKYTG34DODUEJGT5MLC2PFGPBA/",
-            "https://security.netapp.com/advisory/ntap-20221209-0007/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/ZB5YCMIRVX35RUB6XPOWKENCVCJEVDRK/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/PLQ2BNZVBBAQPV3SPRU24ZD37UYJJS7W/"
-        ],
-        "summary": "An issue was discovered in Python before 3.11.1. An unnecessary quadratic algorithm exists in one path when processing some inputs to the IDNA (RFC 3490) decoder, such that a crafted, unreasonably long name being presented to the decoder could lead to a CPU denial of service. Hostnames are often supplied by remote servers that could be controlled by a malicious actor; in such a scenario, they could trigger excessive CPU consumption on the client attempting to make use of an attacker-supplied supposed hostname. For example, the attack payload could be placed in the Location header of an HTTP response with status code 302. A fix is planned in 3.11.1, 3.10.9, 3.9.16, 3.8.16, and 3.7.16."
-    },
-    {
-        "Modified": "2022-12-11T04:15:00",
-        "Published": "2022-11-07T13:15:00",
-        "access": {},
-        "assigner": "security@apache.org",
-        "cvss": null,
-        "cwe": "CWE-787",
-        "id": "CVE-2022-42920",
-        "impact": {},
-        "last-modified": "2022-12-11T04:15:00",
-        "references": [
-            "https://lists.apache.org/thread/lfxk7q8qmnh5bt9jm6nmjlv5hsxjhrz4",
-            "http://www.openwall.com/lists/oss-security/2022/11/07/2",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/LX3HEB4TV2BVCGDTK5BCLSYOZNQTOBN4/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/QAMRHAKGIKZNHRBB4VLYTOIOIMMXCUCD/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/QMVX6COVXZVS5GPWDODIRW6Z2GE7RPAQ/"
-        ],
-        "summary": "Apache Commons BCEL has a number of APIs that would normally only allow changing specific class characteristics. However, due to an out-of-bounds writing issue, these APIs can be used to produce arbitrary bytecode. This could be abused in applications that pass attacker-controllable data to those APIs, giving the attacker more control over the resulting bytecode than otherwise expected. Update to Apache Commons BCEL 6.6.0."
-    },
-    {
-        "Modified": "2022-12-10T18:15:00",
-        "Published": "2022-10-06T18:17:00",
-        "access": {},
-        "assigner": "security@google.com",
-        "cvss": null,
-        "cwe": "NVD-CWE-noinfo",
-        "id": "CVE-2022-41853",
-        "impact": {},
-        "last-modified": "2022-12-10T18:15:00",
-        "references": [
-            "http://hsqldb.org/doc/2.0/guide/sqlroutines-chapt.html#src_jrt_access_control",
-            "https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=50212#c7",
-            "https://lists.debian.org/debian-lts-announce/2022/12/msg00020.html"
-        ],
-        "summary": "Those using java.sql.Statement or java.sql.PreparedStatement in hsqldb (HyperSQL DataBase) to process untrusted input may be vulnerable to a remote code execution attack. By default it is allowed to call any static method of any Java class in the classpath resulting in code execution. The issue can be prevented by updating to 2.7.1 or by setting the system property \"hsqldb.method_class_names\" to classes which are allowed to be called. For example, System.setProperty(\"hsqldb.method_class_names\", \"abc\") or Java argument -Dhsqldb.method_class_names=\"abc\" can be used. From version 2.7.1 all classes by default are not accessible except those in java.lang.Math and need to be manually enabled."
-    },
-    {
-        "Modified": "2022-12-10T08:15:00",
-        "Published": "2022-03-03T23:15:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "MEDIUM",
-            "vector": "NETWORK"
-        },
-        "assigner": "secalert@redhat.com",
-        "cvss": 6.8,
-        "cvss-time": "2022-12-10T08:15:00",
-        "cvss-vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
-        "cwe": "CWE-287",
-        "id": "CVE-2022-0730",
-        "impact": {
-            "availability": "PARTIAL",
-            "confidentiality": "PARTIAL",
-            "integrity": "PARTIAL"
-        },
-        "last-modified": "2022-12-10T08:15:00",
-        "references": [
-            "https://github.com/Cacti/cacti/issues/4562",
-            "https://lists.debian.org/debian-lts-announce/2022/03/msg00038.html",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/ZJERS4NYIGJUXEGT6ATUQA4CBYBRDLRA/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RVOALVZSCBFNOAAZVHTJFSFB7UDSNYQ2/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/ZH67CCORDEYFG7NL7G6UH47PAV2PU7BA/",
-            "https://www.debian.org/security/2022/dsa-5298"
-        ],
-        "summary": "Under certain ldap conditions, Cacti authentication can be bypassed with certain credential types."
-    },
-    {
-        "Modified": "2022-12-10T04:15:00",
-        "Published": "2022-12-08T16:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "NVD-CWE-Other",
-        "id": "CVE-2022-44932",
-        "impact": {},
-        "last-modified": "2022-12-10T04:15:00",
-        "references": [
-            "https://github.com/z1r00/IOT_Vul/blob/main/Tenda/A18/TendaTelnet/readme.md"
-        ],
-        "summary": "An access control issue in Tenda A18 v15.13.07.09 allows unauthenticated attackers to access the Telnet service."
-    },
-    {
-        "Modified": "2022-12-10T04:15:00",
-        "Published": "2022-12-08T16:15:00",
-        "access": {},
-        "assigner": "mobile.security@samsung.com",
-        "cvss": null,
-        "cwe": "NVD-CWE-Other",
-        "id": "CVE-2022-39905",
-        "impact": {},
-        "last-modified": "2022-12-10T04:15:00",
-        "references": [
-            "https://security.samsungmobile.com/securityUpdate.smsb?year=2022&month=12"
-        ],
-        "summary": "Implicit intent hijacking vulnerability in Telecom application prior to SMR Dec-2022 Release 1 allows attacker to access sensitive information via implicit intent."
-    },
-    {
-        "Modified": "2022-12-10T04:15:00",
-        "Published": "2022-12-08T16:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-787",
-        "id": "CVE-2022-44931",
-        "impact": {},
-        "last-modified": "2022-12-10T04:15:00",
-        "references": [
-            "https://github.com/z1r00/IOT_Vul/blob/main/Tenda/A18/formWifiBasicSet/readme.md"
-        ],
-        "summary": "Tenda A18 v15.13.07.09 was discovered to contain a stack overflow via the security_5g parameter at /goform/WifiBasicSet."
-    },
-    {
-        "Modified": "2022-12-10T03:15:00",
-        "Published": "2022-11-30T17:15:00",
-        "access": {},
-        "assigner": "security-advisories@github.com",
-        "cvss": null,
-        "cwe": "CWE-125",
-        "id": "CVE-2022-46149",
-        "impact": {},
-        "last-modified": "2022-12-10T03:15:00",
-        "references": [
-            "https://github.com/capnproto/capnproto/commit/25d34c67863fd960af34fc4f82a7ca3362ee74b9",
-            "https://github.com/capnproto/capnproto/security/advisories/GHSA-qqff-4vw4-f6hx",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/WKXM4JAFXLTXU5IQB3OUBQVCIICZWGYX/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/ZOCQQOPMVQOFUWBWAGVGN76OYAV3WXY4/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/EAHKLUMJAXJEV5BPBS5XXWBQ3ZTHGOLY/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/PTS6TWD6K2NKXLEEFBPROQXMOFUTEYWY/"
-        ],
-        "summary": "Cap'n Proto is a data interchange format and remote procedure call (RPC) system. Cap'n Proro prior to versions 0.7.1, 0.8.1, 0.9.2, and 0.10.3, as well as versions of Cap'n Proto's Rust implementation prior to 0.13.7, 0.14.11, and 0.15.2 are vulnerable to out-of-bounds read due to logic error handling list-of-list. This issue may lead someone to remotely segfault a peer by sending it a malicious message, if the victim performs certain actions on a list-of-pointer type. Exfiltration of memory is possible if the victim performs additional certain actions on a list-of-pointer type. To be vulnerable, an application must perform a specific sequence of actions, described in the GitHub Security Advisory. The bug is present in inlined code, therefore the fix will require rebuilding dependent applications. Cap'n Proto has C++ fixes available in versions 0.7.1, 0.8.1, 0.9.2, and 0.10.3. The `capnp` Rust crate has fixes available in versions 0.13.7, 0.14.11, and 0.15.2."
-    },
-    {
-        "Modified": "2022-12-10T03:15:00",
-        "Published": "2022-11-09T07:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-88",
-        "id": "CVE-2022-45062",
-        "impact": {},
-        "last-modified": "2022-12-10T03:15:00",
-        "references": [
-            "https://gitlab.xfce.org/xfce/xfce4-settings/-/commit/55e3c5fb667e96ad1412cf249879262b369d28d7",
-            "https://gitlab.xfce.org/xfce/xfce4-settings/-/commit/f34a92a84f96268ad24a7a13fd5edc9f1d526110",
-            "https://gitlab.xfce.org/xfce/xfce4-settings/-/tags",
-            "https://gitlab.xfce.org/xfce/xfce4-settings/-/issues/390",
-            "https://www.debian.org/security/2022/dsa-5296",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/XGTGTTPFHDUB3EZHVKDK4H32QUUYPPFF/"
-        ],
-        "summary": "In Xfce xfce4-settings before 4.16.4 and 4.17.x before 4.17.1, there is an argument injection vulnerability in xfce4-mime-helper."
-    },
-    {
-        "Modified": "2022-12-10T03:10:00",
-        "Published": "2022-12-08T06:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-732",
-        "id": "CVE-2022-46792",
-        "impact": {},
-        "last-modified": "2022-12-10T03:10:00",
-        "references": [
-            "https://hasura.io/blog/critical-vulnerability-in-hasuras-graphql-engine-v2-10-0/",
-            "https://groups.google.com/g/hasura-security-announce/c/kzK-uPAKGUU",
-            "https://github.com/hasura/graphql-engine/security/advisories/GHSA-g7mj-g7f4-hgrg"
-        ],
-        "summary": "Hasura GraphQL Engine before 2.15.2 mishandles row-level authorization in the Update Many API for Postgres backends. The fixed versions are 2.10.2, 2.11.3, 2.12.1, 2.13.2, 2.14.1, and 2.15.2. (Versions before 2.10.0 are unaffected.)"
-    },
-    {
-        "Modified": "2022-12-10T03:10:00",
-        "Published": "2022-12-08T04:15:00",
-        "access": {},
-        "assigner": "security-advisories@github.com",
-        "cvss": null,
-        "cwe": "CWE-252",
-        "id": "CVE-2022-23476",
-        "impact": {},
-        "last-modified": "2022-12-10T03:10:00",
-        "references": [
-            "https://github.com/sparklemotion/nokogiri/commit/9fe0761c47c0d4270d1a5220cfd25de080350d50",
-            "https://github.com/sparklemotion/nokogiri/commit/85410e38410f670cbbc8c5b00d07b843caee88ce",
-            "https://github.com/sparklemotion/nokogiri/security/advisories/GHSA-qv4q-mr5r-qprj"
-        ],
-        "summary": "Nokogiri is an open source XML and HTML library for the Ruby programming language. Nokogiri `1.13.8` and `1.13.9` fail to check the return value from `xmlTextReaderExpand` in the method `Nokogiri::XML::Reader#attribute_hash`. This can lead to a null pointer exception when invalid markup is being parsed. For applications using `XML::Reader` to parse untrusted inputs, this may potentially be a vector for a denial of service attack. Users are advised to upgrade to Nokogiri `>= 1.13.10`. Users may be able to search their code for calls to either `XML::Reader#attributes` or `XML::Reader#attribute_hash` to determine if they are affected."
-    },
-    {
-        "Modified": "2022-12-10T03:08:00",
-        "Published": "2022-12-08T16:15:00",
-        "access": {},
-        "assigner": "mobile.security@samsung.com",
-        "cvss": null,
-        "cwe": "CWE-863",
-        "id": "CVE-2022-39902",
-        "impact": {},
-        "last-modified": "2022-12-10T03:08:00",
-        "references": [
-            "https://security.samsungmobile.com/securityUpdate.smsb?year=2022&month=12"
-        ],
-        "summary": "Improper authorization in Exynos baseband prior to SMR DEC-2022 Release 1 allows remote attacker to get sensitive information including IMEI via emergency call."
-    },
-    {
-        "Modified": "2022-12-10T03:07:00",
-        "Published": "2022-12-07T18:15:00",
-        "access": {},
-        "assigner": "psirt@us.ibm.com",
-        "cvss": null,
-        "cwe": "CWE-119",
-        "id": "CVE-2022-43581",
-        "impact": {},
-        "last-modified": "2022-12-10T03:07:00",
-        "references": [
-            "https://www.ibm.com/support/pages/node/6844453",
-            "https://exchange.xforce.ibmcloud.com/vulnerabilities/238805"
-        ],
-        "summary": "IBM Content Navigator 3.0.0, 3.0.1, 3.0.2, 3.0.3, 3.0.4, 3.0.5, 3.0.6, 3.0.7, 3.0.8, 3.0.9, 3.0.10, 3.0.11, and 3.0.12 is vulnerable to missing authorization and could allow an authenticated user to load external plugins and execute code. IBM X-Force ID: 238805."
-    },
-    {
-        "Modified": "2022-12-10T03:06:00",
-        "Published": "2022-12-07T19:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-502",
-        "id": "CVE-2022-44351",
-        "impact": {},
-        "last-modified": "2022-12-10T03:06:00",
-        "references": [
-            "https://github.com/zorlan/skycaiji/issues/46"
-        ],
-        "summary": "Skycaiji v2.5.1 was discovered to contain a deserialization vulnerability via /SkycaijiApp/admin/controller/Mystore.php."
-    },
-    {
-        "Modified": "2022-12-10T03:04:00",
-        "Published": "2022-12-08T01:15:00",
-        "access": {},
-        "assigner": "security-advisories@github.com",
-        "cvss": null,
-        "cwe": "CWE-400",
-        "id": "CVE-2022-23492",
-        "impact": {},
-        "last-modified": "2022-12-10T03:04:00",
-        "references": [
-            "https://docs.libp2p.io/reference/dos-mitigation/",
-            "https://github.com/libp2p/go-libp2p/security/advisories/GHSA-j7qp-mfxf-8xjw",
-            "https://github.com/libp2p/go-libp2p/commit/15d7dfbf54264ead8e6f49ca658d79c90635e2de"
-        ],
-        "summary": "go-libp2p is the offical libp2p implementation in the Go programming language. Version `0.18.0` and older of go-libp2p are vulnerable to targeted resource exhaustion attacks. These attacks target libp2p\u2019s connection, stream, peer, and memory management. An attacker can cause the allocation of large amounts of memory, ultimately leading to the process getting killed by the host\u2019s operating system. While a connection manager tasked with keeping the number of connections within manageable limits has been part of go-libp2p, this component was designed to handle the regular churn of peers, not a targeted resource exhaustion attack. Users are advised to upgrade their version of go-libp2p to version `0.18.1` or newer. Users unable to upgrade may consult the denial of service (dos) mitigation page for more information on how to incorporate mitigation strategies, monitor your application, and respond to attacks."
-    },
-    {
-        "Modified": "2022-12-10T03:04:00",
-        "Published": "2022-12-07T21:15:00",
-        "access": {},
-        "assigner": "security-advisories@github.com",
-        "cvss": null,
-        "cwe": "CWE-400",
-        "id": "CVE-2022-23486",
-        "impact": {},
-        "last-modified": "2022-12-10T03:04:00",
-        "references": [
-            "https://github.com/libp2p/rust-libp2p/security/advisories/GHSA-jvgw-gccv-q5p8"
-        ],
-        "summary": "libp2p-rust is the official rust language Implementation of the libp2p networking stack. In versions prior to 0.45.1 an attacker node can cause a victim node to allocate a large number of small memory chunks, which can ultimately lead to the victim\u2019s process running out of memory and thus getting killed by its operating system. When executed continuously, this can lead to a denial of service attack, especially relevant on a larger scale when run against more than one node of a libp2p based network. Users are advised to upgrade to `libp2p` `v0.45.1` or above. Users unable to upgrade should reference the DoS Mitigation page for more information on how to incorporate mitigation strategies, monitor their application, and respond to attacks: https://docs.libp2p.io/reference/dos-mitigation/."
-    },
-    {
-        "Modified": "2022-12-10T03:04:00",
-        "Published": "2022-12-07T21:15:00",
-        "access": {},
-        "assigner": "security-advisories@github.com",
-        "cvss": null,
-        "cwe": "CWE-400",
-        "id": "CVE-2022-23487",
-        "impact": {},
-        "last-modified": "2022-12-10T03:04:00",
-        "references": [
-            "https://github.com/libp2p/js-libp2p/security/advisories/GHSA-f44q-634c-jvwv"
-        ],
-        "summary": "js-libp2p is the official javascript Implementation of libp2p networking stack. Versions older than `v0.38.0` of js-libp2p are vulnerable to targeted resource exhaustion attacks. These attacks target libp2p\u2019s connection, stream, peer, and memory management. An attacker can cause the allocation of large amounts of memory, ultimately leading to the process getting killed by the host\u2019s operating system. While a connection manager tasked with keeping the number of connections within manageable limits has been part of js-libp2p, this component was designed to handle the regular churn of peers, not a targeted resource exhaustion attack. Users are advised to update their js-libp2p dependency to `v0.38.0` or greater. There are no known workarounds for this vulnerability."
-    },
-    {
-        "Modified": "2022-12-10T02:28:00",
-        "Published": "2022-12-08T08:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-707",
-        "id": "CVE-2022-4347",
-        "impact": {},
-        "last-modified": "2022-12-10T02:28:00",
-        "references": [
-            "https://gitee.com/xiandafu/beetl-bbs/issues/I5XD5O",
-            "https://vuldb.com/?id.215107"
-        ],
-        "summary": "A vulnerability was found in xiandafu beetl-bbs. It has been declared as problematic. Affected by this vulnerability is an unknown functionality of the file WebUtils.java. The manipulation of the argument user leads to cross site scripting. The attack can be launched remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-215107."
-    },
-    {
-        "Modified": "2022-12-10T02:28:00",
-        "Published": "2022-12-08T08:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-707",
-        "id": "CVE-2022-4348",
-        "impact": {},
-        "last-modified": "2022-12-10T02:28:00",
-        "references": [
-            "https://gitee.com/y_project/RuoYi-Cloud/issues/I5IRC8",
-            "https://vuldb.com/?id.215108"
-        ],
-        "summary": "A vulnerability was found in y_project RuoYi-Cloud. It has been rated as problematic. Affected by this issue is some unknown functionality of the component JSON Handler. The manipulation leads to cross site scripting. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. The identifier of this vulnerability is VDB-215108."
-    },
-    {
-        "Modified": "2022-12-10T02:27:00",
-        "Published": "2022-12-08T10:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-863",
-        "id": "CVE-2020-36610",
-        "impact": {},
-        "last-modified": "2022-12-10T02:27:00",
-        "references": [
-            "https://gitee.com/annyshow/DuxCMS2.1/issues/I183GG",
-            "https://vuldb.com/?id.215116"
-        ],
-        "summary": "A vulnerability was found in annyshow DuxCMS 2.1. It has been declared as problematic. This vulnerability affects unknown code. The manipulation leads to cross-site request forgery. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used. The identifier of this vulnerability is VDB-215116."
-    },
-    {
-        "Modified": "2022-12-10T02:27:00",
-        "Published": "2022-12-08T08:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-863",
-        "id": "CVE-2022-4349",
-        "impact": {},
-        "last-modified": "2022-12-10T02:27:00",
-        "references": [
-            "https://vuldb.com/?id.215109",
-            "https://gitee.com/CTF-hacker/pwn/issues/I5WAAB"
-        ],
-        "summary": "A vulnerability classified as problematic has been found in CTF-hacker pwn. This affects an unknown part of the file delete.html. The manipulation leads to cross-site request forgery. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. The identifier VDB-215109 was assigned to this vulnerability."
-    },
-    {
-        "Modified": "2022-12-10T02:22:00",
-        "Published": "2022-12-08T10:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-707",
-        "id": "CVE-2022-4350",
-        "impact": {},
-        "last-modified": "2022-12-10T02:22:00",
-        "references": [
-            "https://vuldb.com/?id.215112",
-            "https://gitee.com/mingSoft/MCMS/issues/I5MT8Y"
-        ],
-        "summary": "A vulnerability, which was classified as problematic, was found in Mingsoft MCMS 5.2.8. Affected is an unknown function of the file search.do. The manipulation of the argument content_title leads to cross site scripting. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used. The identifier of this vulnerability is VDB-215112."
-    },
-    {
-        "Modified": "2022-12-10T02:17:00",
-        "Published": "2022-12-08T16:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "NVD-CWE-noinfo",
-        "id": "CVE-2022-45504",
-        "impact": {},
-        "last-modified": "2022-12-10T02:17:00",
-        "references": [
-            "https://github.com/z1r00/IOT_Vul/blob/main/Tenda/W6-S/SysToolRestoreSet/readme.md"
-        ],
-        "summary": "An issue in the component tpi_systool_handle(0) (/goform/SysToolRestoreSet) of Tenda W6-S v1.0.0.4(510) allows unauthenticated attackers to arbitrarily reboot the device."
-    },
-    {
-        "Modified": "2022-12-10T02:17:00",
-        "Published": "2022-12-08T16:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-787",
-        "id": "CVE-2022-45511",
-        "impact": {},
-        "last-modified": "2022-12-10T02:17:00",
-        "references": [
-            "https://github.com/z1r00/IOT_Vul/blob/main/Tenda/W30E/QuickIndex/readme.md"
-        ],
-        "summary": "Tenda W30E V1.0.1.25(633) was discovered to contain a stack overflow via the PPPOEPassword parameter at /goform/QuickIndex."
-    },
-    {
-        "Modified": "2022-12-10T02:17:00",
-        "Published": "2022-12-08T16:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-787",
-        "id": "CVE-2022-45515",
-        "impact": {},
-        "last-modified": "2022-12-10T02:17:00",
-        "references": [
-            "https://github.com/z1r00/IOT_Vul/blob/main/Tenda/W30E/addressNat/readme.md"
-        ],
-        "summary": "Tenda W30E V1.0.1.25(633) was discovered to contain a stack overflow via the entries parameter at /goform/addressNat."
-    },
-    {
-        "Modified": "2022-12-10T02:17:00",
-        "Published": "2022-12-08T16:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "NVD-CWE-noinfo",
-        "id": "CVE-2022-45498",
-        "impact": {},
-        "last-modified": "2022-12-10T02:17:00",
-        "references": [
-            "https://github.com/z1r00/IOT_Vul/blob/main/Tenda/W6-S/SysToolReboot/readme.md"
-        ],
-        "summary": "An issue in the component tpi_systool_handle(0) (/goform/SysToolReboot) of Tenda W6-S v1.0.0.4(510) allows unauthenticated attackers to arbitrarily reboot the device."
-    },
-    {
-        "Modified": "2022-12-10T02:16:00",
-        "Published": "2022-12-08T10:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-707",
-        "id": "CVE-2020-36609",
-        "impact": {},
-        "last-modified": "2022-12-10T02:16:00",
-        "references": [
-            "https://gitee.com/annyshow/DuxCMS2.1/issues/I183GG",
-            "https://vuldb.com/?id.215115"
-        ],
-        "summary": "A vulnerability was found in annyshow DuxCMS 2.1. It has been classified as problematic. This affects an unknown part of the file admin.php&r=article/AdminContent/edit of the component Article Handler. The manipulation of the argument content leads to cross site scripting. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-215115."
-    },
-    {
-        "Modified": "2022-12-10T02:15:00",
-        "Published": "2022-12-09T18:15:00",
-        "access": {},
-        "assigner": "security-advisories@github.com",
-        "cvss": null,
-        "cwe": "CWE-787",
-        "id": "CVE-2022-23478",
-        "impact": {},
-        "last-modified": "2022-12-10T02:15:00",
-        "references": [
-            "https://github.com/neutrinolabs/xrdp/security/advisories/GHSA-2f49-wwpm-78pj"
-        ],
-        "summary": "xrdp is an open source project which provides a graphical login to remote machines using Microsoft Remote Desktop Protocol (RDP). xrdp < v0.9.21 contain a Out of Bound Write in xrdp_mm_trans_process_drdynvc_channel_open() function. There are no known workarounds for this issue. Users are advised to upgrade."
-    },
-    {
-        "Modified": "2022-12-10T02:15:00",
-        "Published": "2022-12-09T18:15:00",
-        "access": {},
-        "assigner": "security-advisories@github.com",
-        "cvss": null,
-        "cwe": "CWE-120",
-        "id": "CVE-2022-23479",
-        "impact": {},
-        "last-modified": "2022-12-10T02:15:00",
-        "references": [
-            "https://github.com/neutrinolabs/xrdp/security/advisories/GHSA-pgx2-3fjj-fqqh"
-        ],
-        "summary": "xrdp is an open source project which provides a graphical login to remote machines using Microsoft Remote Desktop Protocol (RDP). xrdp < v0.9.21 contain a buffer over flow in xrdp_mm_chan_data_in() function. There are no known workarounds for this issue. Users are advised to upgrade."
-    },
-    {
-        "Modified": "2022-12-10T02:15:00",
-        "Published": "2022-12-09T18:15:00",
-        "access": {},
-        "assigner": "security-advisories@github.com",
-        "cvss": null,
-        "cwe": "CWE-125",
-        "id": "CVE-2022-23493",
-        "impact": {},
-        "last-modified": "2022-12-10T02:15:00",
-        "references": [
-            "https://github.com/neutrinolabs/xrdp/security/advisories/GHSA-59wp-3wq6-jh5v"
-        ],
-        "summary": "xrdp is an open source project which provides a graphical login to remote machines using Microsoft Remote Desktop Protocol (RDP). xrdp < v0.9.21 contain a Out of Bound Read in xrdp_mm_trans_process_drdynvc_channel_close() function. There are no known workarounds for this issue. Users are advised to upgrade."
     }
 ]
