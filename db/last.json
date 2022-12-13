@@ -1,5 +1,117 @@
 [
     {
+        "Modified": "2022-12-13T09:15:00",
+        "Published": "2022-12-13T09:15:00",
+        "access": {},
+        "assigner": "cna@vuldb.com",
+        "cvss": null,
+        "cwe": "CWE-707",
+        "id": "CVE-2022-4444",
+        "impact": {},
+        "last-modified": "2022-12-13T09:15:00",
+        "references": [
+            "https://github.com/ipti/br.tag/commit/7e311be22d3a0a1b53e61cb987ba13d681d85f06",
+            "https://vuldb.com/?id.215431",
+            "https://github.com/ipti/br.tag/pull/131"
+        ],
+        "summary": "A vulnerability was found in ipti br.tag. It has been declared as problematic. Affected by this vulnerability is an unknown functionality. The manipulation leads to cross site scripting. The attack can be launched remotely. Upgrading to version 2.13.0 is able to address this issue. The name of the patch is 7e311be22d3a0a1b53e61cb987ba13d681d85f06. It is recommended to upgrade the affected component. The associated identifier of this vulnerability is VDB-215431."
+    },
+    {
+        "Modified": "2022-12-13T08:15:00",
+        "Published": "2022-12-13T08:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-23505",
+        "impact": {},
+        "last-modified": "2022-12-13T08:15:00",
+        "references": [
+            "https://github.com/auth0/passport-wsfed-saml2/security/advisories/GHSA-ppjq-qxhx-m25f"
+        ],
+        "summary": "Passport-wsfed-saml2 is a ws-federation protocol and SAML2 tokens authentication provider for Passport. In versions prior to 4.6.3, a remote attacker may be able to bypass WSFed authentication on a website using passport-wsfed-saml2. A successful attack requires that the attacker is in possession of an arbitrary IDP signed assertion. Depending on the IDP used, fully unauthenticated attacks (e.g without access to a valid user) might also be feasible if generation of a signed message can be triggered. This issue is patched in version 4.6.3. Use of SAML2 authentication instead of WSFed is a workaround."
+    },
+    {
+        "Modified": "2022-12-13T08:15:00",
+        "Published": "2022-12-13T08:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-125",
+        "id": "CVE-2022-23523",
+        "impact": {},
+        "last-modified": "2022-12-13T08:15:00",
+        "references": [
+            "https://github.com/rust-vmm/linux-loader/pull/125",
+            "https://github.com/rust-vmm/linux-loader/security/advisories/GHSA-52h2-m2cf-9jh6"
+        ],
+        "summary": "In versions prior to 0.8.1, the linux-loader crate uses the offsets and sizes provided in the ELF headers to determine the offsets to read from. If those offsets point beyond the end of the file this could lead to Virtual Machine Monitors using the `linux-loader` crate entering an infinite loop if the ELF header of the kernel they are loading was modified in a malicious manner. This issue has been addressed in 0.8.1. The issue can be mitigated by ensuring that only trusted kernel images are loaded or by verifying that the headers do not point beyond the end of the file."
+    },
+    {
+        "Modified": "2022-12-13T08:15:00",
+        "Published": "2022-12-13T08:15:00",
+        "access": {},
+        "assigner": "info@cert.vde.com",
+        "cvss": null,
+        "cwe": "CWE-290",
+        "id": "CVE-2022-4098",
+        "impact": {},
+        "last-modified": "2022-12-13T08:15:00",
+        "references": [
+            "https://cert.vde.com/en/advisories/VDE-2022-057/"
+        ],
+        "summary": "Multiple Wiesemann&Theis products of the ComServer Series are prone to an authentication bypass through IP spoofing. During an authenticated session to the WBM of the Com-Server an unauthenticated attacker in the same subnet can obtain the session ID and through IP spoofing change arbitrary settings by crafting modified HTTP Get requests. This may result in a complete takeover of the device."
+    },
+    {
+        "Modified": "2022-12-13T07:15:00",
+        "Published": "2022-12-13T07:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-863",
+        "id": "CVE-2022-23473",
+        "impact": {},
+        "last-modified": "2022-12-13T07:15:00",
+        "references": [
+            "https://tuleap.net/plugins/tracker/?aid=29645",
+            "https://github.com/Enalean/tuleap/security/advisories/GHSA-c7rr-5vmc-rgcw",
+            "https://tuleap.net/plugins/git/tuleap/tuleap/stable?a=commit&h=97cac78302170a883c1d60c9fa6dfd0d95854cb9"
+        ],
+        "summary": "Tuleap is an Open Source Suite to improve management of software developments and collaboration. In versions prior to 14.2.99.148, Authorizations are not properly verified when accessing MediaWiki standalone resources. Users with read only permissions for pages are able to also edit them. This only affects the MediaWiki standalone plugin. This issue is patched in versions Tuleap Community Edition 14.2.99.148, Tuleap Enterprise Edition 14.2-5, and Tuleap Enterprise Edition 14.1-6."
+    },
+    {
+        "Modified": "2022-12-13T07:15:00",
+        "Published": "2022-12-13T07:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-436",
+        "id": "CVE-2022-41915",
+        "impact": {},
+        "last-modified": "2022-12-13T07:15:00",
+        "references": [
+            "https://github.com/netty/netty/security/advisories/GHSA-hh82-3pmq-7frp"
+        ],
+        "summary": "Netty project is an event-driven asynchronous network application framework. In versions prior to 4.1.86.Final, when calling `DefaultHttpHeadesr.set` with an _iterator_ of values, header value validation was not performed, allowing malicious header values in the iterator to perform HTTP Response Splitting. This issue has been patched in version 4.1.86.Final. Integrators can work around the issue by changing the `DefaultHttpHeaders.set(CharSequence, Iterator<?>)` call, into a `remove()` call, and call `add()` in a loop over the iterator of values."
+    },
+    {
+        "Modified": "2022-12-13T07:15:00",
+        "Published": "2022-12-13T07:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-863",
+        "id": "CVE-2022-46160",
+        "impact": {},
+        "last-modified": "2022-12-13T07:15:00",
+        "references": [
+            "https://tuleap.net/plugins/git/tuleap/tuleap/stable?a=commit&h=0910a7b0ce14763e5c388be6ca4bcfd1c675c5d8",
+            "https://tuleap.net/plugins/tracker/?aid=29642",
+            "https://github.com/Enalean/tuleap/security/advisories/GHSA-hjhc-xqjh-9fv3"
+        ],
+        "summary": "Tuleap is an Open Source Suite to improve management of software developments and collaboration. In versions prior to 14.2.99.104, project level authorizations are not properly verified when accessing the project \"homepage\"/dashboards. Users not authorized to access a project may still be able to get some information provided by the widgets (e.g. number of members, content of the Notes widget...). This issue has been patched in Tuleap Community Edition 14.2.99.104, Tuleap Enterprise Edition 14.2-4, and Tuleap Enterprise Edition 14.1-5."
+    },
+    {
         "Modified": "2022-12-13T04:15:00",
         "Published": "2022-12-13T04:15:00",
         "access": {},
@@ -1835,114 +1947,5 @@
             "https://www.jenkins.io/security/advisory/2022-12-07/#SECURITY-2810"
         ],
         "summary": "Jenkins Custom Build Properties Plugin 2.79.vc095ccc85094 and earlier does not escape property values and build display names on the Custom Build Properties and Build Summary pages, resulting in a stored cross-site scripting (XSS) vulnerability exploitable by attackers able to set or change these values."
-    },
-    {
-        "Modified": "2022-12-12T19:14:00",
-        "Published": "2022-12-12T09:15:00",
-        "access": {},
-        "assigner": "jenkinsci-cert@googlegroups.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-46687",
-        "impact": {},
-        "last-modified": "2022-12-12T19:14:00",
-        "references": [
-            "https://www.jenkins.io/security/advisory/2022-12-07/#SECURITY-2814"
-        ],
-        "summary": "Jenkins Spring Config Plugin 2.0.0 and earlier does not escape build display names shown on the Spring Config view, resulting in a stored cross-site scripting (XSS) vulnerability exploitable by attackers able to change build display names."
-    },
-    {
-        "Modified": "2022-12-12T19:07:00",
-        "Published": "2022-12-12T09:15:00",
-        "access": {},
-        "assigner": "jenkinsci-cert@googlegroups.com",
-        "cvss": null,
-        "cwe": "CWE-319",
-        "id": "CVE-2022-46685",
-        "impact": {},
-        "last-modified": "2022-12-12T19:07:00",
-        "references": [
-            "https://www.jenkins.io/security/advisory/2022-12-07/#SECURITY-2661"
-        ],
-        "summary": "In Jenkins Gitea Plugin 1.4.4 and earlier, the implementation of Gitea personal access tokens did not support credentials masking, potentially exposing them through the build log."
-    },
-    {
-        "Modified": "2022-12-12T18:59:00",
-        "Published": "2022-12-09T15:15:00",
-        "access": {},
-        "assigner": "security@m-files.com",
-        "cvss": null,
-        "cwe": "CWE-269",
-        "id": "CVE-2022-4264",
-        "impact": {},
-        "last-modified": "2022-12-12T18:59:00",
-        "references": [
-            "https://www.m-files.com/about/trust-center/security-advisories/cve-2022-4264/"
-        ],
-        "summary": "Incorrect Privilege Assignment in M-Files Web (Classic) in M-Files before 22.8.11691.0 allows low privilege user to change some configuration."
-    },
-    {
-        "Modified": "2022-12-12T18:54:00",
-        "Published": "2022-12-08T16:15:00",
-        "access": {},
-        "assigner": "security-alert@hpe.com",
-        "cvss": null,
-        "cwe": "NVD-CWE-Other",
-        "id": "CVE-2022-37918",
-        "impact": {},
-        "last-modified": "2022-12-12T18:54:00",
-        "references": [
-            "https://www.arubanetworks.com/assets/alert/ARUBA-PSA-2022-019.txt"
-        ],
-        "summary": "Vulnerabilities in the AirWave Management Platform web-based management interface exist which expose some URLs to a lack of proper access controls. These vulnerabilities could allow a remote attacker with limited privileges to gain access to sensitive information and/or change network configurations with privileges at a higher effective level in Aruba AirWave Management Platform version(s): 8.2.15.0 and below."
-    },
-    {
-        "Modified": "2022-12-12T18:51:00",
-        "Published": "2022-12-08T16:15:00",
-        "access": {},
-        "assigner": "security-alert@hpe.com",
-        "cvss": null,
-        "cwe": "NVD-CWE-Other",
-        "id": "CVE-2022-37917",
-        "impact": {},
-        "last-modified": "2022-12-12T18:51:00",
-        "references": [
-            "https://www.arubanetworks.com/assets/alert/ARUBA-PSA-2022-019.txt"
-        ],
-        "summary": "Vulnerabilities in the AirWave Management Platform web-based management interface exist which expose some URLs to a lack of proper access controls. These vulnerabilities could allow a remote attacker with limited privileges to gain access to sensitive information and/or change network configurations with privileges at a higher effective level in Aruba AirWave Management Platform version(s): 8.2.15.0 and below."
-    },
-    {
-        "Modified": "2022-12-12T18:49:00",
-        "Published": "2022-12-12T06:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "NVD-CWE-Other",
-        "id": "CVE-2022-46908",
-        "impact": {},
-        "last-modified": "2022-12-12T18:49:00",
-        "references": [
-            "https://sqlite.org/src/info/cefc032473ac5ad2",
-            "https://sqlite.org/forum/forumpost/07beac8056151b2f",
-            "https://news.ycombinator.com/item?id=33948588"
-        ],
-        "summary": "SQLite through 3.40.0, when relying on --safe for execution of an untrusted CLI script, does not properly implement the azProhibitedFunctions protection mechanism, and instead allows UDF functions such as WRITEFILE."
-    },
-    {
-        "Modified": "2022-12-12T18:47:00",
-        "Published": "2022-12-08T22:15:00",
-        "access": {},
-        "assigner": "security-advisories@github.com",
-        "cvss": null,
-        "cwe": "CWE-532",
-        "id": "CVE-2022-23469",
-        "impact": {},
-        "last-modified": "2022-12-12T18:47:00",
-        "references": [
-            "https://github.com/traefik/traefik/pull/9574",
-            "https://github.com/traefik/traefik/releases/tag/v2.9.6",
-            "https://github.com/traefik/traefik/security/advisories/GHSA-h2ph-vhm7-g4hp"
-        ],
-        "summary": "Traefik is an open source HTTP reverse proxy and load balancer. Versions prior to 2.9.6 are subject to a potential vulnerability in Traefik displaying the Authorization header in its debug logs. In certain cases, if the log level is set to DEBUG, credentials provided using the Authorization header are displayed in the debug logs. Attackers must have access to a users logging system in order for credentials to be stolen. This issue has been addressed in version 2.9.6. Users are advised to upgrade. Users unable to upgrade may set the log level to `INFO`, `WARN`, or `ERROR`."
     }
 ]
