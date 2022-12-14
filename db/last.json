@@ -1,5 +1,260 @@
 [
     {
+        "Modified": "2022-12-14T05:15:00",
+        "Published": "2022-12-14T05:15:00",
+        "access": {},
+        "assigner": "report@snyk.io",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-24377",
+        "impact": {},
+        "last-modified": "2022-12-14T05:15:00",
+        "references": [
+            "https://security.snyk.io/vuln/SNYK-JS-CYCLEIMPORTCHECK-3157955",
+            "https://github.com/Soontao/cycle-import-check/commit/1ca97b59df7e9c704471fcb4cf042ce76d7c9890"
+        ],
+        "summary": "The package cycle-import-check before 1.3.2 are vulnerable to Command Injection via the writeFileToTmpDirAndOpenIt  function due to improper user-input sanitization.\r\n\r\n"
+    },
+    {
+        "Modified": "2022-12-14T04:15:00",
+        "Published": "2022-11-29T18:15:00",
+        "access": {},
+        "assigner": "secalert@redhat.com",
+        "cvss": null,
+        "cwe": "CWE-125",
+        "id": "CVE-2022-4144",
+        "impact": {},
+        "last-modified": "2022-12-14T04:15:00",
+        "references": [
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2148506",
+            "https://lists.nongnu.org/archive/html/qemu-devel/2022-11/msg04143.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/I7J5IRXJYLELW7D43A75LOWRUE5EU54O/"
+        ],
+        "summary": "An out-of-bounds read flaw was found in the QXL display device emulation in QEMU. The qxl_phys2virt() function does not check the size of the structure pointed to by the guest physical address, potentially reading past the end of the bar space into adjacent pages. A malicious guest user could use this flaw to crash the QEMU process on the host causing a denial of service condition."
+    },
+    {
+        "Modified": "2022-12-14T04:15:00",
+        "Published": "2022-11-29T18:15:00",
+        "access": {},
+        "assigner": "secalert@redhat.com",
+        "cvss": null,
+        "cwe": "CWE-120",
+        "id": "CVE-2022-4172",
+        "impact": {},
+        "last-modified": "2022-12-14T04:15:00",
+        "references": [
+            "https://gitlab.com/qemu-project/qemu/-/commit/defb7098",
+            "https://gitlab.com/qemu-project/qemu/-/issues/1268",
+            "https://lore.kernel.org/qemu-devel/20221024154233.1043347-1-lk@c--e.de/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/I7J5IRXJYLELW7D43A75LOWRUE5EU54O/"
+        ],
+        "summary": "An integer overflow and buffer overflow issues were found in the ACPI Error Record Serialization Table (ERST) device of QEMU in the read_erst_record() and write_erst_record() functions. Both issues may allow the guest to overrun the host buffer allocated for the ERST memory device. A malicious guest could use these flaws to crash the QEMU process on the host."
+    },
+    {
+        "Modified": "2022-12-14T04:15:00",
+        "Published": "2022-08-17T21:15:00",
+        "access": {},
+        "assigner": "secalert@redhat.com",
+        "cvss": null,
+        "cwe": "CWE-835",
+        "id": "CVE-2020-14394",
+        "impact": {},
+        "last-modified": "2022-12-14T04:15:00",
+        "references": [
+            "https://bugzilla.redhat.com/show_bug.cgi?id=1908004",
+            "https://gitlab.com/qemu-project/qemu/-/issues/646",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/I7J5IRXJYLELW7D43A75LOWRUE5EU54O/"
+        ],
+        "summary": "An infinite loop flaw was found in the USB xHCI controller emulation of QEMU while computing the length of the Transfer Request Block (TRB) Ring. This flaw allows a privileged guest user to hang the QEMU process on the host, resulting in a denial of service."
+    },
+    {
+        "Modified": "2022-12-14T04:15:00",
+        "Published": "2022-03-03T23:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "LOCAL"
+        },
+        "assigner": "secalert@redhat.com",
+        "cvss": 2.1,
+        "cvss-time": "2022-12-14T04:15:00",
+        "cvss-vector": "AV:L/AC:L/Au:N/C:N/I:N/A:P",
+        "cwe": "CWE-787",
+        "id": "CVE-2021-3638",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "NONE",
+            "integrity": "NONE"
+        },
+        "last-modified": "2022-12-14T04:15:00",
+        "references": [
+            "https://bugzilla.redhat.com/show_bug.cgi?id=1979858",
+            "https://ubuntu.com/security/CVE-2021-3638",
+            "https://lists.nongnu.org/archive/html/qemu-devel/2021-09/msg01682.html",
+            "https://security.netapp.com/advisory/ntap-20220407-0003/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/I7J5IRXJYLELW7D43A75LOWRUE5EU54O/"
+        ],
+        "summary": "An out-of-bounds memory access flaw was found in the ATI VGA device emulation of QEMU. This flaw occurs in the ati_2d_blt() routine while handling MMIO write operations when the guest provides invalid values for the destination display parameters. A malicious guest could use this flaw to crash the QEMU process on the host, resulting in a denial of service."
+    },
+    {
+        "Modified": "2022-12-14T01:15:00",
+        "Published": "2022-12-14T01:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2020-9419",
+        "impact": {},
+        "last-modified": "2022-12-14T01:15:00",
+        "references": [
+            "https://gist.github.com/AsherDLL/03d0762b5a535e300f1121caebe333ce"
+        ],
+        "summary": "Multiple stored cross-site scripting (XSS) vulnerabilities in Arcadyan Wifi routers VRV9506JAC23 allow remote attackers to inject arbitrary web script or HTML via the hostName and domain_name parameters present in the LAN configuration section of the administrative dashboard."
+    },
+    {
+        "Modified": "2022-12-14T01:15:00",
+        "Published": "2022-12-14T01:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2020-9420",
+        "impact": {},
+        "last-modified": "2022-12-14T01:15:00",
+        "references": [
+            "https://gist.github.com/AsherDLL/03d0762b5a535e300f1121caebe333ce"
+        ],
+        "summary": "The login password of the web administrative dashboard in Arcadyan Wifi routers VRV9506JAC23 is sent in cleartext, allowing an attacker to sniff and intercept traffic to learn the administrative credentials to the router."
+    },
+    {
+        "Modified": "2022-12-14T01:15:00",
+        "Published": "2022-12-12T20:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-42716",
+        "impact": {},
+        "last-modified": "2022-12-14T01:15:00",
+        "references": [
+            "https://developer.arm.com/Arm%20Security%20Center/Mali%20GPU%20Driver%20Vulnerabilities"
+        ],
+        "summary": "An issue was discovered in the Arm Mali GPU Kernel Driver. There is a use-after-free. A non-privileged user can make improper GPU processing operations to gain access to already freed memory. This affects Valhall r29p0 through r40P0."
+    },
+    {
+        "Modified": "2022-12-14T01:15:00",
+        "Published": "2022-10-19T12:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-122",
+        "id": "CVE-2022-39260",
+        "impact": {},
+        "last-modified": "2022-12-14T01:15:00",
+        "references": [
+            "https://github.com/git/git/security/advisories/GHSA-rjr6-wcq6-83p6",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UKFHE4KVD7EKS5J3KTDFVBEKU3CLXGVV/",
+            "https://support.apple.com/kb/HT213496",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/OHNO2FB55CPX47BAXMBWUBGWHO6N6ZZH/",
+            "http://seclists.org/fulldisclosure/2022/Nov/1",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/C7B6JPKX5CGGLAHXJVQMIZNNEEB72FHD/",
+            "https://lists.debian.org/debian-lts-announce/2022/12/msg00025.html"
+        ],
+        "summary": "Git is an open source, scalable, distributed revision control system. `git shell` is a restricted login shell that can be used to implement Git's push/pull functionality via SSH. In versions prior to 2.30.6, 2.31.5, 2.32.4, 2.33.5, 2.34.5, 2.35.5, 2.36.3, and 2.37.4, the function that splits the command arguments into an array improperly uses an `int` to represent the number of entries in the array, allowing a malicious actor to intentionally overflow the return value, leading to arbitrary heap writes. Because the resulting array is then passed to `execv()`, it is possible to leverage this attack to gain remote code execution on a victim machine. Note that a victim must first allow access to `git shell` as a login shell in order to be vulnerable to this attack. This problem is patched in versions 2.30.6, 2.31.5, 2.32.4, 2.33.5, 2.34.5, 2.35.5, 2.36.3, and 2.37.4 and users are advised to upgrade to the latest version. Disabling `git shell` access via remote logins is a viable short-term workaround."
+    },
+    {
+        "Modified": "2022-12-14T01:15:00",
+        "Published": "2022-10-19T11:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-59",
+        "id": "CVE-2022-39253",
+        "impact": {},
+        "last-modified": "2022-12-14T01:15:00",
+        "references": [
+            "https://github.com/git/git/security/advisories/GHSA-3wp6-j8xr-qw85",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/VFYXCTLOSESYIP72BUYD6ECDIMUM4WMB/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UKFHE4KVD7EKS5J3KTDFVBEKU3CLXGVV/",
+            "https://support.apple.com/kb/HT213496",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/OHNO2FB55CPX47BAXMBWUBGWHO6N6ZZH/",
+            "http://seclists.org/fulldisclosure/2022/Nov/1",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/C7B6JPKX5CGGLAHXJVQMIZNNEEB72FHD/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/JMQWGMDLX6KTVWW5JZLVPI7ICAK72TN7/",
+            "https://lists.debian.org/debian-lts-announce/2022/12/msg00025.html"
+        ],
+        "summary": "Git is an open source, scalable, distributed revision control system. Versions prior to 2.30.6, 2.31.5, 2.32.4, 2.33.5, 2.34.5, 2.35.5, 2.36.3, and 2.37.4 are subject to exposure of sensitive information to a malicious actor. When performing a local clone (where the source and target of the clone are on the same volume), Git copies the contents of the source's `$GIT_DIR/objects` directory into the destination by either creating hardlinks to the source contents, or copying them (if hardlinks are disabled via `--no-hardlinks`). A malicious actor could convince a victim to clone a repository with a symbolic link pointing at sensitive information on the victim's machine. This can be done either by having the victim clone a malicious repository on the same machine, or having them clone a malicious repository embedded as a bare repository via a submodule from any source, provided they clone with the `--recurse-submodules` option. Git does not create symbolic links in the `$GIT_DIR/objects` directory. The problem has been patched in the versions published on 2022-10-18, and backported to v2.30.x. Potential workarounds: Avoid cloning untrusted repositories using the `--local` optimization when on a shared machine, either by passing the `--no-local` option to `git clone` or cloning from a URL that uses the `file://` scheme. Alternatively, avoid cloning repositories from untrusted sources with `--recurse-submodules` or run `git config --global protocol.file.allow user`."
+    },
+    {
+        "Modified": "2022-12-14T01:15:00",
+        "Published": "2022-07-12T21:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "MEDIUM",
+            "vector": "LOCAL"
+        },
+        "assigner": "security-advisories@github.com",
+        "cvss": 6.9,
+        "cvss-time": "2022-12-14T01:15:00",
+        "cvss-vector": "AV:L/AC:M/Au:N/C:C/I:C/A:C",
+        "cwe": "CWE-282",
+        "id": "CVE-2022-29187",
+        "impact": {
+            "availability": "COMPLETE",
+            "confidentiality": "COMPLETE",
+            "integrity": "COMPLETE"
+        },
+        "last-modified": "2022-12-14T01:15:00",
+        "references": [
+            "https://github.blog/2022-04-12-git-security-vulnerability-announced",
+            "https://lore.kernel.org/git/xmqqv8s2fefi.fsf@gitster.g/T/#u",
+            "https://github.com/git/git/security/advisories/GHSA-j342-m5hw-rr3v",
+            "http://www.openwall.com/lists/oss-security/2022/07/14/1",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/TRZG5CDUQ27OWTPC5MQOR4UASNXHWEZS/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/DDI325LOO2XBDDKLINOAQJEG6MHAURZE/",
+            "https://support.apple.com/kb/HT213496",
+            "http://seclists.org/fulldisclosure/2022/Nov/1",
+            "https://lists.debian.org/debian-lts-announce/2022/12/msg00025.html"
+        ],
+        "summary": "Git is a distributed revision control system. Git prior to versions 2.37.1, 2.36.2, 2.35.4, 2.34.4, 2.33.4, 2.32.3, 2.31.4, and 2.30.5, is vulnerable to privilege escalation in all platforms. An unsuspecting user could still be affected by the issue reported in CVE-2022-24765, for example when navigating as root into a shared tmp directory that is owned by them, but where an attacker could create a git repository. Versions 2.37.1, 2.36.2, 2.35.4, 2.34.4, 2.33.4, 2.32.3, 2.31.4, and 2.30.5 contain a patch for this issue. The simplest way to avoid being affected by the exploit described in the example is to avoid running git as root (or an Administrator in Windows), and if needed to reduce its use to a minimum. While a generic workaround is not possible, a system could be hardened from the exploit described in the example by removing any such repository if it exists already and creating one as root to block any future attacks."
+    },
+    {
+        "Modified": "2022-12-14T01:15:00",
+        "Published": "2022-04-12T18:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "MEDIUM",
+            "vector": "LOCAL"
+        },
+        "assigner": "security-advisories@github.com",
+        "cvss": 6.9,
+        "cvss-time": "2022-12-14T01:15:00",
+        "cvss-vector": "AV:L/AC:M/Au:N/C:C/I:C/A:C",
+        "cwe": "CWE-427",
+        "id": "CVE-2022-24765",
+        "impact": {
+            "availability": "COMPLETE",
+            "confidentiality": "COMPLETE",
+            "integrity": "COMPLETE"
+        },
+        "last-modified": "2022-12-14T01:15:00",
+        "references": [
+            "https://github.com/git-for-windows/git/security/advisories/GHSA-vw2c-22j4-2fh2",
+            "https://git-scm.com/book/en/v2/Appendix-A%3A-Git-in-Other-Environments-Git-in-Bash",
+            "https://git-scm.com/docs/git#Documentation/git.txt-codeGITCEILINGDIRECTORIEScode",
+            "http://www.openwall.com/lists/oss-security/2022/04/12/7",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/5PTN5NYEHYN2OQSHSAMCNICZNK2U4QH6/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/BENQYTDGUL6TF3UALY6GSIEXIHUIYNWM/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/SLP42KIZ6HACTVZMZLJLFJQ4W2XYT27M/",
+            "https://support.apple.com/kb/HT213261",
+            "http://seclists.org/fulldisclosure/2022/May/31",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/TRZG5CDUQ27OWTPC5MQOR4UASNXHWEZS/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/DDI325LOO2XBDDKLINOAQJEG6MHAURZE/",
+            "https://lists.debian.org/debian-lts-announce/2022/12/msg00025.html"
+        ],
+        "summary": "Git for Windows is a fork of Git containing Windows-specific patches. This vulnerability affects users working on multi-user machines, where untrusted parties have write access to the same hard disk. Those untrusted parties could create the folder `C:\\.git`, which would be picked up by Git operations run supposedly outside a repository while searching for a Git directory. Git would then respect any config in said Git directory. Git Bash users who set `GIT_PS1_SHOWDIRTYSTATE` are vulnerable as well. Users who installed posh-gitare vulnerable simply by starting a PowerShell. Users of IDEs such as Visual Studio are vulnerable: simply creating a new project would already read and respect the config specified in `C:\\.git\\config`. Users of the Microsoft fork of Git are vulnerable simply by starting a Git Bash. The problem has been patched in Git for Windows v2.35.2. Users unable to upgrade may create the folder `.git` on all drives where Git commands are run, and remove read/write access from those folders as a workaround. Alternatively, define or extend `GIT_CEILING_DIRECTORIES` to cover the _parent_ directory of the user profile, e.g. `C:\\Users` if the user profile is located in `C:\\Users\\my-user-name`."
+    },
+    {
         "Modified": "2022-12-14T00:15:00",
         "Published": "2022-12-14T00:15:00",
         "access": {},
@@ -1760,241 +2015,5 @@
             "http://www.securityfocus.com/bid/94921"
         ],
         "summary": "An exploitable integer overflow exists in the Joyent SmartOS 20161110T013148Z Hyprlofs file system. The vulnerability is present in the Ioctl system call with the command HYPRLOFS_ADD_ENTRIES when dealing with 32-bit file systems. An attacker can craft an input that can cause a kernel panic and potentially be leveraged into a full privilege escalation vulnerability. This vulnerability is distinct from CVE-2016-8733."
-    },
-    {
-        "Modified": "2022-12-13T19:39:00",
-        "Published": "2016-12-14T17:59:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "MEDIUM",
-            "vector": "LOCAL"
-        },
-        "assigner": "talos-cna@cisco.com",
-        "cvss": 6.9,
-        "cvss-time": "2022-12-13T19:39:00",
-        "cvss-vector": "AV:L/AC:M/Au:N/C:C/I:C/A:C",
-        "cwe": "CWE-120",
-        "id": "CVE-2016-9032",
-        "impact": {
-            "availability": "COMPLETE",
-            "confidentiality": "COMPLETE",
-            "integrity": "COMPLETE"
-        },
-        "last-modified": "2022-12-13T19:39:00",
-        "references": [
-            "http://www.talosintelligence.com/reports/TALOS-2016-0250/",
-            "http://www.securityfocus.com/bid/94923"
-        ],
-        "summary": "An exploitable buffer overflow exists in the Joyent SmartOS 20161110T013148Z Hyprlofs file system. The vulnerability is present in the Ioctl system call with the command HYPRLOFS_ADD_ENTRIES when dealing with native file systems. An attacker can craft an input that can cause a buffer overflow in the nm variable leading to an out of bounds memory access and could result in potential privilege escalation. This vulnerability is distinct from CVE-2016-9034."
-    },
-    {
-        "Modified": "2022-12-13T19:35:00",
-        "Published": "2016-12-14T17:59:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "MEDIUM",
-            "vector": "LOCAL"
-        },
-        "assigner": "talos-cna@cisco.com",
-        "cvss": 6.9,
-        "cvss-time": "2022-12-13T19:35:00",
-        "cvss-vector": "AV:L/AC:M/Au:N/C:C/I:C/A:C",
-        "cwe": "CWE-120",
-        "id": "CVE-2016-9033",
-        "impact": {
-            "availability": "COMPLETE",
-            "confidentiality": "COMPLETE",
-            "integrity": "COMPLETE"
-        },
-        "last-modified": "2022-12-13T19:35:00",
-        "references": [
-            "http://www.talosintelligence.com/reports/TALOS-2016-0251/",
-            "http://www.securityfocus.com/bid/94928"
-        ],
-        "summary": "An exploitable buffer overflow exists in the Joyent SmartOS 20161110T013148Z Hyprlofs file system. The vulnerability is present in the Ioctl system call with the command HYPRLOFS_ADD_ENTRIES when dealing with native file systems. An attacker can craft an input that can cause a buffer overflow in the path variable leading to an out of bounds memory access and could result in potential privilege escalation. This vulnerability is distinct from CVE-2016-9035."
-    },
-    {
-        "Modified": "2022-12-13T19:30:00",
-        "Published": "2022-01-02T16:15:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "LOW",
-            "vector": "NETWORK"
-        },
-        "assigner": "cve@mitre.org",
-        "cvss": 6.4,
-        "cvss-time": "2022-12-13T19:30:00",
-        "cvss-vector": "AV:N/AC:L/Au:N/C:P/I:P/A:N",
-        "cwe": "CWE-345",
-        "id": "CVE-2021-36751",
-        "impact": {
-            "availability": "NONE",
-            "confidentiality": "PARTIAL",
-            "integrity": "PARTIAL"
-        },
-        "last-modified": "2022-12-13T19:30:00",
-        "references": [
-            "https://pretalx.c3voc.de/rc3-2021-r3s/talk/QMYGR3/",
-            "https://encsecurity.zendesk.com/hc/en-us/articles/4413283717265-Update-for-ENC-Software",
-            "https://encsecurity.zendesk.com/hc/en-us/articles/7860771829533"
-        ],
-        "summary": "ENC DataVault 7.2.3 and before, and OEM versions, use an encryption algorithm that is vulnerable to data manipulation (without knowledge of the key). This is called ciphertext malleability. There is no data integrity mechanism to detect this manipulation."
-    },
-    {
-        "Modified": "2022-12-13T19:30:00",
-        "Published": "2016-12-14T17:59:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "MEDIUM",
-            "vector": "LOCAL"
-        },
-        "assigner": "talos-cna@cisco.com",
-        "cvss": 6.9,
-        "cvss-time": "2022-12-13T19:30:00",
-        "cvss-vector": "AV:L/AC:M/Au:N/C:C/I:C/A:C",
-        "cwe": "CWE-120",
-        "id": "CVE-2016-9034",
-        "impact": {
-            "availability": "COMPLETE",
-            "confidentiality": "COMPLETE",
-            "integrity": "COMPLETE"
-        },
-        "last-modified": "2022-12-13T19:30:00",
-        "references": [
-            "http://www.talosintelligence.com/reports/TALOS-2016-0252/",
-            "http://www.securityfocus.com/bid/94930"
-        ],
-        "summary": "An exploitable buffer overflow exists in the Joyent SmartOS 20161110T013148Z Hyprlofs file system. The vulnerability is present in the Ioctl system call with the command HYPRLOFS_ADD_ENTRIES when dealing with 32-bit file systems. An attacker can craft an input that can cause a buffer overflow in the nm variable leading to an out of bounds memory access and could result in potential privilege escalation. This vulnerability is distinct from CVE-2016-9032."
-    },
-    {
-        "Modified": "2022-12-13T19:27:00",
-        "Published": "2016-12-14T17:59:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "MEDIUM",
-            "vector": "LOCAL"
-        },
-        "assigner": "talos-cna@cisco.com",
-        "cvss": 6.9,
-        "cvss-time": "2022-12-13T19:27:00",
-        "cvss-vector": "AV:L/AC:M/Au:N/C:C/I:C/A:C",
-        "cwe": "CWE-120",
-        "id": "CVE-2016-9035",
-        "impact": {
-            "availability": "COMPLETE",
-            "confidentiality": "COMPLETE",
-            "integrity": "COMPLETE"
-        },
-        "last-modified": "2022-12-13T19:27:00",
-        "references": [
-            "http://www.talosintelligence.com/reports/TALOS-2016-0253/",
-            "http://www.securityfocus.com/bid/94926"
-        ],
-        "summary": "An exploitable buffer overflow exists in the Joyent SmartOS 20161110T013148Z Hyprlofs file system. The vulnerability is present in the Ioctl system call with the command HYPRLOFS_ADD_ENTRIES when dealing with native file systems. An attacker can craft an input that can cause a buffer overflow in the path variable leading to an out of bounds memory access and could result in potential privilege escalation. This vulnerability is distinct from CVE-2016-9033."
-    },
-    {
-        "Modified": "2022-12-13T19:25:00",
-        "Published": "2022-12-13T19:15:00",
-        "access": {},
-        "assigner": "secure@microsoft.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-26806",
-        "impact": {},
-        "last-modified": "2022-12-13T19:25:00",
-        "references": [
-            "https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-26806"
-        ],
-        "summary": "Microsoft Office Graphics Remote Code Execution Vulnerability. This CVE ID is unique from CVE-2022-26804, CVE-2022-26805, CVE-2022-44692, CVE-2022-47211, CVE-2022-47212, CVE-2022-47213."
-    },
-    {
-        "Modified": "2022-12-13T19:25:00",
-        "Published": "2022-12-13T19:15:00",
-        "access": {},
-        "assigner": "secure@microsoft.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-26805",
-        "impact": {},
-        "last-modified": "2022-12-13T19:25:00",
-        "references": [
-            "https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-26805"
-        ],
-        "summary": "Microsoft Office Graphics Remote Code Execution Vulnerability. This CVE ID is unique from CVE-2022-26804, CVE-2022-26806, CVE-2022-44692, CVE-2022-47211, CVE-2022-47212, CVE-2022-47213."
-    },
-    {
-        "Modified": "2022-12-13T19:25:00",
-        "Published": "2022-12-13T19:15:00",
-        "access": {},
-        "assigner": "secure@microsoft.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-24480",
-        "impact": {},
-        "last-modified": "2022-12-13T19:25:00",
-        "references": [
-            "https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-24480"
-        ],
-        "summary": "Outlook for Android Elevation of Privilege Vulnerability."
-    },
-    {
-        "Modified": "2022-12-13T19:25:00",
-        "Published": "2022-12-13T19:15:00",
-        "access": {},
-        "assigner": "secure@microsoft.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-26804",
-        "impact": {},
-        "last-modified": "2022-12-13T19:25:00",
-        "references": [
-            "https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-26804"
-        ],
-        "summary": "Microsoft Office Graphics Remote Code Execution Vulnerability. This CVE ID is unique from CVE-2022-26805, CVE-2022-26806, CVE-2022-44692, CVE-2022-47211, CVE-2022-47212, CVE-2022-47213."
-    },
-    {
-        "Modified": "2022-12-13T19:25:00",
-        "Published": "2022-12-13T19:15:00",
-        "access": {},
-        "assigner": "secure@microsoft.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-41076",
-        "impact": {},
-        "last-modified": "2022-12-13T19:25:00",
-        "references": [
-            "https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-41076"
-        ],
-        "summary": "PowerShell Remote Code Execution Vulnerability."
-    },
-    {
-        "Modified": "2022-12-13T19:25:00",
-        "Published": "2022-12-13T19:15:00",
-        "access": {},
-        "assigner": "secure@microsoft.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-41074",
-        "impact": {},
-        "last-modified": "2022-12-13T19:25:00",
-        "references": [
-            "https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-41074"
-        ],
-        "summary": "Windows Graphics Component Information Disclosure Vulnerability. This CVE ID is unique from CVE-2022-44679."
-    },
-    {
-        "Modified": "2022-12-13T19:25:00",
-        "Published": "2022-12-13T19:15:00",
-        "access": {},
-        "assigner": "secure@microsoft.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-41094",
-        "impact": {},
-        "last-modified": "2022-12-13T19:25:00",
-        "references": [
-            "https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-41094"
-        ],
-        "summary": "Windows Hyper-V Elevation of Privilege Vulnerability."
     }
 ]
