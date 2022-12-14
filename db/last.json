@@ -1,6 +1,346 @@
 [
     {
-        "Modified": "2022-12-14T12:15:00",
+        "Modified": "2022-12-14T14:55:00",
+        "Published": "2018-01-19T23:29:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "MEDIUM",
+            "vector": "NETWORK"
+        },
+        "assigner": "talos-cna@cisco.com",
+        "cvss": 6.8,
+        "cvss-time": "2022-12-14T14:55:00",
+        "cvss-vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
+        "cwe": "CWE-863",
+        "id": "CVE-2017-12113",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "PARTIAL",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-12-14T14:55:00",
+        "references": [
+            "https://www.talosintelligence.com/vulnerability_reports/TALOS-2017-0465",
+            "http://www.securityfocus.com/bid/102475"
+        ],
+        "summary": "An exploitable improper authorization vulnerability exists in admin_nodeInfo API of cpp-ethereum's JSON-RPC (commit 4e1015743b95821849d001618a7ce82c7c073768). A JSON request can cause an access to the restricted functionality resulting in authorization bypass. An attacker can send JSON to trigger this vulnerability."
+    },
+    {
+        "Modified": "2022-12-14T14:48:00",
+        "Published": "2017-01-26T21:59:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "talos-cna@cisco.com",
+        "cvss": 7.5,
+        "cvss-time": "2022-12-14T14:48:00",
+        "cvss-vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+        "cwe": "CWE-787",
+        "id": "CVE-2016-9054",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "PARTIAL",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-12-14T14:48:00",
+        "references": [
+            "http://www.talosintelligence.com/reports/TALOS-2016-0268/",
+            "http://www.securityfocus.com/bid/95421"
+        ],
+        "summary": "An exploitable stack-based buffer overflow vulnerability exists in the querying functionality of Aerospike Database Server 3.10.0.3. A specially crafted packet can cause a stack-based buffer overflow in the function as_sindex__simatch_list_by_set_binid resulting in remote code execution. An attacker can simply connect to the port to trigger this vulnerability."
+    },
+    {
+        "Modified": "2022-12-14T14:47:00",
+        "Published": "2018-01-19T22:29:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "MEDIUM",
+            "vector": "NETWORK"
+        },
+        "assigner": "talos-cna@cisco.com",
+        "cvss": 6.8,
+        "cvss-time": "2022-12-14T14:47:00",
+        "cvss-vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
+        "cwe": "CWE-863",
+        "id": "CVE-2017-12112",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "PARTIAL",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-12-14T14:47:00",
+        "references": [
+            "https://www.talosintelligence.com/vulnerability_reports/TALOS-2017-0464",
+            "http://www.securityfocus.com/bid/102475"
+        ],
+        "summary": "An exploitable improper authorization vulnerability exists in admin_addPeer API of cpp-ethereum's JSON-RPC (commit 4e1015743b95821849d001618a7ce82c7c073768). A JSON request can cause an access to the restricted functionality resulting in authorization bypass. An attacker can send JSON to trigger this vulnerability."
+    },
+    {
+        "Modified": "2022-12-14T14:43:00",
+        "Published": "2018-09-10T16:29:00",
+        "access": {
+            "authentication": "SINGLE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "talos-cna@cisco.com",
+        "cvss": 6.5,
+        "cvss-time": "2022-12-14T14:43:00",
+        "cvss-vector": "AV:N/AC:L/Au:S/C:P/I:P/A:P",
+        "cwe": "CWE-89",
+        "id": "CVE-2016-9048",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "PARTIAL",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-12-14T14:43:00",
+        "references": [
+            "https://talosintelligence.com/vulnerability_reports/TALOS-2017-0313"
+        ],
+        "summary": "Multiple exploitable SQL Injection vulnerabilities exists in ProcessMaker Enterprise Core 3.0.1.7-community. Specially crafted web requests can cause SQL injections. An attacker can send a web request with parameters containing SQL injection attacks to trigger this vulnerability, potentially allowing exfiltration of the database, user credentials and in certain setups access the underlying operating system."
+    },
+    {
+        "Modified": "2022-12-14T14:40:00",
+        "Published": "2018-09-17T15:29:00",
+        "access": {
+            "authentication": "SINGLE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "talos-cna@cisco.com",
+        "cvss": 6.5,
+        "cvss-time": "2022-12-14T14:40:00",
+        "cvss-vector": "AV:N/AC:L/Au:S/C:P/I:P/A:P",
+        "cwe": "CWE-502",
+        "id": "CVE-2016-9045",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "PARTIAL",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-12-14T14:40:00",
+        "references": [
+            "https://talosintelligence.com/vulnerability_reports/TALOS-2017-0314"
+        ],
+        "summary": "A code execution vulnerability exists in ProcessMaker Enterprise Core 3.0.1.7-community. A specially crafted web request can cause unsafe deserialization potentially resulting in PHP code being executed. An attacker can send a crafted web parameter to trigger this vulnerability."
+    },
+    {
+        "Modified": "2022-12-14T14:20:00",
+        "Published": "2022-12-12T13:15:00",
+        "access": {},
+        "assigner": "security-alert@hpe.com",
+        "cvss": null,
+        "cwe": "CWE-22",
+        "id": "CVE-2022-37906",
+        "impact": {},
+        "last-modified": "2022-12-14T14:20:00",
+        "references": [
+            "https://www.arubanetworks.com/assets/alert/ARUBA-PSA-2022-016.txt"
+        ],
+        "summary": "An authenticated path traversal vulnerability exists in the ArubaOS command line interface. Successful exploitation of the vulnerability results in the ability to delete arbitrary files on the underlying operating system."
+    },
+    {
+        "Modified": "2022-12-14T14:20:00",
+        "Published": "2018-09-07T17:29:00",
+        "access": {
+            "authentication": "SINGLE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "talos-cna@cisco.com",
+        "cvss": 9.0,
+        "cvss-time": "2022-12-14T14:20:00",
+        "cvss-vector": "AV:N/AC:L/Au:S/C:C/I:C/A:C",
+        "cwe": "CWE-77",
+        "id": "CVE-2016-9044",
+        "impact": {
+            "availability": "COMPLETE",
+            "confidentiality": "COMPLETE",
+            "integrity": "COMPLETE"
+        },
+        "last-modified": "2022-12-14T14:20:00",
+        "references": [
+            "https://talosintelligence.com/vulnerability_reports/TALOS-2017-0315"
+        ],
+        "summary": "An exploitable command execution vulnerability exists in Information Builders WebFOCUS Business Intelligence Portal 8.1 . A specially crafted web parameter can cause a command injection. An authenticated attacker can send a crafted web request to trigger this vulnerability."
+    },
+    {
+        "Modified": "2022-12-14T14:19:00",
+        "Published": "2022-12-12T13:15:00",
+        "access": {},
+        "assigner": "security-alert@hpe.com",
+        "cvss": null,
+        "cwe": "NVD-CWE-noinfo",
+        "id": "CVE-2022-37907",
+        "impact": {},
+        "last-modified": "2022-12-14T14:19:00",
+        "references": [
+            "https://www.arubanetworks.com/assets/alert/ARUBA-PSA-2022-016.txt"
+        ],
+        "summary": "A vulnerability exists in the ArubaOS bootloader on 7xxx series controllers which can result in a denial of service (DoS) condition on an impacted system. A successful attacker can cause a system hang which can only be resolved via a power cycle of the impacted controller."
+    },
+    {
+        "Modified": "2022-12-14T14:19:00",
+        "Published": "2018-04-24T19:29:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "MEDIUM",
+            "vector": "NETWORK"
+        },
+        "assigner": "talos-cna@cisco.com",
+        "cvss": 6.8,
+        "cvss-time": "2022-12-14T14:19:00",
+        "cvss-vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
+        "cwe": "CWE-787",
+        "id": "CVE-2016-9043",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "PARTIAL",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-12-14T14:19:00",
+        "references": [
+            "https://www.talosintelligence.com/vulnerability_reports/TALOS-2016-0261",
+            "http://www.securityfocus.com/bid/99900"
+        ],
+        "summary": "An out of bound write vulnerability exists in the EMF parsing functionality of CorelDRAW X8 (CdrGfx - Corel Graphics Engine (64-Bit) - 18.1.0.661). A specially crafted EMF file can cause a vulnerability resulting in potential code execution. An attacker can send the victim a specific EMF file to trigger this vulnerability."
+    },
+    {
+        "Modified": "2022-12-14T14:15:00",
+        "Published": "2022-12-14T14:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-22",
+        "id": "CVE-2022-23512",
+        "impact": {},
+        "last-modified": "2022-12-14T14:15:00",
+        "references": [
+            "https://github.com/metersphere/metersphere/security/advisories/GHSA-5mwp-xw7p-5j27"
+        ],
+        "summary": "MeterSphere is a one-stop open source continuous testing platform. Versions prior to 2.4.1 are vulnerable to Path Injection in ApiTestCaseService::deleteBodyFiles which takes a user-controlled string id and passes it to ApiTestCaseService, which uses the user-provided value (testId) in new File(BODY_FILE_DIR + \"/\" + testId), being deleted later by file.delete(). By adding some camouflage parameters to the url, an attacker can target files on the server. The vulnerability has been fixed in v2.4.1."
+    },
+    {
+        "Modified": "2022-12-14T14:15:00",
+        "Published": "2022-12-14T14:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-1333",
+        "id": "CVE-2022-23514",
+        "impact": {},
+        "last-modified": "2022-12-14T14:15:00",
+        "references": [
+            "https://hackerone.com/reports/1684163",
+            "https://github.com/flavorjones/loofah/security/advisories/GHSA-486f-hjj9-9vhh"
+        ],
+        "summary": "Loofah is a general library for manipulating and transforming HTML/XML documents and fragments, built on top of Nokogiri. Loofah < 2.19.1 contains an inefficient regular expression that is susceptible to excessive backtracking when attempting to sanitize certain SVG attributes. This may lead to a denial of service through CPU resource consumption. This issue is patched in version 2.19.1."
+    },
+    {
+        "Modified": "2022-12-14T14:15:00",
+        "Published": "2022-12-14T14:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2022-23515",
+        "impact": {},
+        "last-modified": "2022-12-14T14:15:00",
+        "references": [
+            "https://hackerone.com/reports/1694173",
+            "https://github.com/flavorjones/loofah/security/advisories/GHSA-228g-948r-83gx",
+            "https://github.com/flavorjones/loofah/issues/101"
+        ],
+        "summary": "Loofah is a general library for manipulating and transforming HTML/XML documents and fragments, built on top of Nokogiri. Loofah >= 2.1.0, < 2.19.1 is vulnerable to cross-site scripting via the image/svg+xml media type in data URIs. This issue is patched in version 2.19.1."
+    },
+    {
+        "Modified": "2022-12-14T14:15:00",
+        "Published": "2022-12-14T14:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-674",
+        "id": "CVE-2022-23516",
+        "impact": {},
+        "last-modified": "2022-12-14T14:15:00",
+        "references": [
+            "https://github.com/flavorjones/loofah/security/advisories/GHSA-3x8r-x6xp-q4vm"
+        ],
+        "summary": "Loofah is a general library for manipulating and transforming HTML/XML documents and fragments, built on top of Nokogiri. Loofah >= 2.2.0, < 2.19.1 uses recursion for sanitizing CDATA sections, making it susceptible to stack exhaustion and raising a SystemStackError exception. This may lead to a denial of service through CPU resource consumption. This issue is patched in version 2.19.1. Users who are unable to upgrade may be able to mitigate this vulnerability by limiting the length of the strings that are sanitized."
+    },
+    {
+        "Modified": "2022-12-14T14:15:00",
+        "Published": "2022-12-12T13:15:00",
+        "access": {},
+        "assigner": "security-alert@hpe.com",
+        "cvss": null,
+        "cwe": "NVD-CWE-noinfo",
+        "id": "CVE-2022-37908",
+        "impact": {},
+        "last-modified": "2022-12-14T14:15:00",
+        "references": [
+            "https://www.arubanetworks.com/assets/alert/ARUBA-PSA-2022-016.txt"
+        ],
+        "summary": "An authenticated attacker can impact the integrity of the ArubaOS bootloader on 7xxx series controllers. Successful exploitation can compromise the hardware chain of trust on the impacted controller."
+    },
+    {
+        "Modified": "2022-12-14T14:15:00",
+        "Published": "2019-10-24T18:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "cve@mitre.org",
+        "cvss": 7.5,
+        "cvss-time": "2022-12-14T14:15:00",
+        "cvss-vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+        "cwe": "CWE-89",
+        "id": "CVE-2019-18413",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "PARTIAL",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-12-14T14:15:00",
+        "references": [
+            "https://github.com/typestack/class-validator/issues/438",
+            "https://github.com/typestack/class-validator#passing-options",
+            "https://github.com/typestack/class-validator/issues/438#issuecomment-964728471",
+            "https://github.com/typestack/class-validator/issues/1422#issuecomment-1344635415"
+        ],
+        "summary": "In TypeStack class-validator 0.10.2, validate() input validation can be bypassed because certain internal attributes can be overwritten via a conflicting name. Even though there is an optional forbidUnknownValues parameter that can be used to reduce the risk of this bypass, this option is not documented and thus most developers configure input validation in the vulnerable default manner. With this vulnerability, attackers can launch SQL Injection or XSS attacks by injecting arbitrary malicious input. NOTE: a software maintainer agrees with the \"is not documented\" finding but suggests that much of the responsibility for the risk lies in a different product."
+    },
+    {
+        "Modified": "2022-12-14T14:11:00",
+        "Published": "2018-09-07T12:29:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "LOCAL"
+        },
+        "assigner": "talos-cna@cisco.com",
+        "cvss": 4.9,
+        "cvss-time": "2022-12-14T14:11:00",
+        "cvss-vector": "AV:L/AC:L/Au:N/C:N/I:N/A:C",
+        "cwe": "CWE-400",
+        "id": "CVE-2016-9040",
+        "impact": {
+            "availability": "COMPLETE",
+            "confidentiality": "NONE",
+            "integrity": "NONE"
+        },
+        "last-modified": "2022-12-14T14:11:00",
+        "references": [
+            "https://www.talosintelligence.com/vulnerability_reports/TALOS-2016-0258"
+        ],
+        "summary": "An exploitable denial of service exists in the the Joyent SmartOS OS 20161110T013148Z Hyprlofs file system. The vulnerability is present in the Ioctl system call with the command HYPRLOFSADDENTRIES when used with a 32 bit model. An attacker can cause a buffer to be allocated and never freed. When repeatedly exploit this will result in memory exhaustion, resulting in a full system denial of service."
+    },
+    {
+        "Modified": "2022-12-14T14:09:00",
         "Published": "2022-12-14T12:15:00",
         "access": {},
         "assigner": "cna@vuldb.com",
@@ -8,7 +348,7 @@
         "cwe": "CWE-22",
         "id": "CVE-2022-4493",
         "impact": {},
-        "last-modified": "2022-12-14T12:15:00",
+        "last-modified": "2022-12-14T14:09:00",
         "references": [
             "https://github.com/scifio/scifio/commit/fcb0dbca0ec72b22fe0c9ddc8abc9cb188a0ff31",
             "https://vuldb.com/?id.215803"
@@ -16,7 +356,7 @@
         "summary": "A vulnerability classified as critical was found in scifio. Affected by this vulnerability is the function downloadAndUnpackResource of the file src/test/java/io/scif/util/DefaultSampleFilesService.java of the component ZIP File Handler. The manipulation leads to path traversal. The attack can be launched remotely. The name of the patch is fcb0dbca0ec72b22fe0c9ddc8abc9cb188a0ff31. It is recommended to apply a patch to fix this issue. The associated identifier of this vulnerability is VDB-215803."
     },
     {
-        "Modified": "2022-12-14T12:15:00",
+        "Modified": "2022-12-14T14:09:00",
         "Published": "2022-12-14T12:15:00",
         "access": {},
         "assigner": "cna@vuldb.com",
@@ -24,7 +364,7 @@
         "cwe": "CWE-22",
         "id": "CVE-2022-4494",
         "impact": {},
-        "last-modified": "2022-12-14T12:15:00",
+        "last-modified": "2022-12-14T14:09:00",
         "references": [
             "https://vuldb.com/?id.215804",
             "https://github.com/bspkrs/MCPMappingViewer/commit/6e602746c96b4756c271d080dae7d22ad804a1bd"
@@ -32,128 +372,7 @@
         "summary": "A vulnerability, which was classified as critical, has been found in bspkrs MCPMappingViewer. Affected by this issue is the function extractZip of the file src/main/java/bspkrs/mmv/RemoteZipHandler.java of the component ZIP File Handler. The manipulation leads to path traversal. The attack may be launched remotely. The name of the patch is 6e602746c96b4756c271d080dae7d22ad804a1bd. It is recommended to apply a patch to fix this issue. The identifier of this vulnerability is VDB-215804."
     },
     {
-        "Modified": "2022-12-14T09:15:00",
-        "Published": "2022-12-14T09:15:00",
-        "access": {},
-        "assigner": "security@apache.org",
-        "cvss": null,
-        "cwe": "CWE-20",
-        "id": "CVE-2022-34271",
-        "impact": {},
-        "last-modified": "2022-12-14T09:15:00",
-        "references": [
-            "https://lists.apache.org/thread/0rqvcxo6brmos9w3lzfsdn2lsmlblpw3"
-        ],
-        "summary": "A vulnerability in import module of Apache Atlas allows an authenticated user to write to web server filesystem. This issue affects Apache Atlas versions from 0.8.4 to 2.2.0."
-    },
-    {
-        "Modified": "2022-12-14T09:15:00",
-        "Published": "2022-12-14T09:15:00",
-        "access": {},
-        "assigner": "info@cert.vde.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-3073",
-        "impact": {},
-        "last-modified": "2022-12-14T09:15:00",
-        "references": [
-            "https://cert.vde.com/de/advisories/VDE-2022-056/"
-        ],
-        "summary": "Quanos \"SCHEMA ST4\" example web templates in version Bootstrap 2019 v2/2021 v1/2022 v1/2022 SP1 v1 or below are prone to JavaScript injection allowing a remote attacker to hijack existing sessions to e.g. other web services in the same environment or execute scripts in the users browser environment. The affected script is '*-schema.js'."
-    },
-    {
-        "Modified": "2022-12-14T09:15:00",
-        "Published": "2022-12-14T09:15:00",
-        "access": {},
-        "assigner": "contact@wpscan.com",
-        "cvss": null,
-        "cwe": "CWE-918",
-        "id": "CVE-2022-3590",
-        "impact": {},
-        "last-modified": "2022-12-14T09:15:00",
-        "references": [
-            "https://wpscan.com/vulnerability/c8814e6e-78b3-4f63-a1d3-6906a84c1f11",
-            "https://blog.sonarsource.com/wordpress-core-unauthenticated-blind-ssrf/"
-        ],
-        "summary": "WordPress is affected by an unauthenticated blind SSRF in the pingback feature. Because of a TOCTOU race condition between the validation checks and the HTTP request, attackers can reach internal hosts that are explicitly forbidden."
-    },
-    {
-        "Modified": "2022-12-14T08:15:00",
-        "Published": "2022-12-14T08:15:00",
-        "access": {},
-        "assigner": "security-advisories@github.com",
-        "cvss": null,
-        "cwe": "CWE-674",
-        "id": "CVE-2022-23500",
-        "impact": {},
-        "last-modified": "2022-12-14T08:15:00",
-        "references": [
-            "https://github.com/TYPO3/typo3/security/advisories/GHSA-8c28-5mp7-v24h"
-        ],
-        "summary": "TYPO3 is an open source PHP based web content management system. In versions prior to 9.5.38, 10.4.33, 11.5.20, and 12.1.1, requesting invalid or non-existing resources via HTTP triggers the page error handler, which again could retrieve content to be shown as an error message from another page. This leads to a scenario in which the application is calling itself recursively - amplifying the impact of the initial attack until the limits of the web server are exceeded. This vulnerability is very similar, but not identical, to the one described in CVE-2021-21359. This issue is patched in versions 9.5.38 ELTS, 10.4.33, 11.5.20 or 12.1.1."
-    },
-    {
-        "Modified": "2022-12-14T08:15:00",
-        "Published": "2022-12-14T08:15:00",
-        "access": {},
-        "assigner": "security-advisories@github.com",
-        "cvss": null,
-        "cwe": "CWE-287",
-        "id": "CVE-2022-23501",
-        "impact": {},
-        "last-modified": "2022-12-14T08:15:00",
-        "references": [
-            "https://github.com/TYPO3/typo3/security/advisories/GHSA-jfp7-79g7-89rf"
-        ],
-        "summary": "TYPO3 is an open source PHP based web content management system. In versions prior to 8.7.49, 9.5.38, 10.4.33, 11.5.20, and 12.1.1 TYPO3 is vulnerable to Improper Authentication. Restricting frontend login to specific users, organized in different storage folders (partitions), can be bypassed. A potential attacker might use this ambiguity in usernames to get access to a different account - however, credentials must be known to the adversary. This issue is patched in versions 8.7.49 ELTS, 9.5.38 ELTS, 10.4.33, 11.5.20, 12.1.1."
-    },
-    {
-        "Modified": "2022-12-14T08:15:00",
-        "Published": "2022-12-14T08:15:00",
-        "access": {},
-        "assigner": "security-advisories@github.com",
-        "cvss": null,
-        "cwe": "CWE-613",
-        "id": "CVE-2022-23502",
-        "impact": {},
-        "last-modified": "2022-12-14T08:15:00",
-        "references": [
-            "https://github.com/TYPO3/typo3/security/advisories/GHSA-mgj2-q8wp-29rr"
-        ],
-        "summary": "TYPO3 is an open source PHP based web content management system. In versions prior to 10.4.33, 11.5.20, and 12.1.1, When users reset their password using the corresponding password recovery functionality, existing sessions for that particular user account were not revoked. This applied to both frontend user sessions and backend user sessions. This issue is patched in versions 10.4.33, 11.5.20, 12.1.1."
-    },
-    {
-        "Modified": "2022-12-14T08:15:00",
-        "Published": "2022-12-14T08:15:00",
-        "access": {},
-        "assigner": "security-advisories@github.com",
-        "cvss": null,
-        "cwe": "CWE-94",
-        "id": "CVE-2022-23503",
-        "impact": {},
-        "last-modified": "2022-12-14T08:15:00",
-        "references": [
-            "https://github.com/TYPO3/typo3/security/advisories/GHSA-c5wx-6c2c-f7rm"
-        ],
-        "summary": "TYPO3 is an open source PHP based web content management system. Versions prior to 8.7.49, 9.5.38, 10.4.33, 11.5.20, and 12.1.1 are vulnerable to Code Injection. Due to the lack of separating user-submitted data from the internal configuration in the Form Designer backend module, it is possible to inject code instructions to be processed and executed via TypoScript as PHP code. The existence of individual TypoScript instructions for a particular form item and a valid backend user account with access to the form module are needed to exploit this vulnerability. This issue is patched in versions 8.7.49 ELTS, 9.5.38 ELTS, 10.4.33, 11.5.20, 12.1.1."
-    },
-    {
-        "Modified": "2022-12-14T08:15:00",
-        "Published": "2022-12-14T08:15:00",
-        "access": {},
-        "assigner": "security-advisories@github.com",
-        "cvss": null,
-        "cwe": "CWE-917",
-        "id": "CVE-2022-23504",
-        "impact": {},
-        "last-modified": "2022-12-14T08:15:00",
-        "references": [
-            "https://github.com/TYPO3/typo3/security/advisories/GHSA-8w3p-qh3x-6gjr"
-        ],
-        "summary": "TYPO3 is an open source PHP based web content management system. Versions prior to 9.5.38, 10.4.33, 11.5.20, and 12.1.1 are subject to Sensitive Information Disclosure. Due to the lack of handling user-submitted YAML placeholder expressions in the site configuration backend module, attackers could expose sensitive internal information, such as system configuration or HTTP request messages of other website visitors. A valid backend user account having administrator privileges is needed to exploit this vulnerability. This issue has been patched in versions 9.5.38 ELTS, 10.4.33, 11.5.20, 12.1.1."
-    },
-    {
-        "Modified": "2022-12-14T06:15:00",
+        "Modified": "2022-12-14T14:09:00",
         "Published": "2022-12-14T06:15:00",
         "access": {},
         "assigner": "chrome-cve-admin@google.com",
@@ -161,7 +380,7 @@
         "cwe": "Unknown",
         "id": "CVE-2022-4436",
         "impact": {},
-        "last-modified": "2022-12-14T06:15:00",
+        "last-modified": "2022-12-14T14:09:00",
         "references": [
             "https://chromereleases.googleblog.com/2022/12/stable-channel-update-for-desktop_13.html",
             "https://crbug.com/1383991"
@@ -169,7 +388,7 @@
         "summary": "Use after free in Blink Media in Google Chrome prior to 108.0.5359.124 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)"
     },
     {
-        "Modified": "2022-12-14T06:15:00",
+        "Modified": "2022-12-14T14:09:00",
         "Published": "2022-12-14T06:15:00",
         "access": {},
         "assigner": "chrome-cve-admin@google.com",
@@ -177,7 +396,7 @@
         "cwe": "Unknown",
         "id": "CVE-2022-4437",
         "impact": {},
-        "last-modified": "2022-12-14T06:15:00",
+        "last-modified": "2022-12-14T14:09:00",
         "references": [
             "https://crbug.com/1394692",
             "https://chromereleases.googleblog.com/2022/12/stable-channel-update-for-desktop_13.html"
@@ -185,7 +404,7 @@
         "summary": "Use after free in Mojo IPC in Google Chrome prior to 108.0.5359.124 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)"
     },
     {
-        "Modified": "2022-12-14T06:15:00",
+        "Modified": "2022-12-14T14:09:00",
         "Published": "2022-12-14T06:15:00",
         "access": {},
         "assigner": "chrome-cve-admin@google.com",
@@ -193,7 +412,7 @@
         "cwe": "Unknown",
         "id": "CVE-2022-4438",
         "impact": {},
-        "last-modified": "2022-12-14T06:15:00",
+        "last-modified": "2022-12-14T14:09:00",
         "references": [
             "https://chromereleases.googleblog.com/2022/12/stable-channel-update-for-desktop_13.html",
             "https://crbug.com/1381871"
@@ -201,7 +420,7 @@
         "summary": "Use after free in Blink Frames in Google Chrome prior to 108.0.5359.124 allowed a remote attacker who convinced the user to engage in specific UI interactions to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)"
     },
     {
-        "Modified": "2022-12-14T06:15:00",
+        "Modified": "2022-12-14T14:09:00",
         "Published": "2022-12-14T06:15:00",
         "access": {},
         "assigner": "chrome-cve-admin@google.com",
@@ -209,7 +428,7 @@
         "cwe": "Unknown",
         "id": "CVE-2022-4439",
         "impact": {},
-        "last-modified": "2022-12-14T06:15:00",
+        "last-modified": "2022-12-14T14:09:00",
         "references": [
             "https://crbug.com/1392661",
             "https://chromereleases.googleblog.com/2022/12/stable-channel-update-for-desktop_13.html"
@@ -217,7 +436,7 @@
         "summary": "Use after free in Aura in Google Chrome on Windows prior to 108.0.5359.124 allowed a remote attacker who convinced the user to engage in specific UI interactions to potentially exploit heap corruption via specific UI interactions. (Chromium security severity: High)"
     },
     {
-        "Modified": "2022-12-14T06:15:00",
+        "Modified": "2022-12-14T14:09:00",
         "Published": "2022-12-14T06:15:00",
         "access": {},
         "assigner": "chrome-cve-admin@google.com",
@@ -225,7 +444,7 @@
         "cwe": "Unknown",
         "id": "CVE-2022-4440",
         "impact": {},
-        "last-modified": "2022-12-14T06:15:00",
+        "last-modified": "2022-12-14T14:09:00",
         "references": [
             "https://chromereleases.googleblog.com/2022/12/stable-channel-update-for-desktop_13.html",
             "https://crbug.com/1382761"
@@ -233,7 +452,158 @@
         "summary": "Use after free in Profiles in Google Chrome prior to 108.0.5359.124 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: Medium)"
     },
     {
-        "Modified": "2022-12-14T06:15:00",
+        "Modified": "2022-12-14T14:09:00",
+        "Published": "2022-12-14T08:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-674",
+        "id": "CVE-2022-23500",
+        "impact": {},
+        "last-modified": "2022-12-14T14:09:00",
+        "references": [
+            "https://github.com/TYPO3/typo3/security/advisories/GHSA-8c28-5mp7-v24h"
+        ],
+        "summary": "TYPO3 is an open source PHP based web content management system. In versions prior to 9.5.38, 10.4.33, 11.5.20, and 12.1.1, requesting invalid or non-existing resources via HTTP triggers the page error handler, which again could retrieve content to be shown as an error message from another page. This leads to a scenario in which the application is calling itself recursively - amplifying the impact of the initial attack until the limits of the web server are exceeded. This vulnerability is very similar, but not identical, to the one described in CVE-2021-21359. This issue is patched in versions 9.5.38 ELTS, 10.4.33, 11.5.20 or 12.1.1."
+    },
+    {
+        "Modified": "2022-12-14T14:09:00",
+        "Published": "2022-12-14T08:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-287",
+        "id": "CVE-2022-23501",
+        "impact": {},
+        "last-modified": "2022-12-14T14:09:00",
+        "references": [
+            "https://github.com/TYPO3/typo3/security/advisories/GHSA-jfp7-79g7-89rf"
+        ],
+        "summary": "TYPO3 is an open source PHP based web content management system. In versions prior to 8.7.49, 9.5.38, 10.4.33, 11.5.20, and 12.1.1 TYPO3 is vulnerable to Improper Authentication. Restricting frontend login to specific users, organized in different storage folders (partitions), can be bypassed. A potential attacker might use this ambiguity in usernames to get access to a different account - however, credentials must be known to the adversary. This issue is patched in versions 8.7.49 ELTS, 9.5.38 ELTS, 10.4.33, 11.5.20, 12.1.1."
+    },
+    {
+        "Modified": "2022-12-14T14:09:00",
+        "Published": "2022-12-14T08:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-613",
+        "id": "CVE-2022-23502",
+        "impact": {},
+        "last-modified": "2022-12-14T14:09:00",
+        "references": [
+            "https://github.com/TYPO3/typo3/security/advisories/GHSA-mgj2-q8wp-29rr"
+        ],
+        "summary": "TYPO3 is an open source PHP based web content management system. In versions prior to 10.4.33, 11.5.20, and 12.1.1, When users reset their password using the corresponding password recovery functionality, existing sessions for that particular user account were not revoked. This applied to both frontend user sessions and backend user sessions. This issue is patched in versions 10.4.33, 11.5.20, 12.1.1."
+    },
+    {
+        "Modified": "2022-12-14T14:09:00",
+        "Published": "2022-12-14T08:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-94",
+        "id": "CVE-2022-23503",
+        "impact": {},
+        "last-modified": "2022-12-14T14:09:00",
+        "references": [
+            "https://github.com/TYPO3/typo3/security/advisories/GHSA-c5wx-6c2c-f7rm"
+        ],
+        "summary": "TYPO3 is an open source PHP based web content management system. Versions prior to 8.7.49, 9.5.38, 10.4.33, 11.5.20, and 12.1.1 are vulnerable to Code Injection. Due to the lack of separating user-submitted data from the internal configuration in the Form Designer backend module, it is possible to inject code instructions to be processed and executed via TypoScript as PHP code. The existence of individual TypoScript instructions for a particular form item and a valid backend user account with access to the form module are needed to exploit this vulnerability. This issue is patched in versions 8.7.49 ELTS, 9.5.38 ELTS, 10.4.33, 11.5.20, 12.1.1."
+    },
+    {
+        "Modified": "2022-12-14T14:09:00",
+        "Published": "2022-12-14T08:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-917",
+        "id": "CVE-2022-23504",
+        "impact": {},
+        "last-modified": "2022-12-14T14:09:00",
+        "references": [
+            "https://github.com/TYPO3/typo3/security/advisories/GHSA-8w3p-qh3x-6gjr"
+        ],
+        "summary": "TYPO3 is an open source PHP based web content management system. Versions prior to 9.5.38, 10.4.33, 11.5.20, and 12.1.1 are subject to Sensitive Information Disclosure. Due to the lack of handling user-submitted YAML placeholder expressions in the site configuration backend module, attackers could expose sensitive internal information, such as system configuration or HTTP request messages of other website visitors. A valid backend user account having administrator privileges is needed to exploit this vulnerability. This issue has been patched in versions 9.5.38 ELTS, 10.4.33, 11.5.20, 12.1.1."
+    },
+    {
+        "Modified": "2022-12-14T14:09:00",
+        "Published": "2022-12-14T09:15:00",
+        "access": {},
+        "assigner": "security@apache.org",
+        "cvss": null,
+        "cwe": "CWE-20",
+        "id": "CVE-2022-34271",
+        "impact": {},
+        "last-modified": "2022-12-14T14:09:00",
+        "references": [
+            "https://lists.apache.org/thread/0rqvcxo6brmos9w3lzfsdn2lsmlblpw3"
+        ],
+        "summary": "A vulnerability in import module of Apache Atlas allows an authenticated user to write to web server filesystem. This issue affects Apache Atlas versions from 0.8.4 to 2.2.0."
+    },
+    {
+        "Modified": "2022-12-14T14:09:00",
+        "Published": "2022-12-14T09:15:00",
+        "access": {},
+        "assigner": "info@cert.vde.com",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2022-3073",
+        "impact": {},
+        "last-modified": "2022-12-14T14:09:00",
+        "references": [
+            "https://cert.vde.com/de/advisories/VDE-2022-056/"
+        ],
+        "summary": "Quanos \"SCHEMA ST4\" example web templates in version Bootstrap 2019 v2/2021 v1/2022 v1/2022 SP1 v1 or below are prone to JavaScript injection allowing a remote attacker to hijack existing sessions to e.g. other web services in the same environment or execute scripts in the users browser environment. The affected script is '*-schema.js'."
+    },
+    {
+        "Modified": "2022-12-14T14:09:00",
+        "Published": "2022-12-14T09:15:00",
+        "access": {},
+        "assigner": "contact@wpscan.com",
+        "cvss": null,
+        "cwe": "CWE-918",
+        "id": "CVE-2022-3590",
+        "impact": {},
+        "last-modified": "2022-12-14T14:09:00",
+        "references": [
+            "https://wpscan.com/vulnerability/c8814e6e-78b3-4f63-a1d3-6906a84c1f11",
+            "https://blog.sonarsource.com/wordpress-core-unauthenticated-blind-ssrf/"
+        ],
+        "summary": "WordPress is affected by an unauthenticated blind SSRF in the pingback feature. Because of a TOCTOU race condition between the validation checks and the HTTP request, attackers can reach internal hosts that are explicitly forbidden."
+    },
+    {
+        "Modified": "2022-12-14T14:09:00",
+        "Published": "2022-12-14T01:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2020-9419",
+        "impact": {},
+        "last-modified": "2022-12-14T14:09:00",
+        "references": [
+            "https://gist.github.com/AsherDLL/03d0762b5a535e300f1121caebe333ce"
+        ],
+        "summary": "Multiple stored cross-site scripting (XSS) vulnerabilities in Arcadyan Wifi routers VRV9506JAC23 allow remote attackers to inject arbitrary web script or HTML via the hostName and domain_name parameters present in the LAN configuration section of the administrative dashboard."
+    },
+    {
+        "Modified": "2022-12-14T14:09:00",
+        "Published": "2022-12-14T01:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2020-9420",
+        "impact": {},
+        "last-modified": "2022-12-14T14:09:00",
+        "references": [
+            "https://gist.github.com/AsherDLL/03d0762b5a535e300f1121caebe333ce"
+        ],
+        "summary": "The login password of the web administrative dashboard in Arcadyan Wifi routers VRV9506JAC23 is sent in cleartext, allowing an attacker to sniff and intercept traffic to learn the administrative credentials to the router."
+    },
+    {
+        "Modified": "2022-12-14T14:09:00",
         "Published": "2022-12-14T05:15:00",
         "access": {},
         "assigner": "report@snyk.io",
@@ -241,12 +611,529 @@
         "cwe": "Unknown",
         "id": "CVE-2022-24377",
         "impact": {},
-        "last-modified": "2022-12-14T06:15:00",
+        "last-modified": "2022-12-14T14:09:00",
         "references": [
             "https://security.snyk.io/vuln/SNYK-JS-CYCLEIMPORTCHECK-3157955",
             "https://github.com/Soontao/cycle-import-check/commit/1ca97b59df7e9c704471fcb4cf042ce76d7c9890"
         ],
         "summary": "The package cycle-import-check before 1.3.2 are vulnerable to Command Injection via the writeFileToTmpDirAndOpenIt function due to improper user-input sanitization."
+    },
+    {
+        "Modified": "2022-12-14T14:09:00",
+        "Published": "2022-12-13T23:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-44874",
+        "impact": {},
+        "last-modified": "2022-12-14T14:09:00",
+        "references": [
+            "https://github.com/wasm3/wasm3/issues/380"
+        ],
+        "summary": "wasm3 commit 7890a2097569fde845881e0b352d813573e371f9 was discovered to contain a segmentation fault via the component op_CallIndirect at /m3_exec.h."
+    },
+    {
+        "Modified": "2022-12-14T14:09:00",
+        "Published": "2022-12-14T00:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-37155",
+        "impact": {},
+        "last-modified": "2022-12-14T14:09:00",
+        "references": [
+            "https://pastebin.com/ZH7CPc8X"
+        ],
+        "summary": "RCE in SPIP 3.1.13 through 4.1.2 allows remote authenticated users to execute arbitrary code via a GET parameter"
+    },
+    {
+        "Modified": "2022-12-14T14:09:00",
+        "Published": "2022-12-14T00:15:00",
+        "access": {},
+        "assigner": "Mitsubishielectric.Psirt@yd.MitsubishiElectric.co.jp",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-40264",
+        "impact": {},
+        "last-modified": "2022-12-14T14:09:00",
+        "references": [
+            "https://www.mitsubishielectric.com/en/psirt/vulnerability/pdf/2022-014_en.pdf",
+            "https://jvn.jp/vu/JVNVU95858406/index.html",
+            "https://iconics.com/About/Security/CERT",
+            "https://www.cisa.gov/uscert/ics/advisories/icsa-22-347-01"
+        ],
+        "summary": "Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') vulnerability in ICONICS/Mitsubishi Electric GENESIS64 versions 10.96 to 10.97.2 allows an unauthenticated attacker to create, tamper with or destroy arbitrary files by getting a legitimate user import a project package file crafted by the attacker."
+    },
+    {
+        "Modified": "2022-12-14T14:09:00",
+        "Published": "2022-12-14T00:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-42139",
+        "impact": {},
+        "last-modified": "2022-12-14T14:09:00",
+        "references": [
+            "https://cyberdanube.com/en/en-authenticated-command-injection-in-delta-electronics-dvw-w02w2-e2/"
+        ],
+        "summary": "Delta Electronics DVW-W02W2-E2 1.5.0.10 is vulnerable to Command Injection via Crafted URL."
+    },
+    {
+        "Modified": "2022-12-14T14:09:00",
+        "Published": "2022-12-14T00:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-42140",
+        "impact": {},
+        "last-modified": "2022-12-14T14:09:00",
+        "references": [
+            "https://cyberdanube.com/en/en-multiple-vulnerabilities-in-delta-electronics-dx-2100-l1-cn/"
+        ],
+        "summary": "Delta Electronics DX-2100-L1-CN 2.42 is vulnerable to Command Injection via lform/net_diagnose."
+    },
+    {
+        "Modified": "2022-12-14T14:09:00",
+        "Published": "2022-12-14T00:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-42141",
+        "impact": {},
+        "last-modified": "2022-12-14T14:09:00",
+        "references": [
+            "https://cyberdanube.com/en/en-multiple-vulnerabilities-in-delta-electronics-dx-2100-l1-cn/"
+        ],
+        "summary": "Delta Electronics DX-2100-L1-CN 2.42 is vulnerable to Cross Site Scripting (XSS) via lform/urlfilter."
+    },
+    {
+        "Modified": "2022-12-14T14:09:00",
+        "Published": "2022-12-13T21:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2022-23499",
+        "impact": {},
+        "last-modified": "2022-12-14T14:09:00",
+        "references": [
+            "https://github.com/TYPO3/html-sanitizer/security/advisories/GHSA-hvwx-qh2h-xcfj"
+        ],
+        "summary": "HTML sanitizer is written in PHP, aiming to provide XSS-safe markup based on explicitly allowed tags, attributes and values. In versions prior to 1.5.0 or 2.1.1, malicious markup used in a sequence with special HTML CDATA sections cannot be filtered and sanitized due to a parsing issue in the upstream package masterminds/html5. This allows bypassing the cross-site scripting mechanism of typo3/html-sanitizer. The upstream package masterminds/html5 provides HTML raw text elements (`script`, `style`, `noframes`, `noembed` and `iframe`) as DOMText nodes, which were not processed and sanitized further. None of the mentioned elements were defined in the default builder configuration, that's why only custom behaviors, using one of those tag names, were vulnerable to cross-site scripting. This issue has been fixed in versions 1.5.0 and 2.1.1."
+    },
+    {
+        "Modified": "2022-12-14T14:09:00",
+        "Published": "2022-12-13T21:15:00",
+        "access": {},
+        "assigner": "ics-cert@hq.dhs.gov",
+        "cvss": null,
+        "cwe": "CWE-119",
+        "id": "CVE-2022-2947",
+        "impact": {},
+        "last-modified": "2022-12-14T14:09:00",
+        "references": [
+            "https://www.cisa.gov/uscert/ics/advisories/icsa-22-284-01"
+        ],
+        "summary": "Altair HyperView Player versions 2021.1.0.27 and prior perform operations on a memory buffer but can read from or write to a memory location outside of the intended boundary of the buffer. This hits initially as a read access violation, leading to a memory corruption situation."
+    },
+    {
+        "Modified": "2022-12-14T14:09:00",
+        "Published": "2022-12-13T21:15:00",
+        "access": {},
+        "assigner": "ics-cert@hq.dhs.gov",
+        "cvss": null,
+        "cwe": "CWE-908",
+        "id": "CVE-2022-2949",
+        "impact": {},
+        "last-modified": "2022-12-14T14:09:00",
+        "references": [
+            "https://www.cisa.gov/uscert/ics/advisories/icsa-22-284-01"
+        ],
+        "summary": "Altair HyperView Player versions 2021.1.0.27 and prior are vulnerable to the use of uninitialized memory vulnerability during parsing of H3D files. A DWORD is extracted from an uninitialized buffer and, after sign extension, is used as an index into a stack variable to increment a counter leading to memory corruption."
+    },
+    {
+        "Modified": "2022-12-14T14:09:00",
+        "Published": "2022-12-13T21:15:00",
+        "access": {},
+        "assigner": "ics-cert@hq.dhs.gov",
+        "cvss": null,
+        "cwe": "CWE-908",
+        "id": "CVE-2022-2950",
+        "impact": {},
+        "last-modified": "2022-12-14T14:09:00",
+        "references": [
+            "https://www.cisa.gov/uscert/ics/advisories/icsa-22-284-01"
+        ],
+        "summary": "Altair HyperView Player versions 2021.1.0.27 and prior are vulnerable to the use of uninitialized memory vulnerability during parsing of H3D files. A DWORD is extracted from an uninitialized buffer and, after sign extension, is used as an index into a stack variable to increment a counter leading to memory corruption."
+    },
+    {
+        "Modified": "2022-12-14T14:09:00",
+        "Published": "2022-12-13T21:15:00",
+        "access": {},
+        "assigner": "ics-cert@hq.dhs.gov",
+        "cvss": null,
+        "cwe": "CWE-129",
+        "id": "CVE-2022-2951",
+        "impact": {},
+        "last-modified": "2022-12-14T14:09:00",
+        "references": [
+            "https://www.cisa.gov/uscert/ics/advisories/icsa-22-284-01"
+        ],
+        "summary": "Altair HyperView Player versions 2021.1.0.27 and prior are vulnerable to improper validation of array index vulnerability during processing of H3D files. A DWORD value from a PoC file is extracted and used as an index to write to a buffer, leading to memory corruption."
+    },
+    {
+        "Modified": "2022-12-14T14:09:00",
+        "Published": "2022-12-13T21:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-38628",
+        "impact": {},
+        "last-modified": "2022-12-14T14:09:00",
+        "references": [
+            "https://github.com/omarhashem123/Security-Research/blob/main/CVE-2022-38628/CVE-2022-38628.txt"
+        ],
+        "summary": "Nortek Linear eMerge E3-Series 0.32-08f, 0.32-07p, 0.32-07e, 0.32-09c, 0.32-09b, 0.32-09a, and 0.32-08e were discovered to contain a cross-site scripting (XSS) vulnerability which is chained with a local session fixation. This vulnerability allows attackers to escalate privileges via unspecified vectors."
+    },
+    {
+        "Modified": "2022-12-14T14:09:00",
+        "Published": "2022-12-13T21:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-46404",
+        "impact": {},
+        "last-modified": "2022-12-14T14:09:00",
+        "references": [
+            "https://networks.unify.com/security/advisories/OBSO-2211-02.pdf",
+            "https://www.heise.de/news/Kommunikationssoftware-Kritische-Sicherheitsluecke-in-Atos-Unify-OpenScape-4000-7358657.html"
+        ],
+        "summary": "A command injection vulnerability has been identified in Atos Unify OpenScape 4000 Assistant and Unify OpenScape 4000 Manager (8 before R2.22.18, 10 before 0.28.13, and 10 R1 before R1.34.4) that may allow an unauthenticated attacker to upload arbitrary files and achieve administrative access to the system."
+    },
+    {
+        "Modified": "2022-12-14T14:09:00",
+        "Published": "2022-12-13T21:15:00",
+        "access": {},
+        "assigner": "security@wordfence.com",
+        "cvss": null,
+        "cwe": "CWE-1284",
+        "id": "CVE-2022-4171",
+        "impact": {},
+        "last-modified": "2022-12-14T14:09:00",
+        "references": [
+            "https://www.wordfence.com/threat-intel/vulnerabilities/id/ac5549ec-f931-4b13-b5f9-0d6f3e53aae4",
+            "https://plugins.trac.wordpress.org/changeset?sfp_email=&sfph_mail=&reponame=&old=2830349%40demon-image-annotation&new=2830349%40demon-image-annotation&sfp_email=&sfph_mail="
+        ],
+        "summary": "The demon image annotation plugin for WordPress is vulnerable to improper input validation in versions up to, and including 5.0. This is due to the plugin improperly validating the number of characters supplied during an annotation despite there being a setting to limit the number characters input. This means that unauthenticated attackers can bypass the length restrictions and input more characters than allowed via the settings."
+    },
+    {
+        "Modified": "2022-12-14T14:09:00",
+        "Published": "2022-12-13T21:15:00",
+        "access": {},
+        "assigner": "security@wordfence.com",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2022-4207",
+        "impact": {},
+        "last-modified": "2022-12-14T14:09:00",
+        "references": [
+            "https://www.wordfence.com/threat-intel/vulnerabilities/id/f00cdef3-d733-4e85-8099-204ef76096b4",
+            "https://github.com/MrOxizen/image-hover-effects-ultimate/commit/4ba784e1a2a0cf02e8b8cbe3db7323735d7dedc9",
+            "https://plugins.trac.wordpress.org/changeset?sfp_email=&sfph_mail=&reponame=&old=2830197%40image-hover-effects-ultimate&new=2830197%40image-hover-effects-ultimate&sfp_email=&sfph_mail="
+        ],
+        "summary": "The Image Hover Effects Ultimate plugin for WordPress is vulnerable to Stored Cross-Site Scripting via several values that can be added to an Image Hover in versions 9.8.1 to 9.8.4 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page. By default, the plugin only allows administrators access to edit Image Hovers, however, if a site admin makes the plugin's features available to lower privileged users through the 'Who Can Edit?' setting then this can be exploited by those users."
+    },
+    {
+        "Modified": "2022-12-14T14:09:00",
+        "Published": "2022-12-13T22:15:00",
+        "access": {},
+        "assigner": "ics-cert@hq.dhs.gov",
+        "cvss": null,
+        "cwe": "CWE-321",
+        "id": "CVE-2022-2660",
+        "impact": {},
+        "last-modified": "2022-12-14T14:09:00",
+        "references": [
+            "https://www.cisa.gov/uscert/ics/advisories/icsa-22-235-02"
+        ],
+        "summary": "Delta Industrial Automation DIALink versions 1.4.0.0 and prior are vulnerable to the use of a hard-coded cryptographic key which could allow an attacker to decrypt sensitive data and compromise the machine."
+    },
+    {
+        "Modified": "2022-12-14T14:09:00",
+        "Published": "2022-12-13T22:15:00",
+        "access": {},
+        "assigner": "ics-cert@hq.dhs.gov",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-2757",
+        "impact": {},
+        "last-modified": "2022-12-14T14:09:00",
+        "references": [
+            "https://www.cisa.gov/uscert/ics/advisories/icsa-22-256-04"
+        ],
+        "summary": "Due to the lack of adequately implemented access-control rules, all versions Kingspan TMS300 CS are vulnerable to an attacker viewing and modifying the application settings without authenticating by accessing a specific uniform resource locator (URL) on the webserver."
+    },
+    {
+        "Modified": "2022-12-14T14:09:00",
+        "Published": "2022-12-13T22:15:00",
+        "access": {},
+        "assigner": "ics-cert@hq.dhs.gov",
+        "cvss": null,
+        "cwe": "CWE-284",
+        "id": "CVE-2022-38355",
+        "impact": {},
+        "last-modified": "2022-12-14T14:09:00",
+        "references": [
+            "https://www.cisa.gov/uscert/ics/advisories/icsa-22-284-02"
+        ],
+        "summary": "Daikin SVMPC1 version 2.1.22 and prior and SVMPC2 version 1.2.3 and prior are vulnerable to attackers with access to the local area network (LAN) to disclose sensitive information stored by the affected product without requiring authentication."
+    },
+    {
+        "Modified": "2022-12-14T14:09:00",
+        "Published": "2022-12-13T22:15:00",
+        "access": {},
+        "assigner": "ics-cert@hq.dhs.gov",
+        "cvss": null,
+        "cwe": "CWE-259",
+        "id": "CVE-2022-41653",
+        "impact": {},
+        "last-modified": "2022-12-14T14:09:00",
+        "references": [
+            "https://www.cisa.gov/uscert/ics/advisories/icsa-22-284-02"
+        ],
+        "summary": "Daikin SVMPC1 version 2.1.22 and prior and SVMPC2 version 1.2.3 and prior are vulnerable to an attacker obtaining user login credentials and control the system."
+    },
+    {
+        "Modified": "2022-12-14T14:09:00",
+        "Published": "2022-12-13T22:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-43996",
+        "impact": {},
+        "last-modified": "2022-12-14T14:09:00",
+        "references": [
+            "https://wid.cert-bund.de/.well-known/csaf/white/2022/bsi-2022-0003.json"
+        ],
+        "summary": "The csaf_provider package before 0.8.2 allows XSS via a crafted CSAF document uploaded as text/html. The endpoint upload allows valid CSAF advisories (JSON format) to be uploaded with Content-Type text/html and filenames ending in .html. When subsequently accessed via web browser, these advisories are served and interpreted as HTML pages. Such uploaded advisories can contain JavaScript code that will execute within the browser context of users inspecting the advisory."
+    },
+    {
+        "Modified": "2022-12-14T14:09:00",
+        "Published": "2022-12-13T22:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-46381",
+        "impact": {},
+        "last-modified": "2022-12-14T14:09:00",
+        "references": [
+            "https://github.com/omarhashem123/Security-Research/blob/main/CVE-2022-46381/CVE-2022-46381.txt"
+        ],
+        "summary": "Certain Linear eMerge E3-Series devices are vulnerable to XSS via the type parameter (e.g., to the badging/badge_template_v0.php component). This affects 0.32-08f, 0.32-07p, 0.32-07e, 0.32-09c, 0.32-09b, 0.32-09a, and 0.32-08e."
+    },
+    {
+        "Modified": "2022-12-14T13:56:00",
+        "Published": "2017-02-28T15:59:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "MEDIUM",
+            "vector": "NETWORK"
+        },
+        "assigner": "talos-cna@cisco.com",
+        "cvss": 6.8,
+        "cvss-time": "2022-12-14T13:56:00",
+        "cvss-vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
+        "cwe": "CWE-119",
+        "id": "CVE-2016-8715",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "PARTIAL",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-12-14T13:56:00",
+        "references": [
+            "http://www.talosintelligence.com/reports/TALOS-2016-0228/",
+            "http://www.securityfocus.com/bid/96470"
+        ],
+        "summary": "An exploitable heap corruption vulnerability exists in the loadTrailer functionality of Iceni Argus version 6.6.05. A specially crafted PDF file can cause a heap corruption resulting in arbitrary code execution. An attacker can send/provide a malicious PDF file to trigger this vulnerability."
+    },
+    {
+        "Modified": "2022-12-14T13:52:00",
+        "Published": "2017-03-10T10:59:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "MEDIUM",
+            "vector": "NETWORK"
+        },
+        "assigner": "talos-cna@cisco.com",
+        "cvss": 6.8,
+        "cvss-time": "2022-12-14T13:52:00",
+        "cvss-vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
+        "cwe": "CWE-120",
+        "id": "CVE-2016-8714",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "PARTIAL",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-12-14T13:52:00",
+        "references": [
+            "http://www.talosintelligence.com/reports/TALOS-2016-0227/",
+            "http://www.securityfocus.com/bid/96785",
+            "http://www.debian.org/security/2017/dsa-3813"
+        ],
+        "summary": "An exploitable buffer overflow vulnerability exists in the LoadEncoding functionality of the R programming language version 3.3.0. A specially crafted R script can cause a buffer overflow resulting in a memory corruption. An attacker can send a malicious R script to trigger this vulnerability."
+    },
+    {
+        "Modified": "2022-12-14T13:50:00",
+        "Published": "2017-04-12T19:59:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "ADJACENT_NETWORK"
+        },
+        "assigner": "talos-cna@cisco.com",
+        "cvss": 3.3,
+        "cvss-time": "2022-12-14T13:50:00",
+        "cvss-vector": "AV:A/AC:L/Au:N/C:P/I:N/A:N",
+        "cwe": "CWE-640",
+        "id": "CVE-2016-8716",
+        "impact": {
+            "availability": "NONE",
+            "confidentiality": "PARTIAL",
+            "integrity": "NONE"
+        },
+        "last-modified": "2022-12-14T13:50:00",
+        "references": [
+            "http://www.talosintelligence.com/reports/TALOS-2016-0230"
+        ],
+        "summary": "An exploitable Cleartext Transmission of Password vulnerability exists in the Web Application functionality of Moxa AWK-3131A Wireless Access Point running firmware 1.1. The Change Password functionality of the Web Application transmits the password in cleartext. An attacker capable of intercepting this traffic is able to obtain valid credentials."
+    },
+    {
+        "Modified": "2022-12-14T13:47:00",
+        "Published": "2018-04-02T17:29:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "talos-cna@cisco.com",
+        "cvss": 10.0,
+        "cvss-time": "2022-12-14T13:47:00",
+        "cvss-vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C",
+        "cwe": "CWE-798",
+        "id": "CVE-2016-8717",
+        "impact": {
+            "availability": "COMPLETE",
+            "confidentiality": "COMPLETE",
+            "integrity": "COMPLETE"
+        },
+        "last-modified": "2022-12-14T13:47:00",
+        "references": [
+            "https://www.talosintelligence.com/vulnerability_reports/TALOS-2016-0231"
+        ],
+        "summary": "An exploitable Use of Hard-coded Credentials vulnerability exists in the Moxa AWK-3131A Wireless Access Point running firmware 1.1. The device operating system contains an undocumented, privileged (root) account with hard-coded credentials, giving attackers full control of affected devices."
+    },
+    {
+        "Modified": "2022-12-14T13:43:00",
+        "Published": "2017-04-13T19:59:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "talos-cna@cisco.com",
+        "cvss": 5.0,
+        "cvss-time": "2022-12-14T13:43:00",
+        "cvss-vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N",
+        "cwe": "CWE-200",
+        "id": "CVE-2016-8722",
+        "impact": {
+            "availability": "NONE",
+            "confidentiality": "PARTIAL",
+            "integrity": "NONE"
+        },
+        "last-modified": "2022-12-14T13:43:00",
+        "references": [
+            "http://www.talosintelligence.com/reports/TALOS-2016-0236/"
+        ],
+        "summary": "An exploitable Information Disclosure vulnerability exists in the Web Application functionality of Moxa AWK-3131A Series Industrial IEEE 802.11a/b/g/n wireless AP/bridge/client. Retrieving a specific URL without authentication can reveal sensitive information to an attacker."
+    },
+    {
+        "Modified": "2022-12-14T13:40:00",
+        "Published": "2017-06-21T19:29:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "talos-cna@cisco.com",
+        "cvss": 7.5,
+        "cvss-time": "2022-12-14T13:40:00",
+        "cvss-vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+        "cwe": "CWE-798",
+        "id": "CVE-2016-8731",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "PARTIAL",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-12-14T13:40:00",
+        "references": [
+            "https://www.talosintelligence.com/vulnerability_reports/TALOS-2016-0245",
+            "http://www.securityfocus.com/bid/99193"
+        ],
+        "summary": "Hard-coded FTP credentials (r:r) are included in the Foscam C1 running firmware 1.9.1.12. Knowledge of these credentials would allow remote access to any cameras found on the internet that do not have port 50021 blocked by an intermediate device."
+    },
+    {
+        "Modified": "2022-12-14T13:38:00",
+        "Published": "2018-04-24T19:29:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "LOCAL"
+        },
+        "assigner": "talos-cna@cisco.com",
+        "cvss": 4.6,
+        "cvss-time": "2022-12-14T13:38:00",
+        "cvss-vector": "AV:L/AC:L/Au:N/C:P/I:P/A:P",
+        "cwe": "CWE-275",
+        "id": "CVE-2016-8732",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "PARTIAL",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-12-14T13:38:00",
+        "references": [
+            "https://www.talosintelligence.com/vulnerability_reports/TALOS-2016-0246",
+            "http://www.securityfocus.com/bid/99360"
+        ],
+        "summary": "Multiple security flaws exists in InvProtectDrv.sys which is a part of Invincea Dell Protected Workspace 5.1.1-22303. Weak restrictions on the driver communication channel and additional insufficient checks allow any application to turn off some of the protection mechanisms provided by the Invincea product."
+    },
+    {
+        "Modified": "2022-12-14T13:19:00",
+        "Published": "2022-12-12T03:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-863",
+        "id": "CVE-2022-45760",
+        "impact": {},
+        "last-modified": "2022-12-14T13:19:00",
+        "references": [
+            "https://github.com/saysky/SENS/issues/21"
+        ],
+        "summary": "SENS v1.0 is vulnerable to Incorrect Access Control vulnerability."
     },
     {
         "Modified": "2022-12-14T04:15:00",
@@ -328,36 +1215,6 @@
             "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/I7J5IRXJYLELW7D43A75LOWRUE5EU54O/"
         ],
         "summary": "An out-of-bounds memory access flaw was found in the ATI VGA device emulation of QEMU. This flaw occurs in the ati_2d_blt() routine while handling MMIO write operations when the guest provides invalid values for the destination display parameters. A malicious guest could use this flaw to crash the QEMU process on the host, resulting in a denial of service."
-    },
-    {
-        "Modified": "2022-12-14T01:15:00",
-        "Published": "2022-12-14T01:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2020-9419",
-        "impact": {},
-        "last-modified": "2022-12-14T01:15:00",
-        "references": [
-            "https://gist.github.com/AsherDLL/03d0762b5a535e300f1121caebe333ce"
-        ],
-        "summary": "Multiple stored cross-site scripting (XSS) vulnerabilities in Arcadyan Wifi routers VRV9506JAC23 allow remote attackers to inject arbitrary web script or HTML via the hostName and domain_name parameters present in the LAN configuration section of the administrative dashboard."
-    },
-    {
-        "Modified": "2022-12-14T01:15:00",
-        "Published": "2022-12-14T01:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2020-9420",
-        "impact": {},
-        "last-modified": "2022-12-14T01:15:00",
-        "references": [
-            "https://gist.github.com/AsherDLL/03d0762b5a535e300f1121caebe333ce"
-        ],
-        "summary": "The login password of the web administrative dashboard in Arcadyan Wifi routers VRV9506JAC23 is sent in cleartext, allowing an attacker to sniff and intercept traffic to learn the administrative credentials to the router."
     },
     {
         "Modified": "2022-12-14T01:15:00",
@@ -489,84 +1346,6 @@
     },
     {
         "Modified": "2022-12-14T00:15:00",
-        "Published": "2022-12-14T00:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-37155",
-        "impact": {},
-        "last-modified": "2022-12-14T00:15:00",
-        "references": [
-            "https://pastebin.com/ZH7CPc8X"
-        ],
-        "summary": "RCE in SPIP 3.1.13 through 4.1.2 allows remote authenticated users to execute arbitrary code via a GET parameter"
-    },
-    {
-        "Modified": "2022-12-14T00:15:00",
-        "Published": "2022-12-14T00:15:00",
-        "access": {},
-        "assigner": "Mitsubishielectric.Psirt@yd.MitsubishiElectric.co.jp",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-40264",
-        "impact": {},
-        "last-modified": "2022-12-14T00:15:00",
-        "references": [
-            "https://www.mitsubishielectric.com/en/psirt/vulnerability/pdf/2022-014_en.pdf",
-            "https://jvn.jp/vu/JVNVU95858406/index.html",
-            "https://iconics.com/About/Security/CERT",
-            "https://www.cisa.gov/uscert/ics/advisories/icsa-22-347-01"
-        ],
-        "summary": "Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') vulnerability in ICONICS/Mitsubishi Electric GENESIS64 versions 10.96 to 10.97.2 allows an unauthenticated attacker to create, tamper with or destroy arbitrary files by getting a legitimate user import a project package file crafted by the attacker."
-    },
-    {
-        "Modified": "2022-12-14T00:15:00",
-        "Published": "2022-12-14T00:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-42139",
-        "impact": {},
-        "last-modified": "2022-12-14T00:15:00",
-        "references": [
-            "https://cyberdanube.com/en/en-authenticated-command-injection-in-delta-electronics-dvw-w02w2-e2/"
-        ],
-        "summary": "Delta Electronics DVW-W02W2-E2 1.5.0.10 is vulnerable to Command Injection via Crafted URL."
-    },
-    {
-        "Modified": "2022-12-14T00:15:00",
-        "Published": "2022-12-14T00:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-42140",
-        "impact": {},
-        "last-modified": "2022-12-14T00:15:00",
-        "references": [
-            "https://cyberdanube.com/en/en-multiple-vulnerabilities-in-delta-electronics-dx-2100-l1-cn/"
-        ],
-        "summary": "Delta Electronics DX-2100-L1-CN 2.42 is vulnerable to Command Injection via lform/net_diagnose."
-    },
-    {
-        "Modified": "2022-12-14T00:15:00",
-        "Published": "2022-12-14T00:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-42141",
-        "impact": {},
-        "last-modified": "2022-12-14T00:15:00",
-        "references": [
-            "https://cyberdanube.com/en/en-multiple-vulnerabilities-in-delta-electronics-dx-2100-l1-cn/"
-        ],
-        "summary": "Delta Electronics DX-2100-L1-CN 2.42 is vulnerable to Cross Site Scripting (XSS) via lform/urlfilter."
-    },
-    {
-        "Modified": "2022-12-14T00:15:00",
         "Published": "2022-12-12T15:15:00",
         "access": {},
         "assigner": "cve@mitre.org",
@@ -594,21 +1373,6 @@
             "https://www.swascan.com/it/security-advisory-telenia-software-tvox/"
         ],
         "summary": "Telenia Software s.r.l TVox before v22.0.17 was discovered to contain a remote code execution (RCE) vulnerability in the component action_export_control.php."
-    },
-    {
-        "Modified": "2022-12-13T23:15:00",
-        "Published": "2022-12-13T23:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-44874",
-        "impact": {},
-        "last-modified": "2022-12-13T23:15:00",
-        "references": [
-            "https://github.com/wasm3/wasm3/issues/380"
-        ],
-        "summary": "wasm3 commit 7890a2097569fde845881e0b352d813573e371f9 was discovered to contain a segmentation fault via the component op_CallIndirect at /m3_exec.h."
     },
     {
         "Modified": "2022-12-13T23:15:00",
@@ -691,96 +1455,6 @@
             "http://packetstormsecurity.com/files/168329/Windows-Credential-Guard-Non-Constant-Time-Comparison-Information-Disclosure.html"
         ],
         "summary": "Windows Defender Credential Guard Information Disclosure Vulnerability. This CVE ID is unique from CVE-2022-34710, CVE-2022-34712."
-    },
-    {
-        "Modified": "2022-12-13T22:15:00",
-        "Published": "2022-12-13T22:15:00",
-        "access": {},
-        "assigner": "ics-cert@hq.dhs.gov",
-        "cvss": null,
-        "cwe": "CWE-321",
-        "id": "CVE-2022-2660",
-        "impact": {},
-        "last-modified": "2022-12-13T22:15:00",
-        "references": [
-            "https://www.cisa.gov/uscert/ics/advisories/icsa-22-235-02"
-        ],
-        "summary": "Delta Industrial Automation DIALink versions 1.4.0.0 and prior are vulnerable to the use of a hard-coded cryptographic key which could allow an attacker to decrypt sensitive data and compromise the machine."
-    },
-    {
-        "Modified": "2022-12-13T22:15:00",
-        "Published": "2022-12-13T22:15:00",
-        "access": {},
-        "assigner": "ics-cert@hq.dhs.gov",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-2757",
-        "impact": {},
-        "last-modified": "2022-12-13T22:15:00",
-        "references": [
-            "https://www.cisa.gov/uscert/ics/advisories/icsa-22-256-04"
-        ],
-        "summary": "Due to the lack of adequately implemented access-control rules, all versions Kingspan TMS300 CS are vulnerable to an attacker viewing and modifying the application settings without authenticating by accessing a specific uniform resource locator (URL) on the webserver."
-    },
-    {
-        "Modified": "2022-12-13T22:15:00",
-        "Published": "2022-12-13T22:15:00",
-        "access": {},
-        "assigner": "ics-cert@hq.dhs.gov",
-        "cvss": null,
-        "cwe": "CWE-284",
-        "id": "CVE-2022-38355",
-        "impact": {},
-        "last-modified": "2022-12-13T22:15:00",
-        "references": [
-            "https://www.cisa.gov/uscert/ics/advisories/icsa-22-284-02"
-        ],
-        "summary": "Daikin SVMPC1 version 2.1.22 and prior and SVMPC2 version 1.2.3 and prior are vulnerable to attackers with access to the local area network (LAN) to disclose sensitive information stored by the affected product without requiring authentication."
-    },
-    {
-        "Modified": "2022-12-13T22:15:00",
-        "Published": "2022-12-13T22:15:00",
-        "access": {},
-        "assigner": "ics-cert@hq.dhs.gov",
-        "cvss": null,
-        "cwe": "CWE-259",
-        "id": "CVE-2022-41653",
-        "impact": {},
-        "last-modified": "2022-12-13T22:15:00",
-        "references": [
-            "https://www.cisa.gov/uscert/ics/advisories/icsa-22-284-02"
-        ],
-        "summary": "Daikin SVMPC1 version 2.1.22 and prior and SVMPC2 version 1.2.3 and prior are vulnerable to an attacker obtaining user login credentials and control the system."
-    },
-    {
-        "Modified": "2022-12-13T22:15:00",
-        "Published": "2022-12-13T22:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-43996",
-        "impact": {},
-        "last-modified": "2022-12-13T22:15:00",
-        "references": [
-            "https://wid.cert-bund.de/.well-known/csaf/white/2022/bsi-2022-0003.json"
-        ],
-        "summary": "The csaf_provider package before 0.8.2 allows XSS via a crafted CSAF document uploaded as text/html. The endpoint upload allows valid CSAF advisories (JSON format) to be uploaded with Content-Type text/html and filenames ending in .html. When subsequently accessed via web browser, these advisories are served and interpreted as HTML pages. Such uploaded advisories can contain JavaScript code that will execute within the browser context of users inspecting the advisory."
-    },
-    {
-        "Modified": "2022-12-13T22:15:00",
-        "Published": "2022-12-13T22:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-46381",
-        "impact": {},
-        "last-modified": "2022-12-13T22:15:00",
-        "references": [
-            "https://github.com/omarhashem123/Security-Research/blob/main/CVE-2022-46381/CVE-2022-46381.txt"
-        ],
-        "summary": "Certain Linear eMerge E3-Series devices are vulnerable to XSS via the type parameter (e.g., to the badging/badge_template_v0.php component). This affects 0.32-08f, 0.32-07p, 0.32-07e, 0.32-09c, 0.32-09b, 0.32-09a, and 0.32-08e."
     },
     {
         "Modified": "2022-12-13T22:12:00",
@@ -1264,663 +1938,5 @@
             "http://www.securityfocus.com/bid/96472"
         ],
         "summary": "An exploitable uninitialized variable vulnerability which leads to a stack-based buffer overflow exists in Iceni Argus. When it attempts to convert a malformed PDF to XML a stack variable will be left uninitialized which will later be used to fetch a length that is used in a copy operation. In most cases this will allow an aggressor to write outside the bounds of a stack buffer which is used to contain colors. This can lead to code execution under the context of the account running the tool."
-    },
-    {
-        "Modified": "2022-12-13T21:15:00",
-        "Published": "2022-12-13T21:15:00",
-        "access": {},
-        "assigner": "security-advisories@github.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-23499",
-        "impact": {},
-        "last-modified": "2022-12-13T21:15:00",
-        "references": [
-            "https://github.com/TYPO3/html-sanitizer/security/advisories/GHSA-hvwx-qh2h-xcfj"
-        ],
-        "summary": "HTML sanitizer is written in PHP, aiming to provide XSS-safe markup based on explicitly allowed tags, attributes and values. In versions prior to 1.5.0 or 2.1.1, malicious markup used in a sequence with special HTML CDATA sections cannot be filtered and sanitized due to a parsing issue in the upstream package masterminds/html5. This allows bypassing the cross-site scripting mechanism of typo3/html-sanitizer. The upstream package masterminds/html5 provides HTML raw text elements (`script`, `style`, `noframes`, `noembed` and `iframe`) as DOMText nodes, which were not processed and sanitized further. None of the mentioned elements were defined in the default builder configuration, that's why only custom behaviors, using one of those tag names, were vulnerable to cross-site scripting. This issue has been fixed in versions 1.5.0 and 2.1.1."
-    },
-    {
-        "Modified": "2022-12-13T21:15:00",
-        "Published": "2022-12-13T21:15:00",
-        "access": {},
-        "assigner": "ics-cert@hq.dhs.gov",
-        "cvss": null,
-        "cwe": "CWE-119",
-        "id": "CVE-2022-2947",
-        "impact": {},
-        "last-modified": "2022-12-13T21:15:00",
-        "references": [
-            "https://www.cisa.gov/uscert/ics/advisories/icsa-22-284-01"
-        ],
-        "summary": "Altair HyperView Player versions 2021.1.0.27 and prior perform operations on a memory buffer but can read from or write to a memory location outside of the intended boundary of the buffer. This hits initially as a read access violation, leading to a memory corruption situation."
-    },
-    {
-        "Modified": "2022-12-13T21:15:00",
-        "Published": "2022-12-13T21:15:00",
-        "access": {},
-        "assigner": "ics-cert@hq.dhs.gov",
-        "cvss": null,
-        "cwe": "CWE-908",
-        "id": "CVE-2022-2949",
-        "impact": {},
-        "last-modified": "2022-12-13T21:15:00",
-        "references": [
-            "https://www.cisa.gov/uscert/ics/advisories/icsa-22-284-01"
-        ],
-        "summary": "Altair HyperView Player versions 2021.1.0.27 and prior are vulnerable to the use of uninitialized memory vulnerability during parsing of H3D files. A DWORD is extracted from an uninitialized buffer and, after sign extension, is used as an index into a stack variable to increment a counter leading to memory corruption."
-    },
-    {
-        "Modified": "2022-12-13T21:15:00",
-        "Published": "2022-12-13T21:15:00",
-        "access": {},
-        "assigner": "ics-cert@hq.dhs.gov",
-        "cvss": null,
-        "cwe": "CWE-908",
-        "id": "CVE-2022-2950",
-        "impact": {},
-        "last-modified": "2022-12-13T21:15:00",
-        "references": [
-            "https://www.cisa.gov/uscert/ics/advisories/icsa-22-284-01"
-        ],
-        "summary": "Altair HyperView Player versions 2021.1.0.27 and prior are vulnerable to the use of uninitialized memory vulnerability during parsing of H3D files. A DWORD is extracted from an uninitialized buffer and, after sign extension, is used as an index into a stack variable to increment a counter leading to memory corruption."
-    },
-    {
-        "Modified": "2022-12-13T21:15:00",
-        "Published": "2022-12-13T21:15:00",
-        "access": {},
-        "assigner": "ics-cert@hq.dhs.gov",
-        "cvss": null,
-        "cwe": "CWE-129",
-        "id": "CVE-2022-2951",
-        "impact": {},
-        "last-modified": "2022-12-13T21:15:00",
-        "references": [
-            "https://www.cisa.gov/uscert/ics/advisories/icsa-22-284-01"
-        ],
-        "summary": "Altair HyperView Player versions 2021.1.0.27 and prior are vulnerable to improper validation of array index vulnerability during processing of H3D files. A DWORD value from a PoC file is extracted and used as an index to write to a buffer, leading to memory corruption."
-    },
-    {
-        "Modified": "2022-12-13T21:15:00",
-        "Published": "2022-12-13T21:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-38628",
-        "impact": {},
-        "last-modified": "2022-12-13T21:15:00",
-        "references": [
-            "https://github.com/omarhashem123/Security-Research/blob/main/CVE-2022-38628/CVE-2022-38628.txt"
-        ],
-        "summary": "Nortek Linear eMerge E3-Series 0.32-08f, 0.32-07p, 0.32-07e, 0.32-09c, 0.32-09b, 0.32-09a, and 0.32-08e were discovered to contain a cross-site scripting (XSS) vulnerability which is chained with a local session fixation. This vulnerability allows attackers to escalate privileges via unspecified vectors."
-    },
-    {
-        "Modified": "2022-12-13T21:15:00",
-        "Published": "2022-12-13T21:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-46404",
-        "impact": {},
-        "last-modified": "2022-12-13T21:15:00",
-        "references": [
-            "https://networks.unify.com/security/advisories/OBSO-2211-02.pdf",
-            "https://www.heise.de/news/Kommunikationssoftware-Kritische-Sicherheitsluecke-in-Atos-Unify-OpenScape-4000-7358657.html"
-        ],
-        "summary": "A command injection vulnerability has been identified in Atos Unify OpenScape 4000 Assistant and Unify OpenScape 4000 Manager (8 before R2.22.18, 10 before 0.28.13, and 10 R1 before R1.34.4) that may allow an unauthenticated attacker to upload arbitrary files and achieve administrative access to the system."
-    },
-    {
-        "Modified": "2022-12-13T21:15:00",
-        "Published": "2022-12-13T21:15:00",
-        "access": {},
-        "assigner": "security@wordfence.com",
-        "cvss": null,
-        "cwe": "CWE-1284",
-        "id": "CVE-2022-4171",
-        "impact": {},
-        "last-modified": "2022-12-13T21:15:00",
-        "references": [
-            "https://www.wordfence.com/threat-intel/vulnerabilities/id/ac5549ec-f931-4b13-b5f9-0d6f3e53aae4",
-            "https://plugins.trac.wordpress.org/changeset?sfp_email=&sfph_mail=&reponame=&old=2830349%40demon-image-annotation&new=2830349%40demon-image-annotation&sfp_email=&sfph_mail="
-        ],
-        "summary": "The demon image annotation plugin for WordPress is vulnerable to improper input validation in versions up to, and including 5.0. This is due to the plugin improperly validating the number of characters supplied during an annotation despite there being a setting to limit the number characters input. This means that unauthenticated attackers can bypass the length restrictions and input more characters than allowed via the settings."
-    },
-    {
-        "Modified": "2022-12-13T21:15:00",
-        "Published": "2022-12-13T21:15:00",
-        "access": {},
-        "assigner": "security@wordfence.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-4207",
-        "impact": {},
-        "last-modified": "2022-12-13T21:15:00",
-        "references": [
-            "https://www.wordfence.com/threat-intel/vulnerabilities/id/f00cdef3-d733-4e85-8099-204ef76096b4",
-            "https://github.com/MrOxizen/image-hover-effects-ultimate/commit/4ba784e1a2a0cf02e8b8cbe3db7323735d7dedc9",
-            "https://plugins.trac.wordpress.org/changeset?sfp_email=&sfph_mail=&reponame=&old=2830197%40image-hover-effects-ultimate&new=2830197%40image-hover-effects-ultimate&sfp_email=&sfph_mail="
-        ],
-        "summary": "The Image Hover Effects Ultimate plugin for WordPress is vulnerable to Stored Cross-Site Scripting via several values that can be added to an Image Hover in versions 9.8.1 to 9.8.4 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page. By default, the plugin only allows administrators access to edit Image Hovers, however, if a site admin makes the plugin's features available to lower privileged users through the 'Who Can Edit?' setting then this can be exploited by those users."
-    },
-    {
-        "Modified": "2022-12-13T21:15:00",
-        "Published": "2022-11-29T09:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-190",
-        "id": "CVE-2022-4202",
-        "impact": {},
-        "last-modified": "2022-12-13T21:15:00",
-        "references": [
-            "https://vuldb.com/?id.214518",
-            "https://drive.google.com/file/d/1HVWa6IpAbvsMS5rx091RfjUB4GfXrMLE/view",
-            "https://github.com/gpac/gpac/commit/b3d821c4ae9ba62b3a194d9dcb5e99f17bd56908",
-            "https://github.com/gpac/gpac/issues/2333"
-        ],
-        "summary": "A vulnerability, which was classified as problematic, was found in GPAC 2.1-DEV-rev490-g68064e101-master. Affected is the function lsr_translate_coords of the file laser/lsr_dec.c. The manipulation leads to integer overflow. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used. The name of the patch is b3d821c4ae9ba62b3a194d9dcb5e99f17bd56908. It is recommended to apply a patch to fix this issue. VDB-214518 is the identifier assigned to this vulnerability."
-    },
-    {
-        "Modified": "2022-12-13T21:15:00",
-        "Published": "2022-11-26T03:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-125",
-        "id": "CVE-2022-45909",
-        "impact": {},
-        "last-modified": "2022-12-13T21:15:00",
-        "references": [
-            "https://github.com/drachtio/drachtio-server/commit/a63d01854987d9fd846cdc9265af38ee9eb72490",
-            "https://github.com/drachtio/drachtio-server/compare/v0.8.18...v0.8.19",
-            "https://github.com/drachtio/drachtio-server/pull/238"
-        ],
-        "summary": "drachtio-server before 0.8.19 has a heap-based buffer over-read via a long Request-URI in an INVITE request."
-    },
-    {
-        "Modified": "2022-12-13T21:14:00",
-        "Published": "2018-04-24T19:29:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "MEDIUM",
-            "vector": "NETWORK"
-        },
-        "assigner": "talos-cna@cisco.com",
-        "cvss": 6.8,
-        "cvss-time": "2022-12-13T21:14:00",
-        "cvss-vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
-        "cwe": "CWE-119",
-        "id": "CVE-2016-8383",
-        "impact": {
-            "availability": "PARTIAL",
-            "confidentiality": "PARTIAL",
-            "integrity": "PARTIAL"
-        },
-        "last-modified": "2022-12-13T21:14:00",
-        "references": [
-            "https://www.talosintelligence.com/vulnerability_reports/TALOS-2016-0208"
-        ],
-        "summary": "An exploitable heap corruption vulnerability exists in the Doc_GetFontTable functionality of AntennaHouse DMC HTMLFilter. A specially crafted doc file can cause a heap corruption resulting in arbitrary code execution. An attacker can send/provide malicious doc file to trigger this vulnerability."
-    },
-    {
-        "Modified": "2022-12-13T21:12:00",
-        "Published": "2017-02-21T22:59:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "LOW",
-            "vector": "NETWORK"
-        },
-        "assigner": "talos-cna@cisco.com",
-        "cvss": 5.0,
-        "cvss-time": "2022-12-13T21:12:00",
-        "cvss-vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
-        "cwe": "CWE-476",
-        "id": "CVE-2016-9049",
-        "impact": {
-            "availability": "PARTIAL",
-            "confidentiality": "NONE",
-            "integrity": "NONE"
-        },
-        "last-modified": "2022-12-13T21:12:00",
-        "references": [
-            "http://www.talosintelligence.com/reports/TALOS-2016-0263/",
-            "http://www.securityfocus.com/bid/96376"
-        ],
-        "summary": "An exploitable denial-of-service vulnerability exists in the fabric-worker component of Aerospike Database Server 3.10.0.3. A specially crafted packet can cause the server process to dereference a null pointer. An attacker can simply connect to a TCP port in order to trigger this vulnerability."
-    },
-    {
-        "Modified": "2022-12-13T21:11:00",
-        "Published": "2017-01-26T21:59:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "LOW",
-            "vector": "NETWORK"
-        },
-        "assigner": "talos-cna@cisco.com",
-        "cvss": 6.4,
-        "cvss-time": "2022-12-13T21:11:00",
-        "cvss-vector": "AV:N/AC:L/Au:N/C:P/I:N/A:P",
-        "cwe": "CWE-125",
-        "id": "CVE-2016-9050",
-        "impact": {
-            "availability": "PARTIAL",
-            "confidentiality": "PARTIAL",
-            "integrity": "NONE"
-        },
-        "last-modified": "2022-12-13T21:11:00",
-        "references": [
-            "http://www.talosintelligence.com/reports/TALOS-2016-0264/",
-            "http://www.securityfocus.com/bid/95415"
-        ],
-        "summary": "An exploitable out-of-bounds read vulnerability exists in the client message-parsing functionality of Aerospike Database Server 3.10.0.3. A specially crafted packet can cause an out-of-bounds read resulting in disclosure of memory within the process, the same vulnerability can also be used to trigger a denial of service. An attacker can simply connect to the port and send the packet to trigger this vulnerability."
-    },
-    {
-        "Modified": "2022-12-13T21:08:00",
-        "Published": "2017-02-21T22:59:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "LOW",
-            "vector": "NETWORK"
-        },
-        "assigner": "talos-cna@cisco.com",
-        "cvss": 7.5,
-        "cvss-time": "2022-12-13T21:08:00",
-        "cvss-vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
-        "cwe": "CWE-787",
-        "id": "CVE-2016-9051",
-        "impact": {
-            "availability": "PARTIAL",
-            "confidentiality": "PARTIAL",
-            "integrity": "PARTIAL"
-        },
-        "last-modified": "2022-12-13T21:08:00",
-        "references": [
-            "http://www.talosintelligence.com/reports/TALOS-2016-0265/",
-            "http://www.securityfocus.com/bid/96374"
-        ],
-        "summary": "An exploitable out-of-bounds write vulnerability exists in the batch transaction field parsing functionality of Aerospike Database Server 3.10.0.3. A specially crafted packet can cause an out-of-bounds write resulting in memory corruption which can lead to remote code execution. An attacker can simply connect to the port to trigger this vulnerability."
-    },
-    {
-        "Modified": "2022-12-13T21:06:00",
-        "Published": "2018-04-24T19:29:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "MEDIUM",
-            "vector": "NETWORK"
-        },
-        "assigner": "talos-cna@cisco.com",
-        "cvss": 6.8,
-        "cvss-time": "2022-12-13T21:06:00",
-        "cvss-vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
-        "cwe": "CWE-119",
-        "id": "CVE-2016-8384",
-        "impact": {
-            "availability": "PARTIAL",
-            "confidentiality": "PARTIAL",
-            "integrity": "PARTIAL"
-        },
-        "last-modified": "2022-12-13T21:06:00",
-        "references": [
-            "https://www.talosintelligence.com/vulnerability_reports/TALOS-2016-0209"
-        ],
-        "summary": "An exploitable heap corruption vulnerability exists in the DHFSummary functionality of AntennaHouse DMC HTMLFilter."
-    },
-    {
-        "Modified": "2022-12-13T21:04:00",
-        "Published": "2013-04-24T10:28:00",
-        "access": {
-            "authentication": "SINGLE",
-            "complexity": "LOW",
-            "vector": "NETWORK"
-        },
-        "assigner": "psirt@us.ibm.com",
-        "cvss": 4.0,
-        "cvss-time": "2022-12-13T21:04:00",
-        "cvss-vector": "AV:N/AC:L/Au:S/C:N/I:P/A:N",
-        "cwe": "CWE-22",
-        "id": "CVE-2013-0544",
-        "impact": {
-            "availability": "NONE",
-            "confidentiality": "NONE",
-            "integrity": "PARTIAL"
-        },
-        "last-modified": "2022-12-13T21:04:00",
-        "references": [
-            "http://www-01.ibm.com/support/docview.wss?&uid=swg21632423",
-            "http://www-01.ibm.com/support/docview.wss?uid=swg1PM82468",
-            "https://exchange.xforce.ibmcloud.com/vulnerabilities/82760"
-        ],
-        "summary": "Directory traversal vulnerability in the Administrative Console in IBM WebSphere Application Server (WAS) 6.1 before 6.1.0.47, 7.0 before 7.0.0.29, 8.0 before 8.0.0.6, and 8.5 before 8.5.0.2 on Linux and UNIX allows remote authenticated users to modify data via unspecified vectors."
-    },
-    {
-        "Modified": "2022-12-13T21:02:00",
-        "Published": "2022-12-12T13:15:00",
-        "access": {},
-        "assigner": "security-alert@hpe.com",
-        "cvss": null,
-        "cwe": "CWE-601",
-        "id": "CVE-2022-37927",
-        "impact": {},
-        "last-modified": "2022-12-13T21:02:00",
-        "references": [
-            "https://support.hpe.com/hpesc/public/docDisplay?docLocale=en_US&docId=hpesbhf04370en_us"
-        ],
-        "summary": "URL Redirection to Untrusted Site ('Open Redirect') vulnerability in Hewlett Packard Enterprise HPE OneView Global Dashboard (OVGD)."
-    },
-    {
-        "Modified": "2022-12-13T20:57:00",
-        "Published": "2017-01-26T21:59:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "LOW",
-            "vector": "NETWORK"
-        },
-        "assigner": "talos-cna@cisco.com",
-        "cvss": 7.5,
-        "cvss-time": "2022-12-13T20:57:00",
-        "cvss-vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
-        "cwe": "CWE-787",
-        "id": "CVE-2016-9052",
-        "impact": {
-            "availability": "PARTIAL",
-            "confidentiality": "PARTIAL",
-            "integrity": "PARTIAL"
-        },
-        "last-modified": "2022-12-13T20:57:00",
-        "references": [
-            "http://www.talosintelligence.com/reports/TALOS-2016-0266/",
-            "http://www.securityfocus.com/bid/95419"
-        ],
-        "summary": "An exploitable stack-based buffer overflow vulnerability exists in the querying functionality of Aerospike Database Server 3.10.0.3. A specially crafted packet can cause a stack-based buffer overflow in the function as_sindex__simatch_by_iname resulting in remote code execution. An attacker can simply connect to the port to trigger this vulnerability."
-    },
-    {
-        "Modified": "2022-12-13T20:50:00",
-        "Published": "2013-04-24T10:28:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "MEDIUM",
-            "vector": "NETWORK"
-        },
-        "assigner": "psirt@us.ibm.com",
-        "cvss": 6.8,
-        "cvss-time": "2022-12-13T20:50:00",
-        "cvss-vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
-        "cwe": "CWE-863",
-        "id": "CVE-2013-0543",
-        "impact": {
-            "availability": "PARTIAL",
-            "confidentiality": "PARTIAL",
-            "integrity": "PARTIAL"
-        },
-        "last-modified": "2022-12-13T20:50:00",
-        "references": [
-            "http://www-01.ibm.com/support/docview.wss?&uid=swg21632423",
-            "http://www-01.ibm.com/support/docview.wss?uid=swg1PM75582",
-            "https://exchange.xforce.ibmcloud.com/vulnerabilities/82759"
-        ],
-        "summary": "IBM WebSphere Application Server (WAS) 6.1 before 6.1.0.47, 7.0 before 7.0.0.29, 8.0 before 8.0.0.6, and 8.5 before 8.5.0.2 on Linux, Solaris, and HP-UX, when a Local OS registry is used, does not properly validate user accounts, which allows remote attackers to bypass intended access restrictions via unspecified vectors."
-    },
-    {
-        "Modified": "2022-12-13T20:49:00",
-        "Published": "2017-02-21T22:59:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "LOW",
-            "vector": "NETWORK"
-        },
-        "assigner": "talos-cna@cisco.com",
-        "cvss": 7.5,
-        "cvss-time": "2022-12-13T20:49:00",
-        "cvss-vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
-        "cwe": "CWE-129",
-        "id": "CVE-2016-9053",
-        "impact": {
-            "availability": "PARTIAL",
-            "confidentiality": "PARTIAL",
-            "integrity": "PARTIAL"
-        },
-        "last-modified": "2022-12-13T20:49:00",
-        "references": [
-            "http://www.talosintelligence.com/reports/TALOS-2016-0267/",
-            "http://www.securityfocus.com/bid/96372"
-        ],
-        "summary": "An exploitable out-of-bounds indexing vulnerability exists within the RW fabric message particle type of Aerospike Database Server 3.10.0.3. A specially crafted packet can cause the server to fetch a function table outside the bounds of an array resulting in remote code execution. An attacker can simply connect to the port to trigger this vulnerability."
-    },
-    {
-        "Modified": "2022-12-13T20:45:00",
-        "Published": "2022-12-12T13:15:00",
-        "access": {},
-        "assigner": "security-alert@hpe.com",
-        "cvss": null,
-        "cwe": "CWE-269",
-        "id": "CVE-2022-37929",
-        "impact": {},
-        "last-modified": "2022-12-13T20:45:00",
-        "references": [
-            "https://support.hpe.com/hpsc/doc/public/display?docLocale=en_US&docId=emr_na-hpesbst04360en_us"
-        ],
-        "summary": "Improper Privilege Management vulnerability in Hewlett Packard Enterprise Nimble Storage Hybrid Flash Arrays and Nimble Storage Secondary Flash Arrays."
-    },
-    {
-        "Modified": "2022-12-13T20:44:00",
-        "Published": "2022-10-11T15:15:00",
-        "access": {},
-        "assigner": "openssl-security@openssl.org",
-        "cvss": null,
-        "cwe": "CWE-476",
-        "id": "CVE-2022-3358",
-        "impact": {},
-        "last-modified": "2022-12-13T20:44:00",
-        "references": [
-            "https://www.openssl.org/news/secadv/20221011.txt",
-            "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=5485c56679d7c49b96e8fc8ca708b0b7e7c03c4b",
-            "https://security.netapp.com/advisory/ntap-20221028-0014/",
-            "https://psirt.global.sonicwall.com/vuln-detail/SNWLID-2022-0023"
-        ],
-        "summary": "OpenSSL supports creating a custom cipher via the legacy EVP_CIPHER_meth_new() function and associated function calls. This function was deprecated in OpenSSL 3.0 and application authors are instead encouraged to use the new provider mechanism in order to implement custom ciphers. OpenSSL versions 3.0.0 to 3.0.5 incorrectly handle legacy custom ciphers passed to the EVP_EncryptInit_ex2(), EVP_DecryptInit_ex2() and EVP_CipherInit_ex2() functions (as well as other similarly named encryption and decryption initialisation functions). Instead of using the custom cipher directly it incorrectly tries to fetch an equivalent cipher from the available providers. An equivalent cipher is found based on the NID passed to EVP_CIPHER_meth_new(). This NID is supposed to represent the unique NID for a given cipher. However it is possible for an application to incorrectly pass NID_undef as this value in the call to EVP_CIPHER_meth_new(). When NID_undef is used in this way the OpenSSL encryption/decryption initialisation function will match the NULL cipher as being equivalent and will fetch this from the available providers. This will succeed if the default provider has been loaded (or if a third party provider has been loaded that offers this cipher). Using the NULL cipher means that the plaintext is emitted as the ciphertext. Applications are only affected by this issue if they call EVP_CIPHER_meth_new() using NID_undef and subsequently use it in a call to an encryption/decryption initialisation function. Applications that only use SSL/TLS are not impacted by this issue. Fixed in OpenSSL 3.0.6 (Affected 3.0.0-3.0.5)."
-    },
-    {
-        "Modified": "2022-12-13T20:41:00",
-        "Published": "2022-12-12T13:15:00",
-        "access": {},
-        "assigner": "security-advisories@github.com",
-        "cvss": null,
-        "cwe": "CWE-274",
-        "id": "CVE-2022-23511",
-        "impact": {},
-        "last-modified": "2022-12-13T20:41:00",
-        "references": [
-            "https://github.com/aws/amazon-cloudwatch-agent/security/advisories/GHSA-j8x2-2m5w-j939",
-            "https://github.com/aws/amazon-cloudwatch-agent/commit/6119858864c317ff26f41f576c169148d1250837#diff-76ed074a9305c04054cdebb9e9aad2d818052b07091de1f20cad0bbac34ffb52"
-        ],
-        "summary": "A privilege escalation issue exists within the Amazon CloudWatch Agent for Windows, software for collecting metrics and logs from Amazon EC2 instances and on-premises servers, in versions up to and including v1.247354. When users trigger a repair of the Agent, a pop-up window opens with SYSTEM permissions. Users with administrative access to affected hosts may use this to create a new command prompt as NT AUTHORITY\\SYSTEM. To trigger this issue, the third party must be able to access the affected host and elevate their privileges such that they're able to trigger the agent repair process. They must also be able to install the tools required to trigger the issue. This issue does not affect the CloudWatch Agent for macOS or Linux. Agent users should upgrade to version 1.247355 of the CloudWatch Agent to address this issue. There is no recommended work around. Affected users must update the installed version of the CloudWatch Agent to address this issue."
-    },
-    {
-        "Modified": "2022-12-13T20:40:00",
-        "Published": "2022-02-18T18:15:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "LOW",
-            "vector": "LOCAL"
-        },
-        "assigner": "secalert@redhat.com",
-        "cvss": 6.6,
-        "cvss-time": "2022-12-13T20:40:00",
-        "cvss-vector": "AV:L/AC:L/Au:N/C:C/I:C/A:N",
-        "cwe": "CWE-787",
-        "id": "CVE-2021-4090",
-        "impact": {
-            "availability": "NONE",
-            "confidentiality": "COMPLETE",
-            "integrity": "COMPLETE"
-        },
-        "last-modified": "2022-12-13T20:40:00",
-        "references": [
-            "https://bugzilla.redhat.com/show_bug.cgi?id=2025101",
-            "https://lore.kernel.org/linux-nfs/163692036074.16710.5678362976688977923.stgit@klimt.1015granger.net/",
-            "https://security.netapp.com/advisory/ntap-20220318-0010/"
-        ],
-        "summary": "An out-of-bounds (OOB) memory write flaw was found in the NFSD in the Linux kernel. Missing sanity may lead to a write beyond bmval[bmlen-1] in nfsd4_decode_bitmap4 in fs/nfsd/nfs4xdr.c. In this flaw, a local attacker with user privilege may gain access to out-of-bounds memory, leading to a system integrity and confidentiality threat."
-    },
-    {
-        "Modified": "2022-12-13T20:33:00",
-        "Published": "2022-03-02T23:15:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "MEDIUM",
-            "vector": "NETWORK"
-        },
-        "assigner": "secalert@redhat.com",
-        "cvss": 5.8,
-        "cvss-time": "2022-12-13T20:33:00",
-        "cvss-vector": "AV:N/AC:M/Au:N/C:N/I:P/A:P",
-        "cwe": "CWE-354",
-        "id": "CVE-2021-3772",
-        "impact": {
-            "availability": "PARTIAL",
-            "confidentiality": "NONE",
-            "integrity": "PARTIAL"
-        },
-        "last-modified": "2022-12-13T20:33:00",
-        "references": [
-            "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=32f8807a48ae55be0e76880cfe8607a18b5bb0df",
-            "https://bugzilla.redhat.com/show_bug.cgi?id=2000694",
-            "https://github.com/torvalds/linux/commit/32f8807a48ae55be0e76880cfe8607a18b5bb0df",
-            "https://ubuntu.com/security/CVE-2021-3772",
-            "https://lists.debian.org/debian-lts-announce/2022/03/msg00012.html",
-            "https://www.debian.org/security/2022/dsa-5096",
-            "https://www.oracle.com/security-alerts/cpujul2022.html",
-            "https://security.netapp.com/advisory/ntap-20221007-0001/"
-        ],
-        "summary": "A flaw was found in the Linux SCTP stack. A blind attacker may be able to kill an existing SCTP association through invalid chunks if the attacker knows the IP-addresses and port numbers being used and the attacker can send packets with spoofed IP addresses."
-    },
-    {
-        "Modified": "2022-12-13T20:28:00",
-        "Published": "2022-12-12T13:15:00",
-        "access": {},
-        "assigner": "hp-security-alert@hp.com",
-        "cvss": null,
-        "cwe": "NVD-CWE-noinfo",
-        "id": "CVE-2022-2794",
-        "impact": {},
-        "last-modified": "2022-12-13T20:28:00",
-        "references": [
-            "https://support.hp.com/us-en/document/ish_6720386-6720411-16/hpsbpi03807"
-        ],
-        "summary": "Certain HP PageWide Pro Printers may be vulnerable to a potential denial of service attack."
-    },
-    {
-        "Modified": "2022-12-13T20:25:00",
-        "Published": "2022-11-03T06:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-190",
-        "id": "CVE-2022-44638",
-        "impact": {},
-        "last-modified": "2022-12-13T20:25:00",
-        "references": [
-            "https://gitlab.freedesktop.org/pixman/pixman/-/issues/63",
-            "http://www.openwall.com/lists/oss-security/2022/11/05/1",
-            "https://lists.debian.org/debian-lts-announce/2022/11/msg00008.html",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/BY4OPSIB33ETNUXZY2UPZ4NGQ3OKDY4D/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/IUJ2BULJTZ2BMSKQHB6US674P55UCWWS/",
-            "https://www.debian.org/security/2022/dsa-5276",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/AJ5VY2VYXE4WTRGQ6LMGLF6FV3SY37YE/",
-            "http://packetstormsecurity.com/files/170121/pixman-pixman_sample_floor_y-Integer-Overflow.html"
-        ],
-        "summary": "In libpixman in Pixman before 0.42.2, there is an out-of-bounds write (aka heap-based buffer overflow) in rasterize_edges_8 due to an integer overflow in pixman_sample_floor_y."
-    },
-    {
-        "Modified": "2022-12-13T20:23:00",
-        "Published": "2016-12-14T17:59:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "LOW",
-            "vector": "LOCAL"
-        },
-        "assigner": "talos-cna@cisco.com",
-        "cvss": 7.2,
-        "cvss-time": "2022-12-13T20:23:00",
-        "cvss-vector": "AV:L/AC:L/Au:N/C:C/I:C/A:C",
-        "cwe": "CWE-190",
-        "id": "CVE-2016-8733",
-        "impact": {
-            "availability": "COMPLETE",
-            "confidentiality": "COMPLETE",
-            "integrity": "COMPLETE"
-        },
-        "last-modified": "2022-12-13T20:23:00",
-        "references": [
-            "http://www.talosintelligence.com/reports/TALOS-2016-0248/",
-            "http://www.securityfocus.com/bid/94920"
-        ],
-        "summary": "An exploitable integer overflow exists in the Joyent SmartOS 20161110T013148Z Hyprlofs file system. The vulnerability is present in the Ioctl system call with the command HYPRLOFS_ADD_ENTRIES when dealing with native file systems. An attacker can craft an input that can cause a kernel panic and potentially be leveraged into a full privilege escalation vulnerability. This vulnerability is distinct from CVE-2016-9031."
-    },
-    {
-        "Modified": "2022-12-13T20:17:00",
-        "Published": "2022-12-12T13:15:00",
-        "access": {},
-        "assigner": "security@medtronic.com",
-        "cvss": null,
-        "cwe": "NVD-CWE-Other",
-        "id": "CVE-2022-32537",
-        "impact": {},
-        "last-modified": "2022-12-13T20:17:00",
-        "references": [
-            "https://www.cisa.gov/uscert/ics/advisories/icsma-22-263-01",
-            "https://global.medtronic.com/xg-en/product-security/security-bulletins/minimed-600-series-communication-issue.html"
-        ],
-        "summary": "A vulnerability exists which could allow an unauthorized user to learn aspects of the communication protocol used to pair system components while the pump is being paired with other system components. Exploitation requires nearby wireless signal proximity with the patient and the device; advanced technical knowledge is required for exploitation. Please refer to the Medtronic Product Security Bulletin for guidance"
-    },
-    {
-        "Modified": "2022-12-13T20:15:00",
-        "Published": "2022-12-13T19:15:00",
-        "access": {},
-        "assigner": "security@tibco.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-41561",
-        "impact": {},
-        "last-modified": "2022-12-13T20:15:00",
-        "references": [
-            "https://www.tibco.com/services/support/advisories",
-            "https://www.tibco.com/support/advisories/2022/12/tibco-security-advisory-december-13-2022-tibco-jasperreports-server-cve-2022-41561"
-        ],
-        "summary": "The JNDI Data Sources component of TIBCO Software Inc.'s TIBCO JasperReports Server, TIBCO JasperReports Server, TIBCO JasperReports Server - Community Edition, TIBCO JasperReports Server - Developer Edition, TIBCO JasperReports Server for AWS Marketplace, TIBCO JasperReports Server for AWS Marketplace, TIBCO JasperReports Server for Microsoft Azure, and TIBCO JasperReports Server for Microsoft Azure contains an easily exploitable vulnerability that allows a privileged/administrative attacker with network access to execute Remote Code Execution to obtain a reverse shell on the affected system. Affected releases are TIBCO Software Inc.'s TIBCO JasperReports Server: versions 8.0.2 and below, TIBCO JasperReports Server: version 8.1.0, TIBCO JasperReports Server - Community Edition: versions 8.1.0 and below, TIBCO JasperReports Server - Developer Edition: versions 8.1.0 and below, TIBCO JasperReports Server for AWS Marketplace: versions 8.0.2 and below, TIBCO JasperReports Server for AWS Marketplace: version 8.1.0, TIBCO JasperReports Server for Microsoft Azure: versions 8.0.2 and below, and TIBCO JasperReports Server for Microsoft Azure: version 8.1.0."
-    },
-    {
-        "Modified": "2022-12-13T20:15:00",
-        "Published": "2022-12-13T19:15:00",
-        "access": {},
-        "assigner": "security@tibco.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-41561",
-        "impact": {},
-        "last-modified": "2022-12-13T20:15:00",
-        "references": [
-            "https://www.tibco.com/services/support/advisories",
-            "https://www.tibco.com/support/advisories/2022/12/tibco-security-advisory-december-13-2022-tibco-jasperreports-server-cve-2022-41561"
-        ],
-        "summary": "The JNDI Data Sources component of TIBCO Software Inc.'s TIBCO JasperReports Server, TIBCO JasperReports Server, TIBCO JasperReports Server - Community Edition, TIBCO JasperReports Server - Developer Edition, TIBCO JasperReports Server for AWS Marketplace, TIBCO JasperReports Server for AWS Marketplace, TIBCO JasperReports Server for Microsoft Azure, and TIBCO JasperReports Server for Microsoft Azure contains an easily exploitable vulnerability that allows a privileged/administrative attacker with network access to execute Remote Code Execution to obtain a reverse shell on the affected system. Affected releases are TIBCO Software Inc.'s TIBCO JasperReports Server: versions 8.0.2 and below, TIBCO JasperReports Server: version 8.1.0, TIBCO JasperReports Server - Community Edition: versions 8.1.0 and below, TIBCO JasperReports Server - Developer Edition: versions 8.1.0 and below, TIBCO JasperReports Server for AWS Marketplace: versions 8.0.2 and below, TIBCO JasperReports Server for AWS Marketplace: version 8.1.0, TIBCO JasperReports Server for Microsoft Azure: versions 8.0.2 and below, and TIBCO JasperReports Server for Microsoft Azure: version 8.1.0."
-    },
-    {
-        "Modified": "2022-12-13T20:15:00",
-        "Published": "2022-12-13T19:15:00",
-        "access": {},
-        "assigner": "security@tibco.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-41562",
-        "impact": {},
-        "last-modified": "2022-12-13T20:15:00",
-        "references": [
-            "https://www.tibco.com/services/support/advisories",
-            "https://www.tibco.com/support/advisories/2022/12/tibco-security-advisory-december-13-2022-tibco-jasperreports-server-cve-2022-41562"
-        ],
-        "summary": "The HTML escaping component of TIBCO Software Inc.'s TIBCO JasperReports Server, TIBCO JasperReports Server, TIBCO JasperReports Server - Community Edition, TIBCO JasperReports Server - Developer Edition, TIBCO JasperReports Server for AWS Marketplace, TIBCO JasperReports Server for AWS Marketplace, TIBCO JasperReports Server for Microsoft Azure, and TIBCO JasperReports Server for Microsoft Azure contains an easily exploitable vulnerability that allows a privileged/administrative attacker with network access to execute an XSS attack on the affected system. A successful attack using this vulnerability requires human interaction from a person other than the attacker. Affected releases are TIBCO Software Inc.'s TIBCO JasperReports Server: versions 8.0.2 and below, TIBCO JasperReports Server: version 8.1.0, TIBCO JasperReports Server - Community Edition: versions 8.1.0 and below, TIBCO JasperReports Server - Developer Edition: versions 8.1.0 and below, TIBCO JasperReports Server for AWS Marketplace: versions 8.0.2 and below, TIBCO JasperReports Server for AWS Marketplace: version 8.1.0, TIBCO JasperReports Server for Microsoft Azure: versions 8.0.2 and below, and TIBCO JasperReports Server for Microsoft Azure: version 8.1.0."
     }
 ]
