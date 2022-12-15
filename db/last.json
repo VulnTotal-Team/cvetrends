@@ -1,5 +1,799 @@
 [
     {
+        "Modified": "2022-12-15T16:57:00",
+        "Published": "2022-12-12T13:15:00",
+        "access": {},
+        "assigner": "security@google.com",
+        "cvss": null,
+        "cwe": "NVD-CWE-noinfo",
+        "id": "CVE-2022-3509",
+        "impact": {},
+        "last-modified": "2022-12-15T16:57:00",
+        "references": [
+            "https://github.com/protocolbuffers/protobuf/commit/a3888f53317a8018e7a439bac4abeb8f3425d5e9"
+        ],
+        "summary": "A parsing issue similar to CVE-2022-3171, but with textformat in protobuf-java core and lite versions prior to 3.21.7, 3.20.3, 3.19.6 and 3.16.3 can lead to a denial of service attack. Inputs containing multiple instances of non-repeated embedded messages with repeated or unknown fields causes objects to be converted back-n-forth between mutable and immutable forms, resulting in potentially long garbage collection pauses. We recommend updating to the versions mentioned above."
+    },
+    {
+        "Modified": "2022-12-15T16:53:00",
+        "Published": "2022-12-13T16:15:00",
+        "access": {},
+        "assigner": "security.cna@qualcomm.com",
+        "cvss": null,
+        "cwe": "CWE-129",
+        "id": "CVE-2022-25711",
+        "impact": {},
+        "last-modified": "2022-12-15T16:53:00",
+        "references": [
+            "https://www.qualcomm.com/company/product-security/bulletins/december-2022-bulletin"
+        ],
+        "summary": "Memory corruption in camera due to improper validation of array index in Snapdragon Auto, Snapdragon Compute, Snapdragon Consumer IOT, Snapdragon Industrial IOT, Snapdragon Mobile, Snapdragon Wearables"
+    },
+    {
+        "Modified": "2022-12-15T16:52:00",
+        "Published": "2022-12-13T16:15:00",
+        "access": {},
+        "assigner": "security.cna@qualcomm.com",
+        "cvss": null,
+        "cwe": "CWE-120",
+        "id": "CVE-2022-25712",
+        "impact": {},
+        "last-modified": "2022-12-15T16:52:00",
+        "references": [
+            "https://www.qualcomm.com/company/product-security/bulletins/december-2022-bulletin"
+        ],
+        "summary": "Memory corruption in camera due to buffer copy without checking size of input in Snapdragon Auto, Snapdragon Compute, Snapdragon Consumer IOT, Snapdragon Mobile, Snapdragon Wearables"
+    },
+    {
+        "Modified": "2022-12-15T16:52:00",
+        "Published": "2022-12-12T13:15:00",
+        "access": {},
+        "assigner": "security@google.com",
+        "cvss": null,
+        "cwe": "NVD-CWE-noinfo",
+        "id": "CVE-2022-3510",
+        "impact": {},
+        "last-modified": "2022-12-15T16:52:00",
+        "references": [
+            "https://github.com/protocolbuffers/protobuf/commit/db7c17803320525722f45c1d26fc08bc41d1bf48"
+        ],
+        "summary": "A parsing issue similar to CVE-2022-3171, but with Message-Type Extensions in protobuf-java core and lite versions prior to 3.21.7, 3.20.3, 3.19.6 and 3.16.3 can lead to a denial of service attack. Inputs containing multiple instances of non-repeated embedded messages with repeated or unknown fields causes objects to be converted back-n-forth between mutable and immutable forms, resulting in potentially long garbage collection pauses. We recommend updating to the versions mentioned above."
+    },
+    {
+        "Modified": "2022-12-15T16:51:00",
+        "Published": "2022-12-13T16:15:00",
+        "access": {},
+        "assigner": "security.cna@qualcomm.com",
+        "cvss": null,
+        "cwe": "CWE-617",
+        "id": "CVE-2022-25689",
+        "impact": {},
+        "last-modified": "2022-12-15T16:51:00",
+        "references": [
+            "https://www.qualcomm.com/company/product-security/bulletins/december-2022-bulletin"
+        ],
+        "summary": "Denial of service in Modem due to reachable assertion in Snapdragon Mobile"
+    },
+    {
+        "Modified": "2022-12-15T16:51:00",
+        "Published": "2022-12-13T16:15:00",
+        "access": {},
+        "assigner": "security.cna@qualcomm.com",
+        "cvss": null,
+        "cwe": "CWE-617",
+        "id": "CVE-2022-25691",
+        "impact": {},
+        "last-modified": "2022-12-15T16:51:00",
+        "references": [
+            "https://www.qualcomm.com/company/product-security/bulletins/december-2022-bulletin"
+        ],
+        "summary": "Denial of service in Modem due to reachable assertion while processing SIB1 with invalid SCS and bandwidth settings in Snapdragon Mobile"
+    },
+    {
+        "Modified": "2022-12-15T16:50:00",
+        "Published": "2022-12-13T16:15:00",
+        "access": {},
+        "assigner": "security.cna@qualcomm.com",
+        "cvss": null,
+        "cwe": "CWE-863",
+        "id": "CVE-2022-25685",
+        "impact": {},
+        "last-modified": "2022-12-15T16:50:00",
+        "references": [
+            "https://www.qualcomm.com/company/product-security/bulletins/december-2022-bulletin"
+        ],
+        "summary": "Denial of service in Modem module due to improper authorization while error handling in Snapdragon Auto, Snapdragon Compute, Snapdragon Consumer IOT, Snapdragon Industrial IOT, Snapdragon Mobile, Snapdragon Wearables"
+    },
+    {
+        "Modified": "2022-12-15T16:49:00",
+        "Published": "2022-12-13T16:15:00",
+        "access": {},
+        "assigner": "security.cna@qualcomm.com",
+        "cvss": null,
+        "cwe": "CWE-416",
+        "id": "CVE-2022-25677",
+        "impact": {},
+        "last-modified": "2022-12-15T16:49:00",
+        "references": [
+            "https://www.qualcomm.com/company/product-security/bulletins/december-2022-bulletin"
+        ],
+        "summary": "Memory corruption in diag due to use after free while processing dci packet in Snapdragon Auto, Snapdragon Compute, Snapdragon Consumer IOT, Snapdragon Industrial IOT, Snapdragon Mobile, Snapdragon Wearables, Snapdragon Wired Infrastructure and Networking"
+    },
+    {
+        "Modified": "2022-12-15T16:49:00",
+        "Published": "2022-12-13T16:15:00",
+        "access": {},
+        "assigner": "security.cna@qualcomm.com",
+        "cvss": null,
+        "cwe": "CWE-617",
+        "id": "CVE-2022-25675",
+        "impact": {},
+        "last-modified": "2022-12-15T16:49:00",
+        "references": [
+            "https://www.qualcomm.com/company/product-security/bulletins/december-2022-bulletin"
+        ],
+        "summary": "Denial of service due to reachable assertion in modem while processing filter rule from application client in Snapdragon Compute, Snapdragon Industrial IOT, Snapdragon Mobile"
+    },
+    {
+        "Modified": "2022-12-15T16:49:00",
+        "Published": "2022-12-13T16:15:00",
+        "access": {},
+        "assigner": "security.cna@qualcomm.com",
+        "cvss": null,
+        "cwe": "NVD-CWE-Other",
+        "id": "CVE-2022-25681",
+        "impact": {},
+        "last-modified": "2022-12-15T16:49:00",
+        "references": [
+            "https://www.qualcomm.com/company/product-security/bulletins/december-2022-bulletin"
+        ],
+        "summary": "Possible memory corruption in kernel while performing memory access due to hypervisor not correctly invalidated the processor translation caches in Snapdragon Auto, Snapdragon Compute, Snapdragon Consumer IOT, Snapdragon Industrial IOT, Snapdragon Mobile"
+    },
+    {
+        "Modified": "2022-12-15T16:49:00",
+        "Published": "2022-12-13T16:15:00",
+        "access": {},
+        "assigner": "security.cna@qualcomm.com",
+        "cvss": null,
+        "cwe": "CWE-119",
+        "id": "CVE-2022-25682",
+        "impact": {},
+        "last-modified": "2022-12-15T16:49:00",
+        "references": [
+            "https://www.qualcomm.com/company/product-security/bulletins/december-2022-bulletin"
+        ],
+        "summary": "Memory corruption in MODEM UIM due to usage of out of range pointer offset while decoding command from card in Snapdragon Auto, Snapdragon Compute, Snapdragon Connectivity, Snapdragon Consumer IOT, Snapdragon Industrial IOT, Snapdragon Mobile, Snapdragon Voice & Music, Snapdragon Wearables"
+    },
+    {
+        "Modified": "2022-12-15T16:48:00",
+        "Published": "2022-12-13T16:15:00",
+        "access": {},
+        "assigner": "security.cna@qualcomm.com",
+        "cvss": null,
+        "cwe": "CWE-617",
+        "id": "CVE-2022-25673",
+        "impact": {},
+        "last-modified": "2022-12-15T16:48:00",
+        "references": [
+            "https://www.qualcomm.com/company/product-security/bulletins/december-2022-bulletin"
+        ],
+        "summary": "Denial of service in MODEM due to reachable assertion while processing configuration from network in Snapdragon Mobile"
+    },
+    {
+        "Modified": "2022-12-15T16:48:00",
+        "Published": "2022-12-13T16:15:00",
+        "access": {},
+        "assigner": "security.cna@qualcomm.com",
+        "cvss": null,
+        "cwe": "CWE-617",
+        "id": "CVE-2022-25672",
+        "impact": {},
+        "last-modified": "2022-12-15T16:48:00",
+        "references": [
+            "https://www.qualcomm.com/company/product-security/bulletins/december-2022-bulletin"
+        ],
+        "summary": "Denial of service in MODEM due to reachable assertion while processing SIB1 with invalid Bandwidth in Snapdragon Mobile"
+    },
+    {
+        "Modified": "2022-12-15T16:47:00",
+        "Published": "2022-12-13T16:15:00",
+        "access": {},
+        "assigner": "security.cna@qualcomm.com",
+        "cvss": null,
+        "cwe": "CWE-20",
+        "id": "CVE-2022-25697",
+        "impact": {},
+        "last-modified": "2022-12-15T16:47:00",
+        "references": [
+            "https://www.qualcomm.com/company/product-security/bulletins/december-2022-bulletin"
+        ],
+        "summary": "Memory corruption in i2c buses due to improper input validation while reading address configuration from i2c driver in Snapdragon Mobile, Snapdragon Wearables"
+    },
+    {
+        "Modified": "2022-12-15T16:47:00",
+        "Published": "2022-12-13T16:15:00",
+        "access": {},
+        "assigner": "security.cna@qualcomm.com",
+        "cvss": null,
+        "cwe": "CWE-20",
+        "id": "CVE-2022-25698",
+        "impact": {},
+        "last-modified": "2022-12-15T16:47:00",
+        "references": [
+            "https://www.qualcomm.com/company/product-security/bulletins/december-2022-bulletin"
+        ],
+        "summary": "Memory corruption in SPI buses due to improper input validation while reading address configuration from spi buses in Snapdragon Mobile, Snapdragon Wearables"
+    },
+    {
+        "Modified": "2022-12-15T16:47:00",
+        "Published": "2022-12-13T16:15:00",
+        "access": {},
+        "assigner": "security.cna@qualcomm.com",
+        "cvss": null,
+        "cwe": "CWE-617",
+        "id": "CVE-2022-25702",
+        "impact": {},
+        "last-modified": "2022-12-15T16:47:00",
+        "references": [
+            "https://www.qualcomm.com/company/product-security/bulletins/december-2022-bulletin"
+        ],
+        "summary": "Denial of service in modem due to reachable assertion while processing reconfiguration message in Snapdragon Auto, Snapdragon Compute, Snapdragon Industrial IOT, Snapdragon Mobile, Snapdragon Wearables"
+    },
+    {
+        "Modified": "2022-12-15T16:45:00",
+        "Published": "2022-12-13T16:15:00",
+        "access": {},
+        "assigner": "security.cna@qualcomm.com",
+        "cvss": null,
+        "cwe": "CWE-129",
+        "id": "CVE-2022-25695",
+        "impact": {},
+        "last-modified": "2022-12-15T16:45:00",
+        "references": [
+            "https://www.qualcomm.com/company/product-security/bulletins/december-2022-bulletin"
+        ],
+        "summary": "Memory corruption in MODEM due to Improper Validation of Array Index while processing GSTK Proactive commands in Snapdragon Auto, Snapdragon Compute, Snapdragon Connectivity, Snapdragon Consumer IOT, Snapdragon Industrial IOT, Snapdragon IoT, Snapdragon Mobile, Snapdragon Voice & Music, Snapdragon Wearables"
+    },
+    {
+        "Modified": "2022-12-15T16:44:00",
+        "Published": "2022-12-13T16:15:00",
+        "access": {},
+        "assigner": "security.cna@qualcomm.com",
+        "cvss": null,
+        "cwe": "CWE-617",
+        "id": "CVE-2022-25692",
+        "impact": {},
+        "last-modified": "2022-12-15T16:44:00",
+        "references": [
+            "https://www.qualcomm.com/company/product-security/bulletins/december-2022-bulletin"
+        ],
+        "summary": "Denial of service in Modem due to reachable assertion while processing the common config procedure in Snapdragon Auto, Snapdragon Compute, Snapdragon Industrial IOT, Snapdragon Mobile, Snapdragon Wearables"
+    },
+    {
+        "Modified": "2022-12-15T16:39:00",
+        "Published": "2022-12-12T18:15:00",
+        "access": {},
+        "assigner": "ics-cert@hq.dhs.gov",
+        "cvss": null,
+        "cwe": "CWE-532",
+        "id": "CVE-2022-4311",
+        "impact": {},
+        "last-modified": "2022-12-15T16:39:00",
+        "references": [
+            "https://www.pcvuesolutions.com/support/index.php/en/security-bulletin/1165-security-bulletin-2022-6"
+        ],
+        "summary": "An insertion of sensitive information into log file vulnerability exists in PcVue versions 15 through 15.2.2. This could allow a user with access to the log files to discover connection strings of data sources configured for the DbConnect, which could include credentials. Successful exploitation of this vulnerability could allow other users unauthorized access to the underlying data sources."
+    },
+    {
+        "Modified": "2022-12-15T16:34:00",
+        "Published": "2022-12-12T13:15:00",
+        "access": {},
+        "assigner": "security-alert@hpe.com",
+        "cvss": null,
+        "cwe": "NVD-CWE-noinfo",
+        "id": "CVE-2022-43541",
+        "impact": {},
+        "last-modified": "2022-12-15T16:34:00",
+        "references": [
+            "https://www.arubanetworks.com/assets/alert/ARUBA-PSA-2022-018.txt"
+        ],
+        "summary": "Vulnerabilities in the Aruba EdgeConnect Enterprise command line interface allow remote authenticated users to run arbitrary commands on the underlying host. A successful exploit could allow an attacker to execute arbitrary commands as root on the underlying operating system leading to complete system compromise in Aruba EdgeConnect Enterprise Software version(s): ECOS 9.2.1.0 and below; ECOS 9.1.3.0 and below; ECOS 9.0.7.0 and below; ECOS 8.3.7.1 and below."
+    },
+    {
+        "Modified": "2022-12-15T16:28:00",
+        "Published": "2022-12-12T18:15:00",
+        "access": {},
+        "assigner": "ics-cert@hq.dhs.gov",
+        "cvss": null,
+        "cwe": "CWE-312",
+        "id": "CVE-2022-4312",
+        "impact": {},
+        "last-modified": "2022-12-15T16:28:00",
+        "references": [
+            "https://www.pcvuesolutions.com/support/index.php/en/security-bulletin/1171-security-bulletin-2022-7"
+        ],
+        "summary": "A cleartext storage of sensitive information vulnerability exists in PcVue versions 8.10 through 15.2.3. This could allow an unauthorized user with access the email and short messaging service (SMS) accounts configuration files to discover the associated simple mail transfer protocol (SMTP) account credentials and the SIM card PIN code. Successful exploitation of this vulnerability could allow an unauthorized user access to the underlying email account and SIM card."
+    },
+    {
+        "Modified": "2022-12-15T16:26:00",
+        "Published": "2022-12-13T09:15:00",
+        "access": {},
+        "assigner": "cna@vuldb.com",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2022-4444",
+        "impact": {},
+        "last-modified": "2022-12-15T16:26:00",
+        "references": [
+            "https://github.com/ipti/br.tag/commit/7e311be22d3a0a1b53e61cb987ba13d681d85f06",
+            "https://vuldb.com/?id.215431",
+            "https://github.com/ipti/br.tag/pull/131"
+        ],
+        "summary": "A vulnerability was found in ipti br.tag. It has been declared as problematic. Affected by this vulnerability is an unknown functionality. The manipulation leads to cross site scripting. The attack can be launched remotely. Upgrading to version 2.13.0 is able to address this issue. The name of the patch is 7e311be22d3a0a1b53e61cb987ba13d681d85f06. It is recommended to upgrade the affected component. The associated identifier of this vulnerability is VDB-215431."
+    },
+    {
+        "Modified": "2022-12-15T16:26:00",
+        "Published": "2022-12-12T13:15:00",
+        "access": {},
+        "assigner": "security-alert@hpe.com",
+        "cvss": null,
+        "cwe": "CWE-22",
+        "id": "CVE-2022-43518",
+        "impact": {},
+        "last-modified": "2022-12-15T16:26:00",
+        "references": [
+            "https://www.arubanetworks.com/assets/alert/ARUBA-PSA-2022-018.txt"
+        ],
+        "summary": "An authenticated path traversal vulnerability exists in the Aruba EdgeConnect Enterprise web interface. Successful exploitation of this vulnerability results in the ability to read arbitrary files on the underlying operating system, including sensitive system files in Aruba EdgeConnect Enterprise Software version(s): ECOS 9.2.1.0 and below; ECOS 9.1.3.0 and below; ECOS 9.0.7.0 and below; ECOS 8.3.7.1 and below."
+    },
+    {
+        "Modified": "2022-12-15T16:25:00",
+        "Published": "2022-12-12T22:15:00",
+        "access": {},
+        "assigner": "cna@sap.com",
+        "cvss": null,
+        "cwe": "CWE-284",
+        "id": "CVE-2022-41261",
+        "impact": {},
+        "last-modified": "2022-12-15T16:25:00",
+        "references": [
+            "https://www.sap.com/documents/2022/02/fa865ea4-167e-0010-bca6-c68f7e60039b.html",
+            "https://launchpad.support.sap.com/#/notes/3265173"
+        ],
+        "summary": "SAP Solution Manager (Diagnostic Agent) - version 7.20, allows an authenticated attacker on Windows system to access a file containing sensitive data which can be used to access a configuration file which contains credentials to access other system files. Successful exploitation can make the attacker access files and systems for which he/she is not authorized."
+    },
+    {
+        "Modified": "2022-12-15T16:24:00",
+        "Published": "2022-12-12T22:15:00",
+        "access": {},
+        "assigner": "cna@sap.com",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2022-41262",
+        "impact": {},
+        "last-modified": "2022-12-15T16:24:00",
+        "references": [
+            "https://launchpad.support.sap.com/#/notes/3262544",
+            "https://www.sap.com/documents/2022/02/fa865ea4-167e-0010-bca6-c68f7e60039b.html"
+        ],
+        "summary": "Due to insufficient input validation, SAP NetWeaver AS Java (HTTP Provider Service) - version 7.50, allows an unauthenticated attacker to inject a script into a web request header. On successful exploitation, an attacker can view or modify information causing a limited impact on the confidentiality and integrity of the application."
+    },
+    {
+        "Modified": "2022-12-15T16:22:00",
+        "Published": "2022-12-12T22:15:00",
+        "access": {},
+        "assigner": "cna@sap.com",
+        "cvss": null,
+        "cwe": "CWE-287",
+        "id": "CVE-2022-41263",
+        "impact": {},
+        "last-modified": "2022-12-15T16:22:00",
+        "references": [
+            "https://launchpad.support.sap.com/#/notes/3249648",
+            "https://www.sap.com/documents/2022/02/fa865ea4-167e-0010-bca6-c68f7e60039b.html"
+        ],
+        "summary": "Due to a missing authentication check, SAP Business Objects Business Intelligence Platform (Web Intelligence) - versions 420, 430, allows an authenticated non-administrator attacker to modify the data source information for a document that is otherwise restricted. On successful exploitation, the attacker can modify information causing a limited impact on the integrity of the application."
+    },
+    {
+        "Modified": "2022-12-15T16:14:00",
+        "Published": "2022-12-13T03:15:00",
+        "access": {},
+        "assigner": "cna@sap.com",
+        "cvss": null,
+        "cwe": "CWE-94",
+        "id": "CVE-2022-41264",
+        "impact": {},
+        "last-modified": "2022-12-15T16:14:00",
+        "references": [
+            "https://launchpad.support.sap.com/#/notes/3268172",
+            "https://www.sap.com/documents/2022/02/fa865ea4-167e-0010-bca6-c68f7e60039b.html"
+        ],
+        "summary": "Due to the unrestricted scope of the RFC function module, SAP BASIS - versions 731, 740, 750, 751, 752, 753, 754, 755, 756, 757, 789, 790, 791, allows an authenticated non-administrator attacker to access a system class and execute any of its public methods with parameters provided by the attacker. On successful exploitation the attacker can have full control of the system to which the class belongs, causing a high impact on the integrity of the application."
+    },
+    {
+        "Modified": "2022-12-15T16:02:00",
+        "Published": "2022-12-12T13:15:00",
+        "access": {},
+        "assigner": "hp-security-alert@hp.com",
+        "cvss": null,
+        "cwe": "CWE-427",
+        "id": "CVE-2022-38395",
+        "impact": {},
+        "last-modified": "2022-12-15T16:02:00",
+        "references": [
+            "https://support.hp.com/us-en/document/ish_6788123-6788147-16/hpsbhf03809"
+        ],
+        "summary": "HP Support Assistant uses HP Performance Tune-up as a diagnostic tool. HP Support Assistant uses Fusion to launch HP Performance Tune-up. It is possible for an attacker to exploit the DLL hijacking vulnerability and elevate privileges when Fusion launches the HP Performance Tune-up."
+    },
+    {
+        "Modified": "2022-12-15T16:01:00",
+        "Published": "2022-12-12T13:15:00",
+        "access": {},
+        "assigner": "security-alert@hpe.com",
+        "cvss": null,
+        "cwe": "CWE-287",
+        "id": "CVE-2022-37932",
+        "impact": {},
+        "last-modified": "2022-12-15T16:01:00",
+        "references": [
+            "https://support.hpe.com/hpsc/doc/public/display?docLocale=en_US&docId=emr_na-hpesbnw04383en_us"
+        ],
+        "summary": "A potential security vulnerability has been identified in Hewlett Packard Enterprise OfficeConnect 1820, 1850, and 1920S Network switches. The vulnerability could be remotely exploited to allow authentication bypass. HPE has made the following software updates to resolve the vulnerability in Hewlett Packard Enterprise OfficeConnect 1820, 1850 and 1920S Network switches versions: Prior to PT.02.14; Prior to PC.01.22; Prior to PO.01.21; Prior to PD.02.22;"
+    },
+    {
+        "Modified": "2022-12-15T15:52:00",
+        "Published": "2022-12-13T03:15:00",
+        "access": {},
+        "assigner": "cna@sap.com",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2022-41266",
+        "impact": {},
+        "last-modified": "2022-12-15T15:52:00",
+        "references": [
+            "https://launchpad.support.sap.com/#/notes/3248255",
+            "https://www.sap.com/documents/2022/02/fa865ea4-167e-0010-bca6-c68f7e60039b.html"
+        ],
+        "summary": "Due to a lack of proper input validation, SAP Commerce Webservices 2.0 (Swagger UI) - versions 1905, 2005, 2105, 2011, 2205, allows malicious inputs from untrusted sources, which can be leveraged by an attacker to execute a DOM Cross-Site Scripting (XSS) attack. As a result, an attacker may be able to steal user tokens and achieve a full account takeover including access to administrative tools in SAP Commerce."
+    },
+    {
+        "Modified": "2022-12-15T15:50:00",
+        "Published": "2022-12-13T03:15:00",
+        "access": {},
+        "assigner": "cna@sap.com",
+        "cvss": null,
+        "cwe": "CWE-434",
+        "id": "CVE-2022-41267",
+        "impact": {},
+        "last-modified": "2022-12-15T15:50:00",
+        "references": [
+            "https://launchpad.support.sap.com/#/notes/3239475",
+            "https://www.sap.com/documents/2022/02/fa865ea4-167e-0010-bca6-c68f7e60039b.html"
+        ],
+        "summary": "SAP Business Objects Platform - versions 420, and 430, allows an attacker with normal BI user privileges to upload/replace any file on Business Objects server at the operating system level, enabling the attacker to take full control of the system causing a high impact on confidentiality, integrity, and availability of the application."
+    },
+    {
+        "Modified": "2022-12-15T15:49:00",
+        "Published": "2022-12-13T03:15:00",
+        "access": {},
+        "assigner": "cna@sap.com",
+        "cvss": null,
+        "cwe": "CWE-269",
+        "id": "CVE-2022-41268",
+        "impact": {},
+        "last-modified": "2022-12-15T15:49:00",
+        "references": [
+            "https://launchpad.support.sap.com/#/notes/3271091",
+            "https://www.sap.com/documents/2022/02/fa865ea4-167e-0010-bca6-c68f7e60039b.html"
+        ],
+        "summary": "In some SAP standard roles in SAP Business Planning and Consolidation - versions - SAP_BW 750, 751, 752, 753, 754, 755, 756, 757, DWCORE 200, 300, CPMBPC 810, a transaction code reserved for the customer is used. By implementing such transaction code, a malicious user may execute unauthorized transaction functionality. Under specific circumstances, a successful attack could enable an adversary to escalate their privileges to be able to read, change or delete system data."
+    },
+    {
+        "Modified": "2022-12-15T15:47:00",
+        "Published": "2022-12-13T16:15:00",
+        "access": {},
+        "assigner": "security@android.com",
+        "cvss": null,
+        "cwe": "CWE-400",
+        "id": "CVE-2022-20491",
+        "impact": {},
+        "last-modified": "2022-12-15T15:47:00",
+        "references": [
+            "https://source.android.com/security/bulletin/2022-12-01"
+        ],
+        "summary": "In NotificationChannel of NotificationChannel.java, there is a possible failure to persist permissions settings due to resource exhaustion. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android-10 Android-11 Android-12 Android-12L Android-13Android ID: A-242703556"
+    },
+    {
+        "Modified": "2022-12-15T15:47:00",
+        "Published": "2022-12-13T16:15:00",
+        "access": {},
+        "assigner": "security@android.com",
+        "cvss": null,
+        "cwe": "CWE-400",
+        "id": "CVE-2022-20487",
+        "impact": {},
+        "last-modified": "2022-12-15T15:47:00",
+        "references": [
+            "https://source.android.com/security/bulletin/2022-12-01"
+        ],
+        "summary": "In NotificationChannel of NotificationChannel.java, there is a possible failure to persist permissions settings due to resource exhaustion. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android-10 Android-11 Android-12 Android-12L Android-13Android ID: A-242703202"
+    },
+    {
+        "Modified": "2022-12-15T15:36:00",
+        "Published": "2022-12-13T04:15:00",
+        "access": {},
+        "assigner": "cna@sap.com",
+        "cvss": null,
+        "cwe": "CWE-863",
+        "id": "CVE-2022-41274",
+        "impact": {},
+        "last-modified": "2022-12-15T15:36:00",
+        "references": [
+            "https://launchpad.support.sap.com/#/notes/3266846",
+            "https://www.sap.com/documents/2022/02/fa865ea4-167e-0010-bca6-c68f7e60039b.html"
+        ],
+        "summary": "SAP Disclosure Management - version 10.1, allows an authenticated attacker to exploit certain misconfigured application endpoints to read sensitive data. These endpoints are normally exposed over the network and successful exploitation can lead to the exposure of data like financial reports."
+    },
+    {
+        "Modified": "2022-12-15T15:36:00",
+        "Published": "2022-12-13T04:15:00",
+        "access": {},
+        "assigner": "cna@sap.com",
+        "cvss": null,
+        "cwe": "CWE-601",
+        "id": "CVE-2022-41275",
+        "impact": {},
+        "last-modified": "2022-12-15T15:36:00",
+        "references": [
+            "https://launchpad.support.sap.com/#/notes/3271313",
+            "https://www.sap.com/documents/2022/02/fa865ea4-167e-0010-bca6-c68f7e60039b.html"
+        ],
+        "summary": "In SAP Solution Manager (Enterprise Search) - versions 740, and 750, an unauthenticated attacker can generate a link that, if clicked by a logged-in user, can be redirected to a malicious page that could read or modify sensitive information, or expose the user to a phishing attack, with little impact on confidentiality and integrity."
+    },
+    {
+        "Modified": "2022-12-15T15:32:00",
+        "Published": "2022-12-13T04:15:00",
+        "access": {},
+        "assigner": "cna@sap.com",
+        "cvss": null,
+        "cwe": "CWE-601",
+        "id": "CVE-2022-41273",
+        "impact": {},
+        "last-modified": "2022-12-15T15:32:00",
+        "references": [
+            "https://launchpad.support.sap.com/#/notes/3270399",
+            "https://www.sap.com/documents/2022/02/fa865ea4-167e-0010-bca6-c68f7e60039b.html"
+        ],
+        "summary": "Due to improper input sanitization in SAP Sourcing and SAP Contract Lifecycle Management - version 1100, an attacker can redirect a user to a malicious website. In order to perform this attack, the attacker sends an email to the victim with a manipulated link that appears to be a legitimate SAP Sourcing URL, since the victim doesn\u2019t suspect the threat, they click on the link, log in to SAP Sourcing and CLM and at this point, they get redirected to a malicious website."
+    },
+    {
+        "Modified": "2022-12-15T15:29:00",
+        "Published": "2022-12-13T04:15:00",
+        "access": {},
+        "assigner": "cna@sap.com",
+        "cvss": null,
+        "cwe": "CWE-862",
+        "id": "CVE-2022-41272",
+        "impact": {},
+        "last-modified": "2022-12-15T15:29:00",
+        "references": [
+            "https://launchpad.support.sap.com/#/notes/3273480",
+            "https://www.sap.com/documents/2022/02/fa865ea4-167e-0010-bca6-c68f7e60039b.html"
+        ],
+        "summary": "An unauthenticated attacker over the network can attach to an open interface exposed through JNDI by the User Defined Search (UDS) of SAP NetWeaver Process Integration (PI) - version 7.50 and make use of an open naming and directory API to access services which can be used to perform unauthorized operations affecting users and data across the entire system. This allows the attacker to have full read access to user data, make limited modifications to user data, and degrade the performance of the system, leading to a high impact on confidentiality and a limited impact on the availability and integrity of the application."
+    },
+    {
+        "Modified": "2022-12-15T15:27:00",
+        "Published": "2022-12-13T03:15:00",
+        "access": {},
+        "assigner": "cna@sap.com",
+        "cvss": null,
+        "cwe": "CWE-862",
+        "id": "CVE-2022-41271",
+        "impact": {},
+        "last-modified": "2022-12-15T15:27:00",
+        "references": [
+            "https://www.sap.com/documents/2022/02/fa865ea4-167e-0010-bca6-c68f7e60039b.html",
+            "https://launchpad.support.sap.com/#/notes/3267780"
+        ],
+        "summary": "An unauthenticated user can attach to an open interface exposed through JNDI by the Messaging System of SAP NetWeaver Process Integration (PI) - version 7.50. This user can make use of an open naming and directory API to access services that could perform unauthorized operations. The vulnerability affects local users and data, leading to a considerable impact on confidentiality as well as availability and a limited impact on the integrity of the application. These operations can be used to: * Read any information * Modify sensitive information * Denial of Service attacks (DoS) * SQL Injection"
+    },
+    {
+        "Modified": "2022-12-15T15:26:00",
+        "Published": "2022-12-13T16:15:00",
+        "access": {},
+        "assigner": "security@android.com",
+        "cvss": null,
+        "cwe": "CWE-400",
+        "id": "CVE-2022-20488",
+        "impact": {},
+        "last-modified": "2022-12-15T15:26:00",
+        "references": [
+            "https://source.android.com/security/bulletin/2022-12-01"
+        ],
+        "summary": "In NotificationChannel of NotificationChannel.java, there is a possible failure to persist permissions settings due to resource exhaustion. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android-10 Android-11 Android-12 Android-12L Android-13Android ID: A-242703217"
+    },
+    {
+        "Modified": "2022-12-15T15:25:00",
+        "Published": "2022-12-12T13:15:00",
+        "access": {},
+        "assigner": "security-alert@hpe.com",
+        "cvss": null,
+        "cwe": "CWE-787",
+        "id": "CVE-2022-37903",
+        "impact": {},
+        "last-modified": "2022-12-15T15:25:00",
+        "references": [
+            "https://www.arubanetworks.com/assets/alert/ARUBA-PSA-2022-016.txt"
+        ],
+        "summary": "A vulnerability exists that allows an authenticated attacker to overwrite an arbitrary file with attacker-controlled content via the web interface. Successful exploitation of this vulnerability could lead to full compromise the underlying host operating system."
+    },
+    {
+        "Modified": "2022-12-15T15:23:00",
+        "Published": "2022-12-13T16:15:00",
+        "access": {},
+        "assigner": "security@android.com",
+        "cvss": null,
+        "cwe": "CWE-125",
+        "id": "CVE-2022-20498",
+        "impact": {},
+        "last-modified": "2022-12-15T15:23:00",
+        "references": [
+            "https://source.android.com/security/bulletin/2022-12-01"
+        ],
+        "summary": "In fdt_path_offset_namelen of fdt_ro.c, there is a possible out of bounds read due to an incorrect bounds check. This could lead to local information disclosure with System execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android-10 Android-11 Android-12 Android-12L Android-13Android ID: A-246465319"
+    },
+    {
+        "Modified": "2022-12-15T15:20:00",
+        "Published": "2022-12-12T13:15:00",
+        "access": {},
+        "assigner": "security-alert@hpe.com",
+        "cvss": null,
+        "cwe": "CWE-77",
+        "id": "CVE-2022-37901",
+        "impact": {},
+        "last-modified": "2022-12-15T15:20:00",
+        "references": [
+            "https://www.arubanetworks.com/assets/alert/ARUBA-PSA-2022-016.txt"
+        ],
+        "summary": "Authenticated command injection vulnerabilities exist in the ArubaOS command line interface. Successful exploitation of these vulnerabilities results in the ability to execute arbitrary commands as a privileged user on the underlying operating system."
+    },
+    {
+        "Modified": "2022-12-15T15:19:00",
+        "Published": "2022-12-12T13:15:00",
+        "access": {},
+        "assigner": "security-alert@hpe.com",
+        "cvss": null,
+        "cwe": "CWE-77",
+        "id": "CVE-2022-37899",
+        "impact": {},
+        "last-modified": "2022-12-15T15:19:00",
+        "references": [
+            "https://www.arubanetworks.com/assets/alert/ARUBA-PSA-2022-016.txt"
+        ],
+        "summary": "Authenticated command injection vulnerabilities exist in the ArubaOS command line interface. Successful exploitation of these vulnerabilities results in the ability to execute arbitrary commands as a privileged user on the underlying operating system."
+    },
+    {
+        "Modified": "2022-12-15T15:19:00",
+        "Published": "2022-12-12T13:15:00",
+        "access": {},
+        "assigner": "security-alert@hpe.com",
+        "cvss": null,
+        "cwe": "CWE-77",
+        "id": "CVE-2022-37900",
+        "impact": {},
+        "last-modified": "2022-12-15T15:19:00",
+        "references": [
+            "https://www.arubanetworks.com/assets/alert/ARUBA-PSA-2022-016.txt"
+        ],
+        "summary": "Authenticated command injection vulnerabilities exist in the ArubaOS command line interface. Successful exploitation of these vulnerabilities results in the ability to execute arbitrary commands as a privileged user on the underlying operating system."
+    },
+    {
+        "Modified": "2022-12-15T15:19:00",
+        "Published": "2022-12-12T13:15:00",
+        "access": {},
+        "assigner": "security-alert@hpe.com",
+        "cvss": null,
+        "cwe": "CWE-94",
+        "id": "CVE-2022-37905",
+        "impact": {},
+        "last-modified": "2022-12-15T15:19:00",
+        "references": [
+            "https://www.arubanetworks.com/assets/alert/ARUBA-PSA-2022-016.txt"
+        ],
+        "summary": "Vulnerabilities in ArubaOS running on 7xxx series controllers exist that allows an attacker to execute arbitrary code during the boot sequence. Successful exploitation could allow an attacker to achieve permanent modification of the underlying operating system."
+    },
+    {
+        "Modified": "2022-12-15T15:18:00",
+        "Published": "2022-12-12T13:15:00",
+        "access": {},
+        "assigner": "security-alert@hpe.com",
+        "cvss": null,
+        "cwe": "CWE-77",
+        "id": "CVE-2022-37902",
+        "impact": {},
+        "last-modified": "2022-12-15T15:18:00",
+        "references": [
+            "https://www.arubanetworks.com/assets/alert/ARUBA-PSA-2022-016.txt"
+        ],
+        "summary": "Authenticated command injection vulnerabilities exist in the ArubaOS command line interface. Successful exploitation of these vulnerabilities results in the ability to execute arbitrary commands as a privileged user on the underlying operating system."
+    },
+    {
+        "Modified": "2022-12-15T15:14:00",
+        "Published": "2022-12-12T18:15:00",
+        "access": {},
+        "assigner": "contact@wpscan.com",
+        "cvss": null,
+        "cwe": "CWE-862",
+        "id": "CVE-2022-4004",
+        "impact": {},
+        "last-modified": "2022-12-15T15:14:00",
+        "references": [
+            "https://wpscan.com/vulnerability/6a3bcfb3-3ede-459d-969f-b7b30dafd098"
+        ],
+        "summary": "The Donation Button WordPress plugin through 4.0.0 does not properly check for privileges and nonce tokens in its \"donation_button_twilio_send_test_sms\" AJAX action, which may allow any users with an account on the affected site, like subscribers, to use the plugin's Twilio integration to send SMSes to arbitrary phone numbers."
+    },
+    {
+        "Modified": "2022-12-15T15:14:00",
+        "Published": "2022-12-12T18:15:00",
+        "access": {},
+        "assigner": "contact@wpscan.com",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2022-4005",
+        "impact": {},
+        "last-modified": "2022-12-15T15:14:00",
+        "references": [
+            "https://wpscan.com/vulnerability/61d5c9b8-5c21-4ab5-b31c-e13ca19ea25c"
+        ],
+        "summary": "The Donation Button WordPress plugin through 4.0.0 does not sanitize and escapes some parameters, which could allow users with a role as low as Contributor to perform Cross-Site Scripting attacks."
+    },
+    {
+        "Modified": "2022-12-15T15:13:00",
+        "Published": "2022-12-13T16:15:00",
+        "access": {},
+        "assigner": "security@android.com",
+        "cvss": null,
+        "cwe": "NVD-CWE-noinfo",
+        "id": "CVE-2022-20497",
+        "impact": {},
+        "last-modified": "2022-12-15T15:13:00",
+        "references": [
+            "https://source.android.com/security/bulletin/2022-12-01"
+        ],
+        "summary": "In updatePublicMode of NotificationLockscreenUserManagerImpl.java, there is a possible way to reveal sensitive notifications on the lockscreen due to an incorrect state transition. This could lead to local information disclosure with physical access required and an app that runs above the lockscreen, with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android-12 Android-12L Android-13Android ID: A-246301979"
+    },
+    {
+        "Modified": "2022-12-15T15:09:00",
+        "Published": "2022-12-13T16:15:00",
+        "access": {},
+        "assigner": "security@android.com",
+        "cvss": null,
+        "cwe": "CWE-416",
+        "id": "CVE-2022-20496",
+        "impact": {},
+        "last-modified": "2022-12-15T15:09:00",
+        "references": [
+            "https://source.android.com/security/bulletin/2022-12-01"
+        ],
+        "summary": "In setDataSource of initMediaExtractor.cpp, there is a possibility of arbitrary code execution due to a use after free. This could lead to local information disclosure with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android-12 Android-12L Android-13Android ID: A-245242273"
+    },
+    {
+        "Modified": "2022-12-15T15:05:00",
+        "Published": "2022-12-13T16:15:00",
+        "access": {},
+        "assigner": "security@android.com",
+        "cvss": null,
+        "cwe": "NVD-CWE-noinfo",
+        "id": "CVE-2022-20495",
+        "impact": {},
+        "last-modified": "2022-12-15T15:05:00",
+        "references": [
+            "https://source.android.com/security/bulletin/2022-12-01"
+        ],
+        "summary": "In getEnabledAccessibilityServiceList of AccessibilityManager.java, there is a possible way to hide an accessibility service due to a logic error in the code. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android-10 Android-11 Android-12 Android-12L Android-13Android ID: A-243849844"
+    },
+    {
         "Modified": "2022-12-15T14:44:00",
         "Published": "2022-12-13T16:15:00",
         "access": {},
@@ -58,21 +852,6 @@
             "https://source.android.com/security/bulletin/2022-12-01"
         ],
         "summary": "In loadFromXml of ShortcutPackage.java, there is a possible crash on boot due to an uncaught exception. This could lead to local denial of service with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android-10 Android-11 Android-12 Android-12L Android-13Android ID: A-246540168"
-    },
-    {
-        "Modified": "2022-12-15T14:38:00",
-        "Published": "2022-12-12T13:15:00",
-        "access": {},
-        "assigner": "security-alert@hpe.com",
-        "cvss": null,
-        "cwe": "CWE-77",
-        "id": "CVE-2022-37901",
-        "impact": {},
-        "last-modified": "2022-12-15T14:38:00",
-        "references": [
-            "https://www.arubanetworks.com/assets/alert/ARUBA-PSA-2022-016.txt"
-        ],
-        "summary": "Authenticated command injection vulnerabilities exist in the ArubaOS command line interface. Successful exploitation of these vulnerabilities results in the ability to execute arbitrary commands as a privileged user on the underlying operating system."
     },
     {
         "Modified": "2022-12-15T14:27:00",
@@ -166,21 +945,6 @@
         "summary": "The Image Hover Effects WordPress plugin through 5.3 does not sanitise and escape some of its settings, which could allow high privilege users such as admin to perform Stored Cross-Site Scripting attacks even when the unfiltered_html capability is disallowed (for example in multisite setup)."
     },
     {
-        "Modified": "2022-12-15T13:58:00",
-        "Published": "2022-12-12T13:15:00",
-        "access": {},
-        "assigner": "security-alert@hpe.com",
-        "cvss": null,
-        "cwe": "CWE-77",
-        "id": "CVE-2022-37899",
-        "impact": {},
-        "last-modified": "2022-12-15T13:58:00",
-        "references": [
-            "https://www.arubanetworks.com/assets/alert/ARUBA-PSA-2022-016.txt"
-        ],
-        "summary": "Authenticated command injection vulnerabilities exist in the ArubaOS command line interface. Successful exploitation of these vulnerabilities results in the ability to execute arbitrary commands as a privileged user on the underlying operating system."
-    },
-    {
         "Modified": "2022-12-15T13:52:00",
         "Published": "2022-12-12T20:15:00",
         "access": {},
@@ -194,21 +958,6 @@
             "https://github.com/ATKF/bug_report/blob/main/vendors/oretnom23/dynamic-transaction-queuing-system/RCE-1.md"
         ],
         "summary": "An arbitrary file upload vulnerability in /queuing/admin/ajax.php?action=save_settings of Dynamic Transaction Queuing System v1.0 allows attackers to execute arbitrary code via a crafted PHP file."
-    },
-    {
-        "Modified": "2022-12-15T13:51:00",
-        "Published": "2022-12-12T13:15:00",
-        "access": {},
-        "assigner": "security-alert@hpe.com",
-        "cvss": null,
-        "cwe": "CWE-77",
-        "id": "CVE-2022-37900",
-        "impact": {},
-        "last-modified": "2022-12-15T13:51:00",
-        "references": [
-            "https://www.arubanetworks.com/assets/alert/ARUBA-PSA-2022-016.txt"
-        ],
-        "summary": "Authenticated command injection vulnerabilities exist in the ArubaOS command line interface. Successful exploitation of these vulnerabilities results in the ability to execute arbitrary commands as a privileged user on the underlying operating system."
     },
     {
         "Modified": "2022-12-15T13:50:00",
@@ -269,21 +1018,6 @@
             "https://news.websoft.ru/_wt/wiki_base/7175852586100985308"
         ],
         "summary": "Insufficient processing of user input in WebSoft HCM 2021.2.3.327 allows an authenticated attacker to inject arbitrary HTML tags into the page processed by the user's browser, including scripts in the JavaScript programming language, which leads to Reflected XSS."
-    },
-    {
-        "Modified": "2022-12-15T13:38:00",
-        "Published": "2022-12-12T13:15:00",
-        "access": {},
-        "assigner": "security-alert@hpe.com",
-        "cvss": null,
-        "cwe": "CWE-94",
-        "id": "CVE-2022-37905",
-        "impact": {},
-        "last-modified": "2022-12-15T13:38:00",
-        "references": [
-            "https://www.arubanetworks.com/assets/alert/ARUBA-PSA-2022-016.txt"
-        ],
-        "summary": "Vulnerabilities in ArubaOS running on 7xxx series controllers exist that allows an attacker to execute arbitrary code during the boot sequence. Successful exploitation could allow an attacker to achieve permanent modification of the underlying operating system."
     },
     {
         "Modified": "2022-12-15T13:23:00",
@@ -786,748 +1520,5 @@
             "https://source.android.com/security/bulletin/2022-12-01"
         ],
         "summary": "In toLanguageTag of LocaleListCache.cpp, there is a possible out of bounds read due to an incorrect bounds check. This could lead to remote code execution with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android-10 Android-11 Android-12 Android-12L Android-13Android ID: A-239210579"
-    },
-    {
-        "Modified": "2022-12-15T04:03:00",
-        "Published": "2022-12-13T16:15:00",
-        "access": {},
-        "assigner": "security@android.com",
-        "cvss": null,
-        "cwe": "CWE-787",
-        "id": "CVE-2022-20469",
-        "impact": {},
-        "last-modified": "2022-12-15T04:03:00",
-        "references": [
-            "https://source.android.com/security/bulletin/2022-12-01"
-        ],
-        "summary": "In avct_lcb_msg_asmbl of avct_lcb_act.cc, there is a possible out of bounds write due to a missing bounds check. This could lead to local escalation of privilege over Bluetooth with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android-10 Android-11 Android-12 Android-12L Android-13Android ID: A-230867224"
-    },
-    {
-        "Modified": "2022-12-15T04:03:00",
-        "Published": "2022-12-13T16:15:00",
-        "access": {},
-        "assigner": "security@android.com",
-        "cvss": null,
-        "cwe": "CWE-20",
-        "id": "CVE-2022-20470",
-        "impact": {},
-        "last-modified": "2022-12-15T04:03:00",
-        "references": [
-            "https://source.android.com/security/bulletin/2022-12-01"
-        ],
-        "summary": "In bindRemoteViewsService of AppWidgetServiceImpl.java, there is a possible way to bypass background activity launch due to improper input validation. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android-10 Android-11 Android-12 Android-12L Android-13Android ID: A-234013191"
-    },
-    {
-        "Modified": "2022-12-15T04:03:00",
-        "Published": "2022-12-13T16:15:00",
-        "access": {},
-        "assigner": "security@android.com",
-        "cvss": null,
-        "cwe": "CWE-125",
-        "id": "CVE-2022-20471",
-        "impact": {},
-        "last-modified": "2022-12-15T04:03:00",
-        "references": [
-            "https://source.android.com/security/bulletin/2022-12-01"
-        ],
-        "summary": "In SendIncDecRestoreCmdPart2 of NxpMfcReader.cc, there is a possible out of bounds read due to a missing bounds check. This could lead to local information disclosure with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android-11 Android-12 Android-12L Android-13Android ID: A-238177877"
-    },
-    {
-        "Modified": "2022-12-15T04:02:00",
-        "Published": "2022-12-13T16:15:00",
-        "access": {},
-        "assigner": "security@android.com",
-        "cvss": null,
-        "cwe": "CWE-125",
-        "id": "CVE-2022-20468",
-        "impact": {},
-        "last-modified": "2022-12-15T04:02:00",
-        "references": [
-            "https://source.android.com/security/bulletin/2022-12-01"
-        ],
-        "summary": "In BNEP_ConnectResp of bnep_api.cc, there is a possible out of bounds read due to an incorrect bounds check. This could lead to local information disclosure over Bluetooth with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android-10 Android-11 Android-12 Android-12L Android-13Android ID: A-228450451"
-    },
-    {
-        "Modified": "2022-12-15T04:02:00",
-        "Published": "2022-12-13T16:15:00",
-        "access": {},
-        "assigner": "security@android.com",
-        "cvss": null,
-        "cwe": "CWE-1188",
-        "id": "CVE-2022-20466",
-        "impact": {},
-        "last-modified": "2022-12-15T04:02:00",
-        "references": [
-            "https://source.android.com/security/bulletin/2022-12-01"
-        ],
-        "summary": "In applyKeyguardFlags of NotificationShadeWindowControllerImpl.java, there is a possible way to observe the user's password on a secondary display due to an insecure default value. This could lead to local information disclosure with no additional execution privileges needed. User interaction is needed for exploitation.Product: AndroidVersions: Android-10 Android-11 Android-12 Android-12L Android-13Android ID: A-179725730"
-    },
-    {
-        "Modified": "2022-12-15T04:01:00",
-        "Published": "2022-12-13T16:15:00",
-        "access": {},
-        "assigner": "security@android.com",
-        "cvss": null,
-        "cwe": "CWE-1021",
-        "id": "CVE-2022-20444",
-        "impact": {},
-        "last-modified": "2022-12-15T04:01:00",
-        "references": [
-            "https://source.android.com/security/bulletin/2022-12-01"
-        ],
-        "summary": "In several functions of inputDispatcher.cpp, there is a possible way to make toasts clickable due to a tapjacking/overlay attack. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android-11 Android-12Android ID: A-197296414"
-    },
-    {
-        "Modified": "2022-12-15T04:01:00",
-        "Published": "2022-12-13T16:15:00",
-        "access": {},
-        "assigner": "security@android.com",
-        "cvss": null,
-        "cwe": "CWE-22",
-        "id": "CVE-2022-20449",
-        "impact": {},
-        "last-modified": "2022-12-15T04:01:00",
-        "references": [
-            "https://source.android.com/security/bulletin/2022-12-01"
-        ],
-        "summary": "In writeApplicationRestrictionsLAr of UserManagerService.java, there is a possible overwrite of system files due to a path traversal error. This could lead to local denial of service with System execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android-10 Android-11 Android-12 Android-12L Android-13Android ID: A-239701237"
-    },
-    {
-        "Modified": "2022-12-15T04:00:00",
-        "Published": "2022-12-13T16:15:00",
-        "access": {},
-        "assigner": "security@android.com",
-        "cvss": null,
-        "cwe": "CWE-1021",
-        "id": "CVE-2022-20442",
-        "impact": {},
-        "last-modified": "2022-12-15T04:00:00",
-        "references": [
-            "https://source.android.com/security/bulletin/2022-12-01"
-        ],
-        "summary": "In onCreate of ReviewPermissionsActivity.java, there is a possible way to grant permissions for a separate app with API level < 23 due to a tapjacking/overlay attack. This could lead to local escalation of privilege with User execution privileges needed. User interaction is needed for exploitation.Product: AndroidVersions: Android-10 Android-11 Android-12 Android-12LAndroid ID: A-176094367"
-    },
-    {
-        "Modified": "2022-12-15T03:59:00",
-        "Published": "2022-12-13T16:15:00",
-        "access": {},
-        "assigner": "security@android.com",
-        "cvss": null,
-        "cwe": "CWE-276",
-        "id": "CVE-2022-20240",
-        "impact": {},
-        "last-modified": "2022-12-15T03:59:00",
-        "references": [
-            "https://source.android.com/security/bulletin/2022-12-01"
-        ],
-        "summary": "In sOpAllowSystemRestrictionBypass of AppOpsManager.java, there is a possible leak of location information due to a missing permission check. This could lead to local escalation of privilege with System execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android-12 Android-12LAndroid ID: A-231496105"
-    },
-    {
-        "Modified": "2022-12-15T03:59:00",
-        "Published": "2022-12-13T16:15:00",
-        "access": {},
-        "assigner": "security@android.com",
-        "cvss": null,
-        "cwe": "CWE-362",
-        "id": "CVE-2021-39660",
-        "impact": {},
-        "last-modified": "2022-12-15T03:59:00",
-        "references": [
-            "https://source.android.com/security/bulletin/2022-12-01"
-        ],
-        "summary": "In TBD of TBD, there is a possible way to archive arbitrary code execution in kernel due to a race condition. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android SoCAndroid ID: A-254742984"
-    },
-    {
-        "Modified": "2022-12-15T03:58:00",
-        "Published": "2022-12-13T16:15:00",
-        "access": {},
-        "assigner": "security@android.com",
-        "cvss": null,
-        "cwe": "CWE-1021",
-        "id": "CVE-2021-39617",
-        "impact": {},
-        "last-modified": "2022-12-15T03:58:00",
-        "references": [
-            "https://source.android.com/security/bulletin/2022-12-01"
-        ],
-        "summary": "In the user interface buttons of PermissionController, there is a possible way to bypass permissions dialogs due to a tapjacking/overlay attack. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is needed for exploitation.Product: AndroidVersions: Android-11 Android-12 Android-12LAndroid ID: A-175190844"
-    },
-    {
-        "Modified": "2022-12-14T22:32:00",
-        "Published": "2022-12-12T18:15:00",
-        "access": {},
-        "assigner": "contact@wpscan.com",
-        "cvss": null,
-        "cwe": "CWE-862",
-        "id": "CVE-2022-3999",
-        "impact": {},
-        "last-modified": "2022-12-14T22:32:00",
-        "references": [
-            "https://wpscan.com/vulnerability/625ae924-68db-4579-a34f-e6f33aa33643"
-        ],
-        "summary": "The WooCommerce Shipping WordPress plugin through 1.2.11 does not have authorisation and CRSF in an AJAX action, which could allow any authenticated users, such as subscriber to delete arbitrary options from the blog, which could make the blog unavailable."
-    },
-    {
-        "Modified": "2022-12-14T22:07:00",
-        "Published": "2022-12-12T18:15:00",
-        "access": {},
-        "assigner": "contact@wpscan.com",
-        "cvss": null,
-        "cwe": "CWE-434",
-        "id": "CVE-2022-3982",
-        "impact": {},
-        "last-modified": "2022-12-14T22:07:00",
-        "references": [
-            "https://wpscan.com/vulnerability/4d91f3e1-4de9-46c1-b5ba-cc55b7726867"
-        ],
-        "summary": "The Booking calendar, Appointment Booking System WordPress plugin before 3.2.2 does not validate uploaded files, which could allow unauthenticated users to upload arbitrary files, such as PHP and achieve RCE"
-    },
-    {
-        "Modified": "2022-12-14T22:00:00",
-        "Published": "2022-12-12T18:15:00",
-        "access": {},
-        "assigner": "contact@wpscan.com",
-        "cvss": null,
-        "cwe": "CWE-89",
-        "id": "CVE-2022-3981",
-        "impact": {},
-        "last-modified": "2022-12-14T22:00:00",
-        "references": [
-            "https://wpscan.com/vulnerability/78054d08-0227-426c-903d-d146e0919028"
-        ],
-        "summary": "The Icegram Express WordPress plugin before 5.5.1 does not properly sanitise and escape a parameter before using it in a SQL statement, leading to a SQL injection exploitable by any authenticated users, such as subscriber"
-    },
-    {
-        "Modified": "2022-12-14T21:51:00",
-        "Published": "2022-12-12T18:15:00",
-        "access": {},
-        "assigner": "contact@wpscan.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-4000",
-        "impact": {},
-        "last-modified": "2022-12-14T21:51:00",
-        "references": [
-            "https://wpscan.com/vulnerability/5563c030-bd62-4839-98e8-84bc8191e242"
-        ],
-        "summary": "The WooCommerce Shipping WordPress plugin through 1.2.11 does not sanitise and escape some of its settings, which could allow high privilege users such as admin to perform Stored Cross-Site Scripting attacks even when the unfiltered_html capability is disallowed (for example in multisite setup)."
-    },
-    {
-        "Modified": "2022-12-14T21:43:00",
-        "Published": "2022-12-14T21:15:00",
-        "access": {},
-        "assigner": "secalert@redhat.com",
-        "cvss": null,
-        "cwe": "CWE-122",
-        "id": "CVE-2022-2601",
-        "impact": {},
-        "last-modified": "2022-12-14T21:43:00",
-        "references": [
-            "https://bugzilla.redhat.com/show_bug.cgi?id=2112975#c0"
-        ],
-        "summary": "A buffer overflow was found in grub_font_construct_glyph(). A malicious crafted pf2 font can lead to an overflow when calculating the max_glyph_size value, allocating a smaller than needed buffer for the glyph, this further leads to a buffer overflow and a heap based out-of-bounds write. An attacker may use this vulnerability to circumvent the secure boot mechanism."
-    },
-    {
-        "Modified": "2022-12-14T21:43:00",
-        "Published": "2022-12-14T21:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-38488",
-        "impact": {},
-        "last-modified": "2022-12-14T21:43:00",
-        "references": [
-            "https://archive.ph/VlGDa",
-            "https://archive.ph/PecmD",
-            "https://github.com/secoats/cve/tree/master/CVE-2022-38488_sqli_logrocket-oauth2-example",
-            "https://github.com/diogosouza/logrocket-oauth2-example",
-            "https://blog.logrocket.com/implement-oauth-2-0-node-js/"
-        ],
-        "summary": "logrocket-oauth2-example through 2020-05-27 allows SQL injection via the /auth/register username parameter."
-    },
-    {
-        "Modified": "2022-12-14T21:43:00",
-        "Published": "2022-12-14T21:15:00",
-        "access": {},
-        "assigner": "secalert@redhat.com",
-        "cvss": null,
-        "cwe": "CWE-476",
-        "id": "CVE-2022-3104",
-        "impact": {},
-        "last-modified": "2022-12-14T21:43:00",
-        "references": [
-            "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?h=v5.19-rc2&id=4a9800c81d2f34afb66b4b42e0330ae8298019a2",
-            "https://bugzilla.redhat.com/show_bug.cgi?id=2153062"
-        ],
-        "summary": "An issue was discovered in the Linux kernel through 5.16-rc6. lkdtm_ARRAY_BOUNDS in drivers/misc/lkdtm/bugs.c lacks check of the return value of kmalloc() and will cause the null pointer dereference."
-    },
-    {
-        "Modified": "2022-12-14T21:43:00",
-        "Published": "2022-12-14T21:15:00",
-        "access": {},
-        "assigner": "secalert@redhat.com",
-        "cvss": null,
-        "cwe": "CWE-476",
-        "id": "CVE-2022-3105",
-        "impact": {},
-        "last-modified": "2022-12-14T21:43:00",
-        "references": [
-            "https://bugzilla.redhat.com/show_bug.cgi?id=2153067",
-            "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?h=v5.19-rc2&id=7694a7de22c53a312ea98960fcafc6ec62046531"
-        ],
-        "summary": "An issue was discovered in the Linux kernel through 5.16-rc6. uapi_finalize in drivers/infiniband/core/uverbs_uapi.c lacks check of kmalloc_array()."
-    },
-    {
-        "Modified": "2022-12-14T21:43:00",
-        "Published": "2022-12-14T21:15:00",
-        "access": {},
-        "assigner": "secalert@redhat.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-3106",
-        "impact": {},
-        "last-modified": "2022-12-14T21:43:00",
-        "references": [
-            "https://bugzilla.redhat.com/show_bug.cgi?id=2153066",
-            "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?h=v5.19-rc2&id=407ecd1bd726f240123f704620d46e285ff30dd9"
-        ],
-        "summary": "An issue was discovered in the Linux kernel through 5.16-rc6. ef100_update_stats in drivers/net/ethernet/sfc/ef100_nic.c lacks check of the return value of kmalloc()."
-    },
-    {
-        "Modified": "2022-12-14T21:43:00",
-        "Published": "2022-12-14T21:15:00",
-        "access": {},
-        "assigner": "secalert@redhat.com",
-        "cvss": null,
-        "cwe": "CWE-476",
-        "id": "CVE-2022-3107",
-        "impact": {},
-        "last-modified": "2022-12-14T21:43:00",
-        "references": [
-            "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?h=v5.19-rc2&id=886e44c9298a6b428ae046e2fa092ca52e822e6a",
-            "https://bugzilla.redhat.com/show_bug.cgi?id=2153060"
-        ],
-        "summary": "An issue was discovered in the Linux kernel through 5.16-rc6. netvsc_get_ethtool_stats in drivers/net/hyperv/netvsc_drv.c lacks check of the return value of kvmalloc_array() and will cause the null pointer dereference."
-    },
-    {
-        "Modified": "2022-12-14T21:43:00",
-        "Published": "2022-12-14T21:15:00",
-        "access": {},
-        "assigner": "secalert@redhat.com",
-        "cvss": null,
-        "cwe": "CWE-252",
-        "id": "CVE-2022-3108",
-        "impact": {},
-        "last-modified": "2022-12-14T21:43:00",
-        "references": [
-            "https://bugzilla.redhat.com/show_bug.cgi?id=2153052",
-            "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?h=v5.19-rc2&id=abfaf0eee97925905e742aa3b0b72e04a918fa9e"
-        ],
-        "summary": "An issue was discovered in the Linux kernel through 5.16-rc6. kfd_parse_subtype_iolink in drivers/gpu/drm/amd/amdkfd/kfd_crat.c lacks check of the return value of kmemdup()."
-    },
-    {
-        "Modified": "2022-12-14T21:43:00",
-        "Published": "2022-12-14T21:15:00",
-        "access": {},
-        "assigner": "secalert@redhat.com",
-        "cvss": null,
-        "cwe": "CWE-476",
-        "id": "CVE-2022-3110",
-        "impact": {},
-        "last-modified": "2022-12-14T21:43:00",
-        "references": [
-            "https://bugzilla.redhat.com/show_bug.cgi?id=2153055",
-            "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?h=v5.19-rc2&id=f94b47c6bde624d6c07f43054087607c52054a95"
-        ],
-        "summary": "An issue was discovered in the Linux kernel through 5.16-rc6. _rtw_init_xmit_priv in drivers/staging/r8188eu/core/rtw_xmit.c lacks check of the return value of rtw_alloc_hwxmits() and will cause the null pointer dereference."
-    },
-    {
-        "Modified": "2022-12-14T21:43:00",
-        "Published": "2022-12-14T21:15:00",
-        "access": {},
-        "assigner": "secalert@redhat.com",
-        "cvss": null,
-        "cwe": "CWE-476",
-        "id": "CVE-2022-3111",
-        "impact": {},
-        "last-modified": "2022-12-14T21:43:00",
-        "references": [
-            "https://bugzilla.redhat.com/show_bug.cgi?id=2153059",
-            "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?h=v5.19-rc2&id=6dee930f6f6776d1e5a7edf542c6863b47d9f078"
-        ],
-        "summary": "An issue was discovered in the Linux kernel through 5.16-rc6. free_charger_irq() in drivers/power/supply/wm8350_power.c lacks free of WM8350_IRQ_CHG_FAST_RDY, which is registered in wm8350_init_charger()."
-    },
-    {
-        "Modified": "2022-12-14T21:43:00",
-        "Published": "2022-12-14T21:15:00",
-        "access": {},
-        "assigner": "secalert@redhat.com",
-        "cvss": null,
-        "cwe": "CWE-476",
-        "id": "CVE-2022-3112",
-        "impact": {},
-        "last-modified": "2022-12-14T21:43:00",
-        "references": [
-            "https://bugzilla.redhat.com/show_bug.cgi?id=2153068",
-            "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?h=v5.19-rc2&id=c8c80c996182239ff9b05eda4db50184cf3b2e99"
-        ],
-        "summary": "An issue was discovered in the Linux kernel through 5.16-rc6. amvdec_set_canvases in drivers/staging/media/meson/vdec/vdec_helpers.c lacks check of the return value of kzalloc() and will cause the null pointer dereference."
-    },
-    {
-        "Modified": "2022-12-14T21:43:00",
-        "Published": "2022-12-14T21:15:00",
-        "access": {},
-        "assigner": "secalert@redhat.com",
-        "cvss": null,
-        "cwe": "CWE-476",
-        "id": "CVE-2022-3113",
-        "impact": {},
-        "last-modified": "2022-12-14T21:43:00",
-        "references": [
-            "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?h=v5.19-rc2&id=e25a89f743b18c029bfbe5e1663ae0c7190912b0",
-            "https://bugzilla.redhat.com/show_bug.cgi?id=2153053"
-        ],
-        "summary": "An issue was discovered in the Linux kernel through 5.16-rc6. mtk_vcodec_fw_vpu_init in drivers/media/platform/mtk-vcodec/mtk_vcodec_fw_vpu.c lacks check of the return value of devm_kzalloc() and will cause the null pointer dereference."
-    },
-    {
-        "Modified": "2022-12-14T21:43:00",
-        "Published": "2022-12-14T21:15:00",
-        "access": {},
-        "assigner": "secalert@redhat.com",
-        "cvss": null,
-        "cwe": "CWE-476",
-        "id": "CVE-2022-3114",
-        "impact": {},
-        "last-modified": "2022-12-14T21:43:00",
-        "references": [
-            "https://bugzilla.redhat.com/show_bug.cgi?id=2153054",
-            "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?h=v5.19-rc2&id=ed713e2bc093239ccd380c2ce8ae9e4162f5c037"
-        ],
-        "summary": "An issue was discovered in the Linux kernel through 5.16-rc6. imx_register_uart_clocks in drivers/clk/imx/clk.c lacks check of the return value of kcalloc() and will cause the null pointer dereference."
-    },
-    {
-        "Modified": "2022-12-14T21:43:00",
-        "Published": "2022-12-14T21:15:00",
-        "access": {},
-        "assigner": "secalert@redhat.com",
-        "cvss": null,
-        "cwe": "CWE-476",
-        "id": "CVE-2022-3115",
-        "impact": {},
-        "last-modified": "2022-12-14T21:43:00",
-        "references": [
-            "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?h=v5.19-rc2&id=73c3ed7495c67b8fbdc31cf58e6ca8757df31a33",
-            "https://bugzilla.redhat.com/show_bug.cgi?id=2153058"
-        ],
-        "summary": "An issue was discovered in the Linux kernel through 5.16-rc6. malidp_crtc_reset in drivers/gpu/drm/arm/malidp_crtc.c lacks check of the return value of kzalloc() and will cause the null pointer dereference."
-    },
-    {
-        "Modified": "2022-12-14T21:43:00",
-        "Published": "2022-12-14T21:15:00",
-        "access": {},
-        "assigner": "secalert@redhat.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-46340",
-        "impact": {},
-        "last-modified": "2022-12-14T21:43:00",
-        "references": [
-            "https://access.redhat.com/security/cve/CVE-2022-46340",
-            "https://bugzilla.redhat.com/show_bug.cgi?id=2151755"
-        ],
-        "summary": "A vulnerability was found in X.Org. This security flaw occurs becuase the swap handler for the XTestFakeInput request of the XTest extension may corrupt the stack if GenericEvents with lengths larger than 32 bytes are sent through a the XTestFakeInput request. This issue can lead to local privileges elevation on systems where the X server is running privileged and remote code execution for ssh X forwarding sessions. This issue does not affect systems where client and server use the same byte order."
-    },
-    {
-        "Modified": "2022-12-14T21:43:00",
-        "Published": "2022-12-14T21:15:00",
-        "access": {},
-        "assigner": "secalert@redhat.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-46341",
-        "impact": {},
-        "last-modified": "2022-12-14T21:43:00",
-        "references": [
-            "https://access.redhat.com/security/cve/CVE-2022-46341",
-            "https://bugzilla.redhat.com/show_bug.cgi?id=2151756"
-        ],
-        "summary": "A vulnerability was found in X.Org. This security flaw occurs because the handler for the XIPassiveUngrab request accesses out-of-bounds memory when invoked with a high keycode or button code. This issue can lead to local privileges elevation on systems where the X server is running privileged and remote code execution for ssh X forwarding sessions."
-    },
-    {
-        "Modified": "2022-12-14T21:43:00",
-        "Published": "2022-12-14T21:15:00",
-        "access": {},
-        "assigner": "secalert@redhat.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-46342",
-        "impact": {},
-        "last-modified": "2022-12-14T21:43:00",
-        "references": [
-            "https://bugzilla.redhat.com/show_bug.cgi?id=2151757",
-            "https://access.redhat.com/security/cve/CVE-2022-46342"
-        ],
-        "summary": "A vulnerability was found in X.Org. This security flaw occurs because the handler for the XvdiSelectVideoNotify request may write to memory after it has been freed. This issue can lead to local privileges elevation on systems where the X se"
-    },
-    {
-        "Modified": "2022-12-14T21:43:00",
-        "Published": "2022-12-14T21:15:00",
-        "access": {},
-        "assigner": "secalert@redhat.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-46343",
-        "impact": {},
-        "last-modified": "2022-12-14T21:43:00",
-        "references": [
-            "https://bugzilla.redhat.com/show_bug.cgi?id=2151758",
-            "https://access.redhat.com/security/cve/CVE-2022-46343"
-        ],
-        "summary": "A vulnerability was found in X.Org. This security flaw occurs because the handler for the ScreenSaverSetAttributes request may write to memory after it has been freed. This issue can lead to local privileges elevation on systems where the X server is running privileged and remote code execution for ssh X forwarding sessions."
-    },
-    {
-        "Modified": "2022-12-14T21:43:00",
-        "Published": "2022-12-14T21:15:00",
-        "access": {},
-        "assigner": "secalert@redhat.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-46344",
-        "impact": {},
-        "last-modified": "2022-12-14T21:43:00",
-        "references": [
-            "https://access.redhat.com/security/cve/CVE-2022-46344",
-            "https://bugzilla.redhat.com/show_bug.cgi?id=2151760"
-        ],
-        "summary": "A vulnerability was found in X.Org. This security flaw occurs because the handler for the XIChangeProperty request has a length-validation issues, resulting in out-of-bounds memory reads and potential information disclosure. This issue can lead to local privileges elevation on systems where the X server is running privileged and remote code execution for ssh X forwarding sessions."
-    },
-    {
-        "Modified": "2022-12-14T21:43:00",
-        "Published": "2022-12-14T21:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-47406",
-        "impact": {},
-        "last-modified": "2022-12-14T21:43:00",
-        "references": [
-            "https://typo3.org/security/advisory/typo3-ext-sa-2022-016"
-        ],
-        "summary": "An issue was discovered in the fe_change_pwd (aka Change password for frontend users) extension before 2.0.5, and 3.x before 3.0.3, for TYPO3. The extension fails to revoke existing sessions for the current user when the password has been changed."
-    },
-    {
-        "Modified": "2022-12-14T21:43:00",
-        "Published": "2022-12-14T21:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-47407",
-        "impact": {},
-        "last-modified": "2022-12-14T21:43:00",
-        "references": [
-            "https://typo3.org/security/advisory/typo3-ext-sa-2022-018"
-        ],
-        "summary": "An issue was discovered in the fp_masterquiz (aka Master-Quiz) extension before 2.2.1, and 3.x before 3.5.1, for TYPO3. An attacker can continue the quiz of a different user. In doing so, the attacker can view that user's answers and modify those answers."
-    },
-    {
-        "Modified": "2022-12-14T21:43:00",
-        "Published": "2022-12-14T21:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-47408",
-        "impact": {},
-        "last-modified": "2022-12-14T21:43:00",
-        "references": [
-            "https://typo3.org/security/advisory/typo3-ext-sa-2022-017"
-        ],
-        "summary": "An issue was discovered in the fp_newsletter (aka Newsletter subscriber management) extension before 1.1.1, 1.2.0, 2.x before 2.1.2, 2.2.1 through 2.4.0, and 3.x before 3.2.6 for TYPO3. There is a CAPTCHA bypass that can lead to subscribing many people."
-    },
-    {
-        "Modified": "2022-12-14T21:43:00",
-        "Published": "2022-12-14T21:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-47409",
-        "impact": {},
-        "last-modified": "2022-12-14T21:43:00",
-        "references": [
-            "https://typo3.org/security/advisory/typo3-ext-sa-2022-017"
-        ],
-        "summary": "An issue was discovered in the fp_newsletter (aka Newsletter subscriber management) extension before 1.1.1, 1.2.0, 2.x before 2.1.2, 2.2.1 through 2.4.0, and 3.x before 3.2.6 for TYPO3. Attackers can unsubscribe everyone via a series of modified subscription UIDs in deleteAction operations."
-    },
-    {
-        "Modified": "2022-12-14T21:43:00",
-        "Published": "2022-12-14T21:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-47410",
-        "impact": {},
-        "last-modified": "2022-12-14T21:43:00",
-        "references": [
-            "https://typo3.org/security/advisory/typo3-ext-sa-2022-017"
-        ],
-        "summary": "An issue was discovered in the fp_newsletter (aka Newsletter subscriber management) extension before 1.1.1, 1.2.0, 2.x before 2.1.2, 2.2.1 through 2.4.0, and 3.x before 3.2.6 for TYPO3. Data about subscribers may be obtained via createAction operations."
-    },
-    {
-        "Modified": "2022-12-14T21:43:00",
-        "Published": "2022-12-14T21:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-47411",
-        "impact": {},
-        "last-modified": "2022-12-14T21:43:00",
-        "references": [
-            "https://typo3.org/security/advisory/typo3-ext-sa-2022-017"
-        ],
-        "summary": "An issue was discovered in the fp_newsletter (aka Newsletter subscriber management) extension before 1.1.1, 1.2.0, 2.x before 2.1.2, 2.2.1 through 2.4.0, and 3.x before 3.2.6 for TYPO3. Data about subscribers may be obtained via unsubscribeAction operations."
-    },
-    {
-        "Modified": "2022-12-14T21:43:00",
-        "Published": "2022-12-14T21:15:00",
-        "access": {},
-        "assigner": "secalert@redhat.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-4283",
-        "impact": {},
-        "last-modified": "2022-12-14T21:43:00",
-        "references": [
-            "https://bugzilla.redhat.com/show_bug.cgi?id=2151761",
-            "https://access.redhat.com/security/cve/CVE-2022-4283"
-        ],
-        "summary": "A vulnerability was found in X.Org. This security flaw occurs because the XkbCopyNames function left a dangling pointer to freed memory, resulting in out-of-bounds memory access on subsequent XkbGetKbdByName requests.. This issue can lead to local privileges elevation on systems where the X server is running privileged and remote code execution for ssh X forwarding sessions."
-    },
-    {
-        "Modified": "2022-12-14T21:43:00",
-        "Published": "2022-12-14T21:15:00",
-        "access": {},
-        "assigner": "security@wordfence.com",
-        "cvss": null,
-        "cwe": "CWE-862",
-        "id": "CVE-2022-4501",
-        "impact": {},
-        "last-modified": "2022-12-14T21:43:00",
-        "references": [
-            "https://www.wordfence.com/threat-intel/vulnerabilities/id/a1eda885-7e10-4294-9748-5359efd51754",
-            "https://plugins.trac.wordpress.org/browser/mega-addons-for-visual-composer/tags/4.2.7/main.php#L87"
-        ],
-        "summary": "The Mega Addons plugin for WordPress is vulnerable to authorization bypass due to a missing capability check on the vc_saving_data function in versions up to, and including, 4.2.7. This makes it possible for authenticated attackers, with subscriber-level permissions and above, to update the plugin's settings."
-    },
-    {
-        "Modified": "2022-12-14T21:41:00",
-        "Published": "2022-12-12T18:15:00",
-        "access": {},
-        "assigner": "contact@wpscan.com",
-        "cvss": null,
-        "cwe": "CWE-434",
-        "id": "CVE-2022-3912",
-        "impact": {},
-        "last-modified": "2022-12-14T21:41:00",
-        "references": [
-            "https://wpscan.com/vulnerability/968c677c-1beb-459b-8fd1-7f70bcaa4f74"
-        ],
-        "summary": "The User Registration WordPress plugin before 2.2.4.1 does not properly restrict the files to be uploaded via an AJAX action available to both unauthenticated and authenticated users, which could allow unauthenticated users to upload PHP files for example."
-    },
-    {
-        "Modified": "2022-12-14T21:39:00",
-        "Published": "2022-12-12T18:15:00",
-        "access": {},
-        "assigner": "contact@wpscan.com",
-        "cvss": null,
-        "cwe": "CWE-89",
-        "id": "CVE-2022-3915",
-        "impact": {},
-        "last-modified": "2022-12-14T21:39:00",
-        "references": [
-            "https://wpscan.com/vulnerability/fd416d99-1970-418f-81f5-8438490d4479"
-        ],
-        "summary": "The Dokan WordPress plugin before 3.7.6 does not properly sanitise and escape a parameter before using it in a SQL statement, leading to a SQL injection exploitable by unauthenticated users"
-    },
-    {
-        "Modified": "2022-12-14T21:35:00",
-        "Published": "2022-12-12T18:15:00",
-        "access": {},
-        "assigner": "contact@wpscan.com",
-        "cvss": null,
-        "cwe": "CWE-862",
-        "id": "CVE-2022-3946",
-        "impact": {},
-        "last-modified": "2022-12-14T21:35:00",
-        "references": [
-            "https://wpscan.com/vulnerability/b48e4e1d-e682-4b16-81dc-2feee78d7ed0"
-        ],
-        "summary": "The Welcart e-Commerce WordPress plugin before 2.8.4 does not have authorisation and CSRF in an AJAX action, allowing any logged-in user to create, update and delete shipping methods."
-    },
-    {
-        "Modified": "2022-12-14T21:34:00",
-        "Published": "2022-12-12T18:15:00",
-        "access": {},
-        "assigner": "contact@wpscan.com",
-        "cvss": null,
-        "cwe": "CWE-434",
-        "id": "CVE-2022-3921",
-        "impact": {},
-        "last-modified": "2022-12-14T21:34:00",
-        "references": [
-            "https://wpscan.com/vulnerability/e39b59b0-f24f-4de5-a21c-c4de34c3a14f"
-        ],
-        "summary": "The Listingo WordPress theme before 3.2.7 does not validate files to be uploaded via an AJAX action available to unauthenticated users, which could allow them to upload arbitrary files and lead to RCE"
-    },
-    {
-        "Modified": "2022-12-14T21:34:00",
-        "Published": "2022-12-12T18:15:00",
-        "access": {},
-        "assigner": "contact@wpscan.com",
-        "cvss": null,
-        "cwe": "CWE-89",
-        "id": "CVE-2022-3925",
-        "impact": {},
-        "last-modified": "2022-12-14T21:34:00",
-        "references": [
-            "https://bulletin.iese.de/post/buddybadges_1-0-0/",
-            "https://wpscan.com/vulnerability/178499a3-97d1-4ab2-abbe-4a9d2ebc85da"
-        ],
-        "summary": "The buddybadges WordPress plugin through 1.0.0 does not sanitise and escape a parameter before using it in a SQL statement, leading to a SQL injection exploitable by high privilege users"
-    },
-    {
-        "Modified": "2022-12-14T21:33:00",
-        "Published": "2022-12-12T13:15:00",
-        "access": {},
-        "assigner": "security-alert@hpe.com",
-        "cvss": null,
-        "cwe": "NVD-CWE-noinfo",
-        "id": "CVE-2022-43542",
-        "impact": {},
-        "last-modified": "2022-12-14T21:33:00",
-        "references": [
-            "https://www.arubanetworks.com/assets/alert/ARUBA-PSA-2022-018.txt"
-        ],
-        "summary": "Vulnerabilities in the Aruba EdgeConnect Enterprise command line interface allow remote authenticated users to run arbitrary commands on the underlying host. A successful exploit could allow an attacker to execute arbitrary commands as root on the underlying operating system leading to complete system compromise in Aruba EdgeConnect Enterprise Software version(s): ECOS 9.2.1.0 and below; ECOS 9.1.3.0 and below; ECOS 9.0.7.0 and below; ECOS 8.3.7.1 and below."
-    },
-    {
-        "Modified": "2022-12-14T21:32:00",
-        "Published": "2022-12-12T18:15:00",
-        "access": {},
-        "assigner": "contact@wpscan.com",
-        "cvss": null,
-        "cwe": "CWE-639",
-        "id": "CVE-2022-3930",
-        "impact": {},
-        "last-modified": "2022-12-14T21:32:00",
-        "references": [
-            "https://wpscan.com/vulnerability/8728d02a-51db-4447-a843-0264b6ceb413"
-        ],
-        "summary": "The Directorist WordPress plugin before 7.4.2.2 suffers from an IDOR vulnerability which an attacker can exploit to change the password of arbitrary users instead of his own."
     }
 ]
