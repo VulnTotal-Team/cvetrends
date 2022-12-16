@@ -1,5 +1,100 @@
 [
     {
+        "Modified": "2022-12-16T00:15:00",
+        "Published": "2022-12-16T00:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-345",
+        "id": "CVE-2022-41960",
+        "impact": {},
+        "last-modified": "2022-12-16T00:15:00",
+        "references": [
+            "https://github.com/bigbluebutton/bigbluebutton/releases/tag/v2.5-alpha-1",
+            "https://github.com/bigbluebutton/bigbluebutton/releases/tag/v2.4.3",
+            "https://github.com/bigbluebutton/bigbluebutton/security/advisories/GHSA-rgjp-3r74-g4cm"
+        ],
+        "summary": "BigBlueButton is an open source web conferencing system. Versions prior to 2.4.3, are subject to Insufficient Verification of Data Authenticity, resulting in Denial of Service. An attacker can make a Meteor call to `validateAuthToken` using a victim's userId, meetingId, and an invalid authToken. This forces the victim to leave the conference, because the resulting verification failure is also observed and handled by the victim's client. The attacker must be a participant in any meeting on the server. This issue is patched in version 2.4.3. There are no workarounds."
+    },
+    {
+        "Modified": "2022-12-15T23:15:00",
+        "Published": "2022-12-15T23:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-40004",
+        "impact": {},
+        "last-modified": "2022-12-15T23:15:00",
+        "references": [
+            "https://gist.github.com/s3d113/bba63da007fcbe243615dd2a81690ffb"
+        ],
+        "summary": "Cross Site Scripting (XSS) vulnerability in Things Board 3.4.1 allows remote attackers to escalate privilege via crafted URL to the Audit Log."
+    },
+    {
+        "Modified": "2022-12-15T23:15:00",
+        "Published": "2022-12-15T23:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-45338",
+        "impact": {},
+        "last-modified": "2022-12-15T23:15:00",
+        "references": [
+            "https://gist.github.com/MaxRozendaal/633b34a4675b60caed736e5ffe28f272"
+        ],
+        "summary": "An arbitrary file upload vulnerability in the profile picture upload function of Exact Synergy Enterprise 267 before 267SP13 and Exact Synergy Enterprise 500 before 500SP6 allows attackers to execute arbitrary code via a crafted SVG file."
+    },
+    {
+        "Modified": "2022-12-15T23:15:00",
+        "Published": "2022-12-15T23:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-45969",
+        "impact": {},
+        "last-modified": "2022-12-15T23:15:00",
+        "references": [
+            "https://github.com/alist-org/alist/issues/2449"
+        ],
+        "summary": "Alist v3.4.0 is vulnerable to Directory Traversal,"
+    },
+    {
+        "Modified": "2022-12-15T23:15:00",
+        "Published": "2022-12-15T23:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-46392",
+        "impact": {},
+        "last-modified": "2022-12-15T23:15:00",
+        "references": [
+            "https://github.com/Mbed-TLS/mbedtls/releases/tag/v2.28.2",
+            "https://github.com/Mbed-TLS/mbedtls/releases/tag/v3.3.0"
+        ],
+        "summary": "An issue was discovered in Mbed TLS before 2.28.2 and 3.x before 3.3.0. An adversary with access to precise enough information about memory accesses (typically, an untrusted operating system attacking a secure enclave) can recover an RSA private key after observing the victim performing a single private-key operation, if the window size (MBEDTLS_MPI_WINDOW_SIZE) used for the exponentiation is 3 or smaller."
+    },
+    {
+        "Modified": "2022-12-15T23:15:00",
+        "Published": "2022-12-15T23:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-46393",
+        "impact": {},
+        "last-modified": "2022-12-15T23:15:00",
+        "references": [
+            "https://github.com/Mbed-TLS/mbedtls/releases/tag/v2.28.2",
+            "https://github.com/Mbed-TLS/mbedtls/releases/tag/v3.3.0",
+            "https://mbed-tls.readthedocs.io/en/latest/tech-updates/security-advisories/"
+        ],
+        "summary": "An issue was discovered in Mbed TLS before 2.28.2 and 3.x before 3.3.0. There is a potential heap-based buffer overflow and heap-based buffer over-read in DTLS if MBEDTLS_SSL_DTLS_CONNECTION_ID is enabled and MBEDTLS_SSL_CID_IN_LEN_MAX > 2 * MBEDTLS_SSL_CID_OUT_LEN_MAX."
+    },
+    {
         "Modified": "2022-12-15T22:21:00",
         "Published": "2022-12-13T19:15:00",
         "access": {},
@@ -1642,95 +1737,5 @@
             "https://github.com/liufee/cms/issues/45"
         ],
         "summary": "Cross Site Scripting (XSS) vulnerability in FeehiCMS 2.0.8 allows remote attackers to run arbitrary code via tha lang attribute of an html tag."
-    },
-    {
-        "Modified": "2022-12-15T19:56:00",
-        "Published": "2022-12-15T19:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2020-20588",
-        "impact": {},
-        "last-modified": "2022-12-15T19:56:00",
-        "references": [
-            "https://github.com/zhimengzhe/iBarn/issues/13"
-        ],
-        "summary": "File upload vulnerability in function upload in action/Core.class.php in zhimengzhe iBarn 1.5 allows remote attackers to run arbitrary code via avatar upload to index.php."
-    },
-    {
-        "Modified": "2022-12-15T19:56:00",
-        "Published": "2022-12-15T19:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2020-36607",
-        "impact": {},
-        "last-modified": "2022-12-15T19:56:00",
-        "references": [
-            "https://github.com/liufee/cms/issues/45"
-        ],
-        "summary": "Cross Site Scripting (XSS) vulnerability in FeehiCMS 2.0.8 allows remote attackers to run arbitrary code via tha lang attribute of an html tag."
-    },
-    {
-        "Modified": "2022-12-15T19:56:00",
-        "Published": "2022-12-15T19:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2020-24855",
-        "impact": {},
-        "last-modified": "2022-12-15T19:56:00",
-        "references": [
-            "https://github.com/easy-team/easywebpack-cli/issues/25"
-        ],
-        "summary": "Directory Traversal vulnerability in easywebpack-cli before 4.5.2 allows attackers to obtain sensitive information via crafted GET request."
-    },
-    {
-        "Modified": "2022-12-15T19:56:00",
-        "Published": "2022-12-15T19:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2021-36573",
-        "impact": {},
-        "last-modified": "2022-12-15T19:56:00",
-        "references": [
-            "https://github.com/liufee/cms/issues/59"
-        ],
-        "summary": "File Upload vulnerability in Feehi CMS thru 2.1.1 allows attackers to run arbitrary code via crafted image upload."
-    },
-    {
-        "Modified": "2022-12-15T19:56:00",
-        "Published": "2022-12-15T19:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2021-39426",
-        "impact": {},
-        "last-modified": "2022-12-15T19:56:00",
-        "references": [
-            "https://github.com/seacms-com/seacms/issues/21"
-        ],
-        "summary": "An issue was discovered in /Upload/admin/admin_notify.php in Seacms 11.4 allows attackers to execute arbitrary php code via the notify1 parameter when the action parameter equals set."
-    },
-    {
-        "Modified": "2022-12-15T19:56:00",
-        "Published": "2022-12-15T19:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2021-39427",
-        "impact": {},
-        "last-modified": "2022-12-15T19:56:00",
-        "references": [
-            "https://github.com/vtime-tech/188Jianzhan/issues/4"
-        ],
-        "summary": "Cross site scripting vulnerability in 188Jianzhan 2.10 allows attackers to execute arbitrary code via the username parameter to /admin/reg.php."
     }
 ]
