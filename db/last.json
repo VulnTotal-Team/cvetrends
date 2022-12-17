@@ -1,5 +1,67 @@
 [
     {
+        "Modified": "2022-12-17T00:15:00",
+        "Published": "2022-12-17T00:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-23",
+        "id": "CVE-2022-23531",
+        "impact": {},
+        "last-modified": "2022-12-17T00:15:00",
+        "references": [
+            "https://github.com/DataDog/guarddog/releases/tag/v0.1.5",
+            "https://github.com/DataDog/guarddog/security/advisories/GHSA-rp2v-v467-q9vq",
+            "https://github.com/DataDog/guarddog/pull/89/commits/a56aff58264cb6b7855d71b00dc10c39a5dbd306"
+        ],
+        "summary": "GuardDog is a CLI tool to identify malicious PyPI packages. Versions prior to 0.1.5 are vulnerable to Relative Path Traversal when scanning a specially-crafted local PyPI package. Running GuardDog against a specially-crafted package can allow an attacker to write an arbitrary file on the machine where GuardDog is executed due to a path traversal vulnerability when extracting the .tar.gz file of the package being scanned, which exists by design in the tarfile.TarFile.extractall function. This issue is patched in version 0.1.5."
+    },
+    {
+        "Modified": "2022-12-16T23:15:00",
+        "Published": "2022-12-16T23:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-22",
+        "id": "CVE-2022-23530",
+        "impact": {},
+        "last-modified": "2022-12-16T23:15:00",
+        "references": [
+            "https://github.com/DataDog/guarddog/blob/a1d064ceb09d39bb28deb6972bc0a278756ea91f/guarddog/scanners/package_scanner.py#L153..158",
+            "https://github.com/DataDog/guarddog/security/advisories/GHSA-78m5-jpmf-ch7v",
+            "https://github.com/DataDog/guarddog/commit/37c7d0767ba28f4df46117d478f97652594c491c"
+        ],
+        "summary": "GuardDog is a CLI tool to identify malicious PyPI packages. Versions prior to v0.1.8 are vulnerable to arbitrary file write when scanning a specially-crafted remote PyPI package. Extracting files using shutil.unpack_archive() from a potentially malicious tarball without validating that the destination file path is within the intended destination directory can cause files outside the destination directory to be overwritten. This issue is patched in version 0.1.8. Potential workarounds include using a safer module, like zipfile, and validating the location of the extracted files and discarding those with malicious paths."
+    },
+    {
+        "Modified": "2022-12-16T23:15:00",
+        "Published": "2022-12-16T23:15:00",
+        "access": {},
+        "assigner": "security@microfocus.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-38756",
+        "impact": {},
+        "last-modified": "2022-12-16T23:15:00",
+        "references": [
+            "https://portal.microfocus.com/s/article/KM000012374?language=en_US"
+        ],
+        "summary": "A vulnerability has been identified in Micro Focus GroupWise Web in versions prior to 18.4.2. The GW Web component makes a request to the Post Office Agent that contains sensitive information in the query parameters that could be logged by any intervening HTTP proxies."
+    },
+    {
+        "Modified": "2022-12-16T23:15:00",
+        "Published": "2022-11-08T22:15:00",
+        "access": {},
+        "assigner": "security@android.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-20463",
+        "impact": {},
+        "last-modified": "2022-12-16T23:15:00",
+        "references": [],
+        "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was withdrawn by its CNA. Further investigation showed that it was not a security issue. Notes: none."
+    },
+    {
         "Modified": "2022-12-16T22:19:00",
         "Published": "2022-12-14T22:15:00",
         "access": {},
@@ -1507,66 +1569,5 @@
             "https://www.cisa.gov/uscert/ics/advisories/icsa-22-284-02"
         ],
         "summary": "Daikin SVMPC1 version 2.1.22 and prior and SVMPC2 version 1.2.3 and prior are vulnerable to attackers with access to the local area network (LAN) to disclose sensitive information stored by the affected product without requiring authentication."
-    },
-    {
-        "Modified": "2022-12-16T17:14:00",
-        "Published": "2022-12-13T22:15:00",
-        "access": {},
-        "assigner": "ics-cert@hq.dhs.gov",
-        "cvss": null,
-        "cwe": "CWE-269",
-        "id": "CVE-2022-41653",
-        "impact": {},
-        "last-modified": "2022-12-16T17:14:00",
-        "references": [
-            "https://www.cisa.gov/uscert/ics/advisories/icsa-22-284-02"
-        ],
-        "summary": "Daikin SVMPC1 version 2.1.22 and prior and SVMPC2 version 1.2.3 and prior are vulnerable to an attacker obtaining user login credentials and control the system."
-    },
-    {
-        "Modified": "2022-12-16T17:12:00",
-        "Published": "2022-12-13T22:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-43996",
-        "impact": {},
-        "last-modified": "2022-12-16T17:12:00",
-        "references": [
-            "https://wid.cert-bund.de/.well-known/csaf/white/2022/bsi-2022-0003.json"
-        ],
-        "summary": "The csaf_provider package before 0.8.2 allows XSS via a crafted CSAF document uploaded as text/html. The endpoint upload allows valid CSAF advisories (JSON format) to be uploaded with Content-Type text/html and filenames ending in .html. When subsequently accessed via web browser, these advisories are served and interpreted as HTML pages. Such uploaded advisories can contain JavaScript code that will execute within the browser context of users inspecting the advisory."
-    },
-    {
-        "Modified": "2022-12-16T17:11:00",
-        "Published": "2022-12-16T16:15:00",
-        "access": {},
-        "assigner": "security@android.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-20199",
-        "impact": {},
-        "last-modified": "2022-12-16T17:11:00",
-        "references": [
-            "https://source.android.com/security/bulletin/pixel/2022-12-01"
-        ],
-        "summary": "In multiple locations of NfcService.java, there is a possible disclosure of NFC tags due to a confused deputy. This could lead to local information disclosure with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android-13Android ID: A-199291025"
-    },
-    {
-        "Modified": "2022-12-16T17:11:00",
-        "Published": "2022-12-16T15:15:00",
-        "access": {},
-        "assigner": "secalert@redhat.com",
-        "cvss": null,
-        "cwe": "CWE-476",
-        "id": "CVE-2022-3109",
-        "impact": {},
-        "last-modified": "2022-12-16T17:11:00",
-        "references": [
-            "https://bugzilla.redhat.com/show_bug.cgi?id=2153551",
-            "https://github.com/FFmpeg/FFmpeg/commit/656cb0450aeb73b25d7d26980af342b37ac4c568"
-        ],
-        "summary": "An issue was discovered in the FFmpeg through 3.0. vp3_decode_frame in libavcodec/vp3.c lacks check of the return value of av_malloc() and will cause the null pointer dereference, impacting confidentiality and availability."
     }
 ]
