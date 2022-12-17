@@ -1,5 +1,55 @@
 [
     {
+        "Modified": "2022-12-17T19:15:00",
+        "Published": "2022-12-17T19:15:00",
+        "access": {},
+        "assigner": "cna@vuldb.com",
+        "cvss": null,
+        "cwe": "CWE-707",
+        "id": "CVE-2021-4246",
+        "impact": {},
+        "last-modified": "2022-12-17T19:15:00",
+        "references": [
+            "https://vuldb.com/?id.216176",
+            "https://github.com/roxlukas/lmeve/commit/29e1ead3bb1c1fad53b77dfc14534496421c5b5d"
+        ],
+        "summary": "A vulnerability was found in roxlukas LMeve and classified as critical. Affected by this issue is some unknown functionality of the component Login Page. The manipulation of the argument X-Forwarded-For leads to sql injection. The attack may be launched remotely. The name of the patch is 29e1ead3bb1c1fad53b77dfc14534496421c5b5d. It is recommended to apply a patch to fix this issue. The identifier of this vulnerability is VDB-216176."
+    },
+    {
+        "Modified": "2022-12-17T19:15:00",
+        "Published": "2022-12-17T19:15:00",
+        "access": {},
+        "assigner": "cna@vuldb.com",
+        "cvss": null,
+        "cwe": "CWE-707",
+        "id": "CVE-2022-4590",
+        "impact": {},
+        "last-modified": "2022-12-17T19:15:00",
+        "references": [
+            "https://github.com/mschaef/toto/commit/fdc825ac5249f40683377e8a526a06cdc6870125",
+            "https://vuldb.com/?id.216177",
+            "https://github.com/mschaef/toto/releases/tag/1.4.21"
+        ],
+        "summary": "A vulnerability was found in mschaef toto up to 1.4.20. It has been classified as problematic. This affects an unknown part of the component Todo List Handler. The manipulation leads to cross site scripting. It is possible to initiate the attack remotely. Upgrading to version 1.4.21 is able to address this issue. The name of the patch is fdc825ac5249f40683377e8a526a06cdc6870125. It is recommended to upgrade the affected component. The identifier VDB-216177 was assigned to this vulnerability."
+    },
+    {
+        "Modified": "2022-12-17T19:15:00",
+        "Published": "2022-12-17T19:15:00",
+        "access": {},
+        "assigner": "cna@vuldb.com",
+        "cvss": null,
+        "cwe": "CWE-707",
+        "id": "CVE-2022-4591",
+        "impact": {},
+        "last-modified": "2022-12-17T19:15:00",
+        "references": [
+            "https://github.com/mschaef/toto/commit/1f27f37c1a06f54a76971f70eaa6139dc139bdf9",
+            "https://vuldb.com/?id.216178",
+            "https://github.com/mschaef/toto/releases/tag/1.4.21"
+        ],
+        "summary": "A vulnerability was found in mschaef toto up to 1.4.20. It has been declared as problematic. This vulnerability affects unknown code of the component Email Parameter Handler. The manipulation leads to cross site scripting. The attack can be initiated remotely. Upgrading to version 1.4.21 is able to address this issue. The name of the patch is 1f27f37c1a06f54a76971f70eaa6139dc139bdf9. It is recommended to upgrade the affected component. VDB-216178 is the identifier assigned to this vulnerability."
+    },
+    {
         "Modified": "2022-12-17T13:15:00",
         "Published": "2022-12-17T13:15:00",
         "access": {},
@@ -1560,54 +1610,5 @@
             "https://vuldb.com/?id.215972"
         ],
         "summary": "A vulnerability was found in Freedom of the Press SecureDrop. It has been rated as critical. Affected by this issue is some unknown functionality of the file gpg-agent.conf. The manipulation leads to symlink following. Local access is required to approach this attack. The name of the patch is b0526a06f8ca713cce74b63e00d3730618d89691. It is recommended to apply a patch to fix this issue. The identifier of this vulnerability is VDB-215972."
-    },
-    {
-        "Modified": "2022-12-16T18:00:00",
-        "Published": "2022-12-16T17:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-863",
-        "id": "CVE-2022-4564",
-        "impact": {},
-        "last-modified": "2022-12-16T18:00:00",
-        "references": [
-            "https://vuldb.com/?id.215973",
-            "https://github.com/ucfopen/Materia/commit/af259115d2e8f17068e61902151ee8a9dbac397b",
-            "https://github.com/ucfopen/Materia/pull/1371",
-            "https://github.com/ucfopen/Materia/releases/tag/v9.0.2-alpha2"
-        ],
-        "summary": "A vulnerability classified as problematic has been found in University of Central Florida Materia up to 9.0.1-alpha1. This affects the function before of the file fuel/app/classes/controller/api.php of the component API Controller. The manipulation leads to cross-site request forgery. It is possible to initiate the attack remotely. Upgrading to version 9.0.2-alpha2 is able to address this issue. The name of the patch is af259115d2e8f17068e61902151ee8a9dbac397b. It is recommended to upgrade the affected component. The identifier VDB-215973 was assigned to this vulnerability."
-    },
-    {
-        "Modified": "2022-12-16T18:00:00",
-        "Published": "2022-12-14T08:15:00",
-        "access": {},
-        "assigner": "security-advisories@github.com",
-        "cvss": null,
-        "cwe": "CWE-674",
-        "id": "CVE-2022-23500",
-        "impact": {},
-        "last-modified": "2022-12-16T18:00:00",
-        "references": [
-            "https://github.com/TYPO3/typo3/security/advisories/GHSA-8c28-5mp7-v24h"
-        ],
-        "summary": "TYPO3 is an open source PHP based web content management system. In versions prior to 9.5.38, 10.4.33, 11.5.20, and 12.1.1, requesting invalid or non-existing resources via HTTP triggers the page error handler, which again could retrieve content to be shown as an error message from another page. This leads to a scenario in which the application is calling itself recursively - amplifying the impact of the initial attack until the limits of the web server are exceeded. This vulnerability is very similar, but not identical, to the one described in CVE-2021-21359. This issue is patched in versions 9.5.38 ELTS, 10.4.33, 11.5.20 or 12.1.1."
-    },
-    {
-        "Modified": "2022-12-16T17:59:00",
-        "Published": "2022-12-14T09:15:00",
-        "access": {},
-        "assigner": "contact@wpscan.com",
-        "cvss": null,
-        "cwe": "CWE-367",
-        "id": "CVE-2022-3590",
-        "impact": {},
-        "last-modified": "2022-12-16T17:59:00",
-        "references": [
-            "https://wpscan.com/vulnerability/c8814e6e-78b3-4f63-a1d3-6906a84c1f11",
-            "https://blog.sonarsource.com/wordpress-core-unauthenticated-blind-ssrf/"
-        ],
-        "summary": "WordPress is affected by an unauthenticated blind SSRF in the pingback feature. Because of a TOCTOU race condition between the validation checks and the HTTP request, attackers can reach internal hosts that are explicitly forbidden."
     }
 ]
