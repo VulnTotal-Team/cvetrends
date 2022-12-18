@@ -1,5 +1,37 @@
 [
     {
+        "Modified": "2022-12-18T14:15:00",
+        "Published": "2022-12-18T14:15:00",
+        "access": {},
+        "assigner": "security@huntr.dev",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2022-4605",
+        "impact": {},
+        "last-modified": "2022-12-18T14:15:00",
+        "references": [
+            "https://github.com/flatpressblog/flatpress/commit/742f8b04f233e3cc52bed11f79fcc9911faee776",
+            "https://huntr.dev/bounties/df455d44-0dec-470c-b576-8ea86ec5a367"
+        ],
+        "summary": "Cross-site Scripting (XSS) - Stored in GitHub repository flatpressblog/flatpress prior to 1.3."
+    },
+    {
+        "Modified": "2022-12-18T13:15:00",
+        "Published": "2022-12-18T13:15:00",
+        "access": {},
+        "assigner": "security@huntr.dev",
+        "cvss": null,
+        "cwe": "CWE-98",
+        "id": "CVE-2022-4606",
+        "impact": {},
+        "last-modified": "2022-12-18T13:15:00",
+        "references": [
+            "https://huntr.dev/bounties/3dab0466-c35d-4163-b3c7-a8666e2f7d95",
+            "https://github.com/flatpressblog/flatpress/commit/c30d52b28483e1e512d0d81758d4c149f02b4068"
+        ],
+        "summary": "PHP Remote File Inclusion in GitHub repository flatpressblog/flatpress prior to 1.3."
+    },
+    {
         "Modified": "2022-12-18T11:15:00",
         "Published": "2022-12-18T11:15:00",
         "access": {},
@@ -1587,38 +1619,5 @@
             "https://github.com/yangfar/CVE/blob/main/Reference%20of%20Binbloom.md"
         ],
         "summary": "Binbloom 2.0 was discovered to contain a heap buffer overflow via the read_pointer function at /binbloom-master/src/helpers.c."
-    },
-    {
-        "Modified": "2022-12-16T20:50:00",
-        "Published": "2022-12-14T18:15:00",
-        "access": {},
-        "assigner": "security-advisories@github.com",
-        "cvss": null,
-        "cwe": "CWE-601",
-        "id": "CVE-2022-23527",
-        "impact": {},
-        "last-modified": "2022-12-16T20:50:00",
-        "references": [
-            "https://github.com/zmartzone/mod_auth_openidc/security/advisories/GHSA-q6f2-285m-gr53",
-            "https://github.com/zmartzone/mod_auth_openidc/blob/v2.4.12.1/auth_openidc.conf#L975-L984"
-        ],
-        "summary": "mod_auth_openidc is an OpenID Certified\u2122 authentication and authorization module for the Apache 2.x HTTP server. Versions prior to 2.4.12.2 are vulnerable to Open Redirect. When providing a logout parameter to the redirect URI, the existing code in oidc_validate_redirect_url() does not properly check for URLs that start with /\\t, leading to an open redirect. This issue has been patched in version 2.4.12.2. Users unable to upgrade can mitigate the issue by configuring mod_auth_openidc to only allow redirection when the destination matches a given regular expression with OIDCRedirectURLsAllowed."
-    },
-    {
-        "Modified": "2022-12-16T20:45:00",
-        "Published": "2022-12-14T15:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "NVD-CWE-noinfo",
-        "id": "CVE-2022-46997",
-        "impact": {},
-        "last-modified": "2022-12-16T20:45:00",
-        "references": [
-            "https://github.com/Viralmaniar/Passhunt/",
-            "https://mirrors.neusoft.edu.cn/pypi/web/simple/request/",
-            "https://github.com/Viralmaniar/Passhunt/issues/14"
-        ],
-        "summary": "Passhunt commit 54eb987d30ead2b8ebbf1f0b880aa14249323867 was discovered to contain a code execution backdoor via the request package. This vulnerability allows attackers to access sensitive user information and digital currency keys, as well as escalate privileges."
     }
 ]
