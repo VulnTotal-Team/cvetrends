@@ -1,5 +1,174 @@
 [
     {
+        "Modified": "2022-12-18T05:15:00",
+        "Published": "2022-12-18T05:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-47515",
+        "impact": {},
+        "last-modified": "2022-12-18T05:15:00",
+        "references": [
+            "https://github.com/drachtio/drachtio-server/issues/245",
+            "https://github.com/drachtio/drachtio-server/commit/4cf9fe2c420b86c16442215d449d40be777c1911"
+        ],
+        "summary": "An issue was discovered in drachtio-server before 0.8.20. It allows remote attackers to cause a denial of service (daemon crash) via a long message in a TCP request that leads to std::length_error."
+    },
+    {
+        "Modified": "2022-12-18T05:15:00",
+        "Published": "2022-12-18T05:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-47516",
+        "impact": {},
+        "last-modified": "2022-12-18T05:15:00",
+        "references": [
+            "https://github.com/davehorton/sofia-sip/commit/13b2a135287caa2d67ac6cd5155626821e25b377",
+            "https://github.com/drachtio/drachtio-server/issues/244"
+        ],
+        "summary": "An issue was discovered in the libsofia-sip fork in drachtio-server before 0.8.20. It allows remote attackers to cause a denial of service (daemon crash) via a crafted UDP message that leads to a failure of the libsofia-sip-ua/tport/tport.c self assertion."
+    },
+    {
+        "Modified": "2022-12-18T05:15:00",
+        "Published": "2022-12-18T05:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-47517",
+        "impact": {},
+        "last-modified": "2022-12-18T05:15:00",
+        "references": [
+            "https://github.com/davehorton/sofia-sip/commit/22c1bd191f0acbf11f0c0fbea1845d9bf9dcd47e",
+            "https://github.com/davehorton/sofia-sip/commit/bfc79d85c8f3a4798a3305fb98f5a11c11d0d29f",
+            "https://github.com/drachtio/drachtio-server/issues/243"
+        ],
+        "summary": "An issue was discovered in the libsofia-sip fork in drachtio-server before 0.8.19. It allows remote attackers to cause a denial of service (daemon crash) via a crafted UDP message that causes a url_canonize2 heap-based buffer over-read because of an off-by-one error."
+    },
+    {
+        "Modified": "2022-12-18T04:15:00",
+        "Published": "2022-12-18T04:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-47514",
+        "impact": {},
+        "last-modified": "2022-12-18T04:15:00",
+        "references": [
+            "https://papercutsoftware.github.io/XML-RPC.NET/download.html",
+            "https://github.com/jumpycastle/xmlrpc.net-poc"
+        ],
+        "summary": "An XML external entity (XXE) injection vulnerability in XML-RPC.NET before 2.5.0 allows remote authenticated users to conduct server-side request forgery (SSRF) attacks, as demonstrated by a pingback.aspx POST request."
+    },
+    {
+        "Modified": "2022-12-18T04:15:00",
+        "Published": "2022-12-13T16:15:00",
+        "access": {},
+        "assigner": "secalert@redhat.com",
+        "cvss": null,
+        "cwe": "CWE-94",
+        "id": "CVE-2022-4223",
+        "impact": {},
+        "last-modified": "2022-12-18T04:15:00",
+        "references": [
+            "https://github.com/pgadmin-org/pgadmin4/issues/5593",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/R5EYTPKHVFSDCETBJI7LBZE4EYHBPN2Q/"
+        ],
+        "summary": "The pgAdmin server includes an HTTP API that is intended to be used to validate the path a user selects to external PostgreSQL utilities such as pg_dump and pg_restore. The utility is executed by the server to determine what PostgreSQL version it is from. Versions of pgAdmin prior to 6.17 failed to properly secure this API, which could allow an unauthenticated user to call it with a path of their choosing, such as a UNC path to a server they control on a Windows machine. This would cause an appropriately named executable in the target path to be executed by the pgAdmin server."
+    },
+    {
+        "Modified": "2022-12-18T04:15:00",
+        "Published": "2022-11-09T07:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-400",
+        "id": "CVE-2022-45061",
+        "impact": {},
+        "last-modified": "2022-12-18T04:15:00",
+        "references": [
+            "https://github.com/python/cpython/issues/98433",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/O67LRHDTJWH544KXB6KY4HMHQLYDXFPK/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/4WBZJNSALFGMPYTINIF57HAAK46U72WQ/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/GTPVDZDATRQFE6KAT6B4BQIQ4GRHIIIJ/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RTN2OOLKYTG34DODUEJGT5MLC2PFGPBA/",
+            "https://security.netapp.com/advisory/ntap-20221209-0007/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/ZB5YCMIRVX35RUB6XPOWKENCVCJEVDRK/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/PLQ2BNZVBBAQPV3SPRU24ZD37UYJJS7W/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/VCMDX6IFKLOA3NXUQEV524L5LHTPI2JI/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/ORVCQGJCCAVLN4DJDTWGREFCUWXKQRML/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/T3D5TX4TDJPXHXD2QICKTY3OCQC3JARP/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/63FS6VHY4DCS74HBTEINUDOECQ2X6ZCH/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/JCDJXNBHWXNYUTOEV4H2HCFSRKV3SYL3/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RH57BNT4VQERGEJ5SXNXSVMDYP66YD4H/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/YPNWZKXPKTNHS5FVMN7UQZ2UPCSEFJUK/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/LKWAMPURWUV3DCCT4J7VHRF4NT2CFVBR/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/35YDIWCUMWTMDBWFRAVENFH6BLB65D6S/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/B3YI6JYARWU6GULWOHNUROSACT54XFFS/"
+        ],
+        "summary": "An issue was discovered in Python before 3.11.1. An unnecessary quadratic algorithm exists in one path when processing some inputs to the IDNA (RFC 3490) decoder, such that a crafted, unreasonably long name being presented to the decoder could lead to a CPU denial of service. Hostnames are often supplied by remote servers that could be controlled by a malicious actor; in such a scenario, they could trigger excessive CPU consumption on the client attempting to make use of an attacker-supplied supposed hostname. For example, the attack payload could be placed in the Location header of an HTTP response with status code 302. A fix is planned in 3.11.1, 3.10.9, 3.9.16, 3.8.16, and 3.7.16."
+    },
+    {
+        "Modified": "2022-12-18T04:15:00",
+        "Published": "2022-10-24T14:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-125",
+        "id": "CVE-2021-46848",
+        "impact": {},
+        "last-modified": "2022-12-18T04:15:00",
+        "references": [
+            "https://gitlab.com/gnutls/libtasn1/-/issues/32",
+            "https://bugs.gentoo.org/866237",
+            "https://gitlab.com/gnutls/libtasn1/-/commit/44a700d2051a666235748970c2df047ff207aeb5",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/AV4SHDJF2XLB4CUPTBPQQ6CLGZ5LKXPZ/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/OGO7XST4EIJGX4B2ITZCYSWM24534BSU/",
+            "https://security.netapp.com/advisory/ntap-20221118-0006/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/V5LWOGF7QRMNFRUCZY6TDYQJVFI6MOQ2/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/ECM2ELTVRYV4BZ5L5GMIRQE27RFHPAQ6/"
+        ],
+        "summary": "GNU Libtasn1 before 4.19.0 has an ETYPE_OK off-by-one array size check that affects asn1_encode_simple_der."
+    },
+    {
+        "Modified": "2022-12-18T04:15:00",
+        "Published": "2022-10-12T23:15:00",
+        "access": {},
+        "assigner": "security@google.com",
+        "cvss": null,
+        "cwe": "NVD-CWE-noinfo",
+        "id": "CVE-2022-3171",
+        "impact": {},
+        "last-modified": "2022-12-18T04:15:00",
+        "references": [
+            "https://github.com/protocolbuffers/protobuf/security/advisories/GHSA-h4h5-3hr4-j3g2",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/CBAUKJQL6O4TIWYBENORSY5P43TVB4M3/"
+        ],
+        "summary": "A parsing issue with binary data in protobuf-java core and lite versions prior to 3.21.7, 3.20.3, 3.19.6 and 3.16.3 can lead to a denial of service attack. Inputs containing multiple instances of non-repeated embedded messages with repeated or unknown fields causes objects to be converted back-n-forth between mutable and immutable forms, resulting in potentially long garbage collection pauses. We recommend updating to the versions mentioned above."
+    },
+    {
+        "Modified": "2022-12-18T04:15:00",
+        "Published": "2022-09-22T15:15:00",
+        "access": {},
+        "assigner": "security@google.com",
+        "cvss": null,
+        "cwe": "CWE-119",
+        "id": "CVE-2022-1941",
+        "impact": {},
+        "last-modified": "2022-12-18T04:15:00",
+        "references": [
+            "https://cloud.google.com/support/bulletins#GCP-2022-019",
+            "https://github.com/protocolbuffers/protobuf/security/advisories/GHSA-8gq9-2x98-w8hf",
+            "http://www.openwall.com/lists/oss-security/2022/09/27/1",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/CBAUKJQL6O4TIWYBENORSY5P43TVB4M3/"
+        ],
+        "summary": "A parsing vulnerability for the MessageSet type in the ProtocolBuffers versions prior to and including 3.16.1, 3.17.3, 3.18.2, 3.19.4, 3.20.1 and 3.21.5 for protobuf-cpp, and versions prior to and including 3.16.1, 3.17.3, 3.18.2, 3.19.4, 3.20.1 and 4.21.5 for protobuf-python can lead to out of memory failures. A specially crafted message with multiple key-value per elements creates parsing issues, and can lead to a Denial of Service against services receiving unsanitized input. We recommend upgrading to versions 3.18.3, 3.19.5, 3.20.2, 3.21.6 for protobuf-cpp and 3.18.3, 3.19.5, 3.20.2, 4.21.6 for protobuf-python. Versions for 3.16 and 3.17 are no longer updated."
+    },
+    {
         "Modified": "2022-12-17T19:15:00",
         "Published": "2022-12-17T19:15:00",
         "access": {},
@@ -288,37 +457,6 @@
             "https://github.com/liufee/cms/issues/59"
         ],
         "summary": "File Upload vulnerability in Feehi CMS thru 2.1.1 allows attackers to run arbitrary code via crafted image upload."
-    },
-    {
-        "Modified": "2022-12-17T04:15:00",
-        "Published": "2022-11-09T07:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-400",
-        "id": "CVE-2022-45061",
-        "impact": {},
-        "last-modified": "2022-12-17T04:15:00",
-        "references": [
-            "https://github.com/python/cpython/issues/98433",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/O67LRHDTJWH544KXB6KY4HMHQLYDXFPK/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/4WBZJNSALFGMPYTINIF57HAAK46U72WQ/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/GTPVDZDATRQFE6KAT6B4BQIQ4GRHIIIJ/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RTN2OOLKYTG34DODUEJGT5MLC2PFGPBA/",
-            "https://security.netapp.com/advisory/ntap-20221209-0007/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/ZB5YCMIRVX35RUB6XPOWKENCVCJEVDRK/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/PLQ2BNZVBBAQPV3SPRU24ZD37UYJJS7W/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/VCMDX6IFKLOA3NXUQEV524L5LHTPI2JI/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/ORVCQGJCCAVLN4DJDTWGREFCUWXKQRML/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/T3D5TX4TDJPXHXD2QICKTY3OCQC3JARP/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/63FS6VHY4DCS74HBTEINUDOECQ2X6ZCH/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/JCDJXNBHWXNYUTOEV4H2HCFSRKV3SYL3/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RH57BNT4VQERGEJ5SXNXSVMDYP66YD4H/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/YPNWZKXPKTNHS5FVMN7UQZ2UPCSEFJUK/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/LKWAMPURWUV3DCCT4J7VHRF4NT2CFVBR/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/35YDIWCUMWTMDBWFRAVENFH6BLB65D6S/"
-        ],
-        "summary": "An issue was discovered in Python before 3.11.1. An unnecessary quadratic algorithm exists in one path when processing some inputs to the IDNA (RFC 3490) decoder, such that a crafted, unreasonably long name being presented to the decoder could lead to a CPU denial of service. Hostnames are often supplied by remote servers that could be controlled by a malicious actor; in such a scenario, they could trigger excessive CPU consumption on the client attempting to make use of an attacker-supplied supposed hostname. For example, the attack payload could be placed in the Location header of an HTTP response with status code 302. A fix is planned in 3.11.1, 3.10.9, 3.9.16, 3.8.16, and 3.7.16."
     },
     {
         "Modified": "2022-12-17T04:15:00",
@@ -1479,136 +1617,5 @@
             "https://plugins.trac.wordpress.org/changeset?sfp_email=&sfph_mail=&reponame=&old=2830197%40image-hover-effects-ultimate&new=2830197%40image-hover-effects-ultimate&sfp_email=&sfph_mail="
         ],
         "summary": "The Image Hover Effects Ultimate plugin for WordPress is vulnerable to Stored Cross-Site Scripting via several values that can be added to an Image Hover in versions 9.8.1 to 9.8.4 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page. By default, the plugin only allows administrators access to edit Image Hovers, however, if a site admin makes the plugin's features available to lower privileged users through the 'Who Can Edit?' setting then this can be exploited by those users."
-    },
-    {
-        "Modified": "2022-12-16T18:00:00",
-        "Published": "2022-12-16T17:15:00",
-        "access": {},
-        "assigner": "talos-cna@cisco.com",
-        "cvss": null,
-        "cwe": "CWE-787",
-        "id": "CVE-2022-41992",
-        "impact": {},
-        "last-modified": "2022-12-16T18:00:00",
-        "references": [
-            "https://talosintelligence.com/vulnerability_reports/TALOS-2022-1644"
-        ],
-        "summary": "A memory corruption vulnerability exists in the VHD File Format parsing CXSPARSE record functionality of PowerISO PowerISO 8.3. A specially-crafted file can lead to an out-of-bounds write. A victim needs to open a malicious file to trigger this vulnerability."
-    },
-    {
-        "Modified": "2022-12-16T18:00:00",
-        "Published": "2022-12-16T17:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-46109",
-        "impact": {},
-        "last-modified": "2022-12-16T18:00:00",
-        "references": [
-            "https://github.com/z1r00/IOT_Vul/tree/main/Tenda/AC10/formSetClientState"
-        ],
-        "summary": "Tenda AC15 V15.03.06.23 is vulnerable to Buffer Overflow via function formSetClientState."
-    },
-    {
-        "Modified": "2022-12-16T18:00:00",
-        "Published": "2022-12-16T17:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-707",
-        "id": "CVE-2022-4556",
-        "impact": {},
-        "last-modified": "2022-12-16T18:00:00",
-        "references": [
-            "https://github.com/Alinto/sogo/commit/efac49ae91a4a325df9931e78e543f707a0f8e5e",
-            "https://github.com/Alinto/sogo/releases/tag/SOGo-5.8.0",
-            "https://vuldb.com/?id.215960"
-        ],
-        "summary": "A vulnerability was found in Alinto SOGo up to 5.7.1 and classified as problematic. Affected by this issue is the function _migrateMailIdentities of the file SoObjects/SOGo/SOGoUserDefaults.m of the component Identity Handler. The manipulation of the argument fullName leads to cross site scripting. The attack may be launched remotely. Upgrading to version 5.8.0 is able to address this issue. The name of the patch is efac49ae91a4a325df9931e78e543f707a0f8e5e. It is recommended to upgrade the affected component. The identifier of this vulnerability is VDB-215960."
-    },
-    {
-        "Modified": "2022-12-16T18:00:00",
-        "Published": "2022-12-16T17:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-707",
-        "id": "CVE-2022-4558",
-        "impact": {},
-        "last-modified": "2022-12-16T18:00:00",
-        "references": [
-            "https://github.com/Alinto/sogo/releases/tag/SOGo-5.8.0",
-            "https://github.com/Alinto/sogo/commit/1e0f5f00890f751e84d67be4f139dd7f00faa5f3",
-            "https://vuldb.com/?id.215961"
-        ],
-        "summary": "A vulnerability was found in Alinto SOGo up to 5.7.1. It has been classified as problematic. This affects an unknown part of the file SoObjects/SOGo/NSString+Utilities.m of the component Folder/Mail Handler. The manipulation leads to cross site scripting. It is possible to initiate the attack remotely. Upgrading to version 5.8.0 is able to address this issue. The name of the patch is 1e0f5f00890f751e84d67be4f139dd7f00faa5f3. It is recommended to upgrade the affected component. The identifier VDB-215961 was assigned to this vulnerability."
-    },
-    {
-        "Modified": "2022-12-16T18:00:00",
-        "Published": "2022-12-16T17:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-707",
-        "id": "CVE-2022-4559",
-        "impact": {},
-        "last-modified": "2022-12-16T18:00:00",
-        "references": [
-            "https://github.com/inex/IXP-Manager/commit/bc9b14c6f70cccdb89b559e8bc3a7318bfe9c243",
-            "https://vuldb.com/?id.215962",
-            "https://github.com/inex/IXP-Manager/releases/tag/v6.3.0"
-        ],
-        "summary": "A vulnerability was found in INEX IPX-Manager up to 6.2.0. It has been declared as problematic. This vulnerability affects unknown code of the file resources/views/customer/list.foil.php. The manipulation leads to cross site scripting. The attack can be initiated remotely. Upgrading to version 6.3.0 is able to address this issue. The name of the patch is bc9b14c6f70cccdb89b559e8bc3a7318bfe9c243. It is recommended to upgrade the affected component. VDB-215962 is the identifier assigned to this vulnerability."
-    },
-    {
-        "Modified": "2022-12-16T18:00:00",
-        "Published": "2022-12-16T17:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-707",
-        "id": "CVE-2022-4560",
-        "impact": {},
-        "last-modified": "2022-12-16T18:00:00",
-        "references": [
-            "https://vuldb.com/?id.215963",
-            "https://github.com/jogetworkflow/jw-community/releases/tag/8.0-BETA",
-            "https://github.com/jogetworkflow/jw-community/commit/ecf8be8f6f0cb725c18536ddc726d42a11bdaa1b"
-        ],
-        "summary": "A vulnerability was found in Joget up to 7.0.32. It has been rated as problematic. This issue affects the function getInternalJsCssLib of the file wflow-core/src/main/java/org/joget/plugin/enterprise/UniversalTheme.java of the component wflow-core. The manipulation of the argument key leads to cross site scripting. The attack may be initiated remotely. Upgrading to version 8.0-BETA is able to address this issue. The name of the patch is ecf8be8f6f0cb725c18536ddc726d42a11bdaa1b. It is recommended to upgrade the affected component. The associated identifier of this vulnerability is VDB-215963."
-    },
-    {
-        "Modified": "2022-12-16T18:00:00",
-        "Published": "2022-12-16T17:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-707",
-        "id": "CVE-2022-4561",
-        "impact": {},
-        "last-modified": "2022-12-16T18:00:00",
-        "references": [
-            "https://vuldb.com/?id.215964",
-            "https://github.com/wikimedia/mediawiki-extensions-SemanticDrilldown/commit/6e18cf740a4548166c1d95f6d3a28541d298a3aa"
-        ],
-        "summary": "A vulnerability classified as problematic has been found in SemanticDrilldown Extension. Affected is the function printFilterLine of the file includes/specials/SDBrowseDataPage.php of the component GET Parameter Handler. The manipulation of the argument value leads to cross site scripting. It is possible to launch the attack remotely. The name of the patch is 6e18cf740a4548166c1d95f6d3a28541d298a3aa. It is recommended to apply a patch to fix this issue. The identifier of this vulnerability is VDB-215964."
-    },
-    {
-        "Modified": "2022-12-16T18:00:00",
-        "Published": "2022-12-16T17:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-61",
-        "id": "CVE-2022-4563",
-        "impact": {},
-        "last-modified": "2022-12-16T18:00:00",
-        "references": [
-            "https://github.com/freedomofpress/securedrop/pull/6704",
-            "https://github.com/freedomofpress/securedrop/commit/b0526a06f8ca713cce74b63e00d3730618d89691",
-            "https://vuldb.com/?id.215972"
-        ],
-        "summary": "A vulnerability was found in Freedom of the Press SecureDrop. It has been rated as critical. Affected by this issue is some unknown functionality of the file gpg-agent.conf. The manipulation leads to symlink following. Local access is required to approach this attack. The name of the patch is b0526a06f8ca713cce74b63e00d3730618d89691. It is recommended to apply a patch to fix this issue. The identifier of this vulnerability is VDB-215972."
     }
 ]
