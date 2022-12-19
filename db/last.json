@@ -1,6 +1,1304 @@
 [
     {
-        "Modified": "2022-12-18T22:15:00",
+        "Modified": "2022-12-19T04:15:00",
+        "Published": "2022-12-05T22:15:00",
+        "access": {},
+        "assigner": "cve-assignments@hackerone.com",
+        "cvss": null,
+        "cwe": "CWE-668",
+        "id": "CVE-2022-32221",
+        "impact": {},
+        "last-modified": "2022-12-19T04:15:00",
+        "references": [
+            "https://hackerone.com/reports/1704017",
+            "https://security.gentoo.org/glsa/202212-01"
+        ],
+        "summary": "When doing HTTP(S) transfers, libcurl might erroneously use the read callback (`CURLOPT_READFUNCTION`) to ask for data to send, even when the `CURLOPT_POSTFIELDS` option has been set, if the same handle previously was used to issue a `PUT` request which used that callback. This flaw may surprise the application and cause it to misbehave and either send off the wrong data or use memory after free or similar in the subsequent `POST` request. The problem exists in the logic for a reused handle when it is changed from a PUT to a POST."
+    },
+    {
+        "Modified": "2022-12-19T04:15:00",
+        "Published": "2022-12-05T22:15:00",
+        "access": {},
+        "assigner": "cve-assignments@hackerone.com",
+        "cvss": null,
+        "cwe": "CWE-787",
+        "id": "CVE-2022-35260",
+        "impact": {},
+        "last-modified": "2022-12-19T04:15:00",
+        "references": [
+            "https://hackerone.com/reports/1721098",
+            "https://security.gentoo.org/glsa/202212-01"
+        ],
+        "summary": "curl can be told to parse a `.netrc` file for credentials. If that file endsin a line with 4095 consecutive non-white space letters and no newline, curlwould first read past the end of the stack-based buffer, and if the readworks, write a zero byte beyond its boundary.This will in most cases cause a segfault or similar, but circumstances might also cause different outcomes.If a malicious user can provide a custom netrc file to an application or otherwise affect its contents, this flaw could be used as denial-of-service."
+    },
+    {
+        "Modified": "2022-12-19T04:15:00",
+        "Published": "2022-10-29T20:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-415",
+        "id": "CVE-2022-42915",
+        "impact": {},
+        "last-modified": "2022-12-19T04:15:00",
+        "references": [
+            "https://curl.se/docs/CVE-2022-42915.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/HVU3IMZCKR4VE6KJ4GCWRL2ILLC6OV76/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/Q27V5YYMXUVI6PRZQVECON32XPVWTKDK/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/37YEVVC6NAF6H7UHH6YAUY5QEVY6LIH2/",
+            "https://security.netapp.com/advisory/ntap-20221209-0010/",
+            "https://security.gentoo.org/glsa/202212-01"
+        ],
+        "summary": "curl before 7.86.0 has a double free. If curl is told to use an HTTP proxy for a transfer with a non-HTTP(S) URL, it sets up the connection to the remote server by issuing a CONNECT request to the proxy, and then tunnels the rest of the protocol through. An HTTP proxy might refuse this request (HTTP proxies often only allow outgoing connections to specific port numbers, like 443 for HTTPS) and instead return a non-200 status code to the client. Due to flaws in the error/cleanup handling, this could trigger a double free in curl if one of the following schemes were used in the URL for the transfer: dict, gopher, gophers, ldap, ldaps, rtmp, rtmps, or telnet. The earliest affected version is 7.77.0."
+    },
+    {
+        "Modified": "2022-12-19T04:15:00",
+        "Published": "2022-10-29T02:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-319",
+        "id": "CVE-2022-42916",
+        "impact": {},
+        "last-modified": "2022-12-19T04:15:00",
+        "references": [
+            "https://curl.se/docs/CVE-2022-42916.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/HVU3IMZCKR4VE6KJ4GCWRL2ILLC6OV76/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/Q27V5YYMXUVI6PRZQVECON32XPVWTKDK/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/37YEVVC6NAF6H7UHH6YAUY5QEVY6LIH2/",
+            "https://security.netapp.com/advisory/ntap-20221209-0010/",
+            "https://security.gentoo.org/glsa/202212-01"
+        ],
+        "summary": "In curl before 7.86.0, the HSTS check could be bypassed to trick it into staying with HTTP. Using its HSTS support, curl can be instructed to use HTTPS directly (instead of using an insecure cleartext HTTP step) even when HTTP is provided in the URL. This mechanism could be bypassed if the host name in the given URL uses IDN characters that get replaced with ASCII counterparts as part of the IDN conversion, e.g., using the character UTF-8 U+3002 (IDEOGRAPHIC FULL STOP) instead of the common ASCII full stop of U+002E (.). The earliest affected version is 7.77.0 2021-05-26."
+    },
+    {
+        "Modified": "2022-12-19T04:15:00",
+        "Published": "2022-10-18T21:15:00",
+        "access": {},
+        "assigner": "secalert_us@oracle.com",
+        "cvss": null,
+        "cwe": "NVD-CWE-noinfo",
+        "id": "CVE-2022-21620",
+        "impact": {},
+        "last-modified": "2022-12-19T04:15:00",
+        "references": [
+            "https://www.oracle.com/security-alerts/cpuoct2022.html",
+            "https://security.gentoo.org/glsa/202212-03"
+        ],
+        "summary": "Vulnerability in the Oracle VM VirtualBox product of Oracle Virtualization (component: Core). Supported versions that are affected are Prior to 6.1.40. Difficult to exploit vulnerability allows high privileged attacker with logon to the infrastructure where Oracle VM VirtualBox executes to compromise Oracle VM VirtualBox. While the vulnerability is in Oracle VM VirtualBox, attacks may significantly impact additional products (scope change). Successful attacks of this vulnerability can result in takeover of Oracle VM VirtualBox. CVSS 3.1 Base Score 7.5 (Confidentiality, Integrity and Availability impacts). CVSS Vector: (CVSS:3.1/AV:L/AC:H/PR:H/UI:N/S:C/C:H/I:H/A:H)."
+    },
+    {
+        "Modified": "2022-12-19T04:15:00",
+        "Published": "2022-10-18T21:15:00",
+        "access": {},
+        "assigner": "secalert_us@oracle.com",
+        "cvss": null,
+        "cwe": "NVD-CWE-noinfo",
+        "id": "CVE-2022-39421",
+        "impact": {},
+        "last-modified": "2022-12-19T04:15:00",
+        "references": [
+            "https://www.oracle.com/security-alerts/cpuoct2022.html",
+            "https://security.gentoo.org/glsa/202212-03"
+        ],
+        "summary": "Vulnerability in the Oracle VM VirtualBox product of Oracle Virtualization (component: Core). Supported versions that are affected are Prior to 6.1.40. Easily exploitable vulnerability allows low privileged attacker with logon to the infrastructure where Oracle VM VirtualBox executes to compromise Oracle VM VirtualBox. Successful attacks require human interaction from a person other than the attacker. Successful attacks of this vulnerability can result in takeover of Oracle VM VirtualBox. Note: This vulnerability applies to Windows systems only. CVSS 3.1 Base Score 7.3 (Confidentiality, Integrity and Availability impacts). CVSS Vector: (CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H)."
+    },
+    {
+        "Modified": "2022-12-19T04:15:00",
+        "Published": "2022-10-18T21:15:00",
+        "access": {},
+        "assigner": "secalert_us@oracle.com",
+        "cvss": null,
+        "cwe": "NVD-CWE-noinfo",
+        "id": "CVE-2022-39422",
+        "impact": {},
+        "last-modified": "2022-12-19T04:15:00",
+        "references": [
+            "https://www.oracle.com/security-alerts/cpuoct2022.html",
+            "https://security.gentoo.org/glsa/202212-03"
+        ],
+        "summary": "Vulnerability in the Oracle VM VirtualBox product of Oracle Virtualization (component: Core). Supported versions that are affected are Prior to 6.1.38. Difficult to exploit vulnerability allows high privileged attacker with logon to the infrastructure where Oracle VM VirtualBox executes to compromise Oracle VM VirtualBox. While the vulnerability is in Oracle VM VirtualBox, attacks may significantly impact additional products (scope change). Successful attacks of this vulnerability can result in takeover of Oracle VM VirtualBox. CVSS 3.1 Base Score 7.5 (Confidentiality, Integrity and Availability impacts). CVSS Vector: (CVSS:3.1/AV:L/AC:H/PR:H/UI:N/S:C/C:H/I:H/A:H)."
+    },
+    {
+        "Modified": "2022-12-19T04:15:00",
+        "Published": "2022-10-18T21:15:00",
+        "access": {},
+        "assigner": "secalert_us@oracle.com",
+        "cvss": null,
+        "cwe": "NVD-CWE-noinfo",
+        "id": "CVE-2022-39423",
+        "impact": {},
+        "last-modified": "2022-12-19T04:15:00",
+        "references": [
+            "https://www.oracle.com/security-alerts/cpuoct2022.html",
+            "https://security.gentoo.org/glsa/202212-03"
+        ],
+        "summary": "Vulnerability in the Oracle VM VirtualBox product of Oracle Virtualization (component: Core). Supported versions that are affected are Prior to 6.1.38. Easily exploitable vulnerability allows high privileged attacker with logon to the infrastructure where Oracle VM VirtualBox executes to compromise Oracle VM VirtualBox. While the vulnerability is in Oracle VM VirtualBox, attacks may significantly impact additional products (scope change). Successful attacks of this vulnerability can result in unauthorized access to critical data or complete access to all Oracle VM VirtualBox accessible data. CVSS 3.1 Base Score 6.0 (Confidentiality impacts). CVSS Vector: (CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:C/C:H/I:N/A:N)."
+    },
+    {
+        "Modified": "2022-12-19T04:15:00",
+        "Published": "2022-10-18T21:15:00",
+        "access": {},
+        "assigner": "secalert_us@oracle.com",
+        "cvss": null,
+        "cwe": "NVD-CWE-noinfo",
+        "id": "CVE-2022-39424",
+        "impact": {},
+        "last-modified": "2022-12-19T04:15:00",
+        "references": [
+            "https://www.oracle.com/security-alerts/cpuoct2022.html",
+            "https://security.gentoo.org/glsa/202212-03"
+        ],
+        "summary": "Vulnerability in the Oracle VM VirtualBox product of Oracle Virtualization (component: Core). Supported versions that are affected are Prior to 6.1.40. Difficult to exploit vulnerability allows unauthenticated attacker with network access via VRDP to compromise Oracle VM VirtualBox. Successful attacks of this vulnerability can result in takeover of Oracle VM VirtualBox. CVSS 3.1 Base Score 8.1 (Confidentiality, Integrity and Availability impacts). CVSS Vector: (CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H)."
+    },
+    {
+        "Modified": "2022-12-19T04:15:00",
+        "Published": "2022-10-18T21:15:00",
+        "access": {},
+        "assigner": "secalert_us@oracle.com",
+        "cvss": null,
+        "cwe": "NVD-CWE-noinfo",
+        "id": "CVE-2022-39425",
+        "impact": {},
+        "last-modified": "2022-12-19T04:15:00",
+        "references": [
+            "https://www.oracle.com/security-alerts/cpuoct2022.html",
+            "https://security.gentoo.org/glsa/202212-03"
+        ],
+        "summary": "Vulnerability in the Oracle VM VirtualBox product of Oracle Virtualization (component: Core). Supported versions that are affected are Prior to 6.1.40. Difficult to exploit vulnerability allows unauthenticated attacker with network access via VRDP to compromise Oracle VM VirtualBox. Successful attacks of this vulnerability can result in takeover of Oracle VM VirtualBox. CVSS 3.1 Base Score 8.1 (Confidentiality, Integrity and Availability impacts). CVSS Vector: (CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H)."
+    },
+    {
+        "Modified": "2022-12-19T04:15:00",
+        "Published": "2022-10-18T21:15:00",
+        "access": {},
+        "assigner": "secalert_us@oracle.com",
+        "cvss": null,
+        "cwe": "NVD-CWE-noinfo",
+        "id": "CVE-2022-39426",
+        "impact": {},
+        "last-modified": "2022-12-19T04:15:00",
+        "references": [
+            "https://www.oracle.com/security-alerts/cpuoct2022.html",
+            "https://security.gentoo.org/glsa/202212-03"
+        ],
+        "summary": "Vulnerability in the Oracle VM VirtualBox product of Oracle Virtualization (component: Core). Supported versions that are affected are Prior to 6.1.40. Difficult to exploit vulnerability allows unauthenticated attacker with network access via VRDP to compromise Oracle VM VirtualBox. Successful attacks of this vulnerability can result in takeover of Oracle VM VirtualBox. CVSS 3.1 Base Score 8.1 (Confidentiality, Integrity and Availability impacts). CVSS Vector: (CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H)."
+    },
+    {
+        "Modified": "2022-12-19T04:15:00",
+        "Published": "2022-10-18T21:15:00",
+        "access": {},
+        "assigner": "secalert_us@oracle.com",
+        "cvss": null,
+        "cwe": "NVD-CWE-noinfo",
+        "id": "CVE-2022-21621",
+        "impact": {},
+        "last-modified": "2022-12-19T04:15:00",
+        "references": [
+            "https://www.oracle.com/security-alerts/cpuoct2022.html",
+            "https://security.gentoo.org/glsa/202212-03"
+        ],
+        "summary": "Vulnerability in the Oracle VM VirtualBox product of Oracle Virtualization (component: Core). Supported versions that are affected are Prior to 6.1.40. Easily exploitable vulnerability allows high privileged attacker with logon to the infrastructure where Oracle VM VirtualBox executes to compromise Oracle VM VirtualBox. While the vulnerability is in Oracle VM VirtualBox, attacks may significantly impact additional products (scope change). Successful attacks of this vulnerability can result in unauthorized ability to cause a hang or frequently repeatable crash (complete DOS) of Oracle VM VirtualBox. CVSS 3.1 Base Score 6.0 (Availability impacts). CVSS Vector: (CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:C/C:N/I:N/A:H)."
+    },
+    {
+        "Modified": "2022-12-19T04:15:00",
+        "Published": "2022-10-18T21:15:00",
+        "access": {},
+        "assigner": "secalert_us@oracle.com",
+        "cvss": null,
+        "cwe": "NVD-CWE-noinfo",
+        "id": "CVE-2022-21627",
+        "impact": {},
+        "last-modified": "2022-12-19T04:15:00",
+        "references": [
+            "https://www.oracle.com/security-alerts/cpuoct2022.html",
+            "https://security.gentoo.org/glsa/202212-03"
+        ],
+        "summary": "Vulnerability in the Oracle VM VirtualBox product of Oracle Virtualization (component: Core). Supported versions that are affected are Prior to 6.1.40. Easily exploitable vulnerability allows high privileged attacker with logon to the infrastructure where Oracle VM VirtualBox executes to compromise Oracle VM VirtualBox. Successful attacks of this vulnerability can result in unauthorized ability to cause a hang or frequently repeatable crash (complete DOS) of Oracle VM VirtualBox. CVSS 3.1 Base Score 4.4 (Availability impacts). CVSS Vector: (CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H)."
+    },
+    {
+        "Modified": "2022-12-19T04:15:00",
+        "Published": "2022-10-14T17:15:00",
+        "access": {},
+        "assigner": "secalert@redhat.com",
+        "cvss": null,
+        "cwe": "NVD-CWE-noinfo",
+        "id": "CVE-2022-3479",
+        "impact": {},
+        "last-modified": "2022-12-19T04:15:00",
+        "references": [
+            "https://bugzilla.mozilla.org/show_bug.cgi?id=1774654",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2134331",
+            "https://security.gentoo.org/glsa/202212-05"
+        ],
+        "summary": "A vulnerability found in nss. By this security vulnerability, nss client auth crash without a user certificate in the database and this can lead us to a segmentation fault or crash."
+    },
+    {
+        "Modified": "2022-12-19T04:15:00",
+        "Published": "2022-10-11T21:15:00",
+        "access": {},
+        "assigner": "security@documentfoundation.org",
+        "cvss": null,
+        "cwe": "CWE-88",
+        "id": "CVE-2022-3140",
+        "impact": {},
+        "last-modified": "2022-12-19T04:15:00",
+        "references": [
+            "https://www.libreoffice.org/about-us/security/advisories/CVE-2022-3140",
+            "https://www.debian.org/security/2022/dsa-5252",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/TORANVTIWWBH3DNJR4UZATAG67KZOH32/",
+            "https://security.gentoo.org/glsa/202212-04"
+        ],
+        "summary": "LibreOffice supports Office URI Schemes to enable browser integration of LibreOffice with MS SharePoint server. An additional scheme 'vnd.libreoffice.command' specific to LibreOffice was added. In the affected versions of LibreOffice links using that scheme could be constructed to call internal macros with arbitrary arguments. Which when clicked on, or activated by document events, could result in arbitrary script execution without warning. This issue affects: The Document Foundation LibreOffice 7.4 versions prior to 7.4.1; 7.3 versions prior to 7.3.6."
+    },
+    {
+        "Modified": "2022-12-19T04:15:00",
+        "Published": "2022-09-26T14:15:00",
+        "access": {},
+        "assigner": "sep@nlnetlabs.nl",
+        "cvss": null,
+        "cwe": "CWE-400",
+        "id": "CVE-2022-3204",
+        "impact": {},
+        "last-modified": "2022-12-19T04:15:00",
+        "references": [
+            "https://www.nlnetlabs.nl/downloads/unbound/CVE-2022-3204.txt",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/3G2HS6CYPSIGAKO6QLEZPG3RD6AMPB7B/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/35QGS5FBQTG3DBSK7QV67PA64P24ABHY/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/4S4EU6DMJXQFMAIE6SLAH4H5RNRU6VQL/",
+            "https://security.gentoo.org/glsa/202212-02"
+        ],
+        "summary": "A vulnerability named 'Non-Responsive Delegation Attack' (NRDelegation Attack) has been discovered in various DNS resolving software. The NRDelegation Attack works by having a malicious delegation with a considerable number of non responsive nameservers. The attack starts by querying a resolver for a record that relies on those unresponsive nameservers. The attack can cause a resolver to spend a lot of time/resources resolving records under a malicious delegation point where a considerable number of unresponsive NS records reside. It can trigger high CPU usage in some resolver implementations that continually look in the cache for resolved NS records in that delegation. This can lead to degraded performance and eventually denial of service in orchestrated attacks. Unbound does not suffer from high CPU usage, but resources are still needed for resolving the malicious delegation. Unbound will keep trying to resolve the record until hard limits are reached. Based on the nature of the attack and the replies, different limits could be reached. From version 1.16.3 on, Unbound introduces fixes for better performance when under load, by cutting opportunistic queries for nameserver discovery and DNSKEY prefetching and limiting the number of times a delegation point can issue a cache lookup for missing records."
+    },
+    {
+        "Modified": "2022-12-19T04:15:00",
+        "Published": "2022-09-23T14:15:00",
+        "access": {},
+        "assigner": "cve-assignments@hackerone.com",
+        "cvss": null,
+        "cwe": "NVD-CWE-noinfo",
+        "id": "CVE-2022-35252",
+        "impact": {},
+        "last-modified": "2022-12-19T04:15:00",
+        "references": [
+            "https://hackerone.com/reports/1613943",
+            "https://security.netapp.com/advisory/ntap-20220930-0005/",
+            "https://security.gentoo.org/glsa/202212-01"
+        ],
+        "summary": "When curl is used to retrieve and parse cookies from a HTTP(S) server, itaccepts cookies using control codes that when later are sent back to a HTTPserver might make the server return 400 responses. Effectively allowing a\"sister site\" to deny service to all siblings."
+    },
+    {
+        "Modified": "2022-12-19T04:15:00",
+        "Published": "2022-08-01T15:15:00",
+        "access": {},
+        "assigner": "sep@nlnetlabs.nl",
+        "cvss": null,
+        "cwe": "CWE-613",
+        "id": "CVE-2022-30698",
+        "impact": {},
+        "last-modified": "2022-12-19T04:15:00",
+        "references": [
+            "https://www.nlnetlabs.nl/downloads/unbound/CVE-2022-30698_CVE-2022-30699.txt",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/5L3ZFWZZFPBIL654BG75RWXUMPFQJ5EC/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/D35CX4SCZVNKZTWJXPDFTHWZHINMGEZD/",
+            "https://security.gentoo.org/glsa/202212-02"
+        ],
+        "summary": "NLnet Labs Unbound, up to and including version 1.16.1 is vulnerable to a novel type of the \"ghost domain names\" attack. The vulnerability works by targeting an Unbound instance. Unbound is queried for a subdomain of a rogue domain name. The rogue nameserver returns delegation information for the subdomain that updates Unbound's delegation cache. This action can be repeated before expiry of the delegation information by querying Unbound for a second level subdomain which the rogue nameserver provides new delegation information. Since Unbound is a child-centric resolver, the ever-updating child delegation information can keep a rogue domain name resolvable long after revocation. From version 1.16.2 on, Unbound checks the validity of parent delegation records before using cached delegation information."
+    },
+    {
+        "Modified": "2022-12-19T04:15:00",
+        "Published": "2022-08-01T15:15:00",
+        "access": {},
+        "assigner": "sep@nlnetlabs.nl",
+        "cvss": null,
+        "cwe": "CWE-613",
+        "id": "CVE-2022-30699",
+        "impact": {},
+        "last-modified": "2022-12-19T04:15:00",
+        "references": [
+            "https://www.nlnetlabs.nl/downloads/unbound/CVE-2022-30698_CVE-2022-30699.txt",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/5L3ZFWZZFPBIL654BG75RWXUMPFQJ5EC/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/D35CX4SCZVNKZTWJXPDFTHWZHINMGEZD/",
+            "https://security.gentoo.org/glsa/202212-02"
+        ],
+        "summary": "NLnet Labs Unbound, up to and including version 1.16.1, is vulnerable to a novel type of the \"ghost domain names\" attack. The vulnerability works by targeting an Unbound instance. Unbound is queried for a rogue domain name when the cached delegation information is about to expire. The rogue nameserver delays the response so that the cached delegation information is expired. Upon receiving the delayed answer containing the delegation information, Unbound overwrites the now expired entries. This action can be repeated when the delegation information is about to expire making the rogue delegation information ever-updating. From version 1.16.2 on, Unbound stores the start time for a query and uses that to decide if the cached delegation information can be overwritten."
+    },
+    {
+        "Modified": "2022-12-19T04:15:00",
+        "Published": "2022-07-07T13:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "MEDIUM",
+            "vector": "NETWORK"
+        },
+        "assigner": "cve-assignments@hackerone.com",
+        "cvss": 4.3,
+        "cvss-time": "2022-12-19T04:15:00",
+        "cvss-vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P",
+        "cwe": "CWE-770",
+        "id": "CVE-2022-32205",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "NONE",
+            "integrity": "NONE"
+        },
+        "last-modified": "2022-12-19T04:15:00",
+        "references": [
+            "https://hackerone.com/reports/1569946",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/BEV6BR4MTI3CEWK2YU2HQZUW5FAS3FEY/",
+            "https://www.debian.org/security/2022/dsa-5197",
+            "https://security.netapp.com/advisory/ntap-20220915-0003/",
+            "https://support.apple.com/kb/HT213488",
+            "http://seclists.org/fulldisclosure/2022/Oct/41",
+            "http://seclists.org/fulldisclosure/2022/Oct/28",
+            "https://cert-portal.siemens.com/productcert/pdf/ssa-333517.pdf",
+            "https://security.gentoo.org/glsa/202212-01"
+        ],
+        "summary": "A malicious server can serve excessive amounts of `Set-Cookie:` headers in a HTTP response to curl and curl < 7.84.0 stores all of them. A sufficiently large amount of (big) cookies make subsequent HTTP requests to this, or other servers to which the cookies match, create requests that become larger than the threshold that curl uses internally to avoid sending crazy large requests (1048576 bytes) and instead returns an error.This denial state might remain for as long as the same cookies are kept, match and haven't expired. Due to cookie matching rules, a server on `foo.example.com` can set cookies that also would match for `bar.example.com`, making it it possible for a \"sister server\" to effectively cause a denial of service for a sibling site on the same second level domain using this method."
+    },
+    {
+        "Modified": "2022-12-19T04:15:00",
+        "Published": "2022-07-07T13:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "MEDIUM",
+            "vector": "NETWORK"
+        },
+        "assigner": "cve-assignments@hackerone.com",
+        "cvss": 4.3,
+        "cvss-time": "2022-12-19T04:15:00",
+        "cvss-vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P",
+        "cwe": "CWE-770",
+        "id": "CVE-2022-32206",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "NONE",
+            "integrity": "NONE"
+        },
+        "last-modified": "2022-12-19T04:15:00",
+        "references": [
+            "https://hackerone.com/reports/1570651",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/BEV6BR4MTI3CEWK2YU2HQZUW5FAS3FEY/",
+            "https://www.debian.org/security/2022/dsa-5197",
+            "https://lists.debian.org/debian-lts-announce/2022/08/msg00017.html",
+            "https://security.netapp.com/advisory/ntap-20220915-0003/",
+            "https://support.apple.com/kb/HT213488",
+            "http://seclists.org/fulldisclosure/2022/Oct/41",
+            "http://seclists.org/fulldisclosure/2022/Oct/28",
+            "https://cert-portal.siemens.com/productcert/pdf/ssa-333517.pdf",
+            "https://security.gentoo.org/glsa/202212-01"
+        ],
+        "summary": "curl < 7.84.0 supports \"chained\" HTTP compression algorithms, meaning that a serverresponse can be compressed multiple times and potentially with different algorithms. The number of acceptable \"links\" in this \"decompression chain\" was unbounded, allowing a malicious server to insert a virtually unlimited number of compression steps.The use of such a decompression chain could result in a \"malloc bomb\", makingcurl end up spending enormous amounts of allocated heap memory, or trying toand returning out of memory errors."
+    },
+    {
+        "Modified": "2022-12-19T04:15:00",
+        "Published": "2022-07-07T13:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "cve-assignments@hackerone.com",
+        "cvss": 7.5,
+        "cvss-time": "2022-12-19T04:15:00",
+        "cvss-vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+        "cwe": "CWE-276",
+        "id": "CVE-2022-32207",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "PARTIAL",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-12-19T04:15:00",
+        "references": [
+            "https://hackerone.com/reports/1573634",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/BEV6BR4MTI3CEWK2YU2HQZUW5FAS3FEY/",
+            "https://www.debian.org/security/2022/dsa-5197",
+            "https://security.netapp.com/advisory/ntap-20220915-0003/",
+            "https://support.apple.com/kb/HT213488",
+            "http://seclists.org/fulldisclosure/2022/Oct/41",
+            "http://seclists.org/fulldisclosure/2022/Oct/28",
+            "https://security.gentoo.org/glsa/202212-01"
+        ],
+        "summary": "When curl < 7.84.0 saves cookies, alt-svc and hsts data to local files, it makes the operation atomic by finalizing the operation with a rename from a temporary name to the final target file name.In that rename operation, it might accidentally *widen* the permissions for the target file, leaving the updated file accessible to more users than intended."
+    },
+    {
+        "Modified": "2022-12-19T04:15:00",
+        "Published": "2022-07-07T13:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "MEDIUM",
+            "vector": "NETWORK"
+        },
+        "assigner": "cve-assignments@hackerone.com",
+        "cvss": 4.3,
+        "cvss-time": "2022-12-19T04:15:00",
+        "cvss-vector": "AV:N/AC:M/Au:N/C:P/I:N/A:N",
+        "cwe": "CWE-787",
+        "id": "CVE-2022-32208",
+        "impact": {
+            "availability": "NONE",
+            "confidentiality": "PARTIAL",
+            "integrity": "NONE"
+        },
+        "last-modified": "2022-12-19T04:15:00",
+        "references": [
+            "https://hackerone.com/reports/1590071",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/BEV6BR4MTI3CEWK2YU2HQZUW5FAS3FEY/",
+            "https://www.debian.org/security/2022/dsa-5197",
+            "https://lists.debian.org/debian-lts-announce/2022/08/msg00017.html",
+            "https://security.netapp.com/advisory/ntap-20220915-0003/",
+            "https://support.apple.com/kb/HT213488",
+            "http://seclists.org/fulldisclosure/2022/Oct/41",
+            "http://seclists.org/fulldisclosure/2022/Oct/28",
+            "https://security.gentoo.org/glsa/202212-01"
+        ],
+        "summary": "When curl < 7.84.0 does FTP transfers secured by krb5, it handles message verification failures wrongly. This flaw makes it possible for a Man-In-The-Middle attack to go unnoticed and even allows it to inject data to the client."
+    },
+    {
+        "Modified": "2022-12-19T04:15:00",
+        "Published": "2022-06-02T14:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "cve-assignments@hackerone.com",
+        "cvss": 5.0,
+        "cvss-time": "2022-12-19T04:15:00",
+        "cvss-vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N",
+        "cwe": "NVD-CWE-noinfo",
+        "id": "CVE-2022-27775",
+        "impact": {
+            "availability": "NONE",
+            "confidentiality": "PARTIAL",
+            "integrity": "NONE"
+        },
+        "last-modified": "2022-12-19T04:15:00",
+        "references": [
+            "https://hackerone.com/reports/1546268",
+            "https://security.netapp.com/advisory/ntap-20220609-0008/",
+            "https://www.debian.org/security/2022/dsa-5197",
+            "https://security.gentoo.org/glsa/202212-01"
+        ],
+        "summary": "An information disclosure vulnerability exists in curl 7.65.0 to 7.82.0 are vulnerable that by using an IPv6 address that was in the connection pool but with a different zone id it could reuse a connection instead."
+    },
+    {
+        "Modified": "2022-12-19T04:15:00",
+        "Published": "2022-06-02T14:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "cve-assignments@hackerone.com",
+        "cvss": 5.0,
+        "cvss-time": "2022-12-19T04:15:00",
+        "cvss-vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N",
+        "cwe": "CWE-668",
+        "id": "CVE-2022-27779",
+        "impact": {
+            "availability": "NONE",
+            "confidentiality": "PARTIAL",
+            "integrity": "NONE"
+        },
+        "last-modified": "2022-12-19T04:15:00",
+        "references": [
+            "https://hackerone.com/reports/1553301",
+            "https://security.netapp.com/advisory/ntap-20220609-0009/",
+            "https://security.gentoo.org/glsa/202212-01"
+        ],
+        "summary": "libcurl wrongly allows cookies to be set for Top Level Domains (TLDs) if thehost name is provided with a trailing dot.curl can be told to receive and send cookies. curl's \"cookie engine\" can bebuilt with or without [Public Suffix List](https://publicsuffix.org/)awareness. If PSL support not provided, a more rudimentary check exists to atleast prevent cookies from being set on TLDs. This check was broken if thehost name in the URL uses a trailing dot.This can allow arbitrary sites to set cookies that then would get sent to adifferent and unrelated site or domain."
+    },
+    {
+        "Modified": "2022-12-19T04:15:00",
+        "Published": "2022-06-02T14:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "cve-assignments@hackerone.com",
+        "cvss": 5.0,
+        "cvss-time": "2022-12-19T04:15:00",
+        "cvss-vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+        "cwe": "CWE-835",
+        "id": "CVE-2022-27781",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "NONE",
+            "integrity": "NONE"
+        },
+        "last-modified": "2022-12-19T04:15:00",
+        "references": [
+            "https://hackerone.com/reports/1555441",
+            "https://security.netapp.com/advisory/ntap-20220609-0009/",
+            "https://www.debian.org/security/2022/dsa-5197",
+            "https://lists.debian.org/debian-lts-announce/2022/08/msg00017.html",
+            "https://security.gentoo.org/glsa/202212-01"
+        ],
+        "summary": "libcurl provides the `CURLOPT_CERTINFO` option to allow applications torequest details to be returned about a server's certificate chain.Due to an erroneous function, a malicious server could make libcurl built withNSS get stuck in a never-ending busy-loop when trying to retrieve thatinformation."
+    },
+    {
+        "Modified": "2022-12-19T04:15:00",
+        "Published": "2022-06-02T14:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "cve-assignments@hackerone.com",
+        "cvss": 5.0,
+        "cvss-time": "2022-12-19T04:15:00",
+        "cvss-vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N",
+        "cwe": "CWE-918",
+        "id": "CVE-2022-27780",
+        "impact": {
+            "availability": "NONE",
+            "confidentiality": "NONE",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-12-19T04:15:00",
+        "references": [
+            "https://hackerone.com/reports/1553841",
+            "https://security.netapp.com/advisory/ntap-20220609-0009/",
+            "https://security.gentoo.org/glsa/202212-01"
+        ],
+        "summary": "The curl URL parser wrongly accepts percent-encoded URL separators like '/'when decoding the host name part of a URL, making it a *different* URL usingthe wrong host name when it is later retrieved.For example, a URL like `http://example.com%2F127.0.0.1/`, would be allowed bythe parser and get transposed into `http://example.com/127.0.0.1/`. This flawcan be used to circumvent filters, checks and more."
+    },
+    {
+        "Modified": "2022-12-19T04:15:00",
+        "Published": "2022-06-02T14:15:00",
+        "access": {
+            "authentication": "SINGLE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "cve-assignments@hackerone.com",
+        "cvss": 4.0,
+        "cvss-time": "2022-12-19T04:15:00",
+        "cvss-vector": "AV:N/AC:L/Au:S/C:P/I:N/A:N",
+        "cwe": "CWE-319",
+        "id": "CVE-2022-30115",
+        "impact": {
+            "availability": "NONE",
+            "confidentiality": "PARTIAL",
+            "integrity": "NONE"
+        },
+        "last-modified": "2022-12-19T04:15:00",
+        "references": [
+            "https://hackerone.com/reports/1557449",
+            "https://security.netapp.com/advisory/ntap-20220609-0009/",
+            "http://www.openwall.com/lists/oss-security/2022/10/26/4",
+            "https://security.gentoo.org/glsa/202212-01"
+        ],
+        "summary": "Using its HSTS support, curl can be instructed to use HTTPS directly insteadof using an insecure clear-text HTTP step even when HTTP is provided in theURL. This mechanism could be bypassed if the host name in the given URL used atrailing dot while not using one when it built the HSTS cache. Or the otherway around - by having the trailing dot in the HSTS cache and *not* using thetrailing dot in the URL."
+    },
+    {
+        "Modified": "2022-12-19T04:15:00",
+        "Published": "2022-06-02T14:15:00",
+        "access": {
+            "authentication": "SINGLE",
+            "complexity": "MEDIUM",
+            "vector": "NETWORK"
+        },
+        "assigner": "cve-assignments@hackerone.com",
+        "cvss": 3.5,
+        "cvss-time": "2022-12-19T04:15:00",
+        "cvss-vector": "AV:N/AC:M/Au:S/C:P/I:N/A:N",
+        "cwe": "CWE-522",
+        "id": "CVE-2022-27774",
+        "impact": {
+            "availability": "NONE",
+            "confidentiality": "PARTIAL",
+            "integrity": "NONE"
+        },
+        "last-modified": "2022-12-19T04:15:00",
+        "references": [
+            "https://hackerone.com/reports/1543773",
+            "https://security.netapp.com/advisory/ntap-20220609-0008/",
+            "https://www.debian.org/security/2022/dsa-5197",
+            "https://security.gentoo.org/glsa/202212-01"
+        ],
+        "summary": "An insufficiently protected credentials vulnerability exists in curl 4.9 to and include curl 7.82.0 are affected that could allow an attacker to extract credentials when follows HTTP(S) redirects is used with authentication could leak credentials to other services that exist on different protocols or port numbers."
+    },
+    {
+        "Modified": "2022-12-19T04:15:00",
+        "Published": "2022-06-02T14:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "MEDIUM",
+            "vector": "NETWORK"
+        },
+        "assigner": "cve-assignments@hackerone.com",
+        "cvss": 4.3,
+        "cvss-time": "2022-12-19T04:15:00",
+        "cvss-vector": "AV:N/AC:M/Au:N/C:P/I:N/A:N",
+        "cwe": "CWE-522",
+        "id": "CVE-2022-27776",
+        "impact": {
+            "availability": "NONE",
+            "confidentiality": "PARTIAL",
+            "integrity": "NONE"
+        },
+        "last-modified": "2022-12-19T04:15:00",
+        "references": [
+            "https://hackerone.com/reports/1547048",
+            "https://security.netapp.com/advisory/ntap-20220609-0008/",
+            "https://www.debian.org/security/2022/dsa-5197",
+            "https://lists.debian.org/debian-lts-announce/2022/08/msg00017.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/7N5ZBWLNNPZKFK7Q4KEHGCJ2YELQEUJP/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/DKKOQXPYLMBSEVDHFS32BPBR3ZQJKY5B/",
+            "https://security.gentoo.org/glsa/202212-01"
+        ],
+        "summary": "A insufficiently protected credentials vulnerability in fixed in curl 7.83.0 might leak authentication or cookie header data on HTTP redirects to the same host but another port number."
+    },
+    {
+        "Modified": "2022-12-19T04:15:00",
+        "Published": "2022-06-02T14:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "cve-assignments@hackerone.com",
+        "cvss": 5.0,
+        "cvss-time": "2022-12-19T04:15:00",
+        "cvss-vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N",
+        "cwe": "CWE-295",
+        "id": "CVE-2022-27782",
+        "impact": {
+            "availability": "NONE",
+            "confidentiality": "NONE",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-12-19T04:15:00",
+        "references": [
+            "https://hackerone.com/reports/1555796",
+            "https://security.netapp.com/advisory/ntap-20220609-0009/",
+            "https://www.debian.org/security/2022/dsa-5197",
+            "https://lists.debian.org/debian-lts-announce/2022/08/msg00017.html",
+            "https://security.gentoo.org/glsa/202212-01"
+        ],
+        "summary": "libcurl would reuse a previously created connection even when a TLS or SSHrelated option had been changed that should have prohibited reuse.libcurl keeps previously used connections in a connection pool for subsequenttransfers to reuse if one of them matches the setup. However, several TLS andSSH settings were left out from the configuration match checks, making themmatch too easily."
+    },
+    {
+        "Modified": "2022-12-19T04:15:00",
+        "Published": "2022-05-26T17:15:00",
+        "access": {
+            "authentication": "SINGLE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "cve-assignments@hackerone.com",
+        "cvss": 5.5,
+        "cvss-time": "2022-12-19T04:15:00",
+        "cvss-vector": "AV:N/AC:L/Au:S/C:P/I:P/A:N",
+        "cwe": "CWE-287",
+        "id": "CVE-2022-22576",
+        "impact": {
+            "availability": "NONE",
+            "confidentiality": "PARTIAL",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-12-19T04:15:00",
+        "references": [
+            "https://hackerone.com/reports/1526328",
+            "https://security.netapp.com/advisory/ntap-20220609-0008/",
+            "https://www.debian.org/security/2022/dsa-5197",
+            "https://lists.debian.org/debian-lts-announce/2022/08/msg00017.html",
+            "https://security.gentoo.org/glsa/202212-01"
+        ],
+        "summary": "An improper authentication vulnerability exists in curl 7.33.0 to and including 7.82.0 which might allow reuse OAUTH2-authenticated connections without properly making sure that the connection was authenticated with the same credentials as set for this transfer. This affects SASL-enabled protocols: SMPTP(S), IMAP(S), POP3(S) and LDAP(S) (openldap only)."
+    },
+    {
+        "Modified": "2022-12-19T04:15:00",
+        "Published": "2021-12-08T22:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "security@mozilla.org",
+        "cvss": 7.5,
+        "cvss-time": "2022-12-19T04:15:00",
+        "cvss-vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+        "cwe": "CWE-787",
+        "id": "CVE-2021-43527",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "PARTIAL",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-12-19T04:15:00",
+        "references": [
+            "https://www.mozilla.org/security/advisories/mfsa2021-51/",
+            "https://ftp.mozilla.org/pub/security/nss/releases/NSS_3_73_RTM/",
+            "https://ftp.mozilla.org/pub/security/nss/releases/NSS_3_68_1_RTM/",
+            "https://bugzilla.mozilla.org/show_bug.cgi?id=1737470",
+            "https://security.netapp.com/advisory/ntap-20211229-0002/",
+            "https://cert-portal.siemens.com/productcert/pdf/ssa-594438.pdf",
+            "https://www.oracle.com/security-alerts/cpuapr2022.html",
+            "https://www.starwindsoftware.com/security/sw-20220802-0001/",
+            "https://security.gentoo.org/glsa/202212-05"
+        ],
+        "summary": "NSS (Network Security Services) versions prior to 3.73 or 3.68.1 ESR are vulnerable to a heap overflow when handling DER-encoded DSA or RSA-PSS signatures. Applications using NSS for handling signatures encoded within CMS, S/MIME, PKCS \\#7, or PKCS \\#12 are likely to be impacted. Applications using NSS for certificate validation or other TLS, X.509, OCSP or CRL functionality may be impacted, depending on how they configure NSS. *Note: This vulnerability does NOT impact Mozilla Firefox.* However, email clients and PDF viewers that use NSS for signature verification, such as Thunderbird, LibreOffice, Evolution and Evince are believed to be impacted. This vulnerability affects NSS < 3.73 and NSS < 3.68.1."
+    },
+    {
+        "Modified": "2022-12-19T04:15:00",
+        "Published": "2021-09-29T20:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "cve-assignments@hackerone.com",
+        "cvss": 5.0,
+        "cvss-time": "2022-12-19T04:15:00",
+        "cvss-vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N",
+        "cwe": "CWE-319",
+        "id": "CVE-2021-22946",
+        "impact": {
+            "availability": "NONE",
+            "confidentiality": "PARTIAL",
+            "integrity": "NONE"
+        },
+        "last-modified": "2022-12-19T04:15:00",
+        "references": [
+            "https://hackerone.com/reports/1334111",
+            "https://lists.debian.org/debian-lts-announce/2021/09/msg00022.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RWLEC6YVEM2HWUBX67SDGPSY4CQB72OE/",
+            "https://www.oracle.com/security-alerts/cpuoct2021.html",
+            "https://security.netapp.com/advisory/ntap-20211029-0003/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/APOAK4X73EJTAPTSVT7IRVDMUWVXNWGD/",
+            "https://security.netapp.com/advisory/ntap-20220121-0008/",
+            "https://www.oracle.com/security-alerts/cpujan2022.html",
+            "https://cert-portal.siemens.com/productcert/pdf/ssa-389290.pdf",
+            "https://support.apple.com/kb/HT213183",
+            "http://seclists.org/fulldisclosure/2022/Mar/29",
+            "https://www.oracle.com/security-alerts/cpuapr2022.html",
+            "https://www.oracle.com/security-alerts/cpujul2022.html",
+            "https://www.debian.org/security/2022/dsa-5197",
+            "https://lists.debian.org/debian-lts-announce/2022/08/msg00017.html",
+            "https://security.gentoo.org/glsa/202212-01"
+        ],
+        "summary": "A user can tell curl >= 7.20.0 and <= 7.78.0 to require a successful upgrade to TLS when speaking to an IMAP, POP3 or FTP server (`--ssl-reqd` on the command line or`CURLOPT_USE_SSL` set to `CURLUSESSL_CONTROL` or `CURLUSESSL_ALL` withlibcurl). This requirement could be bypassed if the server would return a properly crafted but perfectly legitimate response.This flaw would then make curl silently continue its operations **withoutTLS** contrary to the instructions and expectations, exposing possibly sensitive data in clear text over the network."
+    },
+    {
+        "Modified": "2022-12-19T04:15:00",
+        "Published": "2021-09-29T20:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "MEDIUM",
+            "vector": "NETWORK"
+        },
+        "assigner": "cve-assignments@hackerone.com",
+        "cvss": 4.3,
+        "cvss-time": "2022-12-19T04:15:00",
+        "cvss-vector": "AV:N/AC:M/Au:N/C:N/I:P/A:N",
+        "cwe": "CWE-345",
+        "id": "CVE-2021-22947",
+        "impact": {
+            "availability": "NONE",
+            "confidentiality": "NONE",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-12-19T04:15:00",
+        "references": [
+            "https://hackerone.com/reports/1334763",
+            "https://lists.debian.org/debian-lts-announce/2021/09/msg00022.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RWLEC6YVEM2HWUBX67SDGPSY4CQB72OE/",
+            "https://www.oracle.com/security-alerts/cpuoct2021.html",
+            "https://security.netapp.com/advisory/ntap-20211029-0003/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/APOAK4X73EJTAPTSVT7IRVDMUWVXNWGD/",
+            "https://www.oracle.com/security-alerts/cpujan2022.html",
+            "https://cert-portal.siemens.com/productcert/pdf/ssa-389290.pdf",
+            "https://support.apple.com/kb/HT213183",
+            "http://seclists.org/fulldisclosure/2022/Mar/29",
+            "https://www.oracle.com/security-alerts/cpuapr2022.html",
+            "https://www.oracle.com/security-alerts/cpujul2022.html",
+            "https://www.debian.org/security/2022/dsa-5197",
+            "https://lists.debian.org/debian-lts-announce/2022/08/msg00017.html",
+            "https://security.gentoo.org/glsa/202212-01"
+        ],
+        "summary": "When curl >= 7.20.0 and <= 7.78.0 connects to an IMAP or POP3 server to retrieve data using STARTTLS to upgrade to TLS security, the server can respond and send back multiple responses at once that curl caches. curl would then upgrade to TLS but not flush the in-queue of cached responses but instead continue using and trustingthe responses it got *before* the TLS handshake as if they were authenticated.Using this flaw, it allows a Man-In-The-Middle attacker to first inject the fake responses, then pass-through the TLS traffic from the legitimate server and trick curl into sending data back to the user thinking the attacker's injected data comes from the TLS-protected server."
+    },
+    {
+        "Modified": "2022-12-19T04:15:00",
+        "Published": "2021-09-23T13:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "MEDIUM",
+            "vector": "NETWORK"
+        },
+        "assigner": "cve-assignments@hackerone.com",
+        "cvss": 5.8,
+        "cvss-time": "2022-12-19T04:15:00",
+        "cvss-vector": "AV:N/AC:M/Au:N/C:P/I:N/A:P",
+        "cwe": "CWE-415",
+        "id": "CVE-2021-22945",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "PARTIAL",
+            "integrity": "NONE"
+        },
+        "last-modified": "2022-12-19T04:15:00",
+        "references": [
+            "https://hackerone.com/reports/1269242",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RWLEC6YVEM2HWUBX67SDGPSY4CQB72OE/",
+            "https://www.oracle.com/security-alerts/cpuoct2021.html",
+            "https://security.netapp.com/advisory/ntap-20211029-0003/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/APOAK4X73EJTAPTSVT7IRVDMUWVXNWGD/",
+            "https://cert-portal.siemens.com/productcert/pdf/ssa-389290.pdf",
+            "https://support.apple.com/kb/HT213183",
+            "http://seclists.org/fulldisclosure/2022/Mar/29",
+            "https://www.debian.org/security/2022/dsa-5197",
+            "https://security.gentoo.org/glsa/202212-01"
+        ],
+        "summary": "When sending data to an MQTT server, libcurl <= 7.73.0 and 7.78.0 could in some circumstances erroneously keep a pointer to an already freed memory area and both use that again in a subsequent call to send data and also free it *again*."
+    },
+    {
+        "Modified": "2022-12-19T04:15:00",
+        "Published": "2021-08-05T21:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "MEDIUM",
+            "vector": "NETWORK"
+        },
+        "assigner": "cve-assignments@hackerone.com",
+        "cvss": 4.3,
+        "cvss-time": "2022-12-19T04:15:00",
+        "cvss-vector": "AV:N/AC:M/Au:N/C:N/I:P/A:N",
+        "cwe": "CWE-755",
+        "id": "CVE-2021-22922",
+        "impact": {
+            "availability": "NONE",
+            "confidentiality": "NONE",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-12-19T04:15:00",
+        "references": [
+            "https://hackerone.com/reports/1213175",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/FRUCW2UVNYUDZF72DQLFQR4PJEC6CF7V/",
+            "https://lists.apache.org/thread.html/r61db8e7dcb56dc000a5387a88f7a473bacec5ee01b9ff3f55308aacc@%3Cdev.kafka.apache.org%3E",
+            "https://lists.apache.org/thread.html/r61db8e7dcb56dc000a5387a88f7a473bacec5ee01b9ff3f55308aacc@%3Cusers.kafka.apache.org%3E",
+            "https://lists.apache.org/thread.html/rbf4ce74b0d1fa9810dec50ba3ace0caeea677af7c27a97111c06ccb7@%3Cdev.kafka.apache.org%3E",
+            "https://lists.apache.org/thread.html/rbf4ce74b0d1fa9810dec50ba3ace0caeea677af7c27a97111c06ccb7@%3Cusers.kafka.apache.org%3E",
+            "https://security.netapp.com/advisory/ntap-20210902-0003/",
+            "https://www.oracle.com/security-alerts/cpuoct2021.html",
+            "https://cert-portal.siemens.com/productcert/pdf/ssa-389290.pdf",
+            "https://security.gentoo.org/glsa/202212-01"
+        ],
+        "summary": "When curl is instructed to download content using the metalink feature, thecontents is verified against a hash provided in the metalink XML file.The metalink XML file points out to the client how to get the same contentfrom a set of different URLs, potentially hosted by different servers and theclient can then download the file from one or several of them. In a serial orparallel manner.If one of the servers hosting the contents has been breached and the contentsof the specific file on that server is replaced with a modified payload, curlshould detect this when the hash of the file mismatches after a completeddownload. It should remove the contents and instead try getting the contentsfrom another URL. This is not done, and instead such a hash mismatch is onlymentioned in text and the potentially malicious content is kept in the file ondisk."
+    },
+    {
+        "Modified": "2022-12-19T04:15:00",
+        "Published": "2021-08-05T21:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "HIGH",
+            "vector": "NETWORK"
+        },
+        "assigner": "cve-assignments@hackerone.com",
+        "cvss": 2.6,
+        "cvss-time": "2022-12-19T04:15:00",
+        "cvss-vector": "AV:N/AC:H/Au:N/C:P/I:N/A:N",
+        "cwe": "CWE-522",
+        "id": "CVE-2021-22923",
+        "impact": {
+            "availability": "NONE",
+            "confidentiality": "PARTIAL",
+            "integrity": "NONE"
+        },
+        "last-modified": "2022-12-19T04:15:00",
+        "references": [
+            "https://hackerone.com/reports/1213181",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/FRUCW2UVNYUDZF72DQLFQR4PJEC6CF7V/",
+            "https://security.netapp.com/advisory/ntap-20210902-0003/",
+            "https://www.oracle.com/security-alerts/cpuoct2021.html",
+            "https://cert-portal.siemens.com/productcert/pdf/ssa-389290.pdf",
+            "https://security.gentoo.org/glsa/202212-01"
+        ],
+        "summary": "When curl is instructed to get content using the metalink feature, and a user name and password are used to download the metalink XML file, those same credentials are then subsequently passed on to each of the servers from which curl will download or try to download the contents from. Often contrary to the user's expectations and intentions and without telling the user it happened."
+    },
+    {
+        "Modified": "2022-12-19T04:15:00",
+        "Published": "2021-08-05T21:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "cve-assignments@hackerone.com",
+        "cvss": 5.0,
+        "cvss-time": "2022-12-19T04:15:00",
+        "cvss-vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N",
+        "cwe": "CWE-908",
+        "id": "CVE-2021-22925",
+        "impact": {
+            "availability": "NONE",
+            "confidentiality": "PARTIAL",
+            "integrity": "NONE"
+        },
+        "last-modified": "2022-12-19T04:15:00",
+        "references": [
+            "https://hackerone.com/reports/1223882",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/FRUCW2UVNYUDZF72DQLFQR4PJEC6CF7V/",
+            "https://security.netapp.com/advisory/ntap-20210902-0003/",
+            "https://support.apple.com/kb/HT212804",
+            "https://support.apple.com/kb/HT212805",
+            "http://seclists.org/fulldisclosure/2021/Sep/39",
+            "http://seclists.org/fulldisclosure/2021/Sep/40",
+            "https://www.oracle.com/security-alerts/cpuoct2021.html",
+            "https://www.oracle.com/security-alerts/cpujan2022.html",
+            "https://cert-portal.siemens.com/productcert/pdf/ssa-389290.pdf",
+            "https://cert-portal.siemens.com/productcert/pdf/ssa-484086.pdf",
+            "https://security.gentoo.org/glsa/202212-01"
+        ],
+        "summary": "curl supports the `-t` command line option, known as `CURLOPT_TELNETOPTIONS`in libcurl. This rarely used option is used to send variable=content pairs toTELNET servers.Due to flaw in the option parser for sending `NEW_ENV` variables, libcurlcould be made to pass on uninitialized data from a stack based buffer to theserver. Therefore potentially revealing sensitive internal information to theserver using a clear-text network protocol.This could happen because curl did not call and use sscanf() correctly whenparsing the string provided by the application."
+    },
+    {
+        "Modified": "2022-12-19T04:15:00",
+        "Published": "2021-08-05T21:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "cve-assignments@hackerone.com",
+        "cvss": 5.0,
+        "cvss-time": "2022-12-19T04:15:00",
+        "cvss-vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+        "cwe": "CWE-295",
+        "id": "CVE-2021-22926",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "NONE",
+            "integrity": "NONE"
+        },
+        "last-modified": "2022-12-19T04:15:00",
+        "references": [
+            "https://hackerone.com/reports/1234760",
+            "https://lists.apache.org/thread.html/r61db8e7dcb56dc000a5387a88f7a473bacec5ee01b9ff3f55308aacc@%3Cdev.kafka.apache.org%3E",
+            "https://lists.apache.org/thread.html/r61db8e7dcb56dc000a5387a88f7a473bacec5ee01b9ff3f55308aacc@%3Cusers.kafka.apache.org%3E",
+            "https://lists.apache.org/thread.html/rbf4ce74b0d1fa9810dec50ba3ace0caeea677af7c27a97111c06ccb7@%3Cdev.kafka.apache.org%3E",
+            "https://lists.apache.org/thread.html/rbf4ce74b0d1fa9810dec50ba3ace0caeea677af7c27a97111c06ccb7@%3Cusers.kafka.apache.org%3E",
+            "https://security.netapp.com/advisory/ntap-20210902-0003/",
+            "https://www.oracle.com/security-alerts/cpuoct2021.html",
+            "https://security.netapp.com/advisory/ntap-20211022-0003/",
+            "https://www.oracle.com/security-alerts/cpujan2022.html",
+            "https://cert-portal.siemens.com/productcert/pdf/ssa-389290.pdf",
+            "https://security.gentoo.org/glsa/202212-01"
+        ],
+        "summary": "libcurl-using applications can ask for a specific client certificate to be used in a transfer. This is done with the `CURLOPT_SSLCERT` option (`--cert` with the command line tool).When libcurl is built to use the macOS native TLS library Secure Transport, an application can ask for the client certificate by name or with a file name - using the same option. If the name exists as a file, it will be used instead of by name.If the appliction runs with a current working directory that is writable by other users (like `/tmp`), a malicious user can create a file name with the same name as the app wants to use by name, and thereby trick the application to use the file based cert instead of the one referred to by name making libcurl send the wrong client certificate in the TLS connection handshake."
+    },
+    {
+        "Modified": "2022-12-19T04:00:00",
+        "Published": "2022-12-19T03:15:00",
+        "access": {},
+        "assigner": "vultures@jpcert.or.jp",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-41993",
+        "impact": {},
+        "last-modified": "2022-12-19T04:00:00",
+        "references": [
+            "https://www.cals.jacic.or.jp/coreconso/pdf/coreconsoinfo20221215.pdf",
+            "https://jvn.jp/en/jp/JVN96321933/index.html"
+        ],
+        "summary": "Cross-site scripting vulnerability in DENSHI NYUSATSU CORE SYSTEM v6 R4 and earlier allows a remote unauthenticated attacker to inject an arbitrary script."
+    },
+    {
+        "Modified": "2022-12-19T04:00:00",
+        "Published": "2022-12-19T03:15:00",
+        "access": {},
+        "assigner": "vultures@jpcert.or.jp",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-43443",
+        "impact": {},
+        "last-modified": "2022-12-19T04:00:00",
+        "references": [
+            "https://jvn.jp/en/vu/JVNVU97099584/index.html",
+            "https://www.buffalo.jp/news/detail/20221205-01.html"
+        ],
+        "summary": "Buffalo network devices WSR-3200AX4S firmware Ver. 1.26 and earlier, WSR-3200AX4B firmware Ver. 1.25, WSR-2533DHP firmware Ver. 1.08 and earlier, WSR-2533DHP2 firmware Ver. 1.22 and earlier, WSR-A2533DHP2 firmware Ver. 1.22 and earlier, WSR-2533DHP3 firmware Ver. 1.26 and earlier, WSR-A2533DHP3 firmware Ver. 1.26 and earlier, WSR-2533DHPL firmware Ver. 1.08 and earlier, WSR-2533DHPL2 firmware Ver. 1.03 and earlier, WSR-2533DHPLS firmware Ver. 1.07 and earlier, and WCR-1166DS firmware Ver. 1.34 and earlier allows an network-adjacent attacker to execute an arbitrary OS command if a specially crafted request is sent to the management page."
+    },
+    {
+        "Modified": "2022-12-19T04:00:00",
+        "Published": "2022-12-19T03:15:00",
+        "access": {},
+        "assigner": "vultures@jpcert.or.jp",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-43466",
+        "impact": {},
+        "last-modified": "2022-12-19T04:00:00",
+        "references": [
+            "https://jvn.jp/en/vu/JVNVU97099584/index.html",
+            "https://www.buffalo.jp/news/detail/20221205-01.html"
+        ],
+        "summary": "Buffalo network devices WSR-3200AX4S firmware Ver. 1.26 and earlier, WSR-3200AX4B firmware Ver. 1.25, WSR-2533DHP2 firmware Ver. 1.22 and earlier, WSR-A2533DHP2 firmware Ver. 1.22 and earlier, WSR-2533DHP3 firmware Ver. 1.26 and earlier, WSR-A2533DHP3 firmware Ver. 1.26 and earlier, WSR-2533DHPL2 firmware Ver. 1.03 and earlier, WSR-2533DHPLS firmware Ver. 1.07 and earlier, WEX-1800AX4 firmware Ver. 1.13 and earlier, and WEX-1800AX4EA firmware Ver. 1.13 and earlier allows a network-adjacent attacker with an administrative privilege to execute an arbitrary OS command if a specially crafted request is sent to a specific CGI program."
+    },
+    {
+        "Modified": "2022-12-19T04:00:00",
+        "Published": "2022-12-19T03:15:00",
+        "access": {},
+        "assigner": "vultures@jpcert.or.jp",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-43486",
+        "impact": {},
+        "last-modified": "2022-12-19T04:00:00",
+        "references": [
+            "https://jvn.jp/en/vu/JVNVU97099584/index.html",
+            "https://www.buffalo.jp/news/detail/20221205-01.html"
+        ],
+        "summary": "Hidden functionality vulnerability in Buffalo network devices WSR-3200AX4S firmware Ver. 1.26 and earlier, WSR-3200AX4B firmware Ver. 1.25, WSR-2533DHP firmware Ver. 1.08 and earlier, WSR-2533DHP2 firmware Ver. 1.22 and earlier, WSR-A2533DHP2 firmware Ver. 1.22 and earlier, WSR-2533DHP3 firmware Ver. 1.26 and earlier, WSR-A2533DHP3 firmware Ver. 1.26 and earlier, WSR-2533DHPL firmware Ver. 1.08 and earlier, WSR-2533DHPL2 firmware Ver. 1.03 and earlier, WSR-2533DHPLS firmware Ver. 1.07 and earlier, WCR-1166DS firmware Ver. 1.34 and earlier, WEX-1800AX4 firmware Ver. 1.13 and earlier, and WEX-1800AX4EA firmware Ver. 1.13 and earlier allows a network-adjacent attacker with an administrative privilege to enable the debug functionalities and execute an arbitrary command on the affected device."
+    },
+    {
+        "Modified": "2022-12-19T04:00:00",
+        "Published": "2022-12-19T03:15:00",
+        "access": {},
+        "assigner": "vultures@jpcert.or.jp",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-44456",
+        "impact": {},
+        "last-modified": "2022-12-19T04:00:00",
+        "references": [
+            "https://www.contec.com/download/contract/contract4/?itemid=ea8039aa-3434-4999-9ab6-897aa690210c&downloaditemid=866d7d3c-aae9-438d-87f3-17aa040df90b",
+            "https://jvn.jp/en/vu/JVNVU96873821/index.html",
+            "https://www.contec.com/api/downloadlogger?download=/-/media/Contec/jp/support/security-info/contec_security_chs_221014_en.pdf"
+        ],
+        "summary": "CONPROSYS HMI System (CHS) Ver.3.4.4?and earlier allows a remote unauthenticated attacker to execute an arbitrary OS command on the server where the product is running by sending a specially crafted request."
+    },
+    {
+        "Modified": "2022-12-19T04:00:00",
+        "Published": "2022-12-19T03:15:00",
+        "access": {},
+        "assigner": "vultures@jpcert.or.jp",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-46287",
+        "impact": {},
+        "last-modified": "2022-12-19T04:00:00",
+        "references": [
+            "https://www.cals.jacic.or.jp/coreconso/pdf/coreconsoinfo20221215.pdf",
+            "https://jvn.jp/en/jp/JVN96321933/index.html"
+        ],
+        "summary": "Cross-site scripting vulnerability in DENSHI NYUSATSU CORE SYSTEM v6 R4 and earlier allows a remote unauthenticated attacker to inject an arbitrary script."
+    },
+    {
+        "Modified": "2022-12-19T04:00:00",
+        "Published": "2022-12-19T03:15:00",
+        "access": {},
+        "assigner": "vultures@jpcert.or.jp",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-46288",
+        "impact": {},
+        "last-modified": "2022-12-19T04:00:00",
+        "references": [
+            "https://www.cals.jacic.or.jp/coreconso/pdf/coreconsoinfo20221215.pdf",
+            "https://jvn.jp/en/jp/JVN96321933/index.html"
+        ],
+        "summary": "Open redirect vulnerability in DENSHI NYUSATSU CORE SYSTEM v6 R4 and earlier allows a remote unauthenticated attacker to redirect a user to an arbitrary web site and conduct a phishing attack by having a user to access a specially crafted URL."
+    },
+    {
+        "Modified": "2022-12-19T03:15:00",
+        "Published": "2022-12-14T21:15:00",
+        "access": {},
+        "assigner": "secalert@redhat.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-46340",
+        "impact": {},
+        "last-modified": "2022-12-19T03:15:00",
+        "references": [
+            "https://access.redhat.com/security/cve/CVE-2022-46340",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2151755",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/DXDF2O5PPLE3SVAJJYUOSAD5QZ4TWQ2G/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/5NELB7YDWRABYYBG4UPTHRBDTKJRV5M2/"
+        ],
+        "summary": "A vulnerability was found in X.Org. This security flaw occurs becuase the swap handler for the XTestFakeInput request of the XTest extension may corrupt the stack if GenericEvents with lengths larger than 32 bytes are sent through a the XTestFakeInput request. This issue can lead to local privileges elevation on systems where the X server is running privileged and remote code execution for ssh X forwarding sessions. This issue does not affect systems where client and server use the same byte order."
+    },
+    {
+        "Modified": "2022-12-19T03:15:00",
+        "Published": "2022-12-14T21:15:00",
+        "access": {},
+        "assigner": "secalert@redhat.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-46341",
+        "impact": {},
+        "last-modified": "2022-12-19T03:15:00",
+        "references": [
+            "https://access.redhat.com/security/cve/CVE-2022-46341",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2151756",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/DXDF2O5PPLE3SVAJJYUOSAD5QZ4TWQ2G/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/5NELB7YDWRABYYBG4UPTHRBDTKJRV5M2/"
+        ],
+        "summary": "A vulnerability was found in X.Org. This security flaw occurs because the handler for the XIPassiveUngrab request accesses out-of-bounds memory when invoked with a high keycode or button code. This issue can lead to local privileges elevation on systems where the X server is running privileged and remote code execution for ssh X forwarding sessions."
+    },
+    {
+        "Modified": "2022-12-19T03:15:00",
+        "Published": "2022-12-14T21:15:00",
+        "access": {},
+        "assigner": "secalert@redhat.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-46342",
+        "impact": {},
+        "last-modified": "2022-12-19T03:15:00",
+        "references": [
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2151757",
+            "https://access.redhat.com/security/cve/CVE-2022-46342",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/DXDF2O5PPLE3SVAJJYUOSAD5QZ4TWQ2G/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/5NELB7YDWRABYYBG4UPTHRBDTKJRV5M2/"
+        ],
+        "summary": "A vulnerability was found in X.Org. This security flaw occurs because the handler for the XvdiSelectVideoNotify request may write to memory after it has been freed. This issue can lead to local privileges elevation on systems where the X se"
+    },
+    {
+        "Modified": "2022-12-19T03:15:00",
+        "Published": "2022-12-14T21:15:00",
+        "access": {},
+        "assigner": "secalert@redhat.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-46343",
+        "impact": {},
+        "last-modified": "2022-12-19T03:15:00",
+        "references": [
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2151758",
+            "https://access.redhat.com/security/cve/CVE-2022-46343",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/DXDF2O5PPLE3SVAJJYUOSAD5QZ4TWQ2G/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/5NELB7YDWRABYYBG4UPTHRBDTKJRV5M2/"
+        ],
+        "summary": "A vulnerability was found in X.Org. This security flaw occurs because the handler for the ScreenSaverSetAttributes request may write to memory after it has been freed. This issue can lead to local privileges elevation on systems where the X server is running privileged and remote code execution for ssh X forwarding sessions."
+    },
+    {
+        "Modified": "2022-12-19T03:15:00",
+        "Published": "2022-12-14T21:15:00",
+        "access": {},
+        "assigner": "secalert@redhat.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-46344",
+        "impact": {},
+        "last-modified": "2022-12-19T03:15:00",
+        "references": [
+            "https://access.redhat.com/security/cve/CVE-2022-46344",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2151760",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/DXDF2O5PPLE3SVAJJYUOSAD5QZ4TWQ2G/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/5NELB7YDWRABYYBG4UPTHRBDTKJRV5M2/"
+        ],
+        "summary": "A vulnerability was found in X.Org. This security flaw occurs because the handler for the XIChangeProperty request has a length-validation issues, resulting in out-of-bounds memory reads and potential information disclosure. This issue can lead to local privileges elevation on systems where the X server is running privileged and remote code execution for ssh X forwarding sessions."
+    },
+    {
+        "Modified": "2022-12-19T03:15:00",
+        "Published": "2022-12-14T21:15:00",
+        "access": {},
+        "assigner": "secalert@redhat.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-4283",
+        "impact": {},
+        "last-modified": "2022-12-19T03:15:00",
+        "references": [
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2151761",
+            "https://access.redhat.com/security/cve/CVE-2022-4283",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/DXDF2O5PPLE3SVAJJYUOSAD5QZ4TWQ2G/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/5NELB7YDWRABYYBG4UPTHRBDTKJRV5M2/"
+        ],
+        "summary": "A vulnerability was found in X.Org. This security flaw occurs because the XkbCopyNames function left a dangling pointer to freed memory, resulting in out-of-bounds memory access on subsequent XkbGetKbdByName requests.. This issue can lead to local privileges elevation on systems where the X server is running privileged and remote code execution for ssh X forwarding sessions."
+    },
+    {
+        "Modified": "2022-12-19T03:15:00",
+        "Published": "2022-11-22T19:15:00",
+        "access": {},
+        "assigner": "secalert@redhat.com",
+        "cvss": null,
+        "cwe": "CWE-248",
+        "id": "CVE-2022-3500",
+        "impact": {},
+        "last-modified": "2022-12-19T03:15:00",
+        "references": [
+            "https://github.com/keylime/keylime/pull/1128",
+            "https://access.redhat.com/security/cve/CVE-2022-3500",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/ZQH5CJRX65QYMQN5WGUKKKE3IRJBWG5Z/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/PUTHMDVFNGGVPCNPOGULMJAAFEP7MEXP/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/QX4XVCAUFGJ2I2NCTOKONTJGRJB2NBBT/"
+        ],
+        "summary": "A vulnerability was found in keylime. This security issue happens in some circumstances, due to some improperly handled exceptions, there exists the possibility that a rogue agent could create errors on the verifier that stopped attestation attempts for that host leaving it in an attested state but not verifying that anymore."
+    },
+    {
+        "Modified": "2022-12-19T03:15:00",
+        "Published": "2022-11-22T02:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-476",
+        "id": "CVE-2022-36227",
+        "impact": {},
+        "last-modified": "2022-12-19T03:15:00",
+        "references": [
+            "https://github.com/libarchive/libarchive/issues/1754",
+            "https://bugs.gentoo.org/882521",
+            "https://github.com/libarchive/libarchive/blob/v3.0.0a/libarchive/archive_write.c#L215",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/V67OO2UUQAUJS3IK4JZPF6F3LUCBU6IS/"
+        ],
+        "summary": "In libarchive before 3.6.2, the software does not check for an error after calling calloc function that can return with a NULL pointer if the function fails, which leads to a resultant NULL pointer dereference. NOTE: the discoverer cites this CWE-476 remark but third parties dispute the code-execution impact: \"In rare circumstances, when NULL is equivalent to the 0x0 memory address and privileged code can access it, then writing or reading memory is possible, which may lead to code execution.\""
+    },
+    {
+        "Modified": "2022-12-19T03:15:00",
+        "Published": "2022-11-09T22:15:00",
+        "access": {},
+        "assigner": "secure@microsoft.com",
+        "cvss": null,
+        "cwe": "NVD-CWE-noinfo",
+        "id": "CVE-2022-37966",
+        "impact": {},
+        "last-modified": "2022-12-19T03:15:00",
+        "references": [
+            "https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-37966",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/VCTYD5EQRS73QZTWPOC2ZO2FL7MMYXMS/"
+        ],
+        "summary": "Windows Kerberos RC4-HMAC Elevation of Privilege Vulnerability."
+    },
+    {
+        "Modified": "2022-12-19T03:15:00",
+        "Published": "2022-11-09T22:15:00",
+        "access": {},
+        "assigner": "secure@microsoft.com",
+        "cvss": null,
+        "cwe": "NVD-CWE-noinfo",
+        "id": "CVE-2022-37967",
+        "impact": {},
+        "last-modified": "2022-12-19T03:15:00",
+        "references": [
+            "https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-37967",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/VCTYD5EQRS73QZTWPOC2ZO2FL7MMYXMS/"
+        ],
+        "summary": "Windows Kerberos Elevation of Privilege Vulnerability."
+    },
+    {
+        "Modified": "2022-12-19T03:15:00",
+        "Published": "2022-11-09T22:15:00",
+        "access": {},
+        "assigner": "secure@microsoft.com",
+        "cvss": null,
+        "cwe": "NVD-CWE-noinfo",
+        "id": "CVE-2022-38023",
+        "impact": {},
+        "last-modified": "2022-12-19T03:15:00",
+        "references": [
+            "https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-38023",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/VCTYD5EQRS73QZTWPOC2ZO2FL7MMYXMS/"
+        ],
+        "summary": "Netlogon RPC Elevation of Privilege Vulnerability."
+    },
+    {
+        "Modified": "2022-12-19T02:27:00",
         "Published": "2022-12-18T22:15:00",
         "access": {},
         "assigner": "cna@vuldb.com",
@@ -8,7 +1306,7 @@
         "cwe": "CWE-707",
         "id": "CVE-2021-4252",
         "impact": {},
-        "last-modified": "2022-12-18T22:15:00",
+        "last-modified": "2022-12-19T02:27:00",
         "references": [
             "https://vuldb.com/?id.216209",
             "https://github.com/lesterchan/wp-ban/commit/13e0b1e922f3aaa3f8fcb1dd6d50200dd693fd76",
@@ -17,7 +1315,7 @@
         "summary": "A vulnerability, which was classified as problematic, has been found in WP-Ban. This issue affects the function toggle_checkbox of the file ban-options.php. The manipulation of the argument $_SERVER[\"HTTP_USER_AGENT\"] leads to cross site scripting. The attack may be initiated remotely. The name of the patch is 13e0b1e922f3aaa3f8fcb1dd6d50200dd693fd76. It is recommended to apply a patch to fix this issue. The identifier VDB-216209 was assigned to this vulnerability."
     },
     {
-        "Modified": "2022-12-18T22:15:00",
+        "Modified": "2022-12-19T02:27:00",
         "Published": "2022-12-18T22:15:00",
         "access": {},
         "assigner": "cna@vuldb.com",
@@ -25,7 +1323,7 @@
         "cwe": "CWE-707",
         "id": "CVE-2021-4254",
         "impact": {},
-        "last-modified": "2022-12-18T22:15:00",
+        "last-modified": "2022-12-19T02:27:00",
         "references": [
             "https://vuldb.com/?id.216211",
             "https://github.com/ctrlo/lenio/commit/aa300555343c1c081951fcb68bfb6852fbba7451"
@@ -33,7 +1331,7 @@
         "summary": "A vulnerability has been found in ctrlo lenio and classified as problematic. Affected by this vulnerability is an unknown functionality of the file views/layouts/main.tt of the component Notice Handler. The manipulation of the argument notice.notice.text leads to cross site scripting. The attack can be launched remotely. The name of the patch is aa300555343c1c081951fcb68bfb6852fbba7451. It is recommended to apply a patch to fix this issue. The associated identifier of this vulnerability is VDB-216211."
     },
     {
-        "Modified": "2022-12-18T22:15:00",
+        "Modified": "2022-12-19T02:27:00",
         "Published": "2022-12-18T22:15:00",
         "access": {},
         "assigner": "cna@vuldb.com",
@@ -41,7 +1339,7 @@
         "cwe": "CWE-707",
         "id": "CVE-2021-4255",
         "impact": {},
-        "last-modified": "2022-12-18T22:15:00",
+        "last-modified": "2022-12-19T02:27:00",
         "references": [
             "https://vuldb.com/?id.216212",
             "https://github.com/ctrlo/lenio/commit/e1646d5cd0a2fbab9eb505196dd2ca1c9e4cdd97"
@@ -49,7 +1347,7 @@
         "summary": "A vulnerability was found in ctrlo lenio and classified as problematic. Affected by this issue is some unknown functionality of the file views/contractor.tt. The manipulation of the argument contractor.name leads to cross site scripting. The attack may be launched remotely. The name of the patch is e1646d5cd0a2fbab9eb505196dd2ca1c9e4cdd97. It is recommended to apply a patch to fix this issue. The identifier of this vulnerability is VDB-216212."
     },
     {
-        "Modified": "2022-12-18T22:15:00",
+        "Modified": "2022-12-19T02:27:00",
         "Published": "2022-12-18T22:15:00",
         "access": {},
         "assigner": "cna@vuldb.com",
@@ -57,7 +1355,7 @@
         "cwe": "CWE-707",
         "id": "CVE-2021-4256",
         "impact": {},
-        "last-modified": "2022-12-18T22:15:00",
+        "last-modified": "2022-12-19T02:27:00",
         "references": [
             "https://vuldb.com/?id.216213",
             "https://github.com/ctrlo/lenio/commit/e1646d5cd0a2fbab9eb505196dd2ca1c9e4cdd97"
@@ -65,7 +1363,7 @@
         "summary": "A vulnerability was found in ctrlo lenio. It has been classified as problematic. This affects an unknown part of the file views/index.tt. The manipulation of the argument task.name/task.site.org.name leads to cross site scripting. It is possible to initiate the attack remotely. The name of the patch is e1646d5cd0a2fbab9eb505196dd2ca1c9e4cdd97. It is recommended to apply a patch to fix this issue. The identifier VDB-216213 was assigned to this vulnerability."
     },
     {
-        "Modified": "2022-12-18T22:15:00",
+        "Modified": "2022-12-19T02:27:00",
         "Published": "2022-12-18T22:15:00",
         "access": {},
         "assigner": "cna@vuldb.com",
@@ -73,7 +1371,7 @@
         "cwe": "CWE-707",
         "id": "CVE-2021-4257",
         "impact": {},
-        "last-modified": "2022-12-18T22:15:00",
+        "last-modified": "2022-12-19T02:27:00",
         "references": [
             "https://github.com/ctrlo/lenio/commit/698c5fa465169d6f23c6a41ca4b1fc9a7869013a",
             "https://vuldb.com/?id.216214"
@@ -81,7 +1379,7 @@
         "summary": "A vulnerability was found in ctrlo lenio. It has been declared as problematic. This vulnerability affects unknown code of the file views/task.tt of the component Task Handler. The manipulation of the argument site.org.name/check.name/task.tasktype.name/task.name leads to cross site scripting. The attack can be initiated remotely. The name of the patch is 698c5fa465169d6f23c6a41ca4b1fc9a7869013a. It is recommended to apply a patch to fix this issue. VDB-216214 is the identifier assigned to this vulnerability."
     },
     {
-        "Modified": "2022-12-18T22:15:00",
+        "Modified": "2022-12-19T02:27:00",
         "Published": "2022-12-18T22:15:00",
         "access": {},
         "assigner": "cna@vuldb.com",
@@ -89,7 +1387,7 @@
         "cwe": "CWE-611",
         "id": "CVE-2022-4607",
         "impact": {},
-        "last-modified": "2022-12-18T22:15:00",
+        "last-modified": "2022-12-19T02:27:00",
         "references": [
             "https://vuldb.com/?id.216215",
             "https://github.com/3dcitydb/web-feature-service/releases/tag/v5.3.0",
@@ -99,7 +1397,7 @@
         "summary": "A vulnerability was found in 3D City Database OGC Web Feature Service up to 5.2.1. It has been rated as problematic. This issue affects some unknown processing. The manipulation leads to xml external entity reference. Upgrading to version 5.3.0 is able to address this issue. The name of the patch is 246f4e2a97ad81491c00a7ed72ce5e7c7f75050a. It is recommended to upgrade the affected component. The associated identifier of this vulnerability is VDB-216215."
     },
     {
-        "Modified": "2022-12-18T22:15:00",
+        "Modified": "2022-12-19T02:27:00",
         "Published": "2022-12-18T22:15:00",
         "access": {},
         "assigner": "cna@vuldb.com",
@@ -107,7 +1405,7 @@
         "cwe": "CWE-404",
         "id": "CVE-2021-4250",
         "impact": {},
-        "last-modified": "2022-12-18T22:15:00",
+        "last-modified": "2022-12-19T02:27:00",
         "references": [
             "https://github.com/cgriego/active_attr/pull/185",
             "https://vuldb.com/?id.216207",
@@ -118,7 +1416,7 @@
         "summary": "A vulnerability classified as problematic has been found in cgriego active_attr up to 0.15.3. This affects the function call of the file lib/active_attr/typecasting/boolean_typecaster.rb of the component Regex Handler. The manipulation of the argument value leads to denial of service. The exploit has been disclosed to the public and may be used. Upgrading to version 0.15.4 is able to address this issue. The name of the patch is dab95e5843b01525444b82bd7b336ef1d79377df. It is recommended to upgrade the affected component. The associated identifier of this vulnerability is VDB-216207."
     },
     {
-        "Modified": "2022-12-18T22:15:00",
+        "Modified": "2022-12-19T02:27:00",
         "Published": "2022-12-18T22:15:00",
         "access": {},
         "assigner": "cna@vuldb.com",
@@ -126,7 +1424,7 @@
         "cwe": "CWE-707",
         "id": "CVE-2021-4251",
         "impact": {},
-        "last-modified": "2022-12-18T22:15:00",
+        "last-modified": "2022-12-19T02:27:00",
         "references": [
             "https://vuldb.com/?id.216208",
             "https://github.com/andrewsauder/as/commit/4acad1e3d2c34c017473ceea442fb3e3e078b2bd"
@@ -134,7 +1432,7 @@
         "summary": "A vulnerability classified as problematic was found in as. This vulnerability affects the function getFullURL of the file include.cdn.php. The manipulation leads to cross site scripting. The attack can be initiated remotely. The name of the patch is 4acad1e3d2c34c017473ceea442fb3e3e078b2bd. It is recommended to apply a patch to fix this issue. The identifier of this vulnerability is VDB-216208."
     },
     {
-        "Modified": "2022-12-18T22:15:00",
+        "Modified": "2022-12-19T02:27:00",
         "Published": "2022-12-18T22:15:00",
         "access": {},
         "assigner": "cna@vuldb.com",
@@ -142,7 +1440,7 @@
         "cwe": "CWE-707",
         "id": "CVE-2021-4253",
         "impact": {},
-        "last-modified": "2022-12-18T22:15:00",
+        "last-modified": "2022-12-19T02:27:00",
         "references": [
             "https://github.com/ctrlo/lenio/commit/7a1f90bd2a0ce95b8338ec0926902da975ec64d9",
             "https://vuldb.com/?id.216210"
@@ -150,7 +1448,7 @@
         "summary": "A vulnerability, which was classified as problematic, was found in ctrlo lenio. Affected is an unknown function in the library lib/Lenio.pm of the component Ticket Handler. The manipulation of the argument site_id leads to cross site scripting. It is possible to launch the attack remotely. The name of the patch is 7a1f90bd2a0ce95b8338ec0926902da975ec64d9. It is recommended to apply a patch to fix this issue. VDB-216210 is the identifier assigned to this vulnerability."
     },
     {
-        "Modified": "2022-12-18T15:15:00",
+        "Modified": "2022-12-19T02:27:00",
         "Published": "2022-12-18T15:15:00",
         "access": {},
         "assigner": "cna@vuldb.com",
@@ -158,7 +1456,7 @@
         "cwe": "CWE-908",
         "id": "CVE-2020-36617",
         "impact": {},
-        "last-modified": "2022-12-18T15:15:00",
+        "last-modified": "2022-12-19T02:27:00",
         "references": [
             "https://vuldb.com/?id.216205",
             "https://github.com/ewxrjk/sftpserver/commit/bf4032f34832ee11d79aa60a226cc018e7ec5eed"
@@ -166,7 +1464,7 @@
         "summary": "** DISPUTED ** A vulnerability was found in ewxrjk sftpserver. It has been declared as problematic. Affected by this vulnerability is the function sftp_parse_path of the file parse.c. The manipulation leads to uninitialized pointer. The real existence of this vulnerability is still doubted at the moment. The name of the patch is bf4032f34832ee11d79aa60a226cc018e7ec5eed. It is recommended to apply a patch to fix this issue. The identifier VDB-216205 was assigned to this vulnerability. NOTE: In some deployment models this would be a vulnerability. README specifically warns about avoiding such deployment models."
     },
     {
-        "Modified": "2022-12-18T15:15:00",
+        "Modified": "2022-12-19T02:27:00",
         "Published": "2022-12-18T15:15:00",
         "access": {},
         "assigner": "cna@vuldb.com",
@@ -174,7 +1472,7 @@
         "cwe": "CWE-835",
         "id": "CVE-2021-4249",
         "impact": {},
-        "last-modified": "2022-12-18T15:15:00",
+        "last-modified": "2022-12-19T02:27:00",
         "references": [
             "https://vuldb.com/?id.216204",
             "https://github.com/snoyberg/xml/pull/161",
@@ -184,23 +1482,7 @@
         "summary": "A vulnerability was found in xml-conduit. It has been classified as problematic. Affected is an unknown function of the file xml-conduit/src/Text/XML/Stream/Parse.hs of the component DOCTYPE Entity Expansion Handler. The manipulation leads to infinite loop. It is possible to launch the attack remotely. Upgrading to version 1.9.1.0 is able to address this issue. The name of the patch is 4be1021791dcdee8b164d239433a2043dc0939ea. It is recommended to upgrade the affected component. The identifier of this vulnerability is VDB-216204."
     },
     {
-        "Modified": "2022-12-18T14:15:00",
-        "Published": "2022-12-18T14:15:00",
-        "access": {},
-        "assigner": "security@huntr.dev",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-4605",
-        "impact": {},
-        "last-modified": "2022-12-18T14:15:00",
-        "references": [
-            "https://github.com/flatpressblog/flatpress/commit/742f8b04f233e3cc52bed11f79fcc9911faee776",
-            "https://huntr.dev/bounties/df455d44-0dec-470c-b576-8ea86ec5a367"
-        ],
-        "summary": "Cross-site Scripting (XSS) - Stored in GitHub repository flatpressblog/flatpress prior to 1.3."
-    },
-    {
-        "Modified": "2022-12-18T13:15:00",
+        "Modified": "2022-12-19T02:27:00",
         "Published": "2022-12-18T13:15:00",
         "access": {},
         "assigner": "security@huntr.dev",
@@ -208,7 +1490,7 @@
         "cwe": "CWE-98",
         "id": "CVE-2022-4606",
         "impact": {},
-        "last-modified": "2022-12-18T13:15:00",
+        "last-modified": "2022-12-19T02:27:00",
         "references": [
             "https://huntr.dev/bounties/3dab0466-c35d-4163-b3c7-a8666e2f7d95",
             "https://github.com/flatpressblog/flatpress/commit/c30d52b28483e1e512d0d81758d4c149f02b4068"
@@ -216,7 +1498,23 @@
         "summary": "PHP Remote File Inclusion in GitHub repository flatpressblog/flatpress prior to 1.3."
     },
     {
-        "Modified": "2022-12-18T11:15:00",
+        "Modified": "2022-12-19T02:27:00",
+        "Published": "2022-12-18T14:15:00",
+        "access": {},
+        "assigner": "security@huntr.dev",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2022-4605",
+        "impact": {},
+        "last-modified": "2022-12-19T02:27:00",
+        "references": [
+            "https://github.com/flatpressblog/flatpress/commit/742f8b04f233e3cc52bed11f79fcc9911faee776",
+            "https://huntr.dev/bounties/df455d44-0dec-470c-b576-8ea86ec5a367"
+        ],
+        "summary": "Cross-site Scripting (XSS) - Stored in GitHub repository flatpressblog/flatpress prior to 1.3."
+    },
+    {
+        "Modified": "2022-12-19T02:27:00",
         "Published": "2022-12-18T11:15:00",
         "access": {},
         "assigner": "cna@vuldb.com",
@@ -224,7 +1522,7 @@
         "cwe": "CWE-332",
         "id": "CVE-2021-4248",
         "impact": {},
-        "last-modified": "2022-12-18T11:15:00",
+        "last-modified": "2022-12-19T02:27:00",
         "references": [
             "https://github.com/kapetan/dns/releases/tag/v7.0.0",
             "https://github.com/kapetan/dns/commit/cf7105aa2aae90d6656088fe5a8ee1d5730773b6",
@@ -234,7 +1532,7 @@
         "summary": "A vulnerability was found in kapetan dns up to 6.1.0. It has been rated as problematic. Affected by this issue is some unknown functionality of the file DNS/Protocol/Request.cs. The manipulation leads to insufficient entropy in prng. The attack may be launched remotely. Upgrading to version 7.0.0 is able to address this issue. The name of the patch is cf7105aa2aae90d6656088fe5a8ee1d5730773b6. It is recommended to upgrade the affected component. The identifier of this vulnerability is VDB-216188."
     },
     {
-        "Modified": "2022-12-18T11:15:00",
+        "Modified": "2022-12-19T02:27:00",
         "Published": "2022-12-18T11:15:00",
         "access": {},
         "assigner": "cna@vuldb.com",
@@ -242,7 +1540,7 @@
         "cwe": "CWE-707",
         "id": "CVE-2022-4596",
         "impact": {},
-        "last-modified": "2022-12-18T11:15:00",
+        "last-modified": "2022-12-19T02:27:00",
         "references": [
             "https://vuldb.com/?id.216191",
             "https://seclists.org/fulldisclosure/2022/Dec/11",
@@ -251,7 +1549,7 @@
         "summary": "A vulnerability, which was classified as problematic, has been found in Shoplazza 1.1. This issue affects some unknown processing of the file /admin/api/admin/articles/ of the component Add Blog Post Handler. The manipulation of the argument Title leads to cross site scripting. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-216191."
     },
     {
-        "Modified": "2022-12-18T11:15:00",
+        "Modified": "2022-12-19T02:27:00",
         "Published": "2022-12-18T11:15:00",
         "access": {},
         "assigner": "cna@vuldb.com",
@@ -259,7 +1557,7 @@
         "cwe": "CWE-707",
         "id": "CVE-2022-4597",
         "impact": {},
-        "last-modified": "2022-12-18T11:15:00",
+        "last-modified": "2022-12-19T02:27:00",
         "references": [
             "https://vuldb.com/?id.216192",
             "https://seclists.org/fulldisclosure/2022/Dec/11",
@@ -268,7 +1566,7 @@
         "summary": "A vulnerability, which was classified as problematic, was found in Shoplazza LifeStyle 1.1. Affected is an unknown function of the file /admin/api/admin/v2_products of the component Create Product Handler. The manipulation leads to cross site scripting. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used. The identifier of this vulnerability is VDB-216192."
     },
     {
-        "Modified": "2022-12-18T11:15:00",
+        "Modified": "2022-12-19T02:27:00",
         "Published": "2022-12-18T11:15:00",
         "access": {},
         "assigner": "cna@vuldb.com",
@@ -276,7 +1574,7 @@
         "cwe": "CWE-707",
         "id": "CVE-2022-4598",
         "impact": {},
-        "last-modified": "2022-12-18T11:15:00",
+        "last-modified": "2022-12-19T02:27:00",
         "references": [
             "https://vuldb.com/?id.216193",
             "https://seclists.org/fulldisclosure/2022/Dec/11",
@@ -285,7 +1583,7 @@
         "summary": "A vulnerability has been found in Shoplazza LifeStyle 1.1 and classified as problematic. Affected by this vulnerability is an unknown functionality of the file /admin/api/theme-edit/ of the component Announcement Handler. The manipulation of the argument Text/Mobile Text leads to cross site scripting. The attack can be launched remotely. The exploit has been disclosed to the public and may be used. The identifier VDB-216193 was assigned to this vulnerability."
     },
     {
-        "Modified": "2022-12-18T11:15:00",
+        "Modified": "2022-12-19T02:27:00",
         "Published": "2022-12-18T11:15:00",
         "access": {},
         "assigner": "cna@vuldb.com",
@@ -293,7 +1591,7 @@
         "cwe": "CWE-707",
         "id": "CVE-2022-4599",
         "impact": {},
-        "last-modified": "2022-12-18T11:15:00",
+        "last-modified": "2022-12-19T02:27:00",
         "references": [
             "https://vuldb.com/?id.216194",
             "https://seclists.org/fulldisclosure/2022/Dec/11",
@@ -302,7 +1600,7 @@
         "summary": "A vulnerability was found in Shoplazza LifeStyle 1.1 and classified as problematic. Affected by this issue is some unknown functionality of the file /admin/api/theme-edit/ of the component Product Handler. The manipulation of the argument Subheading/Heading/Text/Button Text/Label leads to cross site scripting. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. VDB-216194 is the identifier assigned to this vulnerability."
     },
     {
-        "Modified": "2022-12-18T11:15:00",
+        "Modified": "2022-12-19T02:27:00",
         "Published": "2022-12-18T11:15:00",
         "access": {},
         "assigner": "cna@vuldb.com",
@@ -310,7 +1608,7 @@
         "cwe": "CWE-707",
         "id": "CVE-2022-4600",
         "impact": {},
-        "last-modified": "2022-12-18T11:15:00",
+        "last-modified": "2022-12-19T02:27:00",
         "references": [
             "https://vuldb.com/?id.216195",
             "https://seclists.org/fulldisclosure/2022/Dec/11",
@@ -319,7 +1617,7 @@
         "summary": "A vulnerability was found in Shoplazza LifeStyle 1.1. It has been classified as problematic. This affects an unknown part of the file /admin/api/theme-edit/ of the component Product Carousel Handler. The manipulation of the argument Heading/Description leads to cross site scripting. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-216195."
     },
     {
-        "Modified": "2022-12-18T11:15:00",
+        "Modified": "2022-12-19T02:27:00",
         "Published": "2022-12-18T11:15:00",
         "access": {},
         "assigner": "cna@vuldb.com",
@@ -327,7 +1625,7 @@
         "cwe": "CWE-707",
         "id": "CVE-2022-4601",
         "impact": {},
-        "last-modified": "2022-12-18T11:15:00",
+        "last-modified": "2022-12-19T02:27:00",
         "references": [
             "https://vuldb.com/?id.216196",
             "https://seclists.org/fulldisclosure/2022/Dec/11",
@@ -336,7 +1634,7 @@
         "summary": "A vulnerability was found in Shoplazza LifeStyle 1.1. It has been declared as problematic. This vulnerability affects unknown code of the file /admin/api/theme-edit/ of the component Shipping/Member Discount/Icon. The manipulation leads to cross site scripting. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used. The identifier of this vulnerability is VDB-216196."
     },
     {
-        "Modified": "2022-12-18T11:15:00",
+        "Modified": "2022-12-19T02:27:00",
         "Published": "2022-12-18T11:15:00",
         "access": {},
         "assigner": "cna@vuldb.com",
@@ -344,7 +1642,7 @@
         "cwe": "CWE-707",
         "id": "CVE-2022-4602",
         "impact": {},
-        "last-modified": "2022-12-18T11:15:00",
+        "last-modified": "2022-12-19T02:27:00",
         "references": [
             "https://seclists.org/fulldisclosure/2022/Dec/11",
             "https://seclists.org/fulldisclosure/2022/Dec/att-11/proof-of-concept-shoplazza.txt",
@@ -353,7 +1651,7 @@
         "summary": "A vulnerability was found in Shoplazza LifeStyle 1.1. It has been rated as problematic. This issue affects some unknown processing of the file /admin/api/theme-edit/ of the component Review Flow Handler. The manipulation of the argument Title leads to cross site scripting. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. The identifier VDB-216197 was assigned to this vulnerability."
     },
     {
-        "Modified": "2022-12-18T11:15:00",
+        "Modified": "2022-12-19T02:27:00",
         "Published": "2022-12-18T11:15:00",
         "access": {},
         "assigner": "cna@vuldb.com",
@@ -361,7 +1659,7 @@
         "cwe": "CWE-129",
         "id": "CVE-2022-4603",
         "impact": {},
-        "last-modified": "2022-12-18T11:15:00",
+        "last-modified": "2022-12-19T02:27:00",
         "references": [
             "https://vuldb.com/?id.216198",
             "https://github.com/ppp-project/ppp/commit/a75fb7b198eed50d769c80c36629f38346882cbf"
@@ -369,7 +1667,7 @@
         "summary": "** DISPUTED ** A vulnerability classified as problematic has been found in ppp. Affected is the function dumpppp of the file pppdump/pppdump.c of the component pppdump. The manipulation of the argument spkt.buf/rpkt.buf leads to improper validation of array index. The real existence of this vulnerability is still doubted at the moment. The name of the patch is a75fb7b198eed50d769c80c36629f38346882cbf. It is recommended to apply a patch to fix this issue. VDB-216198 is the identifier assigned to this vulnerability. NOTE: pppdump is not used in normal process of setting up a PPP connection, is not installed setuid-root, and is not invoked automatically in any scenario."
     },
     {
-        "Modified": "2022-12-18T11:15:00",
+        "Modified": "2022-12-19T02:27:00",
         "Published": "2022-12-18T11:15:00",
         "access": {},
         "assigner": "cna@vuldb.com",
@@ -377,7 +1675,7 @@
         "cwe": "CWE-863",
         "id": "CVE-2022-4604",
         "impact": {},
-        "last-modified": "2022-12-18T11:15:00",
+        "last-modified": "2022-12-19T02:27:00",
         "references": [
             "https://github.com/khromov/wp-english-wp-admin/releases/tag/1.5.3",
             "https://vuldb.com/?id.216199",
@@ -386,7 +1684,7 @@
         "summary": "A vulnerability classified as problematic was found in wp-english-wp-admin Plugin up to 1.5.2. Affected by this vulnerability is the function register_endpoints of the file english-wp-admin.php. The manipulation leads to cross-site request forgery. The attack can be launched remotely. Upgrading to version 1.5.3 is able to address this issue. The name of the patch is ad4ba171c974c65c3456e7c6228f59f40783b33d. It is recommended to upgrade the affected component. The associated identifier of this vulnerability is VDB-216199."
     },
     {
-        "Modified": "2022-12-18T11:15:00",
+        "Modified": "2022-12-19T02:27:00",
         "Published": "2022-12-18T11:15:00",
         "access": {},
         "assigner": "cna@vuldb.com",
@@ -394,7 +1692,7 @@
         "cwe": "CWE-707",
         "id": "CVE-2022-4595",
         "impact": {},
-        "last-modified": "2022-12-18T11:15:00",
+        "last-modified": "2022-12-19T02:27:00",
         "references": [
             "https://github.com/openipam/django-openipam/commit/a6223a1150d60cd036106ba6a8e676c1bfc3cc85",
             "https://github.com/openipam/django-openipam/pull/205",
@@ -403,7 +1701,71 @@
         "summary": "A vulnerability classified as problematic has been found in django-openipam. This affects an unknown part of the file openipam/report/templates/report/exposed_hosts.html. The manipulation of the argument description leads to cross site scripting. It is possible to initiate the attack remotely. The name of the patch is a6223a1150d60cd036106ba6a8e676c1bfc3cc85. It is recommended to apply a patch to fix this issue. The identifier VDB-216189 was assigned to this vulnerability."
     },
     {
-        "Modified": "2022-12-18T08:15:00",
+        "Modified": "2022-12-19T02:27:00",
+        "Published": "2022-12-18T06:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-47518",
+        "impact": {},
+        "last-modified": "2022-12-19T02:27:00",
+        "references": [
+            "https://lore.kernel.org/r/20221123153543.8568-5-philipturnbull@github.com",
+            "https://github.com/torvalds/linux/commit/0cdfa9e6f0915e3d243e2393bfa8a22e12d553b0"
+        ],
+        "summary": "An issue was discovered in the Linux kernel before 6.0.11. Missing validation of the number of channels in drivers/net/wireless/microchip/wilc1000/cfg80211.c in the WILC1000 wireless driver can trigger a heap-based buffer overflow when copying the list of operating channels from Wi-Fi management frames."
+    },
+    {
+        "Modified": "2022-12-19T02:27:00",
+        "Published": "2022-12-18T06:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-47519",
+        "impact": {},
+        "last-modified": "2022-12-19T02:27:00",
+        "references": [
+            "https://lore.kernel.org/r/20221123153543.8568-3-philipturnbull@github.com",
+            "https://github.com/torvalds/linux/commit/051ae669e4505abbe05165bebf6be7922de11f41"
+        ],
+        "summary": "An issue was discovered in the Linux kernel before 6.0.11. Missing validation of IEEE80211_P2P_ATTR_OPER_CHANNEL in drivers/net/wireless/microchip/wilc1000/cfg80211.c in the WILC1000 wireless driver can trigger an out-of-bounds write when parsing the channel list attribute from Wi-Fi management frames."
+    },
+    {
+        "Modified": "2022-12-19T02:27:00",
+        "Published": "2022-12-18T06:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-47520",
+        "impact": {},
+        "last-modified": "2022-12-19T02:27:00",
+        "references": [
+            "https://github.com/torvalds/linux/commit/cd21d99e595ec1d8721e1058dcdd4f1f7de1d793",
+            "https://lore.kernel.org/r/20221123153543.8568-2-philipturnbull@github.com"
+        ],
+        "summary": "An issue was discovered in the Linux kernel before 6.0.11. Missing offset validation in drivers/net/wireless/microchip/wilc1000/hif.c in the WILC1000 wireless driver can trigger an out-of-bounds read when parsing a Robust Security Network (RSN) information element from a Netlink packet."
+    },
+    {
+        "Modified": "2022-12-19T02:27:00",
+        "Published": "2022-12-18T06:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-47521",
+        "impact": {},
+        "last-modified": "2022-12-19T02:27:00",
+        "references": [
+            "https://github.com/torvalds/linux/commit/f9b62f9843c7b0afdaecabbcebf1dbba18599408",
+            "https://lore.kernel.org/r/20221123153543.8568-4-philipturnbull@github.com"
+        ],
+        "summary": "An issue was discovered in the Linux kernel before 6.0.11. Missing validation of IEEE80211_P2P_ATTR_CHANNEL_LIST in drivers/net/wireless/microchip/wilc1000/cfg80211.c in the WILC1000 wireless driver can trigger a heap-based buffer overflow when parsing the operating channel attribute from Wi-Fi management frames."
+    },
+    {
+        "Modified": "2022-12-19T02:27:00",
         "Published": "2022-12-18T08:15:00",
         "access": {},
         "assigner": "cna@vuldb.com",
@@ -411,7 +1773,7 @@
         "cwe": "CWE-404",
         "id": "CVE-2021-4247",
         "impact": {},
-        "last-modified": "2022-12-18T08:15:00",
+        "last-modified": "2022-12-19T02:27:00",
         "references": [
             "https://vuldb.com/?id.216184",
             "https://github.com/OWASP/NodeGoat/issues/225",
@@ -420,7 +1782,7 @@
         "summary": "A vulnerability has been found in OWASP NodeGoat and classified as problematic. This vulnerability affects unknown code of the file app/routes/research.js of the component Query Parameter Handler. The manipulation leads to denial of service. The attack can be initiated remotely. The name of the patch is 4a4d1db74c63fb4ff8d366551c3af006c25ead12. It is recommended to apply a patch to fix this issue. The identifier of this vulnerability is VDB-216184."
     },
     {
-        "Modified": "2022-12-18T08:15:00",
+        "Modified": "2022-12-19T02:27:00",
         "Published": "2022-12-18T08:15:00",
         "access": {},
         "assigner": "cna@vuldb.com",
@@ -428,7 +1790,7 @@
         "cwe": "CWE-707",
         "id": "CVE-2022-4592",
         "impact": {},
-        "last-modified": "2022-12-18T08:15:00",
+        "last-modified": "2022-12-19T02:27:00",
         "references": [
             "https://github.com/luckyshot/CRMx/commit/8c62d274986137d6a1d06958a6f75c3553f45f8f",
             "https://vuldb.com/?id.216185"
@@ -436,7 +1798,7 @@
         "summary": "A vulnerability was found in luckyshot CRMx and classified as critical. This issue affects the function get/save/delete/comment/commentdelete of the file index.php. The manipulation leads to sql injection. The attack may be initiated remotely. The name of the patch is 8c62d274986137d6a1d06958a6f75c3553f45f8f. It is recommended to apply a patch to fix this issue. The identifier VDB-216185 was assigned to this vulnerability."
     },
     {
-        "Modified": "2022-12-18T08:15:00",
+        "Modified": "2022-12-19T02:27:00",
         "Published": "2022-12-18T08:15:00",
         "access": {},
         "assigner": "cna@vuldb.com",
@@ -444,7 +1806,7 @@
         "cwe": "CWE-707",
         "id": "CVE-2022-4593",
         "impact": {},
-        "last-modified": "2022-12-18T08:15:00",
+        "last-modified": "2022-12-19T02:27:00",
         "references": [
             "https://github.com/retra/retra-system/commit/a6d94ab88f4a6f631a14c59b72461140fb57ae1f",
             "https://vuldb.com/?id.216186"
@@ -452,7 +1814,7 @@
         "summary": "A vulnerability was found in retra-system. It has been classified as problematic. Affected is an unknown function. The manipulation leads to cross site scripting. It is possible to launch the attack remotely. The name of the patch is a6d94ab88f4a6f631a14c59b72461140fb57ae1f. It is recommended to apply a patch to fix this issue. VDB-216186 is the identifier assigned to this vulnerability."
     },
     {
-        "Modified": "2022-12-18T08:15:00",
+        "Modified": "2022-12-19T02:27:00",
         "Published": "2022-12-18T08:15:00",
         "access": {},
         "assigner": "cna@vuldb.com",
@@ -460,7 +1822,7 @@
         "cwe": "CWE-22",
         "id": "CVE-2022-4594",
         "impact": {},
-        "last-modified": "2022-12-18T08:15:00",
+        "last-modified": "2022-12-19T02:27:00",
         "references": [
             "https://vuldb.com/?id.216187",
             "https://github.com/drogatkin/TJWS2/commit/1bac15c496ec54efe21ad7fab4e17633778582fc"
@@ -468,71 +1830,23 @@
         "summary": "A vulnerability was found in drogatkin TJWS2. It has been declared as critical. Affected by this vulnerability is the function deployWar of the file 1.x/src/rogatkin/web/WarRoller.java. The manipulation leads to path traversal. The attack can be launched remotely. The name of the patch is 1bac15c496ec54efe21ad7fab4e17633778582fc. It is recommended to apply a patch to fix this issue. The associated identifier of this vulnerability is VDB-216187."
     },
     {
-        "Modified": "2022-12-18T06:15:00",
-        "Published": "2022-12-18T06:15:00",
+        "Modified": "2022-12-19T02:27:00",
+        "Published": "2022-12-18T04:15:00",
         "access": {},
         "assigner": "cve@mitre.org",
         "cvss": null,
         "cwe": "Unknown",
-        "id": "CVE-2022-47518",
+        "id": "CVE-2022-47514",
         "impact": {},
-        "last-modified": "2022-12-18T06:15:00",
+        "last-modified": "2022-12-19T02:27:00",
         "references": [
-            "https://lore.kernel.org/r/20221123153543.8568-5-philipturnbull@github.com",
-            "https://github.com/torvalds/linux/commit/0cdfa9e6f0915e3d243e2393bfa8a22e12d553b0"
+            "https://papercutsoftware.github.io/XML-RPC.NET/download.html",
+            "https://github.com/jumpycastle/xmlrpc.net-poc"
         ],
-        "summary": "An issue was discovered in the Linux kernel before 6.0.11. Missing validation of the number of channels in drivers/net/wireless/microchip/wilc1000/cfg80211.c in the WILC1000 wireless driver can trigger a heap-based buffer overflow when copying the list of operating channels from Wi-Fi management frames."
+        "summary": "An XML external entity (XXE) injection vulnerability in XML-RPC.NET before 2.5.0 allows remote authenticated users to conduct server-side request forgery (SSRF) attacks, as demonstrated by a pingback.aspx POST request."
     },
     {
-        "Modified": "2022-12-18T06:15:00",
-        "Published": "2022-12-18T06:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-47519",
-        "impact": {},
-        "last-modified": "2022-12-18T06:15:00",
-        "references": [
-            "https://lore.kernel.org/r/20221123153543.8568-3-philipturnbull@github.com",
-            "https://github.com/torvalds/linux/commit/051ae669e4505abbe05165bebf6be7922de11f41"
-        ],
-        "summary": "An issue was discovered in the Linux kernel before 6.0.11. Missing validation of IEEE80211_P2P_ATTR_OPER_CHANNEL in drivers/net/wireless/microchip/wilc1000/cfg80211.c in the WILC1000 wireless driver can trigger an out-of-bounds write when parsing the channel list attribute from Wi-Fi management frames."
-    },
-    {
-        "Modified": "2022-12-18T06:15:00",
-        "Published": "2022-12-18T06:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-47520",
-        "impact": {},
-        "last-modified": "2022-12-18T06:15:00",
-        "references": [
-            "https://github.com/torvalds/linux/commit/cd21d99e595ec1d8721e1058dcdd4f1f7de1d793",
-            "https://lore.kernel.org/r/20221123153543.8568-2-philipturnbull@github.com"
-        ],
-        "summary": "An issue was discovered in the Linux kernel before 6.0.11. Missing offset validation in drivers/net/wireless/microchip/wilc1000/hif.c in the WILC1000 wireless driver can trigger an out-of-bounds read when parsing a Robust Security Network (RSN) information element from a Netlink packet."
-    },
-    {
-        "Modified": "2022-12-18T06:15:00",
-        "Published": "2022-12-18T06:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-47521",
-        "impact": {},
-        "last-modified": "2022-12-18T06:15:00",
-        "references": [
-            "https://github.com/torvalds/linux/commit/f9b62f9843c7b0afdaecabbcebf1dbba18599408",
-            "https://lore.kernel.org/r/20221123153543.8568-4-philipturnbull@github.com"
-        ],
-        "summary": "An issue was discovered in the Linux kernel before 6.0.11. Missing validation of IEEE80211_P2P_ATTR_CHANNEL_LIST in drivers/net/wireless/microchip/wilc1000/cfg80211.c in the WILC1000 wireless driver can trigger a heap-based buffer overflow when parsing the operating channel attribute from Wi-Fi management frames."
-    },
-    {
-        "Modified": "2022-12-18T05:15:00",
+        "Modified": "2022-12-19T02:27:00",
         "Published": "2022-12-18T05:15:00",
         "access": {},
         "assigner": "cve@mitre.org",
@@ -540,7 +1854,7 @@
         "cwe": "Unknown",
         "id": "CVE-2022-47515",
         "impact": {},
-        "last-modified": "2022-12-18T05:15:00",
+        "last-modified": "2022-12-19T02:27:00",
         "references": [
             "https://github.com/drachtio/drachtio-server/issues/245",
             "https://github.com/drachtio/drachtio-server/commit/4cf9fe2c420b86c16442215d449d40be777c1911"
@@ -548,7 +1862,7 @@
         "summary": "An issue was discovered in drachtio-server before 0.8.20. It allows remote attackers to cause a denial of service (daemon crash) via a long message in a TCP request that leads to std::length_error."
     },
     {
-        "Modified": "2022-12-18T05:15:00",
+        "Modified": "2022-12-19T02:27:00",
         "Published": "2022-12-18T05:15:00",
         "access": {},
         "assigner": "cve@mitre.org",
@@ -556,7 +1870,7 @@
         "cwe": "Unknown",
         "id": "CVE-2022-47516",
         "impact": {},
-        "last-modified": "2022-12-18T05:15:00",
+        "last-modified": "2022-12-19T02:27:00",
         "references": [
             "https://github.com/davehorton/sofia-sip/commit/13b2a135287caa2d67ac6cd5155626821e25b377",
             "https://github.com/drachtio/drachtio-server/issues/244"
@@ -564,7 +1878,7 @@
         "summary": "An issue was discovered in the libsofia-sip fork in drachtio-server before 0.8.20. It allows remote attackers to cause a denial of service (daemon crash) via a crafted UDP message that leads to a failure of the libsofia-sip-ua/tport/tport.c self assertion."
     },
     {
-        "Modified": "2022-12-18T05:15:00",
+        "Modified": "2022-12-19T02:27:00",
         "Published": "2022-12-18T05:15:00",
         "access": {},
         "assigner": "cve@mitre.org",
@@ -572,7 +1886,7 @@
         "cwe": "Unknown",
         "id": "CVE-2022-47517",
         "impact": {},
-        "last-modified": "2022-12-18T05:15:00",
+        "last-modified": "2022-12-19T02:27:00",
         "references": [
             "https://github.com/davehorton/sofia-sip/commit/22c1bd191f0acbf11f0c0fbea1845d9bf9dcd47e",
             "https://github.com/davehorton/sofia-sip/commit/bfc79d85c8f3a4798a3305fb98f5a11c11d0d29f",
@@ -581,127 +1895,7 @@
         "summary": "An issue was discovered in the libsofia-sip fork in drachtio-server before 0.8.19. It allows remote attackers to cause a denial of service (daemon crash) via a crafted UDP message that causes a url_canonize2 heap-based buffer over-read because of an off-by-one error."
     },
     {
-        "Modified": "2022-12-18T04:15:00",
-        "Published": "2022-12-18T04:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-47514",
-        "impact": {},
-        "last-modified": "2022-12-18T04:15:00",
-        "references": [
-            "https://papercutsoftware.github.io/XML-RPC.NET/download.html",
-            "https://github.com/jumpycastle/xmlrpc.net-poc"
-        ],
-        "summary": "An XML external entity (XXE) injection vulnerability in XML-RPC.NET before 2.5.0 allows remote authenticated users to conduct server-side request forgery (SSRF) attacks, as demonstrated by a pingback.aspx POST request."
-    },
-    {
-        "Modified": "2022-12-18T04:15:00",
-        "Published": "2022-12-13T16:15:00",
-        "access": {},
-        "assigner": "secalert@redhat.com",
-        "cvss": null,
-        "cwe": "CWE-94",
-        "id": "CVE-2022-4223",
-        "impact": {},
-        "last-modified": "2022-12-18T04:15:00",
-        "references": [
-            "https://github.com/pgadmin-org/pgadmin4/issues/5593",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/R5EYTPKHVFSDCETBJI7LBZE4EYHBPN2Q/"
-        ],
-        "summary": "The pgAdmin server includes an HTTP API that is intended to be used to validate the path a user selects to external PostgreSQL utilities such as pg_dump and pg_restore. The utility is executed by the server to determine what PostgreSQL version it is from. Versions of pgAdmin prior to 6.17 failed to properly secure this API, which could allow an unauthenticated user to call it with a path of their choosing, such as a UNC path to a server they control on a Windows machine. This would cause an appropriately named executable in the target path to be executed by the pgAdmin server."
-    },
-    {
-        "Modified": "2022-12-18T04:15:00",
-        "Published": "2022-11-09T07:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-400",
-        "id": "CVE-2022-45061",
-        "impact": {},
-        "last-modified": "2022-12-18T04:15:00",
-        "references": [
-            "https://github.com/python/cpython/issues/98433",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/O67LRHDTJWH544KXB6KY4HMHQLYDXFPK/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/4WBZJNSALFGMPYTINIF57HAAK46U72WQ/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/GTPVDZDATRQFE6KAT6B4BQIQ4GRHIIIJ/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RTN2OOLKYTG34DODUEJGT5MLC2PFGPBA/",
-            "https://security.netapp.com/advisory/ntap-20221209-0007/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/ZB5YCMIRVX35RUB6XPOWKENCVCJEVDRK/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/PLQ2BNZVBBAQPV3SPRU24ZD37UYJJS7W/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/VCMDX6IFKLOA3NXUQEV524L5LHTPI2JI/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/ORVCQGJCCAVLN4DJDTWGREFCUWXKQRML/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/T3D5TX4TDJPXHXD2QICKTY3OCQC3JARP/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/63FS6VHY4DCS74HBTEINUDOECQ2X6ZCH/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/JCDJXNBHWXNYUTOEV4H2HCFSRKV3SYL3/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RH57BNT4VQERGEJ5SXNXSVMDYP66YD4H/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/YPNWZKXPKTNHS5FVMN7UQZ2UPCSEFJUK/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/LKWAMPURWUV3DCCT4J7VHRF4NT2CFVBR/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/35YDIWCUMWTMDBWFRAVENFH6BLB65D6S/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/B3YI6JYARWU6GULWOHNUROSACT54XFFS/"
-        ],
-        "summary": "An issue was discovered in Python before 3.11.1. An unnecessary quadratic algorithm exists in one path when processing some inputs to the IDNA (RFC 3490) decoder, such that a crafted, unreasonably long name being presented to the decoder could lead to a CPU denial of service. Hostnames are often supplied by remote servers that could be controlled by a malicious actor; in such a scenario, they could trigger excessive CPU consumption on the client attempting to make use of an attacker-supplied supposed hostname. For example, the attack payload could be placed in the Location header of an HTTP response with status code 302. A fix is planned in 3.11.1, 3.10.9, 3.9.16, 3.8.16, and 3.7.16."
-    },
-    {
-        "Modified": "2022-12-18T04:15:00",
-        "Published": "2022-10-24T14:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-125",
-        "id": "CVE-2021-46848",
-        "impact": {},
-        "last-modified": "2022-12-18T04:15:00",
-        "references": [
-            "https://gitlab.com/gnutls/libtasn1/-/issues/32",
-            "https://bugs.gentoo.org/866237",
-            "https://gitlab.com/gnutls/libtasn1/-/commit/44a700d2051a666235748970c2df047ff207aeb5",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/AV4SHDJF2XLB4CUPTBPQQ6CLGZ5LKXPZ/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/OGO7XST4EIJGX4B2ITZCYSWM24534BSU/",
-            "https://security.netapp.com/advisory/ntap-20221118-0006/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/V5LWOGF7QRMNFRUCZY6TDYQJVFI6MOQ2/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/ECM2ELTVRYV4BZ5L5GMIRQE27RFHPAQ6/"
-        ],
-        "summary": "GNU Libtasn1 before 4.19.0 has an ETYPE_OK off-by-one array size check that affects asn1_encode_simple_der."
-    },
-    {
-        "Modified": "2022-12-18T04:15:00",
-        "Published": "2022-10-12T23:15:00",
-        "access": {},
-        "assigner": "security@google.com",
-        "cvss": null,
-        "cwe": "NVD-CWE-noinfo",
-        "id": "CVE-2022-3171",
-        "impact": {},
-        "last-modified": "2022-12-18T04:15:00",
-        "references": [
-            "https://github.com/protocolbuffers/protobuf/security/advisories/GHSA-h4h5-3hr4-j3g2",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/CBAUKJQL6O4TIWYBENORSY5P43TVB4M3/"
-        ],
-        "summary": "A parsing issue with binary data in protobuf-java core and lite versions prior to 3.21.7, 3.20.3, 3.19.6 and 3.16.3 can lead to a denial of service attack. Inputs containing multiple instances of non-repeated embedded messages with repeated or unknown fields causes objects to be converted back-n-forth between mutable and immutable forms, resulting in potentially long garbage collection pauses. We recommend updating to the versions mentioned above."
-    },
-    {
-        "Modified": "2022-12-18T04:15:00",
-        "Published": "2022-09-22T15:15:00",
-        "access": {},
-        "assigner": "security@google.com",
-        "cvss": null,
-        "cwe": "CWE-119",
-        "id": "CVE-2022-1941",
-        "impact": {},
-        "last-modified": "2022-12-18T04:15:00",
-        "references": [
-            "https://cloud.google.com/support/bulletins#GCP-2022-019",
-            "https://github.com/protocolbuffers/protobuf/security/advisories/GHSA-8gq9-2x98-w8hf",
-            "http://www.openwall.com/lists/oss-security/2022/09/27/1",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/CBAUKJQL6O4TIWYBENORSY5P43TVB4M3/"
-        ],
-        "summary": "A parsing vulnerability for the MessageSet type in the ProtocolBuffers versions prior to and including 3.16.1, 3.17.3, 3.18.2, 3.19.4, 3.20.1 and 3.21.5 for protobuf-cpp, and versions prior to and including 3.16.1, 3.17.3, 3.18.2, 3.19.4, 3.20.1 and 4.21.5 for protobuf-python can lead to out of memory failures. A specially crafted message with multiple key-value per elements creates parsing issues, and can lead to a Denial of Service against services receiving unsanitized input. We recommend upgrading to versions 3.18.3, 3.19.5, 3.20.2, 3.21.6 for protobuf-cpp and 3.18.3, 3.19.5, 3.20.2, 4.21.6 for protobuf-python. Versions for 3.16 and 3.17 are no longer updated."
-    },
-    {
-        "Modified": "2022-12-17T19:15:00",
+        "Modified": "2022-12-19T02:27:00",
         "Published": "2022-12-17T19:15:00",
         "access": {},
         "assigner": "cna@vuldb.com",
@@ -709,7 +1903,7 @@
         "cwe": "CWE-707",
         "id": "CVE-2021-4246",
         "impact": {},
-        "last-modified": "2022-12-17T19:15:00",
+        "last-modified": "2022-12-19T02:27:00",
         "references": [
             "https://vuldb.com/?id.216176",
             "https://github.com/roxlukas/lmeve/commit/29e1ead3bb1c1fad53b77dfc14534496421c5b5d"
@@ -717,7 +1911,7 @@
         "summary": "A vulnerability was found in roxlukas LMeve and classified as critical. Affected by this issue is some unknown functionality of the component Login Page. The manipulation of the argument X-Forwarded-For leads to sql injection. The attack may be launched remotely. The name of the patch is 29e1ead3bb1c1fad53b77dfc14534496421c5b5d. It is recommended to apply a patch to fix this issue. The identifier of this vulnerability is VDB-216176."
     },
     {
-        "Modified": "2022-12-17T19:15:00",
+        "Modified": "2022-12-19T02:27:00",
         "Published": "2022-12-17T19:15:00",
         "access": {},
         "assigner": "cna@vuldb.com",
@@ -725,7 +1919,7 @@
         "cwe": "CWE-707",
         "id": "CVE-2022-4590",
         "impact": {},
-        "last-modified": "2022-12-17T19:15:00",
+        "last-modified": "2022-12-19T02:27:00",
         "references": [
             "https://github.com/mschaef/toto/commit/fdc825ac5249f40683377e8a526a06cdc6870125",
             "https://vuldb.com/?id.216177",
@@ -734,7 +1928,7 @@
         "summary": "A vulnerability was found in mschaef toto up to 1.4.20. It has been classified as problematic. This affects an unknown part of the component Todo List Handler. The manipulation leads to cross site scripting. It is possible to initiate the attack remotely. Upgrading to version 1.4.21 is able to address this issue. The name of the patch is fdc825ac5249f40683377e8a526a06cdc6870125. It is recommended to upgrade the affected component. The identifier VDB-216177 was assigned to this vulnerability."
     },
     {
-        "Modified": "2022-12-17T19:15:00",
+        "Modified": "2022-12-19T02:27:00",
         "Published": "2022-12-17T19:15:00",
         "access": {},
         "assigner": "cna@vuldb.com",
@@ -742,7 +1936,7 @@
         "cwe": "CWE-707",
         "id": "CVE-2022-4591",
         "impact": {},
-        "last-modified": "2022-12-17T19:15:00",
+        "last-modified": "2022-12-19T02:27:00",
         "references": [
             "https://github.com/mschaef/toto/commit/1f27f37c1a06f54a76971f70eaa6139dc139bdf9",
             "https://vuldb.com/?id.216178",
@@ -751,7 +1945,7 @@
         "summary": "A vulnerability was found in mschaef toto up to 1.4.20. It has been declared as problematic. This vulnerability affects unknown code of the component Email Parameter Handler. The manipulation leads to cross site scripting. The attack can be initiated remotely. Upgrading to version 1.4.21 is able to address this issue. The name of the patch is 1f27f37c1a06f54a76971f70eaa6139dc139bdf9. It is recommended to upgrade the affected component. VDB-216178 is the identifier assigned to this vulnerability."
     },
     {
-        "Modified": "2022-12-17T13:15:00",
+        "Modified": "2022-12-19T02:27:00",
         "Published": "2022-12-17T13:15:00",
         "access": {},
         "assigner": "cna@vuldb.com",
@@ -759,7 +1953,7 @@
         "cwe": "CWE-707",
         "id": "CVE-2022-4581",
         "impact": {},
-        "last-modified": "2022-12-17T13:15:00",
+        "last-modified": "2022-12-19T02:27:00",
         "references": [
             "https://github.com/1j01/mind-map/commit/9617e6084dfeccd92079ab4d7f439300a4b24394",
             "https://vuldb.com/?id.216167"
@@ -767,7 +1961,7 @@
         "summary": "A vulnerability was found in 1j01 mind-map and classified as problematic. This issue affects some unknown processing of the file app.coffee. The manipulation of the argument html leads to cross site scripting. The attack may be initiated remotely. The name of the patch is 9617e6084dfeccd92079ab4d7f439300a4b24394. It is recommended to apply a patch to fix this issue. The associated identifier of this vulnerability is VDB-216167."
     },
     {
-        "Modified": "2022-12-17T13:15:00",
+        "Modified": "2022-12-19T02:27:00",
         "Published": "2022-12-17T13:15:00",
         "access": {},
         "assigner": "cna@vuldb.com",
@@ -775,7 +1969,7 @@
         "cwe": "CWE-707",
         "id": "CVE-2022-4582",
         "impact": {},
-        "last-modified": "2022-12-17T13:15:00",
+        "last-modified": "2022-12-19T02:27:00",
         "references": [
             "https://github.com/ivantcholakov/starter-public-edition-4/commit/2606983c20f6ea3430ac4b36b3d2e88aafef45da",
             "https://github.com/ivantcholakov/starter-public-edition-4/releases/tag/v4.6.11",
@@ -784,7 +1978,7 @@
         "summary": "A vulnerability was found in starter-public-edition-4 up to 4.6.10. It has been classified as problematic. Affected is an unknown function. The manipulation leads to cross site scripting. It is possible to launch the attack remotely. Upgrading to version 4.6.11 is able to address this issue. The name of the patch is 2606983c20f6ea3430ac4b36b3d2e88aafef45da. It is recommended to upgrade the affected component. The identifier of this vulnerability is VDB-216168."
     },
     {
-        "Modified": "2022-12-17T13:15:00",
+        "Modified": "2022-12-19T02:27:00",
         "Published": "2022-12-17T13:15:00",
         "access": {},
         "assigner": "cna@vuldb.com",
@@ -792,839 +1986,12 @@
         "cwe": "CWE-22",
         "id": "CVE-2022-4583",
         "impact": {},
-        "last-modified": "2022-12-17T13:15:00",
+        "last-modified": "2022-12-19T02:27:00",
         "references": [
             "https://github.com/LEMS/jLEMS/pull/103",
             "https://github.com/LEMS/jLEMS/commit/8c224637d7d561076364a9e3c2c375daeaf463dc",
             "https://vuldb.com/?id.216169"
         ],
         "summary": "A vulnerability was found in jLEMS. It has been declared as critical. Affected by this vulnerability is the function unpackJar of the file src/main/java/org/lemsml/jlems/io/util/JUtil.java. The manipulation leads to path traversal. The attack can be launched remotely. The name of the patch is 8c224637d7d561076364a9e3c2c375daeaf463dc. It is recommended to apply a patch to fix this issue. The identifier VDB-216169 was assigned to this vulnerability."
-    },
-    {
-        "Modified": "2022-12-17T13:15:00",
-        "Published": "2022-12-17T13:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-122",
-        "id": "CVE-2022-4584",
-        "impact": {},
-        "last-modified": "2022-12-17T13:15:00",
-        "references": [
-            "https://vuldb.com/?id.216170",
-            "https://github.com/axiomatic-systems/Bento4/issues/818",
-            "https://github.com/axiomatic-systems/Bento4/files/10095915/POC2.tar.gz"
-        ],
-        "summary": "A vulnerability was found in Axiomatic Bento4. It has been rated as critical. Affected by this issue is some unknown functionality of the component mp42aac. The manipulation leads to heap-based buffer overflow. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. VDB-216170 is the identifier assigned to this vulnerability."
-    },
-    {
-        "Modified": "2022-12-17T13:15:00",
-        "Published": "2022-12-17T13:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-707",
-        "id": "CVE-2022-4585",
-        "impact": {},
-        "last-modified": "2022-12-17T13:15:00",
-        "references": [
-            "https://github.com/OpencachingDeutschland/oc-server3/commit/c720f2777a452186c67ef30db3679dd409556544",
-            "https://github.com/OpencachingDeutschland/oc-server3/pull/894",
-            "https://vuldb.com/?id.216171"
-        ],
-        "summary": "A vulnerability classified as problematic has been found in Opencaching Deutschland oc-server3. This affects an unknown part of the file htdocs/templates2/ocstyle/start.tpl of the component Cookie Handler. The manipulation of the argument usercountryCode leads to cross site scripting. It is possible to initiate the attack remotely. The name of the patch is c720f2777a452186c67ef30db3679dd409556544. It is recommended to apply a patch to fix this issue. The associated identifier of this vulnerability is VDB-216171."
-    },
-    {
-        "Modified": "2022-12-17T13:15:00",
-        "Published": "2022-12-17T13:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-707",
-        "id": "CVE-2022-4586",
-        "impact": {},
-        "last-modified": "2022-12-17T13:15:00",
-        "references": [
-            "https://github.com/OpencachingDeutschland/oc-server3/commit/a9f79c7da78cd24a7ef1d298e6bc86006972ea73",
-            "https://github.com/OpencachingDeutschland/oc-server3/pull/894",
-            "https://vuldb.com/?id.216172"
-        ],
-        "summary": "A vulnerability classified as problematic was found in Opencaching Deutschland oc-server3. This vulnerability affects unknown code of the file htdocs/templates2/ocstyle/cachelists.tpl of the component Cachelist Handler. The manipulation of the argument name_filter/by_filter leads to cross site scripting. The attack can be initiated remotely. The name of the patch is a9f79c7da78cd24a7ef1d298e6bc86006972ea73. It is recommended to apply a patch to fix this issue. The identifier of this vulnerability is VDB-216172."
-    },
-    {
-        "Modified": "2022-12-17T13:15:00",
-        "Published": "2022-12-17T13:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-707",
-        "id": "CVE-2022-4587",
-        "impact": {},
-        "last-modified": "2022-12-17T13:15:00",
-        "references": [
-            "https://github.com/OpencachingDeutschland/oc-server3/commit/3296ebd61e7fe49e93b5755d5d7766d6e94a7667",
-            "https://github.com/OpencachingDeutschland/oc-server3/pull/893",
-            "https://vuldb.com/?id.216173"
-        ],
-        "summary": "A vulnerability, which was classified as problematic, has been found in Opencaching Deutschland oc-server3. This issue affects some unknown processing of the file htdocs/templates2/ocstyle/login.tpl of the component Login Page. The manipulation of the argument username leads to cross site scripting. The attack may be initiated remotely. The name of the patch is 3296ebd61e7fe49e93b5755d5d7766d6e94a7667. It is recommended to apply a patch to fix this issue. The identifier VDB-216173 was assigned to this vulnerability."
-    },
-    {
-        "Modified": "2022-12-17T13:15:00",
-        "Published": "2022-12-17T13:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-707",
-        "id": "CVE-2022-4588",
-        "impact": {},
-        "last-modified": "2022-12-17T13:15:00",
-        "references": [
-            "https://vuldb.com/?id.216174",
-            "https://github.com/sleepepi/slice/commit/6523bb17d889e2ab13d767f38afefdb37083f1d0",
-            "https://github.com/sleepepi/slice/releases/tag/v85.0.0"
-        ],
-        "summary": "A vulnerability, which was classified as problematic, was found in Boston Sleep slice up to 84.2.0. Affected is an unknown function of the component Layout Handler. The manipulation leads to cross site scripting. It is possible to launch the attack remotely. Upgrading to version 85.0.0 is able to address this issue. The name of the patch is 6523bb17d889e2ab13d767f38afefdb37083f1d0. It is recommended to upgrade the affected component. VDB-216174 is the identifier assigned to this vulnerability."
-    },
-    {
-        "Modified": "2022-12-17T13:15:00",
-        "Published": "2022-12-17T13:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-601",
-        "id": "CVE-2022-4589",
-        "impact": {},
-        "last-modified": "2022-12-17T13:15:00",
-        "references": [
-            "https://github.com/cyface/django-termsandconditions/pull/239",
-            "https://github.com/cyface/django-termsandconditions/releases/tag/v2.0.11",
-            "https://vuldb.com/?id.216175",
-            "https://github.com/cyface/django-termsandconditions/commit/03396a1c2e0af95e12a45c5faef7e47a4b513e1a"
-        ],
-        "summary": "A vulnerability has been found in cyface Terms and Conditions Module up to 2.0.10 and classified as problematic. Affected by this vulnerability is the function returnTo of the file termsandconditions/views.py. The manipulation leads to open redirect. The attack can be launched remotely. Upgrading to version 2.0.11 is able to address this issue. The name of the patch is 03396a1c2e0af95e12a45c5faef7e47a4b513e1a. It is recommended to upgrade the affected component. The associated identifier of this vulnerability is VDB-216175."
-    },
-    {
-        "Modified": "2022-12-17T11:15:00",
-        "Published": "2022-10-17T09:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-3531",
-        "impact": {},
-        "last-modified": "2022-12-17T11:15:00",
-        "references": [],
-        "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was withdrawn by its CNA. Further investigation showed that it was not a security issue. Notes: none."
-    },
-    {
-        "Modified": "2022-12-17T11:15:00",
-        "Published": "2022-10-17T09:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-3532",
-        "impact": {},
-        "last-modified": "2022-12-17T11:15:00",
-        "references": [],
-        "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was withdrawn by its CNA. Further investigation showed that it was not a security issue. Notes: none."
-    },
-    {
-        "Modified": "2022-12-17T06:15:00",
-        "Published": "2022-12-17T06:15:00",
-        "access": {},
-        "assigner": "security@huntr.dev",
-        "cvss": null,
-        "cwe": "CWE-284",
-        "id": "CVE-2022-4567",
-        "impact": {},
-        "last-modified": "2022-12-17T06:15:00",
-        "references": [
-            "https://huntr.dev/bounties/1ac677c4-ec0a-4788-9465-51d9b6bd8fd2",
-            "https://github.com/openemr/openemr/commit/953cb84dfd55fee9d5296668ec7fdb8bf25bcea4"
-        ],
-        "summary": "Improper Access Control in GitHub repository openemr/openemr prior to 7.0.0.2."
-    },
-    {
-        "Modified": "2022-12-17T04:42:00",
-        "Published": "2022-12-15T19:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2020-20589",
-        "impact": {},
-        "last-modified": "2022-12-17T04:42:00",
-        "references": [
-            "https://github.com/liufee/cms/issues/45"
-        ],
-        "summary": "Cross Site Scripting (XSS) vulnerability in FeehiCMS 2.0.8 allows remote attackers to run arbitrary code via tha lang attribute of an html tag."
-    },
-    {
-        "Modified": "2022-12-17T04:42:00",
-        "Published": "2022-12-15T19:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2020-36607",
-        "impact": {},
-        "last-modified": "2022-12-17T04:42:00",
-        "references": [
-            "https://github.com/liufee/cms/issues/45"
-        ],
-        "summary": "Cross Site Scripting (XSS) vulnerability in FeehiCMS 2.0.8 allows remote attackers to run arbitrary code via tha lang attribute of an html tag."
-    },
-    {
-        "Modified": "2022-12-17T04:42:00",
-        "Published": "2022-12-15T19:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2021-36573",
-        "impact": {},
-        "last-modified": "2022-12-17T04:42:00",
-        "references": [
-            "https://github.com/liufee/cms/issues/59"
-        ],
-        "summary": "File Upload vulnerability in Feehi CMS thru 2.1.1 allows attackers to run arbitrary code via crafted image upload."
-    },
-    {
-        "Modified": "2022-12-17T04:15:00",
-        "Published": "2022-10-07T21:15:00",
-        "access": {},
-        "assigner": "security@puppet.com",
-        "cvss": null,
-        "cwe": "CWE-77",
-        "id": "CVE-2022-3275",
-        "impact": {},
-        "last-modified": "2022-12-17T04:15:00",
-        "references": [
-            "https://puppet.com/security/cve/CVE-2022-3275",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/YR5LIOF5VKS4DC2NQWXTMPPXOYJC46XC/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/CH4NUKZKPY4MFQHFBTONJK2AWES4DFDA/"
-        ],
-        "summary": "Command injection is possible in the puppetlabs-apt module prior to version 9.0.0. A malicious actor is able to exploit this vulnerability only if they are able to provide unsanitized input to the module. This condition is rare in most deployments of Puppet and Puppet Enterprise."
-    },
-    {
-        "Modified": "2022-12-17T04:15:00",
-        "Published": "2022-09-13T15:15:00",
-        "access": {},
-        "assigner": "cve@gitlab.com",
-        "cvss": null,
-        "cwe": "CWE-835",
-        "id": "CVE-2022-3190",
-        "impact": {},
-        "last-modified": "2022-12-17T04:15:00",
-        "references": [
-            "https://gitlab.com/gitlab-org/cves/-/blob/master/2022/CVE-2022-3190.json",
-            "https://gitlab.com/wireshark/wireshark/-/issues/18307",
-            "https://www.wireshark.org/security/wnpa-sec-2022-06.html",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/YR5LIOF5VKS4DC2NQWXTMPPXOYJC46XC/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/CH4NUKZKPY4MFQHFBTONJK2AWES4DFDA/"
-        ],
-        "summary": "Infinite loop in the F5 Ethernet Trailer protocol dissector in Wireshark 3.6.0 to 3.6.7 and 3.4.0 to 3.4.15 allows denial of service via packet injection or crafted capture file"
-    },
-    {
-        "Modified": "2022-12-17T02:15:00",
-        "Published": "2022-12-17T02:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-22",
-        "id": "CVE-2022-4572",
-        "impact": {},
-        "last-modified": "2022-12-17T02:15:00",
-        "references": [
-            "https://github.com/jrspruitt/ubi_reader/releases/tag/v0.8.5-master",
-            "https://github.com/jrspruitt/ubi_reader/commit/d5d68e6b1b9f7070c29df5f67fc060f579ae9139",
-            "https://vuldb.com/?id.216146",
-            "https://github.com/jrspruitt/ubi_reader/pull/57"
-        ],
-        "summary": "A vulnerability, which was classified as problematic, has been found in UBI Reader up to 0.8.0. Affected by this issue is the function ubireader_extract_files of the file ubireader/ubifs/output.py of the component UBIFS File Handler. The manipulation leads to path traversal. The attack may be launched remotely. Upgrading to version 0.8.5 is able to address this issue. The name of the patch is d5d68e6b1b9f7070c29df5f67fc060f579ae9139. It is recommended to upgrade the affected component. VDB-216146 is the identifier assigned to this vulnerability."
-    },
-    {
-        "Modified": "2022-12-17T01:15:00",
-        "Published": "2022-12-17T01:15:00",
-        "access": {},
-        "assigner": "security-advisories@github.com",
-        "cvss": null,
-        "cwe": "CWE-201",
-        "id": "CVE-2022-23488",
-        "impact": {},
-        "last-modified": "2022-12-17T01:15:00",
-        "references": [
-            "https://github.com/bigbluebutton/bigbluebutton/releases/tag/v2.4-rc-6",
-            "https://github.com/bigbluebutton/bigbluebutton/security/advisories/GHSA-j5g3-f74q-rvfq"
-        ],
-        "summary": "BigBlueButton is an open source web conferencing system. Versions prior to 2.4-rc-6 are vulnerable to Insertion of Sensitive Information Into Sent Data. The moderators-only webcams lock setting is not enforced on the backend, which allows an attacker to subscribe to viewers' webcams, even when the lock setting is applied. (The required streamId was being sent to all users even with lock setting applied). This issue is fixed in version 2.4-rc-6. There are no workarounds."
-    },
-    {
-        "Modified": "2022-12-17T00:15:00",
-        "Published": "2022-12-17T00:15:00",
-        "access": {},
-        "assigner": "security-advisories@github.com",
-        "cvss": null,
-        "cwe": "CWE-23",
-        "id": "CVE-2022-23531",
-        "impact": {},
-        "last-modified": "2022-12-17T00:15:00",
-        "references": [
-            "https://github.com/DataDog/guarddog/releases/tag/v0.1.5",
-            "https://github.com/DataDog/guarddog/security/advisories/GHSA-rp2v-v467-q9vq",
-            "https://github.com/DataDog/guarddog/pull/89/commits/a56aff58264cb6b7855d71b00dc10c39a5dbd306"
-        ],
-        "summary": "GuardDog is a CLI tool to identify malicious PyPI packages. Versions prior to 0.1.5 are vulnerable to Relative Path Traversal when scanning a specially-crafted local PyPI package. Running GuardDog against a specially-crafted package can allow an attacker to write an arbitrary file on the machine where GuardDog is executed due to a path traversal vulnerability when extracting the .tar.gz file of the package being scanned, which exists by design in the tarfile.TarFile.extractall function. This issue is patched in version 0.1.5."
-    },
-    {
-        "Modified": "2022-12-16T23:15:00",
-        "Published": "2022-12-16T23:15:00",
-        "access": {},
-        "assigner": "security-advisories@github.com",
-        "cvss": null,
-        "cwe": "CWE-22",
-        "id": "CVE-2022-23530",
-        "impact": {},
-        "last-modified": "2022-12-16T23:15:00",
-        "references": [
-            "https://github.com/DataDog/guarddog/blob/a1d064ceb09d39bb28deb6972bc0a278756ea91f/guarddog/scanners/package_scanner.py#L153..158",
-            "https://github.com/DataDog/guarddog/security/advisories/GHSA-78m5-jpmf-ch7v",
-            "https://github.com/DataDog/guarddog/commit/37c7d0767ba28f4df46117d478f97652594c491c"
-        ],
-        "summary": "GuardDog is a CLI tool to identify malicious PyPI packages. Versions prior to v0.1.8 are vulnerable to arbitrary file write when scanning a specially-crafted remote PyPI package. Extracting files using shutil.unpack_archive() from a potentially malicious tarball without validating that the destination file path is within the intended destination directory can cause files outside the destination directory to be overwritten. This issue is patched in version 0.1.8. Potential workarounds include using a safer module, like zipfile, and validating the location of the extracted files and discarding those with malicious paths."
-    },
-    {
-        "Modified": "2022-12-16T23:15:00",
-        "Published": "2022-12-16T23:15:00",
-        "access": {},
-        "assigner": "security@microfocus.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-38756",
-        "impact": {},
-        "last-modified": "2022-12-16T23:15:00",
-        "references": [
-            "https://portal.microfocus.com/s/article/KM000012374?language=en_US"
-        ],
-        "summary": "A vulnerability has been identified in Micro Focus GroupWise Web in versions prior to 18.4.2. The GW Web component makes a request to the Post Office Agent that contains sensitive information in the query parameters that could be logged by any intervening HTTP proxies."
-    },
-    {
-        "Modified": "2022-12-16T23:15:00",
-        "Published": "2022-11-08T22:15:00",
-        "access": {},
-        "assigner": "security@android.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-20463",
-        "impact": {},
-        "last-modified": "2022-12-16T23:15:00",
-        "references": [],
-        "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was withdrawn by its CNA. Further investigation showed that it was not a security issue. Notes: none."
-    },
-    {
-        "Modified": "2022-12-16T22:19:00",
-        "Published": "2022-12-14T22:15:00",
-        "access": {},
-        "assigner": "security@wordfence.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-4410",
-        "impact": {},
-        "last-modified": "2022-12-16T22:19:00",
-        "references": [
-            "https://plugins.trac.wordpress.org/changeset?sfp_email=&sfph_mail=&reponame=&old=2833667%40permalink-manager&new=2833667%40permalink-manager&sfp_email=&sfph_mail=",
-            "https://www.wordfence.com/threat-intel/vulnerabilities/id/6cbf9636-9d9d-44d4-b873-8920f2dbb846"
-        ],
-        "summary": "The Permalink Manager Lite plugin for WordPress is vulnerable to Stored Cross-Site Scripting in versions up to, and including 2.2.20.3 due to improper output escaping on post/page/media titles. This makes it possible for attackers to inject arbitrary web scripts on the permalink-manager page if another plugin or theme is installed on the site that allows lower privileged users with unfiltered_html the ability to modify post/page titles with malicious web scripts."
-    },
-    {
-        "Modified": "2022-12-16T22:15:00",
-        "Published": "2022-12-16T22:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-26579",
-        "impact": {},
-        "last-modified": "2022-12-16T22:15:00",
-        "references": [
-            "https://cyshield.com/e077d6c3-adff-49a1-afc3-71e10140f95c"
-        ],
-        "summary": "PAX Technology A930 PayDroid 7.1.1 Virgo V04.4.02 20211201 allows root privileged attackers to install an unsigned application by copying the APK to /data/app, setting the appropriate permissions and rebooting the device."
-    },
-    {
-        "Modified": "2022-12-16T22:15:00",
-        "Published": "2022-12-16T22:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-26580",
-        "impact": {},
-        "last-modified": "2022-12-16T22:15:00",
-        "references": [
-            "https://cyshield.com/e077d6c3-adff-49a1-afc3-71e10140f95c"
-        ],
-        "summary": "PAX Technology A930 PayDroid 7.1.1 Virgo V04.4.02 20211201 was discovered to be vulnerable to command injection."
-    },
-    {
-        "Modified": "2022-12-16T22:15:00",
-        "Published": "2022-12-16T22:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-26581",
-        "impact": {},
-        "last-modified": "2022-12-16T22:15:00",
-        "references": [
-            "https://cyshield.com/e077d6c3-adff-49a1-afc3-71e10140f95c"
-        ],
-        "summary": "The ADB daemon in PAX Technology A930 PayDroid 7.1.1 Virgo V04.4.02 20211201 allows the execution of the systool utility in production mode, allowing unauthenticated attackers to perform privileged actions."
-    },
-    {
-        "Modified": "2022-12-16T22:15:00",
-        "Published": "2022-12-16T22:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-26582",
-        "impact": {},
-        "last-modified": "2022-12-16T22:15:00",
-        "references": [
-            "https://cyshield.com/e077d6c3-adff-49a1-afc3-71e10140f95c"
-        ],
-        "summary": "The systool_server in PAX Technology A930 PayDroid 7.1.1 Virgo V04.4.02 20211201 fails to check for dollar signs or backticks in user supplied commands, leading to to arbitrary command execution as root."
-    },
-    {
-        "Modified": "2022-12-16T22:15:00",
-        "Published": "2022-12-16T22:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-37832",
-        "impact": {},
-        "last-modified": "2022-12-16T22:15:00",
-        "references": [
-            "https://labs.jumpsec.com/advisory-cve-2022-37832-mutiny-network-monitoring-appliance-hardcoded-credentials/"
-        ],
-        "summary": "Mutiny 7.2.0-10788 suffers from Hardcoded root password."
-    },
-    {
-        "Modified": "2022-12-16T22:15:00",
-        "Published": "2022-12-16T22:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2021-31650",
-        "impact": {},
-        "last-modified": "2022-12-16T22:15:00",
-        "references": [
-            "https://www.exploit-db.com/exploits/49493"
-        ],
-        "summary": "A SQL injection vulnerability in Sourcecodester Online Grading System 1.0 allows remote attackers to execute arbitrary SQL commands via the uname parameter."
-    },
-    {
-        "Modified": "2022-12-16T22:15:00",
-        "Published": "2022-12-16T22:15:00",
-        "access": {},
-        "assigner": "security-advisories@github.com",
-        "cvss": null,
-        "cwe": "CWE-863",
-        "id": "CVE-2022-23490",
-        "impact": {},
-        "last-modified": "2022-12-16T22:15:00",
-        "references": [
-            "https://github.com/bigbluebutton/bigbluebutton/releases/tag/v2.4.0",
-            "https://github.com/bigbluebutton/bigbluebutton/security/advisories/GHSA-4qgc-xhw5-6qfg"
-        ],
-        "summary": "BigBlueButton is an open source web conferencing system. Versions prior to 2.4.0 expose sensitive information to Unauthorized Actors. This issue affects meetings with polls, where the attacker is a meeting participant. Subscribing to the current-poll collection does not update the client UI, but does give the attacker access to the contents of the collection, which include the individual poll responses. This issue is patched in version 2.4.0. There are no workarounds."
-    },
-    {
-        "Modified": "2022-12-16T22:15:00",
-        "Published": "2022-12-16T22:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2021-38241",
-        "impact": {},
-        "last-modified": "2022-12-16T22:15:00",
-        "references": [
-            "https://www.du1ge.com/archives/CVE-2021-38241"
-        ],
-        "summary": "Deserialization issue discovered in Ruoyi before 4.6.1 allows remote attackers to run arbitrary code via weak cipher in Shiro framework."
-    },
-    {
-        "Modified": "2022-12-16T22:12:00",
-        "Published": "2022-12-14T21:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-863",
-        "id": "CVE-2022-47408",
-        "impact": {},
-        "last-modified": "2022-12-16T22:12:00",
-        "references": [
-            "https://typo3.org/security/advisory/typo3-ext-sa-2022-017"
-        ],
-        "summary": "An issue was discovered in the fp_newsletter (aka Newsletter subscriber management) extension before 1.1.1, 1.2.0, 2.x before 2.1.2, 2.2.1 through 2.4.0, and 3.x before 3.2.6 for TYPO3. There is a CAPTCHA bypass that can lead to subscribing many people."
-    },
-    {
-        "Modified": "2022-12-16T22:11:00",
-        "Published": "2022-12-14T21:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "NVD-CWE-noinfo",
-        "id": "CVE-2022-47409",
-        "impact": {},
-        "last-modified": "2022-12-16T22:11:00",
-        "references": [
-            "https://typo3.org/security/advisory/typo3-ext-sa-2022-017"
-        ],
-        "summary": "An issue was discovered in the fp_newsletter (aka Newsletter subscriber management) extension before 1.1.1, 1.2.0, 2.x before 2.1.2, 2.2.1 through 2.4.0, and 3.x before 3.2.6 for TYPO3. Attackers can unsubscribe everyone via a series of modified subscription UIDs in deleteAction operations."
-    },
-    {
-        "Modified": "2022-12-16T22:11:00",
-        "Published": "2022-12-14T21:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-668",
-        "id": "CVE-2022-47410",
-        "impact": {},
-        "last-modified": "2022-12-16T22:11:00",
-        "references": [
-            "https://typo3.org/security/advisory/typo3-ext-sa-2022-017"
-        ],
-        "summary": "An issue was discovered in the fp_newsletter (aka Newsletter subscriber management) extension before 1.1.1, 1.2.0, 2.x before 2.1.2, 2.2.1 through 2.4.0, and 3.x before 3.2.6 for TYPO3. Data about subscribers may be obtained via createAction operations."
-    },
-    {
-        "Modified": "2022-12-16T22:11:00",
-        "Published": "2022-12-14T21:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-668",
-        "id": "CVE-2022-47411",
-        "impact": {},
-        "last-modified": "2022-12-16T22:11:00",
-        "references": [
-            "https://typo3.org/security/advisory/typo3-ext-sa-2022-017"
-        ],
-        "summary": "An issue was discovered in the fp_newsletter (aka Newsletter subscriber management) extension before 1.1.1, 1.2.0, 2.x before 2.1.2, 2.2.1 through 2.4.0, and 3.x before 3.2.6 for TYPO3. Data about subscribers may be obtained via unsubscribeAction operations."
-    },
-    {
-        "Modified": "2022-12-16T22:03:00",
-        "Published": "2022-12-16T21:15:00",
-        "access": {},
-        "assigner": "PSIRT@rockwellautomation.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-46670",
-        "impact": {},
-        "last-modified": "2022-12-16T22:03:00",
-        "references": [
-            "https://rockwellautomation.custhelp.com/app/answers/answer_view/a_id/1137679"
-        ],
-        "summary": "Rockwell Automation was made aware of a vulnerability by a security researcher from Georgia Institute of Technology that the MicroLogix 1100 and 1400 controllers contain a vulnerability that may give an attacker the ability to accomplish remote code execution. The vulnerability is an unauthenticated stored cross-site scripting vulnerability in the embedded webserver. The payload is transferred to the controller over SNMP and is rendered on the homepage of the embedded website."
-    },
-    {
-        "Modified": "2022-12-16T22:03:00",
-        "Published": "2022-12-16T21:15:00",
-        "access": {},
-        "assigner": "PSIRT@rockwellautomation.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-3157",
-        "impact": {},
-        "last-modified": "2022-12-16T22:03:00",
-        "references": [
-            "https://rockwellautomation.custhelp.com/app/answers/answer_view/a_id/1137757"
-        ],
-        "summary": "A vulnerability exists in the Rockwell Automation controllers that allows a malformed CIP request to cause a major non-recoverable fault (MNRF) and a denial-of-service condition (DOS)."
-    },
-    {
-        "Modified": "2022-12-16T22:03:00",
-        "Published": "2022-12-16T20:15:00",
-        "access": {},
-        "assigner": "ics-cert@hq.dhs.gov",
-        "cvss": null,
-        "cwe": "CWE-125",
-        "id": "CVE-2022-2966",
-        "impact": {},
-        "last-modified": "2022-12-16T22:03:00",
-        "references": [
-            "https://www.cisa.gov/uscert/ics/advisories/icsa-22-244-01"
-        ],
-        "summary": "Out-of-bounds Read vulnerability in Delta Electronics DOPSoft.This issue affects DOPSoft: All Versions."
-    },
-    {
-        "Modified": "2022-12-16T22:03:00",
-        "Published": "2022-12-16T20:15:00",
-        "access": {},
-        "assigner": "PSIRT@rockwellautomation.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-3166",
-        "impact": {},
-        "last-modified": "2022-12-16T22:03:00",
-        "references": [
-            "https://rockwellautomation.custhelp.com/app/answers/answer_view/a_id/1137678"
-        ],
-        "summary": "Rockwell Automation was made aware that the webservers of the Micrologix 1100 and 1400 controllers contain a vulnerability that may lead to a denial-of-service condition. The security vulnerability could be exploited by an attacker with network access to the affected systems by sending TCP packets to webserver and closing it abruptly which would cause a denial-of-service condition for the web server application on the device"
-    },
-    {
-        "Modified": "2022-12-16T22:03:00",
-        "Published": "2022-12-16T20:15:00",
-        "access": {},
-        "assigner": "vulnreport@tenable.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-47208",
-        "impact": {},
-        "last-modified": "2022-12-16T22:03:00",
-        "references": [
-            "https://www.tenable.com/security/research/tra-2022-37"
-        ],
-        "summary": "The \u201cpuhttpsniff\u201d service, which runs by default, is susceptible to command injection due to improperly sanitized user input. An unauthenticated attacker on the same network segment as the router can execute arbitrary commands on the device without authentication."
-    },
-    {
-        "Modified": "2022-12-16T22:03:00",
-        "Published": "2022-12-16T20:15:00",
-        "access": {},
-        "assigner": "vulnreport@tenable.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-47209",
-        "impact": {},
-        "last-modified": "2022-12-16T22:03:00",
-        "references": [
-            "https://www.tenable.com/security/research/tra-2022-37"
-        ],
-        "summary": "A support user exists on the device and appears to be a backdoor for Technical Support staff. The default password for this account is \u201csupport\u201d and cannot be changed by a user via any normally accessible means."
-    },
-    {
-        "Modified": "2022-12-16T22:03:00",
-        "Published": "2022-12-16T20:15:00",
-        "access": {},
-        "assigner": "vulnreport@tenable.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-47210",
-        "impact": {},
-        "last-modified": "2022-12-16T22:03:00",
-        "references": [
-            "https://www.tenable.com/security/research/tra-2022-37"
-        ],
-        "summary": "The default console presented to users over telnet (when enabled) is restricted to a subset of commands. Commands issued at this console, however, appear to be fed directly into a system call or other similar function. This allows any authenticated user to execute arbitrary commands on the device."
-    },
-    {
-        "Modified": "2022-12-16T21:55:00",
-        "Published": "2022-12-14T21:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "NVD-CWE-noinfo",
-        "id": "CVE-2022-47407",
-        "impact": {},
-        "last-modified": "2022-12-16T21:55:00",
-        "references": [
-            "https://typo3.org/security/advisory/typo3-ext-sa-2022-018"
-        ],
-        "summary": "An issue was discovered in the fp_masterquiz (aka Master-Quiz) extension before 2.2.1, and 3.x before 3.5.1, for TYPO3. An attacker can continue the quiz of a different user. In doing so, the attacker can view that user's answers and modify those answers."
-    },
-    {
-        "Modified": "2022-12-16T21:51:00",
-        "Published": "2022-12-14T19:15:00",
-        "access": {},
-        "assigner": "security@vmware.com",
-        "cvss": null,
-        "cwe": "CWE-22",
-        "id": "CVE-2022-31703",
-        "impact": {},
-        "last-modified": "2022-12-16T21:51:00",
-        "references": [
-            "https://www.vmware.com/security/advisories/VMSA-2022-0031.html"
-        ],
-        "summary": "vRealize Network Insight (vRNI) directory traversal vulnerability in vRNI REST API. A malicious actor with network access to the vRNI REST API can read arbitrary files from the server."
-    },
-    {
-        "Modified": "2022-12-16T21:48:00",
-        "Published": "2022-12-14T17:15:00",
-        "access": {},
-        "assigner": "security-advisories@github.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-23519",
-        "impact": {},
-        "last-modified": "2022-12-16T21:48:00",
-        "references": [
-            "https://hackerone.com/reports/1656627",
-            "https://github.com/rails/rails-html-sanitizer/security/advisories/GHSA-9h9g-93gc-623h"
-        ],
-        "summary": "rails-html-sanitizer is responsible for sanitizing HTML fragments in Rails applications. Prior to version 1.4.4, a possible XSS vulnerability with certain configurations of Rails::Html::Sanitizer may allow an attacker to inject content if the application developer has overridden the sanitizer's allowed tags in either of the following ways: allow both \"math\" and \"style\" elements, or allow both \"svg\" and \"style\" elements. Code is only impacted if allowed tags are being overridden. . This issue is fixed in version 1.4.4. All users overriding the allowed tags to include \"math\" or \"svg\" and \"style\" should either upgrade or use the following workaround immediately: Remove \"style\" from the overridden allowed tags, or remove \"math\" and \"svg\" from the overridden allowed tags."
-    },
-    {
-        "Modified": "2022-12-16T21:48:00",
-        "Published": "2022-12-13T21:15:00",
-        "access": {},
-        "assigner": "ics-cert@hq.dhs.gov",
-        "cvss": null,
-        "cwe": "CWE-908",
-        "id": "CVE-2022-2949",
-        "impact": {},
-        "last-modified": "2022-12-16T21:48:00",
-        "references": [
-            "https://www.cisa.gov/uscert/ics/advisories/icsa-22-284-01"
-        ],
-        "summary": "Altair HyperView Player versions 2021.1.0.27 and prior are vulnerable to the use of uninitialized memory vulnerability during parsing of H3D files. A DWORD is extracted from an uninitialized buffer and, after sign extension, is used as an index into a stack variable to increment a counter leading to memory corruption."
-    },
-    {
-        "Modified": "2022-12-16T21:47:00",
-        "Published": "2022-12-13T21:15:00",
-        "access": {},
-        "assigner": "ics-cert@hq.dhs.gov",
-        "cvss": null,
-        "cwe": "CWE-119",
-        "id": "CVE-2022-2947",
-        "impact": {},
-        "last-modified": "2022-12-16T21:47:00",
-        "references": [
-            "https://www.cisa.gov/uscert/ics/advisories/icsa-22-284-01"
-        ],
-        "summary": "Altair HyperView Player versions 2021.1.0.27 and prior perform operations on a memory buffer but can read from or write to a memory location outside of the intended boundary of the buffer. This hits initially as a read access violation, leading to a memory corruption situation."
-    },
-    {
-        "Modified": "2022-12-16T21:40:00",
-        "Published": "2022-12-14T21:15:00",
-        "access": {},
-        "assigner": "secalert@redhat.com",
-        "cvss": null,
-        "cwe": "CWE-476",
-        "id": "CVE-2022-3110",
-        "impact": {},
-        "last-modified": "2022-12-16T21:40:00",
-        "references": [
-            "https://bugzilla.redhat.com/show_bug.cgi?id=2153055",
-            "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?h=v5.19-rc2&id=f94b47c6bde624d6c07f43054087607c52054a95"
-        ],
-        "summary": "An issue was discovered in the Linux kernel through 5.16-rc6. _rtw_init_xmit_priv in drivers/staging/r8188eu/core/rtw_xmit.c lacks check of the return value of rtw_alloc_hwxmits() and will cause the null pointer dereference."
-    },
-    {
-        "Modified": "2022-12-16T21:39:00",
-        "Published": "2022-12-14T21:15:00",
-        "access": {},
-        "assigner": "secalert@redhat.com",
-        "cvss": null,
-        "cwe": "CWE-252",
-        "id": "CVE-2022-3108",
-        "impact": {},
-        "last-modified": "2022-12-16T21:39:00",
-        "references": [
-            "https://bugzilla.redhat.com/show_bug.cgi?id=2153052",
-            "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?h=v5.19-rc2&id=abfaf0eee97925905e742aa3b0b72e04a918fa9e"
-        ],
-        "summary": "An issue was discovered in the Linux kernel through 5.16-rc6. kfd_parse_subtype_iolink in drivers/gpu/drm/amd/amdkfd/kfd_crat.c lacks check of the return value of kmemdup()."
-    },
-    {
-        "Modified": "2022-12-16T21:38:00",
-        "Published": "2022-12-14T18:15:00",
-        "access": {},
-        "assigner": "security-advisories@github.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-23520",
-        "impact": {},
-        "last-modified": "2022-12-16T21:38:00",
-        "references": [
-            "https://github.com/rails/rails-html-sanitizer/security/advisories/GHSA-rrfc-7g8p-99q8",
-            "https://hackerone.com/reports/1654310"
-        ],
-        "summary": "rails-html-sanitizer is responsible for sanitizing HTML fragments in Rails applications. Prior to version 1.4.4, there is a possible XSS vulnerability with certain configurations of Rails::Html::Sanitizer due to an incomplete fix of CVE-2022-32209. Rails::Html::Sanitizer may allow an attacker to inject content if the application developer has overridden the sanitizer's allowed tags to allow both \"select\" and \"style\" elements. Code is only impacted if allowed tags are being overridden. This issue is patched in version 1.4.4. All users overriding the allowed tags to include both \"select\" and \"style\" should either upgrade or use this workaround: Remove either \"select\" or \"style\" from the overridden allowed tags. NOTE: Code is _not_ impacted if allowed tags are overridden using either the :tags option to the Action View helper method sanitize or the :tags option to the instance method SafeListSanitizer#sanitize."
-    },
-    {
-        "Modified": "2022-12-16T21:35:00",
-        "Published": "2022-12-14T21:15:00",
-        "access": {},
-        "assigner": "secalert@redhat.com",
-        "cvss": null,
-        "cwe": "CWE-476",
-        "id": "CVE-2022-3106",
-        "impact": {},
-        "last-modified": "2022-12-16T21:35:00",
-        "references": [
-            "https://bugzilla.redhat.com/show_bug.cgi?id=2153066",
-            "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?h=v5.19-rc2&id=407ecd1bd726f240123f704620d46e285ff30dd9"
-        ],
-        "summary": "An issue was discovered in the Linux kernel through 5.16-rc6. ef100_update_stats in drivers/net/ethernet/sfc/ef100_nic.c lacks check of the return value of kmalloc()."
-    },
-    {
-        "Modified": "2022-12-16T21:35:00",
-        "Published": "2022-12-14T21:15:00",
-        "access": {},
-        "assigner": "secalert@redhat.com",
-        "cvss": null,
-        "cwe": "CWE-476",
-        "id": "CVE-2022-3107",
-        "impact": {},
-        "last-modified": "2022-12-16T21:35:00",
-        "references": [
-            "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?h=v5.19-rc2&id=886e44c9298a6b428ae046e2fa092ca52e822e6a",
-            "https://bugzilla.redhat.com/show_bug.cgi?id=2153060"
-        ],
-        "summary": "An issue was discovered in the Linux kernel through 5.16-rc6. netvsc_get_ethtool_stats in drivers/net/hyperv/netvsc_drv.c lacks check of the return value of kvmalloc_array() and will cause the null pointer dereference."
-    },
-    {
-        "Modified": "2022-12-16T21:33:00",
-        "Published": "2022-12-14T21:15:00",
-        "access": {},
-        "assigner": "secalert@redhat.com",
-        "cvss": null,
-        "cwe": "CWE-476",
-        "id": "CVE-2022-3105",
-        "impact": {},
-        "last-modified": "2022-12-16T21:33:00",
-        "references": [
-            "https://bugzilla.redhat.com/show_bug.cgi?id=2153067",
-            "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?h=v5.19-rc2&id=7694a7de22c53a312ea98960fcafc6ec62046531"
-        ],
-        "summary": "An issue was discovered in the Linux kernel through 5.16-rc6. uapi_finalize in drivers/infiniband/core/uverbs_uapi.c lacks check of kmalloc_array()."
-    },
-    {
-        "Modified": "2022-12-16T21:32:00",
-        "Published": "2022-12-14T21:15:00",
-        "access": {},
-        "assigner": "secalert@redhat.com",
-        "cvss": null,
-        "cwe": "CWE-476",
-        "id": "CVE-2022-3104",
-        "impact": {},
-        "last-modified": "2022-12-16T21:32:00",
-        "references": [
-            "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?h=v5.19-rc2&id=4a9800c81d2f34afb66b4b42e0330ae8298019a2",
-            "https://bugzilla.redhat.com/show_bug.cgi?id=2153062"
-        ],
-        "summary": "An issue was discovered in the Linux kernel through 5.16-rc6. lkdtm_ARRAY_BOUNDS in drivers/misc/lkdtm/bugs.c lacks check of the return value of kmalloc() and will cause the null pointer dereference."
-    },
-    {
-        "Modified": "2022-12-16T21:29:00",
-        "Published": "2022-12-14T21:15:00",
-        "access": {},
-        "assigner": "secalert@redhat.com",
-        "cvss": null,
-        "cwe": "CWE-122",
-        "id": "CVE-2022-2601",
-        "impact": {},
-        "last-modified": "2022-12-16T21:29:00",
-        "references": [
-            "https://bugzilla.redhat.com/show_bug.cgi?id=2112975#c0"
-        ],
-        "summary": "A buffer overflow was found in grub_font_construct_glyph(). A malicious crafted pf2 font can lead to an overflow when calculating the max_glyph_size value, allocating a smaller than needed buffer for the glyph, this further leads to a buffer overflow and a heap based out-of-bounds write. An attacker may use this vulnerability to circumvent the secure boot mechanism."
     }
 ]
