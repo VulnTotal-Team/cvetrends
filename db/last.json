@@ -1,5 +1,87 @@
 [
     {
+        "Modified": "2022-12-19T10:15:00",
+        "Published": "2022-09-05T07:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-190",
+        "id": "CVE-2022-39842",
+        "impact": {},
+        "last-modified": "2022-12-19T10:15:00",
+        "references": [
+            "https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.19",
+            "https://github.com/torvalds/linux/commit/a09d2d00af53b43c6f11e6ab3cb58443c2cac8a7",
+            "https://lists.debian.org/debian-lts-announce/2022/10/msg00000.html",
+            "https://www.debian.org/security/2022/dsa-5257",
+            "https://lists.debian.org/debian-lts-announce/2022/11/msg00001.html",
+            "https://lore.kernel.org/all/YylaC1wHHyLw22D3@kadam/T/"
+        ],
+        "summary": "** DISPUTED ** An issue was discovered in the Linux kernel before 5.19. In pxa3xx_gcu_write in drivers/video/fbdev/pxa3xx-gcu.c, the count parameter has a type conflict of size_t versus int, causing an integer overflow and bypassing the size check. After that, because it is used as the third argument to copy_from_user(), a heap overflow may occur. NOTE: the original discoverer disputes that the overflow can actually happen."
+    },
+    {
+        "Modified": "2022-12-19T09:15:00",
+        "Published": "2022-12-19T09:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2016-20018",
+        "impact": {},
+        "last-modified": "2022-12-19T09:15:00",
+        "references": [
+            "https://www.ghostccamm.com/blog/knex_sqli/",
+            "https://github.com/knex/knex/issues/1227"
+        ],
+        "summary": "Knex Knex.js through 2.3.0 has a limited SQL injection vulnerability that can be exploited to ignore the WHERE clause of a SQL query."
+    },
+    {
+        "Modified": "2022-12-19T09:15:00",
+        "Published": "2022-12-19T09:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-47547",
+        "impact": {},
+        "last-modified": "2022-12-19T09:15:00",
+        "references": [
+            "https://arxiv.org/pdf/2212.05197.pdf"
+        ],
+        "summary": "GossipSub 1.1, as used for Ethereum 2.0, allows a peer to maintain a positive score (and thus not be pruned from the network) even though it continuously misbehaves by never forwarding topic messages."
+    },
+    {
+        "Modified": "2022-12-19T09:15:00",
+        "Published": "2022-12-19T09:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-47549",
+        "impact": {},
+        "last-modified": "2022-12-19T09:15:00",
+        "references": [
+            "https://people.linaro.org/~joakim.bech/reports/Breaking_cross-world_isolation_on_ARM_TrustZone_through_EM_faults_coredumps_and_UUID_confusion.pdf",
+            "https://github.com/OP-TEE/optee_os/security/advisories/GHSA-r64m-h886-hw6g"
+        ],
+        "summary": "An unprotected memory-access operation in optee_os in TrustedFirmware Open Portable Trusted Execution Environment (OP-TEE) before 3.20 allows a physically proximate adversary to bypass signature verification and install malicious trusted applications via electromagnetic fault injections."
+    },
+    {
+        "Modified": "2022-12-19T09:15:00",
+        "Published": "2022-12-19T09:15:00",
+        "access": {},
+        "assigner": "security@otrs.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-4427",
+        "impact": {},
+        "last-modified": "2022-12-19T09:15:00",
+        "references": [
+            "https://otrs.com/release-notes/otrs-security-advisory-2022-15/"
+        ],
+        "summary": "Improper Input Validation vulnerability in OTRS AG OTRS, OTRS AG ((OTRS)) Community Edition allows SQL Injection via TicketSearch Webservice This issue affects OTRS: from 7.0.1 before 7.0.40 Patch 1, from 8.0.1 before 8.0.28 Patch 1; ((OTRS)) Community Edition: from 6.0.1 through 6.0.34."
+    },
+    {
         "Modified": "2022-12-19T04:15:00",
         "Published": "2022-12-05T22:15:00",
         "access": {},
@@ -1909,89 +1991,5 @@
             "https://github.com/roxlukas/lmeve/commit/29e1ead3bb1c1fad53b77dfc14534496421c5b5d"
         ],
         "summary": "A vulnerability was found in roxlukas LMeve and classified as critical. Affected by this issue is some unknown functionality of the component Login Page. The manipulation of the argument X-Forwarded-For leads to sql injection. The attack may be launched remotely. The name of the patch is 29e1ead3bb1c1fad53b77dfc14534496421c5b5d. It is recommended to apply a patch to fix this issue. The identifier of this vulnerability is VDB-216176."
-    },
-    {
-        "Modified": "2022-12-19T02:27:00",
-        "Published": "2022-12-17T19:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-707",
-        "id": "CVE-2022-4590",
-        "impact": {},
-        "last-modified": "2022-12-19T02:27:00",
-        "references": [
-            "https://github.com/mschaef/toto/commit/fdc825ac5249f40683377e8a526a06cdc6870125",
-            "https://vuldb.com/?id.216177",
-            "https://github.com/mschaef/toto/releases/tag/1.4.21"
-        ],
-        "summary": "A vulnerability was found in mschaef toto up to 1.4.20. It has been classified as problematic. This affects an unknown part of the component Todo List Handler. The manipulation leads to cross site scripting. It is possible to initiate the attack remotely. Upgrading to version 1.4.21 is able to address this issue. The name of the patch is fdc825ac5249f40683377e8a526a06cdc6870125. It is recommended to upgrade the affected component. The identifier VDB-216177 was assigned to this vulnerability."
-    },
-    {
-        "Modified": "2022-12-19T02:27:00",
-        "Published": "2022-12-17T19:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-707",
-        "id": "CVE-2022-4591",
-        "impact": {},
-        "last-modified": "2022-12-19T02:27:00",
-        "references": [
-            "https://github.com/mschaef/toto/commit/1f27f37c1a06f54a76971f70eaa6139dc139bdf9",
-            "https://vuldb.com/?id.216178",
-            "https://github.com/mschaef/toto/releases/tag/1.4.21"
-        ],
-        "summary": "A vulnerability was found in mschaef toto up to 1.4.20. It has been declared as problematic. This vulnerability affects unknown code of the component Email Parameter Handler. The manipulation leads to cross site scripting. The attack can be initiated remotely. Upgrading to version 1.4.21 is able to address this issue. The name of the patch is 1f27f37c1a06f54a76971f70eaa6139dc139bdf9. It is recommended to upgrade the affected component. VDB-216178 is the identifier assigned to this vulnerability."
-    },
-    {
-        "Modified": "2022-12-19T02:27:00",
-        "Published": "2022-12-17T13:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-707",
-        "id": "CVE-2022-4581",
-        "impact": {},
-        "last-modified": "2022-12-19T02:27:00",
-        "references": [
-            "https://github.com/1j01/mind-map/commit/9617e6084dfeccd92079ab4d7f439300a4b24394",
-            "https://vuldb.com/?id.216167"
-        ],
-        "summary": "A vulnerability was found in 1j01 mind-map and classified as problematic. This issue affects some unknown processing of the file app.coffee. The manipulation of the argument html leads to cross site scripting. The attack may be initiated remotely. The name of the patch is 9617e6084dfeccd92079ab4d7f439300a4b24394. It is recommended to apply a patch to fix this issue. The associated identifier of this vulnerability is VDB-216167."
-    },
-    {
-        "Modified": "2022-12-19T02:27:00",
-        "Published": "2022-12-17T13:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-707",
-        "id": "CVE-2022-4582",
-        "impact": {},
-        "last-modified": "2022-12-19T02:27:00",
-        "references": [
-            "https://github.com/ivantcholakov/starter-public-edition-4/commit/2606983c20f6ea3430ac4b36b3d2e88aafef45da",
-            "https://github.com/ivantcholakov/starter-public-edition-4/releases/tag/v4.6.11",
-            "https://vuldb.com/?id.216168"
-        ],
-        "summary": "A vulnerability was found in starter-public-edition-4 up to 4.6.10. It has been classified as problematic. Affected is an unknown function. The manipulation leads to cross site scripting. It is possible to launch the attack remotely. Upgrading to version 4.6.11 is able to address this issue. The name of the patch is 2606983c20f6ea3430ac4b36b3d2e88aafef45da. It is recommended to upgrade the affected component. The identifier of this vulnerability is VDB-216168."
-    },
-    {
-        "Modified": "2022-12-19T02:27:00",
-        "Published": "2022-12-17T13:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-22",
-        "id": "CVE-2022-4583",
-        "impact": {},
-        "last-modified": "2022-12-19T02:27:00",
-        "references": [
-            "https://github.com/LEMS/jLEMS/pull/103",
-            "https://github.com/LEMS/jLEMS/commit/8c224637d7d561076364a9e3c2c375daeaf463dc",
-            "https://vuldb.com/?id.216169"
-        ],
-        "summary": "A vulnerability was found in jLEMS. It has been declared as critical. Affected by this vulnerability is the function unpackJar of the file src/main/java/org/lemsml/jlems/io/util/JUtil.java. The manipulation leads to path traversal. The attack can be launched remotely. The name of the patch is 8c224637d7d561076364a9e3c2c375daeaf463dc. It is recommended to apply a patch to fix this issue. The identifier VDB-216169 was assigned to this vulnerability."
     }
 ]
