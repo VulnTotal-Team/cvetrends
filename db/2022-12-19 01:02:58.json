@@ -1,0 +1,1446 @@
+{
+    "data": [
+        {
+            "assigner": "cve@mitre.org",
+            "audience_size": 211175,
+            "cve": "CVE-2022-46908",
+            "cve_urls": null,
+            "cvssv2_base_score": null,
+            "cvssv2_severity": null,
+            "cvssv3_base_score": 9.8,
+            "cvssv3_base_severity": "CRITICAL",
+            "cwes": [],
+            "description": "SQLite through 3.40.0, when relying on --safe for execution of an untrusted CLI script, does not properly implement the azProhibitedFunctions protection mechanism, and instead allows UDF functions such as WRITEFILE.",
+            "epss_score": "0.02509",
+            "github_repos": [],
+            "lastModifiedDate": "2022-12-12T18:49Z",
+            "num_retweets": 16,
+            "num_tweets": 4,
+            "num_tweets_and_retweets": 20,
+            "publishedDate": "2022-12-12T06:15Z",
+            "reddit_posts": [
+                {
+                    "created": 1670830740.0,
+                    "is_self": false,
+                    "num_comments": 0,
+                    "reddit_url": "https://www.reddit.com/r/netcve/comments/zjri1e/cve202246908/",
+                    "subreddit": "netcve",
+                    "subreddit_subscribers": 124,
+                    "title": "CVE-2022-46908",
+                    "upvotes": 1,
+                    "url": "https://cve.report/CVE-2022-46908"
+                }
+            ],
+            "score": 9.8,
+            "severity": "CRITICAL",
+            "tweets": [
+                {
+                    "created_at": "2022-12-18 12:56",
+                    "likes": 58,
+                    "num_retweets": 11,
+                    "retweets": 12,
+                    "tweet_id": "1604460621646307328",
+                    "tweet_text": "It's been awhile, so let's do another CVE Deep Dive! This time, let's look at CVE-2022-46908, a critical vulnerability in sqlite! This currently shows up in all three scanners tested (snyk, trivy, and grype) against the GCP Distroless Python 3 image. https://t.co/tGALLDfhTo",
+                    "twitter_user_handle": "lorenc_dan",
+                    "twitter_user_name": "Dan Lorenc",
+                    "twitter_user_profile_pic": "https://pbs.twimg.com/profile_images/1105525721508700161/ZSCqCU51_normal.jpg",
+                    "urls": []
+                },
+                {
+                    "created_at": "2022-12-18 14:57",
+                    "likes": 11,
+                    "num_retweets": 5,
+                    "retweets": 5,
+                    "tweet_id": "1604491031294115841",
+                    "tweet_text": "SQLite vulnerability CVE-2022-46908 with CVSS score of 9.8 affects only v3.37.1 (released on 30.12.2021) up to the current v3.40\n\nDoesn\u2019t seem to be that serious https://t.co/t9QxtKy9Iz https://t.co/VpLVx2HzH4",
+                    "twitter_user_handle": "cyb3rops",
+                    "twitter_user_name": "Florian Roth \u26a1",
+                    "twitter_user_profile_pic": "https://pbs.twimg.com/profile_images/1600601668151873537/Zpa502np_normal.jpg",
+                    "urls": [
+                        {
+                            "display_url": "twitter.com/lorenc_dan/sta\u2026",
+                            "expanded_url": "https://twitter.com/lorenc_dan/status/1604461755161227264",
+                            "url": "https://t.co/t9QxtKy9Iz"
+                        }
+                    ]
+                },
+                {
+                    "created_at": "2022-12-18 18:06",
+                    "likes": 0,
+                    "num_retweets": 0,
+                    "retweets": 0,
+                    "tweet_id": "1604538485532004355",
+                    "tweet_text": "The vuln CVE-2022-46908 has a tweet created 0 days ago and retweeted 12 times.\nhttps://t.co/ioTqd0mmZB\n#pow1rtrtwwcve",
+                    "twitter_user_handle": "ipssignatures",
+                    "twitter_user_name": "ipssignatures",
+                    "twitter_user_profile_pic": "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png",
+                    "urls": [
+                        {
+                            "display_url": "twitter.com/lorenc_dan/sta\u2026",
+                            "expanded_url": "https://twitter.com/lorenc_dan/status/1604460621646307328",
+                            "url": "https://t.co/ioTqd0mmZB"
+                        }
+                    ]
+                },
+                {
+                    "created_at": "2022-12-18 14:56",
+                    "likes": 2,
+                    "num_retweets": 0,
+                    "retweets": 0,
+                    "tweet_id": "1604490730650497024",
+                    "tweet_text": "SQLite may be more prevalent in software supply chains than originally considered; thus raising the blast radius of any unpatched CVE-2022-46908 instances. Thanks to @lorenc_dan for raising awareness through his thoughtful analysis. https://t.co/mcdmWE6z5j",
+                    "twitter_user_handle": "Sujeet",
+                    "twitter_user_name": "Sujeet Bambawale",
+                    "twitter_user_profile_pic": "https://pbs.twimg.com/profile_images/1593800906968948737/laiFSfr0_normal.jpg",
+                    "urls": [
+                        {
+                            "display_url": "twitter.com/lorenc_dan/sta\u2026",
+                            "expanded_url": "https://twitter.com/lorenc_dan/status/1604460621646307328",
+                            "url": "https://t.co/mcdmWE6z5j"
+                        }
+                    ]
+                }
+            ],
+            "vendor_advisories": [
+                "https://sqlite.org/src/info/cefc032473ac5ad2",
+                "https://sqlite.org/forum/forumpost/07beac8056151b2f"
+            ],
+            "vendors": [
+                {
+                    "products": [
+                        {
+                            "product": "Sqlite",
+                            "versions": [
+                                "*"
+                            ]
+                        }
+                    ],
+                    "vendor": "Sqlite"
+                }
+            ]
+        },
+        {
+            "assigner": "secure@microsoft.com",
+            "audience_size": 175720,
+            "cve": "CVE-2022-37967",
+            "cve_urls": null,
+            "cvssv2_base_score": null,
+            "cvssv2_severity": null,
+            "cvssv3_base_score": 7.2,
+            "cvssv3_base_severity": "HIGH",
+            "cwes": [],
+            "description": "Windows Kerberos Elevation of Privilege Vulnerability.",
+            "epss_score": "0.0115",
+            "github_repos": [
+                {
+                    "created": "2022-11-10T21:02:45Z",
+                    "description": "Quick PowerShell tool to look for domain joined and enabled computer account with RC4 as a supported encryption type for Kerberos. ",
+                    "language": "PowerShell",
+                    "name": "Get-msDSSupportedEncryptionTypes",
+                    "stars": 0,
+                    "topics": [
+                        "cve-2022-37967",
+                        "encryption",
+                        "kerberos",
+                        "ms-ds-supported-encryption-types",
+                        "msds-supportedencryptiontypes",
+                        "powershell",
+                        "rc4",
+                        "rc4-hmac",
+                        "rc4-hmac-md5",
+                        "script"
+                    ],
+                    "updated": "2022-11-11T19:39:32Z",
+                    "url": "https://github.com/bmcmcm/Get-msDSSupportedEncryptionTypes"
+                }
+            ],
+            "lastModifiedDate": "2022-11-10T14:48Z",
+            "num_retweets": 2,
+            "num_tweets": 11,
+            "num_tweets_and_retweets": 13,
+            "publishedDate": "2022-11-09T22:15Z",
+            "reddit_posts": [
+                {
+                    "created": 1669381539.0,
+                    "is_self": true,
+                    "num_comments": 11,
+                    "reddit_url": "https://www.reddit.com/r/sysadmin/comments/z4cxtq/possible_memory_leak_in_local_security_authority/",
+                    "subreddit": "sysadmin",
+                    "subreddit_subscribers": 759427,
+                    "title": "Possible memory leak in Local Security Authority Subsystem Service (LSASS,exe)",
+                    "upvotes": 33,
+                    "url": "https://www.reddit.com/r/sysadmin/comments/z4cxtq/possible_memory_leak_in_local_security_authority/"
+                },
+                {
+                    "created": 1669659470.0,
+                    "is_self": true,
+                    "num_comments": 9,
+                    "reddit_url": "https://www.reddit.com/r/sysadmin/comments/z73vcw/what_is_a_thirdparty_domain_controller/",
+                    "subreddit": "sysadmin",
+                    "subreddit_subscribers": 759427,
+                    "title": "What is a \"Third-Party Domain Controller?\"",
+                    "upvotes": 3,
+                    "url": "https://www.reddit.com/r/sysadmin/comments/z73vcw/what_is_a_thirdparty_domain_controller/"
+                },
+                {
+                    "created": 1668139142.0,
+                    "is_self": true,
+                    "num_comments": 2,
+                    "reddit_url": "https://www.reddit.com/r/windows/comments/ys0k2n/windows_81_and_windows_server_2012_r2_updates_for/",
+                    "subreddit": "windows",
+                    "subreddit_subscribers": 266688,
+                    "title": "Windows 8.1 and Windows Server 2012 R2 updates for 11/8/22",
+                    "upvotes": 1,
+                    "url": "https://www.reddit.com/r/windows/comments/ys0k2n/windows_81_and_windows_server_2012_r2_updates_for/"
+                },
+                {
+                    "created": 1668417039.0,
+                    "is_self": true,
+                    "num_comments": 5,
+                    "reddit_url": "https://www.reddit.com/r/sysadmin/comments/yutlt9/will_cve202237967kb5020805_break_unpatched_2008r2/",
+                    "subreddit": "sysadmin",
+                    "subreddit_subscribers": 759427,
+                    "title": "Will CVE-2022-37967/KB5020805 break unpatched 2008R2?",
+                    "upvotes": 1,
+                    "url": "https://www.reddit.com/r/sysadmin/comments/yutlt9/will_cve202237967kb5020805_break_unpatched_2008r2/"
+                },
+                {
+                    "created": 1669063411.0,
+                    "is_self": true,
+                    "num_comments": 7,
+                    "reddit_url": "https://www.reddit.com/r/sysadmin/comments/z19o6l/need_clarification_on_windows_events_related_to/",
+                    "subreddit": "sysadmin",
+                    "subreddit_subscribers": 759427,
+                    "title": "Need clarification on Windows Events related to CVE-2022-37967 article.",
+                    "upvotes": 1,
+                    "url": "https://www.reddit.com/r/sysadmin/comments/z19o6l/need_clarification_on_windows_events_related_to/"
+                }
+            ],
+            "score": 7.2,
+            "severity": "HIGH",
+            "tweets": [
+                {
+                    "created_at": "2022-12-18 14:00",
+                    "likes": 5,
+                    "num_retweets": 1,
+                    "retweets": 1,
+                    "tweet_id": "1604476588728393728",
+                    "tweet_text": "Top 3 trending CVEs on Twitter\n\nPast 24 hrs:\nCVE-2022-46689: 649.3K (audience size)\nCVE-2022-37967: 185.5K\nCVE-2022-38023: 185.5K\n\nPast 7 days:\nCVE-2022-42475: 6.7M\nCVE-2022-37958: 3.9M\nCVE-2022-27518: 2.8M\n\nhttps://t.co/LhpwNP6xog",
+                    "twitter_user_handle": "CVEtrends",
+                    "twitter_user_name": "CVE Trends",
+                    "twitter_user_profile_pic": "https://pbs.twimg.com/profile_images/1465356279585644556/y1IAsYUX_normal.jpg",
+                    "urls": [
+                        {
+                            "display_url": "cvetrends.com",
+                            "expanded_url": "https://cvetrends.com",
+                            "url": "https://t.co/LhpwNP6xog"
+                        }
+                    ]
+                },
+                {
+                    "created_at": "2022-12-18 06:00",
+                    "likes": 5,
+                    "num_retweets": 1,
+                    "retweets": 1,
+                    "tweet_id": "1604355782761500673",
+                    "tweet_text": "Multiple high-severity vulnerabilities [CVE-2022-38023, CVE-2022-37966, CVE-2022-37967, CVE-2022-45141] have been discovered in Samba #software that could potentially allow hackers to gain control of the affected systems.\n\nhttps://t.co/y4CNPAb56u\n\n#infosec #cybersecurity",
+                    "twitter_user_handle": "YourAnonRiots",
+                    "twitter_user_name": "Anonymous\ud83d\udc3e\ud83d\udc31\ud83c\udf75\u2615",
+                    "twitter_user_profile_pic": "https://pbs.twimg.com/profile_images/1344109363804450816/9oQ_zVst_normal.jpg",
+                    "urls": [
+                        {
+                            "display_url": "thehackernews.com/2022/12/samba-\u2026",
+                            "expanded_url": "https://thehackernews.com/2022/12/samba-issues-security-updates-to-patch.html",
+                            "url": "https://t.co/y4CNPAb56u"
+                        }
+                    ]
+                },
+                {
+                    "created_at": "2022-12-18 10:08",
+                    "likes": 0,
+                    "num_retweets": 0,
+                    "retweets": 0,
+                    "tweet_id": "1604418196576124933",
+                    "tweet_text": "I think that the third retweeted(36 times) tweet that contains CVE ID between Dec 17 2022 10:01 UTC and Dec 18 2022 10:00 UTC is:\nhttps://t.co/Qo3S68jg9I\nIt has CVE-2022-37967. #l24_fw6roagymxiro",
+                    "twitter_user_handle": "ipssignatures",
+                    "twitter_user_name": "ipssignatures",
+                    "twitter_user_profile_pic": "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png",
+                    "urls": [
+                        {
+                            "display_url": "twitter.com/TheHackersNews\u2026",
+                            "expanded_url": "https://twitter.com/TheHackersNews/status/1604091539302617088",
+                            "url": "https://t.co/Qo3S68jg9I"
+                        }
+                    ]
+                },
+                {
+                    "created_at": "2022-12-18 14:05",
+                    "likes": 0,
+                    "num_retweets": 0,
+                    "retweets": 0,
+                    "tweet_id": "1604478025642528769",
+                    "tweet_text": "CVEtrends: Top 3 trending CVEs on Twitter\n\nPast 24 hrs:\nCVE-2022-46689: 649.3K (audience size)\nCVE-2022-37967: 185.5K\nCVE-2022-38023: 185.5K\n\nPast 7 days:\nCVE-2022-42475: 6.7M\nCVE-2022-37958: 3.9M\nCVE-2022-27518: 2.8M\n\nhttps://t.co/0GtLQNn4Mj",
+                    "twitter_user_handle": "bryanseah234",
+                    "twitter_user_name": "b",
+                    "twitter_user_profile_pic": "https://pbs.twimg.com/profile_images/1552220823351689216/1syxDo1T_normal.png",
+                    "urls": [
+                        {
+                            "display_url": "cvetrends.com",
+                            "expanded_url": "https://cvetrends.com",
+                            "url": "https://t.co/0GtLQNn4Mj"
+                        }
+                    ]
+                },
+                {
+                    "created_at": "2022-12-19 01:00",
+                    "likes": 0,
+                    "num_retweets": 0,
+                    "retweets": 0,
+                    "tweet_id": "1604642913887010818",
+                    "tweet_text": "\"Samba released updates to address multiple vulnerabilities, tracked as CVE-2022-38023, CVE-2022-37966, CVE-2022-37967, and CVE-2022-45141, that can be exploited to take control of impacted systems.\"",
+                    "twitter_user_handle": "ohhara_shiojiri",
+                    "twitter_user_name": "ohhara_P\ud83e\uddd0Slow life in the isekai",
+                    "twitter_user_profile_pic": "https://pbs.twimg.com/profile_images/1603542970170429440/njPNoOa-_normal.jpg",
+                    "urls": []
+                }
+            ],
+            "vendor_advisories": [
+                "https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-37967"
+            ],
+            "vendors": [
+                {
+                    "products": [
+                        {
+                            "product": "Windows Server 2022",
+                            "versions": [
+                                "-"
+                            ]
+                        }
+                    ],
+                    "vendor": "Microsoft"
+                }
+            ]
+        },
+        {
+            "assigner": "secure@microsoft.com",
+            "audience_size": 173108,
+            "cve": "CVE-2022-38023",
+            "cve_urls": null,
+            "cvssv2_base_score": null,
+            "cvssv2_severity": null,
+            "cvssv3_base_score": 8.1,
+            "cvssv3_base_severity": "HIGH",
+            "cwes": [],
+            "description": "Netlogon RPC Elevation of Privilege Vulnerability.",
+            "epss_score": "0.02251",
+            "github_repos": [],
+            "lastModifiedDate": "2022-11-10T14:50Z",
+            "num_retweets": 2,
+            "num_tweets": 10,
+            "num_tweets_and_retweets": 12,
+            "publishedDate": "2022-11-09T22:15Z",
+            "reddit_posts": [
+                {
+                    "created": 1668139142.0,
+                    "is_self": true,
+                    "num_comments": 2,
+                    "reddit_url": "https://www.reddit.com/r/windows/comments/ys0k2n/windows_81_and_windows_server_2012_r2_updates_for/",
+                    "subreddit": "windows",
+                    "subreddit_subscribers": 266688,
+                    "title": "Windows 8.1 and Windows Server 2012 R2 updates for 11/8/22",
+                    "upvotes": 1,
+                    "url": "https://www.reddit.com/r/windows/comments/ys0k2n/windows_81_and_windows_server_2012_r2_updates_for/"
+                }
+            ],
+            "score": 8.1,
+            "severity": "HIGH",
+            "tweets": [
+                {
+                    "created_at": "2022-12-18 14:00",
+                    "likes": 5,
+                    "num_retweets": 1,
+                    "retweets": 1,
+                    "tweet_id": "1604476588728393728",
+                    "tweet_text": "Top 3 trending CVEs on Twitter\n\nPast 24 hrs:\nCVE-2022-46689: 649.3K (audience size)\nCVE-2022-37967: 185.5K\nCVE-2022-38023: 185.5K\n\nPast 7 days:\nCVE-2022-42475: 6.7M\nCVE-2022-37958: 3.9M\nCVE-2022-27518: 2.8M\n\nhttps://t.co/LhpwNP6xog",
+                    "twitter_user_handle": "CVEtrends",
+                    "twitter_user_name": "CVE Trends",
+                    "twitter_user_profile_pic": "https://pbs.twimg.com/profile_images/1465356279585644556/y1IAsYUX_normal.jpg",
+                    "urls": [
+                        {
+                            "display_url": "cvetrends.com",
+                            "expanded_url": "https://cvetrends.com",
+                            "url": "https://t.co/LhpwNP6xog"
+                        }
+                    ]
+                },
+                {
+                    "created_at": "2022-12-18 06:00",
+                    "likes": 5,
+                    "num_retweets": 1,
+                    "retweets": 1,
+                    "tweet_id": "1604355782761500673",
+                    "tweet_text": "Multiple high-severity vulnerabilities [CVE-2022-38023, CVE-2022-37966, CVE-2022-37967, CVE-2022-45141] have been discovered in Samba #software that could potentially allow hackers to gain control of the affected systems.\n\nhttps://t.co/y4CNPAb56u\n\n#infosec #cybersecurity",
+                    "twitter_user_handle": "YourAnonRiots",
+                    "twitter_user_name": "Anonymous\ud83d\udc3e\ud83d\udc31\ud83c\udf75\u2615",
+                    "twitter_user_profile_pic": "https://pbs.twimg.com/profile_images/1344109363804450816/9oQ_zVst_normal.jpg",
+                    "urls": [
+                        {
+                            "display_url": "thehackernews.com/2022/12/samba-\u2026",
+                            "expanded_url": "https://thehackernews.com/2022/12/samba-issues-security-updates-to-patch.html",
+                            "url": "https://t.co/y4CNPAb56u"
+                        }
+                    ]
+                },
+                {
+                    "created_at": "2022-12-18 10:08",
+                    "likes": 0,
+                    "num_retweets": 0,
+                    "retweets": 0,
+                    "tweet_id": "1604418195850395650",
+                    "tweet_text": "I think that the third retweeted(36 times) tweet that contains CVE ID between Dec 17 2022 10:01 UTC and Dec 18 2022 10:00 UTC is:\nhttps://t.co/Qo3S68jg9I\nIt has CVE-2022-38023. #l24_t5w5ljchtizfu",
+                    "twitter_user_handle": "ipssignatures",
+                    "twitter_user_name": "ipssignatures",
+                    "twitter_user_profile_pic": "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png",
+                    "urls": [
+                        {
+                            "display_url": "twitter.com/TheHackersNews\u2026",
+                            "expanded_url": "https://twitter.com/TheHackersNews/status/1604091539302617088",
+                            "url": "https://t.co/Qo3S68jg9I"
+                        }
+                    ]
+                },
+                {
+                    "created_at": "2022-12-18 12:08",
+                    "likes": 0,
+                    "num_retweets": 0,
+                    "retweets": 0,
+                    "tweet_id": "1604448393744506880",
+                    "tweet_text": "(Same from about 2 hours ago.)\nI think that the third retweeted(40 times) tweet that contains CVE ID between Dec 17 2022 12:01 UTC and Dec 18 2022 12:00 UTC is:\nhttps://t.co/Qo3S68jg9I\nIt has CVE-2022-38023. #l24_t5w5ljchtizfu",
+                    "twitter_user_handle": "ipssignatures",
+                    "twitter_user_name": "ipssignatures",
+                    "twitter_user_profile_pic": "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png",
+                    "urls": [
+                        {
+                            "display_url": "twitter.com/TheHackersNews\u2026",
+                            "expanded_url": "https://twitter.com/TheHackersNews/status/1604091539302617088",
+                            "url": "https://t.co/Qo3S68jg9I"
+                        }
+                    ]
+                },
+                {
+                    "created_at": "2022-12-18 14:05",
+                    "likes": 0,
+                    "num_retweets": 0,
+                    "retweets": 0,
+                    "tweet_id": "1604478025642528769",
+                    "tweet_text": "CVEtrends: Top 3 trending CVEs on Twitter\n\nPast 24 hrs:\nCVE-2022-46689: 649.3K (audience size)\nCVE-2022-37967: 185.5K\nCVE-2022-38023: 185.5K\n\nPast 7 days:\nCVE-2022-42475: 6.7M\nCVE-2022-37958: 3.9M\nCVE-2022-27518: 2.8M\n\nhttps://t.co/0GtLQNn4Mj",
+                    "twitter_user_handle": "bryanseah234",
+                    "twitter_user_name": "b",
+                    "twitter_user_profile_pic": "https://pbs.twimg.com/profile_images/1552220823351689216/1syxDo1T_normal.png",
+                    "urls": [
+                        {
+                            "display_url": "cvetrends.com",
+                            "expanded_url": "https://cvetrends.com",
+                            "url": "https://t.co/0GtLQNn4Mj"
+                        }
+                    ]
+                }
+            ],
+            "vendor_advisories": [
+                "https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-38023"
+            ],
+            "vendors": [
+                {
+                    "products": [
+                        {
+                            "product": "Windows Server 2022",
+                            "versions": [
+                                "-"
+                            ]
+                        }
+                    ],
+                    "vendor": "Microsoft"
+                }
+            ]
+        },
+        {
+            "assigner": "secure@microsoft.com",
+            "audience_size": 169279,
+            "cve": "CVE-2022-37966",
+            "cve_urls": null,
+            "cvssv2_base_score": null,
+            "cvssv2_severity": null,
+            "cvssv3_base_score": 8.1,
+            "cvssv3_base_severity": "HIGH",
+            "cwes": [],
+            "description": "Windows Kerberos RC4-HMAC Elevation of Privilege Vulnerability.",
+            "epss_score": "0.02251",
+            "github_repos": [],
+            "lastModifiedDate": "2022-11-10T14:48Z",
+            "num_retweets": 1,
+            "num_tweets": 9,
+            "num_tweets_and_retweets": 10,
+            "publishedDate": "2022-11-09T22:15Z",
+            "reddit_posts": [
+                {
+                    "created": 1669216288.0,
+                    "is_self": true,
+                    "num_comments": 30,
+                    "reddit_url": "https://www.reddit.com/r/sysadmin/comments/z2rl02/rdp_from_windows_10_to_windows_10_by_workstation/",
+                    "subreddit": "sysadmin",
+                    "subreddit_subscribers": 759427,
+                    "title": "RDP from Windows 10 to Windows 10 by workstation name suddenly saying \"incorrect password\" but RDP by IP works?",
+                    "upvotes": 36,
+                    "url": "https://www.reddit.com/r/sysadmin/comments/z2rl02/rdp_from_windows_10_to_windows_10_by_workstation/"
+                },
+                {
+                    "created": 1668457686.0,
+                    "is_self": true,
+                    "num_comments": 12,
+                    "reddit_url": "https://www.reddit.com/r/netapp/comments/yvblp0/issues_with_netapp_cifs_shares_after_msft/",
+                    "subreddit": "netapp",
+                    "subreddit_subscribers": 4197,
+                    "title": "Issues with Netapp CIFS shares after MSFT November Updates",
+                    "upvotes": 7,
+                    "url": "https://www.reddit.com/r/netapp/comments/yvblp0/issues_with_netapp_cifs_shares_after_msft/"
+                },
+                {
+                    "created": 1669206446.0,
+                    "is_self": false,
+                    "num_comments": 0,
+                    "reddit_url": "https://www.reddit.com/r/InfoSecNews/comments/z2nuhf/microsoft_releases_outofband_update_to_fix/",
+                    "subreddit": "InfoSecNews",
+                    "subreddit_subscribers": 13948,
+                    "title": "Microsoft releases out-of-band update to fix Kerberos auth issues caused by a patch for CVE-2022-37966",
+                    "upvotes": 2,
+                    "url": "https://securityaffairs.co/wordpress/138869/security/out-of-band-fix-kerberos-issues.html"
+                },
+                {
+                    "created": 1669204908.0,
+                    "is_self": false,
+                    "num_comments": 0,
+                    "reddit_url": "https://www.reddit.com/r/RedPacketSecurity/comments/z2nc5t/microsoft_releases_outofband_update_to_fix/",
+                    "subreddit": "RedPacketSecurity",
+                    "subreddit_subscribers": 585,
+                    "title": "Microsoft releases out-of-band update to fix Kerberos auth issues caused by a patch for CVE-2022-37966",
+                    "upvotes": 1,
+                    "url": "https://www.redpacketsecurity.com/microsoft-releases-out-of-band-update-to-fix-kerberos-auth-issues-caused-by-a-patch-for-cve-2022-37966/"
+                },
+                {
+                    "created": 1668139142.0,
+                    "is_self": true,
+                    "num_comments": 2,
+                    "reddit_url": "https://www.reddit.com/r/windows/comments/ys0k2n/windows_81_and_windows_server_2012_r2_updates_for/",
+                    "subreddit": "windows",
+                    "subreddit_subscribers": 266688,
+                    "title": "Windows 8.1 and Windows Server 2012 R2 updates for 11/8/22",
+                    "upvotes": 1,
+                    "url": "https://www.reddit.com/r/windows/comments/ys0k2n/windows_81_and_windows_server_2012_r2_updates_for/"
+                }
+            ],
+            "score": 8.1,
+            "severity": "HIGH",
+            "tweets": [
+                {
+                    "created_at": "2022-12-18 06:00",
+                    "likes": 5,
+                    "num_retweets": 1,
+                    "retweets": 1,
+                    "tweet_id": "1604355782761500673",
+                    "tweet_text": "Multiple high-severity vulnerabilities [CVE-2022-38023, CVE-2022-37966, CVE-2022-37967, CVE-2022-45141] have been discovered in Samba #software that could potentially allow hackers to gain control of the affected systems.\n\nhttps://t.co/y4CNPAb56u\n\n#infosec #cybersecurity",
+                    "twitter_user_handle": "YourAnonRiots",
+                    "twitter_user_name": "Anonymous\ud83d\udc3e\ud83d\udc31\ud83c\udf75\u2615",
+                    "twitter_user_profile_pic": "https://pbs.twimg.com/profile_images/1344109363804450816/9oQ_zVst_normal.jpg",
+                    "urls": [
+                        {
+                            "display_url": "thehackernews.com/2022/12/samba-\u2026",
+                            "expanded_url": "https://thehackernews.com/2022/12/samba-issues-security-updates-to-patch.html",
+                            "url": "https://t.co/y4CNPAb56u"
+                        }
+                    ]
+                },
+                {
+                    "created_at": "2022-12-18 10:08",
+                    "likes": 0,
+                    "num_retweets": 0,
+                    "retweets": 0,
+                    "tweet_id": "1604418194973904896",
+                    "tweet_text": "I think that the third retweeted(36 times) tweet that contains CVE ID between Dec 17 2022 10:01 UTC and Dec 18 2022 10:00 UTC is:\nhttps://t.co/Qo3S68jg9I\nIt has CVE-2022-37966. #l24_ca5uazxntofso",
+                    "twitter_user_handle": "ipssignatures",
+                    "twitter_user_name": "ipssignatures",
+                    "twitter_user_profile_pic": "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png",
+                    "urls": [
+                        {
+                            "display_url": "twitter.com/TheHackersNews\u2026",
+                            "expanded_url": "https://twitter.com/TheHackersNews/status/1604091539302617088",
+                            "url": "https://t.co/Qo3S68jg9I"
+                        }
+                    ]
+                },
+                {
+                    "created_at": "2022-12-18 12:08",
+                    "likes": 0,
+                    "num_retweets": 0,
+                    "retweets": 0,
+                    "tweet_id": "1604448394671521793",
+                    "tweet_text": "(Same from about 2 hours ago.)\nI think that the third retweeted(40 times) tweet that contains CVE ID between Dec 17 2022 12:01 UTC and Dec 18 2022 12:00 UTC is:\nhttps://t.co/Qo3S68jg9I\nIt has CVE-2022-37966. #l24_ca5uazxntofso",
+                    "twitter_user_handle": "ipssignatures",
+                    "twitter_user_name": "ipssignatures",
+                    "twitter_user_profile_pic": "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png",
+                    "urls": [
+                        {
+                            "display_url": "twitter.com/TheHackersNews\u2026",
+                            "expanded_url": "https://twitter.com/TheHackersNews/status/1604091539302617088",
+                            "url": "https://t.co/Qo3S68jg9I"
+                        }
+                    ]
+                },
+                {
+                    "created_at": "2022-12-18 17:33",
+                    "likes": 0,
+                    "num_retweets": 0,
+                    "retweets": 0,
+                    "tweet_id": "1604530368237146112",
+                    "tweet_text": "CVE-2022-37966\n\nWindows Kerberos RC4-HMAC Elevation of Privilege Vulnerability.\n\nhttps://t.co/yqQbJ3tDk9\n\nVulnerability Alert Subscriptions: https://t.co/hrQhy5v6U5",
+                    "twitter_user_handle": "VulmonFeeds",
+                    "twitter_user_name": "Vulmon Vulnerability Feed",
+                    "twitter_user_profile_pic": "https://pbs.twimg.com/profile_images/945758793161498625/67b3PEYK_normal.jpg",
+                    "urls": [
+                        {
+                            "display_url": "vulmon.com/vulnerabilityd\u2026",
+                            "expanded_url": "http://vulmon.com/vulnerabilitydetails?qid=CVE-2022-37966",
+                            "url": "https://t.co/yqQbJ3tDk9"
+                        },
+                        {
+                            "display_url": "alerts.vulmon.com/?utm_source=tw\u2026",
+                            "expanded_url": "https://alerts.vulmon.com/?utm_source=twitter&utm_medium=social&utm_campaign=2102281&utm_content=1",
+                            "url": "https://t.co/hrQhy5v6U5"
+                        }
+                    ]
+                },
+                {
+                    "created_at": "2022-12-19 01:00",
+                    "likes": 0,
+                    "num_retweets": 0,
+                    "retweets": 0,
+                    "tweet_id": "1604642913887010818",
+                    "tweet_text": "\"Samba released updates to address multiple vulnerabilities, tracked as CVE-2022-38023, CVE-2022-37966, CVE-2022-37967, and CVE-2022-45141, that can be exploited to take control of impacted systems.\"",
+                    "twitter_user_handle": "ohhara_shiojiri",
+                    "twitter_user_name": "ohhara_P\ud83e\uddd0Slow life in the isekai",
+                    "twitter_user_profile_pic": "https://pbs.twimg.com/profile_images/1603542970170429440/njPNoOa-_normal.jpg",
+                    "urls": []
+                }
+            ],
+            "vendor_advisories": [
+                "https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-37966"
+            ],
+            "vendors": [
+                {
+                    "products": [
+                        {
+                            "product": "Windows Server 2022",
+                            "versions": [
+                                "-"
+                            ]
+                        }
+                    ],
+                    "vendor": "Microsoft"
+                }
+            ]
+        },
+        {
+            "assigner": null,
+            "audience_size": 166309,
+            "cve": "CVE-2022-45141",
+            "cve_urls": null,
+            "cvssv2_base_score": null,
+            "cvssv2_severity": null,
+            "cvssv3_base_score": null,
+            "cvssv3_base_severity": null,
+            "cwes": [],
+            "description": null,
+            "epss_score": null,
+            "github_repos": [],
+            "lastModifiedDate": null,
+            "num_retweets": 1,
+            "num_tweets": 7,
+            "num_tweets_and_retweets": 8,
+            "publishedDate": null,
+            "reddit_posts": [],
+            "score": null,
+            "severity": null,
+            "tweets": [
+                {
+                    "created_at": "2022-12-18 06:00",
+                    "likes": 5,
+                    "num_retweets": 1,
+                    "retweets": 1,
+                    "tweet_id": "1604355782761500673",
+                    "tweet_text": "Multiple high-severity vulnerabilities [CVE-2022-38023, CVE-2022-37966, CVE-2022-37967, CVE-2022-45141] have been discovered in Samba #software that could potentially allow hackers to gain control of the affected systems.\n\nhttps://t.co/y4CNPAb56u\n\n#infosec #cybersecurity",
+                    "twitter_user_handle": "YourAnonRiots",
+                    "twitter_user_name": "Anonymous\ud83d\udc3e\ud83d\udc31\ud83c\udf75\u2615",
+                    "twitter_user_profile_pic": "https://pbs.twimg.com/profile_images/1344109363804450816/9oQ_zVst_normal.jpg",
+                    "urls": [
+                        {
+                            "display_url": "thehackernews.com/2022/12/samba-\u2026",
+                            "expanded_url": "https://thehackernews.com/2022/12/samba-issues-security-updates-to-patch.html",
+                            "url": "https://t.co/y4CNPAb56u"
+                        }
+                    ]
+                },
+                {
+                    "created_at": "2022-12-18 10:08",
+                    "likes": 0,
+                    "num_retweets": 0,
+                    "retweets": 0,
+                    "tweet_id": "1604418197448523778",
+                    "tweet_text": "I think that the third retweeted(36 times) tweet that contains CVE ID between Dec 17 2022 10:01 UTC and Dec 18 2022 10:00 UTC is:\nhttps://t.co/Qo3S68jg9I\nIt has CVE-2022-45141. #l24_zfgtkmcvorwfs",
+                    "twitter_user_handle": "ipssignatures",
+                    "twitter_user_name": "ipssignatures",
+                    "twitter_user_profile_pic": "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png",
+                    "urls": [
+                        {
+                            "display_url": "twitter.com/TheHackersNews\u2026",
+                            "expanded_url": "https://twitter.com/TheHackersNews/status/1604091539302617088",
+                            "url": "https://t.co/Qo3S68jg9I"
+                        }
+                    ]
+                },
+                {
+                    "created_at": "2022-12-18 12:08",
+                    "likes": 0,
+                    "num_retweets": 0,
+                    "retweets": 0,
+                    "tweet_id": "1604448396311515136",
+                    "tweet_text": "(Same from about 2 hours ago.)\nI think that the third retweeted(40 times) tweet that contains CVE ID between Dec 17 2022 12:01 UTC and Dec 18 2022 12:00 UTC is:\nhttps://t.co/Qo3S68jg9I\nIt has CVE-2022-45141. #l24_zfgtkmcvorwfs",
+                    "twitter_user_handle": "ipssignatures",
+                    "twitter_user_name": "ipssignatures",
+                    "twitter_user_profile_pic": "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png",
+                    "urls": [
+                        {
+                            "display_url": "twitter.com/TheHackersNews\u2026",
+                            "expanded_url": "https://twitter.com/TheHackersNews/status/1604091539302617088",
+                            "url": "https://t.co/Qo3S68jg9I"
+                        }
+                    ]
+                },
+                {
+                    "created_at": "2022-12-19 01:00",
+                    "likes": 0,
+                    "num_retweets": 0,
+                    "retweets": 0,
+                    "tweet_id": "1604642913887010818",
+                    "tweet_text": "\"Samba released updates to address multiple vulnerabilities, tracked as CVE-2022-38023, CVE-2022-37966, CVE-2022-37967, and CVE-2022-45141, that can be exploited to take control of impacted systems.\"",
+                    "twitter_user_handle": "ohhara_shiojiri",
+                    "twitter_user_name": "ohhara_P\ud83e\uddd0Slow life in the isekai",
+                    "twitter_user_profile_pic": "https://pbs.twimg.com/profile_images/1603542970170429440/njPNoOa-_normal.jpg",
+                    "urls": []
+                },
+                {
+                    "created_at": "2022-12-18 04:08",
+                    "likes": 0,
+                    "num_retweets": 0,
+                    "retweets": 0,
+                    "tweet_id": "1604327605334859776",
+                    "tweet_text": "(Same from about 2 hours ago.)\nI think that the second retweeted(55 times) tweet that contains CVE ID between Dec 17 2022 04:01 UTC and Dec 18 2022 04:00 UTC is:\nhttps://t.co/du0sFokaIn\nIt has CVE-2022-45141. #l24_zfgtkmcvorwfs",
+                    "twitter_user_handle": "ipssignatures",
+                    "twitter_user_name": "ipssignatures",
+                    "twitter_user_profile_pic": "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png",
+                    "urls": [
+                        {
+                            "display_url": "twitter.com/TheHackersNews\u2026",
+                            "expanded_url": "https://twitter.com/TheHackersNews/status/1604008102285545473",
+                            "url": "https://t.co/du0sFokaIn"
+                        }
+                    ]
+                }
+            ],
+            "vendor_advisories": [],
+            "vendors": []
+        },
+        {
+            "assigner": null,
+            "audience_size": 120392,
+            "cve": "CVE-2022-23093",
+            "cve_urls": null,
+            "cvssv2_base_score": null,
+            "cvssv2_severity": null,
+            "cvssv3_base_score": null,
+            "cvssv3_base_severity": null,
+            "cwes": [],
+            "description": null,
+            "epss_score": null,
+            "github_repos": [],
+            "lastModifiedDate": null,
+            "num_retweets": 13,
+            "num_tweets": 3,
+            "num_tweets_and_retweets": 16,
+            "publishedDate": null,
+            "reddit_posts": [
+                {
+                    "created": 1669867803.0,
+                    "is_self": false,
+                    "num_comments": 17,
+                    "reddit_url": "https://www.reddit.com/r/netsec/comments/z9duib/remote_code_execution_bug_in_freebsds_ping/",
+                    "subreddit": "netsec",
+                    "subreddit_subscribers": 462688,
+                    "title": "Remote code execution bug in FreeBSD's ping (CVE-2022-23093)",
+                    "upvotes": 52,
+                    "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-22:15.ping.asc"
+                },
+                {
+                    "created": 1669869128.0,
+                    "is_self": false,
+                    "num_comments": 11,
+                    "reddit_url": "https://www.reddit.com/r/PFSENSE/comments/z9ec1z/remote_code_execution_bug_in_freebsds_ping/",
+                    "subreddit": "PFSENSE",
+                    "subreddit_subscribers": 98966,
+                    "title": "Remote code execution bug in FreeBSD's ping (CVE-2022-23093)",
+                    "upvotes": 44,
+                    "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-22:15.ping.asc"
+                },
+                {
+                    "created": 1669871665.0,
+                    "is_self": false,
+                    "num_comments": 2,
+                    "reddit_url": "https://www.reddit.com/r/opnsense/comments/z9f95d/remote_code_execution_bug_in_freebsds_ping/",
+                    "subreddit": "opnsense",
+                    "subreddit_subscribers": 7828,
+                    "title": "Remote code execution bug in FreeBSD's ping (CVE-2022-23093)",
+                    "upvotes": 12,
+                    "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-22:15.ping.asc"
+                },
+                {
+                    "created": 1669903373.0,
+                    "is_self": true,
+                    "num_comments": 3,
+                    "reddit_url": "https://www.reddit.com/r/Netgate/comments/z9onmc/freebsd_ping_cve/",
+                    "subreddit": "Netgate",
+                    "subreddit_subscribers": 4372,
+                    "title": "FreeBSD Ping CVE",
+                    "upvotes": 4,
+                    "url": "https://www.reddit.com/r/Netgate/comments/z9onmc/freebsd_ping_cve/"
+                },
+                {
+                    "created": 1670025470.0,
+                    "is_self": false,
+                    "num_comments": 0,
+                    "reddit_url": "https://www.reddit.com/r/bag_o_news/comments/zb24vy/remote_code_execution_bug_in_freebsds_ping/",
+                    "subreddit": "bag_o_news",
+                    "subreddit_subscribers": 351,
+                    "title": "Remote code execution bug in FreeBSD's ping (CVE-2022-23093)",
+                    "upvotes": 2,
+                    "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-22:15.ping.asc"
+                }
+            ],
+            "score": null,
+            "severity": null,
+            "tweets": [
+                {
+                    "created_at": "2022-12-18 19:29",
+                    "likes": 96,
+                    "num_retweets": 13,
+                    "retweets": 15,
+                    "tweet_id": "1604559372096512000",
+                    "tweet_text": "Remember the ping vulnerability (CVE-2022-23093) from a few weeks ago? We used #ChatGPT to analyse the patch to understand the buffer overflow.\n\nhttps://t.co/uXCnGZJcgh https://t.co/2cIN0UJb9V",
+                    "twitter_user_handle": "LiveOverflow",
+                    "twitter_user_name": "LiveOverflow \ud83d\udd34",
+                    "twitter_user_profile_pic": "https://pbs.twimg.com/profile_images/804126168869961728/KNGXVh_6_normal.jpg",
+                    "urls": [
+                        {
+                            "display_url": "youtube.com/watch?v=bkkVCl\u2026",
+                            "expanded_url": "https://www.youtube.com/watch?v=bkkVClq9aGw",
+                            "url": "https://t.co/uXCnGZJcgh"
+                        }
+                    ]
+                },
+                {
+                    "created_at": "2022-12-18 19:56",
+                    "likes": 0,
+                    "num_retweets": 0,
+                    "retweets": 0,
+                    "tweet_id": "1604566319382364162",
+                    "tweet_text": "ping Vulnerability Patch Analysis (with #ChatGPT) - CVE-2022-23093 https://t.co/bfdCNhCHOX",
+                    "twitter_user_handle": "NachoThome",
+                    "twitter_user_name": "Nacho \u039elizald\u039e Thom\u039e \ud83d\udd3a",
+                    "twitter_user_profile_pic": "https://pbs.twimg.com/profile_images/450569904681271296/9mXpLAy8_normal.png",
+                    "urls": [
+                        {
+                            "display_url": "youtu.be/bkkVClq9aGw",
+                            "expanded_url": "https://youtu.be/bkkVClq9aGw",
+                            "url": "https://t.co/bfdCNhCHOX"
+                        }
+                    ]
+                },
+                {
+                    "created_at": "2022-12-19 00:06",
+                    "likes": 0,
+                    "num_retweets": 0,
+                    "retweets": 0,
+                    "tweet_id": "1604629084377694209",
+                    "tweet_text": "The vuln CVE-2022-23093 has a tweet created 0 days ago and retweeted 14 times.\nhttps://t.co/WDHXV1gW1k\n#pow1rtrtwwcve",
+                    "twitter_user_handle": "ipssignatures",
+                    "twitter_user_name": "ipssignatures",
+                    "twitter_user_profile_pic": "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png",
+                    "urls": [
+                        {
+                            "display_url": "twitter.com/LiveOverflow/s\u2026",
+                            "expanded_url": "https://twitter.com/LiveOverflow/status/1604559372096512000",
+                            "url": "https://t.co/WDHXV1gW1k"
+                        }
+                    ]
+                }
+            ],
+            "vendor_advisories": [],
+            "vendors": []
+        },
+        {
+            "assigner": null,
+            "audience_size": 97521,
+            "cve": "CVE-2022-23121",
+            "cve_urls": null,
+            "cvssv2_base_score": null,
+            "cvssv2_severity": null,
+            "cvssv3_base_score": null,
+            "cvssv3_base_severity": null,
+            "cwes": [],
+            "description": null,
+            "epss_score": null,
+            "github_repos": [],
+            "lastModifiedDate": null,
+            "num_retweets": 9,
+            "num_tweets": 1,
+            "num_tweets_and_retweets": 10,
+            "publishedDate": null,
+            "reddit_posts": [
+                {
+                    "created": 1648128021.0,
+                    "is_self": false,
+                    "num_comments": 1,
+                    "reddit_url": "https://www.reddit.com/r/netsec/comments/tm9ihq/remote_code_execution_on_western_digital_pr4100/",
+                    "subreddit": "netsec",
+                    "subreddit_subscribers": 462688,
+                    "title": "Remote Code Execution on Western Digital PR4100 NAS (CVE-2022-23121)",
+                    "upvotes": 68,
+                    "url": "https://research.nccgroup.com/2022/03/24/remote-code-execution-on-western-digital-pr4100-nas-cve-2022-23121/"
+                },
+                {
+                    "created": 1651030849.0,
+                    "is_self": true,
+                    "num_comments": 75,
+                    "reddit_url": "https://www.reddit.com/r/synology/comments/ucufqt/7142661_update_1_is_out/",
+                    "subreddit": "synology",
+                    "subreddit_subscribers": 113903,
+                    "title": "7.1-42661 Update 1 is out",
+                    "upvotes": 46,
+                    "url": "https://www.reddit.com/r/synology/comments/ucufqt/7142661_update_1_is_out/"
+                },
+                {
+                    "created": 1648138907.0,
+                    "is_self": false,
+                    "num_comments": 0,
+                    "reddit_url": "https://www.reddit.com/r/RedSec/comments/tmkyva/remote_code_execution_on_western_digital_pr4100/",
+                    "subreddit": "RedSec",
+                    "subreddit_subscribers": 1491,
+                    "title": "Remote Code Execution on Western Digital PR4100 NAS (CVE-2022-23121)",
+                    "upvotes": 1,
+                    "url": "https://research.nccgroup.com/2022/03/24/remote-code-execution-on-western-digital-pr4100-nas-cve-2022-23121/"
+                },
+                {
+                    "created": 1648409188.0,
+                    "is_self": false,
+                    "num_comments": 0,
+                    "reddit_url": "https://www.reddit.com/r/bag_o_news/comments/tpr4y3/remote_code_execution_on_western_digital_pr4100/",
+                    "subreddit": "bag_o_news",
+                    "subreddit_subscribers": 351,
+                    "title": "Remote Code Execution on Western Digital PR4100 NAS (CVE-2022-23121)",
+                    "upvotes": 1,
+                    "url": "https://research.nccgroup.com/2022/03/24/remote-code-execution-on-western-digital-pr4100-nas-cve-2022-23121/"
+                },
+                {
+                    "created": 1653052087.0,
+                    "is_self": true,
+                    "num_comments": 7,
+                    "reddit_url": "https://www.reddit.com/r/qnap/comments/utvc3s/new_public_beta_firmware_qts_5012034_has_anyone/",
+                    "subreddit": "qnap",
+                    "subreddit_subscribers": 21461,
+                    "title": "New Public Beta Firmware - QTS 5.0.1.2034 - Has anyone tried it yet? Here are the patch notes.",
+                    "upvotes": 1,
+                    "url": "https://www.reddit.com/r/qnap/comments/utvc3s/new_public_beta_firmware_qts_5012034_has_anyone/"
+                }
+            ],
+            "score": null,
+            "severity": null,
+            "tweets": [
+                {
+                    "created_at": "2022-12-18 10:37",
+                    "likes": 18,
+                    "num_retweets": 9,
+                    "retweets": 10,
+                    "tweet_id": "1604425495164198913",
+                    "tweet_text": "\"Remote Code Execution on Western Digital PR4100 NAS (CVE-2022-23121)\" \n\n#infosec #pentest #redteam\nhttps://t.co/yohTLJWBbd https://t.co/ji8f8lr9zZ",
+                    "twitter_user_handle": "CyberWarship",
+                    "twitter_user_name": "Florian Hansemann",
+                    "twitter_user_profile_pic": "https://pbs.twimg.com/profile_images/1393648427666444295/i2nUIWaF_normal.jpg",
+                    "urls": [
+                        {
+                            "display_url": "research.nccgroup.com/2022/03/24/rem\u2026",
+                            "expanded_url": "https://research.nccgroup.com/2022/03/24/remote-code-execution-on-western-digital-pr4100-nas-cve-2022-23121/",
+                            "url": "https://t.co/yohTLJWBbd"
+                        }
+                    ]
+                }
+            ],
+            "vendor_advisories": [],
+            "vendors": []
+        },
+        {
+            "assigner": "security@apache.org",
+            "audience_size": 88744,
+            "cve": "CVE-2022-39198",
+            "cve_urls": null,
+            "cvssv2_base_score": null,
+            "cvssv2_severity": null,
+            "cvssv3_base_score": 9.8,
+            "cvssv3_base_severity": "CRITICAL",
+            "cwes": [
+                {
+                    "cwe_description": "Deserialization of Untrusted Data",
+                    "cwe_id": "CWE-502"
+                }
+            ],
+            "description": "A deserialization vulnerability existed in dubbo hessian-lite 3.2.12 and its earlier versions, which could lead to malicious code execution. This issue affects Apache Dubbo 2.7.x version 2.7.17 and prior versions; Apache Dubbo 3.0.x version 3.0.11 and prior versions; Apache Dubbo 3.1.x version 3.1.0 and prior versions.",
+            "epss_score": "0.01086",
+            "github_repos": [],
+            "lastModifiedDate": "2022-10-20T15:42Z",
+            "num_retweets": 3,
+            "num_tweets": 2,
+            "num_tweets_and_retweets": 5,
+            "publishedDate": "2022-10-18T19:15Z",
+            "reddit_posts": [
+                {
+                    "created": 1666125533.0,
+                    "is_self": false,
+                    "num_comments": 0,
+                    "reddit_url": "https://www.reddit.com/r/netcve/comments/y7i5po/cve202239198/",
+                    "subreddit": "netcve",
+                    "subreddit_subscribers": 124,
+                    "title": "CVE-2022-39198",
+                    "upvotes": 1,
+                    "url": "https://cve.report/CVE-2022-39198"
+                }
+            ],
+            "score": 9.8,
+            "severity": "CRITICAL",
+            "tweets": [
+                {
+                    "created_at": "2022-12-18 06:59",
+                    "likes": 11,
+                    "num_retweets": 3,
+                    "retweets": 3,
+                    "tweet_id": "1604370842871373824",
+                    "tweet_text": "CVE-2022-39198 Apache Dubbo Hession Deserialization Vulnerability Gadgets Bypass https://t.co/9YgqIWW2SC",
+                    "twitter_user_handle": "Dinosn",
+                    "twitter_user_name": "Nicolas Krassas",
+                    "twitter_user_profile_pic": "https://pbs.twimg.com/profile_images/1292159799141060610/CLgtH-wo_normal.jpg",
+                    "urls": [
+                        {
+                            "display_url": "xz.aliyun.com/t/11961",
+                            "expanded_url": "https://xz.aliyun.com/t/11961",
+                            "url": "https://t.co/9YgqIWW2SC"
+                        }
+                    ]
+                },
+                {
+                    "created_at": "2022-12-18 17:32",
+                    "likes": 0,
+                    "num_retweets": 0,
+                    "retweets": 0,
+                    "tweet_id": "1604530041383096320",
+                    "tweet_text": "#exploit\n1.CVE-2022-39198:\nApache Dubbo Hession Deserialization Vulnerability Gadgets Bypass\nhttps://t.co/vaQcf3Hzge",
+                    "twitter_user_handle": "ksg93rd",
+                    "twitter_user_name": "Mr. OS",
+                    "twitter_user_profile_pic": "https://pbs.twimg.com/profile_images/862706447020326912/ZiPZWTZ4_normal.jpg",
+                    "urls": [
+                        {
+                            "display_url": "xz.aliyun.com/t/11961",
+                            "expanded_url": "https://xz.aliyun.com/t/11961",
+                            "url": "https://t.co/vaQcf3Hzge"
+                        }
+                    ]
+                }
+            ],
+            "vendor_advisories": [
+                "https://lists.apache.org/thread/8d3zqrkoy4jh8dy37j4rd7g9jodzlvkk"
+            ],
+            "vendors": [
+                {
+                    "products": [
+                        {
+                            "product": "Dubbo",
+                            "versions": [
+                                "3.1.0",
+                                "*"
+                            ]
+                        }
+                    ],
+                    "vendor": "Apache"
+                }
+            ]
+        },
+        {
+            "assigner": "secure@microsoft.com",
+            "audience_size": 88563,
+            "cve": "CVE-2020-17087",
+            "cve_urls": null,
+            "cvssv2_base_score": 7.2,
+            "cvssv2_severity": "HIGH",
+            "cvssv3_base_score": 7.8,
+            "cvssv3_base_severity": "HIGH",
+            "cwes": [
+                {
+                    "cwe_description": "Incorrect Conversion between Numeric Types",
+                    "cwe_id": "CWE-681"
+                }
+            ],
+            "description": "Windows Kernel Local Elevation of Privilege Vulnerability",
+            "epss_score": "0.01372",
+            "github_repos": [
+                {
+                    "created": "2020-08-09T05:48:10Z",
+                    "description": ":palm_tree:Kernel privilege escalation vulnerability collection, with compilation environment, demo GIF map, vulnerability details, executable file  (\u63d0\u6743\u6f0f\u6d1e\u5408\u96c6) ",
+                    "language": "C",
+                    "name": "Kernelhub",
+                    "stars": 2351,
+                    "topics": [
+                        "cve",
+                        "cve-2020-1054",
+                        "cve-2020-16898",
+                        "cve-2020-16938",
+                        "cve-2020-17087",
+                        "cve-2021-1732",
+                        "cve-2021-26868",
+                        "cve-2021-33739",
+                        "cve-2021-34486",
+                        "cve-2021-36934",
+                        "cve-2021-40444",
+                        "cve-2021-40449",
+                        "cve-2021-42278",
+                        "cve-2021-42287",
+                        "cve-2022-21882",
+                        "exploits",
+                        "kernel",
+                        "pentest",
+                        "tool",
+                        "windows"
+                    ],
+                    "updated": "2022-12-18T14:28:16Z",
+                    "url": "https://github.com/Ascotbe/Kernelhub"
+                },
+                {
+                    "created": "2021-07-02T16:03:16Z",
+                    "description": "Techniques based on named pipes for pool overflow exploitation targeting the most recent (and oldest) Windows versions demonstrated on CVE-2020-17087 and an off-by-one overflow",
+                    "language": "C++",
+                    "name": "Windows-Non-Paged-Pool-Overflow-Exploitation",
+                    "stars": 141,
+                    "topics": [],
+                    "updated": "2022-12-16T04:32:16Z",
+                    "url": "https://github.com/vp777/Windows-Non-Paged-Pool-Overflow-Exploitation"
+                },
+                {
+                    "created": "2020-11-03T22:08:34Z",
+                    "description": "Elevation Of Privileges Proof of Concept for Windows (win7-win10)",
+                    "language": null,
+                    "name": "CVE2020-17087",
+                    "stars": 28,
+                    "topics": [
+                        "cve-2020-17087",
+                        "cve2020-17087",
+                        "elevation-of-privilege",
+                        "eop",
+                        "latest-win10-eop",
+                        "latest-windows-eop",
+                        "win10-exploit",
+                        "win10-hacking",
+                        "windows-eop"
+                    ],
+                    "updated": "2022-12-13T05:56:18Z",
+                    "url": "https://github.com/TinToSer/CVE2020-17087"
+                },
+                {
+                    "created": "2020-11-26T03:21:34Z",
+                    "description": "A CVE-2020-17087 PoC.",
+                    "language": "C",
+                    "name": "CVE-2020-17087",
+                    "stars": 3,
+                    "topics": [],
+                    "updated": "2022-06-13T22:21:30Z",
+                    "url": "https://github.com/revengsh/CVE-2020-17087"
+                },
+                {
+                    "created": "2021-05-27T16:55:39Z",
+                    "description": null,
+                    "language": null,
+                    "name": "OHTS_IE6052-CVE-2020-17087",
+                    "stars": 0,
+                    "topics": [],
+                    "updated": "2021-05-27T17:18:12Z",
+                    "url": "https://github.com/ykg88/OHTS_IE6052-CVE-2020-17087"
+                }
+            ],
+            "lastModifiedDate": "2022-07-12T17:42Z",
+            "num_retweets": 3,
+            "num_tweets": 1,
+            "num_tweets_and_retweets": 4,
+            "publishedDate": "2020-11-11T07:15Z",
+            "reddit_posts": [
+                {
+                    "created": 1604258451.0,
+                    "is_self": false,
+                    "num_comments": 30,
+                    "reddit_url": "https://www.reddit.com/r/netsec/comments/jm85hw/cve202017087_windows_kernel_buffer_overflow/",
+                    "subreddit": "netsec",
+                    "subreddit_subscribers": 462688,
+                    "title": "CVE-2020-17087 - Windows Kernel Buffer Overflow. Already being exploited in the wild.",
+                    "upvotes": 365,
+                    "url": "https://bugs.chromium.org/p/project-zero/issues/detail?id=2104"
+                },
+                {
+                    "created": 1604094573.0,
+                    "is_self": true,
+                    "num_comments": 57,
+                    "reddit_url": "https://www.reddit.com/r/sysadmin/comments/jl60tc/windows_kernel_zeroday_disclosed_by_googles/",
+                    "subreddit": "sysadmin",
+                    "subreddit_subscribers": 759427,
+                    "title": "Windows kernel zero-day disclosed by Google's Project Zero after bug exploited in the wild by hackers",
+                    "upvotes": 110,
+                    "url": "https://www.reddit.com/r/sysadmin/comments/jl60tc/windows_kernel_zeroday_disclosed_by_googles/"
+                },
+                {
+                    "created": 1627737559.0,
+                    "is_self": false,
+                    "num_comments": 4,
+                    "reddit_url": "https://www.reddit.com/r/netsec/comments/ov70ib/several_techniques_on_nonpaged_pool_overflow/",
+                    "subreddit": "netsec",
+                    "subreddit_subscribers": 462688,
+                    "title": "Several techniques on non-paged pool overflow exploitation including a poc for CVE-2020-17087 (Windows Kernel Cryptography Driver) and an off-by-one overflow.",
+                    "upvotes": 43,
+                    "url": "https://github.com/vp777/Windows-Non-Paged-Pool-Overflow-Exploitation"
+                },
+                {
+                    "created": 1627737611.0,
+                    "is_self": false,
+                    "num_comments": 0,
+                    "reddit_url": "https://www.reddit.com/r/ExploitDev/comments/ov70ze/several_techniques_on_nonpaged_pool_overflow/",
+                    "subreddit": "ExploitDev",
+                    "subreddit_subscribers": 9847,
+                    "title": "Several techniques on non-paged pool overflow exploitation including a poc for CVE-2020-17087 (Windows Kernel Cryptography Driver) and an off-by-one overflow.",
+                    "upvotes": 19,
+                    "url": "https://github.com/vp777/Windows-Non-Paged-Pool-Overflow-Exploitation"
+                },
+                {
+                    "created": 1604094456.0,
+                    "is_self": true,
+                    "num_comments": 0,
+                    "reddit_url": "https://www.reddit.com/r/cybersecurity/comments/jl5zm9/windows_kernel_zeroday_disclosed_by_googles/",
+                    "subreddit": "cybersecurity",
+                    "subreddit_subscribers": 425932,
+                    "title": "Windows kernel zero-day disclosed by Google's Project Zero after bug exploited in the wild by hackers",
+                    "upvotes": 8,
+                    "url": "https://www.reddit.com/r/cybersecurity/comments/jl5zm9/windows_kernel_zeroday_disclosed_by_googles/"
+                }
+            ],
+            "score": 7.8,
+            "severity": "HIGH",
+            "tweets": [
+                {
+                    "created_at": "2022-12-18 06:58",
+                    "likes": 18,
+                    "num_retweets": 3,
+                    "retweets": 4,
+                    "tweet_id": "1604370577053065217",
+                    "tweet_text": "Windows Kernel Drive Vulnerability Research:  CVE-2020-17087\nhttps://t.co/FM7B9lESWh",
+                    "twitter_user_handle": "Dinosn",
+                    "twitter_user_name": "Nicolas Krassas",
+                    "twitter_user_profile_pic": "https://pbs.twimg.com/profile_images/1292159799141060610/CLgtH-wo_normal.jpg",
+                    "urls": [
+                        {
+                            "display_url": "versprite.com/blog/security-\u2026",
+                            "expanded_url": "https://versprite.com/blog/security-research/windows-kernel-vulnerability-research-cve-2020-17087/",
+                            "url": "https://t.co/FM7B9lESWh"
+                        }
+                    ]
+                }
+            ],
+            "vendor_advisories": [
+                "https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-17087"
+            ],
+            "vendors": [
+                {
+                    "products": [
+                        {
+                            "product": "Windows Server 2019",
+                            "versions": [
+                                "-"
+                            ]
+                        }
+                    ],
+                    "vendor": "Microsoft"
+                }
+            ]
+        },
+        {
+            "assigner": "cna@vuldb.com",
+            "audience_size": 86972,
+            "cve": "CVE-2022-4592",
+            "cve_urls": null,
+            "cvssv2_base_score": null,
+            "cvssv2_severity": null,
+            "cvssv3_base_score": null,
+            "cvssv3_base_severity": null,
+            "cwes": [
+                {
+                    "cwe_description": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')",
+                    "cwe_id": "CWE-89"
+                },
+                {
+                    "cwe_description": "Improper Neutralization of Special Elements in Output Used by a Downstream Component ('Injection')",
+                    "cwe_id": "CWE-74"
+                },
+                {
+                    "cwe_description": "Improper Neutralization",
+                    "cwe_id": "CWE-707"
+                }
+            ],
+            "description": "A vulnerability was found in luckyshot CRMx and classified as critical. This issue affects the function get/save/delete/comment/commentdelete of the file index.php. The manipulation leads to sql injection. The attack may be initiated remotely. The name of the patch is 8c62d274986137d6a1d06958a6f75c3553f45f8f. It is recommended to apply a patch to fix this issue. The identifier VDB-216185 was assigned to this vulnerability.",
+            "epss_score": null,
+            "github_repos": [],
+            "lastModifiedDate": "2022-12-18T08:15Z",
+            "num_retweets": 2,
+            "num_tweets": 16,
+            "num_tweets_and_retweets": 18,
+            "publishedDate": "2022-12-18T08:15Z",
+            "reddit_posts": [
+                {
+                    "created": 1671356384.0,
+                    "is_self": false,
+                    "num_comments": 0,
+                    "reddit_url": "https://www.reddit.com/r/netcve/comments/zouwdf/cve20224592/",
+                    "subreddit": "netcve",
+                    "subreddit_subscribers": 124,
+                    "title": "CVE-2022-4592",
+                    "upvotes": 1,
+                    "url": "https://cve.report/CVE-2022-4592"
+                }
+            ],
+            "score": null,
+            "severity": null,
+            "tweets": [
+                {
+                    "created_at": "2022-12-18 08:15",
+                    "likes": 0,
+                    "num_retweets": 1,
+                    "retweets": 1,
+                    "tweet_id": "1604389850592976896",
+                    "tweet_text": "New post from https://t.co/9KYxtdZjkl (CVE-2022-4592 | luckyshot CRMx index.php get/save/delete/comment/commentdelete sql injection) has been published on https://t.co/eo54FE3qam",
+                    "twitter_user_handle": "www_sesin_at",
+                    "twitter_user_name": "www.sesin.at",
+                    "twitter_user_profile_pic": "https://pbs.twimg.com/profile_images/958100963822329858/fb_N8h5n_normal.jpg",
+                    "urls": [
+                        {
+                            "display_url": "sesin.at",
+                            "expanded_url": "http://www.sesin.at",
+                            "url": "https://t.co/9KYxtdZjkl"
+                        },
+                        {
+                            "display_url": "sesin.at/2022/12/18/cve\u2026",
+                            "expanded_url": "https://www.sesin.at/2022/12/18/cve-2022-4592-luckyshot-crmx-index-php-get-save-delete-comment-commentdelete-sql-injection/",
+                            "url": "https://t.co/eo54FE3qam"
+                        }
+                    ]
+                },
+                {
+                    "created_at": "2022-12-18 08:15",
+                    "likes": 0,
+                    "num_retweets": 1,
+                    "retweets": 1,
+                    "tweet_id": "1604389848403656704",
+                    "tweet_text": "New post from https://t.co/uXvPWJy6tj (CVE-2022-4592 | luckyshot CRMx index.php get/save/delete/comment/commentdelete sql injection) has been published on https://t.co/XV0zxwFcza",
+                    "twitter_user_handle": "WolfgangSesin",
+                    "twitter_user_name": "Wolfgang Sesin",
+                    "twitter_user_profile_pic": "https://pbs.twimg.com/profile_images/957011635369054208/Om3jbj7z_normal.jpg",
+                    "urls": [
+                        {
+                            "display_url": "sesin.at",
+                            "expanded_url": "http://www.sesin.at",
+                            "url": "https://t.co/uXvPWJy6tj"
+                        },
+                        {
+                            "display_url": "sesin.at/2022/12/18/cve\u2026",
+                            "expanded_url": "https://www.sesin.at/2022/12/18/cve-2022-4592-luckyshot-crmx-index-php-get-save-delete-comment-commentdelete-sql-injection/",
+                            "url": "https://t.co/XV0zxwFcza"
+                        }
+                    ]
+                },
+                {
+                    "created_at": "2022-12-18 10:51",
+                    "likes": 1,
+                    "num_retweets": 0,
+                    "retweets": 0,
+                    "tweet_id": "1604429189372862466",
+                    "tweet_text": "CVE-2022-4592 | luckyshot CRMx index.php get/save/delete/comment/commentdelete sql injection A vulnerability was found in luckyshot CRMx and classified as critical. This issue affects the function get/save/delete/comment/commentdelete of the file index.p\u2026 https://t.co/jaJZDZ99ft",
+                    "twitter_user_handle": "threatmeter",
+                    "twitter_user_name": "ThreatMeter",
+                    "twitter_user_profile_pic": "https://pbs.twimg.com/profile_images/637160052617379840/VTN_Q4tL_normal.jpg",
+                    "urls": [
+                        {
+                            "display_url": "ift.tt/alQZcig",
+                            "expanded_url": "https://ift.tt/alQZcig",
+                            "url": "https://t.co/jaJZDZ99ft"
+                        }
+                    ]
+                },
+                {
+                    "created_at": "2022-12-18 13:56",
+                    "likes": 0,
+                    "num_retweets": 0,
+                    "retweets": 0,
+                    "tweet_id": "1604475782310789123",
+                    "tweet_text": "\ud83d\udea8 NEW: CVE-2022-4592 \ud83d\udea8 A vulnerability was found in luckyshot CRMx and classified as critical. This issue affects the function get/save/delete/comment/commentdelete of the file index.php. The manipulation leads to... (click for more)  https://t.co/J6cqs4KxFG",
+                    "twitter_user_handle": "threatintelctr",
+                    "twitter_user_name": "Threat Intel Center",
+                    "twitter_user_profile_pic": "https://pbs.twimg.com/profile_images/904224973987840000/dMy1x9Ho_normal.jpg",
+                    "urls": [
+                        {
+                            "display_url": "nvd.nist.gov/vuln/detail/CV\u2026",
+                            "expanded_url": "https://nvd.nist.gov/vuln/detail/CVE-2022-4592",
+                            "url": "https://t.co/J6cqs4KxFG"
+                        }
+                    ]
+                },
+                {
+                    "created_at": "2022-12-18 20:56",
+                    "likes": 0,
+                    "num_retweets": 0,
+                    "retweets": 0,
+                    "tweet_id": "1604581484567863299",
+                    "tweet_text": "\ud83d\udea8 NEW: CVE-2022-4592 \ud83d\udea8 A vulnerability was found in luckyshot CRMx and classified as critical. This issue affects the function get/save/delete/comment/commentdelete of the file index.php. The manipulation leads to... (click for more)  https://t.co/J6cqs4JZQ8",
+                    "twitter_user_handle": "threatintelctr",
+                    "twitter_user_name": "Threat Intel Center",
+                    "twitter_user_profile_pic": "https://pbs.twimg.com/profile_images/904224973987840000/dMy1x9Ho_normal.jpg",
+                    "urls": [
+                        {
+                            "display_url": "nvd.nist.gov/vuln/detail/CV\u2026",
+                            "expanded_url": "https://nvd.nist.gov/vuln/detail/CVE-2022-4592",
+                            "url": "https://t.co/J6cqs4JZQ8"
+                        }
+                    ]
+                }
+            ],
+            "vendor_advisories": [],
+            "vendors": []
+        }
+    ],
+    "latest_client_version": "0.1.14",
+    "updated": "2022-12-19 01:02:58"
+}
