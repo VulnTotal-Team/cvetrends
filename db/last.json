@@ -1,5 +1,150 @@
 [
     {
+        "Modified": "2022-12-19T22:15:00",
+        "Published": "2022-12-19T22:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-73",
+        "id": "CVE-2022-23536",
+        "impact": {},
+        "last-modified": "2022-12-19T22:15:00",
+        "references": [
+            "https://cortexmetrics.io/docs/api/#set-alertmanager-configuration",
+            "https://github.com/cortexproject/cortex/security/advisories/GHSA-cq2g-pw6q-hf7j",
+            "https://github.com/cortexproject/cortex/releases/tag/v1.13.2",
+            "https://github.com/cortexproject/cortex/releases/tag/v1.14.1"
+        ],
+        "summary": "Cortex provides multi-tenant, long term storage for Prometheus. A local file inclusion vulnerability exists in Cortex versions 1.13.0, 1.13.1 and 1.14.0, where a malicious actor could remotely read local files as a result of parsing maliciously crafted Alertmanager configurations when submitted to the Alertmanager Set Configuration API. Only users of the Alertmanager service where `-experimental.alertmanager.enable-api` or `enable_api: true` is configured are affected. Affected Cortex users are advised to upgrade to patched versions 1.13.2 or 1.14.1. However as a workaround, Cortex administrators may reject Alertmanager configurations containing the `api_key_file` setting in the `opsgenie_configs` section before sending to the Set Alertmanager Configuration API."
+    },
+    {
+        "Modified": "2022-12-19T22:15:00",
+        "Published": "2022-12-19T22:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-80",
+        "id": "CVE-2022-23543",
+        "impact": {},
+        "last-modified": "2022-12-19T22:15:00",
+        "references": [
+            "https://github.com/mesosoi/silverwaregames-io-issue-tracker/security/advisories/GHSA-62r9-4v3r-rw89"
+        ],
+        "summary": "Silverware Games is a social network where people can play games online. Users can attach URLs to YouTube videos, the site will generate related `<iframe>` when the post will be published. The handler has some sort of protection so non-YouTube links can't be posted, as well as HTML tags are being stripped. However, it was still possible to add custom HTML attributes (e.g. `onclick=alert(\"xss\")`) to the `<iframe>'. This issue was fixed in the version `1.1.34` and does not require any extra actions from our members. There has been no evidence that this vulnerability was used by anyone at this time."
+    },
+    {
+        "Modified": "2022-12-19T22:15:00",
+        "Published": "2022-12-19T22:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-40434",
+        "impact": {},
+        "last-modified": "2022-12-19T22:15:00",
+        "references": [
+            "https://www.softr.io/",
+            "http://softr.com",
+            "https://isaghojaria.medium.com/softr-v2-0-was-discovered-to-be-vulnerable-to-html-injection-via-the-name-field-of-the-account-page-c6fbd3162254"
+        ],
+        "summary": "Softr v2.0 was discovered to be vulnerable to HTML injection via the Name field of the Account page."
+    },
+    {
+        "Modified": "2022-12-19T22:15:00",
+        "Published": "2022-12-19T22:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-44940",
+        "impact": {},
+        "last-modified": "2022-12-19T22:15:00",
+        "references": [
+            "https://github.com/NixOS/patchelf/pull/419"
+        ],
+        "summary": "Patchelf v0.9 was discovered to contain an out-of-bounds read via the function modifyRPath at src/patchelf.cc."
+    },
+    {
+        "Modified": "2022-12-19T21:15:00",
+        "Published": "2022-12-19T21:15:00",
+        "access": {},
+        "assigner": "psirt@us.ibm.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-38708",
+        "impact": {},
+        "last-modified": "2022-12-19T21:15:00",
+        "references": [
+            "https://www.ibm.com/support/pages/node/6841801",
+            "https://exchange.xforce.ibmcloud.com/vulnerabilities/234180"
+        ],
+        "summary": "IBM Cognos Analytics 11.1.7 11.2.0, and 11.2.1 could be vulnerable to a Server-Side Request Forgery Attack (SSRF) attack by constructing URLs from user-controlled data. This could enable attackers to make arbitrary requests to the internal network or to the local file system. IBM X-Force ID: 234180."
+    },
+    {
+        "Modified": "2022-12-19T21:15:00",
+        "Published": "2022-12-19T21:15:00",
+        "access": {},
+        "assigner": "psirt@us.ibm.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-39160",
+        "impact": {},
+        "last-modified": "2022-12-19T21:15:00",
+        "references": [
+            "https://www.ibm.com/support/pages/node/6841801",
+            "https://exchange.xforce.ibmcloud.com/vulnerabilities/235064"
+        ],
+        "summary": "IBM Cognos Analytics 11.2.1, 11.2.0, and 11.1.7 is vulnerable to cross-site scripting. This vulnerability allows users to embed arbitrary JavaScript code in the Web UI thus altering the intended functionality potentially leading to credentials disclosure within a trusted session. IBM X-Force ID: 235064."
+    },
+    {
+        "Modified": "2022-12-19T21:15:00",
+        "Published": "2022-12-19T21:15:00",
+        "access": {},
+        "assigner": "psirt@us.ibm.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-43883",
+        "impact": {},
+        "last-modified": "2022-12-19T21:15:00",
+        "references": [
+            "https://www.ibm.com/support/pages/node/6841801",
+            "https://exchange.xforce.ibmcloud.com/vulnerabilities/240266"
+        ],
+        "summary": "IBM Cognos Analytics 11.1.7, 11.2.0, and 11.2.1 could be vulnerable to a Log Injection attack by constructing URLs from user-controlled data. This could enable attackers to make arbitrary requests to the internal network or to the local file system. IBM X-Force ID: 240266."
+    },
+    {
+        "Modified": "2022-12-19T21:15:00",
+        "Published": "2022-12-19T21:15:00",
+        "access": {},
+        "assigner": "psirt@us.ibm.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-43887",
+        "impact": {},
+        "last-modified": "2022-12-19T21:15:00",
+        "references": [
+            "https://www.ibm.com/support/pages/node/6841801",
+            "https://exchange.xforce.ibmcloud.com/vulnerabilities/240450"
+        ],
+        "summary": "IBM Cognos Analytics 11.1.7, 11.2.0, and 11.2.1 could be vulnerable to sensitive information exposure by passing API keys to log files. If these keys contain sensitive information, it could lead to further attacks. IBM X-Force ID: 240450."
+    },
+    {
+        "Modified": "2022-12-19T21:15:00",
+        "Published": "2022-12-19T21:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-45041",
+        "impact": {},
+        "last-modified": "2022-12-19T21:15:00",
+        "references": [
+            "https://github.com/N1k0la-T/somefiles/blob/main/sqli.py",
+            "https://github.com/N1k0la-T/vulnerability/issues/1"
+        ],
+        "summary": "SQL Injection exits in xinhu < 2.5.0"
+    },
+    {
         "Modified": "2022-12-19T20:48:00",
         "Published": "2022-12-14T21:15:00",
         "access": {},
@@ -1434,143 +1579,5 @@
             "https://support.zabbix.com/browse/ZBX-22087"
         ],
         "summary": "Arbitrary file read vulnerability exists in Zabbix Web Service Report Generation, which listens on the port 10053. The service does not have proper validation for URL parameters before reading the files."
-    },
-    {
-        "Modified": "2022-12-19T15:08:00",
-        "Published": "2022-12-13T21:15:00",
-        "access": {},
-        "assigner": "ics-cert@hq.dhs.gov",
-        "cvss": null,
-        "cwe": "CWE-908",
-        "id": "CVE-2022-2950",
-        "impact": {},
-        "last-modified": "2022-12-19T15:08:00",
-        "references": [
-            "https://www.cisa.gov/uscert/ics/advisories/icsa-22-284-01"
-        ],
-        "summary": "Altair HyperView Player versions 2021.1.0.27 and prior are vulnerable to the use of uninitialized memory vulnerability during parsing of H3D files. A DWORD is extracted from an uninitialized buffer and, after sign extension, is used as an index into a stack variable to increment a counter leading to memory corruption."
-    },
-    {
-        "Modified": "2022-12-19T14:58:00",
-        "Published": "2022-12-15T10:15:00",
-        "access": {},
-        "assigner": "talos-cna@cisco.com",
-        "cvss": null,
-        "cwe": "CWE-22",
-        "id": "CVE-2022-32573",
-        "impact": {},
-        "last-modified": "2022-12-19T14:58:00",
-        "references": [
-            "https://talosintelligence.com/vulnerability_reports/TALOS-2022-1528"
-        ],
-        "summary": "A directory traversal vulnerability exists in the AssetActions.aspx addDoc functionality of Lansweeper lansweeper 10.1.1.0. A specially-crafted HTTP request can lead to arbitrary file upload. An attacker can send an HTTP request to trigger this vulnerability."
-    },
-    {
-        "Modified": "2022-12-19T14:57:00",
-        "Published": "2022-12-15T10:15:00",
-        "access": {},
-        "assigner": "talos-cna@cisco.com",
-        "cvss": null,
-        "cwe": "CWE-22",
-        "id": "CVE-2022-29517",
-        "impact": {},
-        "last-modified": "2022-12-19T14:57:00",
-        "references": [
-            "https://talosintelligence.com/vulnerability_reports/TALOS-2022-1529"
-        ],
-        "summary": "A directory traversal vulnerability exists in the HelpdeskActions.aspx edittemplate functionality of Lansweeper lansweeper 10.1.1.0. A specially-crafted HTTP request can lead to arbitrary file upload. An attacker can send an HTTP request to trigger this vulnerability."
-    },
-    {
-        "Modified": "2022-12-19T14:51:00",
-        "Published": "2022-12-14T21:15:00",
-        "access": {},
-        "assigner": "secalert@redhat.com",
-        "cvss": null,
-        "cwe": "CWE-416",
-        "id": "CVE-2022-4283",
-        "impact": {},
-        "last-modified": "2022-12-19T14:51:00",
-        "references": [
-            "https://bugzilla.redhat.com/show_bug.cgi?id=2151761",
-            "https://access.redhat.com/security/cve/CVE-2022-4283",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/DXDF2O5PPLE3SVAJJYUOSAD5QZ4TWQ2G/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/5NELB7YDWRABYYBG4UPTHRBDTKJRV5M2/"
-        ],
-        "summary": "A vulnerability was found in X.Org. This security flaw occurs because the XkbCopyNames function left a dangling pointer to freed memory, resulting in out-of-bounds memory access on subsequent XkbGetKbdByName requests.. This issue can lead to local privileges elevation on systems where the X server is running privileged and remote code execution for ssh X forwarding sessions."
-    },
-    {
-        "Modified": "2022-12-19T14:43:00",
-        "Published": "2022-12-15T10:15:00",
-        "access": {},
-        "assigner": "talos-cna@cisco.com",
-        "cvss": null,
-        "cwe": "CWE-22",
-        "id": "CVE-2022-27498",
-        "impact": {},
-        "last-modified": "2022-12-19T14:43:00",
-        "references": [
-            "https://talosintelligence.com/vulnerability_reports/TALOS-2022-1531"
-        ],
-        "summary": "A directory traversal vulnerability exists in the TicketTemplateActions.aspx GetTemplateAttachment functionality of Lansweeper lansweeper 10.1.1.0. A specially-crafted HTTP request can lead to arbitrary file read. An attacker can send an HTTP request to trigger this vulnerability."
-    },
-    {
-        "Modified": "2022-12-19T14:42:00",
-        "Published": "2022-12-15T10:15:00",
-        "access": {},
-        "assigner": "talos-cna@cisco.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-28703",
-        "impact": {},
-        "last-modified": "2022-12-19T14:42:00",
-        "references": [
-            "https://talosintelligence.com/vulnerability_reports/TALOS-2022-1532"
-        ],
-        "summary": "A stored cross-site scripting vulnerability exists in the HdConfigActions.aspx altertextlanguages functionality of Lansweeper lansweeper 10.1.1.0. A specially-crafted HTTP request can lead to arbitrary Javascript code injection. An attacker can send an HTTP request to trigger this vulnerability."
-    },
-    {
-        "Modified": "2022-12-19T14:42:00",
-        "Published": "2022-12-15T10:15:00",
-        "access": {},
-        "assigner": "talos-cna@cisco.com",
-        "cvss": null,
-        "cwe": "CWE-22",
-        "id": "CVE-2022-29511",
-        "impact": {},
-        "last-modified": "2022-12-19T14:42:00",
-        "references": [
-            "https://talosintelligence.com/vulnerability_reports/TALOS-2022-1530"
-        ],
-        "summary": "A directory traversal vulnerability exists in the KnowledgebasePageActions.aspx ImportArticles functionality of Lansweeper lansweeper 10.1.1.0. A specially-crafted HTTP request can lead to arbitrary file read. An attacker can send an HTTP request to trigger this vulnerability."
-    },
-    {
-        "Modified": "2022-12-19T14:37:00",
-        "Published": "2022-12-13T16:15:00",
-        "access": {},
-        "assigner": "productcert@siemens.com",
-        "cvss": null,
-        "cwe": "CWE-522",
-        "id": "CVE-2022-46142",
-        "impact": {},
-        "last-modified": "2022-12-19T14:37:00",
-        "references": [
-            "https://cert-portal.siemens.com/productcert/pdf/ssa-413565.pdf"
-        ],
-        "summary": "Affected devices store the CLI user passwords encrypted in flash memory. Attackers with physical access to the device could retrieve the file and decrypt the CLI user passwords."
-    },
-    {
-        "Modified": "2022-12-19T14:37:00",
-        "Published": "2022-12-13T16:15:00",
-        "access": {},
-        "assigner": "productcert@siemens.com",
-        "cvss": null,
-        "cwe": "CWE-1284",
-        "id": "CVE-2022-46143",
-        "impact": {},
-        "last-modified": "2022-12-19T14:37:00",
-        "references": [
-            "https://cert-portal.siemens.com/productcert/pdf/ssa-413565.pdf"
-        ],
-        "summary": "Affected devices do not check the TFTP blocksize correctly. This could allow an authenticated attacker to read from an uninitialized buffer that potentially contains previously allocated data."
     }
 ]
