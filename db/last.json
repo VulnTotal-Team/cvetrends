@@ -1,5 +1,325 @@
 [
     {
+        "Modified": "2022-12-20T18:00:00",
+        "Published": "2022-12-16T16:15:00",
+        "access": {},
+        "assigner": "security@android.com",
+        "cvss": null,
+        "cwe": "CWE-610",
+        "id": "CVE-2022-20199",
+        "impact": {},
+        "last-modified": "2022-12-20T18:00:00",
+        "references": [
+            "https://source.android.com/security/bulletin/pixel/2022-12-01"
+        ],
+        "summary": "In multiple locations of NfcService.java, there is a possible disclosure of NFC tags due to a confused deputy. This could lead to local information disclosure with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android-13Android ID: A-199291025"
+    },
+    {
+        "Modified": "2022-12-20T17:58:00",
+        "Published": "2022-12-16T16:15:00",
+        "access": {},
+        "assigner": "psirt@solarwinds.com",
+        "cvss": null,
+        "cwe": "CWE-798",
+        "id": "CVE-2021-35252",
+        "impact": {},
+        "last-modified": "2022-12-20T17:58:00",
+        "references": [
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-35252",
+            "https://documentation.solarwinds.com/en/success_center/servu/content/release_notes/servu_15-3-2_release_notes.htm",
+            "https://www.solarwinds.com/trust-center/security-advisories/CVE-2021-35252"
+        ],
+        "summary": "Common encryption key appears to be used across all deployed instances of Serv-U FTP Server. Because of this an encrypted value that is exposed to an attacker can be simply recovered to plaintext."
+    },
+    {
+        "Modified": "2022-12-20T17:51:00",
+        "Published": "2022-12-16T15:15:00",
+        "access": {},
+        "assigner": "secalert@redhat.com",
+        "cvss": null,
+        "cwe": "CWE-476",
+        "id": "CVE-2022-3109",
+        "impact": {},
+        "last-modified": "2022-12-20T17:51:00",
+        "references": [
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2153551",
+            "https://github.com/FFmpeg/FFmpeg/commit/656cb0450aeb73b25d7d26980af342b37ac4c568"
+        ],
+        "summary": "An issue was discovered in the FFmpeg through 3.0. vp3_decode_frame in libavcodec/vp3.c lacks check of the return value of av_malloc() and will cause the null pointer dereference, impacting confidentiality and availability."
+    },
+    {
+        "Modified": "2022-12-20T17:49:00",
+        "Published": "2022-12-16T14:15:00",
+        "access": {},
+        "assigner": "security@wordfence.com",
+        "cvss": null,
+        "cwe": "CWE-862",
+        "id": "CVE-2022-4555",
+        "impact": {},
+        "last-modified": "2022-12-20T17:49:00",
+        "references": [
+            "https://www.wordfence.com/threat-intel/vulnerabilities/id/7b498c5a-9fd1-43b8-b456-f6cec65d5077",
+            "https://plugins.trac.wordpress.org/changeset?sfp_email=&sfph_mail=&reponame=&old=2645044%40wp-shamsi&new=2645044%40wp-shamsi&sfp_email=&sfph_mail="
+        ],
+        "summary": "The WP Shamsi plugin for WordPress is vulnerable to authorization bypass due to a missing capability check on the deactivate() function hooked via init() in versions up to, and including, 4.1.0. This makes it possible for unauthenticated attackers to deactivate arbitrary plugins on the site. This can be used to deactivate security plugins that aids in exploiting other vulnerabilities."
+    },
+    {
+        "Modified": "2022-12-20T17:46:00",
+        "Published": "2022-12-16T14:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-281",
+        "id": "CVE-2022-41963",
+        "impact": {},
+        "last-modified": "2022-12-20T17:46:00",
+        "references": [
+            "https://github.com/bigbluebutton/bigbluebutton/releases/tag/v2.4.3",
+            "https://github.com/bigbluebutton/bigbluebutton/security/advisories/GHSA-v6p9-926c-6qfp"
+        ],
+        "summary": "BigBlueButton is an open source web conferencing system. Versions prior to 2.4.3 contain a whiteboard grace period that exists to handle delayed messages, but this grace period could be used by attackers to take actions in the few seconds after their access is revoked. The attacker must be a meeting participant. This issue is patched in version 2.4.3 an version 2.5-alpha-1"
+    },
+    {
+        "Modified": "2022-12-20T17:44:00",
+        "Published": "2022-12-15T20:15:00",
+        "access": {},
+        "assigner": "cna@vuldb.com",
+        "cvss": null,
+        "cwe": "CWE-1321",
+        "id": "CVE-2021-4245",
+        "impact": {},
+        "last-modified": "2022-12-20T17:44:00",
+        "references": [
+            "https://github.com/chbrown/rfc6902/commit/c006ce9faa43d31edb34924f1df7b79c137096cf",
+            "https://github.com/chbrown/rfc6902/pull/76",
+            "https://vuldb.com/?id.215883"
+        ],
+        "summary": "A vulnerability classified as problematic has been found in chbrown rfc6902. This affects an unknown part of the file pointer.ts. The manipulation leads to improperly controlled modification of object prototype attributes ('prototype pollution'). The exploit has been disclosed to the public and may be used. The name of the patch is c006ce9faa43d31edb34924f1df7b79c137096cf. It is recommended to apply a patch to fix this issue. The associated identifier of this vulnerability is VDB-215883."
+    },
+    {
+        "Modified": "2022-12-20T17:43:00",
+        "Published": "2022-12-16T14:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2022-36223",
+        "impact": {},
+        "last-modified": "2022-12-20T17:43:00",
+        "references": [
+            "https://medium.com/@cupc4k3/administrator-account-takeover-in-emby-media-server-616fc2a6704f"
+        ],
+        "summary": "In Emby Server 4.6.7.0, the playlist name field is vulnerable to XSS stored where it is possible to steal the administrator access token and flip or steal the media server administrator account."
+    },
+    {
+        "Modified": "2022-12-20T17:41:00",
+        "Published": "2022-12-16T16:15:00",
+        "access": {},
+        "assigner": "security@android.com",
+        "cvss": null,
+        "cwe": "CWE-787",
+        "id": "CVE-2022-20509",
+        "impact": {},
+        "last-modified": "2022-12-20T17:41:00",
+        "references": [
+            "https://source.android.com/security/bulletin/pixel/2022-12-01"
+        ],
+        "summary": "In mapGrantorDescr of MessageQueueBase.h, there is a possible out of bounds write due to a missing bounds check. This could lead to local escalation of privilege with System execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android-13Android ID: A-244713317"
+    },
+    {
+        "Modified": "2022-12-20T17:41:00",
+        "Published": "2022-12-16T16:15:00",
+        "access": {},
+        "assigner": "security@android.com",
+        "cvss": null,
+        "cwe": "CWE-119",
+        "id": "CVE-2022-20507",
+        "impact": {},
+        "last-modified": "2022-12-20T17:41:00",
+        "references": [
+            "https://source.android.com/security/bulletin/pixel/2022-12-01"
+        ],
+        "summary": "In onMulticastListUpdateNotificationReceived of UwbEventManager.java, there is a possible arbitrary code execution due to a missing bounds check. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android-13Android ID: A-246649179"
+    },
+    {
+        "Modified": "2022-12-20T17:41:00",
+        "Published": "2022-12-16T16:15:00",
+        "access": {},
+        "assigner": "security@android.com",
+        "cvss": null,
+        "cwe": "CWE-276",
+        "id": "CVE-2022-20511",
+        "impact": {},
+        "last-modified": "2022-12-20T17:41:00",
+        "references": [
+            "https://source.android.com/security/bulletin/pixel/2022-12-01"
+        ],
+        "summary": "In getNearbyAppStreamingPolicy of DevicePolicyManagerService.java, there is a missing permission check. This could lead to local information disclosure with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android-13Android ID: A-235821829"
+    },
+    {
+        "Modified": "2022-12-20T17:40:00",
+        "Published": "2022-12-16T16:15:00",
+        "access": {},
+        "assigner": "security@android.com",
+        "cvss": null,
+        "cwe": "CWE-862",
+        "id": "CVE-2022-20506",
+        "impact": {},
+        "last-modified": "2022-12-20T17:40:00",
+        "references": [
+            "https://source.android.com/security/bulletin/pixel/2022-12-01"
+        ],
+        "summary": "In onCreate of WifiDialogActivity.java, there is a missing permission check. This could lead to local escalation of privilege from a guest user with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android-13Android ID: A-226133034"
+    },
+    {
+        "Modified": "2022-12-20T17:40:00",
+        "Published": "2022-12-16T16:15:00",
+        "access": {},
+        "assigner": "security@android.com",
+        "cvss": null,
+        "cwe": "CWE-22",
+        "id": "CVE-2022-20505",
+        "impact": {},
+        "last-modified": "2022-12-20T17:40:00",
+        "references": [
+            "https://source.android.com/security/bulletin/pixel/2022-12-01"
+        ],
+        "summary": "In openFile of CallLogProvider.java, there is a possible permission bypass due to a path traversal error. This could lead to local escalation of privilege with User execution privileges needed. User interaction is not needed for exploitationProduct: AndroidVersions: Android-13Android ID: A-225981754"
+    },
+    {
+        "Modified": "2022-12-20T17:39:00",
+        "Published": "2022-12-16T16:15:00",
+        "access": {},
+        "assigner": "security@android.com",
+        "cvss": null,
+        "cwe": "CWE-862",
+        "id": "CVE-2022-20504",
+        "impact": {},
+        "last-modified": "2022-12-20T17:39:00",
+        "references": [
+            "https://source.android.com/security/bulletin/pixel/2022-12-01"
+        ],
+        "summary": "In multiple locations of DreamManagerService.java, there is a missing permission check. This could lead to local escalation of privilege and dismissal of system dialogs with User execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android-13Android ID: A-225878553"
+    },
+    {
+        "Modified": "2022-12-20T17:38:00",
+        "Published": "2022-12-16T16:15:00",
+        "access": {},
+        "assigner": "security@android.com",
+        "cvss": null,
+        "cwe": "CWE-862",
+        "id": "CVE-2022-20503",
+        "impact": {},
+        "last-modified": "2022-12-20T17:38:00",
+        "references": [
+            "https://source.android.com/security/bulletin/pixel/2022-12-01"
+        ],
+        "summary": "In onCreate of WifiDppConfiguratorActivity.java, there is a possible way for a guest user to add a WiFi configuration due to a missing permission check. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android-13Android ID: A-224772890"
+    },
+    {
+        "Modified": "2022-12-20T17:35:00",
+        "Published": "2022-12-15T19:15:00",
+        "access": {},
+        "assigner": "product-security@apple.com",
+        "cvss": null,
+        "cwe": "CWE-362",
+        "id": "CVE-2022-46689",
+        "impact": {},
+        "last-modified": "2022-12-20T17:35:00",
+        "references": [
+            "https://support.apple.com/en-us/HT213531",
+            "https://support.apple.com/en-us/HT213532",
+            "https://support.apple.com/en-us/HT213530",
+            "https://support.apple.com/en-us/HT213535",
+            "https://support.apple.com/en-us/HT213536",
+            "https://support.apple.com/en-us/HT213533",
+            "https://support.apple.com/en-us/HT213534"
+        ],
+        "summary": "A race condition was addressed with additional validation. This issue is fixed in tvOS 16.2, macOS Monterey 12.6.2, macOS Ventura 13.1, macOS Big Sur 11.7.2, iOS 15.7.2 and iPadOS 15.7.2, iOS 16.2 and iPadOS 16.2, watchOS 9.2. An app may be able to execute arbitrary code with kernel privileges."
+    },
+    {
+        "Modified": "2022-12-20T17:15:00",
+        "Published": "2022-12-20T17:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-46076",
+        "impact": {},
+        "last-modified": "2022-12-20T17:15:00",
+        "references": [
+            "https://www.dlink.com/en/security-bulletin/",
+            "https://github.com/Zarathustra-L/IoT_Vul/tree/main/D-Link/DIR-869"
+        ],
+        "summary": "D-Link DIR-869 DIR869Ax_FW102B15 is vulnerable to Authentication Bypass via phpcgi."
+    },
+    {
+        "Modified": "2022-12-20T17:13:00",
+        "Published": "2022-12-15T19:15:00",
+        "access": {},
+        "assigner": "product-security@apple.com",
+        "cvss": null,
+        "cwe": "NVD-CWE-noinfo",
+        "id": "CVE-2022-46702",
+        "impact": {},
+        "last-modified": "2022-12-20T17:13:00",
+        "references": [
+            "https://support.apple.com/en-us/HT213530"
+        ],
+        "summary": "The issue was addressed with improved memory handling. This issue is fixed in iOS 16.2 and iPadOS 16.2. An app may be able to disclose kernel memory."
+    },
+    {
+        "Modified": "2022-12-20T17:11:00",
+        "Published": "2022-12-15T21:15:00",
+        "access": {},
+        "assigner": "security@wordfence.com",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2022-4519",
+        "impact": {},
+        "last-modified": "2022-12-20T17:11:00",
+        "references": [
+            "https://www.wordfence.com/threat-intel/vulnerabilities/id/8ee21796-5340-4f84-b1c4-a95137a27223",
+            "https://wordpress.org/plugins/wp-user/#description"
+        ],
+        "summary": "The WP User plugin for WordPress is vulnerable to Stored Cross-Site Scripting via its settings parameters in versions up to, and including, 7.0 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with administrator-level permissions and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page. This only affects multi-site installations and installations where unfiltered_html has been disabled."
+    },
+    {
+        "Modified": "2022-12-20T17:11:00",
+        "Published": "2022-12-15T19:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-502",
+        "id": "CVE-2021-33420",
+        "impact": {},
+        "last-modified": "2022-12-20T17:11:00",
+        "references": [
+            "https://github.com/inikulin/replicator/commit/2c626242fb4a118855262c64b5731b2ce98e521b",
+            "https://advisory.checkmarx.net/advisory/CX-2021-4787",
+            "https://github.com/inikulin/replicator/pull/17",
+            "https://github.com/inikulin/replicator/issues/16"
+        ],
+        "summary": "A deserialization issue discovered in inikulin replicator before 1.0.4 allows remote attackers to run arbitrary code via the fromSerializable function in TypedArray object."
+    },
+    {
+        "Modified": "2022-12-20T17:04:00",
+        "Published": "2022-12-15T19:15:00",
+        "access": {},
+        "assigner": "product-security@apple.com",
+        "cvss": null,
+        "cwe": "NVD-CWE-noinfo",
+        "id": "CVE-2022-42859",
+        "impact": {},
+        "last-modified": "2022-12-20T17:04:00",
+        "references": [
+            "https://support.apple.com/en-us/HT213532",
+            "https://support.apple.com/en-us/HT213530",
+            "https://support.apple.com/en-us/HT213536"
+        ],
+        "summary": "Multiple issues were addressed by removing the vulnerable code. This issue is fixed in iOS 16.2 and iPadOS 16.2, macOS Ventura 13.1, watchOS 9.2. An app may be able to bypass Privacy preferences."
+    },
+    {
         "Modified": "2022-12-20T16:52:00",
         "Published": "2017-02-17T17:59:00",
         "access": {
@@ -1327,380 +1647,5 @@
             "https://lists.apache.org/thread/0rqvcxo6brmos9w3lzfsdn2lsmlblpw3"
         ],
         "summary": "A vulnerability in import module of Apache Atlas allows an authenticated user to write to web server filesystem. This issue affects Apache Atlas versions from 0.8.4 to 2.2.0."
-    },
-    {
-        "Modified": "2022-12-20T14:15:00",
-        "Published": "2022-11-14T14:15:00",
-        "access": {},
-        "assigner": "security@apache.org",
-        "cvss": null,
-        "cwe": "CWE-287",
-        "id": "CVE-2022-45378",
-        "impact": {},
-        "last-modified": "2022-12-20T14:15:00",
-        "references": [
-            "https://lists.apache.org/thread/g4l64s283njhnph2otx7q4gs2j952d31",
-            "http://www.openwall.com/lists/oss-security/2022/11/14/4"
-        ],
-        "summary": "** UNSUPPPORTED WHEN ASSIGNED **In the default configuration of Apache SOAP, an RPCRouterServlet is available without authentication. This gives an attacker the possibility to invoke methods on the classpath that meet certain criteria. Depending on what classes are available on the classpath this might even lead to arbitrary remote code execution. NOTE: This vulnerability only affects products that are no longer supported by the maintainer."
-    },
-    {
-        "Modified": "2022-12-20T14:15:00",
-        "Published": "2022-11-01T09:15:00",
-        "access": {},
-        "assigner": "security@apache.org",
-        "cvss": null,
-        "cwe": "CWE-444",
-        "id": "CVE-2022-42252",
-        "impact": {},
-        "last-modified": "2022-12-20T14:15:00",
-        "references": [
-            "https://lists.apache.org/thread/zzcxzvqfdqn515zfs3dxb7n8gty589sq"
-        ],
-        "summary": "If Apache Tomcat 8.5.0 to 8.5.82, 9.0.0-M1 to 9.0.67, 10.0.0-M1 to 10.0.26 or 10.1.0-M1 to 10.1.0 was configured to ignore invalid HTTP headers via setting rejectIllegalHeader to false (the default for 8.5.x only), Tomcat did not reject a request containing an invalid Content-Length header making a request smuggling attack possible if Tomcat was located behind a reverse proxy that also failed to reject the request with the invalid header."
-    },
-    {
-        "Modified": "2022-12-20T14:15:00",
-        "Published": "2022-10-07T07:15:00",
-        "access": {},
-        "assigner": "security@apache.org",
-        "cvss": null,
-        "cwe": "CWE-613",
-        "id": "CVE-2022-41672",
-        "impact": {},
-        "last-modified": "2022-12-20T14:15:00",
-        "references": [
-            "https://github.com/apache/airflow/pull/26635",
-            "https://lists.apache.org/thread/ohf3pvd3dftb8zb01yngbn1jtkq5m08y"
-        ],
-        "summary": "In Apache Airflow, prior to version 2.4.1, deactivating a user wouldn't prevent an already authenticated user from being able to continue using the UI or API."
-    },
-    {
-        "Modified": "2022-12-20T14:15:00",
-        "Published": "2022-09-06T18:15:00",
-        "access": {},
-        "assigner": "vulnreport@tenable.com",
-        "cvss": null,
-        "cwe": "CWE-601",
-        "id": "CVE-2022-38131",
-        "impact": {},
-        "last-modified": "2022-12-20T14:15:00",
-        "references": [
-            "https://tenable.com/security/research/tra-2022-30",
-            "https://support.posit.co/hc/en-us/articles/10983374992023"
-        ],
-        "summary": "RStudio Connect is affected by an Open Redirect issue. The vulnerability could allow an attacker to redirect users to malicious websites."
-    },
-    {
-        "Modified": "2022-12-20T14:15:00",
-        "Published": "2022-04-12T18:15:00",
-        "access": {
-            "authentication": "SINGLE",
-            "complexity": "MEDIUM",
-            "vector": "NETWORK"
-        },
-        "assigner": "security@apache.org",
-        "cvss": 3.5,
-        "cvss-time": "2022-12-20T14:15:00",
-        "cvss-vector": "AV:N/AC:M/Au:S/C:P/I:N/A:N",
-        "cwe": "CWE-200",
-        "id": "CVE-2021-28544",
-        "impact": {
-            "availability": "NONE",
-            "confidentiality": "PARTIAL",
-            "integrity": "NONE"
-        },
-        "last-modified": "2022-12-20T14:15:00",
-        "references": [
-            "https://subversion.apache.org/security/CVE-2021-28544-advisory.txt",
-            "https://www.debian.org/security/2022/dsa-5119",
-            "https://support.apple.com/kb/HT213345",
-            "http://seclists.org/fulldisclosure/2022/Jul/18",
-            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/YJPMCWCGWBN3QWCDVILWQWPC75RR67LT/",
-            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/PZ4ARNGLMGYBKYDX2B7DRBNMF6EH3A6R/"
-        ],
-        "summary": "Apache Subversion SVN authz protected copyfrom paths regression Subversion servers reveal 'copyfrom' paths that should be hidden according to configured path-based authorization (authz) rules. When a node has been copied from a protected location, users with access to the copy can see the 'copyfrom' path of the original. This also reveals the fact that the node was copied. Only the 'copyfrom' path is revealed; not its contents. Both httpd and svnserve servers are vulnerable."
-    },
-    {
-        "Modified": "2022-12-20T14:02:00",
-        "Published": "2022-12-15T19:15:00",
-        "access": {},
-        "assigner": "product-security@apple.com",
-        "cvss": null,
-        "cwe": "CWE-1021",
-        "id": "CVE-2022-46695",
-        "impact": {},
-        "last-modified": "2022-12-20T14:02:00",
-        "references": [
-            "https://support.apple.com/en-us/HT213531",
-            "https://support.apple.com/en-us/HT213532",
-            "https://support.apple.com/en-us/HT213530",
-            "https://support.apple.com/en-us/HT213535",
-            "https://support.apple.com/en-us/HT213536"
-        ],
-        "summary": "A spoofing issue existed in the handling of URLs. This issue was addressed with improved input validation. This issue is fixed in tvOS 16.2, macOS Ventura 13.1, iOS 15.7.2 and iPadOS 15.7.2, iOS 16.2 and iPadOS 16.2, watchOS 9.2. Visiting a website that frames malicious content may lead to UI spoofing."
-    },
-    {
-        "Modified": "2022-12-20T14:02:00",
-        "Published": "2022-12-14T22:15:00",
-        "access": {},
-        "assigner": "psirt@us.ibm.com",
-        "cvss": null,
-        "cwe": "CWE-319",
-        "id": "CVE-2020-4497",
-        "impact": {},
-        "last-modified": "2022-12-20T14:02:00",
-        "references": [
-            "https://www.ibm.com/support/pages/node/6847627",
-            "https://exchange.xforce.ibmcloud.com/vulnerabilities/182106"
-        ],
-        "summary": "IBM Spectrum Protect Plus 10.1.0 through 10.1.12 discloses sensitive information due to unencrypted data being used in the communication flow between Spectrum Protect Plus vSnap and its agents. An attacker could obtain information using main in the middle techniques. IBM X-Force ID: 182106."
-    },
-    {
-        "Modified": "2022-12-20T13:59:00",
-        "Published": "2022-12-13T16:15:00",
-        "access": {},
-        "assigner": "productcert@siemens.com",
-        "cvss": null,
-        "cwe": "CWE-125",
-        "id": "CVE-2022-45484",
-        "impact": {},
-        "last-modified": "2022-12-20T13:59:00",
-        "references": [
-            "https://cert-portal.siemens.com/productcert/pdf/ssa-700053.pdf"
-        ],
-        "summary": "A vulnerability has been identified in JT2Go (All versions), Teamcenter Visualization V13.2 (All versions < V13.2.0.12), Teamcenter Visualization V13.3 (All versions < V13.3.0.8), Teamcenter Visualization V13.3 (All versions >= V13.3.0.8), Teamcenter Visualization V14.0 (All versions < V14.0.0.4), Teamcenter Visualization V14.0 (All versions >= V14.0.0.4), Teamcenter Visualization V14.1 (All versions < V14.1.0.6). The CCITT_G4Decode.dll contains an out of bounds read vulnerability when parsing a RAS file. An attacker can leverage this vulnerability to execute code in the context of the current process. (ZDI-CAN-19056)"
-    },
-    {
-        "Modified": "2022-12-20T13:51:00",
-        "Published": "2022-12-15T19:15:00",
-        "access": {},
-        "assigner": "product-security@apple.com",
-        "cvss": null,
-        "cwe": "CWE-787",
-        "id": "CVE-2022-46694",
-        "impact": {},
-        "last-modified": "2022-12-20T13:51:00",
-        "references": [
-            "https://support.apple.com/en-us/HT213531",
-            "https://support.apple.com/en-us/HT213530",
-            "https://support.apple.com/en-us/HT213535",
-            "https://support.apple.com/en-us/HT213536"
-        ],
-        "summary": "An out-of-bounds write issue was addressed with improved input validation. This issue is fixed in iOS 16.2 and iPadOS 16.2, iOS 15.7.2 and iPadOS 15.7.2, tvOS 16.2, watchOS 9.2. Parsing a maliciously crafted video file may lead to kernel code execution."
-    },
-    {
-        "Modified": "2022-12-20T13:44:00",
-        "Published": "2022-12-15T19:15:00",
-        "access": {},
-        "assigner": "product-security@apple.com",
-        "cvss": null,
-        "cwe": "CWE-125",
-        "id": "CVE-2022-32948",
-        "impact": {},
-        "last-modified": "2022-12-20T13:44:00",
-        "references": [
-            "https://support.apple.com/en-us/HT213345",
-            "https://support.apple.com/en-us/HT213346"
-        ],
-        "summary": "An out-of-bounds read was addressed with improved bounds checking. This issue is fixed in iOS 15.6 and iPadOS 15.6, macOS Monterey 12.5. An app may be able to execute arbitrary code with kernel privileges."
-    },
-    {
-        "Modified": "2022-12-20T13:27:00",
-        "Published": "2022-12-14T21:15:00",
-        "access": {},
-        "assigner": "secalert@redhat.com",
-        "cvss": null,
-        "cwe": "CWE-787",
-        "id": "CVE-2022-46340",
-        "impact": {},
-        "last-modified": "2022-12-20T13:27:00",
-        "references": [
-            "https://access.redhat.com/security/cve/CVE-2022-46340",
-            "https://bugzilla.redhat.com/show_bug.cgi?id=2151755",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/DXDF2O5PPLE3SVAJJYUOSAD5QZ4TWQ2G/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/5NELB7YDWRABYYBG4UPTHRBDTKJRV5M2/"
-        ],
-        "summary": "A vulnerability was found in X.Org. This security flaw occurs becuase the swap handler for the XTestFakeInput request of the XTest extension may corrupt the stack if GenericEvents with lengths larger than 32 bytes are sent through a the XTestFakeInput request. This issue can lead to local privileges elevation on systems where the X server is running privileged and remote code execution for ssh X forwarding sessions. This issue does not affect systems where client and server use the same byte order."
-    },
-    {
-        "Modified": "2022-12-20T13:27:00",
-        "Published": "2022-12-14T21:15:00",
-        "access": {},
-        "assigner": "secalert@redhat.com",
-        "cvss": null,
-        "cwe": "CWE-125",
-        "id": "CVE-2022-46344",
-        "impact": {},
-        "last-modified": "2022-12-20T13:27:00",
-        "references": [
-            "https://access.redhat.com/security/cve/CVE-2022-46344",
-            "https://bugzilla.redhat.com/show_bug.cgi?id=2151760",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/DXDF2O5PPLE3SVAJJYUOSAD5QZ4TWQ2G/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/5NELB7YDWRABYYBG4UPTHRBDTKJRV5M2/"
-        ],
-        "summary": "A vulnerability was found in X.Org. This security flaw occurs because the handler for the XIChangeProperty request has a length-validation issues, resulting in out-of-bounds memory reads and potential information disclosure. This issue can lead to local privileges elevation on systems where the X server is running privileged and remote code execution for ssh X forwarding sessions."
-    },
-    {
-        "Modified": "2022-12-20T13:15:00",
-        "Published": "2022-12-14T09:15:00",
-        "access": {},
-        "assigner": "contact@wpscan.com",
-        "cvss": null,
-        "cwe": "CWE-367",
-        "id": "CVE-2022-3590",
-        "impact": {},
-        "last-modified": "2022-12-20T13:15:00",
-        "references": [
-            "https://wpscan.com/vulnerability/c8814e6e-78b3-4f63-a1d3-6906a84c1f11",
-            "https://blog.sonarsource.com/wordpress-core-unauthenticated-blind-ssrf/"
-        ],
-        "summary": "WordPress is affected by an unauthenticated blind SSRF in the pingback feature. Because of a TOCTOU race condition between the validation checks and the HTTP request, attackers can reach internal hosts that are explicitly forbidden."
-    },
-    {
-        "Modified": "2022-12-20T12:15:00",
-        "Published": "2022-11-07T10:15:00",
-        "access": {},
-        "assigner": "contact@wpscan.com",
-        "cvss": null,
-        "cwe": "CWE-89",
-        "id": "CVE-2022-3481",
-        "impact": {},
-        "last-modified": "2022-12-20T12:15:00",
-        "references": [
-            "https://wpscan.com/vulnerability/c5e395f8-257e-49eb-afbd-9c1e26045373"
-        ],
-        "summary": "The WooCommerce Dropshipping WordPress plugin before 4.4 does not properly sanitise and escape a parameter before using it in a SQL statement via a REST endpoint available to unauthenticated users, leading to a SQL injection"
-    },
-    {
-        "Modified": "2022-12-20T10:15:00",
-        "Published": "2022-11-01T08:15:00",
-        "access": {},
-        "assigner": "cve-requests@bitdefender.com",
-        "cvss": null,
-        "cwe": "CWE-269",
-        "id": "CVE-2022-3369",
-        "impact": {},
-        "last-modified": "2022-12-20T10:15:00",
-        "references": [
-            "https://www.bitdefender.com/support/security-advisories/improper-handling-of-registry-symbolic-links-in-bitdefender-engines-va-10562"
-        ],
-        "summary": "An Improper Access Control vulnerability in the bdservicehost.exe component, as used in Bitdefender Engines for Windows, allows an attacker to delete privileged registry keys by pointing a Registry symlink to a privileged key. This issue affects: Bitdefender Engines versions prior to 7.92659. It also affects Bitdefender Antivirus Free, Bitdefender Antivirus Plus, Bitdefender Internet Security, Bitdefender Total Security, as well as Bitdefender Endpoint Security Tools for Windows with engine versions prior to 7.92659."
-    },
-    {
-        "Modified": "2022-12-20T10:15:00",
-        "Published": "2022-08-17T00:15:00",
-        "access": {},
-        "assigner": "cve-requests@bitdefender.com",
-        "cvss": null,
-        "cwe": "CWE-863",
-        "id": "CVE-2022-1401",
-        "impact": {},
-        "last-modified": "2022-12-20T10:15:00",
-        "references": [
-            "https://www.bitdefender.com/blog/labs/a-red-team-perspective-on-the-device42-asset-management-appliance/"
-        ],
-        "summary": "Improper Access Control vulnerability in the /Exago/WrImageResource.adx route as used in Device42 Asset Management Appliance allows an unauthenticated attacker to read sensitive server files with root permissions. This issue affects: Device42 CMDB versions prior to 18.01.00."
-    },
-    {
-        "Modified": "2022-12-20T10:15:00",
-        "Published": "2021-05-24T14:15:00",
-        "access": {
-            "authentication": "SINGLE",
-            "complexity": "MEDIUM",
-            "vector": "NETWORK"
-        },
-        "assigner": "cve-requests@bitdefender.com",
-        "cvss": 6.0,
-        "cvss-time": "2022-12-20T10:15:00",
-        "cvss-vector": "AV:N/AC:M/Au:S/C:P/I:P/A:P",
-        "cwe": "CWE-494",
-        "id": "CVE-2021-3485",
-        "impact": {
-            "availability": "PARTIAL",
-            "confidentiality": "PARTIAL",
-            "integrity": "PARTIAL"
-        },
-        "last-modified": "2022-12-20T10:15:00",
-        "references": [
-            "https://www.bitdefender.com/support/security-advisories/improper-input-validation-in-bitdefender-endpoint-security-tools-for-linux-va-9769",
-            "https://herolab.usd.de/security-advisories/usd-2021-0014/"
-        ],
-        "summary": "An Improper Input Validation vulnerability in the Product Update feature of Bitdefender Endpoint Security Tools for Linux allows a man-in-the-middle attacker to abuse the DownloadFile function of the Product Update to achieve remote code execution. This issue affects: Bitdefender Endpoint Security Tools for Linux versions prior to 6.2.21.155."
-    },
-    {
-        "Modified": "2022-12-20T09:15:00",
-        "Published": "2022-01-19T11:15:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "MEDIUM",
-            "vector": "NETWORK"
-        },
-        "assigner": "psirt@mcafee.com",
-        "cvss": 9.3,
-        "cvss-time": "2022-12-20T09:15:00",
-        "cvss-vector": "AV:N/AC:M/Au:N/C:C/I:C/A:C",
-        "cwe": "CWE-78",
-        "id": "CVE-2021-31854",
-        "impact": {
-            "availability": "COMPLETE",
-            "confidentiality": "COMPLETE",
-            "integrity": "COMPLETE"
-        },
-        "last-modified": "2022-12-20T09:15:00",
-        "references": [
-            "https://kc.mcafee.com/corporate/index?page=content&id=SB10378"
-        ],
-        "summary": "A command Injection Vulnerability in McAfee Agent (MA) for Windows prior to 5.7.5 allows local users to inject arbitrary shell code into the file cleanup.exe. The malicious clean.exe file is placed into the relevant folder and executed by running the McAfee Agent deployment feature located in the System Tree. An attacker may exploit the vulnerability to obtain a reverse shell which can lead to privilege escalation to obtain root privileges."
-    },
-    {
-        "Modified": "2022-12-20T09:15:00",
-        "Published": "2021-09-17T14:15:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "LOW",
-            "vector": "LOCAL"
-        },
-        "assigner": "psirt@mcafee.com",
-        "cvss": 4.6,
-        "cvss-time": "2022-12-20T09:15:00",
-        "cvss-vector": "AV:L/AC:L/Au:N/C:P/I:P/A:P",
-        "cwe": "CWE-59",
-        "id": "CVE-2021-31843",
-        "impact": {
-            "availability": "PARTIAL",
-            "confidentiality": "PARTIAL",
-            "integrity": "PARTIAL"
-        },
-        "last-modified": "2022-12-20T09:15:00",
-        "references": [
-            "https://kc.mcafee.com/corporate/index?page=content&id=SB10367"
-        ],
-        "summary": "Improper privileges management vulnerability in McAfee Endpoint Security (ENS) Windows prior to 10.7.0 September 2021 Update allows local users to access files which they would otherwise not have access to via manipulating junction links to redirect McAfee folder operations to an unintended location."
-    },
-    {
-        "Modified": "2022-12-20T09:15:00",
-        "Published": "2021-06-29T10:15:00",
-        "access": {
-            "authentication": "SINGLE",
-            "complexity": "LOW",
-            "vector": "NETWORK"
-        },
-        "assigner": "psirt@mcafee.com",
-        "cvss": 9.0,
-        "cvss-time": "2022-12-20T09:15:00",
-        "cvss-vector": "AV:N/AC:L/Au:S/C:C/I:C/A:C",
-        "cwe": "CWE-78",
-        "id": "CVE-2021-31838",
-        "impact": {
-            "availability": "COMPLETE",
-            "confidentiality": "COMPLETE",
-            "integrity": "COMPLETE"
-        },
-        "last-modified": "2022-12-20T09:15:00",
-        "references": [
-            "https://kc.mcafee.com/corporate/index?page=content&id=SB10342"
-        ],
-        "summary": "A command injection vulnerability in MVISION EDR (MVEDR) prior to 3.4.0 allows an authenticated MVEDR administrator to trigger the EDR client to execute arbitrary commands through PowerShell using the EDR functionality 'execute reaction'."
     }
 ]
