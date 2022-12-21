@@ -1,5 +1,682 @@
 [
     {
+        "Modified": "2022-12-21T14:56:00",
+        "Published": "2022-12-16T16:15:00",
+        "access": {},
+        "assigner": "security@android.com",
+        "cvss": null,
+        "cwe": "CWE-416",
+        "id": "CVE-2022-20571",
+        "impact": {},
+        "last-modified": "2022-12-21T14:56:00",
+        "references": [
+            "https://source.android.com/security/bulletin/pixel/2022-12-01"
+        ],
+        "summary": "In extract_metadata of dm-android-verity.c, there is a possible way to corrupt kernel memory due to a use after free. This could lead to local escalation of privilege with System execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android kernelAndroid ID: A-234030265References: Upstream kernel"
+    },
+    {
+        "Modified": "2022-12-21T14:55:00",
+        "Published": "2022-12-16T16:15:00",
+        "access": {},
+        "assigner": "security@android.com",
+        "cvss": null,
+        "cwe": "CWE-862",
+        "id": "CVE-2022-20536",
+        "impact": {},
+        "last-modified": "2022-12-21T14:55:00",
+        "references": [
+            "https://source.android.com/security/bulletin/pixel/2022-12-01"
+        ],
+        "summary": "In registerBroadcastReceiver of RcsService.java, there is a possible way to change preferred TTY mode due to a missing permission check. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android-13Android ID: A-235100180"
+    },
+    {
+        "Modified": "2022-12-21T14:54:00",
+        "Published": "2022-12-16T16:15:00",
+        "access": {},
+        "assigner": "security@android.com",
+        "cvss": null,
+        "cwe": "CWE-203",
+        "id": "CVE-2022-20535",
+        "impact": {},
+        "last-modified": "2022-12-21T14:54:00",
+        "references": [
+            "https://source.android.com/security/bulletin/pixel/2022-12-01"
+        ],
+        "summary": "In registerLocalOnlyHotspotSoftApCallback of WifiManager.java, there is a possible way to determine whether an app is installed, without query permissions, due to side channel information disclosure. This could lead to local information disclosure with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android-13Android ID: A-233605242"
+    },
+    {
+        "Modified": "2022-12-21T14:53:00",
+        "Published": "2022-12-16T16:15:00",
+        "access": {},
+        "assigner": "security@android.com",
+        "cvss": null,
+        "cwe": "CWE-20",
+        "id": "CVE-2022-20569",
+        "impact": {},
+        "last-modified": "2022-12-21T14:53:00",
+        "references": [
+            "https://source.android.com/security/bulletin/pixel/2022-12-01"
+        ],
+        "summary": "In thermal_cooling_device_stats_update of thermal_sysfs.c, there is a possible out of bounds write due to improper input validation. This could lead to local escalation of privilege in the kernel with System execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android kernelAndroid ID: A-229258234References: N/A"
+    },
+    {
+        "Modified": "2022-12-21T14:48:00",
+        "Published": "2022-12-16T16:15:00",
+        "access": {},
+        "assigner": "security@android.com",
+        "cvss": null,
+        "cwe": "CWE-362",
+        "id": "CVE-2022-20567",
+        "impact": {},
+        "last-modified": "2022-12-21T14:48:00",
+        "references": [
+            "https://source.android.com/security/bulletin/pixel/2022-12-01"
+        ],
+        "summary": "In pppol2tp_create of l2tp_ppp.c, there is a possible use after free due to a race condition. This could lead to local escalation of privilege with System execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android kernelAndroid ID: A-186777253References: Upstream kernel"
+    },
+    {
+        "Modified": "2022-12-21T14:45:00",
+        "Published": "2022-12-13T07:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-436",
+        "id": "CVE-2022-41915",
+        "impact": {},
+        "last-modified": "2022-12-21T14:45:00",
+        "references": [
+            "https://github.com/netty/netty/security/advisories/GHSA-hh82-3pmq-7frp"
+        ],
+        "summary": "Netty project is an event-driven asynchronous network application framework. In versions prior to 4.1.86.Final, when calling `DefaultHttpHeadesr.set` with an _iterator_ of values, header value validation was not performed, allowing malicious header values in the iterator to perform HTTP Response Splitting. This issue has been patched in version 4.1.86.Final. Integrators can work around the issue by changing the `DefaultHttpHeaders.set(CharSequence, Iterator<?>)` call, into a `remove()` call, and call `add()` in a loop over the iterator of values."
+    },
+    {
+        "Modified": "2022-12-21T14:44:00",
+        "Published": "2022-12-16T16:15:00",
+        "access": {},
+        "assigner": "security@android.com",
+        "cvss": null,
+        "cwe": "CWE-416",
+        "id": "CVE-2022-20552",
+        "impact": {},
+        "last-modified": "2022-12-21T14:44:00",
+        "references": [
+            "https://source.android.com/security/bulletin/pixel/2022-12-01"
+        ],
+        "summary": "In btif_a2dp_sink_command_ready of btif_a2dp_sink.cc, there is a possible out of bounds read due to a use after free. This could lead to local information disclosure with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android-13Android ID: A-243922806"
+    },
+    {
+        "Modified": "2022-12-21T14:36:00",
+        "Published": "2022-11-01T09:15:00",
+        "access": {},
+        "assigner": "security@apache.org",
+        "cvss": null,
+        "cwe": "CWE-444",
+        "id": "CVE-2022-42252",
+        "impact": {},
+        "last-modified": "2022-12-21T14:36:00",
+        "references": [
+            "https://lists.apache.org/thread/zzcxzvqfdqn515zfs3dxb7n8gty589sq"
+        ],
+        "summary": "If Apache Tomcat 8.5.0 to 8.5.82, 9.0.0-M1 to 9.0.67, 10.0.0-M1 to 10.0.26 or 10.1.0-M1 to 10.1.0 was configured to ignore invalid HTTP headers via setting rejectIllegalHeader to false (the default for 8.5.x only), Tomcat did not reject a request containing an invalid Content-Length header making a request smuggling attack possible if Tomcat was located behind a reverse proxy that also failed to reject the request with the invalid header."
+    },
+    {
+        "Modified": "2022-12-21T14:35:00",
+        "Published": "2022-12-15T19:15:00",
+        "access": {},
+        "assigner": "product-security@apple.com",
+        "cvss": null,
+        "cwe": "CWE-843",
+        "id": "CVE-2022-42856",
+        "impact": {},
+        "last-modified": "2022-12-21T14:35:00",
+        "references": [
+            "https://support.apple.com/en-us/HT213531",
+            "https://support.apple.com/en-us/HT213532",
+            "https://support.apple.com/en-us/HT213537",
+            "https://support.apple.com/en-us/HT213516",
+            "https://support.apple.com/en-us/HT213535",
+            "http://seclists.org/fulldisclosure/2022/Dec/26",
+            "http://seclists.org/fulldisclosure/2022/Dec/28",
+            "http://seclists.org/fulldisclosure/2022/Dec/21",
+            "http://seclists.org/fulldisclosure/2022/Dec/22",
+            "http://seclists.org/fulldisclosure/2022/Dec/23"
+        ],
+        "summary": "A type confusion issue was addressed with improved state handling. This issue is fixed in Safari 16.2, tvOS 16.2, macOS Ventura 13.1, iOS 15.7.2 and iPadOS 15.7.2, iOS 16.1.2. Processing maliciously crafted web content may lead to arbitrary code execution. Apple is aware of a report that this issue may have been actively exploited against versions of iOS released before iOS 15.1.."
+    },
+    {
+        "Modified": "2022-12-21T14:31:00",
+        "Published": "2022-12-16T16:15:00",
+        "access": {},
+        "assigner": "security@android.com",
+        "cvss": null,
+        "cwe": "CWE-125",
+        "id": "CVE-2022-20606",
+        "impact": {},
+        "last-modified": "2022-12-21T14:31:00",
+        "references": [
+            "https://source.android.com/security/bulletin/pixel/2022-12-01"
+        ],
+        "summary": "In SAEMM_MiningCodecTableWithMsgIE of SAEMM_RadioMessageCodec.c, there is a possible out of bounds read due to a missing bounds check. This could lead to remote information disclosure with System execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android kernelAndroid ID: A-233230674References: N/A"
+    },
+    {
+        "Modified": "2022-12-21T14:30:00",
+        "Published": "2022-12-15T23:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-203",
+        "id": "CVE-2022-46392",
+        "impact": {},
+        "last-modified": "2022-12-21T14:30:00",
+        "references": [
+            "https://github.com/Mbed-TLS/mbedtls/releases/tag/v2.28.2",
+            "https://github.com/Mbed-TLS/mbedtls/releases/tag/v3.3.0"
+        ],
+        "summary": "An issue was discovered in Mbed TLS before 2.28.2 and 3.x before 3.3.0. An adversary with access to precise enough information about memory accesses (typically, an untrusted operating system attacking a secure enclave) can recover an RSA private key after observing the victim performing a single private-key operation, if the window size (MBEDTLS_MPI_WINDOW_SIZE) used for the exponentiation is 3 or smaller."
+    },
+    {
+        "Modified": "2022-12-21T14:28:00",
+        "Published": "2022-12-15T19:15:00",
+        "access": {},
+        "assigner": "product-security@apple.com",
+        "cvss": null,
+        "cwe": "CWE-119",
+        "id": "CVE-2022-46701",
+        "impact": {},
+        "last-modified": "2022-12-21T14:28:00",
+        "references": [
+            "https://support.apple.com/en-us/HT213532",
+            "https://support.apple.com/en-us/HT213530",
+            "https://support.apple.com/en-us/HT213535",
+            "http://seclists.org/fulldisclosure/2022/Dec/26",
+            "http://seclists.org/fulldisclosure/2022/Dec/20",
+            "http://seclists.org/fulldisclosure/2022/Dec/23"
+        ],
+        "summary": "The issue was addressed with improved bounds checks. This issue is fixed in iOS 16.2 and iPadOS 16.2, macOS Ventura 13.1, tvOS 16.2. Connecting to a malicious NFS server may lead to arbitrary code execution with kernel privileges."
+    },
+    {
+        "Modified": "2022-12-21T14:26:00",
+        "Published": "2022-12-15T19:15:00",
+        "access": {},
+        "assigner": "product-security@apple.com",
+        "cvss": null,
+        "cwe": "CWE-787",
+        "id": "CVE-2022-46697",
+        "impact": {},
+        "last-modified": "2022-12-21T14:26:00",
+        "references": [
+            "https://support.apple.com/en-us/HT213532",
+            "http://seclists.org/fulldisclosure/2022/Dec/23"
+        ],
+        "summary": "An out-of-bounds access issue was addressed with improved bounds checking. This issue is fixed in macOS Ventura 13.1. An app may be able to execute arbitrary code with kernel privileges."
+    },
+    {
+        "Modified": "2022-12-21T14:25:00",
+        "Published": "2022-12-16T16:15:00",
+        "access": {},
+        "assigner": "security@android.com",
+        "cvss": null,
+        "cwe": "CWE-125",
+        "id": "CVE-2022-20605",
+        "impact": {},
+        "last-modified": "2022-12-21T14:25:00",
+        "references": [
+            "https://source.android.com/security/bulletin/pixel/2022-12-01"
+        ],
+        "summary": "In SAECOMM_CopyBufferBytes of SAECOMM_Utility.c, there is a possible out of bounds read due to an incorrect bounds check. This could lead to remote information disclosure with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android kernelAndroid ID: A-231722405References: N/A"
+    },
+    {
+        "Modified": "2022-12-21T14:20:00",
+        "Published": "2022-12-15T23:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-434",
+        "id": "CVE-2022-45338",
+        "impact": {},
+        "last-modified": "2022-12-21T14:20:00",
+        "references": [
+            "https://gist.github.com/MaxRozendaal/633b34a4675b60caed736e5ffe28f272"
+        ],
+        "summary": "An arbitrary file upload vulnerability in the profile picture upload function of Exact Synergy Enterprise 267 before 267SP13 and Exact Synergy Enterprise 500 before 500SP6 allows attackers to execute arbitrary code via a crafted SVG file."
+    },
+    {
+        "Modified": "2022-12-21T14:13:00",
+        "Published": "2022-12-15T23:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2022-40004",
+        "impact": {},
+        "last-modified": "2022-12-21T14:13:00",
+        "references": [
+            "https://gist.github.com/s3d113/bba63da007fcbe243615dd2a81690ffb"
+        ],
+        "summary": "Cross Site Scripting (XSS) vulnerability in Things Board 3.4.1 allows remote attackers to escalate privilege via crafted URL to the Audit Log."
+    },
+    {
+        "Modified": "2022-12-21T14:05:00",
+        "Published": "2022-12-15T22:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-77",
+        "id": "CVE-2022-46634",
+        "impact": {},
+        "last-modified": "2022-12-21T14:05:00",
+        "references": [
+            "https://github.com/EPhaha/IOT_vuln/tree/main/TOTOLink/A7100RU/7"
+        ],
+        "summary": "TOTOlink A7100RU V7.4cu.2313_B20191024 was discovered to contain a command injection vulnerability via the wscDisabled parameter in the setting/setWiFiWpsCfg function."
+    },
+    {
+        "Modified": "2022-12-21T13:53:00",
+        "Published": "2022-12-15T22:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-77",
+        "id": "CVE-2022-46631",
+        "impact": {},
+        "last-modified": "2022-12-21T13:53:00",
+        "references": [
+            "https://github.com/EPhaha/IOT_vuln/tree/main/TOTOLink/A7100RU/6"
+        ],
+        "summary": "TOTOlink A7100RU V7.4cu.2313_B20191024 was discovered to contain a command injection vulnerability via the wscDisabled parameter in the setting/setWiFiSignalCfg function."
+    },
+    {
+        "Modified": "2022-12-21T13:44:00",
+        "Published": "2022-12-16T16:15:00",
+        "access": {},
+        "assigner": "security@android.com",
+        "cvss": null,
+        "cwe": "CWE-862",
+        "id": "CVE-2022-20508",
+        "impact": {},
+        "last-modified": "2022-12-21T13:44:00",
+        "references": [
+            "https://source.android.com/security/bulletin/pixel/2022-12-01"
+        ],
+        "summary": "In onAttach of ConfigureWifiSettings.java, there is a possible way for a guest user to change WiFi settings due to a permissions bypass. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android-13Android ID: A-218679614"
+    },
+    {
+        "Modified": "2022-12-21T13:42:00",
+        "Published": "2022-12-16T16:15:00",
+        "access": {},
+        "assigner": "security@android.com",
+        "cvss": null,
+        "cwe": "CWE-862",
+        "id": "CVE-2022-20510",
+        "impact": {},
+        "last-modified": "2022-12-21T13:42:00",
+        "references": [
+            "https://source.android.com/security/bulletin/pixel/2022-12-01"
+        ],
+        "summary": "In getNearbyNotificationStreamingPolicy of DevicePolicyManagerService.java, there is a possible way to learn about the notification streaming policy of other users due to a permissions bypass. This could lead to local information disclosure with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android-13Android ID: A-235822336"
+    },
+    {
+        "Modified": "2022-12-21T13:37:00",
+        "Published": "2022-12-15T21:15:00",
+        "access": {},
+        "assigner": "cna@vuldb.com",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2022-4527",
+        "impact": {},
+        "last-modified": "2022-12-21T13:37:00",
+        "references": [
+            "https://github.com/collective/collective.task/commit/1aac7f83fa2c2b41d59ba02748912953461f3fac",
+            "https://github.com/collective/collective.task/releases/tag/3.0.10",
+            "https://vuldb.com/?id.215907"
+        ],
+        "summary": "A vulnerability was found in collective.task up to 3.0.9. It has been classified as problematic. This affects the function renderCell/AssignedGroupColumn of the file src/collective/task/browser/table.py. The manipulation leads to cross site scripting. It is possible to initiate the attack remotely. Upgrading to version 3.0.10 is able to address this issue. The name of the patch is 1aac7f83fa2c2b41d59ba02748912953461f3fac. It is recommended to upgrade the affected component. The associated identifier of this vulnerability is VDB-215907."
+    },
+    {
+        "Modified": "2022-12-21T13:35:00",
+        "Published": "2022-12-21T11:15:00",
+        "access": {},
+        "assigner": "talos-cna@cisco.com",
+        "cvss": null,
+        "cwe": "CWE-269",
+        "id": "CVE-2022-38060",
+        "impact": {},
+        "last-modified": "2022-12-21T13:35:00",
+        "references": [
+            "https://talosintelligence.com/vulnerability_reports/TALOS-2022-1589"
+        ],
+        "summary": "A privilege escalation vulnerability exists in the sudo functionality of OpenStack Kolla git master 05194e7618. A misconfiguration in /etc/sudoers within a container can lead to increased privileges."
+    },
+    {
+        "Modified": "2022-12-21T13:35:00",
+        "Published": "2022-12-21T11:15:00",
+        "access": {},
+        "assigner": "talos-cna@cisco.com",
+        "cvss": null,
+        "cwe": "CWE-269",
+        "id": "CVE-2022-38065",
+        "impact": {},
+        "last-modified": "2022-12-21T13:35:00",
+        "references": [
+            "https://talosintelligence.com/vulnerability_reports/TALOS-2022-1599"
+        ],
+        "summary": "A privilege escalation vulnerability exists in the oslo.privsep functionality of OpenStack git master 05194e7618 and prior. Overly permissive functionality within tools leveraging this library within a container can lead increased privileges."
+    },
+    {
+        "Modified": "2022-12-21T13:35:00",
+        "Published": "2022-12-21T06:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-47635",
+        "impact": {},
+        "last-modified": "2022-12-21T13:35:00",
+        "references": [
+            "https://wildix.atlassian.net/wiki/spaces/DOC/pages/30279136/Changelogs"
+        ],
+        "summary": "Wildix WMS 6 before 6.02.20221216, WMS 5 before 5.04.20221214, and WMS4 before 4.04.45396.23 allows Server-side request forgery (SSRF) via ZohoClient.php."
+    },
+    {
+        "Modified": "2022-12-21T13:35:00",
+        "Published": "2022-12-21T09:15:00",
+        "access": {},
+        "assigner": "vultures@jpcert.or.jp",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-43543",
+        "impact": {},
+        "last-modified": "2022-12-21T13:35:00",
+        "references": [
+            "https://jvn.jp/en/jp/JVN43561812/index.html",
+            "https://www.au.com/mobile/service/plus-message/information/",
+            "https://www.docomo.ne.jp/service/plus_message/",
+            "https://www.softbank.jp/mobile/service/plus-message/"
+        ],
+        "summary": "KDDI +Message App, NTT DOCOMO +Message App, and SoftBank +Message App contain a vulnerability caused by improper handling of Unicode control characters. +Message App displays text unprocessed, even when control characters are contained, and the text is shown based on Unicode control character's specifications. Therefore, a crafted text may display misleading web links. As a result, a spoofed URL may be displayed and phishing attacks may be conducted. Affected products and versions are as follows: KDDI +Message App for Android prior to version 3.9.2 and +Message App for iOS prior to version 3.9.4, NTT DOCOMO +Message App for Android prior to version 54.49.0500 and +Message App for iOS prior to version 3.9.4, and SoftBank +Message App for Android prior to version 12.9.5 and +Message App for iOS prior to version 3.9.4"
+    },
+    {
+        "Modified": "2022-12-21T13:35:00",
+        "Published": "2022-12-21T09:15:00",
+        "access": {},
+        "assigner": "vultures@jpcert.or.jp",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-44449",
+        "impact": {},
+        "last-modified": "2022-12-21T13:35:00",
+        "references": [
+            "https://github.com/zenphoto/zenphoto",
+            "https://jvn.jp/en/jp/JVN06093462/index.html",
+            "https://www.zenphoto.org/"
+        ],
+        "summary": "Stored cross-site scripting vulnerability in Zenphoto versions prior to 1.6 allows remote a remote authenticated attacker with an administrative privilege to inject an arbitrary script."
+    },
+    {
+        "Modified": "2022-12-21T13:35:00",
+        "Published": "2022-12-21T09:15:00",
+        "access": {},
+        "assigner": "vultures@jpcert.or.jp",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-46282",
+        "impact": {},
+        "last-modified": "2022-12-21T13:35:00",
+        "references": [
+            "https://jvn.jp/en/vu/JVNVU92689335/index.html"
+        ],
+        "summary": "Use after free vulnerability in CX-Drive V3.00 and earlier allows a local attacker to execute arbitrary code by having a user to open a specially crafted file,"
+    },
+    {
+        "Modified": "2022-12-21T13:35:00",
+        "Published": "2022-12-21T09:15:00",
+        "access": {},
+        "assigner": "vultures@jpcert.or.jp",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-46330",
+        "impact": {},
+        "last-modified": "2022-12-21T13:35:00",
+        "references": [
+            "https://github.com/Squirrel/Squirrel.Windows/pull/1807",
+            "https://github.com/Squirrel/Squirrel.Windows",
+            "https://jvn.jp/en/jp/JVN29902403/index.html"
+        ],
+        "summary": "Squirrel.Windows is both a toolset and a library that provides installation and update functionality for Windows desktop applications. Installers generated by Squirrel.Windows 2.0.1 and earlier contain an issue with the DLL search path, which may lead to insecurely loading Dynamic Link Libraries. As a result, arbitrary code may be executed with the privilege of the user invoking the installer."
+    },
+    {
+        "Modified": "2022-12-21T13:35:00",
+        "Published": "2022-12-21T09:15:00",
+        "access": {},
+        "assigner": "vultures@jpcert.or.jp",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-46662",
+        "impact": {},
+        "last-modified": "2022-12-21T13:35:00",
+        "references": [
+            "https://jvn.jp/en/jp/JVN13075438/index.html",
+            "https://kb.corel.com/jp/129393"
+        ],
+        "summary": "Roxio Creator LJB starts another program with an unquoted file path. Since a registered Windows service path contains spaces and are unquoted, if a malicious executable is placed on a certain path, the executable may be executed with the privilege of the Windows service. The affected product and versions are as follows: Roxio Creator LJB version number 12.2 build number 106B62B, version number 12.2 build number 106B63A, version number 12.2 build number 106B69A, version number 12.2 build number 106B71A, and version number 12.2 build number 106B74A)"
+    },
+    {
+        "Modified": "2022-12-21T13:35:00",
+        "Published": "2022-12-21T01:15:00",
+        "access": {},
+        "assigner": "security@huntr.dev",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2022-4617",
+        "impact": {},
+        "last-modified": "2022-12-21T13:35:00",
+        "references": [
+            "https://huntr.dev/bounties/1fb2ce08-7016-45fa-b402-ec08d700e4df",
+            "https://github.com/microweber/microweber/commit/df8add930ecfa7f5b18c67c3f748c137fe890906"
+        ],
+        "summary": "Cross-site Scripting (XSS) - Reflected in GitHub repository microweber/microweber prior to 1.3.2."
+    },
+    {
+        "Modified": "2022-12-21T13:35:00",
+        "Published": "2022-12-21T02:15:00",
+        "access": {},
+        "assigner": "security@zyxel.com.tw",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-38546",
+        "impact": {},
+        "last-modified": "2022-12-21T13:35:00",
+        "references": [
+            "https://www.zyxel.com/global/en/support/security-advisories/zyxel-security-advisory-for-dns-misconfiguration-in-nbg7510-home-router"
+        ],
+        "summary": "A DNS misconfiguration was found in Zyxel NBG7510 firmware versions prior to V1.00(ABZY.3)C0, which could allow an unauthenticated attacker to access the DNS server when the device is switched to the AP mode."
+    },
+    {
+        "Modified": "2022-12-21T13:35:00",
+        "Published": "2022-12-21T05:15:00",
+        "access": {},
+        "assigner": "report@snyk.io",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-24431",
+        "impact": {},
+        "last-modified": "2022-12-21T13:35:00",
+        "references": [
+            "https://security.snyk.io/vuln/SNYK-JS-ABACUSEXTCMDLINE-3157950"
+        ],
+        "summary": "All versions of package abacus-ext-cmdline are vulnerable to Command Injection via the execute function due to improper user-input sanitization."
+    },
+    {
+        "Modified": "2022-12-21T13:35:00",
+        "Published": "2022-12-21T05:15:00",
+        "access": {},
+        "assigner": "report@snyk.io",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-25893",
+        "impact": {},
+        "last-modified": "2022-12-21T13:35:00",
+        "references": [
+            "https://github.com/patriksimek/vm2/pull/445/commits/3a9876482be487b78a90ac459675da7f83f46d69",
+            "https://github.com/patriksimek/vm2/pull/445",
+            "https://security.snyk.io/vuln/SNYK-JS-VM2-2990237",
+            "https://github.com/patriksimek/vm2/issues/444"
+        ],
+        "summary": "The package vm2 before 3.9.10 are vulnerable to Arbitrary Code Execution due to the usage of prototype lookup for the WeakMap.prototype.set method. Exploiting this vulnerability leads to access to a host object and a sandbox compromise."
+    },
+    {
+        "Modified": "2022-12-21T13:35:00",
+        "Published": "2022-12-21T05:15:00",
+        "access": {},
+        "assigner": "report@snyk.io",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-25895",
+        "impact": {},
+        "last-modified": "2022-12-21T13:35:00",
+        "references": [
+            "https://github.com/shadowwzw/lite-dev-server/blob/master/src/server.js%23L134",
+            "https://gist.github.com/lirantal/0f8a48c3f5ac581ce73123abe9f7f120",
+            "https://security.snyk.io/vuln/SNYK-JS-LITEDEVSERVER-3153718"
+        ],
+        "summary": "All versions of package lite-dev-server are vulnerable to Directory Traversal due to missing input sanitization and sandboxes being employed to the req.url user input that is passed to the server code."
+    },
+    {
+        "Modified": "2022-12-21T13:35:00",
+        "Published": "2022-12-21T05:15:00",
+        "access": {},
+        "assigner": "report@snyk.io",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-25929",
+        "impact": {},
+        "last-modified": "2022-12-21T13:35:00",
+        "references": [
+            "https://security.snyk.io/vuln/SNYK-JAVA-ORGWEBJARS-3177369",
+            "https://github.com/joewalnes/smoothie/pull/147",
+            "https://security.snyk.io/vuln/SNYK-JAVA-ORGWEBJARSBOWER-3177368",
+            "https://github.com/joewalnes/smoothie/commit/8e0920d50da82f4b6e605d56f41b69fbb9606a98",
+            "https://security.snyk.io/vuln/SNYK-JS-SMOOTHIE-3177364"
+        ],
+        "summary": "The package smoothie from 1.31.0 and before 1.36.1 are vulnerable to Cross-site Scripting (XSS) due to improper user input sanitization in strokeStyle and tooltipLabel properties. Exploiting this vulnerability is possible when the user can control these properties."
+    },
+    {
+        "Modified": "2022-12-21T13:35:00",
+        "Published": "2022-12-20T23:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-42046",
+        "impact": {},
+        "last-modified": "2022-12-21T13:35:00",
+        "references": [
+            "https://www.wfs.games/news/20221220_01.html"
+        ],
+        "summary": "WFS, Inc HeavenBurnsRed 2020.3.15.7141260 is vulnerable to Local Privilege Escalation."
+    },
+    {
+        "Modified": "2022-12-21T13:35:00",
+        "Published": "2022-12-20T23:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-47629",
+        "impact": {},
+        "last-modified": "2022-12-21T13:35:00",
+        "references": [
+            "https://dev.gnupg.org/T6284",
+            "https://git.gnupg.org/cgi-bin/gitweb.cgi?p=libksba.git;a=commit;h=f61a5ea4e0f6a80fd4b28ef0174bee77793cf070"
+        ],
+        "summary": "Libksba before 1.6.3 is prone to an integer overflow vulnerability in the CRL signature parser."
+    },
+    {
+        "Modified": "2022-12-21T13:35:00",
+        "Published": "2022-12-21T00:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-42949",
+        "impact": {},
+        "last-modified": "2022-12-21T13:35:00",
+        "references": [
+            "https://www.silverstripe.org/download/security-releases/",
+            "https://www.silverstripe.org/download/security-releases/cve-2022-42949"
+        ],
+        "summary": "Silverstripe silverstripe/subsites through 2.6.0 has Insecure Permissions."
+    },
+    {
+        "Modified": "2022-12-21T13:33:00",
+        "Published": "2022-12-15T21:15:00",
+        "access": {},
+        "assigner": "cna@vuldb.com",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2022-4526",
+        "impact": {},
+        "last-modified": "2022-12-21T13:33:00",
+        "references": [
+            "https://github.com/richardbarran/django-photologue/commit/960cb060ce5e2964e6d716ff787c72fc18a371e7",
+            "https://github.com/richardbarran/django-photologue/issues/223",
+            "https://vuldb.com/?id.215906"
+        ],
+        "summary": "A vulnerability was found in django-photologue up to 3.15.1 and classified as problematic. Affected by this issue is some unknown functionality of the file photologue/templates/photologue/photo_detail.html of the component Default Template Handler. The manipulation of the argument object.caption leads to cross site scripting. The attack may be launched remotely. Upgrading to version 3.16 is able to address this issue. The name of the patch is 960cb060ce5e2964e6d716ff787c72fc18a371e7. It is recommended to apply a patch to fix this issue. VDB-215906 is the identifier assigned to this vulnerability."
+    },
+    {
+        "Modified": "2022-12-21T13:29:00",
+        "Published": "2022-12-15T21:15:00",
+        "access": {},
+        "assigner": "cna@vuldb.com",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2022-4525",
+        "impact": {},
+        "last-modified": "2022-12-21T13:29:00",
+        "references": [
+            "https://github.com/nsrr/sleepdata.org/releases/tag/v59.0.0",
+            "https://vuldb.com/?id.215905",
+            "https://github.com/nsrr/sleepdata.org/commit/da44a3893b407087829b006d09339780919714cd"
+        ],
+        "summary": "A vulnerability has been found in National Sleep Research Resource sleepdata.org up to 59.0.0.rc and classified as problematic. Affected by this vulnerability is an unknown functionality. The manipulation leads to cross site scripting. The attack can be launched remotely. Upgrading to version 59.0.0 is able to address this issue. The name of the patch is da44a3893b407087829b006d09339780919714cd. It is recommended to upgrade the affected component. The identifier VDB-215905 was assigned to this vulnerability."
+    },
+    {
+        "Modified": "2022-12-21T13:27:00",
+        "Published": "2022-12-15T21:15:00",
+        "access": {},
+        "assigner": "cna@vuldb.com",
+        "cvss": null,
+        "cwe": "CWE-707",
+        "id": "CVE-2022-4524",
+        "impact": {},
+        "last-modified": "2022-12-21T13:27:00",
+        "references": [
+            "https://github.com/roots/soil/commit/0c9151e00ab047da253e5cdbfccb204dd423269d",
+            "https://github.com/roots/soil/releases/tag/4.1.1",
+            "https://vuldb.com/?id.215904",
+            "https://github.com/roots/soil/pull/285"
+        ],
+        "summary": "A vulnerability, which was classified as problematic, was found in Roots soil Plugin up to 4.1.0. Affected is the function language_attributes of the file src/Modules/CleanUpModule.php. The manipulation of the argument language leads to cross site scripting. It is possible to launch the attack remotely. Upgrading to version 4.1.1 is able to address this issue. The name of the patch is 0c9151e00ab047da253e5cdbfccb204dd423269d. It is recommended to upgrade the affected component. The identifier of this vulnerability is VDB-215904."
+    },
+    {
+        "Modified": "2022-12-21T13:15:00",
+        "Published": "2022-12-15T21:15:00",
+        "access": {},
+        "assigner": "cna@vuldb.com",
+        "cvss": null,
+        "cwe": "CWE-707",
+        "id": "CVE-2022-4523",
+        "impact": {},
+        "last-modified": "2022-12-21T13:15:00",
+        "references": [
+            "https://vuldb.com/?id.215903",
+            "https://github.com/vexim/vexim2/commit/21c0a60d12e9d587f905cd084b2c70f9b1592065",
+            "https://github.com/vexim/vexim2/pull/274"
+        ],
+        "summary": "A vulnerability, which was classified as problematic, has been found in vexim2. This issue affects some unknown processing. The manipulation leads to cross site scripting. The attack may be initiated remotely. The name of the patch is 21c0a60d12e9d587f905cd084b2c70f9b1592065. It is recommended to apply a patch to fix this issue. The associated identifier of this vulnerability is VDB-215903."
+    },
+    {
         "Modified": "2022-12-21T12:15:00",
         "Published": "2022-09-20T14:15:00",
         "access": {},
@@ -30,36 +707,6 @@
             "https://issues.apache.org/jira/browse/FLUME-3428"
         ],
         "summary": "Apache Flume versions 1.4.0 through 1.10.0 are vulnerable to a remote code execution (RCE) attack when a configuration uses a JMS Source with a JNDI LDAP data source URI when an attacker has control of the target LDAP server. This issue is fixed by limiting JNDI to allow only the use of the java protocol or no protocol."
-    },
-    {
-        "Modified": "2022-12-21T11:15:00",
-        "Published": "2022-12-21T11:15:00",
-        "access": {},
-        "assigner": "talos-cna@cisco.com",
-        "cvss": null,
-        "cwe": "CWE-269",
-        "id": "CVE-2022-38060",
-        "impact": {},
-        "last-modified": "2022-12-21T11:15:00",
-        "references": [
-            "https://talosintelligence.com/vulnerability_reports/TALOS-2022-1589"
-        ],
-        "summary": "A privilege escalation vulnerability exists in the sudo functionality of OpenStack Kolla git master 05194e7618. A misconfiguration in /etc/sudoers within a container can lead to increased privileges."
-    },
-    {
-        "Modified": "2022-12-21T11:15:00",
-        "Published": "2022-12-21T11:15:00",
-        "access": {},
-        "assigner": "talos-cna@cisco.com",
-        "cvss": null,
-        "cwe": "CWE-269",
-        "id": "CVE-2022-38065",
-        "impact": {},
-        "last-modified": "2022-12-21T11:15:00",
-        "references": [
-            "https://talosintelligence.com/vulnerability_reports/TALOS-2022-1599"
-        ],
-        "summary": "A privilege escalation vulnerability exists in the oslo.privsep functionality of OpenStack git master 05194e7618 and prior. Overly permissive functionality within tools leveraging this library within a container can lead increased privileges."
     },
     {
         "Modified": "2022-12-21T10:15:00",
@@ -112,89 +759,6 @@
         "summary": "Using its HSTS support, curl can be instructed to use HTTPS directly insteadof using an insecure clear-text HTTP step even when HTTP is provided in theURL. This mechanism could be bypassed if the host name in the given URL used atrailing dot while not using one when it built the HSTS cache. Or the otherway around - by having the trailing dot in the HSTS cache and *not* using thetrailing dot in the URL."
     },
     {
-        "Modified": "2022-12-21T09:15:00",
-        "Published": "2022-12-21T09:15:00",
-        "access": {},
-        "assigner": "vultures@jpcert.or.jp",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-43543",
-        "impact": {},
-        "last-modified": "2022-12-21T09:15:00",
-        "references": [
-            "https://jvn.jp/en/jp/JVN43561812/index.html",
-            "https://www.au.com/mobile/service/plus-message/information/",
-            "https://www.docomo.ne.jp/service/plus_message/",
-            "https://www.softbank.jp/mobile/service/plus-message/"
-        ],
-        "summary": "KDDI +Message App, NTT DOCOMO +Message App, and SoftBank +Message App contain a vulnerability caused by improper handling of Unicode control characters. +Message App displays text unprocessed, even when control characters are contained, and the text is shown based on Unicode control character's specifications. Therefore, a crafted text may display misleading web links. As a result, a spoofed URL may be displayed and phishing attacks may be conducted. Affected products and versions are as follows: KDDI +Message App for Android prior to version 3.9.2 and +Message App for iOS prior to version 3.9.4, NTT DOCOMO +Message App for Android prior to version 54.49.0500 and +Message App for iOS prior to version 3.9.4, and SoftBank +Message App for Android prior to version 12.9.5 and +Message App for iOS prior to version 3.9.4"
-    },
-    {
-        "Modified": "2022-12-21T09:15:00",
-        "Published": "2022-12-21T09:15:00",
-        "access": {},
-        "assigner": "vultures@jpcert.or.jp",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-44449",
-        "impact": {},
-        "last-modified": "2022-12-21T09:15:00",
-        "references": [
-            "https://github.com/zenphoto/zenphoto",
-            "https://jvn.jp/en/jp/JVN06093462/index.html",
-            "https://www.zenphoto.org/"
-        ],
-        "summary": "Stored cross-site scripting vulnerability in Zenphoto versions prior to 1.6 allows remote a remote authenticated attacker with an administrative privilege to inject an arbitrary script."
-    },
-    {
-        "Modified": "2022-12-21T09:15:00",
-        "Published": "2022-12-21T09:15:00",
-        "access": {},
-        "assigner": "vultures@jpcert.or.jp",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-46282",
-        "impact": {},
-        "last-modified": "2022-12-21T09:15:00",
-        "references": [
-            "https://jvn.jp/en/vu/JVNVU92689335/index.html"
-        ],
-        "summary": "Use after free vulnerability in CX-Drive V3.00 and earlier allows a local attacker to execute arbitrary code by having a user to open a specially crafted file,"
-    },
-    {
-        "Modified": "2022-12-21T09:15:00",
-        "Published": "2022-12-21T09:15:00",
-        "access": {},
-        "assigner": "vultures@jpcert.or.jp",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-46330",
-        "impact": {},
-        "last-modified": "2022-12-21T09:15:00",
-        "references": [
-            "https://github.com/Squirrel/Squirrel.Windows/pull/1807",
-            "https://github.com/Squirrel/Squirrel.Windows",
-            "https://jvn.jp/en/jp/JVN29902403/index.html"
-        ],
-        "summary": "Squirrel.Windows is both a toolset and a library that provides installation and update functionality for Windows desktop applications. Installers generated by Squirrel.Windows 2.0.1 and earlier contain an issue with the DLL search path, which may lead to insecurely loading Dynamic Link Libraries. As a result, arbitrary code may be executed with the privilege of the user invoking the installer."
-    },
-    {
-        "Modified": "2022-12-21T09:15:00",
-        "Published": "2022-12-21T09:15:00",
-        "access": {},
-        "assigner": "vultures@jpcert.or.jp",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-46662",
-        "impact": {},
-        "last-modified": "2022-12-21T09:15:00",
-        "references": [
-            "https://jvn.jp/en/jp/JVN13075438/index.html",
-            "https://kb.corel.com/jp/129393"
-        ],
-        "summary": "Roxio Creator LJB starts another program with an unquoted file path. Since a registered Windows service path contains spaces and are unquoted, if a malicious executable is placed on a certain path, the executable may be executed with the privilege of the Windows service. The affected product and versions are as follows: Roxio Creator LJB version number 12.2 build number 106B62B, version number 12.2 build number 106B63A, version number 12.2 build number 106B69A, version number 12.2 build number 106B71A, and version number 12.2 build number 106B74A)"
-    },
-    {
         "Modified": "2022-12-21T07:15:00",
         "Published": "2022-10-17T12:15:00",
         "access": {},
@@ -206,90 +770,6 @@
         "last-modified": "2022-12-21T07:15:00",
         "references": [],
         "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was withdrawn by its CNA. Further investigation showed that it was not a security issue. Notes: none."
-    },
-    {
-        "Modified": "2022-12-21T06:15:00",
-        "Published": "2022-12-21T06:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-47635",
-        "impact": {},
-        "last-modified": "2022-12-21T06:15:00",
-        "references": [
-            "https://wildix.atlassian.net/wiki/spaces/DOC/pages/30279136/Changelogs"
-        ],
-        "summary": "Wildix WMS 6 before 6.02.20221216, WMS 5 before 5.04.20221214, and WMS4 before 4.04.45396.23 allows Server-side request forgery (SSRF) via ZohoClient.php."
-    },
-    {
-        "Modified": "2022-12-21T06:15:00",
-        "Published": "2022-12-21T05:15:00",
-        "access": {},
-        "assigner": "report@snyk.io",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-24431",
-        "impact": {},
-        "last-modified": "2022-12-21T06:15:00",
-        "references": [
-            "https://security.snyk.io/vuln/SNYK-JS-ABACUSEXTCMDLINE-3157950"
-        ],
-        "summary": "All versions of package abacus-ext-cmdline are vulnerable to Command Injection via the execute function due to improper user-input sanitization."
-    },
-    {
-        "Modified": "2022-12-21T06:15:00",
-        "Published": "2022-12-21T05:15:00",
-        "access": {},
-        "assigner": "report@snyk.io",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-25893",
-        "impact": {},
-        "last-modified": "2022-12-21T06:15:00",
-        "references": [
-            "https://github.com/patriksimek/vm2/pull/445/commits/3a9876482be487b78a90ac459675da7f83f46d69",
-            "https://github.com/patriksimek/vm2/pull/445",
-            "https://security.snyk.io/vuln/SNYK-JS-VM2-2990237",
-            "https://github.com/patriksimek/vm2/issues/444"
-        ],
-        "summary": "The package vm2 before 3.9.10 are vulnerable to Arbitrary Code Execution due to the usage of prototype lookup for the WeakMap.prototype.set method. Exploiting this vulnerability leads to access to a host object and a sandbox compromise."
-    },
-    {
-        "Modified": "2022-12-21T06:15:00",
-        "Published": "2022-12-21T05:15:00",
-        "access": {},
-        "assigner": "report@snyk.io",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-25895",
-        "impact": {},
-        "last-modified": "2022-12-21T06:15:00",
-        "references": [
-            "https://github.com/shadowwzw/lite-dev-server/blob/master/src/server.js%23L134",
-            "https://gist.github.com/lirantal/0f8a48c3f5ac581ce73123abe9f7f120",
-            "https://security.snyk.io/vuln/SNYK-JS-LITEDEVSERVER-3153718"
-        ],
-        "summary": "All versions of package lite-dev-server are vulnerable to Directory Traversal due to missing input sanitization and sandboxes being employed to the req.url user input that is passed to the server code."
-    },
-    {
-        "Modified": "2022-12-21T06:15:00",
-        "Published": "2022-12-21T05:15:00",
-        "access": {},
-        "assigner": "report@snyk.io",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-25929",
-        "impact": {},
-        "last-modified": "2022-12-21T06:15:00",
-        "references": [
-            "https://security.snyk.io/vuln/SNYK-JAVA-ORGWEBJARS-3177369",
-            "https://github.com/joewalnes/smoothie/pull/147",
-            "https://security.snyk.io/vuln/SNYK-JAVA-ORGWEBJARSBOWER-3177368",
-            "https://github.com/joewalnes/smoothie/commit/8e0920d50da82f4b6e605d56f41b69fbb9606a98",
-            "https://security.snyk.io/vuln/SNYK-JS-SMOOTHIE-3177364"
-        ],
-        "summary": "The package smoothie from 1.31.0 and before 1.36.1 are vulnerable to Cross-site Scripting (XSS) due to improper user input sanitization in strokeStyle and tooltipLabel properties. Exploiting this vulnerability is possible when the user can control these properties."
     },
     {
         "Modified": "2022-12-21T06:15:00",
@@ -969,22 +1449,6 @@
         "access": {},
         "assigner": "product-security@apple.com",
         "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-46697",
-        "impact": {},
-        "last-modified": "2022-12-21T06:15:00",
-        "references": [
-            "https://support.apple.com/en-us/HT213532",
-            "http://seclists.org/fulldisclosure/2022/Dec/23"
-        ],
-        "summary": "An out-of-bounds access issue was addressed with improved bounds checking. This issue is fixed in macOS Ventura 13.1. An app may be able to execute arbitrary code with kernel privileges."
-    },
-    {
-        "Modified": "2022-12-21T06:15:00",
-        "Published": "2022-12-15T19:15:00",
-        "access": {},
-        "assigner": "product-security@apple.com",
-        "cvss": null,
         "cwe": "NVD-CWE-noinfo",
         "id": "CVE-2022-46698",
         "impact": {},
@@ -1050,26 +1514,6 @@
             "http://seclists.org/fulldisclosure/2022/Dec/23"
         ],
         "summary": "A memory corruption issue was addressed with improved input validation. This issue is fixed in Safari 16.2, tvOS 16.2, macOS Ventura 13.1, iOS 15.7.2 and iPadOS 15.7.2, iOS 16.2 and iPadOS 16.2, watchOS 9.2. Processing maliciously crafted web content may lead to arbitrary code execution."
-    },
-    {
-        "Modified": "2022-12-21T06:15:00",
-        "Published": "2022-12-15T19:15:00",
-        "access": {},
-        "assigner": "product-security@apple.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-46701",
-        "impact": {},
-        "last-modified": "2022-12-21T06:15:00",
-        "references": [
-            "https://support.apple.com/en-us/HT213532",
-            "https://support.apple.com/en-us/HT213530",
-            "https://support.apple.com/en-us/HT213535",
-            "http://seclists.org/fulldisclosure/2022/Dec/26",
-            "http://seclists.org/fulldisclosure/2022/Dec/20",
-            "http://seclists.org/fulldisclosure/2022/Dec/23"
-        ],
-        "summary": "The issue was addressed with improved bounds checks. This issue is fixed in iOS 16.2 and iPadOS 16.2, macOS Ventura 13.1, tvOS 16.2. Connecting to a malicious NFS server may lead to arbitrary code execution with kernel privileges."
     },
     {
         "Modified": "2022-12-21T06:15:00",
@@ -1181,30 +1625,6 @@
             "http://seclists.org/fulldisclosure/2022/Dec/24"
         ],
         "summary": "The issue was addressed with improved memory handling. This issue is fixed in macOS Monterey 12.6.2, macOS Ventura 13.1. An app may be able to disclose kernel memory."
-    },
-    {
-        "Modified": "2022-12-21T06:15:00",
-        "Published": "2022-12-15T19:15:00",
-        "access": {},
-        "assigner": "product-security@apple.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-42856",
-        "impact": {},
-        "last-modified": "2022-12-21T06:15:00",
-        "references": [
-            "https://support.apple.com/en-us/HT213531",
-            "https://support.apple.com/en-us/HT213532",
-            "https://support.apple.com/en-us/HT213537",
-            "https://support.apple.com/en-us/HT213516",
-            "https://support.apple.com/en-us/HT213535",
-            "http://seclists.org/fulldisclosure/2022/Dec/26",
-            "http://seclists.org/fulldisclosure/2022/Dec/28",
-            "http://seclists.org/fulldisclosure/2022/Dec/21",
-            "http://seclists.org/fulldisclosure/2022/Dec/22",
-            "http://seclists.org/fulldisclosure/2022/Dec/23"
-        ],
-        "summary": "A type confusion issue was addressed with improved state handling. This issue is fixed in Safari 16.2, tvOS 16.2, macOS Ventura 13.1, iOS 15.7.2 and iPadOS 15.7.2, iOS 16.1.2. Processing maliciously crafted web content may lead to arbitrary code execution. Apple is aware of a report that this issue may have been actively exploited against versions of iOS released before iOS 15.1.."
     },
     {
         "Modified": "2022-12-21T06:15:00",
@@ -1469,443 +1889,5 @@
             "https://source.android.com/security/bulletin/pixel/2022-12-01"
         ],
         "summary": "In TBD of TBD, there is a possible out of bounds write due to memory corruption. This could lead to local escalation of privilege with System execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android kernelAndroid ID: A-239847859References: N/A"
-    },
-    {
-        "Modified": "2022-12-21T04:36:00",
-        "Published": "2022-12-16T16:15:00",
-        "access": {},
-        "assigner": "security@android.com",
-        "cvss": null,
-        "cwe": "CWE-20",
-        "id": "CVE-2022-20592",
-        "impact": {},
-        "last-modified": "2022-12-21T04:36:00",
-        "references": [
-            "https://source.android.com/security/bulletin/pixel/2022-12-01"
-        ],
-        "summary": "In ppmp_validate_secbuf of drm_fw.c, there is a possible information disclosure due to improper input validation. This could lead to local information disclosure with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android kernelAndroid ID: A-238976908References: N/A"
-    },
-    {
-        "Modified": "2022-12-21T04:36:00",
-        "Published": "2022-12-16T16:15:00",
-        "access": {},
-        "assigner": "security@android.com",
-        "cvss": null,
-        "cwe": "CWE-787",
-        "id": "CVE-2022-20594",
-        "impact": {},
-        "last-modified": "2022-12-21T04:36:00",
-        "references": [
-            "https://source.android.com/security/bulletin/pixel/2022-12-01"
-        ],
-        "summary": "In updateStart of WirelessCharger.cpp, there is a possible out of bounds write due to a missing bounds check. This could lead to local escalation of privilege with System execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android kernelAndroid ID: A-239567689References: N/A"
-    },
-    {
-        "Modified": "2022-12-21T04:36:00",
-        "Published": "2022-12-16T16:15:00",
-        "access": {},
-        "assigner": "security@android.com",
-        "cvss": null,
-        "cwe": "CWE-20",
-        "id": "CVE-2022-20587",
-        "impact": {},
-        "last-modified": "2022-12-21T04:36:00",
-        "references": [
-            "https://source.android.com/security/bulletin/pixel/2022-12-01"
-        ],
-        "summary": "In ppmp_validate_wsm of drm_fw.c, there is a possible EoP due to improper input validation. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android kernelAndroid ID: A-238720411References: N/A"
-    },
-    {
-        "Modified": "2022-12-21T04:36:00",
-        "Published": "2022-12-16T16:15:00",
-        "access": {},
-        "assigner": "security@android.com",
-        "cvss": null,
-        "cwe": "CWE-754",
-        "id": "CVE-2022-20588",
-        "impact": {},
-        "last-modified": "2022-12-21T04:36:00",
-        "references": [
-            "https://source.android.com/security/bulletin/pixel/2022-12-01"
-        ],
-        "summary": "In sysmmu_map of sysmmu.c, there is a possible EoP due to a precondition check failure. This could lead to local escalation of privilege with System execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android kernelAndroid ID: A-238785915References: N/A"
-    },
-    {
-        "Modified": "2022-12-21T04:36:00",
-        "Published": "2022-12-16T16:15:00",
-        "access": {},
-        "assigner": "security@android.com",
-        "cvss": null,
-        "cwe": "CWE-20",
-        "id": "CVE-2022-20589",
-        "impact": {},
-        "last-modified": "2022-12-21T04:36:00",
-        "references": [
-            "https://source.android.com/security/bulletin/pixel/2022-12-01"
-        ],
-        "summary": "In valid_va_secbuf_check of drm_access_control.c, there is a possible ID due to improper input validation. This could lead to local information disclosure with System execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android kernelAndroid ID: A-238841928References: N/A"
-    },
-    {
-        "Modified": "2022-12-21T04:36:00",
-        "Published": "2022-12-16T16:15:00",
-        "access": {},
-        "assigner": "security@android.com",
-        "cvss": null,
-        "cwe": "CWE-20",
-        "id": "CVE-2022-20590",
-        "impact": {},
-        "last-modified": "2022-12-21T04:36:00",
-        "references": [
-            "https://source.android.com/security/bulletin/pixel/2022-12-01"
-        ],
-        "summary": "In valid_va_sec_mfc_check of drm_access_control.c, there is a possible information disclosure due to improper input validation. This could lead to local information disclosure with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android kernelAndroid ID: A-238932493References: N/A"
-    },
-    {
-        "Modified": "2022-12-21T04:36:00",
-        "Published": "2022-12-16T16:15:00",
-        "access": {},
-        "assigner": "security@android.com",
-        "cvss": null,
-        "cwe": "NVD-CWE-noinfo",
-        "id": "CVE-2022-20591",
-        "impact": {},
-        "last-modified": "2022-12-21T04:36:00",
-        "references": [
-            "https://source.android.com/security/bulletin/pixel/2022-12-01"
-        ],
-        "summary": "In ppmpu_set of ppmpu.c, there is a possible information disclosure due to a logic error in the code. This could lead to local information disclosure with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android kernelAndroid ID: A-238939706References: N/A"
-    },
-    {
-        "Modified": "2022-12-21T04:36:00",
-        "Published": "2022-12-16T16:15:00",
-        "access": {},
-        "assigner": "security@android.com",
-        "cvss": null,
-        "cwe": "CWE-125",
-        "id": "CVE-2022-20593",
-        "impact": {},
-        "last-modified": "2022-12-21T04:36:00",
-        "references": [
-            "https://source.android.com/security/bulletin/pixel/2022-12-01"
-        ],
-        "summary": "In pop_descriptor_string of BufferDescriptor.h, there is a possible out of bounds read due to a missing bounds check. This could lead to local information disclosure with System execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android kernelAndroid ID: A-239415809References: N/A"
-    },
-    {
-        "Modified": "2022-12-21T04:35:00",
-        "Published": "2022-12-16T16:15:00",
-        "access": {},
-        "assigner": "security@android.com",
-        "cvss": null,
-        "cwe": "CWE-787",
-        "id": "CVE-2022-20582",
-        "impact": {},
-        "last-modified": "2022-12-21T04:35:00",
-        "references": [
-            "https://source.android.com/security/bulletin/pixel/2022-12-01"
-        ],
-        "summary": "In ppmp_unprotect_mfcfw_buf of drm_fw.c, there is a possible out of bounds write due to improper input validation. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android kernelAndroid ID: A-233645166References: N/A"
-    },
-    {
-        "Modified": "2022-12-21T04:35:00",
-        "Published": "2022-12-16T16:15:00",
-        "access": {},
-        "assigner": "security@android.com",
-        "cvss": null,
-        "cwe": "CWE-787",
-        "id": "CVE-2022-20583",
-        "impact": {},
-        "last-modified": "2022-12-21T04:35:00",
-        "references": [
-            "https://source.android.com/security/bulletin/pixel/2022-12-01"
-        ],
-        "summary": "In ppmp_unprotect_mfcfw_buf of drm_fw.c, there is a possible out of bounds write due to improper input validation. This could lead to local escalation of privilege in S-EL1 with System execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android kernelAndroid ID: A-234859169References: N/A"
-    },
-    {
-        "Modified": "2022-12-21T04:35:00",
-        "Published": "2022-12-16T16:15:00",
-        "access": {},
-        "assigner": "security@android.com",
-        "cvss": null,
-        "cwe": "CWE-20",
-        "id": "CVE-2022-20584",
-        "impact": {},
-        "last-modified": "2022-12-21T04:35:00",
-        "references": [
-            "https://source.android.com/security/bulletin/pixel/2022-12-01"
-        ],
-        "summary": "In page_number of shared_mem.c, there is a possible code execution in secure world due to improper input validation. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android kernelAndroid ID: A-238366009References: N/A"
-    },
-    {
-        "Modified": "2022-12-21T04:35:00",
-        "Published": "2022-12-16T16:15:00",
-        "access": {},
-        "assigner": "security@android.com",
-        "cvss": null,
-        "cwe": "CWE-20",
-        "id": "CVE-2022-20585",
-        "impact": {},
-        "last-modified": "2022-12-21T04:35:00",
-        "references": [
-            "https://source.android.com/security/bulletin/pixel/2022-12-01"
-        ],
-        "summary": "In valid_out_of_special_sec_dram_addr of drm_access_control.c, there is a possible EoP due to improper input validation. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android kernelAndroid ID: A-238716781References: N/A"
-    },
-    {
-        "Modified": "2022-12-21T04:35:00",
-        "Published": "2022-12-16T16:15:00",
-        "access": {},
-        "assigner": "security@android.com",
-        "cvss": null,
-        "cwe": "CWE-20",
-        "id": "CVE-2022-20586",
-        "impact": {},
-        "last-modified": "2022-12-21T04:35:00",
-        "references": [
-            "https://source.android.com/security/bulletin/pixel/2022-12-01"
-        ],
-        "summary": "In valid_out_of_special_sec_dram_addr of drm_access_control.c, there is a possible EoP due to improper input validation. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android kernelAndroid ID: A-238718854References: N/A"
-    },
-    {
-        "Modified": "2022-12-21T04:15:00",
-        "Published": "2022-12-14T21:15:00",
-        "access": {},
-        "assigner": "secalert@redhat.com",
-        "cvss": null,
-        "cwe": "CWE-787",
-        "id": "CVE-2022-46340",
-        "impact": {},
-        "last-modified": "2022-12-21T04:15:00",
-        "references": [
-            "https://access.redhat.com/security/cve/CVE-2022-46340",
-            "https://bugzilla.redhat.com/show_bug.cgi?id=2151755",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/DXDF2O5PPLE3SVAJJYUOSAD5QZ4TWQ2G/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/5NELB7YDWRABYYBG4UPTHRBDTKJRV5M2/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RWTH3SNJ3GKYDSN7I3QDGWYEPSMWU6EP/",
-            "https://www.debian.org/security/2022/dsa-5304"
-        ],
-        "summary": "A vulnerability was found in X.Org. This security flaw occurs becuase the swap handler for the XTestFakeInput request of the XTest extension may corrupt the stack if GenericEvents with lengths larger than 32 bytes are sent through a the XTestFakeInput request. This issue can lead to local privileges elevation on systems where the X server is running privileged and remote code execution for ssh X forwarding sessions. This issue does not affect systems where client and server use the same byte order."
-    },
-    {
-        "Modified": "2022-12-21T04:15:00",
-        "Published": "2022-12-14T21:15:00",
-        "access": {},
-        "assigner": "secalert@redhat.com",
-        "cvss": null,
-        "cwe": "CWE-787",
-        "id": "CVE-2022-46341",
-        "impact": {},
-        "last-modified": "2022-12-21T04:15:00",
-        "references": [
-            "https://access.redhat.com/security/cve/CVE-2022-46341",
-            "https://bugzilla.redhat.com/show_bug.cgi?id=2151756",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/DXDF2O5PPLE3SVAJJYUOSAD5QZ4TWQ2G/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/5NELB7YDWRABYYBG4UPTHRBDTKJRV5M2/",
-            "https://www.debian.org/security/2022/dsa-5304"
-        ],
-        "summary": "A vulnerability was found in X.Org. This security flaw occurs because the handler for the XIPassiveUngrab request accesses out-of-bounds memory when invoked with a high keycode or button code. This issue can lead to local privileges elevation on systems where the X server is running privileged and remote code execution for ssh X forwarding sessions."
-    },
-    {
-        "Modified": "2022-12-21T04:15:00",
-        "Published": "2022-12-14T21:15:00",
-        "access": {},
-        "assigner": "secalert@redhat.com",
-        "cvss": null,
-        "cwe": "CWE-416",
-        "id": "CVE-2022-46342",
-        "impact": {},
-        "last-modified": "2022-12-21T04:15:00",
-        "references": [
-            "https://bugzilla.redhat.com/show_bug.cgi?id=2151757",
-            "https://access.redhat.com/security/cve/CVE-2022-46342",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/DXDF2O5PPLE3SVAJJYUOSAD5QZ4TWQ2G/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/5NELB7YDWRABYYBG4UPTHRBDTKJRV5M2/",
-            "https://www.debian.org/security/2022/dsa-5304"
-        ],
-        "summary": "A vulnerability was found in X.Org. This security flaw occurs because the handler for the XvdiSelectVideoNotify request may write to memory after it has been freed. This issue can lead to local privileges elevation on systems where the X se"
-    },
-    {
-        "Modified": "2022-12-21T04:15:00",
-        "Published": "2022-12-14T21:15:00",
-        "access": {},
-        "assigner": "secalert@redhat.com",
-        "cvss": null,
-        "cwe": "CWE-416",
-        "id": "CVE-2022-46343",
-        "impact": {},
-        "last-modified": "2022-12-21T04:15:00",
-        "references": [
-            "https://bugzilla.redhat.com/show_bug.cgi?id=2151758",
-            "https://access.redhat.com/security/cve/CVE-2022-46343",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/DXDF2O5PPLE3SVAJJYUOSAD5QZ4TWQ2G/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/5NELB7YDWRABYYBG4UPTHRBDTKJRV5M2/",
-            "https://www.debian.org/security/2022/dsa-5304"
-        ],
-        "summary": "A vulnerability was found in X.Org. This security flaw occurs because the handler for the ScreenSaverSetAttributes request may write to memory after it has been freed. This issue can lead to local privileges elevation on systems where the X server is running privileged and remote code execution for ssh X forwarding sessions."
-    },
-    {
-        "Modified": "2022-12-21T04:15:00",
-        "Published": "2022-12-14T21:15:00",
-        "access": {},
-        "assigner": "secalert@redhat.com",
-        "cvss": null,
-        "cwe": "CWE-125",
-        "id": "CVE-2022-46344",
-        "impact": {},
-        "last-modified": "2022-12-21T04:15:00",
-        "references": [
-            "https://access.redhat.com/security/cve/CVE-2022-46344",
-            "https://bugzilla.redhat.com/show_bug.cgi?id=2151760",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/DXDF2O5PPLE3SVAJJYUOSAD5QZ4TWQ2G/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/5NELB7YDWRABYYBG4UPTHRBDTKJRV5M2/",
-            "https://www.debian.org/security/2022/dsa-5304"
-        ],
-        "summary": "A vulnerability was found in X.Org. This security flaw occurs because the handler for the XIChangeProperty request has a length-validation issues, resulting in out-of-bounds memory reads and potential information disclosure. This issue can lead to local privileges elevation on systems where the X server is running privileged and remote code execution for ssh X forwarding sessions."
-    },
-    {
-        "Modified": "2022-12-21T04:15:00",
-        "Published": "2022-12-14T21:15:00",
-        "access": {},
-        "assigner": "secalert@redhat.com",
-        "cvss": null,
-        "cwe": "CWE-416",
-        "id": "CVE-2022-4283",
-        "impact": {},
-        "last-modified": "2022-12-21T04:15:00",
-        "references": [
-            "https://bugzilla.redhat.com/show_bug.cgi?id=2151761",
-            "https://access.redhat.com/security/cve/CVE-2022-4283",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/DXDF2O5PPLE3SVAJJYUOSAD5QZ4TWQ2G/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/5NELB7YDWRABYYBG4UPTHRBDTKJRV5M2/",
-            "https://www.debian.org/security/2022/dsa-5304"
-        ],
-        "summary": "A vulnerability was found in X.Org. This security flaw occurs because the XkbCopyNames function left a dangling pointer to freed memory, resulting in out-of-bounds memory access on subsequent XkbGetKbdByName requests.. This issue can lead to local privileges elevation on systems where the X server is running privileged and remote code execution for ssh X forwarding sessions."
-    },
-    {
-        "Modified": "2022-12-21T04:15:00",
-        "Published": "2022-11-11T13:15:00",
-        "access": {},
-        "assigner": "security@google.com",
-        "cvss": null,
-        "cwe": "CWE-787",
-        "id": "CVE-2022-41854",
-        "impact": {},
-        "last-modified": "2022-12-21T04:15:00",
-        "references": [
-            "https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=50355",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/7MKE4XWRXTH32757H7QJU4ACS67DYDCR/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/KSPAJ5Y45A4ZDION2KN5RDWLHK4XKY2J/"
-        ],
-        "summary": "Those using Snakeyaml to parse untrusted YAML files may be vulnerable to Denial of Service attacks (DOS). If the parser is running on user supplied input, an attacker may supply content that causes the parser to crash by stack overflow. This effect may support a denial of service attack."
-    },
-    {
-        "Modified": "2022-12-21T04:15:00",
-        "Published": "2022-11-09T22:15:00",
-        "access": {},
-        "assigner": "secure@microsoft.com",
-        "cvss": null,
-        "cwe": "NVD-CWE-noinfo",
-        "id": "CVE-2022-37966",
-        "impact": {},
-        "last-modified": "2022-12-21T04:15:00",
-        "references": [
-            "https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-37966",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/VCTYD5EQRS73QZTWPOC2ZO2FL7MMYXMS/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/G2CYDXPFBQES2Z4KLZDILGXFFQ3VIGZ4/"
-        ],
-        "summary": "Windows Kerberos RC4-HMAC Elevation of Privilege Vulnerability."
-    },
-    {
-        "Modified": "2022-12-21T04:15:00",
-        "Published": "2022-11-09T22:15:00",
-        "access": {},
-        "assigner": "secure@microsoft.com",
-        "cvss": null,
-        "cwe": "NVD-CWE-noinfo",
-        "id": "CVE-2022-37967",
-        "impact": {},
-        "last-modified": "2022-12-21T04:15:00",
-        "references": [
-            "https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-37967",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/VCTYD5EQRS73QZTWPOC2ZO2FL7MMYXMS/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/G2CYDXPFBQES2Z4KLZDILGXFFQ3VIGZ4/"
-        ],
-        "summary": "Windows Kerberos Elevation of Privilege Vulnerability."
-    },
-    {
-        "Modified": "2022-12-21T04:15:00",
-        "Published": "2022-11-09T22:15:00",
-        "access": {},
-        "assigner": "secure@microsoft.com",
-        "cvss": null,
-        "cwe": "NVD-CWE-noinfo",
-        "id": "CVE-2022-38023",
-        "impact": {},
-        "last-modified": "2022-12-21T04:15:00",
-        "references": [
-            "https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-38023",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/VCTYD5EQRS73QZTWPOC2ZO2FL7MMYXMS/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/G2CYDXPFBQES2Z4KLZDILGXFFQ3VIGZ4/"
-        ],
-        "summary": "Netlogon RPC Elevation of Privilege Vulnerability."
-    },
-    {
-        "Modified": "2022-12-21T02:15:00",
-        "Published": "2022-12-21T02:15:00",
-        "access": {},
-        "assigner": "security@zyxel.com.tw",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-38546",
-        "impact": {},
-        "last-modified": "2022-12-21T02:15:00",
-        "references": [
-            "https://www.zyxel.com/global/en/support/security-advisories/zyxel-security-advisory-for-dns-misconfiguration-in-nbg7510-home-router"
-        ],
-        "summary": "A DNS misconfiguration was found in Zyxel NBG7510 firmware versions prior to V1.00(ABZY.3)C0, which could allow an unauthenticated attacker to access the DNS server when the device is switched to the AP mode."
-    },
-    {
-        "Modified": "2022-12-21T01:15:00",
-        "Published": "2022-12-21T01:15:00",
-        "access": {},
-        "assigner": "security@huntr.dev",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-4617",
-        "impact": {},
-        "last-modified": "2022-12-21T01:15:00",
-        "references": [
-            "https://huntr.dev/bounties/1fb2ce08-7016-45fa-b402-ec08d700e4df",
-            "https://github.com/microweber/microweber/commit/df8add930ecfa7f5b18c67c3f748c137fe890906"
-        ],
-        "summary": "Cross-site Scripting (XSS) - Reflected in GitHub repository microweber/microweber prior to 1.3.2."
-    },
-    {
-        "Modified": "2022-12-21T00:15:00",
-        "Published": "2022-12-21T00:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-42949",
-        "impact": {},
-        "last-modified": "2022-12-21T00:15:00",
-        "references": [
-            "https://www.silverstripe.org/download/security-releases/",
-            "https://www.silverstripe.org/download/security-releases/cve-2022-42949"
-        ],
-        "summary": "Silverstripe silverstripe/subsites through 2.6.0 has Insecure Permissions."
-    },
-    {
-        "Modified": "2022-12-21T00:15:00",
-        "Published": "2022-10-17T09:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-3535",
-        "impact": {},
-        "last-modified": "2022-12-21T00:15:00",
-        "references": [],
-        "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was withdrawn by its CNA. Further investigation showed that it was not a security issue. Notes: none."
     }
 ]
