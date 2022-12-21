@@ -1,5 +1,67 @@
 [
     {
+        "Modified": "2022-12-21T12:15:00",
+        "Published": "2022-09-20T14:15:00",
+        "access": {},
+        "assigner": "security@apache.org",
+        "cvss": null,
+        "cwe": "CWE-502",
+        "id": "CVE-2022-40955",
+        "impact": {},
+        "last-modified": "2022-12-21T12:15:00",
+        "references": [
+            "https://lists.apache.org/thread/r1r34y7bchrpmp9jhfdoohzdmk7pj1q1",
+            "http://www.openwall.com/lists/oss-security/2022/09/22/5"
+        ],
+        "summary": "In versions of Apache InLong prior to 1.3.0, an attacker with sufficient privileges to specify MySQL JDBC connection URL parameters and to write arbitrary data to the MySQL database, could cause this data to be deserialized by Apache InLong, potentially leading to Remote Code Execution on the Apache InLong server. Users are advised to upgrade to Apache InLong 1.3.0 or newer."
+    },
+    {
+        "Modified": "2022-12-21T12:15:00",
+        "Published": "2022-08-21T09:15:00",
+        "access": {},
+        "assigner": "security@apache.org",
+        "cvss": null,
+        "cwe": "CWE-20",
+        "id": "CVE-2022-34916",
+        "impact": {},
+        "last-modified": "2022-12-21T12:15:00",
+        "references": [
+            "https://lists.apache.org/thread/qkmt4r2t9tbrxrdbjg1m2oczbvczd9zn",
+            "https://issues.apache.org/jira/browse/FLUME-3428"
+        ],
+        "summary": "Apache Flume versions 1.4.0 through 1.10.0 are vulnerable to a remote code execution (RCE) attack when a configuration uses a JMS Source with a JNDI LDAP data source URI when an attacker has control of the target LDAP server. This issue is fixed by limiting JNDI to allow only the use of the java protocol or no protocol."
+    },
+    {
+        "Modified": "2022-12-21T11:15:00",
+        "Published": "2022-12-21T11:15:00",
+        "access": {},
+        "assigner": "talos-cna@cisco.com",
+        "cvss": null,
+        "cwe": "CWE-269",
+        "id": "CVE-2022-38060",
+        "impact": {},
+        "last-modified": "2022-12-21T11:15:00",
+        "references": [
+            "https://talosintelligence.com/vulnerability_reports/TALOS-2022-1589"
+        ],
+        "summary": "A privilege escalation vulnerability exists in the sudo functionality of OpenStack Kolla git master 05194e7618. A misconfiguration in /etc/sudoers within a container can lead to increased privileges."
+    },
+    {
+        "Modified": "2022-12-21T11:15:00",
+        "Published": "2022-12-21T11:15:00",
+        "access": {},
+        "assigner": "talos-cna@cisco.com",
+        "cvss": null,
+        "cwe": "CWE-269",
+        "id": "CVE-2022-38065",
+        "impact": {},
+        "last-modified": "2022-12-21T11:15:00",
+        "references": [
+            "https://talosintelligence.com/vulnerability_reports/TALOS-2022-1599"
+        ],
+        "summary": "A privilege escalation vulnerability exists in the oslo.privsep functionality of OpenStack git master 05194e7618 and prior. Overly permissive functionality within tools leveraging this library within a container can lead increased privileges."
+    },
+    {
         "Modified": "2022-12-21T10:15:00",
         "Published": "2022-10-29T02:15:00",
         "access": {},
@@ -1845,90 +1907,5 @@
         "last-modified": "2022-12-21T00:15:00",
         "references": [],
         "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was withdrawn by its CNA. Further investigation showed that it was not a security issue. Notes: none."
-    },
-    {
-        "Modified": "2022-12-20T23:15:00",
-        "Published": "2022-12-20T23:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-42046",
-        "impact": {},
-        "last-modified": "2022-12-20T23:15:00",
-        "references": [
-            "https://www.wfs.games/news/20221220_01.html"
-        ],
-        "summary": "WFS, Inc HeavenBurnsRed 2020.3.15.7141260 is vulnerable to Local Privilege Escalation."
-    },
-    {
-        "Modified": "2022-12-20T23:15:00",
-        "Published": "2022-12-20T23:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-47629",
-        "impact": {},
-        "last-modified": "2022-12-20T23:15:00",
-        "references": [
-            "https://dev.gnupg.org/T6284",
-            "https://git.gnupg.org/cgi-bin/gitweb.cgi?p=libksba.git;a=commit;h=f61a5ea4e0f6a80fd4b28ef0174bee77793cf070"
-        ],
-        "summary": "Libksba before 1.6.3 is prone to an integer overflow vulnerability in the CRL signature parser."
-    },
-    {
-        "Modified": "2022-12-20T23:15:00",
-        "Published": "2021-06-25T14:15:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "MEDIUM",
-            "vector": "NETWORK"
-        },
-        "assigner": "cve@mitre.org",
-        "cvss": 6.8,
-        "cvss-time": "2022-12-20T23:15:00",
-        "cvss-vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
-        "cwe": "CWE-287",
-        "id": "CVE-2021-33895",
-        "impact": {
-            "availability": "PARTIAL",
-            "confidentiality": "PARTIAL",
-            "integrity": "PARTIAL"
-        },
-        "last-modified": "2022-12-20T23:15:00",
-        "references": [
-            "https://support.hpe.com/hpesc/public/docDisplay?docLocale=en_US&docId=hpesbns04172en_us",
-            "https://etinet.com/products/backbox-virtual-tape-controller/"
-        ],
-        "summary": "ETINET BACKBOX E4.09 and H4.09 mismanages password access control. When a user uses the User ID of the process running BBSV to login to the Backbox UI application, the system procedure (USER_AUTHENTICATE_) used for verifying the Password returns 0 (no error). The reason is that the user is not running the XYGate application. Hence, BBSV assumes the Password is correct. For H4.09, the affected version isT0954V04^AAO. For E4.09, the affected version is 22SEP2020. Note: If your current version is E4.10-16MAY2021 (version procedure T9999V04_16MAY2022_BPAKETI_10), a hotfix (FIXPAK-19OCT-2022) is available in version E4.10-19OCT2022. Resolution to CVE-2021-33895 in version E4.11-19OCT2022"
-    },
-    {
-        "Modified": "2022-12-20T22:15:00",
-        "Published": "2021-08-31T04:15:00",
-        "access": {
-            "authentication": "SINGLE",
-            "complexity": "LOW",
-            "vector": "NETWORK"
-        },
-        "assigner": "cve@mitre.org",
-        "cvss": 9.0,
-        "cvss-time": "2022-12-20T22:15:00",
-        "cvss-vector": "AV:N/AC:L/Au:S/C:C/I:C/A:C",
-        "cwe": "CWE-502",
-        "id": "CVE-2021-36981",
-        "impact": {
-            "availability": "COMPLETE",
-            "confidentiality": "COMPLETE",
-            "integrity": "COMPLETE"
-        },
-        "last-modified": "2022-12-20T22:15:00",
-        "references": [
-            "https://verinice.com/en/support/security-advisory",
-            "https://github.com/SerNet/verinice/compare/1.22.1...1.22.2",
-            "https://github.com/0xBrAinsTorM/CVE-2021-36981",
-            "https://www.secianus.de/worum-geht-es/aktuelle-meldung/cve-2021-36981-verinicepro-unsafe-java-deserialization"
-        ],
-        "summary": "In the server in SerNet verinice before 1.22.2, insecure Java deserialization allows remote authenticated attackers to execute arbitrary code."
     }
 ]
