@@ -1,6 +1,167 @@
 [
     {
-        "Modified": "2022-12-21T05:15:00",
+        "Modified": "2022-12-21T10:15:00",
+        "Published": "2022-10-29T02:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-319",
+        "id": "CVE-2022-42916",
+        "impact": {},
+        "last-modified": "2022-12-21T10:15:00",
+        "references": [
+            "https://curl.se/docs/CVE-2022-42916.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/HVU3IMZCKR4VE6KJ4GCWRL2ILLC6OV76/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/Q27V5YYMXUVI6PRZQVECON32XPVWTKDK/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/37YEVVC6NAF6H7UHH6YAUY5QEVY6LIH2/",
+            "https://security.netapp.com/advisory/ntap-20221209-0010/",
+            "https://security.gentoo.org/glsa/202212-01",
+            "http://www.openwall.com/lists/oss-security/2022/12/21/1"
+        ],
+        "summary": "In curl before 7.86.0, the HSTS check could be bypassed to trick it into staying with HTTP. Using its HSTS support, curl can be instructed to use HTTPS directly (instead of using an insecure cleartext HTTP step) even when HTTP is provided in the URL. This mechanism could be bypassed if the host name in the given URL uses IDN characters that get replaced with ASCII counterparts as part of the IDN conversion, e.g., using the character UTF-8 U+3002 (IDEOGRAPHIC FULL STOP) instead of the common ASCII full stop of U+002E (.). The earliest affected version is 7.77.0 2021-05-26."
+    },
+    {
+        "Modified": "2022-12-21T10:15:00",
+        "Published": "2022-06-02T14:15:00",
+        "access": {
+            "authentication": "SINGLE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "cve-assignments@hackerone.com",
+        "cvss": 4.0,
+        "cvss-time": "2022-12-21T10:15:00",
+        "cvss-vector": "AV:N/AC:L/Au:S/C:P/I:N/A:N",
+        "cwe": "CWE-319",
+        "id": "CVE-2022-30115",
+        "impact": {
+            "availability": "NONE",
+            "confidentiality": "PARTIAL",
+            "integrity": "NONE"
+        },
+        "last-modified": "2022-12-21T10:15:00",
+        "references": [
+            "https://hackerone.com/reports/1557449",
+            "https://security.netapp.com/advisory/ntap-20220609-0009/",
+            "http://www.openwall.com/lists/oss-security/2022/10/26/4",
+            "https://security.gentoo.org/glsa/202212-01",
+            "http://www.openwall.com/lists/oss-security/2022/12/21/1"
+        ],
+        "summary": "Using its HSTS support, curl can be instructed to use HTTPS directly insteadof using an insecure clear-text HTTP step even when HTTP is provided in theURL. This mechanism could be bypassed if the host name in the given URL used atrailing dot while not using one when it built the HSTS cache. Or the otherway around - by having the trailing dot in the HSTS cache and *not* using thetrailing dot in the URL."
+    },
+    {
+        "Modified": "2022-12-21T09:15:00",
+        "Published": "2022-12-21T09:15:00",
+        "access": {},
+        "assigner": "vultures@jpcert.or.jp",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-43543",
+        "impact": {},
+        "last-modified": "2022-12-21T09:15:00",
+        "references": [
+            "https://jvn.jp/en/jp/JVN43561812/index.html",
+            "https://www.au.com/mobile/service/plus-message/information/",
+            "https://www.docomo.ne.jp/service/plus_message/",
+            "https://www.softbank.jp/mobile/service/plus-message/"
+        ],
+        "summary": "KDDI +Message App, NTT DOCOMO +Message App, and SoftBank +Message App contain a vulnerability caused by improper handling of Unicode control characters. +Message App displays text unprocessed, even when control characters are contained, and the text is shown based on Unicode control character's specifications. Therefore, a crafted text may display misleading web links. As a result, a spoofed URL may be displayed and phishing attacks may be conducted. Affected products and versions are as follows: KDDI +Message App for Android prior to version 3.9.2 and +Message App for iOS prior to version 3.9.4, NTT DOCOMO +Message App for Android prior to version 54.49.0500 and +Message App for iOS prior to version 3.9.4, and SoftBank +Message App for Android prior to version 12.9.5 and +Message App for iOS prior to version 3.9.4"
+    },
+    {
+        "Modified": "2022-12-21T09:15:00",
+        "Published": "2022-12-21T09:15:00",
+        "access": {},
+        "assigner": "vultures@jpcert.or.jp",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-44449",
+        "impact": {},
+        "last-modified": "2022-12-21T09:15:00",
+        "references": [
+            "https://github.com/zenphoto/zenphoto",
+            "https://jvn.jp/en/jp/JVN06093462/index.html",
+            "https://www.zenphoto.org/"
+        ],
+        "summary": "Stored cross-site scripting vulnerability in Zenphoto versions prior to 1.6 allows remote a remote authenticated attacker with an administrative privilege to inject an arbitrary script."
+    },
+    {
+        "Modified": "2022-12-21T09:15:00",
+        "Published": "2022-12-21T09:15:00",
+        "access": {},
+        "assigner": "vultures@jpcert.or.jp",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-46282",
+        "impact": {},
+        "last-modified": "2022-12-21T09:15:00",
+        "references": [
+            "https://jvn.jp/en/vu/JVNVU92689335/index.html"
+        ],
+        "summary": "Use after free vulnerability in CX-Drive V3.00 and earlier allows a local attacker to execute arbitrary code by having a user to open a specially crafted file,"
+    },
+    {
+        "Modified": "2022-12-21T09:15:00",
+        "Published": "2022-12-21T09:15:00",
+        "access": {},
+        "assigner": "vultures@jpcert.or.jp",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-46330",
+        "impact": {},
+        "last-modified": "2022-12-21T09:15:00",
+        "references": [
+            "https://github.com/Squirrel/Squirrel.Windows/pull/1807",
+            "https://github.com/Squirrel/Squirrel.Windows",
+            "https://jvn.jp/en/jp/JVN29902403/index.html"
+        ],
+        "summary": "Squirrel.Windows is both a toolset and a library that provides installation and update functionality for Windows desktop applications. Installers generated by Squirrel.Windows 2.0.1 and earlier contain an issue with the DLL search path, which may lead to insecurely loading Dynamic Link Libraries. As a result, arbitrary code may be executed with the privilege of the user invoking the installer."
+    },
+    {
+        "Modified": "2022-12-21T09:15:00",
+        "Published": "2022-12-21T09:15:00",
+        "access": {},
+        "assigner": "vultures@jpcert.or.jp",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-46662",
+        "impact": {},
+        "last-modified": "2022-12-21T09:15:00",
+        "references": [
+            "https://jvn.jp/en/jp/JVN13075438/index.html",
+            "https://kb.corel.com/jp/129393"
+        ],
+        "summary": "Roxio Creator LJB starts another program with an unquoted file path. Since a registered Windows service path contains spaces and are unquoted, if a malicious executable is placed on a certain path, the executable may be executed with the privilege of the Windows service. The affected product and versions are as follows: Roxio Creator LJB version number 12.2 build number 106B62B, version number 12.2 build number 106B63A, version number 12.2 build number 106B69A, version number 12.2 build number 106B71A, and version number 12.2 build number 106B74A)"
+    },
+    {
+        "Modified": "2022-12-21T07:15:00",
+        "Published": "2022-10-17T12:15:00",
+        "access": {},
+        "assigner": "cna@vuldb.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-3542",
+        "impact": {},
+        "last-modified": "2022-12-21T07:15:00",
+        "references": [],
+        "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was withdrawn by its CNA. Further investigation showed that it was not a security issue. Notes: none."
+    },
+    {
+        "Modified": "2022-12-21T06:15:00",
+        "Published": "2022-12-21T06:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-47635",
+        "impact": {},
+        "last-modified": "2022-12-21T06:15:00",
+        "references": [
+            "https://wildix.atlassian.net/wiki/spaces/DOC/pages/30279136/Changelogs"
+        ],
+        "summary": "Wildix WMS 6 before 6.02.20221216, WMS 5 before 5.04.20221214, and WMS4 before 4.04.45396.23 allows Server-side request forgery (SSRF) via ZohoClient.php."
+    },
+    {
+        "Modified": "2022-12-21T06:15:00",
         "Published": "2022-12-21T05:15:00",
         "access": {},
         "assigner": "report@snyk.io",
@@ -8,14 +169,14 @@
         "cwe": "Unknown",
         "id": "CVE-2022-24431",
         "impact": {},
-        "last-modified": "2022-12-21T05:15:00",
+        "last-modified": "2022-12-21T06:15:00",
         "references": [
             "https://security.snyk.io/vuln/SNYK-JS-ABACUSEXTCMDLINE-3157950"
         ],
-        "summary": "All versions of package abacus-ext-cmdline are vulnerable to Command Injection via the execute function due to improper user-input sanitization.\r\n\r\n"
+        "summary": "All versions of package abacus-ext-cmdline are vulnerable to Command Injection via the execute function due to improper user-input sanitization."
     },
     {
-        "Modified": "2022-12-21T05:15:00",
+        "Modified": "2022-12-21T06:15:00",
         "Published": "2022-12-21T05:15:00",
         "access": {},
         "assigner": "report@snyk.io",
@@ -23,17 +184,17 @@
         "cwe": "Unknown",
         "id": "CVE-2022-25893",
         "impact": {},
-        "last-modified": "2022-12-21T05:15:00",
+        "last-modified": "2022-12-21T06:15:00",
         "references": [
             "https://github.com/patriksimek/vm2/pull/445/commits/3a9876482be487b78a90ac459675da7f83f46d69",
             "https://github.com/patriksimek/vm2/pull/445",
             "https://security.snyk.io/vuln/SNYK-JS-VM2-2990237",
             "https://github.com/patriksimek/vm2/issues/444"
         ],
-        "summary": "The package vm2 before 3.9.10 are vulnerable to Arbitrary Code Execution due to the usage of prototype lookup for the WeakMap.prototype.set method. Exploiting this vulnerability leads to access to a host object and a sandbox compromise.\r\n\r\n"
+        "summary": "The package vm2 before 3.9.10 are vulnerable to Arbitrary Code Execution due to the usage of prototype lookup for the WeakMap.prototype.set method. Exploiting this vulnerability leads to access to a host object and a sandbox compromise."
     },
     {
-        "Modified": "2022-12-21T05:15:00",
+        "Modified": "2022-12-21T06:15:00",
         "Published": "2022-12-21T05:15:00",
         "access": {},
         "assigner": "report@snyk.io",
@@ -41,16 +202,16 @@
         "cwe": "Unknown",
         "id": "CVE-2022-25895",
         "impact": {},
-        "last-modified": "2022-12-21T05:15:00",
+        "last-modified": "2022-12-21T06:15:00",
         "references": [
             "https://github.com/shadowwzw/lite-dev-server/blob/master/src/server.js%23L134",
             "https://gist.github.com/lirantal/0f8a48c3f5ac581ce73123abe9f7f120",
             "https://security.snyk.io/vuln/SNYK-JS-LITEDEVSERVER-3153718"
         ],
-        "summary": "All versions of package lite-dev-server are vulnerable to Directory Traversal due to missing input sanitization and sandboxes being employed to the req.url user input that is passed to the server code.\n"
+        "summary": "All versions of package lite-dev-server are vulnerable to Directory Traversal due to missing input sanitization and sandboxes being employed to the req.url user input that is passed to the server code."
     },
     {
-        "Modified": "2022-12-21T05:15:00",
+        "Modified": "2022-12-21T06:15:00",
         "Published": "2022-12-21T05:15:00",
         "access": {},
         "assigner": "report@snyk.io",
@@ -58,7 +219,7 @@
         "cwe": "Unknown",
         "id": "CVE-2022-25929",
         "impact": {},
-        "last-modified": "2022-12-21T05:15:00",
+        "last-modified": "2022-12-21T06:15:00",
         "references": [
             "https://security.snyk.io/vuln/SNYK-JAVA-ORGWEBJARS-3177369",
             "https://github.com/joewalnes/smoothie/pull/147",
@@ -66,7 +227,1066 @@
             "https://github.com/joewalnes/smoothie/commit/8e0920d50da82f4b6e605d56f41b69fbb9606a98",
             "https://security.snyk.io/vuln/SNYK-JS-SMOOTHIE-3177364"
         ],
-        "summary": "The package smoothie from 1.31.0 and before 1.36.1 are vulnerable to Cross-site Scripting (XSS) due to improper user input sanitization in strokeStyle and tooltipLabel properties. Exploiting this vulnerability is possible when the user can control these properties.\r\n\r\n"
+        "summary": "The package smoothie from 1.31.0 and before 1.36.1 are vulnerable to Cross-site Scripting (XSS) due to improper user input sanitization in strokeStyle and tooltipLabel properties. Exploiting this vulnerability is possible when the user can control these properties."
+    },
+    {
+        "Modified": "2022-12-21T06:15:00",
+        "Published": "2022-12-15T19:15:00",
+        "access": {},
+        "assigner": "product-security@apple.com",
+        "cvss": null,
+        "cwe": "NVD-CWE-noinfo",
+        "id": "CVE-2022-42840",
+        "impact": {},
+        "last-modified": "2022-12-21T06:15:00",
+        "references": [
+            "https://support.apple.com/en-us/HT213531",
+            "https://support.apple.com/en-us/HT213532",
+            "https://support.apple.com/en-us/HT213530",
+            "https://support.apple.com/en-us/HT213533",
+            "https://support.apple.com/en-us/HT213534",
+            "http://seclists.org/fulldisclosure/2022/Dec/20",
+            "http://seclists.org/fulldisclosure/2022/Dec/21",
+            "http://seclists.org/fulldisclosure/2022/Dec/23",
+            "http://seclists.org/fulldisclosure/2022/Dec/24",
+            "http://seclists.org/fulldisclosure/2022/Dec/25"
+        ],
+        "summary": "The issue was addressed with improved memory handling. This issue is fixed in macOS Monterey 12.6.2, macOS Ventura 13.1, macOS Big Sur 11.7.2, iOS 15.7.2 and iPadOS 15.7.2, iOS 16.2 and iPadOS 16.2. An app may be able to execute arbitrary code with kernel privileges."
+    },
+    {
+        "Modified": "2022-12-21T06:15:00",
+        "Published": "2022-12-15T19:15:00",
+        "access": {},
+        "assigner": "product-security@apple.com",
+        "cvss": null,
+        "cwe": "CWE-843",
+        "id": "CVE-2022-42841",
+        "impact": {},
+        "last-modified": "2022-12-21T06:15:00",
+        "references": [
+            "https://support.apple.com/en-us/HT213532",
+            "https://support.apple.com/en-us/HT213533",
+            "https://support.apple.com/en-us/HT213534",
+            "http://seclists.org/fulldisclosure/2022/Dec/23",
+            "http://seclists.org/fulldisclosure/2022/Dec/24",
+            "http://seclists.org/fulldisclosure/2022/Dec/25"
+        ],
+        "summary": "A type confusion issue was addressed with improved checks. This issue is fixed in macOS Monterey 12.6.2, macOS Ventura 13.1, macOS Big Sur 11.7.2. Processing a maliciously crafted package may lead to arbitrary code execution."
+    },
+    {
+        "Modified": "2022-12-21T06:15:00",
+        "Published": "2022-12-15T19:15:00",
+        "access": {},
+        "assigner": "product-security@apple.com",
+        "cvss": null,
+        "cwe": "NVD-CWE-noinfo",
+        "id": "CVE-2022-42851",
+        "impact": {},
+        "last-modified": "2022-12-21T06:15:00",
+        "references": [
+            "https://support.apple.com/en-us/HT213530",
+            "https://support.apple.com/en-us/HT213535",
+            "http://seclists.org/fulldisclosure/2022/Dec/26",
+            "http://seclists.org/fulldisclosure/2022/Dec/20"
+        ],
+        "summary": "The issue was addressed with improved memory handling. This issue is fixed in iOS 16.2 and iPadOS 16.2, tvOS 16.2. Parsing a maliciously crafted TIFF file may lead to disclosure of user information."
+    },
+    {
+        "Modified": "2022-12-21T06:15:00",
+        "Published": "2022-12-15T19:15:00",
+        "access": {},
+        "assigner": "product-security@apple.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-42855",
+        "impact": {},
+        "last-modified": "2022-12-21T06:15:00",
+        "references": [
+            "https://support.apple.com/en-us/HT213531",
+            "https://support.apple.com/en-us/HT213532",
+            "https://support.apple.com/en-us/HT213530",
+            "https://support.apple.com/en-us/HT213535",
+            "https://support.apple.com/en-us/HT213533",
+            "http://seclists.org/fulldisclosure/2022/Dec/26",
+            "http://seclists.org/fulldisclosure/2022/Dec/20",
+            "http://seclists.org/fulldisclosure/2022/Dec/21",
+            "http://seclists.org/fulldisclosure/2022/Dec/23",
+            "http://seclists.org/fulldisclosure/2022/Dec/24"
+        ],
+        "summary": "A logic issue was addressed with improved state management. This issue is fixed in tvOS 16.2, macOS Monterey 12.6.2, macOS Ventura 13.1, iOS 15.7.2 and iPadOS 15.7.2, iOS 16.2 and iPadOS 16.2. An app may be able to use arbitrary entitlements."
+    },
+    {
+        "Modified": "2022-12-21T06:15:00",
+        "Published": "2022-12-15T19:15:00",
+        "access": {},
+        "assigner": "product-security@apple.com",
+        "cvss": null,
+        "cwe": "NVD-CWE-noinfo",
+        "id": "CVE-2022-42859",
+        "impact": {},
+        "last-modified": "2022-12-21T06:15:00",
+        "references": [
+            "https://support.apple.com/en-us/HT213532",
+            "https://support.apple.com/en-us/HT213530",
+            "https://support.apple.com/en-us/HT213536",
+            "http://seclists.org/fulldisclosure/2022/Dec/20",
+            "http://seclists.org/fulldisclosure/2022/Dec/23"
+        ],
+        "summary": "Multiple issues were addressed by removing the vulnerable code. This issue is fixed in iOS 16.2 and iPadOS 16.2, macOS Ventura 13.1, watchOS 9.2. An app may be able to bypass Privacy preferences."
+    },
+    {
+        "Modified": "2022-12-21T06:15:00",
+        "Published": "2022-12-15T19:15:00",
+        "access": {},
+        "assigner": "product-security@apple.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-42861",
+        "impact": {},
+        "last-modified": "2022-12-21T06:15:00",
+        "references": [
+            "https://support.apple.com/en-us/HT213531",
+            "https://support.apple.com/en-us/HT213532",
+            "https://support.apple.com/en-us/HT213530",
+            "https://support.apple.com/en-us/HT213533",
+            "http://seclists.org/fulldisclosure/2022/Dec/20",
+            "http://seclists.org/fulldisclosure/2022/Dec/21",
+            "http://seclists.org/fulldisclosure/2022/Dec/23",
+            "http://seclists.org/fulldisclosure/2022/Dec/24"
+        ],
+        "summary": "This issue was addressed with improved checks. This issue is fixed in iOS 16.2 and iPadOS 16.2, macOS Monterey 12.6.2, macOS Ventura 13.1, iOS 15.7.2 and iPadOS 15.7.2. An app may be able to break out of its sandbox."
+    },
+    {
+        "Modified": "2022-12-21T06:15:00",
+        "Published": "2022-12-15T19:15:00",
+        "access": {},
+        "assigner": "product-security@apple.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-42862",
+        "impact": {},
+        "last-modified": "2022-12-21T06:15:00",
+        "references": [
+            "https://support.apple.com/en-us/HT213532",
+            "https://support.apple.com/en-us/HT213530",
+            "http://seclists.org/fulldisclosure/2022/Dec/20",
+            "http://seclists.org/fulldisclosure/2022/Dec/23"
+        ],
+        "summary": "This issue was addressed by removing the vulnerable code. This issue is fixed in iOS 16.2 and iPadOS 16.2, macOS Ventura 13.1. An app may be able to bypass Privacy preferences."
+    },
+    {
+        "Modified": "2022-12-21T06:15:00",
+        "Published": "2022-12-15T19:15:00",
+        "access": {},
+        "assigner": "product-security@apple.com",
+        "cvss": null,
+        "cwe": "CWE-787",
+        "id": "CVE-2022-42863",
+        "impact": {},
+        "last-modified": "2022-12-21T06:15:00",
+        "references": [
+            "https://support.apple.com/en-us/HT213532",
+            "https://support.apple.com/en-us/HT213530",
+            "https://support.apple.com/en-us/HT213537",
+            "https://support.apple.com/en-us/HT213535",
+            "https://support.apple.com/en-us/HT213536",
+            "http://seclists.org/fulldisclosure/2022/Dec/26",
+            "http://seclists.org/fulldisclosure/2022/Dec/28",
+            "http://seclists.org/fulldisclosure/2022/Dec/20",
+            "http://seclists.org/fulldisclosure/2022/Dec/23"
+        ],
+        "summary": "A memory corruption issue was addressed with improved state management. This issue is fixed in Safari 16.2, tvOS 16.2, macOS Ventura 13.1, iOS 16.2 and iPadOS 16.2, watchOS 9.2. Processing maliciously crafted web content may lead to arbitrary code execution."
+    },
+    {
+        "Modified": "2022-12-21T06:15:00",
+        "Published": "2022-12-15T19:15:00",
+        "access": {},
+        "assigner": "product-security@apple.com",
+        "cvss": null,
+        "cwe": "CWE-362",
+        "id": "CVE-2022-42864",
+        "impact": {},
+        "last-modified": "2022-12-21T06:15:00",
+        "references": [
+            "https://support.apple.com/en-us/HT213531",
+            "https://support.apple.com/en-us/HT213532",
+            "https://support.apple.com/en-us/HT213530",
+            "https://support.apple.com/en-us/HT213535",
+            "https://support.apple.com/en-us/HT213536",
+            "https://support.apple.com/en-us/HT213533",
+            "https://support.apple.com/en-us/HT213534",
+            "http://seclists.org/fulldisclosure/2022/Dec/26",
+            "http://seclists.org/fulldisclosure/2022/Dec/27",
+            "http://seclists.org/fulldisclosure/2022/Dec/20",
+            "http://seclists.org/fulldisclosure/2022/Dec/21",
+            "http://seclists.org/fulldisclosure/2022/Dec/23",
+            "http://seclists.org/fulldisclosure/2022/Dec/24",
+            "http://seclists.org/fulldisclosure/2022/Dec/25"
+        ],
+        "summary": "A race condition was addressed with improved state handling. This issue is fixed in tvOS 16.2, macOS Monterey 12.6.2, macOS Ventura 13.1, macOS Big Sur 11.7.2, iOS 15.7.2 and iPadOS 15.7.2, iOS 16.2 and iPadOS 16.2, watchOS 9.2. An app may be able to execute arbitrary code with kernel privileges."
+    },
+    {
+        "Modified": "2022-12-21T06:15:00",
+        "Published": "2022-12-15T19:15:00",
+        "access": {},
+        "assigner": "product-security@apple.com",
+        "cvss": null,
+        "cwe": "NVD-CWE-noinfo",
+        "id": "CVE-2022-42865",
+        "impact": {},
+        "last-modified": "2022-12-21T06:15:00",
+        "references": [
+            "https://support.apple.com/en-us/HT213532",
+            "https://support.apple.com/en-us/HT213530",
+            "https://support.apple.com/en-us/HT213535",
+            "https://support.apple.com/en-us/HT213536",
+            "http://seclists.org/fulldisclosure/2022/Dec/26",
+            "http://seclists.org/fulldisclosure/2022/Dec/20",
+            "http://seclists.org/fulldisclosure/2022/Dec/23"
+        ],
+        "summary": "This issue was addressed by enabling hardened runtime. This issue is fixed in iOS 16.2 and iPadOS 16.2, macOS Ventura 13.1, tvOS 16.2, watchOS 9.2. An app may be able to bypass Privacy preferences."
+    },
+    {
+        "Modified": "2022-12-21T06:15:00",
+        "Published": "2022-12-15T19:15:00",
+        "access": {},
+        "assigner": "product-security@apple.com",
+        "cvss": null,
+        "cwe": "NVD-CWE-noinfo",
+        "id": "CVE-2022-42866",
+        "impact": {},
+        "last-modified": "2022-12-21T06:15:00",
+        "references": [
+            "https://support.apple.com/en-us/HT213532",
+            "https://support.apple.com/en-us/HT213530",
+            "https://support.apple.com/en-us/HT213535",
+            "https://support.apple.com/en-us/HT213536",
+            "http://seclists.org/fulldisclosure/2022/Dec/26",
+            "http://seclists.org/fulldisclosure/2022/Dec/27",
+            "http://seclists.org/fulldisclosure/2022/Dec/20",
+            "http://seclists.org/fulldisclosure/2022/Dec/23"
+        ],
+        "summary": "The issue was addressed with improved handling of caches. This issue is fixed in iOS 16.2 and iPadOS 16.2, macOS Ventura 13.1, tvOS 16.2, watchOS 9.2. An app may be able to read sensitive location information."
+    },
+    {
+        "Modified": "2022-12-21T06:15:00",
+        "Published": "2022-12-15T19:15:00",
+        "access": {},
+        "assigner": "product-security@apple.com",
+        "cvss": null,
+        "cwe": "CWE-416",
+        "id": "CVE-2022-42867",
+        "impact": {},
+        "last-modified": "2022-12-21T06:15:00",
+        "references": [
+            "https://support.apple.com/en-us/HT213532",
+            "https://support.apple.com/en-us/HT213530",
+            "https://support.apple.com/en-us/HT213537",
+            "https://support.apple.com/en-us/HT213535",
+            "https://support.apple.com/en-us/HT213536",
+            "http://seclists.org/fulldisclosure/2022/Dec/26",
+            "http://seclists.org/fulldisclosure/2022/Dec/28",
+            "http://seclists.org/fulldisclosure/2022/Dec/20",
+            "http://seclists.org/fulldisclosure/2022/Dec/23"
+        ],
+        "summary": "A use after free issue was addressed with improved memory management. This issue is fixed in Safari 16.2, tvOS 16.2, macOS Ventura 13.1, iOS 16.2 and iPadOS 16.2, watchOS 9.2. Processing maliciously crafted web content may lead to arbitrary code execution."
+    },
+    {
+        "Modified": "2022-12-21T06:15:00",
+        "Published": "2022-12-15T19:15:00",
+        "access": {},
+        "assigner": "product-security@apple.com",
+        "cvss": null,
+        "cwe": "CWE-362",
+        "id": "CVE-2022-46689",
+        "impact": {},
+        "last-modified": "2022-12-21T06:15:00",
+        "references": [
+            "https://support.apple.com/en-us/HT213531",
+            "https://support.apple.com/en-us/HT213532",
+            "https://support.apple.com/en-us/HT213530",
+            "https://support.apple.com/en-us/HT213535",
+            "https://support.apple.com/en-us/HT213536",
+            "https://support.apple.com/en-us/HT213533",
+            "https://support.apple.com/en-us/HT213534",
+            "http://seclists.org/fulldisclosure/2022/Dec/26",
+            "http://seclists.org/fulldisclosure/2022/Dec/27",
+            "http://seclists.org/fulldisclosure/2022/Dec/20",
+            "http://seclists.org/fulldisclosure/2022/Dec/21",
+            "http://seclists.org/fulldisclosure/2022/Dec/23",
+            "http://seclists.org/fulldisclosure/2022/Dec/24",
+            "http://seclists.org/fulldisclosure/2022/Dec/25"
+        ],
+        "summary": "A race condition was addressed with additional validation. This issue is fixed in tvOS 16.2, macOS Monterey 12.6.2, macOS Ventura 13.1, macOS Big Sur 11.7.2, iOS 15.7.2 and iPadOS 15.7.2, iOS 16.2 and iPadOS 16.2, watchOS 9.2. An app may be able to execute arbitrary code with kernel privileges."
+    },
+    {
+        "Modified": "2022-12-21T06:15:00",
+        "Published": "2022-12-15T19:15:00",
+        "access": {},
+        "assigner": "product-security@apple.com",
+        "cvss": null,
+        "cwe": "CWE-787",
+        "id": "CVE-2022-46690",
+        "impact": {},
+        "last-modified": "2022-12-21T06:15:00",
+        "references": [
+            "https://support.apple.com/en-us/HT213532",
+            "https://support.apple.com/en-us/HT213530",
+            "https://support.apple.com/en-us/HT213535",
+            "https://support.apple.com/en-us/HT213536",
+            "http://seclists.org/fulldisclosure/2022/Dec/26",
+            "http://seclists.org/fulldisclosure/2022/Dec/20",
+            "http://seclists.org/fulldisclosure/2022/Dec/23"
+        ],
+        "summary": "An out-of-bounds write issue was addressed with improved input validation. This issue is fixed in iOS 16.2 and iPadOS 16.2, macOS Ventura 13.1, tvOS 16.2, watchOS 9.2. An app may be able to execute arbitrary code with kernel privileges."
+    },
+    {
+        "Modified": "2022-12-21T06:15:00",
+        "Published": "2022-12-15T19:15:00",
+        "access": {},
+        "assigner": "product-security@apple.com",
+        "cvss": null,
+        "cwe": "CWE-787",
+        "id": "CVE-2022-46691",
+        "impact": {},
+        "last-modified": "2022-12-21T06:15:00",
+        "references": [
+            "https://support.apple.com/en-us/HT213531",
+            "https://support.apple.com/en-us/HT213532",
+            "https://support.apple.com/en-us/HT213530",
+            "https://support.apple.com/en-us/HT213537",
+            "https://support.apple.com/en-us/HT213535",
+            "https://support.apple.com/en-us/HT213536",
+            "http://seclists.org/fulldisclosure/2022/Dec/26",
+            "http://seclists.org/fulldisclosure/2022/Dec/27",
+            "http://seclists.org/fulldisclosure/2022/Dec/28",
+            "http://seclists.org/fulldisclosure/2022/Dec/20",
+            "http://seclists.org/fulldisclosure/2022/Dec/21",
+            "http://seclists.org/fulldisclosure/2022/Dec/23"
+        ],
+        "summary": "A memory consumption issue was addressed with improved memory handling. This issue is fixed in Safari 16.2, tvOS 16.2, macOS Ventura 13.1, iOS 15.7.2 and iPadOS 15.7.2, iOS 16.2 and iPadOS 16.2, watchOS 9.2. Processing maliciously crafted web content may lead to arbitrary code execution."
+    },
+    {
+        "Modified": "2022-12-21T06:15:00",
+        "Published": "2022-12-15T19:15:00",
+        "access": {},
+        "assigner": "product-security@apple.com",
+        "cvss": null,
+        "cwe": "NVD-CWE-noinfo",
+        "id": "CVE-2022-32942",
+        "impact": {},
+        "last-modified": "2022-12-21T06:15:00",
+        "references": [
+            "https://support.apple.com/en-us/HT213532",
+            "https://support.apple.com/en-us/HT213533",
+            "https://support.apple.com/en-us/HT213534",
+            "http://seclists.org/fulldisclosure/2022/Dec/23",
+            "http://seclists.org/fulldisclosure/2022/Dec/24",
+            "http://seclists.org/fulldisclosure/2022/Dec/25"
+        ],
+        "summary": "The issue was addressed with improved memory handling. This issue is fixed in macOS Monterey 12.6.2, macOS Ventura 13.1, macOS Big Sur 11.7.2. An app may be able to execute arbitrary code with kernel privileges."
+    },
+    {
+        "Modified": "2022-12-21T06:15:00",
+        "Published": "2022-12-15T19:15:00",
+        "access": {},
+        "assigner": "product-security@apple.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-32943",
+        "impact": {},
+        "last-modified": "2022-12-21T06:15:00",
+        "references": [
+            "https://support.apple.com/en-us/HT213532",
+            "https://support.apple.com/en-us/HT213530",
+            "http://seclists.org/fulldisclosure/2022/Dec/20",
+            "http://seclists.org/fulldisclosure/2022/Dec/23"
+        ],
+        "summary": "The issue was addressed with improved bounds checks. This issue is fixed in iOS 16.2 and iPadOS 16.2, macOS Ventura 13.1. Shake-to-undo may allow a deleted photo to be re-surfaced without authentication."
+    },
+    {
+        "Modified": "2022-12-21T06:15:00",
+        "Published": "2022-12-15T19:15:00",
+        "access": {},
+        "assigner": "product-security@apple.com",
+        "cvss": null,
+        "cwe": "NVD-CWE-noinfo",
+        "id": "CVE-2022-42821",
+        "impact": {},
+        "last-modified": "2022-12-21T06:15:00",
+        "references": [
+            "https://support.apple.com/en-us/HT213488",
+            "https://support.apple.com/en-us/HT213533",
+            "https://support.apple.com/en-us/HT213534",
+            "http://seclists.org/fulldisclosure/2022/Dec/24",
+            "http://seclists.org/fulldisclosure/2022/Dec/25"
+        ],
+        "summary": "A logic issue was addressed with improved checks. This issue is fixed in macOS Monterey 12.6.2, macOS Big Sur 11.7.2, macOS Ventura 13. An app may bypass Gatekeeper checks."
+    },
+    {
+        "Modified": "2022-12-21T06:15:00",
+        "Published": "2022-12-15T19:15:00",
+        "access": {},
+        "assigner": "product-security@apple.com",
+        "cvss": null,
+        "cwe": "NVD-CWE-noinfo",
+        "id": "CVE-2022-42837",
+        "impact": {},
+        "last-modified": "2022-12-21T06:15:00",
+        "references": [
+            "https://support.apple.com/en-us/HT213531",
+            "https://support.apple.com/en-us/HT213532",
+            "https://support.apple.com/en-us/HT213530",
+            "https://support.apple.com/en-us/HT213536",
+            "http://seclists.org/fulldisclosure/2022/Dec/20",
+            "http://seclists.org/fulldisclosure/2022/Dec/21",
+            "http://seclists.org/fulldisclosure/2022/Dec/23"
+        ],
+        "summary": "An issue existed in the parsing of URLs. This issue was addressed with improved input validation. This issue is fixed in iOS 16.2 and iPadOS 16.2, macOS Ventura 13.1, iOS 15.7.2 and iPadOS 15.7.2, watchOS 9.2. A remote user may be able to cause unexpected app termination or arbitrary code execution."
+    },
+    {
+        "Modified": "2022-12-21T06:15:00",
+        "Published": "2022-12-15T19:15:00",
+        "access": {},
+        "assigner": "product-security@apple.com",
+        "cvss": null,
+        "cwe": "NVD-CWE-noinfo",
+        "id": "CVE-2022-42842",
+        "impact": {},
+        "last-modified": "2022-12-21T06:15:00",
+        "references": [
+            "https://support.apple.com/en-us/HT213532",
+            "https://support.apple.com/en-us/HT213530",
+            "https://support.apple.com/en-us/HT213535",
+            "https://support.apple.com/en-us/HT213536",
+            "https://support.apple.com/en-us/HT213533",
+            "https://support.apple.com/en-us/HT213534",
+            "http://seclists.org/fulldisclosure/2022/Dec/26",
+            "http://seclists.org/fulldisclosure/2022/Dec/20",
+            "http://seclists.org/fulldisclosure/2022/Dec/23",
+            "http://seclists.org/fulldisclosure/2022/Dec/24",
+            "http://seclists.org/fulldisclosure/2022/Dec/25"
+        ],
+        "summary": "The issue was addressed with improved memory handling. This issue is fixed in tvOS 16.2, macOS Monterey 12.6.2, macOS Ventura 13.1, macOS Big Sur 11.7.2, iOS 16.2 and iPadOS 16.2, watchOS 9.2. A remote user may be able to cause kernel code execution."
+    },
+    {
+        "Modified": "2022-12-21T06:15:00",
+        "Published": "2022-12-15T19:15:00",
+        "access": {},
+        "assigner": "product-security@apple.com",
+        "cvss": null,
+        "cwe": "CWE-668",
+        "id": "CVE-2022-42843",
+        "impact": {},
+        "last-modified": "2022-12-21T06:15:00",
+        "references": [
+            "https://support.apple.com/en-us/HT213532",
+            "https://support.apple.com/en-us/HT213530",
+            "https://support.apple.com/en-us/HT213535",
+            "https://support.apple.com/en-us/HT213536",
+            "http://seclists.org/fulldisclosure/2022/Dec/26",
+            "http://seclists.org/fulldisclosure/2022/Dec/20",
+            "http://seclists.org/fulldisclosure/2022/Dec/23"
+        ],
+        "summary": "This issue was addressed with improved data protection. This issue is fixed in iOS 16.2 and iPadOS 16.2, macOS Ventura 13.1, tvOS 16.2, watchOS 9.2. A user may be able to view sensitive user information."
+    },
+    {
+        "Modified": "2022-12-21T06:15:00",
+        "Published": "2022-12-15T19:15:00",
+        "access": {},
+        "assigner": "product-security@apple.com",
+        "cvss": null,
+        "cwe": "NVD-CWE-noinfo",
+        "id": "CVE-2022-46692",
+        "impact": {},
+        "last-modified": "2022-12-21T06:15:00",
+        "references": [
+            "https://support.apple.com/en-us/HT213531",
+            "https://support.apple.com/en-us/HT213532",
+            "https://support.apple.com/en-us/HT213530",
+            "https://support.apple.com/en-us/HT213537",
+            "https://support.apple.com/en-us/HT213538",
+            "https://support.apple.com/en-us/HT213535",
+            "https://support.apple.com/en-us/HT213536",
+            "http://seclists.org/fulldisclosure/2022/Dec/26",
+            "http://seclists.org/fulldisclosure/2022/Dec/28",
+            "http://seclists.org/fulldisclosure/2022/Dec/20",
+            "http://seclists.org/fulldisclosure/2022/Dec/21",
+            "http://seclists.org/fulldisclosure/2022/Dec/23"
+        ],
+        "summary": "A logic issue was addressed with improved state management. This issue is fixed in Safari 16.2, tvOS 16.2, iCloud for Windows 14.1, iOS 15.7.2 and iPadOS 15.7.2, macOS Ventura 13.1, iOS 16.2 and iPadOS 16.2, watchOS 9.2. Processing maliciously crafted web content may bypass Same Origin Policy."
+    },
+    {
+        "Modified": "2022-12-21T06:15:00",
+        "Published": "2022-12-15T19:15:00",
+        "access": {},
+        "assigner": "product-security@apple.com",
+        "cvss": null,
+        "cwe": "NVD-CWE-noinfo",
+        "id": "CVE-2022-42844",
+        "impact": {},
+        "last-modified": "2022-12-21T06:15:00",
+        "references": [
+            "https://support.apple.com/en-us/HT213530",
+            "http://seclists.org/fulldisclosure/2022/Dec/20"
+        ],
+        "summary": "The issue was addressed with improved memory handling. This issue is fixed in iOS 16.2 and iPadOS 16.2. An app may be able to break out of its sandbox."
+    },
+    {
+        "Modified": "2022-12-21T06:15:00",
+        "Published": "2022-12-15T19:15:00",
+        "access": {},
+        "assigner": "product-security@apple.com",
+        "cvss": null,
+        "cwe": "CWE-787",
+        "id": "CVE-2022-46693",
+        "impact": {},
+        "last-modified": "2022-12-21T06:15:00",
+        "references": [
+            "https://support.apple.com/en-us/HT213532",
+            "https://support.apple.com/en-us/HT213530",
+            "https://support.apple.com/en-us/HT213538",
+            "https://support.apple.com/en-us/HT213535",
+            "https://support.apple.com/en-us/HT213536",
+            "http://seclists.org/fulldisclosure/2022/Dec/26",
+            "http://seclists.org/fulldisclosure/2022/Dec/20",
+            "http://seclists.org/fulldisclosure/2022/Dec/23"
+        ],
+        "summary": "An out-of-bounds write issue was addressed with improved input validation. This issue is fixed in tvOS 16.2, iCloud for Windows 14.1, macOS Ventura 13.1, iOS 16.2 and iPadOS 16.2, watchOS 9.2. Processing a maliciously crafted file may lead to arbitrary code execution."
+    },
+    {
+        "Modified": "2022-12-21T06:15:00",
+        "Published": "2022-12-15T19:15:00",
+        "access": {},
+        "assigner": "product-security@apple.com",
+        "cvss": null,
+        "cwe": "NVD-CWE-noinfo",
+        "id": "CVE-2022-42845",
+        "impact": {},
+        "last-modified": "2022-12-21T06:15:00",
+        "references": [
+            "https://support.apple.com/en-us/HT213532",
+            "https://support.apple.com/en-us/HT213530",
+            "https://support.apple.com/en-us/HT213535",
+            "https://support.apple.com/en-us/HT213536",
+            "https://support.apple.com/en-us/HT213533",
+            "https://support.apple.com/en-us/HT213534",
+            "http://seclists.org/fulldisclosure/2022/Dec/26",
+            "http://seclists.org/fulldisclosure/2022/Dec/20",
+            "http://seclists.org/fulldisclosure/2022/Dec/23",
+            "http://seclists.org/fulldisclosure/2022/Dec/24",
+            "http://seclists.org/fulldisclosure/2022/Dec/25"
+        ],
+        "summary": "The issue was addressed with improved memory handling. This issue is fixed in tvOS 16.2, macOS Monterey 12.6.2, macOS Ventura 13.1, macOS Big Sur 11.7.2, iOS 16.2 and iPadOS 16.2, watchOS 9.2. An app with root privileges may be able to execute arbitrary code with kernel privileges."
+    },
+    {
+        "Modified": "2022-12-21T06:15:00",
+        "Published": "2022-12-15T19:15:00",
+        "access": {},
+        "assigner": "product-security@apple.com",
+        "cvss": null,
+        "cwe": "CWE-787",
+        "id": "CVE-2022-46694",
+        "impact": {},
+        "last-modified": "2022-12-21T06:15:00",
+        "references": [
+            "https://support.apple.com/en-us/HT213531",
+            "https://support.apple.com/en-us/HT213530",
+            "https://support.apple.com/en-us/HT213535",
+            "https://support.apple.com/en-us/HT213536",
+            "http://seclists.org/fulldisclosure/2022/Dec/26",
+            "http://seclists.org/fulldisclosure/2022/Dec/20",
+            "http://seclists.org/fulldisclosure/2022/Dec/21"
+        ],
+        "summary": "An out-of-bounds write issue was addressed with improved input validation. This issue is fixed in iOS 16.2 and iPadOS 16.2, iOS 15.7.2 and iPadOS 15.7.2, tvOS 16.2, watchOS 9.2. Parsing a maliciously crafted video file may lead to kernel code execution."
+    },
+    {
+        "Modified": "2022-12-21T06:15:00",
+        "Published": "2022-12-15T19:15:00",
+        "access": {},
+        "assigner": "product-security@apple.com",
+        "cvss": null,
+        "cwe": "NVD-CWE-noinfo",
+        "id": "CVE-2022-42846",
+        "impact": {},
+        "last-modified": "2022-12-21T06:15:00",
+        "references": [
+            "https://support.apple.com/en-us/HT213531",
+            "https://support.apple.com/en-us/HT213530",
+            "http://seclists.org/fulldisclosure/2022/Dec/20",
+            "http://seclists.org/fulldisclosure/2022/Dec/21"
+        ],
+        "summary": "The issue was addressed with improved memory handling. This issue is fixed in iOS 16.2 and iPadOS 16.2, iOS 15.7.2 and iPadOS 15.7.2. Parsing a maliciously crafted video file may lead to unexpected system termination."
+    },
+    {
+        "Modified": "2022-12-21T06:15:00",
+        "Published": "2022-12-15T19:15:00",
+        "access": {},
+        "assigner": "product-security@apple.com",
+        "cvss": null,
+        "cwe": "CWE-1021",
+        "id": "CVE-2022-46695",
+        "impact": {},
+        "last-modified": "2022-12-21T06:15:00",
+        "references": [
+            "https://support.apple.com/en-us/HT213531",
+            "https://support.apple.com/en-us/HT213532",
+            "https://support.apple.com/en-us/HT213530",
+            "https://support.apple.com/en-us/HT213535",
+            "https://support.apple.com/en-us/HT213536",
+            "http://seclists.org/fulldisclosure/2022/Dec/26",
+            "http://seclists.org/fulldisclosure/2022/Dec/20",
+            "http://seclists.org/fulldisclosure/2022/Dec/21",
+            "http://seclists.org/fulldisclosure/2022/Dec/23"
+        ],
+        "summary": "A spoofing issue existed in the handling of URLs. This issue was addressed with improved input validation. This issue is fixed in tvOS 16.2, macOS Ventura 13.1, iOS 15.7.2 and iPadOS 15.7.2, iOS 16.2 and iPadOS 16.2, watchOS 9.2. Visiting a website that frames malicious content may lead to UI spoofing."
+    },
+    {
+        "Modified": "2022-12-21T06:15:00",
+        "Published": "2022-12-15T19:15:00",
+        "access": {},
+        "assigner": "product-security@apple.com",
+        "cvss": null,
+        "cwe": "CWE-787",
+        "id": "CVE-2022-42847",
+        "impact": {},
+        "last-modified": "2022-12-21T06:15:00",
+        "references": [
+            "https://support.apple.com/en-us/HT213532",
+            "http://seclists.org/fulldisclosure/2022/Dec/23"
+        ],
+        "summary": "An out-of-bounds write issue was addressed with improved input validation. This issue is fixed in macOS Ventura 13.1. An app may be able to execute arbitrary code with kernel privileges."
+    },
+    {
+        "Modified": "2022-12-21T06:15:00",
+        "Published": "2022-12-15T19:15:00",
+        "access": {},
+        "assigner": "product-security@apple.com",
+        "cvss": null,
+        "cwe": "CWE-787",
+        "id": "CVE-2022-46696",
+        "impact": {},
+        "last-modified": "2022-12-21T06:15:00",
+        "references": [
+            "https://support.apple.com/en-us/HT213532",
+            "https://support.apple.com/en-us/HT213530",
+            "https://support.apple.com/en-us/HT213537",
+            "https://support.apple.com/en-us/HT213535",
+            "https://support.apple.com/en-us/HT213536",
+            "http://seclists.org/fulldisclosure/2022/Dec/26",
+            "http://seclists.org/fulldisclosure/2022/Dec/27",
+            "http://seclists.org/fulldisclosure/2022/Dec/28",
+            "http://seclists.org/fulldisclosure/2022/Dec/20",
+            "http://seclists.org/fulldisclosure/2022/Dec/23"
+        ],
+        "summary": "A memory corruption issue was addressed with improved input validation. This issue is fixed in Safari 16.2, tvOS 16.2, macOS Ventura 13.1, iOS 16.2 and iPadOS 16.2, watchOS 9.2. Processing maliciously crafted web content may lead to arbitrary code execution."
+    },
+    {
+        "Modified": "2022-12-21T06:15:00",
+        "Published": "2022-12-15T19:15:00",
+        "access": {},
+        "assigner": "product-security@apple.com",
+        "cvss": null,
+        "cwe": "NVD-CWE-noinfo",
+        "id": "CVE-2022-42848",
+        "impact": {},
+        "last-modified": "2022-12-21T06:15:00",
+        "references": [
+            "https://support.apple.com/en-us/HT213531",
+            "https://support.apple.com/en-us/HT213530",
+            "https://support.apple.com/en-us/HT213535",
+            "http://seclists.org/fulldisclosure/2022/Dec/26",
+            "http://seclists.org/fulldisclosure/2022/Dec/20",
+            "http://seclists.org/fulldisclosure/2022/Dec/21"
+        ],
+        "summary": "A logic issue was addressed with improved checks. This issue is fixed in iOS 16.2 and iPadOS 16.2, iOS 15.7.2 and iPadOS 15.7.2, tvOS 16.2. An app may be able to execute arbitrary code with kernel privileges."
+    },
+    {
+        "Modified": "2022-12-21T06:15:00",
+        "Published": "2022-12-15T19:15:00",
+        "access": {},
+        "assigner": "product-security@apple.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-46697",
+        "impact": {},
+        "last-modified": "2022-12-21T06:15:00",
+        "references": [
+            "https://support.apple.com/en-us/HT213532",
+            "http://seclists.org/fulldisclosure/2022/Dec/23"
+        ],
+        "summary": "An out-of-bounds access issue was addressed with improved bounds checking. This issue is fixed in macOS Ventura 13.1. An app may be able to execute arbitrary code with kernel privileges."
+    },
+    {
+        "Modified": "2022-12-21T06:15:00",
+        "Published": "2022-12-15T19:15:00",
+        "access": {},
+        "assigner": "product-security@apple.com",
+        "cvss": null,
+        "cwe": "NVD-CWE-noinfo",
+        "id": "CVE-2022-46698",
+        "impact": {},
+        "last-modified": "2022-12-21T06:15:00",
+        "references": [
+            "https://support.apple.com/en-us/HT213532",
+            "https://support.apple.com/en-us/HT213530",
+            "https://support.apple.com/en-us/HT213537",
+            "https://support.apple.com/en-us/HT213538",
+            "https://support.apple.com/en-us/HT213535",
+            "https://support.apple.com/en-us/HT213536",
+            "http://seclists.org/fulldisclosure/2022/Dec/26",
+            "http://seclists.org/fulldisclosure/2022/Dec/28",
+            "http://seclists.org/fulldisclosure/2022/Dec/20",
+            "http://seclists.org/fulldisclosure/2022/Dec/23"
+        ],
+        "summary": "A logic issue was addressed with improved checks. This issue is fixed in Safari 16.2, tvOS 16.2, iCloud for Windows 14.1, macOS Ventura 13.1, iOS 16.2 and iPadOS 16.2, watchOS 9.2. Processing maliciously crafted web content may disclose sensitive user information."
+    },
+    {
+        "Modified": "2022-12-21T06:15:00",
+        "Published": "2022-12-15T19:15:00",
+        "access": {},
+        "assigner": "product-security@apple.com",
+        "cvss": null,
+        "cwe": "CWE-787",
+        "id": "CVE-2022-46699",
+        "impact": {},
+        "last-modified": "2022-12-21T06:15:00",
+        "references": [
+            "https://support.apple.com/en-us/HT213532",
+            "https://support.apple.com/en-us/HT213530",
+            "https://support.apple.com/en-us/HT213537",
+            "https://support.apple.com/en-us/HT213535",
+            "https://support.apple.com/en-us/HT213536",
+            "http://seclists.org/fulldisclosure/2022/Dec/26",
+            "http://seclists.org/fulldisclosure/2022/Dec/28",
+            "http://seclists.org/fulldisclosure/2022/Dec/20",
+            "http://seclists.org/fulldisclosure/2022/Dec/23"
+        ],
+        "summary": "A memory corruption issue was addressed with improved state management. This issue is fixed in Safari 16.2, tvOS 16.2, macOS Ventura 13.1, iOS 16.2 and iPadOS 16.2, watchOS 9.2. Processing maliciously crafted web content may lead to arbitrary code execution."
+    },
+    {
+        "Modified": "2022-12-21T06:15:00",
+        "Published": "2022-12-15T19:15:00",
+        "access": {},
+        "assigner": "product-security@apple.com",
+        "cvss": null,
+        "cwe": "CWE-787",
+        "id": "CVE-2022-46700",
+        "impact": {},
+        "last-modified": "2022-12-21T06:15:00",
+        "references": [
+            "https://support.apple.com/en-us/HT213531",
+            "https://support.apple.com/en-us/HT213532",
+            "https://support.apple.com/en-us/HT213530",
+            "https://support.apple.com/en-us/HT213537",
+            "https://support.apple.com/en-us/HT213535",
+            "https://support.apple.com/en-us/HT213536",
+            "http://seclists.org/fulldisclosure/2022/Dec/26",
+            "http://seclists.org/fulldisclosure/2022/Dec/28",
+            "http://seclists.org/fulldisclosure/2022/Dec/20",
+            "http://seclists.org/fulldisclosure/2022/Dec/21",
+            "http://seclists.org/fulldisclosure/2022/Dec/23"
+        ],
+        "summary": "A memory corruption issue was addressed with improved input validation. This issue is fixed in Safari 16.2, tvOS 16.2, macOS Ventura 13.1, iOS 15.7.2 and iPadOS 15.7.2, iOS 16.2 and iPadOS 16.2, watchOS 9.2. Processing maliciously crafted web content may lead to arbitrary code execution."
+    },
+    {
+        "Modified": "2022-12-21T06:15:00",
+        "Published": "2022-12-15T19:15:00",
+        "access": {},
+        "assigner": "product-security@apple.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-46701",
+        "impact": {},
+        "last-modified": "2022-12-21T06:15:00",
+        "references": [
+            "https://support.apple.com/en-us/HT213532",
+            "https://support.apple.com/en-us/HT213530",
+            "https://support.apple.com/en-us/HT213535",
+            "http://seclists.org/fulldisclosure/2022/Dec/26",
+            "http://seclists.org/fulldisclosure/2022/Dec/20",
+            "http://seclists.org/fulldisclosure/2022/Dec/23"
+        ],
+        "summary": "The issue was addressed with improved bounds checks. This issue is fixed in iOS 16.2 and iPadOS 16.2, macOS Ventura 13.1, tvOS 16.2. Connecting to a malicious NFS server may lead to arbitrary code execution with kernel privileges."
+    },
+    {
+        "Modified": "2022-12-21T06:15:00",
+        "Published": "2022-12-15T19:15:00",
+        "access": {},
+        "assigner": "product-security@apple.com",
+        "cvss": null,
+        "cwe": "CWE-863",
+        "id": "CVE-2022-42849",
+        "impact": {},
+        "last-modified": "2022-12-21T06:15:00",
+        "references": [
+            "https://support.apple.com/en-us/HT213530",
+            "https://support.apple.com/en-us/HT213535",
+            "https://support.apple.com/en-us/HT213536",
+            "http://seclists.org/fulldisclosure/2022/Dec/26",
+            "http://seclists.org/fulldisclosure/2022/Dec/20"
+        ],
+        "summary": "An access issue existed with privileged API calls. This issue was addressed with additional restrictions. This issue is fixed in iOS 16.2 and iPadOS 16.2, tvOS 16.2, watchOS 9.2. A user may be able to elevate privileges."
+    },
+    {
+        "Modified": "2022-12-21T06:15:00",
+        "Published": "2022-12-15T19:15:00",
+        "access": {},
+        "assigner": "product-security@apple.com",
+        "cvss": null,
+        "cwe": "NVD-CWE-noinfo",
+        "id": "CVE-2022-46702",
+        "impact": {},
+        "last-modified": "2022-12-21T06:15:00",
+        "references": [
+            "https://support.apple.com/en-us/HT213530",
+            "http://seclists.org/fulldisclosure/2022/Dec/20"
+        ],
+        "summary": "The issue was addressed with improved memory handling. This issue is fixed in iOS 16.2 and iPadOS 16.2. An app may be able to disclose kernel memory."
+    },
+    {
+        "Modified": "2022-12-21T06:15:00",
+        "Published": "2022-12-15T19:15:00",
+        "access": {},
+        "assigner": "product-security@apple.com",
+        "cvss": null,
+        "cwe": "NVD-CWE-noinfo",
+        "id": "CVE-2022-42850",
+        "impact": {},
+        "last-modified": "2022-12-21T06:15:00",
+        "references": [
+            "https://support.apple.com/en-us/HT213530",
+            "http://seclists.org/fulldisclosure/2022/Dec/20"
+        ],
+        "summary": "The issue was addressed with improved memory handling. This issue is fixed in iOS 16.2 and iPadOS 16.2. An app may be able to execute arbitrary code with kernel privileges."
+    },
+    {
+        "Modified": "2022-12-21T06:15:00",
+        "Published": "2022-12-15T19:15:00",
+        "access": {},
+        "assigner": "product-security@apple.com",
+        "cvss": null,
+        "cwe": "NVD-CWE-noinfo",
+        "id": "CVE-2022-42852",
+        "impact": {},
+        "last-modified": "2022-12-21T06:15:00",
+        "references": [
+            "https://support.apple.com/en-us/HT213531",
+            "https://support.apple.com/en-us/HT213532",
+            "https://support.apple.com/en-us/HT213530",
+            "https://support.apple.com/en-us/HT213537",
+            "https://support.apple.com/en-us/HT213535",
+            "https://support.apple.com/en-us/HT213536",
+            "http://seclists.org/fulldisclosure/2022/Dec/26",
+            "http://seclists.org/fulldisclosure/2022/Dec/27",
+            "http://seclists.org/fulldisclosure/2022/Dec/28",
+            "http://seclists.org/fulldisclosure/2022/Dec/20",
+            "http://seclists.org/fulldisclosure/2022/Dec/21",
+            "http://seclists.org/fulldisclosure/2022/Dec/23"
+        ],
+        "summary": "The issue was addressed with improved memory handling. This issue is fixed in Safari 16.2, tvOS 16.2, macOS Ventura 13.1, iOS 15.7.2 and iPadOS 15.7.2, iOS 16.2 and iPadOS 16.2, watchOS 9.2. Processing maliciously crafted web content may result in the disclosure of process memory."
+    },
+    {
+        "Modified": "2022-12-21T06:15:00",
+        "Published": "2022-12-15T19:15:00",
+        "access": {},
+        "assigner": "product-security@apple.com",
+        "cvss": null,
+        "cwe": "NVD-CWE-noinfo",
+        "id": "CVE-2022-42853",
+        "impact": {},
+        "last-modified": "2022-12-21T06:15:00",
+        "references": [
+            "https://support.apple.com/en-us/HT213532",
+            "http://seclists.org/fulldisclosure/2022/Dec/23"
+        ],
+        "summary": "An access issue was addressed with improved access restrictions. This issue is fixed in macOS Ventura 13.1. An app may be able to modify protected parts of the file system."
+    },
+    {
+        "Modified": "2022-12-21T06:15:00",
+        "Published": "2022-12-15T19:15:00",
+        "access": {},
+        "assigner": "product-security@apple.com",
+        "cvss": null,
+        "cwe": "NVD-CWE-noinfo",
+        "id": "CVE-2022-42854",
+        "impact": {},
+        "last-modified": "2022-12-21T06:15:00",
+        "references": [
+            "https://support.apple.com/en-us/HT213532",
+            "https://support.apple.com/en-us/HT213533",
+            "http://seclists.org/fulldisclosure/2022/Dec/23",
+            "http://seclists.org/fulldisclosure/2022/Dec/24"
+        ],
+        "summary": "The issue was addressed with improved memory handling. This issue is fixed in macOS Monterey 12.6.2, macOS Ventura 13.1. An app may be able to disclose kernel memory."
+    },
+    {
+        "Modified": "2022-12-21T06:15:00",
+        "Published": "2022-12-15T19:15:00",
+        "access": {},
+        "assigner": "product-security@apple.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-42856",
+        "impact": {},
+        "last-modified": "2022-12-21T06:15:00",
+        "references": [
+            "https://support.apple.com/en-us/HT213531",
+            "https://support.apple.com/en-us/HT213532",
+            "https://support.apple.com/en-us/HT213537",
+            "https://support.apple.com/en-us/HT213516",
+            "https://support.apple.com/en-us/HT213535",
+            "http://seclists.org/fulldisclosure/2022/Dec/26",
+            "http://seclists.org/fulldisclosure/2022/Dec/28",
+            "http://seclists.org/fulldisclosure/2022/Dec/21",
+            "http://seclists.org/fulldisclosure/2022/Dec/22",
+            "http://seclists.org/fulldisclosure/2022/Dec/23"
+        ],
+        "summary": "A type confusion issue was addressed with improved state handling. This issue is fixed in Safari 16.2, tvOS 16.2, macOS Ventura 13.1, iOS 15.7.2 and iPadOS 15.7.2, iOS 16.1.2. Processing maliciously crafted web content may lead to arbitrary code execution. Apple is aware of a report that this issue may have been actively exploited against versions of iOS released before iOS 15.1.."
+    },
+    {
+        "Modified": "2022-12-21T06:15:00",
+        "Published": "2022-11-23T18:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-611",
+        "id": "CVE-2022-40304",
+        "impact": {},
+        "last-modified": "2022-12-21T06:15:00",
+        "references": [
+            "https://gitlab.gnome.org/GNOME/libxml2/-/tags/v2.10.3",
+            "https://gitlab.gnome.org/GNOME/libxml2/-/commit/1b41ec4e9433b05bb0376be4725804c54ef1d80b",
+            "https://gitlab.gnome.org/GNOME/libxml2/-/tags",
+            "https://security.netapp.com/advisory/ntap-20221209-0003/",
+            "https://support.apple.com/kb/HT213534",
+            "https://support.apple.com/kb/HT213535",
+            "https://support.apple.com/kb/HT213536",
+            "https://support.apple.com/kb/HT213531",
+            "https://support.apple.com/kb/HT213533",
+            "http://seclists.org/fulldisclosure/2022/Dec/21",
+            "http://seclists.org/fulldisclosure/2022/Dec/25",
+            "http://seclists.org/fulldisclosure/2022/Dec/24",
+            "http://seclists.org/fulldisclosure/2022/Dec/26"
+        ],
+        "summary": "An issue was discovered in libxml2 before 2.10.3. Certain invalid XML entity definitions can corrupt a hash table key, potentially leading to subsequent logic errors. In one case, a double-free can be provoked."
+    },
+    {
+        "Modified": "2022-12-21T06:15:00",
+        "Published": "2022-11-23T00:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-190",
+        "id": "CVE-2022-40303",
+        "impact": {},
+        "last-modified": "2022-12-21T06:15:00",
+        "references": [
+            "https://gitlab.gnome.org/GNOME/libxml2/-/commit/c846986356fc149915a74972bf198abc266bc2c0",
+            "https://gitlab.gnome.org/GNOME/libxml2/-/tags/v2.10.3",
+            "https://security.netapp.com/advisory/ntap-20221209-0003/",
+            "https://support.apple.com/kb/HT213534",
+            "https://support.apple.com/kb/HT213535",
+            "https://support.apple.com/kb/HT213536",
+            "https://support.apple.com/kb/HT213531",
+            "https://support.apple.com/kb/HT213533",
+            "http://seclists.org/fulldisclosure/2022/Dec/26",
+            "http://seclists.org/fulldisclosure/2022/Dec/21",
+            "http://seclists.org/fulldisclosure/2022/Dec/25",
+            "http://seclists.org/fulldisclosure/2022/Dec/24"
+        ],
+        "summary": "An issue was discovered in libxml2 before 2.10.3. When parsing a multi-gigabyte XML document with the XML_PARSE_HUGE parser option enabled, several integer counters can overflow. This results in an attempt to access an array at a negative 2GB offset, typically leading to a segmentation fault."
+    },
+    {
+        "Modified": "2022-12-21T06:15:00",
+        "Published": "2022-05-20T19:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "security-advisories@github.com",
+        "cvss": 6.4,
+        "cvss-time": "2022-12-21T06:15:00",
+        "cvss-vector": "AV:N/AC:L/Au:N/C:P/I:N/A:P",
+        "cwe": "CWE-241",
+        "id": "CVE-2022-29181",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "PARTIAL",
+            "integrity": "NONE"
+        },
+        "last-modified": "2022-12-21T06:15:00",
+        "references": [
+            "https://github.com/sparklemotion/nokogiri/releases/tag/v1.13.6",
+            "https://github.com/sparklemotion/nokogiri/security/advisories/GHSA-xh29-r2w5-wx8m",
+            "https://github.com/sparklemotion/nokogiri/commit/db05ba9a1bd4b90aa6c76742cf6102a7c7297267",
+            "https://securitylab.github.com/advisories/GHSL-2022-031_GHSL-2022-032_Nokogiri/",
+            "https://security.gentoo.org/glsa/202208-29",
+            "https://support.apple.com/kb/HT213532",
+            "http://seclists.org/fulldisclosure/2022/Dec/23"
+        ],
+        "summary": "Nokogiri is an open source XML and HTML library for Ruby. Nokogiri prior to version 1.13.6 does not type-check all inputs into the XML and HTML4 SAX parsers, allowing specially crafted untrusted inputs to cause illegal memory access errors (segfault) or reads from unrelated memory. Version 1.13.6 contains a patch for this issue. As a workaround, ensure the untrusted input is a `String` by calling `#to_s` or equivalent."
+    },
+    {
+        "Modified": "2022-12-21T06:15:00",
+        "Published": "2022-04-11T22:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "security-advisories@github.com",
+        "cvss": 5.0,
+        "cvss-time": "2022-12-21T06:15:00",
+        "cvss-vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+        "cwe": "CWE-1333",
+        "id": "CVE-2022-24836",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "NONE",
+            "integrity": "NONE"
+        },
+        "last-modified": "2022-12-21T06:15:00",
+        "references": [
+            "https://github.com/sparklemotion/nokogiri/security/advisories/GHSA-crjr-9rc5-ghw8",
+            "https://github.com/sparklemotion/nokogiri/commit/e444525ef1634b675cd1cf52d39f4320ef0aecfd",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/XMDCWRQXJQ3TFSETPCEFMQ6RR6ME5UA3/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/OUPLBUZVM4WPFSXBEP2JS3R6LMKRTLFC/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6DHCOWMA5PQTIQIMDENA7R2Y5BDYAIYM/",
+            "https://lists.debian.org/debian-lts-announce/2022/05/msg00013.html",
+            "https://security.gentoo.org/glsa/202208-29",
+            "https://lists.debian.org/debian-lts-announce/2022/10/msg00018.html",
+            "https://support.apple.com/kb/HT213532",
+            "http://seclists.org/fulldisclosure/2022/Dec/23"
+        ],
+        "summary": "Nokogiri is an open source XML and HTML library for Ruby. Nokogiri `< v1.13.4` contains an inefficient regular expression that is susceptible to excessive backtracking when attempting to detect encoding in HTML documents. Users are advised to upgrade to Nokogiri `>= 1.13.4`. There are no known workarounds for this issue."
+    },
+    {
+        "Modified": "2022-12-21T06:15:00",
+        "Published": "2021-06-25T19:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "security@eclipse.org",
+        "cvss": 7.5,
+        "cvss-time": "2022-12-21T06:15:00",
+        "cvss-vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+        "cwe": "CWE-434",
+        "id": "CVE-2021-34427",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "PARTIAL",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-12-21T06:15:00",
+        "references": [
+            "https://bugs.eclipse.org/bugs/show_bug.cgi?id=538142",
+            "http://seclists.org/fulldisclosure/2022/Dec/30"
+        ],
+        "summary": "In Eclipse BIRT versions 4.8.0 and earlier, an attacker can use query parameters to create a JSP file which is accessible from remote (current BIRT viewer dir) to inject JSP code into the running instance."
     },
     {
         "Modified": "2022-12-21T04:38:00",
@@ -710,1075 +1930,5 @@
             "https://www.secianus.de/worum-geht-es/aktuelle-meldung/cve-2021-36981-verinicepro-unsafe-java-deserialization"
         ],
         "summary": "In the server in SerNet verinice before 1.22.2, insecure Java deserialization allows remote authenticated attackers to execute arbitrary code."
-    },
-    {
-        "Modified": "2022-12-20T22:15:00",
-        "Published": "2019-12-25T04:15:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "LOW",
-            "vector": "LOCAL"
-        },
-        "assigner": "cve@mitre.org",
-        "cvss": 2.1,
-        "cvss-time": "2022-12-20T22:15:00",
-        "cvss-vector": "AV:L/AC:L/Au:N/C:N/I:N/A:P",
-        "cwe": "CWE-416",
-        "id": "CVE-2019-19966",
-        "impact": {
-            "availability": "PARTIAL",
-            "confidentiality": "NONE",
-            "integrity": "NONE"
-        },
-        "last-modified": "2022-12-20T22:15:00",
-        "references": [
-            "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=dea37a97265588da604c6ba80160a287b72c7bfd",
-            "https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.1.6",
-            "https://lists.debian.org/debian-lts-announce/2020/01/msg00013.html",
-            "https://security.netapp.com/advisory/ntap-20200204-0002/",
-            "http://lists.opensuse.org/opensuse-security-announce/2020-03/msg00021.html"
-        ],
-        "summary": "In the Linux kernel before 5.1.6, there is a use-after-free in cpia2_exit() in drivers/media/usb/cpia2/cpia2_v4l.c that will cause denial of service, aka CID-dea37a972655."
-    },
-    {
-        "Modified": "2022-12-20T22:12:00",
-        "Published": "2022-12-16T16:15:00",
-        "access": {},
-        "assigner": "security@android.com",
-        "cvss": null,
-        "cwe": "NVD-CWE-noinfo",
-        "id": "CVE-2022-20558",
-        "impact": {},
-        "last-modified": "2022-12-20T22:12:00",
-        "references": [
-            "https://source.android.com/security/bulletin/pixel/2022-12-01"
-        ],
-        "summary": "In registerReceivers of DeviceCapabilityListener.java, there is a possible way to change preferred TTY mode due to a permissions bypass. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android-13Android ID: A-236264289"
-    },
-    {
-        "Modified": "2022-12-20T22:12:00",
-        "Published": "2022-12-16T16:15:00",
-        "access": {},
-        "assigner": "security@android.com",
-        "cvss": null,
-        "cwe": "CWE-787",
-        "id": "CVE-2022-20564",
-        "impact": {},
-        "last-modified": "2022-12-20T22:12:00",
-        "references": [
-            "https://source.android.com/security/bulletin/pixel/2022-12-01"
-        ],
-        "summary": "In _ufdt_output_strtab_to_fdt of ufdt_convert.c, there is a possible out of bounds write due to an incorrect bounds check. This could lead to local escalation of privilege with System execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android kernelAndroid ID: A-243798789References: N/A"
-    },
-    {
-        "Modified": "2022-12-20T22:10:00",
-        "Published": "2021-09-20T10:15:00",
-        "access": {
-            "authentication": "SINGLE",
-            "complexity": "LOW",
-            "vector": "NETWORK"
-        },
-        "assigner": "contact@wpscan.com",
-        "cvss": 5.5,
-        "cvss-time": "2022-12-20T22:10:00",
-        "cvss-vector": "AV:N/AC:L/Au:S/C:N/I:P/A:P",
-        "cwe": "CWE-862",
-        "id": "CVE-2021-24639",
-        "impact": {
-            "availability": "PARTIAL",
-            "confidentiality": "NONE",
-            "integrity": "PARTIAL"
-        },
-        "last-modified": "2022-12-20T22:10:00",
-        "references": [
-            "https://wpscan.com/vulnerability/1ada2a96-32aa-4e37-809c-705db6026e0b"
-        ],
-        "summary": "The OMGF WordPress plugin before 4.5.4 does not enforce path validation, authorisation and CSRF checks in the omgf_ajax_empty_dir AJAX action, which allows any authenticated users to delete arbitrary files or folders on the server."
-    },
-    {
-        "Modified": "2022-12-20T22:09:00",
-        "Published": "2022-12-16T16:15:00",
-        "access": {},
-        "assigner": "security@android.com",
-        "cvss": null,
-        "cwe": "CWE-668",
-        "id": "CVE-2022-20562",
-        "impact": {},
-        "last-modified": "2022-12-20T22:09:00",
-        "references": [
-            "https://source.android.com/security/bulletin/pixel/2022-12-01"
-        ],
-        "summary": "In various functions of ap_input_processor.c, there is a possible way to record audio during a phone call due to a logic error in the code. This could lead to local information disclosure with User execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android kernelAndroid ID: A-231630423References: N/A"
-    },
-    {
-        "Modified": "2022-12-20T22:07:00",
-        "Published": "2021-09-20T10:15:00",
-        "access": {
-            "authentication": "SINGLE",
-            "complexity": "MEDIUM",
-            "vector": "NETWORK"
-        },
-        "assigner": "contact@wpscan.com",
-        "cvss": 3.5,
-        "cvss-time": "2022-12-20T22:07:00",
-        "cvss-vector": "AV:N/AC:M/Au:S/C:N/I:P/A:N",
-        "cwe": "CWE-79",
-        "id": "CVE-2021-24618",
-        "impact": {
-            "availability": "NONE",
-            "confidentiality": "NONE",
-            "integrity": "PARTIAL"
-        },
-        "last-modified": "2022-12-20T22:07:00",
-        "references": [
-            "https://wpscan.com/vulnerability/d50b801a-16b5-45e9-a465-e3bb0445cb49"
-        ],
-        "summary": "The Donate With QRCode WordPress plugin before 1.4.5 does not sanitise or escape its QRCode Image setting, which result into a Stored Cross-Site Scripting (XSS). Furthermore, the plugin also does not have any CSRF and capability checks in place when saving such setting, allowing any authenticated user (as low as subscriber), or unauthenticated user via a CSRF vector to update them and perform such attack."
-    },
-    {
-        "Modified": "2022-12-20T22:06:00",
-        "Published": "2021-09-20T10:15:00",
-        "access": {
-            "authentication": "SINGLE",
-            "complexity": "MEDIUM",
-            "vector": "NETWORK"
-        },
-        "assigner": "contact@wpscan.com",
-        "cvss": 3.5,
-        "cvss-time": "2022-12-20T22:06:00",
-        "cvss-vector": "AV:N/AC:M/Au:S/C:N/I:P/A:N",
-        "cwe": "CWE-79",
-        "id": "CVE-2021-24584",
-        "impact": {
-            "availability": "NONE",
-            "confidentiality": "NONE",
-            "integrity": "PARTIAL"
-        },
-        "last-modified": "2022-12-20T22:06:00",
-        "references": [
-            "https://wpscan.com/vulnerability/60eadf75-8298-49de-877e-ce103fc34d58"
-        ],
-        "summary": "The Timetable and Event Schedule WordPress plugin before 2.4.2 does not have proper access control when updating a timeslot, allowing any user with the edit_posts capability (contributor+) to update arbitrary timeslot from any events. Furthermore, no CSRF check is in place as well, allowing such attack to be perform via CSRF against a logged in with such capability. In versions before 2.3.19, the lack of sanitisation and escaping in some of the fields, like the descritption could also lead to Stored XSS issues"
-    },
-    {
-        "Modified": "2022-12-20T22:05:00",
-        "Published": "2019-12-23T03:15:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "LOW",
-            "vector": "NETWORK"
-        },
-        "assigner": "security@php.net",
-        "cvss": 6.4,
-        "cvss-time": "2022-12-20T22:05:00",
-        "cvss-vector": "AV:N/AC:L/Au:N/C:P/I:N/A:P",
-        "cwe": "CWE-125",
-        "id": "CVE-2019-11050",
-        "impact": {
-            "availability": "PARTIAL",
-            "confidentiality": "PARTIAL",
-            "integrity": "NONE"
-        },
-        "last-modified": "2022-12-20T22:05:00",
-        "references": [
-            "https://bugs.php.net/bug.php?id=78793",
-            "https://lists.debian.org/debian-lts-announce/2019/12/msg00034.html",
-            "https://security.netapp.com/advisory/ntap-20200103-0002/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/N7GCOAE6KVHYJ3UQ4KLPLTGSLX6IRVRN/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/XWRQPYXVG43Q7DXMXH6UVWMKWGUW552F/",
-            "https://usn.ubuntu.com/4239-1/",
-            "http://lists.opensuse.org/opensuse-security-announce/2020-01/msg00036.html",
-            "https://seclists.org/bugtraq/2020/Feb/27",
-            "https://www.debian.org/security/2020/dsa-4626",
-            "https://seclists.org/bugtraq/2020/Feb/31",
-            "https://www.debian.org/security/2020/dsa-4628",
-            "https://seclists.org/bugtraq/2021/Jan/3",
-            "https://www.tenable.com/security/tns-2021-14"
-        ],
-        "summary": "When PHP EXIF extension is parsing EXIF information from an image, e.g. via exif_read_data() function, in PHP versions 7.2.x below 7.2.26, 7.3.x below 7.3.13 and 7.4.0 it is possible to supply it with data what will cause it to read past the allocated buffer. This may lead to information disclosure or crash."
-    },
-    {
-        "Modified": "2022-12-20T22:03:00",
-        "Published": "2022-12-16T16:15:00",
-        "access": {},
-        "assigner": "security@android.com",
-        "cvss": null,
-        "cwe": "CWE-203",
-        "id": "CVE-2022-20559",
-        "impact": {},
-        "last-modified": "2022-12-20T22:03:00",
-        "references": [
-            "https://source.android.com/security/bulletin/pixel/2022-12-01"
-        ],
-        "summary": "In revokeOwnPermissionsOnKill of PermissionManager.java, there is a possible way to determine whether an app is installed, without query permissions, due to side channel information disclosure. This could lead to local information disclosure with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android-13Android ID: A-219739967"
-    },
-    {
-        "Modified": "2022-12-20T22:03:00",
-        "Published": "2021-09-13T18:15:00",
-        "access": {
-            "authentication": "SINGLE",
-            "complexity": "LOW",
-            "vector": "NETWORK"
-        },
-        "assigner": "contact@wpscan.com",
-        "cvss": 6.5,
-        "cvss-time": "2022-12-20T22:03:00",
-        "cvss-vector": "AV:N/AC:L/Au:S/C:P/I:P/A:P",
-        "cwe": "CWE-89",
-        "id": "CVE-2021-24728",
-        "impact": {
-            "availability": "PARTIAL",
-            "confidentiality": "PARTIAL",
-            "integrity": "PARTIAL"
-        },
-        "last-modified": "2022-12-20T22:03:00",
-        "references": [
-            "https://plugins.trac.wordpress.org/changeset/2566399/paid-member-subscriptions",
-            "https://www.trustwave.com/en-us/resources/security-resources/security-advisories/?fid=29172",
-            "https://wpscan.com/vulnerability/2277d335-1c90-4fa8-b0bf-25873c039c38"
-        ],
-        "summary": "The Membership & Content Restriction \u2013 Paid Member Subscriptions WordPress plugin before 2.4.2 did not sanitise, validate or escape its order and orderby parameters before using them in SQL statement, leading to Authenticated SQL Injections in the Members and Payments pages."
-    },
-    {
-        "Modified": "2022-12-20T22:02:00",
-        "Published": "2022-12-16T16:15:00",
-        "access": {},
-        "assigner": "security@android.com",
-        "cvss": null,
-        "cwe": "NVD-CWE-noinfo",
-        "id": "CVE-2022-20570",
-        "impact": {},
-        "last-modified": "2022-12-20T22:02:00",
-        "references": [
-            "https://source.android.com/security/bulletin/pixel/2022-12-01"
-        ],
-        "summary": "Product: AndroidVersions: Android kernelAndroid ID: A-230660904References: N/A"
-    },
-    {
-        "Modified": "2022-12-20T22:01:00",
-        "Published": "2021-09-13T18:15:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "MEDIUM",
-            "vector": "NETWORK"
-        },
-        "assigner": "contact@wpscan.com",
-        "cvss": 4.3,
-        "cvss-time": "2022-12-20T22:01:00",
-        "cvss-vector": "AV:N/AC:M/Au:N/C:N/I:P/A:N",
-        "cwe": "CWE-79",
-        "id": "CVE-2021-24586",
-        "impact": {
-            "availability": "NONE",
-            "confidentiality": "NONE",
-            "integrity": "PARTIAL"
-        },
-        "last-modified": "2022-12-20T22:01:00",
-        "references": [
-            "https://wpscan.com/vulnerability/e9885fba-0e73-41a0-9e1d-47badc09be85"
-        ],
-        "summary": "The Per page add to head WordPress plugin before 1.4.4 is lacking any CSRF check when saving its settings, which could allow attackers to make a logged in admin change them. Furthermore, as the plugin allows arbitrary HTML to be inserted in one of the setting (feature mentioned by the plugin), this could lead to Stored XSS issue which will be triggered either in the backend, frontend or both depending on the payload used."
-    },
-    {
-        "Modified": "2022-12-20T21:52:00",
-        "Published": "2022-12-16T16:15:00",
-        "access": {},
-        "assigner": "security@android.com",
-        "cvss": null,
-        "cwe": "CWE-667",
-        "id": "CVE-2022-20566",
-        "impact": {},
-        "last-modified": "2022-12-20T21:52:00",
-        "references": [
-            "https://source.android.com/security/bulletin/pixel/2022-12-01"
-        ],
-        "summary": "In l2cap_chan_put of l2cap_core, there is a possible use after free due to improper locking. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android kernelAndroid ID: A-165329981References: Upstream kernel"
-    },
-    {
-        "Modified": "2022-12-20T21:52:00",
-        "Published": "2021-08-27T23:15:00",
-        "access": {
-            "authentication": "SINGLE",
-            "complexity": "LOW",
-            "vector": "NETWORK"
-        },
-        "assigner": "security-advisories@github.com",
-        "cvss": 6.5,
-        "cvss-time": "2022-12-20T21:52:00",
-        "cvss-vector": "AV:N/AC:L/Au:S/C:P/I:P/A:P",
-        "cwe": "CWE-704",
-        "id": "CVE-2021-39173",
-        "impact": {
-            "availability": "PARTIAL",
-            "confidentiality": "PARTIAL",
-            "integrity": "PARTIAL"
-        },
-        "last-modified": "2022-12-20T21:52:00",
-        "references": [
-            "https://github.com/fiveai/Cachet/releases/tag/v2.5.1",
-            "https://github.com/fiveai/Cachet/security/advisories/GHSA-r67m-m8c7-jp83",
-            "https://blog.sonarsource.com/cachet-code-execution-via-laravel-configuration-injection/"
-        ],
-        "summary": "Cachet is an open source status page system. Prior to version 2.5.1 authenticated users, regardless of their privileges (User or Admin), can trick Cachet and install the instance again, leading to arbitrary code execution on the server. This issue was addressed in version 2.5.1 by improving the middleware `ReadyForUse`, which now performs a stricter validation of the instance name. As a workaround, only allow trusted source IP addresses to access to the administration dashboard."
-    },
-    {
-        "Modified": "2022-12-20T21:50:00",
-        "Published": "2019-12-23T03:15:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "LOW",
-            "vector": "NETWORK"
-        },
-        "assigner": "security@php.net",
-        "cvss": 7.5,
-        "cvss-time": "2022-12-20T21:50:00",
-        "cvss-vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
-        "cwe": "CWE-415",
-        "id": "CVE-2019-11049",
-        "impact": {
-            "availability": "PARTIAL",
-            "confidentiality": "PARTIAL",
-            "integrity": "PARTIAL"
-        },
-        "last-modified": "2022-12-20T21:50:00",
-        "references": [
-            "https://bugs.php.net/bug.php?id=78943",
-            "https://security.netapp.com/advisory/ntap-20200103-0002/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/N7GCOAE6KVHYJ3UQ4KLPLTGSLX6IRVRN/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/XWRQPYXVG43Q7DXMXH6UVWMKWGUW552F/",
-            "https://seclists.org/bugtraq/2020/Feb/27",
-            "https://www.debian.org/security/2020/dsa-4626",
-            "https://www.tenable.com/security/tns-2021-14"
-        ],
-        "summary": "In PHP versions 7.3.x below 7.3.13 and 7.4.0 on Windows, when supplying custom headers to mail() function, due to mistake introduced in commit 78f4b4a2dcf92ddbccea1bb95f8390a18ac3342e, if the header is supplied in lowercase, this can result in double-freeing certain memory locations."
-    },
-    {
-        "Modified": "2022-12-20T21:49:00",
-        "Published": "2021-08-30T15:15:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "MEDIUM",
-            "vector": "NETWORK"
-        },
-        "assigner": "contact@wpscan.com",
-        "cvss": 6.8,
-        "cvss-time": "2022-12-20T21:49:00",
-        "cvss-vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
-        "cwe": "CWE-79",
-        "id": "CVE-2021-24581",
-        "impact": {
-            "availability": "PARTIAL",
-            "confidentiality": "PARTIAL",
-            "integrity": "PARTIAL"
-        },
-        "last-modified": "2022-12-20T21:49:00",
-        "references": [
-            "https://wpscan.com/vulnerability/75abd073-b45f-4fe6-8501-7a6d0163f78d"
-        ],
-        "summary": "The Blue Admin WordPress plugin through 21.06.01 does not sanitise or escape its \"Logo Title\" setting before outputting in a page, leading to a Stored Cross-Site Scripting issue. Furthermore, the plugin does not have CSRF check in place when saving its settings, allowing the issue to be exploited via a CSRF attack."
-    },
-    {
-        "Modified": "2022-12-20T21:48:00",
-        "Published": "2019-12-23T03:15:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "LOW",
-            "vector": "NETWORK"
-        },
-        "assigner": "security@php.net",
-        "cvss": 5.0,
-        "cvss-time": "2022-12-20T21:48:00",
-        "cvss-vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N",
-        "cwe": "CWE-125",
-        "id": "CVE-2019-11046",
-        "impact": {
-            "availability": "NONE",
-            "confidentiality": "PARTIAL",
-            "integrity": "NONE"
-        },
-        "last-modified": "2022-12-20T21:48:00",
-        "references": [
-            "https://bugs.php.net/bug.php?id=78878",
-            "https://lists.debian.org/debian-lts-announce/2019/12/msg00034.html",
-            "https://security.netapp.com/advisory/ntap-20200103-0002/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/N7GCOAE6KVHYJ3UQ4KLPLTGSLX6IRVRN/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/XWRQPYXVG43Q7DXMXH6UVWMKWGUW552F/",
-            "https://support.f5.com/csp/article/K48866433?utm_source=f5support&amp;utm_medium=RSS",
-            "https://usn.ubuntu.com/4239-1/",
-            "http://lists.opensuse.org/opensuse-security-announce/2020-01/msg00036.html",
-            "https://seclists.org/bugtraq/2020/Feb/27",
-            "https://www.debian.org/security/2020/dsa-4626",
-            "https://seclists.org/bugtraq/2020/Feb/31",
-            "https://www.debian.org/security/2020/dsa-4628",
-            "https://seclists.org/bugtraq/2021/Jan/3",
-            "https://www.tenable.com/security/tns-2021-14"
-        ],
-        "summary": "In PHP versions 7.2.x below 7.2.26, 7.3.x below 7.3.13 and 7.4.0, PHP bcmath extension functions on some systems, including Windows, can be tricked into reading beyond the allocated space by supplying it with string containing characters that are identified as numeric by the OS but aren't ASCII numbers. This can read to disclosure of the content of some memory locations."
-    },
-    {
-        "Modified": "2022-12-20T21:46:00",
-        "Published": "2022-12-16T16:15:00",
-        "access": {},
-        "assigner": "security@android.com",
-        "cvss": null,
-        "cwe": "CWE-125",
-        "id": "CVE-2022-20563",
-        "impact": {},
-        "last-modified": "2022-12-20T21:46:00",
-        "references": [
-            "https://source.android.com/security/bulletin/pixel/2022-12-01"
-        ],
-        "summary": "In TBD of ufdt_convert, there is a possible out of bounds read due to memory corruption. This could lead to local escalation of privilege with System execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android kernelAndroid ID: A-242067561References: N/A"
-    },
-    {
-        "Modified": "2022-12-20T21:43:00",
-        "Published": "2022-12-16T16:15:00",
-        "access": {},
-        "assigner": "security@android.com",
-        "cvss": null,
-        "cwe": "CWE-416",
-        "id": "CVE-2022-20561",
-        "impact": {},
-        "last-modified": "2022-12-20T21:43:00",
-        "references": [
-            "https://source.android.com/security/bulletin/pixel/2022-12-01"
-        ],
-        "summary": "In TBD of aud_hal_tunnel.c, there is a possible memory corruption due to a use after free. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android kernelAndroid ID: A-222162870References: N/A"
-    },
-    {
-        "Modified": "2022-12-20T21:43:00",
-        "Published": "2022-12-16T16:15:00",
-        "access": {},
-        "assigner": "security@android.com",
-        "cvss": null,
-        "cwe": "CWE-416",
-        "id": "CVE-2022-20568",
-        "impact": {},
-        "last-modified": "2022-12-20T21:43:00",
-        "references": [
-            "https://source.android.com/security/bulletin/pixel/2022-12-01"
-        ],
-        "summary": "In (TBD) of (TBD), there is a possible way to corrupt kernel memory due to a use after free. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android kernelAndroid ID: A-220738351References: Upstream kernel"
-    },
-    {
-        "Modified": "2022-12-20T21:38:00",
-        "Published": "2022-12-20T21:15:00",
-        "access": {},
-        "assigner": "psirt@huawei.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-46312",
-        "impact": {},
-        "last-modified": "2022-12-20T21:38:00",
-        "references": [
-            "https://consumer.huawei.com/en/support/bulletin/2022/12/",
-            "https://device.harmonyos.com/en/docs/security/update/security-bulletins-202212-0000001462975397"
-        ],
-        "summary": "The application management module has a vulnerability in permission verification. Successful exploitation of this vulnerability causes unexpected clear of device applications."
-    },
-    {
-        "Modified": "2022-12-20T21:38:00",
-        "Published": "2022-12-20T21:15:00",
-        "access": {},
-        "assigner": "psirt@huawei.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2021-46856",
-        "impact": {},
-        "last-modified": "2022-12-20T21:38:00",
-        "references": [
-            "https://device.harmonyos.com/en/docs/security/update/security-bulletins-202212-0000001462975397"
-        ],
-        "summary": "The multi-screen collaboration module has a path traversal vulnerability. Successful exploitation of this vulnerability may affect data confidentiality."
-    },
-    {
-        "Modified": "2022-12-20T21:38:00",
-        "Published": "2022-12-20T21:15:00",
-        "access": {},
-        "assigner": "security-advisories@github.com",
-        "cvss": null,
-        "cwe": "CWE-285",
-        "id": "CVE-2022-23542",
-        "impact": {},
-        "last-modified": "2022-12-20T21:38:00",
-        "references": [
-            "https://github.com/openfga/openfga/pull/422",
-            "https://github.com/openfga/openfga/security/advisories/GHSA-m3q4-7qmj-657m",
-            "https://github.com/openfga/openfga/releases/tag/v0.3.1"
-        ],
-        "summary": "OpenFGA is an authorization/permission engine built for developers and inspired by Google Zanzibar. During an internal security assessment, it was discovered that OpenFGA version 0.3.0 is vulnerable to authorization bypass under certain conditions. This issue has been patched in version 0.3.1 and is backward compatible."
-    },
-    {
-        "Modified": "2022-12-20T21:38:00",
-        "Published": "2022-12-20T21:15:00",
-        "access": {},
-        "assigner": "psirt@us.ibm.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-38391",
-        "impact": {},
-        "last-modified": "2022-12-20T21:38:00",
-        "references": [
-            "https://www.ibm.com/support/pages/node/6847541",
-            "https://exchange.xforce.ibmcloud.com/vulnerabilities/233982"
-        ],
-        "summary": "IBM Spectrum Control 5.4 uses weaker than expected cryptographic algorithms that could allow an attacker to decrypt highly sensitive information. IBM X-Force ID: 233982."
-    },
-    {
-        "Modified": "2022-12-20T21:38:00",
-        "Published": "2022-12-20T21:15:00",
-        "access": {},
-        "assigner": "security-alert@netapp.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-38733",
-        "impact": {},
-        "last-modified": "2022-12-20T21:38:00",
-        "references": [
-            "https://security.netapp.com/advisory/NTAP-20221220-0001/"
-        ],
-        "summary": "OnCommand Insight versions 7.3.1 through 7.3.14 are susceptible to an authentication bypass vulnerability in the Data Warehouse component."
-    },
-    {
-        "Modified": "2022-12-20T21:38:00",
-        "Published": "2022-12-20T21:15:00",
-        "access": {},
-        "assigner": "psirt@us.ibm.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-39166",
-        "impact": {},
-        "last-modified": "2022-12-20T21:38:00",
-        "references": [
-            "https://www.ibm.com/support/pages/node/6848317",
-            "https://exchange.xforce.ibmcloud.com/vulnerabilities/235405"
-        ],
-        "summary": "IBM Security Guardium 11.4 could allow a privileged user to obtain sensitive information inside of an HTTP response. IBM X-Force ID: 235405."
-    },
-    {
-        "Modified": "2022-12-20T21:38:00",
-        "Published": "2022-12-20T21:15:00",
-        "access": {},
-        "assigner": "psirt@huawei.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-41590",
-        "impact": {},
-        "last-modified": "2022-12-20T21:38:00",
-        "references": [
-            "https://device.harmonyos.com/en/docs/security/update/security-bulletins-202212-0000001462975397"
-        ],
-        "summary": "Some smartphones have authentication-related (including session management) vulnerabilities as the setup wizard is bypassed. Successful exploitation of this vulnerability affects the smartphone availability."
-    },
-    {
-        "Modified": "2022-12-20T21:38:00",
-        "Published": "2022-12-20T21:15:00",
-        "access": {},
-        "assigner": "psirt@huawei.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-41591",
-        "impact": {},
-        "last-modified": "2022-12-20T21:38:00",
-        "references": [
-            "https://consumer.huawei.com/en/support/bulletin/2022/12/",
-            "https://device.harmonyos.com/en/docs/security/update/security-bulletins-202212-0000001462975397"
-        ],
-        "summary": "The backup module has a path traversal vulnerability. Successful exploitation of this vulnerability causes unauthorized access to other system files."
-    },
-    {
-        "Modified": "2022-12-20T21:38:00",
-        "Published": "2022-12-20T21:15:00",
-        "access": {},
-        "assigner": "psirt@huawei.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-41596",
-        "impact": {},
-        "last-modified": "2022-12-20T21:38:00",
-        "references": [
-            "https://consumer.huawei.com/en/support/bulletin/2022/12/",
-            "https://device.harmonyos.com/en/docs/security/update/security-bulletins-202212-0000001462975397"
-        ],
-        "summary": "The system tool has inconsistent serialization and deserialization. Successful exploitation of this vulnerability will cause unauthorized startup of components."
-    },
-    {
-        "Modified": "2022-12-20T21:38:00",
-        "Published": "2022-12-20T21:15:00",
-        "access": {},
-        "assigner": "psirt@huawei.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-41599",
-        "impact": {},
-        "last-modified": "2022-12-20T21:38:00",
-        "references": [
-            "https://consumer.huawei.com/en/support/bulletin/2022/12/",
-            "https://device.harmonyos.com/en/docs/security/update/security-bulletins-202212-0000001462975397"
-        ],
-        "summary": "The system service has a vulnerability that causes incorrect return values. Successful exploitation of this vulnerability may affect data confidentiality."
-    },
-    {
-        "Modified": "2022-12-20T21:38:00",
-        "Published": "2022-12-20T21:15:00",
-        "access": {},
-        "assigner": "psirt@us.ibm.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-43382",
-        "impact": {},
-        "last-modified": "2022-12-20T21:38:00",
-        "references": [
-            "https://www.ibm.com/support/pages/node/6848309",
-            "https://exchange.xforce.ibmcloud.com/vulnerabilities/238641"
-        ],
-        "summary": "IBM AIX 7.1, 7.2, 7.3, and VIOS 3.1could allow a local user with elevated privileges to exploit a vulnerability in the lpd daemon to cause a denial of service. IBM X-Force ID: 238641."
-    },
-    {
-        "Modified": "2022-12-20T21:38:00",
-        "Published": "2022-12-20T21:15:00",
-        "access": {},
-        "assigner": "psirt@huawei.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-46310",
-        "impact": {},
-        "last-modified": "2022-12-20T21:38:00",
-        "references": [
-            "https://device.harmonyos.com/en/docs/security/update/security-bulletins-202212-0000001462975397"
-        ],
-        "summary": "The TelephonyProvider module has a vulnerability in obtaining values.Successful exploitation of this vulnerability may affect data confidentiality."
-    },
-    {
-        "Modified": "2022-12-20T21:38:00",
-        "Published": "2022-12-20T21:15:00",
-        "access": {},
-        "assigner": "psirt@huawei.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-46311",
-        "impact": {},
-        "last-modified": "2022-12-20T21:38:00",
-        "references": [
-            "https://device.harmonyos.com/en/docs/security/update/security-bulletins-202212-0000001462975397"
-        ],
-        "summary": "The contacts component has a free (undefined) provider vulnerability. Successful exploitation of this vulnerability may affect data integrity."
-    },
-    {
-        "Modified": "2022-12-20T21:38:00",
-        "Published": "2022-12-20T21:15:00",
-        "access": {},
-        "assigner": "psirt@huawei.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-46313",
-        "impact": {},
-        "last-modified": "2022-12-20T21:38:00",
-        "references": [
-            "https://device.harmonyos.com/en/docs/security/update/security-bulletins-202212-0000001462975397"
-        ],
-        "summary": "The sensor privacy module has an authentication vulnerability. Successful exploitation of this vulnerability may cause unavailability of the smartphone's camera and microphone."
-    },
-    {
-        "Modified": "2022-12-20T21:38:00",
-        "Published": "2022-12-20T21:15:00",
-        "access": {},
-        "assigner": "psirt@huawei.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-46315",
-        "impact": {},
-        "last-modified": "2022-12-20T21:38:00",
-        "references": [
-            "https://device.harmonyos.com/en/docs/security/update/security-bulletins-202212-0000001462975397"
-        ],
-        "summary": "The ProfileSDK has defects introduced in the design process. Successful exploitation of this vulnerability may affect system availability."
-    },
-    {
-        "Modified": "2022-12-20T21:38:00",
-        "Published": "2022-12-20T21:15:00",
-        "access": {},
-        "assigner": "psirt@huawei.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-46314",
-        "impact": {},
-        "last-modified": "2022-12-20T21:38:00",
-        "references": [
-            "https://device.harmonyos.com/en/docs/security/update/security-bulletins-202212-0000001462975397"
-        ],
-        "summary": "The IPC module has defects introduced in the design process. Successful exploitation of this vulnerability may affect system availability."
-    },
-    {
-        "Modified": "2022-12-20T21:38:00",
-        "Published": "2022-12-20T21:15:00",
-        "access": {},
-        "assigner": "psirt@huawei.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-46316",
-        "impact": {},
-        "last-modified": "2022-12-20T21:38:00",
-        "references": [
-            "https://device.harmonyos.com/en/docs/security/update/security-bulletins-202212-0000001462975397"
-        ],
-        "summary": "A thread security vulnerability exists in the authentication process. Successful exploitation of this vulnerability may affect data integrity, confidentiality, and availability."
-    },
-    {
-        "Modified": "2022-12-20T21:38:00",
-        "Published": "2022-12-20T21:15:00",
-        "access": {},
-        "assigner": "psirt@huawei.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-46317",
-        "impact": {},
-        "last-modified": "2022-12-20T21:38:00",
-        "references": [
-            "https://consumer.huawei.com/en/support/bulletin/2022/12/",
-            "https://device.harmonyos.com/en/docs/security/update/security-bulletins-202212-0000001462975397"
-        ],
-        "summary": "The power consumption module has an out-of-bounds read vulnerability. Successful exploitation of this vulnerability may affect system availability."
-    },
-    {
-        "Modified": "2022-12-20T21:38:00",
-        "Published": "2022-12-20T21:15:00",
-        "access": {},
-        "assigner": "psirt@huawei.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-46318",
-        "impact": {},
-        "last-modified": "2022-12-20T21:38:00",
-        "references": [
-            "https://consumer.huawei.com/en/support/bulletin/2022/12/",
-            "https://device.harmonyos.com/en/docs/security/update/security-bulletins-202212-0000001462975397"
-        ],
-        "summary": "The HAware module has a function logic error. Successful exploitation of this vulnerability will affect the account removal function in Settings."
-    },
-    {
-        "Modified": "2022-12-20T21:38:00",
-        "Published": "2022-12-20T21:15:00",
-        "access": {},
-        "assigner": "psirt@huawei.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-46319",
-        "impact": {},
-        "last-modified": "2022-12-20T21:38:00",
-        "references": [
-            "https://consumer.huawei.com/en/support/bulletin/2022/12/",
-            "https://device.harmonyos.com/en/docs/security/update/security-bulletins-202212-0000001462975397"
-        ],
-        "summary": "Fingerprint calibration has a vulnerability of lacking boundary judgment. Successful exploitation of this vulnerability may cause out-of-bounds write."
-    },
-    {
-        "Modified": "2022-12-20T21:38:00",
-        "Published": "2022-12-20T21:15:00",
-        "access": {},
-        "assigner": "psirt@huawei.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-46320",
-        "impact": {},
-        "last-modified": "2022-12-20T21:38:00",
-        "references": [
-            "https://consumer.huawei.com/en/support/bulletin/2022/12/",
-            "https://device.harmonyos.com/en/docs/security/update/security-bulletins-202212-0000001462975397"
-        ],
-        "summary": "The kernel module has an out-of-bounds read vulnerability. Successful exploitation of this vulnerability may cause memory overwriting."
-    },
-    {
-        "Modified": "2022-12-20T21:38:00",
-        "Published": "2022-12-20T21:15:00",
-        "access": {},
-        "assigner": "psirt@huawei.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-46321",
-        "impact": {},
-        "last-modified": "2022-12-20T21:38:00",
-        "references": [
-            "https://consumer.huawei.com/en/support/bulletin/2022/12/",
-            "https://device.harmonyos.com/en/docs/security/update/security-bulletins-202212-0000001462975397"
-        ],
-        "summary": "The Wi-Fi module has a vulnerability in permission verification. Successful exploitation of this vulnerability may affect data confidentiality."
-    },
-    {
-        "Modified": "2022-12-20T21:38:00",
-        "Published": "2022-12-20T21:15:00",
-        "access": {},
-        "assigner": "psirt@huawei.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-46322",
-        "impact": {},
-        "last-modified": "2022-12-20T21:38:00",
-        "references": [
-            "https://consumer.huawei.com/en/support/bulletin/2022/12/",
-            "https://device.harmonyos.com/en/docs/security/update/security-bulletins-202212-0000001462975397"
-        ],
-        "summary": "Some smartphones have the out-of-bounds write vulnerability. Successful exploitation of this vulnerability may cause system service exceptions."
-    },
-    {
-        "Modified": "2022-12-20T21:38:00",
-        "Published": "2022-12-20T21:15:00",
-        "access": {},
-        "assigner": "psirt@huawei.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-46323",
-        "impact": {},
-        "last-modified": "2022-12-20T21:38:00",
-        "references": [
-            "https://consumer.huawei.com/en/support/bulletin/2022/12/",
-            "https://device.harmonyos.com/en/docs/security/update/security-bulletins-202212-0000001462975397"
-        ],
-        "summary": "Some smartphones have the out-of-bounds write vulnerability.Successful exploitation of this vulnerability may cause system service exceptions."
-    },
-    {
-        "Modified": "2022-12-20T21:38:00",
-        "Published": "2022-12-20T21:15:00",
-        "access": {},
-        "assigner": "psirt@huawei.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-46324",
-        "impact": {},
-        "last-modified": "2022-12-20T21:38:00",
-        "references": [
-            "https://consumer.huawei.com/en/support/bulletin/2022/12/",
-            "https://device.harmonyos.com/en/docs/security/update/security-bulletins-202212-0000001462975397"
-        ],
-        "summary": "Some smartphones have the out-of-bounds write vulnerability. Successful exploitation of this vulnerability may cause system service exceptions."
-    },
-    {
-        "Modified": "2022-12-20T21:38:00",
-        "Published": "2022-12-20T21:15:00",
-        "access": {},
-        "assigner": "psirt@huawei.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-46325",
-        "impact": {},
-        "last-modified": "2022-12-20T21:38:00",
-        "references": [
-            "https://consumer.huawei.com/en/support/bulletin/2022/12/",
-            "https://device.harmonyos.com/en/docs/security/update/security-bulletins-202212-0000001462975397"
-        ],
-        "summary": "Some smartphones have the out-of-bounds write vulnerability.Successful exploitation of this vulnerability may cause system service exceptions."
-    },
-    {
-        "Modified": "2022-12-20T21:38:00",
-        "Published": "2022-12-20T21:15:00",
-        "access": {},
-        "assigner": "psirt@huawei.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-46326",
-        "impact": {},
-        "last-modified": "2022-12-20T21:38:00",
-        "references": [
-            "https://consumer.huawei.com/en/support/bulletin/2022/12/",
-            "https://device.harmonyos.com/en/docs/security/update/security-bulletins-202212-0000001462975397"
-        ],
-        "summary": "Some smartphones have the out-of-bounds write vulnerability. Successful exploitation of this vulnerability may cause system service exceptions."
-    },
-    {
-        "Modified": "2022-12-20T21:38:00",
-        "Published": "2022-12-20T21:15:00",
-        "access": {},
-        "assigner": "psirt@huawei.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-46327",
-        "impact": {},
-        "last-modified": "2022-12-20T21:38:00",
-        "references": [
-            "https://consumer.huawei.com/en/support/bulletin/2022/12/",
-            "https://device.harmonyos.com/en/docs/security/update/security-bulletins-202212-0000001462975397"
-        ],
-        "summary": "Some smartphones have configuration issues. Successful exploitation of this vulnerability may cause privilege escalation, which results in system service exceptions."
-    },
-    {
-        "Modified": "2022-12-20T21:38:00",
-        "Published": "2022-12-20T21:15:00",
-        "access": {},
-        "assigner": "psirt@huawei.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-46328",
-        "impact": {},
-        "last-modified": "2022-12-20T21:38:00",
-        "references": [
-            "https://consumer.huawei.com/en/support/bulletin/2022/12/",
-            "https://device.harmonyos.com/en/docs/security/update/security-bulletins-202212-0000001462975397"
-        ],
-        "summary": "Some smartphones have the input validation vulnerability. Successful exploitation of this vulnerability may affect data confidentiality."
-    },
-    {
-        "Modified": "2022-12-20T21:38:00",
-        "Published": "2019-12-23T03:15:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "MEDIUM",
-            "vector": "NETWORK"
-        },
-        "assigner": "security@php.net",
-        "cvss": 4.3,
-        "cvss-time": "2022-12-20T21:38:00",
-        "cvss-vector": "AV:N/AC:M/Au:N/C:P/I:N/A:N",
-        "cwe": "CWE-74",
-        "id": "CVE-2019-11045",
-        "impact": {
-            "availability": "NONE",
-            "confidentiality": "PARTIAL",
-            "integrity": "NONE"
-        },
-        "last-modified": "2022-12-20T21:38:00",
-        "references": [
-            "https://bugs.php.net/bug.php?id=78863",
-            "https://lists.debian.org/debian-lts-announce/2019/12/msg00034.html",
-            "https://security.netapp.com/advisory/ntap-20200103-0002/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/N7GCOAE6KVHYJ3UQ4KLPLTGSLX6IRVRN/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/XWRQPYXVG43Q7DXMXH6UVWMKWGUW552F/",
-            "https://usn.ubuntu.com/4239-1/",
-            "http://lists.opensuse.org/opensuse-security-announce/2020-01/msg00036.html",
-            "https://seclists.org/bugtraq/2020/Feb/27",
-            "https://www.debian.org/security/2020/dsa-4626",
-            "https://seclists.org/bugtraq/2020/Feb/31",
-            "https://www.debian.org/security/2020/dsa-4628",
-            "https://seclists.org/bugtraq/2021/Jan/3",
-            "https://www.tenable.com/security/tns-2021-14"
-        ],
-        "summary": "In PHP versions 7.2.x below 7.2.26, 7.3.x below 7.3.13 and 7.4.0, PHP DirectoryIterator class accepts filenames with embedded \\0 byte and treats them as terminating at that byte. This could lead to security vulnerabilities, e.g. in applications checking paths that the code is allowed to access."
-    },
-    {
-        "Modified": "2022-12-20T21:37:00",
-        "Published": "2022-12-16T16:15:00",
-        "access": {},
-        "assigner": "security@android.com",
-        "cvss": null,
-        "cwe": "CWE-20",
-        "id": "CVE-2022-20512",
-        "impact": {},
-        "last-modified": "2022-12-20T21:37:00",
-        "references": [
-            "https://source.android.com/security/bulletin/pixel/2022-12-01"
-        ],
-        "summary": "In navigateUpTo of Task.java, there is a possible way to launch an intent handler with a mismatched intent due to improper input validation. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android-13Android ID: A-238602879"
-    },
-    {
-        "Modified": "2022-12-20T21:37:00",
-        "Published": "2022-12-16T16:15:00",
-        "access": {},
-        "assigner": "security@android.com",
-        "cvss": null,
-        "cwe": "NVD-CWE-noinfo",
-        "id": "CVE-2022-20560",
-        "impact": {},
-        "last-modified": "2022-12-20T21:37:00",
-        "references": [
-            "https://source.android.com/security/bulletin/pixel/2022-12-01"
-        ],
-        "summary": "Product: AndroidVersions: Android kernelAndroid ID: A-212623833References: N/A"
-    },
-    {
-        "Modified": "2022-12-20T21:37:00",
-        "Published": "2016-03-12T15:59:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "MEDIUM",
-            "vector": "NETWORK"
-        },
-        "assigner": "psirt@adobe.com",
-        "cvss": 9.3,
-        "cvss-time": "2022-12-20T21:37:00",
-        "cvss-vector": "AV:N/AC:M/Au:N/C:C/I:C/A:C",
-        "cwe": "CWE-416",
-        "id": "CVE-2016-0996",
-        "impact": {
-            "availability": "COMPLETE",
-            "confidentiality": "COMPLETE",
-            "integrity": "COMPLETE"
-        },
-        "last-modified": "2022-12-20T21:37:00",
-        "references": [
-            "https://helpx.adobe.com/security/products/flash-player/apsb16-08.html",
-            "http://www.zerodayinitiative.com/advisories/ZDI-16-193/",
-            "http://www.securityfocus.com/bid/84312",
-            "http://www.securitytracker.com/id/1035251",
-            "http://lists.opensuse.org/opensuse-security-announce/2016-03/msg00023.html",
-            "https://security.gentoo.org/glsa/201603-07",
-            "http://lists.opensuse.org/opensuse-security-announce/2016-03/msg00024.html",
-            "http://lists.opensuse.org/opensuse-security-announce/2016-03/msg00022.html",
-            "http://lists.opensuse.org/opensuse-security-announce/2016-03/msg00032.html"
-        ],
-        "summary": "Use-after-free vulnerability in the setInterval method in Adobe Flash Player before 18.0.0.333 and 19.x through 21.x before 21.0.0.182 on Windows and OS X and before 11.2.202.577 on Linux, Adobe AIR before 21.0.0.176, Adobe AIR SDK before 21.0.0.176, and Adobe AIR SDK & Compiler before 21.0.0.176 allows attackers to execute arbitrary code via crafted arguments, a different vulnerability than CVE-2016-0987, CVE-2016-0988, CVE-2016-0990, CVE-2016-0991, CVE-2016-0994, CVE-2016-0995, CVE-2016-0997, CVE-2016-0998, CVE-2016-0999, and CVE-2016-1000."
-    },
-    {
-        "Modified": "2022-12-20T21:33:00",
-        "Published": "2022-12-15T21:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-707",
-        "id": "CVE-2022-4522",
-        "impact": {},
-        "last-modified": "2022-12-20T21:33:00",
-        "references": [
-            "https://github.com/victorwon/calendarxp/commit/e3715b2228ddefe00113296069969f9e184836da",
-            "https://vuldb.com/?id.215902",
-            "https://github.com/victorwon/calendarxp/releases/tag/10.0.2"
-        ],
-        "summary": "A vulnerability classified as problematic was found in CalendarXP up to 10.0.1. This vulnerability affects unknown code. The manipulation leads to cross site scripting. The attack can be initiated remotely. Upgrading to version 10.0.2 is able to address this issue. The name of the patch is e3715b2228ddefe00113296069969f9e184836da. It is recommended to upgrade the affected component. VDB-215902 is the identifier assigned to this vulnerability."
-    },
-    {
-        "Modified": "2022-12-20T21:27:00",
-        "Published": "2022-12-15T21:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-4521",
-        "impact": {},
-        "last-modified": "2022-12-20T21:27:00",
-        "references": [
-            "https://github.com/wso2/carbon-registry/releases/tag/v4.8.12",
-            "https://github.com/wso2/carbon-registry/commit/9f967abfde9317bee2cda469dbc09b57d539f2cc",
-            "https://github.com/wso2/carbon-registry/pull/399",
-            "https://vuldb.com/?id.215901"
-        ],
-        "summary": "A vulnerability classified as problematic has been found in WSO2 carbon-registry up to 4.8.7. This affects an unknown part of the component Request Parameter Handler. The manipulation of the argument parentPath/path/username/path/profile_menu leads to cross site scripting. It is possible to initiate the attack remotely. Upgrading to version 4.8.12 is able to address this issue. The name of the patch is 9f967abfde9317bee2cda469dbc09b57d539f2cc. It is recommended to upgrade the affected component. The identifier VDB-215901 was assigned to this vulnerability."
-    },
-    {
-        "Modified": "2022-12-20T21:25:00",
-        "Published": "2022-12-16T16:15:00",
-        "access": {},
-        "assigner": "security@android.com",
-        "cvss": null,
-        "cwe": "NVD-CWE-Other",
-        "id": "CVE-2022-20550",
-        "impact": {},
-        "last-modified": "2022-12-20T21:25:00",
-        "references": [
-            "https://source.android.com/security/bulletin/pixel/2022-12-01"
-        ],
-        "summary": "In Multiple Locations, there is a possibility to launch arbitrary protected activities due to a confused deputy. This could lead to local escalation of privilege with User execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android-13Android ID: A-242845514"
-    },
-    {
-        "Modified": "2022-12-20T21:21:00",
-        "Published": "2022-12-16T16:15:00",
-        "access": {},
-        "assigner": "security@android.com",
-        "cvss": null,
-        "cwe": "CWE-416",
-        "id": "CVE-2022-20554",
-        "impact": {},
-        "last-modified": "2022-12-20T21:21:00",
-        "references": [
-            "https://source.android.com/security/bulletin/pixel/2022-12-01"
-        ],
-        "summary": "In removeEventHubDevice of InputDevice.cpp, there is a possible OOB read due to a use after free. This could lead to local escalation of privilege with System execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android-13Android ID: A-245770596"
     }
 ]
