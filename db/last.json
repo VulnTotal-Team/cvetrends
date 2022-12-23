@@ -1,5 +1,459 @@
 [
     {
+        "Modified": "2022-12-23T16:59:00",
+        "Published": "2020-02-05T18:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "ADJACENT_NETWORK"
+        },
+        "assigner": "psirt@cisco.com",
+        "cvss": 8.3,
+        "cvss-time": "2022-12-23T16:59:00",
+        "cvss-vector": "AV:A/AC:L/Au:N/C:C/I:C/A:C",
+        "cwe": "CWE-787",
+        "id": "CVE-2020-3118",
+        "impact": {
+            "availability": "COMPLETE",
+            "confidentiality": "COMPLETE",
+            "integrity": "COMPLETE"
+        },
+        "last-modified": "2022-12-23T16:59:00",
+        "references": [
+            "https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20200205-iosxr-cdp-rce",
+            "http://packetstormsecurity.com/files/156203/Cisco-Discovery-Protocol-CDP-Remote-Device-Takeover.html"
+        ],
+        "summary": "A vulnerability in the Cisco Discovery Protocol implementation for Cisco IOS XR Software could allow an unauthenticated, adjacent attacker to execute arbitrary code or cause a reload on an affected device. The vulnerability is due to improper validation of string input from certain fields in Cisco Discovery Protocol messages. An attacker could exploit this vulnerability by sending a malicious Cisco Discovery Protocol packet to an affected device. A successful exploit could allow the attacker to cause a stack overflow, which could allow the attacker to execute arbitrary code with administrative privileges on an affected device. Cisco Discovery Protocol is a Layer 2 protocol. To exploit this vulnerability, an attacker must be in the same broadcast domain as the affected device (Layer 2 adjacent)."
+    },
+    {
+        "Modified": "2022-12-23T16:58:00",
+        "Published": "2022-12-12T06:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "NVD-CWE-Other",
+        "id": "CVE-2022-46908",
+        "impact": {},
+        "last-modified": "2022-12-23T16:58:00",
+        "references": [
+            "https://sqlite.org/src/info/cefc032473ac5ad2",
+            "https://sqlite.org/forum/forumpost/07beac8056151b2f",
+            "https://news.ycombinator.com/item?id=33948588"
+        ],
+        "summary": "SQLite through 3.40.0, when relying on --safe for execution of an untrusted CLI script, does not properly implement the azProhibitedFunctions protection mechanism, and instead allows UDF functions such as WRITEFILE."
+    },
+    {
+        "Modified": "2022-12-23T16:58:00",
+        "Published": "2020-06-03T18:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "psirt@cisco.com",
+        "cvss": 10.0,
+        "cvss-time": "2022-12-23T16:58:00",
+        "cvss-vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C",
+        "cwe": "CWE-863",
+        "id": "CVE-2020-3227",
+        "impact": {
+            "availability": "COMPLETE",
+            "confidentiality": "COMPLETE",
+            "integrity": "COMPLETE"
+        },
+        "last-modified": "2022-12-23T16:58:00",
+        "references": [
+            "https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-ioxPE-KgGvCAf9"
+        ],
+        "summary": "A vulnerability in the authorization controls for the Cisco IOx application hosting infrastructure in Cisco IOS XE Software could allow an unauthenticated, remote attacker to execute Cisco IOx API commands without proper authorization. The vulnerability is due to incorrect handling of requests for authorization tokens. An attacker could exploit this vulnerability by using a crafted API call to request such a token. An exploit could allow the attacker to obtain an authorization token and execute any of the IOx API commands on an affected device."
+    },
+    {
+        "Modified": "2022-12-23T16:52:00",
+        "Published": "2022-12-23T15:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-122",
+        "id": "CVE-2022-23547",
+        "impact": {},
+        "last-modified": "2022-12-23T16:52:00",
+        "references": [
+            "https://github.com/pjsip/pjproject/security/advisories/GHSA-cxwq-5g9x-x7fr",
+            "https://github.com/pjsip/pjproject/commit/bc4812d31a67d5e2f973fbfaf950d6118226cf36",
+            "https://github.com/pjsip/pjproject/security/advisories/GHSA-9pfh-r8x4-w26w"
+        ],
+        "summary": "PJSIP is a free and open source multimedia communication library written in C language implementing standard based protocols such as SIP, SDP, RTP, STUN, TURN, and ICE. This issue is similar to GHSA-9pfh-r8x4-w26w. Possible buffer overread when parsing a certain STUN message. The vulnerability affects applications that uses STUN including PJNATH and PJSUA-LIB. The patch is available as commit in the master branch."
+    },
+    {
+        "Modified": "2022-12-23T16:52:00",
+        "Published": "2022-12-23T15:15:00",
+        "access": {},
+        "assigner": "cve-assignments@hackerone.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-43551",
+        "impact": {},
+        "last-modified": "2022-12-23T16:52:00",
+        "references": [
+            "https://hackerone.com/reports/1755083"
+        ],
+        "summary": "A vulnerability exists in curl <7.87.0 HSTS check that could be bypassed to trick it to keep using HTTP. Using its HSTS support, curl can be instructed to use HTTPS instead of using an insecure clear-text HTTP step even when HTTP is provided in the URL. However, the HSTS mechanism could be bypassed if the host name in the given URL first uses IDN characters that get replaced to ASCII counterparts as part of the IDN conversion. Like using the character UTF-8 U+3002 (IDEOGRAPHIC FULL STOP) instead of the common ASCII full stop (U+002E) `.`. Then in a subsequent request, it does not detect the HSTS state and makes a clear text transfer. Because it would store the info IDN encoded but look for it IDN decoded."
+    },
+    {
+        "Modified": "2022-12-23T16:52:00",
+        "Published": "2022-12-23T15:15:00",
+        "access": {},
+        "assigner": "cve-assignments@hackerone.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-44565",
+        "impact": {},
+        "last-modified": "2022-12-23T16:52:00",
+        "references": [
+            "https://community.ui.com/releases/Security-Advisory-Bulletin-027-027/123e4577-9f00-4777-abe1-64a1d56fee05"
+        ],
+        "summary": "An improper access validation vulnerability exists in airMAX AC <8.7.11, airFiber 60/LR <2.6.2, airFiber 60 XG/HD <v1.0.0 and airFiber GBE <1.4.1 that allows a malicious actor to retrieve status and usage data from the UISP device."
+    },
+    {
+        "Modified": "2022-12-23T16:52:00",
+        "Published": "2022-12-23T15:15:00",
+        "access": {},
+        "assigner": "cve-assignments@hackerone.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-44567",
+        "impact": {},
+        "last-modified": "2022-12-23T16:52:00",
+        "references": [
+            "https://hackerone.com/reports/1781102"
+        ],
+        "summary": "A command injection vulnerability exists in Rocket.Chat-Desktop <3.8.14 that could allow an attacker to pass a malicious url of openInternalVideoChatWindow to shell.openExternal(), which may lead to remote code execution (internalVideoChatWindow.ts#L17). To exploit the vulnerability, the internal video chat window must be disabled or a Mac App Store build must be used (internalVideoChatWindow.ts#L14). The vulnerability may be exploited by an XSS attack because the function openInternalVideoChatWindow is exposed in the Rocket.Chat-Desktop-API."
+    },
+    {
+        "Modified": "2022-12-23T16:52:00",
+        "Published": "2022-12-23T15:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-46641",
+        "impact": {},
+        "last-modified": "2022-12-23T16:52:00",
+        "references": [
+            "https://www.dlink.com/en/security-bulletin/",
+            "https://github.com/CyberUnicornIoT/IoTvuln/blob/main/d-link/dir-846/D-Link%20dir-846%20SetIpMacBindSettings%20Command%20Injection%20Vulnerability.md"
+        ],
+        "summary": "D-Link DIR-846 A1_FW100A43 was discovered to contain a command injection vulnerability via the lan(0)_dhcps_staticlist parameter in the SetIpMacBindSettings function."
+    },
+    {
+        "Modified": "2022-12-23T16:52:00",
+        "Published": "2022-12-23T15:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-46642",
+        "impact": {},
+        "last-modified": "2022-12-23T16:52:00",
+        "references": [
+            "https://github.com/CyberUnicornIoT/IoTvuln/blob/main/d-link/dir-846/D-Link%20dir-846%20SetAutoUpgradeInfo%20command%20injection%20vulnerability.md",
+            "https://www.dlink.com/en/security-bulletin/"
+        ],
+        "summary": "D-Link DIR-846 A1_FW100A43 was discovered to contain a command injection vulnerability via the auto_upgrade_hour parameter in the SetAutoUpgradeInfo function."
+    },
+    {
+        "Modified": "2022-12-23T16:52:00",
+        "Published": "2022-12-23T16:15:00",
+        "access": {},
+        "assigner": "security@microfocus.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-38757",
+        "impact": {},
+        "last-modified": "2022-12-23T16:52:00",
+        "references": [
+            "https://kmviewer.saas.microfocus.com/#/PH_206720",
+            "https://portal.microfocus.com/s/article/KM000012895?language=en_US",
+            "https://kmviewer.saas.microfocus.com/#/PH_206719"
+        ],
+        "summary": "A vulnerability has been identified in Micro Focus ZENworks 2020 Update 3a and prior versions. This vulnerability allows administrators with rights to perform actions (e.g., install a bundle) on a set of managed devices, to be able to exercise these rights on managed devices in the ZENworks zone but which are outside the scope of the administrator. This vulnerability does not result in the administrators gaining additional rights on the managed devices, either in the scope or outside the scope of the administrator."
+    },
+    {
+        "Modified": "2022-12-23T16:52:00",
+        "Published": "2022-12-23T16:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-47938",
+        "impact": {},
+        "last-modified": "2022-12-23T16:52:00",
+        "references": [
+            "https://git.kernel.org/cgit/linux/kernel/git/torvalds/linux.git/commit/?id=824d4f64c20093275f72fc8101394d75ff6a249e",
+            "https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.19.2",
+            "https://github.com/torvalds/linux/commit/824d4f64c20093275f72fc8101394d75ff6a249e"
+        ],
+        "summary": "An issue was discovered in ksmbd in the Linux kernel before 5.19.2. fs/ksmbd/smb2misc.c has an out-of-bounds read and OOPS for SMB2_TREE_CONNNECT."
+    },
+    {
+        "Modified": "2022-12-23T16:52:00",
+        "Published": "2022-12-23T16:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-47939",
+        "impact": {},
+        "last-modified": "2022-12-23T16:52:00",
+        "references": [
+            "https://github.com/torvalds/linux/commit/cf6531d98190fa2cf92a6d8bbc8af0a4740a223c",
+            "https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.19.2",
+            "https://git.kernel.org/cgit/linux/kernel/git/torvalds/linux.git/commit/?id=cf6531d98190fa2cf92a6d8bbc8af0a4740a223c"
+        ],
+        "summary": "An issue was discovered in ksmbd in the Linux kernel before 5.19.2. fs/ksmbd/smb2pdu.c has a use-after-free and OOPS for SMB2_TREE_DISCONNECT."
+    },
+    {
+        "Modified": "2022-12-23T16:52:00",
+        "Published": "2022-12-23T16:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-47940",
+        "impact": {},
+        "last-modified": "2022-12-23T16:52:00",
+        "references": [
+            "https://github.com/torvalds/linux/commit/158a66b245739e15858de42c0ba60fcf3de9b8e6",
+            "https://git.kernel.org/cgit/linux/kernel/git/torvalds/linux.git/commit/?id=158a66b245739e15858de42c0ba60fcf3de9b8e6",
+            "https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.18.18"
+        ],
+        "summary": "An issue was discovered in ksmbd in the Linux kernel before 5.18.18. fs/ksmbd/smb2pdu.c lacks length validation in the non-padding case in smb2_write."
+    },
+    {
+        "Modified": "2022-12-23T16:52:00",
+        "Published": "2022-12-23T16:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-47941",
+        "impact": {},
+        "last-modified": "2022-12-23T16:52:00",
+        "references": [
+            "https://github.com/torvalds/linux/commit/aa7253c2393f6dcd6a1468b0792f6da76edad917",
+            "https://git.kernel.org/cgit/linux/kernel/git/torvalds/linux.git/commit/?id=aa7253c2393f6dcd6a1468b0792f6da76edad917",
+            "https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.19.2"
+        ],
+        "summary": "An issue was discovered in ksmbd in the Linux kernel before 5.19.2. fs/ksmbd/smb2pdu.c omits a kfree call in certain smb2_handle_negotiate error conditions, aka a memory leak."
+    },
+    {
+        "Modified": "2022-12-23T16:52:00",
+        "Published": "2022-12-23T16:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-47942",
+        "impact": {},
+        "last-modified": "2022-12-23T16:52:00",
+        "references": [
+            "https://github.com/torvalds/linux/commit/8f0541186e9ad1b62accc9519cc2b7a7240272a7",
+            "https://git.kernel.org/cgit/linux/kernel/git/torvalds/linux.git/commit/?id=8f0541186e9ad1b62accc9519cc2b7a7240272a7",
+            "https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.19.2"
+        ],
+        "summary": "An issue was discovered in ksmbd in the Linux kernel before 5.19.2. There is a heap-based buffer overflow in set_ntacl_dacl, related to use of SMB2_QUERY_INFO_HE after a malformed SMB2_SET_INFO_HE command."
+    },
+    {
+        "Modified": "2022-12-23T16:52:00",
+        "Published": "2022-12-23T16:15:00",
+        "access": {},
+        "assigner": "security@wordfence.com",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2022-4697",
+        "impact": {},
+        "last-modified": "2022-12-23T16:52:00",
+        "references": [
+            "https://www.wordfence.com/threat-intel/vulnerabilities/id/3d54f585-0116-4517-84f1-271e89a05539",
+            "https://plugins.trac.wordpress.org/changeset?sfp_email=&sfph_mail=&reponame=&new=2838522%40wp-user-avatar%2Ftrunk&old=2837217%40wp-user-avatar%2Ftrunk&sfp_email=&sfph_mail="
+        ],
+        "summary": "The ProfilePress plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the \u2018wp_user_cover_default_image_url\u2019 parameter in versions up to, and including, 4.5.0 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with administrator-level permissions and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page. This only affects multi-site installations and installations where unfiltered_html has been disabled."
+    },
+    {
+        "Modified": "2022-12-23T16:52:00",
+        "Published": "2022-12-23T16:15:00",
+        "access": {},
+        "assigner": "security@wordfence.com",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2022-4698",
+        "impact": {},
+        "last-modified": "2022-12-23T16:52:00",
+        "references": [
+            "https://www.wordfence.com/threat-intel/vulnerabilities/id/43c9dcec-f769-4c55-93d0-c2aa45a4fa16",
+            "https://plugins.trac.wordpress.org/changeset?sfp_email=&sfph_mail=&reponame=&new=2838522%40wp-user-avatar%2Ftrunk&old=2837217%40wp-user-avatar%2Ftrunk&sfp_email=&sfph_mail="
+        ],
+        "summary": "The ProfilePress plugin for WordPress is vulnerable to Stored Cross-Site Scripting via several form fields in versions up to, and including, 4.5.0 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with administrator-level permissions and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page. This only affects multi-site installations and installations where unfiltered_html has been disabled."
+    },
+    {
+        "Modified": "2022-12-23T16:52:00",
+        "Published": "2022-12-23T14:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-22",
+        "id": "CVE-2022-46171",
+        "impact": {},
+        "last-modified": "2022-12-23T16:52:00",
+        "references": [
+            "https://github.com/tauri-apps/tauri/commit/f0602e7c294245ab6ef6fbf2a976ef398340ef58",
+            "https://github.com/tauri-apps/tauri/commit/72389b00d7b495ffd7750eb1e75a3b8537d07cf3",
+            "https://github.com/tauri-apps/tauri/security/advisories/GHSA-6mv3-wm7j-h4w5"
+        ],
+        "summary": "Tauri is a framework for building binaries for all major desktop platforms. The filesystem glob pattern wildcards `*`, `?`, and `[...]` match file path literals and leading dots by default, which unintentionally exposes sub folder content of allowed paths. Scopes without the wildcards are not affected. As `**` allows for sub directories the behavior there is also as expected. The issue has been patched in the latest release and was backported into the currently supported 1.x branches. There are no known workarounds at the time of publication."
+    },
+    {
+        "Modified": "2022-12-23T16:52:00",
+        "Published": "2022-12-23T14:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-47524",
+        "impact": {},
+        "last-modified": "2022-12-23T16:52:00",
+        "references": [
+            "https://www.f-secure.com/en/home/support/security-advisories/cve-2022-47524"
+        ],
+        "summary": "F-Secure SAFE Browser 19.1 before 19.2 for Android allows an IDN homograph attack."
+    },
+    {
+        "Modified": "2022-12-23T16:15:00",
+        "Published": "2022-11-29T21:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "NVD-CWE-noinfo",
+        "id": "CVE-2021-31693",
+        "impact": {},
+        "last-modified": "2022-12-23T16:15:00",
+        "references": [
+            "https://www.vmware.com/security/advisories/VMSA-2022-0029.html",
+            "https://security.netapp.com/advisory/ntap-20221223-0009/"
+        ],
+        "summary": "VMware Tools for Windows (12.x.y prior to 12.1.5, 11.x.y and 10.x.y) contains a denial-of-service vulnerability in the VM3DMP driver. A malicious actor with local user privileges in the Windows guest OS, where VMware Tools is installed, can trigger a PANIC in the VM3DMP driver leading to a denial-of-service condition in the Windows guest OS."
+    },
+    {
+        "Modified": "2022-12-23T16:15:00",
+        "Published": "2022-10-26T20:15:00",
+        "access": {},
+        "assigner": "cna@vuldb.com",
+        "cvss": null,
+        "cwe": "CWE-416",
+        "id": "CVE-2022-3705",
+        "impact": {},
+        "last-modified": "2022-12-23T16:15:00",
+        "references": [
+            "https://github.com/vim/vim/commit/d0fab10ed2a86698937e3c3fed2f10bd9bb5e731",
+            "https://vuldb.com/?id.212324",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/4JCW33NOLMELTTTDJH7WGDIFJZ5YEEMK/",
+            "https://lists.debian.org/debian-lts-announce/2022/11/msg00009.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/JYEK5RNMH7MVQH6RPBKLSCCA6NMIKHDV/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/GTBVD4J2SKVSWK4VBN5JP5OEVK6GDS3N/",
+            "https://security.netapp.com/advisory/ntap-20221223-0004/"
+        ],
+        "summary": "A vulnerability was found in vim and classified as problematic. Affected by this issue is the function qf_update_buffer of the file quickfix.c of the component autocmd Handler. The manipulation leads to use after free. The attack may be launched remotely. Upgrading to version 9.0.0805 is able to address this issue. The name of the patch is d0fab10ed2a86698937e3c3fed2f10bd9bb5e731. It is recommended to upgrade the affected component. The identifier of this vulnerability is VDB-212324."
+    },
+    {
+        "Modified": "2022-12-23T16:15:00",
+        "Published": "2022-10-17T19:15:00",
+        "access": {},
+        "assigner": "cna@vuldb.com",
+        "cvss": null,
+        "cwe": "CWE-416",
+        "id": "CVE-2022-3564",
+        "impact": {},
+        "last-modified": "2022-12-23T16:15:00",
+        "references": [
+            "https://vuldb.com/?id.211087",
+            "https://git.kernel.org/pub/scm/linux/kernel/git/bluetooth/bluetooth-next.git/commit/?id=89f9f3cb86b1c63badaf392a83dd661d56cc50b1",
+            "https://lists.debian.org/debian-lts-announce/2022/12/msg00031.html",
+            "https://security.netapp.com/advisory/ntap-20221223-0001/"
+        ],
+        "summary": "A vulnerability classified as critical was found in Linux Kernel. Affected by this vulnerability is the function l2cap_reassemble_sdu of the file net/bluetooth/l2cap_core.c of the component Bluetooth. The manipulation leads to use after free. It is recommended to apply a patch to fix this issue. The associated identifier of this vulnerability is VDB-211087."
+    },
+    {
+        "Modified": "2022-12-23T16:15:00",
+        "Published": "2022-10-17T16:15:00",
+        "access": {},
+        "assigner": "secalert@redhat.com",
+        "cvss": null,
+        "cwe": "CWE-191",
+        "id": "CVE-2022-3165",
+        "impact": {},
+        "last-modified": "2022-12-23T16:15:00",
+        "references": [
+            "https://gitlab.com/qemu-project/qemu/-/commit/d307040b18",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/I36LKZA7Z65J3LJU2P37LVTWDFTXBMPU/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/ZTY7TVHX62OJWF6IOBCIGLR2N5K4QN3E/",
+            "https://security.netapp.com/advisory/ntap-20221223-0006/"
+        ],
+        "summary": "An integer underflow issue was found in the QEMU VNC server while processing ClientCutText messages in the extended format. A malicious client could use this flaw to make QEMU unresponsive by sending a specially crafted payload message, resulting in a denial of service."
+    },
+    {
+        "Modified": "2022-12-23T16:15:00",
+        "Published": "2022-10-17T12:15:00",
+        "access": {},
+        "assigner": "cna@vuldb.com",
+        "cvss": null,
+        "cwe": "CWE-416",
+        "id": "CVE-2022-3545",
+        "impact": {},
+        "last-modified": "2022-12-23T16:15:00",
+        "references": [
+            "https://git.kernel.org/pub/scm/linux/kernel/git/klassert/ipsec-next.git/commit/?id=02e1a114fdb71e59ee6770294166c30d437bf86a",
+            "https://vuldb.com/?id.211045",
+            "https://security.netapp.com/advisory/ntap-20221223-0003/"
+        ],
+        "summary": "A vulnerability has been found in Linux Kernel and classified as critical. Affected by this vulnerability is the function area_cache_get of the file drivers/net/ethernet/netronome/nfp/nfpcore/nfp_cppcore.c of the component IPsec. The manipulation leads to use after free. It is recommended to apply a patch to fix this issue. The identifier VDB-211045 was assigned to this vulnerability."
+    },
+    {
+        "Modified": "2022-12-23T16:15:00",
+        "Published": "2022-08-23T20:15:00",
+        "access": {},
+        "assigner": "secalert@redhat.com",
+        "cvss": null,
+        "cwe": "CWE-416",
+        "id": "CVE-2022-2938",
+        "impact": {},
+        "last-modified": "2022-12-23T16:15:00",
+        "references": [
+            "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=a06247c6804f1a7c86a2e5398a4c1f1db1471848",
+            "https://security.netapp.com/advisory/ntap-20221223-0002/"
+        ],
+        "summary": "A flaw was found in the Linux kernel's implementation of Pressure Stall Information. While the feature is disabled by default, it could allow an attacker to crash the system or have other memory-corruption side effects."
+    },
+    {
+        "Modified": "2022-12-23T16:15:00",
+        "Published": "2022-07-17T22:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-400",
+        "id": "CVE-2021-46784",
+        "impact": {},
+        "last-modified": "2022-12-23T16:15:00",
+        "references": [
+            "http://www.squid-cache.org/Versions/v5/changesets/SQUID-2021_7.patch",
+            "https://github.com/squid-cache/squid/security/advisories/GHSA-f5cp-6rh3-284w",
+            "https://security-tracker.debian.org/tracker/CVE-2021-46784",
+            "https://github.com/squid-cache/squid/commit/5e2ea2b13bd98f53e29964ca26bb0d602a8a12b9",
+            "http://www.squid-cache.org/Versions/v4/changesets/SQUID-2021_7.patch",
+            "https://security.netapp.com/advisory/ntap-20221223-0007/"
+        ],
+        "summary": "In Squid 3.x through 3.5.28, 4.x through 4.17, and 5.x before 5.6, due to improper buffer management, a Denial of Service can occur when processing long Gopher server responses."
+    },
+    {
         "Modified": "2022-12-23T14:37:00",
         "Published": "2022-12-19T14:15:00",
         "access": {},
@@ -55,38 +509,6 @@
             "https://wordpress.org/plugins/wp-ban/changelog/"
         ],
         "summary": "WP-Ban plugin before 1.6.4 for WordPress, when running in certain configurations, allows remote attackers to bypass the IP blacklist via a crafted X-Forwarded-For header."
-    },
-    {
-        "Modified": "2022-12-23T14:15:00",
-        "Published": "2022-12-23T14:15:00",
-        "access": {},
-        "assigner": "security-advisories@github.com",
-        "cvss": null,
-        "cwe": "CWE-22",
-        "id": "CVE-2022-46171",
-        "impact": {},
-        "last-modified": "2022-12-23T14:15:00",
-        "references": [
-            "https://github.com/tauri-apps/tauri/commit/f0602e7c294245ab6ef6fbf2a976ef398340ef58",
-            "https://github.com/tauri-apps/tauri/commit/72389b00d7b495ffd7750eb1e75a3b8537d07cf3",
-            "https://github.com/tauri-apps/tauri/security/advisories/GHSA-6mv3-wm7j-h4w5"
-        ],
-        "summary": "Tauri is a framework for building binaries for all major desktop platforms. The filesystem glob pattern wildcards `*`, `?`, and `[...]` match file path literals and leading dots by default, which unintentionally exposes sub folder content of allowed paths. Scopes without the wildcards are not affected. As `**` allows for sub directories the behavior there is also as expected. The issue has been patched in the latest release and was backported into the currently supported 1.x branches. There are no known workarounds at the time of publication."
-    },
-    {
-        "Modified": "2022-12-23T14:15:00",
-        "Published": "2022-12-23T14:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-47524",
-        "impact": {},
-        "last-modified": "2022-12-23T14:15:00",
-        "references": [
-            "https://www.f-secure.com/en/home/support/security-advisories/cve-2022-47524"
-        ],
-        "summary": "F-Secure SAFE Browser 19.1 before 19.2 for Android allows an IDN homograph attack."
     },
     {
         "Modified": "2022-12-23T14:15:00",
@@ -1212,405 +1634,5 @@
             "https://wpscan.com/vulnerability/ac7158c5-3d11-4865-b26f-41ab5a8120af"
         ],
         "summary": "The Easy Video Player WordPress plugin before 1.2.2.3 does not sanitize and escapes some parameters, which could allow users with a role as low as Contributor to perform Cross-Site Scripting attacks."
-    },
-    {
-        "Modified": "2022-12-22T21:45:00",
-        "Published": "2022-12-19T14:15:00",
-        "access": {},
-        "assigner": "contact@wpscan.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-4058",
-        "impact": {},
-        "last-modified": "2022-12-22T21:45:00",
-        "references": [
-            "https://wpscan.com/vulnerability/89656cb3-4611-4ae7-b7f8-1b22eb75cfc4"
-        ],
-        "summary": "The Photo Gallery by 10Web WordPress plugin before 1.8.3 does not validate and escape some parameters before outputting them back in in JS code later on in another page, which could lead to Stored XSS issue when an attacker makes a logged in admin open a malicious URL or page under their control."
-    },
-    {
-        "Modified": "2022-12-22T21:43:00",
-        "Published": "2022-12-22T21:15:00",
-        "access": {},
-        "assigner": "security-advisories@github.com",
-        "cvss": null,
-        "cwe": "CWE-400",
-        "id": "CVE-2020-26302",
-        "impact": {},
-        "last-modified": "2022-12-22T21:43:00",
-        "references": [
-            "https://securitylab.github.com/advisories/GHSL-2020-295-redos-is.js",
-            "https://github.com/arasatasaygin/is.js/issues/320"
-        ],
-        "summary": "is.js is a general-purpose check library. Versions 0.9.0 and prior contain one or more regular expressions that are vulnerable to Regular Expression Denial of Service (ReDoS). is.js uses a regex copy-pasted from a gist to validate URLs. Trying to validate a malicious string can cause the regex to loop \u00e2\u20ac\u0153forever.\" This vulnerability was found using a CodeQL query which identifies inefficient regular expressions. is.js has no patch for this issue."
-    },
-    {
-        "Modified": "2022-12-22T21:43:00",
-        "Published": "2022-12-22T21:15:00",
-        "access": {},
-        "assigner": "security-advisories@github.com",
-        "cvss": null,
-        "cwe": "CWE-400",
-        "id": "CVE-2020-26302",
-        "impact": {},
-        "last-modified": "2022-12-22T21:43:00",
-        "references": [
-            "https://securitylab.github.com/advisories/GHSL-2020-295-redos-is.js",
-            "https://github.com/arasatasaygin/is.js/issues/320"
-        ],
-        "summary": "is.js is a general-purpose check library. Versions 0.9.0 and prior contain one or more regular expressions that are vulnerable to Regular Expression Denial of Service (ReDoS). is.js uses a regex copy-pasted from a gist to validate URLs. Trying to validate a malicious string can cause the regex to loop \u00e2\u20ac\u0153forever.\" This vulnerability was found using a CodeQL query which identifies inefficient regular expressions. is.js has no patch for this issue."
-    },
-    {
-        "Modified": "2022-12-22T21:43:00",
-        "Published": "2022-12-22T21:15:00",
-        "access": {},
-        "assigner": "security@wordfence.com",
-        "cvss": null,
-        "cwe": "CWE-639",
-        "id": "CVE-2022-3794",
-        "impact": {},
-        "last-modified": "2022-12-22T21:43:00",
-        "references": [
-            "https://www.wordfence.com/threat-intel/vulnerabilities/id/84b616fa-ff64-49e8-8c4a-7d7bfdf758be",
-            "https://plugins.trac.wordpress.org/changeset?sfp_email=&sfph_mail=&reponame=&new=2811758%40jeg-elementor-kit%2Ftrunk&old=2810568%40jeg-elementor-kit%2Ftrunk&sfp_email=&sfph_mail=",
-            "https://wordpress.org/plugins/jeg-elementor-kit/#developers"
-        ],
-        "summary": "The Jeg Elementor Kit plugin for WordPress is vulnerable to authorization bypass in various AJAX actions in versions up to, and including, 2.5.6. Authenticated users can use an easily available nonce value to create header templates and make additional changes to the site, as the plugin does not use capability checks for this purpose."
-    },
-    {
-        "Modified": "2022-12-22T21:43:00",
-        "Published": "2022-12-22T21:15:00",
-        "access": {},
-        "assigner": "security@wordfence.com",
-        "cvss": null,
-        "cwe": "CWE-639",
-        "id": "CVE-2022-3794",
-        "impact": {},
-        "last-modified": "2022-12-22T21:43:00",
-        "references": [
-            "https://www.wordfence.com/threat-intel/vulnerabilities/id/84b616fa-ff64-49e8-8c4a-7d7bfdf758be",
-            "https://plugins.trac.wordpress.org/changeset?sfp_email=&sfph_mail=&reponame=&new=2811758%40jeg-elementor-kit%2Ftrunk&old=2810568%40jeg-elementor-kit%2Ftrunk&sfp_email=&sfph_mail=",
-            "https://wordpress.org/plugins/jeg-elementor-kit/#developers"
-        ],
-        "summary": "The Jeg Elementor Kit plugin for WordPress is vulnerable to authorization bypass in various AJAX actions in versions up to, and including, 2.5.6. Authenticated users can use an easily available nonce value to create header templates and make additional changes to the site, as the plugin does not use capability checks for this purpose."
-    },
-    {
-        "Modified": "2022-12-22T21:43:00",
-        "Published": "2022-12-22T21:15:00",
-        "access": {},
-        "assigner": "security@wordfence.com",
-        "cvss": null,
-        "cwe": "CWE-639",
-        "id": "CVE-2022-3805",
-        "impact": {},
-        "last-modified": "2022-12-22T21:43:00",
-        "references": [
-            "https://www.wordfence.com/threat-intel/vulnerabilities/id/c9955d65-afb3-4d28-abd2-9f2fec92d013",
-            "https://plugins.trac.wordpress.org/changeset?sfp_email=&sfph_mail=&reponame=&new=2811758%40jeg-elementor-kit%2Ftrunk&old=2810568%40jeg-elementor-kit%2Ftrunk&sfp_email=&sfph_mail=",
-            "https://wordpress.org/plugins/jeg-elementor-kit/#developers"
-        ],
-        "summary": "The Jeg Elementor Kit plugin for WordPress is vulnerable to authorization bypass in various functions used to update the plugin settings in versions up to, and including, 2.5.6. Unauthenticated users can use an easily available nonce, obtained from pages edited by the plugin, to update the MailChimp API key, global styles, 404 page settings, and enabled elements."
-    },
-    {
-        "Modified": "2022-12-22T21:43:00",
-        "Published": "2022-12-22T21:15:00",
-        "access": {},
-        "assigner": "security@wordfence.com",
-        "cvss": null,
-        "cwe": "CWE-639",
-        "id": "CVE-2022-3805",
-        "impact": {},
-        "last-modified": "2022-12-22T21:43:00",
-        "references": [
-            "https://www.wordfence.com/threat-intel/vulnerabilities/id/c9955d65-afb3-4d28-abd2-9f2fec92d013",
-            "https://plugins.trac.wordpress.org/changeset?sfp_email=&sfph_mail=&reponame=&new=2811758%40jeg-elementor-kit%2Ftrunk&old=2810568%40jeg-elementor-kit%2Ftrunk&sfp_email=&sfph_mail=",
-            "https://wordpress.org/plugins/jeg-elementor-kit/#developers"
-        ],
-        "summary": "The Jeg Elementor Kit plugin for WordPress is vulnerable to authorization bypass in various functions used to update the plugin settings in versions up to, and including, 2.5.6. Unauthenticated users can use an easily available nonce, obtained from pages edited by the plugin, to update the MailChimp API key, global styles, 404 page settings, and enabled elements."
-    },
-    {
-        "Modified": "2022-12-22T21:43:00",
-        "Published": "2022-12-22T21:15:00",
-        "access": {},
-        "assigner": "psirt@us.ibm.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-43857",
-        "impact": {},
-        "last-modified": "2022-12-22T21:43:00",
-        "references": [
-            "https://www.ibm.com/support/pages/node/6850801",
-            "https://exchange.xforce.ibmcloud.com/vulnerabilities/239301"
-        ],
-        "summary": "IBM Navigator for i 7.3, 7.4 and 7.5 could allow an authenticated user to access IBM Navigator for i log files they are authorized to but not while using this interface. The remote authenticated user can bypass the interface checks and download log files by modifying servlet filter. IBM X-Force ID: 239301."
-    },
-    {
-        "Modified": "2022-12-22T21:43:00",
-        "Published": "2022-12-22T21:15:00",
-        "access": {},
-        "assigner": "psirt@us.ibm.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-43857",
-        "impact": {},
-        "last-modified": "2022-12-22T21:43:00",
-        "references": [
-            "https://www.ibm.com/support/pages/node/6850801",
-            "https://exchange.xforce.ibmcloud.com/vulnerabilities/239301"
-        ],
-        "summary": "IBM Navigator for i 7.3, 7.4 and 7.5 could allow an authenticated user to access IBM Navigator for i log files they are authorized to but not while using this interface. The remote authenticated user can bypass the interface checks and download log files by modifying servlet filter. IBM X-Force ID: 239301."
-    },
-    {
-        "Modified": "2022-12-22T21:43:00",
-        "Published": "2022-12-22T21:15:00",
-        "access": {},
-        "assigner": "psirt@us.ibm.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-43858",
-        "impact": {},
-        "last-modified": "2022-12-22T21:43:00",
-        "references": [
-            "https://www.ibm.com/support/pages/node/6850801",
-            "https://exchange.xforce.ibmcloud.com/vulnerabilities/239303"
-        ],
-        "summary": "IBM Navigator for i 7.3, 7.4, and 7.5 could allow an authenticated user to access the file system and download files they are authorized to but not while using this interface. The remote authenticated user can bypass the interface checks by modifying a parameter thereby gaining access to their files through this interface. IBM X-Force ID: 239303."
-    },
-    {
-        "Modified": "2022-12-22T21:43:00",
-        "Published": "2022-12-22T21:15:00",
-        "access": {},
-        "assigner": "psirt@us.ibm.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-43859",
-        "impact": {},
-        "last-modified": "2022-12-22T21:43:00",
-        "references": [
-            "https://www.ibm.com/support/pages/node/6850801",
-            "https://exchange.xforce.ibmcloud.com/vulnerabilities/239304"
-        ],
-        "summary": "IBM Navigator for i 7.3, 7.4, and 7.5 could allow an authenticated user to obtain sensitive information for an object they are authorized to but not while using this interface. By performing a UNION based SQL injection an attacker could see file permissions through this interface. IBM X-Force ID: 239304."
-    },
-    {
-        "Modified": "2022-12-22T21:43:00",
-        "Published": "2022-12-22T20:15:00",
-        "access": {},
-        "assigner": "security@mozilla.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-26386",
-        "impact": {},
-        "last-modified": "2022-12-22T21:43:00",
-        "references": [
-            "https://bugzilla.mozilla.org/show_bug.cgi?id=1752396",
-            "https://www.mozilla.org/security/advisories/mfsa2022-12/",
-            "https://www.mozilla.org/security/advisories/mfsa2022-11/"
-        ],
-        "summary": "Previously Firefox for macOS and Linux would download temporary files to a user-specific directory in <code>/tmp</code>, but this behavior was changed to download them to <code>/tmp</code> where they could be affected by other local users. This behavior was reverted to the original, user-specific directory. <br>*This bug only affects Firefox for macOS and Linux. Other operating systems are unaffected.*. This vulnerability affects Firefox ESR < 91.7 and Thunderbird < 91.7."
-    },
-    {
-        "Modified": "2022-12-22T21:43:00",
-        "Published": "2022-12-22T20:15:00",
-        "access": {},
-        "assigner": "security@mozilla.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-28284",
-        "impact": {},
-        "last-modified": "2022-12-22T21:43:00",
-        "references": [
-            "https://www.mozilla.org/security/advisories/mfsa2022-13/",
-            "https://bugzilla.mozilla.org/show_bug.cgi?id=1754522"
-        ],
-        "summary": "SVG's <code>&lt;use&gt;</code> element could have been used to load unexpected content that could have executed script in certain circumstances. While the specification seems to allow this, other browsers do not, and web developers relied on this property for script security so gecko's implementation was aligned with theirs. This vulnerability affects Firefox < 99."
-    },
-    {
-        "Modified": "2022-12-22T21:43:00",
-        "Published": "2022-12-22T20:15:00",
-        "access": {},
-        "assigner": "security@mozilla.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-28287",
-        "impact": {},
-        "last-modified": "2022-12-22T21:43:00",
-        "references": [
-            "https://www.mozilla.org/security/advisories/mfsa2022-13/",
-            "https://bugzilla.mozilla.org/show_bug.cgi?id=1741515"
-        ],
-        "summary": "In unusual circumstances, selecting text could cause text selection caching to behave incorrectly, leading to a crash. This vulnerability affects Firefox < 99."
-    },
-    {
-        "Modified": "2022-12-22T21:43:00",
-        "Published": "2022-12-22T20:15:00",
-        "access": {},
-        "assigner": "security@mozilla.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-29910",
-        "impact": {},
-        "last-modified": "2022-12-22T21:43:00",
-        "references": [
-            "https://bugzilla.mozilla.org/show_bug.cgi?id=1757138",
-            "https://www.mozilla.org/security/advisories/mfsa2022-16/"
-        ],
-        "summary": "When closed or sent to the background, Firefox for Android would not properly record and persist HSTS settings.<br>*Note: This issue only affected Firefox for Android. Other operating systems are unaffected.*. This vulnerability affects Firefox < 100."
-    },
-    {
-        "Modified": "2022-12-22T21:43:00",
-        "Published": "2022-12-22T20:15:00",
-        "access": {},
-        "assigner": "security@mozilla.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-29913",
-        "impact": {},
-        "last-modified": "2022-12-22T21:43:00",
-        "references": [
-            "https://bugzilla.mozilla.org/show_bug.cgi?id=1764778",
-            "https://www.mozilla.org/security/advisories/mfsa2022-18/"
-        ],
-        "summary": "The parent process would not properly check whether the Speech Synthesis feature is enabled, when receiving instructions from a child process. This vulnerability affects Thunderbird < 91.9."
-    },
-    {
-        "Modified": "2022-12-22T21:43:00",
-        "Published": "2022-12-22T20:15:00",
-        "access": {},
-        "assigner": "security@mozilla.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-2226",
-        "impact": {},
-        "last-modified": "2022-12-22T21:43:00",
-        "references": [
-            "https://www.mozilla.org/security/advisories/mfsa2022-26/",
-            "https://bugzilla.mozilla.org/show_bug.cgi?id=1775441"
-        ],
-        "summary": "An OpenPGP digital signature includes information about the date when the signature was created. When displaying an email that contains a digital signature, the email's date will be shown. If the dates were different, then Thunderbird didn't report the email as having an invalid signature. If an attacker performed a replay attack, in which an old email with old contents are resent at a later time, it could lead the victim to believe that the statements in the email are current. Fixed versions of Thunderbird will require that the signature's date roughly matches the displayed date of the email. This vulnerability affects Thunderbird < 102 and Thunderbird < 91.11."
-    },
-    {
-        "Modified": "2022-12-22T21:43:00",
-        "Published": "2022-12-22T20:15:00",
-        "access": {},
-        "assigner": "security@mozilla.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-31739",
-        "impact": {},
-        "last-modified": "2022-12-22T21:43:00",
-        "references": [
-            "https://www.mozilla.org/security/advisories/mfsa2022-20/",
-            "https://bugzilla.mozilla.org/show_bug.cgi?id=1765049",
-            "https://www.mozilla.org/security/advisories/mfsa2022-22/",
-            "https://www.mozilla.org/security/advisories/mfsa2022-21/"
-        ],
-        "summary": "When downloading files on Windows, the % character was not escaped, which could have lead to a download incorrectly being saved to attacker-influenced paths that used variables such as %HOMEPATH% or %APPDATA%.<br>*This bug only affects Firefox for Windows. Other operating systems are unaffected.*. This vulnerability affects Thunderbird < 91.10, Firefox < 101, and Firefox ESR < 91.10."
-    },
-    {
-        "Modified": "2022-12-22T21:43:00",
-        "Published": "2022-12-22T20:15:00",
-        "access": {},
-        "assigner": "security@mozilla.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-31741",
-        "impact": {},
-        "last-modified": "2022-12-22T21:43:00",
-        "references": [
-            "https://www.mozilla.org/security/advisories/mfsa2022-20/",
-            "https://www.mozilla.org/security/advisories/mfsa2022-22/",
-            "https://www.mozilla.org/security/advisories/mfsa2022-21/",
-            "https://bugzilla.mozilla.org/show_bug.cgi?id=1767590"
-        ],
-        "summary": "A crafted CMS message could have been processed incorrectly, leading to an invalid memory read, and potentially further memory corruption. This vulnerability affects Thunderbird < 91.10, Firefox < 101, and Firefox ESR < 91.10."
-    },
-    {
-        "Modified": "2022-12-22T21:43:00",
-        "Published": "2022-12-22T20:15:00",
-        "access": {},
-        "assigner": "security@mozilla.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-34472",
-        "impact": {},
-        "last-modified": "2022-12-22T21:43:00",
-        "references": [
-            "https://www.mozilla.org/security/advisories/mfsa2022-24/",
-            "https://bugzilla.mozilla.org/show_bug.cgi?id=1770123",
-            "https://www.mozilla.org/security/advisories/mfsa2022-26/",
-            "https://www.mozilla.org/security/advisories/mfsa2022-25/"
-        ],
-        "summary": "If there was a PAC URL set and the server that hosts the PAC was not reachable, OCSP requests would have been blocked, resulting in incorrect error pages being shown. This vulnerability affects Firefox < 102, Firefox ESR < 91.11, Thunderbird < 102, and Thunderbird < 91.11."
-    },
-    {
-        "Modified": "2022-12-22T21:43:00",
-        "Published": "2022-12-22T20:15:00",
-        "access": {},
-        "assigner": "security@mozilla.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-34476",
-        "impact": {},
-        "last-modified": "2022-12-22T21:43:00",
-        "references": [
-            "https://www.mozilla.org/security/advisories/mfsa2022-24/",
-            "https://bugzilla.mozilla.org/show_bug.cgi?id=1387919"
-        ],
-        "summary": "ASN.1 parsing of an indefinite SEQUENCE inside an indefinite GROUP could have resulted in the parser accepting malformed ASN.1. This vulnerability affects Firefox < 102."
-    },
-    {
-        "Modified": "2022-12-22T21:43:00",
-        "Published": "2022-12-22T20:15:00",
-        "access": {},
-        "assigner": "security@mozilla.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-34479",
-        "impact": {},
-        "last-modified": "2022-12-22T21:43:00",
-        "references": [
-            "https://www.mozilla.org/security/advisories/mfsa2022-24/",
-            "https://www.mozilla.org/security/advisories/mfsa2022-26/",
-            "https://www.mozilla.org/security/advisories/mfsa2022-25/",
-            "https://bugzilla.mozilla.org/show_bug.cgi?id=1745595"
-        ],
-        "summary": "A malicious website that could create a popup could have resized the popup to overlay the address bar with its own content, resulting in potential user confusion or spoofing attacks. <br>*This bug only affects Thunderbird for Linux. Other operating systems are unaffected.*. This vulnerability affects Firefox < 102, Firefox ESR < 91.11, Thunderbird < 102, and Thunderbird < 91.11."
-    },
-    {
-        "Modified": "2022-12-22T21:43:00",
-        "Published": "2022-12-22T20:15:00",
-        "access": {},
-        "assigner": "security@mozilla.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-34484",
-        "impact": {},
-        "last-modified": "2022-12-22T21:43:00",
-        "references": [
-            "https://www.mozilla.org/security/advisories/mfsa2022-24/",
-            "https://bugzilla.mozilla.org/buglist.cgi?bug_id=1763634%2C1772651",
-            "https://www.mozilla.org/security/advisories/mfsa2022-26/",
-            "https://www.mozilla.org/security/advisories/mfsa2022-25/"
-        ],
-        "summary": "The Mozilla Fuzzing Team reported potential vulnerabilities present in Thunderbird 91.10. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code. This vulnerability affects Firefox < 102, Firefox ESR < 91.11, Thunderbird < 102, and Thunderbird < 91.11."
-    },
-    {
-        "Modified": "2022-12-22T21:43:00",
-        "Published": "2022-12-22T20:15:00",
-        "access": {},
-        "assigner": "security@mozilla.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-36314",
-        "impact": {},
-        "last-modified": "2022-12-22T21:43:00",
-        "references": [
-            "https://www.mozilla.org/security/advisories/mfsa2022-30/",
-            "https://www.mozilla.org/security/advisories/mfsa2022-32/",
-            "https://www.mozilla.org/security/advisories/mfsa2022-28/",
-            "https://bugzilla.mozilla.org/show_bug.cgi?id=1773894"
-        ],
-        "summary": "When opening a Windows shortcut from the local filesystem, an attacker could supply a remote path that would lead to unexpected network requests from the operating system.<br>This bug only affects Firefox for Windows. Other operating systems are unaffected.*. This vulnerability affects Firefox ESR < 102.1, Firefox < 103, and Thunderbird < 102.1."
     }
 ]
