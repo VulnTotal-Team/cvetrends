@@ -1,5 +1,314 @@
 [
     {
+        "Modified": "2022-12-23T00:15:00",
+        "Published": "2022-12-23T00:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-284",
+        "id": "CVE-2022-23513",
+        "impact": {},
+        "last-modified": "2022-12-23T00:15:00",
+        "references": [
+            "https://github.com/pi-hole/AdminLTE/releases/tag/v5.18",
+            "https://github.com/pi-hole/AdminLTE/security/advisories/GHSA-6qh8-6rrj-7497"
+        ],
+        "summary": "Pi-Hole is a network-wide ad blocking via your own Linux hardware, AdminLTE is a Pi-hole Dashboard for stats and more. In case of an attack, the threat actor will obtain the ability to perform an unauthorized query for blocked domains on `queryads` endpoint. In the case of application, this vulnerability exists because of a lack of validation in code on a root server path: `/admin/scripts/pi-hole/phpqueryads.php.` Potential threat actor(s) are able to perform an unauthorized query search in blocked domain lists. This could lead to the disclosure for any victims' personal blacklists."
+    },
+    {
+        "Modified": "2022-12-23T00:15:00",
+        "Published": "2022-12-23T00:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-327",
+        "id": "CVE-2022-23539",
+        "impact": {},
+        "last-modified": "2022-12-23T00:15:00",
+        "references": [
+            "https://github.com/auth0/node-jsonwebtoken/security/advisories/GHSA-8cf7-32gw-wr33",
+            "https://github.com/auth0/node-jsonwebtoken/commit/e1fa9dcc12054a8681db4e6373da1b30cf7016e3"
+        ],
+        "summary": "Versions `<=8.5.1` of `jsonwebtoken` library could be misconfigured so that legacy, insecure key types are used for signature verification. For example, DSA keys could be used with the RS256 algorithm. You are affected if you are using an algorithm and a key type other than a combination listed in the GitHub Security Advisory as unaffected. This issue has been fixed, please update to version 9.0.0. This version validates for asymmetric key type and algorithm combinations. Please refer to the above mentioned algorithm / key type combinations for the valid secure configuration. After updating to version 9.0.0, if you still intend to continue with signing or verifying tokens using invalid key type/algorithm value combinations, you\u2019ll need to set the `allowInvalidAsymmetricKeyTypes` option to `true` in the `sign()` and/or `verify()` functions."
+    },
+    {
+        "Modified": "2022-12-23T00:15:00",
+        "Published": "2022-12-23T00:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-40897",
+        "impact": {},
+        "last-modified": "2022-12-23T00:15:00",
+        "references": [
+            "https://github.com/pypa/setuptools/blob/fe8a98e696241487ba6ac9f91faa38ade939ec5d/setuptools/package_index.py#L200",
+            "https://pyup.io/posts/pyup-discovers-redos-vulnerabilities-in-top-python-packages/"
+        ],
+        "summary": "An issue discovered in Python Packaging Authority (PyPA) setuptools 65.3.0 and earlier allows remote attackers to cause a denial of service via crafted HTML package or custom PackageIndex page."
+    },
+    {
+        "Modified": "2022-12-23T00:15:00",
+        "Published": "2022-12-23T00:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-40898",
+        "impact": {},
+        "last-modified": "2022-12-23T00:15:00",
+        "references": [
+            "https://pypi.org/project/wheel/",
+            "https://github.com/pypa/wheel/blob/main/src/wheel/wheelfile.py#L18",
+            "https://pyup.io/posts/pyup-discovers-redos-vulnerabilities-in-top-python-packages/"
+        ],
+        "summary": "An issue discovered in Python Packaging Authority (PyPA) Wheel 0.37.1 and earlier allows remote attackers to cause a denial of service via attacker controlled input to wheel cli."
+    },
+    {
+        "Modified": "2022-12-23T00:15:00",
+        "Published": "2022-12-23T00:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-40899",
+        "impact": {},
+        "last-modified": "2022-12-23T00:15:00",
+        "references": [
+            "https://pypi.org/project/future/",
+            "https://github.com/python/cpython/pull/17157",
+            "https://github.com/PythonCharmers/python-future/blob/master/src/future/backports/http/cookiejar.py#L215",
+            "https://pyup.io/posts/pyup-discovers-redos-vulnerabilities-in-top-python-packages/"
+        ],
+        "summary": "An issue discovered in Python Charmers Future 0.18.2 and earlier allows remote attackers to cause a denial of service via crafted Set-Cookie header from malicious web server."
+    },
+    {
+        "Modified": "2022-12-23T00:15:00",
+        "Published": "2022-12-23T00:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-47931",
+        "impact": {},
+        "last-modified": "2022-12-23T00:15:00",
+        "references": [
+            "https://github.com/IoFinnet/tss-lib/commit/369ec50be1437588a9733443bcb2f15b794601d4",
+            "https://github.com/IoFinnet/tss-lib/releases/tag/v2.0.0"
+        ],
+        "summary": "IO FinNet tss-lib before 2.0.0 allows a collision of hash values."
+    },
+    {
+        "Modified": "2022-12-23T00:15:00",
+        "Published": "2022-10-25T17:15:00",
+        "access": {},
+        "assigner": "talos-cna@cisco.com",
+        "cvss": null,
+        "cwe": "CWE-125",
+        "id": "CVE-2022-35262",
+        "impact": {},
+        "last-modified": "2022-12-23T00:15:00",
+        "references": [
+            "https://talosintelligence.com/vulnerability_reports/TALOS-2022-1575"
+        ],
+        "summary": "A denial of service vulnerability exists in the web_server hashFirst functionality of Robustel R1510 3.1.16 and 3.3.0. A specially-crafted network request can lead to denial of service. An attacker can send a sequence of requests to trigger this vulnerability.This denial of service is in the `/action/import_xml_file/` API."
+    },
+    {
+        "Modified": "2022-12-23T00:15:00",
+        "Published": "2022-10-25T17:15:00",
+        "access": {},
+        "assigner": "talos-cna@cisco.com",
+        "cvss": null,
+        "cwe": "CWE-125",
+        "id": "CVE-2022-35263",
+        "impact": {},
+        "last-modified": "2022-12-23T00:15:00",
+        "references": [
+            "https://talosintelligence.com/vulnerability_reports/TALOS-2022-1575"
+        ],
+        "summary": "A denial of service vulnerability exists in the web_server hashFirst functionality of Robustel R1510 3.1.16 and 3.3.0. A specially-crafted network request can lead to denial of service. An attacker can send a sequence of requests to trigger this vulnerability.This denial of service is in the `/action/import_file/` API."
+    },
+    {
+        "Modified": "2022-12-23T00:15:00",
+        "Published": "2022-10-25T17:15:00",
+        "access": {},
+        "assigner": "talos-cna@cisco.com",
+        "cvss": null,
+        "cwe": "CWE-125",
+        "id": "CVE-2022-35264",
+        "impact": {},
+        "last-modified": "2022-12-23T00:15:00",
+        "references": [
+            "https://talosintelligence.com/vulnerability_reports/TALOS-2022-1575"
+        ],
+        "summary": "A denial of service vulnerability exists in the web_server hashFirst functionality of Robustel R1510 3.1.16 and 3.3.0. A specially-crafted network request can lead to denial of service. An attacker can send a sequence of requests to trigger this vulnerability.This denial of service is in the `/action/import_aaa_cert_file/` API."
+    },
+    {
+        "Modified": "2022-12-23T00:15:00",
+        "Published": "2022-10-25T17:15:00",
+        "access": {},
+        "assigner": "talos-cna@cisco.com",
+        "cvss": null,
+        "cwe": "CWE-125",
+        "id": "CVE-2022-35270",
+        "impact": {},
+        "last-modified": "2022-12-23T00:15:00",
+        "references": [
+            "https://talosintelligence.com/vulnerability_reports/TALOS-2022-1575"
+        ],
+        "summary": "A denial of service vulnerability exists in the web_server hashFirst functionality of Robustel R1510 3.1.16 and 3.3.0. A specially-crafted network request can lead to denial of service. An attacker can send a sequence of requests to trigger this vulnerability.This denial of service is in the `/action/import_wireguard_cert_file/` API."
+    },
+    {
+        "Modified": "2022-12-23T00:15:00",
+        "Published": "2022-10-25T17:15:00",
+        "access": {},
+        "assigner": "talos-cna@cisco.com",
+        "cvss": null,
+        "cwe": "CWE-125",
+        "id": "CVE-2022-35261",
+        "impact": {},
+        "last-modified": "2022-12-23T00:15:00",
+        "references": [
+            "https://talosintelligence.com/vulnerability_reports/TALOS-2022-1575"
+        ],
+        "summary": "A denial of service vulnerability exists in the web_server hashFirst functionality of Robustel R1510 3.1.16 and 3.3.0. A specially-crafted network request can lead to denial of service. An attacker can send a sequence of requests to trigger this vulnerability.This denial of service is in the `/action/import_authorized_keys/` API."
+    },
+    {
+        "Modified": "2022-12-23T00:15:00",
+        "Published": "2022-10-25T17:15:00",
+        "access": {},
+        "assigner": "talos-cna@cisco.com",
+        "cvss": null,
+        "cwe": "CWE-125",
+        "id": "CVE-2022-35265",
+        "impact": {},
+        "last-modified": "2022-12-23T00:15:00",
+        "references": [
+            "https://talosintelligence.com/vulnerability_reports/TALOS-2022-1575"
+        ],
+        "summary": "A denial of service vulnerability exists in the web_server hashFirst functionality of Robustel R1510 3.1.16 and 3.3.0. A specially-crafted network request can lead to denial of service. An attacker can send a sequence of requests to trigger this vulnerability.This denial of service is in the `/action/import_nodejs_app/` API."
+    },
+    {
+        "Modified": "2022-12-23T00:15:00",
+        "Published": "2022-10-25T17:15:00",
+        "access": {},
+        "assigner": "talos-cna@cisco.com",
+        "cvss": null,
+        "cwe": "CWE-125",
+        "id": "CVE-2022-35266",
+        "impact": {},
+        "last-modified": "2022-12-23T00:15:00",
+        "references": [
+            "https://talosintelligence.com/vulnerability_reports/TALOS-2022-1575"
+        ],
+        "summary": "A denial of service vulnerability exists in the web_server hashFirst functionality of Robustel R1510 3.1.16 and 3.3.0. A specially-crafted network request can lead to denial of service. An attacker can send a sequence of requests to trigger this vulnerability.This denial of service is in the `/action/import_firmware/` API."
+    },
+    {
+        "Modified": "2022-12-23T00:15:00",
+        "Published": "2022-10-25T17:15:00",
+        "access": {},
+        "assigner": "talos-cna@cisco.com",
+        "cvss": null,
+        "cwe": "CWE-125",
+        "id": "CVE-2022-35267",
+        "impact": {},
+        "last-modified": "2022-12-23T00:15:00",
+        "references": [
+            "https://talosintelligence.com/vulnerability_reports/TALOS-2022-1575"
+        ],
+        "summary": "A denial of service vulnerability exists in the web_server hashFirst functionality of Robustel R1510 3.1.16 and 3.3.0. A specially-crafted network request can lead to denial of service. An attacker can send a sequence of requests to trigger this vulnerability.This denial of service is in the `/action/import_https_cert_file/` API."
+    },
+    {
+        "Modified": "2022-12-23T00:15:00",
+        "Published": "2022-10-25T17:15:00",
+        "access": {},
+        "assigner": "talos-cna@cisco.com",
+        "cvss": null,
+        "cwe": "CWE-125",
+        "id": "CVE-2022-35268",
+        "impact": {},
+        "last-modified": "2022-12-23T00:15:00",
+        "references": [
+            "https://talosintelligence.com/vulnerability_reports/TALOS-2022-1575"
+        ],
+        "summary": "A denial of service vulnerability exists in the web_server hashFirst functionality of Robustel R1510 3.1.16 and 3.3.0. A specially-crafted network request can lead to denial of service. An attacker can send a sequence of requests to trigger this vulnerability.This denial of service is in the `/action/import_sdk_file/` API."
+    },
+    {
+        "Modified": "2022-12-23T00:15:00",
+        "Published": "2022-10-25T17:15:00",
+        "access": {},
+        "assigner": "talos-cna@cisco.com",
+        "cvss": null,
+        "cwe": "CWE-125",
+        "id": "CVE-2022-35269",
+        "impact": {},
+        "last-modified": "2022-12-23T00:15:00",
+        "references": [
+            "https://talosintelligence.com/vulnerability_reports/TALOS-2022-1575"
+        ],
+        "summary": "A denial of service vulnerability exists in the web_server hashFirst functionality of Robustel R1510 3.1.16 and 3.3.0. A specially-crafted network request can lead to denial of service. An attacker can send a sequence of requests to trigger this vulnerability.This denial of service is in the `/action/import_e2c_json_file/` API."
+    },
+    {
+        "Modified": "2022-12-23T00:15:00",
+        "Published": "2022-10-25T17:15:00",
+        "access": {},
+        "assigner": "talos-cna@cisco.com",
+        "cvss": null,
+        "cwe": "CWE-125",
+        "id": "CVE-2022-35271",
+        "impact": {},
+        "last-modified": "2022-12-23T00:15:00",
+        "references": [
+            "https://talosintelligence.com/vulnerability_reports/TALOS-2022-1575"
+        ],
+        "summary": "A denial of service vulnerability exists in the web_server hashFirst functionality of Robustel R1510 3.1.16 and 3.3.0. A specially-crafted network request can lead to denial of service. An attacker can send a sequence of requests to trigger this vulnerability.This denial of service is in the `/action/import_cert_file/` API."
+    },
+    {
+        "Modified": "2022-12-22T23:15:00",
+        "Published": "2022-12-22T23:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-46491",
+        "impact": {},
+        "last-modified": "2022-12-22T23:15:00",
+        "references": [
+            "https://github.com/Fanli2012/nbnbk/issues/2"
+        ],
+        "summary": "A Cross-Site Request Forgery (CSRF) vulnerability in the Add Administrator function of the default version of nbnbk allows attackers to arbitrarily add Administrator accounts."
+    },
+    {
+        "Modified": "2022-12-22T23:15:00",
+        "Published": "2022-12-22T23:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-46493",
+        "impact": {},
+        "last-modified": "2022-12-22T23:15:00",
+        "references": [
+            "https://github.com/Fanli2012/nbnbk/issues/1"
+        ],
+        "summary": "Default version of nbnbk was discovered to contain an arbitrary file upload vulnerability via the component /api/User/download_img."
+    },
+    {
+        "Modified": "2022-12-22T23:15:00",
+        "Published": "2022-12-22T23:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-47928",
+        "impact": {},
+        "last-modified": "2022-12-22T23:15:00",
+        "references": [
+            "https://github.com/MISP/MISP/commit/684d3e51398d4ea032b06fa4a1cd2bdf7d8b0ede"
+        ],
+        "summary": "In MISP before 2.4.167, there is XSS in the template file uploads in app/View/Templates/upload_file.ctp."
+    },
+    {
         "Modified": "2022-12-22T22:15:00",
         "Published": "2022-12-22T22:15:00",
         "access": {},
@@ -1312,345 +1621,5 @@
             "https://www.mozilla.org/security/advisories/mfsa2022-47/"
         ],
         "summary": "Mozilla developers Andrew McCreight and Gabriele Svelto reported memory safety bugs present in Thunderbird 102.4. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code. This vulnerability affects Firefox ESR < 102.5, Thunderbird < 102.5, and Firefox < 107."
-    },
-    {
-        "Modified": "2022-12-22T21:43:00",
-        "Published": "2022-12-22T20:15:00",
-        "access": {},
-        "assigner": "security@mozilla.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-22757",
-        "impact": {},
-        "last-modified": "2022-12-22T21:43:00",
-        "references": [
-            "https://bugzilla.mozilla.org/show_bug.cgi?id=1720098",
-            "https://www.mozilla.org/security/advisories/mfsa2022-04/"
-        ],
-        "summary": "Remote Agent, used in WebDriver, did not validate the Host or Origin headers. This could have allowed websites to connect back locally to the user's browser to control it. <br>*This bug only affected Firefox when WebDriver was enabled, which is not the default configuration.*. This vulnerability affects Firefox < 97."
-    },
-    {
-        "Modified": "2022-12-22T21:43:00",
-        "Published": "2022-12-22T20:15:00",
-        "access": {},
-        "assigner": "security@mozilla.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-46871",
-        "impact": {},
-        "last-modified": "2022-12-22T21:43:00",
-        "references": [
-            "https://www.mozilla.org/security/advisories/mfsa2022-51/",
-            "https://bugzilla.mozilla.org/show_bug.cgi?id=1795697"
-        ],
-        "summary": "An out of date library (libusrsctp) contained vulnerabilities that could potentially be exploited. This vulnerability affects Firefox < 108."
-    },
-    {
-        "Modified": "2022-12-22T21:43:00",
-        "Published": "2022-12-22T20:15:00",
-        "access": {},
-        "assigner": "security@mozilla.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-22758",
-        "impact": {},
-        "last-modified": "2022-12-22T21:43:00",
-        "references": [
-            "https://bugzilla.mozilla.org/show_bug.cgi?id=1728742",
-            "https://www.mozilla.org/security/advisories/mfsa2022-04/"
-        ],
-        "summary": "When clicking on a tel: link, USSD codes, specified after a <code>\\*</code> character, would be included in the phone number. On certain phones, or on certain carriers, if the number was dialed this could perform actions on a user's account, similar to a cross-site request forgery attack.<br>*This bug only affects Firefox for Android. Other operating systems are unaffected.*. This vulnerability affects Firefox < 97."
-    },
-    {
-        "Modified": "2022-12-22T21:43:00",
-        "Published": "2022-12-22T20:15:00",
-        "access": {},
-        "assigner": "security@mozilla.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-46872",
-        "impact": {},
-        "last-modified": "2022-12-22T21:43:00",
-        "references": [
-            "https://www.mozilla.org/security/advisories/mfsa2022-53/",
-            "https://www.mozilla.org/security/advisories/mfsa2022-52/",
-            "https://www.mozilla.org/security/advisories/mfsa2022-51/",
-            "https://bugzilla.mozilla.org/show_bug.cgi?id=1799156"
-        ],
-        "summary": "An attacker who compromised a content process could have partially escaped the sandbox to read arbitrary files via clipboard-related IPC messages.<br>*This bug only affects Thunderbird for Linux. Other operating systems are unaffected.*. This vulnerability affects Firefox < 108, Firefox ESR < 102.6, and Thunderbird < 102.6."
-    },
-    {
-        "Modified": "2022-12-22T21:43:00",
-        "Published": "2022-12-22T20:15:00",
-        "access": {},
-        "assigner": "security@mozilla.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-22760",
-        "impact": {},
-        "last-modified": "2022-12-22T21:43:00",
-        "references": [
-            "https://bugzilla.mozilla.org/show_bug.cgi?id=1748503",
-            "https://www.mozilla.org/security/advisories/mfsa2022-06/",
-            "https://www.mozilla.org/security/advisories/mfsa2022-05/",
-            "https://www.mozilla.org/security/advisories/mfsa2022-04/",
-            "https://bugzilla.mozilla.org/show_bug.cgi?id=1740985"
-        ],
-        "summary": "When importing resources using Web Workers, error messages would distinguish the difference between <code>application/javascript</code> responses and non-script responses. This could have been abused to learn information cross-origin. This vulnerability affects Firefox < 97, Thunderbird < 91.6, and Firefox ESR < 91.6."
-    },
-    {
-        "Modified": "2022-12-22T21:43:00",
-        "Published": "2022-12-22T20:15:00",
-        "access": {},
-        "assigner": "security@mozilla.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-22762",
-        "impact": {},
-        "last-modified": "2022-12-22T21:43:00",
-        "references": [
-            "https://bugzilla.mozilla.org/show_bug.cgi?id=1743931",
-            "https://www.mozilla.org/security/advisories/mfsa2022-04/"
-        ],
-        "summary": "Under certain circumstances, a JavaScript alert (or prompt) could have been shown while another website was displayed underneath it. This could have been abused to trick the user. <br>*This bug only affects Firefox for Android. Other operating systems are unaffected.*. This vulnerability affects Firefox < 97."
-    },
-    {
-        "Modified": "2022-12-22T21:43:00",
-        "Published": "2022-12-22T20:15:00",
-        "access": {},
-        "assigner": "security@mozilla.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-46873",
-        "impact": {},
-        "last-modified": "2022-12-22T21:43:00",
-        "references": [
-            "https://bugzilla.mozilla.org/show_bug.cgi?id=1644790",
-            "https://www.mozilla.org/security/advisories/mfsa2022-51/"
-        ],
-        "summary": "Because Firefox did not implement the <code>unsafe-hashes</code> CSP directive, an attacker who was able to inject markup into a page otherwise protected by a Content Security Policy may have been able to inject executable script. This would be severely constrained by the specified Content Security Policy of the document. This vulnerability affects Firefox < 108."
-    },
-    {
-        "Modified": "2022-12-22T21:43:00",
-        "Published": "2022-12-22T20:15:00",
-        "access": {},
-        "assigner": "security@mozilla.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-22764",
-        "impact": {},
-        "last-modified": "2022-12-22T21:43:00",
-        "references": [
-            "https://www.mozilla.org/security/advisories/mfsa2022-06/",
-            "https://bugzilla.mozilla.org/buglist.cgi?bug_id=1742682%2C1744165%2C1746545%2C1748210%2C1748279",
-            "https://www.mozilla.org/security/advisories/mfsa2022-05/",
-            "https://www.mozilla.org/security/advisories/mfsa2022-04/"
-        ],
-        "summary": "Mozilla developers Paul Adenot and the Mozilla Fuzzing Team reported memory safety bugs present in Firefox 96 and Firefox ESR 91.5. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code. This vulnerability affects Firefox < 97, Thunderbird < 91.6, and Firefox ESR < 91.6."
-    },
-    {
-        "Modified": "2022-12-22T21:43:00",
-        "Published": "2022-12-22T20:15:00",
-        "access": {},
-        "assigner": "security@mozilla.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-26382",
-        "impact": {},
-        "last-modified": "2022-12-22T21:43:00",
-        "references": [
-            "https://www.mozilla.org/security/advisories/mfsa2022-10/",
-            "https://bugzilla.mozilla.org/show_bug.cgi?id=1741888"
-        ],
-        "summary": "While the text displayed in Autofill tooltips cannot be directly read by JavaScript, the text was rendered using page fonts. Side-channel attacks on the text by using specially crafted fonts could have lead to this text being inferred by the webpage. This vulnerability affects Firefox < 98."
-    },
-    {
-        "Modified": "2022-12-22T21:43:00",
-        "Published": "2022-12-22T20:15:00",
-        "access": {},
-        "assigner": "security@mozilla.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-46874",
-        "impact": {},
-        "last-modified": "2022-12-22T21:43:00",
-        "references": [
-            "https://www.mozilla.org/security/advisories/mfsa2022-53/",
-            "https://bugzilla.mozilla.org/show_bug.cgi?id=1746139",
-            "https://www.mozilla.org/security/advisories/mfsa2022-52/",
-            "https://www.mozilla.org/security/advisories/mfsa2022-51/",
-            "https://www.mozilla.org/security/advisories/mfsa2022-54/"
-        ],
-        "summary": "A file with a long filename could have had its filename truncated to remove the valid extension, leaving a malicious extension in its place. This could potentially led to user confusion and the execution of malicious code.<br/>*Note*: This issue was originally included in the advisories for Thunderbird 102.6, but a patch (specific to Thunderbird) was omitted, resulting in it actually being fixed in Thunderbird 102.6.1. This vulnerability affects Firefox < 108, Thunderbird < 102.6.1, Thunderbird < 102.6, and Firefox ESR < 102.6."
-    },
-    {
-        "Modified": "2022-12-22T21:43:00",
-        "Published": "2022-12-22T20:15:00",
-        "access": {},
-        "assigner": "security@mozilla.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-26384",
-        "impact": {},
-        "last-modified": "2022-12-22T21:43:00",
-        "references": [
-            "https://www.mozilla.org/security/advisories/mfsa2022-12/",
-            "https://www.mozilla.org/security/advisories/mfsa2022-11/",
-            "https://www.mozilla.org/security/advisories/mfsa2022-10/",
-            "https://bugzilla.mozilla.org/show_bug.cgi?id=1744352"
-        ],
-        "summary": "If an attacker could control the contents of an iframe sandboxed with <code>allow-popups</code> but not <code>allow-scripts</code>, they were able to craft a link that, when clicked, would lead to JavaScript execution in violation of the sandbox. This vulnerability affects Firefox < 98, Firefox ESR < 91.7, and Thunderbird < 91.7."
-    },
-    {
-        "Modified": "2022-12-22T21:43:00",
-        "Published": "2022-12-22T20:15:00",
-        "access": {},
-        "assigner": "security@mozilla.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-26385",
-        "impact": {},
-        "last-modified": "2022-12-22T21:43:00",
-        "references": [
-            "https://bugzilla.mozilla.org/show_bug.cgi?id=1747526",
-            "https://www.mozilla.org/security/advisories/mfsa2022-10/"
-        ],
-        "summary": "In unusual circumstances, an individual thread may outlive the thread's manager during shutdown. This could have led to a use-after-free causing a potentially exploitable crash. This vulnerability affects Firefox < 98."
-    },
-    {
-        "Modified": "2022-12-22T21:43:00",
-        "Published": "2022-12-22T20:15:00",
-        "access": {},
-        "assigner": "security@mozilla.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-46875",
-        "impact": {},
-        "last-modified": "2022-12-22T21:43:00",
-        "references": [
-            "https://www.mozilla.org/security/advisories/mfsa2022-53/",
-            "https://www.mozilla.org/security/advisories/mfsa2022-52/",
-            "https://www.mozilla.org/security/advisories/mfsa2022-51/",
-            "https://bugzilla.mozilla.org/show_bug.cgi?id=1786188"
-        ],
-        "summary": "The executable file warning was not presented when downloading .atloc and .ftploc files, which can run commands on a user's computer. <br>*Note: This issue only affected Mac OS operating systems. Other operating systems are unaffected.*. This vulnerability affects Firefox < 108, Firefox ESR < 102.6, and Thunderbird < 102.6."
-    },
-    {
-        "Modified": "2022-12-22T21:43:00",
-        "Published": "2022-12-22T20:15:00",
-        "access": {},
-        "assigner": "security@mozilla.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-26485",
-        "impact": {},
-        "last-modified": "2022-12-22T21:43:00",
-        "references": [
-            "https://bugzilla.mozilla.org/show_bug.cgi?id=1758062",
-            "https://www.mozilla.org/security/advisories/mfsa2022-09/"
-        ],
-        "summary": "Removing an XSLT parameter during processing could have lead to an exploitable use-after-free. We have had reports of attacks in the wild abusing this flaw. This vulnerability affects Firefox < 97.0.2, Firefox ESR < 91.6.1, Firefox for Android < 97.3.0, Thunderbird < 91.6.2, and Focus < 97.3.0."
-    },
-    {
-        "Modified": "2022-12-22T21:43:00",
-        "Published": "2022-12-22T20:15:00",
-        "access": {},
-        "assigner": "security@mozilla.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-46877",
-        "impact": {},
-        "last-modified": "2022-12-22T21:43:00",
-        "references": [
-            "https://bugzilla.mozilla.org/show_bug.cgi?id=1795139",
-            "https://www.mozilla.org/security/advisories/mfsa2022-51/"
-        ],
-        "summary": "By confusing the browser, the fullscreen notification could have been delayed or suppressed, resulting in potential user confusion or spoofing attacks. This vulnerability affects Firefox < 108."
-    },
-    {
-        "Modified": "2022-12-22T21:43:00",
-        "Published": "2022-12-22T20:15:00",
-        "access": {},
-        "assigner": "security@mozilla.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-28281",
-        "impact": {},
-        "last-modified": "2022-12-22T21:43:00",
-        "references": [
-            "https://www.mozilla.org/security/advisories/mfsa2022-13/",
-            "https://bugzilla.mozilla.org/show_bug.cgi?id=1755621",
-            "https://www.mozilla.org/security/advisories/mfsa2022-15/",
-            "https://www.mozilla.org/security/advisories/mfsa2022-14/"
-        ],
-        "summary": "If a compromised content process sent an unexpected number of WebAuthN Extensions in a Register command to the parent process, an out of bounds write would have occurred leading to memory corruption and a potentially exploitable crash. This vulnerability affects Thunderbird < 91.8, Firefox < 99, and Firefox ESR < 91.8."
-    },
-    {
-        "Modified": "2022-12-22T21:43:00",
-        "Published": "2022-12-22T20:15:00",
-        "access": {},
-        "assigner": "security@mozilla.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-28283",
-        "impact": {},
-        "last-modified": "2022-12-22T21:43:00",
-        "references": [
-            "https://bugzilla.mozilla.org/show_bug.cgi?id=1754066",
-            "https://www.mozilla.org/security/advisories/mfsa2022-13/"
-        ],
-        "summary": "The sourceMapURL feature in devtools was missing security checks that would have allowed a webpage to attempt to include local files or other files that should have been inaccessible. This vulnerability affects Firefox < 99."
-    },
-    {
-        "Modified": "2022-12-22T21:43:00",
-        "Published": "2022-12-22T20:15:00",
-        "access": {},
-        "assigner": "security@mozilla.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-46878",
-        "impact": {},
-        "last-modified": "2022-12-22T21:43:00",
-        "references": [
-            "https://www.mozilla.org/security/advisories/mfsa2022-53/",
-            "https://www.mozilla.org/security/advisories/mfsa2022-52/",
-            "https://www.mozilla.org/security/advisories/mfsa2022-51/",
-            "https://bugzilla.mozilla.org/buglist.cgi?bug_id=1782219%2C1797370%2C1797685%2C1801102%2C1801315%2C1802395"
-        ],
-        "summary": "Mozilla developers Randell Jesup, Valentin Gosu, Olli Pettay, and the Mozilla Fuzzing Team reported memory safety bugs present in Thunderbird 102.5. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code. This vulnerability affects Firefox < 108, Firefox ESR < 102.6, and Thunderbird < 102.6."
-    },
-    {
-        "Modified": "2022-12-22T21:43:00",
-        "Published": "2022-12-22T20:15:00",
-        "access": {},
-        "assigner": "security@mozilla.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-28286",
-        "impact": {},
-        "last-modified": "2022-12-22T21:43:00",
-        "references": [
-            "https://www.mozilla.org/security/advisories/mfsa2022-13/",
-            "https://bugzilla.mozilla.org/show_bug.cgi?id=1735265",
-            "https://www.mozilla.org/security/advisories/mfsa2022-15/",
-            "https://www.mozilla.org/security/advisories/mfsa2022-14/"
-        ],
-        "summary": "Due to a layout change, iframe contents could have been rendered outside of its border. This could have led to user confusion or spoofing attacks. This vulnerability affects Thunderbird < 91.8, Firefox < 99, and Firefox ESR < 91.8."
-    },
-    {
-        "Modified": "2022-12-22T21:43:00",
-        "Published": "2022-12-22T20:15:00",
-        "access": {},
-        "assigner": "security@mozilla.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-46879",
-        "impact": {},
-        "last-modified": "2022-12-22T21:43:00",
-        "references": [
-            "https://www.mozilla.org/security/advisories/mfsa2022-51/",
-            "https://bugzilla.mozilla.org/buglist.cgi?bug_id=1736224%2C1793407%2C1794249%2C1795845%2C1797682%2C1797720%2C1798494%2C1799479"
-        ],
-        "summary": "Mozilla developers and community members Lukas Bernhard, Gabriele Svelto, Randell Jesup, and the Mozilla Fuzzing Team reported memory safety bugs present in Firefox 107. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code. This vulnerability affects Firefox < 108."
     }
 ]
