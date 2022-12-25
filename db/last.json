@@ -1,5 +1,26 @@
 [
     {
+        "Modified": "2022-12-25T06:15:00",
+        "Published": "2022-12-25T06:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-42898",
+        "impact": {},
+        "last-modified": "2022-12-25T06:15:00",
+        "references": [
+            "https://github.com/krb5/krb5/commit/ea92d2f0fcceb54a70910fa32e9a0d7a5afc3583",
+            "https://bugzilla.samba.org/show_bug.cgi?id=15203",
+            "https://web.mit.edu/kerberos/advisories/",
+            "https://www.samba.org/samba/security/CVE-2022-42898.html",
+            "https://github.com/heimdal/heimdal/security/advisories/GHSA-64mq-fvfj-5x3c",
+            "https://web.mit.edu/kerberos/krb5-1.20/README-1.20.1.txt",
+            "https://web.mit.edu/kerberos/krb5-1.19/"
+        ],
+        "summary": "PAC parsing in MIT Kerberos 5 (aka krb5) before 1.19.4 and 1.20.x before 1.20.1 has integer overflows that may lead to remote code execution (in KDC, kadmind, or a GSS or Kerberos application server) on 32-bit platforms (which have a resultant heap-based buffer overflow), and cause a denial of service on other platforms. This occurs in krb5_pac_parse in lib/krb5/krb/pac.c. Heimdal before 7.7.1 has \"a similar bug.\""
+    },
+    {
         "Modified": "2022-12-25T05:15:00",
         "Published": "2022-12-25T05:15:00",
         "access": {},
@@ -1586,20 +1607,5 @@
             "https://device.harmonyos.com/en/docs/security/update/security-bulletins-202212-0000001462975397"
         ],
         "summary": "Some smartphones have the input validation vulnerability. Successful exploitation of this vulnerability may affect data confidentiality."
-    },
-    {
-        "Modified": "2022-12-24T04:15:00",
-        "Published": "2022-12-20T21:15:00",
-        "access": {},
-        "assigner": "psirt@huawei.com",
-        "cvss": null,
-        "cwe": "NVD-CWE-noinfo",
-        "id": "CVE-2022-46315",
-        "impact": {},
-        "last-modified": "2022-12-24T04:15:00",
-        "references": [
-            "https://device.harmonyos.com/en/docs/security/update/security-bulletins-202212-0000001462975397"
-        ],
-        "summary": "The ProfileSDK has defects introduced in the design process. Successful exploitation of this vulnerability may affect system availability."
     }
 ]
