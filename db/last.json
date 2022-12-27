@@ -1,5 +1,191 @@
 [
     {
+        "Modified": "2022-12-27T04:15:00",
+        "Published": "2022-12-25T11:15:00",
+        "access": {},
+        "assigner": "cna@vuldb.com",
+        "cvss": null,
+        "cwe": "CWE-89",
+        "id": "CVE-2021-4276",
+        "impact": {},
+        "last-modified": "2022-12-27T04:15:00",
+        "references": [
+            "https://github.com/dns-stats/hedgehog/pull/190",
+            "https://vuldb.com/?id.216746",
+            "https://github.com/dns-stats/hedgehog/commit/58922c345d3d1fe89bb2020111873a3e07ca93ac"
+        ],
+        "summary": "A vulnerability was found in dns-stats hedgehog. It has been rated as problematic. Affected by this issue is the function DSCIOManager::dsc_import_input_from_source of the file src/DSCIOManager.cpp. The manipulation leads to sql injection. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. The real existence of this vulnerability is still doubted at the moment. The name of the patch is 58922c345d3d1fe89bb2020111873a3e07ca93ac. It is recommended to apply a patch to fix this issue. VDB-216746 is the identifier assigned to this vulnerability. NOTE: This vulnerability only affects products that are no longer supported by the maintainer. NOTE: We do assume that the Data Manager server can only be accessed by authorised users. Because of this, we don\u2019t believe this specific attack is possible without such a compromise of the Data Manager server."
+    },
+    {
+        "Modified": "2022-12-27T01:15:00",
+        "Published": "2022-12-27T01:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-46763",
+        "impact": {},
+        "last-modified": "2022-12-27T01:15:00",
+        "references": [
+            "https://github.com/sldlb/public_cve_submissions/blob/main/CVE-2022-46763.txt",
+            "https://solidlab.ru/our-news/145-trueconf.html"
+        ],
+        "summary": "A SQL injection issue in a database stored function in TrueConf Server 5.2.0.10225 allows a low-privileged database user to execute arbitrary SQL commands as the database administrator, resulting in execution of arbitrary code."
+    },
+    {
+        "Modified": "2022-12-27T01:15:00",
+        "Published": "2022-12-27T01:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-46764",
+        "impact": {},
+        "last-modified": "2022-12-27T01:15:00",
+        "references": [
+            "https://github.com/sldlb/public_cve_submissions/blob/main/CVE-2022-46764.txt",
+            "https://solidlab.ru/our-news/145-trueconf.html"
+        ],
+        "summary": "A SQL injection issue in the web API in TrueConf Server 5.2.0.10225 allows remote unauthenticated attackers to execute arbitrary SQL commands, ultimately leading to remote code execution."
+    },
+    {
+        "Modified": "2022-12-27T01:15:00",
+        "Published": "2022-12-23T15:15:00",
+        "access": {},
+        "assigner": "cve-assignments@hackerone.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-43551",
+        "impact": {},
+        "last-modified": "2022-12-27T01:15:00",
+        "references": [
+            "https://hackerone.com/reports/1755083",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/TVWZW5CNSJ7UYAF2BGSYAWAEXDJYUBHA/"
+        ],
+        "summary": "A vulnerability exists in curl <7.87.0 HSTS check that could be bypassed to trick it to keep using HTTP. Using its HSTS support, curl can be instructed to use HTTPS instead of using an insecure clear-text HTTP step even when HTTP is provided in the URL. However, the HSTS mechanism could be bypassed if the host name in the given URL first uses IDN characters that get replaced to ASCII counterparts as part of the IDN conversion. Like using the character UTF-8 U+3002 (IDEOGRAPHIC FULL STOP) instead of the common ASCII full stop (U+002E) `.`. Then in a subsequent request, it does not detect the HSTS state and makes a clear text transfer. Because it would store the info IDN encoded but look for it IDN decoded."
+    },
+    {
+        "Modified": "2022-12-27T01:15:00",
+        "Published": "2022-12-14T21:15:00",
+        "access": {},
+        "assigner": "secalert@redhat.com",
+        "cvss": null,
+        "cwe": "CWE-787",
+        "id": "CVE-2022-46340",
+        "impact": {},
+        "last-modified": "2022-12-27T01:15:00",
+        "references": [
+            "https://access.redhat.com/security/cve/CVE-2022-46340",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2151755",
+            "https://www.debian.org/security/2022/dsa-5304",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/Z67QC4C3I2FI2WRFIUPEHKC36J362MLA/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/RWTH3SNJ3GKYDSN7I3QDGWYEPSMWU6EP/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/5NELB7YDWRABYYBG4UPTHRBDTKJRV5M2/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/DXDF2O5PPLE3SVAJJYUOSAD5QZ4TWQ2G/"
+        ],
+        "summary": "A vulnerability was found in X.Org. This security flaw occurs becuase the swap handler for the XTestFakeInput request of the XTest extension may corrupt the stack if GenericEvents with lengths larger than 32 bytes are sent through a the XTestFakeInput request. This issue can lead to local privileges elevation on systems where the X server is running privileged and remote code execution for ssh X forwarding sessions. This issue does not affect systems where client and server use the same byte order."
+    },
+    {
+        "Modified": "2022-12-27T01:15:00",
+        "Published": "2022-12-14T21:15:00",
+        "access": {},
+        "assigner": "secalert@redhat.com",
+        "cvss": null,
+        "cwe": "CWE-787",
+        "id": "CVE-2022-46341",
+        "impact": {},
+        "last-modified": "2022-12-27T01:15:00",
+        "references": [
+            "https://access.redhat.com/security/cve/CVE-2022-46341",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2151756",
+            "https://www.debian.org/security/2022/dsa-5304",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/Z67QC4C3I2FI2WRFIUPEHKC36J362MLA/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/5NELB7YDWRABYYBG4UPTHRBDTKJRV5M2/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/DXDF2O5PPLE3SVAJJYUOSAD5QZ4TWQ2G/"
+        ],
+        "summary": "A vulnerability was found in X.Org. This security flaw occurs because the handler for the XIPassiveUngrab request accesses out-of-bounds memory when invoked with a high keycode or button code. This issue can lead to local privileges elevation on systems where the X server is running privileged and remote code execution for ssh X forwarding sessions."
+    },
+    {
+        "Modified": "2022-12-27T01:15:00",
+        "Published": "2022-12-14T21:15:00",
+        "access": {},
+        "assigner": "secalert@redhat.com",
+        "cvss": null,
+        "cwe": "CWE-416",
+        "id": "CVE-2022-46342",
+        "impact": {},
+        "last-modified": "2022-12-27T01:15:00",
+        "references": [
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2151757",
+            "https://access.redhat.com/security/cve/CVE-2022-46342",
+            "https://www.debian.org/security/2022/dsa-5304",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/Z67QC4C3I2FI2WRFIUPEHKC36J362MLA/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/5NELB7YDWRABYYBG4UPTHRBDTKJRV5M2/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/DXDF2O5PPLE3SVAJJYUOSAD5QZ4TWQ2G/"
+        ],
+        "summary": "A vulnerability was found in X.Org. This security flaw occurs because the handler for the XvdiSelectVideoNotify request may write to memory after it has been freed. This issue can lead to local privileges elevation on systems where the X se"
+    },
+    {
+        "Modified": "2022-12-27T01:15:00",
+        "Published": "2022-12-14T21:15:00",
+        "access": {},
+        "assigner": "secalert@redhat.com",
+        "cvss": null,
+        "cwe": "CWE-416",
+        "id": "CVE-2022-46343",
+        "impact": {},
+        "last-modified": "2022-12-27T01:15:00",
+        "references": [
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2151758",
+            "https://access.redhat.com/security/cve/CVE-2022-46343",
+            "https://www.debian.org/security/2022/dsa-5304",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/Z67QC4C3I2FI2WRFIUPEHKC36J362MLA/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/5NELB7YDWRABYYBG4UPTHRBDTKJRV5M2/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/DXDF2O5PPLE3SVAJJYUOSAD5QZ4TWQ2G/"
+        ],
+        "summary": "A vulnerability was found in X.Org. This security flaw occurs because the handler for the ScreenSaverSetAttributes request may write to memory after it has been freed. This issue can lead to local privileges elevation on systems where the X server is running privileged and remote code execution for ssh X forwarding sessions."
+    },
+    {
+        "Modified": "2022-12-27T01:15:00",
+        "Published": "2022-12-14T21:15:00",
+        "access": {},
+        "assigner": "secalert@redhat.com",
+        "cvss": null,
+        "cwe": "CWE-125",
+        "id": "CVE-2022-46344",
+        "impact": {},
+        "last-modified": "2022-12-27T01:15:00",
+        "references": [
+            "https://access.redhat.com/security/cve/CVE-2022-46344",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2151760",
+            "https://www.debian.org/security/2022/dsa-5304",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/Z67QC4C3I2FI2WRFIUPEHKC36J362MLA/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/5NELB7YDWRABYYBG4UPTHRBDTKJRV5M2/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/DXDF2O5PPLE3SVAJJYUOSAD5QZ4TWQ2G/"
+        ],
+        "summary": "A vulnerability was found in X.Org. This security flaw occurs because the handler for the XIChangeProperty request has a length-validation issues, resulting in out-of-bounds memory reads and potential information disclosure. This issue can lead to local privileges elevation on systems where the X server is running privileged and remote code execution for ssh X forwarding sessions."
+    },
+    {
+        "Modified": "2022-12-27T01:15:00",
+        "Published": "2022-12-14T21:15:00",
+        "access": {},
+        "assigner": "secalert@redhat.com",
+        "cvss": null,
+        "cwe": "CWE-416",
+        "id": "CVE-2022-4283",
+        "impact": {},
+        "last-modified": "2022-12-27T01:15:00",
+        "references": [
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2151761",
+            "https://access.redhat.com/security/cve/CVE-2022-4283",
+            "https://www.debian.org/security/2022/dsa-5304",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/Z67QC4C3I2FI2WRFIUPEHKC36J362MLA/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/5NELB7YDWRABYYBG4UPTHRBDTKJRV5M2/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/DXDF2O5PPLE3SVAJJYUOSAD5QZ4TWQ2G/"
+        ],
+        "summary": "A vulnerability was found in X.Org. This security flaw occurs because the XkbCopyNames function left a dangling pointer to freed memory, resulting in out-of-bounds memory access on subsequent XkbGetKbdByName requests.. This issue can lead to local privileges elevation on systems where the X server is running privileged and remote code execution for ssh X forwarding sessions."
+    },
+    {
         "Modified": "2022-12-27T00:15:00",
         "Published": "2022-12-26T20:15:00",
         "access": {},
@@ -1549,190 +1735,5 @@
             "https://seclists.org/fulldisclosure/2022/Sep/0"
         ],
         "summary": "OX App Suite through 8.2 allows XSS because BMFreehand10 and image/x-freehand are not blocked."
-    },
-    {
-        "Modified": "2022-12-26T04:15:00",
-        "Published": "2022-12-26T04:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-29853",
-        "impact": {},
-        "last-modified": "2022-12-26T04:15:00",
-        "references": [
-            "https://open-xchange.com",
-            "https://seclists.org/fulldisclosure/2022/Sep/0"
-        ],
-        "summary": "OX App Suite through 8.2 allows XSS via a certain complex hierarchy that forces use of Show Entire Message for a huge HTML e-mail message."
-    },
-    {
-        "Modified": "2022-12-26T04:15:00",
-        "Published": "2022-12-26T04:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-37309",
-        "impact": {},
-        "last-modified": "2022-12-26T04:15:00",
-        "references": [
-            "https://seclists.org/fulldisclosure/2022/Nov/18",
-            "https://open-xchange.com"
-        ],
-        "summary": "OX App Suite through 7.10.6 allows XSS via script code within a contact that has an e-mail address but lacks a name."
-    },
-    {
-        "Modified": "2022-12-26T04:15:00",
-        "Published": "2022-12-26T04:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-37310",
-        "impact": {},
-        "last-modified": "2022-12-26T04:15:00",
-        "references": [
-            "https://seclists.org/fulldisclosure/2022/Nov/18",
-            "https://open-xchange.com"
-        ],
-        "summary": "OX App Suite through 7.10.6 allows XSS via a malicious capability to the metrics or help module, as demonstrated by a /#!!&app=io.ox/files&cap= URI."
-    },
-    {
-        "Modified": "2022-12-26T04:15:00",
-        "Published": "2022-12-23T15:15:00",
-        "access": {},
-        "assigner": "cve-assignments@hackerone.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-43551",
-        "impact": {},
-        "last-modified": "2022-12-26T04:15:00",
-        "references": [
-            "https://hackerone.com/reports/1755083",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/TVWZW5CNSJ7UYAF2BGSYAWAEXDJYUBHA/"
-        ],
-        "summary": "A vulnerability exists in curl <7.87.0 HSTS check that could be bypassed to trick it to keep using HTTP. Using its HSTS support, curl can be instructed to use HTTPS instead of using an insecure clear-text HTTP step even when HTTP is provided in the URL. However, the HSTS mechanism could be bypassed if the host name in the given URL first uses IDN characters that get replaced to ASCII counterparts as part of the IDN conversion. Like using the character UTF-8 U+3002 (IDEOGRAPHIC FULL STOP) instead of the common ASCII full stop (U+002E) `.`. Then in a subsequent request, it does not detect the HSTS state and makes a clear text transfer. Because it would store the info IDN encoded but look for it IDN decoded."
-    },
-    {
-        "Modified": "2022-12-26T04:15:00",
-        "Published": "2022-12-14T21:15:00",
-        "access": {},
-        "assigner": "secalert@redhat.com",
-        "cvss": null,
-        "cwe": "CWE-787",
-        "id": "CVE-2022-46340",
-        "impact": {},
-        "last-modified": "2022-12-26T04:15:00",
-        "references": [
-            "https://access.redhat.com/security/cve/CVE-2022-46340",
-            "https://bugzilla.redhat.com/show_bug.cgi?id=2151755",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/DXDF2O5PPLE3SVAJJYUOSAD5QZ4TWQ2G/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/5NELB7YDWRABYYBG4UPTHRBDTKJRV5M2/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RWTH3SNJ3GKYDSN7I3QDGWYEPSMWU6EP/",
-            "https://www.debian.org/security/2022/dsa-5304",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/Z67QC4C3I2FI2WRFIUPEHKC36J362MLA/"
-        ],
-        "summary": "A vulnerability was found in X.Org. This security flaw occurs becuase the swap handler for the XTestFakeInput request of the XTest extension may corrupt the stack if GenericEvents with lengths larger than 32 bytes are sent through a the XTestFakeInput request. This issue can lead to local privileges elevation on systems where the X server is running privileged and remote code execution for ssh X forwarding sessions. This issue does not affect systems where client and server use the same byte order."
-    },
-    {
-        "Modified": "2022-12-26T04:15:00",
-        "Published": "2022-12-14T21:15:00",
-        "access": {},
-        "assigner": "secalert@redhat.com",
-        "cvss": null,
-        "cwe": "CWE-787",
-        "id": "CVE-2022-46341",
-        "impact": {},
-        "last-modified": "2022-12-26T04:15:00",
-        "references": [
-            "https://access.redhat.com/security/cve/CVE-2022-46341",
-            "https://bugzilla.redhat.com/show_bug.cgi?id=2151756",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/DXDF2O5PPLE3SVAJJYUOSAD5QZ4TWQ2G/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/5NELB7YDWRABYYBG4UPTHRBDTKJRV5M2/",
-            "https://www.debian.org/security/2022/dsa-5304",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/Z67QC4C3I2FI2WRFIUPEHKC36J362MLA/"
-        ],
-        "summary": "A vulnerability was found in X.Org. This security flaw occurs because the handler for the XIPassiveUngrab request accesses out-of-bounds memory when invoked with a high keycode or button code. This issue can lead to local privileges elevation on systems where the X server is running privileged and remote code execution for ssh X forwarding sessions."
-    },
-    {
-        "Modified": "2022-12-26T04:15:00",
-        "Published": "2022-12-14T21:15:00",
-        "access": {},
-        "assigner": "secalert@redhat.com",
-        "cvss": null,
-        "cwe": "CWE-416",
-        "id": "CVE-2022-46342",
-        "impact": {},
-        "last-modified": "2022-12-26T04:15:00",
-        "references": [
-            "https://bugzilla.redhat.com/show_bug.cgi?id=2151757",
-            "https://access.redhat.com/security/cve/CVE-2022-46342",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/DXDF2O5PPLE3SVAJJYUOSAD5QZ4TWQ2G/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/5NELB7YDWRABYYBG4UPTHRBDTKJRV5M2/",
-            "https://www.debian.org/security/2022/dsa-5304",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/Z67QC4C3I2FI2WRFIUPEHKC36J362MLA/"
-        ],
-        "summary": "A vulnerability was found in X.Org. This security flaw occurs because the handler for the XvdiSelectVideoNotify request may write to memory after it has been freed. This issue can lead to local privileges elevation on systems where the X se"
-    },
-    {
-        "Modified": "2022-12-26T04:15:00",
-        "Published": "2022-12-14T21:15:00",
-        "access": {},
-        "assigner": "secalert@redhat.com",
-        "cvss": null,
-        "cwe": "CWE-416",
-        "id": "CVE-2022-46343",
-        "impact": {},
-        "last-modified": "2022-12-26T04:15:00",
-        "references": [
-            "https://bugzilla.redhat.com/show_bug.cgi?id=2151758",
-            "https://access.redhat.com/security/cve/CVE-2022-46343",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/DXDF2O5PPLE3SVAJJYUOSAD5QZ4TWQ2G/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/5NELB7YDWRABYYBG4UPTHRBDTKJRV5M2/",
-            "https://www.debian.org/security/2022/dsa-5304",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/Z67QC4C3I2FI2WRFIUPEHKC36J362MLA/"
-        ],
-        "summary": "A vulnerability was found in X.Org. This security flaw occurs because the handler for the ScreenSaverSetAttributes request may write to memory after it has been freed. This issue can lead to local privileges elevation on systems where the X server is running privileged and remote code execution for ssh X forwarding sessions."
-    },
-    {
-        "Modified": "2022-12-26T04:15:00",
-        "Published": "2022-12-14T21:15:00",
-        "access": {},
-        "assigner": "secalert@redhat.com",
-        "cvss": null,
-        "cwe": "CWE-125",
-        "id": "CVE-2022-46344",
-        "impact": {},
-        "last-modified": "2022-12-26T04:15:00",
-        "references": [
-            "https://access.redhat.com/security/cve/CVE-2022-46344",
-            "https://bugzilla.redhat.com/show_bug.cgi?id=2151760",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/DXDF2O5PPLE3SVAJJYUOSAD5QZ4TWQ2G/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/5NELB7YDWRABYYBG4UPTHRBDTKJRV5M2/",
-            "https://www.debian.org/security/2022/dsa-5304",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/Z67QC4C3I2FI2WRFIUPEHKC36J362MLA/"
-        ],
-        "summary": "A vulnerability was found in X.Org. This security flaw occurs because the handler for the XIChangeProperty request has a length-validation issues, resulting in out-of-bounds memory reads and potential information disclosure. This issue can lead to local privileges elevation on systems where the X server is running privileged and remote code execution for ssh X forwarding sessions."
-    },
-    {
-        "Modified": "2022-12-26T04:15:00",
-        "Published": "2022-12-14T21:15:00",
-        "access": {},
-        "assigner": "secalert@redhat.com",
-        "cvss": null,
-        "cwe": "CWE-416",
-        "id": "CVE-2022-4283",
-        "impact": {},
-        "last-modified": "2022-12-26T04:15:00",
-        "references": [
-            "https://bugzilla.redhat.com/show_bug.cgi?id=2151761",
-            "https://access.redhat.com/security/cve/CVE-2022-4283",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/DXDF2O5PPLE3SVAJJYUOSAD5QZ4TWQ2G/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/5NELB7YDWRABYYBG4UPTHRBDTKJRV5M2/",
-            "https://www.debian.org/security/2022/dsa-5304",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/Z67QC4C3I2FI2WRFIUPEHKC36J362MLA/"
-        ],
-        "summary": "A vulnerability was found in X.Org. This security flaw occurs because the XkbCopyNames function left a dangling pointer to freed memory, resulting in out-of-bounds memory access on subsequent XkbGetKbdByName requests.. This issue can lead to local privileges elevation on systems where the X server is running privileged and remote code execution for ssh X forwarding sessions."
     }
 ]
