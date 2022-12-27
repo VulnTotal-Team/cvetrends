@@ -1,5 +1,233 @@
 [
     {
+        "Modified": "2022-12-27T00:15:00",
+        "Published": "2022-12-26T20:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2020-10650",
+        "impact": {},
+        "last-modified": "2022-12-27T00:15:00",
+        "references": [
+            "https://www.oracle.com/security-alerts/cpuoct2022.html",
+            "https://github.com/FasterXML/jackson-databind/issues/2658",
+            "https://github.com/advisories/GHSA-rpr3-cw39-3pxh",
+            "https://www.oracle.com/security-alerts/cpujan2021.html",
+            "https://github.com/FasterXML/jackson-databind/commit/a424c038ba0c0d65e579e22001dec925902ac0ef",
+            "https://medium.com/%40cowtowncoder/on-jackson-cves-dont-panic-here-is-what-you-need-to-know-54cd0d6e8062"
+        ],
+        "summary": "A deserialization flaw was discovered in jackson-databind through 2.9.10.4. It could allow an unauthenticated user to perform code execution via ignite-jta or quartz-core: org.apache.ignite.cache.jta.jndi.CacheJndiTmLookup, org.apache.ignite.cache.jta.jndi.CacheJndiTmFactory, and org.quartz.utils.JNDIConnectionProvider."
+    },
+    {
+        "Modified": "2022-12-27T00:15:00",
+        "Published": "2022-04-19T16:17:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "cve@mitre.org",
+        "cvss": 5.0,
+        "cvss-time": "2022-12-27T00:15:00",
+        "cvss-vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N",
+        "cwe": "CWE-918",
+        "id": "CVE-2022-29153",
+        "impact": {
+            "availability": "NONE",
+            "confidentiality": "NONE",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-12-27T00:15:00",
+        "references": [
+            "https://discuss.hashicorp.com",
+            "https://discuss.hashicorp.com/t/hcsec-2022-10-consul-s-http-health-check-may-allow-server-side-request-forgery/38393",
+            "https://security.netapp.com/advisory/ntap-20220602-0005/",
+            "https://security.gentoo.org/glsa/202208-09",
+            "https://discuss.hashicorp.com/t/hcsec-2022-10-consul-s-http-health-check-may-allow-server-side-request-forgery/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/RBODKZL7HQE5XXS3SA2VIDVL4LAA5RWH/"
+        ],
+        "summary": "HashiCorp Consul and Consul Enterprise up to 1.9.16, 1.10.9, and 1.11.4 may allow server side request forgery when the Consul client agent follows redirects returned by HTTP health check endpoints. Fixed in 1.9.17, 1.10.10, and 1.11.5."
+    },
+    {
+        "Modified": "2022-12-27T00:15:00",
+        "Published": "2021-07-14T13:15:00",
+        "access": {
+            "authentication": "SINGLE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "cve@mitre.org",
+        "cvss": 4.0,
+        "cvss-time": "2022-12-27T00:15:00",
+        "cvss-vector": "AV:N/AC:L/Au:S/C:P/I:N/A:N",
+        "cwe": "CWE-203",
+        "id": "CVE-2021-24119",
+        "impact": {
+            "availability": "NONE",
+            "confidentiality": "PARTIAL",
+            "integrity": "NONE"
+        },
+        "last-modified": "2022-12-27T00:15:00",
+        "references": [
+            "https://github.com/ARMmbed/mbedtls/releases",
+            "https://github.com/UzL-ITS/util-lookup/blob/main/cve-vulnerability-publication.md",
+            "https://lists.debian.org/debian-lts-announce/2021/11/msg00021.html",
+            "https://lists.debian.org/debian-lts-announce/2022/12/msg00036.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/DRRVY7DMTX3ECFNZKDYTSFEG5AI2HBC6/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/EYJW7HAW3TDV2YMDFYXP3HD6WRQRTLJW/"
+        ],
+        "summary": "In Trusted Firmware Mbed TLS 2.24.0, a side-channel vulnerability in base64 PEM file decoding allows system-level (administrator) attackers to obtain information about secret RSA keys via a controlled-channel and side-channel attack on software running in isolated environments that can be single stepped, especially Intel SGX."
+    },
+    {
+        "Modified": "2022-12-27T00:15:00",
+        "Published": "2019-09-26T13:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "HIGH",
+            "vector": "NETWORK"
+        },
+        "assigner": "cve@mitre.org",
+        "cvss": 2.6,
+        "cvss-time": "2022-12-27T00:15:00",
+        "cvss-vector": "AV:N/AC:H/Au:N/C:P/I:N/A:N",
+        "cwe": "NVD-CWE-noinfo",
+        "id": "CVE-2019-16910",
+        "impact": {
+            "availability": "NONE",
+            "confidentiality": "PARTIAL",
+            "integrity": "NONE"
+        },
+        "last-modified": "2022-12-27T00:15:00",
+        "references": [
+            "https://tls.mbed.org/tech-updates/security-advisories/mbedtls-security-advisory-2019-10",
+            "https://github.com/ARMmbed/mbedtls/commit/33f66ba6fd234114aa37f0209dac031bb2870a9b",
+            "https://github.com/ARMmbed/mbedtls/commit/298a43a77ec0ed2c19a8c924ddd8571ef3e65dfd",
+            "https://lists.debian.org/debian-lts-announce/2022/12/msg00036.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/PEHHH2DOBXB25CAU3Q6E66X723VAYTB5/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/CSFFOROD6IVLADZHNJC2LPDV7FQRP7XB/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/CGSKQSGR5SOBRBXDSSPTCDSBB5K3GMPF/"
+        ],
+        "summary": "Arm Mbed TLS before 2.19.0 and Arm Mbed Crypto before 2.0.0, when deterministic ECDSA is enabled, use an RNG with insufficient entropy for blinding, which might allow an attacker to recover a private key via side-channel attacks if a victim signs the same message many times. (For Mbed TLS, the fix is also available in versions 2.7.12 and 2.16.3.)"
+    },
+    {
+        "Modified": "2022-12-27T00:15:00",
+        "Published": "2020-01-23T17:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "MEDIUM",
+            "vector": "LOCAL"
+        },
+        "assigner": "cve@mitre.org",
+        "cvss": 1.9,
+        "cvss-time": "2022-12-27T00:15:00",
+        "cvss-vector": "AV:L/AC:M/Au:N/C:P/I:N/A:N",
+        "cwe": "CWE-203",
+        "id": "CVE-2019-18222",
+        "impact": {
+            "availability": "NONE",
+            "confidentiality": "PARTIAL",
+            "integrity": "NONE"
+        },
+        "last-modified": "2022-12-27T00:15:00",
+        "references": [
+            "https://tls.mbed.org/tech-updates/security-advisories/mbedtls-security-advisory-2019-12",
+            "https://tls.mbed.org/tech-updates/security-advisories",
+            "https://lists.debian.org/debian-lts-announce/2022/12/msg00036.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/A3GWQNONS7GRORXZJ7MOJFUEJ2ZJ4OUW/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/NGDACU65MYZXXVPQP2EBHUJGOR4RWLVY/"
+        ],
+        "summary": "The ECDSA signature implementation in ecdsa.c in Arm Mbed Crypto 2.1 and Mbed TLS through 2.19.1 does not reduce the blinded scalar before computing the inverse, which allows a local attacker to recover the private key via side-channel attacks."
+    },
+    {
+        "Modified": "2022-12-27T00:15:00",
+        "Published": "2020-04-15T14:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "MEDIUM",
+            "vector": "LOCAL"
+        },
+        "assigner": "cve@mitre.org",
+        "cvss": 1.9,
+        "cvss-time": "2022-12-27T00:15:00",
+        "cvss-vector": "AV:L/AC:M/Au:N/C:P/I:N/A:N",
+        "cwe": "CWE-203",
+        "id": "CVE-2020-10932",
+        "impact": {
+            "availability": "NONE",
+            "confidentiality": "PARTIAL",
+            "integrity": "NONE"
+        },
+        "last-modified": "2022-12-27T00:15:00",
+        "references": [
+            "https://tls.mbed.org/tech-updates/security-advisories/mbedtls-security-advisory-2020-04",
+            "https://tls.mbed.org/tech-updates/releases/mbedtls-2.16.6-and-2.7.15-released",
+            "https://tls.mbed.org/tech-updates/security-advisories",
+            "https://lists.debian.org/debian-lts-announce/2022/12/msg00036.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/ZNOS2IIBH5WNJXZUV546PY7666DE7Y3L/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/FCWN5HIF4CJ2LZTOMEBJ7Q4IMMV7ZU2V/"
+        ],
+        "summary": "An issue was discovered in Arm Mbed TLS before 2.16.6 and 2.7.x before 2.7.15. An attacker that can get precise enough side-channel measurements can recover the long-term ECDSA private key by (1) reconstructing the projective coordinate of the result of scalar multiplication by exploiting side channels in the conversion to affine coordinates; (2) using an attack described by Naccache, Smart, and Stern in 2003 to recover a few bits of the ephemeral scalar from those projective coordinates via several measurements; and (3) using a lattice attack to get from there to the long-term ECDSA private key used for the signatures. Typically an attacker would have sufficient access when attacking an SGX enclave and controlling the untrusted OS."
+    },
+    {
+        "Modified": "2022-12-27T00:15:00",
+        "Published": "2020-09-02T16:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "LOCAL"
+        },
+        "assigner": "cve@mitre.org",
+        "cvss": 2.1,
+        "cvss-time": "2022-12-27T00:15:00",
+        "cvss-vector": "AV:L/AC:L/Au:N/C:P/I:N/A:N",
+        "cwe": "CWE-203",
+        "id": "CVE-2020-16150",
+        "impact": {
+            "availability": "NONE",
+            "confidentiality": "PARTIAL",
+            "integrity": "NONE"
+        },
+        "last-modified": "2022-12-27T00:15:00",
+        "references": [
+            "https://tls.mbed.org/tech-updates/security-advisories/mbedtls-security-advisory-2020-09-1",
+            "https://tls.mbed.org/tech-updates/security-advisories",
+            "https://lists.debian.org/debian-lts-announce/2022/12/msg00036.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/5OSOFUD6UTGTDDSQRS62BPXDU52I6PUA/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/IRPBHCQKZXHVKOP5O5EWE7P76AWGUXQJ/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/OD3NM6GD73CTFFRBKG5G2ACXGG7QQHCC/"
+        ],
+        "summary": "A Lucky 13 timing side channel in mbedtls_ssl_decrypt_buf in library/ssl_msg.c in Trusted Firmware Mbed TLS through 2.23.0 allows an attacker to recover secret key information. This affects CBC mode because of a computed time difference based on a padding length."
+    },
+    {
+        "Modified": "2022-12-27T00:15:00",
+        "Published": "2020-03-24T20:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "MEDIUM",
+            "vector": "NETWORK"
+        },
+        "assigner": "cve@mitre.org",
+        "cvss": 4.3,
+        "cvss-time": "2022-12-27T00:15:00",
+        "cvss-vector": "AV:N/AC:M/Au:N/C:P/I:N/A:N",
+        "cwe": "NVD-CWE-noinfo",
+        "id": "CVE-2020-10941",
+        "impact": {
+            "availability": "NONE",
+            "confidentiality": "PARTIAL",
+            "integrity": "NONE"
+        },
+        "last-modified": "2022-12-27T00:15:00",
+        "references": [
+            "https://tls.mbed.org/tech-updates/security-advisories/mbedtls-security-advisory-2020-02",
+            "https://lists.debian.org/debian-lts-announce/2022/12/msg00036.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/5JPE2HFBDJF3UBT6Q4VWLKNKCVCMX25J/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/WD6OSOLLAR2AVPJAMGUKWRXN6477IHHV/"
+        ],
+        "summary": "Arm Mbed TLS before 2.16.5 allows attackers to obtain sensitive information (an RSA private key) by measuring cache usage during an import."
+    },
+    {
         "Modified": "2022-12-26T22:15:00",
         "Published": "2022-12-26T22:15:00",
         "access": {},
@@ -185,26 +413,6 @@
             "https://www.illumos.org/issues/10506"
         ],
         "summary": "An issue was discovered in Illumos in Nexenta NexentaStor 4.0.5 and 5.1.2, and other products. The SMB server allows an attacker to have unintended access, e.g., an attacker with WRITE_XATTR can change permissions. This occurs because of a combination of three factors: ZFS extended attributes are used to implement NT named streams, the SMB protocol requires implementations to have open handle semantics similar to those of NTFS, and the SMB server passes along certain attribute requests to the underlying object (i.e., they are not considered to be requests that pertain to the named stream)."
-    },
-    {
-        "Modified": "2022-12-26T20:15:00",
-        "Published": "2022-12-26T20:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2020-10650",
-        "impact": {},
-        "last-modified": "2022-12-26T20:15:00",
-        "references": [
-            "https://www.oracle.com/security-alerts/cpuoct2022.html",
-            "https://github.com/FasterXML/jackson-databind/issues/2658",
-            "https://github.com/advisories/GHSA-rpr3-cw39-3pxh",
-            "https://www.oracle.com/security-alerts/cpujan2021.html",
-            "https://medium.com/@cowtowncoder/on-jackson-cves-dont-panic-here-is-what-you-need-to-know-54cd0d6e8062",
-            "https://github.com/FasterXML/jackson-databind/commit/a424c038ba0c0d65e579e22001dec925902ac0ef"
-        ],
-        "summary": "A deserialization flaw was discovered in jackson-databind through 2.9.10.4. It could allow an unauthenticated user to perform code execution via ignite-jta or quartz-core: org.apache.ignite.cache.jta.jndi.CacheJndiTmLookup, org.apache.ignite.cache.jta.jndi.CacheJndiTmFactory, and org.quartz.utils.JNDIConnectionProvider."
     },
     {
         "Modified": "2022-12-26T20:15:00",
@@ -1526,184 +1734,5 @@
             "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/Z67QC4C3I2FI2WRFIUPEHKC36J362MLA/"
         ],
         "summary": "A vulnerability was found in X.Org. This security flaw occurs because the XkbCopyNames function left a dangling pointer to freed memory, resulting in out-of-bounds memory access on subsequent XkbGetKbdByName requests.. This issue can lead to local privileges elevation on systems where the X server is running privileged and remote code execution for ssh X forwarding sessions."
-    },
-    {
-        "Modified": "2022-12-26T04:15:00",
-        "Published": "2022-04-19T16:17:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "LOW",
-            "vector": "NETWORK"
-        },
-        "assigner": "cve@mitre.org",
-        "cvss": 5.0,
-        "cvss-time": "2022-12-26T04:15:00",
-        "cvss-vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N",
-        "cwe": "CWE-918",
-        "id": "CVE-2022-29153",
-        "impact": {
-            "availability": "NONE",
-            "confidentiality": "NONE",
-            "integrity": "PARTIAL"
-        },
-        "last-modified": "2022-12-26T04:15:00",
-        "references": [
-            "https://discuss.hashicorp.com",
-            "https://discuss.hashicorp.com/t/hcsec-2022-10-consul-s-http-health-check-may-allow-server-side-request-forgery/38393",
-            "https://security.netapp.com/advisory/ntap-20220602-0005/",
-            "https://security.gentoo.org/glsa/202208-09",
-            "https://discuss.hashicorp.com/t/hcsec-2022-10-consul-s-http-health-check-may-allow-server-side-request-forgery/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RBODKZL7HQE5XXS3SA2VIDVL4LAA5RWH/"
-        ],
-        "summary": "HashiCorp Consul and Consul Enterprise up to 1.9.16, 1.10.9, and 1.11.4 may allow server side request forgery when the Consul client agent follows redirects returned by HTTP health check endpoints. Fixed in 1.9.17, 1.10.10, and 1.11.5."
-    },
-    {
-        "Modified": "2022-12-26T03:15:00",
-        "Published": "2022-12-26T03:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-37308",
-        "impact": {},
-        "last-modified": "2022-12-26T03:15:00",
-        "references": [
-            "https://seclists.org/fulldisclosure/2022/Nov/18",
-            "https://open-xchange.com"
-        ],
-        "summary": "OX App Suite through 7.10.6 allows XSS via HTML in text/plain e-mail messages."
-    },
-    {
-        "Modified": "2022-12-26T03:15:00",
-        "Published": "2022-07-15T14:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-125",
-        "id": "CVE-2022-35409",
-        "impact": {},
-        "last-modified": "2022-12-26T03:15:00",
-        "references": [
-            "https://github.com/Mbed-TLS/mbedtls/releases",
-            "https://mbed-tls.readthedocs.io/en/latest/security-advisories/advisories/mbedtls-security-advisory-2022-07.html",
-            "https://lists.debian.org/debian-lts-announce/2022/12/msg00036.html"
-        ],
-        "summary": "An issue was discovered in Mbed TLS before 2.28.1 and 3.x before 3.2.0. In some configurations, an unauthenticated attacker can send an invalid ClientHello message to a DTLS server that causes a heap-based buffer over-read of up to 255 bytes. This can cause a server crash or possibly information disclosure based on error responses. Affected configurations have MBEDTLS_SSL_DTLS_CLIENT_PORT_REUSE enabled and MBEDTLS_SSL_IN_CONTENT_LEN less than a threshold that depends on the configuration: 258 bytes if using mbedtls_ssl_cookie_check, and possibly up to 571 bytes with a custom cookie check function."
-    },
-    {
-        "Modified": "2022-12-26T03:15:00",
-        "Published": "2022-03-24T18:15:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "LOW",
-            "vector": "NETWORK"
-        },
-        "assigner": "cve@mitre.org",
-        "cvss": 5.0,
-        "cvss-time": "2022-12-26T03:15:00",
-        "cvss-vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
-        "cwe": "NVD-CWE-noinfo",
-        "id": "CVE-2021-43666",
-        "impact": {
-            "availability": "PARTIAL",
-            "confidentiality": "NONE",
-            "integrity": "NONE"
-        },
-        "last-modified": "2022-12-26T03:15:00",
-        "references": [
-            "https://github.com/ARMmbed/mbedtls/issues/5136",
-            "https://lists.debian.org/debian-lts-announce/2022/12/msg00036.html"
-        ],
-        "summary": "A Denial of Service vulnerability exists in mbed TLS 3.0.0 and earlier in the mbedtls_pkcs12_derivation function when an input password's length is 0."
-    },
-    {
-        "Modified": "2022-12-26T03:15:00",
-        "Published": "2021-12-20T08:15:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "LOW",
-            "vector": "NETWORK"
-        },
-        "assigner": "cve@mitre.org",
-        "cvss": 7.5,
-        "cvss-time": "2022-12-26T03:15:00",
-        "cvss-vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
-        "cwe": "CWE-415",
-        "id": "CVE-2021-44732",
-        "impact": {
-            "availability": "PARTIAL",
-            "confidentiality": "PARTIAL",
-            "integrity": "PARTIAL"
-        },
-        "last-modified": "2022-12-26T03:15:00",
-        "references": [
-            "https://github.com/ARMmbed/mbedtls/releases/tag/v2.16.12",
-            "https://github.com/ARMmbed/mbedtls/releases",
-            "https://github.com/ARMmbed/mbedtls/releases/tag/v3.1.0",
-            "https://bugs.gentoo.org/829660",
-            "https://github.com/ARMmbed/mbedtls/releases/tag/v2.28.0",
-            "https://tls.mbed.org/tech-updates/security-advisories/mbedtls-security-advisory-2021-12",
-            "https://lists.debian.org/debian-lts-announce/2022/12/msg00036.html"
-        ],
-        "summary": "Mbed TLS before 3.0.1 has a double free in certain out-of-memory conditions, as demonstrated by an mbedtls_ssl_set_session() failure."
-    },
-    {
-        "Modified": "2022-12-26T03:15:00",
-        "Published": "2021-08-23T02:15:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "LOW",
-            "vector": "NETWORK"
-        },
-        "assigner": "cve@mitre.org",
-        "cvss": 5.0,
-        "cvss-time": "2022-12-26T03:15:00",
-        "cvss-vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
-        "cwe": "CWE-131",
-        "id": "CVE-2020-36475",
-        "impact": {
-            "availability": "PARTIAL",
-            "confidentiality": "NONE",
-            "integrity": "NONE"
-        },
-        "last-modified": "2022-12-26T03:15:00",
-        "references": [
-            "https://github.com/ARMmbed/mbedtls/releases/tag/v2.16.9",
-            "https://github.com/ARMmbed/mbedtls/releases/tag/v2.25.0",
-            "https://github.com/ARMmbed/mbedtls/releases/tag/v2.7.18",
-            "https://cert-portal.siemens.com/productcert/pdf/ssa-756638.pdf",
-            "https://lists.debian.org/debian-lts-announce/2021/11/msg00021.html",
-            "https://lists.debian.org/debian-lts-announce/2022/12/msg00036.html"
-        ],
-        "summary": "An issue was discovered in Mbed TLS before 2.25.0 (and before 2.16.9 LTS and before 2.7.18 LTS). The calculations performed by mbedtls_mpi_exp_mod are not limited; thus, supplying overly large parameters could lead to denial of service when generating Diffie-Hellman key pairs."
-    },
-    {
-        "Modified": "2022-12-26T03:15:00",
-        "Published": "2021-08-23T02:15:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "LOW",
-            "vector": "NETWORK"
-        },
-        "assigner": "cve@mitre.org",
-        "cvss": 5.0,
-        "cvss-time": "2022-12-26T03:15:00",
-        "cvss-vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N",
-        "cwe": "CWE-212",
-        "id": "CVE-2020-36476",
-        "impact": {
-            "availability": "NONE",
-            "confidentiality": "NONE",
-            "integrity": "PARTIAL"
-        },
-        "last-modified": "2022-12-26T03:15:00",
-        "references": [
-            "https://github.com/ARMmbed/mbedtls/releases/tag/v2.16.8",
-            "https://github.com/ARMmbed/mbedtls/releases/tag/v2.24.0",
-            "https://github.com/ARMmbed/mbedtls/releases/tag/v2.7.17",
-            "https://lists.debian.org/debian-lts-announce/2021/11/msg00021.html",
-            "https://lists.debian.org/debian-lts-announce/2022/12/msg00036.html"
-        ],
-        "summary": "An issue was discovered in Mbed TLS before 2.24.0 (and before 2.16.8 LTS and before 2.7.17 LTS). There is missing zeroization of plaintext buffers in mbedtls_ssl_read to erase unused application data from memory."
     }
 ]
