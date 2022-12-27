@@ -1,5 +1,459 @@
 [
     {
+        "Modified": "2022-12-27T18:59:00",
+        "Published": "2022-12-19T23:15:00",
+        "access": {},
+        "assigner": "PSIRT@rockwellautomation.com",
+        "cvss": null,
+        "cwe": "NVD-CWE-noinfo",
+        "id": "CVE-2022-3752",
+        "impact": {},
+        "last-modified": "2022-12-27T18:59:00",
+        "references": [
+            "https://rockwellautomation.custhelp.com/app/answers/answer_view/a_id/1137664"
+        ],
+        "summary": "An unauthorized user could use a specially crafted sequence of Ethernet/IP messages, combined with heavy traffic loading to cause a denial-of-service condition in Rockwell Automation Logix controllers resulting in a major non-recoverable fault. If the target device becomes unavailable, a user would have to clear the fault and redownload the user project file to bring the device back online and continue normal operation."
+    },
+    {
+        "Modified": "2022-12-27T18:57:00",
+        "Published": "2022-12-19T22:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2022-23543",
+        "impact": {},
+        "last-modified": "2022-12-27T18:57:00",
+        "references": [
+            "https://github.com/mesosoi/silverwaregames-io-issue-tracker/security/advisories/GHSA-62r9-4v3r-rw89"
+        ],
+        "summary": "Silverware Games is a social network where people can play games online. Users can attach URLs to YouTube videos, the site will generate related `<iframe>` when the post will be published. The handler has some sort of protection so non-YouTube links can't be posted, as well as HTML tags are being stripped. However, it was still possible to add custom HTML attributes (e.g. `onclick=alert(\"xss\")`) to the `<iframe>'. This issue was fixed in the version `1.1.34` and does not require any extra actions from our members. There has been no evidence that this vulnerability was used by anyone at this time."
+    },
+    {
+        "Modified": "2022-12-27T18:54:00",
+        "Published": "2022-12-19T22:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "NVD-CWE-noinfo",
+        "id": "CVE-2022-23536",
+        "impact": {},
+        "last-modified": "2022-12-27T18:54:00",
+        "references": [
+            "https://cortexmetrics.io/docs/api/#set-alertmanager-configuration",
+            "https://github.com/cortexproject/cortex/security/advisories/GHSA-cq2g-pw6q-hf7j",
+            "https://github.com/cortexproject/cortex/releases/tag/v1.13.2",
+            "https://github.com/cortexproject/cortex/releases/tag/v1.14.1"
+        ],
+        "summary": "Cortex provides multi-tenant, long term storage for Prometheus. A local file inclusion vulnerability exists in Cortex versions 1.13.0, 1.13.1 and 1.14.0, where a malicious actor could remotely read local files as a result of parsing maliciously crafted Alertmanager configurations when submitted to the Alertmanager Set Configuration API. Only users of the Alertmanager service where `-experimental.alertmanager.enable-api` or `enable_api: true` is configured are affected. Affected Cortex users are advised to upgrade to patched versions 1.13.2 or 1.14.1. However as a workaround, Cortex administrators may reject Alertmanager configurations containing the `api_key_file` setting in the `opsgenie_configs` section before sending to the Set Alertmanager Configuration API."
+    },
+    {
+        "Modified": "2022-12-27T18:38:00",
+        "Published": "2022-12-20T00:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-276",
+        "id": "CVE-2022-47551",
+        "impact": {},
+        "last-modified": "2022-12-27T18:38:00",
+        "references": [
+            "https://www.apiman.io/blog/permissions-bypass-disclosure/",
+            "https://www.github.com/apiman/apiman"
+        ],
+        "summary": "Apiman 1.5.7 through 2.2.3.Final has insufficient checks for read permissions within the Apiman Manager REST API. The root cause of the issue is the Apiman project's accidental acceptance of a large contribution that was not fully compatible with the security model of Apiman versions before 3.0.0.Final. Because of this, 3.0.0.Final is not affected by the vulnerability."
+    },
+    {
+        "Modified": "2022-12-27T18:37:00",
+        "Published": "2022-12-19T22:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-74",
+        "id": "CVE-2022-40434",
+        "impact": {},
+        "last-modified": "2022-12-27T18:37:00",
+        "references": [
+            "https://www.softr.io/",
+            "http://softr.com",
+            "https://isaghojaria.medium.com/softr-v2-0-was-discovered-to-be-vulnerable-to-html-injection-via-the-name-field-of-the-account-page-c6fbd3162254"
+        ],
+        "summary": "Softr v2.0 was discovered to be vulnerable to HTML injection via the Name field of the Account page."
+    },
+    {
+        "Modified": "2022-12-27T18:15:00",
+        "Published": "2022-12-27T18:15:00",
+        "access": {},
+        "assigner": "cybersecurity@dahuatech.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-45423",
+        "impact": {},
+        "last-modified": "2022-12-27T18:15:00",
+        "references": [
+            "https://www.dahuasecurity.com/support/cybersecurity/details/1137"
+        ],
+        "summary": "Some Dahua software products have a vulnerability of unauthenticated request of MQTT credentials. An attacker can obtain encrypted MQTT credentials by sending a specific crafted packet to the vulnerable interface (the credentials cannot be directly exploited)."
+    },
+    {
+        "Modified": "2022-12-27T18:15:00",
+        "Published": "2022-12-27T18:15:00",
+        "access": {},
+        "assigner": "cybersecurity@dahuatech.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-45424",
+        "impact": {},
+        "last-modified": "2022-12-27T18:15:00",
+        "references": [
+            "https://www.dahuasecurity.com/support/cybersecurity/details/1137"
+        ],
+        "summary": "Some Dahua software products have a vulnerability of unauthenticated request of AES crypto key. An attacker can obtain the AES crypto key by sending a specific crafted packet to the vulnerable interface."
+    },
+    {
+        "Modified": "2022-12-27T18:15:00",
+        "Published": "2022-12-27T18:15:00",
+        "access": {},
+        "assigner": "cybersecurity@dahuatech.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-45425",
+        "impact": {},
+        "last-modified": "2022-12-27T18:15:00",
+        "references": [
+            "https://www.dahuasecurity.com/support/cybersecurity/details/1137"
+        ],
+        "summary": "Some Dahua software products have a vulnerability of using of hard-coded cryptographic key. An attacker can obtain the AES crypto key by exploiting this vulnerability."
+    },
+    {
+        "Modified": "2022-12-27T18:15:00",
+        "Published": "2022-12-27T18:15:00",
+        "access": {},
+        "assigner": "cybersecurity@dahuatech.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-45426",
+        "impact": {},
+        "last-modified": "2022-12-27T18:15:00",
+        "references": [
+            "https://www.dahuasecurity.com/support/cybersecurity/details/1137"
+        ],
+        "summary": "Some Dahua software products have a vulnerability of unrestricted download of file. After obtaining the permissions of ordinary users, by sending a specific crafted packet to the vulnerable interface, an attacker can download arbitrary files."
+    },
+    {
+        "Modified": "2022-12-27T18:15:00",
+        "Published": "2022-12-27T18:15:00",
+        "access": {},
+        "assigner": "cybersecurity@dahuatech.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-45427",
+        "impact": {},
+        "last-modified": "2022-12-27T18:15:00",
+        "references": [
+            "https://www.dahuasecurity.com/support/cybersecurity/details/1137"
+        ],
+        "summary": "Some Dahua software products have a vulnerability of unrestricted upload of file. After obtaining the permissions of administrators, by sending a specific crafted packet to the vulnerable interface, an attacker can upload arbitrary files."
+    },
+    {
+        "Modified": "2022-12-27T18:15:00",
+        "Published": "2022-12-27T18:15:00",
+        "access": {},
+        "assigner": "cybersecurity@dahuatech.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-45428",
+        "impact": {},
+        "last-modified": "2022-12-27T18:15:00",
+        "references": [
+            "https://www.dahuasecurity.com/support/cybersecurity/details/1137"
+        ],
+        "summary": "Some Dahua software products have a vulnerability of sensitive information leakage. After obtaining the permissions of administrators, by sending a specific crafted packet to the vulnerable interface, an attacker can obtain the debugging information."
+    },
+    {
+        "Modified": "2022-12-27T18:15:00",
+        "Published": "2022-12-27T18:15:00",
+        "access": {},
+        "assigner": "cybersecurity@dahuatech.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-45429",
+        "impact": {},
+        "last-modified": "2022-12-27T18:15:00",
+        "references": [
+            "https://www.dahuasecurity.com/support/cybersecurity/details/1137"
+        ],
+        "summary": "Some Dahua software products have a vulnerability of server-side request forgery (SSRF). An Attacker can access internal resources by concatenating links (URL) that conform to specific rules."
+    },
+    {
+        "Modified": "2022-12-27T18:15:00",
+        "Published": "2022-12-27T18:15:00",
+        "access": {},
+        "assigner": "cybersecurity@dahuatech.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-45430",
+        "impact": {},
+        "last-modified": "2022-12-27T18:15:00",
+        "references": [
+            "https://www.dahuasecurity.com/support/cybersecurity/details/1137"
+        ],
+        "summary": "Some Dahua software products have a vulnerability of unauthenticated enable or disable SSHD service. After bypassing the firewall access control policy, by sending a specific crafted packet to the vulnerable interface, an attacker could enable or disable the SSHD service."
+    },
+    {
+        "Modified": "2022-12-27T18:15:00",
+        "Published": "2022-12-27T18:15:00",
+        "access": {},
+        "assigner": "cybersecurity@dahuatech.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-45431",
+        "impact": {},
+        "last-modified": "2022-12-27T18:15:00",
+        "references": [
+            "https://www.dahuasecurity.com/support/cybersecurity/details/1137"
+        ],
+        "summary": "Some Dahua software products have a vulnerability of unauthenticated restart of remote DSS Server. After bypassing the firewall access control policy, by sending a specific crafted packet to the vulnerable interface, an attacker could unauthenticated restart of remote DSS Server."
+    },
+    {
+        "Modified": "2022-12-27T18:15:00",
+        "Published": "2022-12-27T18:15:00",
+        "access": {},
+        "assigner": "cybersecurity@dahuatech.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-45432",
+        "impact": {},
+        "last-modified": "2022-12-27T18:15:00",
+        "references": [
+            "https://www.dahuasecurity.com/support/cybersecurity/details/1137"
+        ],
+        "summary": "Some Dahua software products have a vulnerability of unauthenticated search for devices. After bypassing the firewall access control policy, by sending a specific crafted packet to the vulnerable interface, an attacker could unauthenticated search for devices in range of IPs from remote DSS Server."
+    },
+    {
+        "Modified": "2022-12-27T18:15:00",
+        "Published": "2022-12-27T18:15:00",
+        "access": {},
+        "assigner": "cybersecurity@dahuatech.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-45433",
+        "impact": {},
+        "last-modified": "2022-12-27T18:15:00",
+        "references": [
+            "https://www.dahuasecurity.com/support/cybersecurity/details/1137"
+        ],
+        "summary": "Some Dahua software products have a vulnerability of unauthenticated traceroute host from remote DSS Server. After bypassing the firewall access control policy, by sending a specific crafted packet to the vulnerable interface, an attacker could get the traceroute results."
+    },
+    {
+        "Modified": "2022-12-27T18:15:00",
+        "Published": "2022-12-27T18:15:00",
+        "access": {},
+        "assigner": "cybersecurity@dahuatech.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-45434",
+        "impact": {},
+        "last-modified": "2022-12-27T18:15:00",
+        "references": [
+            "https://www.dahuasecurity.com/support/cybersecurity/details/1137"
+        ],
+        "summary": "Some Dahua software products have a vulnerability of unauthenticated un-throttled ICMP requests on remote DSS Server. After bypassing the firewall access control policy, by sending a specific crafted packet to the vulnerable interface, an attacker could exploit the victim server to launch ICMP request attack to the designated target host."
+    },
+    {
+        "Modified": "2022-12-27T18:15:00",
+        "Published": "2022-12-27T18:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-47968",
+        "impact": {},
+        "last-modified": "2022-12-27T18:15:00",
+        "references": [
+            "https://github.com/linuxserver/Heimdall/issues/1086",
+            "https://samy.link/blog"
+        ],
+        "summary": "Heimdall Application Dashboard through 2.5.4 allows reflected XSS via \"Application name\" to the \"Add application\" page."
+    },
+    {
+        "Modified": "2022-12-27T18:06:00",
+        "Published": "2022-12-19T22:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-125",
+        "id": "CVE-2022-44940",
+        "impact": {},
+        "last-modified": "2022-12-27T18:06:00",
+        "references": [
+            "https://github.com/NixOS/patchelf/pull/419"
+        ],
+        "summary": "Patchelf v0.9 was discovered to contain an out-of-bounds read via the function modifyRPath at src/patchelf.cc."
+    },
+    {
+        "Modified": "2022-12-27T17:58:00",
+        "Published": "2022-12-19T14:15:00",
+        "access": {},
+        "assigner": "cna@vuldb.com",
+        "cvss": null,
+        "cwe": "CWE-319",
+        "id": "CVE-2021-4258",
+        "impact": {},
+        "last-modified": "2022-12-27T17:58:00",
+        "references": [
+            "https://vuldb.com/?id.216251",
+            "https://github.com/whohas/whohas/commit/667c3e2e9178f15c23d7918b5db25cd0792c8472"
+        ],
+        "summary": "** DISPUTED ** A vulnerability was found in whohas. It has been rated as problematic. This issue affects some unknown processing of the component Package Information Handler. The manipulation leads to cleartext transmission of sensitive information. The attack may be initiated remotely. The real existence of this vulnerability is still doubted at the moment. The name of the patch is 667c3e2e9178f15c23d7918b5db25cd0792c8472. It is recommended to apply a patch to fix this issue. The associated identifier of this vulnerability is VDB-216251. NOTE: Most sources redirect to the encrypted site which limits the possibilities of an attack."
+    },
+    {
+        "Modified": "2022-12-27T17:52:00",
+        "Published": "2022-12-19T14:15:00",
+        "access": {},
+        "assigner": "cna@vuldb.com",
+        "cvss": null,
+        "cwe": "CWE-134",
+        "id": "CVE-2020-36619",
+        "impact": {},
+        "last-modified": "2022-12-27T17:52:00",
+        "references": [
+            "https://github.com/EliasOenal/multimon-ng/releases/tag/1.2.0",
+            "https://github.com/EliasOenal/multimon-ng/pull/160",
+            "https://github.com/EliasOenal/multimon-ng/commit/e5a51c508ef952e81a6da25b43034dd1ed023c07",
+            "https://vuldb.com/?id.216269"
+        ],
+        "summary": "A vulnerability was found in multimon-ng. It has been rated as critical. This issue affects the function add_ch of the file demod_flex.c. The manipulation of the argument ch leads to format string. Upgrading to version 1.2.0 is able to address this issue. The name of the patch is e5a51c508ef952e81a6da25b43034dd1ed023c07. It is recommended to upgrade the affected component. The identifier VDB-216269 was assigned to this vulnerability."
+    },
+    {
+        "Modified": "2022-12-27T17:47:00",
+        "Published": "2022-12-19T03:15:00",
+        "access": {},
+        "assigner": "vultures@jpcert.or.jp",
+        "cvss": null,
+        "cwe": "CWE-78",
+        "id": "CVE-2022-43466",
+        "impact": {},
+        "last-modified": "2022-12-27T17:47:00",
+        "references": [
+            "https://jvn.jp/en/vu/JVNVU97099584/index.html",
+            "https://www.buffalo.jp/news/detail/20221205-01.html"
+        ],
+        "summary": "Buffalo network devices WSR-3200AX4S firmware Ver. 1.26 and earlier, WSR-3200AX4B firmware Ver. 1.25, WSR-2533DHP2 firmware Ver. 1.22 and earlier, WSR-A2533DHP2 firmware Ver. 1.22 and earlier, WSR-2533DHP3 firmware Ver. 1.26 and earlier, WSR-A2533DHP3 firmware Ver. 1.26 and earlier, WSR-2533DHPL2 firmware Ver. 1.03 and earlier, WSR-2533DHPLS firmware Ver. 1.07 and earlier, WEX-1800AX4 firmware Ver. 1.13 and earlier, and WEX-1800AX4EA firmware Ver. 1.13 and earlier allows a network-adjacent attacker with an administrative privilege to execute an arbitrary OS command if a specially crafted request is sent to a specific CGI program."
+    },
+    {
+        "Modified": "2022-12-27T17:46:00",
+        "Published": "2022-12-19T03:15:00",
+        "access": {},
+        "assigner": "vultures@jpcert.or.jp",
+        "cvss": null,
+        "cwe": "CWE-78",
+        "id": "CVE-2022-43443",
+        "impact": {},
+        "last-modified": "2022-12-27T17:46:00",
+        "references": [
+            "https://jvn.jp/en/vu/JVNVU97099584/index.html",
+            "https://www.buffalo.jp/news/detail/20221205-01.html"
+        ],
+        "summary": "Buffalo network devices WSR-3200AX4S firmware Ver. 1.26 and earlier, WSR-3200AX4B firmware Ver. 1.25, WSR-2533DHP firmware Ver. 1.08 and earlier, WSR-2533DHP2 firmware Ver. 1.22 and earlier, WSR-A2533DHP2 firmware Ver. 1.22 and earlier, WSR-2533DHP3 firmware Ver. 1.26 and earlier, WSR-A2533DHP3 firmware Ver. 1.26 and earlier, WSR-2533DHPL firmware Ver. 1.08 and earlier, WSR-2533DHPL2 firmware Ver. 1.03 and earlier, WSR-2533DHPLS firmware Ver. 1.07 and earlier, and WCR-1166DS firmware Ver. 1.34 and earlier allows an network-adjacent attacker to execute an arbitrary OS command if a specially crafted request is sent to the management page."
+    },
+    {
+        "Modified": "2022-12-27T17:39:00",
+        "Published": "2022-12-19T14:15:00",
+        "access": {},
+        "assigner": "cna@vuldb.com",
+        "cvss": null,
+        "cwe": "CWE-597",
+        "id": "CVE-2021-4259",
+        "impact": {},
+        "last-modified": "2022-12-27T17:39:00",
+        "references": [
+            "https://github.com/erikdubbelboer/phpRedisAdmin/commit/31aa7661e6db6f4dffbf9a635817832a0a11c7d9",
+            "https://vuldb.com/?id.216267",
+            "https://github.com/erikdubbelboer/phpRedisAdmin/releases/tag/v1.16.2"
+        ],
+        "summary": "A vulnerability was found in phpRedisAdmin up to 1.16.1. It has been classified as problematic. This affects the function authHttpDigest of the file includes/login.inc.php. The manipulation of the argument response leads to use of wrong operator in string comparison. Upgrading to version 1.16.2 is able to address this issue. The name of the patch is 31aa7661e6db6f4dffbf9a635817832a0a11c7d9. It is recommended to upgrade the affected component. The associated identifier of this vulnerability is VDB-216267."
+    },
+    {
+        "Modified": "2022-12-27T17:20:00",
+        "Published": "2022-12-19T03:15:00",
+        "access": {},
+        "assigner": "vultures@jpcert.or.jp",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2022-41993",
+        "impact": {},
+        "last-modified": "2022-12-27T17:20:00",
+        "references": [
+            "https://www.cals.jacic.or.jp/coreconso/pdf/coreconsoinfo20221215.pdf",
+            "https://jvn.jp/en/jp/JVN96321933/index.html"
+        ],
+        "summary": "Cross-site scripting vulnerability in DENSHI NYUSATSU CORE SYSTEM v6 R4 and earlier allows a remote unauthenticated attacker to inject an arbitrary script."
+    },
+    {
+        "Modified": "2022-12-27T17:20:00",
+        "Published": "2022-12-16T20:15:00",
+        "access": {},
+        "assigner": "ics-cert@hq.dhs.gov",
+        "cvss": null,
+        "cwe": "CWE-125",
+        "id": "CVE-2022-2966",
+        "impact": {},
+        "last-modified": "2022-12-27T17:20:00",
+        "references": [
+            "https://www.cisa.gov/uscert/ics/advisories/icsa-22-244-01"
+        ],
+        "summary": "Out-of-bounds Read vulnerability in Delta Electronics DOPSoft.This issue affects DOPSoft: All Versions."
+    },
+    {
+        "Modified": "2022-12-27T17:18:00",
+        "Published": "2022-12-16T18:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-476",
+        "id": "CVE-2022-41972",
+        "impact": {},
+        "last-modified": "2022-12-27T17:18:00",
+        "references": [
+            "https://github.com/contiki-ng/contiki-ng/pull/2253",
+            "https://github.com/contiki-ng/contiki-ng/security/advisories/GHSA-24xp-g5gf-6vvm"
+        ],
+        "summary": "Contiki-NG is an open-source, cross-platform operating system for Next-Generation IoT devices. Versions prior to 4.9 contain a NULL Pointer Dereference in BLE L2CAP module. The Contiki-NG operating system for IoT devices contains a Bluetooth Low Energy stack. An attacker can inject a packet in this stack, which causes the implementation to dereference a NULL pointer and triggers undefined behavior. More specifically, while processing the L2CAP protocol, the implementation maps an incoming channel ID to its metadata structure. In this structure, state information regarding credits is managed through calls to the function input_l2cap_credit in the module os/net/mac/ble/ble-l2cap.c. Unfortunately, the input_l2cap_credit function does not check that the metadata corresponding to the user-supplied channel ID actually exists, which can lead to the channel variable being set to NULL before a pointer dereferencing operation is performed. The vulnerability has been patched in the \"develop\" branch of Contiki-NG, and will be included in release 4.9. Users can apply the patch in Contiki-NG pull request #2253 as a workaround until the new package is released."
+    },
+    {
+        "Modified": "2022-12-27T17:15:00",
+        "Published": "2022-12-20T04:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-47577",
+        "impact": {},
+        "last-modified": "2022-12-27T17:15:00",
+        "references": [
+            "https://medium.com/nestedif/vulnerability-disclosure-business-logic-unauthorized-data-exfiltration-bypassing-dlp-zoho-cc51465ba84a",
+            "https://www.manageengine.com/device-control/how-to/device-control.html"
+        ],
+        "summary": "** DISPUTED ** An issue was discovered in the endpoint protection agent in Zoho ManageEngine Device Control Plus 10.1.2228.15. Despite configuring complete restrictions on USB pendrives, USB HDD devices, memory cards, USB connections to mobile devices, etc., it is still possible to bypass the USB restrictions by making use of a virtual machine (VM). This allows a file to be exchanged outside the laptop/system. VMs can be created by any user (even without admin rights). The data exfiltration can occur without any record in the audit trail of Windows events on the host machine. NOTE: the vendor's position is \"it's not a vulnerability in our product.\""
+    },
+    {
+        "Modified": "2022-12-27T17:15:00",
+        "Published": "2022-12-20T04:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-47578",
+        "impact": {},
+        "last-modified": "2022-12-27T17:15:00",
+        "references": [
+            "https://medium.com/nestedif/vulnerability-disclosure-business-logic-unauthorized-data-exfiltration-bypassing-dlp-zoho-cc51465ba84a",
+            "https://www.manageengine.com/device-control/how-to/device-control.html"
+        ],
+        "summary": "** DISPUTED ** An issue was discovered in the endpoint protection agent in Zoho ManageEngine Device Control Plus 10.1.2228.15. Despite configuring complete restrictions on USB pendrives, USB HDD devices, memory cards, USB connections to mobile devices, etc., it is still possible to bypass the USB restrictions by booting into Safe Mode. This allows a file to be exchanged outside the laptop/system. Safe Mode can be launched by any user (even without admin rights). Data exfiltration can occur, and also malware might be introduced onto the system. NOTE: the vendor's position is \"it's not a vulnerability in our product.\""
+    },
+    {
         "Modified": "2022-12-27T16:51:00",
         "Published": "2022-12-16T16:15:00",
         "access": {},
@@ -1186,462 +1640,5 @@
             "https://bulletin.iese.de/post/contest-gallery_19-1-4-1_4"
         ],
         "summary": "The Contest Gallery WordPress plugin before 19.1.5, Contest Gallery Pro WordPress plugin before 19.1.5 do not escape the option_id POST parameter before concatenating it to an SQL query in edit-options.php. This may allow malicious users with at least author privilege to leak sensitive information from the site's database."
-    },
-    {
-        "Modified": "2022-12-27T13:48:00",
-        "Published": "2022-12-26T13:15:00",
-        "access": {},
-        "assigner": "contact@wpscan.com",
-        "cvss": null,
-        "cwe": "CWE-89",
-        "id": "CVE-2022-4153",
-        "impact": {},
-        "last-modified": "2022-12-27T13:48:00",
-        "references": [
-            "https://bulletin.iese.de/post/contest-gallery_19-1-4-1_7",
-            "https://wpscan.com/vulnerability/35b0126d-9293-4e64-a00f-0903303f960a"
-        ],
-        "summary": "The Contest Gallery WordPress plugin before 19.1.5.1, Contest Gallery Pro WordPress plugin before 19.1.5.1 do not escape the upload[] POST parameter before concatenating it to an SQL query in get-data-create-upload-v10.php. This may allow malicious users with at least author privilege to leak sensitive information from the site's database."
-    },
-    {
-        "Modified": "2022-12-27T13:48:00",
-        "Published": "2022-12-26T13:15:00",
-        "access": {},
-        "assigner": "contact@wpscan.com",
-        "cvss": null,
-        "cwe": "CWE-89",
-        "id": "CVE-2022-4154",
-        "impact": {},
-        "last-modified": "2022-12-27T13:48:00",
-        "references": [
-            "https://wpscan.com/vulnerability/dac32ed4-d3df-420a-a2eb-9e7d2435826a",
-            "https://bulletin.iese.de/post/contest-gallery_19-1-4-1_5"
-        ],
-        "summary": "The Contest Gallery Pro WordPress plugin before 19.1.5 does not escape the wp_user_id GET parameter before concatenating it to an SQL query in management-show-user.php. This may allow malicious users with at administrator privileges (i.e. on multisite WordPress configurations) to leak sensitive information from the site's database."
-    },
-    {
-        "Modified": "2022-12-27T13:48:00",
-        "Published": "2022-12-26T13:15:00",
-        "access": {},
-        "assigner": "contact@wpscan.com",
-        "cvss": null,
-        "cwe": "CWE-89",
-        "id": "CVE-2022-4155",
-        "impact": {},
-        "last-modified": "2022-12-27T13:48:00",
-        "references": [
-            "https://bulletin.iese.de/post/contest-gallery_19-1-4-1_6",
-            "https://wpscan.com/vulnerability/a55c6a62-3744-4374-b01a-cb074ac64b4d"
-        ],
-        "summary": "The Contest Gallery WordPress plugin before 19.1.5.1, Contest Gallery Pro WordPress plugin before 19.1.5.1 do not escape the wp_user_id GET parameter before concatenating it to an SQL query in management-show-user.php. This may allow malicious users with administrator privileges (i.e. on multisite WordPress configurations) to leak sensitive information from the site's database."
-    },
-    {
-        "Modified": "2022-12-27T13:48:00",
-        "Published": "2022-12-26T13:15:00",
-        "access": {},
-        "assigner": "contact@wpscan.com",
-        "cvss": null,
-        "cwe": "CWE-89",
-        "id": "CVE-2022-4156",
-        "impact": {},
-        "last-modified": "2022-12-27T13:48:00",
-        "references": [
-            "https://wpscan.com/vulnerability/254f6e8b-5fa9-4d6d-8e0e-1a4cae18aee0",
-            "https://bulletin.iese.de/post/contest-gallery_19-1-4-1_1"
-        ],
-        "summary": "The Contest Gallery WordPress plugin before 19.1.5.1, Contest Gallery Pro WordPress plugin before 19.1.5.1 do not escape the user_id POST parameter before concatenating it to an SQL query in ajax-functions-backend.php. This may allow malicious users with at least author privilege to leak sensitive information from the site's database."
-    },
-    {
-        "Modified": "2022-12-27T13:48:00",
-        "Published": "2022-12-26T13:15:00",
-        "access": {},
-        "assigner": "contact@wpscan.com",
-        "cvss": null,
-        "cwe": "CWE-89",
-        "id": "CVE-2022-4157",
-        "impact": {},
-        "last-modified": "2022-12-27T13:48:00",
-        "references": [
-            "https://bulletin.iese.de/post/contest-gallery_19-1-4-1_3",
-            "https://wpscan.com/vulnerability/71feec63-67a5-482e-bf77-1396c306fae6"
-        ],
-        "summary": "The Contest Gallery WordPress plugin before 19.1.5.1, Contest Gallery Pro WordPress plugin before 19.1.5.1 do not escape the cg_option_id POST parameter before concatenating it to an SQL query in export-votes-all.php. This may allow malicious users with administrator privileges (i.e. on multisite WordPress configurations) to leak sensitive information from the site's database."
-    },
-    {
-        "Modified": "2022-12-27T13:48:00",
-        "Published": "2022-12-26T13:15:00",
-        "access": {},
-        "assigner": "contact@wpscan.com",
-        "cvss": null,
-        "cwe": "CWE-89",
-        "id": "CVE-2022-4158",
-        "impact": {},
-        "last-modified": "2022-12-27T13:48:00",
-        "references": [
-            "https://bulletin.iese.de/post/contest-gallery_19-1-4-1_15",
-            "https://wpscan.com/vulnerability/1b3b51af-ad73-4f8e-ba97-375b8a363b64"
-        ],
-        "summary": "The Contest Gallery WordPress plugin before 19.1.5.1, Contest Gallery Pro WordPress plugin before 19.1.5.1 do not escape the cg_Fields POST parameter before concatenating it to an SQL query in users-registry-check-registering-and-login.php. This may allow malicious visitors to leak sensitive information from the site's database."
-    },
-    {
-        "Modified": "2022-12-27T13:48:00",
-        "Published": "2022-12-26T13:15:00",
-        "access": {},
-        "assigner": "contact@wpscan.com",
-        "cvss": null,
-        "cwe": "CWE-89",
-        "id": "CVE-2022-4159",
-        "impact": {},
-        "last-modified": "2022-12-27T13:48:00",
-        "references": [
-            "https://wpscan.com/vulnerability/2e993280-1007-4e9d-9ca6-2b5f774e9965",
-            "https://bulletin.iese.de/post/contest-gallery_19-1-4-1_8"
-        ],
-        "summary": "The Contest Gallery WordPress plugin before 19.1.5.1, Contest Gallery Pro WordPress plugin before 19.1.5.1 do not escape the cg_id POST parameter before concatenating it to an SQL query in 0_change-gallery.php. This may allow malicious users with at least author privilege to leak sensitive information from the site's database."
-    },
-    {
-        "Modified": "2022-12-27T13:48:00",
-        "Published": "2022-12-26T13:15:00",
-        "access": {},
-        "assigner": "contact@wpscan.com",
-        "cvss": null,
-        "cwe": "CWE-89",
-        "id": "CVE-2022-4160",
-        "impact": {},
-        "last-modified": "2022-12-27T13:48:00",
-        "references": [
-            "https://bulletin.iese.de/post/contest-gallery_19-1-4-1_14",
-            "https://wpscan.com/vulnerability/813de343-4814-42b8-b8df-1695320512cd"
-        ],
-        "summary": "The Contest Gallery WordPress plugin before 19.1.5.1, Contest Gallery Pro WordPress plugin before 19.1.5.1 do not escape the cg_copy_id POST parameter before concatenating it to an SQL query in cg-copy-comments.php and cg-copy-rating.php. This may allow malicious users with at least author privilege to leak sensitive information from the site's database."
-    },
-    {
-        "Modified": "2022-12-27T13:48:00",
-        "Published": "2022-12-26T13:15:00",
-        "access": {},
-        "assigner": "contact@wpscan.com",
-        "cvss": null,
-        "cwe": "CWE-89",
-        "id": "CVE-2022-4161",
-        "impact": {},
-        "last-modified": "2022-12-27T13:48:00",
-        "references": [
-            "https://bulletin.iese.de/post/contest-gallery_19-1-4-1_16",
-            "https://wpscan.com/vulnerability/a66af8f7-1d5f-4fe5-a2ba-03337064583b"
-        ],
-        "summary": "The Contest Gallery WordPress plugin before 19.1.5.1, Contest Gallery Pro WordPress plugin before 19.1.5.1 do not escape the cg_copy_start POST parameter before concatenating it to an SQL query in copy-gallery-images.php. This may allow malicious users with at least author privilege to leak sensitive information from the site's database."
-    },
-    {
-        "Modified": "2022-12-27T13:48:00",
-        "Published": "2022-12-26T13:15:00",
-        "access": {},
-        "assigner": "contact@wpscan.com",
-        "cvss": null,
-        "cwe": "CWE-89",
-        "id": "CVE-2022-4162",
-        "impact": {},
-        "last-modified": "2022-12-27T13:48:00",
-        "references": [
-            "https://bulletin.iese.de/post/contest-gallery_19-1-4-1_9",
-            "https://wpscan.com/vulnerability/011500ac-17e4-4d4f-bbd9-1fec70511776"
-        ],
-        "summary": "The Contest Gallery WordPress plugin before 19.1.5.1, Contest Gallery Pro WordPress plugin before 19.1.5.1 do not escape the cg_row POST parameter before concatenating it to an SQL query in 3_row-order.php. This may allow malicious users with at least author privilege to leak sensitive information from the site's database."
-    },
-    {
-        "Modified": "2022-12-27T13:48:00",
-        "Published": "2022-12-26T13:15:00",
-        "access": {},
-        "assigner": "contact@wpscan.com",
-        "cvss": null,
-        "cwe": "CWE-89",
-        "id": "CVE-2022-4163",
-        "impact": {},
-        "last-modified": "2022-12-27T13:48:00",
-        "references": [
-            "https://wpscan.com/vulnerability/de0d7db7-f911-4f5f-97f6-885ca60822d1",
-            "https://bulletin.iese.de/post/contest-gallery_19-1-4-1_10"
-        ],
-        "summary": "The Contest Gallery WordPress plugin before 19.1.5.1, Contest Gallery Pro WordPress plugin before 19.1.5.1 do not escape the cg_deactivate and cg_activate POST parameters before concatenating it to an SQL query in 2_deactivate.php and 4_activate.php, respectively. This may allow malicious users with at least author privilege to leak sensitive information from the site's database."
-    },
-    {
-        "Modified": "2022-12-27T13:48:00",
-        "Published": "2022-12-26T13:15:00",
-        "access": {},
-        "assigner": "contact@wpscan.com",
-        "cvss": null,
-        "cwe": "CWE-89",
-        "id": "CVE-2022-4164",
-        "impact": {},
-        "last-modified": "2022-12-27T13:48:00",
-        "references": [
-            "https://bulletin.iese.de/post/contest-gallery_19-1-4-1_11",
-            "https://wpscan.com/vulnerability/57fff222-2c64-4b52-86cd-ab8db4541627"
-        ],
-        "summary": "The Contest Gallery WordPress plugin before 19.1.5.1, Contest Gallery Pro WordPress plugin before 19.1.5.1 do not escape the cg_multiple_files_for_post POST parameter before concatenating it to an SQL query in 0_change-gallery.php. This may allow malicious users with at least author privilege to leak sensitive information from the site's database."
-    },
-    {
-        "Modified": "2022-12-27T13:48:00",
-        "Published": "2022-12-26T13:15:00",
-        "access": {},
-        "assigner": "contact@wpscan.com",
-        "cvss": null,
-        "cwe": "CWE-89",
-        "id": "CVE-2022-4165",
-        "impact": {},
-        "last-modified": "2022-12-27T13:48:00",
-        "references": [
-            "https://bulletin.iese.de/post/contest-gallery_19-1-4-1_17",
-            "https://wpscan.com/vulnerability/857aba7d-fccd-4672-b734-ab228440dcc0"
-        ],
-        "summary": "The Contest Gallery WordPress plugin before 19.1.5.1, Contest Gallery Pro WordPress plugin before 19.1.5.1 do not escape the cg_order POST parameter before concatenating it to an SQL query in order-custom-fields-with-and-without-search.php. This may allow malicious users with at least author privilege to leak sensitive information from the site's database."
-    },
-    {
-        "Modified": "2022-12-27T13:48:00",
-        "Published": "2022-12-26T13:15:00",
-        "access": {},
-        "assigner": "contact@wpscan.com",
-        "cvss": null,
-        "cwe": "CWE-89",
-        "id": "CVE-2022-4166",
-        "impact": {},
-        "last-modified": "2022-12-27T13:48:00",
-        "references": [
-            "https://wpscan.com/vulnerability/6e7de2bb-5f71-4c27-ae79-4f6b2ba7f86f",
-            "https://bulletin.iese.de/post/contest-gallery_19-1-4-1_12"
-        ],
-        "summary": "The Contest Gallery WordPress plugin before 19.1.5.1, Contest Gallery Pro WordPress plugin before 19.1.5.1 do not escape the addCountS POST parameter before concatenating it to an SQL query in 4_activate.php. This may allow malicious users with at least author privilege to leak sensitive information from the site's database."
-    },
-    {
-        "Modified": "2022-12-27T13:48:00",
-        "Published": "2022-12-26T13:15:00",
-        "access": {},
-        "assigner": "contact@wpscan.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-4197",
-        "impact": {},
-        "last-modified": "2022-12-27T13:48:00",
-        "references": [
-            "https://wpscan.com/vulnerability/96818024-57ab-419d-bd46-7d2da98269e6"
-        ],
-        "summary": "The Sliderby10Web WordPress plugin before 1.2.53 does not sanitise and escape some of its settings, which could allow high privilege users such as admin to perform Stored Cross-Site Scripting attacks even when the unfiltered_html capability is disallowed (for example in multisite setup)."
-    },
-    {
-        "Modified": "2022-12-27T13:48:00",
-        "Published": "2022-12-26T13:15:00",
-        "access": {},
-        "assigner": "contact@wpscan.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-4226",
-        "impact": {},
-        "last-modified": "2022-12-27T13:48:00",
-        "references": [
-            "https://wpscan.com/vulnerability/c5ca22e0-b7a5-468d-8366-1855ff33851b"
-        ],
-        "summary": "The Simple Basic Contact Form WordPress plugin before 20221201 does not sanitise and escape some of its settings, which could allow high privilege users such as admin to perform Stored Cross-Site Scripting attacks even when the unfiltered_html capability is disallowed (for example in multisite setup)."
-    },
-    {
-        "Modified": "2022-12-27T13:48:00",
-        "Published": "2022-12-26T13:15:00",
-        "access": {},
-        "assigner": "contact@wpscan.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-4227",
-        "impact": {},
-        "last-modified": "2022-12-27T13:48:00",
-        "references": [
-            "https://wpscan.com/vulnerability/90d3022c-5d35-4ef2-ab87-6919268db890"
-        ],
-        "summary": "The Booster for WooCommerce WordPress plugin before 5.6.3, Booster Plus for WooCommerce WordPress plugin before 6.0.0, Booster Elite for WooCommerce WordPress plugin before 6.0.0 do not escape some URLs and parameters before outputting them back in attributes, leading to Reflected Cross-Site Scripting"
-    },
-    {
-        "Modified": "2022-12-27T13:48:00",
-        "Published": "2022-12-26T13:15:00",
-        "access": {},
-        "assigner": "contact@wpscan.com",
-        "cvss": null,
-        "cwe": "CWE-639",
-        "id": "CVE-2022-4239",
-        "impact": {},
-        "last-modified": "2022-12-27T13:48:00",
-        "references": [
-            "https://wpscan.com/vulnerability/1c163987-fb53-43f7-bbff-1c2d8c0d694c"
-        ],
-        "summary": "The Workreap WordPress theme before 2.6.4 does not verify that an addon service belongs to the user issuing the request, or indeed that it is an addon service, when processing the workreap_addons_service_remove action, allowing any user to delete any post by knowing or guessing the id."
-    },
-    {
-        "Modified": "2022-12-27T13:48:00",
-        "Published": "2022-12-26T13:15:00",
-        "access": {},
-        "assigner": "contact@wpscan.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-4242",
-        "impact": {},
-        "last-modified": "2022-12-27T13:48:00",
-        "references": [
-            "https://wpscan.com/vulnerability/d7f89335-630c-47c6-bebf-92f556caa087"
-        ],
-        "summary": "The WP Google Review Slider WordPress plugin before 11.6 does not sanitise and escape some of its settings, which could allow high privilege users such as admin to perform Stored Cross-Site Scripting attacks even when the unfiltered_html capability is disallowed (for example in multisite setup)."
-    },
-    {
-        "Modified": "2022-12-27T13:48:00",
-        "Published": "2022-12-26T13:15:00",
-        "access": {},
-        "assigner": "contact@wpscan.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-4243",
-        "impact": {},
-        "last-modified": "2022-12-27T13:48:00",
-        "references": [
-            "https://wpscan.com/vulnerability/fc1fc057-97ee-4a10-909f-2f11eafa0bd0"
-        ],
-        "summary": "The ImageInject WordPress plugin through TODO does not sanitise and escape some of its settings, which could allow high privilege users such as admin to perform Stored Cross-Site Scripting attacks even when the unfiltered_html capability is disallowed (for example in multisite setup)."
-    },
-    {
-        "Modified": "2022-12-27T13:48:00",
-        "Published": "2022-12-26T13:15:00",
-        "access": {},
-        "assigner": "contact@wpscan.com",
-        "cvss": null,
-        "cwe": "CWE-352",
-        "id": "CVE-2022-4266",
-        "impact": {},
-        "last-modified": "2022-12-27T13:48:00",
-        "references": [
-            "https://wpscan.com/vulnerability/1bcda9d3-c573-441e-828f-055fbec2e08d"
-        ],
-        "summary": "The Bulk Delete Users by Email WordPress plugin through 1.2 does not have CSRF check when deleting users, which could allow attackers to make a logged in admin delete non admin users by knowing their email via a CSRF attack"
-    },
-    {
-        "Modified": "2022-12-27T13:48:00",
-        "Published": "2022-12-26T13:15:00",
-        "access": {},
-        "assigner": "contact@wpscan.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-4267",
-        "impact": {},
-        "last-modified": "2022-12-27T13:48:00",
-        "references": [
-            "https://wpscan.com/vulnerability/e09754f2-e241-4bf8-8c95-a3fbc0ba7585"
-        ],
-        "summary": "The Bulk Delete Users by Email WordPress plugin through 1.2 does not sanitise and escape a parameter before outputting it back in the page, leading to a Reflected Cross-Site Scripting"
-    },
-    {
-        "Modified": "2022-12-27T13:48:00",
-        "Published": "2022-12-26T13:15:00",
-        "access": {},
-        "assigner": "contact@wpscan.com",
-        "cvss": null,
-        "cwe": "CWE-89",
-        "id": "CVE-2022-4268",
-        "impact": {},
-        "last-modified": "2022-12-27T13:48:00",
-        "references": [
-            "https://wpscan.com/vulnerability/bde93d90-1178-4d55-aea9-e02c4f8bcaa2",
-            "https://bulletin.iese.de/post/plugin-logic_1-0-7/"
-        ],
-        "summary": "The Plugin Logic WordPress plugin through 1.0.7 does not sanitise and escape a parameter before using it in a SQL statement, leading to a SQL injection exploitable by high privilege users such as admin"
-    },
-    {
-        "Modified": "2022-12-27T13:48:00",
-        "Published": "2022-12-26T13:15:00",
-        "access": {},
-        "assigner": "contact@wpscan.com",
-        "cvss": null,
-        "cwe": "CWE-94",
-        "id": "CVE-2021-24942",
-        "impact": {},
-        "last-modified": "2022-12-27T13:48:00",
-        "references": [
-            "https://wpscan.com/vulnerability/eaa28832-74c1-4cd5-9b0f-02338e23b418"
-        ],
-        "summary": "The Menu Item Visibility Control WordPress plugin through 0.5 doesn't sanitize and validate the \"Visibility logic\" option for WordPress menu items, which could allow highly privileged users to execute arbitrary PHP code even in a hardened environment."
-    },
-    {
-        "Modified": "2022-12-27T13:48:00",
-        "Published": "2022-12-26T06:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2021-35951",
-        "impact": {},
-        "last-modified": "2022-12-27T13:48:00",
-        "references": [
-            "https://www.fastrack.in/shop/watch-smart-wearables-reflex-2",
-            "https://payatu.com/advisory/fastrack-reflex-unauthenticated-firmware-update"
-        ],
-        "summary": "fastrack Reflex 2.0 W307S_REFLEX_v90.89 Activity Tracker allows an Unauthenticated Remote attacker to send a malicious firmware update via BLE and brick the device."
-    },
-    {
-        "Modified": "2022-12-27T13:48:00",
-        "Published": "2022-12-26T06:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2021-35952",
-        "impact": {},
-        "last-modified": "2022-12-27T13:48:00",
-        "references": [
-            "https://www.fastrack.in/shop/watch-smart-wearables-reflex-2",
-            "https://payatu.com/advisory/lack-of-bluetooth-le-pairing-fastrack-reflex"
-        ],
-        "summary": "fastrack Reflex 2.0 W307S_REFLEX_v90.89 Activity Tracker allows a Remote attacker to change the time, date, and month via Bluetooth LE Characteristics on handle 0x0017."
-    },
-    {
-        "Modified": "2022-12-27T13:48:00",
-        "Published": "2022-12-26T06:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2021-35953",
-        "impact": {},
-        "last-modified": "2022-12-27T13:48:00",
-        "references": [
-            "https://www.fastrack.in/shop/watch-smart-wearables-reflex-2",
-            "https://payatu.com/advisory/device-crash-fastrack-reflex-two-activity-tracker"
-        ],
-        "summary": "fastrack Reflex 2.0 W307S_REFLEX_v90.89 Activity Tracker allows a Remote attacker to cause a Denial of Service (device outage) via crafted choices of the last three bytes of a characteristic value."
-    },
-    {
-        "Modified": "2022-12-27T13:48:00",
-        "Published": "2022-12-26T06:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2021-35954",
-        "impact": {},
-        "last-modified": "2022-12-27T13:48:00",
-        "references": [
-            "https://www.fastrack.in/shop/watch-smart-wearables-reflex-2",
-            "https://payatu.com/advisory/dumping-and-re-flashing-firmware-fastrack-reflex"
-        ],
-        "summary": "fastrack Reflex 2.0 W307S_REFLEX_v90.89 Activity Tracker allows physically proximate attackers to dump the firmware, flash custom malicious firmware, and brick the device via the Serial Wire Debug (SWD) feature."
-    },
-    {
-        "Modified": "2022-12-27T13:48:00",
-        "Published": "2022-12-26T06:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2021-38561",
-        "impact": {},
-        "last-modified": "2022-12-27T13:48:00",
-        "references": [
-            "https://go.googlesource.com/text/+/383b2e75a7a4198c42f8f87833eefb772868a56f",
-            "https://groups.google.com/g/golang-announce",
-            "https://deps.dev/advisory/OSV/GO-2021-0113",
-            "https://pkg.go.dev/golang.org/x/text/language"
-        ],
-        "summary": "golang.org/x/text/language in golang.org/x/text before 0.3.7 can panic with an out-of-bounds read during BCP 47 language tag parsing. Index calculation is mishandled. If parsing untrusted user input, this can be used as a vector for a denial-of-service attack."
     }
 ]
