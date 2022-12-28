@@ -1,5 +1,867 @@
 [
     {
+        "Modified": "2022-12-28T10:18:00",
+        "Published": "2022-12-28T07:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-269",
+        "id": "CVE-2022-46172",
+        "impact": {},
+        "last-modified": "2022-12-28T10:18:00",
+        "references": [
+            "https://github.com/goauthentik/authentik/security/advisories/GHSA-hv8r-6w7p-mpc5"
+        ],
+        "summary": "authentik is an open-source Identity provider focused on flexibility and versatility. In versions prior to 2022.10.4, and 2022.11.4, any authenticated user can create an arbitrary number of accounts through the default flows. This would circumvent any policy in a situation where it is undesirable for users to create new accounts by themselves. This may also affect other applications as these new basic accounts would exist throughout the SSO infrastructure. By default the newly created accounts cannot be logged into as no password reset exists by default. However password resets are likely to be enabled by most installations. This vulnerability pertains to the user context used in the default-user-settings-flow, /api/v3/flows/instances/default-user-settings-flow/execute/. This issue has been fixed in versions 2022.10.4 and 2022.11.4."
+    },
+    {
+        "Modified": "2022-12-28T10:18:00",
+        "Published": "2022-12-28T07:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-669",
+        "id": "CVE-2022-46173",
+        "impact": {},
+        "last-modified": "2022-12-28T10:18:00",
+        "references": [
+            "https://github.com/ElrondNetwork/elrond-go/security/advisories/GHSA-p228-4mrh-ww7r",
+            "https://github.com/ElrondNetwork/elrond-go/pull/4718",
+            "https://github.com/ElrondNetwork/elrond-go/commit/39d7ddcb08bb34217dab6daef7cd9d287fb8cab3"
+        ],
+        "summary": "Elrond-GO is a go implementation for the Elrond Network protocol. Versions prior to 1.3.50 are subject to a processing issue where nodes are affected when trying to process a cross-shard relayed transaction with a smart contract deploy transaction data. The problem was a bad correlation between the transaction caches and the processing component. If the above-mentioned transaction was sent with more gas than required, the smart contract result (SCR transaction) that should have returned the leftover gas, would have been wrongly added to a cache that the processing unit did not consider. The node stopped notarizing metachain blocks. The fix was actually to extend the SCR transaction search in all other caches if it wasn't found in the correct (expected) sharded-cache. There are no known workarounds at this time. This issue has been patched in version 1.3.50."
+    },
+    {
+        "Modified": "2022-12-28T10:18:00",
+        "Published": "2022-12-28T07:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-362",
+        "id": "CVE-2022-46174",
+        "impact": {},
+        "last-modified": "2022-12-28T10:18:00",
+        "references": [
+            "https://github.com/aws/efs-utils/commit/f3a8f88167d55caa2f78aeb72d4dc1987a9ed62d",
+            "https://github.com/aws/efs-utils/issues/125",
+            "https://github.com/aws/efs-utils/security/advisories/GHSA-4fv8-w65m-3932"
+        ],
+        "summary": "efs-utils is a set of Utilities for Amazon Elastic File System (EFS). A potential race condition issue exists within the Amazon EFS mount helper in efs-utils versions v1.34.3 and below. When using TLS to mount file systems, the mount helper allocates a local port for stunnel to receive NFS connections prior to applying the TLS tunnel. In affected versions, concurrent mount operations can allocate the same local port, leading to either failed mount operations or an inappropriate mapping from an EFS customer\u2019s local mount points to that customer\u2019s EFS file systems. This issue is patched in version v1.34.4. There is no recommended work around. We recommend affected users update the installed version of efs-utils to v1.34.4 or later."
+    },
+    {
+        "Modified": "2022-12-28T10:18:00",
+        "Published": "2022-12-28T08:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-639",
+        "id": "CVE-2022-46179",
+        "impact": {},
+        "last-modified": "2022-12-28T10:18:00",
+        "references": [
+            "https://github.com/LiuWoodsCode/LiuOS/security/advisories/GHSA-f9x3-mj2r-cqmf",
+            "https://github.com/LiuWoodsCode/LiuOS/commit/c658b4f3e57258acf5f6207a90c2f2169698ae22"
+        ],
+        "summary": "LiuOS is a small Python project meant to imitate the functions of a regular operating system. Version 0.1.0 and prior of LiuOS allow an attacker to set the GITHUB_ACTIONS environment variable to anything other than null or true and skip authentication checks. This issue is patched in the latest commit (c658b4f3e57258acf5f6207a90c2f2169698ae22) by requiring the var to be set to true, causing a test script to run instead of being able to login. A potential workaround is to check for the GITHUB_ACTIONS environment variable and set it to \"\" (no quotes) to null the variable and force credential checks."
+    },
+    {
+        "Modified": "2022-12-28T10:18:00",
+        "Published": "2022-12-28T09:15:00",
+        "access": {},
+        "assigner": "cna@vuldb.com",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2019-25092",
+        "impact": {},
+        "last-modified": "2022-12-28T10:18:00",
+        "references": [
+            "https://vuldb.com/?id.216955",
+            "https://github.com/Nakiami/mellivora/releases/tag/v2.2.0",
+            "https://github.com/Nakiami/mellivora/commit/e0b6965f8dde608a3d2621617c05695eb406cbb9",
+            "https://vuldb.com/?ctiid.216955"
+        ],
+        "summary": "A vulnerability classified as problematic was found in Nakiami Mellivora up to 2.1.x. Affected by this vulnerability is the function print_user_ip_log of the file include/layout/user.inc.php of the component Admin Panel. The manipulation of the argument $entry['ip'] leads to cross site scripting. The attack can be launched remotely. Upgrading to version 2.2.0 is able to address this issue. The name of the patch is e0b6965f8dde608a3d2621617c05695eb406cbb9. It is recommended to upgrade the affected component. The associated identifier of this vulnerability is VDB-216955."
+    },
+    {
+        "Modified": "2022-12-28T10:18:00",
+        "Published": "2022-12-28T09:15:00",
+        "access": {},
+        "assigner": "cna@vuldb.com",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2021-4293",
+        "impact": {},
+        "last-modified": "2022-12-28T10:18:00",
+        "references": [
+            "https://github.com/gnuboard/youngcart5/commit/70daa537adfa47b87af12d85f1e698fff01785ff",
+            "https://vuldb.com/?id.216954",
+            "https://github.com/gnuboard/youngcart5/releases/tag/5.4.5.2",
+            "https://vuldb.com/?ctiid.216954"
+        ],
+        "summary": "** UNSUPPPORTED WHEN ASSIGNED **** UNSUPPORTED WHEN ASSIGNED ** A vulnerability classified as problematic has been found in gnuboard youngcart5 up to 5.4.5.1. Affected is an unknown function of the file adm/menu_list_update.php. The manipulation of the argument me_link leads to cross site scripting. It is possible to launch the attack remotely. Upgrading to version 5.4.5.2 is able to address this issue. The name of the patch is 70daa537adfa47b87af12d85f1e698fff01785ff. It is recommended to upgrade the affected component. VDB-216954 is the identifier assigned to this vulnerability. NOTE: This vulnerability only affects products that are no longer supported by the maintainer."
+    },
+    {
+        "Modified": "2022-12-28T10:18:00",
+        "Published": "2022-12-28T10:15:00",
+        "access": {},
+        "assigner": "cna@vuldb.com",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2018-25050",
+        "impact": {},
+        "last-modified": "2022-12-28T10:18:00",
+        "references": [
+            "https://vuldb.com/?id.216956",
+            "https://github.com/harvesthq/chosen/releases/tag/v1.8.7",
+            "https://github.com/harvesthq/chosen/pull/2997",
+            "https://github.com/harvesthq/chosen/commit/77fd031d541e77510268d1041ed37798fdd1017e",
+            "https://vuldb.com/?ctiid.216956"
+        ],
+        "summary": "A vulnerability, which was classified as problematic, has been found in Harvest Chosen up to 1.8.6. Affected by this issue is the function AbstractChosen of the file coffee/lib/abstract-chosen.coffee. The manipulation of the argument group_label leads to cross site scripting. The attack may be launched remotely. Upgrading to version 1.8.7 is able to address this issue. The name of the patch is 77fd031d541e77510268d1041ed37798fdd1017e. It is recommended to upgrade the affected component. The identifier of this vulnerability is VDB-216956."
+    },
+    {
+        "Modified": "2022-12-28T10:18:00",
+        "Published": "2022-12-28T01:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-287",
+        "id": "CVE-2022-23555",
+        "impact": {},
+        "last-modified": "2022-12-28T10:18:00",
+        "references": [
+            "https://github.com/goauthentik/authentik/security/advisories/GHSA-9qwp-jf7p-vr7h"
+        ],
+        "summary": "authentik is an open-source Identity Provider focused on flexibility and versatility. Versions prior to 2022.11.4 and 2022.10.4 are vulnerable to Improper Authentication. Token reuse in invitation URLs leads to access control bypass via the use of a different enrollment flow than in the one provided. The vulnerability allows an attacker that knows different invitation flows names (e.g. `enrollment-invitation-test` and `enrollment-invitation-admin`) via either different invite links or via brute forcing to signup via a single invitation url for any valid invite link received (it can even be a url for a third flow as long as it's a valid invite) as the token used in the `Invitations` section of the Admin interface does NOT change when a different `enrollment flow` is selected via the interface and it is NOT bound to the selected flow, so it will be valid for any flow when used. This issue is patched in authentik 2022.11.4,2022.10.4 and 2022.12.0. Only configurations that use invitations and have multiple enrollment flows with invitation stages that grant different permissions are affected. The default configuration is not vulnerable, and neither are configurations with a single enrollment flow. As a workaround, fixed data can be added to invitations which can be checked in the flow to deny requests. Alternatively, an identifier with high entropy (like a UUID) can be used as flow slug, mitigating the attack vector by exponentially decreasing the possibility of discovering other flows."
+    },
+    {
+        "Modified": "2022-12-28T10:18:00",
+        "Published": "2022-12-28T03:15:00",
+        "access": {},
+        "assigner": "security@golang.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2020-36562",
+        "impact": {},
+        "last-modified": "2022-12-28T10:18:00",
+        "references": [
+            "https://pkg.go.dev/vuln/GO-2020-0040",
+            "https://github.com/shiyanhui/dht/issues/57"
+        ],
+        "summary": "Due to unchecked type assertions, maliciously crafted messages can cause panics, which may be used as a denial of service vector."
+    },
+    {
+        "Modified": "2022-12-28T10:18:00",
+        "Published": "2022-12-28T03:15:00",
+        "access": {},
+        "assigner": "security@golang.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2020-36563",
+        "impact": {},
+        "last-modified": "2022-12-28T10:18:00",
+        "references": [
+            "https://pkg.go.dev/vuln/GO-2020-0047",
+            "https://github.com/RobotsAndPencils/go-saml/pull/38"
+        ],
+        "summary": "XML Digital Signatures generated and validated using this package use SHA-1, which may allow an attacker to craft inputs which cause hash collisions depending on their control over the input."
+    },
+    {
+        "Modified": "2022-12-28T10:18:00",
+        "Published": "2022-12-28T03:15:00",
+        "access": {},
+        "assigner": "security@golang.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-3346",
+        "impact": {},
+        "last-modified": "2022-12-28T10:18:00",
+        "references": [
+            "https://pkg.go.dev/vuln/GO-2022-0979",
+            "https://github.com/peterzen/goresolver/issues/5"
+        ],
+        "summary": "DNSSEC validation is not performed correctly. An attacker can cause this package to report successful validation for invalid, attacker-controlled records. The owner name of RRSIG RRs is not validated, permitting an attacker to present the RRSIG for an attacker-controlled domain in a response for any other domain."
+    },
+    {
+        "Modified": "2022-12-28T10:18:00",
+        "Published": "2022-12-28T03:15:00",
+        "access": {},
+        "assigner": "security@golang.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-3347",
+        "impact": {},
+        "last-modified": "2022-12-28T10:18:00",
+        "references": [
+            "https://github.com/peterzen/goresolver/issues/5#issuecomment-1150214257",
+            "https://pkg.go.dev/vuln/GO-2022-1026"
+        ],
+        "summary": "DNSSEC validation is not performed correctly. An attacker can cause this package to report successful validation for invalid, attacker-controlled records. Root DNSSEC public keys are not validated, permitting an attacker to present a self-signed root key and delegation chain."
+    },
+    {
+        "Modified": "2022-12-28T10:18:00",
+        "Published": "2022-12-27T23:15:00",
+        "access": {},
+        "assigner": "cna@vuldb.com",
+        "cvss": null,
+        "cwe": "CWE-1004",
+        "id": "CVE-2019-25091",
+        "impact": {},
+        "last-modified": "2022-12-28T10:18:00",
+        "references": [
+            "https://vuldb.com/?ctiid.216909",
+            "https://github.com/nsupdate-info/nsupdate.info/commit/60a3fe559c453bc36b0ec3e5dd39c1303640a59a",
+            "https://vuldb.com/?id.216909",
+            "https://github.com/nsupdate-info/nsupdate.info/pull/410"
+        ],
+        "summary": "A vulnerability classified as problematic has been found in nsupdate.info. This affects an unknown part of the file src/nsupdate/settings/base.py of the component CSRF Cookie Handler. The manipulation of the argument CSRF_COOKIE_HTTPONLY leads to cookie without 'httponly' flag. It is possible to initiate the attack remotely. The name of the patch is 60a3fe559c453bc36b0ec3e5dd39c1303640a59a. It is recommended to apply a patch to fix this issue. The identifier VDB-216909 was assigned to this vulnerability."
+    },
+    {
+        "Modified": "2022-12-28T10:18:00",
+        "Published": "2022-12-27T23:15:00",
+        "access": {},
+        "assigner": "cna@vuldb.com",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2020-36635",
+        "impact": {},
+        "last-modified": "2022-12-28T10:18:00",
+        "references": [
+            "https://github.com/openmrs/openmrs-module-appointmentscheduling/commit/34213c3f6ea22df427573076fb62744694f601d8",
+            "https://vuldb.com/?id.216915",
+            "https://github.com/openmrs/openmrs-module-appointmentscheduling/pull/32",
+            "https://vuldb.com/?ctiid.216915",
+            "https://github.com/openmrs/openmrs-module-appointmentscheduling/releases/tag/1.13.0"
+        ],
+        "summary": "A vulnerability was found in OpenMRS Appointment Scheduling Module up to 1.12.x. It has been classified as problematic. This affects the function validateFieldName of the file api/src/main/java/org/openmrs/module/appointmentscheduling/validator/AppointmentTypeValidator.java. The manipulation leads to cross site scripting. It is possible to initiate the attack remotely. Upgrading to version 1.13.0 is able to address this issue. The name of the patch is 34213c3f6ea22df427573076fb62744694f601d8. It is recommended to upgrade the affected component. The associated identifier of this vulnerability is VDB-216915."
+    },
+    {
+        "Modified": "2022-12-28T10:18:00",
+        "Published": "2022-12-27T23:15:00",
+        "access": {},
+        "assigner": "cna@vuldb.com",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2020-36636",
+        "impact": {},
+        "last-modified": "2022-12-28T10:18:00",
+        "references": [
+            "https://github.com/openmrs/openmrs-module-adminui/releases/tag/1.5.0",
+            "https://vuldb.com/?ctiid.216918",
+            "https://vuldb.com/?id.216918",
+            "https://github.com/openmrs/openmrs-module-adminui/commit/702fbfdac7c4418f23bb5f6452482b4a88020061",
+            "https://github.com/openmrs/openmrs-module-adminui/pull/57"
+        ],
+        "summary": "A vulnerability classified as problematic has been found in OpenMRS Admin UI Module up to 1.4.x. Affected is the function sendErrorMessage of the file omod/src/main/java/org/openmrs/module/adminui/page/controller/systemadmin/accounts/AccountPageController.java of the component Account Setup Handler. The manipulation leads to cross site scripting. It is possible to launch the attack remotely. Upgrading to version 1.5.0 is able to address this issue. The name of the patch is 702fbfdac7c4418f23bb5f6452482b4a88020061. It is recommended to upgrade the affected component. VDB-216918 is the identifier assigned to this vulnerability."
+    },
+    {
+        "Modified": "2022-12-28T10:18:00",
+        "Published": "2022-12-27T23:15:00",
+        "access": {},
+        "assigner": "cna@vuldb.com",
+        "cvss": null,
+        "cwe": "CWE-89",
+        "id": "CVE-2021-4290",
+        "impact": {},
+        "last-modified": "2022-12-28T10:18:00",
+        "references": [
+            "https://github.com/maboehm/fallstudie/commit/5c13c6a972ef4c07c5f35b417916e0598af9e123",
+            "https://vuldb.com/?ctiid.216907",
+            "https://vuldb.com/?id.216907"
+        ],
+        "summary": "A vulnerability was found in DHBW Fallstudie. It has been declared as critical. Affected by this vulnerability is an unknown functionality of the file app/config/passport.js of the component Login. The manipulation of the argument id/email leads to sql injection. The name of the patch is 5c13c6a972ef4c07c5f35b417916e0598af9e123. It is recommended to apply a patch to fix this issue. The associated identifier of this vulnerability is VDB-216907."
+    },
+    {
+        "Modified": "2022-12-28T10:18:00",
+        "Published": "2022-12-27T23:15:00",
+        "access": {},
+        "assigner": "cna@vuldb.com",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2021-4291",
+        "impact": {},
+        "last-modified": "2022-12-28T10:18:00",
+        "references": [
+            "https://github.com/openmrs/openmrs-module-adminui/commit/a7eefb5f69f6c50a3bffcb138bb8ea57cb41a9b6",
+            "https://github.com/openmrs/openmrs-module-adminui/releases/tag/1.6.0",
+            "https://github.com/openmrs/openmrs-module-adminui/pull/61",
+            "https://vuldb.com/?id.216916",
+            "https://vuldb.com/?ctiid.216916"
+        ],
+        "summary": "A vulnerability was found in OpenMRS Admin UI Module up to 1.5.x. It has been declared as problematic. This vulnerability affects unknown code of the file omod/src/main/webapp/pages/metadata/locations/location.gsp. The manipulation leads to cross site scripting. The attack can be initiated remotely. Upgrading to version 1.6.0 is able to address this issue. The name of the patch is a7eefb5f69f6c50a3bffcb138bb8ea57cb41a9b6. It is recommended to upgrade the affected component. The identifier of this vulnerability is VDB-216916."
+    },
+    {
+        "Modified": "2022-12-28T10:18:00",
+        "Published": "2022-12-27T23:15:00",
+        "access": {},
+        "assigner": "cna@vuldb.com",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2021-4292",
+        "impact": {},
+        "last-modified": "2022-12-28T10:18:00",
+        "references": [
+            "https://github.com/openmrs/openmrs-module-adminui/releases/tag/1.5.0",
+            "https://vuldb.com/?ctiid.216917",
+            "https://vuldb.com/?id.216917",
+            "https://github.com/openmrs/openmrs-module-adminui/pull/58",
+            "https://github.com/openmrs/openmrs-module-adminui/commit/4f8565425b7c74128dec9ca46dfbb9a3c1c24911"
+        ],
+        "summary": "A vulnerability was found in OpenMRS Admin UI Module up to 1.4.x. It has been rated as problematic. This issue affects some unknown processing of the file omod/src/main/webapp/pages/metadata/privileges/privilege.gsp of the component Manage Privilege Page. The manipulation leads to cross site scripting. The attack may be initiated remotely. Upgrading to version 1.5.0 is able to address this issue. The name of the patch is 4f8565425b7c74128dec9ca46dfbb9a3c1c24911. It is recommended to upgrade the affected component. The identifier VDB-216917 was assigned to this vulnerability."
+    },
+    {
+        "Modified": "2022-12-28T10:18:00",
+        "Published": "2022-12-27T23:15:00",
+        "access": {},
+        "assigner": "cna@vuldb.com",
+        "cvss": null,
+        "cwe": "CWE-74",
+        "id": "CVE-2022-4768",
+        "impact": {},
+        "last-modified": "2022-12-28T10:18:00",
+        "references": [
+            "https://github.com/dropbox/merou/commit/d93087973afa26bc0a2d0a5eb5c0fde748bdd107",
+            "https://vuldb.com/?ctiid.216906",
+            "https://vuldb.com/?id.216906",
+            "https://github.com/dropbox/merou/pull/673"
+        ],
+        "summary": "A vulnerability was found in Dropbox merou. It has been classified as critical. Affected is the function add_public_key of the file grouper/public_key.py of the component SSH Public Key Handler. The manipulation of the argument public_key_str leads to injection. It is possible to launch the attack remotely. The name of the patch is d93087973afa26bc0a2d0a5eb5c0fde748bdd107. It is recommended to apply a patch to fix this issue. VDB-216906 is the identifier assigned to this vulnerability."
+    },
+    {
+        "Modified": "2022-12-28T10:18:00",
+        "Published": "2022-12-27T23:15:00",
+        "access": {},
+        "assigner": "cna@vuldb.com",
+        "cvss": null,
+        "cwe": "CWE-22",
+        "id": "CVE-2022-4772",
+        "impact": {},
+        "last-modified": "2022-12-28T10:18:00",
+        "references": [
+            "https://github.com/dgarijo/Widoco/pull/551",
+            "https://vuldb.com/?id.216914",
+            "https://github.com/dgarijo/Widoco/commit/f2279b76827f32190adfa9bd5229b7d5a147fa92",
+            "https://vuldb.com/?ctiid.216914"
+        ],
+        "summary": "A vulnerability was found in Widoco and classified as critical. Affected by this issue is the function unZipIt of the file src/main/java/widoco/WidocoUtils.java. The manipulation leads to path traversal. It is possible to launch the attack on the local host. The name of the patch is f2279b76827f32190adfa9bd5229b7d5a147fa92. It is recommended to apply a patch to fix this issue. VDB-216914 is the identifier assigned to this vulnerability."
+    },
+    {
+        "Modified": "2022-12-28T10:18:00",
+        "Published": "2022-12-28T00:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-918",
+        "id": "CVE-2022-23544",
+        "impact": {},
+        "last-modified": "2022-12-28T10:18:00",
+        "references": [
+            "https://github.com/metersphere/metersphere/security/advisories/GHSA-vrv6-cg45-rmjj",
+            "https://github.com/metersphere/metersphere/commit/d0f95b50737c941b29d507a4cc3545f2dc6ab121"
+        ],
+        "summary": "MeterSphere is a one-stop open source continuous testing platform, covering test management, interface testing, UI testing and performance testing. Versions prior to 2.5.0 are subject to a Server-Side Request Forgery that leads to Cross-Site Scripting. A Server-Side request forgery in `IssueProxyResourceService::getMdImageByUrl` allows an attacker to access internal resources, as well as executing JavaScript code in the context of Metersphere's origin by a victim of a reflected XSS. This vulnerability has been fixed in v2.5.0. There are no known workarounds."
+    },
+    {
+        "Modified": "2022-12-28T10:18:00",
+        "Published": "2022-12-28T00:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-121",
+        "id": "CVE-2022-41966",
+        "impact": {},
+        "last-modified": "2022-12-28T10:18:00",
+        "references": [
+            "https://x-stream.github.io/CVE-2022-41966.html",
+            "https://github.com/x-stream/xstream/security/advisories/GHSA-j563-grx4-pjpv"
+        ],
+        "summary": "XStream serializes Java objects to XML and back again. Versions prior to 1.4.20 may allow a remote attacker to terminate the application with a stack overflow error, resulting in a denial of service only via manipulation the processed input stream. The attack uses the hash code implementation for collections and maps to force recursive hash calculation causing a stack overflow. This issue is patched in version 1.4.20 which handles the stack overflow and raises an InputManipulationException instead. A potential workaround for users who only use HashMap or HashSet and whose XML refers these only as default map or set, is to change the default implementation of java.util.Map and java.util per the code example in the referenced advisory. However, this implies that your application does not care about the implementation of the map and all elements are comparable."
+    },
+    {
+        "Modified": "2022-12-28T10:18:00",
+        "Published": "2022-12-28T00:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-611",
+        "id": "CVE-2022-41967",
+        "impact": {},
+        "last-modified": "2022-12-28T10:18:00",
+        "references": [
+            "https://github.com/HyperaDev/Dragonfly/commit/9661375e1135127ca6cdb5712e978bec33cc06b3",
+            "https://github.com/HyperaDev/Dragonfly/security/advisories/GHSA-6x3m-96qp-mmxv"
+        ],
+        "summary": "Dragonfly is a Java runtime dependency management library. Dragonfly v0.3.0-SNAPSHOT does not configure DocumentBuilderFactory to prevent XML external entity (XXE) attacks. This issue is patched in 0.3.1-SNAPSHOT. As a workaround, since Dragonfly only parses XML `SNAPSHOT` versions are being resolved, this vulnerability may be avoided by not trying to resolve `SNAPSHOT` versions."
+    },
+    {
+        "Modified": "2022-12-28T10:18:00",
+        "Published": "2022-12-28T00:15:00",
+        "access": {},
+        "assigner": "cna@vuldb.com",
+        "cvss": null,
+        "cwe": "CWE-22",
+        "id": "CVE-2022-4773",
+        "impact": {},
+        "last-modified": "2022-12-28T10:18:00",
+        "references": [
+            "https://github.com/HolgerHees/cloudsync/commit/3ad796833398af257c28e0ebeade68518e0e612a",
+            "https://vuldb.com/?ctiid.216919",
+            "https://vuldb.com/?id.216919"
+        ],
+        "summary": "** UNSUPPPORTED WHEN ASSIGNED **** UNSUPPORTED WHEN ASSIGNED ** A vulnerability classified as problematic was found in cloudsync. Affected by this vulnerability is the function getItem of the file src/main/java/cloudsync/connector/LocalFilesystemConnector.java. The manipulation leads to path traversal. It is possible to launch the attack on the local host. The name of the patch is 3ad796833398af257c28e0ebeade68518e0e612a. It is recommended to apply a patch to fix this issue. The associated identifier of this vulnerability is VDB-216919. NOTE: This vulnerability only affects products that are no longer supported by the maintainer."
+    },
+    {
+        "Modified": "2022-12-28T10:18:00",
+        "Published": "2022-12-27T21:15:00",
+        "access": {},
+        "assigner": "security@golang.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2020-36567",
+        "impact": {},
+        "last-modified": "2022-12-28T10:18:00",
+        "references": [
+            "https://pkg.go.dev/vuln/GO-2020-0001",
+            "https://github.com/gin-gonic/gin/commit/a71af9c144f9579f6dbe945341c1df37aaf09c0d",
+            "https://github.com/gin-gonic/gin/pull/2237"
+        ],
+        "summary": "Unsanitized input in the default logger in github.com/gin-gonic/gin before v1.6.0 allows remote attackers to inject arbitrary log lines."
+    },
+    {
+        "Modified": "2022-12-28T10:18:00",
+        "Published": "2022-12-27T22:15:00",
+        "access": {},
+        "assigner": "security@golang.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2013-10005",
+        "impact": {},
+        "last-modified": "2022-12-28T10:18:00",
+        "references": [
+            "https://pkg.go.dev/vuln/GO-2020-0024",
+            "https://github.com/btcsuite/go-socks/commit/233bccbb1abe02f05750f7ace66f5bffdb13defc"
+        ],
+        "summary": "The RemoteAddr and LocalAddr methods on the returned net.Conn may call themselves, leading to an infinite loop which will crash the program due to a stack overflow."
+    },
+    {
+        "Modified": "2022-12-28T10:18:00",
+        "Published": "2022-12-27T22:15:00",
+        "access": {},
+        "assigner": "security@golang.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2014-125026",
+        "impact": {},
+        "last-modified": "2022-12-28T10:18:00",
+        "references": [
+            "https://github.com/cloudflare/golz4/issues/5",
+            "https://pkg.go.dev/vuln/GO-2020-0022",
+            "https://github.com/cloudflare/golz4/commit/199f5f7878062ca17a98e079f2dbe1205e2ed898"
+        ],
+        "summary": "LZ4 bindings use a deprecated C API that is vulnerable to memory corruption, which could lead to arbitrary code execution if called with untrusted user input."
+    },
+    {
+        "Modified": "2022-12-28T10:18:00",
+        "Published": "2022-12-27T22:15:00",
+        "access": {},
+        "assigner": "security@golang.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2015-10004",
+        "impact": {},
+        "last-modified": "2022-12-28T10:18:00",
+        "references": [
+            "https://github.com/robbert229/jwt/commit/ca1404ee6e83fcbafb66b09ed0d543850a15b654",
+            "https://pkg.go.dev/vuln/GO-2020-0023",
+            "https://github.com/robbert229/jwt/issues/12"
+        ],
+        "summary": "Token validation methods are susceptible to a timing side-channel during HMAC comparison. With a large enough number of requests over a low latency connection, an attacker may use this to determine the expected HMAC."
+    },
+    {
+        "Modified": "2022-12-28T10:18:00",
+        "Published": "2022-12-27T22:15:00",
+        "access": {},
+        "assigner": "security@golang.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2016-15005",
+        "impact": {},
+        "last-modified": "2022-12-28T10:18:00",
+        "references": [
+            "https://pkg.go.dev/vuln/GO-2020-0045",
+            "https://github.com/dinever/golf/commit/3776f338be48b5bc5e8cf9faff7851fc52a3f1fe",
+            "https://github.com/dinever/golf/pull/24",
+            "https://github.com/dinever/golf/issues/20"
+        ],
+        "summary": "CSRF tokens are generated using math/rand, which is not a cryptographically secure rander number generation, making predicting their values relatively trivial and allowing an attacker to bypass CSRF protections which relatively few requests."
+    },
+    {
+        "Modified": "2022-12-28T10:18:00",
+        "Published": "2022-12-27T22:15:00",
+        "access": {},
+        "assigner": "security@golang.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2017-20146",
+        "impact": {},
+        "last-modified": "2022-12-28T10:18:00",
+        "references": [
+            "https://github.com/gorilla/handlers/commit/90663712d74cb411cbef281bc1e08c19d1a76145",
+            "https://github.com/gorilla/handlers/pull/116",
+            "https://pkg.go.dev/vuln/GO-2020-0020"
+        ],
+        "summary": "Usage of the CORS handler may apply improper CORS headers, allowing the requester to explicitly control the value of the Access-Control-Allow-Origin header, which bypasses the expected behavior of the Same Origin Policy."
+    },
+    {
+        "Modified": "2022-12-28T10:18:00",
+        "Published": "2022-12-27T22:15:00",
+        "access": {},
+        "assigner": "security@golang.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2018-25046",
+        "impact": {},
+        "last-modified": "2022-12-28T10:18:00",
+        "references": [
+            "https://github.com/cloudfoundry/archiver/commit/09b5706aa9367972c09144a450bb4523049ee840",
+            "https://pkg.go.dev/vuln/GO-2020-0025",
+            "https://snyk.io/research/zip-slip-vulnerability"
+        ],
+        "summary": "Due to improper path santization, archives containing relative file paths can cause files to be written (or overwritten) outside of the target directory."
+    },
+    {
+        "Modified": "2022-12-28T10:18:00",
+        "Published": "2022-12-27T22:15:00",
+        "access": {},
+        "assigner": "security@golang.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2019-25072",
+        "impact": {},
+        "last-modified": "2022-12-28T10:18:00",
+        "references": [
+            "https://github.com/tendermint/tendermint/commit/03085c2da23b179c4a51f59a03cb40aa4e85a613",
+            "https://pkg.go.dev/vuln/GO-2020-0037",
+            "https://github.com/tendermint/tendermint/pull/3430"
+        ],
+        "summary": "Due to support of Gzip compression in request bodies, as well as a lack of limiting response body sizes, a malicious server can cause a client to consume a significant amount of system resources, which may be used as a denial of service vector."
+    },
+    {
+        "Modified": "2022-12-28T10:18:00",
+        "Published": "2022-12-27T22:15:00",
+        "access": {},
+        "assigner": "security@golang.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2019-25073",
+        "impact": {},
+        "last-modified": "2022-12-28T10:18:00",
+        "references": [
+            "https://github.com/goadesign/goa/commit/70b5a199d0f813d74423993832c424e1fc73fb39",
+            "https://pkg.go.dev/vuln/GO-2020-0032",
+            "https://github.com/goadesign/goa/pull/2388"
+        ],
+        "summary": "Improper path santiziation in github.com/goadesign/goa before v3.0.9, v2.0.10, or v1.4.3 allow remote attackers to read files outside of the intended directory."
+    },
+    {
+        "Modified": "2022-12-28T10:18:00",
+        "Published": "2022-12-27T22:15:00",
+        "access": {},
+        "assigner": "security@golang.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2020-36559",
+        "impact": {},
+        "last-modified": "2022-12-28T10:18:00",
+        "references": [
+            "https://github.com/go-aah/aah/pull/267",
+            "https://github.com/go-aah/aah/issues/266",
+            "https://pkg.go.dev/vuln/GO-2020-0033",
+            "https://github.com/go-aah/aah/commit/881dc9f71d1f7a4e8a9a39df9c5c081d3a2da1ec"
+        ],
+        "summary": "Due to improper santization of user input, HTTPEngine.Handle allows for directory traversal, allowing an attacker to read files outside of the target directory that the server has permission to read."
+    },
+    {
+        "Modified": "2022-12-28T10:18:00",
+        "Published": "2022-12-27T22:15:00",
+        "access": {},
+        "assigner": "security@golang.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2020-36560",
+        "impact": {},
+        "last-modified": "2022-12-28T10:18:00",
+        "references": [
+            "https://github.com/artdarek/go-unzip/pull/2",
+            "https://pkg.go.dev/vuln/GO-2020-0034",
+            "https://snyk.io/research/zip-slip-vulnerability",
+            "https://github.com/artdarek/go-unzip/commit/4975cbe0a719dc50b12da8585f1f207c82f7dfe0"
+        ],
+        "summary": "Due to improper path santization, archives containing relative file paths can cause files to be written (or overwritten) outside of the target directory."
+    },
+    {
+        "Modified": "2022-12-28T10:18:00",
+        "Published": "2022-12-27T22:15:00",
+        "access": {},
+        "assigner": "security@golang.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2020-36561",
+        "impact": {},
+        "last-modified": "2022-12-28T10:18:00",
+        "references": [
+            "https://github.com/yi-ge/unzip/commit/2adbaa4891b9690853ef10216189189f5ad7dc73",
+            "https://pkg.go.dev/vuln/GO-2020-0035",
+            "https://github.com/yi-ge/unzip/pull/1",
+            "https://snyk.io/research/zip-slip-vulnerability"
+        ],
+        "summary": "Due to improper path santization, archives containing relative file paths can cause files to be written (or overwritten) outside of the target directory."
+    },
+    {
+        "Modified": "2022-12-28T10:18:00",
+        "Published": "2022-12-27T22:15:00",
+        "access": {},
+        "assigner": "security@golang.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2020-36564",
+        "impact": {},
+        "last-modified": "2022-12-28T10:18:00",
+        "references": [
+            "https://pkg.go.dev/vuln/GO-2020-0049",
+            "https://github.com/justinas/nosurf/commit/4d86df7a4affa1fa50ab39fb09aac56c3ce9c314",
+            "https://github.com/justinas/nosurf/pull/60"
+        ],
+        "summary": "Due to improper validation of caller input, validation is silently disabled if the provided expected token is malformed, causing any user supplied token to be considered valid."
+    },
+    {
+        "Modified": "2022-12-28T10:18:00",
+        "Published": "2022-12-27T22:15:00",
+        "access": {},
+        "assigner": "security@golang.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2020-36566",
+        "impact": {},
+        "last-modified": "2022-12-28T10:18:00",
+        "references": [
+            "https://snyk.io/research/zip-slip-vulnerability",
+            "https://github.com/whyrusleeping/tar-utils/commit/20a61371de5b51380bbdb0c7935b30b0625ac227",
+            "https://pkg.go.dev/vuln/GO-2021-0106"
+        ],
+        "summary": "Due to improper path santization, archives containing relative file paths can cause files to be written (or overwritten) outside of the target directory."
+    },
+    {
+        "Modified": "2022-12-28T10:18:00",
+        "Published": "2022-12-27T22:15:00",
+        "access": {},
+        "assigner": "security@golang.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2020-36568",
+        "impact": {},
+        "last-modified": "2022-12-28T10:18:00",
+        "references": [
+            "https://github.com/revel/revel/commit/d160ecb72207824005b19778594cbdc272e8a605",
+            "https://github.com/revel/revel/issues/1424",
+            "https://pkg.go.dev/vuln/GO-2020-0003",
+            "https://github.com/revel/revel/pull/1427"
+        ],
+        "summary": "Unsanitized input in the query parser in github.com/revel/revel before v1.0.0 allows remote attackers to cause resource exhaustion via memory allocation."
+    },
+    {
+        "Modified": "2022-12-28T10:18:00",
+        "Published": "2022-12-27T22:15:00",
+        "access": {},
+        "assigner": "security@golang.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2020-36569",
+        "impact": {},
+        "last-modified": "2022-12-28T10:18:00",
+        "references": [
+            "https://pkg.go.dev/vuln/GO-2020-0004",
+            "https://github.com/nanobox-io/golang-nanoauth/pull/5",
+            "https://github.com/nanobox-io/golang-nanoauth/commit/063a3fb69896acf985759f0fe3851f15973993f3"
+        ],
+        "summary": "Authentication is globally bypassed in github.com/nanobox-io/golang-nanoauth between v0.0.0-20160722212129-ac0cc4484ad4 and v0.0.0-20200131131040-063a3fb69896 if ListenAndServe is called with an empty token."
+    },
+    {
+        "Modified": "2022-12-28T10:18:00",
+        "Published": "2022-12-27T22:15:00",
+        "access": {},
+        "assigner": "security@golang.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2021-4235",
+        "impact": {},
+        "last-modified": "2022-12-28T10:18:00",
+        "references": [
+            "https://github.com/go-yaml/yaml/commit/bb4e33bf68bf89cad44d386192cbed201f35b241",
+            "https://pkg.go.dev/vuln/GO-2021-0061",
+            "https://github.com/go-yaml/yaml/pull/375"
+        ],
+        "summary": "Due to unbounded alias chasing, a maliciously crafted YAML file can cause the system to consume significant system resources. If parsing user input, this may be used as a denial of service vector."
+    },
+    {
+        "Modified": "2022-12-28T10:18:00",
+        "Published": "2022-12-27T22:15:00",
+        "access": {},
+        "assigner": "security@golang.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2021-4236",
+        "impact": {},
+        "last-modified": "2022-12-28T10:18:00",
+        "references": [
+            "https://github.com/ecnepsnai/web/commit/5a78f8d5c41ce60dcf9f61aaf47a7a8dc3e0002f",
+            "https://pkg.go.dev/vuln/GO-2021-0107"
+        ],
+        "summary": "Web Sockets do not execute any AuthenticateMethod methods which may be set, leading to a nil pointer dereference if the returned UserData pointer is assumed to be non-nil, or authentication bypass. This issue only affects WebSockets with an AuthenticateMethod hook. Request handlers that do not explicitly use WebSockets are not vulnerable."
+    },
+    {
+        "Modified": "2022-12-28T10:18:00",
+        "Published": "2022-12-27T22:15:00",
+        "access": {},
+        "assigner": "security@golang.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2021-4238",
+        "impact": {},
+        "last-modified": "2022-12-28T10:18:00",
+        "references": [
+            "https://github.com/Masterminds/goutils/commit/869801f20f9f1e7ecdbdb6422049d8241270d5e1",
+            "https://pkg.go.dev/vuln/GO-2022-0411"
+        ],
+        "summary": "Randomly-generated alphanumeric strings contain significantly less entropy than expected. The RandomAlphaNumeric and CryptoRandomAlphaNumeric functions always return strings containing at least one digit from 0 to 9. This significantly reduces the amount of entropy in short strings generated by these functions."
+    },
+    {
+        "Modified": "2022-12-28T10:18:00",
+        "Published": "2022-12-27T22:15:00",
+        "access": {},
+        "assigner": "security@golang.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2021-4239",
+        "impact": {},
+        "last-modified": "2022-12-28T10:18:00",
+        "references": [
+            "https://github.com/flynn/noise/pull/44",
+            "https://pkg.go.dev/vuln/GO-2022-0425"
+        ],
+        "summary": "The Noise protocol implementation suffers from weakened cryptographic security after encrypting 2^64 messages, and a potential denial of service attack. After 2^64 (~18.4 quintillion) messages are encrypted with the Encrypt function, the nonce counter will wrap around, causing multiple messages to be encrypted with the same key and nonce. In a separate issue, the Decrypt function increments the nonce state even when it fails to decrypt a message. If an attacker can provide an invalid input to the Decrypt function, this will cause the nonce state to desynchronize between the peers, resulting in a failure to encrypt all subsequent messages."
+    },
+    {
+        "Modified": "2022-12-28T10:18:00",
+        "Published": "2022-12-27T22:15:00",
+        "access": {},
+        "assigner": "security@golang.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-2582",
+        "impact": {},
+        "last-modified": "2022-12-28T10:18:00",
+        "references": [
+            "https://github.com/aws/aws-sdk-go/commit/35fa6ddf45c061e0f08d3a3b5119f8f4da38f6d1",
+            "https://pkg.go.dev/vuln/GO-2022-0391"
+        ],
+        "summary": "The AWS S3 Crypto SDK sends an unencrypted hash of the plaintext alongside the ciphertext as a metadata field. This hash can be used to brute force the plaintext, if the hash is readable to the attacker. AWS now blocks this metadata field, but older SDK versions still send it."
+    },
+    {
+        "Modified": "2022-12-28T10:18:00",
+        "Published": "2022-12-27T22:15:00",
+        "access": {},
+        "assigner": "security@golang.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-2583",
+        "impact": {},
+        "last-modified": "2022-12-28T10:18:00",
+        "references": [
+            "https://github.com/ntbosscher/gobase/commit/a8d40bce9c429d324122d18c446924dab809e812",
+            "https://pkg.go.dev/vuln/GO-2022-0400"
+        ],
+        "summary": "A race condition can cause incorrect HTTP request routing."
+    },
+    {
+        "Modified": "2022-12-28T10:18:00",
+        "Published": "2022-12-27T22:15:00",
+        "access": {},
+        "assigner": "security@golang.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-2584",
+        "impact": {},
+        "last-modified": "2022-12-28T10:18:00",
+        "references": [
+            "https://github.com/ipld/go-codec-dagpb/commit/a17ace35cc760a2698645c09868f9050fa219f57",
+            "https://pkg.go.dev/vuln/GO-2022-0422"
+        ],
+        "summary": "The dag-pb codec can panic when decoding invalid blocks."
+    },
+    {
+        "Modified": "2022-12-28T10:18:00",
+        "Published": "2022-12-27T22:15:00",
+        "access": {},
+        "assigner": "security@golang.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-3064",
+        "impact": {},
+        "last-modified": "2022-12-28T10:18:00",
+        "references": [
+            "https://github.com/go-yaml/yaml/releases/tag/v2.2.4",
+            "https://pkg.go.dev/vuln/GO-2022-0956",
+            "https://github.com/go-yaml/yaml/commit/f221b8435cfb71e54062f6c6e99e9ade30b124d5"
+        ],
+        "summary": "Parsing malicious or large YAML documents can consume excessive amounts of CPU or memory."
+    },
+    {
+        "Modified": "2022-12-28T10:18:00",
+        "Published": "2022-12-27T22:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-45778",
+        "impact": {},
+        "last-modified": "2022-12-28T10:18:00",
+        "references": [
+            "https://gist.github.com/yinfei6/6ffff06db3f7d4c24de2f784c0db10df"
+        ],
+        "summary": "https://www.hillstonenet.com.cn/ Hillstone Firewall SG-6000 <= 5.0.4.0 is vulnerable to Incorrect Access Control. There is a permission bypass vulnerability in the Hillstone WEB application firewall. An attacker can enter the background of the firewall with super administrator privileges through a configuration error in report.m."
+    },
+    {
+        "Modified": "2022-12-28T10:18:00",
+        "Published": "2022-12-27T22:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-45963",
+        "impact": {},
+        "last-modified": "2022-12-28T10:18:00",
+        "references": [
+            "https://gist.github.com/yinfei6/fc6478328f8c2e2bf62a631a81afb265"
+        ],
+        "summary": "h3c firewall <= 3.10 ESS6703 has a privilege bypass vulnerability."
+    },
+    {
+        "Modified": "2022-12-28T10:18:00",
+        "Published": "2022-12-27T22:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-46442",
+        "impact": {},
+        "last-modified": "2022-12-28T10:18:00",
+        "references": [
+            "https://gist.github.com/yinfei6/f2b311374de4b4cec1dc22433d38c92a"
+        ],
+        "summary": "dedecms <=V5.7.102 is vulnerable to SQL Injection. In sys_ sql_ n query.php there are no restrictions on the sql query."
+    },
+    {
         "Modified": "2022-12-28T04:15:00",
         "Published": "2022-12-19T16:15:00",
         "access": {},
@@ -95,150 +957,6 @@
             "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/7WX5YE66CT7Y5C2HTHXSFDKQWYWYWJ2T/"
         ],
         "summary": "The th_read() function doesn\u2019t free a variable t->th_buf.gnu_longlink after allocating memory, which may cause a memory leak."
-    },
-    {
-        "Modified": "2022-12-28T03:15:00",
-        "Published": "2022-12-28T03:15:00",
-        "access": {},
-        "assigner": "security@golang.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2020-36562",
-        "impact": {},
-        "last-modified": "2022-12-28T03:15:00",
-        "references": [
-            "https://pkg.go.dev/vuln/GO-2020-0040",
-            "https://github.com/shiyanhui/dht/issues/57"
-        ],
-        "summary": "Due to unchecked type assertions, maliciously crafted messages can cause panics, which may be used as a denial of service vector."
-    },
-    {
-        "Modified": "2022-12-28T03:15:00",
-        "Published": "2022-12-28T03:15:00",
-        "access": {},
-        "assigner": "security@golang.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2020-36563",
-        "impact": {},
-        "last-modified": "2022-12-28T03:15:00",
-        "references": [
-            "https://pkg.go.dev/vuln/GO-2020-0047",
-            "https://github.com/RobotsAndPencils/go-saml/pull/38"
-        ],
-        "summary": "XML Digital Signatures generated and validated using this package use SHA-1, which may allow an attacker to craft inputs which cause hash collisions depending on their control over the input."
-    },
-    {
-        "Modified": "2022-12-28T03:15:00",
-        "Published": "2022-12-28T03:15:00",
-        "access": {},
-        "assigner": "security@golang.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-3346",
-        "impact": {},
-        "last-modified": "2022-12-28T03:15:00",
-        "references": [
-            "https://pkg.go.dev/vuln/GO-2022-0979",
-            "https://github.com/peterzen/goresolver/issues/5"
-        ],
-        "summary": "DNSSEC validation is not performed correctly. An attacker can cause this package to report successful validation for invalid, attacker-controlled records. The owner name of RRSIG RRs is not validated, permitting an attacker to present the RRSIG for an attacker-controlled domain in a response for any other domain."
-    },
-    {
-        "Modified": "2022-12-28T03:15:00",
-        "Published": "2022-12-28T03:15:00",
-        "access": {},
-        "assigner": "security@golang.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-3347",
-        "impact": {},
-        "last-modified": "2022-12-28T03:15:00",
-        "references": [
-            "https://github.com/peterzen/goresolver/issues/5#issuecomment-1150214257",
-            "https://pkg.go.dev/vuln/GO-2022-1026"
-        ],
-        "summary": "DNSSEC validation is not performed correctly. An attacker can cause this package to report successful validation for invalid, attacker-controlled records. Root DNSSEC public keys are not validated, permitting an attacker to present a self-signed root key and delegation chain."
-    },
-    {
-        "Modified": "2022-12-28T01:15:00",
-        "Published": "2022-12-28T01:15:00",
-        "access": {},
-        "assigner": "security-advisories@github.com",
-        "cvss": null,
-        "cwe": "CWE-287",
-        "id": "CVE-2022-23555",
-        "impact": {},
-        "last-modified": "2022-12-28T01:15:00",
-        "references": [
-            "https://github.com/goauthentik/authentik/security/advisories/GHSA-9qwp-jf7p-vr7h"
-        ],
-        "summary": "authentik is an open-source Identity Provider focused on flexibility and versatility. Versions prior to 2022.11.4 and 2022.10.4 are vulnerable to Improper Authentication. Token reuse in invitation URLs leads to access control bypass via the use of a different enrollment flow than in the one provided. The vulnerability allows an attacker that knows different invitation flows names (e.g. `enrollment-invitation-test` and `enrollment-invitation-admin`) via either different invite links or via brute forcing to signup via a single invitation url for any valid invite link received (it can even be a url for a third flow as long as it's a valid invite) as the token used in the `Invitations` section of the Admin interface does NOT change when a different `enrollment flow` is selected via the interface and it is NOT bound to the selected flow, so it will be valid for any flow when used. This issue is patched in authentik 2022.11.4,2022.10.4 and 2022.12.0. Only configurations that use invitations and have multiple enrollment flows with invitation stages that grant different permissions are affected. The default configuration is not vulnerable, and neither are configurations with a single enrollment flow. As a workaround, fixed data can be added to invitations which can be checked in the flow to deny requests. Alternatively, an identifier with high entropy (like a UUID) can be used as flow slug, mitigating the attack vector by exponentially decreasing the possibility of discovering other flows."
-    },
-    {
-        "Modified": "2022-12-28T00:15:00",
-        "Published": "2022-12-28T00:15:00",
-        "access": {},
-        "assigner": "security-advisories@github.com",
-        "cvss": null,
-        "cwe": "CWE-918",
-        "id": "CVE-2022-23544",
-        "impact": {},
-        "last-modified": "2022-12-28T00:15:00",
-        "references": [
-            "https://github.com/metersphere/metersphere/security/advisories/GHSA-vrv6-cg45-rmjj",
-            "https://github.com/metersphere/metersphere/commit/d0f95b50737c941b29d507a4cc3545f2dc6ab121"
-        ],
-        "summary": "MeterSphere is a one-stop open source continuous testing platform, covering test management, interface testing, UI testing and performance testing. Versions prior to 2.5.0 are subject to a Server-Side Request Forgery that leads to Cross-Site Scripting. A Server-Side request forgery in `IssueProxyResourceService::getMdImageByUrl` allows an attacker to access internal resources, as well as executing JavaScript code in the context of Metersphere's origin by a victim of a reflected XSS. This vulnerability has been fixed in v2.5.0. There are no known workarounds."
-    },
-    {
-        "Modified": "2022-12-28T00:15:00",
-        "Published": "2022-12-28T00:15:00",
-        "access": {},
-        "assigner": "security-advisories@github.com",
-        "cvss": null,
-        "cwe": "CWE-121",
-        "id": "CVE-2022-41966",
-        "impact": {},
-        "last-modified": "2022-12-28T00:15:00",
-        "references": [
-            "https://x-stream.github.io/CVE-2022-41966.html",
-            "https://github.com/x-stream/xstream/security/advisories/GHSA-j563-grx4-pjpv"
-        ],
-        "summary": "XStream serializes Java objects to XML and back again. Versions prior to 1.4.20 may allow a remote attacker to terminate the application with a stack overflow error, resulting in a denial of service only via manipulation the processed input stream. The attack uses the hash code implementation for collections and maps to force recursive hash calculation causing a stack overflow. This issue is patched in version 1.4.20 which handles the stack overflow and raises an InputManipulationException instead. A potential workaround for users who only use HashMap or HashSet and whose XML refers these only as default map or set, is to change the default implementation of java.util.Map and java.util per the code example in the referenced advisory. However, this implies that your application does not care about the implementation of the map and all elements are comparable."
-    },
-    {
-        "Modified": "2022-12-28T00:15:00",
-        "Published": "2022-12-28T00:15:00",
-        "access": {},
-        "assigner": "security-advisories@github.com",
-        "cvss": null,
-        "cwe": "CWE-611",
-        "id": "CVE-2022-41967",
-        "impact": {},
-        "last-modified": "2022-12-28T00:15:00",
-        "references": [
-            "https://github.com/HyperaDev/Dragonfly/commit/9661375e1135127ca6cdb5712e978bec33cc06b3",
-            "https://github.com/HyperaDev/Dragonfly/security/advisories/GHSA-6x3m-96qp-mmxv"
-        ],
-        "summary": "Dragonfly is a Java runtime dependency management library. Dragonfly v0.3.0-SNAPSHOT does not configure DocumentBuilderFactory to prevent XML external entity (XXE) attacks. This issue is patched in 0.3.1-SNAPSHOT. As a workaround, since Dragonfly only parses XML `SNAPSHOT` versions are being resolved, this vulnerability may be avoided by not trying to resolve `SNAPSHOT` versions."
-    },
-    {
-        "Modified": "2022-12-28T00:15:00",
-        "Published": "2022-12-28T00:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-22",
-        "id": "CVE-2022-4773",
-        "impact": {},
-        "last-modified": "2022-12-28T00:15:00",
-        "references": [
-            "https://github.com/HolgerHees/cloudsync/commit/3ad796833398af257c28e0ebeade68518e0e612a",
-            "https://vuldb.com/?ctiid.216919",
-            "https://vuldb.com/?id.216919"
-        ],
-        "summary": "** UNSUPPPORTED WHEN ASSIGNED **** UNSUPPORTED WHEN ASSIGNED ** A vulnerability classified as problematic was found in cloudsync. Affected by this vulnerability is the function getItem of the file src/main/java/cloudsync/connector/LocalFilesystemConnector.java. The manipulation leads to path traversal. It is possible to launch the attack on the local host. The name of the patch is 3ad796833398af257c28e0ebeade68518e0e612a. It is recommended to apply a patch to fix this issue. The associated identifier of this vulnerability is VDB-216919. NOTE: This vulnerability only affects products that are no longer supported by the maintainer."
     },
     {
         "Modified": "2022-12-28T00:15:00",
@@ -345,153 +1063,6 @@
             "https://www.debian.org/security/2022/dsa-5306"
         ],
         "summary": "An out-of-bounds write vulnerability exists in the RS-274X aperture macro variables handling functionality of Gerbv 2.7.0 and dev (commit b5f1eacd) and the forked version of Gerbv (commit 71493260). A specially-crafted gerber file can lead to code execution. An attacker can provide a malicious file to trigger this vulnerability."
-    },
-    {
-        "Modified": "2022-12-27T23:15:00",
-        "Published": "2022-12-27T23:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-1004",
-        "id": "CVE-2019-25091",
-        "impact": {},
-        "last-modified": "2022-12-27T23:15:00",
-        "references": [
-            "https://vuldb.com/?ctiid.216909",
-            "https://github.com/nsupdate-info/nsupdate.info/commit/60a3fe559c453bc36b0ec3e5dd39c1303640a59a",
-            "https://vuldb.com/?id.216909",
-            "https://github.com/nsupdate-info/nsupdate.info/pull/410"
-        ],
-        "summary": "A vulnerability classified as problematic has been found in nsupdate.info. This affects an unknown part of the file src/nsupdate/settings/base.py of the component CSRF Cookie Handler. The manipulation of the argument CSRF_COOKIE_HTTPONLY leads to cookie without 'httponly' flag. It is possible to initiate the attack remotely. The name of the patch is 60a3fe559c453bc36b0ec3e5dd39c1303640a59a. It is recommended to apply a patch to fix this issue. The identifier VDB-216909 was assigned to this vulnerability."
-    },
-    {
-        "Modified": "2022-12-27T23:15:00",
-        "Published": "2022-12-27T23:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2020-36635",
-        "impact": {},
-        "last-modified": "2022-12-27T23:15:00",
-        "references": [
-            "https://github.com/openmrs/openmrs-module-appointmentscheduling/commit/34213c3f6ea22df427573076fb62744694f601d8",
-            "https://vuldb.com/?id.216915",
-            "https://github.com/openmrs/openmrs-module-appointmentscheduling/pull/32",
-            "https://vuldb.com/?ctiid.216915",
-            "https://github.com/openmrs/openmrs-module-appointmentscheduling/releases/tag/1.13.0"
-        ],
-        "summary": "A vulnerability was found in OpenMRS Appointment Scheduling Module up to 1.12.x. It has been classified as problematic. This affects the function validateFieldName of the file api/src/main/java/org/openmrs/module/appointmentscheduling/validator/AppointmentTypeValidator.java. The manipulation leads to cross site scripting. It is possible to initiate the attack remotely. Upgrading to version 1.13.0 is able to address this issue. The name of the patch is 34213c3f6ea22df427573076fb62744694f601d8. It is recommended to upgrade the affected component. The associated identifier of this vulnerability is VDB-216915."
-    },
-    {
-        "Modified": "2022-12-27T23:15:00",
-        "Published": "2022-12-27T23:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2020-36636",
-        "impact": {},
-        "last-modified": "2022-12-27T23:15:00",
-        "references": [
-            "https://github.com/openmrs/openmrs-module-adminui/releases/tag/1.5.0",
-            "https://vuldb.com/?ctiid.216918",
-            "https://vuldb.com/?id.216918",
-            "https://github.com/openmrs/openmrs-module-adminui/commit/702fbfdac7c4418f23bb5f6452482b4a88020061",
-            "https://github.com/openmrs/openmrs-module-adminui/pull/57"
-        ],
-        "summary": "A vulnerability classified as problematic has been found in OpenMRS Admin UI Module up to 1.4.x. Affected is the function sendErrorMessage of the file omod/src/main/java/org/openmrs/module/adminui/page/controller/systemadmin/accounts/AccountPageController.java of the component Account Setup Handler. The manipulation leads to cross site scripting. It is possible to launch the attack remotely. Upgrading to version 1.5.0 is able to address this issue. The name of the patch is 702fbfdac7c4418f23bb5f6452482b4a88020061. It is recommended to upgrade the affected component. VDB-216918 is the identifier assigned to this vulnerability."
-    },
-    {
-        "Modified": "2022-12-27T23:15:00",
-        "Published": "2022-12-27T23:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-89",
-        "id": "CVE-2021-4290",
-        "impact": {},
-        "last-modified": "2022-12-27T23:15:00",
-        "references": [
-            "https://github.com/maboehm/fallstudie/commit/5c13c6a972ef4c07c5f35b417916e0598af9e123",
-            "https://vuldb.com/?ctiid.216907",
-            "https://vuldb.com/?id.216907"
-        ],
-        "summary": "A vulnerability was found in DHBW Fallstudie. It has been declared as critical. Affected by this vulnerability is an unknown functionality of the file app/config/passport.js of the component Login. The manipulation of the argument id/email leads to sql injection. The name of the patch is 5c13c6a972ef4c07c5f35b417916e0598af9e123. It is recommended to apply a patch to fix this issue. The associated identifier of this vulnerability is VDB-216907."
-    },
-    {
-        "Modified": "2022-12-27T23:15:00",
-        "Published": "2022-12-27T23:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2021-4291",
-        "impact": {},
-        "last-modified": "2022-12-27T23:15:00",
-        "references": [
-            "https://github.com/openmrs/openmrs-module-adminui/commit/a7eefb5f69f6c50a3bffcb138bb8ea57cb41a9b6",
-            "https://github.com/openmrs/openmrs-module-adminui/releases/tag/1.6.0",
-            "https://github.com/openmrs/openmrs-module-adminui/pull/61",
-            "https://vuldb.com/?id.216916",
-            "https://vuldb.com/?ctiid.216916"
-        ],
-        "summary": "A vulnerability was found in OpenMRS Admin UI Module up to 1.5.x. It has been declared as problematic. This vulnerability affects unknown code of the file omod/src/main/webapp/pages/metadata/locations/location.gsp. The manipulation leads to cross site scripting. The attack can be initiated remotely. Upgrading to version 1.6.0 is able to address this issue. The name of the patch is a7eefb5f69f6c50a3bffcb138bb8ea57cb41a9b6. It is recommended to upgrade the affected component. The identifier of this vulnerability is VDB-216916."
-    },
-    {
-        "Modified": "2022-12-27T23:15:00",
-        "Published": "2022-12-27T23:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2021-4292",
-        "impact": {},
-        "last-modified": "2022-12-27T23:15:00",
-        "references": [
-            "https://github.com/openmrs/openmrs-module-adminui/releases/tag/1.5.0",
-            "https://vuldb.com/?ctiid.216917",
-            "https://vuldb.com/?id.216917",
-            "https://github.com/openmrs/openmrs-module-adminui/pull/58",
-            "https://github.com/openmrs/openmrs-module-adminui/commit/4f8565425b7c74128dec9ca46dfbb9a3c1c24911"
-        ],
-        "summary": "A vulnerability was found in OpenMRS Admin UI Module up to 1.4.x. It has been rated as problematic. This issue affects some unknown processing of the file omod/src/main/webapp/pages/metadata/privileges/privilege.gsp of the component Manage Privilege Page. The manipulation leads to cross site scripting. The attack may be initiated remotely. Upgrading to version 1.5.0 is able to address this issue. The name of the patch is 4f8565425b7c74128dec9ca46dfbb9a3c1c24911. It is recommended to upgrade the affected component. The identifier VDB-216917 was assigned to this vulnerability."
-    },
-    {
-        "Modified": "2022-12-27T23:15:00",
-        "Published": "2022-12-27T23:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-74",
-        "id": "CVE-2022-4768",
-        "impact": {},
-        "last-modified": "2022-12-27T23:15:00",
-        "references": [
-            "https://github.com/dropbox/merou/commit/d93087973afa26bc0a2d0a5eb5c0fde748bdd107",
-            "https://vuldb.com/?ctiid.216906",
-            "https://vuldb.com/?id.216906",
-            "https://github.com/dropbox/merou/pull/673"
-        ],
-        "summary": "A vulnerability was found in Dropbox merou. It has been classified as critical. Affected is the function add_public_key of the file grouper/public_key.py of the component SSH Public Key Handler. The manipulation of the argument public_key_str leads to injection. It is possible to launch the attack remotely. The name of the patch is d93087973afa26bc0a2d0a5eb5c0fde748bdd107. It is recommended to apply a patch to fix this issue. VDB-216906 is the identifier assigned to this vulnerability."
-    },
-    {
-        "Modified": "2022-12-27T23:15:00",
-        "Published": "2022-12-27T23:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-22",
-        "id": "CVE-2022-4772",
-        "impact": {},
-        "last-modified": "2022-12-27T23:15:00",
-        "references": [
-            "https://github.com/dgarijo/Widoco/pull/551",
-            "https://vuldb.com/?id.216914",
-            "https://github.com/dgarijo/Widoco/commit/f2279b76827f32190adfa9bd5229b7d5a147fa92",
-            "https://vuldb.com/?ctiid.216914"
-        ],
-        "summary": "A vulnerability was found in Widoco and classified as critical. Affected by this issue is the function unZipIt of the file src/main/java/widoco/WidocoUtils.java. The manipulation leads to path traversal. It is possible to launch the attack on the local host. The name of the patch is f2279b76827f32190adfa9bd5229b7d5a147fa92. It is recommended to apply a patch to fix this issue. VDB-216914 is the identifier assigned to this vulnerability."
     },
     {
         "Modified": "2022-12-27T22:50:00",
@@ -625,440 +1196,6 @@
             "https://www.ibm.com/support/pages/node/6848897"
         ],
         "summary": "IBM UrbanCode Deploy (UCD) 6.2.0.0 through 6.2.7.18, 7.0.5.0 through 7.0.5.13, 7.1.0.0 through 7.1.2.9, 7.2.0.0 through 7.2.3.2 and 7.3.0.0 is vulnerable to cross-site scripting. This vulnerability allows users to embed arbitrary JavaScript code in the Web UI thus altering the intended functionality potentially leading to credentials disclosure within a trusted session. IBM X-Force ID: 242273."
-    },
-    {
-        "Modified": "2022-12-27T22:15:00",
-        "Published": "2022-12-27T22:15:00",
-        "access": {},
-        "assigner": "security@golang.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2013-10005",
-        "impact": {},
-        "last-modified": "2022-12-27T22:15:00",
-        "references": [
-            "https://pkg.go.dev/vuln/GO-2020-0024",
-            "https://github.com/btcsuite/go-socks/commit/233bccbb1abe02f05750f7ace66f5bffdb13defc"
-        ],
-        "summary": "The RemoteAddr and LocalAddr methods on the returned net.Conn may call themselves, leading to an infinite loop which will crash the program due to a stack overflow."
-    },
-    {
-        "Modified": "2022-12-27T22:15:00",
-        "Published": "2022-12-27T22:15:00",
-        "access": {},
-        "assigner": "security@golang.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2014-125026",
-        "impact": {},
-        "last-modified": "2022-12-27T22:15:00",
-        "references": [
-            "https://github.com/cloudflare/golz4/issues/5",
-            "https://pkg.go.dev/vuln/GO-2020-0022",
-            "https://github.com/cloudflare/golz4/commit/199f5f7878062ca17a98e079f2dbe1205e2ed898"
-        ],
-        "summary": "LZ4 bindings use a deprecated C API that is vulnerable to memory corruption, which could lead to arbitrary code execution if called with untrusted user input."
-    },
-    {
-        "Modified": "2022-12-27T22:15:00",
-        "Published": "2022-12-27T22:15:00",
-        "access": {},
-        "assigner": "security@golang.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2015-10004",
-        "impact": {},
-        "last-modified": "2022-12-27T22:15:00",
-        "references": [
-            "https://github.com/robbert229/jwt/commit/ca1404ee6e83fcbafb66b09ed0d543850a15b654",
-            "https://pkg.go.dev/vuln/GO-2020-0023",
-            "https://github.com/robbert229/jwt/issues/12"
-        ],
-        "summary": "Token validation methods are susceptible to a timing side-channel during HMAC comparison. With a large enough number of requests over a low latency connection, an attacker may use this to determine the expected HMAC."
-    },
-    {
-        "Modified": "2022-12-27T22:15:00",
-        "Published": "2022-12-27T22:15:00",
-        "access": {},
-        "assigner": "security@golang.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2016-15005",
-        "impact": {},
-        "last-modified": "2022-12-27T22:15:00",
-        "references": [
-            "https://pkg.go.dev/vuln/GO-2020-0045",
-            "https://github.com/dinever/golf/commit/3776f338be48b5bc5e8cf9faff7851fc52a3f1fe",
-            "https://github.com/dinever/golf/pull/24",
-            "https://github.com/dinever/golf/issues/20"
-        ],
-        "summary": "CSRF tokens are generated using math/rand, which is not a cryptographically secure rander number generation, making predicting their values relatively trivial and allowing an attacker to bypass CSRF protections which relatively few requests."
-    },
-    {
-        "Modified": "2022-12-27T22:15:00",
-        "Published": "2022-12-27T22:15:00",
-        "access": {},
-        "assigner": "security@golang.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2017-20146",
-        "impact": {},
-        "last-modified": "2022-12-27T22:15:00",
-        "references": [
-            "https://github.com/gorilla/handlers/commit/90663712d74cb411cbef281bc1e08c19d1a76145",
-            "https://github.com/gorilla/handlers/pull/116",
-            "https://pkg.go.dev/vuln/GO-2020-0020"
-        ],
-        "summary": "Usage of the CORS handler may apply improper CORS headers, allowing the requester to explicitly control the value of the Access-Control-Allow-Origin header, which bypasses the expected behavior of the Same Origin Policy."
-    },
-    {
-        "Modified": "2022-12-27T22:15:00",
-        "Published": "2022-12-27T22:15:00",
-        "access": {},
-        "assigner": "security@golang.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2018-25046",
-        "impact": {},
-        "last-modified": "2022-12-27T22:15:00",
-        "references": [
-            "https://github.com/cloudfoundry/archiver/commit/09b5706aa9367972c09144a450bb4523049ee840",
-            "https://pkg.go.dev/vuln/GO-2020-0025",
-            "https://snyk.io/research/zip-slip-vulnerability"
-        ],
-        "summary": "Due to improper path santization, archives containing relative file paths can cause files to be written (or overwritten) outside of the target directory."
-    },
-    {
-        "Modified": "2022-12-27T22:15:00",
-        "Published": "2022-12-27T22:15:00",
-        "access": {},
-        "assigner": "security@golang.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2019-25072",
-        "impact": {},
-        "last-modified": "2022-12-27T22:15:00",
-        "references": [
-            "https://github.com/tendermint/tendermint/commit/03085c2da23b179c4a51f59a03cb40aa4e85a613",
-            "https://pkg.go.dev/vuln/GO-2020-0037",
-            "https://github.com/tendermint/tendermint/pull/3430"
-        ],
-        "summary": "Due to support of Gzip compression in request bodies, as well as a lack of limiting response body sizes, a malicious server can cause a client to consume a significant amount of system resources, which may be used as a denial of service vector."
-    },
-    {
-        "Modified": "2022-12-27T22:15:00",
-        "Published": "2022-12-27T22:15:00",
-        "access": {},
-        "assigner": "security@golang.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2019-25073",
-        "impact": {},
-        "last-modified": "2022-12-27T22:15:00",
-        "references": [
-            "https://github.com/goadesign/goa/commit/70b5a199d0f813d74423993832c424e1fc73fb39",
-            "https://pkg.go.dev/vuln/GO-2020-0032",
-            "https://github.com/goadesign/goa/pull/2388"
-        ],
-        "summary": "Improper path santiziation in github.com/goadesign/goa before v3.0.9, v2.0.10, or v1.4.3 allow remote attackers to read files outside of the intended directory."
-    },
-    {
-        "Modified": "2022-12-27T22:15:00",
-        "Published": "2022-12-27T22:15:00",
-        "access": {},
-        "assigner": "security@golang.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2020-36559",
-        "impact": {},
-        "last-modified": "2022-12-27T22:15:00",
-        "references": [
-            "https://github.com/go-aah/aah/pull/267",
-            "https://github.com/go-aah/aah/issues/266",
-            "https://pkg.go.dev/vuln/GO-2020-0033",
-            "https://github.com/go-aah/aah/commit/881dc9f71d1f7a4e8a9a39df9c5c081d3a2da1ec"
-        ],
-        "summary": "Due to improper santization of user input, HTTPEngine.Handle allows for directory traversal, allowing an attacker to read files outside of the target directory that the server has permission to read."
-    },
-    {
-        "Modified": "2022-12-27T22:15:00",
-        "Published": "2022-12-27T22:15:00",
-        "access": {},
-        "assigner": "security@golang.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2020-36560",
-        "impact": {},
-        "last-modified": "2022-12-27T22:15:00",
-        "references": [
-            "https://github.com/artdarek/go-unzip/pull/2",
-            "https://pkg.go.dev/vuln/GO-2020-0034",
-            "https://snyk.io/research/zip-slip-vulnerability",
-            "https://github.com/artdarek/go-unzip/commit/4975cbe0a719dc50b12da8585f1f207c82f7dfe0"
-        ],
-        "summary": "Due to improper path santization, archives containing relative file paths can cause files to be written (or overwritten) outside of the target directory."
-    },
-    {
-        "Modified": "2022-12-27T22:15:00",
-        "Published": "2022-12-27T22:15:00",
-        "access": {},
-        "assigner": "security@golang.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2020-36561",
-        "impact": {},
-        "last-modified": "2022-12-27T22:15:00",
-        "references": [
-            "https://github.com/yi-ge/unzip/commit/2adbaa4891b9690853ef10216189189f5ad7dc73",
-            "https://pkg.go.dev/vuln/GO-2020-0035",
-            "https://github.com/yi-ge/unzip/pull/1",
-            "https://snyk.io/research/zip-slip-vulnerability"
-        ],
-        "summary": "Due to improper path santization, archives containing relative file paths can cause files to be written (or overwritten) outside of the target directory."
-    },
-    {
-        "Modified": "2022-12-27T22:15:00",
-        "Published": "2022-12-27T22:15:00",
-        "access": {},
-        "assigner": "security@golang.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2020-36564",
-        "impact": {},
-        "last-modified": "2022-12-27T22:15:00",
-        "references": [
-            "https://pkg.go.dev/vuln/GO-2020-0049",
-            "https://github.com/justinas/nosurf/commit/4d86df7a4affa1fa50ab39fb09aac56c3ce9c314",
-            "https://github.com/justinas/nosurf/pull/60"
-        ],
-        "summary": "Due to improper validation of caller input, validation is silently disabled if the provided expected token is malformed, causing any user supplied token to be considered valid."
-    },
-    {
-        "Modified": "2022-12-27T22:15:00",
-        "Published": "2022-12-27T22:15:00",
-        "access": {},
-        "assigner": "security@golang.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2020-36566",
-        "impact": {},
-        "last-modified": "2022-12-27T22:15:00",
-        "references": [
-            "https://snyk.io/research/zip-slip-vulnerability",
-            "https://github.com/whyrusleeping/tar-utils/commit/20a61371de5b51380bbdb0c7935b30b0625ac227",
-            "https://pkg.go.dev/vuln/GO-2021-0106"
-        ],
-        "summary": "Due to improper path santization, archives containing relative file paths can cause files to be written (or overwritten) outside of the target directory."
-    },
-    {
-        "Modified": "2022-12-27T22:15:00",
-        "Published": "2022-12-27T22:15:00",
-        "access": {},
-        "assigner": "security@golang.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2020-36568",
-        "impact": {},
-        "last-modified": "2022-12-27T22:15:00",
-        "references": [
-            "https://github.com/revel/revel/commit/d160ecb72207824005b19778594cbdc272e8a605",
-            "https://github.com/revel/revel/issues/1424",
-            "https://pkg.go.dev/vuln/GO-2020-0003",
-            "https://github.com/revel/revel/pull/1427"
-        ],
-        "summary": "Unsanitized input in the query parser in github.com/revel/revel before v1.0.0 allows remote attackers to cause resource exhaustion via memory allocation."
-    },
-    {
-        "Modified": "2022-12-27T22:15:00",
-        "Published": "2022-12-27T22:15:00",
-        "access": {},
-        "assigner": "security@golang.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2020-36569",
-        "impact": {},
-        "last-modified": "2022-12-27T22:15:00",
-        "references": [
-            "https://pkg.go.dev/vuln/GO-2020-0004",
-            "https://github.com/nanobox-io/golang-nanoauth/pull/5",
-            "https://github.com/nanobox-io/golang-nanoauth/commit/063a3fb69896acf985759f0fe3851f15973993f3"
-        ],
-        "summary": "Authentication is globally bypassed in github.com/nanobox-io/golang-nanoauth between v0.0.0-20160722212129-ac0cc4484ad4 and v0.0.0-20200131131040-063a3fb69896 if ListenAndServe is called with an empty token."
-    },
-    {
-        "Modified": "2022-12-27T22:15:00",
-        "Published": "2022-12-27T22:15:00",
-        "access": {},
-        "assigner": "security@golang.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2021-4235",
-        "impact": {},
-        "last-modified": "2022-12-27T22:15:00",
-        "references": [
-            "https://github.com/go-yaml/yaml/commit/bb4e33bf68bf89cad44d386192cbed201f35b241",
-            "https://pkg.go.dev/vuln/GO-2021-0061",
-            "https://github.com/go-yaml/yaml/pull/375"
-        ],
-        "summary": "Due to unbounded alias chasing, a maliciously crafted YAML file can cause the system to consume significant system resources. If parsing user input, this may be used as a denial of service vector."
-    },
-    {
-        "Modified": "2022-12-27T22:15:00",
-        "Published": "2022-12-27T22:15:00",
-        "access": {},
-        "assigner": "security@golang.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2021-4236",
-        "impact": {},
-        "last-modified": "2022-12-27T22:15:00",
-        "references": [
-            "https://github.com/ecnepsnai/web/commit/5a78f8d5c41ce60dcf9f61aaf47a7a8dc3e0002f",
-            "https://pkg.go.dev/vuln/GO-2021-0107"
-        ],
-        "summary": "Web Sockets do not execute any AuthenticateMethod methods which may be set, leading to a nil pointer dereference if the returned UserData pointer is assumed to be non-nil, or authentication bypass. This issue only affects WebSockets with an AuthenticateMethod hook. Request handlers that do not explicitly use WebSockets are not vulnerable."
-    },
-    {
-        "Modified": "2022-12-27T22:15:00",
-        "Published": "2022-12-27T22:15:00",
-        "access": {},
-        "assigner": "security@golang.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2021-4238",
-        "impact": {},
-        "last-modified": "2022-12-27T22:15:00",
-        "references": [
-            "https://github.com/Masterminds/goutils/commit/869801f20f9f1e7ecdbdb6422049d8241270d5e1",
-            "https://pkg.go.dev/vuln/GO-2022-0411"
-        ],
-        "summary": "Randomly-generated alphanumeric strings contain significantly less entropy than expected. The RandomAlphaNumeric and CryptoRandomAlphaNumeric functions always return strings containing at least one digit from 0 to 9. This significantly reduces the amount of entropy in short strings generated by these functions."
-    },
-    {
-        "Modified": "2022-12-27T22:15:00",
-        "Published": "2022-12-27T22:15:00",
-        "access": {},
-        "assigner": "security@golang.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2021-4239",
-        "impact": {},
-        "last-modified": "2022-12-27T22:15:00",
-        "references": [
-            "https://github.com/flynn/noise/pull/44",
-            "https://pkg.go.dev/vuln/GO-2022-0425"
-        ],
-        "summary": "The Noise protocol implementation suffers from weakened cryptographic security after encrypting 2^64 messages, and a potential denial of service attack. After 2^64 (~18.4 quintillion) messages are encrypted with the Encrypt function, the nonce counter will wrap around, causing multiple messages to be encrypted with the same key and nonce. In a separate issue, the Decrypt function increments the nonce state even when it fails to decrypt a message. If an attacker can provide an invalid input to the Decrypt function, this will cause the nonce state to desynchronize between the peers, resulting in a failure to encrypt all subsequent messages."
-    },
-    {
-        "Modified": "2022-12-27T22:15:00",
-        "Published": "2022-12-27T22:15:00",
-        "access": {},
-        "assigner": "security@golang.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-2582",
-        "impact": {},
-        "last-modified": "2022-12-27T22:15:00",
-        "references": [
-            "https://github.com/aws/aws-sdk-go/commit/35fa6ddf45c061e0f08d3a3b5119f8f4da38f6d1",
-            "https://pkg.go.dev/vuln/GO-2022-0391"
-        ],
-        "summary": "The AWS S3 Crypto SDK sends an unencrypted hash of the plaintext alongside the ciphertext as a metadata field. This hash can be used to brute force the plaintext, if the hash is readable to the attacker. AWS now blocks this metadata field, but older SDK versions still send it."
-    },
-    {
-        "Modified": "2022-12-27T22:15:00",
-        "Published": "2022-12-27T22:15:00",
-        "access": {},
-        "assigner": "security@golang.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-2583",
-        "impact": {},
-        "last-modified": "2022-12-27T22:15:00",
-        "references": [
-            "https://github.com/ntbosscher/gobase/commit/a8d40bce9c429d324122d18c446924dab809e812",
-            "https://pkg.go.dev/vuln/GO-2022-0400"
-        ],
-        "summary": "A race condition can cause incorrect HTTP request routing."
-    },
-    {
-        "Modified": "2022-12-27T22:15:00",
-        "Published": "2022-12-27T22:15:00",
-        "access": {},
-        "assigner": "security@golang.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-2584",
-        "impact": {},
-        "last-modified": "2022-12-27T22:15:00",
-        "references": [
-            "https://github.com/ipld/go-codec-dagpb/commit/a17ace35cc760a2698645c09868f9050fa219f57",
-            "https://pkg.go.dev/vuln/GO-2022-0422"
-        ],
-        "summary": "The dag-pb codec can panic when decoding invalid blocks."
-    },
-    {
-        "Modified": "2022-12-27T22:15:00",
-        "Published": "2022-12-27T22:15:00",
-        "access": {},
-        "assigner": "security@golang.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-3064",
-        "impact": {},
-        "last-modified": "2022-12-27T22:15:00",
-        "references": [
-            "https://github.com/go-yaml/yaml/releases/tag/v2.2.4",
-            "https://pkg.go.dev/vuln/GO-2022-0956",
-            "https://github.com/go-yaml/yaml/commit/f221b8435cfb71e54062f6c6e99e9ade30b124d5"
-        ],
-        "summary": "Parsing malicious or large YAML documents can consume excessive amounts of CPU or memory."
-    },
-    {
-        "Modified": "2022-12-27T22:15:00",
-        "Published": "2022-12-27T22:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-45778",
-        "impact": {},
-        "last-modified": "2022-12-27T22:15:00",
-        "references": [
-            "https://gist.github.com/yinfei6/6ffff06db3f7d4c24de2f784c0db10df"
-        ],
-        "summary": "https://www.hillstonenet.com.cn/ Hillstone Firewall SG-6000 <= 5.0.4.0 is vulnerable to Incorrect Access Control. There is a permission bypass vulnerability in the Hillstone WEB application firewall. An attacker can enter the background of the firewall with super administrator privileges through a configuration error in report.m."
-    },
-    {
-        "Modified": "2022-12-27T22:15:00",
-        "Published": "2022-12-27T22:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-45963",
-        "impact": {},
-        "last-modified": "2022-12-27T22:15:00",
-        "references": [
-            "https://gist.github.com/yinfei6/fc6478328f8c2e2bf62a631a81afb265"
-        ],
-        "summary": "h3c firewall <= 3.10 ESS6703 has a privilege bypass vulnerability."
-    },
-    {
-        "Modified": "2022-12-27T22:15:00",
-        "Published": "2022-12-27T22:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-46442",
-        "impact": {},
-        "last-modified": "2022-12-27T22:15:00",
-        "references": [
-            "https://gist.github.com/yinfei6/f2b311374de4b4cec1dc22433d38c92a"
-        ],
-        "summary": "dedecms <=V5.7.102 is vulnerable to SQL Injection. In sys_ sql_ n query.php there are no restrictions on the sql query."
     },
     {
         "Modified": "2022-12-27T22:15:00",
@@ -1424,23 +1561,6 @@
     },
     {
         "Modified": "2022-12-27T21:15:00",
-        "Published": "2022-12-27T21:15:00",
-        "access": {},
-        "assigner": "security@golang.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2020-36567",
-        "impact": {},
-        "last-modified": "2022-12-27T21:15:00",
-        "references": [
-            "https://pkg.go.dev/vuln/GO-2020-0001",
-            "https://github.com/gin-gonic/gin/commit/a71af9c144f9579f6dbe945341c1df37aaf09c0d",
-            "https://github.com/gin-gonic/gin/pull/2237"
-        ],
-        "summary": "Unsanitized input in the default logger in github.com/gin-gonic/gin before v1.6.0 allows remote attackers to inject arbitrary log lines."
-    },
-    {
-        "Modified": "2022-12-27T21:15:00",
         "Published": "2022-12-20T23:15:00",
         "access": {},
         "assigner": "cve@mitre.org",
@@ -1645,122 +1765,5 @@
             "https://www.tenable.com/security/research/tra-2022-37"
         ],
         "summary": "The \u201cpuhttpsniff\u201d service, which runs by default, is susceptible to command injection due to improperly sanitized user input. An unauthenticated attacker on the same network segment as the router can execute arbitrary commands on the device without authentication."
-    },
-    {
-        "Modified": "2022-12-27T20:01:00",
-        "Published": "2022-12-19T23:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-863",
-        "id": "CVE-2022-46400",
-        "impact": {},
-        "last-modified": "2022-12-27T20:01:00",
-        "references": [
-            "https://www.microchip.com/en-us/products/wireless-connectivity/software-vulnerability-response/deviating-behaviors-in-bluetooth-le",
-            "https://www.computer.org/csdl/proceedings/sp/2023/1He7WWuJExG",
-            "https://microchip.com",
-            "https://www.computer.org/csdl/proceedings-article/sp/2023/933600a521/1He7Yja1AYM"
-        ],
-        "summary": "The Microchip RN4870 module firmware 1.43 (and the Microchip PIC LightBlue Explorer Demo 4.2 DT100112) allows attackers to bypass passkey entry in legacy pairing."
-    },
-    {
-        "Modified": "2022-12-27T20:01:00",
-        "Published": "2022-12-19T23:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "NVD-CWE-noinfo",
-        "id": "CVE-2022-46401",
-        "impact": {},
-        "last-modified": "2022-12-27T20:01:00",
-        "references": [
-            "https://www.microchip.com/en-us/products/wireless-connectivity/software-vulnerability-response/deviating-behaviors-in-bluetooth-le",
-            "https://www.computer.org/csdl/proceedings/sp/2023/1He7WWuJExG",
-            "https://microchip.com",
-            "https://www.computer.org/csdl/proceedings-article/sp/2023/933600a521/1He7Yja1AYM"
-        ],
-        "summary": "The Microchip RN4870 module firmware 1.43 (and the Microchip PIC LightBlue Explorer Demo 4.2 DT100112) accepts PauseEncReqPlainText before pairing is complete."
-    },
-    {
-        "Modified": "2022-12-27T20:00:00",
-        "Published": "2022-12-19T23:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-354",
-        "id": "CVE-2022-46402",
-        "impact": {},
-        "last-modified": "2022-12-27T20:00:00",
-        "references": [
-            "https://www.microchip.com/en-us/products/wireless-connectivity/software-vulnerability-response/deviating-behaviors-in-bluetooth-le",
-            "https://www.computer.org/csdl/proceedings/sp/2023/1He7WWuJExG",
-            "https://microchip.com",
-            "https://www.computer.org/csdl/proceedings-article/sp/2023/933600a521/1He7Yja1AYM"
-        ],
-        "summary": "The Microchip RN4870 module firmware 1.43 (and the Microchip PIC LightBlue Explorer Demo 4.2 DT100112) accepts PairCon_rmSend with incorrect values."
-    },
-    {
-        "Modified": "2022-12-27T20:00:00",
-        "Published": "2022-12-19T23:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "NVD-CWE-noinfo",
-        "id": "CVE-2022-46403",
-        "impact": {},
-        "last-modified": "2022-12-27T20:00:00",
-        "references": [
-            "https://www.microchip.com/en-us/products/wireless-connectivity/software-vulnerability-response/deviating-behaviors-in-bluetooth-le",
-            "https://www.computer.org/csdl/proceedings/sp/2023/1He7WWuJExG",
-            "https://microchip.com",
-            "https://www.computer.org/csdl/proceedings-article/sp/2023/933600a521/1He7Yja1AYM"
-        ],
-        "summary": "The Microchip RN4870 module firmware 1.43 (and the Microchip PIC LightBlue Explorer Demo 4.2 DT100112) mishandles reject messages."
-    },
-    {
-        "Modified": "2022-12-27T19:59:00",
-        "Published": "2022-12-27T19:15:00",
-        "access": {},
-        "assigner": "PSIRT@rockwellautomation.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-3156",
-        "impact": {},
-        "last-modified": "2022-12-27T19:59:00",
-        "references": [
-            "https://rockwellautomation.custhelp.com/app/answers/answer_view/a_id/1137846"
-        ],
-        "summary": "A remote code execution vulnerability exists in Rockwell Automation Studio 5000 Logix Emulate software. Users are granted elevated permissions on certain product services when the software is installed. Due to this misconfiguration, a malicious user could potentially achieve remote code execution on the targeted software."
-    },
-    {
-        "Modified": "2022-12-27T19:59:00",
-        "Published": "2022-12-27T18:15:00",
-        "access": {},
-        "assigner": "cybersecurity@dahuatech.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-45423",
-        "impact": {},
-        "last-modified": "2022-12-27T19:59:00",
-        "references": [
-            "https://www.dahuasecurity.com/support/cybersecurity/details/1137"
-        ],
-        "summary": "Some Dahua software products have a vulnerability of unauthenticated request of MQTT credentials. An attacker can obtain encrypted MQTT credentials by sending a specific crafted packet to the vulnerable interface (the credentials cannot be directly exploited)."
-    },
-    {
-        "Modified": "2022-12-27T19:59:00",
-        "Published": "2022-12-27T18:15:00",
-        "access": {},
-        "assigner": "cybersecurity@dahuatech.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-45424",
-        "impact": {},
-        "last-modified": "2022-12-27T19:59:00",
-        "references": [
-            "https://www.dahuasecurity.com/support/cybersecurity/details/1137"
-        ],
-        "summary": "Some Dahua software products have a vulnerability of unauthenticated request of AES crypto key. An attacker can obtain the AES crypto key by sending a specific crafted packet to the vulnerable interface."
     }
 ]
