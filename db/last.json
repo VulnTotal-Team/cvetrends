@@ -1,5 +1,392 @@
 [
     {
+        "Modified": "2022-12-29T20:33:00",
+        "Published": "2022-12-22T10:15:00",
+        "access": {},
+        "assigner": "talos-cna@cisco.com",
+        "cvss": null,
+        "cwe": "CWE-284",
+        "id": "CVE-2022-41654",
+        "impact": {},
+        "last-modified": "2022-12-29T20:33:00",
+        "references": [
+            "https://talosintelligence.com/vulnerability_reports/TALOS-2022-1624",
+            "https://github.com/TryGhost/Ghost/security/advisories/GHSA-9gh8-wp53-ccc6"
+        ],
+        "summary": "An authentication bypass vulnerability exists in the newsletter subscription functionality of Ghost Foundation Ghost 5.9.4. A specially-crafted HTTP request can lead to increased privileges. An attacker can send an HTTP request to trigger this vulnerability."
+    },
+    {
+        "Modified": "2022-12-29T20:31:00",
+        "Published": "2022-12-22T20:15:00",
+        "access": {},
+        "assigner": "security@mozilla.org",
+        "cvss": null,
+        "cwe": "CWE-416",
+        "id": "CVE-2022-1196",
+        "impact": {},
+        "last-modified": "2022-12-29T20:31:00",
+        "references": [
+            "https://www.mozilla.org/security/advisories/mfsa2022-15/",
+            "https://www.mozilla.org/security/advisories/mfsa2022-14/",
+            "https://bugzilla.mozilla.org/show_bug.cgi?id=1750679"
+        ],
+        "summary": "After a VR Process is destroyed, a reference to it may have been retained and used, leading to a use-after-free and potentially exploitable crash. This vulnerability affects Thunderbird < 91.8 and Firefox ESR < 91.8."
+    },
+    {
+        "Modified": "2022-12-29T20:18:00",
+        "Published": "2022-12-22T20:15:00",
+        "access": {},
+        "assigner": "security@mozilla.org",
+        "cvss": null,
+        "cwe": "NVD-CWE-noinfo",
+        "id": "CVE-2022-22741",
+        "impact": {},
+        "last-modified": "2022-12-29T20:18:00",
+        "references": [
+            "https://www.mozilla.org/security/advisories/mfsa2022-02/",
+            "https://www.mozilla.org/security/advisories/mfsa2022-01/",
+            "https://bugzilla.mozilla.org/show_bug.cgi?id=1740389",
+            "https://www.mozilla.org/security/advisories/mfsa2022-03/"
+        ],
+        "summary": "When resizing a popup while requesting fullscreen access, the popup would have become unable to leave fullscreen mode. This vulnerability affects Firefox ESR < 91.5, Firefox < 96, and Thunderbird < 91.5."
+    },
+    {
+        "Modified": "2022-12-29T20:17:00",
+        "Published": "2022-12-22T20:15:00",
+        "access": {},
+        "assigner": "security@mozilla.org",
+        "cvss": null,
+        "cwe": "CWE-125",
+        "id": "CVE-2022-22742",
+        "impact": {},
+        "last-modified": "2022-12-29T20:17:00",
+        "references": [
+            "https://www.mozilla.org/security/advisories/mfsa2022-02/",
+            "https://www.mozilla.org/security/advisories/mfsa2022-01/",
+            "https://www.mozilla.org/security/advisories/mfsa2022-03/",
+            "https://bugzilla.mozilla.org/show_bug.cgi?id=1739923"
+        ],
+        "summary": "When inserting text while in edit mode, some characters might have lead to out-of-bounds memory access causing a potentially exploitable crash. This vulnerability affects Firefox ESR < 91.5, Firefox < 96, and Thunderbird < 91.5."
+    },
+    {
+        "Modified": "2022-12-29T20:16:00",
+        "Published": "2022-12-22T18:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "NVD-CWE-Other",
+        "id": "CVE-2022-23541",
+        "impact": {},
+        "last-modified": "2022-12-29T20:16:00",
+        "references": [
+            "https://github.com/auth0/node-jsonwebtoken/security/advisories/GHSA-hjrf-2m68-5959",
+            "https://github.com/auth0/node-jsonwebtoken/releases/tag/v9.0.0",
+            "https://github.com/auth0/node-jsonwebtoken/commit/e1fa9dcc12054a8681db4e6373da1b30cf7016e3"
+        ],
+        "summary": "jsonwebtoken is an implementation of JSON Web Tokens. Versions `<= 8.5.1` of `jsonwebtoken` library can be misconfigured so that passing a poorly implemented key retrieval function referring to the `secretOrPublicKey` argument from the readme link will result in incorrect verification of tokens. There is a possibility of using a different algorithm and key combination in verification, other than the one that was used to sign the tokens. Specifically, tokens signed with an asymmetric public key could be verified with a symmetric HS256 algorithm. This can lead to successful validation of forged tokens. If your application is supporting usage of both symmetric key and asymmetric key in jwt.verify() implementation with the same key retrieval function. This issue has been patched, please update to version 9.0.0."
+    },
+    {
+        "Modified": "2022-12-29T20:15:00",
+        "Published": "2022-12-29T20:15:00",
+        "access": {},
+        "assigner": "psirt@esri.com",
+        "cvss": null,
+        "cwe": "CWE-918",
+        "id": "CVE-2022-38203",
+        "impact": {},
+        "last-modified": "2022-12-29T20:15:00",
+        "references": [
+            "https://www.esri.com/arcgis-blog/products/trust-arcgis/administration/portal-for-arcgis-security-2022-update-2-patch-is-now-available"
+        ],
+        "summary": "Protections against potential Server-Side Request Forgery (SSRF) vulnerabilities in Esri Portal for ArcGIS versions 10.8.1 and below were not fully honored and may allow a remote, unauthenticated attacker to forge requests to arbitrary URLs from the system, potentially leading to network enumeration or reading from hosts inside the network perimeter, a different issue than CVE-2022-38211 and CVE-2022-38212."
+    },
+    {
+        "Modified": "2022-12-29T20:15:00",
+        "Published": "2022-12-29T20:15:00",
+        "access": {},
+        "assigner": "psirt@esri.com",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2022-38204",
+        "impact": {},
+        "last-modified": "2022-12-29T20:15:00",
+        "references": [
+            "https://www.esri.com/arcgis-blog/products/trust-arcgis/administration/portal-for-arcgis-security-2022-update-2-patch-is-now-available"
+        ],
+        "summary": "There is a reflected XSS vulnerability in Esri Portal for ArcGIS versions 10.8.1 and 10.7.1 which may allow a remote, unauthenticated attacker to create a crafted link which when clicked could potentially execute arbitrary JavaScript code in the victim\u2019s browser."
+    },
+    {
+        "Modified": "2022-12-29T20:15:00",
+        "Published": "2022-12-29T20:15:00",
+        "access": {},
+        "assigner": "psirt@esri.com",
+        "cvss": null,
+        "cwe": "CWE-23",
+        "id": "CVE-2022-38205",
+        "impact": {},
+        "last-modified": "2022-12-29T20:15:00",
+        "references": [
+            "https://www.esri.com/arcgis-blog/products/trust-arcgis/administration/portal-for-arcgis-security-2022-update-2-patch-is-now-available"
+        ],
+        "summary": "In some non-default installations of Esri Portal for ArcGIS versions 10.9.1 and below, a directory traversal issue may allow a remote, unauthenticated attacker to traverse the file system and lead to the disclosure of sensitive data (not customer-published content)."
+    },
+    {
+        "Modified": "2022-12-29T20:15:00",
+        "Published": "2022-12-29T20:15:00",
+        "access": {},
+        "assigner": "psirt@esri.com",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2022-38206",
+        "impact": {},
+        "last-modified": "2022-12-29T20:15:00",
+        "references": [
+            "https://www.esri.com/arcgis-blog/products/trust-arcgis/administration/portal-for-arcgis-security-2022-update-2-patch-is-now-available"
+        ],
+        "summary": "There is a reflected XSS vulnerability in Esri Portal for ArcGIS versions 10.9.1 and below which may allow a remote remote, unauthenticated attacker to create a crafted link which when clicked could execute arbitrary JavaScript code in the victim\u2019s browser."
+    },
+    {
+        "Modified": "2022-12-29T20:15:00",
+        "Published": "2022-12-29T20:15:00",
+        "access": {},
+        "assigner": "psirt@esri.com",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2022-38207",
+        "impact": {},
+        "last-modified": "2022-12-29T20:15:00",
+        "references": [
+            "https://www.esri.com/arcgis-blog/products/trust-arcgis/administration/portal-for-arcgis-security-2022-update-2-patch-is-now-available"
+        ],
+        "summary": "There is a reflected XSS vulnerability in Esri Portal for ArcGIS versions 10.8.1 and 10.7.1 which may allow a remote remote, unauthenticated attacker to create a crafted link which when clicked which could execute arbitrary JavaScript code in the victim\u2019s browser."
+    },
+    {
+        "Modified": "2022-12-29T20:15:00",
+        "Published": "2022-12-29T20:15:00",
+        "access": {},
+        "assigner": "psirt@esri.com",
+        "cvss": null,
+        "cwe": "CWE-601",
+        "id": "CVE-2022-38208",
+        "impact": {},
+        "last-modified": "2022-12-29T20:15:00",
+        "references": [
+            "https://www.esri.com/arcgis-blog/products/trust-arcgis/administration/portal-for-arcgis-security-2022-update-2-patch-is-now-available"
+        ],
+        "summary": "There is an unvalidated redirect vulnerability in Esri Portal for ArcGIS 11 and below that may allow a remote, unauthenticated attacker to craft a URL that could redirect a victim to an arbitrary website, simplifying phishing attacks."
+    },
+    {
+        "Modified": "2022-12-29T20:15:00",
+        "Published": "2022-12-29T20:15:00",
+        "access": {},
+        "assigner": "psirt@esri.com",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2022-38209",
+        "impact": {},
+        "last-modified": "2022-12-29T20:15:00",
+        "references": [
+            "https://www.esri.com/arcgis-blog/products/trust-arcgis/administration/portal-for-arcgis-security-2022-update-2-patch-is-now-available"
+        ],
+        "summary": "There is a reflected XSS vulnerability in Esri Portal for ArcGIS versions 10.9.1 and below which may allow a remote, unauthenticated attacker to create a crafted link which when clicked could execute arbitrary JavaScript code in the victim\u2019s browser."
+    },
+    {
+        "Modified": "2022-12-29T20:15:00",
+        "Published": "2022-12-29T20:15:00",
+        "access": {},
+        "assigner": "psirt@esri.com",
+        "cvss": null,
+        "cwe": "CWE-80",
+        "id": "CVE-2022-38210",
+        "impact": {},
+        "last-modified": "2022-12-29T20:15:00",
+        "references": [
+            "https://www.esri.com/arcgis-blog/products/trust-arcgis/administration/portal-for-arcgis-security-2022-update-2-patch-is-now-available"
+        ],
+        "summary": "There is a reflected HTML injection vulnerability in Esri Portal for ArcGIS versions 10.9.1 and below that may allow a remote, unauthenticated attacker to create a crafted link which when clicked could render arbitrary HTML in the victim\u00e2\u20ac\u2122s browser."
+    },
+    {
+        "Modified": "2022-12-29T20:15:00",
+        "Published": "2022-12-29T20:15:00",
+        "access": {},
+        "assigner": "psirt@esri.com",
+        "cvss": null,
+        "cwe": "CWE-918",
+        "id": "CVE-2022-38211",
+        "impact": {},
+        "last-modified": "2022-12-29T20:15:00",
+        "references": [
+            "https://www.esri.com/arcgis-blog/products/trust-arcgis/administration/portal-for-arcgis-security-2022-update-2-patch-is-now-available"
+        ],
+        "summary": " Protections against potential Server-Side Request Forgery (SSRF) vulnerabilities in Esri Portal for ArcGIS versions 10.9.1 and below were not fully honored and may allow a remote, unauthenticated attacker to forge requests to arbitrary URLs from the system, potentially leading to network enumeration or reading from hosts inside the network perimeter, a different issue than CVE-2022-38211 and CVE-2022-38212. "
+    },
+    {
+        "Modified": "2022-12-29T20:15:00",
+        "Published": "2022-12-29T20:15:00",
+        "access": {},
+        "assigner": "psirt@esri.com",
+        "cvss": null,
+        "cwe": "CWE-918",
+        "id": "CVE-2022-38212",
+        "impact": {},
+        "last-modified": "2022-12-29T20:15:00",
+        "references": [
+            "https://www.esri.com/arcgis-blog/products/trust-arcgis/administration/portal-for-arcgis-security-2022-update-2-patch-is-now-available"
+        ],
+        "summary": "Protections against potential Server-Side Request Forgery (SSRF) vulnerabilities in Esri Portal for ArcGIS versions 10.8.1 and below were not fully honored and may allow a remote, unauthenticated attacker to forge requests to arbitrary URLs from the system, potentially leading to network enumeration or reading from hosts inside the network perimeter, a different issue than CVE-2022-38211 and CVE-2022-38203."
+    },
+    {
+        "Modified": "2022-12-29T20:12:00",
+        "Published": "2022-12-22T20:15:00",
+        "access": {},
+        "assigner": "security@mozilla.org",
+        "cvss": null,
+        "cwe": "NVD-CWE-noinfo",
+        "id": "CVE-2022-22743",
+        "impact": {},
+        "last-modified": "2022-12-29T20:12:00",
+        "references": [
+            "https://bugzilla.mozilla.org/show_bug.cgi?id=1739220",
+            "https://www.mozilla.org/security/advisories/mfsa2022-02/",
+            "https://www.mozilla.org/security/advisories/mfsa2022-01/",
+            "https://www.mozilla.org/security/advisories/mfsa2022-03/"
+        ],
+        "summary": "When navigating from inside an iframe while requesting fullscreen access, an attacker-controlled tab could have made the browser unable to leave fullscreen mode. This vulnerability affects Firefox ESR < 91.5, Firefox < 96, and Thunderbird < 91.5."
+    },
+    {
+        "Modified": "2022-12-29T20:07:00",
+        "Published": "2022-12-22T19:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-327",
+        "id": "CVE-2022-23540",
+        "impact": {},
+        "last-modified": "2022-12-29T20:07:00",
+        "references": [
+            "https://github.com/auth0/node-jsonwebtoken/security/advisories/GHSA-qwph-4952-7xr6",
+            "https://github.com/auth0/node-jsonwebtoken/commit/e1fa9dcc12054a8681db4e6373da1b30cf7016e3"
+        ],
+        "summary": "In versions `<=8.5.1` of `jsonwebtoken` library, lack of algorithm definition in the `jwt.verify()` function can lead to signature validation bypass due to defaulting to the `none` algorithm for signature verification. Users are affected if you do not specify algorithms in the `jwt.verify()` function. This issue has been fixed, please update to version 9.0.0 which removes the default support for the none algorithm in the `jwt.verify()` method. There will be no impact, if you update to version 9.0.0 and you don\u2019t need to allow for the `none` algorithm. If you need 'none' algorithm, you have to explicitly specify that in `jwt.verify()` options."
+    },
+    {
+        "Modified": "2022-12-29T20:05:00",
+        "Published": "2022-12-22T20:15:00",
+        "access": {},
+        "assigner": "security@mozilla.org",
+        "cvss": null,
+        "cwe": "CWE-77",
+        "id": "CVE-2022-22744",
+        "impact": {},
+        "last-modified": "2022-12-29T20:05:00",
+        "references": [
+            "https://www.mozilla.org/security/advisories/mfsa2022-02/",
+            "https://www.mozilla.org/security/advisories/mfsa2022-01/",
+            "https://www.mozilla.org/security/advisories/mfsa2022-03/",
+            "https://bugzilla.mozilla.org/show_bug.cgi?id=1737252"
+        ],
+        "summary": "The constructed curl command from the \"Copy as curl\" feature in DevTools was not properly escaped for PowerShell. This could have lead to command injection if pasted into a Powershell prompt.<br>*This bug only affects Thunderbird for Windows. Other operating systems are unaffected.*. This vulnerability affects Firefox ESR < 91.5, Firefox < 96, and Thunderbird < 91.5."
+    },
+    {
+        "Modified": "2022-12-29T20:05:00",
+        "Published": "2022-12-22T11:15:00",
+        "access": {},
+        "assigner": "security@apache.org",
+        "cvss": null,
+        "cwe": "CWE-459",
+        "id": "CVE-2022-45347",
+        "impact": {},
+        "last-modified": "2022-12-29T20:05:00",
+        "references": [
+            "https://lists.apache.org/thread/l5rz7j4rg10o7ywtgknh2f5hxnv6yw3l"
+        ],
+        "summary": "Apache ShardingSphere-Proxy prior to 5.3.0 when using MySQL as database backend didn't cleanup the database session completely after client authentication failed, which allowed an attacker to execute normal commands by constructing a special MySQL client. This vulnerability has been fixed in Apache ShardingSphere 5.3.0."
+    },
+    {
+        "Modified": "2022-12-29T20:00:00",
+        "Published": "2022-12-22T20:15:00",
+        "access": {},
+        "assigner": "security@mozilla.org",
+        "cvss": null,
+        "cwe": "NVD-CWE-noinfo",
+        "id": "CVE-2022-22745",
+        "impact": {},
+        "last-modified": "2022-12-29T20:00:00",
+        "references": [
+            "https://bugzilla.mozilla.org/show_bug.cgi?id=1735856",
+            "https://www.mozilla.org/security/advisories/mfsa2022-02/",
+            "https://www.mozilla.org/security/advisories/mfsa2022-01/",
+            "https://www.mozilla.org/security/advisories/mfsa2022-03/"
+        ],
+        "summary": "Securitypolicyviolation events could have leaked cross-origin information for frame-ancestors violations. This vulnerability affects Firefox ESR < 91.5, Firefox < 96, and Thunderbird < 91.5."
+    },
+    {
+        "Modified": "2022-12-29T19:50:00",
+        "Published": "2022-12-20T23:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-269",
+        "id": "CVE-2022-42046",
+        "impact": {},
+        "last-modified": "2022-12-29T19:50:00",
+        "references": [
+            "https://www.wfs.games/news/20221220_01.html",
+            "https://github.com/kkent030315/CVE-2022-42046"
+        ],
+        "summary": "wfshbr64.sys and wfshbr32.sys specially crafted IOCTL allows arbitrary user to perform local privilege escalation"
+    },
+    {
+        "Modified": "2022-12-29T19:16:00",
+        "Published": "2022-12-22T20:15:00",
+        "access": {},
+        "assigner": "security@mozilla.org",
+        "cvss": null,
+        "cwe": "CWE-384",
+        "id": "CVE-2020-15679",
+        "impact": {},
+        "last-modified": "2022-12-29T19:16:00",
+        "references": [
+            "https://github.com/mozilla-mobile/guardian-vpn-ios/commit/4309f5c9bd2c15cdfd39ac173665fad3f2598b54",
+            "https://www.mozilla.org/security/advisories/mfsa2020-48/",
+            "https://github.com/mozilla-services/guardian-vpn-windows/commit/ac6f562973a83f6758cd7ab7aa313e863047d41b",
+            "https://github.com/mozilla-mobile/guardian-vpn-android/commit/981c840276ef3aee98cf5d42993d484ee99b28d9"
+        ],
+        "summary": "An OAuth session fixation vulnerability existed in the VPN login flow, where an attacker could craft a custom login URL, convince a VPN user to login via that URL, and obtain authenticated access as that user. This issue is limited to cases where attacker and victim are sharing the same source IP and could allow the ability to view session states and disconnect VPN sessions. This vulnerability affects Mozilla VPN iOS 1.0.7 < (929), Mozilla VPN Windows < 1.2.2, and Mozilla VPN Android 1.1.0 < (1360)."
+    },
+    {
+        "Modified": "2022-12-29T19:15:00",
+        "Published": "2022-12-29T19:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-22",
+        "id": "CVE-2022-46178",
+        "impact": {},
+        "last-modified": "2022-12-29T19:15:00",
+        "references": [
+            "https://github.com/metersphere/metersphere/security/advisories/GHSA-9p62-x3c5-hr5p"
+        ],
+        "summary": "MeterSphere is a one-stop open source continuous testing platform, covering test management, interface testing, UI testing and performance testing. Versions prior to 2.5.1 allow users to upload a file, but do not validate the file name, which may lead to upload file to any path. The vulnerability has been fixed in v2.5.1. There are no workarounds."
+    },
+    {
+        "Modified": "2022-12-29T19:15:00",
+        "Published": "2022-12-29T19:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2022-46181",
+        "impact": {},
+        "last-modified": "2022-12-29T19:15:00",
+        "references": [
+            "https://github.com/gotify/server/pull/535",
+            "https://github.com/gotify/server/pull/534",
+            "https://github.com/gotify/server/security/advisories/GHSA-xv6x-456v-24xh"
+        ],
+        "summary": "Gotify server is a simple server for sending and receiving messages in real-time per WebSocket. Versions prior to 2.2.2 contain an XSS vulnerability that allows authenticated users to upload .html files. An attacker could execute client side scripts **if** another user opened a link. The attacker could potentially take over the account of the user that clicked the link. The Gotify UI won't natively expose such a malicious link, so an attacker has to get the user to open the malicious link in a context outside of Gotify. The vulnerability has been fixed in version 2.2.2. As a workaround, you can block access to non image files via a reverse proxy in the `./image` directory."
+    },
+    {
         "Modified": "2022-12-29T18:56:00",
         "Published": "2022-12-22T20:15:00",
         "access": {},
@@ -1273,445 +1660,5 @@
             "https://github.com/ikus060/rdiffweb/commit/e6f0d8002129be90fe82fa3e3ea0a6942caba398"
         ],
         "summary": "Cross-Site Request Forgery (CSRF) in GitHub repository ikus060/rdiffweb prior to 2.5.4."
-    },
-    {
-        "Modified": "2022-12-29T14:48:00",
-        "Published": "2022-12-16T20:15:00",
-        "access": {},
-        "assigner": "vulnreport@tenable.com",
-        "cvss": null,
-        "cwe": "CWE-77",
-        "id": "CVE-2022-47210",
-        "impact": {},
-        "last-modified": "2022-12-29T14:48:00",
-        "references": [
-            "https://www.tenable.com/security/research/tra-2022-37"
-        ],
-        "summary": "The default console presented to users over telnet (when enabled) is restricted to a subset of commands. Commands issued at this console, however, appear to be fed directly into a system call or other similar function. This allows any authenticated user to execute arbitrary commands on the device."
-    },
-    {
-        "Modified": "2022-12-29T14:41:00",
-        "Published": "2022-12-22T01:15:00",
-        "access": {},
-        "assigner": "security@huntr.dev",
-        "cvss": null,
-        "cwe": "CWE-601",
-        "id": "CVE-2022-4644",
-        "impact": {},
-        "last-modified": "2022-12-29T14:41:00",
-        "references": [
-            "https://github.com/ikus060/rdiffweb/commit/5f861670ef8f38ca8eea52a98672d0e0fabb5368",
-            "https://huntr.dev/bounties/77e5f425-c764-4cb0-936a-7a76bfcf19b0"
-        ],
-        "summary": "Open Redirect in GitHub repository ikus060/rdiffweb prior to 2.5.4."
-    },
-    {
-        "Modified": "2022-12-29T13:47:00",
-        "Published": "2022-12-29T08:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-1022",
-        "id": "CVE-2018-25058",
-        "impact": {},
-        "last-modified": "2022-12-29T13:47:00",
-        "references": [
-            "https://github.com/jasonmayes/Twitter-Post-Fetcher/releases/tag/18.0.0",
-            "https://github.com/jasonmayes/Twitter-Post-Fetcher/commit/7d281c6fb5acbc29a2cad295262c1f0c19ca56f3",
-            "https://vuldb.com/?ctiid.217017",
-            "https://github.com/jasonmayes/Twitter-Post-Fetcher/pull/170",
-            "https://vuldb.com/?id.217017"
-        ],
-        "summary": "A vulnerability classified as problematic has been found in Twitter-Post-Fetcher up to 17.x. This affects an unknown part of the file js/twitterFetcher.js of the component Link Target Handler. The manipulation leads to use of web link to untrusted target with window.opener access. It is possible to initiate the attack remotely. Upgrading to version 18.0.0 is able to address this issue. The name of the patch is 7d281c6fb5acbc29a2cad295262c1f0c19ca56f3. It is recommended to upgrade the affected component. The identifier VDB-217017 was assigned to this vulnerability."
-    },
-    {
-        "Modified": "2022-12-29T13:47:00",
-        "Published": "2022-12-29T09:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-611",
-        "id": "CVE-2021-4295",
-        "impact": {},
-        "last-modified": "2022-12-29T13:47:00",
-        "references": [
-            "https://vuldb.com/?id.217018",
-            "https://github.com/onc-healthit/code-validator-api/pull/97",
-            "https://github.com/onc-healthit/code-validator-api/releases/tag/1.0.31",
-            "https://vuldb.com/?ctiid.217018",
-            "https://github.com/onc-healthit/code-validator-api/commit/fbd8ea121755a2d3d116b13f235bc8b61d8449af"
-        ],
-        "summary": "A vulnerability classified as problematic was found in ONC code-validator-api up to 1.0.30. This vulnerability affects the function vocabularyValidationConfigurations of the file src/main/java/org/sitenv/vocabularies/configuration/CodeValidatorApiConfiguration.java of the component XML Handler. The manipulation leads to xml external entity reference. Upgrading to version 1.0.31 is able to address this issue. The name of the patch is fbd8ea121755a2d3d116b13f235bc8b61d8449af. It is recommended to upgrade the affected component. VDB-217018 is the identifier assigned to this vulnerability."
-    },
-    {
-        "Modified": "2022-12-29T13:47:00",
-        "Published": "2022-12-29T09:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2021-4296",
-        "impact": {},
-        "last-modified": "2022-12-29T13:47:00",
-        "references": [
-            "https://vuldb.com/?id.217019",
-            "https://github.com/w3c/Unicorn/pull/212",
-            "https://vuldb.com/?ctiid.217019",
-            "https://github.com/w3c/Unicorn/commit/51f75c31f7fc33859a9a571311c67ae4e95d9c68"
-        ],
-        "summary": "A vulnerability, which was classified as problematic, has been found in w3c Unicorn. This issue affects the function ValidatorNuMessage of the file src/org/w3c/unicorn/response/impl/ValidatorNuMessage.java. The manipulation of the argument message leads to cross site scripting. The attack may be initiated remotely. The name of the patch is 51f75c31f7fc33859a9a571311c67ae4e95d9c68. It is recommended to apply a patch to fix this issue. The associated identifier of this vulnerability is VDB-217019."
-    },
-    {
-        "Modified": "2022-12-29T13:47:00",
-        "Published": "2022-12-29T00:15:00",
-        "access": {},
-        "assigner": "vulnerability@ncsc.ch",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-4778",
-        "impact": {},
-        "last-modified": "2022-12-29T13:47:00",
-        "references": [
-            "https://elvexys.com/products/xpg-gateway-rtu-protocol-converter/streamx-release-notes/"
-        ],
-        "summary": "StreamX applications from versions 6.02.01 to 6.04.34 are affected by a path traversal vulnerability that allows authenticated users to get unauthorized access to files on the server's filesystem. StreamX applications using StreamView HTML component with the public web server feature activated are affected."
-    },
-    {
-        "Modified": "2022-12-29T13:47:00",
-        "Published": "2022-12-29T00:15:00",
-        "access": {},
-        "assigner": "vulnerability@ncsc.ch",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-4779",
-        "impact": {},
-        "last-modified": "2022-12-29T13:47:00",
-        "references": [
-            "https://elvexys.com/products/xpg-gateway-rtu-protocol-converter/streamx-release-notes/"
-        ],
-        "summary": "StreamX applications from versions 6.02.01 to 6.04.34 are affected by a logic bug that allows to bypass the implemented authentication scheme. StreamX applications using StreamView HTML component with the public web server feature activated are affected."
-    },
-    {
-        "Modified": "2022-12-29T13:47:00",
-        "Published": "2022-12-29T00:15:00",
-        "access": {},
-        "assigner": "vulnerability@ncsc.ch",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-4780",
-        "impact": {},
-        "last-modified": "2022-12-29T13:47:00",
-        "references": [
-            "https://elvexys.com/products/xpg-gateway-rtu-protocol-converter/isos-release-notes/"
-        ],
-        "summary": "ISOS firmwares from versions 1.81 to 2.00 contain hardcoded credentials from embedded StreamX installer that integrators are not forced to change."
-    },
-    {
-        "Modified": "2022-12-29T13:47:00",
-        "Published": "2022-12-28T21:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-89",
-        "id": "CVE-2018-25057",
-        "impact": {},
-        "last-modified": "2022-12-29T13:47:00",
-        "references": [
-            "https://vuldb.com/?id.216996",
-            "https://vuldb.com/?ctiid.216996",
-            "https://github.com/mikebharris/simple_php_link_shortener/commit/b26ac6480761635ed94ccb0222ba6b732de6e53f"
-        ],
-        "summary": "A vulnerability was found in simple_php_link_shortener. It has been classified as critical. Affected is an unknown function of the file index.php. The manipulation of the argument $link[\"id\"] leads to sql injection. The name of the patch is b26ac6480761635ed94ccb0222ba6b732de6e53f. It is recommended to apply a patch to fix this issue. The identifier of this vulnerability is VDB-216996."
-    },
-    {
-        "Modified": "2022-12-29T13:47:00",
-        "Published": "2022-12-28T21:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-611",
-        "id": "CVE-2022-4818",
-        "impact": {},
-        "last-modified": "2022-12-29T13:47:00",
-        "references": [
-            "https://vuldb.com/?ctiid.216997",
-            "https://vuldb.com/?id.216997",
-            "https://github.com/Talend/tmdm-server-se/releases/tag/snap%2Fmaster%2F20221220_1938",
-            "https://github.com/Talend/tmdm-server-se/pull/1598",
-            "https://github.com/Talend/tmdm-server-se/commit/95590db2ad6a582c371273ceab1a73ad6ed47853"
-        ],
-        "summary": "A vulnerability was found in Talend Open Studio for MDM. It has been declared as problematic. Affected by this vulnerability is an unknown functionality of the file org.talend.mdm.core/src/com/amalto/core/storage/SystemStorageWrapper.java. The manipulation leads to xml external entity reference. Upgrading to version 20221220_1938 is able to address this issue. The name of the patch is 95590db2ad6a582c371273ceab1a73ad6ed47853. It is recommended to upgrade the affected component. The identifier VDB-216997 was assigned to this vulnerability."
-    },
-    {
-        "Modified": "2022-12-29T13:47:00",
-        "Published": "2022-12-28T21:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-4819",
-        "impact": {},
-        "last-modified": "2022-12-29T13:47:00",
-        "references": [
-            "https://vuldb.com/?id.216998",
-            "https://github.com/kohler/hotcrp/commit/d4ffdb0ef806453c54ddca7fdda3e5c60356285c",
-            "https://vuldb.com/?ctiid.216998"
-        ],
-        "summary": "A vulnerability was found in HotCRP. It has been rated as problematic. Affected by this issue is some unknown functionality. The manipulation leads to cross site scripting. The attack may be launched remotely. The name of the patch is d4ffdb0ef806453c54ddca7fdda3e5c60356285c. It is recommended to apply a patch to fix this issue. VDB-216998 is the identifier assigned to this vulnerability."
-    },
-    {
-        "Modified": "2022-12-29T13:47:00",
-        "Published": "2022-12-28T21:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-4820",
-        "impact": {},
-        "last-modified": "2022-12-29T13:47:00",
-        "references": [
-            "https://vuldb.com/?id.216999",
-            "https://github.com/flatpressblog/flatpress/commit/229752b51025e678370298284d42f8ebb231f67f",
-            "https://github.com/flatpressblog/flatpress/issues/180",
-            "https://vuldb.com/?ctiid.216999"
-        ],
-        "summary": "A vulnerability classified as problematic has been found in FlatPress. This affects an unknown part of the file admin/panels/entry/admin.entry.list.php of the component Admin Area. The manipulation leads to cross site scripting. It is possible to initiate the attack remotely. The name of the patch is 229752b51025e678370298284d42f8ebb231f67f. It is recommended to apply a patch to fix this issue. The associated identifier of this vulnerability is VDB-216999."
-    },
-    {
-        "Modified": "2022-12-29T13:47:00",
-        "Published": "2022-12-28T21:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-4821",
-        "impact": {},
-        "last-modified": "2022-12-29T13:47:00",
-        "references": [
-            "https://github.com/flatpressblog/flatpress/issues/178",
-            "https://vuldb.com/?ctiid.217000",
-            "https://vuldb.com/?id.217000",
-            "https://github.com/flatpressblog/flatpress/commit/3cc223dec5260e533a84b5cf5780d3a4fbf21241"
-        ],
-        "summary": "A vulnerability classified as problematic was found in FlatPress. This vulnerability affects the function onupload of the file admin/panels/uploader/admin.uploader.php of the component XML File Handler/MD File Handler. The manipulation leads to cross site scripting. The attack can be initiated remotely. The name of the patch is 3cc223dec5260e533a84b5cf5780d3a4fbf21241. It is recommended to apply a patch to fix this issue. The identifier of this vulnerability is VDB-217000."
-    },
-    {
-        "Modified": "2022-12-29T13:47:00",
-        "Published": "2022-12-28T21:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-4822",
-        "impact": {},
-        "last-modified": "2022-12-29T13:47:00",
-        "references": [
-            "https://github.com/flatpressblog/flatpress/issues/176",
-            "https://vuldb.com/?ctiid.217001",
-            "https://vuldb.com/?id.217001",
-            "https://github.com/flatpressblog/flatpress/commit/5f23b4c2eac294cc0ba5e541f83a6f8a26f9fed1"
-        ],
-        "summary": "A vulnerability, which was classified as problematic, has been found in FlatPress. This issue affects some unknown processing of the file setup/lib/main.lib.php of the component Setup. The manipulation leads to cross site scripting. The attack may be initiated remotely. The name of the patch is 5f23b4c2eac294cc0ba5e541f83a6f8a26f9fed1. It is recommended to apply a patch to fix this issue. The identifier VDB-217001 was assigned to this vulnerability."
-    },
-    {
-        "Modified": "2022-12-29T13:47:00",
-        "Published": "2022-12-28T21:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-208",
-        "id": "CVE-2022-4823",
-        "impact": {},
-        "last-modified": "2022-12-29T13:47:00",
-        "references": [
-            "https://github.com/instedd/nuntium/commit/77236f7fd71a0e2eefeea07f9866b069d612cf0d",
-            "https://vuldb.com/?ctiid.217002",
-            "https://vuldb.com/?id.217002"
-        ],
-        "summary": "A vulnerability, which was classified as problematic, was found in InSTEDD Nuntium. Affected is an unknown function of the file app/controllers/geopoll_controller.rb. The manipulation of the argument signature leads to observable timing discrepancy. It is possible to launch the attack remotely. The name of the patch is 77236f7fd71a0e2eefeea07f9866b069d612cf0d. It is recommended to apply a patch to fix this issue. VDB-217002 is the identifier assigned to this vulnerability."
-    },
-    {
-        "Modified": "2022-12-29T13:15:00",
-        "Published": "2022-10-29T18:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-59",
-        "id": "CVE-2022-41973",
-        "impact": {},
-        "last-modified": "2022-12-29T13:15:00",
-        "references": [
-            "https://github.com/opensvc/multipath-tools/releases/tag/0.9.2",
-            "http://www.openwall.com/lists/oss-security/2022/10/24/2",
-            "https://bugzilla.suse.com/show_bug.cgi?id=1202739",
-            "http://seclists.org/fulldisclosure/2022/Oct/25",
-            "http://packetstormsecurity.com/files/169611/Leeloo-Multipath-Authorization-Bypass-Symlink-Attack.html",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/QIGZM5NOOMFDCITOLQEJNNX5SCRQLQVV/",
-            "https://www.qualys.com/2022/10/24/leeloo-multipath/leeloo-multipath.txt",
-            "http://www.openwall.com/lists/oss-security/2022/11/30/2",
-            "http://seclists.org/fulldisclosure/2022/Dec/4",
-            "http://packetstormsecurity.com/files/170176/snap-confine-must_mkdir_and_open_with_perms-Race-Condition.html",
-            "https://lists.debian.org/debian-lts-announce/2022/12/msg00037.html"
-        ],
-        "summary": "multipath-tools 0.7.7 through 0.9.x before 0.9.2 allows local users to obtain root access, as exploited in conjunction with CVE-2022-41974. Local users able to access /dev/shm can change symlinks in multipathd due to incorrect symlink handling, which could lead to controlled file writes outside of the /dev/shm directory. This could be used indirectly for local privilege escalation to root."
-    },
-    {
-        "Modified": "2022-12-29T13:15:00",
-        "Published": "2022-10-29T19:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-269",
-        "id": "CVE-2022-41974",
-        "impact": {},
-        "last-modified": "2022-12-29T13:15:00",
-        "references": [
-            "https://github.com/opensvc/multipath-tools/releases/tag/0.9.2",
-            "http://www.openwall.com/lists/oss-security/2022/10/24/2",
-            "https://bugzilla.suse.com/show_bug.cgi?id=1202739",
-            "http://seclists.org/fulldisclosure/2022/Oct/25",
-            "http://packetstormsecurity.com/files/169611/Leeloo-Multipath-Authorization-Bypass-Symlink-Attack.html",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/QIGZM5NOOMFDCITOLQEJNNX5SCRQLQVV/",
-            "https://www.qualys.com/2022/10/24/leeloo-multipath/leeloo-multipath.txt",
-            "http://www.openwall.com/lists/oss-security/2022/11/30/2",
-            "http://seclists.org/fulldisclosure/2022/Dec/4",
-            "http://packetstormsecurity.com/files/170176/snap-confine-must_mkdir_and_open_with_perms-Race-Condition.html",
-            "https://lists.debian.org/debian-lts-announce/2022/12/msg00037.html"
-        ],
-        "summary": "multipath-tools 0.7.0 through 0.9.x before 0.9.2 allows local users to obtain root access, as exploited alone or in conjunction with CVE-2022-41973. Local users able to write to UNIX domain sockets can bypass access controls and manipulate the multipath setup. This can lead to local privilege escalation to root. This occurs because an attacker can repeat a keyword, which is mishandled because arithmetic ADD is used instead of bitwise OR."
-    },
-    {
-        "Modified": "2022-12-29T13:15:00",
-        "Published": "2022-08-25T15:15:00",
-        "access": {},
-        "assigner": "security@apache.org",
-        "cvss": null,
-        "cwe": "CWE-120",
-        "id": "CVE-2022-22728",
-        "impact": {},
-        "last-modified": "2022-12-29T13:15:00",
-        "references": [
-            "https://lists.apache.org/thread/2fsjoor96d47vtkpf76x4yo06nccvy1y",
-            "http://www.openwall.com/lists/oss-security/2022/08/25/4",
-            "http://www.openwall.com/lists/oss-security/2022/08/25/3",
-            "http://www.openwall.com/lists/oss-security/2022/08/26/4",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/2PUUS3JL44UUSLJTSXE46HVKZIW7E7PE/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/BE5MEHGIQUEIISBCVHM43IN2NBDXBFOJ/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/3HZZKVHYYWACPWONPEFRNPIRE3HYLV4T/",
-            "http://www.openwall.com/lists/oss-security/2022/12/29/1"
-        ],
-        "summary": "A flaw in Apache libapreq2 versions 2.16 and earlier could cause a buffer overflow while processing multipart form uploads. A remote attacker could send a request causing a process crash which could lead to a denial of service attack."
-    },
-    {
-        "Modified": "2022-12-28T22:15:00",
-        "Published": "2022-06-15T10:15:00",
-        "access": {
-            "authentication": "SINGLE",
-            "complexity": "LOW",
-            "vector": "NETWORK"
-        },
-        "assigner": "cna@vuldb.com",
-        "cvss": 6.5,
-        "cvss-time": "2022-12-28T22:15:00",
-        "cvss-vector": "AV:N/AC:L/Au:S/C:P/I:P/A:P",
-        "cwe": "CWE-284",
-        "id": "CVE-2022-1958",
-        "impact": {
-            "availability": "PARTIAL",
-            "confidentiality": "PARTIAL",
-            "integrity": "PARTIAL"
-        },
-        "last-modified": "2022-12-28T22:15:00",
-        "references": [
-            "https://www.filecloud.com/supportdocs/fcdoc/2v/server/security-advisories/2022-security-advisories/advisory-2022-06-01-potential-unauthorized-data-access-when-using-network-folders-with-ntfs-permissions",
-            "https://vuldb.com/?id.201960",
-            "https://www.scip.ch/?news.20220615",
-            "https://vuldb.com/?ctiid.201960"
-        ],
-        "summary": "A vulnerability classified as critical has been found in FileCloud. Affected is an unknown function of the component NTFS Handler. The manipulation leads to improper access controls. It is possible to launch the attack remotely. Upgrading to version 21.3.5.18513 is able to address this issue. It is recommended to upgrade the affected component. The identifier of this vulnerability is VDB-201960."
-    },
-    {
-        "Modified": "2022-12-28T22:09:00",
-        "Published": "2022-12-22T10:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-352",
-        "id": "CVE-2020-36625",
-        "impact": {},
-        "last-modified": "2022-12-28T22:09:00",
-        "references": [
-            "https://github.com/destinygg/chat/pull/35",
-            "https://github.com/destinygg/chat/commit/bebd256fc3063111fb4503ca25e005ebf6e73780",
-            "https://vuldb.com/?id.216521"
-        ],
-        "summary": "** UNSUPPORTED WHEN ASSIGNED ** A vulnerability was found in destiny.gg chat. It has been rated as problematic. This issue affects the function websocket.Upgrader of the file main.go. The manipulation leads to cross-site request forgery. The attack may be initiated remotely. The name of the patch is bebd256fc3063111fb4503ca25e005ebf6e73780. It is recommended to apply a patch to fix this issue. The identifier VDB-216521 was assigned to this vulnerability. NOTE: This vulnerability only affects products that are no longer supported by the maintainer."
-    },
-    {
-        "Modified": "2022-12-28T22:04:00",
-        "Published": "2022-12-21T22:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-134",
-        "id": "CVE-2022-4639",
-        "impact": {},
-        "last-modified": "2022-12-28T22:04:00",
-        "references": [
-            "https://github.com/yrutschle/sslh/pull/353",
-            "https://github.com/yrutschle/sslh/commit/b19f8a6046b080e4c2e28354a58556bb26040c6f",
-            "https://vuldb.com/?id.216497"
-        ],
-        "summary": "A vulnerability, which was classified as critical, has been found in sslh. This issue affects the function hexdump of the file probe.c of the component Packet Dumping Handler. The manipulation of the argument msg_info leads to format string. The attack may be initiated remotely. The name of the patch is b19f8a6046b080e4c2e28354a58556bb26040c6f. It is recommended to apply a patch to fix this issue. The identifier VDB-216497 was assigned to this vulnerability."
-    },
-    {
-        "Modified": "2022-12-28T21:41:00",
-        "Published": "2022-12-21T22:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-4637",
-        "impact": {},
-        "last-modified": "2022-12-28T21:41:00",
-        "references": [
-            "https://github.com/tkrebs/ep3-bs/issues/564",
-            "https://vuldb.com/?id.216495",
-            "https://github.com/tkrebs/ep3-bs/commit/ef49e709c8adecc3a83cdc6164a67162991d2213",
-            "https://github.com/tkrebs/ep3-bs/releases/tag/1.8.0"
-        ],
-        "summary": "A vulnerability classified as problematic has been found in ep3-bs up to 1.7.x. This affects an unknown part. The manipulation leads to cross site scripting. It is possible to initiate the attack remotely. Upgrading to version 1.8.0 is able to address this issue. The name of the patch is ef49e709c8adecc3a83cdc6164a67162991d2213. It is recommended to upgrade the affected component. The associated identifier of this vulnerability is VDB-216495."
-    },
-    {
-        "Modified": "2022-12-28T21:36:00",
-        "Published": "2022-12-21T22:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-352",
-        "id": "CVE-2021-4275",
-        "impact": {},
-        "last-modified": "2022-12-28T21:36:00",
-        "references": [
-            "https://vuldb.com/?id.216498",
-            "https://github.com/katlings/pyambic-pentameter/commit/974f21aa1b2527ef39c8afe1a5060548217deca8"
-        ],
-        "summary": "A vulnerability, which was classified as problematic, was found in katlings pyambic-pentameter. Affected is an unknown function. The manipulation leads to cross-site request forgery. It is possible to launch the attack remotely. The name of the patch is 974f21aa1b2527ef39c8afe1a5060548217deca8. It is recommended to apply a patch to fix this issue. VDB-216498 is the identifier assigned to this vulnerability."
-    },
-    {
-        "Modified": "2022-12-28T21:27:00",
-        "Published": "2022-12-21T22:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-4638",
-        "impact": {},
-        "last-modified": "2022-12-28T21:27:00",
-        "references": [
-            "https://vuldb.com/?id.216496",
-            "https://github.com/collective/collective.contact.widget/commit/5da36305ca7ed433782be8901c47387406fcda12"
-        ],
-        "summary": "A vulnerability classified as problematic was found in collective.contact.widget up to 1.12. This vulnerability affects the function title of the file src/collective/contact/widget/widgets.py. The manipulation leads to cross site scripting. The attack can be initiated remotely. The name of the patch is 5da36305ca7ed433782be8901c47387406fcda12. It is recommended to apply a patch to fix this issue. The identifier of this vulnerability is VDB-216496."
     }
 ]
