@@ -1,5 +1,387 @@
 [
     {
+        "Modified": "2022-12-29T16:43:00",
+        "Published": "2022-12-20T16:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-434",
+        "id": "CVE-2022-46020",
+        "impact": {},
+        "last-modified": "2022-12-29T16:43:00",
+        "references": [
+            "https://github.com/10vexh/Vulnerability/blob/main/WBCE%20CMS%20v1.5.4%20getshell.pdf"
+        ],
+        "summary": "WBCE CMS v1.5.4 can implement getshell by modifying the upload file type."
+    },
+    {
+        "Modified": "2022-12-29T16:42:00",
+        "Published": "2022-12-20T17:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-863",
+        "id": "CVE-2022-46076",
+        "impact": {},
+        "last-modified": "2022-12-29T16:42:00",
+        "references": [
+            "https://www.dlink.com/en/security-bulletin/",
+            "https://github.com/Zarathustra-L/IoT_Vul/tree/main/D-Link/DIR-869"
+        ],
+        "summary": "D-Link DIR-869 DIR869Ax_FW102B15 is vulnerable to Authentication Bypass via phpcgi."
+    },
+    {
+        "Modified": "2022-12-29T16:41:00",
+        "Published": "2022-12-22T20:15:00",
+        "access": {},
+        "assigner": "security@mozilla.org",
+        "cvss": null,
+        "cwe": "CWE-1321",
+        "id": "CVE-2022-1529",
+        "impact": {},
+        "last-modified": "2022-12-29T16:41:00",
+        "references": [
+            "https://bugzilla.mozilla.org/show_bug.cgi?id=1770048",
+            "https://www.mozilla.org/security/advisories/mfsa2022-19/"
+        ],
+        "summary": "An attacker could have sent a message to the parent process where the contents were used to double-index into a JavaScript object, leading to prototype pollution and ultimately attacker-controlled JavaScript executing in the privileged parent process. This vulnerability affects Firefox ESR < 91.9.1, Firefox < 100.0.2, Firefox for Android < 100.3.0, and Thunderbird < 91.9.1."
+    },
+    {
+        "Modified": "2022-12-29T16:40:00",
+        "Published": "2022-12-22T20:15:00",
+        "access": {},
+        "assigner": "security@mozilla.org",
+        "cvss": null,
+        "cwe": "CWE-295",
+        "id": "CVE-2022-1197",
+        "impact": {},
+        "last-modified": "2022-12-29T16:40:00",
+        "references": [
+            "https://bugzilla.mozilla.org/show_bug.cgi?id=1754985",
+            "https://www.mozilla.org/security/advisories/mfsa2022-15/"
+        ],
+        "summary": "When importing a revoked key that specified key compromise as the revocation reason, Thunderbird did not update the existing copy of the key that was not yet revoked, and the existing key was kept as non-revoked. Revocation statements that used another revocation reason, or that didn't specify a revocation reason, were unaffected. This vulnerability affects Thunderbird < 91.8."
+    },
+    {
+        "Modified": "2022-12-29T16:40:00",
+        "Published": "2022-12-22T20:15:00",
+        "access": {},
+        "assigner": "security@mozilla.org",
+        "cvss": null,
+        "cwe": "CWE-326",
+        "id": "CVE-2022-1520",
+        "impact": {},
+        "last-modified": "2022-12-29T16:40:00",
+        "references": [
+            "https://bugzilla.mozilla.org/show_bug.cgi?id=1745019",
+            "https://www.mozilla.org/security/advisories/mfsa2022-18/"
+        ],
+        "summary": "When viewing an email message A, which contains an attached message B, where B is encrypted or digitally signed or both, Thunderbird may show an incorrect encryption or signature status. After opening and viewing the attached message B, when returning to the display of message A, the message A might be shown with the security status of message B. This vulnerability affects Thunderbird < 91.9."
+    },
+    {
+        "Modified": "2022-12-29T16:39:00",
+        "Published": "2022-12-22T20:15:00",
+        "access": {},
+        "assigner": "security@mozilla.org",
+        "cvss": null,
+        "cwe": "CWE-1321",
+        "id": "CVE-2022-1802",
+        "impact": {},
+        "last-modified": "2022-12-29T16:39:00",
+        "references": [
+            "https://bugzilla.mozilla.org/show_bug.cgi?id=1770137",
+            "https://www.mozilla.org/security/advisories/mfsa2022-19/"
+        ],
+        "summary": "If an attacker was able to corrupt the methods of an Array object in JavaScript via prototype pollution, they could have achieved execution of attacker-controlled JavaScript code in a privileged context. This vulnerability affects Firefox ESR < 91.9.1, Firefox < 100.0.2, Firefox for Android < 100.3.0, and Thunderbird < 91.9.1."
+    },
+    {
+        "Modified": "2022-12-29T16:38:00",
+        "Published": "2022-12-22T20:15:00",
+        "access": {},
+        "assigner": "security@mozilla.org",
+        "cvss": null,
+        "cwe": "CWE-295",
+        "id": "CVE-2022-1834",
+        "impact": {},
+        "last-modified": "2022-12-29T16:38:00",
+        "references": [
+            "https://www.mozilla.org/security/advisories/mfsa2022-22/",
+            "https://bugzilla.mozilla.org/show_bug.cgi?id=1767816"
+        ],
+        "summary": "When displaying the sender of an email, and the sender name contained the Braille Pattern Blank space character multiple times, Thunderbird would have displayed all the spaces. This could have been used by an attacker to send an email message with the attacker's digital signature, that was shown with an arbitrary sender email address chosen by the attacker. If the sender name started with a false email address, followed by many Braille space characters, the attacker's email address was not visible. Because Thunderbird compared the invisible sender address with the signature's email address, if the signing key or certificate was accepted by Thunderbird, the email was shown as having a valid digital signature. This vulnerability affects Thunderbird < 91.10."
+    },
+    {
+        "Modified": "2022-12-29T16:26:00",
+        "Published": "2022-12-22T11:15:00",
+        "access": {},
+        "assigner": "security@jetbrains.com",
+        "cvss": null,
+        "cwe": "CWE-319",
+        "id": "CVE-2022-47895",
+        "impact": {},
+        "last-modified": "2022-12-29T16:26:00",
+        "references": [
+            "https://www.jetbrains.com/privacy-security/issues-fixed/"
+        ],
+        "summary": "In JetBrains IntelliJ IDEA before 2022.3.1 the \"Validate JSP File\" action used the HTTP protocol to download required JAR files."
+    },
+    {
+        "Modified": "2022-12-29T16:24:00",
+        "Published": "2022-12-22T19:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-345",
+        "id": "CVE-2022-23556",
+        "impact": {},
+        "last-modified": "2022-12-29T16:24:00",
+        "references": [
+            "https://github.com/codeigniter4/CodeIgniter4/commit/5ca8c99b2db09a2a08a013836628028ddc984659",
+            "https://github.com/codeigniter4/CodeIgniter4/security/advisories/GHSA-ghw3-5qvm-3mqc"
+        ],
+        "summary": "CodeIgniter is a PHP full-stack web framework. This vulnerability may allow attackers to spoof their IP address when the server is behind a reverse proxy. This issue has been patched, please upgrade to version 4.2.11 or later, and configure `Config\\App::$proxyIPs`. As a workaround, do not use `$request->getIPAddress()`."
+    },
+    {
+        "Modified": "2022-12-29T16:23:00",
+        "Published": "2022-12-22T19:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-287",
+        "id": "CVE-2022-46170",
+        "impact": {},
+        "last-modified": "2022-12-29T16:23:00",
+        "references": [
+            "https://github.com/codeigniter4/CodeIgniter4/commit/f9fb6574fbeb5a4aa63f7ea87296523e10db9328",
+            "https://github.com/codeigniter4/CodeIgniter4/security/advisories/GHSA-6cq5-8cj7-g558"
+        ],
+        "summary": "CodeIgniter is a PHP full-stack web framework. When an application uses (1) multiple session cookies (e.g., one for user pages and one for admin pages) and (2) a session handler is set to `DatabaseHandler`, `MemcachedHandler`, or `RedisHandler`, then if an attacker gets one session cookie (e.g., one for user pages), they may be able to access pages that require another session cookie (e.g., for admin pages). This issue has been patched, please upgrade to version 4.2.11 or later. As a workaround, use only one session cookie."
+    },
+    {
+        "Modified": "2022-12-29T16:19:00",
+        "Published": "2022-12-22T20:15:00",
+        "access": {},
+        "assigner": "psirt@us.ibm.com",
+        "cvss": null,
+        "cwe": "CWE-327",
+        "id": "CVE-2022-22461",
+        "impact": {},
+        "last-modified": "2022-12-29T16:19:00",
+        "references": [
+            "https://www.ibm.com/support/pages/node/6850845",
+            "https://exchange.xforce.ibmcloud.com/vulnerabilities/225077"
+        ],
+        "summary": "IBM Security Verify Governance, Identity Manager 10.0.1 uses weaker than expected cryptographic algorithms that could allow an attacker to decrypt highly sensitive information. IBM X-Force ID: 225007."
+    },
+    {
+        "Modified": "2022-12-29T16:12:00",
+        "Published": "2022-12-22T20:15:00",
+        "access": {},
+        "assigner": "security@mozilla.org",
+        "cvss": null,
+        "cwe": "NVD-CWE-noinfo",
+        "id": "CVE-2022-22736",
+        "impact": {},
+        "last-modified": "2022-12-29T16:12:00",
+        "references": [
+            "https://bugzilla.mozilla.org/show_bug.cgi?id=1742692",
+            "https://www.mozilla.org/security/advisories/mfsa2022-01/"
+        ],
+        "summary": "If Firefox was installed to a world-writable directory, a local privilege escalation could occur when Firefox searched the current directory for system libraries. However the install directory is not world-writable by default.<br>*This bug only affects Firefox for Windows in a non-default installation. Other operating systems are unaffected.*. This vulnerability affects Firefox < 96."
+    },
+    {
+        "Modified": "2022-12-29T16:06:00",
+        "Published": "2022-12-22T10:15:00",
+        "access": {},
+        "assigner": "cna@vuldb.com",
+        "cvss": null,
+        "cwe": "CWE-1022",
+        "id": "CVE-2020-36624",
+        "impact": {},
+        "last-modified": "2022-12-29T16:06:00",
+        "references": [
+            "https://github.com/ahorner/text-helpers/commit/184b60ded0e43c985788582aca2d1e746f9405a3",
+            "https://github.com/ahorner/text-helpers/pull/19",
+            "https://vuldb.com/?id.216520",
+            "https://github.com/ahorner/text-helpers/releases/tag/v1.1.0"
+        ],
+        "summary": "A vulnerability was found in ahorner text-helpers up to 1.0.x. It has been declared as critical. This vulnerability affects unknown code of the file lib/text_helpers/translation.rb. The manipulation of the argument link leads to use of web link to untrusted target with window.opener access. The attack can be initiated remotely. Upgrading to version 1.1.0 is able to address this issue. The name of the patch is 184b60ded0e43c985788582aca2d1e746f9405a3. It is recommended to upgrade the affected component. The identifier of this vulnerability is VDB-216520."
+    },
+    {
+        "Modified": "2022-12-29T15:52:00",
+        "Published": "2022-12-22T02:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2022-43271",
+        "impact": {},
+        "last-modified": "2022-12-29T15:52:00",
+        "references": [
+            "https://inhabit.com.au/CVE-2022-43271",
+            "https://github.com/SecurityWillCheck/CVE-2022-43271"
+        ],
+        "summary": "Inhabit Systems Pty Ltd Move CRM version 4, build 260 was discovered to contain a cross-site scripting (XSS) vulnerability via the User profile component."
+    },
+    {
+        "Modified": "2022-12-29T15:50:00",
+        "Published": "2022-12-22T20:15:00",
+        "access": {},
+        "assigner": "security@mozilla.org",
+        "cvss": null,
+        "cwe": "CWE-416",
+        "id": "CVE-2022-22737",
+        "impact": {},
+        "last-modified": "2022-12-29T15:50:00",
+        "references": [
+            "https://www.mozilla.org/security/advisories/mfsa2022-02/",
+            "https://www.mozilla.org/security/advisories/mfsa2022-01/",
+            "https://bugzilla.mozilla.org/show_bug.cgi?id=1745874",
+            "https://www.mozilla.org/security/advisories/mfsa2022-03/"
+        ],
+        "summary": "Constructing audio sinks could have lead to a race condition when playing audio files and closing windows. This could have lead to a use-after-free causing a potentially exploitable crash. This vulnerability affects Firefox ESR < 91.5, Firefox < 96, and Thunderbird < 91.5."
+    },
+    {
+        "Modified": "2022-12-29T15:48:00",
+        "Published": "2022-12-22T20:15:00",
+        "access": {},
+        "assigner": "security@mozilla.org",
+        "cvss": null,
+        "cwe": "CWE-787",
+        "id": "CVE-2022-22738",
+        "impact": {},
+        "last-modified": "2022-12-29T15:48:00",
+        "references": [
+            "https://www.mozilla.org/security/advisories/mfsa2022-02/",
+            "https://www.mozilla.org/security/advisories/mfsa2022-01/",
+            "https://www.mozilla.org/security/advisories/mfsa2022-03/",
+            "https://bugzilla.mozilla.org/show_bug.cgi?id=1742382"
+        ],
+        "summary": "Applying a CSS filter effect could have accessed out of bounds memory. This could have lead to a heap-buffer-overflow causing a potentially exploitable crash. This vulnerability affects Firefox ESR < 91.5, Firefox < 96, and Thunderbird < 91.5."
+    },
+    {
+        "Modified": "2022-12-29T15:47:00",
+        "Published": "2022-12-22T20:15:00",
+        "access": {},
+        "assigner": "security@mozilla.org",
+        "cvss": null,
+        "cwe": "NVD-CWE-noinfo",
+        "id": "CVE-2022-22739",
+        "impact": {},
+        "last-modified": "2022-12-29T15:47:00",
+        "references": [
+            "https://www.mozilla.org/security/advisories/mfsa2022-02/",
+            "https://www.mozilla.org/security/advisories/mfsa2022-01/",
+            "https://bugzilla.mozilla.org/show_bug.cgi?id=1744158",
+            "https://www.mozilla.org/security/advisories/mfsa2022-03/"
+        ],
+        "summary": "Malicious websites could have tricked users into accepting launching a program to handle an external URL protocol. This vulnerability affects Firefox ESR < 91.5, Firefox < 96, and Thunderbird < 91.5."
+    },
+    {
+        "Modified": "2022-12-29T15:34:00",
+        "Published": "2022-12-22T20:15:00",
+        "access": {},
+        "assigner": "security@mozilla.org",
+        "cvss": null,
+        "cwe": "CWE-416",
+        "id": "CVE-2022-22740",
+        "impact": {},
+        "last-modified": "2022-12-29T15:34:00",
+        "references": [
+            "https://www.mozilla.org/security/advisories/mfsa2022-02/",
+            "https://www.mozilla.org/security/advisories/mfsa2022-01/",
+            "https://bugzilla.mozilla.org/show_bug.cgi?id=1742334",
+            "https://www.mozilla.org/security/advisories/mfsa2022-03/"
+        ],
+        "summary": "Certain network request objects were freed too early when releasing a network request handle. This could have lead to a use-after-free causing a potentially exploitable crash. This vulnerability affects Firefox ESR < 91.5, Firefox < 96, and Thunderbird < 91.5."
+    },
+    {
+        "Modified": "2022-12-29T15:17:00",
+        "Published": "2022-12-22T02:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-428",
+        "id": "CVE-2021-36631",
+        "impact": {},
+        "last-modified": "2022-12-29T15:17:00",
+        "references": [
+            "https://github.com/shigophilo/CVE/blob/main/Baidunetdisk%20Version%207.4.3%20dll%20hijack.md"
+        ],
+        "summary": "Untrusted search path vulnerability in Baidunetdisk Version 7.4.3 and earlier allows an attacker to gain privileges via a Trojan horse DLL in an unspecified directory."
+    },
+    {
+        "Modified": "2022-12-29T15:15:00",
+        "Published": "2022-08-22T08:15:00",
+        "access": {},
+        "assigner": "cna@vuldb.com",
+        "cvss": null,
+        "cwe": "CWE-862",
+        "id": "CVE-2022-2841",
+        "impact": {},
+        "last-modified": "2022-12-29T15:15:00",
+        "references": [
+            "https://www.modzero.com/modlog/archives/2022/08/22/ridiculous_vulnerability_disclosure_process_with_crowdstrike_falcon_sensor/index.html",
+            "https://www.modzero.com/advisories/MZ-22-02-CrowdStrike-FalconSensor.txt",
+            "https://youtu.be/3If-Fqwx-4s",
+            "https://vuldb.com/?id.206880",
+            "https://vuldb.com/?ctiid.206880"
+        ],
+        "summary": "A vulnerability was found in CrowdStrike Falcon 6.31.14505.0/6.42.15610/6.44.15806. It has been classified as problematic. Affected is an unknown function of the component Uninstallation Handler. The manipulation leads to missing authorization. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used. Upgrading to version 6.40.15409, 6.42.15611 and 6.44.15807 is able to address this issue. It is recommended to upgrade the affected component. The identifier of this vulnerability is VDB-206880."
+    },
+    {
+        "Modified": "2022-12-29T15:10:00",
+        "Published": "2022-12-21T22:15:00",
+        "access": {},
+        "assigner": "cna@vuldb.com",
+        "cvss": null,
+        "cwe": "CWE-78",
+        "id": "CVE-2022-4643",
+        "impact": {},
+        "last-modified": "2022-12-29T15:10:00",
+        "references": [
+            "https://vuldb.com/?id.216502",
+            "https://github.com/sajari/docconv/pull/110",
+            "https://github.com/sajari/docconv/commit/b19021ade3d0b71c89d35cb00eb9e589a121faa5",
+            "https://github.com/sajari/docconv/releases/tag/v1.2.1"
+        ],
+        "summary": "A vulnerability was found in docconv up to 1.2.0. It has been declared as critical. This vulnerability affects the function ConvertPDFImages of the file pdf_ocr.go. The manipulation of the argument path leads to os command injection. The attack can be initiated remotely. Upgrading to version 1.2.1 is able to address this issue. The name of the patch is b19021ade3d0b71c89d35cb00eb9e589a121faa5. It is recommended to upgrade the affected component. VDB-216502 is the identifier assigned to this vulnerability."
+    },
+    {
+        "Modified": "2022-12-29T15:09:00",
+        "Published": "2022-12-21T22:15:00",
+        "access": {},
+        "assigner": "cna@vuldb.com",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2022-4642",
+        "impact": {},
+        "last-modified": "2022-12-29T15:09:00",
+        "references": [
+            "https://github.com/Tatoeba/tatoeba2/issues/3002",
+            "https://vuldb.com/?id.216501",
+            "https://github.com/Tatoeba/tatoeba2/releases/tag/prod_2022-10-30",
+            "https://github.com/Tatoeba/tatoeba2/commit/91110777fc8ddf1b4a2cf4e66e67db69b9700361"
+        ],
+        "summary": "A vulnerability was found in tatoeba2. It has been classified as problematic. This affects an unknown part of the component Profile Name Handler. The manipulation leads to cross site scripting. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. Upgrading to version prod_2022-10-30 is able to address this issue. The name of the patch is 91110777fc8ddf1b4a2cf4e66e67db69b9700361. It is recommended to upgrade the affected component. The identifier VDB-216501 was assigned to this vulnerability."
+    },
+    {
+        "Modified": "2022-12-29T15:03:00",
+        "Published": "2022-12-22T02:15:00",
+        "access": {},
+        "assigner": "security@huntr.dev",
+        "cvss": null,
+        "cwe": "CWE-352",
+        "id": "CVE-2022-4646",
+        "impact": {},
+        "last-modified": "2022-12-29T15:03:00",
+        "references": [
+            "https://huntr.dev/bounties/17bc1b0f-1f5c-432f-88e4-c9866ccf6e10",
+            "https://github.com/ikus060/rdiffweb/commit/e6f0d8002129be90fe82fa3e3ea0a6942caba398"
+        ],
+        "summary": "Cross-Site Request Forgery (CSRF) in GitHub repository ikus060/rdiffweb prior to 2.5.4."
+    },
+    {
         "Modified": "2022-12-29T14:48:00",
         "Published": "2022-12-16T20:15:00",
         "access": {},
@@ -1290,442 +1672,5 @@
             "https://www.cisa.gov/uscert/ics/advisories/icsa-22-263-03"
         ],
         "summary": "Dataprobe iBoot-PDU FW versions prior to 1.42.06162022 contain a vulnerability where the affected product exposes sensitive data concerning the device."
-    },
-    {
-        "Modified": "2022-12-28T18:46:00",
-        "Published": "2022-12-21T19:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-352",
-        "id": "CVE-2020-36623",
-        "impact": {},
-        "last-modified": "2022-12-28T18:46:00",
-        "references": [
-            "https://vuldb.com/?id.216475",
-            "https://github.com/jtojnar/pengu/commit/aea66f12b8cdfc3c8c50ad6a9c89d8307e9d0a91"
-        ],
-        "summary": "A vulnerability was found in Pengu. It has been declared as problematic. Affected by this vulnerability is the function runApp of the file src/index.js. The manipulation leads to cross-site request forgery. The attack can be launched remotely. The name of the patch is aea66f12b8cdfc3c8c50ad6a9c89d8307e9d0a91. It is recommended to apply a patch to fix this issue. The associated identifier of this vulnerability is VDB-216475."
-    },
-    {
-        "Modified": "2022-12-28T18:45:00",
-        "Published": "2022-12-21T19:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-352",
-        "id": "CVE-2020-36622",
-        "impact": {},
-        "last-modified": "2022-12-28T18:45:00",
-        "references": [
-            "https://github.com/sah-comp/bienlein/commit/d7836a4f2b241e4745ede194f0f6fb47199cab6b",
-            "https://vuldb.com/?id.216473"
-        ],
-        "summary": "A vulnerability was found in sah-comp bienlein and classified as problematic. This issue affects some unknown processing. The manipulation leads to cross-site request forgery. The attack may be initiated remotely. The name of the patch is d7836a4f2b241e4745ede194f0f6fb47199cab6b. It is recommended to apply a patch to fix this issue. The identifier VDB-216473 was assigned to this vulnerability."
-    },
-    {
-        "Modified": "2022-12-28T18:44:00",
-        "Published": "2022-12-21T23:15:00",
-        "access": {},
-        "assigner": "ics-cert@hq.dhs.gov",
-        "cvss": null,
-        "cwe": "CWE-918",
-        "id": "CVE-2022-3189",
-        "impact": {},
-        "last-modified": "2022-12-28T18:44:00",
-        "references": [
-            "https://www.cisa.gov/uscert/ics/advisories/icsa-22-263-03"
-        ],
-        "summary": "Dataprobe iBoot-PDU FW versions prior to 1.42.06162022 contain a vulnerability where a specially crafted PHP script could use parameters from a HTTP request to create a URL capable of changing the host parameter. The changed host parameter in the HTTP could point to another host that will send a request to the host or IP specified in the changed host parameter."
-    },
-    {
-        "Modified": "2022-12-28T18:42:00",
-        "Published": "2022-12-21T19:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-400",
-        "id": "CVE-2020-36620",
-        "impact": {},
-        "last-modified": "2022-12-28T18:42:00",
-        "references": [
-            "https://github.com/Brondahl/EnumStringValues/commit/c0fc7806beb24883cc2f9543ebc50c0820297307",
-            "https://vuldb.com/?id.216466",
-            "https://github.com/Brondahl/EnumStringValues/releases/tag/4.0.1"
-        ],
-        "summary": "A vulnerability was found in Brondahl EnumStringValues up to 4.0.0. It has been declared as problematic. This vulnerability affects the function GetStringValuesWithPreferences_Uncache of the file EnumStringValues/EnumExtensions.cs. The manipulation leads to resource consumption. Upgrading to version 4.0.1 is able to address this issue. The name of the patch is c0fc7806beb24883cc2f9543ebc50c0820297307. It is recommended to upgrade the affected component. VDB-216466 is the identifier assigned to this vulnerability."
-    },
-    {
-        "Modified": "2022-12-28T18:39:00",
-        "Published": "2022-12-21T19:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2020-36621",
-        "impact": {},
-        "last-modified": "2022-12-28T18:39:00",
-        "references": [
-            "https://vuldb.com/?id.216470",
-            "https://github.com/chedabob/whatismyudid/commit/bb33d4325fba80e7ea68b79121dba025caf6f45f"
-        ],
-        "summary": "A vulnerability, which was classified as problematic, has been found in chedabob whatismyudid. Affected by this issue is the function exports.enrollment of the file routes/mobileconfig.js. The manipulation leads to cross site scripting. The attack may be launched remotely. The name of the patch is bb33d4325fba80e7ea68b79121dba025caf6f45f. It is recommended to apply a patch to fix this issue. VDB-216470 is the identifier assigned to this vulnerability."
-    },
-    {
-        "Modified": "2022-12-28T18:37:00",
-        "Published": "2022-12-21T23:15:00",
-        "access": {},
-        "assigner": "ics-cert@hq.dhs.gov",
-        "cvss": null,
-        "cwe": "CWE-306",
-        "id": "CVE-2022-3188",
-        "impact": {},
-        "last-modified": "2022-12-28T18:37:00",
-        "references": [
-            "https://www.cisa.gov/uscert/ics/advisories/icsa-22-263-03"
-        ],
-        "summary": "Dataprobe iBoot-PDU FW versions prior to 1.42.06162022 contain a vulnerability where unauthenticated users could open PHP index pages without authentication and download the history file from the device; the history file includes the latest actions completed by specific users."
-    },
-    {
-        "Modified": "2022-12-28T18:32:00",
-        "Published": "2022-12-21T23:15:00",
-        "access": {},
-        "assigner": "ics-cert@hq.dhs.gov",
-        "cvss": null,
-        "cwe": "CWE-285",
-        "id": "CVE-2022-3187",
-        "impact": {},
-        "last-modified": "2022-12-28T18:32:00",
-        "references": [
-            "https://www.cisa.gov/uscert/ics/advisories/icsa-22-263-03"
-        ],
-        "summary": "Dataprobe iBoot-PDU FW versions prior to 1.42.06162022 contain a vulnerability where certain PHP pages only validate when a valid connection is established with the database. However, these PHP pages do not verify the validity of a user. Attackers could leverage this lack of verification to read the state of outlets."
-    },
-    {
-        "Modified": "2022-12-28T18:07:00",
-        "Published": "2018-09-06T21:29:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "LOW",
-            "vector": "NETWORK"
-        },
-        "assigner": "cert@cert.org",
-        "cvss": 7.8,
-        "cvss-time": "2022-12-28T18:07:00",
-        "cvss-vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C",
-        "cwe": "CWE-20",
-        "id": "CVE-2018-5391",
-        "impact": {
-            "availability": "COMPLETE",
-            "confidentiality": "NONE",
-            "integrity": "NONE"
-        },
-        "last-modified": "2022-12-28T18:07:00",
-        "references": [
-            "https://www.kb.cert.org/vuls/id/641765",
-            "https://git.kernel.org/pub/scm/linux/kernel/git/davem/net-next.git/commit/?id=c30f1fc041b74ecdb072dd44f858750414b8b19f",
-            "https://www.debian.org/security/2018/dsa-4272",
-            "https://usn.ubuntu.com/3742-2/",
-            "https://usn.ubuntu.com/3742-1/",
-            "https://usn.ubuntu.com/3741-2/",
-            "https://usn.ubuntu.com/3741-1/",
-            "https://usn.ubuntu.com/3740-2/",
-            "https://usn.ubuntu.com/3740-1/",
-            "https://lists.debian.org/debian-lts-announce/2018/08/msg00014.html",
-            "http://www.securitytracker.com/id/1041476",
-            "http://www.securityfocus.com/bid/105108",
-            "http://www.arubanetworks.com/assets/alert/ARUBA-PSA-2018-004.txt",
-            "http://www.securitytracker.com/id/1041637",
-            "https://access.redhat.com/errata/RHSA-2018:2791",
-            "https://access.redhat.com/errata/RHSA-2018:2785",
-            "https://security.netapp.com/advisory/ntap-20181003-0002/",
-            "https://access.redhat.com/errata/RHSA-2018:2846",
-            "https://access.redhat.com/errata/RHSA-2018:2933",
-            "https://access.redhat.com/errata/RHSA-2018:2925",
-            "https://access.redhat.com/errata/RHSA-2018:2924",
-            "https://access.redhat.com/errata/RHSA-2018:3096",
-            "https://access.redhat.com/errata/RHSA-2018:3083",
-            "https://access.redhat.com/errata/RHSA-2018:2948",
-            "https://access.redhat.com/errata/RHSA-2018:3459",
-            "https://access.redhat.com/errata/RHSA-2018:3590",
-            "https://access.redhat.com/errata/RHSA-2018:3586",
-            "https://access.redhat.com/errata/RHSA-2018:3540",
-            "https://lists.debian.org/debian-lts-announce/2019/03/msg00017.html",
-            "http://www.openwall.com/lists/oss-security/2019/06/28/2",
-            "http://www.openwall.com/lists/oss-security/2019/07/06/3",
-            "http://www.openwall.com/lists/oss-security/2019/07/06/4",
-            "https://support.f5.com/csp/article/K74374841?utm_source=f5support&amp;utm_medium=RSS",
-            "http://www.huawei.com/en/psirt/security-advisories/huawei-sa-20200115-01-linux-en",
-            "https://cert-portal.siemens.com/productcert/pdf/ssa-377115.pdf"
-        ],
-        "summary": "The Linux kernel, versions 3.9+, is vulnerable to a denial of service attack with low rates of specially modified packets targeting IP fragment re-assembly. An attacker may cause a denial of service condition by sending specially crafted IP fragments. Various vulnerabilities in IP fragmentation have been discovered and fixed over the years. The current vulnerability (CVE-2018-5391) became exploitable in the Linux kernel with the increase of the IP fragment reassembly queue size."
-    },
-    {
-        "Modified": "2022-12-28T17:55:00",
-        "Published": "2022-12-19T16:15:00",
-        "access": {},
-        "assigner": "psirt@autodesk.com",
-        "cvss": null,
-        "cwe": "CWE-427",
-        "id": "CVE-2022-42945",
-        "impact": {},
-        "last-modified": "2022-12-28T17:55:00",
-        "references": [
-            "https://www.autodesk.com/trust/security-advisories/adsk-sa-2022-0024"
-        ],
-        "summary": "DWG TrueViewTM 2023 version has a DLL Search Order Hijacking vulnerability. Successful exploitation by a malicious attacker could result in remote code execution on the target system."
-    },
-    {
-        "Modified": "2022-12-28T17:15:00",
-        "Published": "2022-01-26T21:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cvss-time": "2022-02-02T23:06:00",
-        "cvss-vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
-        "cwe": "Unknown",
-        "id": "CVE-2022-23967",
-        "impact": {},
-        "last-modified": "2022-12-28T17:15:00",
-        "references": [],
-        "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: CVE-2019-15679. Reason: This candidate is a duplicate of CVE-2019-15679. Notes: All CVE users should reference CVE-2019-15679 instead of this candidate. All references and descriptions in this candidate have been removed to prevent accidental usage."
-    },
-    {
-        "Modified": "2022-12-28T17:12:00",
-        "Published": "2022-12-20T20:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-494",
-        "id": "CVE-2022-46430",
-        "impact": {},
-        "last-modified": "2022-12-28T17:12:00",
-        "references": [
-            "https://hackmd.io/@slASVrz_SrW7NQCsunofeA/BJxlw2Pwi",
-            "https://www.tp-link.com/us/press/security-advisory/"
-        ],
-        "summary": "TP-Link TL-WR740N V1 and V2 v3.12.4 and earlier allows authenticated attackers to execute arbitrary code or cause a Denial of Service (DoS) via uploading a crafted firmware image during the firmware update process."
-    },
-    {
-        "Modified": "2022-12-28T17:09:00",
-        "Published": "2022-12-20T20:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "NVD-CWE-noinfo",
-        "id": "CVE-2022-46422",
-        "impact": {},
-        "last-modified": "2022-12-28T17:09:00",
-        "references": [
-            "https://hackmd.io/@slASVrz_SrW7NQCsunofeA/B1bFKBWwi",
-            "https://www.netgear.com/about/security/"
-        ],
-        "summary": "An issue in Netgear WNR2000 v1 1.2.3.7 and earlier allows authenticated attackers to cause a Denial of Service (DoS) via uploading a crafted firmware image during the firmware update process."
-    },
-    {
-        "Modified": "2022-12-28T17:08:00",
-        "Published": "2022-12-20T20:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-494",
-        "id": "CVE-2022-46428",
-        "impact": {},
-        "last-modified": "2022-12-28T17:08:00",
-        "references": [
-            "https://hackmd.io/@slASVrz_SrW7NQCsunofeA/S1hP34Hvj",
-            "https://www.tp-link.com/us/press/security-advisory/"
-        ],
-        "summary": "TP-Link TL-WR1043ND V1 3.13.15 and earlier allows authenticated attackers to execute arbitrary code or cause a Denial of Service (DoS) via uploading a crafted firmware image during the firmware update process."
-    },
-    {
-        "Modified": "2022-12-28T16:38:00",
-        "Published": "2022-12-20T20:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "NVD-CWE-noinfo",
-        "id": "CVE-2022-46139",
-        "impact": {},
-        "last-modified": "2022-12-28T16:38:00",
-        "references": [
-            "https://hackmd.io/@slASVrz_SrW7NQCsunofeA/HJH7LSZPj"
-        ],
-        "summary": "TP-Link TL-WR940N V4 3.16.9 and earlier allows authenticated attackers to cause a Denial of Service (DoS) via uploading a crafted firmware image during the firmware update process."
-    },
-    {
-        "Modified": "2022-12-28T16:15:00",
-        "Published": "2022-11-18T23:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-436",
-        "id": "CVE-2021-33621",
-        "impact": {},
-        "last-modified": "2022-12-28T16:15:00",
-        "references": [
-            "https://www.ruby-lang.org/en/news/2022/11/22/http-response-splitting-in-cgi-cve-2021-33621/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/YACE6ORF2QBXXBK2V2CM36D7TZMEJVAS/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/DQR7LWED6VAPD5ATYOBZIGJQPCUBRJBX/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/THVTYHHEOVLQFCFHWURZYO7PVUPBHRZD/",
-            "https://security.netapp.com/advisory/ntap-20221228-0004/"
-        ],
-        "summary": "The cgi gem before 0.1.0.2, 0.2.x before 0.2.2, and 0.3.x before 0.3.5 for Ruby allows HTTP response splitting. This is relevant to applications that use untrusted user input either to generate an HTTP response or to create a CGI::Cookie object."
-    },
-    {
-        "Modified": "2022-12-28T16:15:00",
-        "Published": "2022-10-17T12:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-416",
-        "id": "CVE-2022-3541",
-        "impact": {},
-        "last-modified": "2022-12-28T16:15:00",
-        "references": [
-            "https://vuldb.com/?id.211041",
-            "https://git.kernel.org/pub/scm/linux/kernel/git/bpf/bpf-next.git/commit/?id=12aece8b01507a2d357a1861f470e83621fbb6f2",
-            "https://security.netapp.com/advisory/ntap-20221228-0001/"
-        ],
-        "summary": "A vulnerability classified as critical has been found in Linux Kernel. This affects the function spl2sw_nvmem_get_mac_address of the file drivers/net/ethernet/sunplus/spl2sw_driver.c of the component BPF. The manipulation leads to use after free. It is recommended to apply a patch to fix this issue. The identifier VDB-211041 was assigned to this vulnerability."
-    },
-    {
-        "Modified": "2022-12-28T16:15:00",
-        "Published": "2022-09-29T03:15:00",
-        "access": {},
-        "assigner": "cert@cert.org",
-        "cvss": null,
-        "cwe": "CWE-787",
-        "id": "CVE-2016-2338",
-        "impact": {},
-        "last-modified": "2022-12-28T16:15:00",
-        "references": [
-            "https://lists.debian.org/debian-lts-announce/2020/03/msg00032.html",
-            "http://www.talosintelligence.com/reports/TALOS-2016-0032/",
-            "https://security.netapp.com/advisory/ntap-20221228-0005/"
-        ],
-        "summary": "An exploitable heap overflow vulnerability exists in the Psych::Emitter start_document function of Ruby. In Psych::Emitter start_document function heap buffer \"head\" allocation is made based on tags array length. Specially constructed object passed as element of tags array can increase this array size after mentioned allocation and cause heap overflow."
-    },
-    {
-        "Modified": "2022-12-28T16:15:00",
-        "Published": "2022-09-21T11:15:00",
-        "access": {},
-        "assigner": "security-officer@isc.org",
-        "cvss": null,
-        "cwe": "CWE-347",
-        "id": "CVE-2022-38177",
-        "impact": {},
-        "last-modified": "2022-12-28T16:15:00",
-        "references": [
-            "https://kb.isc.org/docs/cve-2022-38177",
-            "http://www.openwall.com/lists/oss-security/2022/09/21/3",
-            "https://www.debian.org/security/2022/dsa-5235",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/CV4GQWBPF7Y52J2FA24U6UMHQAOXZEF7/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/MRHB6J4Z7BKH4HPEKG5D35QGRD6ANNMT/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/YZJQNUASODNVAWZV6STKG5SD6XIJ446S/",
-            "https://lists.debian.org/debian-lts-announce/2022/10/msg00007.html",
-            "https://security.gentoo.org/glsa/202210-25",
-            "https://security.netapp.com/advisory/ntap-20221228-0010/"
-        ],
-        "summary": "By spoofing the target resolver with responses that have a malformed ECDSA signature, an attacker can trigger a small memory leak. It is possible to gradually erode available memory to the point where named crashes for lack of resources."
-    },
-    {
-        "Modified": "2022-12-28T16:15:00",
-        "Published": "2022-09-21T11:15:00",
-        "access": {},
-        "assigner": "security-officer@isc.org",
-        "cvss": null,
-        "cwe": "CWE-347",
-        "id": "CVE-2022-38178",
-        "impact": {},
-        "last-modified": "2022-12-28T16:15:00",
-        "references": [
-            "https://kb.isc.org/docs/cve-2022-38178",
-            "http://www.openwall.com/lists/oss-security/2022/09/21/3",
-            "https://www.debian.org/security/2022/dsa-5235",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/CV4GQWBPF7Y52J2FA24U6UMHQAOXZEF7/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/MRHB6J4Z7BKH4HPEKG5D35QGRD6ANNMT/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/YZJQNUASODNVAWZV6STKG5SD6XIJ446S/",
-            "https://lists.debian.org/debian-lts-announce/2022/10/msg00007.html",
-            "https://security.gentoo.org/glsa/202210-25",
-            "https://security.netapp.com/advisory/ntap-20221228-0009/"
-        ],
-        "summary": "By spoofing the target resolver with responses that have a malformed EdDSA signature, an attacker can trigger a small memory leak. It is possible to gradually erode available memory to the point where named crashes for lack of resources."
-    },
-    {
-        "Modified": "2022-12-28T16:15:00",
-        "Published": "2022-09-14T15:15:00",
-        "access": {},
-        "assigner": "secalert@redhat.com",
-        "cvss": null,
-        "cwe": "CWE-476",
-        "id": "CVE-2022-3202",
-        "impact": {},
-        "last-modified": "2022-12-28T16:15:00",
-        "references": [
-            "https://github.com/torvalds/linux/commit/a53046291020ec41e09181396c1e829287b48d47",
-            "https://security.netapp.com/advisory/ntap-20221228-0007/"
-        ],
-        "summary": "A NULL pointer dereference flaw in diFree in fs/jfs/inode.c in Journaled File System (JFS)in the Linux kernel. This could allow a local attacker to crash the system or leak kernel internal information."
-    },
-    {
-        "Modified": "2022-12-28T16:15:00",
-        "Published": "2022-08-29T15:15:00",
-        "access": {},
-        "assigner": "secalert@redhat.com",
-        "cvss": null,
-        "cwe": "CWE-416",
-        "id": "CVE-2022-1199",
-        "impact": {},
-        "last-modified": "2022-12-28T16:15:00",
-        "references": [
-            "https://www.openwall.com/lists/oss-security/2022/04/02/5",
-            "https://github.com/torvalds/linux/commit/4e0f718daf97d47cf7dec122da1be970f145c809",
-            "https://bugzilla.redhat.com/show_bug.cgi?id=2070694",
-            "https://github.com/torvalds/linux/commit/7ec02f5ac8a5be5a3f20611731243dc5e1d9ba10",
-            "https://github.com/torvalds/linux/commit/71171ac8eb34ce7fe6b3267dce27c313ab3cb3ac",
-            "https://access.redhat.com/security/cve/CVE-2022-1199",
-            "https://security.netapp.com/advisory/ntap-20221228-0006/"
-        ],
-        "summary": "A flaw was found in the Linux kernel. This flaw allows an attacker to crash the Linux kernel by simulating amateur radio from the user space, resulting in a null-ptr-deref vulnerability and a use-after-free vulnerability."
-    },
-    {
-        "Modified": "2022-12-28T16:15:00",
-        "Published": "2022-08-24T16:15:00",
-        "access": {},
-        "assigner": "secalert@redhat.com",
-        "cvss": null,
-        "cwe": "CWE-416",
-        "id": "CVE-2021-4028",
-        "impact": {},
-        "last-modified": "2022-12-28T16:15:00",
-        "references": [
-            "https://lkml.org/lkml/2021/10/4/697",
-            "https://bugzilla.redhat.com/show_bug.cgi?id=2027201",
-            "https://access.redhat.com/security/cve/CVE-2021-4028",
-            "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=bc0bdc5afaa74",
-            "https://bugzilla.suse.com/show_bug.cgi?id=1193167#c0",
-            "https://security.netapp.com/advisory/ntap-20221228-0002/"
-        ],
-        "summary": "A flaw in the Linux kernel's implementation of RDMA communications manager listener code allowed an attacker with local access to setup a socket to listen on a high port allowing for a list element to be used after free. Given the ability to execute code, a local attacker could leverage this use-after-free to crash the system or possibly escalate privileges on the system."
-    },
-    {
-        "Modified": "2022-12-28T16:15:00",
-        "Published": "2022-08-24T16:15:00",
-        "access": {},
-        "assigner": "secalert@redhat.com",
-        "cvss": null,
-        "cwe": "CWE-20",
-        "id": "CVE-2021-4204",
-        "impact": {},
-        "last-modified": "2022-12-28T16:15:00",
-        "references": [
-            "https://access.redhat.com/security/cve/CVE-2021-4204",
-            "https://bugzilla.redhat.com/show_bug.cgi?id=2039178",
-            "https://security-tracker.debian.org/tracker/CVE-2021-4204",
-            "https://www.openwall.com/lists/oss-security/2022/01/11/4",
-            "https://security.netapp.com/advisory/ntap-20221228-0003/"
-        ],
-        "summary": "An out-of-bounds (OOB) memory access flaw was found in the Linux kernel's eBPF due to an Improper Input Validation. This flaw allows a local attacker with a special privilege to crash the system or leak internal information."
     }
 ]
