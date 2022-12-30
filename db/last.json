@@ -1,5 +1,180 @@
 [
     {
+        "Modified": "2022-12-30T04:15:00",
+        "Published": "2022-12-03T15:15:00",
+        "access": {},
+        "assigner": "security@apache.org",
+        "cvss": null,
+        "cwe": "CWE-20",
+        "id": "CVE-2021-37533",
+        "impact": {},
+        "last-modified": "2022-12-30T04:15:00",
+        "references": [
+            "https://lists.apache.org/thread/o6yn9r9x6s94v97264hmgol1sf48mvx7",
+            "http://www.openwall.com/lists/oss-security/2022/12/03/1",
+            "https://lists.debian.org/debian-lts-announce/2022/12/msg00038.html",
+            "https://www.debian.org/security/2022/dsa-5307"
+        ],
+        "summary": "Prior to Apache Commons Net 3.9.0, Net's FTP client trusts the host from PASV response by default. A malicious server can redirect the Commons Net code to use a different host, but the user has to connect to the malicious server in the first place. This may lead to leakage of information about services running on the private network of the client. The default in version 3.9.0 is now false to ignore such hosts, as cURL does. See https://issues.apache.org/jira/browse/NET-711."
+    },
+    {
+        "Modified": "2022-12-30T04:15:00",
+        "Published": "2022-11-09T07:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-400",
+        "id": "CVE-2022-45061",
+        "impact": {},
+        "last-modified": "2022-12-30T04:15:00",
+        "references": [
+            "https://github.com/python/cpython/issues/98433",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/O67LRHDTJWH544KXB6KY4HMHQLYDXFPK/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/4WBZJNSALFGMPYTINIF57HAAK46U72WQ/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/GTPVDZDATRQFE6KAT6B4BQIQ4GRHIIIJ/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RTN2OOLKYTG34DODUEJGT5MLC2PFGPBA/",
+            "https://security.netapp.com/advisory/ntap-20221209-0007/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/ZB5YCMIRVX35RUB6XPOWKENCVCJEVDRK/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/PLQ2BNZVBBAQPV3SPRU24ZD37UYJJS7W/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/VCMDX6IFKLOA3NXUQEV524L5LHTPI2JI/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/ORVCQGJCCAVLN4DJDTWGREFCUWXKQRML/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/T3D5TX4TDJPXHXD2QICKTY3OCQC3JARP/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/63FS6VHY4DCS74HBTEINUDOECQ2X6ZCH/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/JCDJXNBHWXNYUTOEV4H2HCFSRKV3SYL3/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RH57BNT4VQERGEJ5SXNXSVMDYP66YD4H/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/YPNWZKXPKTNHS5FVMN7UQZ2UPCSEFJUK/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/LKWAMPURWUV3DCCT4J7VHRF4NT2CFVBR/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/35YDIWCUMWTMDBWFRAVENFH6BLB65D6S/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/B3YI6JYARWU6GULWOHNUROSACT54XFFS/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/JTYVESWVBPD57ZJC35G5722Q6TS37WSB/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/KNE4GMD45RGC2HWUAAIGTDHT5VJ2E4O4/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UHVW73QZJMHA4MK7JBT7CXX7XSNYQEGF/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/2AOUKI72ACV6CHY2QUFO6VK2DNMVJ2MB/"
+        ],
+        "summary": "An issue was discovered in Python before 3.11.1. An unnecessary quadratic algorithm exists in one path when processing some inputs to the IDNA (RFC 3490) decoder, such that a crafted, unreasonably long name being presented to the decoder could lead to a CPU denial of service. Hostnames are often supplied by remote servers that could be controlled by a malicious actor; in such a scenario, they could trigger excessive CPU consumption on the client attempting to make use of an attacker-supplied supposed hostname. For example, the attack payload could be placed in the Location header of an HTTP response with status code 302. A fix is planned in 3.11.1, 3.10.9, 3.9.16, 3.8.16, and 3.7.16."
+    },
+    {
+        "Modified": "2022-12-30T02:34:00",
+        "Published": "2022-12-22T22:15:00",
+        "access": {},
+        "assigner": "talos-cna@cisco.com",
+        "cvss": null,
+        "cwe": "CWE-125",
+        "id": "CVE-2022-43596",
+        "impact": {},
+        "last-modified": "2022-12-30T02:34:00",
+        "references": [
+            "https://talosintelligence.com/vulnerability_reports/TALOS-2022-1654"
+        ],
+        "summary": "An information disclosure vulnerability exists in the IFFOutput channel interleaving functionality of OpenImageIO Project OpenImageIO v2.4.4.2. A specially crafted ImageOutput Object can lead to leaked heap data. An attacker can provide malicious input to trigger this vulnerability."
+    },
+    {
+        "Modified": "2022-12-30T01:53:00",
+        "Published": "2022-12-22T22:15:00",
+        "access": {},
+        "assigner": "talos-cna@cisco.com",
+        "cvss": null,
+        "cwe": "CWE-125",
+        "id": "CVE-2022-41649",
+        "impact": {},
+        "last-modified": "2022-12-30T01:53:00",
+        "references": [
+            "https://talosintelligence.com/vulnerability_reports/TALOS-2022-1631"
+        ],
+        "summary": "A heap out of bounds read vulnerability exists in the handling of IPTC data while parsing TIFF images in OpenImageIO v2.3.19.0. A specially-crafted TIFF file can cause a read of adjacent heap memory, which can leak sensitive process information. An attacker can provide a malicious file to trigger this vulnerability."
+    },
+    {
+        "Modified": "2022-12-30T01:53:00",
+        "Published": "2022-12-22T22:15:00",
+        "access": {},
+        "assigner": "talos-cna@cisco.com",
+        "cvss": null,
+        "cwe": "CWE-123",
+        "id": "CVE-2022-38143",
+        "impact": {},
+        "last-modified": "2022-12-30T01:53:00",
+        "references": [
+            "https://talosintelligence.com/vulnerability_reports/TALOS-2022-1630"
+        ],
+        "summary": "A heap out-of-bounds write vulnerability exists in the way OpenImageIO v2.3.19.0 processes RLE encoded BMP images. A specially-crafted bmp file can write to arbitrary out of bounds memory, which can lead to arbitrary code execution. An attacker can provide a malicious file to trigger this vulnerability."
+    },
+    {
+        "Modified": "2022-12-30T01:53:00",
+        "Published": "2022-12-22T22:15:00",
+        "access": {},
+        "assigner": "talos-cna@cisco.com",
+        "cvss": null,
+        "cwe": "CWE-122",
+        "id": "CVE-2022-41639",
+        "impact": {},
+        "last-modified": "2022-12-30T01:53:00",
+        "references": [
+            "https://talosintelligence.com/vulnerability_reports/TALOS-2022-1633"
+        ],
+        "summary": "A heap based buffer overflow vulnerability exists in tile decoding code of TIFF image parser in OpenImageIO master-branch-9aeece7a and v2.3.19.0. A specially-crafted TIFF file can lead to an out of bounds memory corruption, which can result in arbitrary code execution. An attacker can provide a malicious file to trigger this vulnerability."
+    },
+    {
+        "Modified": "2022-12-30T01:45:00",
+        "Published": "2022-12-22T22:15:00",
+        "access": {},
+        "assigner": "talos-cna@cisco.com",
+        "cvss": null,
+        "cwe": "CWE-787",
+        "id": "CVE-2022-41837",
+        "impact": {},
+        "last-modified": "2022-12-30T01:45:00",
+        "references": [
+            "https://talosintelligence.com/vulnerability_reports/TALOS-2022-1636"
+        ],
+        "summary": "An out-of-bounds write vulnerability exists in the OpenImageIO::add_exif_item_to_spec functionality of OpenImageIO Project OpenImageIO v2.4.4.2. Specially-crafted exif metadata can lead to stack-based memory corruption. An attacker can provide a malicious file to trigger this vulnerability."
+    },
+    {
+        "Modified": "2022-12-30T01:37:00",
+        "Published": "2022-12-22T22:15:00",
+        "access": {},
+        "assigner": "talos-cna@cisco.com",
+        "cvss": null,
+        "cwe": "CWE-122",
+        "id": "CVE-2022-41838",
+        "impact": {},
+        "last-modified": "2022-12-30T01:37:00",
+        "references": [
+            "https://talosintelligence.com/vulnerability_reports/TALOS-2022-1634"
+        ],
+        "summary": "A code execution vulnerability exists in the DDS scanline parsing functionality of OpenImageIO Project OpenImageIO v2.4.4.2. A specially-crafted .dds can lead to a heap buffer overflow. An attacker can provide a malicious file to trigger this vulnerability."
+    },
+    {
+        "Modified": "2022-12-30T01:15:00",
+        "Published": "2022-12-30T01:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-44137",
+        "impact": {},
+        "last-modified": "2022-12-30T01:15:00",
+        "references": [
+            "https://github.com/y1s3m0/vulnfind/blob/main/Sanitization%20Management%20System%20Project%20CMS/sqli_view_inquiry.md"
+        ],
+        "summary": "SourceCodester Sanitization Management System 1.0 is vulnerable to SQL Injection."
+    },
+    {
+        "Modified": "2022-12-30T01:15:00",
+        "Published": "2022-12-27T18:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-47968",
+        "impact": {},
+        "last-modified": "2022-12-30T01:15:00",
+        "references": [
+            "https://github.com/linuxserver/Heimdall/issues/1086",
+            "https://samy.link/blog"
+        ],
+        "summary": "Heimdall Application Dashboard through 2.5.4 allows reflected and stored XSS via \"Application name\" to the \"Add application\" page. The stored XSS will be triggered in the \"Application list\" page."
+    },
+    {
         "Modified": "2022-12-29T23:17:00",
         "Published": "2022-12-22T20:15:00",
         "access": {},
@@ -64,23 +239,6 @@
             "https://github.com/hazelcast/hazelcast/security/advisories/GHSA-c5hg-mr8r-f6jp"
         ],
         "summary": "The Connection handler in Hazelcast and Hazelcast Jet allows a remote unauthenticated attacker to access and manipulate data in the cluster with the identity of another already authenticated connection. The affected Hazelcast versions are through 4.0.6, 4.1.9, 4.2.5, 5.0.3, and 5.1.2. The affected Hazelcast Jet versions are through 4.5.3."
-    },
-    {
-        "Modified": "2022-12-29T23:15:00",
-        "Published": "2022-12-03T15:15:00",
-        "access": {},
-        "assigner": "security@apache.org",
-        "cvss": null,
-        "cwe": "CWE-20",
-        "id": "CVE-2021-37533",
-        "impact": {},
-        "last-modified": "2022-12-29T23:15:00",
-        "references": [
-            "https://lists.apache.org/thread/o6yn9r9x6s94v97264hmgol1sf48mvx7",
-            "http://www.openwall.com/lists/oss-security/2022/12/03/1",
-            "https://lists.debian.org/debian-lts-announce/2022/12/msg00038.html"
-        ],
-        "summary": "Prior to Apache Commons Net 3.9.0, Net's FTP client trusts the host from PASV response by default. A malicious server can redirect the Commons Net code to use a different host, but the user has to connect to the malicious server in the first place. This may lead to leakage of information about services running on the private network of the client. The default in version 3.9.0 is now false to ignore such hosts, as cURL does. See https://issues.apache.org/jira/browse/NET-711."
     },
     {
         "Modified": "2022-12-29T23:13:00",
@@ -1502,162 +1660,5 @@
         "last-modified": "2022-12-29T17:15:00",
         "references": [],
         "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: CVE-2022-2841. Reason: This issue was MERGED into CVE-2022-2841 in accordance with CVE content decisions, because it is the same type of vulnerability and affects the same versions. Notes: All CVE users should reference CVE-2022-2841 instead of this candidate. All references and descriptions in this candidate have been removed to prevent accidental usage."
-    },
-    {
-        "Modified": "2022-12-29T17:15:00",
-        "Published": "2022-10-11T05:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-1321",
-        "id": "CVE-2022-37616",
-        "impact": {},
-        "last-modified": "2022-12-29T17:15:00",
-        "references": [
-            "https://github.com/xmldom/xmldom/blob/bc36efddf9948aba15618f85dc1addfc2ac9d7b2/lib/dom.js#L1",
-            "https://github.com/xmldom/xmldom/issues/436",
-            "https://github.com/xmldom/xmldom/blob/bc36efddf9948aba15618f85dc1addfc2ac9d7b2/lib/dom.js#L3",
-            "https://github.com/xmldom/xmldom/security/advisories/GHSA-9pgh-qqpf-7wqj",
-            "https://lists.debian.org/debian-lts-announce/2022/10/msg00023.html",
-            "https://dl.acm.org/doi/pdf/10.1145/3488932.3497769",
-            "https://dl.acm.org/doi/abs/10.1145/3488932.3497769",
-            "http://users.encs.concordia.ca/~mmannan/publications/JS-vulnerability-aisaccs2022.pdf",
-            "https://github.com/xmldom/xmldom/issues/436#issuecomment-1319412826",
-            "https://github.com/xmldom/xmldom/issues/436#issuecomment-1327776560"
-        ],
-        "summary": "A prototype pollution vulnerability exists in the function copy in dom.js in the xmldom (published as @xmldom/xmldom) package before 0.8.3 for Node.js via the p variable. NOTE: the vendor states \"we are in the process of marking this report as invalid\"; however, some third parties takes the position that \"A prototype injection/Prototype pollution is not just when global objects are polluted with recursive merge or deep cloning but also when a target object is polluted.\""
-    },
-    {
-        "Modified": "2022-12-29T17:15:00",
-        "Published": "2022-10-12T20:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-1321",
-        "id": "CVE-2022-37601",
-        "impact": {},
-        "last-modified": "2022-12-29T17:15:00",
-        "references": [
-            "https://github.com/webpack/loader-utils/blob/d9f4e23cf411d8556f8bac2d3bf05a6e0103b568/lib/parseQuery.js#L11",
-            "https://github.com/webpack/loader-utils/blob/d9f4e23cf411d8556f8bac2d3bf05a6e0103b568/lib/parseQuery.js#L47",
-            "https://github.com/webpack/loader-utils/issues/212",
-            "https://dl.acm.org/doi/pdf/10.1145/3488932.3497769",
-            "https://dl.acm.org/doi/abs/10.1145/3488932.3497769",
-            "https://github.com/webpack/loader-utils/issues/212#issuecomment-1319192884",
-            "http://users.encs.concordia.ca/~mmannan/publications/JS-vulnerability-aisaccs2022.pdf",
-            "https://github.com/xmldom/xmldom/issues/436#issuecomment-1319412826"
-        ],
-        "summary": "Prototype pollution vulnerability in function parseQuery in parseQuery.js in webpack loader-utils 2.0.0 via the name variable in parseQuery.js."
-    },
-    {
-        "Modified": "2022-12-29T17:06:00",
-        "Published": "2022-12-20T20:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "NVD-CWE-noinfo",
-        "id": "CVE-2022-46423",
-        "impact": {},
-        "last-modified": "2022-12-29T17:06:00",
-        "references": [
-            "https://hackmd.io/@slASVrz_SrW7NQCsunofeA/BktKl8ZDo",
-            "https://www.netgear.com/about/security/"
-        ],
-        "summary": "An exploitable firmware modification vulnerability was discovered on the Netgear WNR2000v1 router. An attacker can conduct a MITM (Man-in-the-Middle) attack to modify the user-uploaded firmware image and bypass the CRC check, allowing attackers to execute arbitrary code or cause a Denial of Service (DoS). This affects v1.2.3.7 and earlier."
-    },
-    {
-        "Modified": "2022-12-29T17:05:00",
-        "Published": "2022-12-20T20:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "NVD-CWE-noinfo",
-        "id": "CVE-2022-46424",
-        "impact": {},
-        "last-modified": "2022-12-29T17:05:00",
-        "references": [
-            "https://hackmd.io/@slASVrz_SrW7NQCsunofeA/B1rKQuzDj",
-            "https://www.netgear.com/about/security/"
-        ],
-        "summary": "An exploitable firmware modification vulnerability was discovered on the Netgear XWN5001 Powerline 500 WiFi Access Point. An attacker can conduct a MITM (Man-in-the-Middle) attack to modify the user-uploaded firmware image and bypass the CRC check, allowing attackers to execute arbitrary code or cause a Denial of Service (DoS). This affects v0.4.1.1 and earlier."
-    },
-    {
-        "Modified": "2022-12-29T16:43:00",
-        "Published": "2022-12-20T16:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-434",
-        "id": "CVE-2022-46020",
-        "impact": {},
-        "last-modified": "2022-12-29T16:43:00",
-        "references": [
-            "https://github.com/10vexh/Vulnerability/blob/main/WBCE%20CMS%20v1.5.4%20getshell.pdf"
-        ],
-        "summary": "WBCE CMS v1.5.4 can implement getshell by modifying the upload file type."
-    },
-    {
-        "Modified": "2022-12-29T16:42:00",
-        "Published": "2022-12-20T17:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-863",
-        "id": "CVE-2022-46076",
-        "impact": {},
-        "last-modified": "2022-12-29T16:42:00",
-        "references": [
-            "https://www.dlink.com/en/security-bulletin/",
-            "https://github.com/Zarathustra-L/IoT_Vul/tree/main/D-Link/DIR-869"
-        ],
-        "summary": "D-Link DIR-869 DIR869Ax_FW102B15 is vulnerable to Authentication Bypass via phpcgi."
-    },
-    {
-        "Modified": "2022-12-29T16:41:00",
-        "Published": "2022-12-22T20:15:00",
-        "access": {},
-        "assigner": "security@mozilla.org",
-        "cvss": null,
-        "cwe": "CWE-1321",
-        "id": "CVE-2022-1529",
-        "impact": {},
-        "last-modified": "2022-12-29T16:41:00",
-        "references": [
-            "https://bugzilla.mozilla.org/show_bug.cgi?id=1770048",
-            "https://www.mozilla.org/security/advisories/mfsa2022-19/"
-        ],
-        "summary": "An attacker could have sent a message to the parent process where the contents were used to double-index into a JavaScript object, leading to prototype pollution and ultimately attacker-controlled JavaScript executing in the privileged parent process. This vulnerability affects Firefox ESR < 91.9.1, Firefox < 100.0.2, Firefox for Android < 100.3.0, and Thunderbird < 91.9.1."
-    },
-    {
-        "Modified": "2022-12-29T16:40:00",
-        "Published": "2022-12-22T20:15:00",
-        "access": {},
-        "assigner": "security@mozilla.org",
-        "cvss": null,
-        "cwe": "CWE-295",
-        "id": "CVE-2022-1197",
-        "impact": {},
-        "last-modified": "2022-12-29T16:40:00",
-        "references": [
-            "https://bugzilla.mozilla.org/show_bug.cgi?id=1754985",
-            "https://www.mozilla.org/security/advisories/mfsa2022-15/"
-        ],
-        "summary": "When importing a revoked key that specified key compromise as the revocation reason, Thunderbird did not update the existing copy of the key that was not yet revoked, and the existing key was kept as non-revoked. Revocation statements that used another revocation reason, or that didn't specify a revocation reason, were unaffected. This vulnerability affects Thunderbird < 91.8."
-    },
-    {
-        "Modified": "2022-12-29T16:40:00",
-        "Published": "2022-12-22T20:15:00",
-        "access": {},
-        "assigner": "security@mozilla.org",
-        "cvss": null,
-        "cwe": "CWE-326",
-        "id": "CVE-2022-1520",
-        "impact": {},
-        "last-modified": "2022-12-29T16:40:00",
-        "references": [
-            "https://bugzilla.mozilla.org/show_bug.cgi?id=1745019",
-            "https://www.mozilla.org/security/advisories/mfsa2022-18/"
-        ],
-        "summary": "When viewing an email message A, which contains an attached message B, where B is encrypted or digitally signed or both, Thunderbird may show an incorrect encryption or signature status. After opening and viewing the attached message B, when returning to the display of message A, the message A might be shown with the security status of message B. This vulnerability affects Thunderbird < 91.9."
     }
 ]
