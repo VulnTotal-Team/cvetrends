@@ -1,5 +1,224 @@
 [
     {
+        "Modified": "2022-12-30T20:56:00",
+        "Published": "2022-12-22T20:15:00",
+        "access": {},
+        "assigner": "security@mozilla.org",
+        "cvss": null,
+        "cwe": "NVD-CWE-noinfo",
+        "id": "CVE-2022-26384",
+        "impact": {},
+        "last-modified": "2022-12-30T20:56:00",
+        "references": [
+            "https://www.mozilla.org/security/advisories/mfsa2022-12/",
+            "https://www.mozilla.org/security/advisories/mfsa2022-11/",
+            "https://www.mozilla.org/security/advisories/mfsa2022-10/",
+            "https://bugzilla.mozilla.org/show_bug.cgi?id=1744352"
+        ],
+        "summary": "If an attacker could control the contents of an iframe sandboxed with <code>allow-popups</code> but not <code>allow-scripts</code>, they were able to craft a link that, when clicked, would lead to JavaScript execution in violation of the sandbox. This vulnerability affects Firefox < 98, Firefox ESR < 91.7, and Thunderbird < 91.7."
+    },
+    {
+        "Modified": "2022-12-30T20:55:00",
+        "Published": "2022-12-22T20:15:00",
+        "access": {},
+        "assigner": "security@mozilla.org",
+        "cvss": null,
+        "cwe": "CWE-787",
+        "id": "CVE-2022-28281",
+        "impact": {},
+        "last-modified": "2022-12-30T20:55:00",
+        "references": [
+            "https://www.mozilla.org/security/advisories/mfsa2022-13/",
+            "https://bugzilla.mozilla.org/show_bug.cgi?id=1755621",
+            "https://www.mozilla.org/security/advisories/mfsa2022-15/",
+            "https://www.mozilla.org/security/advisories/mfsa2022-14/"
+        ],
+        "summary": "If a compromised content process sent an unexpected number of WebAuthN Extensions in a Register command to the parent process, an out of bounds write would have occurred leading to memory corruption and a potentially exploitable crash. This vulnerability affects Thunderbird < 91.8, Firefox < 99, and Firefox ESR < 91.8."
+    },
+    {
+        "Modified": "2022-12-30T20:55:00",
+        "Published": "2022-12-22T20:15:00",
+        "access": {},
+        "assigner": "security@mozilla.org",
+        "cvss": null,
+        "cwe": "CWE-416",
+        "id": "CVE-2022-26486",
+        "impact": {},
+        "last-modified": "2022-12-30T20:55:00",
+        "references": [
+            "https://bugzilla.mozilla.org/show_bug.cgi?id=1758070",
+            "https://www.mozilla.org/security/advisories/mfsa2022-09/"
+        ],
+        "summary": "An unexpected message in the WebGPU IPC framework could lead to a use-after-free and exploitable sandbox escape. We have had reports of attacks in the wild abusing this flaw. This vulnerability affects Firefox < 97.0.2, Firefox ESR < 91.6.1, Firefox for Android < 97.3.0, Thunderbird < 91.6.2, and Focus < 97.3.0."
+    },
+    {
+        "Modified": "2022-12-30T20:54:00",
+        "Published": "2022-12-22T20:15:00",
+        "access": {},
+        "assigner": "security@mozilla.org",
+        "cvss": null,
+        "cwe": "NVD-CWE-noinfo",
+        "id": "CVE-2022-28283",
+        "impact": {},
+        "last-modified": "2022-12-30T20:54:00",
+        "references": [
+            "https://bugzilla.mozilla.org/show_bug.cgi?id=1754066",
+            "https://www.mozilla.org/security/advisories/mfsa2022-13/"
+        ],
+        "summary": "The sourceMapURL feature in devtools was missing security checks that would have allowed a webpage to attempt to include local files or other files that should have been inaccessible. This vulnerability affects Firefox < 99."
+    },
+    {
+        "Modified": "2022-12-30T20:54:00",
+        "Published": "2022-12-22T20:15:00",
+        "access": {},
+        "assigner": "security@mozilla.org",
+        "cvss": null,
+        "cwe": "CWE-416",
+        "id": "CVE-2022-28282",
+        "impact": {},
+        "last-modified": "2022-12-30T20:54:00",
+        "references": [
+            "https://bugzilla.mozilla.org/show_bug.cgi?id=1751609",
+            "https://www.mozilla.org/security/advisories/mfsa2022-13/",
+            "https://www.mozilla.org/security/advisories/mfsa2022-15/",
+            "https://www.mozilla.org/security/advisories/mfsa2022-14/"
+        ],
+        "summary": "By using a link with <code>rel=\"localization\"</code> a use-after-free could have been triggered by destroying an object during JavaScript execution and then referencing the object through a freed pointer, leading to a potential exploitable crash. This vulnerability affects Thunderbird < 91.8, Firefox < 99, and Firefox ESR < 91.8."
+    },
+    {
+        "Modified": "2022-12-30T20:53:00",
+        "Published": "2022-12-22T20:15:00",
+        "access": {},
+        "assigner": "security@mozilla.org",
+        "cvss": null,
+        "cwe": "NVD-CWE-noinfo",
+        "id": "CVE-2022-28284",
+        "impact": {},
+        "last-modified": "2022-12-30T20:53:00",
+        "references": [
+            "https://www.mozilla.org/security/advisories/mfsa2022-13/",
+            "https://bugzilla.mozilla.org/show_bug.cgi?id=1754522"
+        ],
+        "summary": "SVG's <code>&lt;use&gt;</code> element could have been used to load unexpected content that could have executed script in certain circumstances. While the specification seems to allow this, other browsers do not, and web developers relied on this property for script security so gecko's implementation was aligned with theirs. This vulnerability affects Firefox < 99."
+    },
+    {
+        "Modified": "2022-12-30T20:46:00",
+        "Published": "2022-12-22T20:15:00",
+        "access": {},
+        "assigner": "security@mozilla.org",
+        "cvss": null,
+        "cwe": "NVD-CWE-noinfo",
+        "id": "CVE-2022-28285",
+        "impact": {},
+        "last-modified": "2022-12-30T20:46:00",
+        "references": [
+            "https://www.mozilla.org/security/advisories/mfsa2022-13/",
+            "https://www.mozilla.org/security/advisories/mfsa2022-15/",
+            "https://bugzilla.mozilla.org/show_bug.cgi?id=1756957",
+            "https://www.mozilla.org/security/advisories/mfsa2022-14/"
+        ],
+        "summary": "When generating the assembly code for <code>MLoadTypedArrayElementHole</code>, an incorrect AliasSet was used. In conjunction with another vulnerability this could have been used for an out of bounds memory read. This vulnerability affects Thunderbird < 91.8, Firefox < 99, and Firefox ESR < 91.8."
+    },
+    {
+        "Modified": "2022-12-30T20:45:00",
+        "Published": "2022-12-22T20:15:00",
+        "access": {},
+        "assigner": "security@mozilla.org",
+        "cvss": null,
+        "cwe": "CWE-1021",
+        "id": "CVE-2022-28286",
+        "impact": {},
+        "last-modified": "2022-12-30T20:45:00",
+        "references": [
+            "https://www.mozilla.org/security/advisories/mfsa2022-13/",
+            "https://bugzilla.mozilla.org/show_bug.cgi?id=1735265",
+            "https://www.mozilla.org/security/advisories/mfsa2022-15/",
+            "https://www.mozilla.org/security/advisories/mfsa2022-14/"
+        ],
+        "summary": "Due to a layout change, iframe contents could have been rendered outside of its border. This could have led to user confusion or spoofing attacks. This vulnerability affects Thunderbird < 91.8, Firefox < 99, and Firefox ESR < 91.8."
+    },
+    {
+        "Modified": "2022-12-30T20:43:00",
+        "Published": "2022-12-22T20:15:00",
+        "access": {},
+        "assigner": "security@mozilla.org",
+        "cvss": null,
+        "cwe": "NVD-CWE-noinfo",
+        "id": "CVE-2022-28287",
+        "impact": {},
+        "last-modified": "2022-12-30T20:43:00",
+        "references": [
+            "https://www.mozilla.org/security/advisories/mfsa2022-13/",
+            "https://bugzilla.mozilla.org/show_bug.cgi?id=1741515"
+        ],
+        "summary": "In unusual circumstances, selecting text could cause text selection caching to behave incorrectly, leading to a crash. This vulnerability affects Firefox < 99."
+    },
+    {
+        "Modified": "2022-12-30T20:43:00",
+        "Published": "2022-12-22T20:15:00",
+        "access": {},
+        "assigner": "security@mozilla.org",
+        "cvss": null,
+        "cwe": "CWE-787",
+        "id": "CVE-2022-28288",
+        "impact": {},
+        "last-modified": "2022-12-30T20:43:00",
+        "references": [
+            "https://www.mozilla.org/security/advisories/mfsa2022-13/",
+            "https://bugzilla.mozilla.org/buglist.cgi?bug_id=1746415%2C1746495%2C1746500%2C1747282%2C1748759%2C1749056%2C1749786%2C1751679%2C1752120%2C1756010%2C1756017%2C1757213%2C1757258%2C1757427"
+        ],
+        "summary": "Mozilla developers and community members Randell Jesup, Sebastian Hengst, and the Mozilla Fuzzing Team reported memory safety bugs present in Firefox 98. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code. This vulnerability affects Firefox < 99."
+    },
+    {
+        "Modified": "2022-12-30T20:42:00",
+        "Published": "2022-12-22T20:15:00",
+        "access": {},
+        "assigner": "security@mozilla.org",
+        "cvss": null,
+        "cwe": "CWE-787",
+        "id": "CVE-2022-28289",
+        "impact": {},
+        "last-modified": "2022-12-30T20:42:00",
+        "references": [
+            "https://www.mozilla.org/security/advisories/mfsa2022-13/",
+            "https://bugzilla.mozilla.org/buglist.cgi?bug_id=1663508%2C1744525%2C1753508%2C1757476%2C1757805%2C1758549%2C1758776",
+            "https://www.mozilla.org/security/advisories/mfsa2022-15/",
+            "https://www.mozilla.org/security/advisories/mfsa2022-14/"
+        ],
+        "summary": "Mozilla developers and community members Nika Layzell, Andrew McCreight, Gabriele Svelto, and the Mozilla Fuzzing Team reported memory safety bugs present in Thunderbird 91.7. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code. This vulnerability affects Thunderbird < 91.8, Firefox < 99, and Firefox ESR < 91.8."
+    },
+    {
+        "Modified": "2022-12-30T20:42:00",
+        "Published": "2022-12-22T20:15:00",
+        "access": {},
+        "assigner": "security@mozilla.org",
+        "cvss": null,
+        "cwe": "CWE-276",
+        "id": "CVE-2022-29909",
+        "impact": {},
+        "last-modified": "2022-12-30T20:42:00",
+        "references": [
+            "https://www.mozilla.org/security/advisories/mfsa2022-17/",
+            "https://www.mozilla.org/security/advisories/mfsa2022-16/",
+            "https://bugzilla.mozilla.org/show_bug.cgi?id=1755081",
+            "https://www.mozilla.org/security/advisories/mfsa2022-18/"
+        ],
+        "summary": "Documents in deeply-nested cross-origin browsing contexts could have obtained permissions granted to the top-level origin, bypassing the existing prompt and wrongfully inheriting the top-level permissions. This vulnerability affects Thunderbird < 91.9, Firefox ESR < 91.9, and Firefox < 100."
+    },
+    {
+        "Modified": "2022-12-30T20:15:00",
+        "Published": "2022-12-30T20:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-39159",
+        "impact": {},
+        "last-modified": "2022-12-30T20:15:00",
+        "references": [],
+        "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none."
+    },
+    {
         "Modified": "2022-12-30T18:45:00",
         "Published": "2022-12-22T20:15:00",
         "access": {},
@@ -1492,204 +1711,5 @@
             "https://www.esri.com/arcgis-blog/products/trust-arcgis/administration/portal-for-arcgis-security-2022-update-2-patch-is-now-available"
         ],
         "summary": "Protections against potential Server-Side Request Forgery (SSRF) vulnerabilities in Esri Portal for ArcGIS versions 10.8.1 and below were not fully honored and may allow a remote, unauthenticated attacker to forge requests to arbitrary URLs from the system, potentially leading to network enumeration or reading from hosts inside the network perimeter, a different issue than CVE-2022-38211 and CVE-2022-38212."
-    },
-    {
-        "Modified": "2022-12-29T22:24:00",
-        "Published": "2022-12-29T20:15:00",
-        "access": {},
-        "assigner": "psirt@esri.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-38204",
-        "impact": {},
-        "last-modified": "2022-12-29T22:24:00",
-        "references": [
-            "https://www.esri.com/arcgis-blog/products/trust-arcgis/administration/portal-for-arcgis-security-2022-update-2-patch-is-now-available"
-        ],
-        "summary": "There is a reflected XSS vulnerability in Esri Portal for ArcGIS versions 10.8.1 and 10.7.1 which may allow a remote, unauthenticated attacker to create a crafted link which when clicked could potentially execute arbitrary JavaScript code in the victim\u2019s browser."
-    },
-    {
-        "Modified": "2022-12-29T22:24:00",
-        "Published": "2022-12-29T20:15:00",
-        "access": {},
-        "assigner": "psirt@esri.com",
-        "cvss": null,
-        "cwe": "CWE-23",
-        "id": "CVE-2022-38205",
-        "impact": {},
-        "last-modified": "2022-12-29T22:24:00",
-        "references": [
-            "https://www.esri.com/arcgis-blog/products/trust-arcgis/administration/portal-for-arcgis-security-2022-update-2-patch-is-now-available"
-        ],
-        "summary": "In some non-default installations of Esri Portal for ArcGIS versions 10.9.1 and below, a directory traversal issue may allow a remote, unauthenticated attacker to traverse the file system and lead to the disclosure of sensitive data (not customer-published content)."
-    },
-    {
-        "Modified": "2022-12-29T22:24:00",
-        "Published": "2022-12-29T20:15:00",
-        "access": {},
-        "assigner": "psirt@esri.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-38206",
-        "impact": {},
-        "last-modified": "2022-12-29T22:24:00",
-        "references": [
-            "https://www.esri.com/arcgis-blog/products/trust-arcgis/administration/portal-for-arcgis-security-2022-update-2-patch-is-now-available"
-        ],
-        "summary": "There is a reflected XSS vulnerability in Esri Portal for ArcGIS versions 10.9.1 and below which may allow a remote remote, unauthenticated attacker to create a crafted link which when clicked could execute arbitrary JavaScript code in the victim\u2019s browser."
-    },
-    {
-        "Modified": "2022-12-29T22:24:00",
-        "Published": "2022-12-29T20:15:00",
-        "access": {},
-        "assigner": "psirt@esri.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-38207",
-        "impact": {},
-        "last-modified": "2022-12-29T22:24:00",
-        "references": [
-            "https://www.esri.com/arcgis-blog/products/trust-arcgis/administration/portal-for-arcgis-security-2022-update-2-patch-is-now-available"
-        ],
-        "summary": "There is a reflected XSS vulnerability in Esri Portal for ArcGIS versions 10.8.1 and 10.7.1 which may allow a remote remote, unauthenticated attacker to create a crafted link which when clicked which could execute arbitrary JavaScript code in the victim\u2019s browser."
-    },
-    {
-        "Modified": "2022-12-29T22:24:00",
-        "Published": "2022-12-29T20:15:00",
-        "access": {},
-        "assigner": "psirt@esri.com",
-        "cvss": null,
-        "cwe": "CWE-601",
-        "id": "CVE-2022-38208",
-        "impact": {},
-        "last-modified": "2022-12-29T22:24:00",
-        "references": [
-            "https://www.esri.com/arcgis-blog/products/trust-arcgis/administration/portal-for-arcgis-security-2022-update-2-patch-is-now-available"
-        ],
-        "summary": "There is an unvalidated redirect vulnerability in Esri Portal for ArcGIS 11 and below that may allow a remote, unauthenticated attacker to craft a URL that could redirect a victim to an arbitrary website, simplifying phishing attacks."
-    },
-    {
-        "Modified": "2022-12-29T22:24:00",
-        "Published": "2022-12-29T20:15:00",
-        "access": {},
-        "assigner": "psirt@esri.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-38209",
-        "impact": {},
-        "last-modified": "2022-12-29T22:24:00",
-        "references": [
-            "https://www.esri.com/arcgis-blog/products/trust-arcgis/administration/portal-for-arcgis-security-2022-update-2-patch-is-now-available"
-        ],
-        "summary": "There is a reflected XSS vulnerability in Esri Portal for ArcGIS versions 10.9.1 and below which may allow a remote, unauthenticated attacker to create a crafted link which when clicked could execute arbitrary JavaScript code in the victim\u2019s browser."
-    },
-    {
-        "Modified": "2022-12-29T22:24:00",
-        "Published": "2022-12-29T20:15:00",
-        "access": {},
-        "assigner": "psirt@esri.com",
-        "cvss": null,
-        "cwe": "CWE-80",
-        "id": "CVE-2022-38210",
-        "impact": {},
-        "last-modified": "2022-12-29T22:24:00",
-        "references": [
-            "https://www.esri.com/arcgis-blog/products/trust-arcgis/administration/portal-for-arcgis-security-2022-update-2-patch-is-now-available"
-        ],
-        "summary": "There is a reflected HTML injection vulnerability in Esri Portal for ArcGIS versions 10.9.1 and below that may allow a remote, unauthenticated attacker to create a crafted link which when clicked could render arbitrary HTML in the victim\u2019s browser."
-    },
-    {
-        "Modified": "2022-12-29T22:24:00",
-        "Published": "2022-12-29T20:15:00",
-        "access": {},
-        "assigner": "psirt@esri.com",
-        "cvss": null,
-        "cwe": "CWE-918",
-        "id": "CVE-2022-38211",
-        "impact": {},
-        "last-modified": "2022-12-29T22:24:00",
-        "references": [
-            "https://www.esri.com/arcgis-blog/products/trust-arcgis/administration/portal-for-arcgis-security-2022-update-2-patch-is-now-available"
-        ],
-        "summary": "Protections against potential Server-Side Request Forgery (SSRF) vulnerabilities in Esri Portal for ArcGIS versions 10.9.1 and below were not fully honored and may allow a remote, unauthenticated attacker to forge requests to arbitrary URLs from the system, potentially leading to network enumeration or reading from hosts inside the network perimeter, a different issue than CVE-2022-38211 and CVE-2022-38212."
-    },
-    {
-        "Modified": "2022-12-29T22:24:00",
-        "Published": "2022-12-29T20:15:00",
-        "access": {},
-        "assigner": "psirt@esri.com",
-        "cvss": null,
-        "cwe": "CWE-918",
-        "id": "CVE-2022-38212",
-        "impact": {},
-        "last-modified": "2022-12-29T22:24:00",
-        "references": [
-            "https://www.esri.com/arcgis-blog/products/trust-arcgis/administration/portal-for-arcgis-security-2022-update-2-patch-is-now-available"
-        ],
-        "summary": "Protections against potential Server-Side Request Forgery (SSRF) vulnerabilities in Esri Portal for ArcGIS versions 10.8.1 and below were not fully honored and may allow a remote, unauthenticated attacker to forge requests to arbitrary URLs from the system, potentially leading to network enumeration or reading from hosts inside the network perimeter, a different issue than CVE-2022-38211 and CVE-2022-38203."
-    },
-    {
-        "Modified": "2022-12-29T22:24:00",
-        "Published": "2022-12-29T17:15:00",
-        "access": {},
-        "assigner": "security@huntr.dev",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-4839",
-        "impact": {},
-        "last-modified": "2022-12-29T22:24:00",
-        "references": [
-            "https://huntr.dev/bounties/ad954cab-f026-4895-8003-99f5e3b507ed",
-            "https://github.com/usememos/memos/commit/64e5c343c5f74b0abdf3ac0d21a6139daea58cf8"
-        ],
-        "summary": "Cross-site Scripting (XSS) - Stored in GitHub repository usememos/memos prior to 0.9.1."
-    },
-    {
-        "Modified": "2022-12-29T22:24:00",
-        "Published": "2022-12-29T17:15:00",
-        "access": {},
-        "assigner": "security@huntr.dev",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-4840",
-        "impact": {},
-        "last-modified": "2022-12-29T22:24:00",
-        "references": [
-            "https://github.com/usememos/memos/commit/64e5c343c5f74b0abdf3ac0d21a6139daea58cf8",
-            "https://huntr.dev/bounties/b42aa2e9-c783-464c-915c-a80cb464ee01"
-        ],
-        "summary": "Cross-site Scripting (XSS) - Stored in GitHub repository usememos/memos prior to 0.9.1."
-    },
-    {
-        "Modified": "2022-12-29T22:24:00",
-        "Published": "2022-12-29T17:15:00",
-        "access": {},
-        "assigner": "security@huntr.dev",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-4841",
-        "impact": {},
-        "last-modified": "2022-12-29T22:24:00",
-        "references": [
-            "https://github.com/usememos/memos/commit/64e5c343c5f74b0abdf3ac0d21a6139daea58cf8",
-            "https://huntr.dev/bounties/fa46b3ef-c621-443a-be3a-0a83fb78ba62"
-        ],
-        "summary": "Cross-site Scripting (XSS) - Stored in GitHub repository usememos/memos prior to 0.9.1."
-    },
-    {
-        "Modified": "2022-12-29T22:24:00",
-        "Published": "2022-12-29T18:15:00",
-        "access": {},
-        "assigner": "security@huntr.dev",
-        "cvss": null,
-        "cwe": "CWE-476",
-        "id": "CVE-2022-4843",
-        "impact": {},
-        "last-modified": "2022-12-29T22:24:00",
-        "references": [
-            "https://huntr.dev/bounties/075b2760-66a0-4d38-b3b5-e9934956ab7f",
-            "https://github.com/radareorg/radare2/commit/842f809d4ec6a12af2906f948657281c9ebc8a24"
-        ],
-        "summary": "NULL Pointer Dereference in GitHub repository radareorg/radare2 prior to 5.8.2."
     }
 ]
