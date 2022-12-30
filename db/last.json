@@ -1,5 +1,190 @@
 [
     {
+        "Modified": "2022-12-29T23:17:00",
+        "Published": "2022-12-22T20:15:00",
+        "access": {},
+        "assigner": "security@mozilla.org",
+        "cvss": null,
+        "cwe": "CWE-295",
+        "id": "CVE-2022-22747",
+        "impact": {},
+        "last-modified": "2022-12-29T23:17:00",
+        "references": [
+            "https://www.mozilla.org/security/advisories/mfsa2022-02/",
+            "https://www.mozilla.org/security/advisories/mfsa2022-01/",
+            "https://bugzilla.mozilla.org/show_bug.cgi?id=1735028",
+            "https://www.mozilla.org/security/advisories/mfsa2022-03/"
+        ],
+        "summary": "After accepting an untrusted certificate, handling an empty pkcs7 sequence as part of the certificate data could have lead to a crash. This crash is believed to be unexploitable. This vulnerability affects Firefox ESR < 91.5, Firefox < 96, and Thunderbird < 91.5."
+    },
+    {
+        "Modified": "2022-12-29T23:16:00",
+        "Published": "2022-12-22T20:15:00",
+        "access": {},
+        "assigner": "security@mozilla.org",
+        "cvss": null,
+        "cwe": "NVD-CWE-noinfo",
+        "id": "CVE-2022-22748",
+        "impact": {},
+        "last-modified": "2022-12-29T23:16:00",
+        "references": [
+            "https://bugzilla.mozilla.org/show_bug.cgi?id=1705211",
+            "https://www.mozilla.org/security/advisories/mfsa2022-02/",
+            "https://www.mozilla.org/security/advisories/mfsa2022-01/",
+            "https://www.mozilla.org/security/advisories/mfsa2022-03/"
+        ],
+        "summary": "Malicious websites could have confused Firefox into showing the wrong origin when asking to launch a program and handling an external URL protocol. This vulnerability affects Firefox ESR < 91.5, Firefox < 96, and Thunderbird < 91.5."
+    },
+    {
+        "Modified": "2022-12-29T23:15:00",
+        "Published": "2022-12-29T23:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-30519",
+        "impact": {},
+        "last-modified": "2022-12-29T23:15:00",
+        "references": [
+            "https://github.com/earth2sky/Disclosed/blob/main/CVE-2022-30519"
+        ],
+        "summary": "XSS in signing form in Reprise Software RLM License Administration v14.2BL4 allows remote attacker to inject arbitrary code via password field."
+    },
+    {
+        "Modified": "2022-12-29T23:15:00",
+        "Published": "2022-12-29T23:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-36437",
+        "impact": {},
+        "last-modified": "2022-12-29T23:15:00",
+        "references": [
+            "https://github.com/hazelcast/hazelcast/security/advisories/GHSA-c5hg-mr8r-f6jp"
+        ],
+        "summary": "The Connection handler in Hazelcast and Hazelcast Jet allows a remote unauthenticated attacker to access and manipulate data in the cluster with the identity of another already authenticated connection. The affected Hazelcast versions are through 4.0.6, 4.1.9, 4.2.5, 5.0.3, and 5.1.2. The affected Hazelcast Jet versions are through 4.5.3."
+    },
+    {
+        "Modified": "2022-12-29T23:15:00",
+        "Published": "2022-12-03T15:15:00",
+        "access": {},
+        "assigner": "security@apache.org",
+        "cvss": null,
+        "cwe": "CWE-20",
+        "id": "CVE-2021-37533",
+        "impact": {},
+        "last-modified": "2022-12-29T23:15:00",
+        "references": [
+            "https://lists.apache.org/thread/o6yn9r9x6s94v97264hmgol1sf48mvx7",
+            "http://www.openwall.com/lists/oss-security/2022/12/03/1",
+            "https://lists.debian.org/debian-lts-announce/2022/12/msg00038.html"
+        ],
+        "summary": "Prior to Apache Commons Net 3.9.0, Net's FTP client trusts the host from PASV response by default. A malicious server can redirect the Commons Net code to use a different host, but the user has to connect to the malicious server in the first place. This may lead to leakage of information about services running on the private network of the client. The default in version 3.9.0 is now false to ignore such hosts, as cURL does. See https://issues.apache.org/jira/browse/NET-711."
+    },
+    {
+        "Modified": "2022-12-29T23:13:00",
+        "Published": "2022-12-22T20:15:00",
+        "access": {},
+        "assigner": "security@mozilla.org",
+        "cvss": null,
+        "cwe": "NVD-CWE-noinfo",
+        "id": "CVE-2022-22749",
+        "impact": {},
+        "last-modified": "2022-12-29T23:13:00",
+        "references": [
+            "https://www.mozilla.org/security/advisories/mfsa2022-01/",
+            "https://bugzilla.mozilla.org/show_bug.cgi?id=1705094"
+        ],
+        "summary": "When scanning QR codes, Firefox for Android would have allowed navigation to some URLs that do not point to web content.<br>*This bug only affects Firefox for Android. Other operating systems are unaffected.*. This vulnerability affects Firefox < 96."
+    },
+    {
+        "Modified": "2022-12-29T23:12:00",
+        "Published": "2022-12-22T20:15:00",
+        "access": {},
+        "assigner": "security@mozilla.org",
+        "cvss": null,
+        "cwe": "NVD-CWE-noinfo",
+        "id": "CVE-2022-22750",
+        "impact": {},
+        "last-modified": "2022-12-29T23:12:00",
+        "references": [
+            "https://www.mozilla.org/security/advisories/mfsa2022-01/",
+            "https://bugzilla.mozilla.org/show_bug.cgi?id=1566608"
+        ],
+        "summary": "By generally accepting and passing resource handles across processes, a compromised content process might have confused higher privileged processes to interact with handles that the unprivileged process should not have access to.<br>*This bug only affects Firefox for Windows and MacOS. Other operating systems are unaffected.*. This vulnerability affects Firefox < 96."
+    },
+    {
+        "Modified": "2022-12-29T23:09:00",
+        "Published": "2022-12-22T20:15:00",
+        "access": {},
+        "assigner": "security@mozilla.org",
+        "cvss": null,
+        "cwe": "NVD-CWE-noinfo",
+        "id": "CVE-2022-22756",
+        "impact": {},
+        "last-modified": "2022-12-29T23:09:00",
+        "references": [
+            "https://bugzilla.mozilla.org/show_bug.cgi?id=1317873",
+            "https://www.mozilla.org/security/advisories/mfsa2022-06/",
+            "https://www.mozilla.org/security/advisories/mfsa2022-05/",
+            "https://www.mozilla.org/security/advisories/mfsa2022-04/"
+        ],
+        "summary": "If a user was convinced to drag and drop an image to their desktop or other folder, the resulting object could have been changed into an executable script which would have run arbitrary code after the user clicked on it. This vulnerability affects Firefox < 97, Thunderbird < 91.6, and Firefox ESR < 91.6."
+    },
+    {
+        "Modified": "2022-12-29T23:08:00",
+        "Published": "2022-12-22T20:15:00",
+        "access": {},
+        "assigner": "security@mozilla.org",
+        "cvss": null,
+        "cwe": "CWE-672",
+        "id": "CVE-2022-22755",
+        "impact": {},
+        "last-modified": "2022-12-29T23:08:00",
+        "references": [
+            "https://bugzilla.mozilla.org/show_bug.cgi?id=1309630",
+            "https://www.mozilla.org/security/advisories/mfsa2022-04/"
+        ],
+        "summary": "By using XSL Transforms, a malicious webserver could have served a user an XSL document that would continue to execute JavaScript (within the bounds of the same-origin policy) even after the tab was closed. This vulnerability affects Firefox < 97."
+    },
+    {
+        "Modified": "2022-12-29T23:06:00",
+        "Published": "2022-12-22T20:15:00",
+        "access": {},
+        "assigner": "security@mozilla.org",
+        "cvss": null,
+        "cwe": "CWE-863",
+        "id": "CVE-2022-22754",
+        "impact": {},
+        "last-modified": "2022-12-29T23:06:00",
+        "references": [
+            "https://www.mozilla.org/security/advisories/mfsa2022-06/",
+            "https://bugzilla.mozilla.org/show_bug.cgi?id=1750565",
+            "https://www.mozilla.org/security/advisories/mfsa2022-05/",
+            "https://www.mozilla.org/security/advisories/mfsa2022-04/"
+        ],
+        "summary": "If a user installed an extension of a particular type, the extension could have auto-updated itself and while doing so, bypass the prompt which grants the new version the new requested permissions. This vulnerability affects Firefox < 97, Thunderbird < 91.6, and Firefox ESR < 91.6."
+    },
+    {
+        "Modified": "2022-12-29T23:03:00",
+        "Published": "2022-12-22T20:15:00",
+        "access": {},
+        "assigner": "security@mozilla.org",
+        "cvss": null,
+        "cwe": "CWE-367",
+        "id": "CVE-2022-22753",
+        "impact": {},
+        "last-modified": "2022-12-29T23:03:00",
+        "references": [
+            "https://bugzilla.mozilla.org/show_bug.cgi?id=1732435",
+            "https://www.mozilla.org/security/advisories/mfsa2022-06/",
+            "https://www.mozilla.org/security/advisories/mfsa2022-05/",
+            "https://www.mozilla.org/security/advisories/mfsa2022-04/"
+        ],
+        "summary": "A Time-of-Check Time-of-Use bug existed in the Maintenance (Updater) Service that could be abused to grant Users write access to an arbitrary directory. This could have been used to escalate to SYSTEM access.<br>*This bug only affects Firefox on Windows. Other operating systems are unaffected.*. This vulnerability affects Firefox < 97, Thunderbird < 91.6, and Firefox ESR < 91.6."
+    },
+    {
         "Modified": "2022-12-29T22:56:00",
         "Published": "2022-12-22T20:15:00",
         "access": {},
@@ -1474,186 +1659,5 @@
             "https://www.mozilla.org/security/advisories/mfsa2022-18/"
         ],
         "summary": "When viewing an email message A, which contains an attached message B, where B is encrypted or digitally signed or both, Thunderbird may show an incorrect encryption or signature status. After opening and viewing the attached message B, when returning to the display of message A, the message A might be shown with the security status of message B. This vulnerability affects Thunderbird < 91.9."
-    },
-    {
-        "Modified": "2022-12-29T16:39:00",
-        "Published": "2022-12-22T20:15:00",
-        "access": {},
-        "assigner": "security@mozilla.org",
-        "cvss": null,
-        "cwe": "CWE-1321",
-        "id": "CVE-2022-1802",
-        "impact": {},
-        "last-modified": "2022-12-29T16:39:00",
-        "references": [
-            "https://bugzilla.mozilla.org/show_bug.cgi?id=1770137",
-            "https://www.mozilla.org/security/advisories/mfsa2022-19/"
-        ],
-        "summary": "If an attacker was able to corrupt the methods of an Array object in JavaScript via prototype pollution, they could have achieved execution of attacker-controlled JavaScript code in a privileged context. This vulnerability affects Firefox ESR < 91.9.1, Firefox < 100.0.2, Firefox for Android < 100.3.0, and Thunderbird < 91.9.1."
-    },
-    {
-        "Modified": "2022-12-29T16:38:00",
-        "Published": "2022-12-22T20:15:00",
-        "access": {},
-        "assigner": "security@mozilla.org",
-        "cvss": null,
-        "cwe": "CWE-295",
-        "id": "CVE-2022-1834",
-        "impact": {},
-        "last-modified": "2022-12-29T16:38:00",
-        "references": [
-            "https://www.mozilla.org/security/advisories/mfsa2022-22/",
-            "https://bugzilla.mozilla.org/show_bug.cgi?id=1767816"
-        ],
-        "summary": "When displaying the sender of an email, and the sender name contained the Braille Pattern Blank space character multiple times, Thunderbird would have displayed all the spaces. This could have been used by an attacker to send an email message with the attacker's digital signature, that was shown with an arbitrary sender email address chosen by the attacker. If the sender name started with a false email address, followed by many Braille space characters, the attacker's email address was not visible. Because Thunderbird compared the invisible sender address with the signature's email address, if the signing key or certificate was accepted by Thunderbird, the email was shown as having a valid digital signature. This vulnerability affects Thunderbird < 91.10."
-    },
-    {
-        "Modified": "2022-12-29T16:26:00",
-        "Published": "2022-12-22T11:15:00",
-        "access": {},
-        "assigner": "security@jetbrains.com",
-        "cvss": null,
-        "cwe": "CWE-319",
-        "id": "CVE-2022-47895",
-        "impact": {},
-        "last-modified": "2022-12-29T16:26:00",
-        "references": [
-            "https://www.jetbrains.com/privacy-security/issues-fixed/"
-        ],
-        "summary": "In JetBrains IntelliJ IDEA before 2022.3.1 the \"Validate JSP File\" action used the HTTP protocol to download required JAR files."
-    },
-    {
-        "Modified": "2022-12-29T16:24:00",
-        "Published": "2022-12-22T19:15:00",
-        "access": {},
-        "assigner": "security-advisories@github.com",
-        "cvss": null,
-        "cwe": "CWE-345",
-        "id": "CVE-2022-23556",
-        "impact": {},
-        "last-modified": "2022-12-29T16:24:00",
-        "references": [
-            "https://github.com/codeigniter4/CodeIgniter4/commit/5ca8c99b2db09a2a08a013836628028ddc984659",
-            "https://github.com/codeigniter4/CodeIgniter4/security/advisories/GHSA-ghw3-5qvm-3mqc"
-        ],
-        "summary": "CodeIgniter is a PHP full-stack web framework. This vulnerability may allow attackers to spoof their IP address when the server is behind a reverse proxy. This issue has been patched, please upgrade to version 4.2.11 or later, and configure `Config\\App::$proxyIPs`. As a workaround, do not use `$request->getIPAddress()`."
-    },
-    {
-        "Modified": "2022-12-29T16:23:00",
-        "Published": "2022-12-22T19:15:00",
-        "access": {},
-        "assigner": "security-advisories@github.com",
-        "cvss": null,
-        "cwe": "CWE-287",
-        "id": "CVE-2022-46170",
-        "impact": {},
-        "last-modified": "2022-12-29T16:23:00",
-        "references": [
-            "https://github.com/codeigniter4/CodeIgniter4/commit/f9fb6574fbeb5a4aa63f7ea87296523e10db9328",
-            "https://github.com/codeigniter4/CodeIgniter4/security/advisories/GHSA-6cq5-8cj7-g558"
-        ],
-        "summary": "CodeIgniter is a PHP full-stack web framework. When an application uses (1) multiple session cookies (e.g., one for user pages and one for admin pages) and (2) a session handler is set to `DatabaseHandler`, `MemcachedHandler`, or `RedisHandler`, then if an attacker gets one session cookie (e.g., one for user pages), they may be able to access pages that require another session cookie (e.g., for admin pages). This issue has been patched, please upgrade to version 4.2.11 or later. As a workaround, use only one session cookie."
-    },
-    {
-        "Modified": "2022-12-29T16:19:00",
-        "Published": "2022-12-22T20:15:00",
-        "access": {},
-        "assigner": "psirt@us.ibm.com",
-        "cvss": null,
-        "cwe": "CWE-327",
-        "id": "CVE-2022-22461",
-        "impact": {},
-        "last-modified": "2022-12-29T16:19:00",
-        "references": [
-            "https://www.ibm.com/support/pages/node/6850845",
-            "https://exchange.xforce.ibmcloud.com/vulnerabilities/225077"
-        ],
-        "summary": "IBM Security Verify Governance, Identity Manager 10.0.1 uses weaker than expected cryptographic algorithms that could allow an attacker to decrypt highly sensitive information. IBM X-Force ID: 225007."
-    },
-    {
-        "Modified": "2022-12-29T16:12:00",
-        "Published": "2022-12-22T20:15:00",
-        "access": {},
-        "assigner": "security@mozilla.org",
-        "cvss": null,
-        "cwe": "NVD-CWE-noinfo",
-        "id": "CVE-2022-22736",
-        "impact": {},
-        "last-modified": "2022-12-29T16:12:00",
-        "references": [
-            "https://bugzilla.mozilla.org/show_bug.cgi?id=1742692",
-            "https://www.mozilla.org/security/advisories/mfsa2022-01/"
-        ],
-        "summary": "If Firefox was installed to a world-writable directory, a local privilege escalation could occur when Firefox searched the current directory for system libraries. However the install directory is not world-writable by default.<br>*This bug only affects Firefox for Windows in a non-default installation. Other operating systems are unaffected.*. This vulnerability affects Firefox < 96."
-    },
-    {
-        "Modified": "2022-12-29T16:06:00",
-        "Published": "2022-12-22T10:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-1022",
-        "id": "CVE-2020-36624",
-        "impact": {},
-        "last-modified": "2022-12-29T16:06:00",
-        "references": [
-            "https://github.com/ahorner/text-helpers/commit/184b60ded0e43c985788582aca2d1e746f9405a3",
-            "https://github.com/ahorner/text-helpers/pull/19",
-            "https://vuldb.com/?id.216520",
-            "https://github.com/ahorner/text-helpers/releases/tag/v1.1.0"
-        ],
-        "summary": "A vulnerability was found in ahorner text-helpers up to 1.0.x. It has been declared as critical. This vulnerability affects unknown code of the file lib/text_helpers/translation.rb. The manipulation of the argument link leads to use of web link to untrusted target with window.opener access. The attack can be initiated remotely. Upgrading to version 1.1.0 is able to address this issue. The name of the patch is 184b60ded0e43c985788582aca2d1e746f9405a3. It is recommended to upgrade the affected component. The identifier of this vulnerability is VDB-216520."
-    },
-    {
-        "Modified": "2022-12-29T15:52:00",
-        "Published": "2022-12-22T02:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-43271",
-        "impact": {},
-        "last-modified": "2022-12-29T15:52:00",
-        "references": [
-            "https://inhabit.com.au/CVE-2022-43271",
-            "https://github.com/SecurityWillCheck/CVE-2022-43271"
-        ],
-        "summary": "Inhabit Systems Pty Ltd Move CRM version 4, build 260 was discovered to contain a cross-site scripting (XSS) vulnerability via the User profile component."
-    },
-    {
-        "Modified": "2022-12-29T15:50:00",
-        "Published": "2022-12-22T20:15:00",
-        "access": {},
-        "assigner": "security@mozilla.org",
-        "cvss": null,
-        "cwe": "CWE-416",
-        "id": "CVE-2022-22737",
-        "impact": {},
-        "last-modified": "2022-12-29T15:50:00",
-        "references": [
-            "https://www.mozilla.org/security/advisories/mfsa2022-02/",
-            "https://www.mozilla.org/security/advisories/mfsa2022-01/",
-            "https://bugzilla.mozilla.org/show_bug.cgi?id=1745874",
-            "https://www.mozilla.org/security/advisories/mfsa2022-03/"
-        ],
-        "summary": "Constructing audio sinks could have lead to a race condition when playing audio files and closing windows. This could have lead to a use-after-free causing a potentially exploitable crash. This vulnerability affects Firefox ESR < 91.5, Firefox < 96, and Thunderbird < 91.5."
-    },
-    {
-        "Modified": "2022-12-29T15:48:00",
-        "Published": "2022-12-22T20:15:00",
-        "access": {},
-        "assigner": "security@mozilla.org",
-        "cvss": null,
-        "cwe": "CWE-787",
-        "id": "CVE-2022-22738",
-        "impact": {},
-        "last-modified": "2022-12-29T15:48:00",
-        "references": [
-            "https://www.mozilla.org/security/advisories/mfsa2022-02/",
-            "https://www.mozilla.org/security/advisories/mfsa2022-01/",
-            "https://www.mozilla.org/security/advisories/mfsa2022-03/",
-            "https://bugzilla.mozilla.org/show_bug.cgi?id=1742382"
-        ],
-        "summary": "Applying a CSS filter effect could have accessed out of bounds memory. This could have lead to a heap-buffer-overflow causing a potentially exploitable crash. This vulnerability affects Firefox ESR < 91.5, Firefox < 96, and Thunderbird < 91.5."
     }
 ]
