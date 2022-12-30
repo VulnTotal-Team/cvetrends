@@ -1,5 +1,271 @@
 [
     {
+        "Modified": "2022-12-30T18:45:00",
+        "Published": "2022-12-22T20:15:00",
+        "access": {},
+        "assigner": "security@mozilla.org",
+        "cvss": null,
+        "cwe": "CWE-190",
+        "id": "CVE-2022-34481",
+        "impact": {},
+        "last-modified": "2022-12-30T18:45:00",
+        "references": [
+            "https://www.mozilla.org/security/advisories/mfsa2022-24/",
+            "https://bugzilla.mozilla.org/show_bug.cgi?id=1497246",
+            "https://www.mozilla.org/security/advisories/mfsa2022-26/",
+            "https://www.mozilla.org/security/advisories/mfsa2022-25/"
+        ],
+        "summary": "In the <code>nsTArray_Impl::ReplaceElementsAt()</code> function, an integer overflow could have occurred when the number of elements to replace was too large for the container. This vulnerability affects Firefox < 102, Firefox ESR < 91.11, Thunderbird < 102, and Thunderbird < 91.11."
+    },
+    {
+        "Modified": "2022-12-30T18:29:00",
+        "Published": "2022-12-22T20:15:00",
+        "access": {},
+        "assigner": "security@mozilla.org",
+        "cvss": null,
+        "cwe": "CWE-824",
+        "id": "CVE-2022-34480",
+        "impact": {},
+        "last-modified": "2022-12-30T18:29:00",
+        "references": [
+            "https://www.mozilla.org/security/advisories/mfsa2022-24/",
+            "https://bugzilla.mozilla.org/show_bug.cgi?id=1454072"
+        ],
+        "summary": "Within the <code>lg_init()</code> function, if several allocations succeed but then one fails, an uninitialized pointer would have been freed despite never being allocated. This vulnerability affects Firefox < 102."
+    },
+    {
+        "Modified": "2022-12-30T18:18:00",
+        "Published": "2022-12-22T20:15:00",
+        "access": {},
+        "assigner": "security@mozilla.org",
+        "cvss": null,
+        "cwe": "NVD-CWE-noinfo",
+        "id": "CVE-2022-34483",
+        "impact": {},
+        "last-modified": "2022-12-30T18:18:00",
+        "references": [
+            "https://www.mozilla.org/security/advisories/mfsa2022-24/",
+            "https://bugzilla.mozilla.org/show_bug.cgi?id=1335845"
+        ],
+        "summary": "An attacker who could have convinced a user to drag and drop an image to a filesystem could have manipulated the resulting filename to contain an executable extension, and by extension potentially tricked the user into executing malicious code. While very similar, this is a separate issue from CVE-2022-34482. This vulnerability affects Firefox < 102."
+    },
+    {
+        "Modified": "2022-12-30T18:18:00",
+        "Published": "2022-12-22T20:15:00",
+        "access": {},
+        "assigner": "security@mozilla.org",
+        "cvss": null,
+        "cwe": "NVD-CWE-noinfo",
+        "id": "CVE-2022-34482",
+        "impact": {},
+        "last-modified": "2022-12-30T18:18:00",
+        "references": [
+            "https://www.mozilla.org/security/advisories/mfsa2022-24/",
+            "https://bugzilla.mozilla.org/show_bug.cgi?id=845880"
+        ],
+        "summary": "An attacker who could have convinced a user to drag and drop an image to a filesystem could have manipulated the resulting filename to contain an executable extension, and by extension potentially tricked the user into executing malicious code. While very similar, this is a separate issue from CVE-2022-34483. This vulnerability affects Firefox < 102."
+    },
+    {
+        "Modified": "2022-12-30T18:15:00",
+        "Published": "2019-06-06T16:29:00",
+        "access": {
+            "authentication": "SINGLE",
+            "complexity": "MEDIUM",
+            "vector": "NETWORK"
+        },
+        "assigner": "cve@mitre.org",
+        "cvss": 3.5,
+        "cvss-time": "2022-12-30T18:15:00",
+        "cvss-vector": "AV:N/AC:M/Au:S/C:N/I:P/A:N",
+        "cwe": "CWE-79",
+        "id": "CVE-2019-7553",
+        "impact": {
+            "availability": "NONE",
+            "confidentiality": "NONE",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-12-30T18:15:00",
+        "references": [
+            "https://securityhitlist.blogspot.com/2019/02/cve-2019-7553-stores-xss-in-php-scripts.html"
+        ],
+        "summary": "PHP Scripts Mall Chartered Accountant : Auditor Website 2.0.1 has Stored XSS in the Profile Update page via the My Name field."
+    },
+    {
+        "Modified": "2022-12-30T18:15:00",
+        "Published": "2019-07-23T13:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "MEDIUM",
+            "vector": "NETWORK"
+        },
+        "assigner": "cve-assign@distributedweaknessfiling.org",
+        "cvss": 4.3,
+        "cvss-time": "2022-12-30T18:15:00",
+        "cvss-vector": "AV:N/AC:M/Au:N/C:N/I:P/A:N",
+        "cwe": "CWE-79",
+        "id": "CVE-2019-1010124",
+        "impact": {
+            "availability": "NONE",
+            "confidentiality": "NONE",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2022-12-30T18:15:00",
+        "references": [
+            "https://www.youtube.com/watch?v=T-sqQDFRRBg",
+            "https://wpvulndb.com/vulnerabilities/9856",
+            "http://packetstormsecurity.com/files/154263/WordPress-WooCommerce-Product-Feed-2.2.18-Cross-Site-Scripting.html"
+        ],
+        "summary": "WebAppick WooCommerce Product Feed 2.2.18 and earlier is affected by: Cross Site Scripting (XSS). The impact is: XSS to RCE via editing theme files in WordPress. The component is: admin/partials/woo-feed-manage-list.php:63. The attack vector is: Administrator must be logged in."
+    },
+    {
+        "Modified": "2022-12-30T18:14:00",
+        "Published": "2022-12-22T20:15:00",
+        "access": {},
+        "assigner": "security@mozilla.org",
+        "cvss": null,
+        "cwe": "CWE-787",
+        "id": "CVE-2022-34485",
+        "impact": {},
+        "last-modified": "2022-12-30T18:14:00",
+        "references": [
+            "https://www.mozilla.org/security/advisories/mfsa2022-24/",
+            "https://bugzilla.mozilla.org/buglist.cgi?bug_id=1768409%2C1768578"
+        ],
+        "summary": "Mozilla developers Bryce Seager van Dyk and the Mozilla Fuzzing Team reported potential vulnerabilities present in Firefox 101. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code. This vulnerability affects Firefox < 102."
+    },
+    {
+        "Modified": "2022-12-30T18:07:00",
+        "Published": "2022-12-22T20:15:00",
+        "access": {},
+        "assigner": "security@mozilla.org",
+        "cvss": null,
+        "cwe": "CWE-617",
+        "id": "CVE-2022-34484",
+        "impact": {},
+        "last-modified": "2022-12-30T18:07:00",
+        "references": [
+            "https://www.mozilla.org/security/advisories/mfsa2022-24/",
+            "https://bugzilla.mozilla.org/buglist.cgi?bug_id=1763634%2C1772651",
+            "https://www.mozilla.org/security/advisories/mfsa2022-26/",
+            "https://www.mozilla.org/security/advisories/mfsa2022-25/"
+        ],
+        "summary": "The Mozilla Fuzzing Team reported potential vulnerabilities present in Thunderbird 91.10. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code. This vulnerability affects Firefox < 102, Firefox ESR < 91.11, Thunderbird < 102, and Thunderbird < 91.11."
+    },
+    {
+        "Modified": "2022-12-30T18:01:00",
+        "Published": "2022-12-22T20:15:00",
+        "access": {},
+        "assigner": "security@mozilla.org",
+        "cvss": null,
+        "cwe": "NVD-CWE-noinfo",
+        "id": "CVE-2022-34468",
+        "impact": {},
+        "last-modified": "2022-12-30T18:01:00",
+        "references": [
+            "https://www.mozilla.org/security/advisories/mfsa2022-24/",
+            "https://bugzilla.mozilla.org/show_bug.cgi?id=1768537",
+            "https://www.mozilla.org/security/advisories/mfsa2022-26/",
+            "https://www.mozilla.org/security/advisories/mfsa2022-25/"
+        ],
+        "summary": "An iframe that was not permitted to run scripts could do so if the user clicked on a <code>javascript:</code> link. This vulnerability affects Firefox < 102, Firefox ESR < 91.11, Thunderbird < 102, and Thunderbird < 91.11."
+    },
+    {
+        "Modified": "2022-12-30T17:09:00",
+        "Published": "2022-12-23T16:15:00",
+        "access": {},
+        "assigner": "security@wordfence.com",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2022-4697",
+        "impact": {},
+        "last-modified": "2022-12-30T17:09:00",
+        "references": [
+            "https://www.wordfence.com/threat-intel/vulnerabilities/id/3d54f585-0116-4517-84f1-271e89a05539",
+            "https://plugins.trac.wordpress.org/changeset?sfp_email=&sfph_mail=&reponame=&new=2838522%40wp-user-avatar%2Ftrunk&old=2837217%40wp-user-avatar%2Ftrunk&sfp_email=&sfph_mail="
+        ],
+        "summary": "The ProfilePress plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the \u2018wp_user_cover_default_image_url\u2019 parameter in versions up to, and including, 4.5.0 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with administrator-level permissions and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page. This only affects multi-site installations and installations where unfiltered_html has been disabled."
+    },
+    {
+        "Modified": "2022-12-30T17:09:00",
+        "Published": "2022-12-23T16:15:00",
+        "access": {},
+        "assigner": "security@wordfence.com",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2022-4698",
+        "impact": {},
+        "last-modified": "2022-12-30T17:09:00",
+        "references": [
+            "https://www.wordfence.com/threat-intel/vulnerabilities/id/43c9dcec-f769-4c55-93d0-c2aa45a4fa16",
+            "https://plugins.trac.wordpress.org/changeset?sfp_email=&sfph_mail=&reponame=&new=2838522%40wp-user-avatar%2Ftrunk&old=2837217%40wp-user-avatar%2Ftrunk&sfp_email=&sfph_mail="
+        ],
+        "summary": "The ProfilePress plugin for WordPress is vulnerable to Stored Cross-Site Scripting via several form fields in versions up to, and including, 4.5.0 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with administrator-level permissions and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page. This only affects multi-site installations and installations where unfiltered_html has been disabled."
+    },
+    {
+        "Modified": "2022-12-30T17:07:00",
+        "Published": "2022-12-23T19:15:00",
+        "access": {},
+        "assigner": "psirt@us.ibm.com",
+        "cvss": null,
+        "cwe": "NVD-CWE-noinfo",
+        "id": "CVE-2022-39165",
+        "impact": {},
+        "last-modified": "2022-12-30T17:07:00",
+        "references": [
+            "https://exchange.xforce.ibmcloud.com/vulnerabilities/235183",
+            "https://www.ibm.com/support/pages/node/6847947"
+        ],
+        "summary": "IBM AIX 7.1, 7.2, 7.3, and VIOS 3.1could allow a non-privileged local user to exploit a vulnerability in CAA to cause a denial of service. IBM X-Force ID: 235183."
+    },
+    {
+        "Modified": "2022-12-30T17:06:00",
+        "Published": "2022-12-23T19:15:00",
+        "access": {},
+        "assigner": "psirt@us.ibm.com",
+        "cvss": null,
+        "cwe": "NVD-CWE-noinfo",
+        "id": "CVE-2022-40233",
+        "impact": {},
+        "last-modified": "2022-12-30T17:06:00",
+        "references": [
+            "https://exchange.xforce.ibmcloud.com/vulnerabilities/235599",
+            "https://www.ibm.com/support/pages/node/6847947"
+        ],
+        "summary": "IBM AIX 7.1, 7.2, 7.3, and VIOS 3.1 could allow a non-privileged local user to exploit a vulnerability in the AIX TCP/IP kernel extension to cause a denial of service. IBM X-Force ID: 235599."
+    },
+    {
+        "Modified": "2022-12-30T17:05:00",
+        "Published": "2022-12-23T19:15:00",
+        "access": {},
+        "assigner": "psirt@us.ibm.com",
+        "cvss": null,
+        "cwe": "NVD-CWE-Other",
+        "id": "CVE-2022-43380",
+        "impact": {},
+        "last-modified": "2022-12-30T17:05:00",
+        "references": [
+            "https://www.ibm.com/support/pages/node/6847947",
+            "https://exchange.xforce.ibmcloud.com/vulnerabilities/238640"
+        ],
+        "summary": "IBM AIX 7.1, 7.2, 7.3, and VIOS 3.1 could allow a non-privileged local user to exploit a vulnerability in the AIX NFS kernel extension to cause a denial of service. IBM X-Force ID: 238640."
+    },
+    {
+        "Modified": "2022-12-30T17:05:00",
+        "Published": "2022-12-23T19:15:00",
+        "access": {},
+        "assigner": "psirt@us.ibm.com",
+        "cvss": null,
+        "cwe": "NVD-CWE-Other",
+        "id": "CVE-2022-43381",
+        "impact": {},
+        "last-modified": "2022-12-30T17:05:00",
+        "references": [
+            "https://www.ibm.com/support/pages/node/6851443",
+            "https://exchange.xforce.ibmcloud.com/vulnerabilities/238639"
+        ],
+        "summary": "IBM AIX 7.1, 7.2, 7.3, and VIOS 3.1could allow a non-privileged local user to exploit a vulnerability in the AIX SMB client to cause a denial of service. IBM X-Force ID: 238639."
+    },
+    {
         "Modified": "2022-12-30T16:25:00",
         "Published": "2022-12-23T12:15:00",
         "access": {},
@@ -1425,252 +1691,5 @@
             "https://github.com/radareorg/radare2/commit/842f809d4ec6a12af2906f948657281c9ebc8a24"
         ],
         "summary": "NULL Pointer Dereference in GitHub repository radareorg/radare2 prior to 5.8.2."
-    },
-    {
-        "Modified": "2022-12-29T22:24:00",
-        "Published": "2022-12-29T18:15:00",
-        "access": {},
-        "assigner": "security@huntr.dev",
-        "cvss": null,
-        "cwe": "CWE-352",
-        "id": "CVE-2022-4844",
-        "impact": {},
-        "last-modified": "2022-12-29T22:24:00",
-        "references": [
-            "https://huntr.dev/bounties/8e8df1f4-07ab-4b75-aec8-75b1229e93a3",
-            "https://github.com/usememos/memos/commit/c9bb2b785dc5852655405d5c9ab127a2d5aa3948"
-        ],
-        "summary": "Cross-Site Request Forgery (CSRF) in GitHub repository usememos/memos prior to 0.9.1."
-    },
-    {
-        "Modified": "2022-12-29T22:24:00",
-        "Published": "2022-12-29T18:15:00",
-        "access": {},
-        "assigner": "security@huntr.dev",
-        "cvss": null,
-        "cwe": "CWE-352",
-        "id": "CVE-2022-4845",
-        "impact": {},
-        "last-modified": "2022-12-29T22:24:00",
-        "references": [
-            "https://github.com/usememos/memos/commit/c9bb2b785dc5852655405d5c9ab127a2d5aa3948",
-            "https://huntr.dev/bounties/075dbd51-b078-436c-9e3d-7f25cd2e7e1b"
-        ],
-        "summary": "Cross-Site Request Forgery (CSRF) in GitHub repository usememos/memos prior to 0.9.1."
-    },
-    {
-        "Modified": "2022-12-29T22:24:00",
-        "Published": "2022-12-29T18:15:00",
-        "access": {},
-        "assigner": "security@huntr.dev",
-        "cvss": null,
-        "cwe": "CWE-352",
-        "id": "CVE-2022-4846",
-        "impact": {},
-        "last-modified": "2022-12-29T22:24:00",
-        "references": [
-            "https://github.com/usememos/memos/commit/c9bb2b785dc5852655405d5c9ab127a2d5aa3948",
-            "https://huntr.dev/bounties/38c685fc-7065-472d-a46e-e26bf0b556d3"
-        ],
-        "summary": "Cross-Site Request Forgery (CSRF) in GitHub repository usememos/memos prior to 0.9.1."
-    },
-    {
-        "Modified": "2022-12-29T22:24:00",
-        "Published": "2022-12-29T18:15:00",
-        "access": {},
-        "assigner": "security@huntr.dev",
-        "cvss": null,
-        "cwe": "CWE-941",
-        "id": "CVE-2022-4847",
-        "impact": {},
-        "last-modified": "2022-12-29T22:24:00",
-        "references": [
-            "https://github.com/usememos/memos/commit/c9bb2b785dc5852655405d5c9ab127a2d5aa3948",
-            "https://huntr.dev/bounties/ff6d4b5a-5e75-4a14-b5ce-f318f8613b73"
-        ],
-        "summary": "Incorrectly Specified Destination in a Communication Channel in GitHub repository usememos/memos prior to 0.9.1."
-    },
-    {
-        "Modified": "2022-12-29T22:24:00",
-        "Published": "2022-12-29T18:15:00",
-        "access": {},
-        "assigner": "security@huntr.dev",
-        "cvss": null,
-        "cwe": "CWE-940",
-        "id": "CVE-2022-4848",
-        "impact": {},
-        "last-modified": "2022-12-29T22:24:00",
-        "references": [
-            "https://github.com/usememos/memos/commit/c9bb2b785dc5852655405d5c9ab127a2d5aa3948",
-            "https://huntr.dev/bounties/25de88cc-8d0d-41a1-b069-9ef1327770bc"
-        ],
-        "summary": "Improper Verification of Source of a Communication Channel in GitHub repository usememos/memos prior to 0.9.1."
-    },
-    {
-        "Modified": "2022-12-29T22:24:00",
-        "Published": "2022-12-29T18:15:00",
-        "access": {},
-        "assigner": "security@huntr.dev",
-        "cvss": null,
-        "cwe": "CWE-352",
-        "id": "CVE-2022-4849",
-        "impact": {},
-        "last-modified": "2022-12-29T22:24:00",
-        "references": [
-            "https://huntr.dev/bounties/404ce7dd-f345-4d98-ad80-c53ac74f4e5c",
-            "https://github.com/usememos/memos/commit/c9bb2b785dc5852655405d5c9ab127a2d5aa3948"
-        ],
-        "summary": "Cross-Site Request Forgery (CSRF) in GitHub repository usememos/memos prior to 0.9.1."
-    },
-    {
-        "Modified": "2022-12-29T22:24:00",
-        "Published": "2022-12-29T18:15:00",
-        "access": {},
-        "assigner": "security@huntr.dev",
-        "cvss": null,
-        "cwe": "CWE-352",
-        "id": "CVE-2022-4850",
-        "impact": {},
-        "last-modified": "2022-12-29T22:24:00",
-        "references": [
-            "https://github.com/usememos/memos/commit/c9bb2b785dc5852655405d5c9ab127a2d5aa3948",
-            "https://huntr.dev/bounties/46dc4728-eacc-43f5-9831-c203fdbcc346"
-        ],
-        "summary": "Cross-Site Request Forgery (CSRF) in GitHub repository usememos/memos prior to 0.9.1."
-    },
-    {
-        "Modified": "2022-12-29T22:24:00",
-        "Published": "2022-12-29T18:15:00",
-        "access": {},
-        "assigner": "security@huntr.dev",
-        "cvss": null,
-        "cwe": "CWE-229",
-        "id": "CVE-2022-4851",
-        "impact": {},
-        "last-modified": "2022-12-29T22:24:00",
-        "references": [
-            "https://github.com/usememos/memos/commit/3556ae4e651d9443dc3bb8a170dd3cc726517a53",
-            "https://huntr.dev/bounties/e3cebc1a-1326-4a08-abad-0414a717fa0f"
-        ],
-        "summary": "Improper Handling of Values in GitHub repository usememos/memos prior to 0.9.1."
-    },
-    {
-        "Modified": "2022-12-29T21:33:00",
-        "Published": "2022-12-21T19:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-4631",
-        "impact": {},
-        "last-modified": "2022-12-29T21:33:00",
-        "references": [
-            "https://github.com/lesterchan/wp-ban/commit/22b925449c84faa9b7496abe4f8f5661cb5eb3bf",
-            "https://vuldb.com/?id.216480"
-        ],
-        "summary": "A vulnerability, which was classified as problematic, was found in WP-Ban. Affected is an unknown function of the file ban-options.php. The manipulation leads to cross site scripting. It is possible to launch the attack remotely. The name of the patch is 22b925449c84faa9b7496abe4f8f5661cb5eb3bf. It is recommended to upgrade the affected component. The identifier of this vulnerability is VDB-216480."
-    },
-    {
-        "Modified": "2022-12-29T21:20:00",
-        "Published": "2022-12-21T22:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-377",
-        "id": "CVE-2022-4641",
-        "impact": {},
-        "last-modified": "2022-12-29T21:20:00",
-        "references": [
-            "https://github.com/tdunning/pig-vector/pull/2",
-            "https://github.com/tdunning/pig-vector/commit/1e7bd9fab5401a2df18d2eabd802adcf0dcf1f15",
-            "https://vuldb.com/?id.216500"
-        ],
-        "summary": "A vulnerability was found in pig-vector and classified as problematic. Affected by this issue is the function LogisticRegression of the file src/main/java/org/apache/mahout/pig/LogisticRegression.java. The manipulation leads to insecure temporary file. The attack needs to be approached locally. The name of the patch is 1e7bd9fab5401a2df18d2eabd802adcf0dcf1f15. It is recommended to apply a patch to fix this issue. The identifier of this vulnerability is VDB-216500."
-    },
-    {
-        "Modified": "2022-12-29T20:33:00",
-        "Published": "2022-12-22T10:15:00",
-        "access": {},
-        "assigner": "talos-cna@cisco.com",
-        "cvss": null,
-        "cwe": "CWE-284",
-        "id": "CVE-2022-41654",
-        "impact": {},
-        "last-modified": "2022-12-29T20:33:00",
-        "references": [
-            "https://talosintelligence.com/vulnerability_reports/TALOS-2022-1624",
-            "https://github.com/TryGhost/Ghost/security/advisories/GHSA-9gh8-wp53-ccc6"
-        ],
-        "summary": "An authentication bypass vulnerability exists in the newsletter subscription functionality of Ghost Foundation Ghost 5.9.4. A specially-crafted HTTP request can lead to increased privileges. An attacker can send an HTTP request to trigger this vulnerability."
-    },
-    {
-        "Modified": "2022-12-29T20:31:00",
-        "Published": "2022-12-22T20:15:00",
-        "access": {},
-        "assigner": "security@mozilla.org",
-        "cvss": null,
-        "cwe": "CWE-416",
-        "id": "CVE-2022-1196",
-        "impact": {},
-        "last-modified": "2022-12-29T20:31:00",
-        "references": [
-            "https://www.mozilla.org/security/advisories/mfsa2022-15/",
-            "https://www.mozilla.org/security/advisories/mfsa2022-14/",
-            "https://bugzilla.mozilla.org/show_bug.cgi?id=1750679"
-        ],
-        "summary": "After a VR Process is destroyed, a reference to it may have been retained and used, leading to a use-after-free and potentially exploitable crash. This vulnerability affects Thunderbird < 91.8 and Firefox ESR < 91.8."
-    },
-    {
-        "Modified": "2022-12-29T20:18:00",
-        "Published": "2022-12-22T20:15:00",
-        "access": {},
-        "assigner": "security@mozilla.org",
-        "cvss": null,
-        "cwe": "NVD-CWE-noinfo",
-        "id": "CVE-2022-22741",
-        "impact": {},
-        "last-modified": "2022-12-29T20:18:00",
-        "references": [
-            "https://www.mozilla.org/security/advisories/mfsa2022-02/",
-            "https://www.mozilla.org/security/advisories/mfsa2022-01/",
-            "https://bugzilla.mozilla.org/show_bug.cgi?id=1740389",
-            "https://www.mozilla.org/security/advisories/mfsa2022-03/"
-        ],
-        "summary": "When resizing a popup while requesting fullscreen access, the popup would have become unable to leave fullscreen mode. This vulnerability affects Firefox ESR < 91.5, Firefox < 96, and Thunderbird < 91.5."
-    },
-    {
-        "Modified": "2022-12-29T20:17:00",
-        "Published": "2022-12-22T20:15:00",
-        "access": {},
-        "assigner": "security@mozilla.org",
-        "cvss": null,
-        "cwe": "CWE-125",
-        "id": "CVE-2022-22742",
-        "impact": {},
-        "last-modified": "2022-12-29T20:17:00",
-        "references": [
-            "https://www.mozilla.org/security/advisories/mfsa2022-02/",
-            "https://www.mozilla.org/security/advisories/mfsa2022-01/",
-            "https://www.mozilla.org/security/advisories/mfsa2022-03/",
-            "https://bugzilla.mozilla.org/show_bug.cgi?id=1739923"
-        ],
-        "summary": "When inserting text while in edit mode, some characters might have lead to out-of-bounds memory access causing a potentially exploitable crash. This vulnerability affects Firefox ESR < 91.5, Firefox < 96, and Thunderbird < 91.5."
-    },
-    {
-        "Modified": "2022-12-29T20:16:00",
-        "Published": "2022-12-22T18:15:00",
-        "access": {},
-        "assigner": "security-advisories@github.com",
-        "cvss": null,
-        "cwe": "NVD-CWE-Other",
-        "id": "CVE-2022-23541",
-        "impact": {},
-        "last-modified": "2022-12-29T20:16:00",
-        "references": [
-            "https://github.com/auth0/node-jsonwebtoken/security/advisories/GHSA-hjrf-2m68-5959",
-            "https://github.com/auth0/node-jsonwebtoken/releases/tag/v9.0.0",
-            "https://github.com/auth0/node-jsonwebtoken/commit/e1fa9dcc12054a8681db4e6373da1b30cf7016e3"
-        ],
-        "summary": "jsonwebtoken is an implementation of JSON Web Tokens. Versions `<= 8.5.1` of `jsonwebtoken` library can be misconfigured so that passing a poorly implemented key retrieval function referring to the `secretOrPublicKey` argument from the readme link will result in incorrect verification of tokens. There is a possibility of using a different algorithm and key combination in verification, other than the one that was used to sign the tokens. Specifically, tokens signed with an asymmetric public key could be verified with a symmetric HS256 algorithm. This can lead to successful validation of forged tokens. If your application is supporting usage of both symmetric key and asymmetric key in jwt.verify() implementation with the same key retrieval function. This issue has been patched, please update to version 9.0.0."
     }
 ]
