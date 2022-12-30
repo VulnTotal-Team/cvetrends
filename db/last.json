@@ -1,5 +1,496 @@
 [
     {
+        "Modified": "2022-12-29T22:56:00",
+        "Published": "2022-12-22T20:15:00",
+        "access": {},
+        "assigner": "security@mozilla.org",
+        "cvss": null,
+        "cwe": "CWE-787",
+        "id": "CVE-2022-22752",
+        "impact": {},
+        "last-modified": "2022-12-29T22:56:00",
+        "references": [
+            "https://bugzilla.mozilla.org/buglist.cgi?bug_id=1741210%2C1742770",
+            "https://www.mozilla.org/security/advisories/mfsa2022-01/"
+        ],
+        "summary": "Mozilla developers Christian Holler and Jason Kratzer reported memory safety bugs present in Firefox 95. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code. This vulnerability affects Firefox < 96."
+    },
+    {
+        "Modified": "2022-12-29T22:55:00",
+        "Published": "2022-12-22T20:15:00",
+        "access": {},
+        "assigner": "security@mozilla.org",
+        "cvss": null,
+        "cwe": "CWE-787",
+        "id": "CVE-2022-22751",
+        "impact": {},
+        "last-modified": "2022-12-29T22:55:00",
+        "references": [
+            "https://www.mozilla.org/security/advisories/mfsa2022-02/",
+            "https://www.mozilla.org/security/advisories/mfsa2022-01/",
+            "https://bugzilla.mozilla.org/buglist.cgi?bug_id=1664149%2C1737816%2C1739366%2C1740274%2C1740797%2C1741201%2C1741869%2C1743221%2C1743515%2C1745373%2C1746011",
+            "https://www.mozilla.org/security/advisories/mfsa2022-03/"
+        ],
+        "summary": "Mozilla developers Calixte Denizet, Kershaw Chang, Christian Holler, Jason Kratzer, Gabriele Svelto, Tyson Smith, Simon Giesecke, and Steve Fink reported memory safety bugs present in Firefox 95 and Firefox ESR 91.4. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code. This vulnerability affects Firefox ESR < 91.5, Firefox < 96, and Thunderbird < 91.5."
+    },
+    {
+        "Modified": "2022-12-29T22:51:00",
+        "Published": "2022-12-22T20:15:00",
+        "access": {},
+        "assigner": "security@mozilla.org",
+        "cvss": null,
+        "cwe": "NVD-CWE-noinfo",
+        "id": "CVE-2022-22759",
+        "impact": {},
+        "last-modified": "2022-12-29T22:51:00",
+        "references": [
+            "https://www.mozilla.org/security/advisories/mfsa2022-06/",
+            "https://www.mozilla.org/security/advisories/mfsa2022-05/",
+            "https://www.mozilla.org/security/advisories/mfsa2022-04/",
+            "https://bugzilla.mozilla.org/show_bug.cgi?id=1739957"
+        ],
+        "summary": "If a document created a sandboxed iframe without <code>allow-scripts</code>, and subsequently appended an element to the iframe's document that e.g. had a JavaScript event handler - the event handler would have run despite the iframe's sandbox. This vulnerability affects Firefox < 97, Thunderbird < 91.6, and Firefox ESR < 91.6."
+    },
+    {
+        "Modified": "2022-12-29T22:50:00",
+        "Published": "2022-12-22T20:15:00",
+        "access": {},
+        "assigner": "security@mozilla.org",
+        "cvss": null,
+        "cwe": "CWE-319",
+        "id": "CVE-2022-22758",
+        "impact": {},
+        "last-modified": "2022-12-29T22:50:00",
+        "references": [
+            "https://bugzilla.mozilla.org/show_bug.cgi?id=1728742",
+            "https://www.mozilla.org/security/advisories/mfsa2022-04/"
+        ],
+        "summary": "When clicking on a tel: link, USSD codes, specified after a <code>\\*</code> character, would be included in the phone number. On certain phones, or on certain carriers, if the number was dialed this could perform actions on a user's account, similar to a cross-site request forgery attack.<br>*This bug only affects Firefox for Android. Other operating systems are unaffected.*. This vulnerability affects Firefox < 97."
+    },
+    {
+        "Modified": "2022-12-29T22:49:00",
+        "Published": "2022-12-22T20:15:00",
+        "access": {},
+        "assigner": "security@mozilla.org",
+        "cvss": null,
+        "cwe": "CWE-20",
+        "id": "CVE-2022-22757",
+        "impact": {},
+        "last-modified": "2022-12-29T22:49:00",
+        "references": [
+            "https://bugzilla.mozilla.org/show_bug.cgi?id=1720098",
+            "https://www.mozilla.org/security/advisories/mfsa2022-04/"
+        ],
+        "summary": "Remote Agent, used in WebDriver, did not validate the Host or Origin headers. This could have allowed websites to connect back locally to the user's browser to control it. <br>*This bug only affected Firefox when WebDriver was enabled, which is not the default configuration.*. This vulnerability affects Firefox < 97."
+    },
+    {
+        "Modified": "2022-12-29T22:24:00",
+        "Published": "2022-12-29T19:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-22",
+        "id": "CVE-2022-46178",
+        "impact": {},
+        "last-modified": "2022-12-29T22:24:00",
+        "references": [
+            "https://github.com/metersphere/metersphere/security/advisories/GHSA-9p62-x3c5-hr5p"
+        ],
+        "summary": "MeterSphere is a one-stop open source continuous testing platform, covering test management, interface testing, UI testing and performance testing. Versions prior to 2.5.1 allow users to upload a file, but do not validate the file name, which may lead to upload file to any path. The vulnerability has been fixed in v2.5.1. There are no workarounds."
+    },
+    {
+        "Modified": "2022-12-29T22:24:00",
+        "Published": "2022-12-29T19:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2022-46181",
+        "impact": {},
+        "last-modified": "2022-12-29T22:24:00",
+        "references": [
+            "https://github.com/gotify/server/pull/535",
+            "https://github.com/gotify/server/pull/534",
+            "https://github.com/gotify/server/security/advisories/GHSA-xv6x-456v-24xh"
+        ],
+        "summary": "Gotify server is a simple server for sending and receiving messages in real-time per WebSocket. Versions prior to 2.2.2 contain an XSS vulnerability that allows authenticated users to upload .html files. An attacker could execute client side scripts **if** another user opened a link. The attacker could potentially take over the account of the user that clicked the link. The Gotify UI won't natively expose such a malicious link, so an attacker has to get the user to open the malicious link in a context outside of Gotify. The vulnerability has been fixed in version 2.2.2. As a workaround, you can block access to non image files via a reverse proxy in the `./image` directory."
+    },
+    {
+        "Modified": "2022-12-29T22:24:00",
+        "Published": "2022-12-29T20:15:00",
+        "access": {},
+        "assigner": "psirt@esri.com",
+        "cvss": null,
+        "cwe": "CWE-918",
+        "id": "CVE-2022-38203",
+        "impact": {},
+        "last-modified": "2022-12-29T22:24:00",
+        "references": [
+            "https://www.esri.com/arcgis-blog/products/trust-arcgis/administration/portal-for-arcgis-security-2022-update-2-patch-is-now-available"
+        ],
+        "summary": "Protections against potential Server-Side Request Forgery (SSRF) vulnerabilities in Esri Portal for ArcGIS versions 10.8.1 and below were not fully honored and may allow a remote, unauthenticated attacker to forge requests to arbitrary URLs from the system, potentially leading to network enumeration or reading from hosts inside the network perimeter, a different issue than CVE-2022-38211 and CVE-2022-38212."
+    },
+    {
+        "Modified": "2022-12-29T22:24:00",
+        "Published": "2022-12-29T20:15:00",
+        "access": {},
+        "assigner": "psirt@esri.com",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2022-38204",
+        "impact": {},
+        "last-modified": "2022-12-29T22:24:00",
+        "references": [
+            "https://www.esri.com/arcgis-blog/products/trust-arcgis/administration/portal-for-arcgis-security-2022-update-2-patch-is-now-available"
+        ],
+        "summary": "There is a reflected XSS vulnerability in Esri Portal for ArcGIS versions 10.8.1 and 10.7.1 which may allow a remote, unauthenticated attacker to create a crafted link which when clicked could potentially execute arbitrary JavaScript code in the victim\u2019s browser."
+    },
+    {
+        "Modified": "2022-12-29T22:24:00",
+        "Published": "2022-12-29T20:15:00",
+        "access": {},
+        "assigner": "psirt@esri.com",
+        "cvss": null,
+        "cwe": "CWE-23",
+        "id": "CVE-2022-38205",
+        "impact": {},
+        "last-modified": "2022-12-29T22:24:00",
+        "references": [
+            "https://www.esri.com/arcgis-blog/products/trust-arcgis/administration/portal-for-arcgis-security-2022-update-2-patch-is-now-available"
+        ],
+        "summary": "In some non-default installations of Esri Portal for ArcGIS versions 10.9.1 and below, a directory traversal issue may allow a remote, unauthenticated attacker to traverse the file system and lead to the disclosure of sensitive data (not customer-published content)."
+    },
+    {
+        "Modified": "2022-12-29T22:24:00",
+        "Published": "2022-12-29T20:15:00",
+        "access": {},
+        "assigner": "psirt@esri.com",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2022-38206",
+        "impact": {},
+        "last-modified": "2022-12-29T22:24:00",
+        "references": [
+            "https://www.esri.com/arcgis-blog/products/trust-arcgis/administration/portal-for-arcgis-security-2022-update-2-patch-is-now-available"
+        ],
+        "summary": "There is a reflected XSS vulnerability in Esri Portal for ArcGIS versions 10.9.1 and below which may allow a remote remote, unauthenticated attacker to create a crafted link which when clicked could execute arbitrary JavaScript code in the victim\u2019s browser."
+    },
+    {
+        "Modified": "2022-12-29T22:24:00",
+        "Published": "2022-12-29T20:15:00",
+        "access": {},
+        "assigner": "psirt@esri.com",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2022-38207",
+        "impact": {},
+        "last-modified": "2022-12-29T22:24:00",
+        "references": [
+            "https://www.esri.com/arcgis-blog/products/trust-arcgis/administration/portal-for-arcgis-security-2022-update-2-patch-is-now-available"
+        ],
+        "summary": "There is a reflected XSS vulnerability in Esri Portal for ArcGIS versions 10.8.1 and 10.7.1 which may allow a remote remote, unauthenticated attacker to create a crafted link which when clicked which could execute arbitrary JavaScript code in the victim\u2019s browser."
+    },
+    {
+        "Modified": "2022-12-29T22:24:00",
+        "Published": "2022-12-29T20:15:00",
+        "access": {},
+        "assigner": "psirt@esri.com",
+        "cvss": null,
+        "cwe": "CWE-601",
+        "id": "CVE-2022-38208",
+        "impact": {},
+        "last-modified": "2022-12-29T22:24:00",
+        "references": [
+            "https://www.esri.com/arcgis-blog/products/trust-arcgis/administration/portal-for-arcgis-security-2022-update-2-patch-is-now-available"
+        ],
+        "summary": "There is an unvalidated redirect vulnerability in Esri Portal for ArcGIS 11 and below that may allow a remote, unauthenticated attacker to craft a URL that could redirect a victim to an arbitrary website, simplifying phishing attacks."
+    },
+    {
+        "Modified": "2022-12-29T22:24:00",
+        "Published": "2022-12-29T20:15:00",
+        "access": {},
+        "assigner": "psirt@esri.com",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2022-38209",
+        "impact": {},
+        "last-modified": "2022-12-29T22:24:00",
+        "references": [
+            "https://www.esri.com/arcgis-blog/products/trust-arcgis/administration/portal-for-arcgis-security-2022-update-2-patch-is-now-available"
+        ],
+        "summary": "There is a reflected XSS vulnerability in Esri Portal for ArcGIS versions 10.9.1 and below which may allow a remote, unauthenticated attacker to create a crafted link which when clicked could execute arbitrary JavaScript code in the victim\u2019s browser."
+    },
+    {
+        "Modified": "2022-12-29T22:24:00",
+        "Published": "2022-12-29T20:15:00",
+        "access": {},
+        "assigner": "psirt@esri.com",
+        "cvss": null,
+        "cwe": "CWE-80",
+        "id": "CVE-2022-38210",
+        "impact": {},
+        "last-modified": "2022-12-29T22:24:00",
+        "references": [
+            "https://www.esri.com/arcgis-blog/products/trust-arcgis/administration/portal-for-arcgis-security-2022-update-2-patch-is-now-available"
+        ],
+        "summary": "There is a reflected HTML injection vulnerability in Esri Portal for ArcGIS versions 10.9.1 and below that may allow a remote, unauthenticated attacker to create a crafted link which when clicked could render arbitrary HTML in the victim\u2019s browser."
+    },
+    {
+        "Modified": "2022-12-29T22:24:00",
+        "Published": "2022-12-29T20:15:00",
+        "access": {},
+        "assigner": "psirt@esri.com",
+        "cvss": null,
+        "cwe": "CWE-918",
+        "id": "CVE-2022-38211",
+        "impact": {},
+        "last-modified": "2022-12-29T22:24:00",
+        "references": [
+            "https://www.esri.com/arcgis-blog/products/trust-arcgis/administration/portal-for-arcgis-security-2022-update-2-patch-is-now-available"
+        ],
+        "summary": "Protections against potential Server-Side Request Forgery (SSRF) vulnerabilities in Esri Portal for ArcGIS versions 10.9.1 and below were not fully honored and may allow a remote, unauthenticated attacker to forge requests to arbitrary URLs from the system, potentially leading to network enumeration or reading from hosts inside the network perimeter, a different issue than CVE-2022-38211 and CVE-2022-38212."
+    },
+    {
+        "Modified": "2022-12-29T22:24:00",
+        "Published": "2022-12-29T20:15:00",
+        "access": {},
+        "assigner": "psirt@esri.com",
+        "cvss": null,
+        "cwe": "CWE-918",
+        "id": "CVE-2022-38212",
+        "impact": {},
+        "last-modified": "2022-12-29T22:24:00",
+        "references": [
+            "https://www.esri.com/arcgis-blog/products/trust-arcgis/administration/portal-for-arcgis-security-2022-update-2-patch-is-now-available"
+        ],
+        "summary": "Protections against potential Server-Side Request Forgery (SSRF) vulnerabilities in Esri Portal for ArcGIS versions 10.8.1 and below were not fully honored and may allow a remote, unauthenticated attacker to forge requests to arbitrary URLs from the system, potentially leading to network enumeration or reading from hosts inside the network perimeter, a different issue than CVE-2022-38211 and CVE-2022-38203."
+    },
+    {
+        "Modified": "2022-12-29T22:24:00",
+        "Published": "2022-12-29T17:15:00",
+        "access": {},
+        "assigner": "security@huntr.dev",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2022-4839",
+        "impact": {},
+        "last-modified": "2022-12-29T22:24:00",
+        "references": [
+            "https://huntr.dev/bounties/ad954cab-f026-4895-8003-99f5e3b507ed",
+            "https://github.com/usememos/memos/commit/64e5c343c5f74b0abdf3ac0d21a6139daea58cf8"
+        ],
+        "summary": "Cross-site Scripting (XSS) - Stored in GitHub repository usememos/memos prior to 0.9.1."
+    },
+    {
+        "Modified": "2022-12-29T22:24:00",
+        "Published": "2022-12-29T17:15:00",
+        "access": {},
+        "assigner": "security@huntr.dev",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2022-4840",
+        "impact": {},
+        "last-modified": "2022-12-29T22:24:00",
+        "references": [
+            "https://github.com/usememos/memos/commit/64e5c343c5f74b0abdf3ac0d21a6139daea58cf8",
+            "https://huntr.dev/bounties/b42aa2e9-c783-464c-915c-a80cb464ee01"
+        ],
+        "summary": "Cross-site Scripting (XSS) - Stored in GitHub repository usememos/memos prior to 0.9.1."
+    },
+    {
+        "Modified": "2022-12-29T22:24:00",
+        "Published": "2022-12-29T17:15:00",
+        "access": {},
+        "assigner": "security@huntr.dev",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2022-4841",
+        "impact": {},
+        "last-modified": "2022-12-29T22:24:00",
+        "references": [
+            "https://github.com/usememos/memos/commit/64e5c343c5f74b0abdf3ac0d21a6139daea58cf8",
+            "https://huntr.dev/bounties/fa46b3ef-c621-443a-be3a-0a83fb78ba62"
+        ],
+        "summary": "Cross-site Scripting (XSS) - Stored in GitHub repository usememos/memos prior to 0.9.1."
+    },
+    {
+        "Modified": "2022-12-29T22:24:00",
+        "Published": "2022-12-29T18:15:00",
+        "access": {},
+        "assigner": "security@huntr.dev",
+        "cvss": null,
+        "cwe": "CWE-476",
+        "id": "CVE-2022-4843",
+        "impact": {},
+        "last-modified": "2022-12-29T22:24:00",
+        "references": [
+            "https://huntr.dev/bounties/075b2760-66a0-4d38-b3b5-e9934956ab7f",
+            "https://github.com/radareorg/radare2/commit/842f809d4ec6a12af2906f948657281c9ebc8a24"
+        ],
+        "summary": "NULL Pointer Dereference in GitHub repository radareorg/radare2 prior to 5.8.2."
+    },
+    {
+        "Modified": "2022-12-29T22:24:00",
+        "Published": "2022-12-29T18:15:00",
+        "access": {},
+        "assigner": "security@huntr.dev",
+        "cvss": null,
+        "cwe": "CWE-352",
+        "id": "CVE-2022-4844",
+        "impact": {},
+        "last-modified": "2022-12-29T22:24:00",
+        "references": [
+            "https://huntr.dev/bounties/8e8df1f4-07ab-4b75-aec8-75b1229e93a3",
+            "https://github.com/usememos/memos/commit/c9bb2b785dc5852655405d5c9ab127a2d5aa3948"
+        ],
+        "summary": "Cross-Site Request Forgery (CSRF) in GitHub repository usememos/memos prior to 0.9.1."
+    },
+    {
+        "Modified": "2022-12-29T22:24:00",
+        "Published": "2022-12-29T18:15:00",
+        "access": {},
+        "assigner": "security@huntr.dev",
+        "cvss": null,
+        "cwe": "CWE-352",
+        "id": "CVE-2022-4845",
+        "impact": {},
+        "last-modified": "2022-12-29T22:24:00",
+        "references": [
+            "https://github.com/usememos/memos/commit/c9bb2b785dc5852655405d5c9ab127a2d5aa3948",
+            "https://huntr.dev/bounties/075dbd51-b078-436c-9e3d-7f25cd2e7e1b"
+        ],
+        "summary": "Cross-Site Request Forgery (CSRF) in GitHub repository usememos/memos prior to 0.9.1."
+    },
+    {
+        "Modified": "2022-12-29T22:24:00",
+        "Published": "2022-12-29T18:15:00",
+        "access": {},
+        "assigner": "security@huntr.dev",
+        "cvss": null,
+        "cwe": "CWE-352",
+        "id": "CVE-2022-4846",
+        "impact": {},
+        "last-modified": "2022-12-29T22:24:00",
+        "references": [
+            "https://github.com/usememos/memos/commit/c9bb2b785dc5852655405d5c9ab127a2d5aa3948",
+            "https://huntr.dev/bounties/38c685fc-7065-472d-a46e-e26bf0b556d3"
+        ],
+        "summary": "Cross-Site Request Forgery (CSRF) in GitHub repository usememos/memos prior to 0.9.1."
+    },
+    {
+        "Modified": "2022-12-29T22:24:00",
+        "Published": "2022-12-29T18:15:00",
+        "access": {},
+        "assigner": "security@huntr.dev",
+        "cvss": null,
+        "cwe": "CWE-941",
+        "id": "CVE-2022-4847",
+        "impact": {},
+        "last-modified": "2022-12-29T22:24:00",
+        "references": [
+            "https://github.com/usememos/memos/commit/c9bb2b785dc5852655405d5c9ab127a2d5aa3948",
+            "https://huntr.dev/bounties/ff6d4b5a-5e75-4a14-b5ce-f318f8613b73"
+        ],
+        "summary": "Incorrectly Specified Destination in a Communication Channel in GitHub repository usememos/memos prior to 0.9.1."
+    },
+    {
+        "Modified": "2022-12-29T22:24:00",
+        "Published": "2022-12-29T18:15:00",
+        "access": {},
+        "assigner": "security@huntr.dev",
+        "cvss": null,
+        "cwe": "CWE-940",
+        "id": "CVE-2022-4848",
+        "impact": {},
+        "last-modified": "2022-12-29T22:24:00",
+        "references": [
+            "https://github.com/usememos/memos/commit/c9bb2b785dc5852655405d5c9ab127a2d5aa3948",
+            "https://huntr.dev/bounties/25de88cc-8d0d-41a1-b069-9ef1327770bc"
+        ],
+        "summary": "Improper Verification of Source of a Communication Channel in GitHub repository usememos/memos prior to 0.9.1."
+    },
+    {
+        "Modified": "2022-12-29T22:24:00",
+        "Published": "2022-12-29T18:15:00",
+        "access": {},
+        "assigner": "security@huntr.dev",
+        "cvss": null,
+        "cwe": "CWE-352",
+        "id": "CVE-2022-4849",
+        "impact": {},
+        "last-modified": "2022-12-29T22:24:00",
+        "references": [
+            "https://huntr.dev/bounties/404ce7dd-f345-4d98-ad80-c53ac74f4e5c",
+            "https://github.com/usememos/memos/commit/c9bb2b785dc5852655405d5c9ab127a2d5aa3948"
+        ],
+        "summary": "Cross-Site Request Forgery (CSRF) in GitHub repository usememos/memos prior to 0.9.1."
+    },
+    {
+        "Modified": "2022-12-29T22:24:00",
+        "Published": "2022-12-29T18:15:00",
+        "access": {},
+        "assigner": "security@huntr.dev",
+        "cvss": null,
+        "cwe": "CWE-352",
+        "id": "CVE-2022-4850",
+        "impact": {},
+        "last-modified": "2022-12-29T22:24:00",
+        "references": [
+            "https://github.com/usememos/memos/commit/c9bb2b785dc5852655405d5c9ab127a2d5aa3948",
+            "https://huntr.dev/bounties/46dc4728-eacc-43f5-9831-c203fdbcc346"
+        ],
+        "summary": "Cross-Site Request Forgery (CSRF) in GitHub repository usememos/memos prior to 0.9.1."
+    },
+    {
+        "Modified": "2022-12-29T22:24:00",
+        "Published": "2022-12-29T18:15:00",
+        "access": {},
+        "assigner": "security@huntr.dev",
+        "cvss": null,
+        "cwe": "CWE-229",
+        "id": "CVE-2022-4851",
+        "impact": {},
+        "last-modified": "2022-12-29T22:24:00",
+        "references": [
+            "https://github.com/usememos/memos/commit/3556ae4e651d9443dc3bb8a170dd3cc726517a53",
+            "https://huntr.dev/bounties/e3cebc1a-1326-4a08-abad-0414a717fa0f"
+        ],
+        "summary": "Improper Handling of Values in GitHub repository usememos/memos prior to 0.9.1."
+    },
+    {
+        "Modified": "2022-12-29T21:33:00",
+        "Published": "2022-12-21T19:15:00",
+        "access": {},
+        "assigner": "cna@vuldb.com",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2022-4631",
+        "impact": {},
+        "last-modified": "2022-12-29T21:33:00",
+        "references": [
+            "https://github.com/lesterchan/wp-ban/commit/22b925449c84faa9b7496abe4f8f5661cb5eb3bf",
+            "https://vuldb.com/?id.216480"
+        ],
+        "summary": "A vulnerability, which was classified as problematic, was found in WP-Ban. Affected is an unknown function of the file ban-options.php. The manipulation leads to cross site scripting. It is possible to launch the attack remotely. The name of the patch is 22b925449c84faa9b7496abe4f8f5661cb5eb3bf. It is recommended to upgrade the affected component. The identifier of this vulnerability is VDB-216480."
+    },
+    {
+        "Modified": "2022-12-29T21:20:00",
+        "Published": "2022-12-21T22:15:00",
+        "access": {},
+        "assigner": "cna@vuldb.com",
+        "cvss": null,
+        "cwe": "CWE-377",
+        "id": "CVE-2022-4641",
+        "impact": {},
+        "last-modified": "2022-12-29T21:20:00",
+        "references": [
+            "https://github.com/tdunning/pig-vector/pull/2",
+            "https://github.com/tdunning/pig-vector/commit/1e7bd9fab5401a2df18d2eabd802adcf0dcf1f15",
+            "https://vuldb.com/?id.216500"
+        ],
+        "summary": "A vulnerability was found in pig-vector and classified as problematic. Affected by this issue is the function LogisticRegression of the file src/main/java/org/apache/mahout/pig/LogisticRegression.java. The manipulation leads to insecure temporary file. The attack needs to be approached locally. The name of the patch is 1e7bd9fab5401a2df18d2eabd802adcf0dcf1f15. It is recommended to apply a patch to fix this issue. The identifier of this vulnerability is VDB-216500."
+    },
+    {
         "Modified": "2022-12-29T20:33:00",
         "Published": "2022-12-22T10:15:00",
         "access": {},
@@ -84,156 +575,6 @@
             "https://github.com/auth0/node-jsonwebtoken/commit/e1fa9dcc12054a8681db4e6373da1b30cf7016e3"
         ],
         "summary": "jsonwebtoken is an implementation of JSON Web Tokens. Versions `<= 8.5.1` of `jsonwebtoken` library can be misconfigured so that passing a poorly implemented key retrieval function referring to the `secretOrPublicKey` argument from the readme link will result in incorrect verification of tokens. There is a possibility of using a different algorithm and key combination in verification, other than the one that was used to sign the tokens. Specifically, tokens signed with an asymmetric public key could be verified with a symmetric HS256 algorithm. This can lead to successful validation of forged tokens. If your application is supporting usage of both symmetric key and asymmetric key in jwt.verify() implementation with the same key retrieval function. This issue has been patched, please update to version 9.0.0."
-    },
-    {
-        "Modified": "2022-12-29T20:15:00",
-        "Published": "2022-12-29T20:15:00",
-        "access": {},
-        "assigner": "psirt@esri.com",
-        "cvss": null,
-        "cwe": "CWE-918",
-        "id": "CVE-2022-38203",
-        "impact": {},
-        "last-modified": "2022-12-29T20:15:00",
-        "references": [
-            "https://www.esri.com/arcgis-blog/products/trust-arcgis/administration/portal-for-arcgis-security-2022-update-2-patch-is-now-available"
-        ],
-        "summary": "Protections against potential Server-Side Request Forgery (SSRF) vulnerabilities in Esri Portal for ArcGIS versions 10.8.1 and below were not fully honored and may allow a remote, unauthenticated attacker to forge requests to arbitrary URLs from the system, potentially leading to network enumeration or reading from hosts inside the network perimeter, a different issue than CVE-2022-38211 and CVE-2022-38212."
-    },
-    {
-        "Modified": "2022-12-29T20:15:00",
-        "Published": "2022-12-29T20:15:00",
-        "access": {},
-        "assigner": "psirt@esri.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-38204",
-        "impact": {},
-        "last-modified": "2022-12-29T20:15:00",
-        "references": [
-            "https://www.esri.com/arcgis-blog/products/trust-arcgis/administration/portal-for-arcgis-security-2022-update-2-patch-is-now-available"
-        ],
-        "summary": "There is a reflected XSS vulnerability in Esri Portal for ArcGIS versions 10.8.1 and 10.7.1 which may allow a remote, unauthenticated attacker to create a crafted link which when clicked could potentially execute arbitrary JavaScript code in the victim\u2019s browser."
-    },
-    {
-        "Modified": "2022-12-29T20:15:00",
-        "Published": "2022-12-29T20:15:00",
-        "access": {},
-        "assigner": "psirt@esri.com",
-        "cvss": null,
-        "cwe": "CWE-23",
-        "id": "CVE-2022-38205",
-        "impact": {},
-        "last-modified": "2022-12-29T20:15:00",
-        "references": [
-            "https://www.esri.com/arcgis-blog/products/trust-arcgis/administration/portal-for-arcgis-security-2022-update-2-patch-is-now-available"
-        ],
-        "summary": "In some non-default installations of Esri Portal for ArcGIS versions 10.9.1 and below, a directory traversal issue may allow a remote, unauthenticated attacker to traverse the file system and lead to the disclosure of sensitive data (not customer-published content)."
-    },
-    {
-        "Modified": "2022-12-29T20:15:00",
-        "Published": "2022-12-29T20:15:00",
-        "access": {},
-        "assigner": "psirt@esri.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-38206",
-        "impact": {},
-        "last-modified": "2022-12-29T20:15:00",
-        "references": [
-            "https://www.esri.com/arcgis-blog/products/trust-arcgis/administration/portal-for-arcgis-security-2022-update-2-patch-is-now-available"
-        ],
-        "summary": "There is a reflected XSS vulnerability in Esri Portal for ArcGIS versions 10.9.1 and below which may allow a remote remote, unauthenticated attacker to create a crafted link which when clicked could execute arbitrary JavaScript code in the victim\u2019s browser."
-    },
-    {
-        "Modified": "2022-12-29T20:15:00",
-        "Published": "2022-12-29T20:15:00",
-        "access": {},
-        "assigner": "psirt@esri.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-38207",
-        "impact": {},
-        "last-modified": "2022-12-29T20:15:00",
-        "references": [
-            "https://www.esri.com/arcgis-blog/products/trust-arcgis/administration/portal-for-arcgis-security-2022-update-2-patch-is-now-available"
-        ],
-        "summary": "There is a reflected XSS vulnerability in Esri Portal for ArcGIS versions 10.8.1 and 10.7.1 which may allow a remote remote, unauthenticated attacker to create a crafted link which when clicked which could execute arbitrary JavaScript code in the victim\u2019s browser."
-    },
-    {
-        "Modified": "2022-12-29T20:15:00",
-        "Published": "2022-12-29T20:15:00",
-        "access": {},
-        "assigner": "psirt@esri.com",
-        "cvss": null,
-        "cwe": "CWE-601",
-        "id": "CVE-2022-38208",
-        "impact": {},
-        "last-modified": "2022-12-29T20:15:00",
-        "references": [
-            "https://www.esri.com/arcgis-blog/products/trust-arcgis/administration/portal-for-arcgis-security-2022-update-2-patch-is-now-available"
-        ],
-        "summary": "There is an unvalidated redirect vulnerability in Esri Portal for ArcGIS 11 and below that may allow a remote, unauthenticated attacker to craft a URL that could redirect a victim to an arbitrary website, simplifying phishing attacks."
-    },
-    {
-        "Modified": "2022-12-29T20:15:00",
-        "Published": "2022-12-29T20:15:00",
-        "access": {},
-        "assigner": "psirt@esri.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-38209",
-        "impact": {},
-        "last-modified": "2022-12-29T20:15:00",
-        "references": [
-            "https://www.esri.com/arcgis-blog/products/trust-arcgis/administration/portal-for-arcgis-security-2022-update-2-patch-is-now-available"
-        ],
-        "summary": "There is a reflected XSS vulnerability in Esri Portal for ArcGIS versions 10.9.1 and below which may allow a remote, unauthenticated attacker to create a crafted link which when clicked could execute arbitrary JavaScript code in the victim\u2019s browser."
-    },
-    {
-        "Modified": "2022-12-29T20:15:00",
-        "Published": "2022-12-29T20:15:00",
-        "access": {},
-        "assigner": "psirt@esri.com",
-        "cvss": null,
-        "cwe": "CWE-80",
-        "id": "CVE-2022-38210",
-        "impact": {},
-        "last-modified": "2022-12-29T20:15:00",
-        "references": [
-            "https://www.esri.com/arcgis-blog/products/trust-arcgis/administration/portal-for-arcgis-security-2022-update-2-patch-is-now-available"
-        ],
-        "summary": "There is a reflected HTML injection vulnerability in Esri Portal for ArcGIS versions 10.9.1 and below that may allow a remote, unauthenticated attacker to create a crafted link which when clicked could render arbitrary HTML in the victim\u00e2\u20ac\u2122s browser."
-    },
-    {
-        "Modified": "2022-12-29T20:15:00",
-        "Published": "2022-12-29T20:15:00",
-        "access": {},
-        "assigner": "psirt@esri.com",
-        "cvss": null,
-        "cwe": "CWE-918",
-        "id": "CVE-2022-38211",
-        "impact": {},
-        "last-modified": "2022-12-29T20:15:00",
-        "references": [
-            "https://www.esri.com/arcgis-blog/products/trust-arcgis/administration/portal-for-arcgis-security-2022-update-2-patch-is-now-available"
-        ],
-        "summary": " Protections against potential Server-Side Request Forgery (SSRF) vulnerabilities in Esri Portal for ArcGIS versions 10.9.1 and below were not fully honored and may allow a remote, unauthenticated attacker to forge requests to arbitrary URLs from the system, potentially leading to network enumeration or reading from hosts inside the network perimeter, a different issue than CVE-2022-38211 and CVE-2022-38212. "
-    },
-    {
-        "Modified": "2022-12-29T20:15:00",
-        "Published": "2022-12-29T20:15:00",
-        "access": {},
-        "assigner": "psirt@esri.com",
-        "cvss": null,
-        "cwe": "CWE-918",
-        "id": "CVE-2022-38212",
-        "impact": {},
-        "last-modified": "2022-12-29T20:15:00",
-        "references": [
-            "https://www.esri.com/arcgis-blog/products/trust-arcgis/administration/portal-for-arcgis-security-2022-update-2-patch-is-now-available"
-        ],
-        "summary": "Protections against potential Server-Side Request Forgery (SSRF) vulnerabilities in Esri Portal for ArcGIS versions 10.8.1 and below were not fully honored and may allow a remote, unauthenticated attacker to forge requests to arbitrary URLs from the system, potentially leading to network enumeration or reading from hosts inside the network perimeter, a different issue than CVE-2022-38211 and CVE-2022-38203."
     },
     {
         "Modified": "2022-12-29T20:12:00",
@@ -353,38 +694,6 @@
             "https://github.com/mozilla-mobile/guardian-vpn-android/commit/981c840276ef3aee98cf5d42993d484ee99b28d9"
         ],
         "summary": "An OAuth session fixation vulnerability existed in the VPN login flow, where an attacker could craft a custom login URL, convince a VPN user to login via that URL, and obtain authenticated access as that user. This issue is limited to cases where attacker and victim are sharing the same source IP and could allow the ability to view session states and disconnect VPN sessions. This vulnerability affects Mozilla VPN iOS 1.0.7 < (929), Mozilla VPN Windows < 1.2.2, and Mozilla VPN Android 1.1.0 < (1360)."
-    },
-    {
-        "Modified": "2022-12-29T19:15:00",
-        "Published": "2022-12-29T19:15:00",
-        "access": {},
-        "assigner": "security-advisories@github.com",
-        "cvss": null,
-        "cwe": "CWE-22",
-        "id": "CVE-2022-46178",
-        "impact": {},
-        "last-modified": "2022-12-29T19:15:00",
-        "references": [
-            "https://github.com/metersphere/metersphere/security/advisories/GHSA-9p62-x3c5-hr5p"
-        ],
-        "summary": "MeterSphere is a one-stop open source continuous testing platform, covering test management, interface testing, UI testing and performance testing. Versions prior to 2.5.1 allow users to upload a file, but do not validate the file name, which may lead to upload file to any path. The vulnerability has been fixed in v2.5.1. There are no workarounds."
-    },
-    {
-        "Modified": "2022-12-29T19:15:00",
-        "Published": "2022-12-29T19:15:00",
-        "access": {},
-        "assigner": "security-advisories@github.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-46181",
-        "impact": {},
-        "last-modified": "2022-12-29T19:15:00",
-        "references": [
-            "https://github.com/gotify/server/pull/535",
-            "https://github.com/gotify/server/pull/534",
-            "https://github.com/gotify/server/security/advisories/GHSA-xv6x-456v-24xh"
-        ],
-        "summary": "Gotify server is a simple server for sending and receiving messages in real-time per WebSocket. Versions prior to 2.2.2 contain an XSS vulnerability that allows authenticated users to upload .html files. An attacker could execute client side scripts **if** another user opened a link. The attacker could potentially take over the account of the user that clicked the link. The Gotify UI won't natively expose such a malicious link, so an attacker has to get the user to open the malicious link in a context outside of Gotify. The vulnerability has been fixed in version 2.2.2. As a workaround, you can block access to non image files via a reverse proxy in the `./image` directory."
     },
     {
         "Modified": "2022-12-29T18:56:00",
@@ -754,150 +1063,6 @@
     },
     {
         "Modified": "2022-12-29T18:15:00",
-        "Published": "2022-12-29T18:15:00",
-        "access": {},
-        "assigner": "security@huntr.dev",
-        "cvss": null,
-        "cwe": "CWE-476",
-        "id": "CVE-2022-4843",
-        "impact": {},
-        "last-modified": "2022-12-29T18:15:00",
-        "references": [
-            "https://huntr.dev/bounties/075b2760-66a0-4d38-b3b5-e9934956ab7f",
-            "https://github.com/radareorg/radare2/commit/842f809d4ec6a12af2906f948657281c9ebc8a24"
-        ],
-        "summary": "NULL Pointer Dereference in GitHub repository radareorg/radare2 prior to 5.8.2."
-    },
-    {
-        "Modified": "2022-12-29T18:15:00",
-        "Published": "2022-12-29T18:15:00",
-        "access": {},
-        "assigner": "security@huntr.dev",
-        "cvss": null,
-        "cwe": "CWE-352",
-        "id": "CVE-2022-4844",
-        "impact": {},
-        "last-modified": "2022-12-29T18:15:00",
-        "references": [
-            "https://huntr.dev/bounties/8e8df1f4-07ab-4b75-aec8-75b1229e93a3",
-            "https://github.com/usememos/memos/commit/c9bb2b785dc5852655405d5c9ab127a2d5aa3948"
-        ],
-        "summary": "Cross-Site Request Forgery (CSRF) in GitHub repository usememos/memos prior to 0.9.1."
-    },
-    {
-        "Modified": "2022-12-29T18:15:00",
-        "Published": "2022-12-29T18:15:00",
-        "access": {},
-        "assigner": "security@huntr.dev",
-        "cvss": null,
-        "cwe": "CWE-352",
-        "id": "CVE-2022-4845",
-        "impact": {},
-        "last-modified": "2022-12-29T18:15:00",
-        "references": [
-            "https://github.com/usememos/memos/commit/c9bb2b785dc5852655405d5c9ab127a2d5aa3948",
-            "https://huntr.dev/bounties/075dbd51-b078-436c-9e3d-7f25cd2e7e1b"
-        ],
-        "summary": "Cross-Site Request Forgery (CSRF) in GitHub repository usememos/memos prior to 0.9.1."
-    },
-    {
-        "Modified": "2022-12-29T18:15:00",
-        "Published": "2022-12-29T18:15:00",
-        "access": {},
-        "assigner": "security@huntr.dev",
-        "cvss": null,
-        "cwe": "CWE-352",
-        "id": "CVE-2022-4846",
-        "impact": {},
-        "last-modified": "2022-12-29T18:15:00",
-        "references": [
-            "https://github.com/usememos/memos/commit/c9bb2b785dc5852655405d5c9ab127a2d5aa3948",
-            "https://huntr.dev/bounties/38c685fc-7065-472d-a46e-e26bf0b556d3"
-        ],
-        "summary": "Cross-Site Request Forgery (CSRF) in GitHub repository usememos/memos prior to 0.9.1."
-    },
-    {
-        "Modified": "2022-12-29T18:15:00",
-        "Published": "2022-12-29T18:15:00",
-        "access": {},
-        "assigner": "security@huntr.dev",
-        "cvss": null,
-        "cwe": "CWE-941",
-        "id": "CVE-2022-4847",
-        "impact": {},
-        "last-modified": "2022-12-29T18:15:00",
-        "references": [
-            "https://github.com/usememos/memos/commit/c9bb2b785dc5852655405d5c9ab127a2d5aa3948",
-            "https://huntr.dev/bounties/ff6d4b5a-5e75-4a14-b5ce-f318f8613b73"
-        ],
-        "summary": "Incorrectly Specified Destination in a Communication Channel in GitHub repository usememos/memos prior to 0.9.1."
-    },
-    {
-        "Modified": "2022-12-29T18:15:00",
-        "Published": "2022-12-29T18:15:00",
-        "access": {},
-        "assigner": "security@huntr.dev",
-        "cvss": null,
-        "cwe": "CWE-940",
-        "id": "CVE-2022-4848",
-        "impact": {},
-        "last-modified": "2022-12-29T18:15:00",
-        "references": [
-            "https://github.com/usememos/memos/commit/c9bb2b785dc5852655405d5c9ab127a2d5aa3948",
-            "https://huntr.dev/bounties/25de88cc-8d0d-41a1-b069-9ef1327770bc"
-        ],
-        "summary": "Improper Verification of Source of a Communication Channel in GitHub repository usememos/memos prior to 0.9.1."
-    },
-    {
-        "Modified": "2022-12-29T18:15:00",
-        "Published": "2022-12-29T18:15:00",
-        "access": {},
-        "assigner": "security@huntr.dev",
-        "cvss": null,
-        "cwe": "CWE-352",
-        "id": "CVE-2022-4849",
-        "impact": {},
-        "last-modified": "2022-12-29T18:15:00",
-        "references": [
-            "https://huntr.dev/bounties/404ce7dd-f345-4d98-ad80-c53ac74f4e5c",
-            "https://github.com/usememos/memos/commit/c9bb2b785dc5852655405d5c9ab127a2d5aa3948"
-        ],
-        "summary": "Cross-Site Request Forgery (CSRF) in GitHub repository usememos/memos prior to 0.9.1."
-    },
-    {
-        "Modified": "2022-12-29T18:15:00",
-        "Published": "2022-12-29T18:15:00",
-        "access": {},
-        "assigner": "security@huntr.dev",
-        "cvss": null,
-        "cwe": "CWE-352",
-        "id": "CVE-2022-4850",
-        "impact": {},
-        "last-modified": "2022-12-29T18:15:00",
-        "references": [
-            "https://github.com/usememos/memos/commit/c9bb2b785dc5852655405d5c9ab127a2d5aa3948",
-            "https://huntr.dev/bounties/46dc4728-eacc-43f5-9831-c203fdbcc346"
-        ],
-        "summary": "Cross-Site Request Forgery (CSRF) in GitHub repository usememos/memos prior to 0.9.1."
-    },
-    {
-        "Modified": "2022-12-29T18:15:00",
-        "Published": "2022-12-29T18:15:00",
-        "access": {},
-        "assigner": "security@huntr.dev",
-        "cvss": null,
-        "cwe": "CWE-229",
-        "id": "CVE-2022-4851",
-        "impact": {},
-        "last-modified": "2022-12-29T18:15:00",
-        "references": [
-            "https://github.com/usememos/memos/commit/3556ae4e651d9443dc3bb8a170dd3cc726517a53",
-            "https://huntr.dev/bounties/e3cebc1a-1326-4a08-abad-0414a717fa0f"
-        ],
-        "summary": "Improper Handling of Values in GitHub repository usememos/memos prior to 0.9.1."
-    },
-    {
-        "Modified": "2022-12-29T18:15:00",
         "Published": "2022-12-22T20:15:00",
         "access": {},
         "assigner": "security@mozilla.org",
@@ -1139,54 +1304,6 @@
             "https://github.com/bradleyfalzon/ghinstallation/commit/d24f14f8be70d94129d76026e8b0f4f9170c8c3e"
         ],
         "summary": "ghinstallation provides transport, which implements http.RoundTripper to provide authentication as an installation for GitHub Apps. In ghinstallation version 1, when the request to refresh an installation token failed, the HTTP request and response would be returned for debugging. The request contained the bearer JWT for the App, and was returned back to clients. This token is short lived (10 minute maximum). This issue has been patched and is available in version 2.0.0."
-    },
-    {
-        "Modified": "2022-12-29T17:15:00",
-        "Published": "2022-12-29T17:15:00",
-        "access": {},
-        "assigner": "security@huntr.dev",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-4839",
-        "impact": {},
-        "last-modified": "2022-12-29T17:15:00",
-        "references": [
-            "https://huntr.dev/bounties/ad954cab-f026-4895-8003-99f5e3b507ed",
-            "https://github.com/usememos/memos/commit/64e5c343c5f74b0abdf3ac0d21a6139daea58cf8"
-        ],
-        "summary": "Cross-site Scripting (XSS) - Stored in GitHub repository usememos/memos prior to 0.9.1."
-    },
-    {
-        "Modified": "2022-12-29T17:15:00",
-        "Published": "2022-12-29T17:15:00",
-        "access": {},
-        "assigner": "security@huntr.dev",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-4840",
-        "impact": {},
-        "last-modified": "2022-12-29T17:15:00",
-        "references": [
-            "https://github.com/usememos/memos/commit/64e5c343c5f74b0abdf3ac0d21a6139daea58cf8",
-            "https://huntr.dev/bounties/b42aa2e9-c783-464c-915c-a80cb464ee01"
-        ],
-        "summary": "Cross-site Scripting (XSS) - Stored in GitHub repository usememos/memos prior to 0.9.1."
-    },
-    {
-        "Modified": "2022-12-29T17:15:00",
-        "Published": "2022-12-29T17:15:00",
-        "access": {},
-        "assigner": "security@huntr.dev",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-4841",
-        "impact": {},
-        "last-modified": "2022-12-29T17:15:00",
-        "references": [
-            "https://github.com/usememos/memos/commit/64e5c343c5f74b0abdf3ac0d21a6139daea58cf8",
-            "https://huntr.dev/bounties/fa46b3ef-c621-443a-be3a-0a83fb78ba62"
-        ],
-        "summary": "Cross-site Scripting (XSS) - Stored in GitHub repository usememos/memos prior to 0.9.1."
     },
     {
         "Modified": "2022-12-29T17:15:00",
@@ -1538,127 +1655,5 @@
             "https://bugzilla.mozilla.org/show_bug.cgi?id=1742382"
         ],
         "summary": "Applying a CSS filter effect could have accessed out of bounds memory. This could have lead to a heap-buffer-overflow causing a potentially exploitable crash. This vulnerability affects Firefox ESR < 91.5, Firefox < 96, and Thunderbird < 91.5."
-    },
-    {
-        "Modified": "2022-12-29T15:47:00",
-        "Published": "2022-12-22T20:15:00",
-        "access": {},
-        "assigner": "security@mozilla.org",
-        "cvss": null,
-        "cwe": "NVD-CWE-noinfo",
-        "id": "CVE-2022-22739",
-        "impact": {},
-        "last-modified": "2022-12-29T15:47:00",
-        "references": [
-            "https://www.mozilla.org/security/advisories/mfsa2022-02/",
-            "https://www.mozilla.org/security/advisories/mfsa2022-01/",
-            "https://bugzilla.mozilla.org/show_bug.cgi?id=1744158",
-            "https://www.mozilla.org/security/advisories/mfsa2022-03/"
-        ],
-        "summary": "Malicious websites could have tricked users into accepting launching a program to handle an external URL protocol. This vulnerability affects Firefox ESR < 91.5, Firefox < 96, and Thunderbird < 91.5."
-    },
-    {
-        "Modified": "2022-12-29T15:34:00",
-        "Published": "2022-12-22T20:15:00",
-        "access": {},
-        "assigner": "security@mozilla.org",
-        "cvss": null,
-        "cwe": "CWE-416",
-        "id": "CVE-2022-22740",
-        "impact": {},
-        "last-modified": "2022-12-29T15:34:00",
-        "references": [
-            "https://www.mozilla.org/security/advisories/mfsa2022-02/",
-            "https://www.mozilla.org/security/advisories/mfsa2022-01/",
-            "https://bugzilla.mozilla.org/show_bug.cgi?id=1742334",
-            "https://www.mozilla.org/security/advisories/mfsa2022-03/"
-        ],
-        "summary": "Certain network request objects were freed too early when releasing a network request handle. This could have lead to a use-after-free causing a potentially exploitable crash. This vulnerability affects Firefox ESR < 91.5, Firefox < 96, and Thunderbird < 91.5."
-    },
-    {
-        "Modified": "2022-12-29T15:17:00",
-        "Published": "2022-12-22T02:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-428",
-        "id": "CVE-2021-36631",
-        "impact": {},
-        "last-modified": "2022-12-29T15:17:00",
-        "references": [
-            "https://github.com/shigophilo/CVE/blob/main/Baidunetdisk%20Version%207.4.3%20dll%20hijack.md"
-        ],
-        "summary": "Untrusted search path vulnerability in Baidunetdisk Version 7.4.3 and earlier allows an attacker to gain privileges via a Trojan horse DLL in an unspecified directory."
-    },
-    {
-        "Modified": "2022-12-29T15:15:00",
-        "Published": "2022-08-22T08:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-862",
-        "id": "CVE-2022-2841",
-        "impact": {},
-        "last-modified": "2022-12-29T15:15:00",
-        "references": [
-            "https://www.modzero.com/modlog/archives/2022/08/22/ridiculous_vulnerability_disclosure_process_with_crowdstrike_falcon_sensor/index.html",
-            "https://www.modzero.com/advisories/MZ-22-02-CrowdStrike-FalconSensor.txt",
-            "https://youtu.be/3If-Fqwx-4s",
-            "https://vuldb.com/?id.206880",
-            "https://vuldb.com/?ctiid.206880"
-        ],
-        "summary": "A vulnerability was found in CrowdStrike Falcon 6.31.14505.0/6.42.15610/6.44.15806. It has been classified as problematic. Affected is an unknown function of the component Uninstallation Handler. The manipulation leads to missing authorization. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used. Upgrading to version 6.40.15409, 6.42.15611 and 6.44.15807 is able to address this issue. It is recommended to upgrade the affected component. The identifier of this vulnerability is VDB-206880."
-    },
-    {
-        "Modified": "2022-12-29T15:10:00",
-        "Published": "2022-12-21T22:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-78",
-        "id": "CVE-2022-4643",
-        "impact": {},
-        "last-modified": "2022-12-29T15:10:00",
-        "references": [
-            "https://vuldb.com/?id.216502",
-            "https://github.com/sajari/docconv/pull/110",
-            "https://github.com/sajari/docconv/commit/b19021ade3d0b71c89d35cb00eb9e589a121faa5",
-            "https://github.com/sajari/docconv/releases/tag/v1.2.1"
-        ],
-        "summary": "A vulnerability was found in docconv up to 1.2.0. It has been declared as critical. This vulnerability affects the function ConvertPDFImages of the file pdf_ocr.go. The manipulation of the argument path leads to os command injection. The attack can be initiated remotely. Upgrading to version 1.2.1 is able to address this issue. The name of the patch is b19021ade3d0b71c89d35cb00eb9e589a121faa5. It is recommended to upgrade the affected component. VDB-216502 is the identifier assigned to this vulnerability."
-    },
-    {
-        "Modified": "2022-12-29T15:09:00",
-        "Published": "2022-12-21T22:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-4642",
-        "impact": {},
-        "last-modified": "2022-12-29T15:09:00",
-        "references": [
-            "https://github.com/Tatoeba/tatoeba2/issues/3002",
-            "https://vuldb.com/?id.216501",
-            "https://github.com/Tatoeba/tatoeba2/releases/tag/prod_2022-10-30",
-            "https://github.com/Tatoeba/tatoeba2/commit/91110777fc8ddf1b4a2cf4e66e67db69b9700361"
-        ],
-        "summary": "A vulnerability was found in tatoeba2. It has been classified as problematic. This affects an unknown part of the component Profile Name Handler. The manipulation leads to cross site scripting. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. Upgrading to version prod_2022-10-30 is able to address this issue. The name of the patch is 91110777fc8ddf1b4a2cf4e66e67db69b9700361. It is recommended to upgrade the affected component. The identifier VDB-216501 was assigned to this vulnerability."
-    },
-    {
-        "Modified": "2022-12-29T15:03:00",
-        "Published": "2022-12-22T02:15:00",
-        "access": {},
-        "assigner": "security@huntr.dev",
-        "cvss": null,
-        "cwe": "CWE-352",
-        "id": "CVE-2022-4646",
-        "impact": {},
-        "last-modified": "2022-12-29T15:03:00",
-        "references": [
-            "https://huntr.dev/bounties/17bc1b0f-1f5c-432f-88e4-c9866ccf6e10",
-            "https://github.com/ikus060/rdiffweb/commit/e6f0d8002129be90fe82fa3e3ea0a6942caba398"
-        ],
-        "summary": "Cross-Site Request Forgery (CSRF) in GitHub repository ikus060/rdiffweb prior to 2.5.4."
     }
 ]
