@@ -1,1715 +1,1326 @@
 [
     {
-        "Modified": "2022-12-30T20:56:00",
-        "Published": "2022-12-22T20:15:00",
-        "access": {},
-        "assigner": "security@mozilla.org",
-        "cvss": null,
-        "cwe": "NVD-CWE-noinfo",
-        "id": "CVE-2022-26384",
-        "impact": {},
-        "last-modified": "2022-12-30T20:56:00",
-        "references": [
-            "https://www.mozilla.org/security/advisories/mfsa2022-12/",
-            "https://www.mozilla.org/security/advisories/mfsa2022-11/",
-            "https://www.mozilla.org/security/advisories/mfsa2022-10/",
-            "https://bugzilla.mozilla.org/show_bug.cgi?id=1744352"
-        ],
-        "summary": "If an attacker could control the contents of an iframe sandboxed with <code>allow-popups</code> but not <code>allow-scripts</code>, they were able to craft a link that, when clicked, would lead to JavaScript execution in violation of the sandbox. This vulnerability affects Firefox < 98, Firefox ESR < 91.7, and Thunderbird < 91.7."
-    },
-    {
-        "Modified": "2022-12-30T20:55:00",
-        "Published": "2022-12-22T20:15:00",
-        "access": {},
-        "assigner": "security@mozilla.org",
-        "cvss": null,
-        "cwe": "CWE-787",
-        "id": "CVE-2022-28281",
-        "impact": {},
-        "last-modified": "2022-12-30T20:55:00",
-        "references": [
-            "https://www.mozilla.org/security/advisories/mfsa2022-13/",
-            "https://bugzilla.mozilla.org/show_bug.cgi?id=1755621",
-            "https://www.mozilla.org/security/advisories/mfsa2022-15/",
-            "https://www.mozilla.org/security/advisories/mfsa2022-14/"
-        ],
-        "summary": "If a compromised content process sent an unexpected number of WebAuthN Extensions in a Register command to the parent process, an out of bounds write would have occurred leading to memory corruption and a potentially exploitable crash. This vulnerability affects Thunderbird < 91.8, Firefox < 99, and Firefox ESR < 91.8."
-    },
-    {
-        "Modified": "2022-12-30T20:55:00",
-        "Published": "2022-12-22T20:15:00",
-        "access": {},
-        "assigner": "security@mozilla.org",
-        "cvss": null,
-        "cwe": "CWE-416",
-        "id": "CVE-2022-26486",
-        "impact": {},
-        "last-modified": "2022-12-30T20:55:00",
-        "references": [
-            "https://bugzilla.mozilla.org/show_bug.cgi?id=1758070",
-            "https://www.mozilla.org/security/advisories/mfsa2022-09/"
-        ],
-        "summary": "An unexpected message in the WebGPU IPC framework could lead to a use-after-free and exploitable sandbox escape. We have had reports of attacks in the wild abusing this flaw. This vulnerability affects Firefox < 97.0.2, Firefox ESR < 91.6.1, Firefox for Android < 97.3.0, Thunderbird < 91.6.2, and Focus < 97.3.0."
-    },
-    {
-        "Modified": "2022-12-30T20:54:00",
-        "Published": "2022-12-22T20:15:00",
-        "access": {},
-        "assigner": "security@mozilla.org",
-        "cvss": null,
-        "cwe": "NVD-CWE-noinfo",
-        "id": "CVE-2022-28283",
-        "impact": {},
-        "last-modified": "2022-12-30T20:54:00",
-        "references": [
-            "https://bugzilla.mozilla.org/show_bug.cgi?id=1754066",
-            "https://www.mozilla.org/security/advisories/mfsa2022-13/"
-        ],
-        "summary": "The sourceMapURL feature in devtools was missing security checks that would have allowed a webpage to attempt to include local files or other files that should have been inaccessible. This vulnerability affects Firefox < 99."
-    },
-    {
-        "Modified": "2022-12-30T20:54:00",
-        "Published": "2022-12-22T20:15:00",
-        "access": {},
-        "assigner": "security@mozilla.org",
-        "cvss": null,
-        "cwe": "CWE-416",
-        "id": "CVE-2022-28282",
-        "impact": {},
-        "last-modified": "2022-12-30T20:54:00",
-        "references": [
-            "https://bugzilla.mozilla.org/show_bug.cgi?id=1751609",
-            "https://www.mozilla.org/security/advisories/mfsa2022-13/",
-            "https://www.mozilla.org/security/advisories/mfsa2022-15/",
-            "https://www.mozilla.org/security/advisories/mfsa2022-14/"
-        ],
-        "summary": "By using a link with <code>rel=\"localization\"</code> a use-after-free could have been triggered by destroying an object during JavaScript execution and then referencing the object through a freed pointer, leading to a potential exploitable crash. This vulnerability affects Thunderbird < 91.8, Firefox < 99, and Firefox ESR < 91.8."
-    },
-    {
-        "Modified": "2022-12-30T20:53:00",
-        "Published": "2022-12-22T20:15:00",
-        "access": {},
-        "assigner": "security@mozilla.org",
-        "cvss": null,
-        "cwe": "NVD-CWE-noinfo",
-        "id": "CVE-2022-28284",
-        "impact": {},
-        "last-modified": "2022-12-30T20:53:00",
-        "references": [
-            "https://www.mozilla.org/security/advisories/mfsa2022-13/",
-            "https://bugzilla.mozilla.org/show_bug.cgi?id=1754522"
-        ],
-        "summary": "SVG's <code>&lt;use&gt;</code> element could have been used to load unexpected content that could have executed script in certain circumstances. While the specification seems to allow this, other browsers do not, and web developers relied on this property for script security so gecko's implementation was aligned with theirs. This vulnerability affects Firefox < 99."
-    },
-    {
-        "Modified": "2022-12-30T20:46:00",
-        "Published": "2022-12-22T20:15:00",
-        "access": {},
-        "assigner": "security@mozilla.org",
-        "cvss": null,
-        "cwe": "NVD-CWE-noinfo",
-        "id": "CVE-2022-28285",
-        "impact": {},
-        "last-modified": "2022-12-30T20:46:00",
-        "references": [
-            "https://www.mozilla.org/security/advisories/mfsa2022-13/",
-            "https://www.mozilla.org/security/advisories/mfsa2022-15/",
-            "https://bugzilla.mozilla.org/show_bug.cgi?id=1756957",
-            "https://www.mozilla.org/security/advisories/mfsa2022-14/"
-        ],
-        "summary": "When generating the assembly code for <code>MLoadTypedArrayElementHole</code>, an incorrect AliasSet was used. In conjunction with another vulnerability this could have been used for an out of bounds memory read. This vulnerability affects Thunderbird < 91.8, Firefox < 99, and Firefox ESR < 91.8."
-    },
-    {
-        "Modified": "2022-12-30T20:45:00",
-        "Published": "2022-12-22T20:15:00",
-        "access": {},
-        "assigner": "security@mozilla.org",
-        "cvss": null,
-        "cwe": "CWE-1021",
-        "id": "CVE-2022-28286",
-        "impact": {},
-        "last-modified": "2022-12-30T20:45:00",
-        "references": [
-            "https://www.mozilla.org/security/advisories/mfsa2022-13/",
-            "https://bugzilla.mozilla.org/show_bug.cgi?id=1735265",
-            "https://www.mozilla.org/security/advisories/mfsa2022-15/",
-            "https://www.mozilla.org/security/advisories/mfsa2022-14/"
-        ],
-        "summary": "Due to a layout change, iframe contents could have been rendered outside of its border. This could have led to user confusion or spoofing attacks. This vulnerability affects Thunderbird < 91.8, Firefox < 99, and Firefox ESR < 91.8."
-    },
-    {
-        "Modified": "2022-12-30T20:43:00",
-        "Published": "2022-12-22T20:15:00",
-        "access": {},
-        "assigner": "security@mozilla.org",
-        "cvss": null,
-        "cwe": "NVD-CWE-noinfo",
-        "id": "CVE-2022-28287",
-        "impact": {},
-        "last-modified": "2022-12-30T20:43:00",
-        "references": [
-            "https://www.mozilla.org/security/advisories/mfsa2022-13/",
-            "https://bugzilla.mozilla.org/show_bug.cgi?id=1741515"
-        ],
-        "summary": "In unusual circumstances, selecting text could cause text selection caching to behave incorrectly, leading to a crash. This vulnerability affects Firefox < 99."
-    },
-    {
-        "Modified": "2022-12-30T20:43:00",
-        "Published": "2022-12-22T20:15:00",
-        "access": {},
-        "assigner": "security@mozilla.org",
-        "cvss": null,
-        "cwe": "CWE-787",
-        "id": "CVE-2022-28288",
-        "impact": {},
-        "last-modified": "2022-12-30T20:43:00",
-        "references": [
-            "https://www.mozilla.org/security/advisories/mfsa2022-13/",
-            "https://bugzilla.mozilla.org/buglist.cgi?bug_id=1746415%2C1746495%2C1746500%2C1747282%2C1748759%2C1749056%2C1749786%2C1751679%2C1752120%2C1756010%2C1756017%2C1757213%2C1757258%2C1757427"
-        ],
-        "summary": "Mozilla developers and community members Randell Jesup, Sebastian Hengst, and the Mozilla Fuzzing Team reported memory safety bugs present in Firefox 98. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code. This vulnerability affects Firefox < 99."
-    },
-    {
-        "Modified": "2022-12-30T20:42:00",
-        "Published": "2022-12-22T20:15:00",
-        "access": {},
-        "assigner": "security@mozilla.org",
-        "cvss": null,
-        "cwe": "CWE-787",
-        "id": "CVE-2022-28289",
-        "impact": {},
-        "last-modified": "2022-12-30T20:42:00",
-        "references": [
-            "https://www.mozilla.org/security/advisories/mfsa2022-13/",
-            "https://bugzilla.mozilla.org/buglist.cgi?bug_id=1663508%2C1744525%2C1753508%2C1757476%2C1757805%2C1758549%2C1758776",
-            "https://www.mozilla.org/security/advisories/mfsa2022-15/",
-            "https://www.mozilla.org/security/advisories/mfsa2022-14/"
-        ],
-        "summary": "Mozilla developers and community members Nika Layzell, Andrew McCreight, Gabriele Svelto, and the Mozilla Fuzzing Team reported memory safety bugs present in Thunderbird 91.7. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code. This vulnerability affects Thunderbird < 91.8, Firefox < 99, and Firefox ESR < 91.8."
-    },
-    {
-        "Modified": "2022-12-30T20:42:00",
-        "Published": "2022-12-22T20:15:00",
-        "access": {},
-        "assigner": "security@mozilla.org",
-        "cvss": null,
-        "cwe": "CWE-276",
-        "id": "CVE-2022-29909",
-        "impact": {},
-        "last-modified": "2022-12-30T20:42:00",
-        "references": [
-            "https://www.mozilla.org/security/advisories/mfsa2022-17/",
-            "https://www.mozilla.org/security/advisories/mfsa2022-16/",
-            "https://bugzilla.mozilla.org/show_bug.cgi?id=1755081",
-            "https://www.mozilla.org/security/advisories/mfsa2022-18/"
-        ],
-        "summary": "Documents in deeply-nested cross-origin browsing contexts could have obtained permissions granted to the top-level origin, bypassing the existing prompt and wrongfully inheriting the top-level permissions. This vulnerability affects Thunderbird < 91.9, Firefox ESR < 91.9, and Firefox < 100."
-    },
-    {
-        "Modified": "2022-12-30T20:15:00",
-        "Published": "2022-12-30T20:15:00",
+        "Modified": "2022-12-30T22:27:00",
+        "Published": "2022-12-23T15:15:00",
         "access": {},
         "assigner": "cve@mitre.org",
         "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-39159",
+        "cwe": "CWE-77",
+        "id": "CVE-2022-46642",
         "impact": {},
-        "last-modified": "2022-12-30T20:15:00",
-        "references": [],
-        "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none."
-    },
-    {
-        "Modified": "2022-12-30T18:45:00",
-        "Published": "2022-12-22T20:15:00",
-        "access": {},
-        "assigner": "security@mozilla.org",
-        "cvss": null,
-        "cwe": "CWE-190",
-        "id": "CVE-2022-34481",
-        "impact": {},
-        "last-modified": "2022-12-30T18:45:00",
+        "last-modified": "2022-12-30T22:27:00",
         "references": [
-            "https://www.mozilla.org/security/advisories/mfsa2022-24/",
-            "https://bugzilla.mozilla.org/show_bug.cgi?id=1497246",
-            "https://www.mozilla.org/security/advisories/mfsa2022-26/",
-            "https://www.mozilla.org/security/advisories/mfsa2022-25/"
+            "https://github.com/CyberUnicornIoT/IoTvuln/blob/main/d-link/dir-846/D-Link%20dir-846%20SetAutoUpgradeInfo%20command%20injection%20vulnerability.md",
+            "https://www.dlink.com/en/security-bulletin/"
         ],
-        "summary": "In the <code>nsTArray_Impl::ReplaceElementsAt()</code> function, an integer overflow could have occurred when the number of elements to replace was too large for the container. This vulnerability affects Firefox < 102, Firefox ESR < 91.11, Thunderbird < 102, and Thunderbird < 91.11."
+        "summary": "D-Link DIR-846 A1_FW100A43 was discovered to contain a command injection vulnerability via the auto_upgrade_hour parameter in the SetAutoUpgradeInfo function."
     },
     {
-        "Modified": "2022-12-30T18:29:00",
-        "Published": "2022-12-22T20:15:00",
+        "Modified": "2022-12-30T22:26:00",
+        "Published": "2022-12-23T15:15:00",
         "access": {},
-        "assigner": "security@mozilla.org",
-        "cvss": null,
-        "cwe": "CWE-824",
-        "id": "CVE-2022-34480",
-        "impact": {},
-        "last-modified": "2022-12-30T18:29:00",
-        "references": [
-            "https://www.mozilla.org/security/advisories/mfsa2022-24/",
-            "https://bugzilla.mozilla.org/show_bug.cgi?id=1454072"
-        ],
-        "summary": "Within the <code>lg_init()</code> function, if several allocations succeed but then one fails, an uninitialized pointer would have been freed despite never being allocated. This vulnerability affects Firefox < 102."
-    },
-    {
-        "Modified": "2022-12-30T18:18:00",
-        "Published": "2022-12-22T20:15:00",
-        "access": {},
-        "assigner": "security@mozilla.org",
-        "cvss": null,
-        "cwe": "NVD-CWE-noinfo",
-        "id": "CVE-2022-34483",
-        "impact": {},
-        "last-modified": "2022-12-30T18:18:00",
-        "references": [
-            "https://www.mozilla.org/security/advisories/mfsa2022-24/",
-            "https://bugzilla.mozilla.org/show_bug.cgi?id=1335845"
-        ],
-        "summary": "An attacker who could have convinced a user to drag and drop an image to a filesystem could have manipulated the resulting filename to contain an executable extension, and by extension potentially tricked the user into executing malicious code. While very similar, this is a separate issue from CVE-2022-34482. This vulnerability affects Firefox < 102."
-    },
-    {
-        "Modified": "2022-12-30T18:18:00",
-        "Published": "2022-12-22T20:15:00",
-        "access": {},
-        "assigner": "security@mozilla.org",
-        "cvss": null,
-        "cwe": "NVD-CWE-noinfo",
-        "id": "CVE-2022-34482",
-        "impact": {},
-        "last-modified": "2022-12-30T18:18:00",
-        "references": [
-            "https://www.mozilla.org/security/advisories/mfsa2022-24/",
-            "https://bugzilla.mozilla.org/show_bug.cgi?id=845880"
-        ],
-        "summary": "An attacker who could have convinced a user to drag and drop an image to a filesystem could have manipulated the resulting filename to contain an executable extension, and by extension potentially tricked the user into executing malicious code. While very similar, this is a separate issue from CVE-2022-34483. This vulnerability affects Firefox < 102."
-    },
-    {
-        "Modified": "2022-12-30T18:15:00",
-        "Published": "2019-06-06T16:29:00",
-        "access": {
-            "authentication": "SINGLE",
-            "complexity": "MEDIUM",
-            "vector": "NETWORK"
-        },
         "assigner": "cve@mitre.org",
-        "cvss": 3.5,
-        "cvss-time": "2022-12-30T18:15:00",
-        "cvss-vector": "AV:N/AC:M/Au:S/C:N/I:P/A:N",
-        "cwe": "CWE-79",
-        "id": "CVE-2019-7553",
-        "impact": {
-            "availability": "NONE",
-            "confidentiality": "NONE",
-            "integrity": "PARTIAL"
-        },
-        "last-modified": "2022-12-30T18:15:00",
-        "references": [
-            "https://securityhitlist.blogspot.com/2019/02/cve-2019-7553-stores-xss-in-php-scripts.html"
-        ],
-        "summary": "PHP Scripts Mall Chartered Accountant : Auditor Website 2.0.1 has Stored XSS in the Profile Update page via the My Name field."
-    },
-    {
-        "Modified": "2022-12-30T18:15:00",
-        "Published": "2019-07-23T13:15:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "MEDIUM",
-            "vector": "NETWORK"
-        },
-        "assigner": "cve-assign@distributedweaknessfiling.org",
-        "cvss": 4.3,
-        "cvss-time": "2022-12-30T18:15:00",
-        "cvss-vector": "AV:N/AC:M/Au:N/C:N/I:P/A:N",
-        "cwe": "CWE-79",
-        "id": "CVE-2019-1010124",
-        "impact": {
-            "availability": "NONE",
-            "confidentiality": "NONE",
-            "integrity": "PARTIAL"
-        },
-        "last-modified": "2022-12-30T18:15:00",
-        "references": [
-            "https://www.youtube.com/watch?v=T-sqQDFRRBg",
-            "https://wpvulndb.com/vulnerabilities/9856",
-            "http://packetstormsecurity.com/files/154263/WordPress-WooCommerce-Product-Feed-2.2.18-Cross-Site-Scripting.html"
-        ],
-        "summary": "WebAppick WooCommerce Product Feed 2.2.18 and earlier is affected by: Cross Site Scripting (XSS). The impact is: XSS to RCE via editing theme files in WordPress. The component is: admin/partials/woo-feed-manage-list.php:63. The attack vector is: Administrator must be logged in."
-    },
-    {
-        "Modified": "2022-12-30T18:14:00",
-        "Published": "2022-12-22T20:15:00",
-        "access": {},
-        "assigner": "security@mozilla.org",
         "cvss": null,
-        "cwe": "CWE-787",
-        "id": "CVE-2022-34485",
+        "cwe": "CWE-77",
+        "id": "CVE-2022-46641",
         "impact": {},
-        "last-modified": "2022-12-30T18:14:00",
+        "last-modified": "2022-12-30T22:26:00",
         "references": [
-            "https://www.mozilla.org/security/advisories/mfsa2022-24/",
-            "https://bugzilla.mozilla.org/buglist.cgi?bug_id=1768409%2C1768578"
+            "https://www.dlink.com/en/security-bulletin/",
+            "https://github.com/CyberUnicornIoT/IoTvuln/blob/main/d-link/dir-846/D-Link%20dir-846%20SetIpMacBindSettings%20Command%20Injection%20Vulnerability.md"
         ],
-        "summary": "Mozilla developers Bryce Seager van Dyk and the Mozilla Fuzzing Team reported potential vulnerabilities present in Firefox 101. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code. This vulnerability affects Firefox < 102."
+        "summary": "D-Link DIR-846 A1_FW100A43 was discovered to contain a command injection vulnerability via the lan(0)_dhcps_staticlist parameter in the SetIpMacBindSettings function."
     },
     {
-        "Modified": "2022-12-30T18:07:00",
-        "Published": "2022-12-22T20:15:00",
-        "access": {},
-        "assigner": "security@mozilla.org",
-        "cvss": null,
-        "cwe": "CWE-617",
-        "id": "CVE-2022-34484",
-        "impact": {},
-        "last-modified": "2022-12-30T18:07:00",
-        "references": [
-            "https://www.mozilla.org/security/advisories/mfsa2022-24/",
-            "https://bugzilla.mozilla.org/buglist.cgi?bug_id=1763634%2C1772651",
-            "https://www.mozilla.org/security/advisories/mfsa2022-26/",
-            "https://www.mozilla.org/security/advisories/mfsa2022-25/"
-        ],
-        "summary": "The Mozilla Fuzzing Team reported potential vulnerabilities present in Thunderbird 91.10. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code. This vulnerability affects Firefox < 102, Firefox ESR < 91.11, Thunderbird < 102, and Thunderbird < 91.11."
-    },
-    {
-        "Modified": "2022-12-30T18:01:00",
-        "Published": "2022-12-22T20:15:00",
-        "access": {},
-        "assigner": "security@mozilla.org",
-        "cvss": null,
-        "cwe": "NVD-CWE-noinfo",
-        "id": "CVE-2022-34468",
-        "impact": {},
-        "last-modified": "2022-12-30T18:01:00",
-        "references": [
-            "https://www.mozilla.org/security/advisories/mfsa2022-24/",
-            "https://bugzilla.mozilla.org/show_bug.cgi?id=1768537",
-            "https://www.mozilla.org/security/advisories/mfsa2022-26/",
-            "https://www.mozilla.org/security/advisories/mfsa2022-25/"
-        ],
-        "summary": "An iframe that was not permitted to run scripts could do so if the user clicked on a <code>javascript:</code> link. This vulnerability affects Firefox < 102, Firefox ESR < 91.11, Thunderbird < 102, and Thunderbird < 91.11."
-    },
-    {
-        "Modified": "2022-12-30T17:09:00",
-        "Published": "2022-12-23T16:15:00",
-        "access": {},
-        "assigner": "security@wordfence.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-4697",
-        "impact": {},
-        "last-modified": "2022-12-30T17:09:00",
-        "references": [
-            "https://www.wordfence.com/threat-intel/vulnerabilities/id/3d54f585-0116-4517-84f1-271e89a05539",
-            "https://plugins.trac.wordpress.org/changeset?sfp_email=&sfph_mail=&reponame=&new=2838522%40wp-user-avatar%2Ftrunk&old=2837217%40wp-user-avatar%2Ftrunk&sfp_email=&sfph_mail="
-        ],
-        "summary": "The ProfilePress plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the \u2018wp_user_cover_default_image_url\u2019 parameter in versions up to, and including, 4.5.0 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with administrator-level permissions and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page. This only affects multi-site installations and installations where unfiltered_html has been disabled."
-    },
-    {
-        "Modified": "2022-12-30T17:09:00",
-        "Published": "2022-12-23T16:15:00",
-        "access": {},
-        "assigner": "security@wordfence.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-4698",
-        "impact": {},
-        "last-modified": "2022-12-30T17:09:00",
-        "references": [
-            "https://www.wordfence.com/threat-intel/vulnerabilities/id/43c9dcec-f769-4c55-93d0-c2aa45a4fa16",
-            "https://plugins.trac.wordpress.org/changeset?sfp_email=&sfph_mail=&reponame=&new=2838522%40wp-user-avatar%2Ftrunk&old=2837217%40wp-user-avatar%2Ftrunk&sfp_email=&sfph_mail="
-        ],
-        "summary": "The ProfilePress plugin for WordPress is vulnerable to Stored Cross-Site Scripting via several form fields in versions up to, and including, 4.5.0 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with administrator-level permissions and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page. This only affects multi-site installations and installations where unfiltered_html has been disabled."
-    },
-    {
-        "Modified": "2022-12-30T17:07:00",
-        "Published": "2022-12-23T19:15:00",
-        "access": {},
-        "assigner": "psirt@us.ibm.com",
-        "cvss": null,
-        "cwe": "NVD-CWE-noinfo",
-        "id": "CVE-2022-39165",
-        "impact": {},
-        "last-modified": "2022-12-30T17:07:00",
-        "references": [
-            "https://exchange.xforce.ibmcloud.com/vulnerabilities/235183",
-            "https://www.ibm.com/support/pages/node/6847947"
-        ],
-        "summary": "IBM AIX 7.1, 7.2, 7.3, and VIOS 3.1could allow a non-privileged local user to exploit a vulnerability in CAA to cause a denial of service. IBM X-Force ID: 235183."
-    },
-    {
-        "Modified": "2022-12-30T17:06:00",
-        "Published": "2022-12-23T19:15:00",
-        "access": {},
-        "assigner": "psirt@us.ibm.com",
-        "cvss": null,
-        "cwe": "NVD-CWE-noinfo",
-        "id": "CVE-2022-40233",
-        "impact": {},
-        "last-modified": "2022-12-30T17:06:00",
-        "references": [
-            "https://exchange.xforce.ibmcloud.com/vulnerabilities/235599",
-            "https://www.ibm.com/support/pages/node/6847947"
-        ],
-        "summary": "IBM AIX 7.1, 7.2, 7.3, and VIOS 3.1 could allow a non-privileged local user to exploit a vulnerability in the AIX TCP/IP kernel extension to cause a denial of service. IBM X-Force ID: 235599."
-    },
-    {
-        "Modified": "2022-12-30T17:05:00",
-        "Published": "2022-12-23T19:15:00",
-        "access": {},
-        "assigner": "psirt@us.ibm.com",
-        "cvss": null,
-        "cwe": "NVD-CWE-Other",
-        "id": "CVE-2022-43380",
-        "impact": {},
-        "last-modified": "2022-12-30T17:05:00",
-        "references": [
-            "https://www.ibm.com/support/pages/node/6847947",
-            "https://exchange.xforce.ibmcloud.com/vulnerabilities/238640"
-        ],
-        "summary": "IBM AIX 7.1, 7.2, 7.3, and VIOS 3.1 could allow a non-privileged local user to exploit a vulnerability in the AIX NFS kernel extension to cause a denial of service. IBM X-Force ID: 238640."
-    },
-    {
-        "Modified": "2022-12-30T17:05:00",
-        "Published": "2022-12-23T19:15:00",
-        "access": {},
-        "assigner": "psirt@us.ibm.com",
-        "cvss": null,
-        "cwe": "NVD-CWE-Other",
-        "id": "CVE-2022-43381",
-        "impact": {},
-        "last-modified": "2022-12-30T17:05:00",
-        "references": [
-            "https://www.ibm.com/support/pages/node/6851443",
-            "https://exchange.xforce.ibmcloud.com/vulnerabilities/238639"
-        ],
-        "summary": "IBM AIX 7.1, 7.2, 7.3, and VIOS 3.1could allow a non-privileged local user to exploit a vulnerability in the AIX SMB client to cause a denial of service. IBM X-Force ID: 238639."
-    },
-    {
-        "Modified": "2022-12-30T16:25:00",
+        "Modified": "2022-12-30T22:22:00",
         "Published": "2022-12-23T12:15:00",
         "access": {},
         "assigner": "security@huntr.dev",
         "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-4690",
+        "cwe": "CWE-319",
+        "id": "CVE-2022-4683",
         "impact": {},
-        "last-modified": "2022-12-30T16:25:00",
+        "last-modified": "2022-12-30T22:22:00",
         "references": [
-            "https://huntr.dev/bounties/7e1be91d-3b13-4300-8af2-9bd9665ec335",
-            "https://github.com/usememos/memos/commit/c07b4a57caa89905e54b800f4d8fb720bbf5bf82"
+            "https://huntr.dev/bounties/84973f6b-739a-4d7e-8757-fc58cbbaf6ef",
+            "https://github.com/usememos/memos/commit/7efa749c6628c75b19a912ca170529f5c293bb2e"
         ],
-        "summary": "Cross-site Scripting (XSS) - Stored in GitHub repository usememos/memos prior to 0.9.0."
+        "summary": "Sensitive Cookie in HTTPS Session Without 'Secure' Attribute in GitHub repository usememos/memos prior to 0.9.0."
     },
     {
-        "Modified": "2022-12-30T16:23:00",
-        "Published": "2022-12-22T22:15:00",
-        "access": {},
-        "assigner": "talos-cna@cisco.com",
-        "cvss": null,
-        "cwe": "CWE-121",
-        "id": "CVE-2022-41981",
-        "impact": {},
-        "last-modified": "2022-12-30T16:23:00",
-        "references": [
-            "https://talosintelligence.com/vulnerability_reports/TALOS-2022-1628"
-        ],
-        "summary": "A stack-based buffer overflow vulnerability exists in the TGA file format parser of OpenImageIO v2.3.19.0. A specially-crafted targa file can lead to out of bounds read and write on the process stack, which can lead to arbitrary code execution. An attacker can provide a malicious file to trigger this vulnerability."
-    },
-    {
-        "Modified": "2022-12-30T16:22:00",
-        "Published": "2022-12-22T20:15:00",
-        "access": {},
-        "assigner": "security@mozilla.org",
-        "cvss": null,
-        "cwe": "CWE-416",
-        "id": "CVE-2022-26485",
-        "impact": {},
-        "last-modified": "2022-12-30T16:22:00",
-        "references": [
-            "https://bugzilla.mozilla.org/show_bug.cgi?id=1758062",
-            "https://www.mozilla.org/security/advisories/mfsa2022-09/"
-        ],
-        "summary": "Removing an XSLT parameter during processing could have lead to an exploitable use-after-free. We have had reports of attacks in the wild abusing this flaw. This vulnerability affects Firefox < 97.0.2, Firefox ESR < 91.6.1, Firefox for Android < 97.3.0, Thunderbird < 91.6.2, and Focus < 97.3.0."
-    },
-    {
-        "Modified": "2022-12-30T16:15:00",
-        "Published": "2022-12-30T16:15:00",
+        "Modified": "2022-12-30T22:20:00",
+        "Published": "2022-12-23T12:15:00",
         "access": {},
         "assigner": "security@huntr.dev",
         "cvss": null,
-        "cwe": "CWE-280",
-        "id": "CVE-2022-4863",
+        "cwe": "CWE-284",
+        "id": "CVE-2022-4684",
         "impact": {},
-        "last-modified": "2022-12-30T16:15:00",
+        "last-modified": "2022-12-30T22:20:00",
         "references": [
-            "https://github.com/usememos/memos/commit/3556ae4e651d9443dc3bb8a170dd3cc726517a53",
-            "https://huntr.dev/bounties/42751929-e511-49a9-888d-d5b610da2a45"
+            "https://huntr.dev/bounties/b66f2bdd-8b41-456c-bf65-92302c2e03b5",
+            "https://github.com/usememos/memos/commit/dca35bde877aab6e64ef51b52e590b5d48f692f9"
         ],
-        "summary": "Improper Handling of Insufficient Permissions or Privileges in GitHub repository usememos/memos prior to 0.9.1."
+        "summary": "Improper Access Control in GitHub repository usememos/memos prior to 0.9.0."
     },
     {
-        "Modified": "2022-12-30T16:09:00",
-        "Published": "2022-12-22T22:15:00",
+        "Modified": "2022-12-30T22:19:00",
+        "Published": "2022-12-23T12:15:00",
         "access": {},
-        "assigner": "talos-cna@cisco.com",
+        "assigner": "security@huntr.dev",
         "cvss": null,
-        "cwe": "CWE-125",
-        "id": "CVE-2022-41988",
+        "cwe": "CWE-287",
+        "id": "CVE-2022-4686",
         "impact": {},
-        "last-modified": "2022-12-30T16:09:00",
+        "last-modified": "2022-12-30T22:19:00",
         "references": [
-            "https://talosintelligence.com/vulnerability_reports/TALOS-2022-1643"
+            "https://github.com/usememos/memos/commit/dca35bde877aab6e64ef51b52e590b5d48f692f9",
+            "https://huntr.dev/bounties/caa0b22c-501f-44eb-af65-65c315cd1637"
         ],
-        "summary": "An information disclosure vulnerability exists in the OpenImageIO::decode_iptc_iim() functionality of OpenImageIO Project OpenImageIO v2.3.19.0. A specially-crafted TIFF file can lead to a disclosure of sensitive information. An attacker can provide a malicious file to trigger this vulnerability."
+        "summary": "Improper Authentication in GitHub repository usememos/memos prior to 0.9.0."
     },
     {
-        "Modified": "2022-12-30T16:07:00",
-        "Published": "2022-12-23T16:15:00",
+        "Modified": "2022-12-30T22:18:00",
+        "Published": "2022-12-23T12:15:00",
         "access": {},
-        "assigner": "cve@mitre.org",
+        "assigner": "security@huntr.dev",
         "cvss": null,
-        "cwe": "CWE-125",
-        "id": "CVE-2022-47938",
+        "cwe": "CWE-269",
+        "id": "CVE-2022-4687",
         "impact": {},
-        "last-modified": "2022-12-30T16:07:00",
+        "last-modified": "2022-12-30T22:18:00",
         "references": [
-            "https://git.kernel.org/cgit/linux/kernel/git/torvalds/linux.git/commit/?id=824d4f64c20093275f72fc8101394d75ff6a249e",
-            "https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.19.2",
-            "https://github.com/torvalds/linux/commit/824d4f64c20093275f72fc8101394d75ff6a249e",
-            "http://www.openwall.com/lists/oss-security/2022/12/23/10"
+            "https://huntr.dev/bounties/b908377f-a61b-432c-8e6a-c7498da69788",
+            "https://github.com/usememos/memos/commit/dca35bde877aab6e64ef51b52e590b5d48f692f9"
         ],
-        "summary": "An issue was discovered in ksmbd in the Linux kernel 5.15 through 5.19 before 5.19.2. fs/ksmbd/smb2misc.c has an out-of-bounds read and OOPS for SMB2_TREE_CONNECT."
+        "summary": "Incorrect Use of Privileged APIs in GitHub repository usememos/memos prior to 0.9.0."
     },
     {
-        "Modified": "2022-12-30T16:04:00",
-        "Published": "2022-12-23T16:15:00",
+        "Modified": "2022-12-30T22:17:00",
+        "Published": "2022-12-23T12:15:00",
         "access": {},
-        "assigner": "cve@mitre.org",
+        "assigner": "security@huntr.dev",
         "cvss": null,
-        "cwe": "CWE-416",
-        "id": "CVE-2022-47939",
+        "cwe": "CWE-285",
+        "id": "CVE-2022-4688",
         "impact": {},
-        "last-modified": "2022-12-30T16:04:00",
+        "last-modified": "2022-12-30T22:17:00",
         "references": [
-            "https://github.com/torvalds/linux/commit/cf6531d98190fa2cf92a6d8bbc8af0a4740a223c",
-            "https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.19.2",
-            "https://git.kernel.org/cgit/linux/kernel/git/torvalds/linux.git/commit/?id=cf6531d98190fa2cf92a6d8bbc8af0a4740a223c",
-            "http://www.openwall.com/lists/oss-security/2022/12/23/10"
+            "https://huntr.dev/bounties/23856e7e-94ff-4dee-97d0-0cd47e9b8ff6",
+            "https://github.com/usememos/memos/commit/dca35bde877aab6e64ef51b52e590b5d48f692f9"
         ],
-        "summary": "An issue was discovered in ksmbd in the Linux kernel 5.15 through 5.19 before 5.19.2. fs/ksmbd/smb2pdu.c has a use-after-free and OOPS for SMB2_TREE_DISCONNECT."
+        "summary": "Improper Authorization in GitHub repository usememos/memos prior to 0.9.0."
     },
     {
-        "Modified": "2022-12-30T16:04:00",
-        "Published": "2022-12-22T20:15:00",
+        "Modified": "2022-12-30T22:17:00",
+        "Published": "2022-12-23T12:15:00",
         "access": {},
-        "assigner": "security@mozilla.org",
+        "assigner": "security@huntr.dev",
         "cvss": null,
-        "cwe": "CWE-367",
-        "id": "CVE-2022-26387",
+        "cwe": "CWE-284",
+        "id": "CVE-2022-4689",
         "impact": {},
-        "last-modified": "2022-12-30T16:04:00",
+        "last-modified": "2022-12-30T22:17:00",
         "references": [
-            "https://www.mozilla.org/security/advisories/mfsa2022-12/",
-            "https://www.mozilla.org/security/advisories/mfsa2022-11/",
-            "https://www.mozilla.org/security/advisories/mfsa2022-10/",
-            "https://bugzilla.mozilla.org/show_bug.cgi?id=1752979"
+            "https://huntr.dev/bounties/a78c4326-6e7b-47fe-aa82-461e5c12a4e3",
+            "https://github.com/usememos/memos/commit/dca35bde877aab6e64ef51b52e590b5d48f692f9"
         ],
-        "summary": "When installing an add-on, Firefox verified the signature before prompting the user; but while the user was confirming the prompt, the underlying add-on file could have been modified and Firefox would not have noticed. This vulnerability affects Firefox < 98, Firefox ESR < 91.7, and Thunderbird < 91.7."
+        "summary": "Improper Access Control in GitHub repository usememos/memos prior to 0.9.0."
     },
     {
-        "Modified": "2022-12-30T16:02:00",
-        "Published": "2022-12-22T20:15:00",
-        "access": {},
-        "assigner": "security@mozilla.org",
-        "cvss": null,
-        "cwe": "NVD-CWE-noinfo",
-        "id": "CVE-2022-26386",
-        "impact": {},
-        "last-modified": "2022-12-30T16:02:00",
-        "references": [
-            "https://bugzilla.mozilla.org/show_bug.cgi?id=1752396",
-            "https://www.mozilla.org/security/advisories/mfsa2022-12/",
-            "https://www.mozilla.org/security/advisories/mfsa2022-11/"
-        ],
-        "summary": "Previously Firefox for macOS and Linux would download temporary files to a user-specific directory in <code>/tmp</code>, but this behavior was changed to download them to <code>/tmp</code> where they could be affected by other local users. This behavior was reverted to the original, user-specific directory. <br>*This bug only affects Firefox for macOS and Linux. Other operating systems are unaffected.*. This vulnerability affects Firefox ESR < 91.7 and Thunderbird < 91.7."
-    },
-    {
-        "Modified": "2022-12-30T15:52:00",
-        "Published": "2022-12-23T16:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-125",
-        "id": "CVE-2022-47940",
-        "impact": {},
-        "last-modified": "2022-12-30T15:52:00",
-        "references": [
-            "https://github.com/torvalds/linux/commit/158a66b245739e15858de42c0ba60fcf3de9b8e6",
-            "https://git.kernel.org/cgit/linux/kernel/git/torvalds/linux.git/commit/?id=158a66b245739e15858de42c0ba60fcf3de9b8e6",
-            "https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.18.18",
-            "http://www.openwall.com/lists/oss-security/2022/12/23/10"
-        ],
-        "summary": "An issue was discovered in ksmbd in the Linux kernel 5.15 through 5.18 before 5.18.18. fs/ksmbd/smb2pdu.c lacks length validation in the non-padding case in smb2_write."
-    },
-    {
-        "Modified": "2022-12-30T15:49:00",
-        "Published": "2022-12-23T16:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-401",
-        "id": "CVE-2022-47941",
-        "impact": {},
-        "last-modified": "2022-12-30T15:49:00",
-        "references": [
-            "https://github.com/torvalds/linux/commit/aa7253c2393f6dcd6a1468b0792f6da76edad917",
-            "https://git.kernel.org/cgit/linux/kernel/git/torvalds/linux.git/commit/?id=aa7253c2393f6dcd6a1468b0792f6da76edad917",
-            "https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.19.2",
-            "http://www.openwall.com/lists/oss-security/2022/12/23/10"
-        ],
-        "summary": "An issue was discovered in ksmbd in the Linux kernel 5.15 through 5.19 before 5.19.2. fs/ksmbd/smb2pdu.c omits a kfree call in certain smb2_handle_negotiate error conditions, aka a memory leak."
-    },
-    {
-        "Modified": "2022-12-30T15:48:00",
-        "Published": "2022-12-23T16:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-787",
-        "id": "CVE-2022-47942",
-        "impact": {},
-        "last-modified": "2022-12-30T15:48:00",
-        "references": [
-            "https://github.com/torvalds/linux/commit/8f0541186e9ad1b62accc9519cc2b7a7240272a7",
-            "https://git.kernel.org/cgit/linux/kernel/git/torvalds/linux.git/commit/?id=8f0541186e9ad1b62accc9519cc2b7a7240272a7",
-            "https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.19.2",
-            "http://www.openwall.com/lists/oss-security/2022/12/23/10"
-        ],
-        "summary": "An issue was discovered in ksmbd in the Linux kernel 5.15 through 5.19 before 5.19.2. There is a heap-based buffer overflow in set_ntacl_dacl, related to use of SMB2_QUERY_INFO_HE after a malformed SMB2_SET_INFO_HE command."
-    },
-    {
-        "Modified": "2022-12-30T15:15:00",
-        "Published": "2022-12-30T14:15:00",
-        "access": {},
-        "assigner": "security@m-files.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-4861",
-        "impact": {},
-        "last-modified": "2022-12-30T15:15:00",
-        "references": [
-            "https://www.m-files.com/about/trust-center/security-advisories/cve-2022-4861/"
-        ],
-        "summary": "Incorrect implementation in authentication protocol in M-Files Client before 22.5.11356.0 allows high privileged user to get other users tokens to another resource."
-    },
-    {
-        "Modified": "2022-12-30T15:15:00",
-        "Published": "2022-12-30T12:15:00",
-        "access": {},
-        "assigner": "security@m-files.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-4858",
-        "impact": {},
-        "last-modified": "2022-12-30T15:15:00",
-        "references": [
-            "https://www.m-files.com/about/trust-center/security-advisories/cve-2022-4858/"
-        ],
-        "summary": "Insertion of Sensitive Information into Log Files in M-Files Server before 22.10.11846.0 could allow to obtain sensitive tokens from logs, if specific configurations were set."
-    },
-    {
-        "Modified": "2022-12-30T15:05:00",
-        "Published": "2022-12-22T20:15:00",
-        "access": {},
-        "assigner": "security@mozilla.org",
-        "cvss": null,
-        "cwe": "CWE-416",
-        "id": "CVE-2022-26385",
-        "impact": {},
-        "last-modified": "2022-12-30T15:05:00",
-        "references": [
-            "https://bugzilla.mozilla.org/show_bug.cgi?id=1747526",
-            "https://www.mozilla.org/security/advisories/mfsa2022-10/"
-        ],
-        "summary": "In unusual circumstances, an individual thread may outlive the thread's manager during shutdown. This could have led to a use-after-free causing a potentially exploitable crash. This vulnerability affects Firefox < 98."
-    },
-    {
-        "Modified": "2022-12-30T15:02:00",
-        "Published": "2022-12-22T20:15:00",
-        "access": {},
-        "assigner": "security@mozilla.org",
-        "cvss": null,
-        "cwe": "NVD-CWE-noinfo",
-        "id": "CVE-2022-26383",
-        "impact": {},
-        "last-modified": "2022-12-30T15:02:00",
-        "references": [
-            "https://www.mozilla.org/security/advisories/mfsa2022-12/",
-            "https://www.mozilla.org/security/advisories/mfsa2022-11/",
-            "https://www.mozilla.org/security/advisories/mfsa2022-10/",
-            "https://bugzilla.mozilla.org/show_bug.cgi?id=1742421"
-        ],
-        "summary": "When resizing a popup after requesting fullscreen access, the popup would not display the fullscreen notification. This vulnerability affects Firefox < 98, Firefox ESR < 91.7, and Thunderbird < 91.7."
-    },
-    {
-        "Modified": "2022-12-30T15:01:00",
-        "Published": "2022-12-22T20:15:00",
-        "access": {},
-        "assigner": "security@mozilla.org",
-        "cvss": null,
-        "cwe": "CWE-203",
-        "id": "CVE-2022-26382",
-        "impact": {},
-        "last-modified": "2022-12-30T15:01:00",
-        "references": [
-            "https://www.mozilla.org/security/advisories/mfsa2022-10/",
-            "https://bugzilla.mozilla.org/show_bug.cgi?id=1741888"
-        ],
-        "summary": "While the text displayed in Autofill tooltips cannot be directly read by JavaScript, the text was rendered using page fonts. Side-channel attacks on the text by using specially crafted fonts could have lead to this text being inferred by the webpage. This vulnerability affects Firefox < 98."
-    },
-    {
-        "Modified": "2022-12-30T15:00:00",
-        "Published": "2022-12-22T20:15:00",
-        "access": {},
-        "assigner": "security@mozilla.org",
-        "cvss": null,
-        "cwe": "CWE-416",
-        "id": "CVE-2022-26381",
-        "impact": {},
-        "last-modified": "2022-12-30T15:00:00",
-        "references": [
-            "https://www.mozilla.org/security/advisories/mfsa2022-12/",
-            "https://www.mozilla.org/security/advisories/mfsa2022-11/",
-            "https://www.mozilla.org/security/advisories/mfsa2022-10/",
-            "https://bugzilla.mozilla.org/show_bug.cgi?id=1736243"
-        ],
-        "summary": "An attacker could have caused a use-after-free by forcing a text reflow in an SVG object leading to a potentially exploitable crash. This vulnerability affects Firefox < 98, Firefox ESR < 91.7, and Thunderbird < 91.7."
-    },
-    {
-        "Modified": "2022-12-30T14:59:00",
-        "Published": "2022-12-22T20:15:00",
-        "access": {},
-        "assigner": "security@mozilla.org",
-        "cvss": null,
-        "cwe": "CWE-119",
-        "id": "CVE-2022-22764",
-        "impact": {},
-        "last-modified": "2022-12-30T14:59:00",
-        "references": [
-            "https://www.mozilla.org/security/advisories/mfsa2022-06/",
-            "https://bugzilla.mozilla.org/buglist.cgi?bug_id=1742682%2C1744165%2C1746545%2C1748210%2C1748279",
-            "https://www.mozilla.org/security/advisories/mfsa2022-05/",
-            "https://www.mozilla.org/security/advisories/mfsa2022-04/"
-        ],
-        "summary": "Mozilla developers Paul Adenot and the Mozilla Fuzzing Team reported memory safety bugs present in Firefox 96 and Firefox ESR 91.5. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code. This vulnerability affects Firefox < 97, Thunderbird < 91.6, and Firefox ESR < 91.6."
-    },
-    {
-        "Modified": "2022-12-30T14:03:00",
-        "Published": "2022-12-22T20:15:00",
-        "access": {},
-        "assigner": "security@mozilla.org",
-        "cvss": null,
-        "cwe": "CWE-209",
-        "id": "CVE-2022-22760",
-        "impact": {},
-        "last-modified": "2022-12-30T14:03:00",
-        "references": [
-            "https://bugzilla.mozilla.org/show_bug.cgi?id=1748503",
-            "https://www.mozilla.org/security/advisories/mfsa2022-06/",
-            "https://www.mozilla.org/security/advisories/mfsa2022-05/",
-            "https://www.mozilla.org/security/advisories/mfsa2022-04/",
-            "https://bugzilla.mozilla.org/show_bug.cgi?id=1740985"
-        ],
-        "summary": "When importing resources using Web Workers, error messages would distinguish the difference between <code>application/javascript</code> responses and non-script responses. This could have been abused to learn information cross-origin. This vulnerability affects Firefox < 97, Thunderbird < 91.6, and Firefox ESR < 91.6."
-    },
-    {
-        "Modified": "2022-12-30T14:02:00",
-        "Published": "2022-12-22T20:15:00",
-        "access": {},
-        "assigner": "security@mozilla.org",
-        "cvss": null,
-        "cwe": "NVD-CWE-noinfo",
-        "id": "CVE-2022-22761",
-        "impact": {},
-        "last-modified": "2022-12-30T14:02:00",
-        "references": [
-            "https://bugzilla.mozilla.org/show_bug.cgi?id=1745566",
-            "https://www.mozilla.org/security/advisories/mfsa2022-06/",
-            "https://www.mozilla.org/security/advisories/mfsa2022-05/",
-            "https://www.mozilla.org/security/advisories/mfsa2022-04/"
-        ],
-        "summary": "Web-accessible extension pages (pages with a moz-extension:// scheme) were not correctly enforcing the frame-ancestors directive when it was used in the Web Extension's Content Security Policy. This vulnerability affects Firefox < 97, Thunderbird < 91.6, and Firefox ESR < 91.6."
-    },
-    {
-        "Modified": "2022-12-30T14:00:00",
-        "Published": "2022-12-22T20:15:00",
-        "access": {},
-        "assigner": "security@mozilla.org",
-        "cvss": null,
-        "cwe": "NVD-CWE-noinfo",
-        "id": "CVE-2022-22762",
-        "impact": {},
-        "last-modified": "2022-12-30T14:00:00",
-        "references": [
-            "https://bugzilla.mozilla.org/show_bug.cgi?id=1743931",
-            "https://www.mozilla.org/security/advisories/mfsa2022-04/"
-        ],
-        "summary": "Under certain circumstances, a JavaScript alert (or prompt) could have been shown while another website was displayed underneath it. This could have been abused to trick the user. <br>*This bug only affects Firefox for Android. Other operating systems are unaffected.*. This vulnerability affects Firefox < 97."
-    },
-    {
-        "Modified": "2022-12-30T13:58:00",
-        "Published": "2022-12-22T20:15:00",
-        "access": {},
-        "assigner": "security@mozilla.org",
-        "cvss": null,
-        "cwe": "NVD-CWE-noinfo",
-        "id": "CVE-2022-22763",
-        "impact": {},
-        "last-modified": "2022-12-30T13:58:00",
-        "references": [
-            "https://www.mozilla.org/security/advisories/mfsa2022-01/",
-            "https://www.mozilla.org/security/advisories/mfsa2022-06/",
-            "https://www.mozilla.org/security/advisories/mfsa2022-05/",
-            "https://bugzilla.mozilla.org/show_bug.cgi?id=1740534"
-        ],
-        "summary": "When a worker is shutdown, it was possible to cause script to run late in the lifecycle, at a point after where it should not be possible. This vulnerability affects Firefox < 96, Thunderbird < 91.6, and Firefox ESR < 91.6."
-    },
-    {
-        "Modified": "2022-12-30T13:22:00",
-        "Published": "2022-12-22T22:15:00",
-        "access": {},
-        "assigner": "talos-cna@cisco.com",
-        "cvss": null,
-        "cwe": "CWE-476",
-        "id": "CVE-2022-43593",
-        "impact": {},
-        "last-modified": "2022-12-30T13:22:00",
-        "references": [
-            "https://talosintelligence.com/vulnerability_reports/TALOS-2022-1652"
-        ],
-        "summary": "A denial of service vulnerability exists in the DPXOutput::close() functionality of OpenImageIO Project OpenImageIO v2.4.4.2. A specially crafted ImageOutput Object can lead to null pointer dereference. An attacker can provide malicious input to trigger this vulnerability."
-    },
-    {
-        "Modified": "2022-12-30T13:21:00",
-        "Published": "2022-12-22T22:15:00",
-        "access": {},
-        "assigner": "talos-cna@cisco.com",
-        "cvss": null,
-        "cwe": "CWE-476",
-        "id": "CVE-2022-43594",
-        "impact": {},
-        "last-modified": "2022-12-30T13:21:00",
-        "references": [
-            "https://talosintelligence.com/vulnerability_reports/TALOS-2022-1653"
-        ],
-        "summary": "Multiple denial of service vulnerabilities exist in the image output closing functionality of OpenImageIO Project OpenImageIO v2.4.4.2. Specially crafted ImageOutput Objects can lead to multiple null pointer dereferences. An attacker can provide malicious multiple inputs to trigger these vulnerabilities.This vulnerability applies to writing .bmp files."
-    },
-    {
-        "Modified": "2022-12-30T13:20:00",
-        "Published": "2022-12-22T22:15:00",
-        "access": {},
-        "assigner": "talos-cna@cisco.com",
-        "cvss": null,
-        "cwe": "CWE-476",
-        "id": "CVE-2022-43595",
-        "impact": {},
-        "last-modified": "2022-12-30T13:20:00",
-        "references": [
-            "https://talosintelligence.com/vulnerability_reports/TALOS-2022-1653"
-        ],
-        "summary": "Multiple denial of service vulnerabilities exist in the image output closing functionality of OpenImageIO Project OpenImageIO v2.4.4.2. Specially crafted ImageOutput Objects can lead to multiple null pointer dereferences. An attacker can provide malicious multiple inputs to trigger these vulnerabilities.This vulnerability applies to writing .fits files."
-    },
-    {
-        "Modified": "2022-12-30T13:15:00",
-        "Published": "2022-12-30T12:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2020-36637",
-        "impact": {},
-        "last-modified": "2022-12-30T13:15:00",
-        "references": [
-            "https://github.com/Chris92de/AdminServ/commit/3ed17dab3b4d6e8bf1c82ddfbf882314365e9cd7",
-            "https://vuldb.com/?ctiid.217042",
-            "https://vuldb.com/?id.217042",
-            "https://github.com/Chris92de/AdminServ/pull/7"
-        ],
-        "summary": "** UNSUPPPORTED WHEN ASSIGNED **** UNSUPPORTED WHEN ASSIGNED ** A vulnerability was found in Chris92de AdminServ. It has been declared as problematic. This vulnerability affects unknown code of the file resources/core/adminserv.php. The manipulation of the argument text leads to cross site scripting. The attack can be initiated remotely. The name of the patch is 3ed17dab3b4d6e8bf1c82ddfbf882314365e9cd7. It is recommended to apply a patch to fix this issue. VDB-217042 is the identifier assigned to this vulnerability. NOTE: This vulnerability only affects products that are no longer supported by the maintainer."
-    },
-    {
-        "Modified": "2022-12-30T13:15:00",
-        "Published": "2022-12-30T12:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2020-36638",
-        "impact": {},
-        "last-modified": "2022-12-30T13:15:00",
-        "references": [
-            "https://vuldb.com/?ctiid.217043",
-            "https://vuldb.com/?id.217043",
-            "https://github.com/Chris92de/AdminServ/pull/6",
-            "https://github.com/Chris92de/AdminServ/commit/9a45087814295de6fb3a3fe38f96293665234da1"
-        ],
-        "summary": "** UNSUPPPORTED WHEN ASSIGNED **** UNSUPPORTED WHEN ASSIGNED ** A vulnerability was found in Chris92de AdminServ. It has been rated as problematic. This issue affects some unknown processing of the file resources/core/adminserv.php. The manipulation of the argument error leads to cross site scripting. The attack may be initiated remotely. The name of the patch is 9a45087814295de6fb3a3fe38f96293665234da1. It is recommended to apply a patch to fix this issue. The associated identifier of this vulnerability is VDB-217043. NOTE: This vulnerability only affects products that are no longer supported by the maintainer."
-    },
-    {
-        "Modified": "2022-12-30T13:15:00",
-        "Published": "2022-10-13T13:15:00",
-        "access": {},
-        "assigner": "security@apache.org",
-        "cvss": null,
-        "cwe": "CWE-77",
-        "id": "CVE-2022-24697",
-        "impact": {},
-        "last-modified": "2022-12-30T13:15:00",
-        "references": [
-            "https://lists.apache.org/thread/07mnn9c7o314wrhrwjr10w9j5s82voj4",
-            "http://www.openwall.com/lists/oss-security/2022/12/30/1"
-        ],
-        "summary": "Kylin's cube designer function has a command injection vulnerability when overwriting system parameters in the configuration overwrites menu. RCE can be implemented by closing the single quotation marks around the parameter value of \u201c-- conf=\u201d to inject any operating system command into the command line parameters. This vulnerability affects Kylin 2 version 2.6.5 and earlier, Kylin 3 version 3.1.2 and earlier, and Kylin 4 version 4.0.1 and earlier."
-    },
-    {
-        "Modified": "2022-12-30T13:15:00",
-        "Published": "2022-06-09T17:15:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "MEDIUM",
-            "vector": "NETWORK"
-        },
-        "assigner": "cna@vuldb.com",
-        "cvss": 4.3,
-        "cvss-time": "2022-12-30T13:15:00",
-        "cvss-vector": "AV:N/AC:M/Au:N/C:N/I:P/A:N",
-        "cwe": "CWE-80",
-        "id": "CVE-2019-25070",
-        "impact": {
-            "availability": "NONE",
-            "confidentiality": "NONE",
-            "integrity": "PARTIAL"
-        },
-        "last-modified": "2022-12-30T13:15:00",
-        "references": [
-            "https://github.com/wolfcms/wolfcms/issues/683",
-            "https://vuldb.com/?id.135125",
-            "https://vuldb.com/?ctiid.135125"
-        ],
-        "summary": "** UNSUPPPORTED WHEN ASSIGNED **** UNSUPPORTED WHEN ASSIGNED ** A vulnerability was found in WolfCMS up to 0.8.3.1. It has been rated as problematic. This issue affects some unknown processing of the file /wolfcms/?/admin/user/add of the component User Add. The manipulation of the argument name leads to basic cross site scripting. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. The identifier VDB-135125 was assigned to this vulnerability. NOTE: This vulnerability only affects products that are no longer supported by the maintainer."
-    },
-    {
-        "Modified": "2022-12-30T13:06:00",
-        "Published": "2022-12-30T11:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-22",
-        "id": "CVE-2018-25059",
-        "impact": {},
-        "last-modified": "2022-12-30T13:06:00",
-        "references": [
-            "https://github.com/jessfraz/pastebinit/commit/1af2facb6d95976c532b7f8f82747d454a092272",
-            "https://vuldb.com/?ctiid.217040",
-            "https://github.com/jessfraz/pastebinit/pull/3",
-            "https://vuldb.com/?id.217040",
-            "https://github.com/jessfraz/pastebinit/releases/tag/v0.2.3"
-        ],
-        "summary": "A vulnerability was found in pastebinit up to 0.2.2 and classified as problematic. Affected by this issue is the function pasteHandler of the file server.go. The manipulation of the argument r.URL.Path leads to path traversal. Upgrading to version 0.2.3 is able to address this issue. The name of the patch is 1af2facb6d95976c532b7f8f82747d454a092272. It is recommended to upgrade the affected component. The identifier of this vulnerability is VDB-217040."
-    },
-    {
-        "Modified": "2022-12-30T13:06:00",
-        "Published": "2022-12-30T11:15:00",
-        "access": {},
-        "assigner": "security@apache.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-43396",
-        "impact": {},
-        "last-modified": "2022-12-30T13:06:00",
-        "references": [
-            "https://lists.apache.org/thread/ob2ks04zl5ms0r44cd74y1xdl1rzfd1r"
-        ],
-        "summary": "In the fix for CVE-2022-24697, a blacklist is used to filter user input commands. But there is a risk of being bypassed. The user can control the command by controlling the kylin.engine.spark-cmd parameter of conf."
-    },
-    {
-        "Modified": "2022-12-30T13:06:00",
-        "Published": "2022-12-30T11:15:00",
-        "access": {},
-        "assigner": "security@apache.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-44621",
-        "impact": {},
-        "last-modified": "2022-12-30T13:06:00",
-        "references": [
-            "https://lists.apache.org/thread/7ctchj24dofgsj9g1rg1245cms9myb34"
-        ],
-        "summary": "Diagnosis Controller miss parameter validation, so user may attacked by command injection via HTTP Request."
-    },
-    {
-        "Modified": "2022-12-30T13:06:00",
-        "Published": "2022-12-30T12:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-611",
-        "id": "CVE-2017-20151",
-        "impact": {},
-        "last-modified": "2022-12-30T13:06:00",
-        "references": [
-            "https://vuldb.com/?ctiid.217054",
-            "https://vuldb.com/?id.217054",
-            "https://github.com/itext/rups/commit/ac5590925874ef810018a6b60fec216eee54fb32"
-        ],
-        "summary": "A vulnerability classified as problematic was found in iText RUPS. This vulnerability affects unknown code of the file src/main/java/com/itextpdf/rups/model/XfaFile.java. The manipulation leads to xml external entity reference. The name of the patch is ac5590925874ef810018a6b60fec216eee54fb32. It is recommended to apply a patch to fix this issue. VDB-217054 is the identifier assigned to this vulnerability."
-    },
-    {
-        "Modified": "2022-12-30T13:06:00",
-        "Published": "2022-12-30T12:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-22",
-        "id": "CVE-2017-20152",
-        "impact": {},
-        "last-modified": "2022-12-30T13:06:00",
-        "references": [
-            "https://github.com/aerouk/imageserve/pull/27",
-            "https://github.com/aerouk/imageserve/commit/bd23c784f0e5cb12f66d15c100248449f87d72e2",
-            "https://vuldb.com/?ctiid.217056",
-            "https://vuldb.com/?id.217056"
-        ],
-        "summary": "A vulnerability, which was classified as problematic, was found in aerouk imageserve. Affected is an unknown function of the file public/viewer.php of the component File Handler. The manipulation of the argument filelocation leads to path traversal. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used. The name of the patch is bd23c784f0e5cb12f66d15c100248449f87d72e2. It is recommended to apply a patch to fix this issue. The identifier of this vulnerability is VDB-217056."
-    },
-    {
-        "Modified": "2022-12-30T13:06:00",
-        "Published": "2022-12-30T12:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2017-20153",
-        "impact": {},
-        "last-modified": "2022-12-30T13:06:00",
-        "references": [
-            "https://github.com/aerouk/imageserve/pull/27",
-            "https://github.com/aerouk/imageserve/commit/2ac3cd4f90b4df66874fab171376ca26868604c4",
-            "https://vuldb.com/?ctiid.217057",
-            "https://vuldb.com/?id.217057"
-        ],
-        "summary": "A vulnerability has been found in aerouk imageserve and classified as problematic. Affected by this vulnerability is an unknown functionality. The manipulation of the argument REQUEST_URI leads to cross site scripting. The attack can be launched remotely. The exploit has been disclosed to the public and may be used. The name of the patch is 2ac3cd4f90b4df66874fab171376ca26868604c4. It is recommended to apply a patch to fix this issue. The identifier VDB-217057 was assigned to this vulnerability."
-    },
-    {
-        "Modified": "2022-12-30T13:06:00",
-        "Published": "2022-12-30T12:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-614",
-        "id": "CVE-2018-25060",
-        "impact": {},
-        "last-modified": "2022-12-30T13:06:00",
-        "references": [
-            "https://github.com/go-macaron/csrf/pull/7",
-            "https://github.com/go-macaron/csrf/commit/dadd1711a617000b70e5e408a76531b73187031c",
-            "https://vuldb.com/?ctiid.217058",
-            "https://vuldb.com/?id.217058"
-        ],
-        "summary": "A vulnerability was found in Macaron csrf and classified as problematic. Affected by this issue is some unknown functionality of the file csrf.go. The manipulation of the argument Generate leads to sensitive cookie without secure attribute. The attack may be launched remotely. The name of the patch is dadd1711a617000b70e5e408a76531b73187031c. It is recommended to apply a patch to fix this issue. VDB-217058 is the identifier assigned to this vulnerability."
-    },
-    {
-        "Modified": "2022-12-30T13:06:00",
-        "Published": "2022-12-30T12:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-4859",
-        "impact": {},
-        "last-modified": "2022-12-30T13:06:00",
-        "references": [
-            "https://github.com/jogetworkflow/jw-community/releases/tag/7.0.34",
-            "https://vuldb.com/?ctiid.217055",
-            "https://vuldb.com/?id.217055",
-            "https://github.com/jogetworkflow/jw-community/commit/9a77f508a2bf8cf661d588f37a4cc29ecaea4fc8"
-        ],
-        "summary": "A vulnerability, which was classified as problematic, has been found in Joget up to 7.0.33. This issue affects the function submitForm of the file wflow-core/src/main/java/org/joget/plugin/enterprise/UserProfileMenu.java of the component User Profile Menu. The manipulation of the argument firstName/lastName leads to cross site scripting. The attack may be initiated remotely. Upgrading to version 7.0.34 is able to address this issue. The name of the patch is 9a77f508a2bf8cf661d588f37a4cc29ecaea4fc8. It is recommended to upgrade the affected component. The associated identifier of this vulnerability is VDB-217055."
-    },
-    {
-        "Modified": "2022-12-30T13:06:00",
-        "Published": "2022-12-30T12:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-89",
-        "id": "CVE-2022-4860",
-        "impact": {},
-        "last-modified": "2022-12-30T13:06:00",
-        "references": [
-            "https://github.com/kbase/metrics/pull/77",
-            "https://vuldb.com/?ctiid.217059",
-            "https://vuldb.com/?id.217059",
-            "https://github.com/kbase/metrics/commit/959dfb6b05991e30b0fa972a1ecdcaae8e1dae6d"
-        ],
-        "summary": "A vulnerability was found in KBase Metrics. It has been classified as critical. This affects the function upload_user_data of the file source/daily_cron_jobs/methods_upload_user_stats.py. The manipulation leads to sql injection. The name of the patch is 959dfb6b05991e30b0fa972a1ecdcaae8e1dae6d. It is recommended to apply a patch to fix this issue. The associated identifier of this vulnerability is VDB-217059."
-    },
-    {
-        "Modified": "2022-12-30T13:06:00",
-        "Published": "2022-12-30T07:15:00",
+        "Modified": "2022-12-30T22:15:00",
+        "Published": "2022-12-30T22:15:00",
         "access": {},
         "assigner": "cve@mitre.org",
         "cvss": null,
         "cwe": "Unknown",
-        "id": "CVE-2022-48194",
+        "id": "CVE-2019-11824",
         "impact": {},
-        "last-modified": "2022-12-30T13:06:00",
-        "references": [
-            "https://github.com/otsmr/internet-of-vulnerable-things/tree/main/exploits"
-        ],
-        "summary": "TP-Link TL-WR902AC devices through V3 0.9.1 allow remote authenticated attackers to execute arbitrary code or cause a Denial of Service (DoS) by uploading a crafted firmware update because the signature check is inadequate."
+        "last-modified": "2022-12-30T22:15:00",
+        "references": [],
+        "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none."
     },
     {
-        "Modified": "2022-12-30T13:06:00",
-        "Published": "2022-12-30T08:15:00",
+        "Modified": "2022-12-30T22:15:00",
+        "Published": "2022-12-30T22:15:00",
         "access": {},
         "assigner": "cve@mitre.org",
         "cvss": null,
         "cwe": "Unknown",
-        "id": "CVE-2022-48196",
+        "id": "CVE-2019-17438",
         "impact": {},
-        "last-modified": "2022-12-30T13:06:00",
-        "references": [
-            "https://kb.netgear.com/000065495/Security-Advisory-for-Pre-Authentication-Buffer-Overflow-on-Some-Routers-PSV-2019-0208",
-            "https://www.bleepingcomputer.com/news/security/netgear-warns-users-to-patch-recently-fixed-wifi-router-bug/"
-        ],
-        "summary": "Certain NETGEAR devices are affected by a buffer overflow by an unauthenticated attacker. This affects RAX40 before 1.0.2.60, RAX35 before 1.0.2.60, R6400v2 before 1.0.4.122, R6700v3 before 1.0.4.122, R6900P before 1.3.3.152, R7000P before 1.3.3.152, R7000 before 1.0.11.136, R7960P before 1.4.4.94, and R8000P before 1.4.4.94."
+        "last-modified": "2022-12-30T22:15:00",
+        "references": [],
+        "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none."
     },
     {
-        "Modified": "2022-12-30T13:06:00",
-        "Published": "2022-12-30T09:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-89",
-        "id": "CVE-2022-4855",
-        "impact": {},
-        "last-modified": "2022-12-30T13:06:00",
-        "references": [
-            "https://github.com/joinia/webray.com.cn/blob/main/lead-management-system/leadmanasql.md",
-            "https://vuldb.com/?ctiid.217020",
-            "https://vuldb.com/?id.217020"
-        ],
-        "summary": "A vulnerability, which was classified as critical, was found in SourceCodester Lead Management System 1.0. Affected is an unknown function of the file login.php. The manipulation of the argument username leads to sql injection. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used. The identifier of this vulnerability is VDB-217020."
-    },
-    {
-        "Modified": "2022-12-30T13:06:00",
-        "Published": "2022-12-30T10:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-120",
-        "id": "CVE-2022-4856",
-        "impact": {},
-        "last-modified": "2022-12-30T13:06:00",
-        "references": [
-            "https://github.com/Durian1546/vul/blob/main/webray.com.cn/Modbus%20Slave/poc/poc.mbs",
-            "https://github.com/Durian1546/vul/blob/main/webray.com.cn/Modbus%20Slave/Modbus%20Slave%20(version%207.5.1%20and%20earlier)%20mbs%20file%20has%20a%20buffer%20overflow%20vulnerability.md",
-            "https://vuldb.com/?ctiid.217021",
-            "https://vuldb.com/?id.217021"
-        ],
-        "summary": "A vulnerability has been found in Modbus Tools Modbus Slave up to 7.5.1 and classified as critical. Affected by this vulnerability is an unknown functionality of the file mbslave.exe of the component mbs File Handler. The manipulation leads to buffer overflow. The attack can be launched remotely. The exploit has been disclosed to the public and may be used. The identifier VDB-217021 was assigned to this vulnerability."
-    },
-    {
-        "Modified": "2022-12-30T13:06:00",
-        "Published": "2022-12-30T10:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-120",
-        "id": "CVE-2022-4857",
-        "impact": {},
-        "last-modified": "2022-12-30T13:06:00",
-        "references": [
-            "https://github.com/Durian1546/vul/blob/main/webray.com.cn/Modbus%20Poll/poc/poc.mbp",
-            "https://github.com/Durian1546/vul/blob/main/webray.com.cn/Modbus%20Poll/Modbus%20Poll%20(version%209.10.0%20and%20earlier)%20mbp%20file%20has%20a%20buffer%20overflow%20vulnerability.md",
-            "https://vuldb.com/?ctiid.217022",
-            "https://vuldb.com/?id.217022"
-        ],
-        "summary": "A vulnerability was found in Modbus Tools Modbus Poll up to 9.10.0 and classified as critical. Affected by this issue is some unknown functionality of the file mbpoll.exe of the component mbp File Handler. The manipulation leads to buffer overflow. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. VDB-217022 is the identifier assigned to this vulnerability."
-    },
-    {
-        "Modified": "2022-12-30T13:06:00",
-        "Published": "2022-12-30T01:15:00",
+        "Modified": "2022-12-30T22:15:00",
+        "Published": "2022-12-30T22:15:00",
         "access": {},
         "assigner": "cve@mitre.org",
         "cvss": null,
         "cwe": "Unknown",
-        "id": "CVE-2022-44137",
+        "id": "CVE-2019-17439",
         "impact": {},
-        "last-modified": "2022-12-30T13:06:00",
-        "references": [
-            "https://github.com/y1s3m0/vulnfind/blob/main/Sanitization%20Management%20System%20Project%20CMS/sqli_view_inquiry.md"
-        ],
-        "summary": "SourceCodester Sanitization Management System 1.0 is vulnerable to SQL Injection."
+        "last-modified": "2022-12-30T22:15:00",
+        "references": [],
+        "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none."
     },
     {
-        "Modified": "2022-12-30T13:06:00",
-        "Published": "2022-12-29T23:15:00",
+        "Modified": "2022-12-30T22:15:00",
+        "Published": "2022-12-30T22:15:00",
         "access": {},
         "assigner": "cve@mitre.org",
         "cvss": null,
         "cwe": "Unknown",
-        "id": "CVE-2022-30519",
+        "id": "CVE-2019-17441",
         "impact": {},
-        "last-modified": "2022-12-30T13:06:00",
-        "references": [
-            "https://github.com/earth2sky/Disclosed/blob/main/CVE-2022-30519"
-        ],
-        "summary": "XSS in signing form in Reprise Software RLM License Administration v14.2BL4 allows remote attacker to inject arbitrary code via password field."
+        "last-modified": "2022-12-30T22:15:00",
+        "references": [],
+        "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none."
     },
     {
-        "Modified": "2022-12-30T13:06:00",
-        "Published": "2022-12-29T23:15:00",
+        "Modified": "2022-12-30T22:15:00",
+        "Published": "2022-12-30T22:15:00",
         "access": {},
         "assigner": "cve@mitre.org",
         "cvss": null,
         "cwe": "Unknown",
-        "id": "CVE-2022-36437",
+        "id": "CVE-2020-12515",
         "impact": {},
-        "last-modified": "2022-12-30T13:06:00",
-        "references": [
-            "https://github.com/hazelcast/hazelcast/security/advisories/GHSA-c5hg-mr8r-f6jp"
-        ],
-        "summary": "The Connection handler in Hazelcast and Hazelcast Jet allows a remote unauthenticated attacker to access and manipulate data in the cluster with the identity of another already authenticated connection. The affected Hazelcast versions are through 4.0.6, 4.1.9, 4.2.5, 5.0.3, and 5.1.2. The affected Hazelcast Jet versions are through 4.5.3."
+        "last-modified": "2022-12-30T22:15:00",
+        "references": [],
+        "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none."
     },
     {
-        "Modified": "2022-12-30T04:15:00",
-        "Published": "2022-12-03T15:15:00",
-        "access": {},
-        "assigner": "security@apache.org",
-        "cvss": null,
-        "cwe": "CWE-20",
-        "id": "CVE-2021-37533",
-        "impact": {},
-        "last-modified": "2022-12-30T04:15:00",
-        "references": [
-            "https://lists.apache.org/thread/o6yn9r9x6s94v97264hmgol1sf48mvx7",
-            "http://www.openwall.com/lists/oss-security/2022/12/03/1",
-            "https://lists.debian.org/debian-lts-announce/2022/12/msg00038.html",
-            "https://www.debian.org/security/2022/dsa-5307"
-        ],
-        "summary": "Prior to Apache Commons Net 3.9.0, Net's FTP client trusts the host from PASV response by default. A malicious server can redirect the Commons Net code to use a different host, but the user has to connect to the malicious server in the first place. This may lead to leakage of information about services running on the private network of the client. The default in version 3.9.0 is now false to ignore such hosts, as cURL does. See https://issues.apache.org/jira/browse/NET-711."
-    },
-    {
-        "Modified": "2022-12-30T04:15:00",
-        "Published": "2022-11-09T07:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-400",
-        "id": "CVE-2022-45061",
-        "impact": {},
-        "last-modified": "2022-12-30T04:15:00",
-        "references": [
-            "https://github.com/python/cpython/issues/98433",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/O67LRHDTJWH544KXB6KY4HMHQLYDXFPK/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/4WBZJNSALFGMPYTINIF57HAAK46U72WQ/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/GTPVDZDATRQFE6KAT6B4BQIQ4GRHIIIJ/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RTN2OOLKYTG34DODUEJGT5MLC2PFGPBA/",
-            "https://security.netapp.com/advisory/ntap-20221209-0007/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/ZB5YCMIRVX35RUB6XPOWKENCVCJEVDRK/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/PLQ2BNZVBBAQPV3SPRU24ZD37UYJJS7W/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/VCMDX6IFKLOA3NXUQEV524L5LHTPI2JI/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/ORVCQGJCCAVLN4DJDTWGREFCUWXKQRML/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/T3D5TX4TDJPXHXD2QICKTY3OCQC3JARP/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/63FS6VHY4DCS74HBTEINUDOECQ2X6ZCH/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/JCDJXNBHWXNYUTOEV4H2HCFSRKV3SYL3/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RH57BNT4VQERGEJ5SXNXSVMDYP66YD4H/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/YPNWZKXPKTNHS5FVMN7UQZ2UPCSEFJUK/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/LKWAMPURWUV3DCCT4J7VHRF4NT2CFVBR/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/35YDIWCUMWTMDBWFRAVENFH6BLB65D6S/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/B3YI6JYARWU6GULWOHNUROSACT54XFFS/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/JTYVESWVBPD57ZJC35G5722Q6TS37WSB/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/KNE4GMD45RGC2HWUAAIGTDHT5VJ2E4O4/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UHVW73QZJMHA4MK7JBT7CXX7XSNYQEGF/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/2AOUKI72ACV6CHY2QUFO6VK2DNMVJ2MB/"
-        ],
-        "summary": "An issue was discovered in Python before 3.11.1. An unnecessary quadratic algorithm exists in one path when processing some inputs to the IDNA (RFC 3490) decoder, such that a crafted, unreasonably long name being presented to the decoder could lead to a CPU denial of service. Hostnames are often supplied by remote servers that could be controlled by a malicious actor; in such a scenario, they could trigger excessive CPU consumption on the client attempting to make use of an attacker-supplied supposed hostname. For example, the attack payload could be placed in the Location header of an HTTP response with status code 302. A fix is planned in 3.11.1, 3.10.9, 3.9.16, 3.8.16, and 3.7.16."
-    },
-    {
-        "Modified": "2022-12-30T02:34:00",
-        "Published": "2022-12-22T22:15:00",
-        "access": {},
-        "assigner": "talos-cna@cisco.com",
-        "cvss": null,
-        "cwe": "CWE-125",
-        "id": "CVE-2022-43596",
-        "impact": {},
-        "last-modified": "2022-12-30T02:34:00",
-        "references": [
-            "https://talosintelligence.com/vulnerability_reports/TALOS-2022-1654"
-        ],
-        "summary": "An information disclosure vulnerability exists in the IFFOutput channel interleaving functionality of OpenImageIO Project OpenImageIO v2.4.4.2. A specially crafted ImageOutput Object can lead to leaked heap data. An attacker can provide malicious input to trigger this vulnerability."
-    },
-    {
-        "Modified": "2022-12-30T01:53:00",
-        "Published": "2022-12-22T22:15:00",
-        "access": {},
-        "assigner": "talos-cna@cisco.com",
-        "cvss": null,
-        "cwe": "CWE-125",
-        "id": "CVE-2022-41649",
-        "impact": {},
-        "last-modified": "2022-12-30T01:53:00",
-        "references": [
-            "https://talosintelligence.com/vulnerability_reports/TALOS-2022-1631"
-        ],
-        "summary": "A heap out of bounds read vulnerability exists in the handling of IPTC data while parsing TIFF images in OpenImageIO v2.3.19.0. A specially-crafted TIFF file can cause a read of adjacent heap memory, which can leak sensitive process information. An attacker can provide a malicious file to trigger this vulnerability."
-    },
-    {
-        "Modified": "2022-12-30T01:53:00",
-        "Published": "2022-12-22T22:15:00",
-        "access": {},
-        "assigner": "talos-cna@cisco.com",
-        "cvss": null,
-        "cwe": "CWE-123",
-        "id": "CVE-2022-38143",
-        "impact": {},
-        "last-modified": "2022-12-30T01:53:00",
-        "references": [
-            "https://talosintelligence.com/vulnerability_reports/TALOS-2022-1630"
-        ],
-        "summary": "A heap out-of-bounds write vulnerability exists in the way OpenImageIO v2.3.19.0 processes RLE encoded BMP images. A specially-crafted bmp file can write to arbitrary out of bounds memory, which can lead to arbitrary code execution. An attacker can provide a malicious file to trigger this vulnerability."
-    },
-    {
-        "Modified": "2022-12-30T01:53:00",
-        "Published": "2022-12-22T22:15:00",
-        "access": {},
-        "assigner": "talos-cna@cisco.com",
-        "cvss": null,
-        "cwe": "CWE-122",
-        "id": "CVE-2022-41639",
-        "impact": {},
-        "last-modified": "2022-12-30T01:53:00",
-        "references": [
-            "https://talosintelligence.com/vulnerability_reports/TALOS-2022-1633"
-        ],
-        "summary": "A heap based buffer overflow vulnerability exists in tile decoding code of TIFF image parser in OpenImageIO master-branch-9aeece7a and v2.3.19.0. A specially-crafted TIFF file can lead to an out of bounds memory corruption, which can result in arbitrary code execution. An attacker can provide a malicious file to trigger this vulnerability."
-    },
-    {
-        "Modified": "2022-12-30T01:45:00",
-        "Published": "2022-12-22T22:15:00",
-        "access": {},
-        "assigner": "talos-cna@cisco.com",
-        "cvss": null,
-        "cwe": "CWE-787",
-        "id": "CVE-2022-41837",
-        "impact": {},
-        "last-modified": "2022-12-30T01:45:00",
-        "references": [
-            "https://talosintelligence.com/vulnerability_reports/TALOS-2022-1636"
-        ],
-        "summary": "An out-of-bounds write vulnerability exists in the OpenImageIO::add_exif_item_to_spec functionality of OpenImageIO Project OpenImageIO v2.4.4.2. Specially-crafted exif metadata can lead to stack-based memory corruption. An attacker can provide a malicious file to trigger this vulnerability."
-    },
-    {
-        "Modified": "2022-12-30T01:37:00",
-        "Published": "2022-12-22T22:15:00",
-        "access": {},
-        "assigner": "talos-cna@cisco.com",
-        "cvss": null,
-        "cwe": "CWE-122",
-        "id": "CVE-2022-41838",
-        "impact": {},
-        "last-modified": "2022-12-30T01:37:00",
-        "references": [
-            "https://talosintelligence.com/vulnerability_reports/TALOS-2022-1634"
-        ],
-        "summary": "A code execution vulnerability exists in the DDS scanline parsing functionality of OpenImageIO Project OpenImageIO v2.4.4.2. A specially-crafted .dds can lead to a heap buffer overflow. An attacker can provide a malicious file to trigger this vulnerability."
-    },
-    {
-        "Modified": "2022-12-30T01:15:00",
-        "Published": "2022-12-27T18:15:00",
+        "Modified": "2022-12-30T22:15:00",
+        "Published": "2022-12-30T22:15:00",
         "access": {},
         "assigner": "cve@mitre.org",
         "cvss": null,
         "cwe": "Unknown",
-        "id": "CVE-2022-47968",
+        "id": "CVE-2020-12520",
         "impact": {},
-        "last-modified": "2022-12-30T01:15:00",
-        "references": [
-            "https://github.com/linuxserver/Heimdall/issues/1086",
-            "https://samy.link/blog"
-        ],
-        "summary": "Heimdall Application Dashboard through 2.5.4 allows reflected and stored XSS via \"Application name\" to the \"Add application\" page. The stored XSS will be triggered in the \"Application list\" page."
+        "last-modified": "2022-12-30T22:15:00",
+        "references": [],
+        "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none."
     },
     {
-        "Modified": "2022-12-29T23:17:00",
-        "Published": "2022-12-22T20:15:00",
+        "Modified": "2022-12-30T22:15:00",
+        "Published": "2022-12-30T22:15:00",
         "access": {},
-        "assigner": "security@mozilla.org",
+        "assigner": "cve@mitre.org",
         "cvss": null,
-        "cwe": "CWE-295",
-        "id": "CVE-2022-22747",
+        "cwe": "Unknown",
+        "id": "CVE-2019-17442",
         "impact": {},
-        "last-modified": "2022-12-29T23:17:00",
-        "references": [
-            "https://www.mozilla.org/security/advisories/mfsa2022-02/",
-            "https://www.mozilla.org/security/advisories/mfsa2022-01/",
-            "https://bugzilla.mozilla.org/show_bug.cgi?id=1735028",
-            "https://www.mozilla.org/security/advisories/mfsa2022-03/"
-        ],
-        "summary": "After accepting an untrusted certificate, handling an empty pkcs7 sequence as part of the certificate data could have lead to a crash. This crash is believed to be unexploitable. This vulnerability affects Firefox ESR < 91.5, Firefox < 96, and Thunderbird < 91.5."
+        "last-modified": "2022-12-30T22:15:00",
+        "references": [],
+        "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none."
     },
     {
-        "Modified": "2022-12-29T23:16:00",
-        "Published": "2022-12-22T20:15:00",
+        "Modified": "2022-12-30T22:15:00",
+        "Published": "2022-12-30T22:15:00",
         "access": {},
-        "assigner": "security@mozilla.org",
+        "assigner": "cve@mitre.org",
         "cvss": null,
-        "cwe": "NVD-CWE-noinfo",
-        "id": "CVE-2022-22748",
+        "cwe": "Unknown",
+        "id": "CVE-2020-12536",
         "impact": {},
-        "last-modified": "2022-12-29T23:16:00",
-        "references": [
-            "https://bugzilla.mozilla.org/show_bug.cgi?id=1705211",
-            "https://www.mozilla.org/security/advisories/mfsa2022-02/",
-            "https://www.mozilla.org/security/advisories/mfsa2022-01/",
-            "https://www.mozilla.org/security/advisories/mfsa2022-03/"
-        ],
-        "summary": "Malicious websites could have confused Firefox into showing the wrong origin when asking to launch a program and handling an external URL protocol. This vulnerability affects Firefox ESR < 91.5, Firefox < 96, and Thunderbird < 91.5."
+        "last-modified": "2022-12-30T22:15:00",
+        "references": [],
+        "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none."
     },
     {
-        "Modified": "2022-12-29T23:13:00",
-        "Published": "2022-12-22T20:15:00",
+        "Modified": "2022-12-30T22:15:00",
+        "Published": "2022-12-30T22:15:00",
         "access": {},
-        "assigner": "security@mozilla.org",
+        "assigner": "cve@mitre.org",
         "cvss": null,
-        "cwe": "NVD-CWE-noinfo",
-        "id": "CVE-2022-22749",
+        "cwe": "Unknown",
+        "id": "CVE-2019-17443",
         "impact": {},
-        "last-modified": "2022-12-29T23:13:00",
-        "references": [
-            "https://www.mozilla.org/security/advisories/mfsa2022-01/",
-            "https://bugzilla.mozilla.org/show_bug.cgi?id=1705094"
-        ],
-        "summary": "When scanning QR codes, Firefox for Android would have allowed navigation to some URLs that do not point to web content.<br>*This bug only affects Firefox for Android. Other operating systems are unaffected.*. This vulnerability affects Firefox < 96."
+        "last-modified": "2022-12-30T22:15:00",
+        "references": [],
+        "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none."
     },
     {
-        "Modified": "2022-12-29T23:12:00",
-        "Published": "2022-12-22T20:15:00",
+        "Modified": "2022-12-30T22:15:00",
+        "Published": "2022-12-30T22:15:00",
         "access": {},
-        "assigner": "security@mozilla.org",
+        "assigner": "cve@mitre.org",
         "cvss": null,
-        "cwe": "NVD-CWE-noinfo",
-        "id": "CVE-2022-22750",
+        "cwe": "Unknown",
+        "id": "CVE-2020-12537",
         "impact": {},
-        "last-modified": "2022-12-29T23:12:00",
-        "references": [
-            "https://www.mozilla.org/security/advisories/mfsa2022-01/",
-            "https://bugzilla.mozilla.org/show_bug.cgi?id=1566608"
-        ],
-        "summary": "By generally accepting and passing resource handles across processes, a compromised content process might have confused higher privileged processes to interact with handles that the unprivileged process should not have access to.<br>*This bug only affects Firefox for Windows and MacOS. Other operating systems are unaffected.*. This vulnerability affects Firefox < 96."
+        "last-modified": "2022-12-30T22:15:00",
+        "references": [],
+        "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none."
     },
     {
-        "Modified": "2022-12-29T23:09:00",
-        "Published": "2022-12-22T20:15:00",
+        "Modified": "2022-12-30T22:15:00",
+        "Published": "2022-12-30T22:15:00",
         "access": {},
-        "assigner": "security@mozilla.org",
+        "assigner": "cve@mitre.org",
         "cvss": null,
-        "cwe": "NVD-CWE-noinfo",
-        "id": "CVE-2022-22756",
+        "cwe": "Unknown",
+        "id": "CVE-2020-12531",
         "impact": {},
-        "last-modified": "2022-12-29T23:09:00",
-        "references": [
-            "https://bugzilla.mozilla.org/show_bug.cgi?id=1317873",
-            "https://www.mozilla.org/security/advisories/mfsa2022-06/",
-            "https://www.mozilla.org/security/advisories/mfsa2022-05/",
-            "https://www.mozilla.org/security/advisories/mfsa2022-04/"
-        ],
-        "summary": "If a user was convinced to drag and drop an image to their desktop or other folder, the resulting object could have been changed into an executable script which would have run arbitrary code after the user clicked on it. This vulnerability affects Firefox < 97, Thunderbird < 91.6, and Firefox ESR < 91.6."
+        "last-modified": "2022-12-30T22:15:00",
+        "references": [],
+        "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none."
     },
     {
-        "Modified": "2022-12-29T23:08:00",
-        "Published": "2022-12-22T20:15:00",
+        "Modified": "2022-12-30T22:15:00",
+        "Published": "2022-12-30T22:15:00",
         "access": {},
-        "assigner": "security@mozilla.org",
+        "assigner": "cve@mitre.org",
         "cvss": null,
-        "cwe": "CWE-672",
-        "id": "CVE-2022-22755",
+        "cwe": "Unknown",
+        "id": "CVE-2020-12532",
         "impact": {},
-        "last-modified": "2022-12-29T23:08:00",
-        "references": [
-            "https://bugzilla.mozilla.org/show_bug.cgi?id=1309630",
-            "https://www.mozilla.org/security/advisories/mfsa2022-04/"
-        ],
-        "summary": "By using XSL Transforms, a malicious webserver could have served a user an XSL document that would continue to execute JavaScript (within the bounds of the same-origin policy) even after the tab was closed. This vulnerability affects Firefox < 97."
+        "last-modified": "2022-12-30T22:15:00",
+        "references": [],
+        "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none."
     },
     {
-        "Modified": "2022-12-29T23:06:00",
-        "Published": "2022-12-22T20:15:00",
+        "Modified": "2022-12-30T22:15:00",
+        "Published": "2022-12-30T22:15:00",
         "access": {},
-        "assigner": "security@mozilla.org",
+        "assigner": "cve@mitre.org",
         "cvss": null,
-        "cwe": "CWE-863",
-        "id": "CVE-2022-22754",
+        "cwe": "Unknown",
+        "id": "CVE-2020-12538",
         "impact": {},
-        "last-modified": "2022-12-29T23:06:00",
-        "references": [
-            "https://www.mozilla.org/security/advisories/mfsa2022-06/",
-            "https://bugzilla.mozilla.org/show_bug.cgi?id=1750565",
-            "https://www.mozilla.org/security/advisories/mfsa2022-05/",
-            "https://www.mozilla.org/security/advisories/mfsa2022-04/"
-        ],
-        "summary": "If a user installed an extension of a particular type, the extension could have auto-updated itself and while doing so, bypass the prompt which grants the new version the new requested permissions. This vulnerability affects Firefox < 97, Thunderbird < 91.6, and Firefox ESR < 91.6."
+        "last-modified": "2022-12-30T22:15:00",
+        "references": [],
+        "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none."
     },
     {
-        "Modified": "2022-12-29T23:03:00",
-        "Published": "2022-12-22T20:15:00",
+        "Modified": "2022-12-30T22:15:00",
+        "Published": "2022-12-30T22:15:00",
         "access": {},
-        "assigner": "security@mozilla.org",
+        "assigner": "cve@mitre.org",
         "cvss": null,
-        "cwe": "CWE-367",
-        "id": "CVE-2022-22753",
+        "cwe": "Unknown",
+        "id": "CVE-2020-12533",
         "impact": {},
-        "last-modified": "2022-12-29T23:03:00",
-        "references": [
-            "https://bugzilla.mozilla.org/show_bug.cgi?id=1732435",
-            "https://www.mozilla.org/security/advisories/mfsa2022-06/",
-            "https://www.mozilla.org/security/advisories/mfsa2022-05/",
-            "https://www.mozilla.org/security/advisories/mfsa2022-04/"
-        ],
-        "summary": "A Time-of-Check Time-of-Use bug existed in the Maintenance (Updater) Service that could be abused to grant Users write access to an arbitrary directory. This could have been used to escalate to SYSTEM access.<br>*This bug only affects Firefox on Windows. Other operating systems are unaffected.*. This vulnerability affects Firefox < 97, Thunderbird < 91.6, and Firefox ESR < 91.6."
+        "last-modified": "2022-12-30T22:15:00",
+        "references": [],
+        "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none."
     },
     {
-        "Modified": "2022-12-29T22:56:00",
-        "Published": "2022-12-22T20:15:00",
+        "Modified": "2022-12-30T22:15:00",
+        "Published": "2022-12-30T22:15:00",
         "access": {},
-        "assigner": "security@mozilla.org",
+        "assigner": "cve@mitre.org",
         "cvss": null,
-        "cwe": "CWE-787",
-        "id": "CVE-2022-22752",
+        "cwe": "Unknown",
+        "id": "CVE-2020-12534",
         "impact": {},
-        "last-modified": "2022-12-29T22:56:00",
-        "references": [
-            "https://bugzilla.mozilla.org/buglist.cgi?bug_id=1741210%2C1742770",
-            "https://www.mozilla.org/security/advisories/mfsa2022-01/"
-        ],
-        "summary": "Mozilla developers Christian Holler and Jason Kratzer reported memory safety bugs present in Firefox 95. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code. This vulnerability affects Firefox < 96."
+        "last-modified": "2022-12-30T22:15:00",
+        "references": [],
+        "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none."
     },
     {
-        "Modified": "2022-12-29T22:55:00",
-        "Published": "2022-12-22T20:15:00",
+        "Modified": "2022-12-30T22:15:00",
+        "Published": "2022-12-30T22:15:00",
         "access": {},
-        "assigner": "security@mozilla.org",
+        "assigner": "cve@mitre.org",
         "cvss": null,
-        "cwe": "CWE-787",
-        "id": "CVE-2022-22751",
+        "cwe": "Unknown",
+        "id": "CVE-2020-12540",
         "impact": {},
-        "last-modified": "2022-12-29T22:55:00",
-        "references": [
-            "https://www.mozilla.org/security/advisories/mfsa2022-02/",
-            "https://www.mozilla.org/security/advisories/mfsa2022-01/",
-            "https://bugzilla.mozilla.org/buglist.cgi?bug_id=1664149%2C1737816%2C1739366%2C1740274%2C1740797%2C1741201%2C1741869%2C1743221%2C1743515%2C1745373%2C1746011",
-            "https://www.mozilla.org/security/advisories/mfsa2022-03/"
-        ],
-        "summary": "Mozilla developers Calixte Denizet, Kershaw Chang, Christian Holler, Jason Kratzer, Gabriele Svelto, Tyson Smith, Simon Giesecke, and Steve Fink reported memory safety bugs present in Firefox 95 and Firefox ESR 91.4. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code. This vulnerability affects Firefox ESR < 91.5, Firefox < 96, and Thunderbird < 91.5."
+        "last-modified": "2022-12-30T22:15:00",
+        "references": [],
+        "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none."
     },
     {
-        "Modified": "2022-12-29T22:51:00",
-        "Published": "2022-12-22T20:15:00",
+        "Modified": "2022-12-30T22:15:00",
+        "Published": "2022-12-30T22:15:00",
         "access": {},
-        "assigner": "security@mozilla.org",
+        "assigner": "cve@mitre.org",
         "cvss": null,
-        "cwe": "NVD-CWE-noinfo",
-        "id": "CVE-2022-22759",
+        "cwe": "Unknown",
+        "id": "CVE-2020-12535",
         "impact": {},
-        "last-modified": "2022-12-29T22:51:00",
-        "references": [
-            "https://www.mozilla.org/security/advisories/mfsa2022-06/",
-            "https://www.mozilla.org/security/advisories/mfsa2022-05/",
-            "https://www.mozilla.org/security/advisories/mfsa2022-04/",
-            "https://bugzilla.mozilla.org/show_bug.cgi?id=1739957"
-        ],
-        "summary": "If a document created a sandboxed iframe without <code>allow-scripts</code>, and subsequently appended an element to the iframe's document that e.g. had a JavaScript event handler - the event handler would have run despite the iframe's sandbox. This vulnerability affects Firefox < 97, Thunderbird < 91.6, and Firefox ESR < 91.6."
+        "last-modified": "2022-12-30T22:15:00",
+        "references": [],
+        "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none."
     },
     {
-        "Modified": "2022-12-29T22:50:00",
-        "Published": "2022-12-22T20:15:00",
+        "Modified": "2022-12-30T22:15:00",
+        "Published": "2022-12-30T22:15:00",
         "access": {},
-        "assigner": "security@mozilla.org",
+        "assigner": "cve@mitre.org",
         "cvss": null,
-        "cwe": "CWE-319",
-        "id": "CVE-2022-22758",
+        "cwe": "Unknown",
+        "id": "CVE-2020-12541",
         "impact": {},
-        "last-modified": "2022-12-29T22:50:00",
-        "references": [
-            "https://bugzilla.mozilla.org/show_bug.cgi?id=1728742",
-            "https://www.mozilla.org/security/advisories/mfsa2022-04/"
-        ],
-        "summary": "When clicking on a tel: link, USSD codes, specified after a <code>\\*</code> character, would be included in the phone number. On certain phones, or on certain carriers, if the number was dialed this could perform actions on a user's account, similar to a cross-site request forgery attack.<br>*This bug only affects Firefox for Android. Other operating systems are unaffected.*. This vulnerability affects Firefox < 97."
+        "last-modified": "2022-12-30T22:15:00",
+        "references": [],
+        "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none."
     },
     {
-        "Modified": "2022-12-29T22:49:00",
-        "Published": "2022-12-22T20:15:00",
+        "Modified": "2022-12-30T22:15:00",
+        "Published": "2022-12-30T22:15:00",
         "access": {},
-        "assigner": "security@mozilla.org",
+        "assigner": "cve@mitre.org",
         "cvss": null,
-        "cwe": "CWE-20",
-        "id": "CVE-2022-22757",
+        "cwe": "Unknown",
+        "id": "CVE-2020-12539",
         "impact": {},
-        "last-modified": "2022-12-29T22:49:00",
-        "references": [
-            "https://bugzilla.mozilla.org/show_bug.cgi?id=1720098",
-            "https://www.mozilla.org/security/advisories/mfsa2022-04/"
-        ],
-        "summary": "Remote Agent, used in WebDriver, did not validate the Host or Origin headers. This could have allowed websites to connect back locally to the user's browser to control it. <br>*This bug only affected Firefox when WebDriver was enabled, which is not the default configuration.*. This vulnerability affects Firefox < 97."
+        "last-modified": "2022-12-30T22:15:00",
+        "references": [],
+        "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none."
     },
     {
-        "Modified": "2022-12-29T22:24:00",
-        "Published": "2022-12-29T19:15:00",
+        "Modified": "2022-12-30T22:15:00",
+        "Published": "2022-12-30T22:15:00",
         "access": {},
-        "assigner": "security-advisories@github.com",
+        "assigner": "cve@mitre.org",
         "cvss": null,
-        "cwe": "CWE-22",
-        "id": "CVE-2022-46178",
+        "cwe": "Unknown",
+        "id": "CVE-2020-12542",
         "impact": {},
-        "last-modified": "2022-12-29T22:24:00",
-        "references": [
-            "https://github.com/metersphere/metersphere/security/advisories/GHSA-9p62-x3c5-hr5p"
-        ],
-        "summary": "MeterSphere is a one-stop open source continuous testing platform, covering test management, interface testing, UI testing and performance testing. Versions prior to 2.5.1 allow users to upload a file, but do not validate the file name, which may lead to upload file to any path. The vulnerability has been fixed in v2.5.1. There are no workarounds."
+        "last-modified": "2022-12-30T22:15:00",
+        "references": [],
+        "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none."
     },
     {
-        "Modified": "2022-12-29T22:24:00",
-        "Published": "2022-12-29T19:15:00",
+        "Modified": "2022-12-30T22:15:00",
+        "Published": "2022-12-30T22:15:00",
         "access": {},
-        "assigner": "security-advisories@github.com",
+        "assigner": "cve@mitre.org",
         "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-46181",
+        "cwe": "Unknown",
+        "id": "CVE-2020-12543",
         "impact": {},
-        "last-modified": "2022-12-29T22:24:00",
-        "references": [
-            "https://github.com/gotify/server/pull/535",
-            "https://github.com/gotify/server/pull/534",
-            "https://github.com/gotify/server/security/advisories/GHSA-xv6x-456v-24xh"
-        ],
-        "summary": "Gotify server is a simple server for sending and receiving messages in real-time per WebSocket. Versions prior to 2.2.2 contain an XSS vulnerability that allows authenticated users to upload .html files. An attacker could execute client side scripts **if** another user opened a link. The attacker could potentially take over the account of the user that clicked the link. The Gotify UI won't natively expose such a malicious link, so an attacker has to get the user to open the malicious link in a context outside of Gotify. The vulnerability has been fixed in version 2.2.2. As a workaround, you can block access to non image files via a reverse proxy in the `./image` directory."
+        "last-modified": "2022-12-30T22:15:00",
+        "references": [],
+        "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none."
     },
     {
-        "Modified": "2022-12-29T22:24:00",
-        "Published": "2022-12-29T20:15:00",
+        "Modified": "2022-12-30T22:15:00",
+        "Published": "2022-12-30T22:15:00",
         "access": {},
-        "assigner": "psirt@esri.com",
+        "assigner": "cve@mitre.org",
         "cvss": null,
-        "cwe": "CWE-918",
-        "id": "CVE-2022-38203",
+        "cwe": "Unknown",
+        "id": "CVE-2020-12546",
         "impact": {},
-        "last-modified": "2022-12-29T22:24:00",
-        "references": [
-            "https://www.esri.com/arcgis-blog/products/trust-arcgis/administration/portal-for-arcgis-security-2022-update-2-patch-is-now-available"
-        ],
-        "summary": "Protections against potential Server-Side Request Forgery (SSRF) vulnerabilities in Esri Portal for ArcGIS versions 10.8.1 and below were not fully honored and may allow a remote, unauthenticated attacker to forge requests to arbitrary URLs from the system, potentially leading to network enumeration or reading from hosts inside the network perimeter, a different issue than CVE-2022-38211 and CVE-2022-38212."
+        "last-modified": "2022-12-30T22:15:00",
+        "references": [],
+        "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none."
+    },
+    {
+        "Modified": "2022-12-30T22:15:00",
+        "Published": "2022-12-30T22:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2020-12544",
+        "impact": {},
+        "last-modified": "2022-12-30T22:15:00",
+        "references": [],
+        "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none."
+    },
+    {
+        "Modified": "2022-12-30T22:15:00",
+        "Published": "2022-12-30T22:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2020-12547",
+        "impact": {},
+        "last-modified": "2022-12-30T22:15:00",
+        "references": [],
+        "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none."
+    },
+    {
+        "Modified": "2022-12-30T22:15:00",
+        "Published": "2022-12-30T22:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2020-12545",
+        "impact": {},
+        "last-modified": "2022-12-30T22:15:00",
+        "references": [],
+        "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none."
+    },
+    {
+        "Modified": "2022-12-30T22:15:00",
+        "Published": "2022-12-30T22:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2020-12552",
+        "impact": {},
+        "last-modified": "2022-12-30T22:15:00",
+        "references": [],
+        "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none."
+    },
+    {
+        "Modified": "2022-12-30T22:15:00",
+        "Published": "2022-12-30T22:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2020-12548",
+        "impact": {},
+        "last-modified": "2022-12-30T22:15:00",
+        "references": [],
+        "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none."
+    },
+    {
+        "Modified": "2022-12-30T22:15:00",
+        "Published": "2022-12-30T22:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2020-12553",
+        "impact": {},
+        "last-modified": "2022-12-30T22:15:00",
+        "references": [],
+        "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none."
+    },
+    {
+        "Modified": "2022-12-30T22:15:00",
+        "Published": "2022-12-30T22:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2020-12549",
+        "impact": {},
+        "last-modified": "2022-12-30T22:15:00",
+        "references": [],
+        "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none."
+    },
+    {
+        "Modified": "2022-12-30T22:15:00",
+        "Published": "2022-12-30T22:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2020-12557",
+        "impact": {},
+        "last-modified": "2022-12-30T22:15:00",
+        "references": [],
+        "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none."
+    },
+    {
+        "Modified": "2022-12-30T22:15:00",
+        "Published": "2022-12-30T22:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2020-12550",
+        "impact": {},
+        "last-modified": "2022-12-30T22:15:00",
+        "references": [],
+        "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none."
+    },
+    {
+        "Modified": "2022-12-30T22:15:00",
+        "Published": "2022-12-30T22:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2020-12558",
+        "impact": {},
+        "last-modified": "2022-12-30T22:15:00",
+        "references": [],
+        "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none."
+    },
+    {
+        "Modified": "2022-12-30T22:15:00",
+        "Published": "2022-12-30T22:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2020-12551",
+        "impact": {},
+        "last-modified": "2022-12-30T22:15:00",
+        "references": [],
+        "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none."
+    },
+    {
+        "Modified": "2022-12-30T22:15:00",
+        "Published": "2022-12-30T22:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2020-12554",
+        "impact": {},
+        "last-modified": "2022-12-30T22:15:00",
+        "references": [],
+        "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none."
+    },
+    {
+        "Modified": "2022-12-30T22:15:00",
+        "Published": "2022-12-30T22:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2020-12555",
+        "impact": {},
+        "last-modified": "2022-12-30T22:15:00",
+        "references": [],
+        "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none."
+    },
+    {
+        "Modified": "2022-12-30T22:15:00",
+        "Published": "2022-12-30T22:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2020-12556",
+        "impact": {},
+        "last-modified": "2022-12-30T22:15:00",
+        "references": [],
+        "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none."
+    },
+    {
+        "Modified": "2022-12-30T22:15:00",
+        "Published": "2022-12-30T22:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2020-12572",
+        "impact": {},
+        "last-modified": "2022-12-30T22:15:00",
+        "references": [],
+        "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none."
+    },
+    {
+        "Modified": "2022-12-30T22:15:00",
+        "Published": "2022-12-30T22:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2020-12559",
+        "impact": {},
+        "last-modified": "2022-12-30T22:15:00",
+        "references": [],
+        "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none."
+    },
+    {
+        "Modified": "2022-12-30T22:15:00",
+        "Published": "2022-12-30T22:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2020-12573",
+        "impact": {},
+        "last-modified": "2022-12-30T22:15:00",
+        "references": [],
+        "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none."
+    },
+    {
+        "Modified": "2022-12-30T22:15:00",
+        "Published": "2022-12-30T22:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2020-12560",
+        "impact": {},
+        "last-modified": "2022-12-30T22:15:00",
+        "references": [],
+        "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none."
+    },
+    {
+        "Modified": "2022-12-30T22:15:00",
+        "Published": "2022-12-30T22:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2020-12574",
+        "impact": {},
+        "last-modified": "2022-12-30T22:15:00",
+        "references": [],
+        "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none."
+    },
+    {
+        "Modified": "2022-12-30T22:15:00",
+        "Published": "2022-12-30T22:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2020-12561",
+        "impact": {},
+        "last-modified": "2022-12-30T22:15:00",
+        "references": [],
+        "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none."
+    },
+    {
+        "Modified": "2022-12-30T22:15:00",
+        "Published": "2022-12-30T22:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2020-12575",
+        "impact": {},
+        "last-modified": "2022-12-30T22:15:00",
+        "references": [],
+        "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none."
+    },
+    {
+        "Modified": "2022-12-30T22:15:00",
+        "Published": "2022-12-30T22:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2020-12562",
+        "impact": {},
+        "last-modified": "2022-12-30T22:15:00",
+        "references": [],
+        "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none."
+    },
+    {
+        "Modified": "2022-12-30T22:15:00",
+        "Published": "2022-12-30T22:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2020-12576",
+        "impact": {},
+        "last-modified": "2022-12-30T22:15:00",
+        "references": [],
+        "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none."
+    },
+    {
+        "Modified": "2022-12-30T22:15:00",
+        "Published": "2022-12-30T22:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2020-12563",
+        "impact": {},
+        "last-modified": "2022-12-30T22:15:00",
+        "references": [],
+        "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none."
+    },
+    {
+        "Modified": "2022-12-30T22:15:00",
+        "Published": "2022-12-30T22:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2020-12577",
+        "impact": {},
+        "last-modified": "2022-12-30T22:15:00",
+        "references": [],
+        "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none."
+    },
+    {
+        "Modified": "2022-12-30T22:15:00",
+        "Published": "2022-12-30T22:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2020-12564",
+        "impact": {},
+        "last-modified": "2022-12-30T22:15:00",
+        "references": [],
+        "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none."
+    },
+    {
+        "Modified": "2022-12-30T22:15:00",
+        "Published": "2022-12-30T22:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2020-12580",
+        "impact": {},
+        "last-modified": "2022-12-30T22:15:00",
+        "references": [],
+        "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none."
+    },
+    {
+        "Modified": "2022-12-30T22:15:00",
+        "Published": "2022-12-30T22:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2020-12565",
+        "impact": {},
+        "last-modified": "2022-12-30T22:15:00",
+        "references": [],
+        "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none."
+    },
+    {
+        "Modified": "2022-12-30T22:15:00",
+        "Published": "2022-12-30T22:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2020-12581",
+        "impact": {},
+        "last-modified": "2022-12-30T22:15:00",
+        "references": [],
+        "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none."
+    },
+    {
+        "Modified": "2022-12-30T22:15:00",
+        "Published": "2022-12-30T22:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2020-12566",
+        "impact": {},
+        "last-modified": "2022-12-30T22:15:00",
+        "references": [],
+        "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none."
+    },
+    {
+        "Modified": "2022-12-30T22:15:00",
+        "Published": "2022-12-30T22:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2020-12567",
+        "impact": {},
+        "last-modified": "2022-12-30T22:15:00",
+        "references": [],
+        "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none."
+    },
+    {
+        "Modified": "2022-12-30T22:15:00",
+        "Published": "2022-12-30T22:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2020-12583",
+        "impact": {},
+        "last-modified": "2022-12-30T22:15:00",
+        "references": [],
+        "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none."
+    },
+    {
+        "Modified": "2022-12-30T22:15:00",
+        "Published": "2022-12-30T22:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2020-12568",
+        "impact": {},
+        "last-modified": "2022-12-30T22:15:00",
+        "references": [],
+        "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none."
+    },
+    {
+        "Modified": "2022-12-30T22:15:00",
+        "Published": "2022-12-30T22:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2020-12569",
+        "impact": {},
+        "last-modified": "2022-12-30T22:15:00",
+        "references": [],
+        "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none."
+    },
+    {
+        "Modified": "2022-12-30T22:15:00",
+        "Published": "2022-12-30T22:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2020-12570",
+        "impact": {},
+        "last-modified": "2022-12-30T22:15:00",
+        "references": [],
+        "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none."
+    },
+    {
+        "Modified": "2022-12-30T22:15:00",
+        "Published": "2022-12-30T22:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2020-12571",
+        "impact": {},
+        "last-modified": "2022-12-30T22:15:00",
+        "references": [],
+        "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none."
+    },
+    {
+        "Modified": "2022-12-30T22:15:00",
+        "Published": "2022-12-30T22:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2020-2053",
+        "impact": {},
+        "last-modified": "2022-12-30T22:15:00",
+        "references": [],
+        "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none."
+    },
+    {
+        "Modified": "2022-12-30T22:15:00",
+        "Published": "2022-12-30T22:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2020-12590",
+        "impact": {},
+        "last-modified": "2022-12-30T22:15:00",
+        "references": [],
+        "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none."
+    },
+    {
+        "Modified": "2022-12-30T22:15:00",
+        "Published": "2022-12-30T22:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2020-12591",
+        "impact": {},
+        "last-modified": "2022-12-30T22:15:00",
+        "references": [],
+        "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none."
+    },
+    {
+        "Modified": "2022-12-30T22:15:00",
+        "Published": "2022-12-30T22:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2020-2045",
+        "impact": {},
+        "last-modified": "2022-12-30T22:15:00",
+        "references": [],
+        "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none."
+    },
+    {
+        "Modified": "2022-12-30T22:15:00",
+        "Published": "2022-12-30T22:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2020-2069",
+        "impact": {},
+        "last-modified": "2022-12-30T22:15:00",
+        "references": [],
+        "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none."
+    },
+    {
+        "Modified": "2022-12-30T22:15:00",
+        "Published": "2022-12-30T22:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2020-12578",
+        "impact": {},
+        "last-modified": "2022-12-30T22:15:00",
+        "references": [],
+        "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none."
+    },
+    {
+        "Modified": "2022-12-30T22:15:00",
+        "Published": "2022-12-30T22:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2020-12579",
+        "impact": {},
+        "last-modified": "2022-12-30T22:15:00",
+        "references": [],
+        "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none."
+    },
+    {
+        "Modified": "2022-12-30T22:15:00",
+        "Published": "2022-12-30T22:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2021-23058",
+        "impact": {},
+        "last-modified": "2022-12-30T22:15:00",
+        "references": [],
+        "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none."
+    },
+    {
+        "Modified": "2022-12-30T22:15:00",
+        "Published": "2022-12-30T22:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2020-2051",
+        "impact": {},
+        "last-modified": "2022-12-30T22:15:00",
+        "references": [],
+        "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none."
+    },
+    {
+        "Modified": "2022-12-30T22:15:00",
+        "Published": "2022-12-30T22:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2021-23061",
+        "impact": {},
+        "last-modified": "2022-12-30T22:15:00",
+        "references": [],
+        "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none."
+    },
+    {
+        "Modified": "2022-12-30T22:15:00",
+        "Published": "2022-12-30T22:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2020-2052",
+        "impact": {},
+        "last-modified": "2022-12-30T22:15:00",
+        "references": [],
+        "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none."
+    },
+    {
+        "Modified": "2022-12-30T22:15:00",
+        "Published": "2022-12-30T22:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2021-23062",
+        "impact": {},
+        "last-modified": "2022-12-30T22:15:00",
+        "references": [],
+        "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none."
+    },
+    {
+        "Modified": "2022-12-30T22:15:00",
+        "Published": "2022-12-30T22:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2020-12582",
+        "impact": {},
+        "last-modified": "2022-12-30T22:15:00",
+        "references": [],
+        "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none."
+    },
+    {
+        "Modified": "2022-12-30T22:15:00",
+        "Published": "2022-12-30T22:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2021-23065",
+        "impact": {},
+        "last-modified": "2022-12-30T22:15:00",
+        "references": [],
+        "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none."
+    },
+    {
+        "Modified": "2022-12-30T22:15:00",
+        "Published": "2022-12-30T22:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2021-23066",
+        "impact": {},
+        "last-modified": "2022-12-30T22:15:00",
+        "references": [],
+        "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none."
+    },
+    {
+        "Modified": "2022-12-30T22:15:00",
+        "Published": "2022-12-30T22:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2020-12584",
+        "impact": {},
+        "last-modified": "2022-12-30T22:15:00",
+        "references": [],
+        "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none."
+    },
+    {
+        "Modified": "2022-12-30T22:15:00",
+        "Published": "2022-12-30T22:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2020-12585",
+        "impact": {},
+        "last-modified": "2022-12-30T22:15:00",
+        "references": [],
+        "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none."
+    },
+    {
+        "Modified": "2022-12-30T22:15:00",
+        "Published": "2022-12-30T22:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2020-12586",
+        "impact": {},
+        "last-modified": "2022-12-30T22:15:00",
+        "references": [],
+        "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none."
+    },
+    {
+        "Modified": "2022-12-30T22:15:00",
+        "Published": "2022-12-30T22:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2020-12587",
+        "impact": {},
+        "last-modified": "2022-12-30T22:15:00",
+        "references": [],
+        "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none."
+    },
+    {
+        "Modified": "2022-12-30T22:15:00",
+        "Published": "2022-12-30T22:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2021-23080",
+        "impact": {},
+        "last-modified": "2022-12-30T22:15:00",
+        "references": [],
+        "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none."
+    },
+    {
+        "Modified": "2022-12-30T22:15:00",
+        "Published": "2022-12-30T22:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2020-12588",
+        "impact": {},
+        "last-modified": "2022-12-30T22:15:00",
+        "references": [],
+        "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none."
+    },
+    {
+        "Modified": "2022-12-30T22:15:00",
+        "Published": "2022-12-30T22:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2021-23082",
+        "impact": {},
+        "last-modified": "2022-12-30T22:15:00",
+        "references": [],
+        "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none."
+    },
+    {
+        "Modified": "2022-12-30T22:15:00",
+        "Published": "2022-12-30T22:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2020-12589",
+        "impact": {},
+        "last-modified": "2022-12-30T22:15:00",
+        "references": [],
+        "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none."
+    },
+    {
+        "Modified": "2022-12-30T22:15:00",
+        "Published": "2022-12-30T22:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2020-12592",
+        "impact": {},
+        "last-modified": "2022-12-30T22:15:00",
+        "references": [],
+        "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none."
+    },
+    {
+        "Modified": "2022-12-30T22:15:00",
+        "Published": "2022-12-30T22:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2021-23087",
+        "impact": {},
+        "last-modified": "2022-12-30T22:15:00",
+        "references": [],
+        "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none."
+    },
+    {
+        "Modified": "2022-12-30T22:15:00",
+        "Published": "2022-12-30T22:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2021-23088",
+        "impact": {},
+        "last-modified": "2022-12-30T22:15:00",
+        "references": [],
+        "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none."
+    },
+    {
+        "Modified": "2022-12-30T22:15:00",
+        "Published": "2022-12-30T22:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2020-2046",
+        "impact": {},
+        "last-modified": "2022-12-30T22:15:00",
+        "references": [],
+        "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none."
+    },
+    {
+        "Modified": "2022-12-30T22:15:00",
+        "Published": "2022-12-30T22:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2021-23089",
+        "impact": {},
+        "last-modified": "2022-12-30T22:15:00",
+        "references": [],
+        "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none."
+    },
+    {
+        "Modified": "2022-12-30T22:15:00",
+        "Published": "2022-12-30T22:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2020-2047",
+        "impact": {},
+        "last-modified": "2022-12-30T22:15:00",
+        "references": [],
+        "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none."
+    },
+    {
+        "Modified": "2022-12-30T22:15:00",
+        "Published": "2022-12-30T22:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2020-2071",
+        "impact": {},
+        "last-modified": "2022-12-30T22:15:00",
+        "references": [],
+        "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none."
+    },
+    {
+        "Modified": "2022-12-30T22:15:00",
+        "Published": "2022-12-30T22:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2020-2073",
+        "impact": {},
+        "last-modified": "2022-12-30T22:15:00",
+        "references": [],
+        "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none."
+    },
+    {
+        "Modified": "2022-12-30T22:15:00",
+        "Published": "2022-12-30T22:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2020-2074",
+        "impact": {},
+        "last-modified": "2022-12-30T22:15:00",
+        "references": [],
+        "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none."
+    },
+    {
+        "Modified": "2022-12-30T22:15:00",
+        "Published": "2022-12-30T22:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2020-2054",
+        "impact": {},
+        "last-modified": "2022-12-30T22:15:00",
+        "references": [],
+        "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none."
+    },
+    {
+        "Modified": "2022-12-30T22:15:00",
+        "Published": "2022-12-30T22:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2020-2056",
+        "impact": {},
+        "last-modified": "2022-12-30T22:15:00",
+        "references": [],
+        "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none."
     }
 ]
