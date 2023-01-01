@@ -1,5 +1,69 @@
 [
     {
+        "Modified": "2023-01-01T19:15:00",
+        "Published": "2023-01-01T19:15:00",
+        "access": {},
+        "assigner": "cna@vuldb.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2021-4297",
+        "impact": {},
+        "last-modified": "2023-01-01T19:15:00",
+        "references": [
+            "https://github.com/trampgeek/jobe/commit/694da5013dbecc8d30dd83e2a83e78faadf93771",
+            "https://vuldb.com/?ctiid.217174",
+            "https://vuldb.com/?id.217174",
+            "https://github.com/trampgeek/jobe/issues/46"
+        ],
+        "summary": "A vulnerability has been found in trampgeek jobe up to 1.6.4 and classified as problematic. This vulnerability affects the function runs_post of the file application/controllers/Restapi.php. The manipulation of the argument sourcefilename leads to an unknown weakness. Upgrading to version 1.6.5 is able to address this issue. The name of the patch is 694da5013dbecc8d30dd83e2a83e78faadf93771. It is recommended to upgrade the affected component. VDB-217174 is the identifier assigned to this vulnerability."
+    },
+    {
+        "Modified": "2023-01-01T19:15:00",
+        "Published": "2022-11-02T17:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-1288",
+        "id": "CVE-2022-39353",
+        "impact": {},
+        "last-modified": "2023-01-01T19:15:00",
+        "references": [
+            "https://github.com/jindw/xmldom/issues/150",
+            "https://github.com/xmldom/xmldom/security/advisories/GHSA-crh6-fp67-6883",
+            "https://lists.debian.org/debian-lts-announce/2023/01/msg00000.html"
+        ],
+        "summary": "xmldom is a pure JavaScript W3C standard-based (XML DOM Level 2 Core) `DOMParser` and `XMLSerializer` module. xmldom parses XML that is not well-formed because it contains multiple top level elements, and adds all root nodes to the `childNodes` collection of the `Document`, without reporting any error or throwing. This breaks the assumption that there is only a single root node in the tree, which led to issuance of CVE-2022-39299 as it is a potential issue for dependents. Update to @xmldom/xmldom@~0.7.7, @xmldom/xmldom@~0.8.4 (dist-tag latest) or @xmldom/xmldom@>=0.9.0-beta.4 (dist-tag next). As a workaround, please one of the following approaches depending on your use case: instead of searching for elements in the whole DOM, only search in the `documentElement`or reject a document with a document that has more then 1 `childNode`."
+    },
+    {
+        "Modified": "2023-01-01T19:15:00",
+        "Published": "2021-03-12T17:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "MEDIUM",
+            "vector": "NETWORK"
+        },
+        "assigner": "security-advisories@github.com",
+        "cvss": 4.3,
+        "cvss-time": "2023-01-01T19:15:00",
+        "cvss-vector": "AV:N/AC:M/Au:N/C:N/I:P/A:N",
+        "cwe": "CWE-115",
+        "id": "CVE-2021-21366",
+        "impact": {
+            "availability": "NONE",
+            "confidentiality": "NONE",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2023-01-01T19:15:00",
+        "references": [
+            "https://github.com/xmldom/xmldom/releases/tag/0.5.0",
+            "https://www.npmjs.com/package/xmldom",
+            "https://github.com/xmldom/xmldom/commit/d4201b9dfbf760049f457f9f08a3888d48835135",
+            "https://github.com/xmldom/xmldom/security/advisories/GHSA-h6q6-9hqw-rwfv",
+            "https://lists.debian.org/debian-lts-announce/2023/01/msg00000.html"
+        ],
+        "summary": "xmldom is a pure JavaScript W3C standard-based (XML DOM Level 2 Core) DOMParser and XMLSerializer module. xmldom versions 0.4.0 and older do not correctly preserve system identifiers, FPIs or namespaces when repeatedly parsing and serializing maliciously crafted documents. This may lead to unexpected syntactic changes during XML processing in some downstream applications. This is fixed in version 0.5.0. As a workaround downstream applications can validate the input and reject the maliciously crafted documents."
+    },
+    {
         "Modified": "2023-01-01T18:15:00",
         "Published": "2023-01-01T18:15:00",
         "access": {},
@@ -1443,91 +1507,5 @@
             "https://lists.debian.org/debian-lts-announce/2022/12/msg00040.html"
         ],
         "summary": "A flaw was found in Exuberant Ctags in the way it handles the \"-o\" option. This option specifies the tag filename. A crafted tag filename specified in the command line or in the configuration file results in arbitrary command execution because the externalSortTags() in sort.c calls the system(3) function in an unsafe way."
-    },
-    {
-        "Modified": "2022-12-31T12:15:00",
-        "Published": "2022-03-03T23:15:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "MEDIUM",
-            "vector": "NETWORK"
-        },
-        "assigner": "secalert@redhat.com",
-        "cvss": 6.8,
-        "cvss-time": "2022-12-31T12:15:00",
-        "cvss-vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
-        "cwe": "CWE-287",
-        "id": "CVE-2022-0730",
-        "impact": {
-            "availability": "PARTIAL",
-            "confidentiality": "PARTIAL",
-            "integrity": "PARTIAL"
-        },
-        "last-modified": "2022-12-31T12:15:00",
-        "references": [
-            "https://github.com/Cacti/cacti/issues/4562",
-            "https://lists.debian.org/debian-lts-announce/2022/03/msg00038.html",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/ZJERS4NYIGJUXEGT6ATUQA4CBYBRDLRA/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RVOALVZSCBFNOAAZVHTJFSFB7UDSNYQ2/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/ZH67CCORDEYFG7NL7G6UH47PAV2PU7BA/",
-            "https://www.debian.org/security/2022/dsa-5298",
-            "https://lists.debian.org/debian-lts-announce/2022/12/msg00039.html"
-        ],
-        "summary": "Under certain ldap conditions, Cacti authentication can be bypassed with certain credential types."
-    },
-    {
-        "Modified": "2022-12-31T12:15:00",
-        "Published": "2021-08-27T18:15:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "MEDIUM",
-            "vector": "NETWORK"
-        },
-        "assigner": "cve@mitre.org",
-        "cvss": 4.3,
-        "cvss-time": "2022-12-31T12:15:00",
-        "cvss-vector": "AV:N/AC:M/Au:N/C:N/I:P/A:N",
-        "cwe": "CWE-79",
-        "id": "CVE-2020-23226",
-        "impact": {
-            "availability": "NONE",
-            "confidentiality": "NONE",
-            "integrity": "PARTIAL"
-        },
-        "last-modified": "2022-12-31T12:15:00",
-        "references": [
-            "https://github.com/Cacti/cacti/issues/3549",
-            "https://lists.debian.org/debian-lts-announce/2022/03/msg00038.html",
-            "https://lists.debian.org/debian-lts-announce/2022/12/msg00039.html"
-        ],
-        "summary": "Multiple Cross Site Scripting (XSS) vulneratiblities exist in Cacti 1.2.12 in (1) reports_admin.php, (2) data_queries.php, (3) data_input.php, (4) graph_templates.php, (5) graphs.php, (6) reports_admin.php, and (7) data_input.php."
-    },
-    {
-        "Modified": "2022-12-31T12:15:00",
-        "Published": "2020-11-12T14:15:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "MEDIUM",
-            "vector": "NETWORK"
-        },
-        "assigner": "secalert@redhat.com",
-        "cvss": 4.3,
-        "cvss-time": "2022-12-31T12:15:00",
-        "cvss-vector": "AV:N/AC:M/Au:N/C:N/I:P/A:N",
-        "cwe": "CWE-79",
-        "id": "CVE-2020-25706",
-        "impact": {
-            "availability": "NONE",
-            "confidentiality": "NONE",
-            "integrity": "PARTIAL"
-        },
-        "last-modified": "2022-12-31T12:15:00",
-        "references": [
-            "https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2020-25706",
-            "https://github.com/Cacti/cacti/issues/3723",
-            "https://github.com/Cacti/cacti/commit/39458efcd5286d50e6b7f905fedcdc1059354e6e",
-            "https://lists.debian.org/debian-lts-announce/2022/12/msg00039.html"
-        ],
-        "summary": "A cross-site scripting (XSS) vulnerability exists in templates_import.php (Cacti 1.2.13) due to Improper escaping of error message during template import preview in the xml_path field"
     }
 ]
