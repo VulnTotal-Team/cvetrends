@@ -1,5 +1,82 @@
 [
     {
+        "Modified": "2023-01-02T20:15:00",
+        "Published": "2023-01-02T20:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-20",
+        "id": "CVE-2023-22452",
+        "impact": {},
+        "last-modified": "2023-01-02T20:15:00",
+        "references": [
+            "https://github.com/Kenny2github/kenny2automate/commit/a947d7ce408687b587c7e6dfd6026f7c4ee31ac2",
+            "https://github.com/Kenny2github/kenny2automate/security/advisories/GHSA-73j8-xrcr-q6j7"
+        ],
+        "summary": "kenny2automate is a Discord bot. In the web interface for server settings, form elements were generated with Discord channel IDs as part of input names. Prior to commit a947d7c, no validation was performed to ensure that the channel IDs submitted actually belonged to the server being configured. Thus anyone who has access to the channel ID they wish to change settings for and the server settings panel for any server could change settings for the requested channel no matter which server it belonged to. Commit a947d7c resolves the issue and has been deployed to the official instance of the bot. The only workaround that exists is to disable the web config entirely by changing it to run on localhost. Note that a workaround is only necessary for those who run their own instance of the bot."
+    },
+    {
+        "Modified": "2023-01-02T19:15:00",
+        "Published": "2023-01-02T19:15:00",
+        "access": {},
+        "assigner": "cna@vuldb.com",
+        "cvss": null,
+        "cwe": "CWE-406",
+        "id": "CVE-2014-125036",
+        "impact": {},
+        "last-modified": "2023-01-02T19:15:00",
+        "references": [
+            "https://vuldb.com/?id.217190",
+            "https://github.com/drybjed/ansible-ntp/commit/ed4ca2cf012677973c220cdba36b5c60bfa0260b",
+            "https://vuldb.com/?ctiid.217190"
+        ],
+        "summary": "A vulnerability, which was classified as problematic, has been found in drybjed ansible-ntp. Affected by this issue is some unknown functionality of the file meta/main.yml. The manipulation leads to insufficient control of network message volume. The attack can only be done within the local network. The name of the patch is ed4ca2cf012677973c220cdba36b5c60bfa0260b. It is recommended to apply a patch to fix this issue. VDB-217190 is the identifier assigned to this vulnerability."
+    },
+    {
+        "Modified": "2023-01-02T19:15:00",
+        "Published": "2023-01-02T19:15:00",
+        "access": {},
+        "assigner": "cna@vuldb.com",
+        "cvss": null,
+        "cwe": "CWE-74",
+        "id": "CVE-2016-15007",
+        "impact": {},
+        "last-modified": "2023-01-02T19:15:00",
+        "references": [
+            "https://github.com/scottbcovert/Centralized-Salesforce-Dev-Framework/commit/db03ac5b8a9d830095991b529c067a030a0ccf7b",
+            "https://vuldb.com/?ctiid.217195",
+            "https://vuldb.com/?id.217195"
+        ],
+        "summary": "A vulnerability was found in Centralized-Salesforce-Dev-Framework. It has been declared as problematic. Affected by this vulnerability is the function SObjectService of the file src/classes/SObjectService.cls of the component SOQL Handler. The manipulation of the argument orderDirection leads to injection. The name of the patch is db03ac5b8a9d830095991b529c067a030a0ccf7b. It is recommended to apply a patch to fix this issue. The associated identifier of this vulnerability is VDB-217195."
+    },
+    {
+        "Modified": "2023-01-02T19:15:00",
+        "Published": "2022-08-25T15:15:00",
+        "access": {},
+        "assigner": "security@apache.org",
+        "cvss": null,
+        "cwe": "CWE-120",
+        "id": "CVE-2022-22728",
+        "impact": {},
+        "last-modified": "2023-01-02T19:15:00",
+        "references": [
+            "https://lists.apache.org/thread/2fsjoor96d47vtkpf76x4yo06nccvy1y",
+            "http://www.openwall.com/lists/oss-security/2022/08/25/4",
+            "http://www.openwall.com/lists/oss-security/2022/08/25/3",
+            "http://www.openwall.com/lists/oss-security/2022/08/26/4",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/2PUUS3JL44UUSLJTSXE46HVKZIW7E7PE/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/BE5MEHGIQUEIISBCVHM43IN2NBDXBFOJ/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/3HZZKVHYYWACPWONPEFRNPIRE3HYLV4T/",
+            "http://www.openwall.com/lists/oss-security/2022/12/29/1",
+            "http://www.openwall.com/lists/oss-security/2022/12/30/4",
+            "http://www.openwall.com/lists/oss-security/2022/12/31/1",
+            "http://www.openwall.com/lists/oss-security/2022/12/31/5",
+            "http://www.openwall.com/lists/oss-security/2023/01/02/1",
+            "http://www.openwall.com/lists/oss-security/2023/01/02/2"
+        ],
+        "summary": "A flaw in Apache libapreq2 versions 2.16 and earlier could cause a buffer overflow while processing multipart form uploads. A remote attacker could send a request causing a process crash which could lead to a denial of service attack."
+    },
+    {
         "Modified": "2023-01-02T18:15:00",
         "Published": "2023-01-02T18:15:00",
         "access": {},
@@ -936,32 +1013,6 @@
         "summary": "Improper Authorization in GitHub repository froxlor/froxlor prior to 2.0.0-beta1."
     },
     {
-        "Modified": "2023-01-02T16:15:00",
-        "Published": "2022-08-25T15:15:00",
-        "access": {},
-        "assigner": "security@apache.org",
-        "cvss": null,
-        "cwe": "CWE-120",
-        "id": "CVE-2022-22728",
-        "impact": {},
-        "last-modified": "2023-01-02T16:15:00",
-        "references": [
-            "https://lists.apache.org/thread/2fsjoor96d47vtkpf76x4yo06nccvy1y",
-            "http://www.openwall.com/lists/oss-security/2022/08/25/4",
-            "http://www.openwall.com/lists/oss-security/2022/08/25/3",
-            "http://www.openwall.com/lists/oss-security/2022/08/26/4",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/2PUUS3JL44UUSLJTSXE46HVKZIW7E7PE/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/BE5MEHGIQUEIISBCVHM43IN2NBDXBFOJ/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/3HZZKVHYYWACPWONPEFRNPIRE3HYLV4T/",
-            "http://www.openwall.com/lists/oss-security/2022/12/29/1",
-            "http://www.openwall.com/lists/oss-security/2022/12/30/4",
-            "http://www.openwall.com/lists/oss-security/2022/12/31/1",
-            "http://www.openwall.com/lists/oss-security/2022/12/31/5",
-            "http://www.openwall.com/lists/oss-security/2023/01/02/1"
-        ],
-        "summary": "A flaw in Apache libapreq2 versions 2.16 and earlier could cause a buffer overflow while processing multipart form uploads. A remote attacker could send a request causing a process crash which could lead to a denial of service attack."
-    },
-    {
         "Modified": "2023-01-01T19:15:00",
         "Published": "2022-11-02T17:15:00",
         "access": {},
@@ -1519,45 +1570,6 @@
         "cvss": null,
         "cwe": "Unknown",
         "id": "CVE-2022-43816",
-        "impact": {},
-        "last-modified": "2023-01-01T01:15:00",
-        "references": [],
-        "summary": "To maintain compliance with CNA rules, we have rejected this CVE record because it has not been used."
-    },
-    {
-        "Modified": "2023-01-01T01:15:00",
-        "Published": "2023-01-01T01:15:00",
-        "access": {},
-        "assigner": "security@atlassian.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-43817",
-        "impact": {},
-        "last-modified": "2023-01-01T01:15:00",
-        "references": [],
-        "summary": "To maintain compliance with CNA rules, we have rejected this CVE record because it has not been used."
-    },
-    {
-        "Modified": "2023-01-01T01:15:00",
-        "Published": "2023-01-01T01:15:00",
-        "access": {},
-        "assigner": "security@atlassian.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-43818",
-        "impact": {},
-        "last-modified": "2023-01-01T01:15:00",
-        "references": [],
-        "summary": "To maintain compliance with CNA rules, we have rejected this CVE record because it has not been used."
-    },
-    {
-        "Modified": "2023-01-01T01:15:00",
-        "Published": "2023-01-01T01:15:00",
-        "access": {},
-        "assigner": "security@atlassian.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-43819",
         "impact": {},
         "last-modified": "2023-01-01T01:15:00",
         "references": [],
