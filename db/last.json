@@ -1,5 +1,296 @@
 [
     {
+        "Modified": "2023-01-03T20:57:00",
+        "Published": "2022-12-22T20:15:00",
+        "access": {},
+        "assigner": "security@mozilla.org",
+        "cvss": null,
+        "cwe": "CWE-863",
+        "id": "CVE-2022-38475",
+        "impact": {},
+        "last-modified": "2023-01-03T20:57:00",
+        "references": [
+            "https://www.mozilla.org/security/advisories/mfsa2022-33/",
+            "https://bugzilla.mozilla.org/show_bug.cgi?id=1773266"
+        ],
+        "summary": "An attacker could have written a value to the first element in a zero-length JavaScript array. Although the array was zero-length, the value was not written to an invalid memory address. This vulnerability affects Firefox < 104."
+    },
+    {
+        "Modified": "2023-01-03T20:55:00",
+        "Published": "2022-12-22T20:15:00",
+        "access": {},
+        "assigner": "security@mozilla.org",
+        "cvss": null,
+        "cwe": "NVD-CWE-noinfo",
+        "id": "CVE-2022-31736",
+        "impact": {},
+        "last-modified": "2023-01-03T20:55:00",
+        "references": [
+            "https://www.mozilla.org/security/advisories/mfsa2022-20/",
+            "https://bugzilla.mozilla.org/show_bug.cgi?id=1735923",
+            "https://www.mozilla.org/security/advisories/mfsa2022-22/",
+            "https://www.mozilla.org/security/advisories/mfsa2022-21/"
+        ],
+        "summary": "A malicious website could have learned the size of a cross-origin resource that supported Range requests. This vulnerability affects Thunderbird < 91.10, Firefox < 101, and Firefox ESR < 91.10."
+    },
+    {
+        "Modified": "2023-01-03T20:51:00",
+        "Published": "2022-12-22T20:15:00",
+        "access": {},
+        "assigner": "security@mozilla.org",
+        "cvss": null,
+        "cwe": "CWE-416",
+        "id": "CVE-2022-38476",
+        "impact": {},
+        "last-modified": "2023-01-03T20:51:00",
+        "references": [
+            "https://bugzilla.mozilla.org/show_bug.cgi?id=1760998",
+            "https://www.mozilla.org/security/advisories/mfsa2022-34/",
+            "https://www.mozilla.org/security/advisories/mfsa2022-36/"
+        ],
+        "summary": "A data race could occur in the <code>PK11_ChangePW</code> function, potentially leading to a use-after-free vulnerability. In Firefox, this lock protected the data when a user changed their master password. This vulnerability affects Firefox ESR < 102.2 and Thunderbird < 102.2."
+    },
+    {
+        "Modified": "2023-01-03T20:47:00",
+        "Published": "2022-12-22T20:15:00",
+        "access": {},
+        "assigner": "security@mozilla.org",
+        "cvss": null,
+        "cwe": "CWE-787",
+        "id": "CVE-2022-31737",
+        "impact": {},
+        "last-modified": "2023-01-03T20:47:00",
+        "references": [
+            "https://www.mozilla.org/security/advisories/mfsa2022-20/",
+            "https://www.mozilla.org/security/advisories/mfsa2022-22/",
+            "https://www.mozilla.org/security/advisories/mfsa2022-21/",
+            "https://bugzilla.mozilla.org/show_bug.cgi?id=1743767"
+        ],
+        "summary": "A malicious webpage could have caused an out-of-bounds write in WebGL, leading to memory corruption and a potentially exploitable crash. This vulnerability affects Thunderbird < 91.10, Firefox < 101, and Firefox ESR < 91.10."
+    },
+    {
+        "Modified": "2023-01-03T20:43:00",
+        "Published": "2022-12-22T20:15:00",
+        "access": {},
+        "assigner": "security@mozilla.org",
+        "cvss": null,
+        "cwe": "CWE-787",
+        "id": "CVE-2022-38477",
+        "impact": {},
+        "last-modified": "2023-01-03T20:43:00",
+        "references": [
+            "https://bugzilla.mozilla.org/buglist.cgi?bug_id=1760611%2C1770219%2C1771159%2C1773363",
+            "https://www.mozilla.org/security/advisories/mfsa2022-34/",
+            "https://www.mozilla.org/security/advisories/mfsa2022-33/",
+            "https://www.mozilla.org/security/advisories/mfsa2022-36/"
+        ],
+        "summary": "Mozilla developer Nika Layzell and the Mozilla Fuzzing Team reported memory safety bugs present in Firefox 103 and Firefox ESR 102.1. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code. This vulnerability affects Firefox ESR < 102.2, Thunderbird < 102.2, and Firefox < 104."
+    },
+    {
+        "Modified": "2023-01-03T20:25:00",
+        "Published": "2022-12-22T20:15:00",
+        "access": {},
+        "assigner": "security@mozilla.org",
+        "cvss": null,
+        "cwe": "CWE-863",
+        "id": "CVE-2022-3032",
+        "impact": {},
+        "last-modified": "2023-01-03T20:25:00",
+        "references": [
+            "https://bugzilla.mozilla.org/show_bug.cgi?id=1783831",
+            "https://www.mozilla.org/security/advisories/mfsa2022-39/",
+            "https://www.mozilla.org/security/advisories/mfsa2022-38/"
+        ],
+        "summary": "When receiving an HTML email that contained an <code>iframe</code> element, which used a <code>srcdoc</code> attribute to define the inner HTML document, remote objects specified in the nested document, for example images or videos, were not blocked. Rather, the network was accessed, the objects were loaded and displayed. This vulnerability affects Thunderbird < 102.2.1 and Thunderbird < 91.13.1."
+    },
+    {
+        "Modified": "2023-01-03T20:22:00",
+        "Published": "2022-12-22T20:15:00",
+        "access": {},
+        "assigner": "security@mozilla.org",
+        "cvss": null,
+        "cwe": "CWE-94",
+        "id": "CVE-2022-3033",
+        "impact": {},
+        "last-modified": "2023-01-03T20:22:00",
+        "references": [
+            "https://www.mozilla.org/security/advisories/mfsa2022-39/",
+            "https://www.mozilla.org/security/advisories/mfsa2022-38/",
+            "https://bugzilla.mozilla.org/show_bug.cgi?id=1784838"
+        ],
+        "summary": "If a Thunderbird user replied to a crafted HTML email containing a <code>meta</code> tag, with the <code>meta</code> tag having the <code>http-equiv=\"refresh\"</code> attribute, and the content attribute specifying an URL, then Thunderbird started a network request to that URL, regardless of the configuration to block remote content. In combination with certain other HTML elements and attributes in the email, it was possible to execute JavaScript code included in the message in the context of the message compose document. The JavaScript code was able to perform actions including, but probably not limited to, read and modify the contents of the message compose document, including the quoted original message, which could potentially contain the decrypted plaintext of encrypted data in the crafted email. The contents could then be transmitted to the network, either to the URL specified in the META refresh tag, or to a different URL, as the JavaScript code could modify the URL specified in the document. This bug doesn't affect users who have changed the default Message Body display setting to 'simple html' or 'plain text'. This vulnerability affects Thunderbird < 102.2.1 and Thunderbird < 91.13.1."
+    },
+    {
+        "Modified": "2023-01-03T20:21:00",
+        "Published": "2022-12-22T20:15:00",
+        "access": {},
+        "assigner": "security@mozilla.org",
+        "cvss": null,
+        "cwe": "CWE-787",
+        "id": "CVE-2022-29918",
+        "impact": {},
+        "last-modified": "2023-01-03T20:21:00",
+        "references": [
+            "https://www.mozilla.org/security/advisories/mfsa2022-16/",
+            "https://bugzilla.mozilla.org/buglist.cgi?bug_id=1744043%2C1747178%2C1753535%2C1754017%2C1755847%2C1756172%2C1757477%2C1758223%2C1760160%2C1761481%2C1761771"
+        ],
+        "summary": "Mozilla developers Gabriele Svelto, Randell Jesup and the Mozilla Fuzzing Team reported memory safety bugs present in Firefox 99. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code. This vulnerability affects Firefox < 100."
+    },
+    {
+        "Modified": "2023-01-03T20:19:00",
+        "Published": "2022-12-22T20:15:00",
+        "access": {},
+        "assigner": "security@mozilla.org",
+        "cvss": null,
+        "cwe": "NVD-CWE-noinfo",
+        "id": "CVE-2021-4129",
+        "impact": {},
+        "last-modified": "2023-01-03T20:19:00",
+        "references": [
+            "https://bugzilla.mozilla.org/buglist.cgi?bug_id=1393362%2C1736046%2C1736751%2C1737009%2C1739372%2C1739421",
+            "https://www.mozilla.org/security/advisories/mfsa2021-52/",
+            "https://www.mozilla.org/security/advisories/mfsa2021-54/",
+            "https://www.mozilla.org/security/advisories/mfsa2021-53/"
+        ],
+        "summary": "Mozilla developers and community members Julian Hector, Randell Jesup, Gabriele Svelto, Tyson Smith, Christian Holler, and Masayuki Nakano reported memory safety bugs present in Firefox 94. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code. This vulnerability affects Firefox < 95, Firefox ESR < 91.4.0, and Thunderbird < 91.4.0."
+    },
+    {
+        "Modified": "2023-01-03T20:15:00",
+        "Published": "2023-01-03T20:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-45867",
+        "impact": {},
+        "last-modified": "2023-01-03T20:15:00",
+        "references": [
+            "https://github.com/mybb/mybb/security/advisories/GHSA-cpfv-6f8w-759r"
+        ],
+        "summary": "MyBB before 1.8.33 allows Directory Traversal. The Admin CP Languages module allows remote authenticated users, with high privileges, to achieve local file inclusion and execution."
+    },
+    {
+        "Modified": "2023-01-03T20:15:00",
+        "Published": "2022-12-22T20:15:00",
+        "access": {},
+        "assigner": "security@mozilla.org",
+        "cvss": null,
+        "cwe": "CWE-427",
+        "id": "CVE-2022-36314",
+        "impact": {},
+        "last-modified": "2023-01-03T20:15:00",
+        "references": [
+            "https://www.mozilla.org/security/advisories/mfsa2022-30/",
+            "https://www.mozilla.org/security/advisories/mfsa2022-32/",
+            "https://www.mozilla.org/security/advisories/mfsa2022-28/",
+            "https://bugzilla.mozilla.org/show_bug.cgi?id=1773894"
+        ],
+        "summary": "When opening a Windows shortcut from the local filesystem, an attacker could supply a remote path that would lead to unexpected network requests from the operating system.<br>This bug only affects Firefox for Windows. Other operating systems are unaffected.*. This vulnerability affects Firefox ESR < 102.1, Firefox < 103, and Thunderbird < 102.1."
+    },
+    {
+        "Modified": "2023-01-03T20:14:00",
+        "Published": "2022-12-22T20:15:00",
+        "access": {},
+        "assigner": "security@mozilla.org",
+        "cvss": null,
+        "cwe": "CWE-1321",
+        "id": "CVE-2022-2200",
+        "impact": {},
+        "last-modified": "2023-01-03T20:14:00",
+        "references": [
+            "https://www.mozilla.org/security/advisories/mfsa2022-24/",
+            "https://www.mozilla.org/security/advisories/mfsa2022-26/",
+            "https://www.mozilla.org/security/advisories/mfsa2022-25/",
+            "https://bugzilla.mozilla.org/show_bug.cgi?id=1771381"
+        ],
+        "summary": "If an object prototype was corrupted by an attacker, they would have been able to set undesired attributes on a JavaScript object, leading to privileged code execution. This vulnerability affects Firefox < 102, Firefox ESR < 91.11, Thunderbird < 102, and Thunderbird < 91.11."
+    },
+    {
+        "Modified": "2023-01-03T20:07:00",
+        "Published": "2022-12-22T20:15:00",
+        "access": {},
+        "assigner": "security@mozilla.org",
+        "cvss": null,
+        "cwe": "CWE-416",
+        "id": "CVE-2021-4128",
+        "impact": {},
+        "last-modified": "2023-01-03T20:07:00",
+        "references": [
+            "https://www.mozilla.org/security/advisories/mfsa2021-52/",
+            "https://bugzilla.mozilla.org/show_bug.cgi?id=1735852"
+        ],
+        "summary": "When transitioning in and out of fullscreen mode, a graphics object was not correctly protected; resulting in memory corruption and a potentially exploitable crash.<br>*This bug only affects Firefox on MacOS. Other operating systems are unaffected.*. This vulnerability affects Firefox < 95."
+    },
+    {
+        "Modified": "2023-01-03T20:03:00",
+        "Published": "2022-12-22T20:15:00",
+        "access": {},
+        "assigner": "security@mozilla.org",
+        "cvss": null,
+        "cwe": "CWE-91",
+        "id": "CVE-2021-4140",
+        "impact": {},
+        "last-modified": "2023-01-03T20:03:00",
+        "references": [
+            "https://www.mozilla.org/security/advisories/mfsa2022-02/",
+            "https://www.mozilla.org/security/advisories/mfsa2022-01/",
+            "https://bugzilla.mozilla.org/show_bug.cgi?id=1746720",
+            "https://www.mozilla.org/security/advisories/mfsa2022-03/"
+        ],
+        "summary": "It was possible to construct specific XSLT markup that would be able to bypass an iframe sandbox. This vulnerability affects Firefox ESR < 91.5, Firefox < 96, and Thunderbird < 91.5."
+    },
+    {
+        "Modified": "2023-01-03T19:15:00",
+        "Published": "2023-01-03T19:15:00",
+        "access": {},
+        "assigner": "security@apache.org",
+        "cvss": null,
+        "cwe": "CWE-74",
+        "id": "CVE-2022-45143",
+        "impact": {},
+        "last-modified": "2023-01-03T19:15:00",
+        "references": [
+            "https://lists.apache.org/thread/yqkd183xrw3wqvnpcg3osbcryq85fkzj"
+        ],
+        "summary": "The JsonErrorReportValve in Apache Tomcat 8.5.83, 9.0.40 to 9.0.68 and 10.1.0-M1 to 10.1.1 did not escape the type, message or description values. In some circumstances these are constructed from user provided data and it was therefore possible for users to supply values that invalidated or manipulated the JSON output."
+    },
+    {
+        "Modified": "2023-01-03T19:15:00",
+        "Published": "2023-01-03T19:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2023-22456",
+        "impact": {},
+        "last-modified": "2023-01-03T19:15:00",
+        "references": [
+            "https://github.com/viewvc/viewvc/releases/tag/1.2.2",
+            "https://github.com/viewvc/viewvc/issues/311",
+            "https://github.com/viewvc/viewvc/releases/tag/1.1.29",
+            "https://github.com/viewvc/viewvc/security/advisories/GHSA-j4mx-f97j-gc5g"
+        ],
+        "summary": "ViewVC, a browser interface for CVS and Subversion version control repositories, as a cross-site scripting vulnerability that affects versions prior to 1.2.2 and 1.1.29. The impact of this vulnerability is mitigated by the need for an attacker to have commit privileges to a Subversion repository exposed by an otherwise trusted ViewVC instance. The attack vector involves files with unsafe names (names that, when embedded into an HTML stream, would cause the browser to run unwanted code), which themselves can be challenging to create. Users should update to at least version 1.2.2 (if they are using a 1.2.x version of ViewVC) or 1.1.29 (if they are using a 1.1.x version). ViewVC 1.0.x is no longer supported, so users of that release lineage should implement a workaround. Users can edit their ViewVC EZT view templates to manually HTML-escape changed paths during rendering. Locate in your template set's `revision.ezt` file references to those changed paths, and wrap them with `[format \"html\"]` and `[end]`. For most users, that means that references to `[changes.path]` will become `[format \"html\"][changes.path][end]`. (This workaround should be reverted after upgrading to a patched version of ViewVC, else changed path names will be doubly escaped.)"
+    },
+    {
+        "Modified": "2023-01-03T19:07:00",
+        "Published": "2022-12-22T20:15:00",
+        "access": {},
+        "assigner": "security@mozilla.org",
+        "cvss": null,
+        "cwe": "NVD-CWE-noinfo",
+        "id": "CVE-2022-34478",
+        "impact": {},
+        "last-modified": "2023-01-03T19:07:00",
+        "references": [
+            "https://www.mozilla.org/security/advisories/mfsa2022-24/",
+            "https://www.mozilla.org/security/advisories/mfsa2022-26/",
+            "https://www.mozilla.org/security/advisories/mfsa2022-25/",
+            "https://bugzilla.mozilla.org/show_bug.cgi?id=1773717"
+        ],
+        "summary": "The <code>ms-msdt</code>, <code>search</code>, and <code>search-ms</code> protocols deliver content to Microsoft applications, bypassing the browser, when a user accepts a prompt. These applications have had known vulnerabilities, exploited in the wild (although we know of none exploited through Thunderbird), so in this release Thunderbird has blocked these protocols from prompting the user to open them.<br>*This bug only affects Thunderbird on Windows. Other operating systems are unaffected.*. This vulnerability affects Firefox < 102, Firefox ESR < 91.11, Thunderbird < 102, and Thunderbird < 91.11."
+    },
+    {
         "Modified": "2023-01-03T18:44:00",
         "Published": "2022-12-22T15:15:00",
         "access": {},
@@ -1376,262 +1667,5 @@
             "https://wpscan.com/vulnerability/51e023de-189d-4557-9655-23f7ba58b670"
         ],
         "summary": "The Wholesale Market for WooCommerce WordPress plugin before 2.0.0 does not validate user input against path traversal attacks, allowing high privilege users such as admin to download arbitrary logs from the server even when they should not be able to (for example in multisite)"
-    },
-    {
-        "Modified": "2023-01-03T13:26:00",
-        "Published": "2023-01-02T22:15:00",
-        "access": {},
-        "assigner": "contact@wpscan.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-4114",
-        "impact": {},
-        "last-modified": "2023-01-03T13:26:00",
-        "references": [
-            "https://wpscan.com/vulnerability/7569f4ac-05c9-43c9-95e0-5cc360524bbd",
-            "https://themeforest.net/item/superio-job-board-wordpress-theme/32180231"
-        ],
-        "summary": "The Superio WordPress theme does not sanitise and escape some parameters, which could allow users with a role as low as a subscriber to perform Cross-Site Scripting attacks."
-    },
-    {
-        "Modified": "2023-01-03T13:26:00",
-        "Published": "2023-01-02T22:15:00",
-        "access": {},
-        "assigner": "contact@wpscan.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-4119",
-        "impact": {},
-        "last-modified": "2023-01-03T13:26:00",
-        "references": [
-            "https://wpscan.com/vulnerability/11040133-c134-4f96-8421-edd04901ed0d"
-        ],
-        "summary": "The Image Optimizer, Resizer and CDN WordPress plugin before 6.8.1 does not sanitise and escape some of its settings, which could allow high privilege users such as admin to perform Stored Cross-Site Scripting attacks even when the unfiltered_html capability is disallowed (for example in multisite setup)."
-    },
-    {
-        "Modified": "2023-01-03T13:26:00",
-        "Published": "2023-01-02T22:15:00",
-        "access": {},
-        "assigner": "contact@wpscan.com",
-        "cvss": null,
-        "cwe": "CWE-552",
-        "id": "CVE-2022-4140",
-        "impact": {},
-        "last-modified": "2023-01-03T13:26:00",
-        "references": [
-            "https://wpscan.com/vulnerability/0d649a7e-3334-48f7-abca-fff0856e12c7"
-        ],
-        "summary": "The Welcart e-Commerce WordPress plugin before 2.8.5 does not validate user input before using it to output the content of a file, which could allow unauthenticated attacker to read arbitrary files on the server"
-    },
-    {
-        "Modified": "2023-01-03T13:26:00",
-        "Published": "2023-01-02T22:15:00",
-        "access": {},
-        "assigner": "contact@wpscan.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-4142",
-        "impact": {},
-        "last-modified": "2023-01-03T13:26:00",
-        "references": [
-            "https://wpscan.com/vulnerability/8c2adadd-0684-49a8-9185-0c7d9581aef1"
-        ],
-        "summary": "The WordPress Filter Gallery Plugin WordPress plugin before 0.1.6 does not properly escape the filters passed in the ufg_gallery_filters ajax action before outputting them on the page, allowing a high privileged user such as an administrator to inject HTML or javascript to the plugin settings page, even when the unfiltered_html capability is disabled."
-    },
-    {
-        "Modified": "2023-01-03T13:26:00",
-        "Published": "2023-01-02T22:15:00",
-        "access": {},
-        "assigner": "contact@wpscan.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-4198",
-        "impact": {},
-        "last-modified": "2023-01-03T13:26:00",
-        "references": [
-            "https://wpscan.com/vulnerability/ba372400-96f7-45a9-9e89-5984ecc4d1e2"
-        ],
-        "summary": "The WP Social Sharing WordPress plugin through 2.2 does not sanitise and escape some of its settings, which could allow high privilege users such as admin to perform Stored Cross-Site Scripting attacks even when the unfiltered_html capability is disallowed (for example in multisite setup)."
-    },
-    {
-        "Modified": "2023-01-03T13:26:00",
-        "Published": "2023-01-02T22:15:00",
-        "access": {},
-        "assigner": "contact@wpscan.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-4200",
-        "impact": {},
-        "last-modified": "2023-01-03T13:26:00",
-        "references": [
-            "https://wpscan.com/vulnerability/ac2e3fea-e1e6-4d90-9945-d8434a00a3cf"
-        ],
-        "summary": "The Login with Cognito WordPress plugin through 1.4.8 does not sanitise and escape some of its settings, which could allow high privilege users such as admin to perform Stored Cross-Site Scripting attacks even when the unfiltered_html capability is disallowed (for example in multisite setup)."
-    },
-    {
-        "Modified": "2023-01-03T13:26:00",
-        "Published": "2023-01-02T22:15:00",
-        "access": {},
-        "assigner": "contact@wpscan.com",
-        "cvss": null,
-        "cwe": "CWE-552",
-        "id": "CVE-2022-4236",
-        "impact": {},
-        "last-modified": "2023-01-03T13:26:00",
-        "references": [
-            "https://wpscan.com/vulnerability/436d8894-dab8-41ea-8ed0-a3338aded635"
-        ],
-        "summary": "The Welcart e-Commerce WordPress plugin before 2.8.5 does not validate user input before using it to output the content of a file via an AJAX action available to any authenticated users, which could allow users with a role as low as subscriber to read arbitrary files on the server."
-    },
-    {
-        "Modified": "2023-01-03T13:26:00",
-        "Published": "2023-01-02T22:15:00",
-        "access": {},
-        "assigner": "contact@wpscan.com",
-        "cvss": null,
-        "cwe": "CWE-502",
-        "id": "CVE-2022-4237",
-        "impact": {},
-        "last-modified": "2023-01-03T13:26:00",
-        "references": [
-            "https://wpscan.com/vulnerability/7a4b790c-49ae-46bc-9544-e188deae243f"
-        ],
-        "summary": "The Welcart e-Commerce WordPress plugin before 2.8.6 does not validate user input before using it in file_exist() functions via various AJAX actions available to any authenticated users, which could allow users with a role as low as subscriber to perform PHAR deserialisation when they can upload a file and a suitable gadget chain is present on the blog"
-    },
-    {
-        "Modified": "2023-01-03T13:26:00",
-        "Published": "2023-01-02T22:15:00",
-        "access": {},
-        "assigner": "contact@wpscan.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-4256",
-        "impact": {},
-        "last-modified": "2023-01-03T13:26:00",
-        "references": [
-            "https://wpscan.com/vulnerability/f5b17c68-c2b0-4d0d-bb7b-19dc30511a89"
-        ],
-        "summary": "The All-in-One Addons for Elementor WordPress plugin before 2.4.4 does not sanitise and escape some of its settings, which could allow high privilege users such as admin to perform Stored Cross-Site Scripting attacks even when the unfiltered_html capability is disallowed (for example in multisite setup)"
-    },
-    {
-        "Modified": "2023-01-03T13:26:00",
-        "Published": "2023-01-02T22:15:00",
-        "access": {},
-        "assigner": "contact@wpscan.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-4260",
-        "impact": {},
-        "last-modified": "2023-01-03T13:26:00",
-        "references": [
-            "https://wpscan.com/vulnerability/d0cf24be-df87-4e1f-aae7-e9684c88e7db"
-        ],
-        "summary": "The WP-Ban WordPress plugin before 1.69.1 does not sanitise and escape some of its settings, which could allow high privilege users such as admin to perform Stored Cross-Site Scripting attacks even when the unfiltered_html capability is disallowed (for example in multisite setup)."
-    },
-    {
-        "Modified": "2023-01-03T13:26:00",
-        "Published": "2023-01-02T22:15:00",
-        "access": {},
-        "assigner": "contact@wpscan.com",
-        "cvss": null,
-        "cwe": "CWE-89",
-        "id": "CVE-2022-4297",
-        "impact": {},
-        "last-modified": "2023-01-03T13:26:00",
-        "references": [
-            "https://wpscan.com/vulnerability/e2dcc76c-65ac-4cd6-a5c9-6d813b5ac26d"
-        ],
-        "summary": "The WP AutoComplete Search WordPress plugin through 1.0.4 does not sanitise and escape a parameter before using it in a SQL statement via an AJAX available to unauthenticated users, leading to an unauthenticated SQL injection"
-    },
-    {
-        "Modified": "2023-01-03T13:26:00",
-        "Published": "2023-01-02T22:15:00",
-        "access": {},
-        "assigner": "contact@wpscan.com",
-        "cvss": null,
-        "cwe": "CWE-22",
-        "id": "CVE-2022-4298",
-        "impact": {},
-        "last-modified": "2023-01-03T13:26:00",
-        "references": [
-            "https://wpscan.com/vulnerability/7485ad23-6ea4-4018-88b1-174312a0a478"
-        ],
-        "summary": "The Wholesale Market WordPress plugin before 2.2.1 does not have authorisation check, as well as does not validate user input used to generate system path, allowing unauthenticated attackers to download arbitrary file from the server."
-    },
-    {
-        "Modified": "2023-01-03T13:26:00",
-        "Published": "2023-01-02T22:15:00",
-        "access": {},
-        "assigner": "contact@wpscan.com",
-        "cvss": null,
-        "cwe": "CWE-502",
-        "id": "CVE-2022-4302",
-        "impact": {},
-        "last-modified": "2023-01-03T13:26:00",
-        "references": [
-            "https://wpscan.com/vulnerability/b7707a15-0987-4051-a8ac-7be2424bcb01"
-        ],
-        "summary": "The White Label CMS WordPress plugin before 2.5 unserializes user input provided via the settings, which could allow high-privilege users such as admin to perform PHP Object Injection when a suitable gadget is present."
-    },
-    {
-        "Modified": "2023-01-03T13:26:00",
-        "Published": "2023-01-02T22:15:00",
-        "access": {},
-        "assigner": "contact@wpscan.com",
-        "cvss": null,
-        "cwe": "CWE-502",
-        "id": "CVE-2022-4324",
-        "impact": {},
-        "last-modified": "2023-01-03T13:26:00",
-        "references": [
-            "https://wpscan.com/vulnerability/70c39236-f7ae-49bf-a2f0-7cb9aa983e45"
-        ],
-        "summary": "The Custom Field Template WordPress plugin before 2.5.8 unserialises the content of an imported file, which could lead to PHP object injections issues when a high privilege user import (intentionally or not) a malicious Customizer Styling file and a suitable gadget chain is present on the blog."
-    },
-    {
-        "Modified": "2023-01-03T13:26:00",
-        "Published": "2023-01-02T22:15:00",
-        "access": {},
-        "assigner": "contact@wpscan.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-4329",
-        "impact": {},
-        "last-modified": "2023-01-03T13:26:00",
-        "references": [
-            "https://wpscan.com/vulnerability/d7f2c1c1-75b7-4aec-8574-f38d506d064a"
-        ],
-        "summary": "The Product list Widget for Woocommerce WordPress plugin through 1.0 does not sanitise and escape a parameter before outputting it back in the page, leading to a Reflected Cross-Site Scripting which could be used against both unauthenticated and authenticated users (such as high privilege one like admin)."
-    },
-    {
-        "Modified": "2023-01-03T13:26:00",
-        "Published": "2023-01-02T22:15:00",
-        "access": {},
-        "assigner": "contact@wpscan.com",
-        "cvss": null,
-        "cwe": "CWE-639",
-        "id": "CVE-2022-4340",
-        "impact": {},
-        "last-modified": "2023-01-03T13:26:00",
-        "references": [
-            "https://wpscan.com/vulnerability/8a7bd9f6-2789-474b-a237-01c643fdfba7"
-        ],
-        "summary": "The BookingPress WordPress plugin before 1.0.31 suffers from an Insecure Direct Object Reference (IDOR) vulnerability in it's thank you page, allowing any visitor to display information about any booking, including full name, date, time and service booked, by manipulating the appointment_id query parameter."
-    },
-    {
-        "Modified": "2023-01-03T13:26:00",
-        "Published": "2023-01-02T22:15:00",
-        "access": {},
-        "assigner": "contact@wpscan.com",
-        "cvss": null,
-        "cwe": "CWE-89",
-        "id": "CVE-2022-4351",
-        "impact": {},
-        "last-modified": "2023-01-03T13:26:00",
-        "references": [
-            "https://wpscan.com/vulnerability/2138f736-8a50-4390-a239-fcd1d736670a",
-            "https://bulletin.iese.de/post/qe-seo-handyman_1-0_1"
-        ],
-        "summary": "The Qe SEO Handyman WordPress plugin through 1.0 does not properly sanitize and escape a parameter before using it in a SQL statement, leading to a SQL injection exploitable by high privilege users such as admin"
     }
 ]
