@@ -1,5 +1,244 @@
 [
     {
+        "Modified": "2023-01-03T18:44:00",
+        "Published": "2022-12-22T15:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-434",
+        "id": "CVE-2022-45966",
+        "impact": {},
+        "last-modified": "2023-01-03T18:44:00",
+        "references": [
+            "https://github.com/yinfei6/classcms"
+        ],
+        "summary": "here is an arbitrary file upload vulnerability in the file management function module of Classcms3.5."
+    },
+    {
+        "Modified": "2023-01-03T18:36:00",
+        "Published": "2022-12-22T20:15:00",
+        "access": {},
+        "assigner": "security@mozilla.org",
+        "cvss": null,
+        "cwe": "NVD-CWE-noinfo",
+        "id": "CVE-2022-34477",
+        "impact": {},
+        "last-modified": "2023-01-03T18:36:00",
+        "references": [
+            "https://www.mozilla.org/security/advisories/mfsa2022-24/",
+            "https://bugzilla.mozilla.org/show_bug.cgi?id=1731614"
+        ],
+        "summary": "The MediaError message property should be consistent to avoid leaking information about cross-origin resources; however for a same-site cross-origin resource, the message could have leaked information enabling XS-Leaks attacks. This vulnerability affects Firefox < 102."
+    },
+    {
+        "Modified": "2023-01-03T18:15:00",
+        "Published": "2023-01-03T18:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-502",
+        "id": "CVE-2021-32824",
+        "impact": {},
+        "last-modified": "2023-01-03T18:15:00",
+        "references": [
+            "https://securitylab.github.com/advisories/GHSL-2021-034_043-apache-dubbo/"
+        ],
+        "summary": "Apache Dubbo is a java based, open source RPC framework. Versions prior to 2.6.10 and 2.7.10 are vulnerable to pre-auth remote code execution via arbitrary bean manipulation in the Telnet handler. The Dubbo main service port can be used to access a Telnet Handler which offers some basic methods to collect information about the providers and methods exposed by the service and it can even allow to shutdown the service. This endpoint is unprotected. Additionally, a provider method can be invoked using the `invoke` handler. This handler uses a safe version of FastJson to process the call arguments. However, the resulting list is later processed with `PojoUtils.realize` which can be used to instantiate arbitrary classes and invoke its setters. Even though FastJson is properly protected with a default blocklist, `PojoUtils.realize` is not, and an attacker can leverage that to achieve remote code execution. Versions 2.6.10 and 2.7.10 contain fixes for this issue."
+    },
+    {
+        "Modified": "2023-01-03T18:15:00",
+        "Published": "2022-05-12T05:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "MEDIUM",
+            "vector": "LOCAL"
+        },
+        "assigner": "cve@mitre.org",
+        "cvss": 4.4,
+        "cvss-time": "2023-01-03T18:15:00",
+        "cvss-vector": "AV:L/AC:M/Au:N/C:P/I:P/A:P",
+        "cwe": "CWE-863",
+        "id": "CVE-2022-30594",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "PARTIAL",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2023-01-03T18:15:00",
+        "references": [
+            "https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.17.2",
+            "https://bugs.chromium.org/p/project-zero/issues/detail?id=2276",
+            "https://git.kernel.org/cgit/linux/kernel/git/torvalds/linux.git/commit/?id=ee1fee900537b5d9560e9f937402de5ddc8412f3",
+            "https://github.com/torvalds/linux/commit/ee1fee900537b5d9560e9f937402de5ddc8412f3",
+            "http://packetstormsecurity.com/files/167386/Kernel-Live-Patch-Security-Notice-LSN-0086-1.html",
+            "https://lists.debian.org/debian-lts-announce/2022/07/msg00000.html",
+            "https://www.debian.org/security/2022/dsa-5173",
+            "https://security.netapp.com/advisory/ntap-20220707-0001/",
+            "http://packetstormsecurity.com/files/170362/Linux-PT_SUSPEND_SECCOMP-Permission-Bypass-Ptracer-Death-Race.html"
+        ],
+        "summary": "The Linux kernel before 5.17.2 mishandles seccomp permissions. The PTRACE_SEIZE code path allows attackers to bypass intended restrictions on setting the PT_SUSPEND_SECCOMP flag."
+    },
+    {
+        "Modified": "2023-01-03T18:06:00",
+        "Published": "2022-12-18T22:15:00",
+        "access": {},
+        "assigner": "cna@vuldb.com",
+        "cvss": null,
+        "cwe": "CWE-404",
+        "id": "CVE-2021-4250",
+        "impact": {},
+        "last-modified": "2023-01-03T18:06:00",
+        "references": [
+            "https://github.com/cgriego/active_attr/pull/185",
+            "https://vuldb.com/?id.216207",
+            "https://github.com/cgriego/active_attr/issues/184",
+            "https://github.com/cgriego/active_attr/commit/dab95e5843b01525444b82bd7b336ef1d79377df",
+            "https://github.com/cgriego/active_attr/releases/tag/v0.15.3"
+        ],
+        "summary": "A vulnerability classified as problematic has been found in cgriego active_attr up to 0.15.2. This affects the function call of the file lib/active_attr/typecasting/boolean_typecaster.rb of the component Regex Handler. The manipulation of the argument value leads to denial of service. The exploit has been disclosed to the public and may be used. Upgrading to version 0.15.3 is able to address this issue. The name of the patch is dab95e5843b01525444b82bd7b336ef1d79377df. It is recommended to upgrade the affected component. The associated identifier of this vulnerability is VDB-216207."
+    },
+    {
+        "Modified": "2023-01-03T18:06:00",
+        "Published": "2022-09-13T19:15:00",
+        "access": {},
+        "assigner": "secure@microsoft.com",
+        "cvss": null,
+        "cwe": "CWE-668",
+        "id": "CVE-2022-37958",
+        "impact": {},
+        "last-modified": "2023-01-03T18:06:00",
+        "references": [
+            "https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-37958"
+        ],
+        "summary": "SPNEGO Extended Negotiation (NEGOEX) Security Mechanism Information Disclosure Vulnerability."
+    },
+    {
+        "Modified": "2023-01-03T17:57:00",
+        "Published": "2022-12-17T13:15:00",
+        "access": {},
+        "assigner": "cna@vuldb.com",
+        "cvss": null,
+        "cwe": "CWE-22",
+        "id": "CVE-2022-4583",
+        "impact": {},
+        "last-modified": "2023-01-03T17:57:00",
+        "references": [
+            "https://github.com/LEMS/jLEMS/pull/103",
+            "https://github.com/LEMS/jLEMS/commit/8c224637d7d561076364a9e3c2c375daeaf463dc",
+            "https://vuldb.com/?id.216169"
+        ],
+        "summary": "A vulnerability was found in jLEMS. It has been declared as critical. Affected by this vulnerability is the function unpackJar of the file src/main/java/org/lemsml/jlems/io/util/JUtil.java. The manipulation leads to path traversal. The attack can be launched remotely. The name of the patch is 8c224637d7d561076364a9e3c2c375daeaf463dc. It is recommended to apply a patch to fix this issue. The identifier VDB-216169 was assigned to this vulnerability."
+    },
+    {
+        "Modified": "2023-01-03T17:22:00",
+        "Published": "2022-12-20T19:15:00",
+        "access": {},
+        "assigner": "secalert@redhat.com",
+        "cvss": null,
+        "cwe": "CWE-78",
+        "id": "CVE-2022-4515",
+        "impact": {},
+        "last-modified": "2023-01-03T17:22:00",
+        "references": [
+            "https://sourceforge.net/p/ctags/code/HEAD/tree/tags/ctags-5.8/sort.c#l56",
+            "https://lists.debian.org/debian-lts-announce/2022/12/msg00040.html"
+        ],
+        "summary": "A flaw was found in Exuberant Ctags in the way it handles the \"-o\" option. This option specifies the tag filename. A crafted tag filename specified in the command line or in the configuration file results in arbitrary command execution because the externalSortTags() in sort.c calls the system(3) function in an unsafe way."
+    },
+    {
+        "Modified": "2023-01-03T17:15:00",
+        "Published": "2023-01-03T17:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-400",
+        "id": "CVE-2021-32821",
+        "impact": {},
+        "last-modified": "2023-01-03T17:15:00",
+        "references": [
+            "https://securitylab.github.com/advisories/GHSL-2020-345-redos-mootools/"
+        ],
+        "summary": "MooTools is a collection of JavaScript utilities for JavaScript developers. All known versions include a CSS selector parser that is vulnerable to Regular Expression Denial of Service (ReDoS). An attack requires that an attacker can inject a string into a CSS selector at runtime, which is quite common with e.g. jQuery CSS selectors. No patches are available for this issue."
+    },
+    {
+        "Modified": "2023-01-03T17:15:00",
+        "Published": "2023-01-03T17:15:00",
+        "access": {},
+        "assigner": "psirt@fortinet.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-35845",
+        "impact": {},
+        "last-modified": "2023-01-03T17:15:00",
+        "references": [
+            "https://fortiguard.com/psirt/FG-IR-22-274"
+        ],
+        "summary": "Multiple improper neutralization of special elements used in an OS Command ('OS Command Injection') vulnerabilities [CWE-78] in FortiTester 7.1.0, 7.0 all versions, 4.0.0 through 4.2.0, 2.3.0 through 3.9.1 may allow an authenticated attacker to execute arbitrary commands in the underlying shell."
+    },
+    {
+        "Modified": "2023-01-03T17:15:00",
+        "Published": "2023-01-03T17:15:00",
+        "access": {},
+        "assigner": "psirt@fortinet.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-39947",
+        "impact": {},
+        "last-modified": "2023-01-03T17:15:00",
+        "references": [
+            "https://fortiguard.com/psirt/FG-IR-22-061"
+        ],
+        "summary": "A improper neutralization of special elements used in an os command ('os command injection') in Fortinet FortiADC version 7.0.0 through 7.0.2, FortiADC version 6.2.0 through 6.2.3, FortiADC version version 6.1.0 through 6.1.6, FortiADC version 6.0.0 through 6.0.4, FortiADC version 5.4.0 through 5.4.5 may allow an attacker to execute unauthorized code or commands via specifically crafted HTTP requests."
+    },
+    {
+        "Modified": "2023-01-03T17:15:00",
+        "Published": "2023-01-03T17:15:00",
+        "access": {},
+        "assigner": "psirt@fortinet.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-41336",
+        "impact": {},
+        "last-modified": "2023-01-03T17:15:00",
+        "references": [
+            "https://fortiguard.com/psirt/FG-IR-22-313"
+        ],
+        "summary": "An improper neutralization of input during web page generation vulnerability [CWE-79] in FortiPortal versions 6.0.0 through 6.0.11 and all versions of 5.3, 5.2, 5.1, 5.0 management interface may allow a remote authenticated attacker to perform a stored cross site scripting (XSS) attack via sending request with specially crafted columnindex parameter."
+    },
+    {
+        "Modified": "2023-01-03T17:15:00",
+        "Published": "2023-01-03T17:15:00",
+        "access": {},
+        "assigner": "psirt@fortinet.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-42471",
+        "impact": {},
+        "last-modified": "2023-01-03T17:15:00",
+        "references": [
+            "https://fortiguard.com/psirt/FG-IR-22-250"
+        ],
+        "summary": "An improper neutralization of CRLF sequences in HTTP headers ('HTTP Response Splitting') vulnerability [CWE-113] In FortiWeb version 7.0.0 through 7.0.2, FortiWeb version 6.4.0 through 6.4.2, FortiWeb version 6.3.6 through 6.3.20 may allow an authenticated and remote attacker to inject arbitrary headers."
+    },
+    {
+        "Modified": "2023-01-03T17:15:00",
+        "Published": "2022-12-24T04:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-1321",
+        "id": "CVE-2022-46175",
+        "impact": {},
+        "last-modified": "2023-01-03T17:15:00",
+        "references": [
+            "https://github.com/json5/json5/security/advisories/GHSA-9c47-m6qq-7p4h",
+            "https://github.com/json5/json5/issues/199",
+            "https://github.com/json5/json5/issues/295",
+            "https://github.com/json5/json5/pull/298"
+        ],
+        "summary": "JSON5 is an extension to the popular JSON file format that aims to be easier to write and maintain by hand (e.g. for config files). The `parse` method of the JSON5 library before and including versions 1.0.1 and 2.2.1 does not restrict parsing of keys named `__proto__`, allowing specially crafted strings to pollute the prototype of the resulting object. This vulnerability pollutes the prototype of the object returned by `JSON5.parse` and not the global Object prototype, which is the commonly understood definition of Prototype Pollution. However, polluting the prototype of a single object can have significant security impact for an application if the object is later used in trusted operations. This vulnerability could allow an attacker to set arbitrary and unexpected keys on the object returned from `JSON5.parse`. The actual impact will depend on how applications utilize the returned object and how they filter unwanted keys, but could include denial of service, cross-site scripting, elevation of privilege, and in extreme cases, remote code execution. `JSON5.parse` should restrict parsing of `__proto__` keys when parsing JSON strings to objects. As a point of reference, the `JSON.parse` method included in JavaScript ignores `__proto__` keys. Simply changing `JSON5.parse` to `JSON.parse` in the examples above mitigates this vulnerability. This vulnerability is patched in json5 versions 1.0.2, 2.2.2, and later."
+    },
+    {
         "Modified": "2023-01-03T15:27:00",
         "Published": "2022-04-03T21:15:00",
         "access": {
@@ -1394,225 +1633,5 @@
             "https://bulletin.iese.de/post/qe-seo-handyman_1-0_1"
         ],
         "summary": "The Qe SEO Handyman WordPress plugin through 1.0 does not properly sanitize and escape a parameter before using it in a SQL statement, leading to a SQL injection exploitable by high privilege users such as admin"
-    },
-    {
-        "Modified": "2023-01-03T13:26:00",
-        "Published": "2023-01-02T22:15:00",
-        "access": {},
-        "assigner": "contact@wpscan.com",
-        "cvss": null,
-        "cwe": "CWE-89",
-        "id": "CVE-2022-4352",
-        "impact": {},
-        "last-modified": "2023-01-03T13:26:00",
-        "references": [
-            "https://bulletin.iese.de/post/qe-seo-handyman_1-0_2",
-            "https://wpscan.com/vulnerability/325874f4-2482-4ae5-b5cf-cb9ff0843067"
-        ],
-        "summary": "The Qe SEO Handyman WordPress plugin through 1.0 does not properly sanitize and escape a parameter before using it in a SQL statement, leading to a SQL injection exploitable by high privilege users such as admin"
-    },
-    {
-        "Modified": "2023-01-03T13:26:00",
-        "Published": "2023-01-02T22:15:00",
-        "access": {},
-        "assigner": "contact@wpscan.com",
-        "cvss": null,
-        "cwe": "CWE-89",
-        "id": "CVE-2022-4355",
-        "impact": {},
-        "last-modified": "2023-01-03T13:26:00",
-        "references": [
-            "https://bulletin.iese.de/post/letsrecover-woocommerce-abandoned-cart_1-1-0_2",
-            "https://wpscan.com/vulnerability/221bf87b-69e2-4c53-971e-8516b798c759"
-        ],
-        "summary": "The LetsRecover WordPress plugin through 1.1.0 does not properly sanitise and escape a parameter before using it in a SQL statement, leading to a SQL injection exploitable by high privilege users such as admin"
-    },
-    {
-        "Modified": "2023-01-03T13:26:00",
-        "Published": "2023-01-02T22:15:00",
-        "access": {},
-        "assigner": "contact@wpscan.com",
-        "cvss": null,
-        "cwe": "CWE-89",
-        "id": "CVE-2022-4356",
-        "impact": {},
-        "last-modified": "2023-01-03T13:26:00",
-        "references": [
-            "https://bulletin.iese.de/post/letsrecover-woocommerce-abandoned-cart_1-1-0_3",
-            "https://wpscan.com/vulnerability/27a8d7cb-e179-408e-af13-8722ab41947b"
-        ],
-        "summary": "The LetsRecover WordPress plugin through 1.1.0 does not properly sanitise and escape a parameter before using it in a SQL statement, leading to a SQL injection exploitable by high privilege users such as admin"
-    },
-    {
-        "Modified": "2023-01-03T13:26:00",
-        "Published": "2023-01-02T22:15:00",
-        "access": {},
-        "assigner": "contact@wpscan.com",
-        "cvss": null,
-        "cwe": "CWE-89",
-        "id": "CVE-2022-4357",
-        "impact": {},
-        "last-modified": "2023-01-03T13:26:00",
-        "references": [
-            "https://bulletin.iese.de/post/letsrecover-woocommerce-abandoned-cart_1-1-0_1",
-            "https://wpscan.com/vulnerability/4d1c0886-11f7-494f-b175-691253f46626"
-        ],
-        "summary": "The LetsRecover WordPress plugin through 1.1.0 does not properly sanitise and escape a parameter before using it in a SQL statement via an AJAX action available to unauthenticated users, leading to a SQL injection."
-    },
-    {
-        "Modified": "2023-01-03T13:26:00",
-        "Published": "2023-01-02T22:15:00",
-        "access": {},
-        "assigner": "contact@wpscan.com",
-        "cvss": null,
-        "cwe": "CWE-89",
-        "id": "CVE-2022-4358",
-        "impact": {},
-        "last-modified": "2023-01-03T13:26:00",
-        "references": [
-            "https://wpscan.com/vulnerability/0076a3b8-9a25-41c9-bb07-36ffe2c8c37d",
-            "https://bulletin.iese.de/post/wp-rss-by-publishers_0-1_3"
-        ],
-        "summary": "The WP RSS By Publishers WordPress plugin through 0.1 does not properly sanitize and escape a parameter before using it in a SQL statement, leading to a SQL injection exploitable by high privilege users such as admin"
-    },
-    {
-        "Modified": "2023-01-03T13:26:00",
-        "Published": "2023-01-02T22:15:00",
-        "access": {},
-        "assigner": "contact@wpscan.com",
-        "cvss": null,
-        "cwe": "CWE-89",
-        "id": "CVE-2022-4359",
-        "impact": {},
-        "last-modified": "2023-01-03T13:26:00",
-        "references": [
-            "https://bulletin.iese.de/post/wp-rss-by-publishers_0-1_2",
-            "https://wpscan.com/vulnerability/8472dd40-27e3-4084-907a-e251a2a0f339"
-        ],
-        "summary": "The WP RSS By Publishers WordPress plugin through 0.1 does not properly sanitize and escape a parameter before using it in a SQL statement, leading to a SQL injection exploitable by high privilege users such as admin"
-    },
-    {
-        "Modified": "2023-01-03T13:26:00",
-        "Published": "2023-01-02T22:15:00",
-        "access": {},
-        "assigner": "contact@wpscan.com",
-        "cvss": null,
-        "cwe": "CWE-89",
-        "id": "CVE-2022-4360",
-        "impact": {},
-        "last-modified": "2023-01-03T13:26:00",
-        "references": [
-            "https://bulletin.iese.de/post/wp-rss-by-publishers_0-1_1",
-            "https://wpscan.com/vulnerability/40c420aa-5da0-42f9-a94f-f68ef57fcdae"
-        ],
-        "summary": "The WP RSS By Publishers WordPress plugin through 0.1 does not properly sanitize and escape a parameter before using it in a SQL statement, leading to a SQL injection exploitable by high privilege users such as admin"
-    },
-    {
-        "Modified": "2023-01-03T13:26:00",
-        "Published": "2023-01-02T22:15:00",
-        "access": {},
-        "assigner": "contact@wpscan.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-4362",
-        "impact": {},
-        "last-modified": "2023-01-03T13:26:00",
-        "references": [
-            "https://wpscan.com/vulnerability/2660225a-e4c8-40f2-8c98-775ef2301212"
-        ],
-        "summary": "The Popup Maker WordPress plugin before 1.16.9 does not validate and escape one of its shortcode attributes, which could allow users with a role as low as contributor to perform Stored Cross-Site Scripting attacks"
-    },
-    {
-        "Modified": "2023-01-03T13:26:00",
-        "Published": "2023-01-02T22:15:00",
-        "access": {},
-        "assigner": "contact@wpscan.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-4369",
-        "impact": {},
-        "last-modified": "2023-01-03T13:26:00",
-        "references": [
-            "https://wpscan.com/vulnerability/460a01e5-7ce5-4d49-b068-a93ea1fba0e3"
-        ],
-        "summary": "The WP-Lister Lite for Amazon WordPress plugin before 2.4.4 does not sanitize and escapes a parameter before outputting it back in the page, leading to a Reflected Cross-Site Scripting which can be used against high-privilege users such as admin."
-    },
-    {
-        "Modified": "2023-01-03T13:26:00",
-        "Published": "2023-01-02T22:15:00",
-        "access": {},
-        "assigner": "contact@wpscan.com",
-        "cvss": null,
-        "cwe": "CWE-89",
-        "id": "CVE-2022-4370",
-        "impact": {},
-        "last-modified": "2023-01-03T13:26:00",
-        "references": [
-            "https://bulletin.iese.de/post/multimedial-images_1-0b",
-            "https://wpscan.com/vulnerability/cf336783-9959-413d-a5d7-73c7087426d8"
-        ],
-        "summary": "The multimedial images WordPress plugin through 1.0b does not properly sanitize and escape a parameter before using it in a SQL statement, leading to a SQL injection exploitable by users with a role as low as Admin."
-    },
-    {
-        "Modified": "2023-01-03T13:26:00",
-        "Published": "2023-01-02T22:15:00",
-        "access": {},
-        "assigner": "contact@wpscan.com",
-        "cvss": null,
-        "cwe": "CWE-89",
-        "id": "CVE-2022-4371",
-        "impact": {},
-        "last-modified": "2023-01-03T13:26:00",
-        "references": [
-            "https://wpscan.com/vulnerability/45f43359-98c2-4447-b51b-2d466bad8261",
-            "https://bulletin.iese.de/post/web-invoice_2-1-3_1"
-        ],
-        "summary": "The Web Invoice WordPress plugin through 2.1.3 does not properly sanitize and escape a parameter before using it in a SQL statement, leading to a SQL Injection exploitable by high privilege users such as admin by default. However, depending on the plugin configuration, other users, such as subscriber could exploit this as well"
-    },
-    {
-        "Modified": "2023-01-03T13:26:00",
-        "Published": "2023-01-02T22:15:00",
-        "access": {},
-        "assigner": "contact@wpscan.com",
-        "cvss": null,
-        "cwe": "CWE-89",
-        "id": "CVE-2022-4372",
-        "impact": {},
-        "last-modified": "2023-01-03T13:26:00",
-        "references": [
-            "https://bulletin.iese.de/post/web-invoice_2-1-3_2",
-            "https://wpscan.com/vulnerability/218f8015-e14b-46a8-889d-08b2b822f8ae"
-        ],
-        "summary": "The Web Invoice WordPress plugin through 2.1.3 does not properly sanitize and escape a parameter before using it in a SQL statement, leading to a SQL Injection exploitable by high privilege users such as admin by default. However, depending on the plugin configuration, other users, such as subscriber could exploit this as well"
-    },
-    {
-        "Modified": "2023-01-03T13:26:00",
-        "Published": "2023-01-02T22:15:00",
-        "access": {},
-        "assigner": "contact@wpscan.com",
-        "cvss": null,
-        "cwe": "CWE-89",
-        "id": "CVE-2022-4373",
-        "impact": {},
-        "last-modified": "2023-01-03T13:26:00",
-        "references": [
-            "https://wpscan.com/vulnerability/aa07ddac-4f3d-4c4c-ba26-19bc05f22f02"
-        ],
-        "summary": "The Quote-O-Matic WordPress plugin through 1.0.5 does not properly sanitize and escape a parameter before using it in a SQL statement, leading to a SQL injection exploitable by high privilege users such as admin."
-    },
-    {
-        "Modified": "2023-01-03T13:26:00",
-        "Published": "2023-01-02T22:15:00",
-        "access": {},
-        "assigner": "contact@wpscan.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-4381",
-        "impact": {},
-        "last-modified": "2023-01-03T13:26:00",
-        "references": [
-            "https://wpscan.com/vulnerability/8bf8ebe8-1063-492d-a0f9-2f824408d0df"
-        ],
-        "summary": "The Popup Maker WordPress plugin before 1.16.9 does not validate and escape one of its shortcode attributes, which could allow users with a role as low as contributor to perform Stored Cross-Site Scripting attacks"
     }
 ]
