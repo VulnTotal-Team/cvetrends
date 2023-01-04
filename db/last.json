@@ -1,5 +1,642 @@
 [
     {
+        "Modified": "2023-01-04T04:32:00",
+        "Published": "2022-12-22T20:15:00",
+        "access": {},
+        "assigner": "security@mozilla.org",
+        "cvss": null,
+        "cwe": "CWE-203",
+        "id": "CVE-2022-45403",
+        "impact": {},
+        "last-modified": "2023-01-04T04:32:00",
+        "references": [
+            "https://www.mozilla.org/security/advisories/mfsa2022-49/",
+            "https://www.mozilla.org/security/advisories/mfsa2022-48/",
+            "https://www.mozilla.org/security/advisories/mfsa2022-47/",
+            "https://bugzilla.mozilla.org/show_bug.cgi?id=1762078"
+        ],
+        "summary": "Service Workers should not be able to infer information about opaque cross-origin responses; but timing information for cross-origin media combined with Range requests might have allowed them to determine the presence or length of a media file. This vulnerability affects Firefox ESR < 102.5, Thunderbird < 102.5, and Firefox < 107."
+    },
+    {
+        "Modified": "2023-01-04T04:23:00",
+        "Published": "2022-12-22T20:15:00",
+        "access": {},
+        "assigner": "security@mozilla.org",
+        "cvss": null,
+        "cwe": "NVD-CWE-noinfo",
+        "id": "CVE-2022-36315",
+        "impact": {},
+        "last-modified": "2023-01-04T04:23:00",
+        "references": [
+            "https://www.mozilla.org/security/advisories/mfsa2022-28/",
+            "https://bugzilla.mozilla.org/show_bug.cgi?id=1762520"
+        ],
+        "summary": "When loading a script with Subresource Integrity, attackers with an injection capability could trigger the reuse of previously cached entries with incorrect, different integrity metadata. This vulnerability affects Firefox < 103."
+    },
+    {
+        "Modified": "2023-01-04T04:15:00",
+        "Published": "2023-01-04T04:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-46081",
+        "impact": {},
+        "last-modified": "2023-01-04T04:15:00",
+        "references": [
+            "https://www.samwallace.dev/research/Harvesting%20Emails%20with%20Expired%20Garmin%20LiveTrack%20Sessions"
+        ],
+        "summary": "In Garmin Connect 4.61, terminating a LiveTrack session wouldn't prevent the LiveTrack API from continued exposure of private personal information."
+    },
+    {
+        "Modified": "2023-01-04T04:00:00",
+        "Published": "2022-12-22T20:15:00",
+        "access": {},
+        "assigner": "security@mozilla.org",
+        "cvss": null,
+        "cwe": "CWE-601",
+        "id": "CVE-2022-36316",
+        "impact": {},
+        "last-modified": "2023-01-04T04:00:00",
+        "references": [
+            "https://www.mozilla.org/security/advisories/mfsa2022-28/",
+            "https://bugzilla.mozilla.org/show_bug.cgi?id=1768583"
+        ],
+        "summary": "When using the Performance API, an attacker was able to notice subtle differences between PerformanceEntries and thus learn whether the target URL had been subject to a redirect. This vulnerability affects Firefox < 103."
+    },
+    {
+        "Modified": "2023-01-04T03:54:00",
+        "Published": "2022-12-22T20:15:00",
+        "access": {},
+        "assigner": "security@mozilla.org",
+        "cvss": null,
+        "cwe": "NVD-CWE-noinfo",
+        "id": "CVE-2022-40957",
+        "impact": {},
+        "last-modified": "2023-01-04T03:54:00",
+        "references": [
+            "https://www.mozilla.org/security/advisories/mfsa2022-42/",
+            "https://www.mozilla.org/security/advisories/mfsa2022-41/",
+            "https://www.mozilla.org/security/advisories/mfsa2022-40/",
+            "https://bugzilla.mozilla.org/show_bug.cgi?id=1777604"
+        ],
+        "summary": "Inconsistent data in instruction and data cache when creating wasm code could lead to a potentially exploitable crash.<br>*This bug only affects Firefox on ARM64 platforms.*. This vulnerability affects Firefox ESR < 102.3, Thunderbird < 102.3, and Firefox < 105."
+    },
+    {
+        "Modified": "2023-01-04T03:50:00",
+        "Published": "2022-12-22T20:15:00",
+        "access": {},
+        "assigner": "security@mozilla.org",
+        "cvss": null,
+        "cwe": "CWE-74",
+        "id": "CVE-2022-40958",
+        "impact": {},
+        "last-modified": "2023-01-04T03:50:00",
+        "references": [
+            "https://www.mozilla.org/security/advisories/mfsa2022-42/",
+            "https://bugzilla.mozilla.org/show_bug.cgi?id=1779993",
+            "https://www.mozilla.org/security/advisories/mfsa2022-41/",
+            "https://www.mozilla.org/security/advisories/mfsa2022-40/"
+        ],
+        "summary": "By injecting a cookie with certain special characters, an attacker on a shared subdomain which is not a secure context could set and thus overwrite cookies from a secure context, leading to session fixation and other attacks. This vulnerability affects Firefox ESR < 102.3, Thunderbird < 102.3, and Firefox < 105."
+    },
+    {
+        "Modified": "2023-01-04T03:33:00",
+        "Published": "2022-12-22T20:15:00",
+        "access": {},
+        "assigner": "security@mozilla.org",
+        "cvss": null,
+        "cwe": "CWE-922",
+        "id": "CVE-2022-40959",
+        "impact": {},
+        "last-modified": "2023-01-04T03:33:00",
+        "references": [
+            "https://www.mozilla.org/security/advisories/mfsa2022-42/",
+            "https://www.mozilla.org/security/advisories/mfsa2022-41/",
+            "https://www.mozilla.org/security/advisories/mfsa2022-40/",
+            "https://bugzilla.mozilla.org/show_bug.cgi?id=1782211"
+        ],
+        "summary": "During iframe navigation, certain pages did not have their FeaturePolicy fully initialized leading to a bypass that leaked device permissions into untrusted subdocuments. This vulnerability affects Firefox ESR < 102.3, Thunderbird < 102.3, and Firefox < 105."
+    },
+    {
+        "Modified": "2023-01-04T03:22:00",
+        "Published": "2022-12-22T20:15:00",
+        "access": {},
+        "assigner": "security@mozilla.org",
+        "cvss": null,
+        "cwe": "CWE-416",
+        "id": "CVE-2022-40960",
+        "impact": {},
+        "last-modified": "2023-01-04T03:22:00",
+        "references": [
+            "https://www.mozilla.org/security/advisories/mfsa2022-42/",
+            "https://www.mozilla.org/security/advisories/mfsa2022-41/",
+            "https://www.mozilla.org/security/advisories/mfsa2022-40/",
+            "https://bugzilla.mozilla.org/show_bug.cgi?id=1787633"
+        ],
+        "summary": "Concurrent use of the URL parser with non-UTF-8 data was not thread-safe. This could lead to a use-after-free causing a potentially exploitable crash. This vulnerability affects Firefox ESR < 102.3, Thunderbird < 102.3, and Firefox < 105."
+    },
+    {
+        "Modified": "2023-01-04T03:21:00",
+        "Published": "2022-12-22T20:15:00",
+        "access": {},
+        "assigner": "security@mozilla.org",
+        "cvss": null,
+        "cwe": "CWE-787",
+        "id": "CVE-2022-40961",
+        "impact": {},
+        "last-modified": "2023-01-04T03:21:00",
+        "references": [
+            "https://www.mozilla.org/security/advisories/mfsa2022-40/",
+            "https://bugzilla.mozilla.org/show_bug.cgi?id=1784588"
+        ],
+        "summary": "During startup, a graphics driver with an unexpected name could lead to a stack-buffer overflow causing a potentially exploitable crash.<br>*This issue only affects Firefox for Android. Other operating systems are not affected.*. This vulnerability affects Firefox < 105."
+    },
+    {
+        "Modified": "2023-01-04T03:15:00",
+        "Published": "2022-12-06T05:15:00",
+        "access": {},
+        "assigner": "report@snyk.io",
+        "cvss": null,
+        "cwe": "CWE-20",
+        "id": "CVE-2022-24439",
+        "impact": {},
+        "last-modified": "2023-01-04T03:15:00",
+        "references": [
+            "https://security.snyk.io/vuln/SNYK-PYTHON-GITPYTHON-3113858",
+            "https://github.com/gitpython-developers/GitPython/blob/bec61576ae75803bc4e60d8de7a629c194313d1c/git/repo/base.py%23L1249",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/IKMVYKLWX62UEYKAN64RUZMOIAMZM5JN/"
+        ],
+        "summary": "All versions of package gitpython are vulnerable to Remote Code Execution (RCE) due to improper user input validation, which makes it possible to inject a maliciously crafted remote URL into the clone command. Exploiting this vulnerability is possible because the library makes external calls to git without sufficient sanitization of input arguments."
+    },
+    {
+        "Modified": "2023-01-04T02:59:00",
+        "Published": "2022-12-22T20:15:00",
+        "access": {},
+        "assigner": "security@mozilla.org",
+        "cvss": null,
+        "cwe": "NVD-CWE-noinfo",
+        "id": "CVE-2022-40962",
+        "impact": {},
+        "last-modified": "2023-01-04T02:59:00",
+        "references": [
+            "https://www.mozilla.org/security/advisories/mfsa2022-42/",
+            "https://www.mozilla.org/security/advisories/mfsa2022-41/",
+            "https://www.mozilla.org/security/advisories/mfsa2022-40/",
+            "https://bugzilla.mozilla.org/buglist.cgi?bug_id=1776655%2C1777574%2C1784835%2C1785109%2C1786502%2C1789440"
+        ],
+        "summary": "Mozilla developers Nika Layzell, Timothy Nikkel, Sebastian Hengst, Andreas Pehrson, and the Mozilla Fuzzing Team reported memory safety bugs present in Firefox 104 and Firefox ESR 102.2. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code. This vulnerability affects Firefox ESR < 102.3, Thunderbird < 102.3, and Firefox < 105."
+    },
+    {
+        "Modified": "2023-01-04T02:55:00",
+        "Published": "2022-12-22T20:15:00",
+        "access": {},
+        "assigner": "security@mozilla.org",
+        "cvss": null,
+        "cwe": "CWE-346",
+        "id": "CVE-2022-42927",
+        "impact": {},
+        "last-modified": "2023-01-04T02:55:00",
+        "references": [
+            "https://www.mozilla.org/security/advisories/mfsa2022-46/",
+            "https://www.mozilla.org/security/advisories/mfsa2022-45/",
+            "https://www.mozilla.org/security/advisories/mfsa2022-44/",
+            "https://bugzilla.mozilla.org/show_bug.cgi?id=1789128"
+        ],
+        "summary": "A same-origin policy violation could have allowed the theft of cross-origin URL entries, leaking the result of a redirect, via <code>performance.getEntries()</code>. This vulnerability affects Thunderbird < 102.4, Firefox ESR < 102.4, and Firefox < 106."
+    },
+    {
+        "Modified": "2023-01-04T02:51:00",
+        "Published": "2022-12-22T20:15:00",
+        "access": {},
+        "assigner": "security@mozilla.org",
+        "cvss": null,
+        "cwe": "NVD-CWE-noinfo",
+        "id": "CVE-2022-42928",
+        "impact": {},
+        "last-modified": "2023-01-04T02:51:00",
+        "references": [
+            "https://bugzilla.mozilla.org/show_bug.cgi?id=1791520",
+            "https://www.mozilla.org/security/advisories/mfsa2022-46/",
+            "https://www.mozilla.org/security/advisories/mfsa2022-45/",
+            "https://www.mozilla.org/security/advisories/mfsa2022-44/"
+        ],
+        "summary": "Certain types of allocations were missing annotations that, if the Garbage Collector was in a specific state, could have lead to memory corruption and a potentially exploitable crash. This vulnerability affects Thunderbird < 102.4, Firefox ESR < 102.4, and Firefox < 106."
+    },
+    {
+        "Modified": "2023-01-04T02:43:00",
+        "Published": "2022-12-22T20:15:00",
+        "access": {},
+        "assigner": "security@mozilla.org",
+        "cvss": null,
+        "cwe": "NVD-CWE-noinfo",
+        "id": "CVE-2022-42929",
+        "impact": {},
+        "last-modified": "2023-01-04T02:43:00",
+        "references": [
+            "https://www.mozilla.org/security/advisories/mfsa2022-46/",
+            "https://www.mozilla.org/security/advisories/mfsa2022-45/",
+            "https://www.mozilla.org/security/advisories/mfsa2022-44/",
+            "https://bugzilla.mozilla.org/show_bug.cgi?id=1789439"
+        ],
+        "summary": "If a website called <code>window.print()</code> in a particular way, it could cause a denial of service of the browser, which may persist beyond browser restart depending on the user's session restore settings. This vulnerability affects Thunderbird < 102.4, Firefox ESR < 102.4, and Firefox < 106."
+    },
+    {
+        "Modified": "2023-01-04T02:42:00",
+        "Published": "2022-12-22T20:15:00",
+        "access": {},
+        "assigner": "security@mozilla.org",
+        "cvss": null,
+        "cwe": "CWE-922",
+        "id": "CVE-2022-42931",
+        "impact": {},
+        "last-modified": "2023-01-04T02:42:00",
+        "references": [
+            "https://www.mozilla.org/security/advisories/mfsa2022-44/",
+            "https://bugzilla.mozilla.org/show_bug.cgi?id=1780571"
+        ],
+        "summary": "Logins saved by Firefox should be managed by the Password Manager component which uses encryption to save files on-disk. Instead, the username (not password) was saved by the Form Manager to an unencrypted file on disk. This vulnerability affects Firefox < 106."
+    },
+    {
+        "Modified": "2023-01-04T02:42:00",
+        "Published": "2022-12-22T20:15:00",
+        "access": {},
+        "assigner": "security@mozilla.org",
+        "cvss": null,
+        "cwe": "CWE-601",
+        "id": "CVE-2022-29912",
+        "impact": {},
+        "last-modified": "2023-01-04T02:42:00",
+        "references": [
+            "https://www.mozilla.org/security/advisories/mfsa2022-17/",
+            "https://www.mozilla.org/security/advisories/mfsa2022-16/",
+            "https://bugzilla.mozilla.org/show_bug.cgi?id=1692655",
+            "https://www.mozilla.org/security/advisories/mfsa2022-18/"
+        ],
+        "summary": "Requests initiated through reader mode did not properly omit cookies with a SameSite attribute. This vulnerability affects Thunderbird < 91.9, Firefox ESR < 91.9, and Firefox < 100."
+    },
+    {
+        "Modified": "2023-01-04T02:40:00",
+        "Published": "2022-12-22T20:15:00",
+        "access": {},
+        "assigner": "security@mozilla.org",
+        "cvss": null,
+        "cwe": "NVD-CWE-noinfo",
+        "id": "CVE-2022-42932",
+        "impact": {},
+        "last-modified": "2023-01-04T02:40:00",
+        "references": [
+            "https://bugzilla.mozilla.org/buglist.cgi?bug_id=1789729%2C1791363%2C1792041",
+            "https://www.mozilla.org/security/advisories/mfsa2022-46/",
+            "https://www.mozilla.org/security/advisories/mfsa2022-45/",
+            "https://www.mozilla.org/security/advisories/mfsa2022-44/"
+        ],
+        "summary": "Mozilla developers Ashley Hale and the Mozilla Fuzzing Team reported memory safety bugs present in Thunderbird 102.3. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code. This vulnerability affects Thunderbird < 102.4, Firefox ESR < 102.4, and Firefox < 106."
+    },
+    {
+        "Modified": "2023-01-04T02:36:00",
+        "Published": "2022-12-22T20:15:00",
+        "access": {},
+        "assigner": "security@mozilla.org",
+        "cvss": null,
+        "cwe": "NVD-CWE-noinfo",
+        "id": "CVE-2022-36317",
+        "impact": {},
+        "last-modified": "2023-01-04T02:36:00",
+        "references": [
+            "https://bugzilla.mozilla.org/show_bug.cgi?id=1759951",
+            "https://www.mozilla.org/security/advisories/mfsa2022-28/"
+        ],
+        "summary": "When visiting a website with an overly long URL, the user interface would start to hang. Due to session restore, this could lead to a permanent Denial of Service.<br>*This bug only affects Firefox for Android. Other operating systems are unaffected.*. This vulnerability affects Firefox < 103."
+    },
+    {
+        "Modified": "2023-01-04T02:33:00",
+        "Published": "2022-12-21T21:15:00",
+        "access": {},
+        "assigner": "security@proofpoint.com",
+        "cvss": null,
+        "cwe": "CWE-269",
+        "id": "CVE-2022-46334",
+        "impact": {},
+        "last-modified": "2023-01-04T02:33:00",
+        "references": [
+            "https://www.proofpoint.com/security/security-advisories/pfpt-sa-2022-0004"
+        ],
+        "summary": "Proofpoint Enterprise Protection (PPS/PoD) contains a vulnerability which allows the pps user to escalate to root privileges due to unnecessary permissions. This affects all versions 8.19.0 and below."
+    },
+    {
+        "Modified": "2023-01-04T02:21:00",
+        "Published": "2022-12-22T20:15:00",
+        "access": {},
+        "assigner": "security@mozilla.org",
+        "cvss": null,
+        "cwe": "CWE-362",
+        "id": "CVE-2022-36318",
+        "impact": {},
+        "last-modified": "2023-01-04T02:21:00",
+        "references": [
+            "https://www.mozilla.org/security/advisories/mfsa2022-31/",
+            "https://www.mozilla.org/security/advisories/mfsa2022-30/",
+            "https://bugzilla.mozilla.org/show_bug.cgi?id=1771774",
+            "https://www.mozilla.org/security/advisories/mfsa2022-32/",
+            "https://www.mozilla.org/security/advisories/mfsa2022-28/",
+            "https://www.mozilla.org/security/advisories/mfsa2022-29/"
+        ],
+        "summary": "When visiting directory listings for `chrome://` URLs as source text, some parameters were reflected. This vulnerability affects Firefox ESR < 102.1, Firefox ESR < 91.12, Firefox < 103, Thunderbird < 102.1, and Thunderbird < 91.12."
+    },
+    {
+        "Modified": "2023-01-04T02:21:00",
+        "Published": "2022-12-21T09:15:00",
+        "access": {},
+        "assigner": "vultures@jpcert.or.jp",
+        "cvss": null,
+        "cwe": "CWE-427",
+        "id": "CVE-2022-46330",
+        "impact": {},
+        "last-modified": "2023-01-04T02:21:00",
+        "references": [
+            "https://github.com/Squirrel/Squirrel.Windows/pull/1807",
+            "https://github.com/Squirrel/Squirrel.Windows",
+            "https://jvn.jp/en/jp/JVN29902403/index.html"
+        ],
+        "summary": "Squirrel.Windows is both a toolset and a library that provides installation and update functionality for Windows desktop applications. Installers generated by Squirrel.Windows 2.0.1 and earlier contain an issue with the DLL search path, which may lead to insecurely loading Dynamic Link Libraries. As a result, arbitrary code may be executed with the privilege of the user invoking the installer."
+    },
+    {
+        "Modified": "2023-01-04T02:17:00",
+        "Published": "2022-12-22T20:15:00",
+        "access": {},
+        "assigner": "security@mozilla.org",
+        "cvss": null,
+        "cwe": "NVD-CWE-noinfo",
+        "id": "CVE-2022-36319",
+        "impact": {},
+        "last-modified": "2023-01-04T02:17:00",
+        "references": [
+            "https://www.mozilla.org/security/advisories/mfsa2022-31/",
+            "https://www.mozilla.org/security/advisories/mfsa2022-30/",
+            "https://bugzilla.mozilla.org/show_bug.cgi?id=1737722",
+            "https://www.mozilla.org/security/advisories/mfsa2022-32/",
+            "https://www.mozilla.org/security/advisories/mfsa2022-28/",
+            "https://www.mozilla.org/security/advisories/mfsa2022-29/"
+        ],
+        "summary": "When combining CSS properties for overflow and transform, the mouse cursor could interact with different coordinates than displayed. This vulnerability affects Firefox ESR < 102.1, Firefox ESR < 91.12, Firefox < 103, Thunderbird < 102.1, and Thunderbird < 91.12."
+    },
+    {
+        "Modified": "2023-01-04T02:15:00",
+        "Published": "2022-12-22T20:15:00",
+        "access": {},
+        "assigner": "security@mozilla.org",
+        "cvss": null,
+        "cwe": "NVD-CWE-noinfo",
+        "id": "CVE-2022-29914",
+        "impact": {},
+        "last-modified": "2023-01-04T02:15:00",
+        "references": [
+            "https://bugzilla.mozilla.org/show_bug.cgi?id=1746448",
+            "https://www.mozilla.org/security/advisories/mfsa2022-17/",
+            "https://www.mozilla.org/security/advisories/mfsa2022-16/",
+            "https://www.mozilla.org/security/advisories/mfsa2022-18/"
+        ],
+        "summary": "When reusing existing popups Firefox would have allowed them to cover the fullscreen notification UI, which could have enabled browser spoofing attacks. This vulnerability affects Thunderbird < 91.9, Firefox ESR < 91.9, and Firefox < 100."
+    },
+    {
+        "Modified": "2023-01-04T02:14:00",
+        "Published": "2022-12-22T20:15:00",
+        "access": {},
+        "assigner": "security@mozilla.org",
+        "cvss": null,
+        "cwe": "NVD-CWE-noinfo",
+        "id": "CVE-2022-29913",
+        "impact": {},
+        "last-modified": "2023-01-04T02:14:00",
+        "references": [
+            "https://bugzilla.mozilla.org/show_bug.cgi?id=1764778",
+            "https://www.mozilla.org/security/advisories/mfsa2022-18/"
+        ],
+        "summary": "The parent process would not properly check whether the Speech Synthesis feature is enabled, when receiving instructions from a child process. This vulnerability affects Thunderbird < 91.9."
+    },
+    {
+        "Modified": "2023-01-04T02:06:00",
+        "Published": "2022-12-25T20:15:00",
+        "access": {},
+        "assigner": "cna@vuldb.com",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2022-4736",
+        "impact": {},
+        "last-modified": "2023-01-04T02:06:00",
+        "references": [
+            "https://github.com/jschwindt/Venganzas-del-Pasado/commit/62339b2ec445692c710b804bdf07aef4bd247ff7",
+            "https://vuldb.com/?ctiid.216770",
+            "https://vuldb.com/?id.216770",
+            "https://www.openbugbounty.org/reports/3022583/"
+        ],
+        "summary": "A vulnerability was found in Venganzas del Pasado and classified as problematic. Affected by this issue is some unknown functionality. The manipulation of the argument the_title leads to cross site scripting. The attack may be launched remotely. The name of the patch is 62339b2ec445692c710b804bdf07aef4bd247ff7. It is recommended to apply a patch to fix this issue. VDB-216770 is the identifier assigned to this vulnerability."
+    },
+    {
+        "Modified": "2023-01-04T02:06:00",
+        "Published": "2022-12-25T20:15:00",
+        "access": {},
+        "assigner": "cna@vuldb.com",
+        "cvss": null,
+        "cwe": "CWE-89",
+        "id": "CVE-2022-4737",
+        "impact": {},
+        "last-modified": "2023-01-04T02:06:00",
+        "references": [
+            "https://vuldb.com/?ctiid.216773",
+            "https://vuldb.com/?id.216773"
+        ],
+        "summary": "A vulnerability was found in SourceCodester Blood Bank Management System 1.0. It has been rated as critical. This issue affects some unknown processing of the file login.php. The manipulation of the argument username/password leads to sql injection. The attack may be initiated remotely. The identifier VDB-216773 was assigned to this vulnerability."
+    },
+    {
+        "Modified": "2023-01-04T02:06:00",
+        "Published": "2022-12-25T20:15:00",
+        "access": {},
+        "assigner": "cna@vuldb.com",
+        "cvss": null,
+        "cwe": "CWE-89",
+        "id": "CVE-2022-4739",
+        "impact": {},
+        "last-modified": "2023-01-04T02:06:00",
+        "references": [
+            "https://vuldb.com/?ctiid.216775",
+            "https://vuldb.com/?id.216775"
+        ],
+        "summary": "A vulnerability classified as critical was found in SourceCodester School Dormitory Management System 1.0. Affected by this vulnerability is an unknown functionality of the component Admin Login. The manipulation leads to sql injection. The attack can be launched remotely. The associated identifier of this vulnerability is VDB-216775."
+    },
+    {
+        "Modified": "2023-01-04T02:05:00",
+        "Published": "2022-12-25T20:15:00",
+        "access": {},
+        "assigner": "cna@vuldb.com",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2022-4740",
+        "impact": {},
+        "last-modified": "2023-01-04T02:05:00",
+        "references": [
+            "https://vuldb.com/?id.216776",
+            "https://vuldb.com/?ctiid.216776",
+            "https://gitee.com/kekingcn/file-online-preview/issues/I674AC"
+        ],
+        "summary": "A vulnerability, which was classified as problematic, has been found in kkFileView. Affected by this issue is the function setWatermarkAttribute of the file /picturesPreview. The manipulation leads to cross site scripting. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. The identifier of this vulnerability is VDB-216776."
+    },
+    {
+        "Modified": "2023-01-04T02:04:00",
+        "Published": "2022-12-26T05:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-668",
+        "id": "CVE-2021-44854",
+        "impact": {},
+        "last-modified": "2023-01-04T02:04:00",
+        "references": [
+            "https://phabricator.wikimedia.org/T292763"
+        ],
+        "summary": "An issue was discovered in MediaWiki before 1.35.5, 1.36.x before 1.36.3, and 1.37.x before 1.37.1. The REST API publicly caches results from private wikis."
+    },
+    {
+        "Modified": "2023-01-04T02:04:00",
+        "Published": "2022-12-26T05:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2021-44855",
+        "impact": {},
+        "last-modified": "2023-01-04T02:04:00",
+        "references": [
+            "https://phabricator.wikimedia.org/T293589"
+        ],
+        "summary": "An issue was discovered in MediaWiki before 1.35.5, 1.36.x before 1.36.3, and 1.37.x before 1.37.1. There is Blind Stored XSS via a URL to the Upload Image feature."
+    },
+    {
+        "Modified": "2023-01-04T02:02:00",
+        "Published": "2022-12-26T02:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2022-37307",
+        "impact": {},
+        "last-modified": "2023-01-04T02:02:00",
+        "references": [
+            "https://seclists.org/fulldisclosure/2022/Nov/18",
+            "https://open-xchange.com"
+        ],
+        "summary": "OX App Suite through 7.10.6 allows XSS via XHTML CDATA for a snippet, as demonstrated by the onerror attribute of an IMG element within an e-mail signature."
+    },
+    {
+        "Modified": "2023-01-04T02:02:00",
+        "Published": "2022-12-26T02:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-400",
+        "id": "CVE-2022-37311",
+        "impact": {},
+        "last-modified": "2023-01-04T02:02:00",
+        "references": [
+            "https://seclists.org/fulldisclosure/2022/Nov/18",
+            "https://open-xchange.com"
+        ],
+        "summary": "OX App Suite through 7.10.6 has Uncontrolled Resource Consumption via a large location request parameter to the redirect servlet."
+    },
+    {
+        "Modified": "2023-01-04T02:01:00",
+        "Published": "2022-12-26T02:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-400",
+        "id": "CVE-2022-37312",
+        "impact": {},
+        "last-modified": "2023-01-04T02:01:00",
+        "references": [
+            "https://seclists.org/fulldisclosure/2022/Nov/18",
+            "https://open-xchange.com"
+        ],
+        "summary": "OX App Suite through 7.10.6 has Uncontrolled Resource Consumption via a large request body containing a redirect URL to the deferrer servlet."
+    },
+    {
+        "Modified": "2023-01-04T01:59:00",
+        "Published": "2022-12-26T02:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-918",
+        "id": "CVE-2022-37313",
+        "impact": {},
+        "last-modified": "2023-01-04T01:59:00",
+        "references": [
+            "https://seclists.org/fulldisclosure/2022/Nov/18",
+            "https://open-xchange.com"
+        ],
+        "summary": "OX App Suite through 7.10.6 allows SSRF because the anti-SSRF protection mechanism only checks the first DNS AA or AAAA record."
+    },
+    {
+        "Modified": "2023-01-04T01:57:00",
+        "Published": "2022-12-26T04:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2022-29852",
+        "impact": {},
+        "last-modified": "2023-01-04T01:57:00",
+        "references": [
+            "https://open-xchange.com",
+            "https://seclists.org/fulldisclosure/2022/Sep/0"
+        ],
+        "summary": "OX App Suite through 8.2 allows XSS because BMFreehand10 and image/x-freehand are not blocked."
+    },
+    {
+        "Modified": "2023-01-04T01:56:00",
+        "Published": "2022-12-26T04:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2022-29853",
+        "impact": {},
+        "last-modified": "2023-01-04T01:56:00",
+        "references": [
+            "https://open-xchange.com",
+            "https://seclists.org/fulldisclosure/2022/Sep/0"
+        ],
+        "summary": "OX App Suite through 8.2 allows XSS via a certain complex hierarchy that forces use of Show Entire Message for a huge HTML e-mail message."
+    },
+    {
+        "Modified": "2023-01-04T01:15:00",
+        "Published": "2022-08-25T15:15:00",
+        "access": {},
+        "assigner": "security@apache.org",
+        "cvss": null,
+        "cwe": "CWE-120",
+        "id": "CVE-2022-22728",
+        "impact": {},
+        "last-modified": "2023-01-04T01:15:00",
+        "references": [
+            "https://lists.apache.org/thread/2fsjoor96d47vtkpf76x4yo06nccvy1y",
+            "http://www.openwall.com/lists/oss-security/2022/08/25/4",
+            "http://www.openwall.com/lists/oss-security/2022/08/25/3",
+            "http://www.openwall.com/lists/oss-security/2022/08/26/4",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/2PUUS3JL44UUSLJTSXE46HVKZIW7E7PE/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/BE5MEHGIQUEIISBCVHM43IN2NBDXBFOJ/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/3HZZKVHYYWACPWONPEFRNPIRE3HYLV4T/",
+            "http://www.openwall.com/lists/oss-security/2022/12/29/1",
+            "http://www.openwall.com/lists/oss-security/2022/12/30/4",
+            "http://www.openwall.com/lists/oss-security/2022/12/31/1",
+            "http://www.openwall.com/lists/oss-security/2022/12/31/5",
+            "http://www.openwall.com/lists/oss-security/2023/01/02/1",
+            "http://www.openwall.com/lists/oss-security/2023/01/02/2",
+            "http://www.openwall.com/lists/oss-security/2023/01/03/2"
+        ],
+        "summary": "A flaw in Apache libapreq2 versions 2.16 and earlier could cause a buffer overflow while processing multipart form uploads. A remote attacker could send a request causing a process crash which could lead to a denial of service attack."
+    },
+    {
         "Modified": "2023-01-04T00:15:00",
         "Published": "2023-01-04T00:15:00",
         "access": {},
@@ -1032,651 +1669,5 @@
             "https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-37958"
         ],
         "summary": "SPNEGO Extended Negotiation (NEGOEX) Security Mechanism Information Disclosure Vulnerability."
-    },
-    {
-        "Modified": "2023-01-03T17:57:00",
-        "Published": "2022-12-17T13:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-22",
-        "id": "CVE-2022-4583",
-        "impact": {},
-        "last-modified": "2023-01-03T17:57:00",
-        "references": [
-            "https://github.com/LEMS/jLEMS/pull/103",
-            "https://github.com/LEMS/jLEMS/commit/8c224637d7d561076364a9e3c2c375daeaf463dc",
-            "https://vuldb.com/?id.216169"
-        ],
-        "summary": "A vulnerability was found in jLEMS. It has been declared as critical. Affected by this vulnerability is the function unpackJar of the file src/main/java/org/lemsml/jlems/io/util/JUtil.java. The manipulation leads to path traversal. The attack can be launched remotely. The name of the patch is 8c224637d7d561076364a9e3c2c375daeaf463dc. It is recommended to apply a patch to fix this issue. The identifier VDB-216169 was assigned to this vulnerability."
-    },
-    {
-        "Modified": "2023-01-03T17:22:00",
-        "Published": "2022-12-20T19:15:00",
-        "access": {},
-        "assigner": "secalert@redhat.com",
-        "cvss": null,
-        "cwe": "CWE-78",
-        "id": "CVE-2022-4515",
-        "impact": {},
-        "last-modified": "2023-01-03T17:22:00",
-        "references": [
-            "https://sourceforge.net/p/ctags/code/HEAD/tree/tags/ctags-5.8/sort.c#l56",
-            "https://lists.debian.org/debian-lts-announce/2022/12/msg00040.html"
-        ],
-        "summary": "A flaw was found in Exuberant Ctags in the way it handles the \"-o\" option. This option specifies the tag filename. A crafted tag filename specified in the command line or in the configuration file results in arbitrary command execution because the externalSortTags() in sort.c calls the system(3) function in an unsafe way."
-    },
-    {
-        "Modified": "2023-01-03T17:15:00",
-        "Published": "2023-01-03T17:15:00",
-        "access": {},
-        "assigner": "security-advisories@github.com",
-        "cvss": null,
-        "cwe": "CWE-400",
-        "id": "CVE-2021-32821",
-        "impact": {},
-        "last-modified": "2023-01-03T17:15:00",
-        "references": [
-            "https://securitylab.github.com/advisories/GHSL-2020-345-redos-mootools/"
-        ],
-        "summary": "MooTools is a collection of JavaScript utilities for JavaScript developers. All known versions include a CSS selector parser that is vulnerable to Regular Expression Denial of Service (ReDoS). An attack requires that an attacker can inject a string into a CSS selector at runtime, which is quite common with e.g. jQuery CSS selectors. No patches are available for this issue."
-    },
-    {
-        "Modified": "2023-01-03T17:15:00",
-        "Published": "2023-01-03T17:15:00",
-        "access": {},
-        "assigner": "psirt@fortinet.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-35845",
-        "impact": {},
-        "last-modified": "2023-01-03T17:15:00",
-        "references": [
-            "https://fortiguard.com/psirt/FG-IR-22-274"
-        ],
-        "summary": "Multiple improper neutralization of special elements used in an OS Command ('OS Command Injection') vulnerabilities [CWE-78] in FortiTester 7.1.0, 7.0 all versions, 4.0.0 through 4.2.0, 2.3.0 through 3.9.1 may allow an authenticated attacker to execute arbitrary commands in the underlying shell."
-    },
-    {
-        "Modified": "2023-01-03T17:15:00",
-        "Published": "2023-01-03T17:15:00",
-        "access": {},
-        "assigner": "psirt@fortinet.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-39947",
-        "impact": {},
-        "last-modified": "2023-01-03T17:15:00",
-        "references": [
-            "https://fortiguard.com/psirt/FG-IR-22-061"
-        ],
-        "summary": "A improper neutralization of special elements used in an os command ('os command injection') in Fortinet FortiADC version 7.0.0 through 7.0.2, FortiADC version 6.2.0 through 6.2.3, FortiADC version version 6.1.0 through 6.1.6, FortiADC version 6.0.0 through 6.0.4, FortiADC version 5.4.0 through 5.4.5 may allow an attacker to execute unauthorized code or commands via specifically crafted HTTP requests."
-    },
-    {
-        "Modified": "2023-01-03T17:15:00",
-        "Published": "2023-01-03T17:15:00",
-        "access": {},
-        "assigner": "psirt@fortinet.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-41336",
-        "impact": {},
-        "last-modified": "2023-01-03T17:15:00",
-        "references": [
-            "https://fortiguard.com/psirt/FG-IR-22-313"
-        ],
-        "summary": "An improper neutralization of input during web page generation vulnerability [CWE-79] in FortiPortal versions 6.0.0 through 6.0.11 and all versions of 5.3, 5.2, 5.1, 5.0 management interface may allow a remote authenticated attacker to perform a stored cross site scripting (XSS) attack via sending request with specially crafted columnindex parameter."
-    },
-    {
-        "Modified": "2023-01-03T17:15:00",
-        "Published": "2023-01-03T17:15:00",
-        "access": {},
-        "assigner": "psirt@fortinet.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-42471",
-        "impact": {},
-        "last-modified": "2023-01-03T17:15:00",
-        "references": [
-            "https://fortiguard.com/psirt/FG-IR-22-250"
-        ],
-        "summary": "An improper neutralization of CRLF sequences in HTTP headers ('HTTP Response Splitting') vulnerability [CWE-113] In FortiWeb version 7.0.0 through 7.0.2, FortiWeb version 6.4.0 through 6.4.2, FortiWeb version 6.3.6 through 6.3.20 may allow an authenticated and remote attacker to inject arbitrary headers."
-    },
-    {
-        "Modified": "2023-01-03T17:15:00",
-        "Published": "2022-12-24T04:15:00",
-        "access": {},
-        "assigner": "security-advisories@github.com",
-        "cvss": null,
-        "cwe": "CWE-1321",
-        "id": "CVE-2022-46175",
-        "impact": {},
-        "last-modified": "2023-01-03T17:15:00",
-        "references": [
-            "https://github.com/json5/json5/security/advisories/GHSA-9c47-m6qq-7p4h",
-            "https://github.com/json5/json5/issues/199",
-            "https://github.com/json5/json5/issues/295",
-            "https://github.com/json5/json5/pull/298"
-        ],
-        "summary": "JSON5 is an extension to the popular JSON file format that aims to be easier to write and maintain by hand (e.g. for config files). The `parse` method of the JSON5 library before and including versions 1.0.1 and 2.2.1 does not restrict parsing of keys named `__proto__`, allowing specially crafted strings to pollute the prototype of the resulting object. This vulnerability pollutes the prototype of the object returned by `JSON5.parse` and not the global Object prototype, which is the commonly understood definition of Prototype Pollution. However, polluting the prototype of a single object can have significant security impact for an application if the object is later used in trusted operations. This vulnerability could allow an attacker to set arbitrary and unexpected keys on the object returned from `JSON5.parse`. The actual impact will depend on how applications utilize the returned object and how they filter unwanted keys, but could include denial of service, cross-site scripting, elevation of privilege, and in extreme cases, remote code execution. `JSON5.parse` should restrict parsing of `__proto__` keys when parsing JSON strings to objects. As a point of reference, the `JSON.parse` method included in JavaScript ignores `__proto__` keys. Simply changing `JSON5.parse` to `JSON.parse` in the examples above mitigates this vulnerability. This vulnerability is patched in json5 versions 1.0.2, 2.2.2, and later."
-    },
-    {
-        "Modified": "2023-01-03T15:27:00",
-        "Published": "2022-04-03T21:15:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "LOW",
-            "vector": "LOCAL"
-        },
-        "assigner": "cve@mitre.org",
-        "cvss": 2.1,
-        "cvss-time": "2023-01-03T15:27:00",
-        "cvss-vector": "AV:L/AC:L/Au:N/C:N/I:N/A:P",
-        "cwe": "CWE-415",
-        "id": "CVE-2022-28389",
-        "impact": {
-            "availability": "PARTIAL",
-            "confidentiality": "NONE",
-            "integrity": "NONE"
-        },
-        "last-modified": "2023-01-03T15:27:00",
-        "references": [
-            "https://github.com/torvalds/linux/commit/04c9b00ba83594a29813d6b1fb8fdc93a3915174",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/LAWC35TO642FOP3UCA3C6IF7NAUFOVZ6/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/XFMPUI3WI4U2F7ONHRW36WDY4ZE7LGGT/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6IHHC455LMSJNG4CSZ5CEAHYWY2DE5YW/",
-            "https://www.debian.org/security/2022/dsa-5127",
-            "https://security.netapp.com/advisory/ntap-20220513-0001/",
-            "https://www.debian.org/security/2022/dsa-5173"
-        ],
-        "summary": "mcba_usb_start_xmit in drivers/net/can/usb/mcba_usb.c in the Linux kernel through 5.17.1 has a double free."
-    },
-    {
-        "Modified": "2023-01-03T15:21:00",
-        "Published": "2023-01-03T15:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-38766",
-        "impact": {},
-        "last-modified": "2023-01-03T15:21:00",
-        "references": [
-            "https://github.com/AUTOCRYPT-IVS-VnV/CVE-2022-38766"
-        ],
-        "summary": "The remote keyless system on Renault ZOE 2021 vehicles sends 433.92 MHz RF signals from the same Rolling Codes set for each door-open request, which allows for a replay attack."
-    },
-    {
-        "Modified": "2023-01-03T15:21:00",
-        "Published": "2023-01-03T15:15:00",
-        "access": {},
-        "assigner": "security@wordfence.com",
-        "cvss": null,
-        "cwe": "CWE-77",
-        "id": "CVE-2023-0039",
-        "impact": {},
-        "last-modified": "2023-01-03T15:21:00",
-        "references": [
-            "https://plugins.trac.wordpress.org/browser/wp-upg/trunk/wp-upg.php#L723",
-            "https://www.wordfence.com/threat-intel/vulnerabilities/id/7c0d7743-14f5-4fdd-a67b-b1f95dbe0f46"
-        ],
-        "summary": "The User Post Gallery - UPG plugin for WordPress is vulnerable to authorization bypass which leads to remote command execution due to the use of a nopriv AJAX action and user supplied function calls and parameters in versions up to, and including 2.19. This makes it possible for unauthenticated attackers to call arbitrary PHP functions and perform actions like adding new files that can be webshells and updating the site's options to allow anyone to register as an administrator."
-    },
-    {
-        "Modified": "2023-01-03T15:21:00",
-        "Published": "2023-01-03T14:15:00",
-        "access": {},
-        "assigner": "security@wordfence.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-4663",
-        "impact": {},
-        "last-modified": "2023-01-03T15:21:00",
-        "references": [
-            "https://www.wordfence.com/threat-intel/vulnerabilities/id/3abbc407-f660-4b1f-9d48-436320e5fdd7",
-            "https://plugins.trac.wordpress.org/browser/members-import/trunk/members-import.php#L113"
-        ],
-        "summary": "The Members Import plugin for WordPress is vulnerable to Self Cross-Site Scripting via the user_login parameter in an imported CSV file in versions up to, and including, 1.4.2 due to insufficient input sanitization and output escaping. This makes it possible for attackers to inject arbitrary web scripts in pages that execute if they can successfully trick a site's administrator into uploading a CSV file with the malicious payload."
-    },
-    {
-        "Modified": "2023-01-03T15:21:00",
-        "Published": "2023-01-03T14:15:00",
-        "access": {},
-        "assigner": "security@wordfence.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2023-0038",
-        "impact": {},
-        "last-modified": "2023-01-03T15:21:00",
-        "references": [
-            "https://www.wordfence.com/threat-intel/vulnerabilities/id/a2a58fab-d4a3-4333-8495-e094ed85bb61",
-            "https://plugins.trac.wordpress.org/browser/survey-maker/tags/3.1.4/public/partials/class-survey-maker-submissions-summary-shortcode.php?rev=2839688#L311"
-        ],
-        "summary": "The \"Survey Maker \u2013 Best WordPress Survey Plugin\" plugin for WordPress is vulnerable to Stored Cross-Site Scripting via survey answers in versions up to, and including, 3.1.3 due to insufficient input sanitization and output escaping. This makes it possible for unauthenticated attackers to inject arbitrary web scripts when submitting quizzes that will execute whenever a user accesses the submissions page."
-    },
-    {
-        "Modified": "2023-01-03T15:16:00",
-        "Published": "2022-12-05T22:15:00",
-        "access": {},
-        "assigner": "cve-assignments@hackerone.com",
-        "cvss": null,
-        "cwe": "CWE-444",
-        "id": "CVE-2022-35256",
-        "impact": {},
-        "last-modified": "2023-01-03T15:16:00",
-        "references": [
-            "https://hackerone.com/reports/1675191"
-        ],
-        "summary": "The llhttp parser in the http module in Node v18.7.0 does not correctly handle header fields that are not terminated with CLRF. This may result in HTTP Request Smuggling."
-    },
-    {
-        "Modified": "2023-01-03T15:16:00",
-        "Published": "2022-03-23T20:15:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "MEDIUM",
-            "vector": "LOCAL"
-        },
-        "assigner": "secalert@redhat.com",
-        "cvss": 6.9,
-        "cvss-time": "2023-01-03T15:16:00",
-        "cvss-vector": "AV:L/AC:M/Au:N/C:C/I:C/A:C",
-        "cwe": "CWE-416",
-        "id": "CVE-2021-3748",
-        "impact": {
-            "availability": "COMPLETE",
-            "confidentiality": "COMPLETE",
-            "integrity": "COMPLETE"
-        },
-        "last-modified": "2023-01-03T15:16:00",
-        "references": [
-            "https://github.com/qemu/qemu/commit/bedd7e93d01961fcb16a97ae45d93acf357e11f6",
-            "https://ubuntu.com/security/CVE-2021-3748",
-            "https://bugzilla.redhat.com/show_bug.cgi?id=1998514",
-            "https://lists.nongnu.org/archive/html/qemu-devel/2021-09/msg00388.html",
-            "https://lists.debian.org/debian-lts-announce/2022/04/msg00002.html",
-            "https://security.netapp.com/advisory/ntap-20220425-0004/",
-            "https://security.gentoo.org/glsa/202208-27",
-            "https://lists.debian.org/debian-lts-announce/2022/09/msg00008.html"
-        ],
-        "summary": "A use-after-free vulnerability was found in the virtio-net device of QEMU. It could occur when the descriptor's address belongs to the non direct access region, due to num_buffers being set after the virtqueue elem has been unmapped. A malicious guest could use this flaw to crash QEMU, resulting in a denial of service condition, or potentially execute code on the host with the privileges of the QEMU process."
-    },
-    {
-        "Modified": "2023-01-03T15:13:00",
-        "Published": "2022-12-20T21:15:00",
-        "access": {},
-        "assigner": "security-advisories@github.com",
-        "cvss": null,
-        "cwe": "CWE-285",
-        "id": "CVE-2022-23542",
-        "impact": {},
-        "last-modified": "2023-01-03T15:13:00",
-        "references": [
-            "https://github.com/openfga/openfga/pull/422",
-            "https://github.com/openfga/openfga/security/advisories/GHSA-m3q4-7qmj-657m",
-            "https://github.com/openfga/openfga/releases/tag/v0.3.1"
-        ],
-        "summary": "OpenFGA is an authorization/permission engine built for developers and inspired by Google Zanzibar. During an internal security assessment, it was discovered that OpenFGA version 0.3.0 is vulnerable to authorization bypass under certain conditions. This issue has been patched in version 0.3.1 and is backward compatible."
-    },
-    {
-        "Modified": "2023-01-03T15:11:00",
-        "Published": "2022-04-03T21:15:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "LOW",
-            "vector": "LOCAL"
-        },
-        "assigner": "cve@mitre.org",
-        "cvss": 2.1,
-        "cvss-time": "2023-01-03T15:11:00",
-        "cvss-vector": "AV:L/AC:L/Au:N/C:N/I:N/A:P",
-        "cwe": "CWE-415",
-        "id": "CVE-2022-28388",
-        "impact": {
-            "availability": "PARTIAL",
-            "confidentiality": "NONE",
-            "integrity": "NONE"
-        },
-        "last-modified": "2023-01-03T15:11:00",
-        "references": [
-            "https://github.com/torvalds/linux/commit/3d3925ff6433f98992685a9679613a2cc97f3ce2",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/LAWC35TO642FOP3UCA3C6IF7NAUFOVZ6/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/XFMPUI3WI4U2F7ONHRW36WDY4ZE7LGGT/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6IHHC455LMSJNG4CSZ5CEAHYWY2DE5YW/",
-            "https://www.debian.org/security/2022/dsa-5127",
-            "https://security.netapp.com/advisory/ntap-20220513-0001/",
-            "https://www.debian.org/security/2022/dsa-5173"
-        ],
-        "summary": "usb_8dev_start_xmit in drivers/net/can/usb/usb_8dev.c in the Linux kernel through 5.17.1 has a double free."
-    },
-    {
-        "Modified": "2023-01-03T15:06:00",
-        "Published": "2022-12-03T13:15:00",
-        "access": {},
-        "assigner": "security@huntr.dev",
-        "cvss": null,
-        "cwe": "CWE-787",
-        "id": "CVE-2022-3491",
-        "impact": {},
-        "last-modified": "2023-01-03T15:06:00",
-        "references": [
-            "https://huntr.dev/bounties/6e6e05c2-2cf7-4aa5-a817-a62007bf92cb",
-            "https://github.com/vim/vim/commit/3558afe9e9e904cabb8475392d859f2d2fc21041"
-        ],
-        "summary": "Heap-based Buffer Overflow in GitHub repository vim/vim prior to 9.0.0742."
-    },
-    {
-        "Modified": "2023-01-03T14:59:00",
-        "Published": "2022-12-20T23:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-190",
-        "id": "CVE-2022-47629",
-        "impact": {},
-        "last-modified": "2023-01-03T14:59:00",
-        "references": [
-            "https://dev.gnupg.org/T6284",
-            "https://git.gnupg.org/cgi-bin/gitweb.cgi?p=libksba.git;a=commit;h=f61a5ea4e0f6a80fd4b28ef0174bee77793cf070",
-            "https://www.debian.org/security/2022/dsa-5305",
-            "https://lists.debian.org/debian-lts-announce/2022/12/msg00035.html",
-            "https://security.gentoo.org/glsa/202212-07"
-        ],
-        "summary": "Libksba before 1.6.3 is prone to an integer overflow vulnerability in the CRL signature parser."
-    },
-    {
-        "Modified": "2023-01-03T14:46:00",
-        "Published": "2022-12-22T20:15:00",
-        "access": {},
-        "assigner": "security@mozilla.org",
-        "cvss": null,
-        "cwe": "NVD-CWE-noinfo",
-        "id": "CVE-2022-29915",
-        "impact": {},
-        "last-modified": "2023-01-03T14:46:00",
-        "references": [
-            "https://www.mozilla.org/security/advisories/mfsa2022-16/",
-            "https://bugzilla.mozilla.org/show_bug.cgi?id=1751678"
-        ],
-        "summary": "The Performance API did not properly hide the fact whether a request cross-origin resource has observed redirects. This vulnerability affects Firefox < 100."
-    },
-    {
-        "Modified": "2023-01-03T14:00:00",
-        "Published": "2022-12-21T00:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-732",
-        "id": "CVE-2022-42949",
-        "impact": {},
-        "last-modified": "2023-01-03T14:00:00",
-        "references": [
-            "https://www.silverstripe.org/download/security-releases/",
-            "https://www.silverstripe.org/download/security-releases/cve-2022-42949"
-        ],
-        "summary": "Silverstripe silverstripe/subsites through 2.6.0 has Insecure Permissions."
-    },
-    {
-        "Modified": "2023-01-03T13:59:00",
-        "Published": "2022-12-21T05:15:00",
-        "access": {},
-        "assigner": "report@snyk.io",
-        "cvss": null,
-        "cwe": "NVD-CWE-noinfo",
-        "id": "CVE-2022-25893",
-        "impact": {},
-        "last-modified": "2023-01-03T13:59:00",
-        "references": [
-            "https://github.com/patriksimek/vm2/pull/445/commits/3a9876482be487b78a90ac459675da7f83f46d69",
-            "https://github.com/patriksimek/vm2/pull/445",
-            "https://security.snyk.io/vuln/SNYK-JS-VM2-2990237",
-            "https://github.com/patriksimek/vm2/issues/444"
-        ],
-        "summary": "The package vm2 before 3.9.10 are vulnerable to Arbitrary Code Execution due to the usage of prototype lookup for the WeakMap.prototype.set method. Exploiting this vulnerability leads to access to a host object and a sandbox compromise."
-    },
-    {
-        "Modified": "2023-01-03T13:56:00",
-        "Published": "2022-12-21T05:15:00",
-        "access": {},
-        "assigner": "report@snyk.io",
-        "cvss": null,
-        "cwe": "CWE-22",
-        "id": "CVE-2022-25895",
-        "impact": {},
-        "last-modified": "2023-01-03T13:56:00",
-        "references": [
-            "https://github.com/shadowwzw/lite-dev-server/blob/master/src/server.js%23L134",
-            "https://gist.github.com/lirantal/0f8a48c3f5ac581ce73123abe9f7f120",
-            "https://security.snyk.io/vuln/SNYK-JS-LITEDEVSERVER-3153718"
-        ],
-        "summary": "All versions of package lite-dev-server are vulnerable to Directory Traversal due to missing input sanitization and sandboxes being employed to the req.url user input that is passed to the server code."
-    },
-    {
-        "Modified": "2023-01-03T13:54:00",
-        "Published": "2022-12-21T06:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-918",
-        "id": "CVE-2022-47635",
-        "impact": {},
-        "last-modified": "2023-01-03T13:54:00",
-        "references": [
-            "https://wildix.atlassian.net/wiki/spaces/DOC/pages/30279136/Changelogs"
-        ],
-        "summary": "Wildix WMS 6 before 6.02.20221216, WMS 5 before 5.04.20221214, and WMS4 before 4.04.45396.23 allows Server-side request forgery (SSRF) via ZohoClient.php."
-    },
-    {
-        "Modified": "2023-01-03T13:53:00",
-        "Published": "2022-12-26T03:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-37308",
-        "impact": {},
-        "last-modified": "2023-01-03T13:53:00",
-        "references": [
-            "https://seclists.org/fulldisclosure/2022/Nov/18",
-            "https://open-xchange.com"
-        ],
-        "summary": "OX App Suite through 7.10.6 allows XSS via HTML in text/plain e-mail messages."
-    },
-    {
-        "Modified": "2023-01-03T13:53:00",
-        "Published": "2022-12-26T04:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-37309",
-        "impact": {},
-        "last-modified": "2023-01-03T13:53:00",
-        "references": [
-            "https://seclists.org/fulldisclosure/2022/Nov/18",
-            "https://open-xchange.com"
-        ],
-        "summary": "OX App Suite through 7.10.6 allows XSS via script code within a contact that has an e-mail address but lacks a name."
-    },
-    {
-        "Modified": "2023-01-03T13:53:00",
-        "Published": "2022-12-26T04:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-37310",
-        "impact": {},
-        "last-modified": "2023-01-03T13:53:00",
-        "references": [
-            "https://seclists.org/fulldisclosure/2022/Nov/18",
-            "https://open-xchange.com"
-        ],
-        "summary": "OX App Suite through 7.10.6 allows XSS via a malicious capability to the metrics or help module, as demonstrated by a /#!!&app=io.ox/files&cap= URI."
-    },
-    {
-        "Modified": "2023-01-03T13:52:00",
-        "Published": "2022-12-26T02:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-31469",
-        "impact": {},
-        "last-modified": "2023-01-03T13:52:00",
-        "references": [
-            "https://seclists.org/fulldisclosure/2022/Nov/18",
-            "https://open-xchange.com"
-        ],
-        "summary": "OX App Suite through 7.10.6 allows XSS via a deep link, as demonstrated by class=\"deep-link-app\" for a /#!!&app=%2e./ URI."
-    },
-    {
-        "Modified": "2023-01-03T13:51:00",
-        "Published": "2022-12-25T20:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-4738",
-        "impact": {},
-        "last-modified": "2023-01-03T13:51:00",
-        "references": [
-            "https://vuldb.com/?ctiid.216774",
-            "https://vuldb.com/?id.216774"
-        ],
-        "summary": "A vulnerability classified as problematic has been found in SourceCodester Blood Bank Management System 1.0. Affected is an unknown function of the file index.php?page=users of the component User Registration Handler. The manipulation of the argument Name leads to cross site scripting. It is possible to launch the attack remotely. VDB-216774 is the identifier assigned to this vulnerability."
-    },
-    {
-        "Modified": "2023-01-03T13:26:00",
-        "Published": "2023-01-03T11:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-200",
-        "id": "CVE-2013-10007",
-        "impact": {},
-        "last-modified": "2023-01-03T13:26:00",
-        "references": [
-            "https://github.com/ethitter/WP-Print-Friendly/commit/437787292670c20b4abe20160ebbe8428187f2b4",
-            "https://github.com/ethitter/WP-Print-Friendly/pull/4",
-            "https://vuldb.com/?ctiid.217269",
-            "https://vuldb.com/?id.217269"
-        ],
-        "summary": "A vulnerability classified as problematic has been found in ethitter WP-Print-Friendly up to 0.5.2. This affects an unknown part of the file wp-print-friendly.php. The manipulation leads to information disclosure. It is possible to initiate the attack remotely. Upgrading to version 0.5.3 is able to address this issue. The name of the patch is 437787292670c20b4abe20160ebbe8428187f2b4. It is recommended to upgrade the affected component. The identifier VDB-217269 was assigned to this vulnerability."
-    },
-    {
-        "Modified": "2023-01-03T13:26:00",
-        "Published": "2023-01-03T12:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2012-10003",
-        "impact": {},
-        "last-modified": "2023-01-03T13:26:00",
-        "references": [
-            "https://vuldb.com/?ctiid.217271",
-            "https://github.com/ahmyi/rivettracker/commit/f053c5cc2bc44269b0496b5f275e349928a92ef9",
-            "https://vuldb.com/?id.217271",
-            "https://github.com/ahmyi/rivettracker/pull/1"
-        ],
-        "summary": "A vulnerability, which was classified as problematic, has been found in ahmyi RivetTracker. This issue affects some unknown processing. The manipulation of the argument $_SERVER['PHP_SELF'] leads to cross site scripting. The attack may be initiated remotely. The name of the patch is f053c5cc2bc44269b0496b5f275e349928a92ef9. It is recommended to apply a patch to fix this issue. The associated identifier of this vulnerability is VDB-217271."
-    },
-    {
-        "Modified": "2023-01-03T13:26:00",
-        "Published": "2023-01-03T12:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-89",
-        "id": "CVE-2022-4871",
-        "impact": {},
-        "last-modified": "2023-01-03T13:26:00",
-        "references": [
-            "https://github.com/ummmmm/nflpick-em.com/commit/dd77a35942f527ea0beef5e0ec62b92e8b93211e",
-            "https://vuldb.com/?ctiid.217270",
-            "https://vuldb.com/?id.217270"
-        ],
-        "summary": "A vulnerability classified as problematic was found in ummmmm nflpick-em.com up to 2.2.x. This vulnerability affects the function _Load_Users of the file html/includes/runtime/admin/JSON/LoadUsers.php. The manipulation of the argument sort leads to sql injection. The attack can be initiated remotely. The name of the patch is dd77a35942f527ea0beef5e0ec62b92e8b93211e. It is recommended to apply a patch to fix this issue. VDB-217270 is the identifier assigned to this vulnerability. NOTE: JSON entrypoint is only accessible via an admin account"
-    },
-    {
-        "Modified": "2023-01-03T13:26:00",
-        "Published": "2023-01-03T09:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2012-10002",
-        "impact": {},
-        "last-modified": "2023-01-03T13:26:00",
-        "references": [
-            "https://github.com/ahmyi/rivettracker/commit/45a0f33876d58cb7e4a0f17da149e58fc893b858",
-            "https://github.com/ahmyi/rivettracker/pull/1",
-            "https://vuldb.com/?ctiid.217267",
-            "https://vuldb.com/?id.217267"
-        ],
-        "summary": "A vulnerability was found in ahmyi RivetTracker. It has been declared as problematic. Affected by this vulnerability is the function changeColor of the file css.php. The manipulation of the argument set_css leads to cross site scripting. The attack can be launched remotely. The name of the patch is 45a0f33876d58cb7e4a0f17da149e58fc893b858. It is recommended to apply a patch to fix this issue. The associated identifier of this vulnerability is VDB-217267."
-    },
-    {
-        "Modified": "2023-01-03T13:26:00",
-        "Published": "2023-01-03T09:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-209",
-        "id": "CVE-2015-10012",
-        "impact": {},
-        "last-modified": "2023-01-03T13:26:00",
-        "references": [
-            "https://github.com/sumocoders/FrameworkUserBundle/commit/abe4993390ba9bd7821ab12678270556645f94c8",
-            "https://github.com/sumocoders/FrameworkUserBundle/releases/tag/v1.4.0",
-            "https://vuldb.com/?ctiid.217268",
-            "https://vuldb.com/?id.217268"
-        ],
-        "summary": "** UNSUPPPORTED WHEN ASSIGNED **** UNSUPPORTED WHEN ASSIGNED ** A vulnerability was found in sumocoders FrameworkUserBundle up to 1.3.x. It has been rated as problematic. Affected by this issue is some unknown functionality of the file Resources/views/Security/login.html.twig. The manipulation leads to information exposure through error message. Upgrading to version 1.4.0 is able to address this issue. The name of the patch is abe4993390ba9bd7821ab12678270556645f94c8. It is recommended to upgrade the affected component. The identifier of this vulnerability is VDB-217268. NOTE: This vulnerability only affects products that are no longer supported by the maintainer."
-    },
-    {
-        "Modified": "2023-01-03T13:26:00",
-        "Published": "2023-01-03T02:15:00",
-        "access": {},
-        "assigner": "security@octopus.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-3614",
-        "impact": {},
-        "last-modified": "2023-01-03T13:26:00",
-        "references": [
-            "https://advisories.octopus.com/post/2022/sa2022-26/"
-        ],
-        "summary": "In affected versions of Octopus Deploy users of certain browsers using AD to sign-in to Octopus Server were able to bypass authentication checks and be redirected to the configured redirect url without any validation."
-    },
-    {
-        "Modified": "2023-01-03T13:26:00",
-        "Published": "2023-01-03T03:15:00",
-        "access": {},
-        "assigner": "cve@cert.org.tw",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-39039",
-        "impact": {},
-        "last-modified": "2023-01-03T13:26:00",
-        "references": [
-            "https://www.twcert.org.tw/tw/cp-132-6792-c4a62-1.html"
-        ],
-        "summary": "aEnrich\u2019s a+HRD has inadequate filtering for specific URL parameter. An unauthenticated remote attacker can exploit this vulnerability to send arbitrary HTTP(s) request to launch Server-Side Request Forgery (SSRF) attack, to perform arbitrary system command or disrupt service."
-    },
-    {
-        "Modified": "2023-01-03T13:26:00",
-        "Published": "2023-01-03T03:15:00",
-        "access": {},
-        "assigner": "cve@cert.org.tw",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-39040",
-        "impact": {},
-        "last-modified": "2023-01-03T13:26:00",
-        "references": [
-            "https://www.twcert.org.tw/tw/cp-132-6793-66aee-1.html"
-        ],
-        "summary": "aEnrich a+HRD log read function has a path traversal vulnerability. An unauthenticated remote attacker can exploit this vulnerability to bypass authentication and download arbitrary system files."
     }
 ]
