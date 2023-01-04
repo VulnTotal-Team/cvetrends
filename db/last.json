@@ -1,6 +1,403 @@
 [
     {
-        "Modified": "2023-01-04T12:15:00",
+        "Modified": "2023-01-04T14:57:00",
+        "Published": "2022-12-22T20:15:00",
+        "access": {},
+        "assigner": "security@mozilla.org",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2022-34475",
+        "impact": {},
+        "last-modified": "2023-01-04T14:57:00",
+        "references": [
+            "https://www.mozilla.org/security/advisories/mfsa2022-24/",
+            "https://bugzilla.mozilla.org/show_bug.cgi?id=1757210"
+        ],
+        "summary": "SVG <code>&lt;use&gt;</code> tags that referenced a same-origin document could have resulted in script execution if attacker input was sanitized via the HTML Sanitizer API. This would have required the attacker to reference a same-origin JavaScript file containing the script to be executed. This vulnerability affects Firefox < 102."
+    },
+    {
+        "Modified": "2023-01-04T14:54:00",
+        "Published": "2022-12-22T20:15:00",
+        "access": {},
+        "assigner": "security@mozilla.org",
+        "cvss": null,
+        "cwe": "NVD-CWE-noinfo",
+        "id": "CVE-2022-31740",
+        "impact": {},
+        "last-modified": "2023-01-04T14:54:00",
+        "references": [
+            "https://www.mozilla.org/security/advisories/mfsa2022-20/",
+            "https://www.mozilla.org/security/advisories/mfsa2022-22/",
+            "https://www.mozilla.org/security/advisories/mfsa2022-21/",
+            "https://bugzilla.mozilla.org/show_bug.cgi?id=1766806"
+        ],
+        "summary": "On arm64, WASM code could have resulted in incorrect assembly generation leading to a register allocation problem, and a potentially exploitable crash. This vulnerability affects Thunderbird < 91.10, Firefox < 101, and Firefox ESR < 91.10."
+    },
+    {
+        "Modified": "2023-01-04T14:42:00",
+        "Published": "2022-12-22T20:15:00",
+        "access": {},
+        "assigner": "security@mozilla.org",
+        "cvss": null,
+        "cwe": "NVD-CWE-noinfo",
+        "id": "CVE-2022-34476",
+        "impact": {},
+        "last-modified": "2023-01-04T14:42:00",
+        "references": [
+            "https://www.mozilla.org/security/advisories/mfsa2022-24/",
+            "https://bugzilla.mozilla.org/show_bug.cgi?id=1387919"
+        ],
+        "summary": "ASN.1 parsing of an indefinite SEQUENCE inside an indefinite GROUP could have resulted in the parser accepting malformed ASN.1. This vulnerability affects Firefox < 102."
+    },
+    {
+        "Modified": "2023-01-04T14:41:00",
+        "Published": "2022-12-22T20:15:00",
+        "access": {},
+        "assigner": "security@mozilla.org",
+        "cvss": null,
+        "cwe": "NVD-CWE-Other",
+        "id": "CVE-2022-45408",
+        "impact": {},
+        "last-modified": "2023-01-04T14:41:00",
+        "references": [
+            "https://www.mozilla.org/security/advisories/mfsa2022-49/",
+            "https://www.mozilla.org/security/advisories/mfsa2022-48/",
+            "https://www.mozilla.org/security/advisories/mfsa2022-47/",
+            "https://bugzilla.mozilla.org/show_bug.cgi?id=1793829"
+        ],
+        "summary": "Through a series of popups that reuse windowName, an attacker can cause a window to go fullscreen without the user seeing the notification prompt, resulting in potential user confusion or spoofing attacks. This vulnerability affects Firefox ESR < 102.5, Thunderbird < 102.5, and Firefox < 107."
+    },
+    {
+        "Modified": "2023-01-04T14:34:00",
+        "Published": "2022-12-22T20:15:00",
+        "access": {},
+        "assigner": "security@mozilla.org",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2022-45411",
+        "impact": {},
+        "last-modified": "2023-01-04T14:34:00",
+        "references": [
+            "https://bugzilla.mozilla.org/show_bug.cgi?id=1790311",
+            "https://www.mozilla.org/security/advisories/mfsa2022-49/",
+            "https://www.mozilla.org/security/advisories/mfsa2022-48/",
+            "https://www.mozilla.org/security/advisories/mfsa2022-47/"
+        ],
+        "summary": "Cross-Site Tracing occurs when a server will echo a request back via the Trace method, allowing an XSS attack to access to authorization headers and cookies inaccessible to JavaScript (such as cookies protected by HTTPOnly). To mitigate this attack, browsers placed limits on <code>fetch()</code> and XMLHttpRequest; however some webservers have implemented non-standard headers such as <code>X-Http-Method-Override</code> that override the HTTP method, and made this attack possible again. Thunderbird has applied the same mitigations to the use of this and similar headers. This vulnerability affects Firefox ESR < 102.5, Thunderbird < 102.5, and Firefox < 107."
+    },
+    {
+        "Modified": "2023-01-04T14:25:00",
+        "Published": "2022-12-22T20:15:00",
+        "access": {},
+        "assigner": "security@mozilla.org",
+        "cvss": null,
+        "cwe": "NVD-CWE-noinfo",
+        "id": "CVE-2021-4127",
+        "impact": {},
+        "last-modified": "2023-01-04T14:25:00",
+        "references": [
+            "https://www.mozilla.org/security/advisories/mfsa2021-11/",
+            "https://bugzilla.mozilla.org/show_bug.cgi?id=1691547",
+            "https://www.mozilla.org/security/advisories/mfsa2021-12/"
+        ],
+        "summary": "An out of date graphics library (Angle) likely contained vulnerabilities that could potentially be exploited. This vulnerability affects Thunderbird < 78.9 and Firefox ESR < 78.9."
+    },
+    {
+        "Modified": "2023-01-04T14:19:00",
+        "Published": "2022-12-22T20:15:00",
+        "access": {},
+        "assigner": "security@mozilla.org",
+        "cvss": null,
+        "cwe": "NVD-CWE-noinfo",
+        "id": "CVE-2021-4126",
+        "impact": {},
+        "last-modified": "2023-01-04T14:19:00",
+        "references": [
+            "https://www.mozilla.org/security/advisories/mfsa2021-55/",
+            "https://bugzilla.mozilla.org/show_bug.cgi?id=1732310"
+        ],
+        "summary": "When receiving an OpenPGP/MIME signed email message that contains an additional outer MIME message layer, for example a message footer added by a mailing list gateway, Thunderbird only considered the inner signed message for the signature validity. This gave the false impression that the additional contents were also covered by the digital signature. Starting with Thunderbird version 91.4.1, only the signature that belongs to the top level MIME part will be considered for the displayed status. This vulnerability affects Thunderbird < 91.4.1."
+    },
+    {
+        "Modified": "2023-01-04T14:15:00",
+        "Published": "2023-01-04T14:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2021-41977",
+        "impact": {},
+        "last-modified": "2023-01-04T14:15:00",
+        "references": [],
+        "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2021. Notes: none."
+    },
+    {
+        "Modified": "2023-01-04T14:15:00",
+        "Published": "2023-01-04T14:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2021-41978",
+        "impact": {},
+        "last-modified": "2023-01-04T14:15:00",
+        "references": [],
+        "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2021. Notes: none."
+    },
+    {
+        "Modified": "2023-01-04T14:15:00",
+        "Published": "2023-01-04T14:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2021-41979",
+        "impact": {},
+        "last-modified": "2023-01-04T14:15:00",
+        "references": [],
+        "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2021. Notes: none."
+    },
+    {
+        "Modified": "2023-01-04T14:15:00",
+        "Published": "2023-01-04T14:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2021-41980",
+        "impact": {},
+        "last-modified": "2023-01-04T14:15:00",
+        "references": [],
+        "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2021. Notes: none."
+    },
+    {
+        "Modified": "2023-01-04T14:15:00",
+        "Published": "2023-01-04T14:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2021-41981",
+        "impact": {},
+        "last-modified": "2023-01-04T14:15:00",
+        "references": [],
+        "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2021. Notes: none."
+    },
+    {
+        "Modified": "2023-01-04T14:15:00",
+        "Published": "2023-01-04T14:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2021-41982",
+        "impact": {},
+        "last-modified": "2023-01-04T14:15:00",
+        "references": [],
+        "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2021. Notes: none."
+    },
+    {
+        "Modified": "2023-01-04T14:15:00",
+        "Published": "2023-01-04T14:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2021-41983",
+        "impact": {},
+        "last-modified": "2023-01-04T14:15:00",
+        "references": [],
+        "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2021. Notes: none."
+    },
+    {
+        "Modified": "2023-01-04T14:15:00",
+        "Published": "2023-01-04T14:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2021-41984",
+        "impact": {},
+        "last-modified": "2023-01-04T14:15:00",
+        "references": [],
+        "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2021. Notes: none."
+    },
+    {
+        "Modified": "2023-01-04T14:15:00",
+        "Published": "2023-01-04T14:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2021-41985",
+        "impact": {},
+        "last-modified": "2023-01-04T14:15:00",
+        "references": [],
+        "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2021. Notes: none."
+    },
+    {
+        "Modified": "2023-01-04T14:15:00",
+        "Published": "2023-01-04T14:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2021-41986",
+        "impact": {},
+        "last-modified": "2023-01-04T14:15:00",
+        "references": [],
+        "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2021. Notes: none."
+    },
+    {
+        "Modified": "2023-01-04T14:15:00",
+        "Published": "2023-01-04T14:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-0259",
+        "impact": {},
+        "last-modified": "2023-01-04T14:15:00",
+        "references": [],
+        "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2022. Notes: none."
+    },
+    {
+        "Modified": "2023-01-04T14:15:00",
+        "Published": "2023-01-04T14:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-29899",
+        "impact": {},
+        "last-modified": "2023-01-04T14:15:00",
+        "references": [],
+        "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2022. Notes: none."
+    },
+    {
+        "Modified": "2023-01-04T14:15:00",
+        "Published": "2023-01-04T14:15:00",
+        "access": {},
+        "assigner": "security@huntr.dev",
+        "cvss": null,
+        "cwe": "CWE-94",
+        "id": "CVE-2023-0048",
+        "impact": {},
+        "last-modified": "2023-01-04T14:15:00",
+        "references": [
+            "https://huntr.dev/bounties/57abd666-4b9c-4f59-825d-1ec832153e79",
+            "https://github.com/lirantal/daloradius/commit/3650eea7277a5c278063214a5b71dbd7d77fc5aa"
+        ],
+        "summary": " Code Injection in GitHub repository lirantal/daloradius prior to master-branch."
+    },
+    {
+        "Modified": "2023-01-04T14:14:00",
+        "Published": "2022-12-22T20:15:00",
+        "access": {},
+        "assigner": "security@mozilla.org",
+        "cvss": null,
+        "cwe": "CWE-77",
+        "id": "CVE-2020-15685",
+        "impact": {},
+        "last-modified": "2023-01-04T14:14:00",
+        "references": [
+            "https://bugzilla.mozilla.org/show_bug.cgi?id=1622640",
+            "https://www.mozilla.org/security/advisories/mfsa2021-05/"
+        ],
+        "summary": "During the plaintext phase of the STARTTLS connection setup, protocol commands could have been injected and evaluated within the encrypted session. This vulnerability affects Thunderbird < 78.7."
+    },
+    {
+        "Modified": "2023-01-04T14:03:00",
+        "Published": "2023-01-03T17:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-400",
+        "id": "CVE-2021-32821",
+        "impact": {},
+        "last-modified": "2023-01-04T14:03:00",
+        "references": [
+            "https://securitylab.github.com/advisories/GHSL-2020-345-redos-mootools/"
+        ],
+        "summary": "MooTools is a collection of JavaScript utilities for JavaScript developers. All known versions include a CSS selector parser that is vulnerable to Regular Expression Denial of Service (ReDoS). An attack requires that an attacker can inject a string into a CSS selector at runtime, which is quite common with e.g. jQuery CSS selectors. No patches are available for this issue."
+    },
+    {
+        "Modified": "2023-01-04T14:03:00",
+        "Published": "2023-01-03T17:15:00",
+        "access": {},
+        "assigner": "psirt@fortinet.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-35845",
+        "impact": {},
+        "last-modified": "2023-01-04T14:03:00",
+        "references": [
+            "https://fortiguard.com/psirt/FG-IR-22-274"
+        ],
+        "summary": "Multiple improper neutralization of special elements used in an OS Command ('OS Command Injection') vulnerabilities [CWE-78] in FortiTester 7.1.0, 7.0 all versions, 4.0.0 through 4.2.0, 2.3.0 through 3.9.1 may allow an authenticated attacker to execute arbitrary commands in the underlying shell."
+    },
+    {
+        "Modified": "2023-01-04T14:03:00",
+        "Published": "2023-01-03T17:15:00",
+        "access": {},
+        "assigner": "psirt@fortinet.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-39947",
+        "impact": {},
+        "last-modified": "2023-01-04T14:03:00",
+        "references": [
+            "https://fortiguard.com/psirt/FG-IR-22-061"
+        ],
+        "summary": "A improper neutralization of special elements used in an os command ('os command injection') in Fortinet FortiADC version 7.0.0 through 7.0.2, FortiADC version 6.2.0 through 6.2.3, FortiADC version version 6.1.0 through 6.1.6, FortiADC version 6.0.0 through 6.0.4, FortiADC version 5.4.0 through 5.4.5 may allow an attacker to execute unauthorized code or commands via specifically crafted HTTP requests."
+    },
+    {
+        "Modified": "2023-01-04T14:03:00",
+        "Published": "2023-01-03T17:15:00",
+        "access": {},
+        "assigner": "psirt@fortinet.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-41336",
+        "impact": {},
+        "last-modified": "2023-01-04T14:03:00",
+        "references": [
+            "https://fortiguard.com/psirt/FG-IR-22-313"
+        ],
+        "summary": "An improper neutralization of input during web page generation vulnerability [CWE-79] in FortiPortal versions 6.0.0 through 6.0.11 and all versions of 5.3, 5.2, 5.1, 5.0 management interface may allow a remote authenticated attacker to perform a stored cross site scripting (XSS) attack via sending request with specially crafted columnindex parameter."
+    },
+    {
+        "Modified": "2023-01-04T14:03:00",
+        "Published": "2023-01-03T17:15:00",
+        "access": {},
+        "assigner": "psirt@fortinet.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-42471",
+        "impact": {},
+        "last-modified": "2023-01-04T14:03:00",
+        "references": [
+            "https://fortiguard.com/psirt/FG-IR-22-250"
+        ],
+        "summary": "An improper neutralization of CRLF sequences in HTTP headers ('HTTP Response Splitting') vulnerability [CWE-113] In FortiWeb version 7.0.0 through 7.0.2, FortiWeb version 6.4.0 through 6.4.2, FortiWeb version 6.3.6 through 6.3.20 may allow an authenticated and remote attacker to inject arbitrary headers."
+    },
+    {
+        "Modified": "2023-01-04T14:03:00",
+        "Published": "2023-01-03T18:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-502",
+        "id": "CVE-2021-32824",
+        "impact": {},
+        "last-modified": "2023-01-04T14:03:00",
+        "references": [
+            "https://securitylab.github.com/advisories/GHSL-2021-034_043-apache-dubbo/"
+        ],
+        "summary": "Apache Dubbo is a java based, open source RPC framework. Versions prior to 2.6.10 and 2.7.10 are vulnerable to pre-auth remote code execution via arbitrary bean manipulation in the Telnet handler. The Dubbo main service port can be used to access a Telnet Handler which offers some basic methods to collect information about the providers and methods exposed by the service and it can even allow to shutdown the service. This endpoint is unprotected. Additionally, a provider method can be invoked using the `invoke` handler. This handler uses a safe version of FastJson to process the call arguments. However, the resulting list is later processed with `PojoUtils.realize` which can be used to instantiate arbitrary classes and invoke its setters. Even though FastJson is properly protected with a default blocklist, `PojoUtils.realize` is not, and an attacker can leverage that to achieve remote code execution. Versions 2.6.10 and 2.7.10 contain fixes for this issue."
+    },
+    {
+        "Modified": "2023-01-04T14:02:00",
         "Published": "2023-01-04T12:15:00",
         "access": {},
         "assigner": "security@huntr.dev",
@@ -8,7 +405,7 @@
         "cwe": "CWE-641",
         "id": "CVE-2023-0046",
         "impact": {},
-        "last-modified": "2023-01-04T12:15:00",
+        "last-modified": "2023-01-04T14:02:00",
         "references": [
             "https://github.com/lirantal/daloradius/commit/2013c2d1231e99dac918247b69b198ded1f30a1c",
             "https://huntr.dev/bounties/2214dc41-f283-4342-95b1-34a2f4fea943"
@@ -16,7 +413,7 @@
         "summary": "Improper Restriction of Names for Files and Other Resources in GitHub repository lirantal/daloradius prior to master-branch."
     },
     {
-        "Modified": "2023-01-04T10:15:00",
+        "Modified": "2023-01-04T14:02:00",
         "Published": "2023-01-04T10:15:00",
         "access": {},
         "assigner": "cna@vuldb.com",
@@ -24,7 +421,7 @@
         "cwe": "CWE-89",
         "id": "CVE-2010-10003",
         "impact": {},
-        "last-modified": "2023-01-04T10:15:00",
+        "last-modified": "2023-01-04T14:02:00",
         "references": [
             "https://vuldb.com/?ctiid.217351",
             "https://vuldb.com/?id.217351",
@@ -33,7 +430,7 @@
         "summary": "A vulnerability classified as critical was found in gesellix titlelink. Affected by this vulnerability is an unknown functionality of the file plugin_content_title.php. The manipulation of the argument phrase leads to sql injection. The name of the patch is b4604e523853965fa981a4e79aef4b554a535db0. It is recommended to apply a patch to fix this issue. The associated identifier of this vulnerability is VDB-217351."
     },
     {
-        "Modified": "2023-01-04T10:15:00",
+        "Modified": "2023-01-04T14:02:00",
         "Published": "2023-01-04T10:15:00",
         "access": {},
         "assigner": "cna@vuldb.com",
@@ -41,7 +438,7 @@
         "cwe": "CWE-79",
         "id": "CVE-2014-125039",
         "impact": {},
-        "last-modified": "2023-01-04T10:15:00",
+        "last-modified": "2023-01-04T14:02:00",
         "references": [
             "https://vuldb.com/?ctiid.217352",
             "https://vuldb.com/?id.217352",
@@ -50,7 +447,7 @@
         "summary": "A vulnerability, which was classified as problematic, has been found in kkokko NeoXplora. Affected by this issue is some unknown functionality of the component Trainer Handler. The manipulation leads to cross site scripting. The attack may be launched remotely. The name of the patch is dce1aecd6ee050a29f953ffd8f02f21c7c13f1e6. It is recommended to apply a patch to fix this issue. The identifier of this vulnerability is VDB-217352."
     },
     {
-        "Modified": "2023-01-04T10:15:00",
+        "Modified": "2023-01-04T14:02:00",
         "Published": "2023-01-04T10:15:00",
         "access": {},
         "assigner": "cna@vuldb.com",
@@ -58,7 +455,7 @@
         "cwe": "CWE-79",
         "id": "CVE-2016-15008",
         "impact": {},
-        "last-modified": "2023-01-04T10:15:00",
+        "last-modified": "2023-01-04T14:02:00",
         "references": [
             "https://github.com/oxguy3/coebot-www/commit/c1a6c44092585da4236237e0e7da94ee2996a0ca",
             "https://vuldb.com/?ctiid.217355",
@@ -67,7 +464,7 @@
         "summary": "A vulnerability was found in oxguy3 coebot-www and classified as problematic. This issue affects the function displayChannelCommands/displayChannelQuotes/displayChannelAutoreplies/showChannelHighlights/showChannelBoir of the file js/channel.js. The manipulation leads to cross site scripting. The attack may be initiated remotely. The name of the patch is c1a6c44092585da4236237e0e7da94ee2996a0ca. It is recommended to apply a patch to fix this issue. The associated identifier of this vulnerability is VDB-217355."
     },
     {
-        "Modified": "2023-01-04T10:15:00",
+        "Modified": "2023-01-04T14:02:00",
         "Published": "2023-01-04T10:15:00",
         "access": {},
         "assigner": "cna@vuldb.com",
@@ -75,7 +472,7 @@
         "cwe": "CWE-79",
         "id": "CVE-2019-25094",
         "impact": {},
-        "last-modified": "2023-01-04T10:15:00",
+        "last-modified": "2023-01-04T14:02:00",
         "references": [
             "https://github.com/innologi/typo3-appointments/commit/986d3cb34e5e086c6f04e061f600ffc5837abe7f",
             "https://vuldb.com/?ctiid.217353",
@@ -85,7 +482,7 @@
         "summary": "A vulnerability, which was classified as problematic, was found in innologi appointments Extension up to 2.0.5. This affects an unknown part of the component Appointment Handler. The manipulation of the argument formfield leads to cross site scripting. It is possible to initiate the attack remotely. Upgrading to version 2.0.6 is able to address this issue. The name of the patch is 986d3cb34e5e086c6f04e061f600ffc5837abe7f. It is recommended to upgrade the affected component. The identifier VDB-217353 was assigned to this vulnerability."
     },
     {
-        "Modified": "2023-01-04T10:15:00",
+        "Modified": "2023-01-04T14:02:00",
         "Published": "2023-01-04T10:15:00",
         "access": {},
         "assigner": "cna@vuldb.com",
@@ -93,7 +490,7 @@
         "cwe": "CWE-22",
         "id": "CVE-2020-36639",
         "impact": {},
-        "last-modified": "2023-01-04T10:15:00",
+        "last-modified": "2023-01-04T14:02:00",
         "references": [
             "https://vuldb.com/?ctiid.217354",
             "https://github.com/alliedmodders/amxmodx/pull/823",
@@ -103,7 +500,7 @@
         "summary": "A vulnerability has been found in AlliedModders AMX Mod X and classified as critical. This vulnerability affects the function cmdVoteMap of the file plugins/adminvote.sma of the component Console Command Handler. The manipulation of the argument amx_votemap leads to path traversal. The name of the patch is a5f2b5539f6d61050b68df8b22ebb343a2862681. It is recommended to apply a patch to fix this issue. VDB-217354 is the identifier assigned to this vulnerability."
     },
     {
-        "Modified": "2023-01-04T10:15:00",
+        "Modified": "2023-01-04T14:02:00",
         "Published": "2023-01-04T10:15:00",
         "access": {},
         "assigner": "security@unisoc.com",
@@ -111,14 +508,14 @@
         "cwe": "Unknown",
         "id": "CVE-2022-38678",
         "impact": {},
-        "last-modified": "2023-01-04T10:15:00",
+        "last-modified": "2023-01-04T14:02:00",
         "references": [
             "https://www.unisoc.com/en_us/secy/announcementDetail/1610118225591336001"
         ],
         "summary": "In contacts service, there is a missing permission check. This could lead to local denial of service in contacts service with no additional execution privileges needed."
     },
     {
-        "Modified": "2023-01-04T10:15:00",
+        "Modified": "2023-01-04T14:02:00",
         "Published": "2023-01-04T10:15:00",
         "access": {},
         "assigner": "security@unisoc.com",
@@ -126,14 +523,14 @@
         "cwe": "Unknown",
         "id": "CVE-2022-38682",
         "impact": {},
-        "last-modified": "2023-01-04T10:15:00",
+        "last-modified": "2023-01-04T14:02:00",
         "references": [
             "https://www.unisoc.com/en_us/secy/announcementDetail/1610118225591336001"
         ],
         "summary": "In contacts service, there is a missing permission check. This could lead to local denial of service in contacts service with no additional execution privileges needed."
     },
     {
-        "Modified": "2023-01-04T10:15:00",
+        "Modified": "2023-01-04T14:02:00",
         "Published": "2023-01-04T10:15:00",
         "access": {},
         "assigner": "security@unisoc.com",
@@ -141,14 +538,14 @@
         "cwe": "Unknown",
         "id": "CVE-2022-38683",
         "impact": {},
-        "last-modified": "2023-01-04T10:15:00",
+        "last-modified": "2023-01-04T14:02:00",
         "references": [
             "https://www.unisoc.com/en_us/secy/announcementDetail/1610118225591336001"
         ],
         "summary": "In contacts service, there is a missing permission check. This could lead to local denial of service in contacts service with no additional execution privileges needed."
     },
     {
-        "Modified": "2023-01-04T10:15:00",
+        "Modified": "2023-01-04T14:02:00",
         "Published": "2023-01-04T10:15:00",
         "access": {},
         "assigner": "security@unisoc.com",
@@ -156,14 +553,14 @@
         "cwe": "Unknown",
         "id": "CVE-2022-38684",
         "impact": {},
-        "last-modified": "2023-01-04T10:15:00",
+        "last-modified": "2023-01-04T14:02:00",
         "references": [
             "https://www.unisoc.com/en_us/secy/announcementDetail/1610118225591336001"
         ],
         "summary": "In contacts service, there is a missing permission check. This could lead to local denial of service in contacts service with no additional execution privileges needed."
     },
     {
-        "Modified": "2023-01-04T10:15:00",
+        "Modified": "2023-01-04T14:02:00",
         "Published": "2023-01-04T10:15:00",
         "access": {},
         "assigner": "security@unisoc.com",
@@ -171,14 +568,14 @@
         "cwe": "Unknown",
         "id": "CVE-2022-39081",
         "impact": {},
-        "last-modified": "2023-01-04T10:15:00",
+        "last-modified": "2023-01-04T14:02:00",
         "references": [
             "https://www.unisoc.com/en_us/secy/announcementDetail/1610118225591336001"
         ],
         "summary": "In network service, there is a missing permission check. This could lead to local escalation of privilege with System execution privileges needed."
     },
     {
-        "Modified": "2023-01-04T10:15:00",
+        "Modified": "2023-01-04T14:02:00",
         "Published": "2023-01-04T10:15:00",
         "access": {},
         "assigner": "security@unisoc.com",
@@ -186,14 +583,14 @@
         "cwe": "Unknown",
         "id": "CVE-2022-39082",
         "impact": {},
-        "last-modified": "2023-01-04T10:15:00",
+        "last-modified": "2023-01-04T14:02:00",
         "references": [
             "https://www.unisoc.com/en_us/secy/announcementDetail/1610118225591336001"
         ],
         "summary": "In network service, there is a missing permission check. This could lead to local escalation of privilege with System execution privileges needed."
     },
     {
-        "Modified": "2023-01-04T10:15:00",
+        "Modified": "2023-01-04T14:02:00",
         "Published": "2023-01-04T10:15:00",
         "access": {},
         "assigner": "security@unisoc.com",
@@ -201,14 +598,14 @@
         "cwe": "Unknown",
         "id": "CVE-2022-39083",
         "impact": {},
-        "last-modified": "2023-01-04T10:15:00",
+        "last-modified": "2023-01-04T14:02:00",
         "references": [
             "https://www.unisoc.com/en_us/secy/announcementDetail/1610118225591336001"
         ],
         "summary": "In network service, there is a missing permission check. This could lead to local escalation of privilege with System execution privileges needed."
     },
     {
-        "Modified": "2023-01-04T10:15:00",
+        "Modified": "2023-01-04T14:02:00",
         "Published": "2023-01-04T10:15:00",
         "access": {},
         "assigner": "security@unisoc.com",
@@ -216,14 +613,14 @@
         "cwe": "Unknown",
         "id": "CVE-2022-39084",
         "impact": {},
-        "last-modified": "2023-01-04T10:15:00",
+        "last-modified": "2023-01-04T14:02:00",
         "references": [
             "https://www.unisoc.com/en_us/secy/announcementDetail/1610118225591336001"
         ],
         "summary": "In network service, there is a missing permission check. This could lead to local escalation of privilege with System execution privileges needed."
     },
     {
-        "Modified": "2023-01-04T10:15:00",
+        "Modified": "2023-01-04T14:02:00",
         "Published": "2023-01-04T10:15:00",
         "access": {},
         "assigner": "security@unisoc.com",
@@ -231,14 +628,14 @@
         "cwe": "Unknown",
         "id": "CVE-2022-39085",
         "impact": {},
-        "last-modified": "2023-01-04T10:15:00",
+        "last-modified": "2023-01-04T14:02:00",
         "references": [
             "https://www.unisoc.com/en_us/secy/announcementDetail/1610118225591336001"
         ],
         "summary": "In network service, there is a missing permission check. This could lead to local escalation of privilege with System execution privileges needed."
     },
     {
-        "Modified": "2023-01-04T10:15:00",
+        "Modified": "2023-01-04T14:02:00",
         "Published": "2023-01-04T10:15:00",
         "access": {},
         "assigner": "security@unisoc.com",
@@ -246,14 +643,14 @@
         "cwe": "Unknown",
         "id": "CVE-2022-39086",
         "impact": {},
-        "last-modified": "2023-01-04T10:15:00",
+        "last-modified": "2023-01-04T14:02:00",
         "references": [
             "https://www.unisoc.com/en_us/secy/announcementDetail/1610118225591336001"
         ],
         "summary": "In network service, there is a missing permission check. This could lead to local escalation of privilege with System execution privileges needed."
     },
     {
-        "Modified": "2023-01-04T10:15:00",
+        "Modified": "2023-01-04T14:02:00",
         "Published": "2023-01-04T10:15:00",
         "access": {},
         "assigner": "security@unisoc.com",
@@ -261,14 +658,14 @@
         "cwe": "Unknown",
         "id": "CVE-2022-39087",
         "impact": {},
-        "last-modified": "2023-01-04T10:15:00",
+        "last-modified": "2023-01-04T14:02:00",
         "references": [
             "https://www.unisoc.com/en_us/secy/announcementDetail/1610118225591336001"
         ],
         "summary": "In network service, there is a missing permission check. This could lead to local escalation of privilege with System execution privileges needed."
     },
     {
-        "Modified": "2023-01-04T10:15:00",
+        "Modified": "2023-01-04T14:02:00",
         "Published": "2023-01-04T10:15:00",
         "access": {},
         "assigner": "security@unisoc.com",
@@ -276,14 +673,14 @@
         "cwe": "Unknown",
         "id": "CVE-2022-39088",
         "impact": {},
-        "last-modified": "2023-01-04T10:15:00",
+        "last-modified": "2023-01-04T14:02:00",
         "references": [
             "https://www.unisoc.com/en_us/secy/announcementDetail/1610118225591336001"
         ],
         "summary": "In network service, there is a missing permission check. This could lead to local escalation of privilege with System execution privileges needed."
     },
     {
-        "Modified": "2023-01-04T10:15:00",
+        "Modified": "2023-01-04T14:02:00",
         "Published": "2023-01-04T10:15:00",
         "access": {},
         "assigner": "security@unisoc.com",
@@ -291,14 +688,14 @@
         "cwe": "Unknown",
         "id": "CVE-2022-39104",
         "impact": {},
-        "last-modified": "2023-01-04T10:15:00",
+        "last-modified": "2023-01-04T14:02:00",
         "references": [
             "https://www.unisoc.com/en_us/secy/announcementDetail/1610118225591336001"
         ],
         "summary": "In contacts service, there is a missing permission check. This could lead to local denial of service in Contacts service with no additional execution privileges needed."
     },
     {
-        "Modified": "2023-01-04T10:15:00",
+        "Modified": "2023-01-04T14:02:00",
         "Published": "2023-01-04T10:15:00",
         "access": {},
         "assigner": "security@unisoc.com",
@@ -306,14 +703,14 @@
         "cwe": "Unknown",
         "id": "CVE-2022-39116",
         "impact": {},
-        "last-modified": "2023-01-04T10:15:00",
+        "last-modified": "2023-01-04T14:02:00",
         "references": [
             "https://www.unisoc.com/en_us/secy/announcementDetail/1610118225591336001"
         ],
         "summary": "In sprd_sysdump driver, there is a possible out of bounds write due to a missing bounds check. This could lead to local denial of service in kernel."
     },
     {
-        "Modified": "2023-01-04T10:15:00",
+        "Modified": "2023-01-04T14:02:00",
         "Published": "2023-01-04T10:15:00",
         "access": {},
         "assigner": "security@unisoc.com",
@@ -321,14 +718,14 @@
         "cwe": "Unknown",
         "id": "CVE-2022-39118",
         "impact": {},
-        "last-modified": "2023-01-04T10:15:00",
+        "last-modified": "2023-01-04T14:02:00",
         "references": [
             "https://www.unisoc.com/en_us/secy/announcementDetail/1610118225591336001"
         ],
         "summary": "In sprd_sysdump driver, there is a possible out of bounds write due to a missing bounds check. This could lead to local denial of service in kernel."
     },
     {
-        "Modified": "2023-01-04T10:15:00",
+        "Modified": "2023-01-04T14:02:00",
         "Published": "2023-01-04T10:15:00",
         "access": {},
         "assigner": "security@unisoc.com",
@@ -336,14 +733,14 @@
         "cwe": "Unknown",
         "id": "CVE-2022-44422",
         "impact": {},
-        "last-modified": "2023-01-04T10:15:00",
+        "last-modified": "2023-01-04T14:02:00",
         "references": [
             "https://www.unisoc.com/en_us/secy/announcementDetail/1610118225591336001"
         ],
         "summary": "In music service, there is a missing permission check. This could lead to local denial of service in contacts service with no additional execution privileges needed."
     },
     {
-        "Modified": "2023-01-04T10:15:00",
+        "Modified": "2023-01-04T14:02:00",
         "Published": "2023-01-04T10:15:00",
         "access": {},
         "assigner": "security@unisoc.com",
@@ -351,14 +748,14 @@
         "cwe": "Unknown",
         "id": "CVE-2022-44423",
         "impact": {},
-        "last-modified": "2023-01-04T10:15:00",
+        "last-modified": "2023-01-04T14:02:00",
         "references": [
             "https://www.unisoc.com/en_us/secy/announcementDetail/1610118225591336001"
         ],
         "summary": "In music service, there is a missing permission check. This could lead to local denial of service in contacts service with no additional execution privileges needed."
     },
     {
-        "Modified": "2023-01-04T10:15:00",
+        "Modified": "2023-01-04T14:02:00",
         "Published": "2023-01-04T10:15:00",
         "access": {},
         "assigner": "security@unisoc.com",
@@ -366,14 +763,14 @@
         "cwe": "Unknown",
         "id": "CVE-2022-44424",
         "impact": {},
-        "last-modified": "2023-01-04T10:15:00",
+        "last-modified": "2023-01-04T14:02:00",
         "references": [
             "https://www.unisoc.com/en_us/secy/announcementDetail/1610118225591336001"
         ],
         "summary": "In music service, there is a missing permission check. This could lead to local denial of service in contacts service with no additional execution privileges needed."
     },
     {
-        "Modified": "2023-01-04T10:15:00",
+        "Modified": "2023-01-04T14:02:00",
         "Published": "2023-01-04T10:15:00",
         "access": {},
         "assigner": "security@unisoc.com",
@@ -381,14 +778,14 @@
         "cwe": "Unknown",
         "id": "CVE-2022-44425",
         "impact": {},
-        "last-modified": "2023-01-04T10:15:00",
+        "last-modified": "2023-01-04T14:02:00",
         "references": [
             "https://www.unisoc.com/en_us/secy/announcementDetail/1610118225591336001"
         ],
         "summary": "In wlan driver, there is a possible missing bounds check. This could lead to local denial of service in wlan services."
     },
     {
-        "Modified": "2023-01-04T10:15:00",
+        "Modified": "2023-01-04T14:02:00",
         "Published": "2023-01-04T10:15:00",
         "access": {},
         "assigner": "security@unisoc.com",
@@ -396,14 +793,14 @@
         "cwe": "Unknown",
         "id": "CVE-2022-44426",
         "impact": {},
-        "last-modified": "2023-01-04T10:15:00",
+        "last-modified": "2023-01-04T14:02:00",
         "references": [
             "https://www.unisoc.com/en_us/secy/announcementDetail/1610118225591336001"
         ],
         "summary": "In wlan driver, there is a possible missing bounds check. This could lead to local denial of service in wlan services."
     },
     {
-        "Modified": "2023-01-04T10:15:00",
+        "Modified": "2023-01-04T14:02:00",
         "Published": "2023-01-04T10:15:00",
         "access": {},
         "assigner": "security@unisoc.com",
@@ -411,14 +808,14 @@
         "cwe": "Unknown",
         "id": "CVE-2022-44427",
         "impact": {},
-        "last-modified": "2023-01-04T10:15:00",
+        "last-modified": "2023-01-04T14:02:00",
         "references": [
             "https://www.unisoc.com/en_us/secy/announcementDetail/1610118225591336001"
         ],
         "summary": "In wlan driver, there is a possible missing bounds check. This could lead to local denial of service in wlan services."
     },
     {
-        "Modified": "2023-01-04T10:15:00",
+        "Modified": "2023-01-04T14:02:00",
         "Published": "2023-01-04T10:15:00",
         "access": {},
         "assigner": "security@unisoc.com",
@@ -426,14 +823,14 @@
         "cwe": "Unknown",
         "id": "CVE-2022-44428",
         "impact": {},
-        "last-modified": "2023-01-04T10:15:00",
+        "last-modified": "2023-01-04T14:02:00",
         "references": [
             "https://www.unisoc.com/en_us/secy/announcementDetail/1610118225591336001"
         ],
         "summary": "In wlan driver, there is a possible missing bounds check. This could lead to local denial of service in wlan services."
     },
     {
-        "Modified": "2023-01-04T10:15:00",
+        "Modified": "2023-01-04T14:02:00",
         "Published": "2023-01-04T10:15:00",
         "access": {},
         "assigner": "security@unisoc.com",
@@ -441,14 +838,14 @@
         "cwe": "Unknown",
         "id": "CVE-2022-44429",
         "impact": {},
-        "last-modified": "2023-01-04T10:15:00",
+        "last-modified": "2023-01-04T14:02:00",
         "references": [
             "https://www.unisoc.com/en_us/secy/announcementDetail/1610118225591336001"
         ],
         "summary": "In wlan driver, there is a possible missing bounds check. This could lead to local denial of service in wlan services."
     },
     {
-        "Modified": "2023-01-04T10:15:00",
+        "Modified": "2023-01-04T14:02:00",
         "Published": "2023-01-04T10:15:00",
         "access": {},
         "assigner": "security@unisoc.com",
@@ -456,14 +853,14 @@
         "cwe": "Unknown",
         "id": "CVE-2022-44430",
         "impact": {},
-        "last-modified": "2023-01-04T10:15:00",
+        "last-modified": "2023-01-04T14:02:00",
         "references": [
             "https://www.unisoc.com/en_us/secy/announcementDetail/1610118225591336001"
         ],
         "summary": "In wlan driver, there is a possible missing bounds check. This could lead to local denial of service in wlan services."
     },
     {
-        "Modified": "2023-01-04T10:15:00",
+        "Modified": "2023-01-04T14:02:00",
         "Published": "2023-01-04T10:15:00",
         "access": {},
         "assigner": "security@unisoc.com",
@@ -471,14 +868,14 @@
         "cwe": "Unknown",
         "id": "CVE-2022-44431",
         "impact": {},
-        "last-modified": "2023-01-04T10:15:00",
+        "last-modified": "2023-01-04T14:02:00",
         "references": [
             "https://www.unisoc.com/en_us/secy/announcementDetail/1610118225591336001"
         ],
         "summary": "In wlan driver, there is a possible missing bounds check. This could lead to local denial of service in wlan services."
     },
     {
-        "Modified": "2023-01-04T10:15:00",
+        "Modified": "2023-01-04T14:02:00",
         "Published": "2023-01-04T10:15:00",
         "access": {},
         "assigner": "security@unisoc.com",
@@ -486,14 +883,14 @@
         "cwe": "Unknown",
         "id": "CVE-2022-44432",
         "impact": {},
-        "last-modified": "2023-01-04T10:15:00",
+        "last-modified": "2023-01-04T14:02:00",
         "references": [
             "https://www.unisoc.com/en_us/secy/announcementDetail/1610118225591336001"
         ],
         "summary": "In wlan driver, there is a possible missing bounds check. This could lead to local denial of service in wlan services."
     },
     {
-        "Modified": "2023-01-04T10:15:00",
+        "Modified": "2023-01-04T14:02:00",
         "Published": "2023-01-04T10:15:00",
         "access": {},
         "assigner": "security@unisoc.com",
@@ -501,14 +898,14 @@
         "cwe": "Unknown",
         "id": "CVE-2022-44434",
         "impact": {},
-        "last-modified": "2023-01-04T10:15:00",
+        "last-modified": "2023-01-04T14:02:00",
         "references": [
             "https://www.unisoc.com/en_us/secy/announcementDetail/1610118225591336001"
         ],
         "summary": "In messaging service, there is a missing permission check. This could lead to local denial of service in contacts service with no additional execution privileges needed."
     },
     {
-        "Modified": "2023-01-04T10:15:00",
+        "Modified": "2023-01-04T14:02:00",
         "Published": "2023-01-04T10:15:00",
         "access": {},
         "assigner": "security@unisoc.com",
@@ -516,14 +913,14 @@
         "cwe": "Unknown",
         "id": "CVE-2022-44435",
         "impact": {},
-        "last-modified": "2023-01-04T10:15:00",
+        "last-modified": "2023-01-04T14:02:00",
         "references": [
             "https://www.unisoc.com/en_us/secy/announcementDetail/1610118225591336001"
         ],
         "summary": "In messaging service, there is a missing permission check. This could lead to local denial of service in contacts service with no additional execution privileges needed."
     },
     {
-        "Modified": "2023-01-04T10:15:00",
+        "Modified": "2023-01-04T14:02:00",
         "Published": "2023-01-04T10:15:00",
         "access": {},
         "assigner": "security@unisoc.com",
@@ -531,14 +928,14 @@
         "cwe": "Unknown",
         "id": "CVE-2022-44436",
         "impact": {},
-        "last-modified": "2023-01-04T10:15:00",
+        "last-modified": "2023-01-04T14:02:00",
         "references": [
             "https://www.unisoc.com/en_us/secy/announcementDetail/1610118225591336001"
         ],
         "summary": "In messaging service, there is a missing permission check. This could lead to local denial of service in contacts service with no additional execution privileges needed."
     },
     {
-        "Modified": "2023-01-04T10:15:00",
+        "Modified": "2023-01-04T14:02:00",
         "Published": "2023-01-04T10:15:00",
         "access": {},
         "assigner": "security@unisoc.com",
@@ -546,14 +943,14 @@
         "cwe": "Unknown",
         "id": "CVE-2022-44437",
         "impact": {},
-        "last-modified": "2023-01-04T10:15:00",
+        "last-modified": "2023-01-04T14:02:00",
         "references": [
             "https://www.unisoc.com/en_us/secy/announcementDetail/1610118225591336001"
         ],
         "summary": "In messaging service, there is a missing permission check. This could lead to local denial of service in contacts service with no additional execution privileges needed."
     },
     {
-        "Modified": "2023-01-04T10:15:00",
+        "Modified": "2023-01-04T14:02:00",
         "Published": "2023-01-04T10:15:00",
         "access": {},
         "assigner": "security@unisoc.com",
@@ -561,14 +958,14 @@
         "cwe": "Unknown",
         "id": "CVE-2022-44438",
         "impact": {},
-        "last-modified": "2023-01-04T10:15:00",
+        "last-modified": "2023-01-04T14:02:00",
         "references": [
             "https://www.unisoc.com/en_us/secy/announcementDetail/1610118225591336001"
         ],
         "summary": "In messaging service, there is a missing permission check. This could lead to local denial of service in contacts service with no additional execution privileges needed."
     },
     {
-        "Modified": "2023-01-04T10:15:00",
+        "Modified": "2023-01-04T14:02:00",
         "Published": "2023-01-04T10:15:00",
         "access": {},
         "assigner": "security@unisoc.com",
@@ -576,14 +973,14 @@
         "cwe": "Unknown",
         "id": "CVE-2022-44439",
         "impact": {},
-        "last-modified": "2023-01-04T10:15:00",
+        "last-modified": "2023-01-04T14:02:00",
         "references": [
             "https://www.unisoc.com/en_us/secy/announcementDetail/1610118225591336001"
         ],
         "summary": "In messaging service, there is a missing permission check. This could lead to local denial of service in contacts service with no additional execution privileges needed."
     },
     {
-        "Modified": "2023-01-04T10:15:00",
+        "Modified": "2023-01-04T14:02:00",
         "Published": "2023-01-04T10:15:00",
         "access": {},
         "assigner": "security@unisoc.com",
@@ -591,14 +988,14 @@
         "cwe": "Unknown",
         "id": "CVE-2022-44440",
         "impact": {},
-        "last-modified": "2023-01-04T10:15:00",
+        "last-modified": "2023-01-04T14:02:00",
         "references": [
             "https://www.unisoc.com/en_us/secy/announcementDetail/1610118225591336001"
         ],
         "summary": "In wlan driver, there is a possible missing bounds check. This could lead to local denial of service in wlan services."
     },
     {
-        "Modified": "2023-01-04T10:15:00",
+        "Modified": "2023-01-04T14:02:00",
         "Published": "2023-01-04T10:15:00",
         "access": {},
         "assigner": "security@unisoc.com",
@@ -606,14 +1003,14 @@
         "cwe": "Unknown",
         "id": "CVE-2022-44441",
         "impact": {},
-        "last-modified": "2023-01-04T10:15:00",
+        "last-modified": "2023-01-04T14:02:00",
         "references": [
             "https://www.unisoc.com/en_us/secy/announcementDetail/1610118225591336001"
         ],
         "summary": "In wlan driver, there is a possible missing bounds check. This could lead to local denial of service in wlan services."
     },
     {
-        "Modified": "2023-01-04T10:15:00",
+        "Modified": "2023-01-04T14:02:00",
         "Published": "2023-01-04T10:15:00",
         "access": {},
         "assigner": "security@unisoc.com",
@@ -621,14 +1018,14 @@
         "cwe": "Unknown",
         "id": "CVE-2022-44442",
         "impact": {},
-        "last-modified": "2023-01-04T10:15:00",
+        "last-modified": "2023-01-04T14:02:00",
         "references": [
             "https://www.unisoc.com/en_us/secy/announcementDetail/1610118225591336001"
         ],
         "summary": "In wlan driver, there is a possible missing bounds check, This could lead to local denial of service in wlan services."
     },
     {
-        "Modified": "2023-01-04T10:15:00",
+        "Modified": "2023-01-04T14:02:00",
         "Published": "2023-01-04T10:15:00",
         "access": {},
         "assigner": "security@unisoc.com",
@@ -636,14 +1033,14 @@
         "cwe": "Unknown",
         "id": "CVE-2022-44443",
         "impact": {},
-        "last-modified": "2023-01-04T10:15:00",
+        "last-modified": "2023-01-04T14:02:00",
         "references": [
             "https://www.unisoc.com/en_us/secy/announcementDetail/1610118225591336001"
         ],
         "summary": "In wlan driver, there is a possible missing bounds check. This could lead to local denial of service in wlan services."
     },
     {
-        "Modified": "2023-01-04T10:15:00",
+        "Modified": "2023-01-04T14:02:00",
         "Published": "2023-01-04T10:15:00",
         "access": {},
         "assigner": "security@unisoc.com",
@@ -651,14 +1048,14 @@
         "cwe": "Unknown",
         "id": "CVE-2022-44444",
         "impact": {},
-        "last-modified": "2023-01-04T10:15:00",
+        "last-modified": "2023-01-04T14:02:00",
         "references": [
             "https://www.unisoc.com/en_us/secy/announcementDetail/1610118225591336001"
         ],
         "summary": "In wlan driver, there is a possible missing bounds check. This could lead to local denial of service in wlan services."
     },
     {
-        "Modified": "2023-01-04T10:15:00",
+        "Modified": "2023-01-04T14:02:00",
         "Published": "2023-01-04T10:15:00",
         "access": {},
         "assigner": "security@unisoc.com",
@@ -666,14 +1063,14 @@
         "cwe": "Unknown",
         "id": "CVE-2022-44445",
         "impact": {},
-        "last-modified": "2023-01-04T10:15:00",
+        "last-modified": "2023-01-04T14:02:00",
         "references": [
             "https://www.unisoc.com/en_us/secy/announcementDetail/1610118225591336001"
         ],
         "summary": "In wlan driver, there is a possible missing bounds check. This could lead to local denial of service in wlan services."
     },
     {
-        "Modified": "2023-01-04T10:15:00",
+        "Modified": "2023-01-04T14:02:00",
         "Published": "2023-01-04T10:15:00",
         "access": {},
         "assigner": "security@unisoc.com",
@@ -681,198 +1078,14 @@
         "cwe": "Unknown",
         "id": "CVE-2022-44446",
         "impact": {},
-        "last-modified": "2023-01-04T10:15:00",
+        "last-modified": "2023-01-04T14:02:00",
         "references": [
             "https://www.unisoc.com/en_us/secy/announcementDetail/1610118225591336001"
         ],
         "summary": "In wlan driver, there is a possible missing bounds check. This could lead to local denial of service in wlan services."
     },
     {
-        "Modified": "2023-01-04T10:15:00",
-        "Published": "2022-12-06T07:15:00",
-        "access": {},
-        "assigner": "security@unisoc.com",
-        "cvss": null,
-        "cwe": "CWE-862",
-        "id": "CVE-2022-39095",
-        "impact": {},
-        "last-modified": "2023-01-04T10:15:00",
-        "references": [
-            "https://www.unisoc.com/en_us/secy/announcementDetail/1610118225591336001"
-        ],
-        "summary": "In power management service, there is a missing permission check. This could lead to set up power management service with no additional execution privileges needed."
-    },
-    {
-        "Modified": "2023-01-04T10:15:00",
-        "Published": "2022-12-06T07:15:00",
-        "access": {},
-        "assigner": "security@unisoc.com",
-        "cvss": null,
-        "cwe": "CWE-862",
-        "id": "CVE-2022-39096",
-        "impact": {},
-        "last-modified": "2023-01-04T10:15:00",
-        "references": [
-            "https://www.unisoc.com/en_us/secy/announcementDetail/1610118225591336001"
-        ],
-        "summary": "In power management service, there is a missing permission check. This could lead to set up power management service with no additional execution privileges needed."
-    },
-    {
-        "Modified": "2023-01-04T10:15:00",
-        "Published": "2022-12-06T07:15:00",
-        "access": {},
-        "assigner": "security@unisoc.com",
-        "cvss": null,
-        "cwe": "CWE-862",
-        "id": "CVE-2022-39097",
-        "impact": {},
-        "last-modified": "2023-01-04T10:15:00",
-        "references": [
-            "https://www.unisoc.com/en_us/secy/announcementDetail/1610118225591336001"
-        ],
-        "summary": "In power management service, there is a missing permission check. This could lead to set up power management service with no additional execution privileges needed."
-    },
-    {
-        "Modified": "2023-01-04T10:15:00",
-        "Published": "2022-12-06T07:15:00",
-        "access": {},
-        "assigner": "security@unisoc.com",
-        "cvss": null,
-        "cwe": "CWE-862",
-        "id": "CVE-2022-39098",
-        "impact": {},
-        "last-modified": "2023-01-04T10:15:00",
-        "references": [
-            "https://www.unisoc.com/en_us/secy/announcementDetail/1610118225591336001"
-        ],
-        "summary": "In power management service, there is a missing permission check. This could lead to set up power management service with no additional execution privileges needed."
-    },
-    {
-        "Modified": "2023-01-04T10:15:00",
-        "Published": "2022-12-06T07:15:00",
-        "access": {},
-        "assigner": "security@unisoc.com",
-        "cvss": null,
-        "cwe": "CWE-862",
-        "id": "CVE-2022-39099",
-        "impact": {},
-        "last-modified": "2023-01-04T10:15:00",
-        "references": [
-            "https://www.unisoc.com/en_us/secy/announcementDetail/1610118225591336001"
-        ],
-        "summary": "In power management service, there is a missing permission check. This could lead to set up power management service with no additional execution privileges needed."
-    },
-    {
-        "Modified": "2023-01-04T10:15:00",
-        "Published": "2022-12-06T07:15:00",
-        "access": {},
-        "assigner": "security@unisoc.com",
-        "cvss": null,
-        "cwe": "CWE-862",
-        "id": "CVE-2022-39100",
-        "impact": {},
-        "last-modified": "2023-01-04T10:15:00",
-        "references": [
-            "https://www.unisoc.com/en_us/secy/announcementDetail/1610118225591336001"
-        ],
-        "summary": "In power management service, there is a missing permission check. This could lead to set up power management service with no additional execution privileges needed."
-    },
-    {
-        "Modified": "2023-01-04T10:15:00",
-        "Published": "2022-12-06T07:15:00",
-        "access": {},
-        "assigner": "security@unisoc.com",
-        "cvss": null,
-        "cwe": "CWE-862",
-        "id": "CVE-2022-39101",
-        "impact": {},
-        "last-modified": "2023-01-04T10:15:00",
-        "references": [
-            "https://www.unisoc.com/en_us/secy/announcementDetail/1610118225591336001"
-        ],
-        "summary": "In power management service, there is a missing permission check. This could lead to set up power management service with no additional execution privileges needed."
-    },
-    {
-        "Modified": "2023-01-04T10:15:00",
-        "Published": "2022-12-06T07:15:00",
-        "access": {},
-        "assigner": "security@unisoc.com",
-        "cvss": null,
-        "cwe": "CWE-862",
-        "id": "CVE-2022-39102",
-        "impact": {},
-        "last-modified": "2023-01-04T10:15:00",
-        "references": [
-            "https://www.unisoc.com/en_us/secy/announcementDetail/1610118225591336001"
-        ],
-        "summary": "In power management service, there is a missing permission check. This could lead to set up power management service with no additional execution privileges needed."
-    },
-    {
-        "Modified": "2023-01-04T10:15:00",
-        "Published": "2022-12-06T07:15:00",
-        "access": {},
-        "assigner": "security@unisoc.com",
-        "cvss": null,
-        "cwe": "CWE-862",
-        "id": "CVE-2022-42777",
-        "impact": {},
-        "last-modified": "2023-01-04T10:15:00",
-        "references": [
-            "https://www.unisoc.com/en_us/secy/announcementDetail/1610118225591336001"
-        ],
-        "summary": "In power management service, there is a missing permission check. This could lead to set up power management service with no additional execution privileges needed."
-    },
-    {
-        "Modified": "2023-01-04T10:15:00",
-        "Published": "2022-12-06T07:15:00",
-        "access": {},
-        "assigner": "security@unisoc.com",
-        "cvss": null,
-        "cwe": "CWE-862",
-        "id": "CVE-2022-39094",
-        "impact": {},
-        "last-modified": "2023-01-04T10:15:00",
-        "references": [
-            "https://www.unisoc.com/en_us/secy/announcementDetail/1610118225591336001"
-        ],
-        "summary": "In power management service, there is a missing permission check. This could lead to set up power management service with no additional execution privileges needed."
-    },
-    {
-        "Modified": "2023-01-04T04:32:00",
-        "Published": "2022-12-22T20:15:00",
-        "access": {},
-        "assigner": "security@mozilla.org",
-        "cvss": null,
-        "cwe": "CWE-203",
-        "id": "CVE-2022-45403",
-        "impact": {},
-        "last-modified": "2023-01-04T04:32:00",
-        "references": [
-            "https://www.mozilla.org/security/advisories/mfsa2022-49/",
-            "https://www.mozilla.org/security/advisories/mfsa2022-48/",
-            "https://www.mozilla.org/security/advisories/mfsa2022-47/",
-            "https://bugzilla.mozilla.org/show_bug.cgi?id=1762078"
-        ],
-        "summary": "Service Workers should not be able to infer information about opaque cross-origin responses; but timing information for cross-origin media combined with Range requests might have allowed them to determine the presence or length of a media file. This vulnerability affects Firefox ESR < 102.5, Thunderbird < 102.5, and Firefox < 107."
-    },
-    {
-        "Modified": "2023-01-04T04:23:00",
-        "Published": "2022-12-22T20:15:00",
-        "access": {},
-        "assigner": "security@mozilla.org",
-        "cvss": null,
-        "cwe": "NVD-CWE-noinfo",
-        "id": "CVE-2022-36315",
-        "impact": {},
-        "last-modified": "2023-01-04T04:23:00",
-        "references": [
-            "https://www.mozilla.org/security/advisories/mfsa2022-28/",
-            "https://bugzilla.mozilla.org/show_bug.cgi?id=1762520"
-        ],
-        "summary": "When loading a script with Subresource Integrity, attackers with an injection capability could trigger the reuse of previously cached entries with incorrect, different integrity metadata. This vulnerability affects Firefox < 103."
-    },
-    {
-        "Modified": "2023-01-04T04:15:00",
+        "Modified": "2023-01-04T14:02:00",
         "Published": "2023-01-04T04:15:00",
         "access": {},
         "assigner": "cve@mitre.org",
@@ -880,633 +1093,14 @@
         "cwe": "Unknown",
         "id": "CVE-2022-46081",
         "impact": {},
-        "last-modified": "2023-01-04T04:15:00",
+        "last-modified": "2023-01-04T14:02:00",
         "references": [
             "https://www.samwallace.dev/research/Harvesting%20Emails%20with%20Expired%20Garmin%20LiveTrack%20Sessions"
         ],
         "summary": "In Garmin Connect 4.61, terminating a LiveTrack session wouldn't prevent the LiveTrack API from continued exposure of private personal information."
     },
     {
-        "Modified": "2023-01-04T04:00:00",
-        "Published": "2022-12-22T20:15:00",
-        "access": {},
-        "assigner": "security@mozilla.org",
-        "cvss": null,
-        "cwe": "CWE-601",
-        "id": "CVE-2022-36316",
-        "impact": {},
-        "last-modified": "2023-01-04T04:00:00",
-        "references": [
-            "https://www.mozilla.org/security/advisories/mfsa2022-28/",
-            "https://bugzilla.mozilla.org/show_bug.cgi?id=1768583"
-        ],
-        "summary": "When using the Performance API, an attacker was able to notice subtle differences between PerformanceEntries and thus learn whether the target URL had been subject to a redirect. This vulnerability affects Firefox < 103."
-    },
-    {
-        "Modified": "2023-01-04T03:54:00",
-        "Published": "2022-12-22T20:15:00",
-        "access": {},
-        "assigner": "security@mozilla.org",
-        "cvss": null,
-        "cwe": "NVD-CWE-noinfo",
-        "id": "CVE-2022-40957",
-        "impact": {},
-        "last-modified": "2023-01-04T03:54:00",
-        "references": [
-            "https://www.mozilla.org/security/advisories/mfsa2022-42/",
-            "https://www.mozilla.org/security/advisories/mfsa2022-41/",
-            "https://www.mozilla.org/security/advisories/mfsa2022-40/",
-            "https://bugzilla.mozilla.org/show_bug.cgi?id=1777604"
-        ],
-        "summary": "Inconsistent data in instruction and data cache when creating wasm code could lead to a potentially exploitable crash.<br>*This bug only affects Firefox on ARM64 platforms.*. This vulnerability affects Firefox ESR < 102.3, Thunderbird < 102.3, and Firefox < 105."
-    },
-    {
-        "Modified": "2023-01-04T03:50:00",
-        "Published": "2022-12-22T20:15:00",
-        "access": {},
-        "assigner": "security@mozilla.org",
-        "cvss": null,
-        "cwe": "CWE-74",
-        "id": "CVE-2022-40958",
-        "impact": {},
-        "last-modified": "2023-01-04T03:50:00",
-        "references": [
-            "https://www.mozilla.org/security/advisories/mfsa2022-42/",
-            "https://bugzilla.mozilla.org/show_bug.cgi?id=1779993",
-            "https://www.mozilla.org/security/advisories/mfsa2022-41/",
-            "https://www.mozilla.org/security/advisories/mfsa2022-40/"
-        ],
-        "summary": "By injecting a cookie with certain special characters, an attacker on a shared subdomain which is not a secure context could set and thus overwrite cookies from a secure context, leading to session fixation and other attacks. This vulnerability affects Firefox ESR < 102.3, Thunderbird < 102.3, and Firefox < 105."
-    },
-    {
-        "Modified": "2023-01-04T03:33:00",
-        "Published": "2022-12-22T20:15:00",
-        "access": {},
-        "assigner": "security@mozilla.org",
-        "cvss": null,
-        "cwe": "CWE-922",
-        "id": "CVE-2022-40959",
-        "impact": {},
-        "last-modified": "2023-01-04T03:33:00",
-        "references": [
-            "https://www.mozilla.org/security/advisories/mfsa2022-42/",
-            "https://www.mozilla.org/security/advisories/mfsa2022-41/",
-            "https://www.mozilla.org/security/advisories/mfsa2022-40/",
-            "https://bugzilla.mozilla.org/show_bug.cgi?id=1782211"
-        ],
-        "summary": "During iframe navigation, certain pages did not have their FeaturePolicy fully initialized leading to a bypass that leaked device permissions into untrusted subdocuments. This vulnerability affects Firefox ESR < 102.3, Thunderbird < 102.3, and Firefox < 105."
-    },
-    {
-        "Modified": "2023-01-04T03:22:00",
-        "Published": "2022-12-22T20:15:00",
-        "access": {},
-        "assigner": "security@mozilla.org",
-        "cvss": null,
-        "cwe": "CWE-416",
-        "id": "CVE-2022-40960",
-        "impact": {},
-        "last-modified": "2023-01-04T03:22:00",
-        "references": [
-            "https://www.mozilla.org/security/advisories/mfsa2022-42/",
-            "https://www.mozilla.org/security/advisories/mfsa2022-41/",
-            "https://www.mozilla.org/security/advisories/mfsa2022-40/",
-            "https://bugzilla.mozilla.org/show_bug.cgi?id=1787633"
-        ],
-        "summary": "Concurrent use of the URL parser with non-UTF-8 data was not thread-safe. This could lead to a use-after-free causing a potentially exploitable crash. This vulnerability affects Firefox ESR < 102.3, Thunderbird < 102.3, and Firefox < 105."
-    },
-    {
-        "Modified": "2023-01-04T03:21:00",
-        "Published": "2022-12-22T20:15:00",
-        "access": {},
-        "assigner": "security@mozilla.org",
-        "cvss": null,
-        "cwe": "CWE-787",
-        "id": "CVE-2022-40961",
-        "impact": {},
-        "last-modified": "2023-01-04T03:21:00",
-        "references": [
-            "https://www.mozilla.org/security/advisories/mfsa2022-40/",
-            "https://bugzilla.mozilla.org/show_bug.cgi?id=1784588"
-        ],
-        "summary": "During startup, a graphics driver with an unexpected name could lead to a stack-buffer overflow causing a potentially exploitable crash.<br>*This issue only affects Firefox for Android. Other operating systems are not affected.*. This vulnerability affects Firefox < 105."
-    },
-    {
-        "Modified": "2023-01-04T03:15:00",
-        "Published": "2022-12-06T05:15:00",
-        "access": {},
-        "assigner": "report@snyk.io",
-        "cvss": null,
-        "cwe": "CWE-20",
-        "id": "CVE-2022-24439",
-        "impact": {},
-        "last-modified": "2023-01-04T03:15:00",
-        "references": [
-            "https://security.snyk.io/vuln/SNYK-PYTHON-GITPYTHON-3113858",
-            "https://github.com/gitpython-developers/GitPython/blob/bec61576ae75803bc4e60d8de7a629c194313d1c/git/repo/base.py%23L1249",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/IKMVYKLWX62UEYKAN64RUZMOIAMZM5JN/"
-        ],
-        "summary": "All versions of package gitpython are vulnerable to Remote Code Execution (RCE) due to improper user input validation, which makes it possible to inject a maliciously crafted remote URL into the clone command. Exploiting this vulnerability is possible because the library makes external calls to git without sufficient sanitization of input arguments."
-    },
-    {
-        "Modified": "2023-01-04T02:59:00",
-        "Published": "2022-12-22T20:15:00",
-        "access": {},
-        "assigner": "security@mozilla.org",
-        "cvss": null,
-        "cwe": "NVD-CWE-noinfo",
-        "id": "CVE-2022-40962",
-        "impact": {},
-        "last-modified": "2023-01-04T02:59:00",
-        "references": [
-            "https://www.mozilla.org/security/advisories/mfsa2022-42/",
-            "https://www.mozilla.org/security/advisories/mfsa2022-41/",
-            "https://www.mozilla.org/security/advisories/mfsa2022-40/",
-            "https://bugzilla.mozilla.org/buglist.cgi?bug_id=1776655%2C1777574%2C1784835%2C1785109%2C1786502%2C1789440"
-        ],
-        "summary": "Mozilla developers Nika Layzell, Timothy Nikkel, Sebastian Hengst, Andreas Pehrson, and the Mozilla Fuzzing Team reported memory safety bugs present in Firefox 104 and Firefox ESR 102.2. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code. This vulnerability affects Firefox ESR < 102.3, Thunderbird < 102.3, and Firefox < 105."
-    },
-    {
-        "Modified": "2023-01-04T02:55:00",
-        "Published": "2022-12-22T20:15:00",
-        "access": {},
-        "assigner": "security@mozilla.org",
-        "cvss": null,
-        "cwe": "CWE-346",
-        "id": "CVE-2022-42927",
-        "impact": {},
-        "last-modified": "2023-01-04T02:55:00",
-        "references": [
-            "https://www.mozilla.org/security/advisories/mfsa2022-46/",
-            "https://www.mozilla.org/security/advisories/mfsa2022-45/",
-            "https://www.mozilla.org/security/advisories/mfsa2022-44/",
-            "https://bugzilla.mozilla.org/show_bug.cgi?id=1789128"
-        ],
-        "summary": "A same-origin policy violation could have allowed the theft of cross-origin URL entries, leaking the result of a redirect, via <code>performance.getEntries()</code>. This vulnerability affects Thunderbird < 102.4, Firefox ESR < 102.4, and Firefox < 106."
-    },
-    {
-        "Modified": "2023-01-04T02:51:00",
-        "Published": "2022-12-22T20:15:00",
-        "access": {},
-        "assigner": "security@mozilla.org",
-        "cvss": null,
-        "cwe": "NVD-CWE-noinfo",
-        "id": "CVE-2022-42928",
-        "impact": {},
-        "last-modified": "2023-01-04T02:51:00",
-        "references": [
-            "https://bugzilla.mozilla.org/show_bug.cgi?id=1791520",
-            "https://www.mozilla.org/security/advisories/mfsa2022-46/",
-            "https://www.mozilla.org/security/advisories/mfsa2022-45/",
-            "https://www.mozilla.org/security/advisories/mfsa2022-44/"
-        ],
-        "summary": "Certain types of allocations were missing annotations that, if the Garbage Collector was in a specific state, could have lead to memory corruption and a potentially exploitable crash. This vulnerability affects Thunderbird < 102.4, Firefox ESR < 102.4, and Firefox < 106."
-    },
-    {
-        "Modified": "2023-01-04T02:43:00",
-        "Published": "2022-12-22T20:15:00",
-        "access": {},
-        "assigner": "security@mozilla.org",
-        "cvss": null,
-        "cwe": "NVD-CWE-noinfo",
-        "id": "CVE-2022-42929",
-        "impact": {},
-        "last-modified": "2023-01-04T02:43:00",
-        "references": [
-            "https://www.mozilla.org/security/advisories/mfsa2022-46/",
-            "https://www.mozilla.org/security/advisories/mfsa2022-45/",
-            "https://www.mozilla.org/security/advisories/mfsa2022-44/",
-            "https://bugzilla.mozilla.org/show_bug.cgi?id=1789439"
-        ],
-        "summary": "If a website called <code>window.print()</code> in a particular way, it could cause a denial of service of the browser, which may persist beyond browser restart depending on the user's session restore settings. This vulnerability affects Thunderbird < 102.4, Firefox ESR < 102.4, and Firefox < 106."
-    },
-    {
-        "Modified": "2023-01-04T02:42:00",
-        "Published": "2022-12-22T20:15:00",
-        "access": {},
-        "assigner": "security@mozilla.org",
-        "cvss": null,
-        "cwe": "CWE-922",
-        "id": "CVE-2022-42931",
-        "impact": {},
-        "last-modified": "2023-01-04T02:42:00",
-        "references": [
-            "https://www.mozilla.org/security/advisories/mfsa2022-44/",
-            "https://bugzilla.mozilla.org/show_bug.cgi?id=1780571"
-        ],
-        "summary": "Logins saved by Firefox should be managed by the Password Manager component which uses encryption to save files on-disk. Instead, the username (not password) was saved by the Form Manager to an unencrypted file on disk. This vulnerability affects Firefox < 106."
-    },
-    {
-        "Modified": "2023-01-04T02:42:00",
-        "Published": "2022-12-22T20:15:00",
-        "access": {},
-        "assigner": "security@mozilla.org",
-        "cvss": null,
-        "cwe": "CWE-601",
-        "id": "CVE-2022-29912",
-        "impact": {},
-        "last-modified": "2023-01-04T02:42:00",
-        "references": [
-            "https://www.mozilla.org/security/advisories/mfsa2022-17/",
-            "https://www.mozilla.org/security/advisories/mfsa2022-16/",
-            "https://bugzilla.mozilla.org/show_bug.cgi?id=1692655",
-            "https://www.mozilla.org/security/advisories/mfsa2022-18/"
-        ],
-        "summary": "Requests initiated through reader mode did not properly omit cookies with a SameSite attribute. This vulnerability affects Thunderbird < 91.9, Firefox ESR < 91.9, and Firefox < 100."
-    },
-    {
-        "Modified": "2023-01-04T02:40:00",
-        "Published": "2022-12-22T20:15:00",
-        "access": {},
-        "assigner": "security@mozilla.org",
-        "cvss": null,
-        "cwe": "NVD-CWE-noinfo",
-        "id": "CVE-2022-42932",
-        "impact": {},
-        "last-modified": "2023-01-04T02:40:00",
-        "references": [
-            "https://bugzilla.mozilla.org/buglist.cgi?bug_id=1789729%2C1791363%2C1792041",
-            "https://www.mozilla.org/security/advisories/mfsa2022-46/",
-            "https://www.mozilla.org/security/advisories/mfsa2022-45/",
-            "https://www.mozilla.org/security/advisories/mfsa2022-44/"
-        ],
-        "summary": "Mozilla developers Ashley Hale and the Mozilla Fuzzing Team reported memory safety bugs present in Thunderbird 102.3. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code. This vulnerability affects Thunderbird < 102.4, Firefox ESR < 102.4, and Firefox < 106."
-    },
-    {
-        "Modified": "2023-01-04T02:36:00",
-        "Published": "2022-12-22T20:15:00",
-        "access": {},
-        "assigner": "security@mozilla.org",
-        "cvss": null,
-        "cwe": "NVD-CWE-noinfo",
-        "id": "CVE-2022-36317",
-        "impact": {},
-        "last-modified": "2023-01-04T02:36:00",
-        "references": [
-            "https://bugzilla.mozilla.org/show_bug.cgi?id=1759951",
-            "https://www.mozilla.org/security/advisories/mfsa2022-28/"
-        ],
-        "summary": "When visiting a website with an overly long URL, the user interface would start to hang. Due to session restore, this could lead to a permanent Denial of Service.<br>*This bug only affects Firefox for Android. Other operating systems are unaffected.*. This vulnerability affects Firefox < 103."
-    },
-    {
-        "Modified": "2023-01-04T02:33:00",
-        "Published": "2022-12-21T21:15:00",
-        "access": {},
-        "assigner": "security@proofpoint.com",
-        "cvss": null,
-        "cwe": "CWE-269",
-        "id": "CVE-2022-46334",
-        "impact": {},
-        "last-modified": "2023-01-04T02:33:00",
-        "references": [
-            "https://www.proofpoint.com/security/security-advisories/pfpt-sa-2022-0004"
-        ],
-        "summary": "Proofpoint Enterprise Protection (PPS/PoD) contains a vulnerability which allows the pps user to escalate to root privileges due to unnecessary permissions. This affects all versions 8.19.0 and below."
-    },
-    {
-        "Modified": "2023-01-04T02:21:00",
-        "Published": "2022-12-22T20:15:00",
-        "access": {},
-        "assigner": "security@mozilla.org",
-        "cvss": null,
-        "cwe": "CWE-362",
-        "id": "CVE-2022-36318",
-        "impact": {},
-        "last-modified": "2023-01-04T02:21:00",
-        "references": [
-            "https://www.mozilla.org/security/advisories/mfsa2022-31/",
-            "https://www.mozilla.org/security/advisories/mfsa2022-30/",
-            "https://bugzilla.mozilla.org/show_bug.cgi?id=1771774",
-            "https://www.mozilla.org/security/advisories/mfsa2022-32/",
-            "https://www.mozilla.org/security/advisories/mfsa2022-28/",
-            "https://www.mozilla.org/security/advisories/mfsa2022-29/"
-        ],
-        "summary": "When visiting directory listings for `chrome://` URLs as source text, some parameters were reflected. This vulnerability affects Firefox ESR < 102.1, Firefox ESR < 91.12, Firefox < 103, Thunderbird < 102.1, and Thunderbird < 91.12."
-    },
-    {
-        "Modified": "2023-01-04T02:21:00",
-        "Published": "2022-12-21T09:15:00",
-        "access": {},
-        "assigner": "vultures@jpcert.or.jp",
-        "cvss": null,
-        "cwe": "CWE-427",
-        "id": "CVE-2022-46330",
-        "impact": {},
-        "last-modified": "2023-01-04T02:21:00",
-        "references": [
-            "https://github.com/Squirrel/Squirrel.Windows/pull/1807",
-            "https://github.com/Squirrel/Squirrel.Windows",
-            "https://jvn.jp/en/jp/JVN29902403/index.html"
-        ],
-        "summary": "Squirrel.Windows is both a toolset and a library that provides installation and update functionality for Windows desktop applications. Installers generated by Squirrel.Windows 2.0.1 and earlier contain an issue with the DLL search path, which may lead to insecurely loading Dynamic Link Libraries. As a result, arbitrary code may be executed with the privilege of the user invoking the installer."
-    },
-    {
-        "Modified": "2023-01-04T02:17:00",
-        "Published": "2022-12-22T20:15:00",
-        "access": {},
-        "assigner": "security@mozilla.org",
-        "cvss": null,
-        "cwe": "NVD-CWE-noinfo",
-        "id": "CVE-2022-36319",
-        "impact": {},
-        "last-modified": "2023-01-04T02:17:00",
-        "references": [
-            "https://www.mozilla.org/security/advisories/mfsa2022-31/",
-            "https://www.mozilla.org/security/advisories/mfsa2022-30/",
-            "https://bugzilla.mozilla.org/show_bug.cgi?id=1737722",
-            "https://www.mozilla.org/security/advisories/mfsa2022-32/",
-            "https://www.mozilla.org/security/advisories/mfsa2022-28/",
-            "https://www.mozilla.org/security/advisories/mfsa2022-29/"
-        ],
-        "summary": "When combining CSS properties for overflow and transform, the mouse cursor could interact with different coordinates than displayed. This vulnerability affects Firefox ESR < 102.1, Firefox ESR < 91.12, Firefox < 103, Thunderbird < 102.1, and Thunderbird < 91.12."
-    },
-    {
-        "Modified": "2023-01-04T02:15:00",
-        "Published": "2022-12-22T20:15:00",
-        "access": {},
-        "assigner": "security@mozilla.org",
-        "cvss": null,
-        "cwe": "NVD-CWE-noinfo",
-        "id": "CVE-2022-29914",
-        "impact": {},
-        "last-modified": "2023-01-04T02:15:00",
-        "references": [
-            "https://bugzilla.mozilla.org/show_bug.cgi?id=1746448",
-            "https://www.mozilla.org/security/advisories/mfsa2022-17/",
-            "https://www.mozilla.org/security/advisories/mfsa2022-16/",
-            "https://www.mozilla.org/security/advisories/mfsa2022-18/"
-        ],
-        "summary": "When reusing existing popups Firefox would have allowed them to cover the fullscreen notification UI, which could have enabled browser spoofing attacks. This vulnerability affects Thunderbird < 91.9, Firefox ESR < 91.9, and Firefox < 100."
-    },
-    {
-        "Modified": "2023-01-04T02:14:00",
-        "Published": "2022-12-22T20:15:00",
-        "access": {},
-        "assigner": "security@mozilla.org",
-        "cvss": null,
-        "cwe": "NVD-CWE-noinfo",
-        "id": "CVE-2022-29913",
-        "impact": {},
-        "last-modified": "2023-01-04T02:14:00",
-        "references": [
-            "https://bugzilla.mozilla.org/show_bug.cgi?id=1764778",
-            "https://www.mozilla.org/security/advisories/mfsa2022-18/"
-        ],
-        "summary": "The parent process would not properly check whether the Speech Synthesis feature is enabled, when receiving instructions from a child process. This vulnerability affects Thunderbird < 91.9."
-    },
-    {
-        "Modified": "2023-01-04T02:06:00",
-        "Published": "2022-12-25T20:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-4736",
-        "impact": {},
-        "last-modified": "2023-01-04T02:06:00",
-        "references": [
-            "https://github.com/jschwindt/Venganzas-del-Pasado/commit/62339b2ec445692c710b804bdf07aef4bd247ff7",
-            "https://vuldb.com/?ctiid.216770",
-            "https://vuldb.com/?id.216770",
-            "https://www.openbugbounty.org/reports/3022583/"
-        ],
-        "summary": "A vulnerability was found in Venganzas del Pasado and classified as problematic. Affected by this issue is some unknown functionality. The manipulation of the argument the_title leads to cross site scripting. The attack may be launched remotely. The name of the patch is 62339b2ec445692c710b804bdf07aef4bd247ff7. It is recommended to apply a patch to fix this issue. VDB-216770 is the identifier assigned to this vulnerability."
-    },
-    {
-        "Modified": "2023-01-04T02:06:00",
-        "Published": "2022-12-25T20:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-89",
-        "id": "CVE-2022-4737",
-        "impact": {},
-        "last-modified": "2023-01-04T02:06:00",
-        "references": [
-            "https://vuldb.com/?ctiid.216773",
-            "https://vuldb.com/?id.216773"
-        ],
-        "summary": "A vulnerability was found in SourceCodester Blood Bank Management System 1.0. It has been rated as critical. This issue affects some unknown processing of the file login.php. The manipulation of the argument username/password leads to sql injection. The attack may be initiated remotely. The identifier VDB-216773 was assigned to this vulnerability."
-    },
-    {
-        "Modified": "2023-01-04T02:06:00",
-        "Published": "2022-12-25T20:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-89",
-        "id": "CVE-2022-4739",
-        "impact": {},
-        "last-modified": "2023-01-04T02:06:00",
-        "references": [
-            "https://vuldb.com/?ctiid.216775",
-            "https://vuldb.com/?id.216775"
-        ],
-        "summary": "A vulnerability classified as critical was found in SourceCodester School Dormitory Management System 1.0. Affected by this vulnerability is an unknown functionality of the component Admin Login. The manipulation leads to sql injection. The attack can be launched remotely. The associated identifier of this vulnerability is VDB-216775."
-    },
-    {
-        "Modified": "2023-01-04T02:05:00",
-        "Published": "2022-12-25T20:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-4740",
-        "impact": {},
-        "last-modified": "2023-01-04T02:05:00",
-        "references": [
-            "https://vuldb.com/?id.216776",
-            "https://vuldb.com/?ctiid.216776",
-            "https://gitee.com/kekingcn/file-online-preview/issues/I674AC"
-        ],
-        "summary": "A vulnerability, which was classified as problematic, has been found in kkFileView. Affected by this issue is the function setWatermarkAttribute of the file /picturesPreview. The manipulation leads to cross site scripting. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. The identifier of this vulnerability is VDB-216776."
-    },
-    {
-        "Modified": "2023-01-04T02:04:00",
-        "Published": "2022-12-26T05:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-668",
-        "id": "CVE-2021-44854",
-        "impact": {},
-        "last-modified": "2023-01-04T02:04:00",
-        "references": [
-            "https://phabricator.wikimedia.org/T292763"
-        ],
-        "summary": "An issue was discovered in MediaWiki before 1.35.5, 1.36.x before 1.36.3, and 1.37.x before 1.37.1. The REST API publicly caches results from private wikis."
-    },
-    {
-        "Modified": "2023-01-04T02:04:00",
-        "Published": "2022-12-26T05:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2021-44855",
-        "impact": {},
-        "last-modified": "2023-01-04T02:04:00",
-        "references": [
-            "https://phabricator.wikimedia.org/T293589"
-        ],
-        "summary": "An issue was discovered in MediaWiki before 1.35.5, 1.36.x before 1.36.3, and 1.37.x before 1.37.1. There is Blind Stored XSS via a URL to the Upload Image feature."
-    },
-    {
-        "Modified": "2023-01-04T02:02:00",
-        "Published": "2022-12-26T02:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-37307",
-        "impact": {},
-        "last-modified": "2023-01-04T02:02:00",
-        "references": [
-            "https://seclists.org/fulldisclosure/2022/Nov/18",
-            "https://open-xchange.com"
-        ],
-        "summary": "OX App Suite through 7.10.6 allows XSS via XHTML CDATA for a snippet, as demonstrated by the onerror attribute of an IMG element within an e-mail signature."
-    },
-    {
-        "Modified": "2023-01-04T02:02:00",
-        "Published": "2022-12-26T02:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-400",
-        "id": "CVE-2022-37311",
-        "impact": {},
-        "last-modified": "2023-01-04T02:02:00",
-        "references": [
-            "https://seclists.org/fulldisclosure/2022/Nov/18",
-            "https://open-xchange.com"
-        ],
-        "summary": "OX App Suite through 7.10.6 has Uncontrolled Resource Consumption via a large location request parameter to the redirect servlet."
-    },
-    {
-        "Modified": "2023-01-04T02:01:00",
-        "Published": "2022-12-26T02:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-400",
-        "id": "CVE-2022-37312",
-        "impact": {},
-        "last-modified": "2023-01-04T02:01:00",
-        "references": [
-            "https://seclists.org/fulldisclosure/2022/Nov/18",
-            "https://open-xchange.com"
-        ],
-        "summary": "OX App Suite through 7.10.6 has Uncontrolled Resource Consumption via a large request body containing a redirect URL to the deferrer servlet."
-    },
-    {
-        "Modified": "2023-01-04T01:59:00",
-        "Published": "2022-12-26T02:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-918",
-        "id": "CVE-2022-37313",
-        "impact": {},
-        "last-modified": "2023-01-04T01:59:00",
-        "references": [
-            "https://seclists.org/fulldisclosure/2022/Nov/18",
-            "https://open-xchange.com"
-        ],
-        "summary": "OX App Suite through 7.10.6 allows SSRF because the anti-SSRF protection mechanism only checks the first DNS AA or AAAA record."
-    },
-    {
-        "Modified": "2023-01-04T01:57:00",
-        "Published": "2022-12-26T04:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-29852",
-        "impact": {},
-        "last-modified": "2023-01-04T01:57:00",
-        "references": [
-            "https://open-xchange.com",
-            "https://seclists.org/fulldisclosure/2022/Sep/0"
-        ],
-        "summary": "OX App Suite through 8.2 allows XSS because BMFreehand10 and image/x-freehand are not blocked."
-    },
-    {
-        "Modified": "2023-01-04T01:56:00",
-        "Published": "2022-12-26T04:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-29853",
-        "impact": {},
-        "last-modified": "2023-01-04T01:56:00",
-        "references": [
-            "https://open-xchange.com",
-            "https://seclists.org/fulldisclosure/2022/Sep/0"
-        ],
-        "summary": "OX App Suite through 8.2 allows XSS via a certain complex hierarchy that forces use of Show Entire Message for a huge HTML e-mail message."
-    },
-    {
-        "Modified": "2023-01-04T01:15:00",
-        "Published": "2022-08-25T15:15:00",
-        "access": {},
-        "assigner": "security@apache.org",
-        "cvss": null,
-        "cwe": "CWE-120",
-        "id": "CVE-2022-22728",
-        "impact": {},
-        "last-modified": "2023-01-04T01:15:00",
-        "references": [
-            "https://lists.apache.org/thread/2fsjoor96d47vtkpf76x4yo06nccvy1y",
-            "http://www.openwall.com/lists/oss-security/2022/08/25/4",
-            "http://www.openwall.com/lists/oss-security/2022/08/25/3",
-            "http://www.openwall.com/lists/oss-security/2022/08/26/4",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/2PUUS3JL44UUSLJTSXE46HVKZIW7E7PE/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/BE5MEHGIQUEIISBCVHM43IN2NBDXBFOJ/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/3HZZKVHYYWACPWONPEFRNPIRE3HYLV4T/",
-            "http://www.openwall.com/lists/oss-security/2022/12/29/1",
-            "http://www.openwall.com/lists/oss-security/2022/12/30/4",
-            "http://www.openwall.com/lists/oss-security/2022/12/31/1",
-            "http://www.openwall.com/lists/oss-security/2022/12/31/5",
-            "http://www.openwall.com/lists/oss-security/2023/01/02/1",
-            "http://www.openwall.com/lists/oss-security/2023/01/02/2",
-            "http://www.openwall.com/lists/oss-security/2023/01/03/2"
-        ],
-        "summary": "A flaw in Apache libapreq2 versions 2.16 and earlier could cause a buffer overflow while processing multipart form uploads. A remote attacker could send a request causing a process crash which could lead to a denial of service attack."
-    },
-    {
-        "Modified": "2023-01-04T00:15:00",
-        "Published": "2023-01-04T00:15:00",
-        "access": {},
-        "assigner": "psirt@us.ibm.com",
-        "cvss": null,
-        "cwe": "CWE-352",
-        "id": "CVE-2022-42435",
-        "impact": {},
-        "last-modified": "2023-01-04T00:15:00",
-        "references": [
-            "https://www.ibm.com/support/pages/node/6852217",
-            "https://exchange.xforce.ibmcloud.com/vulnerabilities/238054"
-        ],
-        "summary": "IBM Business Automation Workflow 18.0.0, 18.0.1, 18.0.2, 19.0.1, 19.0.2, 19.0.3, 20.0.1, 20.0.2, 20.0.3, 21.0.1, 21.0.2, 21.0.3, and 22.0.1 is vulnerable to cross-site request forgery which could allow an attacker to execute malicious and unauthorized actions transmitted from a user that the website trusts. IBM X-Force ID: 238054."
-    },
-    {
-        "Modified": "2023-01-04T00:15:00",
-        "Published": "2023-01-03T21:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-44036",
-        "impact": {},
-        "last-modified": "2023-01-04T00:15:00",
-        "references": [
-            "https://github.com/b2evolution/b2evolution/issues/121"
-        ],
-        "summary": "** DISPUTED ** In b2evolution 7.2.5, if configured with admins_can_manipulate_sensitive_files, arbitrary file upload is allowed for admins, leading to command execution. NOTE: the vendor's position is that this is \"very obviously a feature not an issue and if you don't like that feature it is very obvious how to disable it.\""
-    },
-    {
-        "Modified": "2023-01-03T23:15:00",
+        "Modified": "2023-01-04T14:02:00",
         "Published": "2023-01-03T23:15:00",
         "access": {},
         "assigner": "cve@mitre.org",
@@ -1514,94 +1108,402 @@
         "cwe": "Unknown",
         "id": "CVE-2022-42710",
         "impact": {},
-        "last-modified": "2023-01-03T23:15:00",
+        "last-modified": "2023-01-04T14:02:00",
         "references": [
             "https://github.com/omarhashem123/Security-Research/blob/main/CVE-2022-42710/CVE-2022-42710.txt"
         ],
         "summary": "Nice (formerly Nortek) Linear eMerge E3-Series 0.32-08f, 0.32-07p, 0.32-07e, 0.32-09c, 0.32-09b, 0.32-09a, and 0.32-08e devices are vulnerable to Stored Cross-Site Scripting (XSS)."
     },
     {
-        "Modified": "2023-01-03T22:15:00",
-        "Published": "2023-01-03T22:15:00",
+        "Modified": "2023-01-04T14:02:00",
+        "Published": "2023-01-04T00:15:00",
         "access": {},
-        "assigner": "ics-cert@hq.dhs.gov",
+        "assigner": "psirt@us.ibm.com",
         "cvss": null,
-        "cwe": "CWE-522",
-        "id": "CVE-2022-2967",
+        "cwe": "CWE-352",
+        "id": "CVE-2022-42435",
         "impact": {},
-        "last-modified": "2023-01-03T22:15:00",
+        "last-modified": "2023-01-04T14:02:00",
         "references": [
-            "https://www.prosysopc.com/blog/#Security",
-            "https://www.cisa.gov/uscert/ics/advisories/icsa-22-349-01"
+            "https://www.ibm.com/support/pages/node/6852217",
+            "https://exchange.xforce.ibmcloud.com/vulnerabilities/238054"
         ],
-        "summary": "Prosys OPC UA Simulation Server version prior to v5.3.0-64 and UA Modbus Server versions 1.4.18-5 and prior do not sufficiently protect credentials, which could allow an attacker to obtain user credentials and gain access to system data."
+        "summary": "IBM Business Automation Workflow 18.0.0, 18.0.1, 18.0.2, 19.0.1, 19.0.2, 19.0.3, 20.0.1, 20.0.2, 20.0.3, 21.0.1, 21.0.2, 21.0.3, and 22.0.1 is vulnerable to cross-site request forgery which could allow an attacker to execute malicious and unauthorized actions transmitted from a user that the website trusts. IBM X-Force ID: 238054."
     },
     {
-        "Modified": "2023-01-03T22:15:00",
-        "Published": "2023-01-03T22:15:00",
+        "Modified": "2023-01-04T14:02:00",
+        "Published": "2023-01-03T21:15:00",
         "access": {},
-        "assigner": "cve@mitre.org",
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-532",
+        "id": "CVE-2022-23506",
+        "impact": {},
+        "last-modified": "2023-01-04T14:02:00",
+        "references": [
+            "https://github.com/spinnaker/rosco/commit/e80cfaa1abfb3a0e9026d45d6027291bfb815daf",
+            "https://github.com/spinnaker/spinnaker/security/advisories/GHSA-2233-cqj8-j2q5"
+        ],
+        "summary": "Spinnaker is an open source, multi-cloud continuous delivery platform for releasing software changes, and Spinnaker's Rosco microservice produces machine images. Rosco prior to versions 1.29.2, 1.28.4, and 1.27.3 does not property mask secrets generated via packer builds. This can lead to exposure of sensitive AWS credentials in packer log files. Versions 1.29.2, 1.28.4, and 1.27.3 of Rosco contain fixes for this issue. A workaround is available. It's recommended to use short lived credentials via role assumption and IAM profiles. Additionally, credentials can be set in `/home/spinnaker/.aws/credentials` and `/home/spinnaker/.aws/config` as a volume mount for Rosco pods vs. setting credentials in roscos bake config properties. Last even with those it's recommend to use IAM Roles vs. long lived credentials. This drastically mitigates the risk of credentials exposure. If users have used static credentials, it's recommended to purge any bake logs for AWS, evaluate whether AWS_ACCESS_KEY, SECRET_KEY and/or other sensitive data has been introduced in log files and bake job logs. Then, rotate these credentials and evaluate potential improper use of those credentials."
+    },
+    {
+        "Modified": "2023-01-04T14:02:00",
+        "Published": "2023-01-03T21:15:00",
+        "access": {},
+        "assigner": "security@mediatek.com",
         "cvss": null,
         "cwe": "Unknown",
-        "id": "CVE-2022-38723",
+        "id": "CVE-2022-32623",
         "impact": {},
-        "last-modified": "2023-01-03T22:15:00",
+        "last-modified": "2023-01-04T14:02:00",
         "references": [
-            "https://community.gravitee.io/t/whats-new-in-access-management-3-15-lts/164",
-            "https://gist.github.com/garatc/d86cdb1fa2e35a7ee719d9a0de0b5ca3"
+            "https://corp.mediatek.com/product-security-bulletin/January-2023"
         ],
-        "summary": "Gravitee API Management before 3.15.13 allows path traversal through HTML injection."
+        "summary": "In mdp, there is a possible out of bounds write due to incorrect error handling. This could lead to local escalation of privilege with System execution privileges needed. User interaction is not needed for exploitation. Patch ID: ALPS07342114; Issue ID: ALPS07342114."
     },
     {
-        "Modified": "2023-01-03T21:39:00",
-        "Published": "2022-12-22T20:15:00",
+        "Modified": "2023-01-04T14:02:00",
+        "Published": "2023-01-03T21:15:00",
         "access": {},
-        "assigner": "security@mozilla.org",
+        "assigner": "security@mediatek.com",
         "cvss": null,
-        "cwe": "CWE-290",
-        "id": "CVE-2022-31738",
+        "cwe": "Unknown",
+        "id": "CVE-2022-32635",
         "impact": {},
-        "last-modified": "2023-01-03T21:39:00",
+        "last-modified": "2023-01-04T14:02:00",
         "references": [
-            "https://www.mozilla.org/security/advisories/mfsa2022-20/",
-            "https://bugzilla.mozilla.org/show_bug.cgi?id=1756388",
-            "https://www.mozilla.org/security/advisories/mfsa2022-22/",
-            "https://www.mozilla.org/security/advisories/mfsa2022-21/"
+            "https://corp.mediatek.com/product-security-bulletin/January-2023"
         ],
-        "summary": "When exiting fullscreen mode, an iframe could have confused the browser about the current state of fullscreen, resulting in potential user confusion or spoofing attacks. This vulnerability affects Thunderbird < 91.10, Firefox < 101, and Firefox ESR < 91.10."
+        "summary": "In gps, there is a possible out of bounds write due to a missing bounds check. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: ALPS07573237; Issue ID: ALPS07573237."
     },
     {
-        "Modified": "2023-01-03T21:29:00",
-        "Published": "2022-12-22T20:15:00",
+        "Modified": "2023-01-04T14:02:00",
+        "Published": "2023-01-03T21:15:00",
         "access": {},
-        "assigner": "security@mozilla.org",
+        "assigner": "security@mediatek.com",
         "cvss": null,
-        "cwe": "CWE-787",
-        "id": "CVE-2022-36320",
+        "cwe": "Unknown",
+        "id": "CVE-2022-32636",
         "impact": {},
-        "last-modified": "2023-01-03T21:29:00",
+        "last-modified": "2023-01-04T14:02:00",
         "references": [
-            "https://bugzilla.mozilla.org/buglist.cgi?bug_id=1759794%2C1760998",
-            "https://www.mozilla.org/security/advisories/mfsa2022-28/"
+            "https://corp.mediatek.com/product-security-bulletin/January-2023"
         ],
-        "summary": "Mozilla developers and the Mozilla Fuzzing Team reported memory safety bugs present in Firefox 102. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code. This vulnerability affects Firefox < 103."
+        "summary": "In keyinstall, there is a possible out of bounds write due to an integer overflow. This could lead to local escalation of privilege with System execution privileges needed. User interaction is not needed for exploitation. Patch ID: ALPS07510064; Issue ID: ALPS07510064."
     },
     {
-        "Modified": "2023-01-03T21:25:00",
-        "Published": "2022-12-22T20:15:00",
+        "Modified": "2023-01-04T14:02:00",
+        "Published": "2023-01-03T21:15:00",
         "access": {},
-        "assigner": "security@mozilla.org",
+        "assigner": "security@mediatek.com",
         "cvss": null,
-        "cwe": "NVD-CWE-noinfo",
-        "id": "CVE-2022-31747",
+        "cwe": "Unknown",
+        "id": "CVE-2022-32637",
         "impact": {},
-        "last-modified": "2023-01-03T21:25:00",
+        "last-modified": "2023-01-04T14:02:00",
         "references": [
-            "https://www.mozilla.org/security/advisories/mfsa2022-20/",
-            "https://www.mozilla.org/security/advisories/mfsa2022-22/",
-            "https://www.mozilla.org/security/advisories/mfsa2022-21/",
-            "https://bugzilla.mozilla.org/buglist.cgi?bug_id=1760765%2C1765610%2C1766283%2C1767365%2C1768559%2C1768734"
+            "https://corp.mediatek.com/product-security-bulletin/January-2023"
         ],
-        "summary": "Mozilla developers Andrew McCreight, Nicolas B. Pierron, and the Mozilla Fuzzing Team reported memory safety bugs present in Firefox 100 and Firefox ESR 91.9. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code. This vulnerability affects Thunderbird < 91.10, Firefox < 101, and Firefox ESR < 91.10."
+        "summary": "In hevc decoder, there is a possible out of bounds write due to a missing bounds check. This could lead to local escalation of privilege with System execution privileges needed. User interaction is not needed for exploitation. Patch ID: ALPS07491374; Issue ID: ALPS07491374."
+    },
+    {
+        "Modified": "2023-01-04T14:02:00",
+        "Published": "2023-01-03T21:15:00",
+        "access": {},
+        "assigner": "security@mediatek.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-32638",
+        "impact": {},
+        "last-modified": "2023-01-04T14:02:00",
+        "references": [
+            "https://corp.mediatek.com/product-security-bulletin/January-2023"
+        ],
+        "summary": "In isp, there is a possible out of bounds write due to a race condition. This could lead to local escalation of privilege with System execution privileges needed. User interaction is not needed for exploitation. Patch ID: ALPS07494449; Issue ID: ALPS07494449."
+    },
+    {
+        "Modified": "2023-01-04T14:02:00",
+        "Published": "2023-01-03T21:15:00",
+        "access": {},
+        "assigner": "security@mediatek.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-32639",
+        "impact": {},
+        "last-modified": "2023-01-04T14:02:00",
+        "references": [
+            "https://corp.mediatek.com/product-security-bulletin/January-2023"
+        ],
+        "summary": "In watchdog, there is a possible out of bounds read due to a missing bounds check. This could lead to local escalation of privilege with System execution privileges needed. User interaction is not needed for exploitation. Patch ID: ALPS07494487; Issue ID: ALPS07494487."
+    },
+    {
+        "Modified": "2023-01-04T14:02:00",
+        "Published": "2023-01-03T21:15:00",
+        "access": {},
+        "assigner": "security@mediatek.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-32640",
+        "impact": {},
+        "last-modified": "2023-01-04T14:02:00",
+        "references": [
+            "https://corp.mediatek.com/product-security-bulletin/January-2023"
+        ],
+        "summary": "In meta wifi, there is a possible out of bounds write due to a missing bounds check. This could lead to local escalation of privilege with System execution privileges needed. User interaction is not needed for exploitation. Patch ID: ALPS07441652; Issue ID: ALPS07441652."
+    },
+    {
+        "Modified": "2023-01-04T14:02:00",
+        "Published": "2023-01-03T21:15:00",
+        "access": {},
+        "assigner": "security@mediatek.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-32641",
+        "impact": {},
+        "last-modified": "2023-01-04T14:02:00",
+        "references": [
+            "https://corp.mediatek.com/product-security-bulletin/January-2023"
+        ],
+        "summary": "In meta wifi, there is a possible out of bounds read due to a missing bounds check. This could lead to local escalation of privilege with System execution privileges needed. User interaction is not needed for exploitation. Patch ID: ALPS07453594; Issue ID: ALPS07453594."
+    },
+    {
+        "Modified": "2023-01-04T14:02:00",
+        "Published": "2023-01-03T21:15:00",
+        "access": {},
+        "assigner": "security@mediatek.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-32644",
+        "impact": {},
+        "last-modified": "2023-01-04T14:02:00",
+        "references": [
+            "https://corp.mediatek.com/product-security-bulletin/January-2023"
+        ],
+        "summary": "In vow, there is a possible use after free due to a race condition. This could lead to local escalation of privilege with System execution privileges needed. User interaction is not needed for exploitation. Patch ID: ALPS07494473; Issue ID: ALPS07494473."
+    },
+    {
+        "Modified": "2023-01-04T14:02:00",
+        "Published": "2023-01-03T21:15:00",
+        "access": {},
+        "assigner": "security@mediatek.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-32645",
+        "impact": {},
+        "last-modified": "2023-01-04T14:02:00",
+        "references": [
+            "https://corp.mediatek.com/product-security-bulletin/January-2023"
+        ],
+        "summary": "In vow, there is a possible information disclosure due to a race condition. This could lead to local information disclosure with System execution privileges needed. User interaction is not needed for exploitation. Patch ID: ALPS07494477; Issue ID: ALPS07494477."
+    },
+    {
+        "Modified": "2023-01-04T14:02:00",
+        "Published": "2023-01-03T21:15:00",
+        "access": {},
+        "assigner": "security@mediatek.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-32646",
+        "impact": {},
+        "last-modified": "2023-01-04T14:02:00",
+        "references": [
+            "https://corp.mediatek.com/product-security-bulletin/January-2023"
+        ],
+        "summary": "In gpu drm, there is a possible stack overflow due to a missing bounds check. This could lead to local escalation of privilege with System execution privileges needed. User interaction is not needed for exploitation. Patch ID: ALPS07363501; Issue ID: ALPS07363501."
+    },
+    {
+        "Modified": "2023-01-04T14:02:00",
+        "Published": "2023-01-03T21:15:00",
+        "access": {},
+        "assigner": "security@mediatek.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-32647",
+        "impact": {},
+        "last-modified": "2023-01-04T14:02:00",
+        "references": [
+            "https://corp.mediatek.com/product-security-bulletin/January-2023"
+        ],
+        "summary": "In ccu, there is a possible out of bounds write due to improper input validation. This could lead to local escalation of privilege with System execution privileges needed. User interaction is not needed for exploitation. Patch ID: ALPS07554646; Issue ID: ALPS07554646."
+    },
+    {
+        "Modified": "2023-01-04T14:02:00",
+        "Published": "2023-01-03T21:15:00",
+        "access": {},
+        "assigner": "security@mediatek.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-32648",
+        "impact": {},
+        "last-modified": "2023-01-04T14:02:00",
+        "references": [
+            "https://corp.mediatek.com/product-security-bulletin/January-2023"
+        ],
+        "summary": "In disp, there is a possible use after free due to a race condition. This could lead to local escalation of privilege with System execution privileges needed. User interaction is not needed for exploitation. Patch ID: ALPS06535964; Issue ID: ALPS06535964."
+    },
+    {
+        "Modified": "2023-01-04T14:02:00",
+        "Published": "2023-01-03T21:15:00",
+        "access": {},
+        "assigner": "security@mediatek.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-32649",
+        "impact": {},
+        "last-modified": "2023-01-04T14:02:00",
+        "references": [
+            "https://corp.mediatek.com/product-security-bulletin/January-2023"
+        ],
+        "summary": "In jpeg, there is a possible use after free due to a logic error. This could lead to local escalation of privilege with System execution privileges needed. User interaction is not needed for exploitation. Patch ID: ALPS07225840; Issue ID: ALPS07225840."
+    },
+    {
+        "Modified": "2023-01-04T14:02:00",
+        "Published": "2023-01-03T21:15:00",
+        "access": {},
+        "assigner": "security@mediatek.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-32650",
+        "impact": {},
+        "last-modified": "2023-01-04T14:02:00",
+        "references": [
+            "https://corp.mediatek.com/product-security-bulletin/January-2023"
+        ],
+        "summary": "In mtk-isp, there is a possible use after free due to a logic error. This could lead to local escalation of privilege with System execution privileges needed. User interaction is not needed for exploitation. Patch ID: ALPS07225853; Issue ID: ALPS07225853."
+    },
+    {
+        "Modified": "2023-01-04T14:02:00",
+        "Published": "2023-01-03T21:15:00",
+        "access": {},
+        "assigner": "security@mediatek.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-32651",
+        "impact": {},
+        "last-modified": "2023-01-04T14:02:00",
+        "references": [
+            "https://corp.mediatek.com/product-security-bulletin/January-2023"
+        ],
+        "summary": "In mtk-aie, there is a possible use after free due to a logic error. This could lead to local escalation of privilege with System execution privileges needed. User interaction is not needed for exploitation. Patch ID: ALPS07225857; Issue ID: ALPS07225857."
+    },
+    {
+        "Modified": "2023-01-04T14:02:00",
+        "Published": "2023-01-03T21:15:00",
+        "access": {},
+        "assigner": "security@mediatek.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-32652",
+        "impact": {},
+        "last-modified": "2023-01-04T14:02:00",
+        "references": [
+            "https://corp.mediatek.com/product-security-bulletin/January-2023"
+        ],
+        "summary": "In mtk-aie, there is a possible use after free due to a logic error. This could lead to local escalation of privilege with System execution privileges needed. User interaction is not needed for exploitation. Patch ID: ALPS07262617; Issue ID: ALPS07262617."
+    },
+    {
+        "Modified": "2023-01-04T14:02:00",
+        "Published": "2023-01-03T21:15:00",
+        "access": {},
+        "assigner": "security@mediatek.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-32653",
+        "impact": {},
+        "last-modified": "2023-01-04T14:02:00",
+        "references": [
+            "https://corp.mediatek.com/product-security-bulletin/January-2023"
+        ],
+        "summary": "In mtk-aie, there is a possible use after free due to a logic error. This could lead to local escalation of privilege with System execution privileges needed. User interaction is not needed for exploitation. Patch ID: ALPS07262518; Issue ID: ALPS07262518."
+    },
+    {
+        "Modified": "2023-01-04T14:02:00",
+        "Published": "2023-01-03T21:15:00",
+        "access": {},
+        "assigner": "security@mediatek.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-32657",
+        "impact": {},
+        "last-modified": "2023-01-04T14:02:00",
+        "references": [
+            "https://corp.mediatek.com/product-security-bulletin/January-2023"
+        ],
+        "summary": "In Wi-Fi driver, there is a possible undefined behavior due to incorrect error handling. This could lead to local escalation of privilege with System execution privileges needed. User interaction is not needed for exploitation. Patch ID: GN20220705042; Issue ID: GN20220705042."
+    },
+    {
+        "Modified": "2023-01-04T14:02:00",
+        "Published": "2023-01-03T21:15:00",
+        "access": {},
+        "assigner": "security@mediatek.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-32658",
+        "impact": {},
+        "last-modified": "2023-01-04T14:02:00",
+        "references": [
+            "https://corp.mediatek.com/product-security-bulletin/January-2023"
+        ],
+        "summary": "In Wi-Fi driver, there is a possible undefined behavior due to incorrect error handling. This could lead to local escalation of privilege with System execution privileges needed. User interaction is not needed for exploitation. Patch ID: GN20220705059; Issue ID: GN20220705059."
+    },
+    {
+        "Modified": "2023-01-04T14:02:00",
+        "Published": "2023-01-03T21:15:00",
+        "access": {},
+        "assigner": "security@mediatek.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-32659",
+        "impact": {},
+        "last-modified": "2023-01-04T14:02:00",
+        "references": [
+            "https://corp.mediatek.com/product-security-bulletin/January-2023"
+        ],
+        "summary": "In Wi-Fi driver, there is a possible undefined behavior due to incorrect error handling. This could lead to local escalation of privilege with System execution privileges needed. User interaction is not needed for exploitation. Patch ID: GN20220705066; Issue ID: GN20220705066."
+    },
+    {
+        "Modified": "2023-01-04T14:02:00",
+        "Published": "2023-01-03T21:15:00",
+        "access": {},
+        "assigner": "security@mediatek.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-32664",
+        "impact": {},
+        "last-modified": "2023-01-04T14:02:00",
+        "references": [
+            "https://corp.mediatek.com/product-security-bulletin/January-2023"
+        ],
+        "summary": "In Config Manager, there is a possible command injection due to improper input validation. This could lead to remote escalation of privilege with User execution privileges needed. User interaction is needed for exploitation. Patch ID: A20220004; Issue ID: OSBNB00140929."
+    },
+    {
+        "Modified": "2023-01-04T14:02:00",
+        "Published": "2023-01-03T21:15:00",
+        "access": {},
+        "assigner": "security@mediatek.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-32665",
+        "impact": {},
+        "last-modified": "2023-01-04T14:02:00",
+        "references": [
+            "https://corp.mediatek.com/product-security-bulletin/January-2023"
+        ],
+        "summary": "In Boa, there is a possible command injection due to improper input validation. This could lead to remote escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: A20220026; Issue ID: OSBNB00144124."
+    },
+    {
+        "Modified": "2023-01-04T14:02:00",
+        "Published": "2023-01-03T21:15:00",
+        "access": {},
+        "assigner": "cve-assign@fb.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-36943",
+        "impact": {},
+        "last-modified": "2023-01-04T14:02:00",
+        "references": [
+            "https://github.com/metaredteam/external-disclosures/security/advisories/GHSA-vgvw-6xcf-qqfc"
+        ],
+        "summary": "SSZipArchive versions 2.5.3 and older contain an arbitrary file write vulnerability due to lack of sanitization on paths which are symlinks. SSZipArchive will overwrite files on the filesystem when opening a malicious ZIP containing a symlink as the first item."
     }
 ]
