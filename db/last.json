@@ -1,6 +1,686 @@
 [
     {
-        "Modified": "2023-01-04T23:15:00",
+        "Modified": "2023-01-05T04:52:00",
+        "Published": "2022-12-28T00:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-918",
+        "id": "CVE-2022-23544",
+        "impact": {},
+        "last-modified": "2023-01-05T04:52:00",
+        "references": [
+            "https://github.com/metersphere/metersphere/security/advisories/GHSA-vrv6-cg45-rmjj",
+            "https://github.com/metersphere/metersphere/commit/d0f95b50737c941b29d507a4cc3545f2dc6ab121"
+        ],
+        "summary": "MeterSphere is a one-stop open source continuous testing platform, covering test management, interface testing, UI testing and performance testing. Versions prior to 2.5.0 are subject to a Server-Side Request Forgery that leads to Cross-Site Scripting. A Server-Side request forgery in `IssueProxyResourceService::getMdImageByUrl` allows an attacker to access internal resources, as well as executing JavaScript code in the context of Metersphere's origin by a victim of a reflected XSS. This vulnerability has been fixed in v2.5.0. There are no known workarounds."
+    },
+    {
+        "Modified": "2023-01-05T04:52:00",
+        "Published": "2022-12-26T06:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-125",
+        "id": "CVE-2021-38561",
+        "impact": {},
+        "last-modified": "2023-01-05T04:52:00",
+        "references": [
+            "https://go.googlesource.com/text/+/383b2e75a7a4198c42f8f87833eefb772868a56f",
+            "https://groups.google.com/g/golang-announce",
+            "https://deps.dev/advisory/OSV/GO-2021-0113",
+            "https://pkg.go.dev/golang.org/x/text/language"
+        ],
+        "summary": "golang.org/x/text/language in golang.org/x/text before 0.3.7 can panic with an out-of-bounds read during BCP 47 language tag parsing. Index calculation is mishandled. If parsing untrusted user input, this can be used as a vector for a denial-of-service attack."
+    },
+    {
+        "Modified": "2023-01-05T04:50:00",
+        "Published": "2022-12-26T06:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-754",
+        "id": "CVE-2021-44856",
+        "impact": {},
+        "last-modified": "2023-01-05T04:50:00",
+        "references": [
+            "https://phabricator.wikimedia.org/T271037"
+        ],
+        "summary": "An issue was discovered in MediaWiki before 1.35.5, 1.36.x before 1.36.3, and 1.37.x before 1.37.1. A title blocked by AbuseFilter can be created via Special:ChangeContentModel due to the mishandling of the EditFilterMergedContent hook return value."
+    },
+    {
+        "Modified": "2023-01-05T04:49:00",
+        "Published": "2022-12-26T06:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-22",
+        "id": "CVE-2021-39369",
+        "impact": {},
+        "last-modified": "2023-01-05T04:49:00",
+        "references": [
+            "https://www.cisa.gov/uscert/ics/advisories/icsma-21-187-01",
+            "https://www.usa.philips.com/healthcare",
+            "https://www.youtube.com/watch?v=7zC84TNpIxw"
+        ],
+        "summary": "In Philips (formerly Carestream) Vue MyVue PACS through 12.2.x.x, the VideoStream function allows Path Traversal by authenticated users to access files stored outside of the web root."
+    },
+    {
+        "Modified": "2023-01-05T04:49:00",
+        "Published": "2022-12-26T06:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "NVD-CWE-noinfo",
+        "id": "CVE-2022-41767",
+        "impact": {},
+        "last-modified": "2023-01-05T04:49:00",
+        "references": [
+            "https://phabricator.wikimedia.org/T316304"
+        ],
+        "summary": "An issue was discovered in MediaWiki before 1.35.8, 1.36.x and 1.37.x before 1.37.5, and 1.38.x before 1.38.3. When changes made by an IP address are reassigned to a user (using reassignEdits.php), the changes will still be attributed to the IP address on Special:Contributions when doing a range lookup."
+    },
+    {
+        "Modified": "2023-01-05T04:49:00",
+        "Published": "2022-12-25T05:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-89",
+        "id": "CVE-2022-44015",
+        "impact": {},
+        "last-modified": "2023-01-05T04:49:00",
+        "references": [
+            "https://sec-consult.com/vulnerability-lab/advisory/multiple-critical-vulnerabilities-in-simmeth-system-gmbh-lieferantenmanager/"
+        ],
+        "summary": "An issue was discovered in Simmeth Lieferantenmanager before 5.6. An attacker can inject raw SQL queries. By activating MSSQL features, the attacker is able to execute arbitrary commands on the MSSQL server via the xp_cmdshell extended procedure."
+    },
+    {
+        "Modified": "2023-01-05T04:48:00",
+        "Published": "2022-12-27T22:15:00",
+        "access": {},
+        "assigner": "security@golang.org",
+        "cvss": null,
+        "cwe": "CWE-476",
+        "id": "CVE-2021-4236",
+        "impact": {},
+        "last-modified": "2023-01-05T04:48:00",
+        "references": [
+            "https://github.com/ecnepsnai/web/commit/5a78f8d5c41ce60dcf9f61aaf47a7a8dc3e0002f",
+            "https://pkg.go.dev/vuln/GO-2021-0107"
+        ],
+        "summary": "Web Sockets do not execute any AuthenticateMethod methods which may be set, leading to a nil pointer dereference if the returned UserData pointer is assumed to be non-nil, or authentication bypass. This issue only affects WebSockets with an AuthenticateMethod hook. Request handlers that do not explicitly use WebSockets are not vulnerable."
+    },
+    {
+        "Modified": "2023-01-05T04:46:00",
+        "Published": "2022-12-27T22:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-863",
+        "id": "CVE-2022-45778",
+        "impact": {},
+        "last-modified": "2023-01-05T04:46:00",
+        "references": [
+            "https://gist.github.com/yinfei6/6ffff06db3f7d4c24de2f784c0db10df"
+        ],
+        "summary": "https://www.hillstonenet.com.cn/ Hillstone Firewall SG-6000 <= 5.0.4.0 is vulnerable to Incorrect Access Control. There is a permission bypass vulnerability in the Hillstone WEB application firewall. An attacker can enter the background of the firewall with super administrator privileges through a configuration error in report.m."
+    },
+    {
+        "Modified": "2023-01-05T04:45:00",
+        "Published": "2022-12-27T18:15:00",
+        "access": {},
+        "assigner": "cybersecurity@dahuatech.com",
+        "cvss": null,
+        "cwe": "CWE-522",
+        "id": "CVE-2022-45423",
+        "impact": {},
+        "last-modified": "2023-01-05T04:45:00",
+        "references": [
+            "https://www.dahuasecurity.com/support/cybersecurity/details/1137"
+        ],
+        "summary": "Some Dahua software products have a vulnerability of unauthenticated request of MQTT credentials. An attacker can obtain encrypted MQTT credentials by sending a specific crafted packet to the vulnerable interface (the credentials cannot be directly exploited)."
+    },
+    {
+        "Modified": "2023-01-05T04:45:00",
+        "Published": "2022-12-26T06:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-203",
+        "id": "CVE-2022-41765",
+        "impact": {},
+        "last-modified": "2023-01-05T04:45:00",
+        "references": [
+            "https://phabricator.wikimedia.org/T309894"
+        ],
+        "summary": "An issue was discovered in MediaWiki before 1.35.8, 1.36.x and 1.37.x before 1.37.5, and 1.38.x before 1.38.3. HTMLUserTextField exposes the existence of hidden users."
+    },
+    {
+        "Modified": "2023-01-05T04:44:00",
+        "Published": "2022-12-30T01:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-89",
+        "id": "CVE-2022-44137",
+        "impact": {},
+        "last-modified": "2023-01-05T04:44:00",
+        "references": [
+            "https://github.com/y1s3m0/vulnfind/blob/main/Sanitization%20Management%20System%20Project%20CMS/sqli_view_inquiry.md"
+        ],
+        "summary": "SourceCodester Sanitization Management System 1.0 is vulnerable to SQL Injection."
+    },
+    {
+        "Modified": "2023-01-05T04:44:00",
+        "Published": "2022-12-29T19:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-22",
+        "id": "CVE-2022-46178",
+        "impact": {},
+        "last-modified": "2023-01-05T04:44:00",
+        "references": [
+            "https://github.com/metersphere/metersphere/security/advisories/GHSA-9p62-x3c5-hr5p"
+        ],
+        "summary": "MeterSphere is a one-stop open source continuous testing platform, covering test management, interface testing, UI testing and performance testing. Versions prior to 2.5.1 allow users to upload a file, but do not validate the file name, which may lead to upload file to any path. The vulnerability has been fixed in v2.5.1. There are no workarounds."
+    },
+    {
+        "Modified": "2023-01-05T04:43:00",
+        "Published": "2022-12-27T22:15:00",
+        "access": {},
+        "assigner": "security@golang.org",
+        "cvss": null,
+        "cwe": "CWE-331",
+        "id": "CVE-2021-4238",
+        "impact": {},
+        "last-modified": "2023-01-05T04:43:00",
+        "references": [
+            "https://github.com/Masterminds/goutils/commit/869801f20f9f1e7ecdbdb6422049d8241270d5e1",
+            "https://pkg.go.dev/vuln/GO-2022-0411"
+        ],
+        "summary": "Randomly-generated alphanumeric strings contain significantly less entropy than expected. The RandomAlphaNumeric and CryptoRandomAlphaNumeric functions always return strings containing at least one digit from 0 to 9. This significantly reduces the amount of entropy in short strings generated by these functions."
+    },
+    {
+        "Modified": "2023-01-05T04:43:00",
+        "Published": "2022-12-27T22:15:00",
+        "access": {},
+        "assigner": "security@golang.org",
+        "cvss": null,
+        "cwe": "CWE-326",
+        "id": "CVE-2022-2582",
+        "impact": {},
+        "last-modified": "2023-01-05T04:43:00",
+        "references": [
+            "https://github.com/aws/aws-sdk-go/commit/35fa6ddf45c061e0f08d3a3b5119f8f4da38f6d1",
+            "https://pkg.go.dev/vuln/GO-2022-0391"
+        ],
+        "summary": "The AWS S3 Crypto SDK sends an unencrypted hash of the plaintext alongside the ciphertext as a metadata field. This hash can be used to brute force the plaintext, if the hash is readable to the attacker. AWS now blocks this metadata field, but older SDK versions still send it."
+    },
+    {
+        "Modified": "2023-01-05T04:43:00",
+        "Published": "2022-12-27T22:15:00",
+        "access": {},
+        "assigner": "security@golang.org",
+        "cvss": null,
+        "cwe": "CWE-362",
+        "id": "CVE-2022-2583",
+        "impact": {},
+        "last-modified": "2023-01-05T04:43:00",
+        "references": [
+            "https://github.com/ntbosscher/gobase/commit/a8d40bce9c429d324122d18c446924dab809e812",
+            "https://pkg.go.dev/vuln/GO-2022-0400"
+        ],
+        "summary": "A race condition can cause incorrect HTTP request routing."
+    },
+    {
+        "Modified": "2023-01-05T04:37:00",
+        "Published": "2022-12-27T18:15:00",
+        "access": {},
+        "assigner": "cybersecurity@dahuatech.com",
+        "cvss": null,
+        "cwe": "CWE-918",
+        "id": "CVE-2022-45429",
+        "impact": {},
+        "last-modified": "2023-01-05T04:37:00",
+        "references": [
+            "https://www.dahuasecurity.com/support/cybersecurity/details/1137"
+        ],
+        "summary": "Some Dahua software products have a vulnerability of server-side request forgery (SSRF). An Attacker can access internal resources by concatenating links (URL) that conform to specific rules."
+    },
+    {
+        "Modified": "2023-01-05T04:37:00",
+        "Published": "2022-12-27T18:15:00",
+        "access": {},
+        "assigner": "cybersecurity@dahuatech.com",
+        "cvss": null,
+        "cwe": "CWE-287",
+        "id": "CVE-2022-45433",
+        "impact": {},
+        "last-modified": "2023-01-05T04:37:00",
+        "references": [
+            "https://www.dahuasecurity.com/support/cybersecurity/details/1137"
+        ],
+        "summary": "Some Dahua software products have a vulnerability of unauthenticated traceroute host from remote DSS Server. After bypassing the firewall access control policy, by sending a specific crafted packet to the vulnerable interface, an attacker could get the traceroute results."
+    },
+    {
+        "Modified": "2023-01-05T04:36:00",
+        "Published": "2022-12-27T18:15:00",
+        "access": {},
+        "assigner": "cybersecurity@dahuatech.com",
+        "cvss": null,
+        "cwe": "CWE-522",
+        "id": "CVE-2022-45424",
+        "impact": {},
+        "last-modified": "2023-01-05T04:36:00",
+        "references": [
+            "https://www.dahuasecurity.com/support/cybersecurity/details/1137"
+        ],
+        "summary": "Some Dahua software products have a vulnerability of unauthenticated request of AES crypto key. An attacker can obtain the AES crypto key by sending a specific crafted packet to the vulnerable interface."
+    },
+    {
+        "Modified": "2023-01-05T04:36:00",
+        "Published": "2022-12-27T18:15:00",
+        "access": {},
+        "assigner": "cybersecurity@dahuatech.com",
+        "cvss": null,
+        "cwe": "NVD-CWE-noinfo",
+        "id": "CVE-2022-45428",
+        "impact": {},
+        "last-modified": "2023-01-05T04:36:00",
+        "references": [
+            "https://www.dahuasecurity.com/support/cybersecurity/details/1137"
+        ],
+        "summary": "Some Dahua software products have a vulnerability of sensitive information leakage. After obtaining the permissions of administrators, by sending a specific crafted packet to the vulnerable interface, an attacker can obtain the debugging information."
+    },
+    {
+        "Modified": "2023-01-05T04:35:00",
+        "Published": "2022-12-27T18:15:00",
+        "access": {},
+        "assigner": "cybersecurity@dahuatech.com",
+        "cvss": null,
+        "cwe": "CWE-434",
+        "id": "CVE-2022-45427",
+        "impact": {},
+        "last-modified": "2023-01-05T04:35:00",
+        "references": [
+            "https://www.dahuasecurity.com/support/cybersecurity/details/1137"
+        ],
+        "summary": "Some Dahua software products have a vulnerability of unrestricted upload of file. After obtaining the permissions of administrators, by sending a specific crafted packet to the vulnerable interface, an attacker can upload arbitrary files."
+    },
+    {
+        "Modified": "2023-01-05T04:34:00",
+        "Published": "2022-12-27T18:15:00",
+        "access": {},
+        "assigner": "cybersecurity@dahuatech.com",
+        "cvss": null,
+        "cwe": "CWE-287",
+        "id": "CVE-2022-45431",
+        "impact": {},
+        "last-modified": "2023-01-05T04:34:00",
+        "references": [
+            "https://www.dahuasecurity.com/support/cybersecurity/details/1137"
+        ],
+        "summary": "Some Dahua software products have a vulnerability of unauthenticated restart of remote DSS Server. After bypassing the firewall access control policy, by sending a specific crafted packet to the vulnerable interface, an attacker could unauthenticated restart of remote DSS Server."
+    },
+    {
+        "Modified": "2023-01-05T04:34:00",
+        "Published": "2022-12-27T18:15:00",
+        "access": {},
+        "assigner": "cybersecurity@dahuatech.com",
+        "cvss": null,
+        "cwe": "CWE-287",
+        "id": "CVE-2022-45432",
+        "impact": {},
+        "last-modified": "2023-01-05T04:34:00",
+        "references": [
+            "https://www.dahuasecurity.com/support/cybersecurity/details/1137"
+        ],
+        "summary": "Some Dahua software products have a vulnerability of unauthenticated search for devices. After bypassing the firewall access control policy, by sending a specific crafted packet to the vulnerable interface, an attacker could unauthenticated search for devices in range of IPs from remote DSS Server."
+    },
+    {
+        "Modified": "2023-01-05T04:33:00",
+        "Published": "2022-12-27T18:15:00",
+        "access": {},
+        "assigner": "cybersecurity@dahuatech.com",
+        "cvss": null,
+        "cwe": "CWE-287",
+        "id": "CVE-2022-45430",
+        "impact": {},
+        "last-modified": "2023-01-05T04:33:00",
+        "references": [
+            "https://www.dahuasecurity.com/support/cybersecurity/details/1137"
+        ],
+        "summary": "Some Dahua software products have a vulnerability of unauthenticated enable or disable SSHD service. After bypassing the firewall access control policy, by sending a specific crafted packet to the vulnerable interface, an attacker could enable or disable the SSHD service."
+    },
+    {
+        "Modified": "2023-01-05T04:32:00",
+        "Published": "2022-12-27T18:15:00",
+        "access": {},
+        "assigner": "cybersecurity@dahuatech.com",
+        "cvss": null,
+        "cwe": "CWE-798",
+        "id": "CVE-2022-45425",
+        "impact": {},
+        "last-modified": "2023-01-05T04:32:00",
+        "references": [
+            "https://www.dahuasecurity.com/support/cybersecurity/details/1137"
+        ],
+        "summary": "Some Dahua software products have a vulnerability of using of hard-coded cryptographic key. An attacker can obtain the AES crypto key by exploiting this vulnerability."
+    },
+    {
+        "Modified": "2023-01-05T04:31:00",
+        "Published": "2022-12-27T18:15:00",
+        "access": {},
+        "assigner": "cybersecurity@dahuatech.com",
+        "cvss": null,
+        "cwe": "CWE-287",
+        "id": "CVE-2022-45434",
+        "impact": {},
+        "last-modified": "2023-01-05T04:31:00",
+        "references": [
+            "https://www.dahuasecurity.com/support/cybersecurity/details/1137"
+        ],
+        "summary": "Some Dahua software products have a vulnerability of unauthenticated un-throttled ICMP requests on remote DSS Server. After bypassing the firewall access control policy, by sending a specific crafted packet to the vulnerable interface, an attacker could exploit the victim server to launch ICMP request attack to the designated target host."
+    },
+    {
+        "Modified": "2023-01-05T04:29:00",
+        "Published": "2022-12-27T18:15:00",
+        "access": {},
+        "assigner": "cybersecurity@dahuatech.com",
+        "cvss": null,
+        "cwe": "CWE-552",
+        "id": "CVE-2022-45426",
+        "impact": {},
+        "last-modified": "2023-01-05T04:29:00",
+        "references": [
+            "https://www.dahuasecurity.com/support/cybersecurity/details/1137"
+        ],
+        "summary": "Some Dahua software products have a vulnerability of unrestricted download of file. After obtaining the permissions of ordinary users, by sending a specific crafted packet to the vulnerable interface, an attacker can download arbitrary files."
+    },
+    {
+        "Modified": "2023-01-05T03:28:00",
+        "Published": "2022-12-26T13:15:00",
+        "access": {},
+        "assigner": "contact@wpscan.com",
+        "cvss": null,
+        "cwe": "CWE-89",
+        "id": "CVE-2022-4152",
+        "impact": {},
+        "last-modified": "2023-01-05T03:28:00",
+        "references": [
+            "https://wpscan.com/vulnerability/4b058966-0859-42ed-a796-b6c6cb08a9fc",
+            "https://bulletin.iese.de/post/contest-gallery_19-1-4-1_4"
+        ],
+        "summary": "The Contest Gallery WordPress plugin before 19.1.5, Contest Gallery Pro WordPress plugin before 19.1.5 do not escape the option_id POST parameter before concatenating it to an SQL query in edit-options.php. This may allow malicious users with at least author privilege to leak sensitive information from the site's database."
+    },
+    {
+        "Modified": "2023-01-05T03:19:00",
+        "Published": "2022-12-26T07:15:00",
+        "access": {},
+        "assigner": "cna@vuldb.com",
+        "cvss": null,
+        "cwe": "CWE-416",
+        "id": "CVE-2019-25085",
+        "impact": {},
+        "last-modified": "2023-01-05T03:19:00",
+        "references": [
+            "https://vuldb.com/?id.216789",
+            "https://github.com/GNOME/gvdb/commit/d83587b2a364eb9a9a53be7e6a708074e252de14",
+            "https://vuldb.com/?ctiid.216789"
+        ],
+        "summary": "A vulnerability was found in GNOME gvdb. It has been classified as critical. This affects the function gvdb_table_write_contents_async of the file gvdb-builder.c. The manipulation leads to use after free. It is possible to initiate the attack remotely. The name of the patch is d83587b2a364eb9a9a53be7e6a708074e252de14. It is recommended to apply a patch to fix this issue. The identifier VDB-216789 was assigned to this vulnerability."
+    },
+    {
+        "Modified": "2023-01-05T03:14:00",
+        "Published": "2022-12-26T08:15:00",
+        "access": {},
+        "assigner": "cna@vuldb.com",
+        "cvss": null,
+        "cwe": "CWE-1321",
+        "id": "CVE-2022-4742",
+        "impact": {},
+        "last-modified": "2023-01-05T03:14:00",
+        "references": [
+            "https://github.com/manuelstofer/json-pointer/commit/859c9984b6c407fc2d5a0a7e47c7274daa681941",
+            "https://github.com/manuelstofer/json-pointer/pull/36",
+            "https://vuldb.com/?ctiid.216794",
+            "https://vuldb.com/?id.216794"
+        ],
+        "summary": "A vulnerability, which was classified as critical, has been found in json-pointer. Affected by this issue is the function set of the file index.js. The manipulation leads to improperly controlled modification of object prototype attributes ('prototype pollution'). The attack may be launched remotely. The name of the patch is 859c9984b6c407fc2d5a0a7e47c7274daa681941. It is recommended to apply a patch to fix this issue. VDB-216794 is the identifier assigned to this vulnerability."
+    },
+    {
+        "Modified": "2023-01-05T03:06:00",
+        "Published": "2022-12-26T07:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-1333",
+        "id": "CVE-2021-35065",
+        "impact": {},
+        "last-modified": "2023-01-05T03:06:00",
+        "references": [
+            "https://github.com/gulpjs/glob-parent/commit/3e9f04a3b4349db7e1962d87c9a7398cda51f339",
+            "https://github.com/gulpjs/glob-parent/pull/49",
+            "https://security.snyk.io/vuln/SNYK-JS-GLOBPARENT-1314294"
+        ],
+        "summary": "The glob-parent package before 6.0.1 for Node.js allows ReDoS (regular expression denial of service) attacks against the enclosure regular expression."
+    },
+    {
+        "Modified": "2023-01-05T03:00:00",
+        "Published": "2022-12-26T07:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2021-30134",
+        "impact": {},
+        "last-modified": "2023-01-05T03:00:00",
+        "references": [
+            "https://wpscan.com/vulnerability/0b547728-27d2-402e-ae17-90d539344ec7"
+        ],
+        "summary": "php-mod/curl (a wrapper of the PHP cURL extension) before 2.3.2 allows XSS via the post_file_path_upload.php key parameter and the POST data to post_multidimensional.php."
+    },
+    {
+        "Modified": "2023-01-05T02:50:00",
+        "Published": "2022-12-26T05:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-476",
+        "id": "CVE-2021-44758",
+        "impact": {},
+        "last-modified": "2023-01-05T02:50:00",
+        "references": [
+            "https://github.com/heimdal/heimdal/security/advisories/GHSA-69h9-669w-88xv",
+            "https://github.com/heimdal/heimdal/commit/f9ec7002cdd526ae84fbacbf153162e118f22580"
+        ],
+        "summary": "Heimdal before 7.7.1 allows attackers to cause a NULL pointer dereference in a SPNEGO acceptor via a preferred_mech_type of GSS_C_NO_OID and a nonzero initial_response value to send_accept."
+    },
+    {
+        "Modified": "2023-01-05T02:44:00",
+        "Published": "2022-12-25T19:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-78",
+        "id": "CVE-2022-40005",
+        "impact": {},
+        "last-modified": "2023-01-05T02:44:00",
+        "references": [
+            "https://seclists.org/fulldisclosure/2022/Dec/13",
+            "https://cyberdanube.com/en/authenticated-command-injection-in-intelbras-wifiber-120ac-inmesh/"
+        ],
+        "summary": "Intelbras WiFiber 120AC inMesh before 1-1-220826 allows command injection by authenticated users, as demonstrated by the /boaform/formPing6 and /boaform/formTracert URIs for ping and traceroute."
+    },
+    {
+        "Modified": "2023-01-05T02:34:00",
+        "Published": "2022-12-25T16:15:00",
+        "access": {},
+        "assigner": "cna@vuldb.com",
+        "cvss": null,
+        "cwe": "CWE-1321",
+        "id": "CVE-2021-4278",
+        "impact": {},
+        "last-modified": "2023-01-05T02:34:00",
+        "references": [
+            "https://vuldb.com/?id.216765",
+            "https://vuldb.com/?ctiid.216765",
+            "https://github.com/cronvel/tree-kit/releases/tag/v0.7.0",
+            "https://github.com/cronvel/tree-kit/commit/a63f559c50d70e8cb2eaae670dec25d1dbc4afcd"
+        ],
+        "summary": "A vulnerability classified as problematic has been found in cronvel tree-kit up to 0.6.x. This affects an unknown part. The manipulation leads to improperly controlled modification of object prototype attributes ('prototype pollution'). Upgrading to version 0.7.0 is able to address this issue. The name of the patch is a63f559c50d70e8cb2eaae670dec25d1dbc4afcd. It is recommended to upgrade the affected component. The identifier VDB-216765 was assigned to this vulnerability."
+    },
+    {
+        "Modified": "2023-01-05T02:26:00",
+        "Published": "2022-12-25T20:15:00",
+        "access": {},
+        "assigner": "cna@vuldb.com",
+        "cvss": null,
+        "cwe": "CWE-789",
+        "id": "CVE-2022-4741",
+        "impact": {},
+        "last-modified": "2023-01-05T02:26:00",
+        "references": [
+            "https://github.com/sajari/docconv/releases/tag/v1.2.1",
+            "https://vuldb.com/?id.216779",
+            "https://github.com/sajari/docconv/commit/42bcff666855ab978e67a9041d0cdea552f20301",
+            "https://github.com/sajari/docconv/pull/111",
+            "https://vuldb.com/?ctiid.216779"
+        ],
+        "summary": "A vulnerability was found in docconv up to 1.2.0 and classified as problematic. This issue affects the function ConvertDocx/ConvertODT/ConvertPages/ConvertXML/XMLToText. The manipulation leads to uncontrolled memory allocation. The attack may be initiated remotely. Upgrading to version 1.2.1 is able to address this issue. The name of the patch is 42bcff666855ab978e67a9041d0cdea552f20301. It is recommended to upgrade the affected component. The associated identifier of this vulnerability is VDB-216779."
+    },
+    {
+        "Modified": "2023-01-05T02:20:00",
+        "Published": "2022-12-25T19:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-668",
+        "id": "CVE-2022-41317",
+        "impact": {},
+        "last-modified": "2023-01-05T02:20:00",
+        "references": [
+            "http://www.squid-cache.org/Versions/v5/changesets/SQUID-2022_1.patch",
+            "http://www.squid-cache.org/Versions/v4/changesets/SQUID-2022_1.patch",
+            "https://www.openwall.com/lists/oss-security/2022/09/23/1",
+            "https://github.com/squid-cache/squid/security/advisories/GHSA-rcg9-7fqm-83mq"
+        ],
+        "summary": "An issue was discovered in Squid 4.9 through 4.17 and 5.0.6 through 5.6. Due to inconsistent handling of internal URIs, there can be Exposure of Sensitive Information about clients using the proxy via an HTTPS request to an internal cache manager URL. This is fixed in 5.7."
+    },
+    {
+        "Modified": "2023-01-05T02:17:00",
+        "Published": "2022-12-25T19:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-125",
+        "id": "CVE-2022-41318",
+        "impact": {},
+        "last-modified": "2023-01-05T02:17:00",
+        "references": [
+            "https://github.com/squid-cache/squid/security/advisories/GHSA-394c-rr7q-6g78",
+            "http://www.squid-cache.org/Versions/v5/changesets/SQUID-2022_2.patch",
+            "http://www.squid-cache.org/Versions/v4/changesets/SQUID-2022_2.patch",
+            "https://www.openwall.com/lists/oss-security/2022/09/23/2"
+        ],
+        "summary": "A buffer over-read was discovered in libntlmauth in Squid 2.5 through 5.6. Due to incorrect integer-overflow protection, the SSPI and SMB authentication helpers are vulnerable to reading unintended memory locations. In some configurations, cleartext credentials from these locations are sent to a client. This is fixed in 5.7."
+    },
+    {
+        "Modified": "2023-01-05T02:15:00",
+        "Published": "2023-01-05T02:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2023-22622",
+        "impact": {},
+        "last-modified": "2023-01-05T02:15:00",
+        "references": [
+            "https://github.com/WordPress/WordPress/blob/dca7b5204b5fea54e6d1774689777b359a9222ab/wp-cron.php#L5-L8",
+            "https://developer.wordpress.org/plugins/cron/",
+            "https://www.tenable.com/plugins/was/113449",
+            "https://medium.com/@thecpanelguy/the-nightmare-that-is-wpcron-php-ae31c1d3ae30",
+            "https://wordpress.org/about/security/",
+            "https://wordpress.org/support/article/how-to-install-wordpress/"
+        ],
+        "summary": "WordPress through 6.1.1 depends on unpredictable client visits to cause wp-cron.php execution and the resulting security updates, and the source code describes \"the scenario where a site may not receive enough visits to execute scheduled tasks in a timely manner,\" but neither the installation guide nor the security guide mentions this default behavior, or alerts the user about security risks on installations with very few visits."
+    },
+    {
+        "Modified": "2023-01-05T02:05:00",
+        "Published": "2022-12-25T20:15:00",
+        "access": {},
+        "assigner": "cna@vuldb.com",
+        "cvss": null,
+        "cwe": "CWE-1321",
+        "id": "CVE-2020-36632",
+        "impact": {},
+        "last-modified": "2023-01-05T02:05:00",
+        "references": [
+            "https://github.com/hughsk/flat/pull/106",
+            "https://vuldb.com/?ctiid.216777",
+            "https://vuldb.com/?id.216777",
+            "https://github.com/hughsk/flat/issues/105",
+            "https://github.com/hughsk/flat/releases/tag/5.0.1",
+            "https://github.com/hughsk/flat/commit/20ef0ef55dfa028caddaedbcb33efbdb04d18e13"
+        ],
+        "summary": "A vulnerability, which was classified as critical, was found in hughsk flat up to 5.0.0. This affects the function unflatten of the file index.js. The manipulation leads to improperly controlled modification of object prototype attributes ('prototype pollution'). It is possible to initiate the attack remotely. Upgrading to version 5.0.1 is able to address this issue. The name of the patch is 20ef0ef55dfa028caddaedbcb33efbdb04d18e13. It is recommended to upgrade the affected component. The identifier VDB-216777 was assigned to this vulnerability."
+    },
+    {
+        "Modified": "2023-01-05T01:57:00",
+        "Published": "2022-12-25T20:15:00",
+        "access": {},
+        "assigner": "cna@vuldb.com",
+        "cvss": null,
+        "cwe": "CWE-89",
+        "id": "CVE-2020-36631",
+        "impact": {},
+        "last-modified": "2023-01-05T01:57:00",
+        "references": [
+            "https://github.com/barronwaffles/dwc_network_server_emulator/commit/f70eb21394f75019886fbc2fb536de36161ba422",
+            "https://vuldb.com/?ctiid.216772",
+            "https://vuldb.com/?id.216772",
+            "https://github.com/barronwaffles/dwc_network_server_emulator/pull/538"
+        ],
+        "summary": "A vulnerability was found in barronwaffles dwc_network_server_emulator. It has been declared as critical. This vulnerability affects the function update_profile of the file gamespy/gs_database.py. The manipulation of the argument firstname/lastname leads to sql injection. The attack can be initiated remotely. The name of the patch is f70eb21394f75019886fbc2fb536de36161ba422. It is recommended to apply a patch to fix this issue. The identifier of this vulnerability is VDB-216772."
+    },
+    {
+        "Modified": "2023-01-05T01:51:00",
+        "Published": "2022-12-25T20:15:00",
+        "access": {},
+        "assigner": "cna@vuldb.com",
+        "cvss": null,
+        "cwe": "CWE-89",
+        "id": "CVE-2020-36630",
+        "impact": {},
+        "last-modified": "2023-01-05T01:51:00",
+        "references": [
+            "https://vuldb.com/?ctiid.216771",
+            "https://github.com/FreePBX/cdr/releases/tag/release%2F14.0.5.21",
+            "https://vuldb.com/?id.216771",
+            "https://github.com/FreePBX/cdr/commit/f1a9eea2dfff30fb99d825bac194a676a82b9ec8"
+        ],
+        "summary": "A vulnerability was found in FreePBX cdr 14.0. It has been classified as critical. This affects the function ajaxHandler of the file ucp/Cdr.class.php. The manipulation of the argument limit/offset leads to sql injection. Upgrading to version 14.0.5.21 is able to address this issue. The name of the patch is f1a9eea2dfff30fb99d825bac194a676a82b9ec8. It is recommended to upgrade the affected component. The associated identifier of this vulnerability is VDB-216771."
+    },
+    {
+        "Modified": "2023-01-05T01:48:00",
+        "Published": "2023-01-05T01:15:00",
+        "access": {},
+        "assigner": "security@huntr.dev",
+        "cvss": null,
+        "cwe": "CWE-1021",
+        "id": "CVE-2023-0057",
+        "impact": {},
+        "last-modified": "2023-01-05T01:48:00",
+        "references": [
+            "https://github.com/pyload/pyload/commit/bd2a31b7de54570b919aa1581d486e6ee18c0f64",
+            "https://huntr.dev/bounties/12b64f91-d048-490c-94b0-37514b6d694d"
+        ],
+        "summary": "Improper Restriction of Rendered UI Layers or Frames in GitHub repository pyload/pyload prior to 0.5.0b3.dev33."
+    },
+    {
+        "Modified": "2023-01-05T01:48:00",
         "Published": "2023-01-04T23:15:00",
         "access": {},
         "assigner": "cna@vuldb.com",
@@ -8,7 +688,7 @@
         "cwe": "CWE-79",
         "id": "CVE-2022-4876",
         "impact": {},
-        "last-modified": "2023-01-04T23:15:00",
+        "last-modified": "2023-01-05T01:48:00",
         "references": [
             "https://vuldb.com/?ctiid.217427",
             "https://vuldb.com/?id.217427",
@@ -17,6 +697,25 @@
             "https://github.com/kaltura/mwEmbed/commit/13b8812ebc8c9fa034eed91ab35ba8423a528c0b"
         ],
         "summary": "A vulnerability was found in Kaltura mwEmbed up to 2.96.rc1 and classified as problematic. This issue affects some unknown processing of the file includes/DefaultSettings.php. The manipulation of the argument HTTP_X_FORWARDED_HOST leads to cross site scripting. The attack may be initiated remotely. Upgrading to version 2.96.rc2 is able to address this issue. The name of the patch is 13b8812ebc8c9fa034eed91ab35ba8423a528c0b. It is recommended to upgrade the affected component. The associated identifier of this vulnerability is VDB-217427."
+    },
+    {
+        "Modified": "2023-01-05T01:45:00",
+        "Published": "2022-12-25T18:15:00",
+        "access": {},
+        "assigner": "cna@vuldb.com",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2019-25084",
+        "impact": {},
+        "last-modified": "2023-01-05T01:45:00",
+        "references": [
+            "https://vuldb.com/?id.216767",
+            "https://github.com/sindresorhus/hide-files-on-github/commit/9de0c57df81db1178e0e79431d462f6d9842742e",
+            "https://github.com/sindresorhus/hide-files-on-github/pull/73",
+            "https://github.com/sindresorhus/hide-files-on-github/releases/tag/3.0.0",
+            "https://vuldb.com/?ctiid.216767"
+        ],
+        "summary": "A vulnerability, which was classified as problematic, has been found in Hide Files on GitHub up to 2.x. This issue affects the function addEventListener of the file extension/options.js. The manipulation leads to cross site scripting. The attack may be initiated remotely. Upgrading to version 3.0.0 is able to address this issue. The name of the patch is 9de0c57df81db1178e0e79431d462f6d9842742e. It is recommended to upgrade the affected component. The associated identifier of this vulnerability is VDB-216767."
     },
     {
         "Modified": "2023-01-04T22:27:00",
@@ -893,688 +1592,5 @@
             "https://helpx.adobe.com/security/products/experience-manager/apsb22-59.html"
         ],
         "summary": "Adobe Experience Manager version 6.5.14 (and earlier) is affected by a reflected Cross-Site Scripting (XSS) vulnerability. If a low-privileged attacker is able to convince a victim to visit a URL referencing a vulnerable page, malicious JavaScript content may be executed within the context of the victim's browser."
-    },
-    {
-        "Modified": "2023-01-04T21:15:00",
-        "Published": "2022-12-19T20:15:00",
-        "access": {},
-        "assigner": "psirt@adobe.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-42346",
-        "impact": {},
-        "last-modified": "2023-01-04T21:15:00",
-        "references": [
-            "https://helpx.adobe.com/security/products/experience-manager/apsb22-59.html"
-        ],
-        "summary": "Adobe Experience Manager version 6.5.14 (and earlier) is affected by a reflected Cross-Site Scripting (XSS) vulnerability. If a low-privileged attacker is able to convince a victim to visit a URL referencing a vulnerable page, malicious JavaScript content may be executed within the context of the victim's browser."
-    },
-    {
-        "Modified": "2023-01-04T21:15:00",
-        "Published": "2022-12-19T20:15:00",
-        "access": {},
-        "assigner": "psirt@adobe.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-42352",
-        "impact": {},
-        "last-modified": "2023-01-04T21:15:00",
-        "references": [
-            "https://helpx.adobe.com/security/products/experience-manager/apsb22-59.html"
-        ],
-        "summary": "Adobe Experience Manager version 6.5.14 (and earlier) is affected by a reflected Cross-Site Scripting (XSS) vulnerability. If a low-privileged attacker is able to convince a victim to visit a URL referencing a vulnerable page, malicious JavaScript content may be executed within the context of the victim's browser."
-    },
-    {
-        "Modified": "2023-01-04T21:15:00",
-        "Published": "2022-12-16T16:15:00",
-        "access": {},
-        "assigner": "psirt@adobe.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-35694",
-        "impact": {},
-        "last-modified": "2023-01-04T21:15:00",
-        "references": [
-            "https://helpx.adobe.com/security/products/experience-manager/apsb22-59.html"
-        ],
-        "summary": "Adobe Experience Manager version 6.5.14 (and earlier) is affected by a reflected Cross-Site Scripting (XSS) vulnerability. If a low-privileged attacker is able to convince a victim to visit a URL referencing a vulnerable page, malicious JavaScript content may be executed within the context of the victim's browser."
-    },
-    {
-        "Modified": "2023-01-04T21:15:00",
-        "Published": "2022-12-16T16:15:00",
-        "access": {},
-        "assigner": "psirt@adobe.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-35696",
-        "impact": {},
-        "last-modified": "2023-01-04T21:15:00",
-        "references": [
-            "https://helpx.adobe.com/security/products/experience-manager/apsb22-59.html"
-        ],
-        "summary": "Adobe Experience Manager version 6.5.14 (and earlier) is affected by a reflected Cross-Site Scripting (XSS) vulnerability. If a low-privileged attacker is able to convince a victim to visit a URL referencing a vulnerable page, malicious JavaScript content may be executed within the context of the victim's browser."
-    },
-    {
-        "Modified": "2023-01-04T21:15:00",
-        "Published": "2022-12-16T16:15:00",
-        "access": {},
-        "assigner": "psirt@adobe.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-44462",
-        "impact": {},
-        "last-modified": "2023-01-04T21:15:00",
-        "references": [
-            "https://helpx.adobe.com/security/products/experience-manager/apsb22-59.html"
-        ],
-        "summary": "Adobe Experience Manager version 6.5.14 (and earlier) is affected by a reflected Cross-Site Scripting (XSS) vulnerability. If a low-privileged attacker is able to convince a victim to visit a URL referencing a vulnerable page, malicious JavaScript content may be executed within the context of the victim's browser."
-    },
-    {
-        "Modified": "2023-01-04T21:15:00",
-        "Published": "2022-12-16T16:15:00",
-        "access": {},
-        "assigner": "psirt@adobe.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-44468",
-        "impact": {},
-        "last-modified": "2023-01-04T21:15:00",
-        "references": [
-            "https://helpx.adobe.com/security/products/experience-manager/apsb22-59.html"
-        ],
-        "summary": "Adobe Experience Manager version 6.5.14 (and earlier) is affected by a reflected Cross-Site Scripting (XSS) vulnerability. If a low-privileged attacker is able to convince a victim to visit a URL referencing a vulnerable page, malicious JavaScript content may be executed within the context of the victim's browser."
-    },
-    {
-        "Modified": "2023-01-04T21:15:00",
-        "Published": "2022-12-16T16:15:00",
-        "access": {},
-        "assigner": "psirt@adobe.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-44469",
-        "impact": {},
-        "last-modified": "2023-01-04T21:15:00",
-        "references": [
-            "https://helpx.adobe.com/security/products/experience-manager/apsb22-59.html"
-        ],
-        "summary": "Adobe Experience Manager version 6.5.14 (and earlier) is affected by a reflected Cross-Site Scripting (XSS) vulnerability. If a low-privileged attacker is able to convince a victim to visit a URL referencing a vulnerable page, malicious JavaScript content may be executed within the context of the victim's browser."
-    },
-    {
-        "Modified": "2023-01-04T21:15:00",
-        "Published": "2022-12-16T16:15:00",
-        "access": {},
-        "assigner": "psirt@adobe.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-44473",
-        "impact": {},
-        "last-modified": "2023-01-04T21:15:00",
-        "references": [
-            "https://helpx.adobe.com/security/products/experience-manager/apsb22-59.html"
-        ],
-        "summary": "Adobe Experience Manager version 6.5.14 (and earlier) is affected by a reflected Cross-Site Scripting (XSS) vulnerability. If a low-privileged attacker is able to convince a victim to visit a URL referencing a vulnerable page, malicious JavaScript content may be executed within the context of the victim's browser."
-    },
-    {
-        "Modified": "2023-01-04T21:15:00",
-        "Published": "2022-12-16T16:15:00",
-        "access": {},
-        "assigner": "psirt@adobe.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-42366",
-        "impact": {},
-        "last-modified": "2023-01-04T21:15:00",
-        "references": [
-            "https://helpx.adobe.com/security/products/experience-manager/apsb22-59.html"
-        ],
-        "summary": "Adobe Experience Manager version 6.5.14 (and earlier) is affected by a reflected Cross-Site Scripting (XSS) vulnerability. If a low-privileged attacker is able to convince a victim to visit a URL referencing a vulnerable page, malicious JavaScript content may be executed within the context of the victim's browser."
-    },
-    {
-        "Modified": "2023-01-04T21:15:00",
-        "Published": "2022-12-16T16:15:00",
-        "access": {},
-        "assigner": "psirt@adobe.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-42360",
-        "impact": {},
-        "last-modified": "2023-01-04T21:15:00",
-        "references": [
-            "https://helpx.adobe.com/security/products/experience-manager/apsb22-59.html"
-        ],
-        "summary": "Adobe Experience Manager version 6.5.14 (and earlier) is affected by a reflected Cross-Site Scripting (XSS) vulnerability. If a low-privileged attacker is able to convince a victim to visit a URL referencing a vulnerable page, malicious JavaScript content may be executed within the context of the victim's browser."
-    },
-    {
-        "Modified": "2023-01-04T21:15:00",
-        "Published": "2022-12-16T16:15:00",
-        "access": {},
-        "assigner": "psirt@adobe.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-42367",
-        "impact": {},
-        "last-modified": "2023-01-04T21:15:00",
-        "references": [
-            "https://helpx.adobe.com/security/products/experience-manager/apsb22-59.html"
-        ],
-        "summary": "Adobe Experience Manager version 6.5.14 (and earlier) is affected by a reflected Cross-Site Scripting (XSS) vulnerability. If a low-privileged attacker is able to convince a victim to visit a URL referencing a vulnerable page, malicious JavaScript content may be executed within the context of the victim's browser."
-    },
-    {
-        "Modified": "2023-01-04T21:14:00",
-        "Published": "2022-12-23T14:15:00",
-        "access": {},
-        "assigner": "security-advisories@github.com",
-        "cvss": null,
-        "cwe": "CWE-22",
-        "id": "CVE-2022-46171",
-        "impact": {},
-        "last-modified": "2023-01-04T21:14:00",
-        "references": [
-            "https://github.com/tauri-apps/tauri/commit/f0602e7c294245ab6ef6fbf2a976ef398340ef58",
-            "https://github.com/tauri-apps/tauri/commit/72389b00d7b495ffd7750eb1e75a3b8537d07cf3",
-            "https://github.com/tauri-apps/tauri/security/advisories/GHSA-6mv3-wm7j-h4w5"
-        ],
-        "summary": "Tauri is a framework for building binaries for all major desktop platforms. The filesystem glob pattern wildcards `*`, `?`, and `[...]` match file path literals and leading dots by default, which unintentionally exposes sub folder content of allowed paths. Scopes without the wildcards are not affected. As `**` allows for sub directories the behavior there is also as expected. The issue has been patched in the latest release and was backported into the currently supported 1.x branches. There are no known workarounds at the time of publication."
-    },
-    {
-        "Modified": "2023-01-04T21:07:00",
-        "Published": "2022-12-22T20:15:00",
-        "access": {},
-        "assigner": "security@mozilla.org",
-        "cvss": null,
-        "cwe": "CWE-416",
-        "id": "CVE-2022-46882",
-        "impact": {},
-        "last-modified": "2023-01-04T21:07:00",
-        "references": [
-            "https://www.mozilla.org/security/advisories/mfsa2022-53/",
-            "https://www.mozilla.org/security/advisories/mfsa2022-52/",
-            "https://bugzilla.mozilla.org/show_bug.cgi?id=1789371",
-            "https://www.mozilla.org/security/advisories/mfsa2022-47/"
-        ],
-        "summary": "A use-after-free in WebGL extensions could have led to a potentially exploitable crash. This vulnerability affects Firefox < 107, Firefox ESR < 102.6, and Thunderbird < 102.6."
-    },
-    {
-        "Modified": "2023-01-04T21:01:00",
-        "Published": "2022-12-23T15:15:00",
-        "access": {},
-        "assigner": "security-advisories@github.com",
-        "cvss": null,
-        "cwe": "CWE-122",
-        "id": "CVE-2022-23547",
-        "impact": {},
-        "last-modified": "2023-01-04T21:01:00",
-        "references": [
-            "https://github.com/pjsip/pjproject/security/advisories/GHSA-cxwq-5g9x-x7fr",
-            "https://github.com/pjsip/pjproject/commit/bc4812d31a67d5e2f973fbfaf950d6118226cf36",
-            "https://github.com/pjsip/pjproject/security/advisories/GHSA-9pfh-r8x4-w26w"
-        ],
-        "summary": "PJSIP is a free and open source multimedia communication library written in C language implementing standard based protocols such as SIP, SDP, RTP, STUN, TURN, and ICE. This issue is similar to GHSA-9pfh-r8x4-w26w. Possible buffer overread when parsing a certain STUN message. The vulnerability affects applications that uses STUN including PJNATH and PJSUA-LIB. The patch is available as commit in the master branch."
-    },
-    {
-        "Modified": "2023-01-04T21:00:00",
-        "Published": "2022-12-25T20:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-1321",
-        "id": "CVE-2021-4279",
-        "impact": {},
-        "last-modified": "2023-01-04T21:00:00",
-        "references": [
-            "https://vuldb.com/?id.216778",
-            "https://github.com/Starcounter-Jack/JSON-Patch/commit/7ad6af41eabb2d799f698740a91284d762c955c9",
-            "https://github.com/Starcounter-Jack/JSON-Patch/pull/262",
-            "https://github.com/Starcounter-Jack/JSON-Patch/releases/tag/3.1.1",
-            "https://vuldb.com/?ctiid.216778"
-        ],
-        "summary": "A vulnerability has been found in Starcounter-Jack JSON-Patch up to 3.1.0 and classified as problematic. This vulnerability affects unknown code. The manipulation leads to improperly controlled modification of object prototype attributes ('prototype pollution'). The attack can be initiated remotely. The exploit has been disclosed to the public and may be used. Upgrading to version 3.1.1 is able to address this issue. The name of the patch is 7ad6af41eabb2d799f698740a91284d762c955c9. It is recommended to upgrade the affected component. VDB-216778 is the identifier assigned to this vulnerability."
-    },
-    {
-        "Modified": "2023-01-04T20:49:00",
-        "Published": "2022-12-25T11:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-22",
-        "id": "CVE-2020-36629",
-        "impact": {},
-        "last-modified": "2023-01-04T20:49:00",
-        "references": [
-            "https://github.com/SimbCo/httpster/pull/36",
-            "https://github.com/SimbCo/httpster/commit/d3055b3e30b40b65d30c5a06d6e053dffa7f35d0",
-            "https://vuldb.com/?id.216748"
-        ],
-        "summary": "A vulnerability classified as critical was found in SimbCo httpster. This vulnerability affects the function fs.realpathSync of the file src/server.coffee. The manipulation leads to path traversal. The exploit has been disclosed to the public and may be used. The name of the patch is d3055b3e30b40b65d30c5a06d6e053dffa7f35d0. It is recommended to apply a patch to fix this issue. The identifier of this vulnerability is VDB-216748."
-    },
-    {
-        "Modified": "2023-01-04T20:35:00",
-        "Published": "2022-12-23T19:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-120",
-        "id": "CVE-2022-45716",
-        "impact": {},
-        "last-modified": "2023-01-04T20:35:00",
-        "references": [
-            "https://hackmd.io/@AAN506JzR6urM5U8fNh1ng/rywHivCBo"
-        ],
-        "summary": "IP-COM M50 V15.11.0.33(10768) was discovered to contain a buffer overflow via the indexSet parameter in the formIPMacBindDel function."
-    },
-    {
-        "Modified": "2023-01-04T20:35:00",
-        "Published": "2022-12-23T19:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-77",
-        "id": "CVE-2022-45717",
-        "impact": {},
-        "last-modified": "2023-01-04T20:35:00",
-        "references": [
-            "https://hackmd.io/@AAN506JzR6urM5U8fNh1ng/By3Y6DRrj"
-        ],
-        "summary": "IP-COM M50 V15.11.0.33(10768) was discovered to contain a command injection vulnerability via the usbPartitionName parameter in the formSetUSBPartitionUmount function. This vulnerability is exploited via a crafted GET request."
-    },
-    {
-        "Modified": "2023-01-04T20:35:00",
-        "Published": "2022-12-23T19:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-120",
-        "id": "CVE-2022-45718",
-        "impact": {},
-        "last-modified": "2023-01-04T20:35:00",
-        "references": [
-            "https://hackmd.io/@AAN506JzR6urM5U8fNh1ng/Hkb38vELj"
-        ],
-        "summary": "IP-COM M50 V15.11.0.33(10768) was discovered to contain a buffer overflow via the rules parameter in the formIPMacBindAdd function."
-    },
-    {
-        "Modified": "2023-01-04T20:35:00",
-        "Published": "2022-12-23T19:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-120",
-        "id": "CVE-2022-45719",
-        "impact": {},
-        "last-modified": "2023-01-04T20:35:00",
-        "references": [
-            "https://hackmd.io/@AAN506JzR6urM5U8fNh1ng/BJ8I_DCBi"
-        ],
-        "summary": "IP-COM M50 V15.11.0.33(10768) was discovered to contain a buffer overflow via the gotoUrl parameter in the formPortalAuth function."
-    },
-    {
-        "Modified": "2023-01-04T20:35:00",
-        "Published": "2022-12-23T19:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-120",
-        "id": "CVE-2022-45720",
-        "impact": {},
-        "last-modified": "2023-01-04T20:35:00",
-        "references": [
-            "https://hackmd.io/@AAN506JzR6urM5U8fNh1ng/SkCD5PEUo"
-        ],
-        "summary": "IP-COM M50 V15.11.0.33(10768) was discovered to contain multiple buffer overflows via the ip, mac, and remark parameters in the formIPMacBindModify function."
-    },
-    {
-        "Modified": "2023-01-04T20:35:00",
-        "Published": "2022-12-23T19:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-120",
-        "id": "CVE-2022-45721",
-        "impact": {},
-        "last-modified": "2023-01-04T20:35:00",
-        "references": [
-            "https://hackmd.io/@AAN506JzR6urM5U8fNh1ng/BJUfyuABo"
-        ],
-        "summary": "IP-COM M50 V15.11.0.33(10768) was discovered to contain a buffer overflow via the picName parameter in the formDelWewifiPic function."
-    },
-    {
-        "Modified": "2023-01-04T20:33:00",
-        "Published": "2022-12-25T16:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-4735",
-        "impact": {},
-        "last-modified": "2023-01-04T20:33:00",
-        "references": [
-            "https://vuldb.com/?ctiid.216766",
-            "https://vuldb.com/?id.216766",
-            "https://github.com/asrashley/dash-live/commit/24d01757a5319cc14c4aa1d8b53d1ab24d48e451",
-            "https://github.com/asrashley/dash-live/pull/7"
-        ],
-        "summary": "A vulnerability classified as problematic was found in asrashley dash-live. This vulnerability affects the function ready of the file static/js/media.js of the component DOM Node Handler. The manipulation leads to cross site scripting. The attack can be initiated remotely. The name of the patch is 24d01757a5319cc14c4aa1d8b53d1ab24d48e451. It is recommended to apply a patch to fix this issue. VDB-216766 is the identifier assigned to this vulnerability."
-    },
-    {
-        "Modified": "2023-01-04T20:30:00",
-        "Published": "2022-12-25T19:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-269",
-        "id": "CVE-2022-37706",
-        "impact": {},
-        "last-modified": "2023-01-04T20:30:00",
-        "references": [
-            "https://github.com/MaherAzzouzi/CVE-2022-37706-LPE-exploit",
-            "https://git.enlightenment.org/enlightenment/enlightenment/commit/cae78cbb169f237862faef123e4abaf63a1f5064",
-            "https://git.enlightenment.org/enlightenment/enlightenment/commit/cc7faeccf77fef8b0ae70e312a21e4cde087e141"
-        ],
-        "summary": "enlightenment_sys in Enlightenment before 0.25.4 allows local users to gain privileges because it is setuid root, and the system library function mishandles pathnames that begin with a /dev/.. substring."
-    },
-    {
-        "Modified": "2023-01-04T20:26:00",
-        "Published": "2022-12-25T11:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-4731",
-        "impact": {},
-        "last-modified": "2023-01-04T20:26:00",
-        "references": [
-            "https://github.com/myapnea/myapnea.org/releases/tag/v29.1.0",
-            "https://github.com/myapnea/myapnea.org/commit/99934258530d761bd5d09809bfa6c14b598f8d18",
-            "https://vuldb.com/?id.216750",
-            "https://vuldb.com/?ctiid.216750"
-        ],
-        "summary": "A vulnerability, which was classified as problematic, was found in myapnea up to 29.0.x. Affected is an unknown function of the component Title Handler. The manipulation leads to cross site scripting. It is possible to launch the attack remotely. Upgrading to version 29.1.0 is able to address this issue. The name of the patch is 99934258530d761bd5d09809bfa6c14b598f8d18. It is recommended to upgrade the affected component. VDB-216750 is the identifier assigned to this vulnerability."
-    },
-    {
-        "Modified": "2023-01-04T20:23:00",
-        "Published": "2022-12-25T11:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-330",
-        "id": "CVE-2021-4277",
-        "impact": {},
-        "last-modified": "2023-01-04T20:23:00",
-        "references": [
-            "https://github.com/fredsmith/utils/commit/dbab1b66955eeb3d76b34612b358307f5c4e3944",
-            "https://vuldb.com/?id.216749"
-        ],
-        "summary": "A vulnerability, which was classified as problematic, has been found in fredsmith utils. This issue affects some unknown processing of the file screenshot_sync of the component Filename Handler. The manipulation leads to predictable from observable state. The name of the patch is dbab1b66955eeb3d76b34612b358307f5c4e3944. It is recommended to apply a patch to fix this issue. The identifier VDB-216749 was assigned to this vulnerability."
-    },
-    {
-        "Modified": "2023-01-04T20:18:00",
-        "Published": "2022-12-23T22:15:00",
-        "access": {},
-        "assigner": "browser-security@yandex-team.ru",
-        "cvss": null,
-        "cwe": "NVD-CWE-noinfo",
-        "id": "CVE-2022-28229",
-        "impact": {},
-        "last-modified": "2023-01-04T20:18:00",
-        "references": [
-            "https://userver.tech/df/d3a/md_en_userver_security_changelog.html"
-        ],
-        "summary": "The hash functionality in userver before 42059b6319661583b3080cab9b595d4f8ac48128 allows attackers to cause a denial of service via crafted HTTP request, involving collisions."
-    },
-    {
-        "Modified": "2023-01-04T20:06:00",
-        "Published": "2022-12-23T22:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-416",
-        "id": "CVE-2022-47946",
-        "impact": {},
-        "last-modified": "2023-01-04T20:06:00",
-        "references": [
-            "https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git/commit/?h=v5.10.161&id=0f544353fec8e717d37724d95b92538e1de79e86",
-            "https://www.openwall.com/lists/oss-security/2022/12/22/2",
-            "http://www.openwall.com/lists/oss-security/2022/12/27/1"
-        ],
-        "summary": "An issue was discovered in the Linux kernel 5.10.x before 5.10.155. A use-after-free in io_sqpoll_wait_sq in fs/io_uring.c allows an attacker to crash the kernel, resulting in denial of service. finish_wait can be skipped. An attack can occur in some situations by forking a process and then quickly terminating it. NOTE: later kernel versions, such as the 5.15 longterm series, substantially changed the implementation of io_sqpoll_wait_sq."
-    },
-    {
-        "Modified": "2023-01-04T19:57:00",
-        "Published": "2022-12-23T23:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-287",
-        "id": "CVE-2022-47633",
-        "impact": {},
-        "last-modified": "2023-01-04T19:57:00",
-        "references": [
-            "https://github.com/kyverno/kyverno/releases/tag/v1.8.5",
-            "https://github.com/kyverno/kyverno/compare/v1.8.4...v1.8.5",
-            "https://github.com/kyverno/kyverno/pull/5713",
-            "https://github.com/kyverno/kyverno/security/advisories/GHSA-m3cq-xcx9-3gvm",
-            "https://kyverno.io/docs/writing-policies/verify-images/"
-        ],
-        "summary": "An image signature validation bypass vulnerability in Kyverno 1.8.3 and 1.8.4 allows a malicious image registry (or a man-in-the-middle attacker) to inject unsigned arbitrary container images into a protected Kubernetes cluster. This is fixed in 1.8.5. This has been fixed in 1.8.5 and mitigations are available for impacted releases."
-    },
-    {
-        "Modified": "2023-01-04T19:54:00",
-        "Published": "2022-12-21T20:15:00",
-        "access": {},
-        "assigner": "security-advisories@github.com",
-        "cvss": null,
-        "cwe": "NVD-CWE-noinfo",
-        "id": "CVE-2022-23551",
-        "impact": {},
-        "last-modified": "2023-01-04T19:54:00",
-        "references": [
-            "https://github.com/Azure/aad-pod-identity/commit/7e01970391bde6c360d077066ca17d059204cb5d",
-            "https://github.com/Azure/aad-pod-identity/security/advisories/GHSA-p82q-rxpm-hjpc",
-            "https://github.com/Azure/aad-pod-identity/releases/tag/v1.8.13"
-        ],
-        "summary": "aad-pod-identity assigns Azure Active Directory identities to Kubernetes applications and has now been deprecated as of 24 October 2022. The NMI component in AAD Pod Identity intercepts and validates token requests based on regex. In this case, a token request made with backslash in the request (example: `/metadata/identity\\oauth2\\token/`) would bypass the NMI validation and be sent to IMDS allowing a pod in the cluster to access identities that it shouldn't have access to. This issue has been fixed and has been included in AAD Pod Identity release version 1.8.13. If using the AKS pod-managed identities add-on, no action is required. The clusters should now be running the version 1.8.13 release."
-    },
-    {
-        "Modified": "2023-01-04T19:43:00",
-        "Published": "2023-01-04T19:15:00",
-        "access": {},
-        "assigner": "csirt@divd.nl",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-45049",
-        "impact": {},
-        "last-modified": "2023-01-04T19:43:00",
-        "references": [
-            "https://csirt.divd.nl/CVE-2022-45049/"
-        ],
-        "summary": "A reflected XSS vulnerability has been found in Axiell Iguana CMS, allowing an attacker to execute code in a victim's browser. The url parameter on the novelist.php endpoint does not properly neutralise user input, resulting in the vulnerability."
-    },
-    {
-        "Modified": "2023-01-04T19:43:00",
-        "Published": "2023-01-04T19:15:00",
-        "access": {},
-        "assigner": "csirt@divd.nl",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-45051",
-        "impact": {},
-        "last-modified": "2023-01-04T19:43:00",
-        "references": [
-            "https://csirt.divd.nl/CVE-2022-45051/"
-        ],
-        "summary": "A reflected XSS vulnerability has been found in Axiell Iguana CMS, allowing an attacker to execute code in a victim's browser. The module parameter on the Service.template.cls endpoint does not properly neutralise user input, resulting in the vulnerability."
-    },
-    {
-        "Modified": "2023-01-04T19:43:00",
-        "Published": "2023-01-04T19:15:00",
-        "access": {},
-        "assigner": "csirt@divd.nl",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-45052",
-        "impact": {},
-        "last-modified": "2023-01-04T19:43:00",
-        "references": [
-            "https://csirt.divd.nl/CVE-2022-45052/"
-        ],
-        "summary": "A Local File Inclusion vulnerability has been found in Axiell Iguana CMS. Due to insufficient neutralisation of user input on the url parameter on the imageProxy.type.php endpoint, external users are capable of accessing files on the server."
-    },
-    {
-        "Modified": "2023-01-04T19:43:00",
-        "Published": "2023-01-04T19:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-48217",
-        "impact": {},
-        "last-modified": "2023-01-04T19:43:00",
-        "references": [
-            "https://github.com/tradr-project/tf_remapper_cpp/issues/1"
-        ],
-        "summary": "** DISPUTED ** The tf_remapper_node component 1.1.1 for Robot Operating System (ROS) allows attackers, who control the source code of a different node in the same ROS application, to change a robot's behavior. This occurs because a topic name depends on the attacker-controlled old_tf_topic_name and/or new_tf_topic_name parameter. NOTE: the vendor's position is \"it is the responsibility of the programmer to make sure that only known and required parameters are set and unexpected parameters are not.\""
-    },
-    {
-        "Modified": "2023-01-04T19:43:00",
-        "Published": "2023-01-04T19:15:00",
-        "access": {},
-        "assigner": "security@huntr.dev",
-        "cvss": null,
-        "cwe": "CWE-787",
-        "id": "CVE-2023-0054",
-        "impact": {},
-        "last-modified": "2023-01-04T19:43:00",
-        "references": [
-            "https://huntr.dev/bounties/b289ee0f-fd16-4147-bd01-c6289c45e49d",
-            "https://github.com/vim/vim/commit/3ac1d97a1d9353490493d30088256360435f7731"
-        ],
-        "summary": "Out-of-bounds Write in GitHub repository vim/vim prior to 9.0.1145."
-    },
-    {
-        "Modified": "2023-01-04T19:43:00",
-        "Published": "2023-01-04T18:15:00",
-        "access": {},
-        "assigner": "psirt@us.ibm.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2021-38928",
-        "impact": {},
-        "last-modified": "2023-01-04T19:43:00",
-        "references": [
-            "https://exchange.xforce.ibmcloud.com/vulnerabilities/210323",
-            "https://www.ibm.com/support/pages/node/6852467"
-        ],
-        "summary": "IBM Sterling B2B Integrator Standard Edition 6.0.0.0 through 6.1.2.1 uses Cross-Origin Resource Sharing (CORS) which could allow an attacker to carry out privileged actions and retrieve sensitive information as the domain name is not being limited to only trusted domains. IBM X-Force ID: 210323."
-    },
-    {
-        "Modified": "2023-01-04T19:43:00",
-        "Published": "2023-01-04T18:15:00",
-        "access": {},
-        "assigner": "psirt@us.ibm.com",
-        "cvss": null,
-        "cwe": "CWE-200",
-        "id": "CVE-2022-22337",
-        "impact": {},
-        "last-modified": "2023-01-04T19:43:00",
-        "references": [
-            "https://www.ibm.com/support/pages/node/6852459",
-            "https://exchange.xforce.ibmcloud.com/vulnerabilities/219507"
-        ],
-        "summary": "IBM Sterling B2B Integrator Standard Edition 6.0.0.0 through 6.1.2.1 could disclose sensitive information to an authenticated user. IBM X-Force ID: 219507."
-    },
-    {
-        "Modified": "2023-01-04T19:43:00",
-        "Published": "2023-01-04T18:15:00",
-        "access": {},
-        "assigner": "psirt@us.ibm.com",
-        "cvss": null,
-        "cwe": "CWE-89",
-        "id": "CVE-2022-22338",
-        "impact": {},
-        "last-modified": "2023-01-04T19:43:00",
-        "references": [
-            "https://exchange.xforce.ibmcloud.com/vulnerabilities/219510",
-            "https://www.ibm.com/support/pages/node/6852453"
-        ],
-        "summary": "IBM Sterling B2B Integrator Standard Edition 6.0.0.0 through 6.1.2.1 is vulnerable to SQL injection. A remote attacker could send specially crafted SQL statements, which could allow the attacker to view, add, modify or delete information in the back-end database. IBM X-Force ID: 219510."
-    },
-    {
-        "Modified": "2023-01-04T19:43:00",
-        "Published": "2023-01-04T18:15:00",
-        "access": {},
-        "assigner": "psirt@us.ibm.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-22352",
-        "impact": {},
-        "last-modified": "2023-01-04T19:43:00",
-        "references": [
-            "https://exchange.xforce.ibmcloud.com/vulnerabilities/220398",
-            "https://www.ibm.com/support/pages/node/6852443"
-        ],
-        "summary": "IBM Sterling B2B Integrator Standard Edition 6.0.0.0 through 6.1.2.1 is vulnerable to cross-site scripting. This vulnerability allows users to embed arbitrary JavaScript code in the Web UI thus altering the intended functionality potentially leading to credentials disclosure within a trusted session. IBM X-Force ID: 220398."
-    },
-    {
-        "Modified": "2023-01-04T19:43:00",
-        "Published": "2023-01-04T18:15:00",
-        "access": {},
-        "assigner": "report@snyk.io",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-25926",
-        "impact": {},
-        "last-modified": "2023-01-04T19:43:00",
-        "references": [
-            "https://github.com/bruno-robert/window-control/commit/075c854534a749d887655a906759f5a7eee95173",
-            "https://github.com/bruno-robert/window-control/releases/tag/v1.4.5",
-            "https://security.snyk.io/vuln/SNYK-JS-WINDOWCONTROL-3186345"
-        ],
-        "summary": "Versions of the package window-control before 1.4.5 are vulnerable to Command Injection via the sendKeys function, due to improper input sanitization."
-    },
-    {
-        "Modified": "2023-01-04T19:43:00",
-        "Published": "2023-01-04T18:15:00",
-        "access": {},
-        "assigner": "psirt@us.ibm.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-43920",
-        "impact": {},
-        "last-modified": "2023-01-04T19:43:00",
-        "references": [
-            "https://exchange.xforce.ibmcloud.com/vulnerabilities/241362",
-            "https://www.ibm.com/support/pages/node/6852465"
-        ],
-        "summary": "IBM Sterling B2B Integrator Standard Edition 6.0.0.0 through 6.1.2.1 could allow an authenticated user to gain privileges in a different group due to an access control vulnerability in the Sftp server adapter. IBM X-Force ID: 241362."
-    },
-    {
-        "Modified": "2023-01-04T19:43:00",
-        "Published": "2023-01-04T18:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-46456",
-        "impact": {},
-        "last-modified": "2023-01-04T19:43:00",
-        "references": [
-            "https://bugzilla.nasm.us/show_bug.cgi?id=3392814"
-        ],
-        "summary": "NASM v2.16 was discovered to contain a global buffer overflow in the component dbgdbg_typevalue at /output/outdbg.c."
-    },
-    {
-        "Modified": "2023-01-04T19:43:00",
-        "Published": "2023-01-04T18:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-46457",
-        "impact": {},
-        "last-modified": "2023-01-04T19:43:00",
-        "references": [
-            "https://bugzilla.nasm.us/show_bug.cgi?id=3392809"
-        ],
-        "summary": "NASM v2.16 was discovered to contain a segmentation violation in the component ieee_write_file at /output/outieee.c."
     }
 ]
