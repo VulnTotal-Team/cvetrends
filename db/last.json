@@ -1,5 +1,1129 @@
 [
     {
+        "Modified": "2023-01-05T18:48:00",
+        "Published": "2022-12-27T15:15:00",
+        "access": {},
+        "assigner": "cna@vuldb.com",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2022-4730",
+        "impact": {},
+        "last-modified": "2023-01-05T18:48:00",
+        "references": [
+            "https://github.com/graphite-project/graphite-web/commit/2f178f490e10efc03cd1d27c72f64ecab224eb23",
+            "https://vuldb.com/?id.216744",
+            "https://github.com/graphite-project/graphite-web/issues/2746",
+            "https://github.com/graphite-project/graphite-web/pull/2785"
+        ],
+        "summary": "A vulnerability was found in Graphite Web. It has been classified as problematic. Affected is an unknown function of the component Absolute Time Range Handler. The manipulation leads to cross site scripting. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used. The name of the patch is 2f178f490e10efc03cd1d27c72f64ecab224eb23. It is recommended to apply a patch to fix this issue. The identifier of this vulnerability is VDB-216744."
+    },
+    {
+        "Modified": "2023-01-05T18:38:00",
+        "Published": "2022-12-26T21:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "NVD-CWE-noinfo",
+        "id": "CVE-2019-18177",
+        "impact": {},
+        "last-modified": "2023-01-05T18:38:00",
+        "references": [
+            "https://support.citrix.com/article/CTX276688/citrix-application-delivery-controller-citrix-gateway-and-citrix-sdwan-wanop-appliance-security-update"
+        ],
+        "summary": "In certain Citrix products, information disclosure can be achieved by an authenticated VPN user when there is a configured SSL VPN endpoint. This affects Citrix ADC and Citrix Gateway 13.0-58.30 and later releases before the CTX276688 update."
+    },
+    {
+        "Modified": "2023-01-05T18:30:00",
+        "Published": "2022-12-25T05:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-384",
+        "id": "CVE-2022-44017",
+        "impact": {},
+        "last-modified": "2023-01-05T18:30:00",
+        "references": [
+            "https://sec-consult.com/vulnerability-lab/advisory/multiple-critical-vulnerabilities-in-simmeth-system-gmbh-lieferantenmanager/"
+        ],
+        "summary": "An issue was discovered in Simmeth Lieferantenmanager before 5.6. Due to errors in session management, an attacker can log back into a victim's account after the victim logged out - /LMS/LM/#main can be used for this. This is due to the credentials not being cleaned from the local storage after logout."
+    },
+    {
+        "Modified": "2023-01-05T18:25:00",
+        "Published": "2021-09-29T20:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "MEDIUM",
+            "vector": "NETWORK"
+        },
+        "assigner": "cve-assignments@hackerone.com",
+        "cvss": 4.3,
+        "cvss-time": "2023-01-05T18:25:00",
+        "cvss-vector": "AV:N/AC:M/Au:N/C:N/I:P/A:N",
+        "cwe": "CWE-345",
+        "id": "CVE-2021-22947",
+        "impact": {
+            "availability": "NONE",
+            "confidentiality": "NONE",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2023-01-05T18:25:00",
+        "references": [
+            "https://hackerone.com/reports/1334763",
+            "https://lists.debian.org/debian-lts-announce/2021/09/msg00022.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RWLEC6YVEM2HWUBX67SDGPSY4CQB72OE/",
+            "https://www.oracle.com/security-alerts/cpuoct2021.html",
+            "https://security.netapp.com/advisory/ntap-20211029-0003/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/APOAK4X73EJTAPTSVT7IRVDMUWVXNWGD/",
+            "https://www.oracle.com/security-alerts/cpujan2022.html",
+            "https://cert-portal.siemens.com/productcert/pdf/ssa-389290.pdf",
+            "https://support.apple.com/kb/HT213183",
+            "http://seclists.org/fulldisclosure/2022/Mar/29",
+            "https://www.oracle.com/security-alerts/cpuapr2022.html",
+            "https://www.oracle.com/security-alerts/cpujul2022.html",
+            "https://www.debian.org/security/2022/dsa-5197",
+            "https://lists.debian.org/debian-lts-announce/2022/08/msg00017.html",
+            "https://security.gentoo.org/glsa/202212-01"
+        ],
+        "summary": "When curl >= 7.20.0 and <= 7.78.0 connects to an IMAP or POP3 server to retrieve data using STARTTLS to upgrade to TLS security, the server can respond and send back multiple responses at once that curl caches. curl would then upgrade to TLS but not flush the in-queue of cached responses but instead continue using and trustingthe responses it got *before* the TLS handshake as if they were authenticated.Using this flaw, it allows a Man-In-The-Middle attacker to first inject the fake responses, then pass-through the TLS traffic from the legitimate server and trick curl into sending data back to the user thinking the attacker's injected data comes from the TLS-protected server."
+    },
+    {
+        "Modified": "2023-01-05T18:24:00",
+        "Published": "2021-09-29T20:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "cve-assignments@hackerone.com",
+        "cvss": 5.0,
+        "cvss-time": "2023-01-05T18:24:00",
+        "cvss-vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N",
+        "cwe": "CWE-319",
+        "id": "CVE-2021-22946",
+        "impact": {
+            "availability": "NONE",
+            "confidentiality": "PARTIAL",
+            "integrity": "NONE"
+        },
+        "last-modified": "2023-01-05T18:24:00",
+        "references": [
+            "https://hackerone.com/reports/1334111",
+            "https://lists.debian.org/debian-lts-announce/2021/09/msg00022.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RWLEC6YVEM2HWUBX67SDGPSY4CQB72OE/",
+            "https://www.oracle.com/security-alerts/cpuoct2021.html",
+            "https://security.netapp.com/advisory/ntap-20211029-0003/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/APOAK4X73EJTAPTSVT7IRVDMUWVXNWGD/",
+            "https://security.netapp.com/advisory/ntap-20220121-0008/",
+            "https://www.oracle.com/security-alerts/cpujan2022.html",
+            "https://cert-portal.siemens.com/productcert/pdf/ssa-389290.pdf",
+            "https://support.apple.com/kb/HT213183",
+            "http://seclists.org/fulldisclosure/2022/Mar/29",
+            "https://www.oracle.com/security-alerts/cpuapr2022.html",
+            "https://www.oracle.com/security-alerts/cpujul2022.html",
+            "https://www.debian.org/security/2022/dsa-5197",
+            "https://lists.debian.org/debian-lts-announce/2022/08/msg00017.html",
+            "https://security.gentoo.org/glsa/202212-01"
+        ],
+        "summary": "A user can tell curl >= 7.20.0 and <= 7.78.0 to require a successful upgrade to TLS when speaking to an IMAP, POP3 or FTP server (`--ssl-reqd` on the command line or`CURLOPT_USE_SSL` set to `CURLUSESSL_CONTROL` or `CURLUSESSL_ALL` withlibcurl). This requirement could be bypassed if the server would return a properly crafted but perfectly legitimate response.This flaw would then make curl silently continue its operations **withoutTLS** contrary to the instructions and expectations, exposing possibly sensitive data in clear text over the network."
+    },
+    {
+        "Modified": "2023-01-05T18:22:00",
+        "Published": "2021-08-05T21:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "cve-assignments@hackerone.com",
+        "cvss": 5.0,
+        "cvss-time": "2023-01-05T18:22:00",
+        "cvss-vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+        "cwe": "CWE-295",
+        "id": "CVE-2021-22926",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "NONE",
+            "integrity": "NONE"
+        },
+        "last-modified": "2023-01-05T18:22:00",
+        "references": [
+            "https://hackerone.com/reports/1234760",
+            "https://lists.apache.org/thread.html/r61db8e7dcb56dc000a5387a88f7a473bacec5ee01b9ff3f55308aacc@%3Cdev.kafka.apache.org%3E",
+            "https://lists.apache.org/thread.html/r61db8e7dcb56dc000a5387a88f7a473bacec5ee01b9ff3f55308aacc@%3Cusers.kafka.apache.org%3E",
+            "https://lists.apache.org/thread.html/rbf4ce74b0d1fa9810dec50ba3ace0caeea677af7c27a97111c06ccb7@%3Cdev.kafka.apache.org%3E",
+            "https://lists.apache.org/thread.html/rbf4ce74b0d1fa9810dec50ba3ace0caeea677af7c27a97111c06ccb7@%3Cusers.kafka.apache.org%3E",
+            "https://security.netapp.com/advisory/ntap-20210902-0003/",
+            "https://www.oracle.com/security-alerts/cpuoct2021.html",
+            "https://security.netapp.com/advisory/ntap-20211022-0003/",
+            "https://www.oracle.com/security-alerts/cpujan2022.html",
+            "https://cert-portal.siemens.com/productcert/pdf/ssa-389290.pdf",
+            "https://security.gentoo.org/glsa/202212-01"
+        ],
+        "summary": "libcurl-using applications can ask for a specific client certificate to be used in a transfer. This is done with the `CURLOPT_SSLCERT` option (`--cert` with the command line tool).When libcurl is built to use the macOS native TLS library Secure Transport, an application can ask for the client certificate by name or with a file name - using the same option. If the name exists as a file, it will be used instead of by name.If the appliction runs with a current working directory that is writable by other users (like `/tmp`), a malicious user can create a file name with the same name as the app wants to use by name, and thereby trick the application to use the file based cert instead of the one referred to by name making libcurl send the wrong client certificate in the TLS connection handshake."
+    },
+    {
+        "Modified": "2023-01-05T18:20:00",
+        "Published": "2021-08-05T21:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "cve-assignments@hackerone.com",
+        "cvss": 5.0,
+        "cvss-time": "2023-01-05T18:20:00",
+        "cvss-vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N",
+        "cwe": "CWE-908",
+        "id": "CVE-2021-22925",
+        "impact": {
+            "availability": "NONE",
+            "confidentiality": "PARTIAL",
+            "integrity": "NONE"
+        },
+        "last-modified": "2023-01-05T18:20:00",
+        "references": [
+            "https://hackerone.com/reports/1223882",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/FRUCW2UVNYUDZF72DQLFQR4PJEC6CF7V/",
+            "https://security.netapp.com/advisory/ntap-20210902-0003/",
+            "https://support.apple.com/kb/HT212804",
+            "https://support.apple.com/kb/HT212805",
+            "http://seclists.org/fulldisclosure/2021/Sep/39",
+            "http://seclists.org/fulldisclosure/2021/Sep/40",
+            "https://www.oracle.com/security-alerts/cpuoct2021.html",
+            "https://www.oracle.com/security-alerts/cpujan2022.html",
+            "https://cert-portal.siemens.com/productcert/pdf/ssa-389290.pdf",
+            "https://cert-portal.siemens.com/productcert/pdf/ssa-484086.pdf",
+            "https://security.gentoo.org/glsa/202212-01"
+        ],
+        "summary": "curl supports the `-t` command line option, known as `CURLOPT_TELNETOPTIONS`in libcurl. This rarely used option is used to send variable=content pairs toTELNET servers.Due to flaw in the option parser for sending `NEW_ENV` variables, libcurlcould be made to pass on uninitialized data from a stack based buffer to theserver. Therefore potentially revealing sensitive internal information to theserver using a clear-text network protocol.This could happen because curl did not call and use sscanf() correctly whenparsing the string provided by the application."
+    },
+    {
+        "Modified": "2023-01-05T18:19:00",
+        "Published": "2022-12-26T21:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "NVD-CWE-noinfo",
+        "id": "CVE-2019-14802",
+        "impact": {},
+        "last-modified": "2023-01-05T18:19:00",
+        "references": [
+            "https://www.hashicorp.com/blog/category/nomad",
+            "https://advisories.gitlab.com/advisory/advgo_github_com_hashicorp_nomad_client_allocrunner_taskrunner_template_GMS_2022_818.html"
+        ],
+        "summary": "HashiCorp Nomad 0.5.0 through 0.9.4 (fixed in 0.9.5) reveals unintended environment variables to the rendering task during template rendering, aka GHSA-6hv3-7c34-4hx8. This applies to nomad/client/allocrunner/taskrunner/template."
+    },
+    {
+        "Modified": "2023-01-05T18:17:00",
+        "Published": "2021-08-05T21:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "HIGH",
+            "vector": "NETWORK"
+        },
+        "assigner": "cve-assignments@hackerone.com",
+        "cvss": 2.6,
+        "cvss-time": "2023-01-05T18:17:00",
+        "cvss-vector": "AV:N/AC:H/Au:N/C:P/I:N/A:N",
+        "cwe": "CWE-522",
+        "id": "CVE-2021-22923",
+        "impact": {
+            "availability": "NONE",
+            "confidentiality": "PARTIAL",
+            "integrity": "NONE"
+        },
+        "last-modified": "2023-01-05T18:17:00",
+        "references": [
+            "https://hackerone.com/reports/1213181",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/FRUCW2UVNYUDZF72DQLFQR4PJEC6CF7V/",
+            "https://security.netapp.com/advisory/ntap-20210902-0003/",
+            "https://www.oracle.com/security-alerts/cpuoct2021.html",
+            "https://cert-portal.siemens.com/productcert/pdf/ssa-389290.pdf",
+            "https://security.gentoo.org/glsa/202212-01"
+        ],
+        "summary": "When curl is instructed to get content using the metalink feature, and a user name and password are used to download the metalink XML file, those same credentials are then subsequently passed on to each of the servers from which curl will download or try to download the contents from. Often contrary to the user's expectations and intentions and without telling the user it happened."
+    },
+    {
+        "Modified": "2023-01-05T18:16:00",
+        "Published": "2022-12-26T21:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "NVD-CWE-noinfo",
+        "id": "CVE-2019-13988",
+        "impact": {},
+        "last-modified": "2023-01-05T18:16:00",
+        "references": [
+            "https://source.sierrawireless.com/-/media/support_downloads/security-bulletins/pdf/swi-psa-2020-006---mgos-security-update.ashx",
+            "https://www.sierrawireless.com/company/security/"
+        ],
+        "summary": "Sierra Wireless MGOS before 3.15.2 and 4.x before 4.3 allows attackers to read log files via a Direct Request (aka Forced Browsing)."
+    },
+    {
+        "Modified": "2023-01-05T18:16:00",
+        "Published": "2021-08-05T21:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "MEDIUM",
+            "vector": "NETWORK"
+        },
+        "assigner": "cve-assignments@hackerone.com",
+        "cvss": 4.3,
+        "cvss-time": "2023-01-05T18:16:00",
+        "cvss-vector": "AV:N/AC:M/Au:N/C:N/I:P/A:N",
+        "cwe": "CWE-755",
+        "id": "CVE-2021-22922",
+        "impact": {
+            "availability": "NONE",
+            "confidentiality": "NONE",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2023-01-05T18:16:00",
+        "references": [
+            "https://hackerone.com/reports/1213175",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/FRUCW2UVNYUDZF72DQLFQR4PJEC6CF7V/",
+            "https://lists.apache.org/thread.html/r61db8e7dcb56dc000a5387a88f7a473bacec5ee01b9ff3f55308aacc@%3Cdev.kafka.apache.org%3E",
+            "https://lists.apache.org/thread.html/r61db8e7dcb56dc000a5387a88f7a473bacec5ee01b9ff3f55308aacc@%3Cusers.kafka.apache.org%3E",
+            "https://lists.apache.org/thread.html/rbf4ce74b0d1fa9810dec50ba3ace0caeea677af7c27a97111c06ccb7@%3Cdev.kafka.apache.org%3E",
+            "https://lists.apache.org/thread.html/rbf4ce74b0d1fa9810dec50ba3ace0caeea677af7c27a97111c06ccb7@%3Cusers.kafka.apache.org%3E",
+            "https://security.netapp.com/advisory/ntap-20210902-0003/",
+            "https://www.oracle.com/security-alerts/cpuoct2021.html",
+            "https://cert-portal.siemens.com/productcert/pdf/ssa-389290.pdf",
+            "https://security.gentoo.org/glsa/202212-01"
+        ],
+        "summary": "When curl is instructed to download content using the metalink feature, thecontents is verified against a hash provided in the metalink XML file.The metalink XML file points out to the client how to get the same contentfrom a set of different URLs, potentially hosted by different servers and theclient can then download the file from one or several of them. In a serial orparallel manner.If one of the servers hosting the contents has been breached and the contentsof the specific file on that server is replaced with a modified payload, curlshould detect this when the hash of the file mismatches after a completeddownload. It should remove the contents and instead try getting the contentsfrom another URL. This is not done, and instead such a hash mismatch is onlymentioned in text and the potentially malicious content is kept in the file ondisk."
+    },
+    {
+        "Modified": "2023-01-05T18:15:00",
+        "Published": "2023-01-05T18:15:00",
+        "access": {},
+        "assigner": "psirt@us.ibm.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-41740",
+        "impact": {},
+        "last-modified": "2023-01-05T18:15:00",
+        "references": [
+            "https://www.ibm.com/support/pages/node/6852657",
+            "https://exchange.xforce.ibmcloud.com/vulnerabilities/238053"
+        ],
+        "summary": "IBM Robotic Process Automation 20.12 through 21.0.6 could allow an attacker with physical access to the system to obtain highly sensitive information from system memory. IBM X-Force ID: 238053."
+    },
+    {
+        "Modified": "2023-01-05T18:15:00",
+        "Published": "2023-01-05T18:15:00",
+        "access": {},
+        "assigner": "psirt@us.ibm.com",
+        "cvss": null,
+        "cwe": "CWE-200",
+        "id": "CVE-2022-43573",
+        "impact": {},
+        "last-modified": "2023-01-05T18:15:00",
+        "references": [
+            "https://exchange.xforce.ibmcloud.com/vulnerabilities/238678",
+            "https://www.ibm.com/support/pages/node/6852655"
+        ],
+        "summary": "IBM Robotic Process Automation 20.12 through 21.0.6 is vulnerable to exposure of the name and email for the creator/modifier of platform level objects. IBM X-Force ID: 238678."
+    },
+    {
+        "Modified": "2023-01-05T18:15:00",
+        "Published": "2023-01-05T18:15:00",
+        "access": {},
+        "assigner": "psirt@us.ibm.com",
+        "cvss": null,
+        "cwe": "CWE-613",
+        "id": "CVE-2022-43844",
+        "impact": {},
+        "last-modified": "2023-01-05T18:15:00",
+        "references": [
+            "https://exchange.xforce.ibmcloud.com/vulnerabilities/239081",
+            "https://www.ibm.com/support/pages/node/6852663"
+        ],
+        "summary": "IBM Robotic Process Automation for Cloud Pak 20.12 through 21.0.3 is vulnerable to broken access control. A user is not correctly redirected to the platform log out screen when logging out of IBM RPA for Cloud Pak. IBM X-Force ID: 239081."
+    },
+    {
+        "Modified": "2023-01-05T18:15:00",
+        "Published": "2023-01-05T18:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-359",
+        "id": "CVE-2022-46168",
+        "impact": {},
+        "last-modified": "2023-01-05T18:15:00",
+        "references": [
+            "https://github.com/discourse/discourse/security/advisories/GHSA-8p7g-3wm6-p3rm",
+            "https://github.com/discourse/discourse/pull/19724"
+        ],
+        "summary": "Discourse is an option source discussion platform. Prior to version 2.8.14 on the `stable` branch and version 2.9.0.beta15 on the `beta` and `tests-passed` branches, recipients of a group SMTP email could see the email addresses of all other users inside the group SMTP topic. Most of the time this is not an issue as they are likely already familiar with one another's email addresses. This issue is patched in versions 2.8.14 and 2.9.0.beta15. The fix is that someone sending emails out via group SMTP to non-staged users masks those emails with blind carbon copy (BCC). Staged users are ones that have likely only interacted with the group via email, and will likely include other people who were CC'd on the original email to the group. As a workaround, disable group SMTP for any groups that have it enabled."
+    },
+    {
+        "Modified": "2023-01-05T18:15:00",
+        "Published": "2023-01-05T18:15:00",
+        "access": {},
+        "assigner": "psirt@lenovo.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-4432",
+        "impact": {},
+        "last-modified": "2023-01-05T18:15:00",
+        "references": [
+            "https://support.lenovo.com/us/en/product_security/LEN-103709"
+        ],
+        "summary": "A buffer over-read vulnerability was reported in the ThinkPadX13s BIOS PersistenceConfigDxe driver that could allow a local attacker with elevated privileges to cause information disclosure."
+    },
+    {
+        "Modified": "2023-01-05T18:15:00",
+        "Published": "2023-01-05T18:15:00",
+        "access": {},
+        "assigner": "psirt@lenovo.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-4433",
+        "impact": {},
+        "last-modified": "2023-01-05T18:15:00",
+        "references": [
+            "https://support.lenovo.com/us/en/product_security/LEN-103709"
+        ],
+        "summary": "A buffer over-read vulnerability was reported in the ThinkPadX13s BIOS LenovoSetupConfigDxe driver that could allow a local attacker with elevated privileges to cause information disclosure."
+    },
+    {
+        "Modified": "2023-01-05T18:15:00",
+        "Published": "2023-01-05T18:15:00",
+        "access": {},
+        "assigner": "psirt@lenovo.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-4434",
+        "impact": {},
+        "last-modified": "2023-01-05T18:15:00",
+        "references": [
+            "https://support.lenovo.com/us/en/product_security/LEN-103709"
+        ],
+        "summary": "A buffer over-read vulnerability was reported in the ThinkPadX13s BIOS driver that could allow a local attacker with elevated privileges to cause information disclosure."
+    },
+    {
+        "Modified": "2023-01-05T18:15:00",
+        "Published": "2023-01-05T18:15:00",
+        "access": {},
+        "assigner": "psirt@lenovo.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-4435",
+        "impact": {},
+        "last-modified": "2023-01-05T18:15:00",
+        "references": [
+            "https://support.lenovo.com/us/en/product_security/LEN-103709"
+        ],
+        "summary": "A buffer over-read vulnerability was reported in the ThinkPadX13s BIOS LenovoRemoteConfigUpdateDxe driver that could allow a local attacker with elevated privileges to cause information disclosure."
+    },
+    {
+        "Modified": "2023-01-05T18:10:00",
+        "Published": "2022-05-26T17:15:00",
+        "access": {
+            "authentication": "SINGLE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "cve-assignments@hackerone.com",
+        "cvss": 5.5,
+        "cvss-time": "2023-01-05T18:10:00",
+        "cvss-vector": "AV:N/AC:L/Au:S/C:P/I:P/A:N",
+        "cwe": "CWE-287",
+        "id": "CVE-2022-22576",
+        "impact": {
+            "availability": "NONE",
+            "confidentiality": "PARTIAL",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2023-01-05T18:10:00",
+        "references": [
+            "https://hackerone.com/reports/1526328",
+            "https://security.netapp.com/advisory/ntap-20220609-0008/",
+            "https://www.debian.org/security/2022/dsa-5197",
+            "https://lists.debian.org/debian-lts-announce/2022/08/msg00017.html",
+            "https://security.gentoo.org/glsa/202212-01"
+        ],
+        "summary": "An improper authentication vulnerability exists in curl 7.33.0 to and including 7.82.0 which might allow reuse OAUTH2-authenticated connections without properly making sure that the connection was authenticated with the same credentials as set for this transfer. This affects SASL-enabled protocols: SMPTP(S), IMAP(S), POP3(S) and LDAP(S) (openldap only)."
+    },
+    {
+        "Modified": "2023-01-05T18:09:00",
+        "Published": "2022-12-26T20:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "NVD-CWE-noinfo",
+        "id": "CVE-2020-11101",
+        "impact": {},
+        "last-modified": "2023-01-05T18:09:00",
+        "references": [
+            "https://source.sierrawireless.com/-/media/support_downloads/security-bulletins/pdf/swi-psa-2020-007---amm-unauthenticated-login.ashx",
+            "https://www.sierrawireless.com/company/security/"
+        ],
+        "summary": "Sierra Wireless AirLink Mobility Manager (AMM) before 2.17 mishandles sessions and thus an unauthenticated attacker can obtain a login session with administrator privileges."
+    },
+    {
+        "Modified": "2023-01-05T18:09:00",
+        "Published": "2022-06-02T14:15:00",
+        "access": {
+            "authentication": "SINGLE",
+            "complexity": "MEDIUM",
+            "vector": "NETWORK"
+        },
+        "assigner": "cve-assignments@hackerone.com",
+        "cvss": 3.5,
+        "cvss-time": "2023-01-05T18:09:00",
+        "cvss-vector": "AV:N/AC:M/Au:S/C:P/I:N/A:N",
+        "cwe": "CWE-522",
+        "id": "CVE-2022-27774",
+        "impact": {
+            "availability": "NONE",
+            "confidentiality": "PARTIAL",
+            "integrity": "NONE"
+        },
+        "last-modified": "2023-01-05T18:09:00",
+        "references": [
+            "https://hackerone.com/reports/1543773",
+            "https://security.netapp.com/advisory/ntap-20220609-0008/",
+            "https://www.debian.org/security/2022/dsa-5197",
+            "https://security.gentoo.org/glsa/202212-01"
+        ],
+        "summary": "An insufficiently protected credentials vulnerability exists in curl 4.9 to and include curl 7.82.0 are affected that could allow an attacker to extract credentials when follows HTTP(S) redirects is used with authentication could leak credentials to other services that exist on different protocols or port numbers."
+    },
+    {
+        "Modified": "2023-01-05T18:08:00",
+        "Published": "2022-06-02T14:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "cve-assignments@hackerone.com",
+        "cvss": 5.0,
+        "cvss-time": "2023-01-05T18:08:00",
+        "cvss-vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N",
+        "cwe": "NVD-CWE-noinfo",
+        "id": "CVE-2022-27775",
+        "impact": {
+            "availability": "NONE",
+            "confidentiality": "PARTIAL",
+            "integrity": "NONE"
+        },
+        "last-modified": "2023-01-05T18:08:00",
+        "references": [
+            "https://hackerone.com/reports/1546268",
+            "https://security.netapp.com/advisory/ntap-20220609-0008/",
+            "https://www.debian.org/security/2022/dsa-5197",
+            "https://security.gentoo.org/glsa/202212-01"
+        ],
+        "summary": "An information disclosure vulnerability exists in curl 7.65.0 to 7.82.0 are vulnerable that by using an IPv6 address that was in the connection pool but with a different zone id it could reuse a connection instead."
+    },
+    {
+        "Modified": "2023-01-05T18:06:00",
+        "Published": "2022-06-02T14:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "MEDIUM",
+            "vector": "NETWORK"
+        },
+        "assigner": "cve-assignments@hackerone.com",
+        "cvss": 4.3,
+        "cvss-time": "2023-01-05T18:06:00",
+        "cvss-vector": "AV:N/AC:M/Au:N/C:P/I:N/A:N",
+        "cwe": "CWE-522",
+        "id": "CVE-2022-27776",
+        "impact": {
+            "availability": "NONE",
+            "confidentiality": "PARTIAL",
+            "integrity": "NONE"
+        },
+        "last-modified": "2023-01-05T18:06:00",
+        "references": [
+            "https://hackerone.com/reports/1547048",
+            "https://security.netapp.com/advisory/ntap-20220609-0008/",
+            "https://www.debian.org/security/2022/dsa-5197",
+            "https://lists.debian.org/debian-lts-announce/2022/08/msg00017.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/7N5ZBWLNNPZKFK7Q4KEHGCJ2YELQEUJP/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/DKKOQXPYLMBSEVDHFS32BPBR3ZQJKY5B/",
+            "https://security.gentoo.org/glsa/202212-01"
+        ],
+        "summary": "A insufficiently protected credentials vulnerability in fixed in curl 7.83.0 might leak authentication or cookie header data on HTTP redirects to the same host but another port number."
+    },
+    {
+        "Modified": "2023-01-05T18:00:00",
+        "Published": "2022-12-26T06:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-345",
+        "id": "CVE-2022-30260",
+        "impact": {},
+        "last-modified": "2023-01-05T18:00:00",
+        "references": [
+            "https://www.forescout.com/blog/",
+            "https://www.cisa.gov/uscert/ics/advisories/icsa-22-181-03"
+        ],
+        "summary": "Emerson DeltaV Distributed Control System (DCS) has insufficient verification of firmware integrity (an inadequate checksum approach, and no signature). This affects versions before 14.3 of DeltaV M-series, DeltaV S-series, DeltaV P-series, DeltaV SIS, and DeltaV CIOC/EIOC/WIOC IO cards."
+    },
+    {
+        "Modified": "2023-01-05T17:58:00",
+        "Published": "2022-06-02T14:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "cve-assignments@hackerone.com",
+        "cvss": 5.0,
+        "cvss-time": "2023-01-05T17:58:00",
+        "cvss-vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N",
+        "cwe": "CWE-668",
+        "id": "CVE-2022-27779",
+        "impact": {
+            "availability": "NONE",
+            "confidentiality": "PARTIAL",
+            "integrity": "NONE"
+        },
+        "last-modified": "2023-01-05T17:58:00",
+        "references": [
+            "https://hackerone.com/reports/1553301",
+            "https://security.netapp.com/advisory/ntap-20220609-0009/",
+            "https://security.gentoo.org/glsa/202212-01"
+        ],
+        "summary": "libcurl wrongly allows cookies to be set for Top Level Domains (TLDs) if thehost name is provided with a trailing dot.curl can be told to receive and send cookies. curl's \"cookie engine\" can bebuilt with or without [Public Suffix List](https://publicsuffix.org/)awareness. If PSL support not provided, a more rudimentary check exists to atleast prevent cookies from being set on TLDs. This check was broken if thehost name in the URL uses a trailing dot.This can allow arbitrary sites to set cookies that then would get sent to adifferent and unrelated site or domain."
+    },
+    {
+        "Modified": "2023-01-05T17:57:00",
+        "Published": "2022-06-02T14:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "cve-assignments@hackerone.com",
+        "cvss": 5.0,
+        "cvss-time": "2023-01-05T17:57:00",
+        "cvss-vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N",
+        "cwe": "CWE-918",
+        "id": "CVE-2022-27780",
+        "impact": {
+            "availability": "NONE",
+            "confidentiality": "NONE",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2023-01-05T17:57:00",
+        "references": [
+            "https://hackerone.com/reports/1553841",
+            "https://security.netapp.com/advisory/ntap-20220609-0009/",
+            "https://security.gentoo.org/glsa/202212-01"
+        ],
+        "summary": "The curl URL parser wrongly accepts percent-encoded URL separators like '/'when decoding the host name part of a URL, making it a *different* URL usingthe wrong host name when it is later retrieved.For example, a URL like `http://example.com%2F127.0.0.1/`, would be allowed bythe parser and get transposed into `http://example.com/127.0.0.1/`. This flawcan be used to circumvent filters, checks and more."
+    },
+    {
+        "Modified": "2023-01-05T17:54:00",
+        "Published": "2022-12-27T15:15:00",
+        "access": {},
+        "assigner": "cna@vuldb.com",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2022-4729",
+        "impact": {},
+        "last-modified": "2023-01-05T17:54:00",
+        "references": [
+            "https://github.com/graphite-project/graphite-web/commit/2f178f490e10efc03cd1d27c72f64ecab224eb23",
+            "https://vuldb.com/?id.216743",
+            "https://github.com/graphite-project/graphite-web/issues/2745",
+            "https://github.com/graphite-project/graphite-web/pull/2785"
+        ],
+        "summary": "A vulnerability was found in Graphite Web and classified as problematic. This issue affects some unknown processing of the component Template Name Handler. The manipulation leads to cross site scripting. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. The name of the patch is 2f178f490e10efc03cd1d27c72f64ecab224eb23. It is recommended to apply a patch to fix this issue. The associated identifier of this vulnerability is VDB-216743."
+    },
+    {
+        "Modified": "2023-01-05T17:54:00",
+        "Published": "2022-06-02T14:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "cve-assignments@hackerone.com",
+        "cvss": 5.0,
+        "cvss-time": "2023-01-05T17:54:00",
+        "cvss-vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+        "cwe": "CWE-835",
+        "id": "CVE-2022-27781",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "NONE",
+            "integrity": "NONE"
+        },
+        "last-modified": "2023-01-05T17:54:00",
+        "references": [
+            "https://hackerone.com/reports/1555441",
+            "https://security.netapp.com/advisory/ntap-20220609-0009/",
+            "https://www.debian.org/security/2022/dsa-5197",
+            "https://lists.debian.org/debian-lts-announce/2022/08/msg00017.html",
+            "https://security.gentoo.org/glsa/202212-01"
+        ],
+        "summary": "libcurl provides the `CURLOPT_CERTINFO` option to allow applications torequest details to be returned about a server's certificate chain.Due to an erroneous function, a malicious server could make libcurl built withNSS get stuck in a never-ending busy-loop when trying to retrieve thatinformation."
+    },
+    {
+        "Modified": "2023-01-05T17:51:00",
+        "Published": "2022-06-02T14:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "cve-assignments@hackerone.com",
+        "cvss": 5.0,
+        "cvss-time": "2023-01-05T17:51:00",
+        "cvss-vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N",
+        "cwe": "CWE-295",
+        "id": "CVE-2022-27782",
+        "impact": {
+            "availability": "NONE",
+            "confidentiality": "NONE",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2023-01-05T17:51:00",
+        "references": [
+            "https://hackerone.com/reports/1555796",
+            "https://security.netapp.com/advisory/ntap-20220609-0009/",
+            "https://www.debian.org/security/2022/dsa-5197",
+            "https://lists.debian.org/debian-lts-announce/2022/08/msg00017.html",
+            "https://security.gentoo.org/glsa/202212-01"
+        ],
+        "summary": "libcurl would reuse a previously created connection even when a TLS or SSHrelated option had been changed that should have prohibited reuse.libcurl keeps previously used connections in a connection pool for subsequenttransfers to reuse if one of them matches the setup. However, several TLS andSSH settings were left out from the configuration match checks, making themmatch too easily."
+    },
+    {
+        "Modified": "2023-01-05T17:50:00",
+        "Published": "2022-06-02T14:15:00",
+        "access": {
+            "authentication": "SINGLE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "cve-assignments@hackerone.com",
+        "cvss": 4.0,
+        "cvss-time": "2023-01-05T17:50:00",
+        "cvss-vector": "AV:N/AC:L/Au:S/C:P/I:N/A:N",
+        "cwe": "CWE-319",
+        "id": "CVE-2022-30115",
+        "impact": {
+            "availability": "NONE",
+            "confidentiality": "PARTIAL",
+            "integrity": "NONE"
+        },
+        "last-modified": "2023-01-05T17:50:00",
+        "references": [
+            "https://hackerone.com/reports/1557449",
+            "https://security.netapp.com/advisory/ntap-20220609-0009/",
+            "http://www.openwall.com/lists/oss-security/2022/10/26/4",
+            "https://security.gentoo.org/glsa/202212-01",
+            "http://www.openwall.com/lists/oss-security/2022/12/21/1"
+        ],
+        "summary": "Using its HSTS support, curl can be instructed to use HTTPS directly insteadof using an insecure clear-text HTTP step even when HTTP is provided in theURL. This mechanism could be bypassed if the host name in the given URL used atrailing dot while not using one when it built the HSTS cache. Or the otherway around - by having the trailing dot in the HSTS cache and *not* using thetrailing dot in the URL."
+    },
+    {
+        "Modified": "2023-01-05T17:47:00",
+        "Published": "2022-12-26T06:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "NVD-CWE-noinfo",
+        "id": "CVE-2022-26969",
+        "impact": {},
+        "last-modified": "2023-01-05T17:47:00",
+        "references": [
+            "https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS",
+            "https://github.com/directus/directus/releases/tag/v9.7.0",
+            "https://security.snyk.io/vuln/SNYK-JS-DIRECTUS-2441822",
+            "https://github.com/directus/directus/pull/12022",
+            "https://github.com/directus/directus/blob/8daed9c41baeaf1d08c1e292bf9f0dcef65e48fb/docs/configuration/config-options.md"
+        ],
+        "summary": "In Directus before 9.7.0, the default settings of CORS_ORIGIN and CORS_ENABLED are true."
+    },
+    {
+        "Modified": "2023-01-05T17:46:00",
+        "Published": "2022-07-07T13:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "MEDIUM",
+            "vector": "NETWORK"
+        },
+        "assigner": "cve-assignments@hackerone.com",
+        "cvss": 4.3,
+        "cvss-time": "2023-01-05T17:46:00",
+        "cvss-vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P",
+        "cwe": "CWE-770",
+        "id": "CVE-2022-32205",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "NONE",
+            "integrity": "NONE"
+        },
+        "last-modified": "2023-01-05T17:46:00",
+        "references": [
+            "https://hackerone.com/reports/1569946",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/BEV6BR4MTI3CEWK2YU2HQZUW5FAS3FEY/",
+            "https://www.debian.org/security/2022/dsa-5197",
+            "https://security.netapp.com/advisory/ntap-20220915-0003/",
+            "https://support.apple.com/kb/HT213488",
+            "http://seclists.org/fulldisclosure/2022/Oct/41",
+            "http://seclists.org/fulldisclosure/2022/Oct/28",
+            "https://cert-portal.siemens.com/productcert/pdf/ssa-333517.pdf",
+            "https://security.gentoo.org/glsa/202212-01"
+        ],
+        "summary": "A malicious server can serve excessive amounts of `Set-Cookie:` headers in a HTTP response to curl and curl < 7.84.0 stores all of them. A sufficiently large amount of (big) cookies make subsequent HTTP requests to this, or other servers to which the cookies match, create requests that become larger than the threshold that curl uses internally to avoid sending crazy large requests (1048576 bytes) and instead returns an error.This denial state might remain for as long as the same cookies are kept, match and haven't expired. Due to cookie matching rules, a server on `foo.example.com` can set cookies that also would match for `bar.example.com`, making it it possible for a \"sister server\" to effectively cause a denial of service for a sibling site on the same second level domain using this method."
+    },
+    {
+        "Modified": "2023-01-05T17:46:00",
+        "Published": "2022-07-07T13:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "MEDIUM",
+            "vector": "NETWORK"
+        },
+        "assigner": "cve-assignments@hackerone.com",
+        "cvss": 4.3,
+        "cvss-time": "2023-01-05T17:46:00",
+        "cvss-vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P",
+        "cwe": "CWE-770",
+        "id": "CVE-2022-32206",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "NONE",
+            "integrity": "NONE"
+        },
+        "last-modified": "2023-01-05T17:46:00",
+        "references": [
+            "https://hackerone.com/reports/1570651",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/BEV6BR4MTI3CEWK2YU2HQZUW5FAS3FEY/",
+            "https://www.debian.org/security/2022/dsa-5197",
+            "https://lists.debian.org/debian-lts-announce/2022/08/msg00017.html",
+            "https://security.netapp.com/advisory/ntap-20220915-0003/",
+            "https://support.apple.com/kb/HT213488",
+            "http://seclists.org/fulldisclosure/2022/Oct/41",
+            "http://seclists.org/fulldisclosure/2022/Oct/28",
+            "https://cert-portal.siemens.com/productcert/pdf/ssa-333517.pdf",
+            "https://security.gentoo.org/glsa/202212-01"
+        ],
+        "summary": "curl < 7.84.0 supports \"chained\" HTTP compression algorithms, meaning that a serverresponse can be compressed multiple times and potentially with different algorithms. The number of acceptable \"links\" in this \"decompression chain\" was unbounded, allowing a malicious server to insert a virtually unlimited number of compression steps.The use of such a decompression chain could result in a \"malloc bomb\", makingcurl end up spending enormous amounts of allocated heap memory, or trying toand returning out of memory errors."
+    },
+    {
+        "Modified": "2023-01-05T17:44:00",
+        "Published": "2022-07-07T13:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "cve-assignments@hackerone.com",
+        "cvss": 7.5,
+        "cvss-time": "2023-01-05T17:44:00",
+        "cvss-vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+        "cwe": "CWE-276",
+        "id": "CVE-2022-32207",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "PARTIAL",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2023-01-05T17:44:00",
+        "references": [
+            "https://hackerone.com/reports/1573634",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/BEV6BR4MTI3CEWK2YU2HQZUW5FAS3FEY/",
+            "https://www.debian.org/security/2022/dsa-5197",
+            "https://security.netapp.com/advisory/ntap-20220915-0003/",
+            "https://support.apple.com/kb/HT213488",
+            "http://seclists.org/fulldisclosure/2022/Oct/41",
+            "http://seclists.org/fulldisclosure/2022/Oct/28",
+            "https://security.gentoo.org/glsa/202212-01"
+        ],
+        "summary": "When curl < 7.84.0 saves cookies, alt-svc and hsts data to local files, it makes the operation atomic by finalizing the operation with a rename from a temporary name to the final target file name.In that rename operation, it might accidentally *widen* the permissions for the target file, leaving the updated file accessible to more users than intended."
+    },
+    {
+        "Modified": "2023-01-05T17:43:00",
+        "Published": "2022-07-07T13:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "MEDIUM",
+            "vector": "NETWORK"
+        },
+        "assigner": "cve-assignments@hackerone.com",
+        "cvss": 4.3,
+        "cvss-time": "2023-01-05T17:43:00",
+        "cvss-vector": "AV:N/AC:M/Au:N/C:P/I:N/A:N",
+        "cwe": "CWE-787",
+        "id": "CVE-2022-32208",
+        "impact": {
+            "availability": "NONE",
+            "confidentiality": "PARTIAL",
+            "integrity": "NONE"
+        },
+        "last-modified": "2023-01-05T17:43:00",
+        "references": [
+            "https://hackerone.com/reports/1590071",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/BEV6BR4MTI3CEWK2YU2HQZUW5FAS3FEY/",
+            "https://www.debian.org/security/2022/dsa-5197",
+            "https://lists.debian.org/debian-lts-announce/2022/08/msg00017.html",
+            "https://security.netapp.com/advisory/ntap-20220915-0003/",
+            "https://support.apple.com/kb/HT213488",
+            "http://seclists.org/fulldisclosure/2022/Oct/41",
+            "http://seclists.org/fulldisclosure/2022/Oct/28",
+            "https://security.gentoo.org/glsa/202212-01"
+        ],
+        "summary": "When curl < 7.84.0 does FTP transfers secured by krb5, it handles message verification failures wrongly. This flaw makes it possible for a Man-In-The-Middle attack to go unnoticed and even allows it to inject data to the client."
+    },
+    {
+        "Modified": "2023-01-05T17:42:00",
+        "Published": "2022-12-27T15:15:00",
+        "access": {},
+        "assigner": "cna@vuldb.com",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2022-4728",
+        "impact": {},
+        "last-modified": "2023-01-05T17:42:00",
+        "references": [
+            "https://github.com/graphite-project/graphite-web/commit/2f178f490e10efc03cd1d27c72f64ecab224eb23",
+            "https://github.com/graphite-project/graphite-web/issues/2744",
+            "https://github.com/graphite-project/graphite-web/pull/2785",
+            "https://vuldb.com/?id.216742"
+        ],
+        "summary": "A vulnerability has been found in Graphite Web and classified as problematic. This vulnerability affects unknown code of the component Cookie Handler. The manipulation leads to cross site scripting. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used. The name of the patch is 2f178f490e10efc03cd1d27c72f64ecab224eb23. It is recommended to apply a patch to fix this issue. VDB-216742 is the identifier assigned to this vulnerability."
+    },
+    {
+        "Modified": "2023-01-05T17:29:00",
+        "Published": "2022-12-05T22:15:00",
+        "access": {},
+        "assigner": "cve-assignments@hackerone.com",
+        "cvss": null,
+        "cwe": "CWE-668",
+        "id": "CVE-2022-32221",
+        "impact": {},
+        "last-modified": "2023-01-05T17:29:00",
+        "references": [
+            "https://hackerone.com/reports/1704017",
+            "https://security.gentoo.org/glsa/202212-01"
+        ],
+        "summary": "When doing HTTP(S) transfers, libcurl might erroneously use the read callback (`CURLOPT_READFUNCTION`) to ask for data to send, even when the `CURLOPT_POSTFIELDS` option has been set, if the same handle previously was used to issue a `PUT` request which used that callback. This flaw may surprise the application and cause it to misbehave and either send off the wrong data or use memory after free or similar in the subsequent `POST` request. The problem exists in the logic for a reused handle when it is changed from a PUT to a POST."
+    },
+    {
+        "Modified": "2023-01-05T17:28:00",
+        "Published": "2022-12-26T06:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-307",
+        "id": "CVE-2022-26964",
+        "impact": {},
+        "last-modified": "2023-01-05T17:28:00",
+        "references": [
+            "https://devolutions.net/security/advisories/DEVO-2022-0002"
+        ],
+        "summary": "Weak password derivation for export in Devolutions Remote Desktop Manager before 2022.1 allows information disclosure via a password brute-force attack. An error caused base64 to be decoded."
+    },
+    {
+        "Modified": "2023-01-05T17:27:00",
+        "Published": "2022-12-05T22:15:00",
+        "access": {},
+        "assigner": "cve-assignments@hackerone.com",
+        "cvss": null,
+        "cwe": "CWE-787",
+        "id": "CVE-2022-35260",
+        "impact": {},
+        "last-modified": "2023-01-05T17:27:00",
+        "references": [
+            "https://hackerone.com/reports/1721098",
+            "https://security.gentoo.org/glsa/202212-01"
+        ],
+        "summary": "curl can be told to parse a `.netrc` file for credentials. If that file endsin a line with 4095 consecutive non-white space letters and no newline, curlwould first read past the end of the stack-based buffer, and if the readworks, write a zero byte beyond its boundary.This will in most cases cause a segfault or similar, but circumstances might also cause different outcomes.If a malicious user can provide a custom netrc file to an application or otherwise affect its contents, this flaw could be used as denial-of-service."
+    },
+    {
+        "Modified": "2023-01-05T17:27:00",
+        "Published": "2022-09-23T14:15:00",
+        "access": {},
+        "assigner": "cve-assignments@hackerone.com",
+        "cvss": null,
+        "cwe": "NVD-CWE-noinfo",
+        "id": "CVE-2022-35252",
+        "impact": {},
+        "last-modified": "2023-01-05T17:27:00",
+        "references": [
+            "https://hackerone.com/reports/1613943",
+            "https://security.netapp.com/advisory/ntap-20220930-0005/",
+            "https://security.gentoo.org/glsa/202212-01"
+        ],
+        "summary": "When curl is used to retrieve and parse cookies from a HTTP(S) server, itaccepts cookies using control codes that when later are sent back to a HTTPserver might make the server return 400 responses. Effectively allowing a\"sister site\" to deny service to all siblings."
+    },
+    {
+        "Modified": "2023-01-05T17:26:00",
+        "Published": "2022-12-26T06:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "NVD-CWE-noinfo",
+        "id": "CVE-2021-43395",
+        "impact": {},
+        "last-modified": "2023-01-05T17:26:00",
+        "references": [
+            "https://illumos.topicbox.com/groups/developer/T1c9e4f27f8c2f959/security-heads-up-illumos14424",
+            "https://www.oracle.com/security-alerts/cpujan2022.html",
+            "https://www.illumos.org/issues/14424",
+            "https://jgardner100.wordpress.com/2022/01/20/security-heads-up/",
+            "https://github.com/illumos/illumos-gate/blob/069654420de4aade43c63c43cd2896e66945fc8a/usr/src/uts/common/fs/tmpfs/tmp_vnops.c",
+            "https://github.com/illumos/illumos-gate/blob/b3403853e80914bd0aade9b5b605da4878078173/usr/src/uts/common/fs/tmpfs/tmp_dir.c",
+            "https://kebe.com/blog/?p=505",
+            "http://www.tribblix.org/relnotes.html",
+            "https://github.com/illumos/illumos-gate/commit/f859e7171bb5db34321e45585839c6c3200ebb90"
+        ],
+        "summary": "An issue was discovered in illumos before f859e7171bb5db34321e45585839c6c3200ebb90, OmniOS Community Edition r151038, OpenIndiana Hipster 2021.04, and SmartOS 20210923. A local unprivileged user can cause a deadlock and kernel panic via crafted rename and rmdir calls on tmpfs filesystems. Oracle Solaris 10 and 11 is also affected."
+    },
+    {
+        "Modified": "2023-01-05T17:26:00",
+        "Published": "2022-02-26T04:15:00",
+        "access": {
+            "authentication": "SINGLE",
+            "complexity": "MEDIUM",
+            "vector": "NETWORK"
+        },
+        "assigner": "cve@mitre.org",
+        "cvss": 4.9,
+        "cvss-time": "2023-01-05T17:26:00",
+        "cvss-vector": "AV:N/AC:M/Au:S/C:N/I:P/A:P",
+        "cwe": "CWE-327",
+        "id": "CVE-2020-36516",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "NONE",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2023-01-05T17:26:00",
+        "references": [
+            "https://dl.acm.org/doi/10.1145/3372297.3417884",
+            "https://security.netapp.com/advisory/ntap-20220331-0003/"
+        ],
+        "summary": "An issue was discovered in the Linux kernel through 5.16.11. The mixed IPID assignment method with the hash-based IPID assignment policy allows an off-path attacker to inject data into a victim's TCP session or terminate that session."
+    },
+    {
+        "Modified": "2023-01-05T17:17:00",
+        "Published": "2022-12-27T15:15:00",
+        "access": {},
+        "assigner": "security@huntr.dev",
+        "cvss": null,
+        "cwe": "CWE-434",
+        "id": "CVE-2022-4732",
+        "impact": {},
+        "last-modified": "2023-01-05T17:17:00",
+        "references": [
+            "https://huntr.dev/bounties/d5be2e96-1f2f-4357-a385-e184cf0119aa",
+            "https://github.com/microweber/microweber/commit/0d279ac81052ce7ee97c18c811a9b8e912189da0"
+        ],
+        "summary": "Unrestricted Upload of File with Dangerous Type in GitHub repository microweber/microweber prior to 1.3.2."
+    },
+    {
+        "Modified": "2023-01-05T17:15:00",
+        "Published": "2023-01-05T17:15:00",
+        "access": {},
+        "assigner": "security@wordfence.com",
+        "cvss": null,
+        "cwe": "CWE-352",
+        "id": "CVE-2023-0086",
+        "impact": {},
+        "last-modified": "2023-01-05T17:15:00",
+        "references": [
+            "https://www.wordfence.com/threat-intel/vulnerabilities/id/8de3d3c7-bde2-4455-8d60-20307f0a53ee",
+            "https://plugins.trac.wordpress.org/browser/jetwidgets-for-elementor/trunk/includes/class-jet-widgets-settings.php#L149"
+        ],
+        "summary": "The JetWidgets for Elementor plugin for WordPress is vulnerable to Cross-Site Request Forgery in versions up to, and including, 1.0.12. This is due to missing nonce validation on the save() function. This makes it possible for unauthenticated attackers to to modify the plugin's settings via a forged request granted they can trick a site administrator into performing an action such as clicking on a link. This can be used to enable SVG uploads that could make Cross-Site Scripting possible."
+    },
+    {
+        "Modified": "2023-01-05T17:15:00",
+        "Published": "2021-10-20T11:16:00",
+        "access": {
+            "authentication": "SINGLE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "secalert_us@oracle.com",
+        "cvss": 4.0,
+        "cvss-time": "2023-01-05T17:15:00",
+        "cvss-vector": "AV:N/AC:L/Au:S/C:N/I:P/A:N",
+        "cwe": "NVD-CWE-noinfo",
+        "id": "CVE-2021-35576",
+        "impact": {
+            "availability": "NONE",
+            "confidentiality": "NONE",
+            "integrity": "PARTIAL"
+        },
+        "last-modified": "2023-01-05T17:15:00",
+        "references": [
+            "https://www.oracle.com/security-alerts/cpuoct2021.html",
+            "https://databasesecurityninja.wordpress.com/2022/06/11/cve-2021-35576-bypassing-unified-audit-policy/",
+            "http://packetstormsecurity.com/files/170354/Oracle-Unified-Audit-Policy-Bypass.html",
+            "http://packetstormsecurity.com/files/170373/Oracle-Database-Vault-Metadata-Exposure.html"
+        ],
+        "summary": "Vulnerability in the Oracle Database Enterprise Edition Unified Audit component of Oracle Database Server. Supported versions that are affected are 12.1.0.2, 12.2.0.1 and 19c. Easily exploitable vulnerability allows high privileged attacker having Local Logon privilege with network access via Oracle Net to compromise Oracle Database Enterprise Edition Unified Audit. Successful attacks of this vulnerability can result in unauthorized update, insert or delete access to some of Oracle Database Enterprise Edition Unified Audit accessible data. CVSS 3.1 Base Score 2.7 (Integrity impacts). CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:L/A:N)."
+    },
+    {
+        "Modified": "2023-01-05T17:15:00",
+        "Published": "2021-04-22T22:15:00",
+        "access": {
+            "authentication": "SINGLE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "secalert_us@oracle.com",
+        "cvss": 4.0,
+        "cvss-time": "2023-01-05T17:15:00",
+        "cvss-vector": "AV:N/AC:L/Au:S/C:P/I:N/A:N",
+        "cwe": "NVD-CWE-noinfo",
+        "id": "CVE-2021-2175",
+        "impact": {
+            "availability": "NONE",
+            "confidentiality": "PARTIAL",
+            "integrity": "NONE"
+        },
+        "last-modified": "2023-01-05T17:15:00",
+        "references": [
+            "https://www.oracle.com/security-alerts/cpuapr2021.html",
+            "https://databasesecurityninja.wordpress.com/2022/02/02/cve-2021-2175-database-vault-metadata-exposure-vulnerability/",
+            "http://packetstormsecurity.com/files/170373/Oracle-Database-Vault-Metadata-Exposure.html"
+        ],
+        "summary": "Vulnerability in the Database Vault component of Oracle Database Server. Supported versions that are affected are 12.1.0.2, 12.2.0.1, 18c and 19c. Easily exploitable vulnerability allows high privileged attacker having Create Any View, Select Any View privilege with network access via Oracle Net to compromise Database Vault. Successful attacks of this vulnerability can result in unauthorized read access to a subset of Database Vault accessible data. CVSS 3.1 Base Score 2.7 (Confidentiality impacts). CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:L/I:N/A:N)."
+    },
+    {
+        "Modified": "2023-01-05T17:15:00",
+        "Published": "2019-07-02T19:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "cve@mitre.org",
+        "cvss": 10.0,
+        "cvss-time": "2023-01-05T17:15:00",
+        "cvss-vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C",
+        "cwe": "CWE-78",
+        "id": "CVE-2019-7256",
+        "impact": {
+            "availability": "COMPLETE",
+            "confidentiality": "COMPLETE",
+            "integrity": "COMPLETE"
+        },
+        "last-modified": "2023-01-05T17:15:00",
+        "references": [
+            "https://applied-risk.com/labs/advisories",
+            "https://www.applied-risk.com/resources/ar-2019-005",
+            "http://packetstormsecurity.com/files/155255/Linear-eMerge-E3-1.00-06-card_scan.php-Command-Injection.html",
+            "http://packetstormsecurity.com/files/155256/Linear-eMerge-E3-1.00-06-card_scan_decoder.php-Command-Injection.html",
+            "http://packetstormsecurity.com/files/155272/Linear-eMerge-E3-Access-Controller-Command-Injection.html",
+            "http://packetstormsecurity.com/files/170372/Linear-eMerge-E3-Series-Access-Controller-Command-Injection.html"
+        ],
+        "summary": "Linear eMerge E3-Series devices allow Command Injections."
+    },
+    {
         "Modified": "2023-01-05T16:58:00",
         "Published": "2022-12-26T22:15:00",
         "access": {},
@@ -822,778 +1946,5 @@
             "https://github.com/stevejagodzinski/DevNewsAggregator/commit/b9de907e7a8c9ca9d75295da675e58c5bf06b172"
         ],
         "summary": "A vulnerability was found in stevejagodzinski DevNewsAggregator. It has been rated as critical. Affected by this issue is the function getByName of the file php/data_access/RemoteHtmlContentDataAccess.php. The manipulation of the argument name leads to sql injection. The name of the patch is b9de907e7a8c9ca9d75295da675e58c5bf06b172. It is recommended to apply a patch to fix this issue. The identifier of this vulnerability is VDB-217484."
-    },
-    {
-        "Modified": "2023-01-05T14:18:00",
-        "Published": "2023-01-05T14:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-89",
-        "id": "CVE-2015-10014",
-        "impact": {},
-        "last-modified": "2023-01-05T14:18:00",
-        "references": [
-            "https://github.com/arekk/uke/commit/52fd3b2d0bc16227ef57b7b98a3658bb67c1833f",
-            "https://vuldb.com/?ctiid.217485",
-            "https://vuldb.com/?id.217485"
-        ],
-        "summary": "A vulnerability classified as critical has been found in arekk uke. This affects an unknown part of the file lib/uke/finder.rb. The manipulation leads to sql injection. The name of the patch is 52fd3b2d0bc16227ef57b7b98a3658bb67c1833f. It is recommended to apply a patch to fix this issue. The identifier VDB-217485 was assigned to this vulnerability."
-    },
-    {
-        "Modified": "2023-01-05T14:18:00",
-        "Published": "2023-01-05T14:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-45995",
-        "impact": {},
-        "last-modified": "2023-01-05T14:18:00",
-        "references": [
-            "https://github.com/bugfinder0/public_bug/tree/main/tenda/ax12/1"
-        ],
-        "summary": "There is an unauthorized buffer overflow vulnerability in Tenda AX12 v22.03.01.21 _ cn. This vulnerability can cause the web service not to restart or even execute arbitrary code. It is a different vulnerability from CVE-2022-2414."
-    },
-    {
-        "Modified": "2023-01-05T14:15:00",
-        "Published": "2022-12-26T13:15:00",
-        "access": {},
-        "assigner": "contact@wpscan.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-3840",
-        "impact": {},
-        "last-modified": "2023-01-05T14:15:00",
-        "references": [
-            "https://wpscan.com/vulnerability/71414436-ef54-4ce6-94e2-62e68d1a371d"
-        ],
-        "summary": "The Login for Google Apps WordPress plugin before 3.4.5 does not sanitise and escape some of its settings, which could allow high privilege users such as admin to perform Stored Cross-Site Scripting attacks even when the unfiltered_html capability is disallowed (for example in multisite setup)."
-    },
-    {
-        "Modified": "2023-01-05T14:07:00",
-        "Published": "2022-12-27T15:15:00",
-        "access": {},
-        "assigner": "security@huntr.dev",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-4691",
-        "impact": {},
-        "last-modified": "2023-01-05T14:07:00",
-        "references": [
-            "https://github.com/usememos/memos/commit/c07b4a57caa89905e54b800f4d8fb720bbf5bf82",
-            "https://huntr.dev/bounties/459b55c1-22f5-4556-9cda-9b86aa91582f"
-        ],
-        "summary": "Cross-site Scripting (XSS) - Stored in GitHub repository usememos/memos prior to 0.9.0."
-    },
-    {
-        "Modified": "2023-01-05T14:07:00",
-        "Published": "2022-12-27T15:15:00",
-        "access": {},
-        "assigner": "security@huntr.dev",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-4694",
-        "impact": {},
-        "last-modified": "2023-01-05T14:07:00",
-        "references": [
-            "https://huntr.dev/bounties/a4d865c2-1a2b-4e3a-aaae-915b0dfc3f22",
-            "https://github.com/usememos/memos/commit/65cc19c12efa392f792f6bb154b4838547e0af5e"
-        ],
-        "summary": "Cross-site Scripting (XSS) - Stored in GitHub repository usememos/memos prior to 0.9.0."
-    },
-    {
-        "Modified": "2023-01-05T14:07:00",
-        "Published": "2022-12-27T15:15:00",
-        "access": {},
-        "assigner": "security@huntr.dev",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-4695",
-        "impact": {},
-        "last-modified": "2023-01-05T14:07:00",
-        "references": [
-            "https://huntr.dev/bounties/2559d548-b847-40fb-94d6-18c1ad58b789",
-            "https://github.com/usememos/memos/commit/65cc19c12efa392f792f6bb154b4838547e0af5e"
-        ],
-        "summary": "Cross-site Scripting (XSS) - Stored in GitHub repository usememos/memos prior to 0.9.0."
-    },
-    {
-        "Modified": "2023-01-05T14:01:00",
-        "Published": "2023-01-05T11:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-1333",
-        "id": "CVE-2021-4305",
-        "impact": {},
-        "last-modified": "2023-01-05T14:01:00",
-        "references": [
-            "https://vuldb.com/?id.217448",
-            "https://github.com/Woorank/robots-txt-guard/commit/c03827cd2f9933619c23894ce7c98401ea824020",
-            "https://github.com/Woorank/robots-txt-guard/pull/4",
-            "https://vuldb.com/?ctiid.217448"
-        ],
-        "summary": "A vulnerability was found in Woorank robots-txt-guard. It has been rated as problematic. Affected by this issue is the function makePathPattern of the file lib/patterns.js. The manipulation of the argument pattern leads to inefficient regular expression complexity. The exploit has been disclosed to the public and may be used. The name of the patch is c03827cd2f9933619c23894ce7c98401ea824020. It is recommended to apply a patch to fix this issue. The identifier of this vulnerability is VDB-217448."
-    },
-    {
-        "Modified": "2023-01-05T14:01:00",
-        "Published": "2023-01-05T12:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-89",
-        "id": "CVE-2007-10001",
-        "impact": {},
-        "last-modified": "2023-01-05T14:01:00",
-        "references": [
-            "https://vuldb.com/?ctiid.217449",
-            "https://vuldb.com/?id.217449",
-            "https://github.com/web-cyradm/web-cyradm/commit/3e8f0717f133907bb6a09cb674b05c5f273da3e1"
-        ],
-        "summary": "A vulnerability classified as problematic has been found in web-cyradm. This affects an unknown part of the file search.php. The manipulation of the argument searchstring leads to sql injection. It is recommended to apply a patch to fix this issue. The identifier VDB-217449 was assigned to this vulnerability."
-    },
-    {
-        "Modified": "2023-01-05T14:01:00",
-        "Published": "2023-01-05T12:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-1333",
-        "id": "CVE-2017-20162",
-        "impact": {},
-        "last-modified": "2023-01-05T14:01:00",
-        "references": [
-            "https://github.com/vercel/ms/releases/tag/2.0.0",
-            "https://vuldb.com/?ctiid.217451",
-            "https://github.com/vercel/ms/pull/89",
-            "https://vuldb.com/?id.217451",
-            "https://github.com/vercel/ms/commit/caae2988ba2a37765d055c4eee63d383320ee662"
-        ],
-        "summary": "A vulnerability, which was classified as problematic, has been found in vercel ms up to 1.x. This issue affects the function parse of the file index.js. The manipulation of the argument str leads to inefficient regular expression complexity. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. Upgrading to version 2.0.0 is able to address this issue. The name of the patch is caae2988ba2a37765d055c4eee63d383320ee662. It is recommended to upgrade the affected component. The associated identifier of this vulnerability is VDB-217451."
-    },
-    {
-        "Modified": "2023-01-05T14:01:00",
-        "Published": "2023-01-05T12:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-611",
-        "id": "CVE-2020-36641",
-        "impact": {},
-        "last-modified": "2023-01-05T14:01:00",
-        "references": [
-            "https://github.com/gturri/aXMLRPC/releases/tag/aXMLRPC-1.12.1",
-            "https://github.com/gturri/aXMLRPC/commit/ad6615b3ec41353e614f6ea5fdd5b046442a832b",
-            "https://vuldb.com/?ctiid.217450",
-            "https://vuldb.com/?id.217450"
-        ],
-        "summary": "A vulnerability classified as problematic was found in gturri aXMLRPC up to 1.12.0. This vulnerability affects the function ResponseParser of the file src/main/java/de/timroes/axmlrpc/ResponseParser.java. The manipulation leads to xml external entity reference. Upgrading to version 1.12.1 is able to address this issue. The name of the patch is ad6615b3ec41353e614f6ea5fdd5b046442a832b. It is recommended to upgrade the affected component. VDB-217450 is the identifier assigned to this vulnerability."
-    },
-    {
-        "Modified": "2023-01-05T14:01:00",
-        "Published": "2023-01-05T07:15:00",
-        "access": {},
-        "assigner": "psirt@us.ibm.com",
-        "cvss": null,
-        "cwe": "CWE-613",
-        "id": "CVE-2022-22371",
-        "impact": {},
-        "last-modified": "2023-01-05T14:01:00",
-        "references": [
-            "https://www.ibm.com/support/pages/node/6852461",
-            "https://exchange.xforce.ibmcloud.com/vulnerabilities/221195"
-        ],
-        "summary": "IBM Sterling B2B Integrator Standard Edition 6.0.0.0 through 6.1.2.1 does not invalidate session after a password change which could allow an authenticated user to impersonate another user on the system. IBM X-Force ID: 221195."
-    },
-    {
-        "Modified": "2023-01-05T14:01:00",
-        "Published": "2023-01-05T07:15:00",
-        "access": {},
-        "assigner": "security-alert@hpe.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-43522",
-        "impact": {},
-        "last-modified": "2023-01-05T14:01:00",
-        "references": [
-            "https://www.arubanetworks.com/assets/alert/ARUBA-PSA-2022-021.txt"
-        ],
-        "summary": "Multiple vulnerabilities in the web-based management interface of Aruba EdgeConnect Enterprise Orchestrator could allow an authenticated remote attacker to conduct SQL injection attacks against the Aruba EdgeConnect Enterprise Orchestrator instance. An attacker could exploit these vulnerabilities to obtain and modify sensitive information in the underlying database potentially leading to complete compromise of the Aruba EdgeConnect Enterprise Orchestrator host in Aruba EdgeConnect Enterprise Orchestration Software version(s): Aruba EdgeConnect Enterprise Orchestrator (on-premises), Aruba EdgeConnect Enterprise Orchestrator-as-a-Service, Aruba EdgeConnect Enterprise Orchestrator-SP and Aruba EdgeConnect Enterprise Orchestrator Global Enterprise Tenant Orchestrators - Orchestrator 9.2.1.40179 and below, - Orchestrator 9.1.4.40436 and below, - Orchestrator 9.0.7.40110 and below, - Orchestrator 8.10.23.40015 and below, - Any older branches of Orchestrator not specifically mentioned."
-    },
-    {
-        "Modified": "2023-01-05T14:01:00",
-        "Published": "2023-01-05T07:15:00",
-        "access": {},
-        "assigner": "security-alert@hpe.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-43529",
-        "impact": {},
-        "last-modified": "2023-01-05T14:01:00",
-        "references": [
-            "https://www.arubanetworks.com/assets/alert/ARUBA-PSA-2022-021.txt"
-        ],
-        "summary": "A vulnerability in the web-based management interface of Aruba EdgeConnect Enterprise Orchestrator could allow an remote attacker to persist a session after a password reset or similar session clearing event. Successful exploitation of this vulnerability could allow an authenticated attacker to remain on the system with the permissions of their current session after the session should be invalidated in Aruba EdgeConnect Enterprise Orchestration Software version(s): Aruba EdgeConnect Enterprise Orchestrator (on-premises), Aruba EdgeConnect Enterprise Orchestrator-as-a-Service, Aruba EdgeConnect Enterprise Orchestrator-SP and Aruba EdgeConnect Enterprise Orchestrator Global Enterprise Tenant Orchestrators - Orchestrator 9.2.1.40179 and below, - Orchestrator 9.1.4.40436 and below, - Orchestrator 9.0.7.40110 and below, - Orchestrator 8.10.23.40015 and below, - Any older branches of Orchestrator not specifically mentioned."
-    },
-    {
-        "Modified": "2023-01-05T14:01:00",
-        "Published": "2023-01-05T07:15:00",
-        "access": {},
-        "assigner": "security-alert@hpe.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-43532",
-        "impact": {},
-        "last-modified": "2023-01-05T14:01:00",
-        "references": [
-            "https://www.arubanetworks.com/assets/alert/ARUBA-PSA-2022-020.txt"
-        ],
-        "summary": "A vulnerability in the web-based management interface of ClearPass Policy Manager could allow an authenticated remote attacker to conduct a stored cross-site scripting (XSS) attack against an administrative user of the interface. A successful exploit allows an attacker to execute arbitrary script code in a victim's browser in the context of the affected interface in Aruba ClearPass Policy Manager version(s): ClearPass Policy Manager 6.10.x: 6.10.7 and below and ClearPass Policy Manager 6.9.x: 6.9.12 and below."
-    },
-    {
-        "Modified": "2023-01-05T14:01:00",
-        "Published": "2023-01-05T07:15:00",
-        "access": {},
-        "assigner": "security-alert@hpe.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-43533",
-        "impact": {},
-        "last-modified": "2023-01-05T14:01:00",
-        "references": [
-            "https://www.arubanetworks.com/assets/alert/ARUBA-PSA-2022-020.txt"
-        ],
-        "summary": "A vulnerability in the ClearPass OnGuard macOS agent could allow malicious users on a macOS instance to elevate their user privileges. A successful exploit could allow these users to execute arbitrary code with root level privileges on the macOS instance in Aruba ClearPass Policy Manager version(s): ClearPass Policy Manager 6.10.x: 6.10.7 and below and ClearPass Policy Manager 6.9.x: 6.9.12 and below."
-    },
-    {
-        "Modified": "2023-01-05T14:01:00",
-        "Published": "2023-01-05T08:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2019-25096",
-        "impact": {},
-        "last-modified": "2023-01-05T14:01:00",
-        "references": [
-            "https://github.com/soerennb/extplorer/releases/tag/v2.1.13",
-            "https://github.com/soerennb/extplorer/commit/b8fcb888f4ff5e171c16797a4b075c6c6f50bf46",
-            "https://vuldb.com/?ctiid.217435",
-            "https://vuldb.com/?id.217435"
-        ],
-        "summary": "A vulnerability has been found in soerennb eXtplorer up to 2.1.12 and classified as problematic. Affected by this vulnerability is an unknown functionality. The manipulation leads to cross site scripting. The attack can be launched remotely. Upgrading to version 2.1.13 is able to address this issue. The name of the patch is b8fcb888f4ff5e171c16797a4b075c6c6f50bf46. It is recommended to upgrade the affected component. The associated identifier of this vulnerability is VDB-217435."
-    },
-    {
-        "Modified": "2023-01-05T14:01:00",
-        "Published": "2023-01-05T08:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-22",
-        "id": "CVE-2019-25097",
-        "impact": {},
-        "last-modified": "2023-01-05T14:01:00",
-        "references": [
-            "https://vuldb.com/?id.217436",
-            "https://github.com/soerennb/extplorer/releases/tag/v2.1.13",
-            "https://github.com/soerennb/extplorer/commit/b8fcb888f4ff5e171c16797a4b075c6c6f50bf46",
-            "https://vuldb.com/?ctiid.217436"
-        ],
-        "summary": "A vulnerability was found in soerennb eXtplorer up to 2.1.12 and classified as critical. Affected by this issue is some unknown functionality of the component Directory Content Handler. The manipulation leads to path traversal. Upgrading to version 2.1.13 is able to address this issue. The name of the patch is b8fcb888f4ff5e171c16797a4b075c6c6f50bf46. It is recommended to upgrade the affected component. The identifier of this vulnerability is VDB-217436."
-    },
-    {
-        "Modified": "2023-01-05T14:01:00",
-        "Published": "2023-01-05T08:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-47523",
-        "impact": {},
-        "last-modified": "2023-01-05T14:01:00",
-        "references": [
-            "https://www.manageengine.com/privileged-session-management/advisory/cve-2022-47523.html"
-        ],
-        "summary": "Zoho ManageEngine Access Manager Plus before 4309, Password Manager Pro before 12210, and PAM360 before 5801 are vulnerable to SQL Injection."
-    },
-    {
-        "Modified": "2023-01-05T14:01:00",
-        "Published": "2023-01-05T08:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2023-22626",
-        "impact": {},
-        "last-modified": "2023-01-05T14:01:00",
-        "references": [
-            "https://github.com/ankane/pghero/issues/439"
-        ],
-        "summary": "PgHero before 3.1.0 allows Information Disclosure via EXPLAIN because query results may be present in an error message. (Depending on database user privileges, this may only be information from the database, or may be information from file contents on the database server.)"
-    },
-    {
-        "Modified": "2023-01-05T14:01:00",
-        "Published": "2023-01-05T09:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-352",
-        "id": "CVE-2016-15009",
-        "impact": {},
-        "last-modified": "2023-01-05T14:01:00",
-        "references": [
-            "https://github.com/openacs/bug-tracker/commit/aee43e5714cd8b697355ec3bf83eefee176d3fc3",
-            "https://vuldb.com/?ctiid.217440",
-            "https://vuldb.com/?id.217440"
-        ],
-        "summary": "A vulnerability classified as problematic has been found in OpenACS bug-tracker. Affected is an unknown function of the file lib/nav-bar.adp of the component Search. The manipulation leads to cross-site request forgery. It is possible to launch the attack remotely. The name of the patch is aee43e5714cd8b697355ec3bf83eefee176d3fc3. It is recommended to apply a patch to fix this issue. The identifier of this vulnerability is VDB-217440."
-    },
-    {
-        "Modified": "2023-01-05T14:01:00",
-        "Published": "2023-01-05T09:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2016-15010",
-        "impact": {},
-        "last-modified": "2023-01-05T14:01:00",
-        "references": [
-            "https://github.com/uisautomation/django-ucamlookup/commit/5e25e4765637ea4b9e0bf5fcd5e9a922abee7eb3",
-            "https://vuldb.com/?ctiid.217441",
-            "https://vuldb.com/?id.217441",
-            "https://github.com/uisautomation/django-ucamlookup/releases/tag/1.9.2"
-        ],
-        "summary": "** UNSUPPPORTED WHEN ASSIGNED **** UNSUPPORTED WHEN ASSIGNED ** A vulnerability classified as problematic was found in University of Cambridge django-ucamlookup up to 1.9.1. Affected by this vulnerability is an unknown functionality of the component Lookup Handler. The manipulation leads to cross site scripting. The attack can be launched remotely. Upgrading to version 1.9.2 is able to address this issue. The name of the patch is 5e25e4765637ea4b9e0bf5fcd5e9a922abee7eb3. It is recommended to upgrade the affected component. The identifier VDB-217441 was assigned to this vulnerability. NOTE: This vulnerability only affects products that are no longer supported by the maintainer."
-    },
-    {
-        "Modified": "2023-01-05T14:01:00",
-        "Published": "2023-01-05T09:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2018-25064",
-        "impact": {},
-        "last-modified": "2023-01-05T14:01:00",
-        "references": [
-            "https://vuldb.com/?ctiid.217439",
-            "https://vuldb.com/?id.217439",
-            "https://github.com/osmlab/show-me-the-way/commit/4bed3b34dcc01fe6661f39c0e5d2285b340f7cac",
-            "https://github.com/osmlab/show-me-the-way/pull/57"
-        ],
-        "summary": "A vulnerability was found in OSM Lab show-me-the-way. It has been rated as problematic. This issue affects some unknown processing of the file js/site.js. The manipulation leads to cross site scripting. The attack may be initiated remotely. The name of the patch is 4bed3b34dcc01fe6661f39c0e5d2285b340f7cac. It is recommended to apply a patch to fix this issue. The associated identifier of this vulnerability is VDB-217439."
-    },
-    {
-        "Modified": "2023-01-05T14:01:00",
-        "Published": "2023-01-05T09:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2021-4303",
-        "impact": {},
-        "last-modified": "2023-01-05T14:01:00",
-        "references": [
-            "https://github.com/shannah/xataface/releases/tag/3.0.0",
-            "https://vuldb.com/?ctiid.217442",
-            "https://github.com/shannah/xataface/commit/94143a4299e386f33bf582139cd4702571d93bde",
-            "https://vuldb.com/?id.217442"
-        ],
-        "summary": "A vulnerability, which was classified as problematic, has been found in shannah Xataface up to 2.x. Affected by this issue is the function testftp of the file install/install_form.js.php of the component Installer. The manipulation leads to cross site scripting. The attack may be launched remotely. Upgrading to version 3.0.0 is able to address this issue. The name of the patch is 94143a4299e386f33bf582139cd4702571d93bde. It is recommended to upgrade the affected component. VDB-217442 is the identifier assigned to this vulnerability. NOTE: Installer is disabled by default."
-    },
-    {
-        "Modified": "2023-01-05T14:01:00",
-        "Published": "2023-01-05T09:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-200",
-        "id": "CVE-2022-4869",
-        "impact": {},
-        "last-modified": "2023-01-05T14:01:00",
-        "references": [
-            "https://vuldb.com/?ctiid.217438",
-            "https://vuldb.com/?id.217438",
-            "https://github.com/evolution-events/Artaxerxes/commit/022111407d34815c16c6eada2de69ca34084dc0d"
-        ],
-        "summary": "A vulnerability was found in Evolution Events Artaxerxes. It has been declared as problematic. This vulnerability affects unknown code of the file arta/common/middleware.py of the component POST Parameter Handler. The manipulation of the argument password leads to information disclosure. The attack can be initiated remotely. The name of the patch is 022111407d34815c16c6eada2de69ca34084dc0d. It is recommended to apply a patch to fix this issue. VDB-217438 is the identifier assigned to this vulnerability."
-    },
-    {
-        "Modified": "2023-01-05T14:01:00",
-        "Published": "2023-01-05T07:15:00",
-        "access": {},
-        "assigner": "security-alert@hpe.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-37934",
-        "impact": {},
-        "last-modified": "2023-01-05T14:01:00",
-        "references": [
-            "https://support.hpe.com/hpsc/doc/public/display?docLocale=en_US&docId=emr_na-hpesbnw04401en_us"
-        ],
-        "summary": "A potential security vulnerability has been identified in HPE OfficeConnect 1820, and 1850 switch series. The vulnerability could be remotely exploited to allow remote directory traversal in HPE OfficeConnect 1820 switch series version PT.02.17 and below, HPE OfficeConnect 1850 switch series version PC.01.23 and below, and HPE OfficeConnect 1850 (10G aggregator) switch version PO.01.22 and below."
-    },
-    {
-        "Modified": "2023-01-05T14:01:00",
-        "Published": "2023-01-05T10:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2015-10013",
-        "impact": {},
-        "last-modified": "2023-01-05T14:01:00",
-        "references": [
-            "https://github.com/WebDevStudios/taxonomy-switcher/commit/e1a0d99f936e7427b31e210c67aeb4833d804099",
-            "https://github.com/WebDevStudios/taxonomy-switcher/releases/tag/1.0.4",
-            "https://vuldb.com/?ctiid.217446",
-            "https://vuldb.com/?id.217446"
-        ],
-        "summary": "A vulnerability was found in WebDevStudios taxonomy-switcher Plugin up to 1.0.3. It has been classified as problematic. Affected is the function taxonomy_switcher_init of the file taxonomy-switcher.php. The manipulation leads to cross site scripting. It is possible to launch the attack remotely. Upgrading to version 1.0.4 is able to address this issue. It is recommended to upgrade the affected component. VDB-217446 is the identifier assigned to this vulnerability."
-    },
-    {
-        "Modified": "2023-01-05T14:01:00",
-        "Published": "2023-01-05T07:15:00",
-        "access": {},
-        "assigner": "security-alert@hpe.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-43519",
-        "impact": {},
-        "last-modified": "2023-01-05T14:01:00",
-        "references": [
-            "https://www.arubanetworks.com/assets/alert/ARUBA-PSA-2022-021.txt"
-        ],
-        "summary": "Multiple vulnerabilities in the web-based management interface of Aruba EdgeConnect Enterprise Orchestrator could allow an authenticated remote attacker to conduct SQL injection attacks against the Aruba EdgeConnect Enterprise Orchestrator instance. An attacker could exploit these vulnerabilities to obtain and modify sensitive information in the underlying database potentially leading to complete compromise of the Aruba EdgeConnect Enterprise Orchestrator host in Aruba EdgeConnect Enterprise Orchestration Software version(s): Aruba EdgeConnect Enterprise Orchestrator (on-premises), Aruba EdgeConnect Enterprise Orchestrator-as-a-Service, Aruba EdgeConnect Enterprise Orchestrator-SP and Aruba EdgeConnect Enterprise Orchestrator Global Enterprise Tenant Orchestrators - Orchestrator 9.2.1.40179 and below, - Orchestrator 9.1.4.40436 and below, - Orchestrator 9.0.7.40110 and below, - Orchestrator 8.10.23.40015 and below, - Any older branches of Orchestrator not specifically mentioned."
-    },
-    {
-        "Modified": "2023-01-05T14:01:00",
-        "Published": "2023-01-05T10:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2018-25065",
-        "impact": {},
-        "last-modified": "2023-01-05T14:01:00",
-        "references": [
-            "https://github.com/wikimedia/mediawiki-extensions-I18nTags/commit/b4bc3cbbb099eab50cf2b544cf577116f1867b94",
-            "https://vuldb.com/?ctiid.217445",
-            "https://vuldb.com/?id.217445"
-        ],
-        "summary": "A vulnerability was found in Wikimedia mediawiki-extensions-I18nTags and classified as problematic. This issue affects some unknown processing of the file I18nTags_body.php of the component Unlike Parser. The manipulation leads to cross site scripting. The attack may be initiated remotely. The name of the patch is b4bc3cbbb099eab50cf2b544cf577116f1867b94. It is recommended to apply a patch to fix this issue. The identifier VDB-217445 was assigned to this vulnerability."
-    },
-    {
-        "Modified": "2023-01-05T14:01:00",
-        "Published": "2023-01-05T07:15:00",
-        "access": {},
-        "assigner": "psirt@us.ibm.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-34330",
-        "impact": {},
-        "last-modified": "2023-01-05T14:01:00",
-        "references": [
-            "https://exchange.xforce.ibmcloud.com/vulnerabilities/229469",
-            "https://www.ibm.com/support/pages/node/6852469"
-        ],
-        "summary": "IBM Sterling B2B Integrator Standard Edition 6.0.0.0 through 6.1.2.1 is vulnerable to cross-site scripting. This vulnerability allows users to embed arbitrary JavaScript code in the Web UI thus altering the intended functionality potentially leading to credentials disclosure within a trusted session. IBM X-Force ID: 229469."
-    },
-    {
-        "Modified": "2023-01-05T14:01:00",
-        "Published": "2023-01-05T07:15:00",
-        "access": {},
-        "assigner": "security-alert@hpe.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-37933",
-        "impact": {},
-        "last-modified": "2023-01-05T14:01:00",
-        "references": [
-            "https://support.hpe.com/hpsc/doc/public/display?docLocale=en_US&docId=emr_na-hpesbhf04400en_us"
-        ],
-        "summary": "A potential security vulnerability has been identified in HPE Superdome Flex and Superdome Flex 280 servers. The vulnerability could be exploited to allow local unauthorized data injection. HPE has made the following software updates to resolve the vulnerability in HPE Superdome Flex firmware 3.60.50 and below and Superdome Flex 280 servers firmware 1.40.60 and below."
-    },
-    {
-        "Modified": "2023-01-05T14:01:00",
-        "Published": "2023-01-05T10:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-611",
-        "id": "CVE-2020-36640",
-        "impact": {},
-        "last-modified": "2023-01-05T14:01:00",
-        "references": [
-            "https://github.com/bonitasoft/bonita-connector-webservice/pull/17",
-            "https://github.com/bonitasoft/bonita-connector-webservice/releases/tag/1.3.1",
-            "https://github.com/bonitasoft/bonita-connector-webservice/commit/a12ad691c05af19e9061d7949b6b828ce48815d5",
-            "https://vuldb.com/?ctiid.217443",
-            "https://vuldb.com/?id.217443"
-        ],
-        "summary": "A vulnerability, which was classified as problematic, was found in bonitasoft bonita-connector-webservice up to 1.3.0. This affects the function TransformerConfigurationException of the file src/main/java/org/bonitasoft/connectors/ws/SecureWSConnector.java. The manipulation leads to xml external entity reference. Upgrading to version 1.3.1 is able to address this issue. The name of the patch is a12ad691c05af19e9061d7949b6b828ce48815d5. It is recommended to upgrade the affected component. The associated identifier of this vulnerability is VDB-217443."
-    },
-    {
-        "Modified": "2023-01-05T14:01:00",
-        "Published": "2023-01-05T07:15:00",
-        "access": {},
-        "assigner": "security-alert@hpe.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-43520",
-        "impact": {},
-        "last-modified": "2023-01-05T14:01:00",
-        "references": [
-            "https://www.arubanetworks.com/assets/alert/ARUBA-PSA-2022-021.txt"
-        ],
-        "summary": "Multiple vulnerabilities in the web-based management interface of Aruba EdgeConnect Enterprise Orchestrator could allow an authenticated remote attacker to conduct SQL injection attacks against the Aruba EdgeConnect Enterprise Orchestrator instance. An attacker could exploit these vulnerabilities to obtain and modify sensitive information in the underlying database potentially leading to complete compromise of the Aruba EdgeConnect Enterprise Orchestrator host in Aruba EdgeConnect Enterprise Orchestration Software version(s): Aruba EdgeConnect Enterprise Orchestrator (on-premises), Aruba EdgeConnect Enterprise Orchestrator-as-a-Service, Aruba EdgeConnect Enterprise Orchestrator-SP and Aruba EdgeConnect Enterprise Orchestrator Global Enterprise Tenant Orchestrators - Orchestrator 9.2.1.40179 and below, - Orchestrator 9.1.4.40436 and below, - Orchestrator 9.0.7.40110 and below, - Orchestrator 8.10.23.40015 and below, - Any older branches of Orchestrator not specifically mentioned."
-    },
-    {
-        "Modified": "2023-01-05T14:01:00",
-        "Published": "2023-01-05T10:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-77",
-        "id": "CVE-2021-4304",
-        "impact": {},
-        "last-modified": "2023-01-05T14:01:00",
-        "references": [
-            "https://vuldb.com/?id.217447",
-            "https://github.com/eprintsug/ulcc-core/commit/811edaae81eb044891594f00062a828f51b22cb1",
-            "https://vuldb.com/?ctiid.217447"
-        ],
-        "summary": "A vulnerability was found in eprintsug ulcc-core. It has been declared as critical. Affected by this vulnerability is an unknown functionality of the file cgi/toolbox/toolbox. The manipulation of the argument password leads to command injection. The attack can be launched remotely. The name of the patch is 811edaae81eb044891594f00062a828f51b22cb1. It is recommended to apply a patch to fix this issue. The associated identifier of this vulnerability is VDB-217447."
-    },
-    {
-        "Modified": "2023-01-05T14:01:00",
-        "Published": "2023-01-05T07:15:00",
-        "access": {},
-        "assigner": "security-alert@hpe.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-43521",
-        "impact": {},
-        "last-modified": "2023-01-05T14:01:00",
-        "references": [
-            "https://www.arubanetworks.com/assets/alert/ARUBA-PSA-2022-021.txt"
-        ],
-        "summary": "Multiple vulnerabilities in the web-based management interface of Aruba EdgeConnect Enterprise Orchestrator could allow an authenticated remote attacker to conduct SQL injection attacks against the Aruba EdgeConnect Enterprise Orchestrator instance. An attacker could exploit these vulnerabilities to obtain and modify sensitive information in the underlying database potentially leading to complete compromise of the Aruba EdgeConnect Enterprise Orchestrator host in Aruba EdgeConnect Enterprise Orchestration Software version(s): Aruba EdgeConnect Enterprise Orchestrator (on-premises), Aruba EdgeConnect Enterprise Orchestrator-as-a-Service, Aruba EdgeConnect Enterprise Orchestrator-SP and Aruba EdgeConnect Enterprise Orchestrator Global Enterprise Tenant Orchestrators - Orchestrator 9.2.1.40179 and below, - Orchestrator 9.1.4.40436 and below, - Orchestrator 9.0.7.40110 and below, - Orchestrator 8.10.23.40015 and below, - Any older branches of Orchestrator not specifically mentioned."
-    },
-    {
-        "Modified": "2023-01-05T14:01:00",
-        "Published": "2023-01-05T10:15:00",
-        "access": {},
-        "assigner": "security@synology.com",
-        "cvss": null,
-        "cwe": "CWE-74",
-        "id": "CVE-2022-43932",
-        "impact": {},
-        "last-modified": "2023-01-05T14:01:00",
-        "references": [
-            "https://www.synology.com/en-global/security/advisory/Synology_SA_22_25"
-        ],
-        "summary": "Improper neutralization of special elements in output used by a downstream component ('Injection') vulnerability in CGI component in Synology Router Manager (SRM) before 1.2.5-8227-6 and 1.3.1-9346-3 allows remote attackers to read arbitrary files via unspecified vectors."
-    },
-    {
-        "Modified": "2023-01-05T14:01:00",
-        "Published": "2023-01-05T07:15:00",
-        "access": {},
-        "assigner": "security-alert@hpe.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-43523",
-        "impact": {},
-        "last-modified": "2023-01-05T14:01:00",
-        "references": [
-            "https://www.arubanetworks.com/assets/alert/ARUBA-PSA-2022-021.txt"
-        ],
-        "summary": "Multiple vulnerabilities in the web-based management interface of Aruba EdgeConnect Enterprise Orchestrator could allow an authenticated remote attacker to conduct SQL injection attacks against the Aruba EdgeConnect Enterprise Orchestrator instance. An attacker could exploit these vulnerabilities to obtain and modify sensitive information in the underlying database potentially leading to complete compromise of the Aruba EdgeConnect Enterprise Orchestrator host in Aruba EdgeConnect Enterprise Orchestration Software version(s): Aruba EdgeConnect Enterprise Orchestrator (on-premises), Aruba EdgeConnect Enterprise Orchestrator-as-a-Service, Aruba EdgeConnect Enterprise Orchestrator-SP and Aruba EdgeConnect Enterprise Orchestrator Global Enterprise Tenant Orchestrators - Orchestrator 9.2.1.40179 and below, - Orchestrator 9.1.4.40436 and below, - Orchestrator 9.0.7.40110 and below, - Orchestrator 8.10.23.40015 and below, - Any older branches of Orchestrator not specifically mentioned."
-    },
-    {
-        "Modified": "2023-01-05T14:01:00",
-        "Published": "2023-01-05T07:15:00",
-        "access": {},
-        "assigner": "security-alert@hpe.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-43524",
-        "impact": {},
-        "last-modified": "2023-01-05T14:01:00",
-        "references": [
-            "https://www.arubanetworks.com/assets/alert/ARUBA-PSA-2022-021.txt"
-        ],
-        "summary": "A vulnerability in the web-based management interface of Aruba EdgeConnect Enterprise Orchestrator could allow an authenticated remote attacker to conduct a stored cross-site scripting (XSS) attack against an administrative user of the interface. A successful exploit allows an attacker to execute arbitrary script code in a victim's browser in the context of the affected interface in Aruba EdgeConnect Enterprise Orchestration Software version(s): Aruba EdgeConnect Enterprise Orchestrator (on-premises), Aruba EdgeConnect Enterprise Orchestrator-as-a-Service, Aruba EdgeConnect Enterprise Orchestrator-SP and Aruba EdgeConnect Enterprise Orchestrator Global Enterprise Tenant Orchestrators - Orchestrator 9.2.1.40179 and below, - Orchestrator 9.1.4.40436 and below, - Orchestrator 9.0.7.40110 and below, - Orchestrator 8.10.23.40015 and below, - Any older branches of Orchestrator not specifically mentioned."
-    },
-    {
-        "Modified": "2023-01-05T14:01:00",
-        "Published": "2023-01-05T07:15:00",
-        "access": {},
-        "assigner": "security-alert@hpe.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-43525",
-        "impact": {},
-        "last-modified": "2023-01-05T14:01:00",
-        "references": [
-            "https://www.arubanetworks.com/assets/alert/ARUBA-PSA-2022-021.txt"
-        ],
-        "summary": "Multiple vulnerabilities within the web-based management interface of Aruba EdgeConnect Enterprise Orchestrator could allow a remote attacker to conduct a reflected cross-site scripting (XSS) attack against a user of the interface. A successful exploit could allow an attacker to execute arbitrary script code in a victim's browser in the context of the affected interface in Aruba EdgeConnect Enterprise Orchestration Software version(s): Aruba EdgeConnect Enterprise Orchestrator (on-premises), Aruba EdgeConnect Enterprise Orchestrator-as-a-Service, Aruba EdgeConnect Enterprise Orchestrator-SP and Aruba EdgeConnect Enterprise Orchestrator Global Enterprise Tenant Orchestrators - Orchestrator 9.2.1.40179 and below, - Orchestrator 9.1.4.40436 and below, - Orchestrator 9.0.7.40110 and below, - Orchestrator 8.10.23.40015 and below, - Any older branches of Orchestrator not specifically mentioned."
-    },
-    {
-        "Modified": "2023-01-05T14:01:00",
-        "Published": "2023-01-05T10:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-4877",
-        "impact": {},
-        "last-modified": "2023-01-05T14:01:00",
-        "references": [
-            "https://github.com/snoyberg/keter/commit/d41f3697926b231782a3ad8050f5af1ce5cc40b7",
-            "https://github.com/snoyberg/keter/pull/246",
-            "https://vuldb.com/?ctiid.217444",
-            "https://github.com/snoyberg/keter/releases/tag/keter%2F1.8.2",
-            "https://vuldb.com/?id.217444"
-        ],
-        "summary": "A vulnerability has been found in snoyberg keter up to 1.8.1 and classified as problematic. This vulnerability affects unknown code of the file Keter/Proxy.hs. The manipulation of the argument host leads to cross site scripting. The attack can be initiated remotely. Upgrading to version 1.8.2 is able to address this issue. The name of the patch is d41f3697926b231782a3ad8050f5af1ce5cc40b7. It is recommended to upgrade the affected component. The identifier of this vulnerability is VDB-217444."
-    },
-    {
-        "Modified": "2023-01-05T14:01:00",
-        "Published": "2023-01-05T07:15:00",
-        "access": {},
-        "assigner": "security-alert@hpe.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-43526",
-        "impact": {},
-        "last-modified": "2023-01-05T14:01:00",
-        "references": [
-            "https://www.arubanetworks.com/assets/alert/ARUBA-PSA-2022-021.txt"
-        ],
-        "summary": "Multiple vulnerabilities within the web-based management interface of Aruba EdgeConnect Enterprise Orchestrator could allow a remote attacker to conduct a reflected cross-site scripting (XSS) attack against a user of the interface. A successful exploit could allow an attacker to execute arbitrary script code in a victim's browser in the context of the affected interface in Aruba EdgeConnect Enterprise Orchestration Software version(s): Aruba EdgeConnect Enterprise Orchestrator (on-premises), Aruba EdgeConnect Enterprise Orchestrator-as-a-Service, Aruba EdgeConnect Enterprise Orchestrator-SP and Aruba EdgeConnect Enterprise Orchestrator Global Enterprise Tenant Orchestrators - Orchestrator 9.2.1.40179 and below, - Orchestrator 9.1.4.40436 and below, - Orchestrator 9.0.7.40110 and below, - Orchestrator 8.10.23.40015 and below, - Any older branches of Orchestrator not specifically mentioned."
-    },
-    {
-        "Modified": "2023-01-05T14:01:00",
-        "Published": "2023-01-05T10:15:00",
-        "access": {},
-        "assigner": "security@synology.com",
-        "cvss": null,
-        "cwe": "CWE-190",
-        "id": "CVE-2023-0077",
-        "impact": {},
-        "last-modified": "2023-01-05T14:01:00",
-        "references": [
-            "https://www.synology.com/en-global/security/advisory/Synology_SA_22_25"
-        ],
-        "summary": "Integer overflow or wraparound vulnerability in CGI component in Synology Router Manager (SRM) before 1.2.5-8227-6 and 1.3.1-9346-3 allows remote attackers to overflow buffers via unspecified vectors."
-    },
-    {
-        "Modified": "2023-01-05T14:01:00",
-        "Published": "2023-01-05T07:15:00",
-        "access": {},
-        "assigner": "security-alert@hpe.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-43527",
-        "impact": {},
-        "last-modified": "2023-01-05T14:01:00",
-        "references": [
-            "https://www.arubanetworks.com/assets/alert/ARUBA-PSA-2022-021.txt"
-        ],
-        "summary": "Multiple vulnerabilities within the web-based management interface of Aruba EdgeConnect Enterprise Orchestrator could allow a remote attacker to conduct a reflected cross-site scripting (XSS) attack against a user of the interface. A successful exploit could allow an attacker to execute arbitrary script code in a victim's browser in the context of the affected interface in Aruba EdgeConnect Enterprise Orchestration Software version(s): Aruba EdgeConnect Enterprise Orchestrator (on-premises), Aruba EdgeConnect Enterprise Orchestrator-as-a-Service, Aruba EdgeConnect Enterprise Orchestrator-SP and Aruba EdgeConnect Enterprise Orchestrator Global Enterprise Tenant Orchestrators - Orchestrator 9.2.1.40179 and below, - Orchestrator 9.1.4.40436 and below, - Orchestrator 9.0.7.40110 and below, - Orchestrator 8.10.23.40015 and below, - Any older branches of Orchestrator not specifically mentioned."
-    },
-    {
-        "Modified": "2023-01-05T14:01:00",
-        "Published": "2023-01-05T07:15:00",
-        "access": {},
-        "assigner": "security-alert@hpe.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-43528",
-        "impact": {},
-        "last-modified": "2023-01-05T14:01:00",
-        "references": [
-            "https://www.arubanetworks.com/assets/alert/ARUBA-PSA-2022-021.txt"
-        ],
-        "summary": "Under certain configurations, an attacker can login to Aruba EdgeConnect Enterprise Orchestrator without supplying a multi-factor authentication code. Successful exploitation allows an attacker to login using only a username and password and successfully bypass MFA requirements in Aruba EdgeConnect Enterprise Orchestration Software version(s): Aruba EdgeConnect Enterprise Orchestrator (on-premises), Aruba EdgeConnect Enterprise Orchestrator-as-a-Service, Aruba EdgeConnect Enterprise Orchestrator-SP and Aruba EdgeConnect Enterprise Orchestrator Global Enterprise Tenant Orchestrators - Orchestrator 9.2.1.40179 and below, - Orchestrator 9.1.4.40436 and below, - Orchestrator 9.0.7.40110 and below, - Orchestrator 8.10.23.40015 and below, - Any older branches of Orchestrator not specifically mentioned."
-    },
-    {
-        "Modified": "2023-01-05T14:01:00",
-        "Published": "2023-01-05T07:15:00",
-        "access": {},
-        "assigner": "security-alert@hpe.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-43530",
-        "impact": {},
-        "last-modified": "2023-01-05T14:01:00",
-        "references": [
-            "https://www.arubanetworks.com/assets/alert/ARUBA-PSA-2022-020.txt"
-        ],
-        "summary": "Vulnerabilities in the web-based management interface of ClearPass Policy Manager could allow an authenticated remote attacker to conduct SQL injection attacks against the ClearPass Policy Manager instance. An attacker could exploit these vulnerabilities to obtain and modify sensitive information in the underlying database potentially leading to complete compromise of the ClearPass Policy Manager cluster in Aruba ClearPass Policy Manager version(s): ClearPass Policy Manager 6.10.x: 6.10.7 and below and ClearPass Policy Manager 6.9.x: 6.9.12 and below."
-    },
-    {
-        "Modified": "2023-01-05T14:01:00",
-        "Published": "2023-01-05T07:15:00",
-        "access": {},
-        "assigner": "security-alert@hpe.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-43531",
-        "impact": {},
-        "last-modified": "2023-01-05T14:01:00",
-        "references": [
-            "https://www.arubanetworks.com/assets/alert/ARUBA-PSA-2022-020.txt"
-        ],
-        "summary": "Vulnerabilities in the web-based management interface of ClearPass Policy Manager could allow an authenticated remote attacker to conduct SQL injection attacks against the ClearPass Policy Manager instance. An attacker could exploit these vulnerabilities to obtain and modify sensitive information in the underlying database potentially leading to complete compromise of the ClearPass Policy Manager cluster in Aruba ClearPass Policy Manager version(s): ClearPass Policy Manager 6.10.x: 6.10.7 and below and ClearPass Policy Manager 6.9.x: 6.9.12 and below."
-    },
-    {
-        "Modified": "2023-01-05T14:01:00",
-        "Published": "2023-01-05T07:15:00",
-        "access": {},
-        "assigner": "security-alert@hpe.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-43535",
-        "impact": {},
-        "last-modified": "2023-01-05T14:01:00",
-        "references": [
-            "https://www.arubanetworks.com/assets/alert/ARUBA-PSA-2022-020.txt"
-        ],
-        "summary": "A vulnerability in the ClearPass OnGuard Windows agent could allow malicious users on a Windows instance to elevate their user privileges. A successful exploit could allow these users to execute arbitrary code with NT AUTHORITY\\SYSTEM level privileges on the Windows instance in Aruba ClearPass Policy Manager version(s): ClearPass Policy Manager 6.10.x: 6.10.7 and below and ClearPass Policy Manager 6.9.x: 6.9.12 and below."
-    },
-    {
-        "Modified": "2023-01-05T14:01:00",
-        "Published": "2023-01-05T07:15:00",
-        "access": {},
-        "assigner": "security-alert@hpe.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-43536",
-        "impact": {},
-        "last-modified": "2023-01-05T14:01:00",
-        "references": [
-            "https://www.arubanetworks.com/assets/alert/ARUBA-PSA-2022-020.txt"
-        ],
-        "summary": "Vulnerabilities in the ClearPass Policy Manager web-based management interface allow remote authenticated users to run arbitrary commands on the underlying host. Successful exploits could allow an attacker to execute arbitrary commands as root on the underlying operating system leading to complete system compromise in Aruba ClearPass Policy Manager version(s): ClearPass Policy Manager 6.10.x: 6.10.7 and below and ClearPass Policy Manager 6.9.x: 6.9.12 and below."
-    },
-    {
-        "Modified": "2023-01-05T14:01:00",
-        "Published": "2023-01-05T07:15:00",
-        "access": {},
-        "assigner": "security-alert@hpe.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-43537",
-        "impact": {},
-        "last-modified": "2023-01-05T14:01:00",
-        "references": [
-            "https://www.arubanetworks.com/assets/alert/ARUBA-PSA-2022-020.txt"
-        ],
-        "summary": "Vulnerabilities in the ClearPass Policy Manager web-based management interface allow remote authenticated users to run arbitrary commands on the underlying host. Successful exploits could allow an attacker to execute arbitrary commands as root on the underlying operating system leading to complete system compromise in Aruba ClearPass Policy Manager version(s): ClearPass Policy Manager 6.10.x: 6.10.7 and below and ClearPass Policy Manager 6.9.x: 6.9.12 and below."
     }
 ]
