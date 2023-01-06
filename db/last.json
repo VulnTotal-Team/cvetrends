@@ -1,5 +1,635 @@
 [
     {
+        "Modified": "2023-01-06T16:58:00",
+        "Published": "2022-12-27T22:15:00",
+        "access": {},
+        "assigner": "security@golang.org",
+        "cvss": null,
+        "cwe": "CWE-22",
+        "id": "CVE-2020-36559",
+        "impact": {},
+        "last-modified": "2023-01-06T16:58:00",
+        "references": [
+            "https://github.com/go-aah/aah/pull/267",
+            "https://github.com/go-aah/aah/issues/266",
+            "https://pkg.go.dev/vuln/GO-2020-0033",
+            "https://github.com/go-aah/aah/commit/881dc9f71d1f7a4e8a9a39df9c5c081d3a2da1ec"
+        ],
+        "summary": "Due to improper santization of user input, HTTPEngine.Handle allows for directory traversal, allowing an attacker to read files outside of the target directory that the server has permission to read."
+    },
+    {
+        "Modified": "2023-01-06T16:55:00",
+        "Published": "2022-12-27T22:15:00",
+        "access": {},
+        "assigner": "security@golang.org",
+        "cvss": null,
+        "cwe": "CWE-22",
+        "id": "CVE-2019-25073",
+        "impact": {},
+        "last-modified": "2023-01-06T16:55:00",
+        "references": [
+            "https://github.com/goadesign/goa/commit/70b5a199d0f813d74423993832c424e1fc73fb39",
+            "https://pkg.go.dev/vuln/GO-2020-0032",
+            "https://github.com/goadesign/goa/pull/2388"
+        ],
+        "summary": "Improper path santiziation in github.com/goadesign/goa before v3.0.9, v2.0.10, or v1.4.3 allow remote attackers to read files outside of the intended directory."
+    },
+    {
+        "Modified": "2023-01-06T16:53:00",
+        "Published": "2022-12-28T10:15:00",
+        "access": {},
+        "assigner": "cna@vuldb.com",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2018-25050",
+        "impact": {},
+        "last-modified": "2023-01-06T16:53:00",
+        "references": [
+            "https://vuldb.com/?id.216956",
+            "https://github.com/harvesthq/chosen/releases/tag/v1.8.7",
+            "https://github.com/harvesthq/chosen/pull/2997",
+            "https://github.com/harvesthq/chosen/commit/77fd031d541e77510268d1041ed37798fdd1017e",
+            "https://vuldb.com/?ctiid.216956"
+        ],
+        "summary": "A vulnerability, which was classified as problematic, has been found in Harvest Chosen up to 1.8.6. Affected by this issue is the function AbstractChosen of the file coffee/lib/abstract-chosen.coffee. The manipulation of the argument group_label leads to cross site scripting. The attack may be launched remotely. Upgrading to version 1.8.7 is able to address this issue. The name of the patch is 77fd031d541e77510268d1041ed37798fdd1017e. It is recommended to upgrade the affected component. The identifier of this vulnerability is VDB-216956."
+    },
+    {
+        "Modified": "2023-01-06T16:48:00",
+        "Published": "2022-12-29T09:15:00",
+        "access": {},
+        "assigner": "cna@vuldb.com",
+        "cvss": null,
+        "cwe": "CWE-611",
+        "id": "CVE-2021-4295",
+        "impact": {},
+        "last-modified": "2023-01-06T16:48:00",
+        "references": [
+            "https://vuldb.com/?id.217018",
+            "https://github.com/onc-healthit/code-validator-api/pull/97",
+            "https://github.com/onc-healthit/code-validator-api/releases/tag/1.0.31",
+            "https://vuldb.com/?ctiid.217018",
+            "https://github.com/onc-healthit/code-validator-api/commit/fbd8ea121755a2d3d116b13f235bc8b61d8449af"
+        ],
+        "summary": "A vulnerability classified as problematic was found in ONC code-validator-api up to 1.0.30. This vulnerability affects the function vocabularyValidationConfigurations of the file src/main/java/org/sitenv/vocabularies/configuration/CodeValidatorApiConfiguration.java of the component XML Handler. The manipulation leads to xml external entity reference. Upgrading to version 1.0.31 is able to address this issue. The name of the patch is fbd8ea121755a2d3d116b13f235bc8b61d8449af. It is recommended to upgrade the affected component. VDB-217018 is the identifier assigned to this vulnerability."
+    },
+    {
+        "Modified": "2023-01-06T16:42:00",
+        "Published": "2022-12-27T22:15:00",
+        "access": {},
+        "assigner": "security@golang.org",
+        "cvss": null,
+        "cwe": "CWE-400",
+        "id": "CVE-2019-25072",
+        "impact": {},
+        "last-modified": "2023-01-06T16:42:00",
+        "references": [
+            "https://github.com/tendermint/tendermint/commit/03085c2da23b179c4a51f59a03cb40aa4e85a613",
+            "https://pkg.go.dev/vuln/GO-2020-0037",
+            "https://github.com/tendermint/tendermint/pull/3430"
+        ],
+        "summary": "Due to support of Gzip compression in request bodies, as well as a lack of limiting response body sizes, a malicious server can cause a client to consume a significant amount of system resources, which may be used as a denial of service vector."
+    },
+    {
+        "Modified": "2023-01-06T16:39:00",
+        "Published": "2022-12-29T09:15:00",
+        "access": {},
+        "assigner": "cna@vuldb.com",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2021-4296",
+        "impact": {},
+        "last-modified": "2023-01-06T16:39:00",
+        "references": [
+            "https://vuldb.com/?id.217019",
+            "https://github.com/w3c/Unicorn/pull/212",
+            "https://vuldb.com/?ctiid.217019",
+            "https://github.com/w3c/Unicorn/commit/51f75c31f7fc33859a9a571311c67ae4e95d9c68"
+        ],
+        "summary": "A vulnerability, which was classified as problematic, has been found in w3c Unicorn. This issue affects the function ValidatorNuMessage of the file src/org/w3c/unicorn/response/impl/ValidatorNuMessage.java. The manipulation of the argument message leads to cross site scripting. The attack may be initiated remotely. The name of the patch is 51f75c31f7fc33859a9a571311c67ae4e95d9c68. It is recommended to apply a patch to fix this issue. The associated identifier of this vulnerability is VDB-217019."
+    },
+    {
+        "Modified": "2023-01-06T16:35:00",
+        "Published": "2022-12-27T23:15:00",
+        "access": {},
+        "assigner": "cna@vuldb.com",
+        "cvss": null,
+        "cwe": "CWE-1004",
+        "id": "CVE-2019-25091",
+        "impact": {},
+        "last-modified": "2023-01-06T16:35:00",
+        "references": [
+            "https://vuldb.com/?ctiid.216909",
+            "https://github.com/nsupdate-info/nsupdate.info/commit/60a3fe559c453bc36b0ec3e5dd39c1303640a59a",
+            "https://vuldb.com/?id.216909",
+            "https://github.com/nsupdate-info/nsupdate.info/pull/410"
+        ],
+        "summary": "A vulnerability classified as problematic has been found in nsupdate.info. This affects an unknown part of the file src/nsupdate/settings/base.py of the component CSRF Cookie Handler. The manipulation of the argument CSRF_COOKIE_HTTPONLY leads to cookie without 'httponly' flag. It is possible to initiate the attack remotely. The name of the patch is 60a3fe559c453bc36b0ec3e5dd39c1303640a59a. It is recommended to apply a patch to fix this issue. The identifier VDB-216909 was assigned to this vulnerability."
+    },
+    {
+        "Modified": "2023-01-06T16:31:00",
+        "Published": "2022-12-27T22:15:00",
+        "access": {},
+        "assigner": "security@golang.org",
+        "cvss": null,
+        "cwe": "CWE-22",
+        "id": "CVE-2018-25046",
+        "impact": {},
+        "last-modified": "2023-01-06T16:31:00",
+        "references": [
+            "https://github.com/cloudfoundry/archiver/commit/09b5706aa9367972c09144a450bb4523049ee840",
+            "https://pkg.go.dev/vuln/GO-2020-0025",
+            "https://snyk.io/research/zip-slip-vulnerability"
+        ],
+        "summary": "Due to improper path santization, archives containing relative file paths can cause files to be written (or overwritten) outside of the target directory."
+    },
+    {
+        "Modified": "2023-01-06T16:26:00",
+        "Published": "2022-12-27T22:15:00",
+        "access": {},
+        "assigner": "security@golang.org",
+        "cvss": null,
+        "cwe": "CWE-346",
+        "id": "CVE-2017-20146",
+        "impact": {},
+        "last-modified": "2023-01-06T16:26:00",
+        "references": [
+            "https://github.com/gorilla/handlers/commit/90663712d74cb411cbef281bc1e08c19d1a76145",
+            "https://github.com/gorilla/handlers/pull/116",
+            "https://pkg.go.dev/vuln/GO-2020-0020"
+        ],
+        "summary": "Usage of the CORS handler may apply improper CORS headers, allowing the requester to explicitly control the value of the Access-Control-Allow-Origin header, which bypasses the expected behavior of the Same Origin Policy."
+    },
+    {
+        "Modified": "2023-01-06T16:21:00",
+        "Published": "2022-12-27T22:15:00",
+        "access": {},
+        "assigner": "security@golang.org",
+        "cvss": null,
+        "cwe": "CWE-352",
+        "id": "CVE-2016-15005",
+        "impact": {},
+        "last-modified": "2023-01-06T16:21:00",
+        "references": [
+            "https://pkg.go.dev/vuln/GO-2020-0045",
+            "https://github.com/dinever/golf/commit/3776f338be48b5bc5e8cf9faff7851fc52a3f1fe",
+            "https://github.com/dinever/golf/pull/24",
+            "https://github.com/dinever/golf/issues/20"
+        ],
+        "summary": "CSRF tokens are generated using math/rand, which is not a cryptographically secure rander number generation, making predicting their values relatively trivial and allowing an attacker to bypass CSRF protections which relatively few requests."
+    },
+    {
+        "Modified": "2023-01-06T16:15:00",
+        "Published": "2023-01-06T16:15:00",
+        "access": {},
+        "assigner": "security-alert@hpe.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2019-5313",
+        "impact": {},
+        "last-modified": "2023-01-06T16:15:00",
+        "references": [],
+        "summary": "CVE was unused by HPE."
+    },
+    {
+        "Modified": "2023-01-06T16:15:00",
+        "Published": "2023-01-06T16:15:00",
+        "access": {},
+        "assigner": "security-alert@hpe.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2019-5316",
+        "impact": {},
+        "last-modified": "2023-01-06T16:15:00",
+        "references": [],
+        "summary": "CVE was unused by HPE."
+    },
+    {
+        "Modified": "2023-01-06T16:15:00",
+        "Published": "2023-01-06T16:15:00",
+        "access": {},
+        "assigner": "security-alert@hpe.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2019-5325",
+        "impact": {},
+        "last-modified": "2023-01-06T16:15:00",
+        "references": [],
+        "summary": "CVE was unused by HPE."
+    },
+    {
+        "Modified": "2023-01-06T16:15:00",
+        "Published": "2023-01-06T16:15:00",
+        "access": {},
+        "assigner": "security-alert@hpe.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2020-24642",
+        "impact": {},
+        "last-modified": "2023-01-06T16:15:00",
+        "references": [],
+        "summary": "CVE was unused by HPE."
+    },
+    {
+        "Modified": "2023-01-06T16:15:00",
+        "Published": "2023-01-06T16:15:00",
+        "access": {},
+        "assigner": "security-alert@hpe.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2020-24643",
+        "impact": {},
+        "last-modified": "2023-01-06T16:15:00",
+        "references": [],
+        "summary": "CVE was unused by HPE."
+    },
+    {
+        "Modified": "2023-01-06T16:15:00",
+        "Published": "2023-01-06T16:15:00",
+        "access": {},
+        "assigner": "security-alert@hpe.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2020-24644",
+        "impact": {},
+        "last-modified": "2023-01-06T16:15:00",
+        "references": [],
+        "summary": "CVE was unused by HPE."
+    },
+    {
+        "Modified": "2023-01-06T16:15:00",
+        "Published": "2023-01-06T16:15:00",
+        "access": {},
+        "assigner": "security-alert@hpe.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2020-24645",
+        "impact": {},
+        "last-modified": "2023-01-06T16:15:00",
+        "references": [],
+        "summary": "CVE was unused by HPE."
+    },
+    {
+        "Modified": "2023-01-06T16:15:00",
+        "Published": "2023-01-06T16:15:00",
+        "access": {},
+        "assigner": "security-alert@hpe.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2020-7112",
+        "impact": {},
+        "last-modified": "2023-01-06T16:15:00",
+        "references": [],
+        "summary": "CVE was unused by HPE."
+    },
+    {
+        "Modified": "2023-01-06T16:15:00",
+        "Published": "2023-01-06T16:15:00",
+        "access": {},
+        "assigner": "security-alert@hpe.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2020-7118",
+        "impact": {},
+        "last-modified": "2023-01-06T16:15:00",
+        "references": [],
+        "summary": "CVE was unused by HPE."
+    },
+    {
+        "Modified": "2023-01-06T16:15:00",
+        "Published": "2023-01-04T19:15:00",
+        "access": {},
+        "assigner": "csirt@divd.nl",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-45049",
+        "impact": {},
+        "last-modified": "2023-01-06T16:15:00",
+        "references": [
+            "https://csirt.divd.nl/CVE-2022-45049/",
+            "https://csirt.divd.nl/DIVD-2022-00064/"
+        ],
+        "summary": "A reflected XSS vulnerability has been found in Axiell Iguana CMS, allowing an attacker to execute code in a victim's browser. The url parameter on the novelist.php endpoint does not properly neutralise user input, resulting in the vulnerability."
+    },
+    {
+        "Modified": "2023-01-06T16:15:00",
+        "Published": "2023-01-04T19:15:00",
+        "access": {},
+        "assigner": "csirt@divd.nl",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-45051",
+        "impact": {},
+        "last-modified": "2023-01-06T16:15:00",
+        "references": [
+            "https://csirt.divd.nl/CVE-2022-45051/",
+            "https://csirt.divd.nl/DIVD-2022-00064/"
+        ],
+        "summary": "A reflected XSS vulnerability has been found in Axiell Iguana CMS, allowing an attacker to execute code in a victim's browser. The module parameter on the Service.template.cls endpoint does not properly neutralise user input, resulting in the vulnerability."
+    },
+    {
+        "Modified": "2023-01-06T16:15:00",
+        "Published": "2023-01-04T19:15:00",
+        "access": {},
+        "assigner": "csirt@divd.nl",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-45052",
+        "impact": {},
+        "last-modified": "2023-01-06T16:15:00",
+        "references": [
+            "https://csirt.divd.nl/CVE-2022-45052/",
+            "https://csirt.divd.nl/DIVD-2022-00064/"
+        ],
+        "summary": "A Local File Inclusion vulnerability has been found in Axiell Iguana CMS. Due to insufficient neutralisation of user input on the url parameter on the Proxy.type.php endpoint, external users are capable of accessing files on the server."
+    },
+    {
+        "Modified": "2023-01-06T16:15:00",
+        "Published": "2022-12-01T09:15:00",
+        "access": {},
+        "assigner": "csirt@divd.nl",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2022-45050",
+        "impact": {},
+        "last-modified": "2023-01-06T16:15:00",
+        "references": [
+            "https://csirt.divd.nl/CVE-2022-45050/",
+            "https://csirt.divd.nl/DIVD-2022-00064/"
+        ],
+        "summary": "A reflected XSS vulnerability has been found in Axiell Iguana CMS, allowing an attacker to execute code in a victim's browser. The title parameter on the twitter.php endpoint does not properly neutralise user input, resulting in the vulnerability."
+    },
+    {
+        "Modified": "2023-01-06T16:15:00",
+        "Published": "2022-10-26T10:15:00",
+        "access": {},
+        "assigner": "csirt@divd.nl",
+        "cvss": null,
+        "cwe": "CWE-89",
+        "id": "CVE-2022-29822",
+        "impact": {},
+        "last-modified": "2023-01-06T16:15:00",
+        "references": [
+            "https://csirt.divd.nl/DIVD-2022-00020",
+            "https://csirt.divd.nl/CVE-2022-29822/"
+        ],
+        "summary": "Due to improper parameter filtering in the Feathers js library, which may ultimately lead to SQL injection"
+    },
+    {
+        "Modified": "2023-01-06T16:15:00",
+        "Published": "2022-10-26T10:15:00",
+        "access": {},
+        "assigner": "csirt@divd.nl",
+        "cvss": null,
+        "cwe": "CWE-1321",
+        "id": "CVE-2022-29823",
+        "impact": {},
+        "last-modified": "2023-01-06T16:15:00",
+        "references": [
+            "https://csirt.divd.nl/DIVD-2022-00020",
+            "https://csirt.divd.nl/CVE-2022-29823/"
+        ],
+        "summary": "Feather-Sequalize cleanQuery method uses insecure recursive logic to filter unsupported keys from the query object. This results in a Remote Code Execution (RCE) with privileges of application."
+    },
+    {
+        "Modified": "2023-01-06T16:15:00",
+        "Published": "2022-10-26T10:15:00",
+        "access": {},
+        "assigner": "csirt@divd.nl",
+        "cvss": null,
+        "cwe": "NVD-CWE-noinfo",
+        "id": "CVE-2022-2421",
+        "impact": {},
+        "last-modified": "2023-01-06T16:15:00",
+        "references": [
+            "https://csirt.divd.nl/DIVD-2022-00045",
+            "https://csirt.divd.nl/CVE-2022-2421"
+        ],
+        "summary": "Due to improper type validation in attachment parsing the Socket.io js library, it is possible to overwrite the _placeholder object which allows an attacker to place references to functions at arbitrary places in the resulting query object."
+    },
+    {
+        "Modified": "2023-01-06T16:15:00",
+        "Published": "2022-10-26T10:15:00",
+        "access": {},
+        "assigner": "csirt@divd.nl",
+        "cvss": null,
+        "cwe": "CWE-89",
+        "id": "CVE-2022-2422",
+        "impact": {},
+        "last-modified": "2023-01-06T16:15:00",
+        "references": [
+            "https://csirt.divd.nl/DIVD-2022-00020",
+            "https://csirt.divd.nl/CVE-2022-2422"
+        ],
+        "summary": "Due to improper input validation in the Feathers js library, it is possible to perform a SQL injection attack on the back-end database, in case the feathers-sequelize package is used."
+    },
+    {
+        "Modified": "2023-01-06T16:15:00",
+        "Published": "2022-06-09T17:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "LOCAL"
+        },
+        "assigner": "csirt@divd.nl",
+        "cvss": 7.2,
+        "cvss-time": "2023-01-06T16:15:00",
+        "cvss-vector": "AV:L/AC:L/Au:N/C:C/I:C/A:C",
+        "cwe": "NVD-CWE-noinfo",
+        "id": "CVE-2022-25153",
+        "impact": {
+            "availability": "COMPLETE",
+            "confidentiality": "COMPLETE",
+            "integrity": "COMPLETE"
+        },
+        "last-modified": "2023-01-06T16:15:00",
+        "references": [
+            "https://csirt.divd.nl/CVE-2022-25153",
+            "https://csirt.divd.nl/DIVD-2021-00037"
+        ],
+        "summary": "The ITarian Endpoint Manage Communication Client, prior to version 6.43.41148.21120, is compiled using insecure OpenSSL settings. Due to this setting, a malicious actor with low privileges access to a system can escalate his privileges to SYSTEM abusing an insecure openssl.conf lookup."
+    },
+    {
+        "Modified": "2023-01-06T16:15:00",
+        "Published": "2022-02-21T18:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "MEDIUM",
+            "vector": "NETWORK"
+        },
+        "assigner": "csirt@divd.nl",
+        "cvss": 4.3,
+        "cvss-time": "2023-01-06T16:15:00",
+        "cvss-vector": "AV:N/AC:M/Au:N/C:P/I:N/A:N",
+        "cwe": "CWE-203",
+        "id": "CVE-2022-0564",
+        "impact": {
+            "availability": "NONE",
+            "confidentiality": "PARTIAL",
+            "integrity": "NONE"
+        },
+        "last-modified": "2023-01-06T16:15:00",
+        "references": [
+            "https://community.qlik.com/t5/Release-Notes/Qlik-Sense-Enterprise-on-Windows-November-2021-Initial-Release/ta-p/1856531",
+            "https://csirt.divd.nl/CVE-2022-0564/",
+            "https://csirt.divd.nl/DIVD-2021-00021/"
+        ],
+        "summary": "A vulnerability in Qlik Sense Enterprise on Windows could allow an remote attacker to enumerate domain user accounts. An attacker could exploit this vulnerability by sending authentication requests to an affected system. A successful exploit could allow the attacker to compare the response time that are returned by the affected system to determine which accounts are valid user accounts. Affected systems are only vulnerable if they have LDAP configured."
+    },
+    {
+        "Modified": "2023-01-06T16:01:00",
+        "Published": "2022-12-27T23:15:00",
+        "access": {},
+        "assigner": "cna@vuldb.com",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2020-36635",
+        "impact": {},
+        "last-modified": "2023-01-06T16:01:00",
+        "references": [
+            "https://github.com/openmrs/openmrs-module-appointmentscheduling/commit/34213c3f6ea22df427573076fb62744694f601d8",
+            "https://vuldb.com/?id.216915",
+            "https://github.com/openmrs/openmrs-module-appointmentscheduling/pull/32",
+            "https://vuldb.com/?ctiid.216915",
+            "https://github.com/openmrs/openmrs-module-appointmentscheduling/releases/tag/1.13.0"
+        ],
+        "summary": "A vulnerability was found in OpenMRS Appointment Scheduling Module up to 1.12.x. It has been classified as problematic. This affects the function validateFieldName of the file api/src/main/java/org/openmrs/module/appointmentscheduling/validator/AppointmentTypeValidator.java. The manipulation leads to cross site scripting. It is possible to initiate the attack remotely. Upgrading to version 1.13.0 is able to address this issue. The name of the patch is 34213c3f6ea22df427573076fb62744694f601d8. It is recommended to upgrade the affected component. The associated identifier of this vulnerability is VDB-216915."
+    },
+    {
+        "Modified": "2023-01-06T15:53:00",
+        "Published": "2022-12-28T19:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-863",
+        "id": "CVE-2022-23553",
+        "impact": {},
+        "last-modified": "2023-01-06T15:53:00",
+        "references": [
+            "https://github.com/stevespringett/Alpine/blob/alpine-parent-1.10.2/alpine/src/main/java/alpine/filters/WhitelistUrlFilter.java#L115-L127",
+            "https://github.com/stevespringett/Alpine/blob/alpine-parent-1.10.2/alpine/src/main/java/alpine/filters/BlacklistUrlFilter.java#L107-L121",
+            "https://securitylab.github.com/advisories/GHSL-2021-1009-Alpine/"
+        ],
+        "summary": "Alpine is a scaffolding library in Java. Alpine prior to version 1.10.4 allows URL access filter bypass. This issue has been fixed in version 1.10.4. There are no known workarounds."
+    },
+    {
+        "Modified": "2023-01-06T15:47:00",
+        "Published": "2022-12-28T19:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-287",
+        "id": "CVE-2022-23554",
+        "impact": {},
+        "last-modified": "2023-01-06T15:47:00",
+        "references": [
+            "https://github.com/stevespringett/Alpine/releases/tag/alpine-parent-1.10.4",
+            "https://securitylab.github.com/advisories/GHSL-2021-1010-Alpine/",
+            "https://github.com/stevespringett/Alpine/blob/f03dbda46229c26145a5f9f7f2660cc2c386be02/alpine/src/main/java/alpine/filters/AuthenticationFilter.java#L58-L60"
+        ],
+        "summary": "Alpine is a scaffolding library in Java. Alpine prior to version 1.10.4 allows Authentication Filter bypass. The AuthenticationFilter relies on the request URI to evaluate if the user is accessing the swagger endpoint. By accessing a URL with a path such as /api/foo;%2fapi%2fswagger the contains condition will hold and will return from the authentication filter without aborting the request. Note that the principal object will not be assigned and therefore the issue wont allow user impersonation. This issue has been fixed in version 1.10.4. There are no known workarounds."
+    },
+    {
+        "Modified": "2023-01-06T15:39:00",
+        "Published": "2022-12-27T22:15:00",
+        "access": {},
+        "assigner": "security@golang.org",
+        "cvss": null,
+        "cwe": "CWE-668",
+        "id": "CVE-2015-10004",
+        "impact": {},
+        "last-modified": "2023-01-06T15:39:00",
+        "references": [
+            "https://github.com/robbert229/jwt/commit/ca1404ee6e83fcbafb66b09ed0d543850a15b654",
+            "https://pkg.go.dev/vuln/GO-2020-0023",
+            "https://github.com/robbert229/jwt/issues/12"
+        ],
+        "summary": "Token validation methods are susceptible to a timing side-channel during HMAC comparison. With a large enough number of requests over a low latency connection, an attacker may use this to determine the expected HMAC."
+    },
+    {
+        "Modified": "2023-01-06T15:33:00",
+        "Published": "2022-12-28T21:15:00",
+        "access": {},
+        "assigner": "cna@vuldb.com",
+        "cvss": null,
+        "cwe": "CWE-611",
+        "id": "CVE-2022-4818",
+        "impact": {},
+        "last-modified": "2023-01-06T15:33:00",
+        "references": [
+            "https://vuldb.com/?ctiid.216997",
+            "https://vuldb.com/?id.216997",
+            "https://github.com/Talend/tmdm-server-se/releases/tag/snap%2Fmaster%2F20221220_1938",
+            "https://github.com/Talend/tmdm-server-se/pull/1598",
+            "https://github.com/Talend/tmdm-server-se/commit/95590db2ad6a582c371273ceab1a73ad6ed47853"
+        ],
+        "summary": "A vulnerability was found in Talend Open Studio for MDM. It has been declared as problematic. Affected by this vulnerability is an unknown functionality of the file org.talend.mdm.core/src/com/amalto/core/storage/SystemStorageWrapper.java. The manipulation leads to xml external entity reference. Upgrading to version 20221220_1938 is able to address this issue. The name of the patch is 95590db2ad6a582c371273ceab1a73ad6ed47853. It is recommended to upgrade the affected component. The identifier VDB-216997 was assigned to this vulnerability."
+    },
+    {
+        "Modified": "2023-01-06T15:24:00",
+        "Published": "2022-12-27T22:15:00",
+        "access": {},
+        "assigner": "security@golang.org",
+        "cvss": null,
+        "cwe": "CWE-787",
+        "id": "CVE-2014-125026",
+        "impact": {},
+        "last-modified": "2023-01-06T15:24:00",
+        "references": [
+            "https://github.com/cloudflare/golz4/issues/5",
+            "https://pkg.go.dev/vuln/GO-2020-0022",
+            "https://github.com/cloudflare/golz4/commit/199f5f7878062ca17a98e079f2dbe1205e2ed898"
+        ],
+        "summary": "LZ4 bindings use a deprecated C API that is vulnerable to memory corruption, which could lead to arbitrary code execution if called with untrusted user input."
+    },
+    {
+        "Modified": "2023-01-06T15:15:00",
+        "Published": "2023-01-06T15:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2023-22475",
+        "impact": {},
+        "last-modified": "2023-01-06T15:15:00",
+        "references": [
+            "https://github.com/thinkst/canarytokens/security/advisories/GHSA-5675-3424-hpqr",
+            "https://github.com/thinkst/canarytokens/commit/fb612906f2217bbb8863199694891d16e20bad3e",
+            "https://github.com/thinkst/canarytokens/security/advisories/GHSA-3h2c-3fgr-74vh"
+        ],
+        "summary": "Canarytokens is an open source tool which helps track activity and actions on your network. A Cross-Site Scripting vulnerability was identified in the history page of triggered Canarytokens prior to sha-fb61290. An attacker who discovers an HTTP-based Canarytoken (a URL) can use this to execute Javascript in the Canarytoken's trigger history page (domain: canarytokens.org) when the history page is later visited by the Canarytoken's creator. This vulnerability could be used to disable or delete the affected Canarytoken, or view its activation history. It might also be used as a stepping stone towards revealing more information about the Canarytoken's creator to the attacker. For example, an attacker could recover the email address tied to the Canarytoken, or place Javascript on the history page that redirect the creator towards an attacker-controlled Canarytoken to show the creator's network location. This vulnerability is similar to CVE-2022-31113, but affected parameters reported differently from the Canarytoken trigger request. An attacker could only act on the discovered Canarytoken. This issue did not expose other Canarytokens or other Canarytoken creators. Canarytokens Docker images sha-fb61290 and later contain a patch for this issue."
+    },
+    {
+        "Modified": "2023-01-06T15:06:00",
+        "Published": "2022-12-27T22:15:00",
+        "access": {},
+        "assigner": "security@golang.org",
+        "cvss": null,
+        "cwe": "CWE-119",
+        "id": "CVE-2022-2584",
+        "impact": {},
+        "last-modified": "2023-01-06T15:06:00",
+        "references": [
+            "https://github.com/ipld/go-codec-dagpb/commit/a17ace35cc760a2698645c09868f9050fa219f57",
+            "https://pkg.go.dev/vuln/GO-2022-0422"
+        ],
+        "summary": "The dag-pb codec can panic when decoding invalid blocks."
+    },
+    {
+        "Modified": "2023-01-06T15:05:00",
+        "Published": "2022-12-27T22:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "NVD-CWE-Other",
+        "id": "CVE-2022-45963",
+        "impact": {},
+        "last-modified": "2023-01-06T15:05:00",
+        "references": [
+            "https://gist.github.com/yinfei6/fc6478328f8c2e2bf62a631a81afb265"
+        ],
+        "summary": "h3c firewall <= 3.10 ESS6703 has a privilege bypass vulnerability."
+    },
+    {
         "Modified": "2023-01-06T14:55:00",
         "Published": "2022-12-27T22:15:00",
         "access": {},
@@ -1066,624 +1696,5 @@
             "https://vuldb.com/?id.216863"
         ],
         "summary": "A vulnerability was found in RamseyK httpserver. It has been rated as critical. This issue affects the function ResourceHost::getResource of the file src/ResourceHost.cpp of the component URI Handler. The manipulation of the argument uri leads to path traversal: '../filedir'. The attack may be initiated remotely. The name of the patch is 1a0de56e4dafff9c2f9c8f6b130a764f7a50df52. It is recommended to apply a patch to fix this issue. The associated identifier of this vulnerability is VDB-216863."
-    },
-    {
-        "Modified": "2023-01-06T05:42:00",
-        "Published": "2022-12-27T09:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2019-25086",
-        "impact": {},
-        "last-modified": "2023-01-06T05:42:00",
-        "references": [
-            "https://vuldb.com/?ctiid.216862",
-            "https://iet.eu.teamwork.com/desk/#/tickets/366419",
-            "https://github.com/IET-OU/open-media-player/releases/tag/1.5.1",
-            "https://vuldb.com/?id.216862",
-            "https://github.com/IET-OU/open-media-player/commit/3f39f2d68d11895929c04f7b49b97a734ae7cd1f",
-            "https://github.com/IET-OU/open-media-player/issues/93"
-        ],
-        "summary": "A vulnerability was found in IET-OU Open Media Player up to 1.5.0. It has been declared as problematic. This vulnerability affects the function webvtt of the file application/controllers/timedtext.php. The manipulation of the argument ttml_url leads to cross site scripting. The attack can be initiated remotely. Upgrading to version 1.5.1 is able to address this issue. The name of the patch is 3f39f2d68d11895929c04f7b49b97a734ae7cd1f. It is recommended to upgrade the affected component. VDB-216862 is the identifier assigned to this vulnerability."
-    },
-    {
-        "Modified": "2023-01-06T05:33:00",
-        "Published": "2023-01-06T03:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-40049",
-        "impact": {},
-        "last-modified": "2023-01-06T05:33:00",
-        "references": [
-            "https://github.com/Manba6/Bug_report/blob/main/vendors/oretnom23/theme-park-ticketing-system/SQLi-1.md"
-        ],
-        "summary": "SQL injection vulnerability in sourcecodester Theme Park Ticketing System 1.0 allows remote attackers to view sensitive information via the id parameter to the /tpts/manage_user.php page."
-    },
-    {
-        "Modified": "2023-01-06T05:33:00",
-        "Published": "2023-01-06T03:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-44870",
-        "impact": {},
-        "last-modified": "2023-01-06T05:33:00",
-        "references": [
-            "https://github.com/Cedric1314/CVE-2022-44870/blob/main/README.md",
-            "https://github.com/magicblack/maccms10/issues/986"
-        ],
-        "summary": "A reflected cross-site scripting (XSS) vulnerability in maccms10 v2022.1000.3032 allows attackers to execute arbitrary web scripts or HTML via a crafted payload injected into the Name parameter under the AD Management module."
-    },
-    {
-        "Modified": "2023-01-06T05:33:00",
-        "Published": "2023-01-06T04:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-42979",
-        "impact": {},
-        "last-modified": "2023-01-06T05:33:00",
-        "references": [
-            "https://medium.com/@jalee0606/how-i-found-my-first-one-click-account-takeover-via-deeplink-in-ryde-5406010c36d8"
-        ],
-        "summary": "Information disclosure due to an insecure hostname validation in the RYDE application 5.8.43 for Android and iOS allows attackers to take over an account via a deep link."
-    },
-    {
-        "Modified": "2023-01-06T05:33:00",
-        "Published": "2023-01-06T05:15:00",
-        "access": {},
-        "assigner": "report@snyk.io",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-25923",
-        "impact": {},
-        "last-modified": "2023-01-06T05:33:00",
-        "references": [
-            "https://security.snyk.io/vuln/SNYK-JS-EXECLOCALBIN-3157956",
-            "https://github.com/saeedseyfi/exec-local-bin/blob/92db00bde9d6e2d83410849f898df12f075b73b0/index.js%23L9",
-            "https://github.com/saeedseyfi/exec-local-bin/commit/d425866375c85038133a6f79db2aac66c0a72624"
-        ],
-        "summary": "Versions of the package exec-local-bin before 1.2.0 are vulnerable to Command Injection via the theProcess() functionality due to improper user-input sanitization."
-    },
-    {
-        "Modified": "2023-01-06T03:15:00",
-        "Published": "2015-07-14T16:59:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "MEDIUM",
-            "vector": "NETWORK"
-        },
-        "assigner": "cve@mitre.org",
-        "cvss": 4.3,
-        "cvss-time": "2023-01-06T03:15:00",
-        "cvss-vector": "AV:N/AC:M/Au:N/C:N/I:P/A:N",
-        "cwe": "CWE-79",
-        "id": "CVE-2015-5521",
-        "impact": {
-            "availability": "NONE",
-            "confidentiality": "NONE",
-            "integrity": "PARTIAL"
-        },
-        "last-modified": "2023-01-06T03:15:00",
-        "references": [
-            "http://packetstormsecurity.com/files/132589/Black-Cat-CMS-1.1.2-Cross-Site-Scripting.html",
-            "https://github.com/BlackCatDevelopment/BlackCatCMS/issues/408"
-        ],
-        "summary": "Cross-site scripting (XSS) vulnerability in BlackCat CMS 1.1.2 allows remote attackers to inject arbitrary web script or HTML via the name in a new group to backend/groups/index.php."
-    },
-    {
-        "Modified": "2023-01-06T02:31:00",
-        "Published": "2022-12-27T23:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2021-4291",
-        "impact": {},
-        "last-modified": "2023-01-06T02:31:00",
-        "references": [
-            "https://github.com/openmrs/openmrs-module-adminui/commit/a7eefb5f69f6c50a3bffcb138bb8ea57cb41a9b6",
-            "https://github.com/openmrs/openmrs-module-adminui/releases/tag/1.6.0",
-            "https://github.com/openmrs/openmrs-module-adminui/pull/61",
-            "https://vuldb.com/?id.216916",
-            "https://vuldb.com/?ctiid.216916"
-        ],
-        "summary": "A vulnerability was found in OpenMRS Admin UI Module up to 1.5.x. It has been declared as problematic. This vulnerability affects unknown code of the file omod/src/main/webapp/pages/metadata/locations/location.gsp. The manipulation leads to cross site scripting. The attack can be initiated remotely. Upgrading to version 1.6.0 is able to address this issue. The name of the patch is a7eefb5f69f6c50a3bffcb138bb8ea57cb41a9b6. It is recommended to upgrade the affected component. The identifier of this vulnerability is VDB-216916."
-    },
-    {
-        "Modified": "2023-01-06T02:29:00",
-        "Published": "2022-12-27T23:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2020-36636",
-        "impact": {},
-        "last-modified": "2023-01-06T02:29:00",
-        "references": [
-            "https://github.com/openmrs/openmrs-module-adminui/releases/tag/1.5.0",
-            "https://vuldb.com/?ctiid.216918",
-            "https://vuldb.com/?id.216918",
-            "https://github.com/openmrs/openmrs-module-adminui/commit/702fbfdac7c4418f23bb5f6452482b4a88020061",
-            "https://github.com/openmrs/openmrs-module-adminui/pull/57"
-        ],
-        "summary": "A vulnerability classified as problematic has been found in OpenMRS Admin UI Module up to 1.4.x. Affected is the function sendErrorMessage of the file omod/src/main/java/org/openmrs/module/adminui/page/controller/systemadmin/accounts/AccountPageController.java of the component Account Setup Handler. The manipulation leads to cross site scripting. It is possible to launch the attack remotely. Upgrading to version 1.5.0 is able to address this issue. The name of the patch is 702fbfdac7c4418f23bb5f6452482b4a88020061. It is recommended to upgrade the affected component. VDB-216918 is the identifier assigned to this vulnerability."
-    },
-    {
-        "Modified": "2023-01-06T02:23:00",
-        "Published": "2022-12-28T21:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-4819",
-        "impact": {},
-        "last-modified": "2023-01-06T02:23:00",
-        "references": [
-            "https://vuldb.com/?id.216998",
-            "https://github.com/kohler/hotcrp/commit/d4ffdb0ef806453c54ddca7fdda3e5c60356285c",
-            "https://vuldb.com/?ctiid.216998"
-        ],
-        "summary": "A vulnerability was found in HotCRP. It has been rated as problematic. Affected by this issue is some unknown functionality. The manipulation leads to cross site scripting. The attack may be launched remotely. The name of the patch is d4ffdb0ef806453c54ddca7fdda3e5c60356285c. It is recommended to apply a patch to fix this issue. VDB-216998 is the identifier assigned to this vulnerability."
-    },
-    {
-        "Modified": "2023-01-06T02:21:00",
-        "Published": "2022-12-28T21:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-4820",
-        "impact": {},
-        "last-modified": "2023-01-06T02:21:00",
-        "references": [
-            "https://vuldb.com/?id.216999",
-            "https://github.com/flatpressblog/flatpress/commit/229752b51025e678370298284d42f8ebb231f67f",
-            "https://github.com/flatpressblog/flatpress/issues/180",
-            "https://vuldb.com/?ctiid.216999"
-        ],
-        "summary": "A vulnerability classified as problematic has been found in FlatPress. This affects an unknown part of the file admin/panels/entry/admin.entry.list.php of the component Admin Area. The manipulation leads to cross site scripting. It is possible to initiate the attack remotely. The name of the patch is 229752b51025e678370298284d42f8ebb231f67f. It is recommended to apply a patch to fix this issue. The associated identifier of this vulnerability is VDB-216999."
-    },
-    {
-        "Modified": "2023-01-06T02:20:00",
-        "Published": "2022-12-28T21:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-4821",
-        "impact": {},
-        "last-modified": "2023-01-06T02:20:00",
-        "references": [
-            "https://github.com/flatpressblog/flatpress/issues/178",
-            "https://vuldb.com/?ctiid.217000",
-            "https://vuldb.com/?id.217000",
-            "https://github.com/flatpressblog/flatpress/commit/3cc223dec5260e533a84b5cf5780d3a4fbf21241"
-        ],
-        "summary": "A vulnerability classified as problematic was found in FlatPress. This vulnerability affects the function onupload of the file admin/panels/uploader/admin.uploader.php of the component XML File Handler/MD File Handler. The manipulation leads to cross site scripting. The attack can be initiated remotely. The name of the patch is 3cc223dec5260e533a84b5cf5780d3a4fbf21241. It is recommended to apply a patch to fix this issue. The identifier of this vulnerability is VDB-217000."
-    },
-    {
-        "Modified": "2023-01-06T02:20:00",
-        "Published": "2022-12-28T21:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-4822",
-        "impact": {},
-        "last-modified": "2023-01-06T02:20:00",
-        "references": [
-            "https://github.com/flatpressblog/flatpress/issues/176",
-            "https://vuldb.com/?ctiid.217001",
-            "https://vuldb.com/?id.217001",
-            "https://github.com/flatpressblog/flatpress/commit/5f23b4c2eac294cc0ba5e541f83a6f8a26f9fed1"
-        ],
-        "summary": "A vulnerability, which was classified as problematic, has been found in FlatPress. This issue affects some unknown processing of the file setup/lib/main.lib.php of the component Setup. The manipulation leads to cross site scripting. The attack may be initiated remotely. The name of the patch is 5f23b4c2eac294cc0ba5e541f83a6f8a26f9fed1. It is recommended to apply a patch to fix this issue. The identifier VDB-217001 was assigned to this vulnerability."
-    },
-    {
-        "Modified": "2023-01-06T02:03:00",
-        "Published": "2022-12-26T22:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "NVD-CWE-noinfo",
-        "id": "CVE-2019-19030",
-        "impact": {},
-        "last-modified": "2023-01-06T02:03:00",
-        "references": [
-            "https://github.com/goharbor/harbor/security/advisories/GHSA-q9x4-q76f-5h5j"
-        ],
-        "summary": "Cloud Native Computing Foundation Harbor before 1.10.3 and 2.x before 2.0.1 allows resource enumeration because unauthenticated API calls reveal (via the HTTP status code) whether a resource exists."
-    },
-    {
-        "Modified": "2023-01-06T02:00:00",
-        "Published": "2022-12-26T22:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-120",
-        "id": "CVE-2019-11851",
-        "impact": {},
-        "last-modified": "2023-01-06T02:00:00",
-        "references": [
-            "http://source.sierrawireless.com/-/media/support_downloads/security-bulletins/pdf/swi-psa-2021-001.ashx",
-            "https://www.sierrawireless.com/company/security/"
-        ],
-        "summary": "The ACENet service in Sierra Wireless ALEOS before 4.4.9, 4.5.x through 4.9.x before 4.9.5, and 4.10.x through 4.13.x before 4.14.0 allows remote attackers to execute arbitrary code via a buffer overflow."
-    },
-    {
-        "Modified": "2023-01-06T01:53:00",
-        "Published": "2022-12-27T22:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-89",
-        "id": "CVE-2022-46442",
-        "impact": {},
-        "last-modified": "2023-01-06T01:53:00",
-        "references": [
-            "https://gist.github.com/yinfei6/f2b311374de4b4cec1dc22433d38c92a"
-        ],
-        "summary": "dedecms <=V5.7.102 is vulnerable to SQL Injection. In sys_ sql_ n query.php there are no restrictions on the sql query."
-    },
-    {
-        "Modified": "2023-01-06T01:30:00",
-        "Published": "2022-12-27T22:15:00",
-        "access": {},
-        "assigner": "security@golang.org",
-        "cvss": null,
-        "cwe": "CWE-311",
-        "id": "CVE-2021-4239",
-        "impact": {},
-        "last-modified": "2023-01-06T01:30:00",
-        "references": [
-            "https://github.com/flynn/noise/pull/44",
-            "https://pkg.go.dev/vuln/GO-2022-0425"
-        ],
-        "summary": "The Noise protocol implementation suffers from weakened cryptographic security after encrypting 2^64 messages, and a potential denial of service attack. After 2^64 (~18.4 quintillion) messages are encrypted with the Encrypt function, the nonce counter will wrap around, causing multiple messages to be encrypted with the same key and nonce. In a separate issue, the Decrypt function increments the nonce state even when it fails to decrypt a message. If an attacker can provide an invalid input to the Decrypt function, this will cause the nonce state to desynchronize between the peers, resulting in a failure to encrypt all subsequent messages."
-    },
-    {
-        "Modified": "2023-01-06T01:28:00",
-        "Published": "2022-12-27T22:15:00",
-        "access": {},
-        "assigner": "security@golang.org",
-        "cvss": null,
-        "cwe": "CWE-287",
-        "id": "CVE-2020-36569",
-        "impact": {},
-        "last-modified": "2023-01-06T01:28:00",
-        "references": [
-            "https://pkg.go.dev/vuln/GO-2020-0004",
-            "https://github.com/nanobox-io/golang-nanoauth/pull/5",
-            "https://github.com/nanobox-io/golang-nanoauth/commit/063a3fb69896acf985759f0fe3851f15973993f3"
-        ],
-        "summary": "Authentication is globally bypassed in github.com/nanobox-io/golang-nanoauth between v0.0.0-20160722212129-ac0cc4484ad4 and v0.0.0-20200131131040-063a3fb69896 if ListenAndServe is called with an empty token."
-    },
-    {
-        "Modified": "2023-01-06T01:28:00",
-        "Published": "2022-12-27T22:15:00",
-        "access": {},
-        "assigner": "security@golang.org",
-        "cvss": null,
-        "cwe": "NVD-CWE-noinfo",
-        "id": "CVE-2021-4235",
-        "impact": {},
-        "last-modified": "2023-01-06T01:28:00",
-        "references": [
-            "https://github.com/go-yaml/yaml/commit/bb4e33bf68bf89cad44d386192cbed201f35b241",
-            "https://pkg.go.dev/vuln/GO-2021-0061",
-            "https://github.com/go-yaml/yaml/pull/375"
-        ],
-        "summary": "Due to unbounded alias chasing, a maliciously crafted YAML file can cause the system to consume significant system resources. If parsing user input, this may be used as a denial of service vector."
-    },
-    {
-        "Modified": "2023-01-06T01:27:00",
-        "Published": "2022-12-27T22:15:00",
-        "access": {},
-        "assigner": "security@golang.org",
-        "cvss": null,
-        "cwe": "CWE-22",
-        "id": "CVE-2020-36561",
-        "impact": {},
-        "last-modified": "2023-01-06T01:27:00",
-        "references": [
-            "https://github.com/yi-ge/unzip/commit/2adbaa4891b9690853ef10216189189f5ad7dc73",
-            "https://pkg.go.dev/vuln/GO-2020-0035",
-            "https://github.com/yi-ge/unzip/pull/1",
-            "https://snyk.io/research/zip-slip-vulnerability"
-        ],
-        "summary": "Due to improper path santization, archives containing relative file paths can cause files to be written (or overwritten) outside of the target directory."
-    },
-    {
-        "Modified": "2023-01-06T01:27:00",
-        "Published": "2022-12-27T22:15:00",
-        "access": {},
-        "assigner": "security@golang.org",
-        "cvss": null,
-        "cwe": "CWE-20",
-        "id": "CVE-2020-36564",
-        "impact": {},
-        "last-modified": "2023-01-06T01:27:00",
-        "references": [
-            "https://pkg.go.dev/vuln/GO-2020-0049",
-            "https://github.com/justinas/nosurf/commit/4d86df7a4affa1fa50ab39fb09aac56c3ce9c314",
-            "https://github.com/justinas/nosurf/pull/60"
-        ],
-        "summary": "Due to improper validation of caller input, validation is silently disabled if the provided expected token is malformed, causing any user supplied token to be considered valid."
-    },
-    {
-        "Modified": "2023-01-06T01:27:00",
-        "Published": "2022-12-27T22:15:00",
-        "access": {},
-        "assigner": "security@golang.org",
-        "cvss": null,
-        "cwe": "CWE-22",
-        "id": "CVE-2020-36566",
-        "impact": {},
-        "last-modified": "2023-01-06T01:27:00",
-        "references": [
-            "https://snyk.io/research/zip-slip-vulnerability",
-            "https://github.com/whyrusleeping/tar-utils/commit/20a61371de5b51380bbdb0c7935b30b0625ac227",
-            "https://pkg.go.dev/vuln/GO-2021-0106"
-        ],
-        "summary": "Due to improper path santization, archives containing relative file paths can cause files to be written (or overwritten) outside of the target directory."
-    },
-    {
-        "Modified": "2023-01-06T01:27:00",
-        "Published": "2022-12-27T22:15:00",
-        "access": {},
-        "assigner": "security@golang.org",
-        "cvss": null,
-        "cwe": "CWE-770",
-        "id": "CVE-2020-36568",
-        "impact": {},
-        "last-modified": "2023-01-06T01:27:00",
-        "references": [
-            "https://github.com/revel/revel/commit/d160ecb72207824005b19778594cbdc272e8a605",
-            "https://github.com/revel/revel/issues/1424",
-            "https://pkg.go.dev/vuln/GO-2020-0003",
-            "https://github.com/revel/revel/pull/1427"
-        ],
-        "summary": "Unsanitized input in the query parser in github.com/revel/revel before v1.0.0 allows remote attackers to cause resource exhaustion via memory allocation."
-    },
-    {
-        "Modified": "2023-01-06T01:26:00",
-        "Published": "2022-12-27T22:15:00",
-        "access": {},
-        "assigner": "security@golang.org",
-        "cvss": null,
-        "cwe": "CWE-22",
-        "id": "CVE-2020-36560",
-        "impact": {},
-        "last-modified": "2023-01-06T01:26:00",
-        "references": [
-            "https://github.com/artdarek/go-unzip/pull/2",
-            "https://pkg.go.dev/vuln/GO-2020-0034",
-            "https://snyk.io/research/zip-slip-vulnerability",
-            "https://github.com/artdarek/go-unzip/commit/4975cbe0a719dc50b12da8585f1f207c82f7dfe0"
-        ],
-        "summary": "Due to improper path santization, archives containing relative file paths can cause files to be written (or overwritten) outside of the target directory."
-    },
-    {
-        "Modified": "2023-01-06T00:15:00",
-        "Published": "2023-01-06T00:15:00",
-        "access": {},
-        "assigner": "security-alert@hpe.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-44537",
-        "impact": {},
-        "last-modified": "2023-01-06T00:15:00",
-        "references": [],
-        "summary": "CVE was unused by HPE."
-    },
-    {
-        "Modified": "2023-01-06T00:15:00",
-        "Published": "2023-01-06T00:15:00",
-        "access": {},
-        "assigner": "security-alert@hpe.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-44538",
-        "impact": {},
-        "last-modified": "2023-01-06T00:15:00",
-        "references": [],
-        "summary": "CVE was unused by HPE."
-    },
-    {
-        "Modified": "2023-01-06T00:15:00",
-        "Published": "2023-01-06T00:15:00",
-        "access": {},
-        "assigner": "security-alert@hpe.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-44539",
-        "impact": {},
-        "last-modified": "2023-01-06T00:15:00",
-        "references": [],
-        "summary": "CVE was unused by HPE."
-    },
-    {
-        "Modified": "2023-01-06T00:15:00",
-        "Published": "2023-01-06T00:15:00",
-        "access": {},
-        "assigner": "security-alert@hpe.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-44540",
-        "impact": {},
-        "last-modified": "2023-01-06T00:15:00",
-        "references": [],
-        "summary": "CVE was unused by HPE."
-    },
-    {
-        "Modified": "2023-01-06T00:15:00",
-        "Published": "2023-01-06T00:15:00",
-        "access": {},
-        "assigner": "security-alert@hpe.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-44541",
-        "impact": {},
-        "last-modified": "2023-01-06T00:15:00",
-        "references": [],
-        "summary": "CVE was unused by HPE."
-    },
-    {
-        "Modified": "2023-01-06T00:15:00",
-        "Published": "2023-01-06T00:15:00",
-        "access": {},
-        "assigner": "security-alert@hpe.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-44536",
-        "impact": {},
-        "last-modified": "2023-01-06T00:15:00",
-        "references": [],
-        "summary": "CVE was unused by HPE."
-    },
-    {
-        "Modified": "2023-01-06T00:03:00",
-        "Published": "2022-12-28T18:15:00",
-        "access": {},
-        "assigner": "psirt@huawei.com",
-        "cvss": null,
-        "cwe": "CWE-287",
-        "id": "CVE-2022-41579",
-        "impact": {},
-        "last-modified": "2023-01-06T00:03:00",
-        "references": [
-            "https://www.huawei.com/en/psirt/security-advisories/huawei-sa-20221130-01-c7f72ffb-en"
-        ],
-        "summary": "There is an insufficient authentication vulnerability in some Huawei band products. Successful exploit could allow the attacker to spoof then connect to the band."
-    },
-    {
-        "Modified": "2023-01-06T00:02:00",
-        "Published": "2022-12-28T18:15:00",
-        "access": {},
-        "assigner": "psirt@huawei.com",
-        "cvss": null,
-        "cwe": "CWE-22",
-        "id": "CVE-2022-44564",
-        "impact": {},
-        "last-modified": "2023-01-06T00:02:00",
-        "references": [
-            "https://www.huawei.com/en/psirt/security-advisories/huawei-sa-20221102-01-d002dd8e-en"
-        ],
-        "summary": "Huawei Aslan Children's Watch has a path traversal vulnerability. Successful exploitation may allow attackers to access or modify protected system resources."
-    },
-    {
-        "Modified": "2023-01-06T00:01:00",
-        "Published": "2022-12-28T18:15:00",
-        "access": {},
-        "assigner": "psirt@huawei.com",
-        "cvss": null,
-        "cwe": "CWE-863",
-        "id": "CVE-2022-45874",
-        "impact": {},
-        "last-modified": "2023-01-06T00:01:00",
-        "references": [
-            "https://www.huawei.com/en/psirt/security-advisories/2022/huawei-sa-iaviahcw-21a3acd8-en"
-        ],
-        "summary": "Huawei Aslan Children's Watch has an improper authorization vulnerability. Successful exploit could allow the attacker to access certain file."
-    },
-    {
-        "Modified": "2023-01-05T23:59:00",
-        "Published": "2022-12-28T18:15:00",
-        "access": {},
-        "assigner": "psirt@huawei.com",
-        "cvss": null,
-        "cwe": "NVD-CWE-noinfo",
-        "id": "CVE-2022-46740",
-        "impact": {},
-        "last-modified": "2023-01-05T23:59:00",
-        "references": [
-            "https://www.huawei.com/en/psirt/security-advisories/2022/huawei-sa-dosvihswr-8f632df1-en"
-        ],
-        "summary": "There is a denial of service vulnerability in the Wi-Fi module of the HUAWEI WS7100-20 Smart WiFi Router.Successful exploit could cause a denial of service (DoS) condition."
-    },
-    {
-        "Modified": "2023-01-05T23:56:00",
-        "Published": "2022-12-28T18:15:00",
-        "access": {},
-        "assigner": "psirt@huawei.com",
-        "cvss": null,
-        "cwe": "CWE-20",
-        "id": "CVE-2022-39012",
-        "impact": {},
-        "last-modified": "2023-01-05T23:56:00",
-        "references": [
-            "https://www.huawei.com/en/psirt/security-advisories/2022/huawei-sa-iivviahcw-5fb2d55c-en"
-        ],
-        "summary": "Huawei Aslan Children's Watch has an improper input validation vulnerability. Successful exploitation may cause the watch's application service abnormal."
-    },
-    {
-        "Modified": "2023-01-05T23:54:00",
-        "Published": "2022-12-28T14:15:00",
-        "access": {},
-        "assigner": "security@huntr.dev",
-        "cvss": null,
-        "cwe": "CWE-1220",
-        "id": "CVE-2022-4813",
-        "impact": {},
-        "last-modified": "2023-01-05T23:54:00",
-        "references": [
-            "https://github.com/usememos/memos/commit/3556ae4e651d9443dc3bb8a170dd3cc726517a53",
-            "https://huntr.dev/bounties/a24b45d8-554b-4131-8ce1-f33bf8cdbacc"
-        ],
-        "summary": "Insufficient Granularity of Access Control in GitHub repository usememos/memos prior to 0.9.1."
-    },
-    {
-        "Modified": "2023-01-05T23:54:00",
-        "Published": "2022-12-28T14:15:00",
-        "access": {},
-        "assigner": "security@huntr.dev",
-        "cvss": null,
-        "cwe": "CWE-284",
-        "id": "CVE-2022-4814",
-        "impact": {},
-        "last-modified": "2023-01-05T23:54:00",
-        "references": [
-            "https://github.com/usememos/memos/commit/3556ae4e651d9443dc3bb8a170dd3cc726517a53",
-            "https://huntr.dev/bounties/e65b3458-c2e2-4c0b-9029-e3c9ee015ae4"
-        ],
-        "summary": "Improper Access Control in GitHub repository usememos/memos prior to 0.9.1."
-    },
-    {
-        "Modified": "2023-01-05T23:53:00",
-        "Published": "2022-12-28T14:15:00",
-        "access": {},
-        "assigner": "security@huntr.dev",
-        "cvss": null,
-        "cwe": "CWE-648",
-        "id": "CVE-2022-4805",
-        "impact": {},
-        "last-modified": "2023-01-05T23:53:00",
-        "references": [
-            "https://huntr.dev/bounties/b03f6a9b-e49b-42d6-a318-1d7afd985873",
-            "https://github.com/usememos/memos/commit/3556ae4e651d9443dc3bb8a170dd3cc726517a53"
-        ],
-        "summary": "Incorrect Use of Privileged APIs in GitHub repository usememos/memos prior to 0.9.1."
-    },
-    {
-        "Modified": "2023-01-05T23:52:00",
-        "Published": "2022-12-28T14:15:00",
-        "access": {},
-        "assigner": "security@huntr.dev",
-        "cvss": null,
-        "cwe": "CWE-639",
-        "id": "CVE-2022-4806",
-        "impact": {},
-        "last-modified": "2023-01-05T23:52:00",
-        "references": [
-            "https://github.com/usememos/memos/commit/3556ae4e651d9443dc3bb8a170dd3cc726517a53",
-            "https://huntr.dev/bounties/2c7101bc-e6d8-4cd0-9003-bc8d86f4e4be"
-        ],
-        "summary": "Improper Access Control in GitHub repository usememos/memos prior to 0.9.1."
     }
 ]
