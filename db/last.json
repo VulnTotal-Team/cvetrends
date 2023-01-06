@@ -1,5 +1,408 @@
 [
     {
+        "Modified": "2023-01-06T18:58:00",
+        "Published": "2022-12-30T14:15:00",
+        "access": {},
+        "assigner": "security@m-files.com",
+        "cvss": null,
+        "cwe": "CWE-287",
+        "id": "CVE-2022-4861",
+        "impact": {},
+        "last-modified": "2023-01-06T18:58:00",
+        "references": [
+            "https://www.m-files.com/about/trust-center/security-advisories/cve-2022-4861/"
+        ],
+        "summary": "Incorrect implementation in authentication protocol in M-Files Client before 22.5.11356.0 allows high privileged user to get other users tokens to another resource."
+    },
+    {
+        "Modified": "2023-01-06T18:56:00",
+        "Published": "2022-12-30T12:15:00",
+        "access": {},
+        "assigner": "cna@vuldb.com",
+        "cvss": null,
+        "cwe": "CWE-89",
+        "id": "CVE-2022-4860",
+        "impact": {},
+        "last-modified": "2023-01-06T18:56:00",
+        "references": [
+            "https://github.com/kbase/metrics/pull/77",
+            "https://vuldb.com/?ctiid.217059",
+            "https://vuldb.com/?id.217059",
+            "https://github.com/kbase/metrics/commit/959dfb6b05991e30b0fa972a1ecdcaae8e1dae6d"
+        ],
+        "summary": "A vulnerability was found in KBase Metrics. It has been classified as critical. This affects the function upload_user_data of the file source/daily_cron_jobs/methods_upload_user_stats.py. The manipulation leads to sql injection. The name of the patch is 959dfb6b05991e30b0fa972a1ecdcaae8e1dae6d. It is recommended to apply a patch to fix this issue. The associated identifier of this vulnerability is VDB-217059."
+    },
+    {
+        "Modified": "2023-01-06T18:51:00",
+        "Published": "2022-12-28T21:15:00",
+        "access": {},
+        "assigner": "cna@vuldb.com",
+        "cvss": null,
+        "cwe": "CWE-203",
+        "id": "CVE-2022-4823",
+        "impact": {},
+        "last-modified": "2023-01-06T18:51:00",
+        "references": [
+            "https://github.com/instedd/nuntium/commit/77236f7fd71a0e2eefeea07f9866b069d612cf0d",
+            "https://vuldb.com/?ctiid.217002",
+            "https://vuldb.com/?id.217002"
+        ],
+        "summary": "A vulnerability, which was classified as problematic, was found in InSTEDD Nuntium. Affected is an unknown function of the file app/controllers/geopoll_controller.rb. The manipulation of the argument signature leads to observable timing discrepancy. It is possible to launch the attack remotely. The name of the patch is 77236f7fd71a0e2eefeea07f9866b069d612cf0d. It is recommended to apply a patch to fix this issue. VDB-217002 is the identifier assigned to this vulnerability."
+    },
+    {
+        "Modified": "2023-01-06T18:50:00",
+        "Published": "2022-12-28T01:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-287",
+        "id": "CVE-2022-23555",
+        "impact": {},
+        "last-modified": "2023-01-06T18:50:00",
+        "references": [
+            "https://github.com/goauthentik/authentik/security/advisories/GHSA-9qwp-jf7p-vr7h"
+        ],
+        "summary": "authentik is an open-source Identity Provider focused on flexibility and versatility. Versions prior to 2022.11.4 and 2022.10.4 are vulnerable to Improper Authentication. Token reuse in invitation URLs leads to access control bypass via the use of a different enrollment flow than in the one provided. The vulnerability allows an attacker that knows different invitation flows names (e.g. `enrollment-invitation-test` and `enrollment-invitation-admin`) via either different invite links or via brute forcing to signup via a single invitation url for any valid invite link received (it can even be a url for a third flow as long as it's a valid invite) as the token used in the `Invitations` section of the Admin interface does NOT change when a different `enrollment flow` is selected via the interface and it is NOT bound to the selected flow, so it will be valid for any flow when used. This issue is patched in authentik 2022.11.4,2022.10.4 and 2022.12.0. Only configurations that use invitations and have multiple enrollment flows with invitation stages that grant different permissions are affected. The default configuration is not vulnerable, and neither are configurations with a single enrollment flow. As a workaround, fixed data can be added to invitations which can be checked in the flow to deny requests. Alternatively, an identifier with high entropy (like a UUID) can be used as flow slug, mitigating the attack vector by exponentially decreasing the possibility of discovering other flows."
+    },
+    {
+        "Modified": "2023-01-06T18:46:00",
+        "Published": "2022-12-28T19:15:00",
+        "access": {},
+        "assigner": "cna@vuldb.com",
+        "cvss": null,
+        "cwe": "CWE-89",
+        "id": "CVE-2017-20150",
+        "impact": {},
+        "last-modified": "2023-01-06T18:46:00",
+        "references": [
+            "https://vuldb.com/?id.216989",
+            "https://vuldb.com/?ctiid.216989",
+            "https://github.com/Challenge/website/commit/f1644b1d3502e5aa5284f31ea80d2623817f4d42"
+        ],
+        "summary": "A vulnerability was found in challenge website. It has been rated as critical. This issue affects some unknown processing. The manipulation leads to sql injection. The name of the patch is f1644b1d3502e5aa5284f31ea80d2623817f4d42. It is recommended to apply a patch to fix this issue. The identifier VDB-216989 was assigned to this vulnerability."
+    },
+    {
+        "Modified": "2023-01-06T18:43:00",
+        "Published": "2022-12-28T19:15:00",
+        "access": {},
+        "assigner": "cna@vuldb.com",
+        "cvss": null,
+        "cwe": "CWE-668",
+        "id": "CVE-2022-4817",
+        "impact": {},
+        "last-modified": "2023-01-06T18:43:00",
+        "references": [
+            "https://vuldb.com/?id.216988",
+            "https://github.com/centic9/jgit-cookbook/pull/86",
+            "https://vuldb.com/?ctiid.216988",
+            "https://github.com/centic9/jgit-cookbook/commit/b8cb29b43dc704708d598c60ac1881db7cf8e9c3"
+        ],
+        "summary": "A vulnerability was found in centic9 jgit-cookbook. It has been declared as problematic. This vulnerability affects unknown code. The manipulation leads to insecure temporary file. The attack can be initiated remotely. The name of the patch is b8cb29b43dc704708d598c60ac1881db7cf8e9c3. It is recommended to apply a patch to fix this issue. The identifier of this vulnerability is VDB-216988."
+    },
+    {
+        "Modified": "2023-01-06T18:35:00",
+        "Published": "2022-12-28T09:15:00",
+        "access": {},
+        "assigner": "cna@vuldb.com",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2019-25092",
+        "impact": {},
+        "last-modified": "2023-01-06T18:35:00",
+        "references": [
+            "https://vuldb.com/?id.216955",
+            "https://github.com/Nakiami/mellivora/releases/tag/v2.2.0",
+            "https://github.com/Nakiami/mellivora/commit/e0b6965f8dde608a3d2621617c05695eb406cbb9",
+            "https://vuldb.com/?ctiid.216955"
+        ],
+        "summary": "A vulnerability classified as problematic was found in Nakiami Mellivora up to 2.1.x. Affected by this vulnerability is the function print_user_ip_log of the file include/layout/user.inc.php of the component Admin Panel. The manipulation of the argument $entry['ip'] leads to cross site scripting. The attack can be launched remotely. Upgrading to version 2.2.0 is able to address this issue. The name of the patch is e0b6965f8dde608a3d2621617c05695eb406cbb9. It is recommended to upgrade the affected component. The associated identifier of this vulnerability is VDB-216955."
+    },
+    {
+        "Modified": "2023-01-06T18:34:00",
+        "Published": "2022-12-23T00:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "NVD-CWE-Other",
+        "id": "CVE-2022-40897",
+        "impact": {},
+        "last-modified": "2023-01-06T18:34:00",
+        "references": [
+            "https://github.com/pypa/setuptools/blob/fe8a98e696241487ba6ac9f91faa38ade939ec5d/setuptools/package_index.py#L200",
+            "https://pyup.io/posts/pyup-discovers-redos-vulnerabilities-in-top-python-packages/",
+            "https://github.com/pypa/setuptools/compare/v65.5.0...v65.5.1",
+            "https://github.com/pypa/setuptools/commit/43a9c9bfa6aa626ec2a22540bea28d2ca77964be",
+            "https://pyup.io/vulnerabilities/CVE-2022-40897/52495/"
+        ],
+        "summary": "Python Packaging Authority (PyPA) setuptools before 65.5.1 allows remote attackers to cause a denial of service via HTML in a crafted package or custom PackageIndex page. There is a Regular Expression Denial of Service (ReDoS) in package_index.py."
+    },
+    {
+        "Modified": "2023-01-06T18:19:00",
+        "Published": "2022-12-28T12:15:00",
+        "access": {},
+        "assigner": "cna@vuldb.com",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2018-25054",
+        "impact": {},
+        "last-modified": "2023-01-06T18:19:00",
+        "references": [
+            "https://vuldb.com/?ctiid.216960",
+            "https://github.com/shred/cilla/commit/d345e6bc7798bd717a583ec7f545ca387819d5c7",
+            "https://vuldb.com/?id.216960"
+        ],
+        "summary": "A vulnerability was found in shred cilla. It has been classified as problematic. Affected is an unknown function of the file cilla-xample/src/main/webapp/WEB-INF/jsp/view/search.jsp of the component Search Handler. The manipulation of the argument details leads to cross site scripting. It is possible to launch the attack remotely. The name of the patch is d345e6bc7798bd717a583ec7f545ca387819d5c7. It is recommended to apply a patch to fix this issue. The identifier of this vulnerability is VDB-216960."
+    },
+    {
+        "Modified": "2023-01-06T18:14:00",
+        "Published": "2022-12-29T00:15:00",
+        "access": {},
+        "assigner": "vulnerability@ncsc.ch",
+        "cvss": null,
+        "cwe": "CWE-287",
+        "id": "CVE-2022-4779",
+        "impact": {},
+        "last-modified": "2023-01-06T18:14:00",
+        "references": [
+            "https://elvexys.com/products/xpg-gateway-rtu-protocol-converter/streamx-release-notes/"
+        ],
+        "summary": "StreamX applications from versions 6.02.01 to 6.04.34 are affected by a logic bug that allows to bypass the implemented authentication scheme. StreamX applications using StreamView HTML component with the public web server feature activated are affected."
+    },
+    {
+        "Modified": "2023-01-06T17:53:00",
+        "Published": "2022-11-13T08:15:00",
+        "access": {},
+        "assigner": "cna@vuldb.com",
+        "cvss": null,
+        "cwe": "CWE-190",
+        "id": "CVE-2022-3970",
+        "impact": {},
+        "last-modified": "2023-01-06T17:53:00",
+        "references": [
+            "https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=53137",
+            "https://gitlab.com/libtiff/libtiff/-/commit/227500897dfb07fb7d27f7aa570050e62617e3be",
+            "https://vuldb.com/?id.213549",
+            "https://oss-fuzz.com/download?testcase_id=5738253143900160",
+            "https://security.netapp.com/advisory/ntap-20221215-0009/"
+        ],
+        "summary": "A vulnerability was found in LibTIFF. It has been classified as critical. This affects the function TIFFReadRGBATileExt of the file libtiff/tif_getimage.c. The manipulation leads to integer overflow. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. The name of the patch is 227500897dfb07fb7d27f7aa570050e62617e3be. It is recommended to apply a patch to fix this issue. The identifier VDB-213549 was assigned to this vulnerability."
+    },
+    {
+        "Modified": "2023-01-06T17:47:00",
+        "Published": "2022-12-28T00:15:00",
+        "access": {},
+        "assigner": "cna@vuldb.com",
+        "cvss": null,
+        "cwe": "CWE-22",
+        "id": "CVE-2022-4773",
+        "impact": {},
+        "last-modified": "2023-01-06T17:47:00",
+        "references": [
+            "https://github.com/HolgerHees/cloudsync/commit/3ad796833398af257c28e0ebeade68518e0e612a",
+            "https://vuldb.com/?ctiid.216919",
+            "https://vuldb.com/?id.216919"
+        ],
+        "summary": "** UNSUPPPORTED WHEN ASSIGNED **** UNSUPPORTED WHEN ASSIGNED ** A vulnerability classified as problematic was found in cloudsync. Affected by this vulnerability is the function getItem of the file src/main/java/cloudsync/connector/LocalFilesystemConnector.java. The manipulation leads to path traversal. It is possible to launch the attack on the local host. The name of the patch is 3ad796833398af257c28e0ebeade68518e0e612a. It is recommended to apply a patch to fix this issue. The associated identifier of this vulnerability is VDB-216919. NOTE: This vulnerability only affects products that are no longer supported by the maintainer."
+    },
+    {
+        "Modified": "2023-01-06T17:43:00",
+        "Published": "2022-12-28T03:15:00",
+        "access": {},
+        "assigner": "security@golang.org",
+        "cvss": null,
+        "cwe": "CWE-347",
+        "id": "CVE-2020-36563",
+        "impact": {},
+        "last-modified": "2023-01-06T17:43:00",
+        "references": [
+            "https://pkg.go.dev/vuln/GO-2020-0047",
+            "https://github.com/RobotsAndPencils/go-saml/pull/38"
+        ],
+        "summary": "XML Digital Signatures generated and validated using this package use SHA-1, which may allow an attacker to craft inputs which cause hash collisions depending on their control over the input."
+    },
+    {
+        "Modified": "2023-01-06T17:38:00",
+        "Published": "2022-12-28T00:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-611",
+        "id": "CVE-2022-41967",
+        "impact": {},
+        "last-modified": "2023-01-06T17:38:00",
+        "references": [
+            "https://github.com/HyperaDev/Dragonfly/commit/9661375e1135127ca6cdb5712e978bec33cc06b3",
+            "https://github.com/HyperaDev/Dragonfly/security/advisories/GHSA-6x3m-96qp-mmxv"
+        ],
+        "summary": "Dragonfly is a Java runtime dependency management library. Dragonfly v0.3.0-SNAPSHOT does not configure DocumentBuilderFactory to prevent XML external entity (XXE) attacks. This issue is patched in 0.3.1-SNAPSHOT. As a workaround, since Dragonfly only parses XML `SNAPSHOT` versions are being resolved, this vulnerability may be avoided by not trying to resolve `SNAPSHOT` versions."
+    },
+    {
+        "Modified": "2023-01-06T17:36:00",
+        "Published": "2022-12-28T07:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-269",
+        "id": "CVE-2022-46172",
+        "impact": {},
+        "last-modified": "2023-01-06T17:36:00",
+        "references": [
+            "https://github.com/goauthentik/authentik/security/advisories/GHSA-hv8r-6w7p-mpc5"
+        ],
+        "summary": "authentik is an open-source Identity provider focused on flexibility and versatility. In versions prior to 2022.10.4, and 2022.11.4, any authenticated user can create an arbitrary number of accounts through the default flows. This would circumvent any policy in a situation where it is undesirable for users to create new accounts by themselves. This may also affect other applications as these new basic accounts would exist throughout the SSO infrastructure. By default the newly created accounts cannot be logged into as no password reset exists by default. However password resets are likely to be enabled by most installations. This vulnerability pertains to the user context used in the default-user-settings-flow, /api/v3/flows/instances/default-user-settings-flow/execute/. This issue has been fixed in versions 2022.10.4 and 2022.11.4."
+    },
+    {
+        "Modified": "2023-01-06T17:28:00",
+        "Published": "2022-12-28T03:15:00",
+        "access": {},
+        "assigner": "security@golang.org",
+        "cvss": null,
+        "cwe": "CWE-617",
+        "id": "CVE-2020-36562",
+        "impact": {},
+        "last-modified": "2023-01-06T17:28:00",
+        "references": [
+            "https://pkg.go.dev/vuln/GO-2020-0040",
+            "https://github.com/shiyanhui/dht/issues/57"
+        ],
+        "summary": "Due to unchecked type assertions, maliciously crafted messages can cause panics, which may be used as a denial of service vector."
+    },
+    {
+        "Modified": "2023-01-06T17:26:00",
+        "Published": "2023-01-06T17:15:00",
+        "access": {},
+        "assigner": "cna@vuldb.com",
+        "cvss": null,
+        "cwe": "CWE-89",
+        "id": "CVE-2014-125050",
+        "impact": {},
+        "last-modified": "2023-01-06T17:26:00",
+        "references": [
+            "https://github.com/ScottTZhang/voter-js/pull/15",
+            "https://vuldb.com/?ctiid.217562",
+            "https://vuldb.com/?id.217562",
+            "https://github.com/ScottTZhang/voter-js/commit/6317c67a56061aeeaeed3cf9ec665fd9983d8044"
+        ],
+        "summary": "A vulnerability was found in ScottTZhang voter-js and classified as critical. Affected by this issue is some unknown functionality of the file main.js. The manipulation leads to sql injection. The name of the patch is 6317c67a56061aeeaeed3cf9ec665fd9983d8044. It is recommended to apply a patch to fix this issue. VDB-217562 is the identifier assigned to this vulnerability."
+    },
+    {
+        "Modified": "2023-01-06T17:26:00",
+        "Published": "2023-01-06T17:15:00",
+        "access": {},
+        "assigner": "cna@vuldb.com",
+        "cvss": null,
+        "cwe": "CWE-89",
+        "id": "CVE-2014-125051",
+        "impact": {},
+        "last-modified": "2023-01-06T17:26:00",
+        "references": [
+            "https://github.com/himiklab/yii2-jqgrid-widget/commit/a117e0f2df729e3ff726968794d9a5ac40e660b9",
+            "https://github.com/himiklab/yii2-jqgrid-widget/releases/tag/1.0.8",
+            "https://vuldb.com/?ctiid.217564",
+            "https://vuldb.com/?id.217564"
+        ],
+        "summary": "A vulnerability was found in himiklab yii2-jqgrid-widget up to 1.0.7. It has been declared as critical. This vulnerability affects the function addSearchOptionsRecursively of the file JqGridAction.php. The manipulation leads to sql injection. Upgrading to version 1.0.8 is able to address this issue. The name of the patch is a117e0f2df729e3ff726968794d9a5ac40e660b9. It is recommended to upgrade the affected component. The identifier of this vulnerability is VDB-217564."
+    },
+    {
+        "Modified": "2023-01-06T17:26:00",
+        "Published": "2023-01-06T17:15:00",
+        "access": {},
+        "assigner": "cna@vuldb.com",
+        "cvss": null,
+        "cwe": "CWE-134",
+        "id": "CVE-2020-36643",
+        "impact": {},
+        "last-modified": "2023-01-06T17:26:00",
+        "references": [
+            "https://vuldb.com/?ctiid.217563",
+            "https://vuldb.com/?id.217563",
+            "https://github.com/intgr/uqm-wasm/commit/1d5cbf3350a02c423ad6bef6dfd5300d38aa828f"
+        ],
+        "summary": "A vulnerability was found in intgr uqm-wasm. It has been classified as critical. This affects the function log_displayBox in the library sc2/src/libs/log/msgbox_macosx.m. The manipulation leads to format string. The name of the patch is 1d5cbf3350a02c423ad6bef6dfd5300d38aa828f. It is recommended to apply a patch to fix this issue. The associated identifier of this vulnerability is VDB-217563."
+    },
+    {
+        "Modified": "2023-01-06T17:26:00",
+        "Published": "2023-01-06T17:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-44149",
+        "impact": {},
+        "last-modified": "2023-01-06T17:26:00",
+        "references": [
+            "https://packetstormsecurity.com/files/170366/Nexxt-Router-Firmware-42.103.1.5095-Remote-Code-Execution.html",
+            "https://cxsecurity.com/issue/WLB-2023010006",
+            "https://www.nexxtsolutions.com/connectivity/search/?q=ARN02304U8"
+        ],
+        "summary": "The web service on Nexxt Amp300 ARN02304U8 42.103.1.5095 devices allows remote OS command execution by placing &telnetd in the JSON host field to the ping feature of the goform/sysTools component. Authentication is required."
+    },
+    {
+        "Modified": "2023-01-06T17:26:00",
+        "Published": "2023-01-06T15:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2023-22475",
+        "impact": {},
+        "last-modified": "2023-01-06T17:26:00",
+        "references": [
+            "https://github.com/thinkst/canarytokens/security/advisories/GHSA-5675-3424-hpqr",
+            "https://github.com/thinkst/canarytokens/commit/fb612906f2217bbb8863199694891d16e20bad3e",
+            "https://github.com/thinkst/canarytokens/security/advisories/GHSA-3h2c-3fgr-74vh"
+        ],
+        "summary": "Canarytokens is an open source tool which helps track activity and actions on your network. A Cross-Site Scripting vulnerability was identified in the history page of triggered Canarytokens prior to sha-fb61290. An attacker who discovers an HTTP-based Canarytoken (a URL) can use this to execute Javascript in the Canarytoken's trigger history page (domain: canarytokens.org) when the history page is later visited by the Canarytoken's creator. This vulnerability could be used to disable or delete the affected Canarytoken, or view its activation history. It might also be used as a stepping stone towards revealing more information about the Canarytoken's creator to the attacker. For example, an attacker could recover the email address tied to the Canarytoken, or place Javascript on the history page that redirect the creator towards an attacker-controlled Canarytoken to show the creator's network location. This vulnerability is similar to CVE-2022-31113, but affected parameters reported differently from the Canarytoken trigger request. An attacker could only act on the discovered Canarytoken. This issue did not expose other Canarytokens or other Canarytoken creators. Canarytokens Docker images sha-fb61290 and later contain a patch for this issue."
+    },
+    {
+        "Modified": "2023-01-06T17:15:00",
+        "Published": "2023-01-05T23:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-44877",
+        "impact": {},
+        "last-modified": "2023-01-06T17:15:00",
+        "references": [
+            "https://gist.github.com/numanturle/c1e82c47f4cba24cff214e904c227386",
+            "https://www.youtube.com/watch?v=kiLfSvc1SYY",
+            "http://seclists.org/fulldisclosure/2023/Jan/1"
+        ],
+        "summary": "RESERVED An issue in the /login/index.php component of Centos Web Panel 7 before v0.9.8.1147 allows unauthenticated attackers to execute arbitrary system commands via crafted HTTP requests."
+    },
+    {
+        "Modified": "2023-01-06T17:05:00",
+        "Published": "2022-12-28T00:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-121",
+        "id": "CVE-2022-41966",
+        "impact": {},
+        "last-modified": "2023-01-06T17:05:00",
+        "references": [
+            "https://x-stream.github.io/CVE-2022-41966.html",
+            "https://github.com/x-stream/xstream/security/advisories/GHSA-j563-grx4-pjpv"
+        ],
+        "summary": "XStream serializes Java objects to XML and back again. Versions prior to 1.4.20 may allow a remote attacker to terminate the application with a stack overflow error, resulting in a denial of service only via manipulation the processed input stream. The attack uses the hash code implementation for collections and maps to force recursive hash calculation causing a stack overflow. This issue is patched in version 1.4.20 which handles the stack overflow and raises an InputManipulationException instead. A potential workaround for users who only use HashMap or HashSet and whose XML refers these only as default map or set, is to change the default implementation of java.util.Map and java.util per the code example in the referenced advisory. However, this implies that your application does not care about the implementation of the map and all elements are comparable."
+    },
+    {
+        "Modified": "2023-01-06T17:00:00",
+        "Published": "2022-12-29T00:15:00",
+        "access": {},
+        "assigner": "vulnerability@ncsc.ch",
+        "cvss": null,
+        "cwe": "CWE-22",
+        "id": "CVE-2022-4778",
+        "impact": {},
+        "last-modified": "2023-01-06T17:00:00",
+        "references": [
+            "https://elvexys.com/products/xpg-gateway-rtu-protocol-converter/streamx-release-notes/"
+        ],
+        "summary": "StreamX applications from versions 6.02.01 to 6.04.34 are affected by a path traversal vulnerability that allows authenticated users to get unauthorized access to files on the server's filesystem. StreamX applications using StreamView HTML component with the public web server feature activated are affected."
+    },
+    {
         "Modified": "2023-01-06T16:58:00",
         "Published": "2022-12-27T22:15:00",
         "access": {},
@@ -580,23 +983,6 @@
             "https://github.com/cloudflare/golz4/commit/199f5f7878062ca17a98e079f2dbe1205e2ed898"
         ],
         "summary": "LZ4 bindings use a deprecated C API that is vulnerable to memory corruption, which could lead to arbitrary code execution if called with untrusted user input."
-    },
-    {
-        "Modified": "2023-01-06T15:15:00",
-        "Published": "2023-01-06T15:15:00",
-        "access": {},
-        "assigner": "security-advisories@github.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2023-22475",
-        "impact": {},
-        "last-modified": "2023-01-06T15:15:00",
-        "references": [
-            "https://github.com/thinkst/canarytokens/security/advisories/GHSA-5675-3424-hpqr",
-            "https://github.com/thinkst/canarytokens/commit/fb612906f2217bbb8863199694891d16e20bad3e",
-            "https://github.com/thinkst/canarytokens/security/advisories/GHSA-3h2c-3fgr-74vh"
-        ],
-        "summary": "Canarytokens is an open source tool which helps track activity and actions on your network. A Cross-Site Scripting vulnerability was identified in the history page of triggered Canarytokens prior to sha-fb61290. An attacker who discovers an HTTP-based Canarytoken (a URL) can use this to execute Javascript in the Canarytoken's trigger history page (domain: canarytokens.org) when the history page is later visited by the Canarytoken's creator. This vulnerability could be used to disable or delete the affected Canarytoken, or view its activation history. It might also be used as a stepping stone towards revealing more information about the Canarytoken's creator to the attacker. For example, an attacker could recover the email address tied to the Canarytoken, or place Javascript on the history page that redirect the creator towards an attacker-controlled Canarytoken to show the creator's network location. This vulnerability is similar to CVE-2022-31113, but affected parameters reported differently from the Canarytoken trigger request. An attacker could only act on the discovered Canarytoken. This issue did not expose other Canarytokens or other Canarytoken creators. Canarytokens Docker images sha-fb61290 and later contain a patch for this issue."
     },
     {
         "Modified": "2023-01-06T15:06:00",
@@ -1281,420 +1667,5 @@
             "https://vuldb.com/?id.216907"
         ],
         "summary": "A vulnerability was found in DHBW Fallstudie. It has been declared as critical. Affected by this vulnerability is an unknown functionality of the file app/config/passport.js of the component Login. The manipulation of the argument id/email leads to sql injection. The name of the patch is 5c13c6a972ef4c07c5f35b417916e0598af9e123. It is recommended to apply a patch to fix this issue. The associated identifier of this vulnerability is VDB-216907."
-    },
-    {
-        "Modified": "2023-01-06T13:53:00",
-        "Published": "2022-12-18T06:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-125",
-        "id": "CVE-2022-47520",
-        "impact": {},
-        "last-modified": "2023-01-06T13:53:00",
-        "references": [
-            "https://github.com/torvalds/linux/commit/cd21d99e595ec1d8721e1058dcdd4f1f7de1d793",
-            "https://lore.kernel.org/r/20221123153543.8568-2-philipturnbull@github.com",
-            "https://lists.debian.org/debian-lts-announce/2022/12/msg00031.html"
-        ],
-        "summary": "An issue was discovered in the Linux kernel before 6.0.11. Missing offset validation in drivers/net/wireless/microchip/wilc1000/hif.c in the WILC1000 wireless driver can trigger an out-of-bounds read when parsing a Robust Security Network (RSN) information element from a Netlink packet."
-    },
-    {
-        "Modified": "2023-01-06T13:53:00",
-        "Published": "2022-12-18T06:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-787",
-        "id": "CVE-2022-47521",
-        "impact": {},
-        "last-modified": "2023-01-06T13:53:00",
-        "references": [
-            "https://github.com/torvalds/linux/commit/f9b62f9843c7b0afdaecabbcebf1dbba18599408",
-            "https://lore.kernel.org/r/20221123153543.8568-4-philipturnbull@github.com",
-            "https://lists.debian.org/debian-lts-announce/2022/12/msg00031.html"
-        ],
-        "summary": "An issue was discovered in the Linux kernel before 6.0.11. Missing validation of IEEE80211_P2P_ATTR_CHANNEL_LIST in drivers/net/wireless/microchip/wilc1000/cfg80211.c in the WILC1000 wireless driver can trigger a heap-based buffer overflow when parsing the operating channel attribute from Wi-Fi management frames."
-    },
-    {
-        "Modified": "2023-01-06T13:52:00",
-        "Published": "2022-12-18T06:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-787",
-        "id": "CVE-2022-47518",
-        "impact": {},
-        "last-modified": "2023-01-06T13:52:00",
-        "references": [
-            "https://lore.kernel.org/r/20221123153543.8568-5-philipturnbull@github.com",
-            "https://github.com/torvalds/linux/commit/0cdfa9e6f0915e3d243e2393bfa8a22e12d553b0",
-            "https://lists.debian.org/debian-lts-announce/2022/12/msg00031.html"
-        ],
-        "summary": "An issue was discovered in the Linux kernel before 6.0.11. Missing validation of the number of channels in drivers/net/wireless/microchip/wilc1000/cfg80211.c in the WILC1000 wireless driver can trigger a heap-based buffer overflow when copying the list of operating channels from Wi-Fi management frames."
-    },
-    {
-        "Modified": "2023-01-06T13:52:00",
-        "Published": "2022-12-17T13:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-601",
-        "id": "CVE-2022-4589",
-        "impact": {},
-        "last-modified": "2023-01-06T13:52:00",
-        "references": [
-            "https://github.com/cyface/django-termsandconditions/pull/239",
-            "https://vuldb.com/?id.216175",
-            "https://github.com/cyface/django-termsandconditions/commit/03396a1c2e0af95e12a45c5faef7e47a4b513e1a",
-            "https://github.com/cyface/django-termsandconditions/releases/tag/v2.0.10"
-        ],
-        "summary": "A vulnerability has been found in cyface Terms and Conditions Module up to 2.0.9 and classified as problematic. Affected by this vulnerability is the function returnTo of the file termsandconditions/views.py. The manipulation leads to open redirect. The attack can be launched remotely. Upgrading to version 2.0.10 is able to address this issue. The name of the patch is 03396a1c2e0af95e12a45c5faef7e47a4b513e1a. It is recommended to upgrade the affected component. The associated identifier of this vulnerability is VDB-216175."
-    },
-    {
-        "Modified": "2023-01-06T13:51:00",
-        "Published": "2022-12-27T22:15:00",
-        "access": {},
-        "assigner": "security@golang.org",
-        "cvss": null,
-        "cwe": "CWE-400",
-        "id": "CVE-2022-3064",
-        "impact": {},
-        "last-modified": "2023-01-06T13:51:00",
-        "references": [
-            "https://github.com/go-yaml/yaml/releases/tag/v2.2.4",
-            "https://pkg.go.dev/vuln/GO-2022-0956",
-            "https://github.com/go-yaml/yaml/commit/f221b8435cfb71e54062f6c6e99e9ade30b124d5"
-        ],
-        "summary": "Parsing malicious or large YAML documents can consume excessive amounts of CPU or memory."
-    },
-    {
-        "Modified": "2023-01-06T13:04:00",
-        "Published": "2022-12-23T20:15:00",
-        "access": {},
-        "assigner": "psirt@us.ibm.com",
-        "cvss": null,
-        "cwe": "NVD-CWE-noinfo",
-        "id": "CVE-2022-43848",
-        "impact": {},
-        "last-modified": "2023-01-06T13:04:00",
-        "references": [
-            "https://www.ibm.com/support/pages/node/6847947",
-            "https://exchange.xforce.ibmcloud.com/vulnerabilities/239169"
-        ],
-        "summary": "IBM AIX 7.1, 7.2, 7.3, and VIOS 3.1 could allow a non-privileged local user to exploit a vulnerability in the AIX perfstat kernel extension to cause a denial of service. IBM X-Force ID: 239169."
-    },
-    {
-        "Modified": "2023-01-06T10:15:00",
-        "Published": "2022-12-20T21:15:00",
-        "access": {},
-        "assigner": "psirt@huawei.com",
-        "cvss": null,
-        "cwe": "CWE-22",
-        "id": "CVE-2021-46856",
-        "impact": {},
-        "last-modified": "2023-01-06T10:15:00",
-        "references": [
-            "https://device.harmonyos.com/en/docs/security/update/security-bulletins-202212-0000001462975397",
-            "https://consumer.huawei.com/en/support/bulletin/2023/1/",
-            "https://device.harmonyos.com/en/docs/security/update/security-bulletins-202301-0000001435541166"
-        ],
-        "summary": "The multi-screen collaboration module has a path traversal vulnerability. Successful exploitation of this vulnerability may affect data confidentiality."
-    },
-    {
-        "Modified": "2023-01-06T06:09:00",
-        "Published": "2022-12-27T10:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2019-25088",
-        "impact": {},
-        "last-modified": "2023-01-06T06:09:00",
-        "references": [
-            "https://github.com/ytti/oxidized-web/pull/195",
-            "https://vuldb.com/?ctiid.216870",
-            "https://vuldb.com/?id.216870",
-            "https://github.com/ytti/oxidized-web/commit/55ab9bdc68b03ebce9280b8746ef31d7fdedcc45"
-        ],
-        "summary": "A vulnerability was found in ytti Oxidized Web. It has been classified as problematic. Affected is an unknown function of the file lib/oxidized/web/views/conf_search.haml. The manipulation of the argument to_research leads to cross site scripting. It is possible to launch the attack remotely. The name of the patch is 55ab9bdc68b03ebce9280b8746ef31d7fdedcc45. It is recommended to apply a patch to fix this issue. VDB-216870 is the identifier assigned to this vulnerability."
-    },
-    {
-        "Modified": "2023-01-06T06:07:00",
-        "Published": "2022-12-27T13:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-352",
-        "id": "CVE-2022-4766",
-        "impact": {},
-        "last-modified": "2023-01-06T06:07:00",
-        "references": [
-            "https://github.com/delcroip/dolibarr_project_timesheet/releases/tag/4.5.6.a",
-            "https://github.com/delcroip/dolibarr_project_timesheet/commit/082282e9dab43963e6c8f03cfaddd7921de377f4",
-            "https://vuldb.com/?ctiid.216880",
-            "https://vuldb.com/?id.216880",
-            "https://github.com/delcroip/dolibarr_project_timesheet/pull/200"
-        ],
-        "summary": "A vulnerability was found in dolibarr_project_timesheet up to 4.5.5. It has been declared as problematic. This vulnerability affects unknown code of the component Form Handler. The manipulation leads to cross-site request forgery. The attack can be initiated remotely. Upgrading to version 4.5.6.a is able to address this issue. The name of the patch is 082282e9dab43963e6c8f03cfaddd7921de377f4. It is recommended to upgrade the affected component. The identifier of this vulnerability is VDB-216880."
-    },
-    {
-        "Modified": "2023-01-06T06:05:00",
-        "Published": "2022-12-27T13:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2021-4288",
-        "impact": {},
-        "last-modified": "2023-01-06T06:05:00",
-        "references": [
-            "https://github.com/openmrs/openmrs-module-referenceapplication/pull/92",
-            "https://github.com/openmrs/openmrs-module-referenceapplication/commit/35f81901a4cb925747a9615b8706f5079d2196a1",
-            "https://vuldb.com/?ctiid.216881",
-            "https://vuldb.com/?id.216881",
-            "https://github.com/openmrs/openmrs-module-referenceapplication/releases/tag/referenceapplication-2.12.0"
-        ],
-        "summary": "A vulnerability was found in OpenMRS openmrs-module-referenceapplication up to 2.11.x. It has been rated as problematic. This issue affects some unknown processing of the file omod/src/main/webapp/pages/userApp.gsp. The manipulation leads to cross site scripting. The attack may be initiated remotely. Upgrading to version 2.12.0 is able to address this issue. The name of the patch is 35f81901a4cb925747a9615b8706f5079d2196a1. It is recommended to upgrade the affected component. The identifier VDB-216881 was assigned to this vulnerability."
-    },
-    {
-        "Modified": "2023-01-06T06:05:00",
-        "Published": "2022-12-27T13:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2021-4289",
-        "impact": {},
-        "last-modified": "2023-01-06T06:05:00",
-        "references": [
-            "https://vuldb.com/?ctiid.216883",
-            "https://github.com/openmrs/openmrs-module-referenceapplication/commit/0410c091d46eed3c132fe0fcafe5964182659f74",
-            "https://github.com/openmrs/openmrs-module-referenceapplication/pull/89",
-            "https://vuldb.com/?id.216883",
-            "https://issues.openmrs.org/browse/RA-1875",
-            "https://github.com/openmrs/openmrs-module-referenceapplication/releases/tag/referenceapplication-2.12.0"
-        ],
-        "summary": "A vulnerability classified as problematic was found in OpenMRS openmrs-module-referenceapplication up to 2.11.x. Affected by this vulnerability is the function post of the file omod/src/main/java/org/openmrs/module/referenceapplication/page/controller/UserAppPageController.java of the component User App Page. The manipulation of the argument AppId leads to cross site scripting. The attack can be launched remotely. Upgrading to version 2.12.0 is able to address this issue. The name of the patch is 0410c091d46eed3c132fe0fcafe5964182659f74. It is recommended to upgrade the affected component. The associated identifier of this vulnerability is VDB-216883."
-    },
-    {
-        "Modified": "2023-01-06T06:04:00",
-        "Published": "2022-12-27T13:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-352",
-        "id": "CVE-2020-36633",
-        "impact": {},
-        "last-modified": "2023-01-06T06:04:00",
-        "references": [
-            "https://github.com/eberhardt/moodle-block_sitenews/releases/tag/v1.1",
-            "https://vuldb.com/?id.216879",
-            "https://github.com/eberhardt/moodle-block_sitenews/pull/5",
-            "https://github.com/eberhardt/moodle-block_sitenews/commit/cd18d8b1afe464ae6626832496f4e070bac4c58f",
-            "https://vuldb.com/?ctiid.216879"
-        ],
-        "summary": "A vulnerability was found in moodle-block_sitenews 1.0. It has been classified as problematic. This affects the function get_content of the file block_sitenews.php. The manipulation leads to cross-site request forgery. It is possible to initiate the attack remotely. Upgrading to version 1.1 is able to address this issue. The name of the patch is cd18d8b1afe464ae6626832496f4e070bac4c58f. It is recommended to upgrade the affected component. The associated identifier of this vulnerability is VDB-216879."
-    },
-    {
-        "Modified": "2023-01-06T06:04:00",
-        "Published": "2022-12-27T13:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2020-36634",
-        "impact": {},
-        "last-modified": "2023-01-06T06:04:00",
-        "references": [
-            "https://vuldb.com/?ctiid.216882",
-            "https://github.com/indeedeng/util/commit/c0952a9db51a880e9544d9fac2a2218a6bfc9c63",
-            "https://vuldb.com/?id.216882",
-            "https://github.com/indeedeng/util/releases/tag/published%2F1.0.34"
-        ],
-        "summary": "A vulnerability classified as problematic has been found in Indeed Engineering util up to 1.0.33. Affected is the function visit/appendTo of the file varexport/src/main/java/com/indeed/util/varexport/servlet/ViewExportedVariablesServlet.java. The manipulation leads to cross site scripting. It is possible to launch the attack remotely. Upgrading to version 1.0.34 is able to address this issue. The name of the patch is c0952a9db51a880e9544d9fac2a2218a6bfc9c63. It is recommended to upgrade the affected component. VDB-216882 is the identifier assigned to this vulnerability."
-    },
-    {
-        "Modified": "2023-01-06T06:03:00",
-        "Published": "2022-12-27T13:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2019-25090",
-        "impact": {},
-        "last-modified": "2023-01-06T06:03:00",
-        "references": [
-            "https://vuldb.com/?id.216878",
-            "https://github.com/FreePBX/arimanager/releases/tag/release%2F13.0.5.4",
-            "https://github.com/FreePBX/arimanager/commit/199dea7cc7020d3c469a86a39fbd80f5edd3c5ab",
-            "https://vuldb.com/?ctiid.216878"
-        ],
-        "summary": "A vulnerability was found in FreePBX arimanager up to 13.0.5.3 and classified as problematic. Affected by this issue is some unknown functionality of the component Views Handler. The manipulation of the argument dataurl leads to cross site scripting. The attack may be launched remotely. Upgrading to version 13.0.5.4 is able to address this issue. The name of the patch is 199dea7cc7020d3c469a86a39fbd80f5edd3c5ab. It is recommended to upgrade the affected component. VDB-216878 is the identifier assigned to this vulnerability."
-    },
-    {
-        "Modified": "2023-01-06T06:02:00",
-        "Published": "2022-12-27T12:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-330",
-        "id": "CVE-2019-25089",
-        "impact": {},
-        "last-modified": "2023-01-06T06:02:00",
-        "references": [
-            "https://github.com/Morgawr/Muon/issues/4",
-            "https://vuldb.com/?id.216877",
-            "https://github.com/Morgawr/Muon/commit/c09ed972c020f759110c707b06ca2644f0bacd7f",
-            "https://vuldb.com/?ctiid.216877"
-        ],
-        "summary": "A vulnerability has been found in Morgawr Muon 0.1.1 and classified as problematic. Affected by this vulnerability is an unknown functionality of the file src/muon/handler.clj. The manipulation leads to insufficiently random values. The attack can be launched remotely. Upgrading to version 0.2.0-indev is able to address this issue. The name of the patch is c09ed972c020f759110c707b06ca2644f0bacd7f. It is recommended to upgrade the affected component. The identifier VDB-216877 was assigned to this vulnerability."
-    },
-    {
-        "Modified": "2023-01-06T06:01:00",
-        "Published": "2022-12-27T11:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2021-4285",
-        "impact": {},
-        "last-modified": "2023-01-06T06:01:00",
-        "references": [
-            "https://vuldb.com/?ctiid.216874",
-            "https://github.com/NagiosEnterprises/ncpa/commit/5abbcd7aa26e0fc815e6b2b0ffe1c15ef3e8fab5",
-            "https://github.com/NagiosEnterprises/ncpa/pull/834",
-            "https://github.com/NagiosEnterprises/ncpa/releases/tag/v2.4.0",
-            "https://vuldb.com/?id.216874"
-        ],
-        "summary": "A vulnerability classified as problematic was found in Nagios NCPA. This vulnerability affects unknown code of the file agent/listener/templates/tail.html. The manipulation of the argument name leads to cross site scripting. The attack can be initiated remotely. Upgrading to version 2.4.0 is able to address this issue. The name of the patch is 5abbcd7aa26e0fc815e6b2b0ffe1c15ef3e8fab5. It is recommended to upgrade the affected component. VDB-216874 is the identifier assigned to this vulnerability."
-    },
-    {
-        "Modified": "2023-01-06T06:01:00",
-        "Published": "2022-12-27T11:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-203",
-        "id": "CVE-2021-4286",
-        "impact": {},
-        "last-modified": "2023-01-06T06:01:00",
-        "references": [
-            "https://vuldb.com/?id.216875",
-            "https://vuldb.com/?ctiid.216875",
-            "https://github.com/cocagne/pysrp/commit/dba52642f5e95d3da7af1780561213ee6053195f",
-            "https://github.com/cocagne/pysrp/releases/tag/1.0.17",
-            "https://github.com/cocagne/pysrp/pull/43"
-        ],
-        "summary": "A vulnerability, which was classified as problematic, has been found in cocagne pysrp up to 1.0.16. This issue affects the function calculate_x of the file srp/_ctsrp.py. The manipulation leads to information exposure through discrepancy. Upgrading to version 1.0.17 is able to address this issue. The name of the patch is dba52642f5e95d3da7af1780561213ee6053195f. It is recommended to upgrade the affected component. The associated identifier of this vulnerability is VDB-216875."
-    },
-    {
-        "Modified": "2023-01-06T06:00:00",
-        "Published": "2022-12-27T10:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-4755",
-        "impact": {},
-        "last-modified": "2023-01-06T06:00:00",
-        "references": [
-            "https://github.com/flatpressblog/flatpress/issues/177",
-            "https://vuldb.com/?id.216869",
-            "https://github.com/flatpressblog/flatpress/commit/d3f329496536dc99f9707f2f295d571d65a496f5",
-            "https://vuldb.com/?ctiid.216869"
-        ],
-        "summary": "A vulnerability was found in FlatPress and classified as problematic. This issue affects the function main of the file fp-plugins/mediamanager/panels/panel.mediamanager.file.php of the component Media Manager Plugin. The manipulation of the argument mm-newgallery-name leads to cross site scripting. The attack may be initiated remotely. The name of the patch is d3f329496536dc99f9707f2f295d571d65a496f5. It is recommended to apply a patch to fix this issue. The identifier VDB-216869 was assigned to this vulnerability."
-    },
-    {
-        "Modified": "2023-01-06T05:59:00",
-        "Published": "2022-12-27T10:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2021-4284",
-        "impact": {},
-        "last-modified": "2023-01-06T05:59:00",
-        "references": [
-            "https://github.com/openmrs/openmrs-module-htmlformentryui/commit/811990972ea07649ae33c4b56c61c3b520895f07",
-            "https://vuldb.com/?ctiid.216873",
-            "https://issues.openmrs.org/browse/RA-1424?filter=-1",
-            "https://vuldb.com/?id.216873",
-            "https://github.com/openmrs/openmrs-module-htmlformentryui/pull/51",
-            "https://github.com/openmrs/openmrs-module-htmlformentryui/releases/tag/2.0.0"
-        ],
-        "summary": "A vulnerability classified as problematic has been found in OpenMRS HTML Form Entry UI Framework Integration Module up to 1.x. This affects an unknown part. The manipulation leads to cross site scripting. It is possible to initiate the attack remotely. Upgrading to version 2.0.0 is able to address this issue. The name of the patch is 811990972ea07649ae33c4b56c61c3b520895f07. It is recommended to upgrade the affected component. The identifier VDB-216873 was assigned to this vulnerability."
-    },
-    {
-        "Modified": "2023-01-06T05:57:00",
-        "Published": "2022-12-27T10:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2021-4282",
-        "impact": {},
-        "last-modified": "2023-01-06T05:57:00",
-        "references": [
-            "https://github.com/FreePBX/voicemail/releases/tag/release%2F14.0.6.25",
-            "https://vuldb.com/?ctiid.216871",
-            "https://github.com/FreePBX/voicemail/commit/12e1469ef9208eda9d8955206e78345949236ee6",
-            "https://vuldb.com/?id.216871"
-        ],
-        "summary": "A vulnerability was found in FreePBX voicemail. It has been declared as problematic. Affected by this vulnerability is an unknown functionality of the file page.voicemail.php. The manipulation leads to cross site scripting. The attack can be launched remotely. Upgrading to version 14.0.6.25 is able to address this issue. The name of the patch is 12e1469ef9208eda9d8955206e78345949236ee6. It is recommended to upgrade the affected component. The associated identifier of this vulnerability is VDB-216871."
-    },
-    {
-        "Modified": "2023-01-06T05:57:00",
-        "Published": "2022-12-27T10:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2021-4283",
-        "impact": {},
-        "last-modified": "2023-01-06T05:57:00",
-        "references": [
-            "https://github.com/FreePBX/voicemail/commit/ffce4882016076acd16fe0f676246905aa3cb2f3",
-            "https://github.com/FreePBX/voicemail/releases/tag/release%2F14.0.6.25",
-            "https://vuldb.com/?ctiid.216872",
-            "https://vuldb.com/?id.216872"
-        ],
-        "summary": "A vulnerability was found in FreeBPX voicemail. It has been rated as problematic. Affected by this issue is some unknown functionality of the file views/ssettings.php of the component Settings Handler. The manipulation of the argument key leads to cross site scripting. The attack may be launched remotely. Upgrading to version 14.0.6.25 is able to address this issue. The name of the patch is ffce4882016076acd16fe0f676246905aa3cb2f3. It is recommended to upgrade the affected component. The identifier of this vulnerability is VDB-216872."
-    },
-    {
-        "Modified": "2023-01-06T05:55:00",
-        "Published": "2022-12-27T09:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-22",
-        "id": "CVE-2022-4748",
-        "impact": {},
-        "last-modified": "2023-01-06T05:55:00",
-        "references": [
-            "https://vuldb.com/?ctiid.216861",
-            "https://github.com/flatpressblog/flatpress/issues/179",
-            "https://vuldb.com/?id.216861",
-            "https://github.com/flatpressblog/flatpress/commit/5d5c7f6d8f072d14926fc2c3a97cdd763802f170"
-        ],
-        "summary": "A vulnerability was found in FlatPress. It has been classified as critical. This affects the function doItemActions of the file fp-plugins/mediamanager/panels/panel.mediamanager.file.php of the component File Delete Handler. The manipulation of the argument deletefile leads to path traversal. The name of the patch is 5d5c7f6d8f072d14926fc2c3a97cdd763802f170. It is recommended to apply a patch to fix this issue. The identifier VDB-216861 was assigned to this vulnerability."
-    },
-    {
-        "Modified": "2023-01-06T05:43:00",
-        "Published": "2022-12-27T09:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-22",
-        "id": "CVE-2019-25087",
-        "impact": {},
-        "last-modified": "2023-01-06T05:43:00",
-        "references": [
-            "https://vuldb.com/?ctiid.216863",
-            "https://github.com/RamseyK/httpserver/commit/1a0de56e4dafff9c2f9c8f6b130a764f7a50df52",
-            "https://vuldb.com/?id.216863"
-        ],
-        "summary": "A vulnerability was found in RamseyK httpserver. It has been rated as critical. This issue affects the function ResourceHost::getResource of the file src/ResourceHost.cpp of the component URI Handler. The manipulation of the argument uri leads to path traversal: '../filedir'. The attack may be initiated remotely. The name of the patch is 1a0de56e4dafff9c2f9c8f6b130a764f7a50df52. It is recommended to apply a patch to fix this issue. The associated identifier of this vulnerability is VDB-216863."
     }
 ]
