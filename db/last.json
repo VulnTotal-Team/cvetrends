@@ -1,25 +1,115 @@
 [
     {
-        "Modified": "2023-01-09T10:15:00",
-        "Published": "2023-01-09T10:15:00",
+        "Modified": "2023-01-09T12:40:00",
+        "Published": "2023-01-09T11:15:00",
+        "access": {},
+        "assigner": "security@google.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-2196",
+        "impact": {},
+        "last-modified": "2023-01-09T12:40:00",
+        "references": [
+            "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=2e7eab81425ad6c875f2ed47c0ce01e78afc38a5",
+            "https://kernel.dance/#2e7eab81425a"
+        ],
+        "summary": "A regression exists in the Linux Kernel within KVM: nVMX that allowed for speculative execution attacks. L2 can carry out Spectre v2 attacks on L1 due to L1 thinking it doesn't need retpolines or IBPB after running L2 due to KVM (L0) advertising eIBRS support to L1. An attacker at L2 with code execution can execute code on an indirect branch on the host machine. We recommend upgrading to Kernel 6.2 or past commit 2e7eab81425a"
+    },
+    {
+        "Modified": "2023-01-09T12:40:00",
+        "Published": "2023-01-09T11:15:00",
+        "access": {},
+        "assigner": "security@apache.org",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2022-46769",
+        "impact": {},
+        "last-modified": "2023-01-09T12:40:00",
+        "references": [
+            "https://sling.apache.org/news.html"
+        ],
+        "summary": "An improper neutralization of input during web page generation ('Cross-site Scripting') [CWE-79] vulnerability in Sling App CMS version 1.1.2 and prior may allow an authenticated remote attacker to perform a reflected cross-site scripting (XSS) attack in the site group feature. Upgrade to Apache Sling App CMS >= 1.1.4"
+    },
+    {
+        "Modified": "2023-01-09T12:40:00",
+        "Published": "2023-01-09T12:15:00",
         "access": {},
         "assigner": "cna@vuldb.com",
         "cvss": null,
-        "cwe": "CWE-1333",
-        "id": "CVE-2017-20165",
+        "cwe": "CWE-611",
+        "id": "CVE-2021-4311",
         "impact": {},
-        "last-modified": "2023-01-09T10:15:00",
+        "last-modified": "2023-01-09T12:40:00",
         "references": [
-            "https://github.com/debug-js/debug/pull/504",
-            "https://vuldb.com/?ctiid.217665",
-            "https://github.com/debug-js/debug/commit/c38a0166c266a679c8de012d4eaccec3f944e685",
-            "https://github.com/debug-js/debug/releases/tag/3.1.0",
-            "https://vuldb.com/?id.217665"
+            "https://github.com/Talend/tmdm-server-se/pull/1420",
+            "https://github.com/Talend/tmdm-server-se/commit/31d442b9fb1d518128fd18f6e4d54e06c3d67793",
+            "https://vuldb.com/?ctiid.217666",
+            "https://vuldb.com/?id.217666"
         ],
-        "summary": "A vulnerability classified as problematic has been found in debug-js debug up to 3.0.x. This affects the function useColors of the file src/node.js. The manipulation of the argument str leads to inefficient regular expression complexity. Upgrading to version 3.1.0 is able to address this issue. The name of the patch is c38a0166c266a679c8de012d4eaccec3f944e685. It is recommended to upgrade the affected component. The identifier VDB-217665 was assigned to this vulnerability."
+        "summary": "A vulnerability classified as problematic was found in Talend Open Studio for MDM. This vulnerability affects unknown code of the component XML Handler. The manipulation leads to xml external entity reference. The name of the patch is 31d442b9fb1d518128fd18f6e4d54e06c3d67793. It is recommended to apply a patch to fix this issue. VDB-217666 is the identifier assigned to this vulnerability."
     },
     {
-        "Modified": "2023-01-09T09:15:00",
+        "Modified": "2023-01-09T12:40:00",
+        "Published": "2023-01-09T08:15:00",
+        "access": {},
+        "assigner": "security.cna@qualcomm.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-25716",
+        "impact": {},
+        "last-modified": "2023-01-09T12:40:00",
+        "references": [
+            "https://www.qualcomm.com/company/product-security/bulletins/january-2023-bulletin"
+        ],
+        "summary": "Memory corruption in Multimedia Framework due to unsafe access to the data members"
+    },
+    {
+        "Modified": "2023-01-09T12:40:00",
+        "Published": "2023-01-09T08:15:00",
+        "access": {},
+        "assigner": "security.cna@qualcomm.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-25722",
+        "impact": {},
+        "last-modified": "2023-01-09T12:40:00",
+        "references": [
+            "https://www.qualcomm.com/company/product-security/bulletins/january-2023-bulletin"
+        ],
+        "summary": "Information exposure in DSP services due to improper handling of freeing memory"
+    },
+    {
+        "Modified": "2023-01-09T12:40:00",
+        "Published": "2023-01-09T08:15:00",
+        "access": {},
+        "assigner": "security.cna@qualcomm.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-33285",
+        "impact": {},
+        "last-modified": "2023-01-09T12:40:00",
+        "references": [
+            "https://www.qualcomm.com/company/product-security/bulletins/january-2023-bulletin"
+        ],
+        "summary": "Transient DOS due to buffer over-read in WLAN while parsing WLAN CSA action frames."
+    },
+    {
+        "Modified": "2023-01-09T12:40:00",
+        "Published": "2023-01-09T08:15:00",
+        "access": {},
+        "assigner": "security.cna@qualcomm.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-40520",
+        "impact": {},
+        "last-modified": "2023-01-09T12:40:00",
+        "references": [
+            "https://www.qualcomm.com/company/product-security/bulletins/january-2023-bulletin"
+        ],
+        "summary": "Memory corruption due to stack-based buffer overflow in Core"
+    },
+    {
+        "Modified": "2023-01-09T12:40:00",
         "Published": "2023-01-09T09:15:00",
         "access": {},
         "assigner": "cna@vuldb.com",
@@ -27,7 +117,7 @@
         "cwe": "CWE-79",
         "id": "CVE-2015-10032",
         "impact": {},
-        "last-modified": "2023-01-09T09:15:00",
+        "last-modified": "2023-01-09T12:40:00",
         "references": [
             "https://vuldb.com/?ctiid.217663",
             "https://vuldb.com/?id.217663",
@@ -36,7 +126,7 @@
         "summary": "A vulnerability was found in HealthMateWeb. It has been declared as problematic. Affected by this vulnerability is an unknown functionality of the file createaccount.php. The manipulation of the argument username/password/first_name/last_name/company/phone leads to cross site scripting. The attack can be launched remotely. The name of the patch is 472776c25b1046ecaf962c46fed7c713c72c28e3. It is recommended to apply a patch to fix this issue. The associated identifier of this vulnerability is VDB-217663."
     },
     {
-        "Modified": "2023-01-09T09:15:00",
+        "Modified": "2023-01-09T12:40:00",
         "Published": "2023-01-09T09:15:00",
         "access": {},
         "assigner": "cna@vuldb.com",
@@ -44,7 +134,7 @@
         "cwe": "CWE-79",
         "id": "CVE-2021-4310",
         "impact": {},
-        "last-modified": "2023-01-09T09:15:00",
+        "last-modified": "2023-01-09T12:40:00",
         "references": [
             "https://github.com/01-Scripts/01-Artikelsystem/commit/ae849b347a58c2cb1be38d04bbe56fc883d5d84a",
             "https://vuldb.com/?ctiid.217662",
@@ -53,7 +143,7 @@
         "summary": "A vulnerability was found in 01-Scripts 01-Artikelsystem. It has been classified as problematic. Affected is an unknown function of the file 01article.php. The manipulation of the argument $_SERVER['PHP_SELF'] leads to cross site scripting. It is possible to launch the attack remotely. The name of the patch is ae849b347a58c2cb1be38d04bbe56fc883d5d84a. It is recommended to apply a patch to fix this issue. VDB-217662 is the identifier assigned to this vulnerability."
     },
     {
-        "Modified": "2023-01-09T09:15:00",
+        "Modified": "2023-01-09T12:40:00",
         "Published": "2023-01-09T09:15:00",
         "access": {},
         "assigner": "cve@mitre.org",
@@ -61,7 +151,7 @@
         "cwe": "Unknown",
         "id": "CVE-2022-43974",
         "impact": {},
-        "last-modified": "2023-01-09T09:15:00",
+        "last-modified": "2023-01-09T12:40:00",
         "references": [
             "https://github.com/matrixssl/matrixssl/security/advisories/GHSA-fmwc-gwc5-2g29",
             "https://github.com/matrixssl/matrixssl/blob/4-6-0-open/doc/CHANGES_v4.x.md",
@@ -70,7 +160,7 @@
         "summary": "MatrixSSL 4.0.4 through 4.5.1 has an integer overflow in matrixSslDecodeTls13. A remote attacker might be able to send a crafted TLS Message to cause a buffer overflow and achieve remote code execution. This is fixed in 4.6.0."
     },
     {
-        "Modified": "2023-01-09T09:15:00",
+        "Modified": "2023-01-09T12:40:00",
         "Published": "2023-01-09T09:15:00",
         "access": {},
         "assigner": "cna@vuldb.com",
@@ -78,7 +168,7 @@
         "cwe": "CWE-79",
         "id": "CVE-2022-4882",
         "impact": {},
-        "last-modified": "2023-01-09T09:15:00",
+        "last-modified": "2023-01-09T12:40:00",
         "references": [
             "https://github.com/kaltura/mwEmbed/releases/tag/v2.92.rc1",
             "https://github.com/kaltura/mwEmbed/commit/4f11b6f6610acd6d89de5f8be47cf7c610643845",
@@ -89,64 +179,538 @@
         "summary": "A vulnerability was found in kaltura mwEmbed up to 2.91. It has been rated as problematic. Affected by this issue is some unknown functionality of the file modules/KalturaSupport/components/share/share.js of the component Share Plugin. The manipulation of the argument res leads to cross site scripting. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. Upgrading to version 2.92.rc1 is able to address this issue. The name of the patch is 4f11b6f6610acd6d89de5f8be47cf7c610643845. It is recommended to upgrade the affected component. The identifier of this vulnerability is VDB-217664."
     },
     {
-        "Modified": "2023-01-09T08:15:00",
-        "Published": "2023-01-09T08:15:00",
+        "Modified": "2023-01-09T12:40:00",
+        "Published": "2023-01-09T10:15:00",
         "access": {},
-        "assigner": "security.cna@qualcomm.com",
+        "assigner": "cna@vuldb.com",
         "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-25716",
+        "cwe": "CWE-1333",
+        "id": "CVE-2017-20165",
         "impact": {},
-        "last-modified": "2023-01-09T08:15:00",
+        "last-modified": "2023-01-09T12:40:00",
         "references": [
-            "https://www.qualcomm.com/company/product-security/bulletins/january-2023-bulletin"
+            "https://github.com/debug-js/debug/pull/504",
+            "https://vuldb.com/?ctiid.217665",
+            "https://github.com/debug-js/debug/commit/c38a0166c266a679c8de012d4eaccec3f944e685",
+            "https://github.com/debug-js/debug/releases/tag/3.1.0",
+            "https://vuldb.com/?id.217665"
         ],
-        "summary": "Memory corruption in Multimedia Framework due to unsafe access to the data members"
+        "summary": "A vulnerability classified as problematic has been found in debug-js debug up to 3.0.x. This affects the function useColors of the file src/node.js. The manipulation of the argument str leads to inefficient regular expression complexity. Upgrading to version 3.1.0 is able to address this issue. The name of the patch is c38a0166c266a679c8de012d4eaccec3f944e685. It is recommended to upgrade the affected component. The identifier VDB-217665 was assigned to this vulnerability."
     },
     {
-        "Modified": "2023-01-09T08:15:00",
+        "Modified": "2023-01-09T12:40:00",
         "Published": "2023-01-09T08:15:00",
         "access": {},
-        "assigner": "security.cna@qualcomm.com",
+        "assigner": "psirt@us.ibm.com",
         "cvss": null,
         "cwe": "Unknown",
-        "id": "CVE-2022-25722",
+        "id": "CVE-2022-22470",
         "impact": {},
-        "last-modified": "2023-01-09T08:15:00",
+        "last-modified": "2023-01-09T12:40:00",
         "references": [
-            "https://www.qualcomm.com/company/product-security/bulletins/january-2023-bulletin"
+            "https://www.ibm.com/support/pages/node/6852697",
+            "https://exchange.xforce.ibmcloud.com/vulnerabilities/225232"
         ],
-        "summary": "Information exposure in DSP services due to improper handling of freeing memory"
+        "summary": "IBM Security Verify Governance 10.0 stores user credentials in plain clear text which can be read by a local user. IBM X-Force ID: 225232."
     },
     {
-        "Modified": "2023-01-09T08:15:00",
+        "Modified": "2023-01-09T12:40:00",
         "Published": "2023-01-09T08:15:00",
         "access": {},
         "assigner": "security.cna@qualcomm.com",
         "cvss": null,
         "cwe": "Unknown",
-        "id": "CVE-2022-33285",
+        "id": "CVE-2022-22088",
         "impact": {},
-        "last-modified": "2023-01-09T08:15:00",
+        "last-modified": "2023-01-09T12:40:00",
         "references": [
             "https://www.qualcomm.com/company/product-security/bulletins/january-2023-bulletin"
         ],
-        "summary": "Transient DOS due to buffer over-read in WLAN while parsing WLAN CSA action frames."
+        "summary": "Memory corruption in Bluetooth HOST due to buffer overflow while parsing the command response received from remote"
     },
     {
-        "Modified": "2023-01-09T08:15:00",
+        "Modified": "2023-01-09T12:40:00",
         "Published": "2023-01-09T08:15:00",
         "access": {},
         "assigner": "security.cna@qualcomm.com",
         "cvss": null,
         "cwe": "Unknown",
-        "id": "CVE-2022-40520",
+        "id": "CVE-2022-33219",
         "impact": {},
-        "last-modified": "2023-01-09T08:15:00",
+        "last-modified": "2023-01-09T12:40:00",
         "references": [
             "https://www.qualcomm.com/company/product-security/bulletins/january-2023-bulletin"
         ],
-        "summary": "Memory corruption due to stack-based buffer overflow in Core"
+        "summary": "Memory corruption in Automotive due to integer overflow to buffer overflow while registering a new listener with shared buffer."
+    },
+    {
+        "Modified": "2023-01-09T12:40:00",
+        "Published": "2023-01-09T08:15:00",
+        "access": {},
+        "assigner": "security.cna@qualcomm.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-22079",
+        "impact": {},
+        "last-modified": "2023-01-09T12:40:00",
+        "references": [
+            "https://www.qualcomm.com/company/product-security/bulletins/january-2023-bulletin"
+        ],
+        "summary": "Denial of service while processing fastboot flash command on mmc due to buffer over read"
+    },
+    {
+        "Modified": "2023-01-09T12:40:00",
+        "Published": "2023-01-09T08:15:00",
+        "access": {},
+        "assigner": "security.cna@qualcomm.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-25717",
+        "impact": {},
+        "last-modified": "2023-01-09T12:40:00",
+        "references": [
+            "https://www.qualcomm.com/company/product-security/bulletins/january-2023-bulletin"
+        ],
+        "summary": "Memory corruption in display due to double free while allocating frame buffer memory"
+    },
+    {
+        "Modified": "2023-01-09T12:40:00",
+        "Published": "2023-01-09T08:15:00",
+        "access": {},
+        "assigner": "security.cna@qualcomm.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-33253",
+        "impact": {},
+        "last-modified": "2023-01-09T12:40:00",
+        "references": [
+            "https://www.qualcomm.com/company/product-security/bulletins/january-2023-bulletin"
+        ],
+        "summary": "Transient DOS due to buffer over-read in WLAN while parsing corrupted NAN frames."
+    },
+    {
+        "Modified": "2023-01-09T12:40:00",
+        "Published": "2023-01-09T08:15:00",
+        "access": {},
+        "assigner": "security.cna@qualcomm.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-25721",
+        "impact": {},
+        "last-modified": "2023-01-09T12:40:00",
+        "references": [
+            "https://www.qualcomm.com/company/product-security/bulletins/january-2023-bulletin"
+        ],
+        "summary": "Memory corruption in video driver due to type confusion error during video playback"
+    },
+    {
+        "Modified": "2023-01-09T12:40:00",
+        "Published": "2023-01-09T08:15:00",
+        "access": {},
+        "assigner": "security.cna@qualcomm.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-25725",
+        "impact": {},
+        "last-modified": "2023-01-09T12:40:00",
+        "references": [
+            "https://www.qualcomm.com/company/product-security/bulletins/january-2023-bulletin"
+        ],
+        "summary": "Denial of service in MODEM due to improper pointer handling"
+    },
+    {
+        "Modified": "2023-01-09T12:40:00",
+        "Published": "2023-01-09T08:15:00",
+        "access": {},
+        "assigner": "security.cna@qualcomm.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-33265",
+        "impact": {},
+        "last-modified": "2023-01-09T12:40:00",
+        "references": [
+            "https://www.qualcomm.com/company/product-security/bulletins/january-2023-bulletin"
+        ],
+        "summary": "Memory corruption due to information exposure in Powerline Communication Firmware while sending different MMEs from a single, unassociated device."
+    },
+    {
+        "Modified": "2023-01-09T12:40:00",
+        "Published": "2023-01-09T08:15:00",
+        "access": {},
+        "assigner": "security.cna@qualcomm.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-33218",
+        "impact": {},
+        "last-modified": "2023-01-09T12:40:00",
+        "references": [
+            "https://www.qualcomm.com/company/product-security/bulletins/january-2023-bulletin"
+        ],
+        "summary": "Memory corruption in Automotive due to improper input validation."
+    },
+    {
+        "Modified": "2023-01-09T12:40:00",
+        "Published": "2023-01-09T08:15:00",
+        "access": {},
+        "assigner": "security.cna@qualcomm.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-33252",
+        "impact": {},
+        "last-modified": "2023-01-09T12:40:00",
+        "references": [
+            "https://www.qualcomm.com/company/product-security/bulletins/january-2023-bulletin"
+        ],
+        "summary": "Information disclosure due to buffer over-read in WLAN while handling IBSS beacons frame."
+    },
+    {
+        "Modified": "2023-01-09T12:40:00",
+        "Published": "2023-01-09T08:15:00",
+        "access": {},
+        "assigner": "security.cna@qualcomm.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-33266",
+        "impact": {},
+        "last-modified": "2023-01-09T12:40:00",
+        "references": [
+            "https://www.qualcomm.com/company/product-security/bulletins/january-2023-bulletin"
+        ],
+        "summary": "Memory corruption in Audio due to integer overflow to buffer overflow while music playback of clips like amr,evrc,qcelp with modified content."
+    },
+    {
+        "Modified": "2023-01-09T12:40:00",
+        "Published": "2023-01-09T08:15:00",
+        "access": {},
+        "assigner": "security.cna@qualcomm.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-33255",
+        "impact": {},
+        "last-modified": "2023-01-09T12:40:00",
+        "references": [
+            "https://www.qualcomm.com/company/product-security/bulletins/january-2023-bulletin"
+        ],
+        "summary": "Information disclosure due to buffer over-read in Bluetooth HOST while processing GetFolderItems and GetItemAttribute Cmds from peer device."
+    },
+    {
+        "Modified": "2023-01-09T12:40:00",
+        "Published": "2023-01-09T08:15:00",
+        "access": {},
+        "assigner": "security.cna@qualcomm.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-33274",
+        "impact": {},
+        "last-modified": "2023-01-09T12:40:00",
+        "references": [
+            "https://www.qualcomm.com/company/product-security/bulletins/january-2023-bulletin"
+        ],
+        "summary": "Memory corruption in android core due to improper validation of array index while returning feature ids after license authentication."
+    },
+    {
+        "Modified": "2023-01-09T12:40:00",
+        "Published": "2023-01-09T08:15:00",
+        "access": {},
+        "assigner": "security.cna@qualcomm.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-33276",
+        "impact": {},
+        "last-modified": "2023-01-09T12:40:00",
+        "references": [
+            "https://www.qualcomm.com/company/product-security/bulletins/january-2023-bulletin"
+        ],
+        "summary": "Memory corruption due to buffer copy without checking size of input in modem while receiving WMI_REQUEST_STATS_CMDID command."
+    },
+    {
+        "Modified": "2023-01-09T12:40:00",
+        "Published": "2023-01-09T08:15:00",
+        "access": {},
+        "assigner": "security.cna@qualcomm.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-33283",
+        "impact": {},
+        "last-modified": "2023-01-09T12:40:00",
+        "references": [
+            "https://www.qualcomm.com/company/product-security/bulletins/january-2023-bulletin"
+        ],
+        "summary": "Information disclosure due to buffer over-read in WLAN while WLAN frame parsing due to missing frame length check."
+    },
+    {
+        "Modified": "2023-01-09T12:40:00",
+        "Published": "2023-01-09T08:15:00",
+        "access": {},
+        "assigner": "security.cna@qualcomm.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-33284",
+        "impact": {},
+        "last-modified": "2023-01-09T12:40:00",
+        "references": [
+            "https://www.qualcomm.com/company/product-security/bulletins/january-2023-bulletin"
+        ],
+        "summary": "Information disclosure due to buffer over-read in WLAN while parsing BTM action frame."
+    },
+    {
+        "Modified": "2023-01-09T12:40:00",
+        "Published": "2023-01-09T08:15:00",
+        "access": {},
+        "assigner": "security.cna@qualcomm.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-33286",
+        "impact": {},
+        "last-modified": "2023-01-09T12:40:00",
+        "references": [
+            "https://www.qualcomm.com/company/product-security/bulletins/january-2023-bulletin"
+        ],
+        "summary": "Transient DOS due to buffer over-read in WLAN while processing 802.11 management frames."
+    },
+    {
+        "Modified": "2023-01-09T12:40:00",
+        "Published": "2023-01-09T08:15:00",
+        "access": {},
+        "assigner": "security.cna@qualcomm.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-33290",
+        "impact": {},
+        "last-modified": "2023-01-09T12:40:00",
+        "references": [
+            "https://www.qualcomm.com/company/product-security/bulletins/january-2023-bulletin"
+        ],
+        "summary": "Transient DOS in Bluetooth HOST due to null pointer dereference when a mismatched argument is passed."
+    },
+    {
+        "Modified": "2023-01-09T12:40:00",
+        "Published": "2023-01-09T08:15:00",
+        "access": {},
+        "assigner": "security.cna@qualcomm.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-33299",
+        "impact": {},
+        "last-modified": "2023-01-09T12:40:00",
+        "references": [
+            "https://www.qualcomm.com/company/product-security/bulletins/january-2023-bulletin"
+        ],
+        "summary": "Transient DOS due to null pointer dereference in Bluetooth HOST while receiving an attribute protocol PDU with zero length data."
+    },
+    {
+        "Modified": "2023-01-09T12:40:00",
+        "Published": "2023-01-09T08:15:00",
+        "access": {},
+        "assigner": "security.cna@qualcomm.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-33300",
+        "impact": {},
+        "last-modified": "2023-01-09T12:40:00",
+        "references": [
+            "https://www.qualcomm.com/company/product-security/bulletins/january-2023-bulletin"
+        ],
+        "summary": "Memory corruption in Automotive Android OS due to improper input validation."
+    },
+    {
+        "Modified": "2023-01-09T12:40:00",
+        "Published": "2023-01-09T08:15:00",
+        "access": {},
+        "assigner": "psirt@us.ibm.com",
+        "cvss": null,
+        "cwe": "CWE-1236",
+        "id": "CVE-2022-35281",
+        "impact": {},
+        "last-modified": "2023-01-09T12:40:00",
+        "references": [
+            "https://www.ibm.com/support/pages/node/6852669",
+            "https://exchange.xforce.ibmcloud.com/vulnerabilities/230635"
+        ],
+        "summary": "IBM Maximo Asset Management 7.6.1.1, 7.6.1.2, 7.6.1.3 and the IBM Maximo Manage 8.3, 8.4 application in IBM Maximo Application Suite are vulnerable to CSV injection. IBM X-Force ID: 2306335."
+    },
+    {
+        "Modified": "2023-01-09T12:40:00",
+        "Published": "2023-01-09T08:15:00",
+        "access": {},
+        "assigner": "security.cna@qualcomm.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-40516",
+        "impact": {},
+        "last-modified": "2023-01-09T12:40:00",
+        "references": [
+            "https://www.qualcomm.com/company/product-security/bulletins/january-2023-bulletin"
+        ],
+        "summary": "Memory corruption in Core due to stack-based buffer overflow."
+    },
+    {
+        "Modified": "2023-01-09T12:40:00",
+        "Published": "2023-01-09T08:15:00",
+        "access": {},
+        "assigner": "security.cna@qualcomm.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-40517",
+        "impact": {},
+        "last-modified": "2023-01-09T12:40:00",
+        "references": [
+            "https://www.qualcomm.com/company/product-security/bulletins/january-2023-bulletin"
+        ],
+        "summary": "Memory corruption in core due to stack-based buffer overflow"
+    },
+    {
+        "Modified": "2023-01-09T12:40:00",
+        "Published": "2023-01-09T08:15:00",
+        "access": {},
+        "assigner": "security.cna@qualcomm.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-40518",
+        "impact": {},
+        "last-modified": "2023-01-09T12:40:00",
+        "references": [
+            "https://www.qualcomm.com/company/product-security/bulletins/january-2023-bulletin"
+        ],
+        "summary": "Information disclosure due to buffer overread in Core"
+    },
+    {
+        "Modified": "2023-01-09T12:40:00",
+        "Published": "2023-01-09T08:15:00",
+        "access": {},
+        "assigner": "security.cna@qualcomm.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-40519",
+        "impact": {},
+        "last-modified": "2023-01-09T12:40:00",
+        "references": [
+            "https://www.qualcomm.com/company/product-security/bulletins/january-2023-bulletin"
+        ],
+        "summary": "Information disclosure due to buffer overread in Core"
+    },
+    {
+        "Modified": "2023-01-09T12:40:00",
+        "Published": "2023-01-09T08:15:00",
+        "access": {},
+        "assigner": "cna@vuldb.com",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2010-10004",
+        "impact": {},
+        "last-modified": "2023-01-09T12:40:00",
+        "references": [
+            "https://github.com/simplesamlphp/simplesamlphp-module-infocard/releases/tag/v1.0",
+            "https://vuldb.com/?ctiid.217661",
+            "https://vuldb.com/?id.217661",
+            "https://github.com/simplesamlphp/simplesamlphp-module-infocard/commit/f6bfea49ae16dc6e179df8306d39c3694f1ef186"
+        ],
+        "summary": "A vulnerability was found in Information Cards Module and classified as problematic. This issue affects some unknown processing. The manipulation leads to cross site scripting. The attack may be initiated remotely. Upgrading to version 1.0 is able to address this issue. The name of the patch is f6bfea49ae16dc6e179df8306d39c3694f1ef186. It is recommended to upgrade the affected component. The identifier VDB-217661 was assigned to this vulnerability."
+    },
+    {
+        "Modified": "2023-01-09T12:40:00",
+        "Published": "2023-01-09T08:15:00",
+        "access": {},
+        "assigner": "security.cna@qualcomm.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-25715",
+        "impact": {},
+        "last-modified": "2023-01-09T12:40:00",
+        "references": [
+            "https://www.qualcomm.com/company/product-security/bulletins/january-2023-bulletin"
+        ],
+        "summary": "Memory corruption in display driver due to incorrect type casting while accessing the fence structure fields"
+    },
+    {
+        "Modified": "2023-01-09T12:40:00",
+        "Published": "2023-01-09T08:15:00",
+        "access": {},
+        "assigner": "security.cna@qualcomm.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-25746",
+        "impact": {},
+        "last-modified": "2023-01-09T12:40:00",
+        "references": [
+            "https://www.qualcomm.com/company/product-security/bulletins/january-2023-bulletin"
+        ],
+        "summary": "Memory corruption in kernel due to missing checks when updating the access rights of a memextent mapping."
+    },
+    {
+        "Modified": "2023-01-09T12:40:00",
+        "Published": "2023-01-09T03:15:00",
+        "access": {},
+        "assigner": "scy@openharmony.io",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-45126",
+        "impact": {},
+        "last-modified": "2023-01-09T12:40:00",
+        "references": [
+            "https://gitee.com/openharmony/security/blob/master/en/security-disclosure/2022/2022-12.md"
+        ],
+        "summary": "Kernel subsystem within OpenHarmony-v3.1.4 and prior versions in kernel_liteos_a has a kernel stack overflow vulnerability when call SysClockGettime. 4 bytes padding data from kernel stack are copied to user space incorrectly and leaked."
+    },
+    {
+        "Modified": "2023-01-09T12:40:00",
+        "Published": "2023-01-09T03:15:00",
+        "access": {},
+        "assigner": "scy@openharmony.io",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2023-0035",
+        "impact": {},
+        "last-modified": "2023-01-09T12:40:00",
+        "references": [
+            "https://gitee.com/openharmony/security/blob/master/en/security-disclosure/2023/2023-01.md"
+        ],
+        "summary": "softbus_client_stub in communication subsystem within OpenHarmony-v3.0.5 and prior versions has an authentication bypass vulnerability which allows an \"SA relay attack\".Local attackers can bypass authentication and attack other SAs with high privilege."
+    },
+    {
+        "Modified": "2023-01-09T12:40:00",
+        "Published": "2023-01-09T03:15:00",
+        "access": {},
+        "assigner": "scy@openharmony.io",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2023-0036",
+        "impact": {},
+        "last-modified": "2023-01-09T12:40:00",
+        "references": [
+            "https://gitee.com/openharmony/security/blob/master/en/security-disclosure/2023/2023-01.md"
+        ],
+        "summary": "platform_callback_stub in misc subsystem within OpenHarmony-v3.0.5 and prior versions has an authentication bypass vulnerability which allows an \"SA relay attack\".Local attackers can bypass authentication and attack other SAs with high privilege."
+    },
+    {
+        "Modified": "2023-01-09T12:40:00",
+        "Published": "2023-01-09T05:15:00",
+        "access": {},
+        "assigner": "report@snyk.io",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-25890",
+        "impact": {},
+        "last-modified": "2023-01-09T12:40:00",
+        "references": [
+            "https://security.snyk.io/vuln/SNYK-JS-WIFEY-3175615"
+        ],
+        "summary": "All versions of the package wifey are vulnerable to Command Injection via the connect() function due to improper input sanitization."
+    },
+    {
+        "Modified": "2023-01-09T12:40:00",
+        "Published": "2023-01-09T03:15:00",
+        "access": {},
+        "assigner": "scy@openharmony.io",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-43662",
+        "impact": {},
+        "last-modified": "2023-01-09T12:40:00",
+        "references": [
+            "https://gitee.com/openharmony/security/blob/master/en/security-disclosure/2022/2022-12.md"
+        ],
+        "summary": "Kernel subsystem within OpenHarmony-v3.1.4 and prior versions in kernel_liteos_a has a kernel stack overflow vulnerability when call SysTimerGettime. 4 bytes padding data from kernel stack are copied to user space incorrectly and leaked."
     },
     {
         "Modified": "2023-01-09T08:15:00",
@@ -160,521 +724,6 @@
         "last-modified": "2023-01-09T08:15:00",
         "references": [],
         "summary": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none."
-    },
-    {
-        "Modified": "2023-01-09T08:15:00",
-        "Published": "2023-01-09T08:15:00",
-        "access": {},
-        "assigner": "psirt@us.ibm.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-22470",
-        "impact": {},
-        "last-modified": "2023-01-09T08:15:00",
-        "references": [
-            "https://www.ibm.com/support/pages/node/6852697",
-            "https://exchange.xforce.ibmcloud.com/vulnerabilities/225232"
-        ],
-        "summary": "IBM Security Verify Governance 10.0 stores user credentials in plain clear text which can be read by a local user. IBM X-Force ID: 225232."
-    },
-    {
-        "Modified": "2023-01-09T08:15:00",
-        "Published": "2023-01-09T08:15:00",
-        "access": {},
-        "assigner": "security.cna@qualcomm.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-22088",
-        "impact": {},
-        "last-modified": "2023-01-09T08:15:00",
-        "references": [
-            "https://www.qualcomm.com/company/product-security/bulletins/january-2023-bulletin"
-        ],
-        "summary": "Memory corruption in Bluetooth HOST due to buffer overflow while parsing the command response received from remote"
-    },
-    {
-        "Modified": "2023-01-09T08:15:00",
-        "Published": "2023-01-09T08:15:00",
-        "access": {},
-        "assigner": "security.cna@qualcomm.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-33219",
-        "impact": {},
-        "last-modified": "2023-01-09T08:15:00",
-        "references": [
-            "https://www.qualcomm.com/company/product-security/bulletins/january-2023-bulletin"
-        ],
-        "summary": "Memory corruption in Automotive due to integer overflow to buffer overflow while registering a new listener with shared buffer."
-    },
-    {
-        "Modified": "2023-01-09T08:15:00",
-        "Published": "2023-01-09T08:15:00",
-        "access": {},
-        "assigner": "security.cna@qualcomm.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-22079",
-        "impact": {},
-        "last-modified": "2023-01-09T08:15:00",
-        "references": [
-            "https://www.qualcomm.com/company/product-security/bulletins/january-2023-bulletin"
-        ],
-        "summary": "Denial of service while processing fastboot flash command on mmc due to buffer over read"
-    },
-    {
-        "Modified": "2023-01-09T08:15:00",
-        "Published": "2023-01-09T08:15:00",
-        "access": {},
-        "assigner": "security.cna@qualcomm.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-25717",
-        "impact": {},
-        "last-modified": "2023-01-09T08:15:00",
-        "references": [
-            "https://www.qualcomm.com/company/product-security/bulletins/january-2023-bulletin"
-        ],
-        "summary": "Memory corruption in display due to double free while allocating frame buffer memory"
-    },
-    {
-        "Modified": "2023-01-09T08:15:00",
-        "Published": "2023-01-09T08:15:00",
-        "access": {},
-        "assigner": "security.cna@qualcomm.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-33253",
-        "impact": {},
-        "last-modified": "2023-01-09T08:15:00",
-        "references": [
-            "https://www.qualcomm.com/company/product-security/bulletins/january-2023-bulletin"
-        ],
-        "summary": "Transient DOS due to buffer over-read in WLAN while parsing corrupted NAN frames."
-    },
-    {
-        "Modified": "2023-01-09T08:15:00",
-        "Published": "2023-01-09T08:15:00",
-        "access": {},
-        "assigner": "security.cna@qualcomm.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-25721",
-        "impact": {},
-        "last-modified": "2023-01-09T08:15:00",
-        "references": [
-            "https://www.qualcomm.com/company/product-security/bulletins/january-2023-bulletin"
-        ],
-        "summary": "Memory corruption in video driver due to type confusion error during video playback"
-    },
-    {
-        "Modified": "2023-01-09T08:15:00",
-        "Published": "2023-01-09T08:15:00",
-        "access": {},
-        "assigner": "security.cna@qualcomm.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-25725",
-        "impact": {},
-        "last-modified": "2023-01-09T08:15:00",
-        "references": [
-            "https://www.qualcomm.com/company/product-security/bulletins/january-2023-bulletin"
-        ],
-        "summary": "Denial of service in MODEM due to improper pointer handling"
-    },
-    {
-        "Modified": "2023-01-09T08:15:00",
-        "Published": "2023-01-09T08:15:00",
-        "access": {},
-        "assigner": "security.cna@qualcomm.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-33265",
-        "impact": {},
-        "last-modified": "2023-01-09T08:15:00",
-        "references": [
-            "https://www.qualcomm.com/company/product-security/bulletins/january-2023-bulletin"
-        ],
-        "summary": "Memory corruption due to information exposure in Powerline Communication Firmware while sending different MMEs from a single, unassociated device."
-    },
-    {
-        "Modified": "2023-01-09T08:15:00",
-        "Published": "2023-01-09T08:15:00",
-        "access": {},
-        "assigner": "security.cna@qualcomm.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-33218",
-        "impact": {},
-        "last-modified": "2023-01-09T08:15:00",
-        "references": [
-            "https://www.qualcomm.com/company/product-security/bulletins/january-2023-bulletin"
-        ],
-        "summary": "Memory corruption in Automotive due to improper input validation."
-    },
-    {
-        "Modified": "2023-01-09T08:15:00",
-        "Published": "2023-01-09T08:15:00",
-        "access": {},
-        "assigner": "security.cna@qualcomm.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-33252",
-        "impact": {},
-        "last-modified": "2023-01-09T08:15:00",
-        "references": [
-            "https://www.qualcomm.com/company/product-security/bulletins/january-2023-bulletin"
-        ],
-        "summary": "Information disclosure due to buffer over-read in WLAN while handling IBSS beacons frame."
-    },
-    {
-        "Modified": "2023-01-09T08:15:00",
-        "Published": "2023-01-09T08:15:00",
-        "access": {},
-        "assigner": "security.cna@qualcomm.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-33266",
-        "impact": {},
-        "last-modified": "2023-01-09T08:15:00",
-        "references": [
-            "https://www.qualcomm.com/company/product-security/bulletins/january-2023-bulletin"
-        ],
-        "summary": "Memory corruption in Audio due to integer overflow to buffer overflow while music playback of clips like amr,evrc,qcelp with modified content."
-    },
-    {
-        "Modified": "2023-01-09T08:15:00",
-        "Published": "2023-01-09T08:15:00",
-        "access": {},
-        "assigner": "security.cna@qualcomm.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-33255",
-        "impact": {},
-        "last-modified": "2023-01-09T08:15:00",
-        "references": [
-            "https://www.qualcomm.com/company/product-security/bulletins/january-2023-bulletin"
-        ],
-        "summary": "Information disclosure due to buffer over-read in Bluetooth HOST while processing GetFolderItems and GetItemAttribute Cmds from peer device."
-    },
-    {
-        "Modified": "2023-01-09T08:15:00",
-        "Published": "2023-01-09T08:15:00",
-        "access": {},
-        "assigner": "security.cna@qualcomm.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-33274",
-        "impact": {},
-        "last-modified": "2023-01-09T08:15:00",
-        "references": [
-            "https://www.qualcomm.com/company/product-security/bulletins/january-2023-bulletin"
-        ],
-        "summary": "Memory corruption in android core due to improper validation of array index while returning feature ids after license authentication."
-    },
-    {
-        "Modified": "2023-01-09T08:15:00",
-        "Published": "2023-01-09T08:15:00",
-        "access": {},
-        "assigner": "security.cna@qualcomm.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-33276",
-        "impact": {},
-        "last-modified": "2023-01-09T08:15:00",
-        "references": [
-            "https://www.qualcomm.com/company/product-security/bulletins/january-2023-bulletin"
-        ],
-        "summary": "Memory corruption due to buffer copy without checking size of input in modem while receiving WMI_REQUEST_STATS_CMDID command."
-    },
-    {
-        "Modified": "2023-01-09T08:15:00",
-        "Published": "2023-01-09T08:15:00",
-        "access": {},
-        "assigner": "security.cna@qualcomm.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-33283",
-        "impact": {},
-        "last-modified": "2023-01-09T08:15:00",
-        "references": [
-            "https://www.qualcomm.com/company/product-security/bulletins/january-2023-bulletin"
-        ],
-        "summary": "Information disclosure due to buffer over-read in WLAN while WLAN frame parsing due to missing frame length check."
-    },
-    {
-        "Modified": "2023-01-09T08:15:00",
-        "Published": "2023-01-09T08:15:00",
-        "access": {},
-        "assigner": "security.cna@qualcomm.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-33284",
-        "impact": {},
-        "last-modified": "2023-01-09T08:15:00",
-        "references": [
-            "https://www.qualcomm.com/company/product-security/bulletins/january-2023-bulletin"
-        ],
-        "summary": "Information disclosure due to buffer over-read in WLAN while parsing BTM action frame."
-    },
-    {
-        "Modified": "2023-01-09T08:15:00",
-        "Published": "2023-01-09T08:15:00",
-        "access": {},
-        "assigner": "security.cna@qualcomm.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-33286",
-        "impact": {},
-        "last-modified": "2023-01-09T08:15:00",
-        "references": [
-            "https://www.qualcomm.com/company/product-security/bulletins/january-2023-bulletin"
-        ],
-        "summary": "Transient DOS due to buffer over-read in WLAN while processing 802.11 management frames."
-    },
-    {
-        "Modified": "2023-01-09T08:15:00",
-        "Published": "2023-01-09T08:15:00",
-        "access": {},
-        "assigner": "security.cna@qualcomm.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-33290",
-        "impact": {},
-        "last-modified": "2023-01-09T08:15:00",
-        "references": [
-            "https://www.qualcomm.com/company/product-security/bulletins/january-2023-bulletin"
-        ],
-        "summary": "Transient DOS in Bluetooth HOST due to null pointer dereference when a mismatched argument is passed."
-    },
-    {
-        "Modified": "2023-01-09T08:15:00",
-        "Published": "2023-01-09T08:15:00",
-        "access": {},
-        "assigner": "security.cna@qualcomm.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-33299",
-        "impact": {},
-        "last-modified": "2023-01-09T08:15:00",
-        "references": [
-            "https://www.qualcomm.com/company/product-security/bulletins/january-2023-bulletin"
-        ],
-        "summary": "Transient DOS due to null pointer dereference in Bluetooth HOST while receiving an attribute protocol PDU with zero length data."
-    },
-    {
-        "Modified": "2023-01-09T08:15:00",
-        "Published": "2023-01-09T08:15:00",
-        "access": {},
-        "assigner": "security.cna@qualcomm.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-33300",
-        "impact": {},
-        "last-modified": "2023-01-09T08:15:00",
-        "references": [
-            "https://www.qualcomm.com/company/product-security/bulletins/january-2023-bulletin"
-        ],
-        "summary": "Memory corruption in Automotive Android OS due to improper input validation."
-    },
-    {
-        "Modified": "2023-01-09T08:15:00",
-        "Published": "2023-01-09T08:15:00",
-        "access": {},
-        "assigner": "psirt@us.ibm.com",
-        "cvss": null,
-        "cwe": "CWE-1236",
-        "id": "CVE-2022-35281",
-        "impact": {},
-        "last-modified": "2023-01-09T08:15:00",
-        "references": [
-            "https://www.ibm.com/support/pages/node/6852669",
-            "https://exchange.xforce.ibmcloud.com/vulnerabilities/230635"
-        ],
-        "summary": "IBM Maximo Asset Management 7.6.1.1, 7.6.1.2, 7.6.1.3 and the IBM Maximo Manage 8.3, 8.4 application in IBM Maximo Application Suite are vulnerable to CSV injection. IBM X-Force ID: 2306335."
-    },
-    {
-        "Modified": "2023-01-09T08:15:00",
-        "Published": "2023-01-09T08:15:00",
-        "access": {},
-        "assigner": "security.cna@qualcomm.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-40516",
-        "impact": {},
-        "last-modified": "2023-01-09T08:15:00",
-        "references": [
-            "https://www.qualcomm.com/company/product-security/bulletins/january-2023-bulletin"
-        ],
-        "summary": "Memory corruption in Core due to stack-based buffer overflow."
-    },
-    {
-        "Modified": "2023-01-09T08:15:00",
-        "Published": "2023-01-09T08:15:00",
-        "access": {},
-        "assigner": "security.cna@qualcomm.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-40517",
-        "impact": {},
-        "last-modified": "2023-01-09T08:15:00",
-        "references": [
-            "https://www.qualcomm.com/company/product-security/bulletins/january-2023-bulletin"
-        ],
-        "summary": "Memory corruption in core due to stack-based buffer overflow"
-    },
-    {
-        "Modified": "2023-01-09T08:15:00",
-        "Published": "2023-01-09T08:15:00",
-        "access": {},
-        "assigner": "security.cna@qualcomm.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-40518",
-        "impact": {},
-        "last-modified": "2023-01-09T08:15:00",
-        "references": [
-            "https://www.qualcomm.com/company/product-security/bulletins/january-2023-bulletin"
-        ],
-        "summary": "Information disclosure due to buffer overread in Core"
-    },
-    {
-        "Modified": "2023-01-09T08:15:00",
-        "Published": "2023-01-09T08:15:00",
-        "access": {},
-        "assigner": "security.cna@qualcomm.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-40519",
-        "impact": {},
-        "last-modified": "2023-01-09T08:15:00",
-        "references": [
-            "https://www.qualcomm.com/company/product-security/bulletins/january-2023-bulletin"
-        ],
-        "summary": "Information disclosure due to buffer overread in Core"
-    },
-    {
-        "Modified": "2023-01-09T08:15:00",
-        "Published": "2023-01-09T08:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2010-10004",
-        "impact": {},
-        "last-modified": "2023-01-09T08:15:00",
-        "references": [
-            "https://github.com/simplesamlphp/simplesamlphp-module-infocard/releases/tag/v1.0",
-            "https://vuldb.com/?ctiid.217661",
-            "https://vuldb.com/?id.217661",
-            "https://github.com/simplesamlphp/simplesamlphp-module-infocard/commit/f6bfea49ae16dc6e179df8306d39c3694f1ef186"
-        ],
-        "summary": "A vulnerability was found in Information Cards Module and classified as problematic. This issue affects some unknown processing. The manipulation leads to cross site scripting. The attack may be initiated remotely. Upgrading to version 1.0 is able to address this issue. The name of the patch is f6bfea49ae16dc6e179df8306d39c3694f1ef186. It is recommended to upgrade the affected component. The identifier VDB-217661 was assigned to this vulnerability."
-    },
-    {
-        "Modified": "2023-01-09T08:15:00",
-        "Published": "2023-01-09T08:15:00",
-        "access": {},
-        "assigner": "security.cna@qualcomm.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-25715",
-        "impact": {},
-        "last-modified": "2023-01-09T08:15:00",
-        "references": [
-            "https://www.qualcomm.com/company/product-security/bulletins/january-2023-bulletin"
-        ],
-        "summary": "Memory corruption in display driver due to incorrect type casting while accessing the fence structure fields"
-    },
-    {
-        "Modified": "2023-01-09T08:15:00",
-        "Published": "2023-01-09T08:15:00",
-        "access": {},
-        "assigner": "security.cna@qualcomm.com",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-25746",
-        "impact": {},
-        "last-modified": "2023-01-09T08:15:00",
-        "references": [
-            "https://www.qualcomm.com/company/product-security/bulletins/january-2023-bulletin"
-        ],
-        "summary": "Memory corruption in kernel due to missing checks when updating the access rights of a memextent mapping."
-    },
-    {
-        "Modified": "2023-01-09T05:15:00",
-        "Published": "2023-01-09T05:15:00",
-        "access": {},
-        "assigner": "report@snyk.io",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-25890",
-        "impact": {},
-        "last-modified": "2023-01-09T05:15:00",
-        "references": [
-            "https://security.snyk.io/vuln/SNYK-JS-WIFEY-3175615"
-        ],
-        "summary": "All versions of the package wifey are vulnerable to Command Injection via the connect() function due to improper input sanitization."
-    },
-    {
-        "Modified": "2023-01-09T03:15:00",
-        "Published": "2023-01-09T03:15:00",
-        "access": {},
-        "assigner": "scy@openharmony.io",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-45126",
-        "impact": {},
-        "last-modified": "2023-01-09T03:15:00",
-        "references": [
-            "https://gitee.com/openharmony/security/blob/master/en/security-disclosure/2022/2022-12.md"
-        ],
-        "summary": "Kernel subsystem within OpenHarmony-v3.1.4 and prior versions in kernel_liteos_a has a kernel stack overflow vulnerability when call SysClockGettime. 4 bytes padding data from kernel stack are copied to user space incorrectly and leaked."
-    },
-    {
-        "Modified": "2023-01-09T03:15:00",
-        "Published": "2023-01-09T03:15:00",
-        "access": {},
-        "assigner": "scy@openharmony.io",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2023-0035",
-        "impact": {},
-        "last-modified": "2023-01-09T03:15:00",
-        "references": [
-            "https://gitee.com/openharmony/security/blob/master/en/security-disclosure/2023/2023-01.md"
-        ],
-        "summary": "softbus_client_stub in communication subsystem within OpenHarmony-v3.0.5 and prior versions has an authentication bypass vulnerability which allows an \"SA relay attack\".Local attackers can bypass authentication and attack other SAs with high privilege."
-    },
-    {
-        "Modified": "2023-01-09T03:15:00",
-        "Published": "2023-01-09T03:15:00",
-        "access": {},
-        "assigner": "scy@openharmony.io",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2023-0036",
-        "impact": {},
-        "last-modified": "2023-01-09T03:15:00",
-        "references": [
-            "https://gitee.com/openharmony/security/blob/master/en/security-disclosure/2023/2023-01.md"
-        ],
-        "summary": "platform_callback_stub in misc subsystem within OpenHarmony-v3.0.5 and prior versions has an authentication bypass vulnerability which allows an \"SA relay attack\".Local attackers can bypass authentication and attack other SAs with high privilege."
-    },
-    {
-        "Modified": "2023-01-09T03:15:00",
-        "Published": "2023-01-09T03:15:00",
-        "access": {},
-        "assigner": "scy@openharmony.io",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-43662",
-        "impact": {},
-        "last-modified": "2023-01-09T03:15:00",
-        "references": [
-            "https://gitee.com/openharmony/security/blob/master/en/security-disclosure/2022/2022-12.md"
-        ],
-        "summary": "Kernel subsystem within OpenHarmony-v3.1.4 and prior versions in kernel_liteos_a has a kernel stack overflow vulnerability when call SysTimerGettime. 4 bytes padding data from kernel stack are copied to user space incorrectly and leaked."
     },
     {
         "Modified": "2023-01-08T20:44:00",
@@ -1608,57 +1657,5 @@
             "https://github.com/koroket/RedditOnRails/commit/7f3c7407d95d532fcc342b00d68d0ea09ca71030"
         ],
         "summary": "A vulnerability classified as critical was found in koroket RedditOnRails. This vulnerability affects unknown code of the component Vote Handler. The manipulation leads to improper access controls. The attack can be initiated remotely. The name of the patch is 7f3c7407d95d532fcc342b00d68d0ea09ca71030. It is recommended to apply a patch to fix this issue. VDB-217594 is the identifier assigned to this vulnerability."
-    },
-    {
-        "Modified": "2023-01-08T05:11:00",
-        "Published": "2023-01-07T09:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-208",
-        "id": "CVE-2014-125055",
-        "impact": {},
-        "last-modified": "2023-01-08T05:11:00",
-        "references": [
-            "https://github.com/agnivade/easy-scrypt/releases/tag/v1.0.0",
-            "https://github.com/agnivade/easy-scrypt/commit/477c10cf3b144ddf96526aa09f5fdea613f21812",
-            "https://vuldb.com/?ctiid.217596",
-            "https://vuldb.com/?id.217596"
-        ],
-        "summary": "A vulnerability, which was classified as problematic, was found in agnivade easy-scrypt. Affected is the function VerifyPassphrase of the file scrypt.go. The manipulation leads to observable timing discrepancy. Upgrading to version 1.0.0 is able to address this issue. The name of the patch is 477c10cf3b144ddf96526aa09f5fdea613f21812. It is recommended to upgrade the affected component. The identifier of this vulnerability is VDB-217596."
-    },
-    {
-        "Modified": "2023-01-08T05:11:00",
-        "Published": "2023-01-07T09:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2015-10019",
-        "impact": {},
-        "last-modified": "2023-01-08T05:11:00",
-        "references": [
-            "https://vuldb.com/?ctiid.217595",
-            "https://vuldb.com/?id.217595",
-            "https://github.com/foxoverflow/MySimplifiedSQL/commit/3b7481c72786f88041b7c2d83bb4f219f77f1293"
-        ],
-        "summary": "A vulnerability, which was classified as problematic, has been found in foxoverflow MySimplifiedSQL. This issue affects some unknown processing of the file MySimplifiedSQL_Examples.php. The manipulation of the argument FirstName/LastName leads to cross site scripting. The attack may be initiated remotely. The name of the patch is 3b7481c72786f88041b7c2d83bb4f219f77f1293. It is recommended to apply a patch to fix this issue. The associated identifier of this vulnerability is VDB-217595."
-    },
-    {
-        "Modified": "2023-01-08T05:11:00",
-        "Published": "2023-01-07T09:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-259",
-        "id": "CVE-2018-25069",
-        "impact": {},
-        "last-modified": "2023-01-08T05:11:00",
-        "references": [
-            "https://vuldb.com/?ctiid.217593",
-            "https://vuldb.com/?id.217593",
-            "https://advisories.checkpoint.com/advisory/cpai-2018-0721/"
-        ],
-        "summary": "A vulnerability classified as critical has been found in Netis Netcore Router. This affects an unknown part. The manipulation leads to use of hard-coded password. It is possible to initiate the attack remotely. The identifier VDB-217593 was assigned to this vulnerability."
     }
 ]
