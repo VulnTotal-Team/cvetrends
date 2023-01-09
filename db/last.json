@@ -1,5 +1,139 @@
 [
     {
+        "Modified": "2023-01-09T14:55:00",
+        "Published": "2023-01-01T08:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-312",
+        "id": "CVE-2022-37785",
+        "impact": {},
+        "last-modified": "2023-01-09T14:55:00",
+        "references": [
+            "https://github.com/WeBankPartners/wecube-platform/issues/2329",
+            "https://github.com/WeBankPartners/wecube-plugins-terminal"
+        ],
+        "summary": "An issue was discovered in WeCube Platform 3.2.2. Cleartext passwords are displayed in the configuration for terminal plugins."
+    },
+    {
+        "Modified": "2023-01-09T14:51:00",
+        "Published": "2022-12-31T11:15:00",
+        "access": {},
+        "assigner": "cna@vuldb.com",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2017-20159",
+        "impact": {},
+        "last-modified": "2023-01-09T14:51:00",
+        "references": [
+            "https://github.com/rf-/keynote/commit/05be4356b0a6ca7de48da926a9b997beb5ffeb4a",
+            "https://github.com/rf-/keynote/releases/tag/v1.0.0",
+            "https://vuldb.com/?ctiid.217142",
+            "https://vuldb.com/?id.217142"
+        ],
+        "summary": "A vulnerability was found in rf Keynote up to 0.x. It has been rated as problematic. Affected by this issue is some unknown functionality of the file lib/keynote/rumble.rb. The manipulation of the argument value leads to cross site scripting. The attack may be launched remotely. Upgrading to version 1.0.0 is able to address this issue. The name of the patch is 05be4356b0a6ca7de48da926a9b997beb5ffeb4a. It is recommended to upgrade the affected component. VDB-217142 is the identifier assigned to this vulnerability."
+    },
+    {
+        "Modified": "2023-01-09T14:50:00",
+        "Published": "2022-12-31T11:15:00",
+        "access": {},
+        "assigner": "cna@vuldb.com",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2017-20158",
+        "impact": {},
+        "last-modified": "2023-01-09T14:50:00",
+        "references": [
+            "https://github.com/vova07/yii2-fileapi-widget/commit/c00d1e4fc912257fca1fce66d7a163bdbb4c8222",
+            "https://vuldb.com/?ctiid.217141",
+            "https://github.com/vova07/yii2-fileapi-widget/releases/tag/0.1.9",
+            "https://vuldb.com/?id.217141"
+        ],
+        "summary": "** UNSUPPPORTED WHEN ASSIGNED **** UNSUPPORTED WHEN ASSIGNED ** A vulnerability was found in vova07 Yii2 FileAPI Widget up to 0.1.8. It has been declared as problematic. Affected by this vulnerability is the function run of the file actions/UploadAction.php. The manipulation of the argument file leads to cross site scripting. The attack can be launched remotely. Upgrading to version 0.1.9 is able to address this issue. The name of the patch is c00d1e4fc912257fca1fce66d7a163bdbb4c8222. It is recommended to upgrade the affected component. The identifier VDB-217141 was assigned to this vulnerability. NOTE: This vulnerability only affects products that are no longer supported by the maintainer."
+    },
+    {
+        "Modified": "2023-01-09T14:43:00",
+        "Published": "2022-12-31T01:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-287",
+        "id": "CVE-2022-48195",
+        "impact": {},
+        "last-modified": "2023-01-09T14:43:00",
+        "references": [
+            "https://mellium.im/cve/cve-2022-48195/"
+        ],
+        "summary": "An issue was discovered in Mellium mellium.im/sasl before 0.3.1. When performing SCRAM-based SASL authentication, if the remote end advertises support for channel binding, no random nonce is generated (instead, the nonce is empty). This causes authentication to fail in the best case, but (if paired with a remote end that does not validate the length of the nonce) could lead to insufficient randomness being used during authentication."
+    },
+    {
+        "Modified": "2023-01-09T14:17:00",
+        "Published": "2022-12-28T07:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-669",
+        "id": "CVE-2022-46173",
+        "impact": {},
+        "last-modified": "2023-01-09T14:17:00",
+        "references": [
+            "https://github.com/ElrondNetwork/elrond-go/security/advisories/GHSA-p228-4mrh-ww7r",
+            "https://github.com/ElrondNetwork/elrond-go/pull/4718",
+            "https://github.com/ElrondNetwork/elrond-go/commit/39d7ddcb08bb34217dab6daef7cd9d287fb8cab3"
+        ],
+        "summary": "Elrond-GO is a go implementation for the Elrond Network protocol. Versions prior to 1.3.50 are subject to a processing issue where nodes are affected when trying to process a cross-shard relayed transaction with a smart contract deploy transaction data. The problem was a bad correlation between the transaction caches and the processing component. If the above-mentioned transaction was sent with more gas than required, the smart contract result (SCR transaction) that should have returned the leftover gas, would have been wrongly added to a cache that the processing unit did not consider. The node stopped notarizing metachain blocks. The fix was actually to extend the SCR transaction search in all other caches if it wasn't found in the correct (expected) sharded-cache. There are no known workarounds at this time. This issue has been patched in version 1.3.50."
+    },
+    {
+        "Modified": "2023-01-09T14:15:00",
+        "Published": "2023-01-09T14:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-200",
+        "id": "CVE-2022-23509",
+        "impact": {},
+        "last-modified": "2023-01-09T14:15:00",
+        "references": [
+            "https://github.com/weaveworks/weave-gitops/pull/3098/commits/babd91574b99b310b84aeec9f8f895bd18acb967",
+            "https://github.com/weaveworks/weave-gitops/pull/3106/commits/ce2bbff0a3609c33396050ed544a5a21f8d0797f",
+            "https://github.com/weaveworks/weave-gitops/security/advisories/GHSA-89qm-wcmw-3mgg"
+        ],
+        "summary": "Weave GitOps is a simple open source developer platform for people who want cloud native applications, without needing Kubernetes expertise. GitOps run has a local S3 bucket which it uses for synchronizing files that are later applied against a Kubernetes cluster. The communication between GitOps Run and the local S3 bucket is not encrypted. This allows privileged users or process to tap the local traffic to gain information permitting access to the s3 bucket. From that point, it would be possible to alter the bucket content, resulting in changes in the Kubernetes cluster's resources. There are no known workaround(s) for this vulnerability. This vulnerability has been fixed by commits ce2bbff and babd915. Users should upgrade to Weave GitOps version >= v0.12.0 released on 08/12/2022."
+    },
+    {
+        "Modified": "2023-01-09T14:15:00",
+        "Published": "2023-01-09T14:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-352",
+        "id": "CVE-2023-22472",
+        "impact": {},
+        "last-modified": "2023-01-09T14:15:00",
+        "references": [
+            "https://github.com/nextcloud/security-advisories/security/advisories/GHSA-4gfv-xqpx-42qj",
+            "https://github.com/nextcloud/desktop/pull/5106"
+        ],
+        "summary": "Deck is a kanban style organization tool aimed at personal planning and project organization for teams integrated with Nextcloud. It is possible to make a user send any POST request with an arbitrary body given they click on a malicious deep link on a Windows computer. (e.g. in an email, chat link, etc). There are currently no known workarounds. It is recommended that the Nextcloud Desktop client is upgraded to 3.6.2."
+    },
+    {
+        "Modified": "2023-01-09T13:15:00",
+        "Published": "2023-01-09T13:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-538",
+        "id": "CVE-2022-23508",
+        "impact": {},
+        "last-modified": "2023-01-09T13:15:00",
+        "references": [
+            "https://github.com/weaveworks/weave-gitops/pull/3114/commits/75268c4d2c8f7e4db22c63d76b451ba6545d117f",
+            "https://github.com/weaveworks/weave-gitops/pull/3102/commits/966823bbda8c539a4661e2a4f8607c9307ba6225",
+            "https://github.com/weaveworks/weave-gitops/security/advisories/GHSA-wr3c-g326-486c"
+        ],
+        "summary": "Weave GitOps is a simple open source developer platform for people who want cloud native applications, without needing Kubernetes expertise. A vulnerability in GitOps run could allow a local user or process to alter a Kubernetes cluster's resources. GitOps run has a local S3 bucket which it uses for synchronizing files that are later applied against a Kubernetes cluster. Its endpoint had no security controls to block unauthorized access, therefore allowing local users (and processes) on the same machine to see and alter the bucket content. By leveraging this vulnerability, an attacker could pick a workload of their choosing and inject it into the S3 bucket, which resulted in the successful deployment in the target cluster, without the need to provide any credentials to either the S3 bucket nor the target Kubernetes cluster. There are no known workarounds for this issue, please upgrade. This vulnerability has been fixed by commits 75268c4 and 966823b. Users should upgrade to Weave GitOps version >= v0.12.0 released on 08/12/2022. ### Workarounds There is no workaround for this vulnerability. ### References Disclosed by Paulo Gomes, Senior Software Engineer, Weaveworks. ### For more information If you have any questions or comments about this advisory: - Open an issue in [Weave GitOps repository](https://github.com/weaveworks/weave-gitops) - Email us at [support@weave.works](mailto:support@weave.works)"
+    },
+    {
         "Modified": "2023-01-09T12:40:00",
         "Published": "2023-01-09T11:15:00",
         "access": {},
@@ -1516,146 +1650,5 @@
             "https://github.com/forcedotcom/SalesforceMobileSDK-Windows/releases/tag/v5.0.0"
         ],
         "summary": "** UNSUPPPORTED WHEN ASSIGNED **** UNSUPPORTED WHEN ASSIGNED ** A vulnerability was found in forcedotcom SalesforceMobileSDK-Windows up to 4.x. It has been rated as critical. This issue affects the function ComputeCountSql of the file SalesforceSDK/SmartStore/Store/QuerySpec.cs. The manipulation leads to sql injection. Upgrading to version 5.0.0 is able to address this issue. The name of the patch is 83b3e91e0c1e84873a6d3ca3c5887eb5b4f5a3d8. It is recommended to upgrade the affected component. The associated identifier of this vulnerability is VDB-217619. NOTE: This vulnerability only affects products that are no longer supported by the maintainer."
-    },
-    {
-        "Modified": "2023-01-08T05:11:00",
-        "Published": "2023-01-07T13:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-22",
-        "id": "CVE-2022-4880",
-        "impact": {},
-        "last-modified": "2023-01-08T05:11:00",
-        "references": [
-            "https://vuldb.com/?ctiid.217617",
-            "https://vuldb.com/?id.217617",
-            "https://github.com/stakira/OpenUtau/pull/544",
-            "https://github.com/stakira/OpenUtau/commit/849a0a6912aac8b1c28cc32aa1132a3140caff4a",
-            "https://github.com/stakira/OpenUtau/releases/tag/build%2F0.0.991"
-        ],
-        "summary": "A vulnerability was found in stakira OpenUtau. It has been classified as critical. This affects the function VoicebankInstaller of the file OpenUtau.Core/Classic/VoicebankInstaller.cs of the component ZIP Archive Handler. The manipulation leads to path traversal. Upgrading to version 0.0.991 is able to address this issue. The name of the patch is 849a0a6912aac8b1c28cc32aa1132a3140caff4a. It is recommended to upgrade the affected component. The identifier VDB-217617 was assigned to this vulnerability."
-    },
-    {
-        "Modified": "2023-01-08T05:11:00",
-        "Published": "2023-01-07T11:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-89",
-        "id": "CVE-2014-125058",
-        "impact": {},
-        "last-modified": "2023-01-08T05:11:00",
-        "references": [
-            "https://vuldb.com/?ctiid.217607",
-            "https://github.com/LearnMeSomeCodes/project3/commit/d3efa17ae9f6b2fc25a6bbcf165cefed17c7035e",
-            "https://vuldb.com/?id.217607"
-        ],
-        "summary": "A vulnerability was found in LearnMeSomeCodes project3 and classified as critical. This issue affects the function search_first_name of the file search.rb. The manipulation leads to sql injection. The name of the patch is d3efa17ae9f6b2fc25a6bbcf165cefed17c7035e. It is recommended to apply a patch to fix this issue. The associated identifier of this vulnerability is VDB-217607. NOTE: Maintainer is aware of this issue as remarked in the source code."
-    },
-    {
-        "Modified": "2023-01-08T05:11:00",
-        "Published": "2023-01-07T11:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-89",
-        "id": "CVE-2018-25070",
-        "impact": {},
-        "last-modified": "2023-01-08T05:11:00",
-        "references": [
-            "https://vuldb.com/?ctiid.217606",
-            "https://vuldb.com/?id.217606",
-            "https://github.com/polterguy/phosphorusfive/releases/tag/v8.3",
-            "https://github.com/polterguy/phosphorusfive/commit/c179a3d0703db55cfe0cb939b89593f2e7a87246"
-        ],
-        "summary": "A vulnerability has been found in polterguy Phosphorus Five up to 8.2 and classified as critical. This vulnerability affects the function csv.Read of the file plugins/extras/p5.mysql/NonQuery.cs of the component CSV Import. The manipulation leads to sql injection. Upgrading to version 8.3 is able to address this issue. The name of the patch is c179a3d0703db55cfe0cb939b89593f2e7a87246. It is recommended to upgrade the affected component. VDB-217606 is the identifier assigned to this vulnerability."
-    },
-    {
-        "Modified": "2023-01-08T05:11:00",
-        "Published": "2023-01-07T12:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2015-10021",
-        "impact": {},
-        "last-modified": "2023-01-08T05:11:00",
-        "references": [
-            "https://vuldb.com/?ctiid.217608",
-            "https://github.com/ritterim/definely/pull/51",
-            "https://github.com/ritterim/definely/commit/b31a022ba4d8d17148445a13ebb5a42ad593dbaa",
-            "https://vuldb.com/?id.217608"
-        ],
-        "summary": "A vulnerability was found in ritterim definely. It has been classified as problematic. Affected is an unknown function of the file src/database.js. The manipulation leads to cross site scripting. It is possible to launch the attack remotely. The name of the patch is b31a022ba4d8d17148445a13ebb5a42ad593dbaa. It is recommended to apply a patch to fix this issue. The identifier of this vulnerability is VDB-217608."
-    },
-    {
-        "Modified": "2023-01-08T05:11:00",
-        "Published": "2023-01-07T12:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-89",
-        "id": "CVE-2015-10022",
-        "impact": {},
-        "last-modified": "2023-01-08T05:11:00",
-        "references": [
-            "https://vuldb.com/?ctiid.217609",
-            "https://vuldb.com/?id.217609",
-            "https://github.com/IISH/nlgis2/commit/8bdb6fcf7209584eaf1232437f0f53e735b2b34c"
-        ],
-        "summary": "A vulnerability was found in IISH nlgis2. It has been declared as critical. Affected by this vulnerability is an unknown functionality of the file scripts/etl/custom_import.pl. The manipulation leads to sql injection. The name of the patch is 8bdb6fcf7209584eaf1232437f0f53e735b2b34c. It is recommended to apply a patch to fix this issue. The identifier VDB-217609 was assigned to this vulnerability."
-    },
-    {
-        "Modified": "2023-01-08T05:11:00",
-        "Published": "2023-01-07T12:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-89",
-        "id": "CVE-2015-10023",
-        "impact": {},
-        "last-modified": "2023-01-08T05:11:00",
-        "references": [
-            "https://vuldb.com/?ctiid.217611",
-            "https://github.com/Fumon/trello-octometric/commit/a1f1754933fbf21e2221fbc671c81a47de6a04ef",
-            "https://vuldb.com/?id.217611"
-        ],
-        "summary": "A vulnerability classified as critical has been found in Fumon trello-octometric. This affects the function main of the file metrics-ui/server/srv.go. The manipulation of the argument num leads to sql injection. The name of the patch is a1f1754933fbf21e2221fbc671c81a47de6a04ef. It is recommended to apply a patch to fix this issue. The associated identifier of this vulnerability is VDB-217611."
-    },
-    {
-        "Modified": "2023-01-08T05:11:00",
-        "Published": "2023-01-07T12:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-89",
-        "id": "CVE-2018-25071",
-        "impact": {},
-        "last-modified": "2023-01-08T05:11:00",
-        "references": [
-            "https://github.com/roxlukas/lmeve/releases/tag/0.1.59-beta",
-            "https://vuldb.com/?ctiid.217610",
-            "https://github.com/roxlukas/lmeve/commit/c25ff7fe83a2cda1fcb365b182365adc3ffae332",
-            "https://vuldb.com/?id.217610"
-        ],
-        "summary": "A vulnerability was found in roxlukas LMeve up to 0.1.58. It has been rated as critical. Affected by this issue is the function insert_log of the file wwwroot/ccpwgl/proxy.php. The manipulation of the argument fetch leads to sql injection. Upgrading to version 0.1.59-beta is able to address this issue. The name of the patch is c25ff7fe83a2cda1fcb365b182365adc3ffae332. It is recommended to upgrade the affected component. VDB-217610 is the identifier assigned to this vulnerability."
-    },
-    {
-        "Modified": "2023-01-08T05:11:00",
-        "Published": "2023-01-07T09:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-284",
-        "id": "CVE-2014-125054",
-        "impact": {},
-        "last-modified": "2023-01-08T05:11:00",
-        "references": [
-            "https://vuldb.com/?ctiid.217594",
-            "https://vuldb.com/?id.217594",
-            "https://github.com/koroket/RedditOnRails/commit/7f3c7407d95d532fcc342b00d68d0ea09ca71030"
-        ],
-        "summary": "A vulnerability classified as critical was found in koroket RedditOnRails. This vulnerability affects unknown code of the component Vote Handler. The manipulation leads to improper access controls. The attack can be initiated remotely. The name of the patch is 7f3c7407d95d532fcc342b00d68d0ea09ca71030. It is recommended to apply a patch to fix this issue. VDB-217594 is the identifier assigned to this vulnerability."
     }
 ]
