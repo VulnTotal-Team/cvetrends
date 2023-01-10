@@ -1,5 +1,1536 @@
 [
     {
+        "Modified": "2023-01-10T20:45:00",
+        "Published": "2022-06-13T20:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "security-advisories@github.com",
+        "cvss": 5.0,
+        "cvss-time": "2023-01-10T20:45:00",
+        "cvss-vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+        "cwe": "CWE-787",
+        "id": "CVE-2022-31054",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "NONE",
+            "integrity": "NONE"
+        },
+        "last-modified": "2023-01-10T20:45:00",
+        "references": [
+            "https://github.com/argoproj/argo-events/security/advisories/GHSA-5q86-62xr-3r57",
+            "https://github.com/argoproj/argo-events/issues/1946",
+            "https://github.com/argoproj/argo-events/commit/eaabcb6d65022fc34a0cc9ea7f00681abd326b35",
+            "https://github.com/argoproj/argo-events/pull/1966"
+        ],
+        "summary": "Argo Events is an event-driven workflow automation framework for Kubernetes. Prior to version 1.7.1, several `HandleRoute` endpoints make use of the deprecated `ioutil.ReadAll()`. `ioutil.ReadAll()` reads all the data into memory. As such, an attacker who sends a large request to the Argo Events server will be able to crash it and cause denial of service. A patch for this vulnerability has been released in Argo Events version 1.7.1."
+    },
+    {
+        "Modified": "2023-01-10T20:35:00",
+        "Published": "2023-01-04T18:15:00",
+        "access": {},
+        "assigner": "report@snyk.io",
+        "cvss": null,
+        "cwe": "CWE-77",
+        "id": "CVE-2022-25926",
+        "impact": {},
+        "last-modified": "2023-01-10T20:35:00",
+        "references": [
+            "https://github.com/bruno-robert/window-control/commit/075c854534a749d887655a906759f5a7eee95173",
+            "https://github.com/bruno-robert/window-control/releases/tag/v1.4.5",
+            "https://security.snyk.io/vuln/SNYK-JS-WINDOWCONTROL-3186345"
+        ],
+        "summary": "Versions of the package window-control before 1.4.5 are vulnerable to Command Injection via the sendKeys function, due to improper input sanitization."
+    },
+    {
+        "Modified": "2023-01-10T20:23:00",
+        "Published": "2023-01-04T18:15:00",
+        "access": {},
+        "assigner": "psirt@us.ibm.com",
+        "cvss": null,
+        "cwe": "NVD-CWE-noinfo",
+        "id": "CVE-2022-22337",
+        "impact": {},
+        "last-modified": "2023-01-10T20:23:00",
+        "references": [
+            "https://www.ibm.com/support/pages/node/6852459",
+            "https://exchange.xforce.ibmcloud.com/vulnerabilities/219507"
+        ],
+        "summary": "IBM Sterling B2B Integrator Standard Edition 6.0.0.0 through 6.1.2.1 could disclose sensitive information to an authenticated user. IBM X-Force ID: 219507."
+    },
+    {
+        "Modified": "2023-01-10T20:23:00",
+        "Published": "2023-01-04T18:15:00",
+        "access": {},
+        "assigner": "psirt@us.ibm.com",
+        "cvss": null,
+        "cwe": "CWE-89",
+        "id": "CVE-2022-22338",
+        "impact": {},
+        "last-modified": "2023-01-10T20:23:00",
+        "references": [
+            "https://exchange.xforce.ibmcloud.com/vulnerabilities/219510",
+            "https://www.ibm.com/support/pages/node/6852453"
+        ],
+        "summary": "IBM Sterling B2B Integrator Standard Edition 6.0.0.0 through 6.1.2.1 is vulnerable to SQL injection. A remote attacker could send specially crafted SQL statements, which could allow the attacker to view, add, modify or delete information in the back-end database. IBM X-Force ID: 219510."
+    },
+    {
+        "Modified": "2023-01-10T20:16:00",
+        "Published": "2023-01-04T18:15:00",
+        "access": {},
+        "assigner": "psirt@us.ibm.com",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2022-22352",
+        "impact": {},
+        "last-modified": "2023-01-10T20:16:00",
+        "references": [
+            "https://exchange.xforce.ibmcloud.com/vulnerabilities/220398",
+            "https://www.ibm.com/support/pages/node/6852443"
+        ],
+        "summary": "IBM Sterling B2B Integrator Standard Edition 6.0.0.0 through 6.1.2.1 is vulnerable to cross-site scripting. This vulnerability allows users to embed arbitrary JavaScript code in the Web UI thus altering the intended functionality potentially leading to credentials disclosure within a trusted session. IBM X-Force ID: 220398."
+    },
+    {
+        "Modified": "2023-01-10T20:16:00",
+        "Published": "2023-01-04T18:15:00",
+        "access": {},
+        "assigner": "psirt@us.ibm.com",
+        "cvss": null,
+        "cwe": "NVD-CWE-Other",
+        "id": "CVE-2022-43920",
+        "impact": {},
+        "last-modified": "2023-01-10T20:16:00",
+        "references": [
+            "https://exchange.xforce.ibmcloud.com/vulnerabilities/241362",
+            "https://www.ibm.com/support/pages/node/6852465"
+        ],
+        "summary": "IBM Sterling B2B Integrator Standard Edition 6.0.0.0 through 6.1.2.1 could allow an authenticated user to gain privileges in a different group due to an access control vulnerability in the Sftp server adapter. IBM X-Force ID: 241362."
+    },
+    {
+        "Modified": "2023-01-10T20:15:00",
+        "Published": "2023-01-10T20:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2022-45614",
+        "impact": {},
+        "last-modified": "2023-01-10T20:15:00",
+        "references": [
+            "https://github.com/lithonn/bug-report/tree/main/vendors/oretnom23/bsms_ci/passwd-hash"
+        ],
+        "summary": "An issue in the /index.php/user/edit_user/ component of Book Store Management System v1.0 allows unauthenticated attackers to retrieve the password hashes of all existing user accounts via a crafted request."
+    },
+    {
+        "Modified": "2023-01-10T20:15:00",
+        "Published": "2023-01-10T20:15:00",
+        "access": {},
+        "assigner": "ics-cert@hq.dhs.gov",
+        "cvss": null,
+        "cwe": "CWE-22",
+        "id": "CVE-2022-4636",
+        "impact": {},
+        "last-modified": "2023-01-10T20:15:00",
+        "references": [
+            "https://www.cisa.gov/uscert/ics/advisories/icsa-23-010-01"
+        ],
+        "summary": "Black Box KVM Firmware version 3.4.31307 on models ACR1000A-R-R2, ACR1000A-T-R2, ACR1002A-T, ACR1002A-R, and ACR1020A-T is vulnerable to path traversal, which may allow an attacker to steal user credentials and other sensitive information through local file inclusion."
+    },
+    {
+        "Modified": "2023-01-10T20:15:00",
+        "Published": "2023-01-10T20:15:00",
+        "access": {},
+        "assigner": "chrome-cve-admin@google.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2023-0131",
+        "impact": {},
+        "last-modified": "2023-01-10T20:15:00",
+        "references": [
+            "https://chromereleases.googleblog.com/2023/01/stable-channel-update-for-desktop.html",
+            "https://crbug.com/1357366"
+        ],
+        "summary": "Inappropriate implementation in in iframe Sandbox in Google Chrome prior to 109.0.5414.74 allowed a remote attacker to bypass file download restrictions via a crafted HTML page. (Chromium security severity: Medium)"
+    },
+    {
+        "Modified": "2023-01-10T20:15:00",
+        "Published": "2023-01-10T20:15:00",
+        "access": {},
+        "assigner": "chrome-cve-admin@google.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2023-0133",
+        "impact": {},
+        "last-modified": "2023-01-10T20:15:00",
+        "references": [
+            "https://crbug.com/1375132",
+            "https://chromereleases.googleblog.com/2023/01/stable-channel-update-for-desktop.html"
+        ],
+        "summary": "Inappropriate implementation in in Permission prompts in Google Chrome on Android prior to 109.0.5414.74 allowed a remote attacker to bypass main origin permission delegation via a crafted HTML page. (Chromium security severity: Medium)"
+    },
+    {
+        "Modified": "2023-01-10T20:15:00",
+        "Published": "2023-01-10T20:15:00",
+        "access": {},
+        "assigner": "chrome-cve-admin@google.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2023-0134",
+        "impact": {},
+        "last-modified": "2023-01-10T20:15:00",
+        "references": [
+            "https://crbug.com/1385709",
+            "https://chromereleases.googleblog.com/2023/01/stable-channel-update-for-desktop.html"
+        ],
+        "summary": "Use after free in Cart in Google Chrome prior to 109.0.5414.74 allowed an attacker who convinced a user to install a malicious extension to potentially exploit heap corruption via database corruption and a crafted HTML page. (Chromium security severity: Medium)"
+    },
+    {
+        "Modified": "2023-01-10T20:15:00",
+        "Published": "2023-01-10T20:15:00",
+        "access": {},
+        "assigner": "chrome-cve-admin@google.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2023-0135",
+        "impact": {},
+        "last-modified": "2023-01-10T20:15:00",
+        "references": [
+            "https://crbug.com/1385831",
+            "https://chromereleases.googleblog.com/2023/01/stable-channel-update-for-desktop.html"
+        ],
+        "summary": "Use after free in Cart in Google Chrome prior to 109.0.5414.74 allowed an attacker who convinced a user to install a malicious extension to potentially exploit heap corruption via database corruption and a crafted HTML page. (Chromium security severity: Medium)"
+    },
+    {
+        "Modified": "2023-01-10T20:15:00",
+        "Published": "2023-01-10T20:15:00",
+        "access": {},
+        "assigner": "chrome-cve-admin@google.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2023-0128",
+        "impact": {},
+        "last-modified": "2023-01-10T20:15:00",
+        "references": [
+            "https://crbug.com/1353208",
+            "https://chromereleases.googleblog.com/2023/01/stable-channel-update-for-desktop.html"
+        ],
+        "summary": "Use after free in Overview Mode in Google Chrome on Chrome OS prior to 109.0.5414.74 allowed a remote attacker who convinced a user to engage in specific UI interactions to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)"
+    },
+    {
+        "Modified": "2023-01-10T20:15:00",
+        "Published": "2023-01-10T20:15:00",
+        "access": {},
+        "assigner": "chrome-cve-admin@google.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2023-0136",
+        "impact": {},
+        "last-modified": "2023-01-10T20:15:00",
+        "references": [
+            "https://crbug.com/1356987",
+            "https://chromereleases.googleblog.com/2023/01/stable-channel-update-for-desktop.html"
+        ],
+        "summary": "Inappropriate implementation in in Fullscreen API in Google Chrome on Android prior to 109.0.5414.74 allowed a remote attacker to execute incorrect security UI via a crafted HTML page. (Chromium security severity: Medium)"
+    },
+    {
+        "Modified": "2023-01-10T20:15:00",
+        "Published": "2023-01-10T20:15:00",
+        "access": {},
+        "assigner": "chrome-cve-admin@google.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2023-0130",
+        "impact": {},
+        "last-modified": "2023-01-10T20:15:00",
+        "references": [
+            "https://crbug.com/1370028",
+            "https://chromereleases.googleblog.com/2023/01/stable-channel-update-for-desktop.html"
+        ],
+        "summary": "Inappropriate implementation in in Fullscreen API in Google Chrome on Android prior to 109.0.5414.74 allowed a remote attacker to spoof the contents of the Omnibox (URL bar) via a crafted HTML page. (Chromium security severity: Medium)"
+    },
+    {
+        "Modified": "2023-01-10T20:15:00",
+        "Published": "2023-01-10T20:15:00",
+        "access": {},
+        "assigner": "chrome-cve-admin@google.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2023-0137",
+        "impact": {},
+        "last-modified": "2023-01-10T20:15:00",
+        "references": [
+            "https://crbug.com/1399904",
+            "https://chromereleases.googleblog.com/2023/01/stable-channel-update-for-desktop.html"
+        ],
+        "summary": "Heap buffer overflow in Platform Apps in Google Chrome on Chrome OS prior to 109.0.5414.74 allowed an attacker who convinced a user to install a malicious extension to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: Medium)"
+    },
+    {
+        "Modified": "2023-01-10T20:15:00",
+        "Published": "2023-01-10T20:15:00",
+        "access": {},
+        "assigner": "chrome-cve-admin@google.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2023-0129",
+        "impact": {},
+        "last-modified": "2023-01-10T20:15:00",
+        "references": [
+            "https://chromereleases.googleblog.com/2023/01/stable-channel-update-for-desktop.html",
+            "https://crbug.com/1382033"
+        ],
+        "summary": "Heap buffer overflow in Network Service in Google Chrome prior to 109.0.5414.74 allowed an attacker who convinced a user to install a malicious extension to potentially exploit heap corruption via a crafted HTML page and specific interactions. (Chromium security severity: High)"
+    },
+    {
+        "Modified": "2023-01-10T20:15:00",
+        "Published": "2023-01-10T20:15:00",
+        "access": {},
+        "assigner": "chrome-cve-admin@google.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2023-0138",
+        "impact": {},
+        "last-modified": "2023-01-10T20:15:00",
+        "references": [
+            "https://crbug.com/1346675",
+            "https://chromereleases.googleblog.com/2023/01/stable-channel-update-for-desktop.html"
+        ],
+        "summary": "Heap buffer overflow in libphonenumber in Google Chrome prior to 109.0.5414.74 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: Low)"
+    },
+    {
+        "Modified": "2023-01-10T20:15:00",
+        "Published": "2023-01-10T20:15:00",
+        "access": {},
+        "assigner": "chrome-cve-admin@google.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2023-0132",
+        "impact": {},
+        "last-modified": "2023-01-10T20:15:00",
+        "references": [
+            "https://crbug.com/1371215",
+            "https://chromereleases.googleblog.com/2023/01/stable-channel-update-for-desktop.html"
+        ],
+        "summary": "Inappropriate implementation in in Permission prompts in Google Chrome on Windows prior to 109.0.5414.74 allowed a remote attacker to force acceptance of a permission prompt via a crafted HTML page. (Chromium security severity: Medium)"
+    },
+    {
+        "Modified": "2023-01-10T20:15:00",
+        "Published": "2023-01-10T20:15:00",
+        "access": {},
+        "assigner": "chrome-cve-admin@google.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2023-0139",
+        "impact": {},
+        "last-modified": "2023-01-10T20:15:00",
+        "references": [
+            "https://chromereleases.googleblog.com/2023/01/stable-channel-update-for-desktop.html",
+            "https://crbug.com/1367632"
+        ],
+        "summary": "Insufficient validation of untrusted input in Downloads in Google Chrome on Windows prior to 109.0.5414.74 allowed a remote attacker to bypass download restrictions via a crafted HTML page. (Chromium security severity: Low)"
+    },
+    {
+        "Modified": "2023-01-10T20:15:00",
+        "Published": "2023-01-10T20:15:00",
+        "access": {},
+        "assigner": "chrome-cve-admin@google.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2023-0140",
+        "impact": {},
+        "last-modified": "2023-01-10T20:15:00",
+        "references": [
+            "https://crbug.com/1326788",
+            "https://chromereleases.googleblog.com/2023/01/stable-channel-update-for-desktop.html"
+        ],
+        "summary": "Inappropriate implementation in in File System API in Google Chrome on Windows prior to 109.0.5414.74 allowed a remote attacker to bypass file system restrictions via a crafted HTML page. (Chromium security severity: Low)"
+    },
+    {
+        "Modified": "2023-01-10T20:15:00",
+        "Published": "2023-01-10T20:15:00",
+        "access": {},
+        "assigner": "chrome-cve-admin@google.com",
+        "cvss": null,
+        "cwe": "Unknown",
+        "id": "CVE-2023-0141",
+        "impact": {},
+        "last-modified": "2023-01-10T20:15:00",
+        "references": [
+            "https://chromereleases.googleblog.com/2023/01/stable-channel-update-for-desktop.html",
+            "https://crbug.com/1362331"
+        ],
+        "summary": "Insufficient policy enforcement in CORS in Google Chrome prior to 109.0.5414.74 allowed a remote attacker to leak cross-origin data via a crafted HTML page. (Chromium security severity: Low)"
+    },
+    {
+        "Modified": "2023-01-10T20:11:00",
+        "Published": "2022-11-14T07:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "NVD-CWE-Other",
+        "id": "CVE-2022-45198",
+        "impact": {},
+        "last-modified": "2023-01-10T20:11:00",
+        "references": [
+            "https://bugs.gentoo.org/855683",
+            "https://github.com/python-pillow/Pillow/commit/11918eac0628ec8ac0812670d9838361ead2d6a4",
+            "https://github.com/python-pillow/Pillow/pull/6402",
+            "https://github.com/python-pillow/Pillow/releases/tag/9.2.0",
+            "https://cwe.mitre.org/data/definitions/409.html",
+            "https://security.gentoo.org/glsa/202211-10"
+        ],
+        "summary": "Pillow before 9.2.0 performs Improper Handling of Highly Compressed GIF Data (Data Amplification)."
+    },
+    {
+        "Modified": "2023-01-10T20:11:00",
+        "Published": "2022-11-14T07:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-400",
+        "id": "CVE-2022-45199",
+        "impact": {},
+        "last-modified": "2023-01-10T20:11:00",
+        "references": [
+            "https://github.com/python-pillow/Pillow/pull/6700",
+            "https://bugs.gentoo.org/878769",
+            "https://github.com/python-pillow/Pillow/releases/tag/9.3.0",
+            "https://github.com/python-pillow/Pillow/commit/2444cddab2f83f28687c7c20871574acbb6dbcf3",
+            "https://security.gentoo.org/glsa/202211-10"
+        ],
+        "summary": "Pillow before 9.3.0 allows denial of service via SAMPLESPERPIXEL."
+    },
+    {
+        "Modified": "2023-01-10T20:08:00",
+        "Published": "2022-12-27T09:15:00",
+        "access": {},
+        "assigner": "cna@vuldb.com",
+        "cvss": null,
+        "cwe": "CWE-1333",
+        "id": "CVE-2018-25049",
+        "impact": {},
+        "last-modified": "2023-01-10T20:08:00",
+        "references": [
+            "https://vuldb.com/?ctiid.216854",
+            "https://vuldb.com/?id.216854",
+            "https://github.com/nmanousos/email-existence/pull/37",
+            "https://github.com/nmanousos/email-existence/commit/0029ba71b6ad0d8ec0baa2ecc6256d038bdd9b56"
+        ],
+        "summary": "A vulnerability was found in email-existence. It has been rated as problematic. Affected by this issue is some unknown functionality of the file index.js. The manipulation leads to inefficient regular expression complexity. The name of the patch is 0029ba71b6ad0d8ec0baa2ecc6256d038bdd9b56. It is recommended to apply a patch to fix this issue. VDB-216854 is the identifier assigned to this vulnerability."
+    },
+    {
+        "Modified": "2023-01-10T19:55:00",
+        "Published": "2023-01-04T18:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "NVD-CWE-noinfo",
+        "id": "CVE-2022-46457",
+        "impact": {},
+        "last-modified": "2023-01-10T19:55:00",
+        "references": [
+            "https://bugzilla.nasm.us/show_bug.cgi?id=3392809"
+        ],
+        "summary": "NASM v2.16 was discovered to contain a segmentation violation in the component ieee_write_file at /output/outieee.c."
+    },
+    {
+        "Modified": "2023-01-10T19:52:00",
+        "Published": "2022-11-27T04:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-190",
+        "id": "CVE-2022-45934",
+        "impact": {},
+        "last-modified": "2023-01-10T19:52:00",
+        "references": [
+            "https://git.kernel.org/pub/scm/linux/kernel/git/bluetooth/bluetooth-next.git/commit/?id=ae4569813a6e931258db627cdfe50dfb4f917d5d",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/NDAKCGDW6CQ6G3RZWYZJO454R3L5CTQB/"
+        ],
+        "summary": "An issue was discovered in the Linux kernel through 6.0.10. l2cap_config_req in net/bluetooth/l2cap_core.c has an integer wraparound via L2CAP_CONF_REQ packets."
+    },
+    {
+        "Modified": "2023-01-10T19:51:00",
+        "Published": "2022-11-25T14:15:00",
+        "access": {},
+        "assigner": "security@huntr.dev",
+        "cvss": null,
+        "cwe": "CWE-787",
+        "id": "CVE-2022-4141",
+        "impact": {},
+        "last-modified": "2023-01-10T19:51:00",
+        "references": [
+            "https://huntr.dev/bounties/20ece512-c600-45ac-8a84-d0931e05541f",
+            "https://github.com/vim/vim/commit/cc762a48d42b579fb7bdec2c614636b830342dd5",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/AZ3JMSUCR6Y7626RDWQ2HNSUFIQOJ33G/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/V6ZNKVN4GICORTVFKVCM4MSOXCYWNHUC/"
+        ],
+        "summary": "Heap based buffer overflow in vim/vim 9.0.0946 and below by allowing an attacker to CTRL-W gf in the expression used in the RHS of the substitute command."
+    },
+    {
+        "Modified": "2023-01-10T19:50:00",
+        "Published": "2023-01-04T18:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-120",
+        "id": "CVE-2022-46456",
+        "impact": {},
+        "last-modified": "2023-01-10T19:50:00",
+        "references": [
+            "https://bugzilla.nasm.us/show_bug.cgi?id=3392814"
+        ],
+        "summary": "NASM v2.16 was discovered to contain a global buffer overflow in the component dbgdbg_typevalue at /output/outdbg.c."
+    },
+    {
+        "Modified": "2023-01-10T19:50:00",
+        "Published": "2022-11-25T17:15:00",
+        "access": {},
+        "assigner": "help@fluidattacks.com",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2022-43983",
+        "impact": {},
+        "last-modified": "2023-01-10T19:50:00",
+        "references": [
+            "https://fluidattacks.com/advisories/khalid/",
+            "https://github.com/spatie/browsershot/"
+        ],
+        "summary": "Browsershot version 3.57.2 allows an external attacker to remotely obtain arbitrary local files. This is possible because the application does not validate that the HTML content passed to the Browsershot::html method does not contain URL's that use the file:// protocol."
+    },
+    {
+        "Modified": "2023-01-10T19:50:00",
+        "Published": "2022-11-25T17:15:00",
+        "access": {},
+        "assigner": "help@fluidattacks.com",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2022-43984",
+        "impact": {},
+        "last-modified": "2023-01-10T19:50:00",
+        "references": [
+            "https://fluidattacks.com/advisories/malone/",
+            "https://github.com/spatie/browsershot/"
+        ],
+        "summary": "Browsershot version 3.57.3 allows an external attacker to remotely obtain arbitrary local files. This is possible because the application does not validate that the JS content imported from an external source passed to the Browsershot::html method does not contain URLs that use the file:// protocol."
+    },
+    {
+        "Modified": "2023-01-10T19:44:00",
+        "Published": "2022-11-29T18:15:00",
+        "access": {},
+        "assigner": "secalert@redhat.com",
+        "cvss": null,
+        "cwe": "CWE-125",
+        "id": "CVE-2022-4144",
+        "impact": {},
+        "last-modified": "2023-01-10T19:44:00",
+        "references": [
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2148506",
+            "https://lists.nongnu.org/archive/html/qemu-devel/2022-11/msg04143.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/I7J5IRXJYLELW7D43A75LOWRUE5EU54O/"
+        ],
+        "summary": "An out-of-bounds read flaw was found in the QXL display device emulation in QEMU. The qxl_phys2virt() function does not check the size of the structure pointed to by the guest physical address, potentially reading past the end of the bar space into adjacent pages. A malicious guest user could use this flaw to crash the QEMU process on the host causing a denial of service condition."
+    },
+    {
+        "Modified": "2023-01-10T19:43:00",
+        "Published": "2023-01-04T17:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2022-46180",
+        "impact": {},
+        "last-modified": "2023-01-10T19:43:00",
+        "references": [
+            "https://github.com/discourse/discourse-mermaid-theme-component/commit/c10bc4a08bf865cee20e5d5dffba535762813f0f",
+            "https://github.com/discourse/discourse-mermaid-theme-component/pull/14",
+            "https://github.com/discourse/discourse-mermaid-theme-component/security/advisories/GHSA-8437-hgcm-p3q3"
+        ],
+        "summary": "Discourse Mermaid (discourse-mermaid-theme-component) allows users of Discourse, open-source forum software, to create graphs using the Mermaid syntax. Users of discourse-mermaid-theme-component version 1.0.0 who can create posts are able to inject arbitrary HTML on that post. The issue has been fixed on the `main` branch of the GitHub repository, with 1.1.0 named as a patched version. Admins can update the theme component through the admin UI. As a workaround, admins can temporarily disable discourse-mermaid-theme-component."
+    },
+    {
+        "Modified": "2023-01-10T19:41:00",
+        "Published": "2022-12-07T01:15:00",
+        "access": {},
+        "assigner": "security@xen.org",
+        "cvss": null,
+        "cwe": "CWE-74",
+        "id": "CVE-2022-3643",
+        "impact": {},
+        "last-modified": "2023-01-10T19:41:00",
+        "references": [
+            "https://xenbits.xenproject.org/xsa/advisory-423.txt",
+            "http://www.openwall.com/lists/oss-security/2022/12/07/2",
+            "https://lists.debian.org/debian-lts-announce/2022/12/msg00031.html",
+            "https://lists.debian.org/debian-lts-announce/2022/12/msg00034.html"
+        ],
+        "summary": "Guests can trigger NIC interface reset/abort/crash via netback It is possible for a guest to trigger a NIC interface reset/abort/crash in a Linux based network backend by sending certain kinds of packets. It appears to be an (unwritten?) assumption in the rest of the Linux network stack that packet protocol headers are all contained within the linear section of the SKB and some NICs behave badly if this is not the case. This has been reported to occur with Cisco (enic) and Broadcom NetXtrem II BCM5780 (bnx2x) though it may be an issue with other NICs/drivers as well. In case the frontend is sending requests with split headers, netback will forward those violating above mentioned assumption to the networking core, resulting in said misbehavior."
+    },
+    {
+        "Modified": "2023-01-10T19:40:00",
+        "Published": "2022-12-07T01:15:00",
+        "access": {},
+        "assigner": "security@xen.org",
+        "cvss": null,
+        "cwe": "CWE-667",
+        "id": "CVE-2022-42328",
+        "impact": {},
+        "last-modified": "2023-01-10T19:40:00",
+        "references": [
+            "https://xenbits.xenproject.org/xsa/advisory-424.txt",
+            "http://www.openwall.com/lists/oss-security/2022/12/08/3",
+            "http://www.openwall.com/lists/oss-security/2022/12/08/2",
+            "http://www.openwall.com/lists/oss-security/2022/12/09/2",
+            "https://lists.debian.org/debian-lts-announce/2022/12/msg00031.html",
+            "https://lists.debian.org/debian-lts-announce/2022/12/msg00034.html"
+        ],
+        "summary": "Guests can trigger deadlock in Linux netback driver T[his CNA information record relates to multiple CVEs; the text explains which aspects/vulnerabilities correspond to which CVE.] The patch for XSA-392 introduced another issue which might result in a deadlock when trying to free the SKB of a packet dropped due to the XSA-392 handling (CVE-2022-42328). Additionally when dropping packages for other reasons the same deadlock could occur in case of netpoll being active for the interface the xen-netback driver is connected to (CVE-2022-42329)."
+    },
+    {
+        "Modified": "2023-01-10T19:39:00",
+        "Published": "2022-12-07T01:15:00",
+        "access": {},
+        "assigner": "security@xen.org",
+        "cvss": null,
+        "cwe": "CWE-667",
+        "id": "CVE-2022-42329",
+        "impact": {},
+        "last-modified": "2023-01-10T19:39:00",
+        "references": [
+            "https://xenbits.xenproject.org/xsa/advisory-424.txt",
+            "http://www.openwall.com/lists/oss-security/2022/12/08/3",
+            "http://www.openwall.com/lists/oss-security/2022/12/08/2",
+            "http://www.openwall.com/lists/oss-security/2022/12/09/2",
+            "https://lists.debian.org/debian-lts-announce/2022/12/msg00031.html",
+            "https://lists.debian.org/debian-lts-announce/2022/12/msg00034.html"
+        ],
+        "summary": "Guests can trigger deadlock in Linux netback driver T[his CNA information record relates to multiple CVEs; the text explains which aspects/vulnerabilities correspond to which CVE.] The patch for XSA-392 introduced another issue which might result in a deadlock when trying to free the SKB of a packet dropped due to the XSA-392 handling (CVE-2022-42328). Additionally when dropping packages for other reasons the same deadlock could occur in case of netpoll being active for the interface the xen-netback driver is connected to (CVE-2022-42329)."
+    },
+    {
+        "Modified": "2023-01-10T19:37:00",
+        "Published": "2023-01-04T18:15:00",
+        "access": {},
+        "assigner": "security@huntr.dev",
+        "cvss": null,
+        "cwe": "CWE-122",
+        "id": "CVE-2023-0051",
+        "impact": {},
+        "last-modified": "2023-01-10T19:37:00",
+        "references": [
+            "https://huntr.dev/bounties/1c8686db-baa6-42dc-ba45-aed322802de9",
+            "https://github.com/vim/vim/commit/c32949b0779106ed5710ae3bffc5053e49083ab4"
+        ],
+        "summary": "Heap-based Buffer Overflow in GitHub repository vim/vim prior to 9.0.1144."
+    },
+    {
+        "Modified": "2023-01-10T19:34:00",
+        "Published": "2022-12-12T22:15:00",
+        "access": {},
+        "assigner": "cna@sap.com",
+        "cvss": null,
+        "cwe": "CWE-79",
+        "id": "CVE-2022-41262",
+        "impact": {},
+        "last-modified": "2023-01-10T19:34:00",
+        "references": [
+            "https://launchpad.support.sap.com/#/notes/3262544",
+            "https://www.sap.com/documents/2022/02/fa865ea4-167e-0010-bca6-c68f7e60039b.html"
+        ],
+        "summary": "Due to insufficient input validation, SAP NetWeaver AS Java (HTTP Provider Service) - version 7.50, allows an unauthenticated attacker to inject a script into a web request header. On successful exploitation, an attacker can view or modify information causing a limited impact on the confidentiality and integrity of the application."
+    },
+    {
+        "Modified": "2023-01-10T19:29:00",
+        "Published": "2023-01-04T15:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-20",
+        "id": "CVE-2023-22460",
+        "impact": {},
+        "last-modified": "2023-01-10T19:29:00",
+        "references": [
+            "https://github.com/ipld/go-ipld-prime/security/advisories/GHSA-c653-6hhg-9x92",
+            "https://github.com/ipld/go-ipld-prime/releases/tag/v0.19.0",
+            "https://github.com/ipld/go-ipld-prime/pull/472"
+        ],
+        "summary": "go-ipld-prime is an implementation of the InterPlanetary Linked Data (IPLD) spec interfaces, a batteries-included codec implementations of IPLD for CBOR and JSON, and tooling for basic operations on IPLD objects. Encoding data which contains a Bytes kind Node will pass a Bytes token to the JSON encoder which will panic as it doesn't expect to receive Bytes tokens. Such an encode should be treated as an error, as plain JSON should not be able to encode Bytes. This only impacts uses of the `json` codec. `dag-json` is not impacted. Use of `json` as a decoder is not impacted. This issue is fixed in v0.19.0. As a workaround, one may prefer the `dag-json` codec, which has the ability to encode bytes."
+    },
+    {
+        "Modified": "2023-01-10T19:29:00",
+        "Published": "2022-12-03T15:15:00",
+        "access": {},
+        "assigner": "security@apache.org",
+        "cvss": null,
+        "cwe": "CWE-20",
+        "id": "CVE-2021-37533",
+        "impact": {},
+        "last-modified": "2023-01-10T19:29:00",
+        "references": [
+            "https://lists.apache.org/thread/o6yn9r9x6s94v97264hmgol1sf48mvx7",
+            "http://www.openwall.com/lists/oss-security/2022/12/03/1",
+            "https://lists.debian.org/debian-lts-announce/2022/12/msg00038.html",
+            "https://www.debian.org/security/2022/dsa-5307"
+        ],
+        "summary": "Prior to Apache Commons Net 3.9.0, Net's FTP client trusts the host from PASV response by default. A malicious server can redirect the Commons Net code to use a different host, but the user has to connect to the malicious server in the first place. This may lead to leakage of information about services running on the private network of the client. The default in version 3.9.0 is now false to ignore such hosts, as cURL does. See https://issues.apache.org/jira/browse/NET-711."
+    },
+    {
+        "Modified": "2023-01-10T19:26:00",
+        "Published": "2023-01-04T15:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-352",
+        "id": "CVE-2023-22457",
+        "impact": {},
+        "last-modified": "2023-01-10T19:26:00",
+        "references": [
+            "https://jira.xwiki.org/browse/CKEDITOR-475",
+            "https://github.com/xwiki-contrib/application-ckeditor/commit/6b1053164386aefc526df7512bc664918aa6849b",
+            "https://github.com/xwiki-contrib/application-ckeditor/security/advisories/GHSA-6mjp-2rm6-9g85"
+        ],
+        "summary": "CKEditor Integration UI adds support for editing wiki pages using CKEditor. Prior to versions 1.64.3,t he `CKEditor.HTMLConverter` document lacked a protection against Cross-Site Request Forgery (CSRF), allowing to execute macros with the rights of the current user. If a privileged user with programming rights was tricked into executing a GET request to this document with certain parameters (e.g., via an image with a corresponding URL embedded in a comment or via a redirect), this would allow arbitrary remote code execution and the attacker could gain rights, access private information or impact the availability of the wiki. The issue has been patched in the CKEditor Integration version 1.64.3. This has also been patched in the version of the CKEditor integration that is bundled starting with XWiki 14.6 RC1. There are no known workarounds for this other than upgrading the CKEditor integration to a fixed version."
+    },
+    {
+        "Modified": "2023-01-10T19:23:00",
+        "Published": "2022-12-13T04:15:00",
+        "access": {},
+        "assigner": "cna@sap.com",
+        "cvss": null,
+        "cwe": "CWE-863",
+        "id": "CVE-2022-41274",
+        "impact": {},
+        "last-modified": "2023-01-10T19:23:00",
+        "references": [
+            "https://launchpad.support.sap.com/#/notes/3266846",
+            "https://www.sap.com/documents/2022/02/fa865ea4-167e-0010-bca6-c68f7e60039b.html"
+        ],
+        "summary": "SAP Disclosure Management - version 10.1, allows an authenticated attacker to exploit certain misconfigured application endpoints to read sensitive data. These endpoints are normally exposed over the network and successful exploitation can lead to the exposure of data like financial reports."
+    },
+    {
+        "Modified": "2023-01-10T19:15:00",
+        "Published": "2022-12-13T15:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-787",
+        "id": "CVE-2022-45685",
+        "impact": {},
+        "last-modified": "2023-01-10T19:15:00",
+        "references": [
+            "https://github.com/jettison-json/jettison/issues/54",
+            "https://lists.debian.org/debian-lts-announce/2022/12/msg00045.html"
+        ],
+        "summary": "A stack overflow in Jettison before v1.5.2 allows attackers to cause a Denial of Service (DoS) via crafted JSON data."
+    },
+    {
+        "Modified": "2023-01-10T19:15:00",
+        "Published": "2022-09-16T10:15:00",
+        "access": {},
+        "assigner": "security@google.com",
+        "cvss": null,
+        "cwe": "CWE-400",
+        "id": "CVE-2022-40150",
+        "impact": {},
+        "last-modified": "2023-01-10T19:15:00",
+        "references": [
+            "https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=46549",
+            "https://github.com/jettison-json/jettison/issues/45",
+            "https://lists.debian.org/debian-lts-announce/2022/12/msg00045.html"
+        ],
+        "summary": "Those using Jettison to parse untrusted XML or JSON data may be vulnerable to Denial of Service attacks (DOS). If the parser is running on user supplied input, an attacker may supply content that causes the parser to crash by Out of memory. This effect may support a denial of service attack."
+    },
+    {
+        "Modified": "2023-01-10T19:15:00",
+        "Published": "2021-08-23T22:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "MEDIUM",
+            "vector": "NETWORK"
+        },
+        "assigner": "cve@mitre.org",
+        "cvss": 5.8,
+        "cvss-time": "2023-01-10T19:15:00",
+        "cvss-vector": "AV:N/AC:M/Au:N/C:P/I:N/A:P",
+        "cwe": "CWE-125",
+        "id": "CVE-2020-18771",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "PARTIAL",
+            "integrity": "NONE"
+        },
+        "last-modified": "2023-01-10T19:15:00",
+        "references": [
+            "https://github.com/Exiv2/exiv2/issues/756",
+            "https://cwe.mitre.org/data/definitions/126.html",
+            "https://lists.debian.org/debian-lts-announce/2023/01/msg00004.html"
+        ],
+        "summary": "Exiv2 0.27.99.0 has a global buffer over-read in Exiv2::Internal::Nikon1MakerNote::print0x0088 in nikonmn_int.cpp which can result in an information leak."
+    },
+    {
+        "Modified": "2023-01-10T19:15:00",
+        "Published": "2021-08-09T18:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "MEDIUM",
+            "vector": "NETWORK"
+        },
+        "assigner": "security-advisories@github.com",
+        "cvss": 4.3,
+        "cvss-time": "2023-01-10T19:15:00",
+        "cvss-vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P",
+        "cwe": "CWE-617",
+        "id": "CVE-2021-32815",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "NONE",
+            "integrity": "NONE"
+        },
+        "last-modified": "2023-01-10T19:15:00",
+        "references": [
+            "https://github.com/Exiv2/exiv2/security/advisories/GHSA-mv9g-fxh2-m49m",
+            "https://github.com/Exiv2/exiv2/pull/1739",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/FMDT4PJB7P43WSOM3TRQIY3J33BAFVVE/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UYGDELIFFJWKUU7SO3QATCIXCZJERGAC/",
+            "https://lists.debian.org/debian-lts-announce/2023/01/msg00004.html"
+        ],
+        "summary": "Exiv2 is a command-line utility and C++ library for reading, writing, deleting, and modifying the metadata of image files. The assertion failure is triggered when Exiv2 is used to modify the metadata of a crafted image file. An attacker could potentially exploit the vulnerability to cause a denial of service, if they can trick the victim into running Exiv2 on a crafted image file. Note that this bug is only triggered when modifying the metadata, which is a less frequently used Exiv2 operation than reading the metadata. For example, to trigger the bug in the Exiv2 command-line application, you need to add an extra command-line argument such as `fi`. ### Patches The bug is fixed in version v0.27.5. ### References Regression test and bug fix: #1739 ### For more information Please see our [security policy](https://github.com/Exiv2/exiv2/security/policy) for information about Exiv2 security."
+    },
+    {
+        "Modified": "2023-01-10T19:15:00",
+        "Published": "2021-08-09T19:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "MEDIUM",
+            "vector": "NETWORK"
+        },
+        "assigner": "security-advisories@github.com",
+        "cvss": 4.3,
+        "cvss-time": "2023-01-10T19:15:00",
+        "cvss-vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P",
+        "cwe": "CWE-835",
+        "id": "CVE-2021-37621",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "NONE",
+            "integrity": "NONE"
+        },
+        "last-modified": "2023-01-10T19:15:00",
+        "references": [
+            "https://github.com/Exiv2/exiv2/pull/1778",
+            "https://github.com/Exiv2/exiv2/security/advisories/GHSA-m479-7frc-gqqg",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/FMDT4PJB7P43WSOM3TRQIY3J33BAFVVE/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UYGDELIFFJWKUU7SO3QATCIXCZJERGAC/",
+            "https://lists.debian.org/debian-lts-announce/2023/01/msg00004.html"
+        ],
+        "summary": "Exiv2 is a command-line utility and C++ library for reading, writing, deleting, and modifying the metadata of image files. An infinite loop was found in Exiv2 versions v0.27.4 and earlier. The infinite loop is triggered when Exiv2 is used to print the metadata of a crafted image file. An attacker could potentially exploit the vulnerability to cause a denial of service, if they can trick the victim into running Exiv2 on a crafted image file. Note that this bug is only triggered when printing the image ICC profile, which is a less frequently used Exiv2 operation that requires an extra command line option (`-p C`). The bug is fixed in version v0.27.5."
+    },
+    {
+        "Modified": "2023-01-10T19:15:00",
+        "Published": "2021-08-09T19:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "MEDIUM",
+            "vector": "NETWORK"
+        },
+        "assigner": "security-advisories@github.com",
+        "cvss": 4.3,
+        "cvss-time": "2023-01-10T19:15:00",
+        "cvss-vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P",
+        "cwe": "CWE-125",
+        "id": "CVE-2021-37620",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "NONE",
+            "integrity": "NONE"
+        },
+        "last-modified": "2023-01-10T19:15:00",
+        "references": [
+            "https://github.com/Exiv2/exiv2/pull/1769",
+            "https://github.com/Exiv2/exiv2/security/advisories/GHSA-v5g7-46xf-h728",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/FMDT4PJB7P43WSOM3TRQIY3J33BAFVVE/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UYGDELIFFJWKUU7SO3QATCIXCZJERGAC/",
+            "https://lists.debian.org/debian-lts-announce/2023/01/msg00004.html"
+        ],
+        "summary": "Exiv2 is a command-line utility and C++ library for reading, writing, deleting, and modifying the metadata of image files. An out-of-bounds read was found in Exiv2 versions v0.27.4 and earlier. The out-of-bounds read is triggered when Exiv2 is used to read the metadata of a crafted image file. An attacker could potentially exploit the vulnerability to cause a denial of service, if they can trick the victim into running Exiv2 on a crafted image file. The bug is fixed in version v0.27.5."
+    },
+    {
+        "Modified": "2023-01-10T19:15:00",
+        "Published": "2021-08-09T19:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "MEDIUM",
+            "vector": "NETWORK"
+        },
+        "assigner": "security-advisories@github.com",
+        "cvss": 4.3,
+        "cvss-time": "2023-01-10T19:15:00",
+        "cvss-vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P",
+        "cwe": "CWE-835",
+        "id": "CVE-2021-37622",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "NONE",
+            "integrity": "NONE"
+        },
+        "last-modified": "2023-01-10T19:15:00",
+        "references": [
+            "https://github.com/Exiv2/exiv2/security/advisories/GHSA-9jh3-fcc3-g6hv",
+            "https://github.com/Exiv2/exiv2/pull/1788",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/FMDT4PJB7P43WSOM3TRQIY3J33BAFVVE/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UYGDELIFFJWKUU7SO3QATCIXCZJERGAC/",
+            "https://lists.debian.org/debian-lts-announce/2023/01/msg00004.html"
+        ],
+        "summary": "Exiv2 is a command-line utility and C++ library for reading, writing, deleting, and modifying the metadata of image files. An infinite loop was found in Exiv2 versions v0.27.4 and earlier. The infinite loop is triggered when Exiv2 is used to modify the metadata of a crafted image file. An attacker could potentially exploit the vulnerability to cause a denial of service, if they can trick the victim into running Exiv2 on a crafted image file. Note that this bug is only triggered when deleting the IPTC data, which is a less frequently used Exiv2 operation that requires an extra command line option (`-d I rm`). The bug is fixed in version v0.27.5."
+    },
+    {
+        "Modified": "2023-01-10T19:15:00",
+        "Published": "2021-08-09T18:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "MEDIUM",
+            "vector": "NETWORK"
+        },
+        "assigner": "security-advisories@github.com",
+        "cvss": 4.3,
+        "cvss-time": "2023-01-10T19:15:00",
+        "cvss-vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P",
+        "cwe": "CWE-835",
+        "id": "CVE-2021-34334",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "NONE",
+            "integrity": "NONE"
+        },
+        "last-modified": "2023-01-10T19:15:00",
+        "references": [
+            "https://github.com/Exiv2/exiv2/pull/1766",
+            "https://github.com/Exiv2/exiv2/security/advisories/GHSA-hqjh-hpv8-8r9p",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/FMDT4PJB7P43WSOM3TRQIY3J33BAFVVE/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UYGDELIFFJWKUU7SO3QATCIXCZJERGAC/",
+            "https://lists.debian.org/debian-lts-announce/2023/01/msg00004.html"
+        ],
+        "summary": "Exiv2 is a command-line utility and C++ library for reading, writing, deleting, and modifying the metadata of image files. An infinite loop is triggered when Exiv2 is used to read the metadata of a crafted image file. An attacker could potentially exploit the vulnerability to cause a denial of service, if they can trick the victim into running Exiv2 on a crafted image file. The bug is fixed in version v0.27.5."
+    },
+    {
+        "Modified": "2023-01-10T19:15:00",
+        "Published": "2021-04-19T19:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "MEDIUM",
+            "vector": "NETWORK"
+        },
+        "assigner": "security-advisories@github.com",
+        "cvss": 4.3,
+        "cvss-time": "2023-01-10T19:15:00",
+        "cvss-vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P",
+        "cwe": "CWE-125",
+        "id": "CVE-2021-29458",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "NONE",
+            "integrity": "NONE"
+        },
+        "last-modified": "2023-01-10T19:15:00",
+        "references": [
+            "https://github.com/Exiv2/exiv2/pull/1536",
+            "https://github.com/Exiv2/exiv2/security/advisories/GHSA-57jj-75fm-9rq5",
+            "https://github.com/Exiv2/exiv2/issues/1530",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/2XQT5F5IINTDYDAFGVGQZ7PMMLG7I5ZZ/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/P2A5GMJEXQ5Q76JK6F6VKK5JYCLVFGKN/",
+            "https://lists.debian.org/debian-lts-announce/2023/01/msg00004.html"
+        ],
+        "summary": "Exiv2 is a command-line utility and C++ library for reading, writing, deleting, and modifying the metadata of image files. An out-of-bounds read was found in Exiv2 versions v0.27.3 and earlier. The out-of-bounds read is triggered when Exiv2 is used to write metadata into a crafted image file. An attacker could potentially exploit the vulnerability to cause a denial of service by crashing Exiv2, if they can trick the victim into running Exiv2 on a crafted image file. Note that this bug is only triggered when writing the metadata, which is a less frequently used Exiv2 operation than reading the metadata. For example, to trigger the bug in the Exiv2 command-line application, you need to add an extra command-line argument such as insert. The bug is fixed in version v0.27.4."
+    },
+    {
+        "Modified": "2023-01-10T19:15:00",
+        "Published": "2018-11-08T08:29:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "MEDIUM",
+            "vector": "NETWORK"
+        },
+        "assigner": "cve@mitre.org",
+        "cvss": 4.3,
+        "cvss-time": "2023-01-10T19:15:00",
+        "cvss-vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P",
+        "cwe": "CWE-835",
+        "id": "CVE-2018-19108",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "NONE",
+            "integrity": "NONE"
+        },
+        "last-modified": "2023-01-10T19:15:00",
+        "references": [
+            "https://github.com/Exiv2/exiv2/pull/518",
+            "https://github.com/Exiv2/exiv2/issues/426",
+            "https://lists.debian.org/debian-lts-announce/2019/02/msg00038.html",
+            "https://usn.ubuntu.com/4056-1/",
+            "https://access.redhat.com/errata/RHSA-2019:2101",
+            "http://lists.opensuse.org/opensuse-security-announce/2020-04/msg00009.html",
+            "https://lists.debian.org/debian-lts-announce/2023/01/msg00004.html"
+        ],
+        "summary": "In Exiv2 0.26, Exiv2::PsdImage::readMetadata in psdimage.cpp in the PSD image reader may suffer from a denial of service (infinite loop) caused by an integer overflow via a crafted PSD image file."
+    },
+    {
+        "Modified": "2023-01-10T19:15:00",
+        "Published": "2018-11-08T08:29:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "MEDIUM",
+            "vector": "NETWORK"
+        },
+        "assigner": "cve@mitre.org",
+        "cvss": 4.3,
+        "cvss-time": "2023-01-10T19:15:00",
+        "cvss-vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P",
+        "cwe": "CWE-190",
+        "id": "CVE-2018-19107",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "NONE",
+            "integrity": "NONE"
+        },
+        "last-modified": "2023-01-10T19:15:00",
+        "references": [
+            "https://github.com/Exiv2/exiv2/pull/518",
+            "https://github.com/Exiv2/exiv2/issues/427",
+            "https://lists.debian.org/debian-lts-announce/2019/02/msg00038.html",
+            "https://usn.ubuntu.com/4056-1/",
+            "https://access.redhat.com/errata/RHSA-2019:2101",
+            "https://lists.debian.org/debian-lts-announce/2023/01/msg00004.html"
+        ],
+        "summary": "In Exiv2 0.26, Exiv2::IptcParser::decode in iptc.cpp (called from psdimage.cpp in the PSD image reader) may suffer from a denial of service (heap-based buffer over-read) caused by an integer overflow via a crafted PSD image file."
+    },
+    {
+        "Modified": "2023-01-10T19:15:00",
+        "Published": "2018-12-12T10:29:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "MEDIUM",
+            "vector": "NETWORK"
+        },
+        "assigner": "cve@mitre.org",
+        "cvss": 4.3,
+        "cvss-time": "2023-01-10T19:15:00",
+        "cvss-vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P",
+        "cwe": "CWE-119",
+        "id": "CVE-2018-20097",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "NONE",
+            "integrity": "NONE"
+        },
+        "last-modified": "2023-01-10T19:15:00",
+        "references": [
+            "https://github.com/TeamSeri0us/pocs/tree/master/exiv2/20181206",
+            "https://github.com/Exiv2/exiv2/issues/590",
+            "https://lists.debian.org/debian-lts-announce/2019/02/msg00038.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/ZXCEKTYF7HLM6VH2WCWO2HXTJH37MBLA/",
+            "https://access.redhat.com/errata/RHSA-2019:2101",
+            "https://lists.debian.org/debian-lts-announce/2023/01/msg00004.html"
+        ],
+        "summary": "There is a SEGV in Exiv2::Internal::TiffParserWorker::findPrimaryGroups of tiffimage_int.cpp in Exiv2 0.27-RC3. A crafted input will lead to a remote denial of service attack."
+    },
+    {
+        "Modified": "2023-01-10T19:15:00",
+        "Published": "2018-03-25T03:29:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "MEDIUM",
+            "vector": "NETWORK"
+        },
+        "assigner": "cve@mitre.org",
+        "cvss": 4.3,
+        "cvss-time": "2023-01-10T19:15:00",
+        "cvss-vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P",
+        "cwe": "CWE-125",
+        "id": "CVE-2018-8976",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "NONE",
+            "integrity": "NONE"
+        },
+        "last-modified": "2023-01-10T19:15:00",
+        "references": [
+            "https://github.com/Exiv2/exiv2/issues/246",
+            "https://security.gentoo.org/glsa/201811-14",
+            "https://access.redhat.com/errata/RHSA-2019:2101",
+            "https://lists.debian.org/debian-lts-announce/2023/01/msg00004.html"
+        ],
+        "summary": "In Exiv2 0.26, jpgimage.cpp allows remote attackers to cause a denial of service (image.cpp Exiv2::Internal::stringFormat out-of-bounds read) via a crafted file."
+    },
+    {
+        "Modified": "2023-01-10T19:15:00",
+        "Published": "2017-12-13T22:29:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "MEDIUM",
+            "vector": "NETWORK"
+        },
+        "assigner": "cve@mitre.org",
+        "cvss": 4.3,
+        "cvss-time": "2023-01-10T19:15:00",
+        "cvss-vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P",
+        "cwe": "CWE-125",
+        "id": "CVE-2017-17669",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "NONE",
+            "integrity": "NONE"
+        },
+        "last-modified": "2023-01-10T19:15:00",
+        "references": [
+            "https://github.com/Exiv2/exiv2/issues/187",
+            "https://usn.ubuntu.com/3852-1/",
+            "https://lists.debian.org/debian-lts-announce/2023/01/msg00004.html"
+        ],
+        "summary": "There is a heap-based buffer over-read in the Exiv2::Internal::PngChunk::keyTXTChunk function of pngchunk_int.cpp in Exiv2 0.26. A crafted PNG file will lead to a remote denial of service attack."
+    },
+    {
+        "Modified": "2023-01-10T19:15:00",
+        "Published": "2019-07-28T19:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "MEDIUM",
+            "vector": "NETWORK"
+        },
+        "assigner": "cve@mitre.org",
+        "cvss": 4.3,
+        "cvss-time": "2023-01-10T19:15:00",
+        "cvss-vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P",
+        "cwe": "CWE-125",
+        "id": "CVE-2019-14370",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "NONE",
+            "integrity": "NONE"
+        },
+        "last-modified": "2023-01-10T19:15:00",
+        "references": [
+            "https://github.com/Exiv2/exiv2/issues/954",
+            "https://lists.debian.org/debian-lts-announce/2023/01/msg00004.html"
+        ],
+        "summary": "In Exiv2 0.27.99.0, there is an out-of-bounds read in Exiv2::MrwImage::readMetadata() in mrwimage.cpp. It could result in denial of service."
+    },
+    {
+        "Modified": "2023-01-10T19:15:00",
+        "Published": "2019-06-30T23:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "MEDIUM",
+            "vector": "NETWORK"
+        },
+        "assigner": "cve@mitre.org",
+        "cvss": 4.3,
+        "cvss-time": "2023-01-10T19:15:00",
+        "cvss-vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P",
+        "cwe": "CWE-770",
+        "id": "CVE-2019-13112",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "NONE",
+            "integrity": "NONE"
+        },
+        "last-modified": "2023-01-10T19:15:00",
+        "references": [
+            "https://github.com/Exiv2/exiv2/pull/846",
+            "https://github.com/Exiv2/exiv2/issues/845",
+            "https://usn.ubuntu.com/4056-1/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/FGBT5OD2TF4AIXJUC56WOUJRHAZLZ4DC/",
+            "https://lists.debian.org/debian-lts-announce/2023/01/msg00004.html"
+        ],
+        "summary": "A PngChunk::parseChunkContent uncontrolled memory allocation in Exiv2 through 0.27.1 allows an attacker to cause a denial of service (crash due to an std::bad_alloc exception) via a crafted PNG image file."
+    },
+    {
+        "Modified": "2023-01-10T19:15:00",
+        "Published": "2019-10-09T19:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "MEDIUM",
+            "vector": "NETWORK"
+        },
+        "assigner": "cve@mitre.org",
+        "cvss": 4.3,
+        "cvss-time": "2023-01-10T19:15:00",
+        "cvss-vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P",
+        "cwe": "CWE-120",
+        "id": "CVE-2019-17402",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "NONE",
+            "integrity": "NONE"
+        },
+        "last-modified": "2023-01-10T19:15:00",
+        "references": [
+            "https://github.com/Exiv2/exiv2/issues/1019",
+            "https://usn.ubuntu.com/4159-1/",
+            "https://lists.debian.org/debian-lts-announce/2019/12/msg00001.html",
+            "https://lists.debian.org/debian-lts-announce/2023/01/msg00004.html"
+        ],
+        "summary": "Exiv2 0.27.2 allows attackers to trigger a crash in Exiv2::getULong in types.cpp when called from Exiv2::Internal::CiffDirectory::readDirectory in crwimage_int.cpp, because there is no validation of the relationship of the total size to the offset and size."
+    },
+    {
+        "Modified": "2023-01-10T19:15:00",
+        "Published": "2018-11-26T02:29:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "MEDIUM",
+            "vector": "NETWORK"
+        },
+        "assigner": "cve@mitre.org",
+        "cvss": 4.3,
+        "cvss-time": "2023-01-10T19:15:00",
+        "cvss-vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P",
+        "cwe": "CWE-125",
+        "id": "CVE-2018-19535",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "NONE",
+            "integrity": "NONE"
+        },
+        "last-modified": "2023-01-10T19:15:00",
+        "references": [
+            "https://github.com/Exiv2/exiv2/pull/430",
+            "https://github.com/Exiv2/exiv2/issues/428",
+            "https://lists.debian.org/debian-lts-announce/2019/02/msg00038.html",
+            "https://usn.ubuntu.com/4056-1/",
+            "https://access.redhat.com/errata/RHSA-2019:2101",
+            "https://lists.debian.org/debian-lts-announce/2023/01/msg00004.html"
+        ],
+        "summary": "In Exiv2 0.26 and previous versions, PngChunk::readRawProfile in pngchunk_int.cpp may cause a denial of service (application crash due to a heap-based buffer over-read) via a crafted PNG file."
+    },
+    {
+        "Modified": "2023-01-10T19:15:00",
+        "Published": "2018-09-28T09:29:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "MEDIUM",
+            "vector": "NETWORK"
+        },
+        "assigner": "cve@mitre.org",
+        "cvss": 4.3,
+        "cvss-time": "2023-01-10T19:15:00",
+        "cvss-vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P",
+        "cwe": "CWE-400",
+        "id": "CVE-2018-17581",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "NONE",
+            "integrity": "NONE"
+        },
+        "last-modified": "2023-01-10T19:15:00",
+        "references": [
+            "https://github.com/SegfaultMasters/covering360/blob/master/Exiv2",
+            "https://github.com/Exiv2/exiv2/issues/460",
+            "https://usn.ubuntu.com/3852-1/",
+            "https://lists.debian.org/debian-lts-announce/2019/02/msg00038.html",
+            "https://access.redhat.com/errata/RHSA-2019:2101",
+            "https://lists.debian.org/debian-lts-announce/2023/01/msg00004.html"
+        ],
+        "summary": "CiffDirectory::readDirectory() at crwimage_int.cpp in Exiv2 0.26 has excessive stack consumption due to a recursive function, leading to Denial of service."
+    },
+    {
+        "Modified": "2023-01-10T19:15:00",
+        "Published": "2019-06-30T23:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "MEDIUM",
+            "vector": "NETWORK"
+        },
+        "assigner": "cve@mitre.org",
+        "cvss": 4.3,
+        "cvss-time": "2023-01-10T19:15:00",
+        "cvss-vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P",
+        "cwe": "CWE-476",
+        "id": "CVE-2019-13114",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "NONE",
+            "integrity": "NONE"
+        },
+        "last-modified": "2023-01-10T19:15:00",
+        "references": [
+            "https://github.com/Exiv2/exiv2/issues/793",
+            "https://github.com/Exiv2/exiv2/pull/815",
+            "https://usn.ubuntu.com/4056-1/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/FGBT5OD2TF4AIXJUC56WOUJRHAZLZ4DC/",
+            "https://support.f5.com/csp/article/K45429077?utm_source=f5support&amp;utm_medium=RSS",
+            "http://lists.opensuse.org/opensuse-security-announce/2020-04/msg00009.html",
+            "https://lists.debian.org/debian-lts-announce/2023/01/msg00004.html"
+        ],
+        "summary": "http.c in Exiv2 through 0.27.1 allows a malicious http server to cause a denial of service (crash due to a NULL pointer dereference) by returning a crafted response that lacks a space character."
+    },
+    {
+        "Modified": "2023-01-10T19:15:00",
+        "Published": "2019-06-30T23:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "MEDIUM",
+            "vector": "NETWORK"
+        },
+        "assigner": "cve@mitre.org",
+        "cvss": 4.3,
+        "cvss-time": "2023-01-10T19:15:00",
+        "cvss-vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P",
+        "cwe": "CWE-190",
+        "id": "CVE-2019-13110",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "NONE",
+            "integrity": "NONE"
+        },
+        "last-modified": "2023-01-10T19:15:00",
+        "references": [
+            "https://github.com/Exiv2/exiv2/issues/843",
+            "https://github.com/Exiv2/exiv2/pull/844",
+            "https://usn.ubuntu.com/4056-1/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/FGBT5OD2TF4AIXJUC56WOUJRHAZLZ4DC/",
+            "https://lists.debian.org/debian-lts-announce/2023/01/msg00004.html"
+        ],
+        "summary": "A CiffDirectory::readDirectory integer overflow and out-of-bounds read in Exiv2 through 0.27.1 allows an attacker to cause a denial of service (SIGSEGV) via a crafted CRW image file."
+    },
+    {
+        "Modified": "2023-01-10T19:15:00",
+        "Published": "2019-07-11T02:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "MEDIUM",
+            "vector": "NETWORK"
+        },
+        "assigner": "cve@mitre.org",
+        "cvss": 4.3,
+        "cvss-time": "2023-01-10T19:15:00",
+        "cvss-vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P",
+        "cwe": "CWE-125",
+        "id": "CVE-2019-13504",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "NONE",
+            "integrity": "NONE"
+        },
+        "last-modified": "2023-01-10T19:15:00",
+        "references": [
+            "https://github.com/Exiv2/exiv2/pull/943",
+            "http://www.securityfocus.com/bid/109117",
+            "https://fuzzit.dev/2019/07/11/discovering-cve-2019-13504-cve-2019-13503-and-the-importance-of-api-fuzzing/",
+            "https://lists.debian.org/debian-lts-announce/2019/07/msg00015.html",
+            "https://lists.debian.org/debian-lts-announce/2023/01/msg00004.html"
+        ],
+        "summary": "There is an out-of-bounds read in Exiv2::MrwImage::readMetadata in mrwimage.cpp in Exiv2 through 0.27.2."
+    },
+    {
+        "Modified": "2023-01-10T19:15:00",
+        "Published": "2019-07-28T19:15:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "MEDIUM",
+            "vector": "NETWORK"
+        },
+        "assigner": "cve@mitre.org",
+        "cvss": 4.3,
+        "cvss-time": "2023-01-10T19:15:00",
+        "cvss-vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P",
+        "cwe": "CWE-125",
+        "id": "CVE-2019-14369",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "NONE",
+            "integrity": "NONE"
+        },
+        "last-modified": "2023-01-10T19:15:00",
+        "references": [
+            "https://github.com/Exiv2/exiv2/issues/953",
+            "https://lists.debian.org/debian-lts-announce/2023/01/msg00004.html"
+        ],
+        "summary": "Exiv2::PngImage::readMetadata() in pngimage.cpp in Exiv2 0.27.99.0 allows attackers to cause a denial of service (heap-based buffer over-read) via a crafted image file."
+    },
+    {
+        "Modified": "2023-01-10T19:15:00",
+        "Published": "2017-12-31T19:29:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "MEDIUM",
+            "vector": "NETWORK"
+        },
+        "assigner": "cve@mitre.org",
+        "cvss": 4.3,
+        "cvss-time": "2023-01-10T19:15:00",
+        "cvss-vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P",
+        "cwe": "CWE-476",
+        "id": "CVE-2017-18005",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "NONE",
+            "integrity": "NONE"
+        },
+        "last-modified": "2023-01-10T19:15:00",
+        "references": [
+            "https://github.com/Exiv2/exiv2/issues/168",
+            "https://lists.debian.org/debian-lts-announce/2023/01/msg00004.html"
+        ],
+        "summary": "Exiv2 0.26 has a Null Pointer Dereference in the Exiv2::DataValue::toLong function in value.cpp, related to crafted metadata in a TIFF file."
+    },
+    {
+        "Modified": "2023-01-10T19:15:00",
+        "Published": "2017-09-29T01:34:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "MEDIUM",
+            "vector": "NETWORK"
+        },
+        "assigner": "cve@mitre.org",
+        "cvss": 4.3,
+        "cvss-time": "2023-01-10T19:15:00",
+        "cvss-vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P",
+        "cwe": "CWE-119",
+        "id": "CVE-2017-14864",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "NONE",
+            "integrity": "NONE"
+        },
+        "last-modified": "2023-01-10T19:15:00",
+        "references": [
+            "https://bugzilla.redhat.com/show_bug.cgi?id=1494467",
+            "https://usn.ubuntu.com/3852-1/",
+            "https://lists.debian.org/debian-lts-announce/2023/01/msg00004.html"
+        ],
+        "summary": "An Invalid memory address dereference was discovered in Exiv2::getULong in types.cpp in Exiv2 0.26. The vulnerability causes a segmentation fault and application crash, which leads to denial of service."
+    },
+    {
+        "Modified": "2023-01-10T19:15:00",
+        "Published": "2017-09-29T01:34:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "MEDIUM",
+            "vector": "NETWORK"
+        },
+        "assigner": "cve@mitre.org",
+        "cvss": 4.3,
+        "cvss-time": "2023-01-10T19:15:00",
+        "cvss-vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P",
+        "cwe": "CWE-119",
+        "id": "CVE-2017-14859",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "NONE",
+            "integrity": "NONE"
+        },
+        "last-modified": "2023-01-10T19:15:00",
+        "references": [
+            "https://bugzilla.redhat.com/show_bug.cgi?id=1494780",
+            "https://usn.ubuntu.com/3852-1/",
+            "https://lists.debian.org/debian-lts-announce/2023/01/msg00004.html"
+        ],
+        "summary": "An Invalid memory address dereference was discovered in Exiv2::StringValueBase::read in value.cpp in Exiv2 0.26. The vulnerability causes a segmentation fault and application crash, which leads to denial of service."
+    },
+    {
+        "Modified": "2023-01-10T19:15:00",
+        "Published": "2017-09-29T01:34:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "MEDIUM",
+            "vector": "NETWORK"
+        },
+        "assigner": "cve@mitre.org",
+        "cvss": 4.3,
+        "cvss-time": "2023-01-10T19:15:00",
+        "cvss-vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P",
+        "cwe": "CWE-119",
+        "id": "CVE-2017-14862",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "NONE",
+            "integrity": "NONE"
+        },
+        "last-modified": "2023-01-10T19:15:00",
+        "references": [
+            "https://bugzilla.redhat.com/show_bug.cgi?id=1494786",
+            "https://usn.ubuntu.com/3852-1/",
+            "https://lists.debian.org/debian-lts-announce/2023/01/msg00004.html"
+        ],
+        "summary": "An Invalid memory address dereference was discovered in Exiv2::DataValue::read in value.cpp in Exiv2 0.26. The vulnerability causes a segmentation fault and application crash, which leads to denial of service."
+    },
+    {
+        "Modified": "2023-01-10T19:15:00",
+        "Published": "2017-07-24T01:29:00",
+        "access": {
+            "authentication": "NONE",
+            "complexity": "LOW",
+            "vector": "NETWORK"
+        },
+        "assigner": "cve@mitre.org",
+        "cvss": 5.0,
+        "cvss-time": "2023-01-10T19:15:00",
+        "cvss-vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+        "cwe": "NVD-CWE-noinfo",
+        "id": "CVE-2017-11591",
+        "impact": {
+            "availability": "PARTIAL",
+            "confidentiality": "NONE",
+            "integrity": "NONE"
+        },
+        "last-modified": "2023-01-10T19:15:00",
+        "references": [
+            "https://bugzilla.redhat.com/show_bug.cgi?id=1473888",
+            "https://usn.ubuntu.com/3852-1/",
+            "https://lists.debian.org/debian-lts-announce/2023/01/msg00004.html"
+        ],
+        "summary": "There is a Floating point exception in the Exiv2::ValueType function in Exiv2 0.26 that will lead to a remote denial of service attack via crafted input."
+    },
+    {
+        "Modified": "2023-01-10T19:14:00",
+        "Published": "2023-01-04T15:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-80",
+        "id": "CVE-2023-22461",
+        "impact": {},
+        "last-modified": "2023-01-10T19:14:00",
+        "references": [
+            "https://github.com/mattkrick/sanitize-svg/security/advisories/GHSA-h857-2g56-468g",
+            "https://github.com/mattkrick/sanitize-svg/commit/b107e453ede7b58adcccae74a3e474c012eec85d"
+        ],
+        "summary": "The `sanitize-svg` package, a small SVG sanitizer to prevent cross-site scripting attacks, uses a deny-list-pattern to sanitize SVGs to prevent XSS. In doing so, literal `<script>`-tags and on-event handlers were detected in versions prior to 0.4.0. As a result, downstream software that relies on `sanitize-svg` and expects resulting SVGs to be safe, may be vulnerable to cross-site scripting. This vulnerability was addressed in v0.4.0. There are no known workarounds"
+    },
+    {
+        "Modified": "2023-01-10T19:14:00",
+        "Published": "2022-12-13T15:15:00",
+        "access": {},
+        "assigner": "cve@mitre.org",
+        "cvss": null,
+        "cwe": "CWE-787",
+        "id": "CVE-2022-45693",
+        "impact": {},
+        "last-modified": "2023-01-10T19:14:00",
+        "references": [
+            "https://github.com/jettison-json/jettison/issues/52",
+            "https://lists.debian.org/debian-lts-announce/2022/12/msg00045.html"
+        ],
+        "summary": "Jettison before v1.5.2 was discovered to contain a stack overflow via the map parameter. This vulnerability allows attackers to cause a Denial of Service (DoS) via a crafted string."
+    },
+    {
+        "Modified": "2023-01-10T19:08:00",
+        "Published": "2023-01-04T16:15:00",
+        "access": {},
+        "assigner": "security-advisories@github.com",
+        "cvss": null,
+        "cwe": "CWE-798",
+        "id": "CVE-2023-22463",
+        "impact": {},
+        "last-modified": "2023-01-10T19:08:00",
+        "references": [
+            "https://github.com/KubeOperator/KubePi/blob/da784f5532ea2495b92708cacb32703bff3a45a3/internal/api/v1/session/session.go#L35",
+            "https://github.com/KubeOperator/KubePi/commit/3be58b8df5bc05d2343c30371dd5fcf6a9fbbf8b",
+            "https://github.com/KubeOperator/KubePi/releases/tag/v1.6.3",
+            "https://github.com/KubeOperator/KubePi/security/advisories/GHSA-vjhf-8vqx-vqpq"
+        ],
+        "summary": "KubePi is a k8s panel. The jwt authentication function of KubePi through version 1.6.2 uses hard-coded Jwtsigkeys, resulting in the same Jwtsigkeys for all online projects. This means that an attacker can forge any jwt token to take over the administrator account of any online project. Furthermore, they may use the administrator to take over the k8s cluster of the target enterprise. `session.go`, the use of hard-coded JwtSigKey, allows an attacker to use this value to forge jwt tokens arbitrarily. The JwtSigKey is confidential and should not be hard-coded in the code. The vulnerability has been fixed in 1.6.3. In the patch, JWT key is specified in app.yml. If the user leaves it blank, a random key will be used. There are no workarounds aside from upgrading."
+    },
+    {
         "Modified": "2023-01-10T18:49:00",
         "Published": "2023-01-10T18:15:00",
         "access": {},
@@ -408,1194 +1939,5 @@
             "https://www.unisoc.com/en_us/secy/announcementDetail/1610118225591336001"
         ],
         "summary": "In wlan driver, there is a possible missing bounds check. This could lead to local denial of service in wlan services."
-    },
-    {
-        "Modified": "2023-01-10T18:09:00",
-        "Published": "2023-01-04T10:15:00",
-        "access": {},
-        "assigner": "security@unisoc.com",
-        "cvss": null,
-        "cwe": "CWE-125",
-        "id": "CVE-2022-44446",
-        "impact": {},
-        "last-modified": "2023-01-10T18:09:00",
-        "references": [
-            "https://www.unisoc.com/en_us/secy/announcementDetail/1610118225591336001"
-        ],
-        "summary": "In wlan driver, there is a possible missing bounds check. This could lead to local denial of service in wlan services."
-    },
-    {
-        "Modified": "2023-01-10T18:08:00",
-        "Published": "2023-01-04T10:15:00",
-        "access": {},
-        "assigner": "security@unisoc.com",
-        "cvss": null,
-        "cwe": "CWE-191",
-        "id": "CVE-2022-44444",
-        "impact": {},
-        "last-modified": "2023-01-10T18:08:00",
-        "references": [
-            "https://www.unisoc.com/en_us/secy/announcementDetail/1610118225591336001"
-        ],
-        "summary": "In wlan driver, there is a possible missing bounds check. This could lead to local denial of service in wlan services."
-    },
-    {
-        "Modified": "2023-01-10T18:06:00",
-        "Published": "2023-01-03T21:15:00",
-        "access": {},
-        "assigner": "security@mediatek.com",
-        "cvss": null,
-        "cwe": "CWE-77",
-        "id": "CVE-2022-32665",
-        "impact": {},
-        "last-modified": "2023-01-10T18:06:00",
-        "references": [
-            "https://corp.mediatek.com/product-security-bulletin/January-2023"
-        ],
-        "summary": "In Boa, there is a possible command injection due to improper input validation. This could lead to remote escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: A20220026; Issue ID: OSBNB00144124."
-    },
-    {
-        "Modified": "2023-01-10T18:01:00",
-        "Published": "2023-01-03T21:15:00",
-        "access": {},
-        "assigner": "security@mediatek.com",
-        "cvss": null,
-        "cwe": "CWE-77",
-        "id": "CVE-2022-32664",
-        "impact": {},
-        "last-modified": "2023-01-10T18:01:00",
-        "references": [
-            "https://corp.mediatek.com/product-security-bulletin/January-2023"
-        ],
-        "summary": "In Config Manager, there is a possible command injection due to improper input validation. This could lead to remote escalation of privilege with User execution privileges needed. User interaction is needed for exploitation. Patch ID: A20220004; Issue ID: OSBNB00140929."
-    },
-    {
-        "Modified": "2023-01-10T18:00:00",
-        "Published": "2023-01-04T10:15:00",
-        "access": {},
-        "assigner": "security@unisoc.com",
-        "cvss": null,
-        "cwe": "CWE-119",
-        "id": "CVE-2022-44425",
-        "impact": {},
-        "last-modified": "2023-01-10T18:00:00",
-        "references": [
-            "https://www.unisoc.com/en_us/secy/announcementDetail/1610118225591336001"
-        ],
-        "summary": "In wlan driver, there is a possible missing bounds check. This could lead to local denial of service in wlan services."
-    },
-    {
-        "Modified": "2023-01-10T17:59:00",
-        "Published": "2023-01-04T10:15:00",
-        "access": {},
-        "assigner": "security@unisoc.com",
-        "cvss": null,
-        "cwe": "CWE-276",
-        "id": "CVE-2022-39088",
-        "impact": {},
-        "last-modified": "2023-01-10T17:59:00",
-        "references": [
-            "https://www.unisoc.com/en_us/secy/announcementDetail/1610118225591336001"
-        ],
-        "summary": "In network service, there is a missing permission check. This could lead to local escalation of privilege with System execution privileges needed."
-    },
-    {
-        "Modified": "2023-01-10T17:58:00",
-        "Published": "2023-01-04T10:15:00",
-        "access": {},
-        "assigner": "security@unisoc.com",
-        "cvss": null,
-        "cwe": "CWE-276",
-        "id": "CVE-2022-39085",
-        "impact": {},
-        "last-modified": "2023-01-10T17:58:00",
-        "references": [
-            "https://www.unisoc.com/en_us/secy/announcementDetail/1610118225591336001"
-        ],
-        "summary": "In network service, there is a missing permission check. This could lead to local escalation of privilege with System execution privileges needed."
-    },
-    {
-        "Modified": "2023-01-10T17:58:00",
-        "Published": "2023-01-04T10:15:00",
-        "access": {},
-        "assigner": "security@unisoc.com",
-        "cvss": null,
-        "cwe": "CWE-276",
-        "id": "CVE-2022-39086",
-        "impact": {},
-        "last-modified": "2023-01-10T17:58:00",
-        "references": [
-            "https://www.unisoc.com/en_us/secy/announcementDetail/1610118225591336001"
-        ],
-        "summary": "In network service, there is a missing permission check. This could lead to local escalation of privilege with System execution privileges needed."
-    },
-    {
-        "Modified": "2023-01-10T17:58:00",
-        "Published": "2023-01-04T10:15:00",
-        "access": {},
-        "assigner": "security@unisoc.com",
-        "cvss": null,
-        "cwe": "CWE-276",
-        "id": "CVE-2022-39087",
-        "impact": {},
-        "last-modified": "2023-01-10T17:58:00",
-        "references": [
-            "https://www.unisoc.com/en_us/secy/announcementDetail/1610118225591336001"
-        ],
-        "summary": "In network service, there is a missing permission check. This could lead to local escalation of privilege with System execution privileges needed."
-    },
-    {
-        "Modified": "2023-01-10T17:48:00",
-        "Published": "2023-01-01T18:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "NVD-CWE-noinfo",
-        "id": "CVE-2023-22551",
-        "impact": {},
-        "last-modified": "2023-01-10T17:48:00",
-        "references": [
-            "https://github.com/rovinbhandari/FTP/issues/8"
-        ],
-        "summary": "The FTP (aka \"Implementation of a simple FTP client and server\") project through 96c1a35 allows remote attackers to cause a denial of service (memory consumption) by engaging in client activity, such as establishing and then terminating a connection. This occurs because malloc is used but free is not."
-    },
-    {
-        "Modified": "2023-01-10T17:47:00",
-        "Published": "2023-01-04T10:15:00",
-        "access": {},
-        "assigner": "security@unisoc.com",
-        "cvss": null,
-        "cwe": "CWE-276",
-        "id": "CVE-2022-39084",
-        "impact": {},
-        "last-modified": "2023-01-10T17:47:00",
-        "references": [
-            "https://www.unisoc.com/en_us/secy/announcementDetail/1610118225591336001"
-        ],
-        "summary": "In network service, there is a missing permission check. This could lead to local escalation of privilege with System execution privileges needed."
-    },
-    {
-        "Modified": "2023-01-10T17:46:00",
-        "Published": "2023-01-04T10:15:00",
-        "access": {},
-        "assigner": "security@unisoc.com",
-        "cvss": null,
-        "cwe": "CWE-276",
-        "id": "CVE-2022-39083",
-        "impact": {},
-        "last-modified": "2023-01-10T17:46:00",
-        "references": [
-            "https://www.unisoc.com/en_us/secy/announcementDetail/1610118225591336001"
-        ],
-        "summary": "In network service, there is a missing permission check. This could lead to local escalation of privilege with System execution privileges needed."
-    },
-    {
-        "Modified": "2023-01-10T17:45:00",
-        "Published": "2023-01-04T10:15:00",
-        "access": {},
-        "assigner": "security@unisoc.com",
-        "cvss": null,
-        "cwe": "CWE-276",
-        "id": "CVE-2022-39082",
-        "impact": {},
-        "last-modified": "2023-01-10T17:45:00",
-        "references": [
-            "https://www.unisoc.com/en_us/secy/announcementDetail/1610118225591336001"
-        ],
-        "summary": "In network service, there is a missing permission check. This could lead to local escalation of privilege with System execution privileges needed."
-    },
-    {
-        "Modified": "2023-01-10T17:45:00",
-        "Published": "2023-01-04T10:15:00",
-        "access": {},
-        "assigner": "security@unisoc.com",
-        "cvss": null,
-        "cwe": "CWE-125",
-        "id": "CVE-2022-44443",
-        "impact": {},
-        "last-modified": "2023-01-10T17:45:00",
-        "references": [
-            "https://www.unisoc.com/en_us/secy/announcementDetail/1610118225591336001"
-        ],
-        "summary": "In wlan driver, there is a possible missing bounds check. This could lead to local denial of service in wlan services."
-    },
-    {
-        "Modified": "2023-01-10T17:44:00",
-        "Published": "2023-01-04T10:15:00",
-        "access": {},
-        "assigner": "security@unisoc.com",
-        "cvss": null,
-        "cwe": "CWE-276",
-        "id": "CVE-2022-39081",
-        "impact": {},
-        "last-modified": "2023-01-10T17:44:00",
-        "references": [
-            "https://www.unisoc.com/en_us/secy/announcementDetail/1610118225591336001"
-        ],
-        "summary": "In network service, there is a missing permission check. This could lead to local escalation of privilege with System execution privileges needed."
-    },
-    {
-        "Modified": "2023-01-10T17:38:00",
-        "Published": "2023-01-04T10:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-22",
-        "id": "CVE-2020-36639",
-        "impact": {},
-        "last-modified": "2023-01-10T17:38:00",
-        "references": [
-            "https://vuldb.com/?ctiid.217354",
-            "https://github.com/alliedmodders/amxmodx/pull/823",
-            "https://github.com/alliedmodders/amxmodx/commit/a5f2b5539f6d61050b68df8b22ebb343a2862681",
-            "https://vuldb.com/?id.217354"
-        ],
-        "summary": "A vulnerability has been found in AlliedModders AMX Mod X and classified as critical. This vulnerability affects the function cmdVoteMap of the file plugins/adminvote.sma of the component Console Command Handler. The manipulation of the argument amx_votemap leads to path traversal. The name of the patch is a5f2b5539f6d61050b68df8b22ebb343a2862681. It is recommended to apply a patch to fix this issue. VDB-217354 is the identifier assigned to this vulnerability."
-    },
-    {
-        "Modified": "2023-01-10T17:33:00",
-        "Published": "2023-01-04T10:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2016-15008",
-        "impact": {},
-        "last-modified": "2023-01-10T17:33:00",
-        "references": [
-            "https://github.com/oxguy3/coebot-www/commit/c1a6c44092585da4236237e0e7da94ee2996a0ca",
-            "https://vuldb.com/?ctiid.217355",
-            "https://vuldb.com/?id.217355"
-        ],
-        "summary": "A vulnerability was found in oxguy3 coebot-www and classified as problematic. This issue affects the function displayChannelCommands/displayChannelQuotes/displayChannelAutoreplies/showChannelHighlights/showChannelBoir of the file js/channel.js. The manipulation leads to cross site scripting. The attack may be initiated remotely. The name of the patch is c1a6c44092585da4236237e0e7da94ee2996a0ca. It is recommended to apply a patch to fix this issue. The associated identifier of this vulnerability is VDB-217355."
-    },
-    {
-        "Modified": "2023-01-10T17:31:00",
-        "Published": "2023-01-04T10:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2019-25094",
-        "impact": {},
-        "last-modified": "2023-01-10T17:31:00",
-        "references": [
-            "https://github.com/innologi/typo3-appointments/commit/986d3cb34e5e086c6f04e061f600ffc5837abe7f",
-            "https://vuldb.com/?ctiid.217353",
-            "https://vuldb.com/?id.217353",
-            "https://github.com/innologi/typo3-appointments/releases/tag/2.0.6"
-        ],
-        "summary": "A vulnerability, which was classified as problematic, was found in innologi appointments Extension up to 2.0.5. This affects an unknown part of the component Appointment Handler. The manipulation of the argument formfield leads to cross site scripting. It is possible to initiate the attack remotely. Upgrading to version 2.0.6 is able to address this issue. The name of the patch is 986d3cb34e5e086c6f04e061f600ffc5837abe7f. It is recommended to upgrade the affected component. The identifier VDB-217353 was assigned to this vulnerability."
-    },
-    {
-        "Modified": "2023-01-10T17:21:00",
-        "Published": "2023-01-10T17:15:00",
-        "access": {},
-        "assigner": "security@wordfence.com",
-        "cvss": null,
-        "cwe": "CWE-284",
-        "id": "CVE-2022-4704",
-        "impact": {},
-        "last-modified": "2023-01-10T17:21:00",
-        "references": [
-            "https://www.wordfence.com/blog/2023/01/eleven-vulnerabilities-patched-in-royal-elementor-addons/",
-            "https://plugins.trac.wordpress.org/browser/royal-elementor-addons/trunk/admin/templates-kit.php?rev=2833046",
-            "https://www.wordfence.com/threat-intel/vulnerabilities/id/64cce528-0ad0-45ec-a8f6-e8791b0bece0"
-        ],
-        "summary": "The Royal Elementor Addons plugin for WordPress is vulnerable to insufficient access control in the 'wpr_import_templates_kit' AJAX action in versions up to, and including, 1.3.59. This allows any authenticated user, including those with subscriber-level permissions, to import preset site configuration templates including images and settings."
-    },
-    {
-        "Modified": "2023-01-10T17:21:00",
-        "Published": "2023-01-10T17:15:00",
-        "access": {},
-        "assigner": "security@wordfence.com",
-        "cvss": null,
-        "cwe": "CWE-284",
-        "id": "CVE-2022-4705",
-        "impact": {},
-        "last-modified": "2023-01-10T17:21:00",
-        "references": [
-            "https://www.wordfence.com/threat-intel/vulnerabilities/id/0a941aef-85f6-4719-b6ab-ace77a03e93e",
-            "https://www.wordfence.com/blog/2023/01/eleven-vulnerabilities-patched-in-royal-elementor-addons/",
-            "https://plugins.trac.wordpress.org/browser/royal-elementor-addons/trunk/admin/templates-kit.php?rev=2833046"
-        ],
-        "summary": "The Royal Elementor Addons plugin for WordPress is vulnerable to insufficient access control in the 'wpr_final_settings_setup' AJAX action in versions up to, and including, 1.3.59. This allows any authenticated user, including those with subscriber-level permissions, to finalize activation of preset site configuration templates, which can be chosen and imported via a separate action documented in CVE-2022-4704."
-    },
-    {
-        "Modified": "2023-01-10T17:21:00",
-        "Published": "2023-01-10T17:15:00",
-        "access": {},
-        "assigner": "security@wordfence.com",
-        "cvss": null,
-        "cwe": "CWE-352",
-        "id": "CVE-2022-4707",
-        "impact": {},
-        "last-modified": "2023-01-10T17:21:00",
-        "references": [
-            "https://www.wordfence.com/threat-intel/vulnerabilities/id/55db7d81-7ffb-49da-b64e-23e892bddc57",
-            "https://plugins.trac.wordpress.org/browser/royal-elementor-addons/trunk/admin/mega-menu.php?rev=2809656",
-            "https://www.wordfence.com/blog/2023/01/eleven-vulnerabilities-patched-in-royal-elementor-addons/"
-        ],
-        "summary": "The Royal Elementor Addons plugin for WordPress is vulnerable to Cross-Site Request Forgery in versions up to, and including, 1.3.59. This is due to missing nonce validation in the 'wpr_create_mega_menu_template' AJAX function. This allows unauthenticated attackers to create Mega Menu templates, granted they can trick an administrator into performing an action, such as clicking a link."
-    },
-    {
-        "Modified": "2023-01-10T17:21:00",
-        "Published": "2023-01-10T17:15:00",
-        "access": {},
-        "assigner": "security@wordfence.com",
-        "cvss": null,
-        "cwe": "CWE-284",
-        "id": "CVE-2022-4708",
-        "impact": {},
-        "last-modified": "2023-01-10T17:21:00",
-        "references": [
-            "https://plugins.trac.wordpress.org/browser/royal-elementor-addons/trunk/admin/includes/wpr-templates-actions.php?rev=2834217",
-            "https://www.wordfence.com/threat-intel/vulnerabilities/id/b3e12653-ddfe-4e02-9d9e-0263b9f71def",
-            "https://www.wordfence.com/blog/2023/01/eleven-vulnerabilities-patched-in-royal-elementor-addons/"
-        ],
-        "summary": "The Royal Elementor Addons plugin for WordPress is vulnerable to insufficient access control in the 'wpr_save_template_conditions' AJAX action in versions up to, and including, 1.3.59. This allows any authenticated user, including those with subscriber-level permissions, to modify the conditions under which templates are displayed."
-    },
-    {
-        "Modified": "2023-01-10T17:21:00",
-        "Published": "2023-01-10T17:15:00",
-        "access": {},
-        "assigner": "security@wordfence.com",
-        "cvss": null,
-        "cwe": "CWE-284",
-        "id": "CVE-2022-4709",
-        "impact": {},
-        "last-modified": "2023-01-10T17:21:00",
-        "references": [
-            "https://plugins.trac.wordpress.org/browser/royal-elementor-addons/trunk/admin/includes/wpr-templates-actions.php?rev=2834217",
-            "https://www.wordfence.com/threat-intel/vulnerabilities/id/fa530112-a7cd-4c54-aa87-9e7337d01557",
-            "https://www.wordfence.com/blog/2023/01/eleven-vulnerabilities-patched-in-royal-elementor-addons/"
-        ],
-        "summary": "The Royal Elementor Addons plugin for WordPress is vulnerable to insufficient access control in the 'wpr_import_library_template' AJAX action in versions up to, and including, 1.3.59. This allows any authenticated user, including those with subscriber-level permissions, to import and activate templates from the plugin's template library."
-    },
-    {
-        "Modified": "2023-01-10T17:21:00",
-        "Published": "2023-01-10T17:15:00",
-        "access": {},
-        "assigner": "security@wordfence.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-4710",
-        "impact": {},
-        "last-modified": "2023-01-10T17:21:00",
-        "references": [
-            "https://www.wordfence.com/threat-intel/vulnerabilities/id/ac6c6ce4-9944-4c8e-89aa-6a2e870ef205",
-            "https://plugins.trac.wordpress.org/browser/royal-elementor-addons/trunk/classes/wpr-ajax-search.php?rev=2809656",
-            "https://www.wordfence.com/blog/2023/01/eleven-vulnerabilities-patched-in-royal-elementor-addons/"
-        ],
-        "summary": "The Royal Elementor Addons plugin for WordPress is vulnerable to Reflected Cross-Site Scripting in versions up to, and including, 1.3.59, due to due to insufficient input sanitization and output escaping of the 'wpr_ajax_search_link_target' parameter in the 'data_fetch' function. This makes it possible for unauthenticated attackers to inject arbitrary web scripts in pages that execute if they can successfully trick a user into performing an action such as clicking on a link. This is occurring because 'sanitize_text_field' is insufficient to prevent attribute-based Cross-Site Scripting"
-    },
-    {
-        "Modified": "2023-01-10T17:21:00",
-        "Published": "2023-01-10T17:15:00",
-        "access": {},
-        "assigner": "security@wordfence.com",
-        "cvss": null,
-        "cwe": "CWE-284",
-        "id": "CVE-2022-4711",
-        "impact": {},
-        "last-modified": "2023-01-10T17:21:00",
-        "references": [
-            "https://www.wordfence.com/threat-intel/vulnerabilities/id/c23e9810-40ea-43e2-9292-f05f300a7ddf",
-            "https://plugins.trac.wordpress.org/browser/royal-elementor-addons/trunk/admin/mega-menu.php?rev=2809656",
-            "https://www.wordfence.com/blog/2023/01/eleven-vulnerabilities-patched-in-royal-elementor-addons/"
-        ],
-        "summary": "The Royal Elementor Addons plugin for WordPress is vulnerable to insufficient access control in the 'wpr_save_mega_menu_settings' AJAX action in versions up to, and including, 1.3.59. This allows any authenticated user, including those with subscriber-level permissions, to enable and modify Mega Menu settings for any menu item."
-    },
-    {
-        "Modified": "2023-01-10T17:21:00",
-        "Published": "2023-01-10T17:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "Unknown",
-        "id": "CVE-2022-47083",
-        "impact": {},
-        "last-modified": "2023-01-10T17:21:00",
-        "references": [
-            "https://www.zeroscience.mk/en/vulnerabilities/ZSL-2022-5720.php"
-        ],
-        "summary": "Spitfire CMS 1.0.475 is vulnerable to PHP Object Injection."
-    },
-    {
-        "Modified": "2023-01-10T17:21:00",
-        "Published": "2023-01-10T17:15:00",
-        "access": {},
-        "assigner": "security@wordfence.com",
-        "cvss": null,
-        "cwe": "CWE-284",
-        "id": "CVE-2022-4700",
-        "impact": {},
-        "last-modified": "2023-01-10T17:21:00",
-        "references": [
-            "https://www.wordfence.com/blog/2023/01/eleven-vulnerabilities-patched-in-royal-elementor-addons/",
-            "https://www.wordfence.com/threat-intel/vulnerabilities/id/cdd464ad-24bc-4922-8bfa-ac42fbe60b52",
-            "https://plugins.trac.wordpress.org/browser/royal-elementor-addons/trunk/admin/templates-kit.php?rev=2833046"
-        ],
-        "summary": "The Royal Elementor Addons plugin for WordPress is vulnerable to insufficient access control in the 'wpr_activate_required_theme' AJAX action in versions up to, and including, 1.3.59. This allows any authenticated user, including those with subscriber-level permissions, to activate the 'royal-elementor-kit' theme. If no such theme is installed doing so can also impact site availability as the site attempts to load a nonexistent theme."
-    },
-    {
-        "Modified": "2023-01-10T17:21:00",
-        "Published": "2023-01-10T17:15:00",
-        "access": {},
-        "assigner": "security@wordfence.com",
-        "cvss": null,
-        "cwe": "CWE-285",
-        "id": "CVE-2022-4701",
-        "impact": {},
-        "last-modified": "2023-01-10T17:21:00",
-        "references": [
-            "https://www.wordfence.com/threat-intel/vulnerabilities/id/55f7e39b-e7a5-462b-b1e4-c3d92038f17e",
-            "https://www.wordfence.com/blog/2023/01/eleven-vulnerabilities-patched-in-royal-elementor-addons/",
-            "https://plugins.trac.wordpress.org/browser/royal-elementor-addons/trunk/admin/templates-kit.php?rev=2833046"
-        ],
-        "summary": "The Royal Elementor Addons plugin for WordPress is vulnerable to insufficient access control in the 'wpr_activate_required_plugins' AJAX action in versions up to, and including, 1.3.59. This allows any authenticated user, including those with subscriber-level permissions, to activate the 'contact-form-7', 'media-library-assistant', or 'woocommerce' plugins if they are installed on the site."
-    },
-    {
-        "Modified": "2023-01-10T17:21:00",
-        "Published": "2023-01-10T17:15:00",
-        "access": {},
-        "assigner": "security@wordfence.com",
-        "cvss": null,
-        "cwe": "CWE-284",
-        "id": "CVE-2022-4702",
-        "impact": {},
-        "last-modified": "2023-01-10T17:21:00",
-        "references": [
-            "https://www.wordfence.com/blog/2023/01/eleven-vulnerabilities-patched-in-royal-elementor-addons/",
-            "https://plugins.trac.wordpress.org/browser/royal-elementor-addons/trunk/admin/templates-kit.php?rev=2833046",
-            "https://www.wordfence.com/threat-intel/vulnerabilities/id/cb47b6cc-87e4-4d29-bbc7-6d7552bc3943"
-        ],
-        "summary": "The Royal Elementor Addons plugin for WordPress is vulnerable to insufficient access control in the 'wpr_fix_royal_compatibility' AJAX action in versions up to, and including, 1.3.59. This allows any authenticated user, including those with subscriber-level permissions, to deactivate every plugin on the site unless it is part of an extremely limited hardcoded selection. This also switches the site to the 'royal-elementor-kit' theme, potentially resulting in availability issues."
-    },
-    {
-        "Modified": "2023-01-10T17:21:00",
-        "Published": "2023-01-10T17:15:00",
-        "access": {},
-        "assigner": "security@wordfence.com",
-        "cvss": null,
-        "cwe": "CWE-284",
-        "id": "CVE-2022-4703",
-        "impact": {},
-        "last-modified": "2023-01-10T17:21:00",
-        "references": [
-            "https://www.wordfence.com/threat-intel/vulnerabilities/id/62a5c796-1c14-4cb1-9f21-340b40e418df",
-            "https://www.wordfence.com/blog/2023/01/eleven-vulnerabilities-patched-in-royal-elementor-addons/",
-            "https://plugins.trac.wordpress.org/browser/royal-elementor-addons/trunk/admin/templates-kit.php?rev=2833046"
-        ],
-        "summary": "The Royal Elementor Addons plugin for WordPress is vulnerable to insufficient access control in the 'wpr_reset_previous_import' AJAX action in versions up to, and including, 1.3.59. This allows any authenticated user, including those with subscriber-level permissions, to reset previously imported data."
-    },
-    {
-        "Modified": "2023-01-10T17:21:00",
-        "Published": "2023-01-10T15:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-21",
-        "id": "CVE-2016-15017",
-        "impact": {},
-        "last-modified": "2023-01-10T17:21:00",
-        "references": [
-            "https://github.com/fabarea/media_upload/commit/b25d42a4981072321c1a363311d8ea2a4ac8763a",
-            "https://vuldb.com/?ctiid.217786",
-            "https://github.com/fabarea/media_upload/releases/tag/0.9.0",
-            "https://vuldb.com/?id.217786",
-            "https://github.com/fabarea/media_upload/issues/6"
-        ],
-        "summary": "A vulnerability has been found in fabarea media_upload and classified as critical. This vulnerability affects the function getUploadedFileList of the file Classes/Service/UploadFileService.php. The manipulation leads to pathname traversal. Upgrading to version 0.9.0 is able to address this issue. The name of the patch is b25d42a4981072321c1a363311d8ea2a4ac8763a. It is recommended to upgrade the affected component. VDB-217786 is the identifier assigned to this vulnerability."
-    },
-    {
-        "Modified": "2023-01-10T17:21:00",
-        "Published": "2023-01-10T16:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-89",
-        "id": "CVE-2014-125073",
-        "impact": {},
-        "last-modified": "2023-01-10T17:21:00",
-        "references": [
-            "https://github.com/mapoor/voteapp/commit/b290c21a0d8bcdbd55db860afd3cadec97388e72",
-            "https://vuldb.com/?ctiid.217790",
-            "https://vuldb.com/?id.217790"
-        ],
-        "summary": "A vulnerability was found in mapoor voteapp. It has been rated as critical. Affected by this issue is the function create_poll/do_poll/show_poll/show_refresh of the file app.py. The manipulation leads to sql injection. The name of the patch is b290c21a0d8bcdbd55db860afd3cadec97388e72. It is recommended to apply a patch to fix this issue. VDB-217790 is the identifier assigned to this vulnerability."
-    },
-    {
-        "Modified": "2023-01-10T17:21:00",
-        "Published": "2023-01-03T14:15:00",
-        "access": {},
-        "assigner": "security@wordfence.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-4663",
-        "impact": {},
-        "last-modified": "2023-01-10T17:21:00",
-        "references": [
-            "https://www.wordfence.com/threat-intel/vulnerabilities/id/3abbc407-f660-4b1f-9d48-436320e5fdd7",
-            "https://plugins.trac.wordpress.org/browser/members-import/trunk/members-import.php#L113"
-        ],
-        "summary": "The Members Import plugin for WordPress is vulnerable to Self Cross-Site Scripting via the user_login parameter in an imported CSV file in versions up to, and including, 1.4.2 due to insufficient input sanitization and output escaping. This makes it possible for attackers to inject arbitrary web scripts in pages that execute if they can successfully trick a site's administrator into uploading a CSV file with the malicious payload."
-    },
-    {
-        "Modified": "2023-01-10T17:17:00",
-        "Published": "2023-01-03T12:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2012-10003",
-        "impact": {},
-        "last-modified": "2023-01-10T17:17:00",
-        "references": [
-            "https://vuldb.com/?ctiid.217271",
-            "https://github.com/ahmyi/rivettracker/commit/f053c5cc2bc44269b0496b5f275e349928a92ef9",
-            "https://vuldb.com/?id.217271",
-            "https://github.com/ahmyi/rivettracker/pull/1"
-        ],
-        "summary": "A vulnerability, which was classified as problematic, has been found in ahmyi RivetTracker. This issue affects some unknown processing. The manipulation of the argument $_SERVER['PHP_SELF'] leads to cross site scripting. The attack may be initiated remotely. The name of the patch is f053c5cc2bc44269b0496b5f275e349928a92ef9. It is recommended to apply a patch to fix this issue. The associated identifier of this vulnerability is VDB-217271."
-    },
-    {
-        "Modified": "2023-01-10T17:14:00",
-        "Published": "2023-01-03T09:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-209",
-        "id": "CVE-2015-10012",
-        "impact": {},
-        "last-modified": "2023-01-10T17:14:00",
-        "references": [
-            "https://github.com/sumocoders/FrameworkUserBundle/commit/abe4993390ba9bd7821ab12678270556645f94c8",
-            "https://github.com/sumocoders/FrameworkUserBundle/releases/tag/v1.4.0",
-            "https://vuldb.com/?ctiid.217268",
-            "https://vuldb.com/?id.217268"
-        ],
-        "summary": "** UNSUPPPORTED WHEN ASSIGNED **** UNSUPPORTED WHEN ASSIGNED ** A vulnerability was found in sumocoders FrameworkUserBundle up to 1.3.x. It has been rated as problematic. Affected by this issue is some unknown functionality of the file Resources/views/Security/login.html.twig. The manipulation leads to information exposure through error message. Upgrading to version 1.4.0 is able to address this issue. The name of the patch is abe4993390ba9bd7821ab12678270556645f94c8. It is recommended to upgrade the affected component. The identifier of this vulnerability is VDB-217268. NOTE: This vulnerability only affects products that are no longer supported by the maintainer."
-    },
-    {
-        "Modified": "2023-01-10T17:12:00",
-        "Published": "2023-01-03T03:15:00",
-        "access": {},
-        "assigner": "vultures@jpcert.or.jp",
-        "cvss": null,
-        "cwe": "CWE-787",
-        "id": "CVE-2022-47908",
-        "impact": {},
-        "last-modified": "2023-01-10T17:12:00",
-        "references": [
-            "https://jvn.jp/en/vu/JVNVU92811888/index.html",
-            "https://monitouch.fujielectric.com/site/download-e/03tellus_inf/index.php"
-        ],
-        "summary": "Stack-based buffer overflow vulnerability in V-Server v4.0.12.0 and earlier allows a local attacker to obtain the information and/or execute arbitrary code by having a user to open a specially crafted project file."
-    },
-    {
-        "Modified": "2023-01-10T17:05:00",
-        "Published": "2023-01-04T10:15:00",
-        "access": {},
-        "assigner": "security@unisoc.com",
-        "cvss": null,
-        "cwe": "CWE-787",
-        "id": "CVE-2022-39118",
-        "impact": {},
-        "last-modified": "2023-01-10T17:05:00",
-        "references": [
-            "https://www.unisoc.com/en_us/secy/announcementDetail/1610118225591336001"
-        ],
-        "summary": "In sprd_sysdump driver, there is a possible out of bounds write due to a missing bounds check. This could lead to local denial of service in kernel."
-    },
-    {
-        "Modified": "2023-01-10T17:04:00",
-        "Published": "2023-01-04T10:15:00",
-        "access": {},
-        "assigner": "security@unisoc.com",
-        "cvss": null,
-        "cwe": "CWE-787",
-        "id": "CVE-2022-39116",
-        "impact": {},
-        "last-modified": "2023-01-10T17:04:00",
-        "references": [
-            "https://www.unisoc.com/en_us/secy/announcementDetail/1610118225591336001"
-        ],
-        "summary": "In sprd_sysdump driver, there is a possible out of bounds write due to a missing bounds check. This could lead to local denial of service in kernel."
-    },
-    {
-        "Modified": "2023-01-10T17:02:00",
-        "Published": "2022-12-30T23:15:00",
-        "access": {},
-        "assigner": "psirt@nvidia.com",
-        "cvss": null,
-        "cwe": "CWE-125",
-        "id": "CVE-2022-42267",
-        "impact": {},
-        "last-modified": "2023-01-10T17:02:00",
-        "references": [
-            "https://nvidia.custhelp.com/app/answers/detail/a_id/5415"
-        ],
-        "summary": "NVIDIA GPU Display Driver for Windows contains a vulnerability where a regular user can cause an out-of-bounds read, which may lead to code execution, denial of service, escalation of privileges, information disclosure, or data tampering."
-    },
-    {
-        "Modified": "2023-01-10T16:56:00",
-        "Published": "2023-01-03T21:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-89",
-        "id": "CVE-2022-38627",
-        "impact": {},
-        "last-modified": "2023-01-10T16:56:00",
-        "references": [
-            "https://github.com/omarhashem123/Security-Research/blob/main/CVE-2022-38627/CVE-2022-38627.yaml",
-            "https://github.com/omarhashem123/Security-Research/blob/main/CVE-2022-38627/CVE-2022-38627.txt"
-        ],
-        "summary": "Nortek Linear eMerge E3-Series 0.32-08f, 0.32-07p, 0.32-07e, 0.32-09c, 0.32-09b, 0.32-09a, and 0.32-08e were discovered to contain a SQL injection vulnerability via the idt parameter."
-    },
-    {
-        "Modified": "2023-01-10T16:52:00",
-        "Published": "2023-01-03T03:15:00",
-        "access": {},
-        "assigner": "cve@cert.org.tw",
-        "cvss": null,
-        "cwe": "CWE-798",
-        "id": "CVE-2022-47618",
-        "impact": {},
-        "last-modified": "2023-01-10T16:52:00",
-        "references": [
-            "https://www.twcert.org.tw/tw/cp-132-6825-6691e-1.html"
-        ],
-        "summary": "Merit LILIN AH55B04 & AH55B08 DVR firm has hard-coded administrator credentials. An unauthenticated remote attacker can use these credentials to log in administrator page, to manipulate system or disrupt service."
-    },
-    {
-        "Modified": "2023-01-10T16:51:00",
-        "Published": "2023-01-03T21:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-434",
-        "id": "CVE-2022-44036",
-        "impact": {},
-        "last-modified": "2023-01-10T16:51:00",
-        "references": [
-            "https://github.com/b2evolution/b2evolution/issues/121"
-        ],
-        "summary": "** DISPUTED ** In b2evolution 7.2.5, if configured with admins_can_manipulate_sensitive_files, arbitrary file upload is allowed for admins, leading to command execution. NOTE: the vendor's position is that this is \"very obviously a feature not an issue and if you don't like that feature it is very obvious how to disable it.\""
-    },
-    {
-        "Modified": "2023-01-10T16:38:00",
-        "Published": "2023-01-03T22:15:00",
-        "access": {},
-        "assigner": "ics-cert@hq.dhs.gov",
-        "cvss": null,
-        "cwe": "CWE-522",
-        "id": "CVE-2022-2967",
-        "impact": {},
-        "last-modified": "2023-01-10T16:38:00",
-        "references": [
-            "https://www.prosysopc.com/blog/#Security",
-            "https://www.cisa.gov/uscert/ics/advisories/icsa-22-349-01"
-        ],
-        "summary": "Prosys OPC UA Simulation Server version prior to v5.3.0-64 and UA Modbus Server versions 1.4.18-5 and prior do not sufficiently protect credentials, which could allow an attacker to obtain user credentials and gain access to system data."
-    },
-    {
-        "Modified": "2023-01-10T16:28:00",
-        "Published": "2023-01-03T03:15:00",
-        "access": {},
-        "assigner": "vultures@jpcert.or.jp",
-        "cvss": null,
-        "cwe": "CWE-787",
-        "id": "CVE-2022-47317",
-        "impact": {},
-        "last-modified": "2023-01-10T16:28:00",
-        "references": [
-            "https://jvn.jp/en/vu/JVNVU92811888/index.html",
-            "https://monitouch.fujielectric.com/site/download-e/03tellus_inf/index.php"
-        ],
-        "summary": "Out-of-bounds write vulnerability in V-Server v4.0.12.0 and earlier allows a local attacker to obtain the information and/or execute arbitrary code by having a user to open a specially crafted project file."
-    },
-    {
-        "Modified": "2023-01-10T16:26:00",
-        "Published": "2023-01-04T10:15:00",
-        "access": {},
-        "assigner": "security@unisoc.com",
-        "cvss": null,
-        "cwe": "CWE-862",
-        "id": "CVE-2022-44434",
-        "impact": {},
-        "last-modified": "2023-01-10T16:26:00",
-        "references": [
-            "https://www.unisoc.com/en_us/secy/announcementDetail/1610118225591336001"
-        ],
-        "summary": "In messaging service, there is a missing permission check. This could lead to local denial of service in contacts service with no additional execution privileges needed."
-    },
-    {
-        "Modified": "2023-01-10T16:26:00",
-        "Published": "2023-01-04T10:15:00",
-        "access": {},
-        "assigner": "security@unisoc.com",
-        "cvss": null,
-        "cwe": "CWE-862",
-        "id": "CVE-2022-44435",
-        "impact": {},
-        "last-modified": "2023-01-10T16:26:00",
-        "references": [
-            "https://www.unisoc.com/en_us/secy/announcementDetail/1610118225591336001"
-        ],
-        "summary": "In messaging service, there is a missing permission check. This could lead to local denial of service in contacts service with no additional execution privileges needed."
-    },
-    {
-        "Modified": "2023-01-10T16:26:00",
-        "Published": "2023-01-04T10:15:00",
-        "access": {},
-        "assigner": "security@unisoc.com",
-        "cvss": null,
-        "cwe": "CWE-862",
-        "id": "CVE-2022-44436",
-        "impact": {},
-        "last-modified": "2023-01-10T16:26:00",
-        "references": [
-            "https://www.unisoc.com/en_us/secy/announcementDetail/1610118225591336001"
-        ],
-        "summary": "In messaging service, there is a missing permission check. This could lead to local denial of service in contacts service with no additional execution privileges needed."
-    },
-    {
-        "Modified": "2023-01-10T16:26:00",
-        "Published": "2023-01-04T10:15:00",
-        "access": {},
-        "assigner": "security@unisoc.com",
-        "cvss": null,
-        "cwe": "CWE-862",
-        "id": "CVE-2022-44437",
-        "impact": {},
-        "last-modified": "2023-01-10T16:26:00",
-        "references": [
-            "https://www.unisoc.com/en_us/secy/announcementDetail/1610118225591336001"
-        ],
-        "summary": "In messaging service, there is a missing permission check. This could lead to local denial of service in contacts service with no additional execution privileges needed."
-    },
-    {
-        "Modified": "2023-01-10T16:26:00",
-        "Published": "2023-01-04T10:15:00",
-        "access": {},
-        "assigner": "security@unisoc.com",
-        "cvss": null,
-        "cwe": "CWE-862",
-        "id": "CVE-2022-44438",
-        "impact": {},
-        "last-modified": "2023-01-10T16:26:00",
-        "references": [
-            "https://www.unisoc.com/en_us/secy/announcementDetail/1610118225591336001"
-        ],
-        "summary": "In messaging service, there is a missing permission check. This could lead to local denial of service in contacts service with no additional execution privileges needed."
-    },
-    {
-        "Modified": "2023-01-10T16:26:00",
-        "Published": "2023-01-04T10:15:00",
-        "access": {},
-        "assigner": "security@unisoc.com",
-        "cvss": null,
-        "cwe": "CWE-862",
-        "id": "CVE-2022-44439",
-        "impact": {},
-        "last-modified": "2023-01-10T16:26:00",
-        "references": [
-            "https://www.unisoc.com/en_us/secy/announcementDetail/1610118225591336001"
-        ],
-        "summary": "In messaging service, there is a missing permission check. This could lead to local denial of service in contacts service with no additional execution privileges needed."
-    },
-    {
-        "Modified": "2023-01-10T16:26:00",
-        "Published": "2023-01-03T22:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-38723",
-        "impact": {},
-        "last-modified": "2023-01-10T16:26:00",
-        "references": [
-            "https://community.gravitee.io/t/whats-new-in-access-management-3-15-lts/164",
-            "https://gist.github.com/garatc/d86cdb1fa2e35a7ee719d9a0de0b5ca3"
-        ],
-        "summary": "Gravitee API Management before 3.15.13 allows path traversal through HTML injection."
-    },
-    {
-        "Modified": "2023-01-10T16:15:00",
-        "Published": "2022-12-12T20:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-416",
-        "id": "CVE-2022-42716",
-        "impact": {},
-        "last-modified": "2023-01-10T16:15:00",
-        "references": [
-            "https://developer.arm.com/Arm%20Security%20Center/Mali%20GPU%20Driver%20Vulnerabilities",
-            "http://packetstormsecurity.com/files/170420/Arm-Mali-CSF-KBASE_REG_NO_USER_FREE-Unsafe-Use-Use-After-Free.html"
-        ],
-        "summary": "An issue was discovered in the Arm Mali GPU Kernel Driver. There is a use-after-free. A non-privileged user can make improper GPU processing operations to gain access to already freed memory. This affects Valhall r29p0 through r40P0."
-    },
-    {
-        "Modified": "2023-01-10T16:15:00",
-        "Published": "2022-12-05T22:15:00",
-        "access": {},
-        "assigner": "cve-assignments@hackerone.com",
-        "cvss": null,
-        "cwe": "CWE-668",
-        "id": "CVE-2022-32221",
-        "impact": {},
-        "last-modified": "2023-01-10T16:15:00",
-        "references": [
-            "https://hackerone.com/reports/1704017",
-            "https://security.gentoo.org/glsa/202212-01",
-            "https://security.netapp.com/advisory/ntap-20230110-0006/"
-        ],
-        "summary": "When doing HTTP(S) transfers, libcurl might erroneously use the read callback (`CURLOPT_READFUNCTION`) to ask for data to send, even when the `CURLOPT_POSTFIELDS` option has been set, if the same handle previously was used to issue a `PUT` request which used that callback. This flaw may surprise the application and cause it to misbehave and either send off the wrong data or use memory after free or similar in the subsequent `POST` request. The problem exists in the logic for a reused handle when it is changed from a PUT to a POST."
-    },
-    {
-        "Modified": "2023-01-10T16:15:00",
-        "Published": "2022-12-05T22:15:00",
-        "access": {},
-        "assigner": "cve-assignments@hackerone.com",
-        "cvss": null,
-        "cwe": "CWE-787",
-        "id": "CVE-2022-35260",
-        "impact": {},
-        "last-modified": "2023-01-10T16:15:00",
-        "references": [
-            "https://hackerone.com/reports/1721098",
-            "https://security.gentoo.org/glsa/202212-01",
-            "https://security.netapp.com/advisory/ntap-20230110-0006/"
-        ],
-        "summary": "curl can be told to parse a `.netrc` file for credentials. If that file endsin a line with 4095 consecutive non-white space letters and no newline, curlwould first read past the end of the stack-based buffer, and if the readworks, write a zero byte beyond its boundary.This will in most cases cause a segfault or similar, but circumstances might also cause different outcomes.If a malicious user can provide a custom netrc file to an application or otherwise affect its contents, this flaw could be used as denial-of-service."
-    },
-    {
-        "Modified": "2023-01-10T16:15:00",
-        "Published": "2022-11-09T22:15:00",
-        "access": {},
-        "assigner": "secure@microsoft.com",
-        "cvss": null,
-        "cwe": "NVD-CWE-noinfo",
-        "id": "CVE-2022-37966",
-        "impact": {},
-        "last-modified": "2023-01-10T16:15:00",
-        "references": [
-            "https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-37966",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/VCTYD5EQRS73QZTWPOC2ZO2FL7MMYXMS/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/G2CYDXPFBQES2Z4KLZDILGXFFQ3VIGZ4/",
-            "https://security.netapp.com/advisory/ntap-20230110-0003/"
-        ],
-        "summary": "Windows Kerberos RC4-HMAC Elevation of Privilege Vulnerability."
-    },
-    {
-        "Modified": "2023-01-10T16:15:00",
-        "Published": "2022-11-09T22:15:00",
-        "access": {},
-        "assigner": "secure@microsoft.com",
-        "cvss": null,
-        "cwe": "NVD-CWE-noinfo",
-        "id": "CVE-2022-37967",
-        "impact": {},
-        "last-modified": "2023-01-10T16:15:00",
-        "references": [
-            "https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-37967",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/VCTYD5EQRS73QZTWPOC2ZO2FL7MMYXMS/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/G2CYDXPFBQES2Z4KLZDILGXFFQ3VIGZ4/",
-            "https://security.netapp.com/advisory/ntap-20230110-0003/"
-        ],
-        "summary": "Windows Kerberos Elevation of Privilege Vulnerability."
-    },
-    {
-        "Modified": "2023-01-10T16:15:00",
-        "Published": "2022-11-09T22:15:00",
-        "access": {},
-        "assigner": "secure@microsoft.com",
-        "cvss": null,
-        "cwe": "NVD-CWE-noinfo",
-        "id": "CVE-2022-38023",
-        "impact": {},
-        "last-modified": "2023-01-10T16:15:00",
-        "references": [
-            "https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-38023",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/VCTYD5EQRS73QZTWPOC2ZO2FL7MMYXMS/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/G2CYDXPFBQES2Z4KLZDILGXFFQ3VIGZ4/",
-            "https://security.netapp.com/advisory/ntap-20230110-0003/"
-        ],
-        "summary": "Netlogon RPC Elevation of Privilege Vulnerability."
-    },
-    {
-        "Modified": "2023-01-10T16:15:00",
-        "Published": "2022-10-21T16:15:00",
-        "access": {},
-        "assigner": "cve@gitlab.com",
-        "cvss": null,
-        "cwe": "CWE-787",
-        "id": "CVE-2022-3597",
-        "impact": {},
-        "last-modified": "2023-01-10T16:15:00",
-        "references": [
-            "https://gitlab.com/libtiff/libtiff/-/issues/413",
-            "https://gitlab.com/libtiff/libtiff/-/commit/236b7191f04c60d09ee836ae13b50f812c841047",
-            "https://gitlab.com/gitlab-org/cves/-/blob/master/2022/CVE-2022-3597.json",
-            "https://security.netapp.com/advisory/ntap-20230110-0001/"
-        ],
-        "summary": "LibTIFF 4.4.0 has an out-of-bounds write in _TIFFmemcpy in libtiff/tif_unix.c:346 when called from extractImageSection, tools/tiffcrop.c:6826, allowing attackers to cause a denial-of-service via a crafted tiff file. For users that compile libtiff from sources, the fix is available with commit 236b7191."
-    },
-    {
-        "Modified": "2023-01-10T16:15:00",
-        "Published": "2022-10-21T16:15:00",
-        "access": {},
-        "assigner": "cve@gitlab.com",
-        "cvss": null,
-        "cwe": "CWE-787",
-        "id": "CVE-2022-3598",
-        "impact": {},
-        "last-modified": "2023-01-10T16:15:00",
-        "references": [
-            "https://gitlab.com/gitlab-org/cves/-/blob/master/2022/CVE-2022-3598.json",
-            "https://gitlab.com/libtiff/libtiff/-/issues/435",
-            "https://gitlab.com/libtiff/libtiff/-/commit/cfbb883bf6ea7bedcb04177cc4e52d304522fdff",
-            "https://security.netapp.com/advisory/ntap-20230110-0001/"
-        ],
-        "summary": "LibTIFF 4.4.0 has an out-of-bounds write in extractContigSamplesShifted24bits in tools/tiffcrop.c:3604, allowing attackers to cause a denial-of-service via a crafted tiff file. For users that compile libtiff from sources, the fix is available with commit cfbb883b."
-    },
-    {
-        "Modified": "2023-01-10T16:15:00",
-        "Published": "2022-10-21T16:15:00",
-        "access": {},
-        "assigner": "cve@gitlab.com",
-        "cvss": null,
-        "cwe": "CWE-125",
-        "id": "CVE-2022-3599",
-        "impact": {},
-        "last-modified": "2023-01-10T16:15:00",
-        "references": [
-            "https://gitlab.com/libtiff/libtiff/-/commit/e813112545942107551433d61afd16ac094ff246",
-            "https://gitlab.com/libtiff/libtiff/-/issues/398",
-            "https://gitlab.com/gitlab-org/cves/-/blob/master/2022/CVE-2022-3599.json",
-            "https://security.netapp.com/advisory/ntap-20230110-0001/"
-        ],
-        "summary": "LibTIFF 4.4.0 has an out-of-bounds read in writeSingleSection in tools/tiffcrop.c:7345, allowing attackers to cause a denial-of-service via a crafted tiff file. For users that compile libtiff from sources, the fix is available with commit e8131125."
-    },
-    {
-        "Modified": "2023-01-10T16:15:00",
-        "Published": "2022-10-21T16:15:00",
-        "access": {},
-        "assigner": "cve@gitlab.com",
-        "cvss": null,
-        "cwe": "CWE-787",
-        "id": "CVE-2022-3626",
-        "impact": {},
-        "last-modified": "2023-01-10T16:15:00",
-        "references": [
-            "https://gitlab.com/gitlab-org/cves/-/blob/master/2022/CVE-2022-3626.json",
-            "https://gitlab.com/libtiff/libtiff/-/issues/426",
-            "https://gitlab.com/libtiff/libtiff/-/commit/236b7191f04c60d09ee836ae13b50f812c841047",
-            "https://security.netapp.com/advisory/ntap-20230110-0001/"
-        ],
-        "summary": "LibTIFF 4.4.0 has an out-of-bounds write in _TIFFmemset in libtiff/tif_unix.c:340 when called from processCropSelections, tools/tiffcrop.c:7619, allowing attackers to cause a denial-of-service via a crafted tiff file. For users that compile libtiff from sources, the fix is available with commit 236b7191."
-    },
-    {
-        "Modified": "2023-01-10T16:15:00",
-        "Published": "2022-10-21T16:15:00",
-        "access": {},
-        "assigner": "cve@gitlab.com",
-        "cvss": null,
-        "cwe": "CWE-787",
-        "id": "CVE-2022-3627",
-        "impact": {},
-        "last-modified": "2023-01-10T16:15:00",
-        "references": [
-            "https://gitlab.com/libtiff/libtiff/-/commit/236b7191f04c60d09ee836ae13b50f812c841047",
-            "https://gitlab.com/libtiff/libtiff/-/issues/411",
-            "https://gitlab.com/gitlab-org/cves/-/blob/master/2022/CVE-2022-3627.json",
-            "https://security.netapp.com/advisory/ntap-20230110-0001/"
-        ],
-        "summary": "LibTIFF 4.4.0 has an out-of-bounds write in _TIFFmemcpy in libtiff/tif_unix.c:346 when called from extractImageSection, tools/tiffcrop.c:6860, allowing attackers to cause a denial-of-service via a crafted tiff file. For users that compile libtiff from sources, the fix is available with commit 236b7191."
-    },
-    {
-        "Modified": "2023-01-10T16:15:00",
-        "Published": "2022-01-26T14:15:00",
-        "access": {
-            "authentication": "NONE",
-            "complexity": "LOW",
-            "vector": "LOCAL"
-        },
-        "assigner": "security@google.com",
-        "cvss": 7.2,
-        "cvss-time": "2023-01-10T16:15:00",
-        "cvss-vector": "AV:L/AC:L/Au:N/C:C/I:C/A:C",
-        "cwe": "CWE-415",
-        "id": "CVE-2021-22600",
-        "impact": {
-            "availability": "COMPLETE",
-            "confidentiality": "COMPLETE",
-            "integrity": "COMPLETE"
-        },
-        "last-modified": "2023-01-10T16:15:00",
-        "references": [
-            "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit?id=ec6af094ea28f0f2dda1a6a33b14cd57e36a9755",
-            "https://www.debian.org/security/2022/dsa-5096",
-            "https://lists.debian.org/debian-lts-announce/2022/03/msg00012.html",
-            "https://security.netapp.com/advisory/ntap-20230110-0002/"
-        ],
-        "summary": "A double free bug in packet_set_ring() in net/packet/af_packet.c can be exploited by a local user through crafted syscalls to escalate privileges or deny service. We recommend upgrading kernel past the effected versions or rebuilding past ec6af094ea28f0f2dda1a6a33b14cd57e36a9755"
-    },
-    {
-        "Modified": "2023-01-10T16:07:00",
-        "Published": "2023-01-03T23:15:00",
-        "access": {},
-        "assigner": "cve@mitre.org",
-        "cvss": null,
-        "cwe": "CWE-79",
-        "id": "CVE-2022-42710",
-        "impact": {},
-        "last-modified": "2023-01-10T16:07:00",
-        "references": [
-            "https://github.com/omarhashem123/Security-Research/blob/main/CVE-2022-42710/CVE-2022-42710.txt"
-        ],
-        "summary": "Nice (formerly Nortek) Linear eMerge E3-Series 0.32-08f, 0.32-07p, 0.32-07e, 0.32-09c, 0.32-09b, 0.32-09a, and 0.32-08e devices are vulnerable to Stored Cross-Site Scripting (XSS)."
-    },
-    {
-        "Modified": "2023-01-10T15:59:00",
-        "Published": "2023-01-04T00:15:00",
-        "access": {},
-        "assigner": "psirt@us.ibm.com",
-        "cvss": null,
-        "cwe": "CWE-352",
-        "id": "CVE-2022-42435",
-        "impact": {},
-        "last-modified": "2023-01-10T15:59:00",
-        "references": [
-            "https://www.ibm.com/support/pages/node/6852217",
-            "https://exchange.xforce.ibmcloud.com/vulnerabilities/238054"
-        ],
-        "summary": "IBM Business Automation Workflow 18.0.0, 18.0.1, 18.0.2, 19.0.1, 19.0.2, 19.0.3, 20.0.1, 20.0.2, 20.0.3, 21.0.1, 21.0.2, 21.0.3, and 22.0.1 is vulnerable to cross-site request forgery which could allow an attacker to execute malicious and unauthorized actions transmitted from a user that the website trusts. IBM X-Force ID: 238054."
-    },
-    {
-        "Modified": "2023-01-10T15:53:00",
-        "Published": "2023-01-04T10:15:00",
-        "access": {},
-        "assigner": "security@unisoc.com",
-        "cvss": null,
-        "cwe": "CWE-862",
-        "id": "CVE-2022-38682",
-        "impact": {},
-        "last-modified": "2023-01-10T15:53:00",
-        "references": [
-            "https://www.unisoc.com/en_us/secy/announcementDetail/1610118225591336001"
-        ],
-        "summary": "In contacts service, there is a missing permission check. This could lead to local denial of service in contacts service with no additional execution privileges needed."
-    },
-    {
-        "Modified": "2023-01-10T15:53:00",
-        "Published": "2023-01-04T10:15:00",
-        "access": {},
-        "assigner": "security@unisoc.com",
-        "cvss": null,
-        "cwe": "CWE-862",
-        "id": "CVE-2022-38683",
-        "impact": {},
-        "last-modified": "2023-01-10T15:53:00",
-        "references": [
-            "https://www.unisoc.com/en_us/secy/announcementDetail/1610118225591336001"
-        ],
-        "summary": "In contacts service, there is a missing permission check. This could lead to local denial of service in contacts service with no additional execution privileges needed."
-    },
-    {
-        "Modified": "2023-01-10T15:53:00",
-        "Published": "2023-01-04T10:15:00",
-        "access": {},
-        "assigner": "security@unisoc.com",
-        "cvss": null,
-        "cwe": "CWE-862",
-        "id": "CVE-2022-38684",
-        "impact": {},
-        "last-modified": "2023-01-10T15:53:00",
-        "references": [
-            "https://www.unisoc.com/en_us/secy/announcementDetail/1610118225591336001"
-        ],
-        "summary": "In contacts service, there is a missing permission check. This could lead to local denial of service in contacts service with no additional execution privileges needed."
-    },
-    {
-        "Modified": "2023-01-10T15:52:00",
-        "Published": "2023-01-03T03:15:00",
-        "access": {},
-        "assigner": "vultures@jpcert.or.jp",
-        "cvss": null,
-        "cwe": "CWE-125",
-        "id": "CVE-2022-46360",
-        "impact": {},
-        "last-modified": "2023-01-10T15:52:00",
-        "references": [
-            "https://jvn.jp/en/vu/JVNVU90679513/index.html",
-            "https://monitouch.fujielectric.com/site/download-e/09vsft6_inf/index.php"
-        ],
-        "summary": "Out-of-bounds read vulnerability in V-SFT v6.1.7.0 and earlier and TELLUS v4.0.12.0 and earlier allows a local attacker to obtain the information and/or execute arbitrary code by having a user to open a specially crafted image file."
-    },
-    {
-        "Modified": "2023-01-10T15:46:00",
-        "Published": "2023-01-04T10:15:00",
-        "access": {},
-        "assigner": "cna@vuldb.com",
-        "cvss": null,
-        "cwe": "CWE-89",
-        "id": "CVE-2010-10003",
-        "impact": {},
-        "last-modified": "2023-01-10T15:46:00",
-        "references": [
-            "https://vuldb.com/?ctiid.217351",
-            "https://vuldb.com/?id.217351",
-            "https://github.com/gesellix/titlelink/commit/b4604e523853965fa981a4e79aef4b554a535db0"
-        ],
-        "summary": "A vulnerability classified as critical was found in gesellix titlelink. Affected by this vulnerability is an unknown functionality of the file plugin_content_title.php. The manipulation of the argument phrase leads to sql injection. The name of the patch is b4604e523853965fa981a4e79aef4b554a535db0. It is recommended to apply a patch to fix this issue. The associated identifier of this vulnerability is VDB-217351."
-    },
-    {
-        "Modified": "2023-01-10T15:46:00",
-        "Published": "2023-01-04T10:15:00",
-        "access": {},
-        "assigner": "security@unisoc.com",
-        "cvss": null,
-        "cwe": "CWE-862",
-        "id": "CVE-2022-38678",
-        "impact": {},
-        "last-modified": "2023-01-10T15:46:00",
-        "references": [
-            "https://www.unisoc.com/en_us/secy/announcementDetail/1610118225591336001"
-        ],
-        "summary": "In contacts service, there is a missing permission check. This could lead to local denial of service in contacts service with no additional execution privileges needed."
-    },
-    {
-        "Modified": "2023-01-10T15:44:00",
-        "Published": "2023-01-04T10:15:00",
-        "access": {},
-        "assigner": "security@unisoc.com",
-        "cvss": null,
-        "cwe": "CWE-862",
-        "id": "CVE-2022-39104",
-        "impact": {},
-        "last-modified": "2023-01-10T15:44:00",
-        "references": [
-            "https://www.unisoc.com/en_us/secy/announcementDetail/1610118225591336001"
-        ],
-        "summary": "In contacts service, there is a missing permission check. This could lead to local denial of service in Contacts service with no additional execution privileges needed."
-    },
-    {
-        "Modified": "2023-01-10T15:44:00",
-        "Published": "2023-01-04T10:15:00",
-        "access": {},
-        "assigner": "security@unisoc.com",
-        "cvss": null,
-        "cwe": "CWE-862",
-        "id": "CVE-2022-44422",
-        "impact": {},
-        "last-modified": "2023-01-10T15:44:00",
-        "references": [
-            "https://www.unisoc.com/en_us/secy/announcementDetail/1610118225591336001"
-        ],
-        "summary": "In music service, there is a missing permission check. This could lead to local denial of service in contacts service with no additional execution privileges needed."
     }
 ]
